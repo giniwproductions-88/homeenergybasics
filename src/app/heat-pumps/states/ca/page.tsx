@@ -5,7 +5,7 @@ import StatusCard from '@/components/StatusCard'
 
 export const metadata: Metadata = {
   title: 'California Heat Pump Rebates | Home Energy Basics',
-  description: 'Current status of California heat pump incentives. State programs, utility rebates, and federal credits explained.',
+  description: 'Current status of California heat pump incentives. State programs, utility rebates, and IRA-funded rebates (state-administered) explained. Federal tax credits are not available in 2026.',
   alternates: {
     canonical: 'https://homeenergybasics.com/heat-pumps/states/ca',
   },
@@ -51,11 +51,23 @@ export default function CaliforniaPage() {
               Availability and funding levels vary significantly by region.
             </p>
 
+            <h3>Federal tax credits (not available in 2026)</h3>
+            <p>
+              Federal residential heat pump tax credits (Section 25C) and geothermal
+              credits (Section 25D) ended for property placed in service after
+              December 31, 2025. In 2026, California homeowners should plan around
+              state, utility, and IRA-funded rebate programs instead of federal tax
+              credits. See our{' '}
+              <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 underline">
+                federal credits explainer
+              </Link>.
+            </p>
+
             <h3>State-Level Programs</h3>
             <ul>
               <li><strong>TECH Clean California:</strong> Incentives for heat pump water heaters and space heating in homes with gas appliances</li>
-              <li><strong>Self-Generation Incentive Program (SGIP):</strong> Battery and heat pump incentives, especially for low-income and fire-risk areas</li>
-              <li><strong>IRA Home Energy Rebates:</strong> Federal funds administered through California for qualifying upgrades</li>
+              <li><strong>Self-Generation Incentive Program (SGIP):</strong> Primarily battery storage incentives (often relevant if you pair a heat pump with backup power)</li>
+              <li><strong>IRA Home Energy Rebates (HEAR/HOMES):</strong> Federal funds administered through California as point-of-sale or performance-based rebates (status and rollout may vary)</li>
             </ul>
 
             <h3>Utility Programs</h3>
@@ -79,6 +91,10 @@ export default function CaliforniaPage() {
               <li>Program availability varies by income level and location</li>
               <li>Some programs have paused enrollment while processing applications</li>
             </ul>
+            <p>
+              Always confirm current availability directly with your utility and
+              the relevant program portal before starting a project.
+            </p>
 
             <h3>What to Do</h3>
             <ol>
