@@ -1,4 +1,14 @@
 // src/app/heat-pumps/states/mn/page.tsx
+//
+// Minnesota Heat Pump Rebates — 2026 Upgrade
+// Last content update: March 2026
+//
+// Sources verified against:
+// - IRS.gov (25C, 25D, OBBB provisions)
+// - Xcel Energy MN 2024-2026 Rebate Summary PDF
+// - CenterPoint Energy MN Ducted ASHP Rebate page + terms
+// - mn.gov/commerce HEAR program page
+
 import type { Metadata } from "next";
 import Link from "next/link";
 import { incentives, formatDate } from "@/data/incentives";
@@ -6,18 +16,16 @@ import StatusCard from "@/components/StatusCard";
 
 export const metadata: Metadata = {
   title:
-    "Minnesota Heat Pump Rebates 2026: What's Actually Available After Federal Credits Ended | Home Energy Basics",
+    "Minnesota Heat Pump Rebates 2026: What's Actually Available | Home Energy Basics",
   description:
-    "No federal heat pump tax credits in 2026. Here's what Minnesota homeowners can actually use: Xcel Energy, CenterPoint, Minnesota Power rebates, city programs, and pending HEAR/HOMES status.",
+    "Minnesota heat pump rebates in 2026: Xcel Energy up to $2,000, CenterPoint $1,100 dual-fuel, pending HEAR program. Federal 25C/25D credits ended Dec 2025.",
   alternates: {
-    canonical:
-      "https://homeenergybasics.com/heat-pumps/states/mn",
+    canonical: "https://homeenergybasics.com/heat-pumps/states/mn",
   },
   openGraph: {
-    title:
-      "Minnesota Heat Pump Rebates 2026: What's Actually Available",
+    title: "Minnesota Heat Pump Rebates 2026: What's Actually Available",
     description:
-      "Federal credits ended. Utility rebates, city programs, and CIP incentives are what's active now in Minnesota. HEAR/HOMES are funded but haven't launched.",
+      "Federal credits ended. Utility rebates are what's active now in Minnesota. HEAR/HOMES funded but not launched.",
     url: "https://homeenergybasics.com/heat-pumps/states/mn",
     type: "article",
   },
@@ -32,63 +40,71 @@ function JsonLd({ data }: { data: object }) {
   );
 }
 
+// FAQ data — used for both visible FAQ section and JSON-LD schema.
+// These MUST match exactly.
+const faqData = [
+  {
+    question: "What heat pump rebates are available in Minnesota in 2026?",
+    answer:
+      "Utility rebates are the primary incentive. Xcel Energy offers up to $2,000 for cold-climate air-source heat pumps. CenterPoint offers $1,100 for ducted heat pumps paired with a gas furnace. The federal Section 25C and 25D tax credits are not available for property placed in service after December 31, 2025, according to current IRS guidance.",
+  },
+  {
+    question: "Can I combine Xcel and CenterPoint heat pump rebates?",
+    answer:
+      "If you have Xcel electric service and CenterPoint gas service, you can potentially stack both rebates on a qualifying dual-fuel system — up to $3,100 combined. The system must meet both programs' requirements, including CenterPoint's dual-fuel pairing with a high-efficiency gas furnace. Final eligibility depends on meeting both utilities' equipment and application requirements.",
+  },
+  {
+    question:
+      "Does CenterPoint rebate heat pumps that replace gas heating?",
+    answer:
+      "No. CenterPoint's sole heat pump rebate requires the heat pump to be paired with a high-efficiency gas furnace as a dual-fuel system. The heat pump must switch to the gas furnace at 40°F or lower. Mini-splits, ground-source systems, and full-electric replacements are not eligible.",
+  },
+  {
+    question: "Are federal heat pump tax credits available in 2026?",
+    answer:
+      "The IRS states that the Energy Efficient Home Improvement Credit (Section 25C) applies to qualifying improvements placed in service through December 31, 2025. The Residential Clean Energy Credit (Section 25D), which covered geothermal heat pumps, is also not available for expenditures made after December 31, 2025. For 2026 installations, no federal heat pump tax credit is currently listed as available by the IRS.",
+  },
+  {
+    question: "Are geothermal heat pump tax credits still available?",
+    answer:
+      "The IRS currently states that the Residential Clean Energy Credit (Section 25D) is not available for property placed in service after December 31, 2025. This means the 30% geothermal tax credit is no longer available for new installations in 2026.",
+  },
+  {
+    question: "Has Minnesota's HEAR rebate program launched?",
+    answer:
+      "No. As of the Minnesota Department of Commerce's February 2, 2026 update, Save Energy Minnesota has not launched yet, the state is waiting for formal DOE approval, and there is no estimated launch date. Federal guidelines do not allow retroactive rebates for installations completed before the program launches.",
+  },
+  {
+    question: "What is the Xcel Energy insulation bonus?",
+    answer:
+      "Xcel offers a $600 bonus if you install qualifying insulation and air sealing followed by a qualifying heat pump within two years. The bonus is applied automatically when you submit your heat pump rebate application.",
+  },
+  {
+    question: "What is a cold-climate heat pump?",
+    answer:
+      "A cold-climate heat pump is designed to maintain heating capacity at low temperatures. For Xcel's rebate, it must appear on the NEEP cold-climate product list, have a COP of at least 1.75 at 5°F, and maintain at least 70% of its rated capacity at 5°F compared to 47°F.",
+  },
+];
+
 export default function MinnesotaHeatPumpPage() {
   const mnIncentive = incentives.MN;
   const formattedDate = formatDate(mnIncentive.lastVerified);
 
+  // Dedicated verification date — use this for "Last verified" display.
+  // Update this when you re-verify sources, not just when you edit copy.
+  const lastVerified = "March 16, 2026";
+
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "Are there federal heat pump tax credits in Minnesota in 2026?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "No. Both the Section 25C and Section 25D federal tax credits ended for property placed in service after December 31, 2025. Minnesota homeowners installing heat pumps in 2026 should not plan on federal tax credits.",
-        },
+    mainEntity: faqData.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
       },
-      {
-        "@type": "Question",
-        name: "What heat pump rebates are available in Minnesota in 2026?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Utility rebates are the primary incentive. Xcel Energy offers up to $2,000+ for cold climate air source heat pumps through their standard and Clean Heat Plan programs. CenterPoint Energy offers $1,100 for ducted ASHPs paired with a gas furnace. Minnesota Power and electric co-ops also have programs. Several cities offer additional matching rebates.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Has Minnesota's HEAR/HOMES program launched?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "No. As of February 2, 2026, Minnesota's Save Energy Minnesota program has not launched. The state is waiting for formal DOE approval. There is no estimated launch date. HEAR rebates cannot be applied retroactively — do not install before the program launches if you plan to use HEAR.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Can I stack utility rebates with city rebates in Minnesota?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes, in many cases. Cities like Minneapolis, Edina, St. Louis Park, Coon Rapids, and Northfield offer bonus rebates that stack on top of utility rebates. Most require you to receive the utility rebate first. Check your city's specific program rules.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Does Xcel Energy offer a lower electric rate for heat pump owners?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes. Xcel's electric space heating rate is 6.537 cents per kWh from October through May, significantly below the standard residential rate. You must call Xcel to enroll. Your heat pump must provide at least 50% of your home's heating.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Should I wait for HEAR/HOMES or install a heat pump now?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "It depends on your situation. HEAR rebates are not retroactive — if you install before the program launches, you won't qualify. However, the Minnesota Department of Commerce does not recommend delaying needed repairs. If you need a system now, utility and city rebates are available today. If you can wait and may be income-qualified, tracking the HEAR launch could save significant money.",
-        },
-      },
-    ],
+    })),
   };
 
   return (
@@ -110,12 +126,12 @@ export default function MinnesotaHeatPumpPage() {
               / Minnesota
             </p>
             <h1 className="text-4xl font-bold text-gray-900 mb-6">
-              Minnesota Heat Pump Rebates 2026: What's Actually Available
+              Minnesota Heat Pump Rebates 2026: What&apos;s Actually Available
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
               There are no federal residential heat pump tax credits in 2026.
-              Here's what Minnesota homeowners can actually use right now — and
-              what's coming.
+              Here&apos;s what Minnesota homeowners can actually use right
+              now — and what&apos;s coming.
             </p>
             <p className="text-sm text-gray-500 mt-4">
               Last updated: {formattedDate}
@@ -131,670 +147,637 @@ export default function MinnesotaHeatPumpPage() {
         </div>
       </section>
 
-      {/* Status Summary */}
+      {/* 2026 Minnesota rebate upgrade start */}
+
+      {/* Intro + Last Verified */}
+      <section className="py-8 pb-0">
+        <div className="container-narrow">
+          <p className="text-gray-700 text-lg leading-relaxed">
+            Minnesota heat pump rebates in 2026 are primarily coming from
+            utilities, not the federal government. Xcel Energy currently
+            offers the broadest utility rebate program, CenterPoint Energy
+            offers a narrower dual-fuel rebate, and Minnesota&apos;s
+            income-based state rebate programs have not yet launched.
+          </p>
+          <p className="text-sm text-gray-500 mt-3">
+            Last verified: {lastVerified}
+          </p>
+        </div>
+      </section>
+
+      {/* Quick Summary */}
+      <section className="py-8">
+        <div className="container-narrow">
+          <div className="bg-brand-50 border border-brand-200 rounded-xl p-6">
+            <h2 className="text-lg font-bold text-gray-900 mb-3">
+              Minnesota Heat Pump Rebates at a Glance
+            </h2>
+            <p className="text-gray-600 mb-4">
+              Minnesota homeowners installing a heat pump in 2026 may
+              qualify for utility rebates and, when available, future state
+              rebates:
+            </p>
+            <ul className="space-y-2 text-gray-700">
+              <li className="flex items-start gap-2">
+                <span className="text-brand-600 font-bold mt-0.5">•</span>
+                <span>
+                  <strong>Up to $2,000 from Xcel Energy</strong> —
+                  cold-climate air-source heat pumps receive the highest
+                  rebates
+                </span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-brand-600 font-bold mt-0.5">•</span>
+                <span>
+                  <strong>$1,100 from CenterPoint Energy</strong> — for
+                  ducted heat pumps paired with a high-efficiency gas furnace
+                </span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-brand-600 font-bold mt-0.5">•</span>
+                <span>
+                  <strong>Pending state programs</strong> — the Minnesota
+                  HEAR program has not yet launched as of {lastVerified}
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Federal Heat Pump Tax Credit */}
       <section className="py-12 border-b">
-        <div className="container-wide">
-          <div className="card-highlight">
-            <h2 className="text-xl font-semibold mb-6">
-              Minnesota incentive status at a glance
-            </h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div>
-                <h3 className="font-semibold text-red-600 mb-3">
-                  ✗ Not available
-                </h3>
-                <ul className="space-y-2 text-sm text-gray-700">
-                  <li>Federal 25C heat pump credit</li>
-                  <li>Federal 25D geothermal credit</li>
-                  <li>
-                    <Link
-                      href="/federal-heat-pump-tax-credit-expired"
-                      className="text-brand-600 underline"
-                    >
-                      Why these ended →
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-semibold text-forest-600 mb-3">
-                  ✓ Active now
-                </h3>
-                <ul className="space-y-2 text-sm text-gray-700">
-                  <li>Xcel Energy rebates</li>
-                  <li>CenterPoint Energy rebates</li>
-                  <li>Minnesota Power rebates</li>
-                  <li>Electric co-op programs</li>
-                  <li>City bonus rebate programs</li>
-                  <li>CIP (Conservation Improvement Program)</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-semibold text-amber-600 mb-3">
-                  ⏳ Funded but not launched
-                </h3>
-                <ul className="space-y-2 text-sm text-gray-700">
-                  <li>HEAR rebates (income-based)</li>
-                  <li>HOMES rebates (savings-based)</li>
-                  <li>State heat pump rebate</li>
-                  <li>Electrical panel grants</li>
-                  <li className="text-amber-700 font-medium">
-                    No estimated launch date
-                  </li>
-                </ul>
-              </div>
-            </div>
+        <div className="container-narrow">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            Federal Heat Pump Tax Credit
+          </h2>
+          <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 mb-6">
+            <p className="text-gray-700 mb-4">
+              The IRS states that the Energy Efficient Home Improvement
+              Credit (Section 25C) applies to qualifying improvements placed
+              in service between January 1, 2023 and December 31, 2025.
+              Qualifying heat pumps were eligible for a credit equal to 30%
+              of project cost, up to $2,000 per year.
+            </p>
+            <p className="text-gray-700 mb-4">
+              For heat pumps installed in 2026 or later, the IRS does not
+              list the credit as available. The IRS&apos;s One, Big,
+              Beautiful Bill provisions page confirms: the 25C credit is
+              &quot;not allowed for any property placed in service after Dec.
+              31, 2025.&quot;
+            </p>
+            <p className="text-gray-700 mb-4">
+              The Residential Clean Energy Credit (Section 25D), which
+              previously applied to geothermal heat pumps, is also not
+              available for expenditures made after December 31, 2025,
+              according to the current IRS guidance.
+            </p>
+            <p className="text-sm text-gray-500">
+              Sources:{" "}
+              <a
+                href="https://www.irs.gov/credits-deductions/energy-efficient-home-improvement-credit"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-brand-600 underline"
+              >
+                IRS — Energy Efficient Home Improvement Credit
+              </a>
+              {" | "}
+              <a
+                href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-brand-600 underline"
+              >
+                IRS — Residential Clean Energy Credit
+              </a>
+              {" | "}
+              <a
+                href="https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-brand-600 underline"
+              >
+                IRS — One, Big, Beautiful Bill Provisions
+              </a>
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Utility Rebates */}
-      <section className="py-12">
+      {/* Xcel Energy Heat Pump Rebates */}
+      <section className="py-12 border-b">
         <div className="container-narrow">
-          <div className="prose prose-lg max-w-none">
-            <h2>Utility rebates (active now)</h2>
-            <p>
-              Utility rebates are the most accessible incentive for Minnesota
-              homeowners in 2026. These run under the state's Conservation
-              Improvement Program (CIP) framework and are independent of
-              federal tax credits.
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            Xcel Energy Heat Pump Rebates (Minnesota)
+          </h2>
+          <p className="text-gray-600 mb-8">
+            Xcel Energy offers Minnesota&apos;s broadest utility heat pump
+            rebate program, covering ducted systems, ductless mini-splits,
+            and ground-source heat pumps. Rebate amounts depend on equipment
+            type and your fuel relationship with Xcel.
+          </p>
+
+          <h3 className="text-xl font-semibold text-gray-900 mb-4">
+            Rebate Amounts
+          </h3>
+          <div className="overflow-x-auto mb-6">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b text-left">
+                  <th className="py-3 pr-4 font-semibold">Equipment</th>
+                  <th className="py-3 pr-4 font-semibold">
+                    Combo / Gas Customer
+                  </th>
+                  <th className="py-3 font-semibold">Electric Only</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b">
+                  <td className="py-3 pr-4">
+                    Central air-source heat pump
+                  </td>
+                  <td className="py-3 pr-4 font-medium">$1,600</td>
+                  <td className="py-3 font-medium">$1,100</td>
+                </tr>
+                <tr className="border-b bg-brand-50">
+                  <td className="py-3 pr-4 font-medium">
+                    Cold-climate air-source heat pump
+                  </td>
+                  <td className="py-3 pr-4 font-bold text-brand-700">
+                    $2,000
+                  </td>
+                  <td className="py-3 font-bold text-brand-700">$1,500</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="py-3 pr-4">Ductless mini-split</td>
+                  <td className="py-3 pr-4 font-medium" colSpan={2}>
+                    $1,600
+                  </td>
+                </tr>
+                <tr className="border-b">
+                  <td className="py-3 pr-4">Cold-climate mini-split</td>
+                  <td className="py-3 pr-4 font-medium" colSpan={2}>
+                    $2,000
+                  </td>
+                </tr>
+                <tr className="border-b">
+                  <td className="py-3 pr-4">
+                    Ground-source (geothermal)
+                  </td>
+                  <td className="py-3 pr-4 font-medium" colSpan={2}>
+                    $500 per heating ton
+                  </td>
+                </tr>
+                <tr className="border-b">
+                  <td className="py-3 pr-4">Heat pump water heater</td>
+                  <td className="py-3 pr-4 font-medium" colSpan={2}>
+                    $400 (ENERGY STAR) / $500 (with Demand Mgmt)
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p className="text-gray-600 text-sm mb-8">
+            &quot;Combo&quot; customers have both Xcel electric and Xcel gas
+            service. &quot;Electric Only&quot; customers have Xcel electric
+            service but use a non-Xcel fuel source (propane, fuel oil, etc.)
+            for heating. Xcel offers higher rebate amounts for Combo / Gas
+            customers than for Electric Only customers.
+          </p>
+
+          <div className="bg-energy-50 border border-energy-200 rounded-lg p-4 mb-8">
+            <p className="text-gray-700 text-sm">
+              <strong>Insulation bonus:</strong> Xcel offers a $600 bonus if
+              you install qualifying insulation and air sealing followed by a
+              qualifying heat pump within two years. The bonus is applied
+              automatically when you submit the heat pump rebate application.
             </p>
           </div>
 
-          {/* Xcel */}
-          <div className="card mt-8">
-            <h3 className="text-xl font-semibold mb-4">Xcel Energy</h3>
-            <p className="text-sm text-gray-500 mb-4">
-              Serves Twin Cities metro and much of southern/central Minnesota
-            </p>
-            <div className="space-y-4">
-              <div className="border-b pb-4">
-                <div className="flex justify-between items-start">
-                  <div>
-                    <p className="font-medium text-gray-900">
-                      Cold Climate Air Source Heat Pump
-                    </p>
-                    <p className="text-sm text-gray-600">
-                      Standard rebate + Clean Heat Plan bonus. Calculated per heating
-                      ton at 5°F. Verify current amounts on{" "}
-                      <a
-                        href="https://mn.my.xcelenergy.com/s/residential/home-rebates"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-brand-600 underline"
-                      >
-                        Xcel's rebate page
-                      </a>.
-                    </p>
-                  </div>
-                  <p className="font-semibold text-forest-600 text-right whitespace-nowrap ml-4">
-                    Up to $2,250/ton
-                  </p>
-                </div>
-              </div>
-              <div className="border-b pb-4">
-                <div className="flex justify-between items-start">
-                  <div>
-                    <p className="font-medium text-gray-900">
-                      Heat Pump Water Heater
-                    </p>
-                    <p className="text-sm text-gray-600">
-                      ENERGY STAR rated or AHRI listed
-                    </p>
-                  </div>
-                  <p className="font-semibold text-forest-600 text-right whitespace-nowrap ml-4">
-                    $400 – $500
-                  </p>
-                </div>
-              </div>
-              <div className="border-b pb-4">
-                <div className="flex justify-between items-start">
-                  <div>
-                    <p className="font-medium text-gray-900">
-                      Electrical Panel Upgrade
-                    </p>
-                    <p className="text-sm text-gray-600">
-                      Increased amperage, certified electrician required
-                    </p>
-                  </div>
-                  <p className="font-semibold text-forest-600 text-right whitespace-nowrap ml-4">
-                    Up to $1,500
-                  </p>
-                </div>
-              </div>
-              <div className="border-b pb-4">
-                <div className="flex justify-between items-start">
-                  <div>
-                    <p className="font-medium text-gray-900">
-                      Whole Home Efficiency Bonus
-                    </p>
-                    <p className="text-sm text-gray-600">
-                      25% bonus on standard rebates when you complete 3+
-                      projects within 2 years (energy audit required)
-                    </p>
-                  </div>
-                  <p className="font-semibold text-forest-600 text-right whitespace-nowrap ml-4">
-                    +25% bonus
-                  </p>
-                </div>
-              </div>
-              <div>
-                <div className="flex justify-between items-start">
-                  <div>
-                    <p className="font-medium text-gray-900">
-                      Electric Space Heating Rate
-                    </p>
-                    <p className="text-sm text-gray-600">
-                      Reduced rate Oct–May for homes heated 50%+ by heat pump.
-                      Call Xcel to enroll.
-                    </p>
-                  </div>
-                  <p className="font-semibold text-forest-600 text-right whitespace-nowrap ml-4">
-                    6.5¢/kWh
-                  </p>
-                </div>
-                <p className="text-xs text-gray-500 mt-1">
-                  vs. standard rate (see Xcel for current pricing)
-                </p>
-              </div>
-            </div>
-            <div className="mt-6 pt-4 border-t">
-              <a
-                href="https://mn.my.xcelenergy.com/s/residential/home-rebates"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-brand-600 font-medium hover:underline text-sm"
-              >
-                Xcel Energy Rebates Page ↗
-              </a>
-            </div>
-          </div>
+          <h3 className="text-xl font-semibold text-gray-900 mb-4">
+            Eligibility
+          </h3>
+          <ul className="space-y-2 text-gray-700 mb-8">
+            <li className="flex items-start gap-2">
+              <span className="text-green-600 mt-1">✓</span>
+              Must have residential electric service from Xcel Energy (for
+              heat pump rebates) or residential gas service (for furnace
+              rebates)
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-green-600 mt-1">✓</span>
+              Single-family homes, duplexes, and four-plexes
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-green-600 mt-1">✓</span>
+              Central ASHP and ground-source rebates require Quality
+              Installation by an Xcel participating contractor
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-green-600 mt-1">✓</span>
+              Mini-split rebates do not require a participating contractor
+            </li>
+          </ul>
 
-          {/* CenterPoint */}
-          <div className="card mt-6">
-            <h3 className="text-xl font-semibold mb-4">CenterPoint Energy</h3>
-            <p className="text-sm text-gray-500 mb-4">
-              Natural gas service in Twin Cities metro area
-            </p>
-            <div className="space-y-4">
-              <div className="border-b pb-4">
-                <div className="flex justify-between items-start">
-                  <div>
-                    <p className="font-medium text-gray-900">
-                      Ducted Air Source Heat Pump
-                    </p>
-                    <p className="text-sm text-gray-600">
-                      Must be paired with 92%+ AFUE gas furnace (hybrid setup).
-                      Switchover at 40°F or lower.
-                    </p>
-                  </div>
-                  <p className="font-semibold text-forest-600 text-right whitespace-nowrap ml-4">
-                    $1,100
-                  </p>
-                </div>
-                <p className="text-xs text-gray-500 mt-1">
-                  $400 for new construction
-                </p>
-              </div>
-              <div className="border-b pb-4">
-                <div className="flex justify-between items-start">
-                  <div>
-                    <p className="font-medium text-gray-900">
-                      Insulation + Air Sealing
-                    </p>
-                    <p className="text-sm text-gray-600">
-                      Attic, wall insulation, and air sealing combined
-                    </p>
-                  </div>
-                  <p className="font-semibold text-forest-600 text-right whitespace-nowrap ml-4">
-                    Up to $2,800
-                  </p>
-                </div>
-              </div>
-              <div>
-                <div className="flex justify-between items-start">
-                  <div>
-                    <p className="font-medium text-gray-900">
-                      High-Efficiency Furnace
-                    </p>
-                    <p className="text-sm text-gray-600">
-                      Varies by efficiency rating
-                    </p>
-                  </div>
-                  <p className="font-semibold text-forest-600 text-right whitespace-nowrap ml-4">
-                    Up to $1,000
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="mt-6 pt-4 border-t">
-              <a
-                href="https://www.centerpointenergy.com/en-us/SaveEnergyandMoney/Pages/default.aspx?sa=mn&au=res"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-brand-600 font-medium hover:underline text-sm"
-              >
-                CenterPoint Energy Programs ↗
-              </a>
-            </div>
-          </div>
+          <h3 className="text-xl font-semibold text-gray-900 mb-4">
+            Equipment Requirements
+          </h3>
+          <p className="text-gray-600 mb-4">
+            All equipment must be listed on the{" "}
+            <a
+              href="https://www.ahridirectory.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-brand-600 underline"
+            >
+              AHRI directory
+            </a>
+            . Cold-climate heat pumps must additionally appear on the{" "}
+            <a
+              href="https://ashp.neep.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-brand-600 underline"
+            >
+              NEEP cold-climate product list
+            </a>{" "}
+            and meet cold-climate specifications: COP ≥ 1.75 at 5°F, with
+            maximum capacity at 5°F at least 70% of capacity at 47°F.
+          </p>
 
-          {/* Minnesota Power */}
-          <div className="card mt-6">
-            <h3 className="text-xl font-semibold mb-4">Minnesota Power</h3>
-            <p className="text-sm text-gray-500 mb-4">
-              Electric service in northeastern Minnesota (Duluth area)
-            </p>
-            <div className="space-y-4">
-              <div className="border-b pb-4">
-                <div className="flex justify-between items-start">
-                  <div>
-                    <p className="font-medium text-gray-900">
-                      Air Source Heat Pump
-                    </p>
-                    <p className="text-sm text-gray-600">
-                      Must use participating contractor.{" "}
-                      <a
-                        href="https://www.mnpower.com/ProgramsRebates/ASHPRebates"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-brand-600 underline"
-                      >
-                        See MN Power for current amounts
-                      </a>.
-                    </p>
-                  </div>
-                  <p className="font-semibold text-forest-600 text-right whitespace-nowrap ml-4">
-                    Varies by system
-                  </p>
-                </div>
-              </div>
-              <div className="border-b pb-4">
-                <div className="flex justify-between items-start">
-                  <div>
-                    <p className="font-medium text-gray-900">
-                      Ground Source Heat Pump
-                    </p>
-                    <p className="text-sm text-gray-600">
-                      $1,000/ton with MNGHPA Master Installer
-                    </p>
-                  </div>
-                  <p className="font-semibold text-forest-600 text-right whitespace-nowrap ml-4">
-                    $800 – $1,000/ton
-                  </p>
-                </div>
-              </div>
-              <div>
-                <div className="flex justify-between items-start">
-                  <div>
-                    <p className="font-medium text-gray-900">
-                      Heat Pump Water Heater
-                    </p>
-                    <p className="text-sm text-gray-600">
-                      Valid through Dec 31, 2026.{" "}
-                      <a
-                        href="https://www.mnpower.com/ProgramsRebates/WaterHeaterRebate"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-brand-600 underline"
-                      >
-                        See MN Power for amount
-                      </a>.
-                    </p>
-                  </div>
-                  <p className="font-semibold text-forest-600 text-right whitespace-nowrap ml-4">
-                    $300+
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="mt-6 pt-4 border-t">
+          <h3 className="text-xl font-semibold text-gray-900 mb-4">
+            How to Apply
+          </h3>
+          <ol className="space-y-3 text-gray-700 mb-6">
+            <li>
+              <strong>1.</strong> Install a qualifying system. For central
+              and ground-source heat pumps, use an Xcel participating
+              contractor.
+            </li>
+            <li>
+              <strong>2.</strong> Submit a rebate application through
+              Xcel&apos;s{" "}
               <a
-                href="https://www.mnpower.com/ProgramsRebates/ASHPRebates"
+                href="https://www.xcelenergy.com/digital_application"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-brand-600 font-medium hover:underline text-sm"
+                className="text-brand-600 underline"
               >
-                Minnesota Power Rebates ↗
-              </a>
-            </div>
-          </div>
-
-          <div className="prose prose-lg max-w-none mt-8">
-            <p>
-              <strong>Electric co-ops:</strong> Many Minnesota electric
-              cooperatives also offer heat pump rebates and dual fuel rates.
-              Check with your local co-op directly. Use the{" "}
-              <a
-                href="https://www.mnashp.org/incentives-rates-financing"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                MN ASHP Collaborative utility rebate database
+                digital application portal
               </a>{" "}
-              to look up your specific utility.
-            </p>
-          </div>
+              (approximately 14 minutes) or mail form 24-01-506.
+            </li>
+            <li>
+              <strong>3.</strong> Applications must be postmarked by
+              September 30 of the year following installation.
+            </li>
+            <li>
+              <strong>4.</strong> Processing takes up to 8 weeks. Rebates
+              are paid by check, bill credit, or direct deposit.
+            </li>
+          </ol>
+          <p className="text-sm text-gray-500">
+            Source:{" "}
+            <a
+              href="https://www.xcelenergy.com/staticfiles/xe-responsive/Working%20With%20Us/24-1-201%20MN%20Res%20Rebate%20Summary%20Information%20Sheet.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-brand-600 underline"
+            >
+              Xcel Energy Minnesota 2024–2026 Residential Rebate Summary
+              (PDF)
+            </a>
+          </p>
         </div>
       </section>
 
-      {/* City Programs */}
-      <section className="py-12 bg-gray-50">
+      {/* CenterPoint Energy Heat Pump Rebates */}
+      <section className="py-12 border-b">
         <div className="container-narrow">
-          <div className="prose prose-lg max-w-none">
-            <h2>City and local programs (stackable)</h2>
-            <p>
-              Several Minnesota cities offer bonus rebates that stack on top of
-              utility rebates. Most require you to receive the utility rebate
-              first.
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            CenterPoint Energy Heat Pump Rebates (Minnesota)
+          </h2>
+          <p className="text-gray-600 mb-6">
+            CenterPoint Energy is a natural gas utility, and its rebate
+            program reflects that. CenterPoint offers one heat pump
+            rebate — for ducted air-source heat pumps installed alongside a
+            high-efficiency gas furnace as a dual-fuel system.
+          </p>
+
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-8">
+            <p className="text-gray-700 text-sm">
+              <strong>Important:</strong> CenterPoint does not rebate
+              mini-splits, ground-source systems, or any heat pump that
+              replaces gas heating entirely. The heat pump must be programmed
+              to switch to the gas furnace at 40°F or lower.
             </p>
           </div>
 
-          <div className="space-y-4 mt-8">
-            <div className="card">
-              <div className="flex justify-between items-start">
-                <div>
-                  <h3 className="font-semibold text-gray-900">Minneapolis</h3>
-                  <p className="text-sm text-gray-600 mt-1">
-                    Bonus rebates for insulation, ASHP, HPWH, and furnace
-                    upgrades. Must receive utility rebate first. Projects
-                    completed after Dec 15, 2025. First come, first served.
-                  </p>
-                </div>
-                <p className="font-semibold text-forest-600 text-right whitespace-nowrap ml-4">
-                  Up to $14,000
-                </p>
-              </div>
-              <p className="text-xs text-gray-500 mt-2">
-                Total program cap across all eligible improvements: $14,000 in
-                Green Zones · $5,000 all other Minneapolis residents. Multiple
-                projects can each earn a bonus up to the cap.
-              </p>
+          <h3 className="text-xl font-semibold text-gray-900 mb-4">
+            Rebate Amounts
+          </h3>
+          <div className="overflow-x-auto mb-8">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b text-left">
+                  <th className="py-3 pr-4 font-semibold">Scenario</th>
+                  <th className="py-3 pr-4 font-semibold">Rebate</th>
+                  <th className="py-3 font-semibold">Requirements</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b">
+                  <td className="py-3 pr-4 font-medium">Existing home</td>
+                  <td className="py-3 pr-4 font-bold text-brand-700">
+                    $1,100
+                  </td>
+                  <td className="py-3 text-gray-600">
+                    HSPF2 ≥ 7.8; paired with ≥ 92% AFUE gas furnace
+                  </td>
+                </tr>
+                <tr className="border-b">
+                  <td className="py-3 pr-4 font-medium">
+                    New construction
+                  </td>
+                  <td className="py-3 pr-4 font-bold">$400</td>
+                  <td className="py-3 text-gray-600">
+                    Same efficiency requirements; paired with new gas furnace
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 className="text-xl font-semibold text-gray-900 mb-4">
+            Eligibility
+          </h3>
+          <ul className="space-y-2 text-gray-700 mb-8">
+            <li className="flex items-start gap-2">
+              <span className="text-green-600 mt-1">✓</span>
+              Active Minnesota residential natural gas account with
+              CenterPoint
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-green-600 mt-1">✓</span>
+              Single-family homes, townhomes, and two- to four-plexes
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-green-600 mt-1">✓</span>
+              Heat pump and furnace must be listed as a system on the AHRI
+              directory
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-green-600 mt-1">✓</span>
+              No specific contractor certification required
+            </li>
+          </ul>
+
+          <h3 className="text-xl font-semibold text-gray-900 mb-4">
+            How to Apply
+          </h3>
+          <ol className="space-y-3 text-gray-700 mb-6">
+            <li>
+              <strong>1.</strong> Install a qualifying ducted ASHP paired
+              with a qualifying gas furnace.
+            </li>
+            <li>
+              <strong>2.</strong> Your heating dealer typically submits the
+              rebate through CenterPoint&apos;s dealer portal or by
+              mailing{" "}
               <a
-                href="https://www.mncee.org/minneapolis-bonus-rebate-program"
+                href="https://www.centerpointenergy.com/en-us/Documents/CIP-Rebate-Forms/CNP-1375.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-brand-600 text-xs font-medium hover:underline mt-2 inline-block"
+                className="text-brand-600 underline"
               >
-                Full program details at CEE ↗
+                form CNP-1375 (PDF)
               </a>
-            </div>
-
-            <div className="card">
-              <div className="flex justify-between items-start">
-                <div>
-                  <h3 className="font-semibold text-gray-900">Edina</h3>
-                  <p className="text-sm text-gray-600 mt-1">
-                    Community Climate Action Fund matches utility rebates for
-                    cold climate ASHPs. Home Energy Squad visit required within 36
-                    months.
-                  </p>
-                </div>
-                <p className="font-semibold text-forest-600 text-right whitespace-nowrap ml-4">
-                  50 – 100% match
-                </p>
-              </div>
-              <p className="text-xs text-gray-500 mt-2">
-                100% match for environmental justice bonus qualifying residents
-              </p>
-            </div>
-
-            <div className="card">
-              <div className="flex justify-between items-start">
-                <div>
-                  <h3 className="font-semibold text-gray-900">St. Louis Park</h3>
-                  <p className="text-sm text-gray-600 mt-1">
-                    Climate Champions cost-share matches utility rebates. Home
-                    Energy Squad visit required. Apply before project completion.
-                  </p>
-                </div>
-                <p className="font-semibold text-forest-600 text-right whitespace-nowrap ml-4">
-                  50 – 100% match
-                </p>
-              </div>
-            </div>
-
-            <div className="card">
-              <div className="flex justify-between items-start">
-                <div>
-                  <h3 className="font-semibold text-gray-900">Coon Rapids</h3>
-                  <p className="text-sm text-gray-600 mt-1">
-                    Green Homes Program matches 50% of awarded utility rebate for
-                    ASHPs.
-                  </p>
-                </div>
-                <p className="font-semibold text-forest-600 text-right whitespace-nowrap ml-4">
-                  Up to $250
-                </p>
-              </div>
-            </div>
-
-            <div className="card">
-              <div className="flex justify-between items-start">
-                <div>
-                  <h3 className="font-semibold text-gray-900">Northfield</h3>
-                  <p className="text-sm text-gray-600 mt-1">
-                    Matches 50% of awarded Xcel Energy heat pump rebates.
-                  </p>
-                </div>
-                <p className="font-semibold text-forest-600 text-right whitespace-nowrap ml-4">
-                  Up to $2,500
-                </p>
-              </div>
-            </div>
-
-            <div className="card">
-              <div className="flex justify-between items-start">
-                <div>
-                  <h3 className="font-semibold text-gray-900">Hopkins</h3>
-                  <p className="text-sm text-gray-600 mt-1">
-                    Climate Solutions Fund rebates for ENERGY STAR cold climate
-                    ASHPs. Income-qualified option available.
-                  </p>
-                </div>
-                <p className="font-semibold text-forest-600 text-right whitespace-nowrap ml-4">
-                  Varies
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="prose prose-lg max-w-none mt-8">
-            <p>
-              This list is not exhaustive. Other Minnesota cities may have
-              similar programs. Check with your city's sustainability or energy
-              office directly.
-            </p>
-          </div>
+              .
+            </li>
+            <li>
+              <strong>3.</strong> Applications must be submitted by December
+              31 of the installation year.
+            </li>
+            <li>
+              <strong>4.</strong> Processing takes 8–10 weeks. The rebate
+              check expires 90 days from issuance.
+            </li>
+          </ol>
+          <p className="text-sm text-gray-500">
+            Source:{" "}
+            <a
+              href="https://www.centerpointenergy.com/en-us/SaveEnergyandMoney/Pages/Residential-Ducted-Air-Source-Heat-Pump-Rebate.aspx?sa=mn&au=res"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-brand-600 underline"
+            >
+              CenterPoint Energy — MN Ducted Air Source Heat Pump Rebate
+            </a>
+          </p>
         </div>
       </section>
 
-      {/* HEAR/HOMES */}
-      <section className="py-12">
+      {/* Minnesota State Heat Pump Rebates (HEAR Program) */}
+      <section className="py-12 border-b">
         <div className="container-narrow">
-          <div className="prose prose-lg max-w-none">
-            <h2>HEAR and HOMES rebates (funded but not launched)</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            Minnesota State Heat Pump Rebates (HEAR Program)
+          </h2>
+          <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 mb-6">
+            <p className="text-amber-700 font-semibold mb-2">
+              Not yet available
+            </p>
+            <p className="text-gray-700 mb-4">
+              As of the Minnesota Department of Commerce&apos;s February 2,
+              2026 update: &quot;Save Energy Minnesota has not launched yet.
+              Minnesota is waiting for formal approval from US Department of
+              Energy to launch the program. There is no estimated program
+              launch date.&quot;
+            </p>
+            <p className="text-gray-700 mb-4">
+              When launched, HEAR eligibility and rebate amounts will vary
+              based on household income relative to area median income (AMI).
+              Minnesota has also approved a separate state Residential Heat
+              Pump Rebate program that is structured to work alongside HEAR,
+              subject to final program rules.
+            </p>
+            <p className="text-gray-700 mb-4">
+              <strong>Important:</strong> The Minnesota Department of
+              Commerce states that federal guidelines do not allow
+              retroactive rebates. Installations completed before the program
+              launches will not qualify for HEAR. The Department does not
+              recommend delaying necessary repairs, but homeowners planning
+              ahead should be aware of this limitation.
+            </p>
+            <p className="text-sm text-gray-500">
+              Source:{" "}
+              <a
+                href="https://mn.gov/commerce/energy/consumer/energy-programs/hear.jsp"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-brand-600 underline"
+              >
+                Minnesota Department of Commerce — HEAR Program
+              </a>
+            </p>
+          </div>
+          <p className="text-gray-600 text-sm">
+            If you may be income-qualified and can wait, monitoring the HEAR
+            launch could save significant money. If you need a system now,
+            utility rebates from Xcel Energy and CenterPoint Energy are
+            available today.
+          </p>
+        </div>
+      </section>
 
-            <div className="bg-amber-50 border border-amber-200 rounded-lg p-6 my-6 not-prose">
-              <p className="text-amber-800 font-medium mb-2">Current status</p>
-              <p className="text-gray-700 mb-3">
-                As of February 2, 2026, the Minnesota Department of Commerce
-                states: <strong>"Save Energy Minnesota has not launched yet.
-                Minnesota is waiting for formal approval from US Department of
-                Energy to launch the program. There is no estimated program
-                launch date."</strong>
-              </p>
-              <p className="text-sm text-gray-600">
-                This applies to HEAR, HOMES, the state heat pump rebate, and
-                residential electrical panel grants. These are state-administered
-                rebates (not tax credits) and will require program enrollment and
-                contractor approval when they launch.
-              </p>
-              <p className="text-xs text-gray-500 mt-3">
-                Program status last updated by MN Commerce: February 2, 2026.
-                Page last reviewed: {formattedDate}.
+      {/* Can Minnesota Heat Pump Rebates Be Combined? */}
+      <section className="py-12 border-b">
+        <div className="container-narrow">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            Can Minnesota Heat Pump Rebates Be Combined?
+          </h2>
+          <p className="text-gray-600 mb-6">
+            In many cases, yes. Here&apos;s how the available incentives can
+            potentially stack for Minnesota homeowners.
+          </p>
+
+          <div className="bg-brand-50 border border-brand-200 rounded-xl p-6 mb-8">
+            <h3 className="text-lg font-bold text-gray-900 mb-3">
+              Xcel Electric + CenterPoint Gas Customers
+            </h3>
+            <p className="text-gray-700 mb-4">
+              Homeowners with both Xcel electric and CenterPoint gas service
+              can potentially stack both utility rebates on a qualifying
+              dual-fuel cold-climate heat pump system:
+            </p>
+            <ul className="space-y-2 text-gray-700 mb-4">
+              <li className="flex justify-between">
+                <span>Xcel Energy cold-climate ASHP rebate</span>
+                <span className="font-semibold">$2,000</span>
+              </li>
+              <li className="flex justify-between">
+                <span>CenterPoint dual-fuel rebate</span>
+                <span className="font-semibold">$1,100</span>
+              </li>
+              <li className="flex justify-between border-t pt-2 mt-2">
+                <span className="font-bold">Combined utility rebates</span>
+                <span className="font-bold text-brand-700">$3,100</span>
+              </li>
+            </ul>
+            <p className="text-gray-600 text-sm">
+              The system must meet both programs&apos; requirements:
+              Xcel&apos;s cold-climate specs (NEEP listed, COP ≥ 1.75 at
+              5°F) and CenterPoint&apos;s dual-fuel requirement (paired with
+              ≥ 92% AFUE gas furnace, switchover at 40°F or lower). Final
+              eligibility depends on meeting both utilities&apos; equipment
+              and application requirements.
+            </p>
+          </div>
+
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">
+            What About Future State Programs?
+          </h3>
+          <p className="text-gray-600 mb-4">
+            CenterPoint&apos;s program terms state that their rebate is
+            &quot;independent of any state, electric utility, or co-op rebate
+            offers.&quot; The Minnesota Department of Commerce has indicated
+            that the state Residential Heat Pump Rebate is &quot;designed to
+            be stacked with the federal rebates.&quot; When the HEAR program
+            launches, combining state and utility rebates may be possible,
+            but specific stacking rules have not been finalized.
+          </p>
+          <p className="text-gray-600 text-sm">
+            We will update this section when the program launches and
+            stacking rules are confirmed.
+          </p>
+        </div>
+      </section>
+
+      {/* How to Apply for Heat Pump Rebates */}
+      <section className="py-12 border-b">
+        <div className="container-narrow">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            How to Apply for Heat Pump Rebates in Minnesota
+          </h2>
+          <p className="text-gray-600 mb-8">
+            The process depends on your utility provider. Here are the key
+            steps and links for each program.
+          </p>
+
+          <div className="space-y-6">
+            <div className="bg-white border border-gray-200 rounded-lg p-6">
+              <h3 className="font-semibold text-gray-900 mb-2">
+                Xcel Energy Customers
+              </h3>
+              <ol className="space-y-2 text-gray-700 text-sm mb-4">
+                <li>
+                  <strong>1.</strong> Find a participating contractor at{" "}
+                  <a
+                    href="https://hvacree.net/Xcel/Public_Search.cfm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-brand-600 underline"
+                  >
+                    HVACree.net/Xcel
+                  </a>{" "}
+                  (required for central and ground-source systems)
+                </li>
+                <li>
+                  <strong>2.</strong> Install qualifying equipment
+                </li>
+                <li>
+                  <strong>3.</strong> Apply online at{" "}
+                  <a
+                    href="https://www.xcelenergy.com/digital_application"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-brand-600 underline"
+                  >
+                    xcelenergy.com/digital_application
+                  </a>
+                </li>
+                <li>
+                  <strong>4.</strong> Deadline: September 30 of the year
+                  after installation
+                </li>
+              </ol>
+              <p className="text-gray-500 text-xs">
+                No pre-approval needed. Processing: ~8 weeks.
               </p>
             </div>
 
-            <h3>What these programs will offer (when they launch)</h3>
-
-            <p><strong>HEAR (Home Electrification and Appliance Rebates)</strong></p>
-            <ul>
-              <li>Point-of-sale rebates for income-qualified households</li>
-              <li>Covers heat pumps, heat pump water heaters, insulation, air sealing, electrical panels</li>
-              <li>Up to $8,000 for households below 80% AMI</li>
-              <li>Up to $4,000 for households between 80–150% AMI</li>
-              <li>Requires working with an approved contractor</li>
-              <li><strong>Cannot be applied retroactively</strong></li>
-            </ul>
-
-            <p><strong>HOMES (Home Efficiency Rebates)</strong></p>
-            <ul>
-              <li>Whole-home energy efficiency rebates</li>
-              <li>Amount based on modeled energy savings and household income</li>
-              <li>Requires BPI-2400 compliant energy assessment before upgrades</li>
-              <li>Minnesota is prioritizing weatherization upgrades</li>
-              <li>May be retroactive to August 16, 2022, but this is not guaranteed</li>
-            </ul>
-
-            <p><strong>State Heat Pump Rebate</strong></p>
-            <ul>
-              <li>Additional state rebate that stacks on top of HEAR</li>
-              <li>Requires HEAR approval first</li>
-              <li>Only for ENERGY STAR certified cold climate ASHPs</li>
-              <li>Will not launch until HEAR launches</li>
-            </ul>
-
-            <div className="bg-red-50 border border-red-200 rounded-lg p-6 my-6 not-prose">
-              <p className="text-red-800 font-medium mb-2">
-                Critical: do not install early if you plan to use HEAR
-              </p>
-              <p className="text-gray-700">
-                HEAR rebates are not retroactive. If you install a heat pump
-                before the program launches and before being approved through an
-                approved contractor, you will not be eligible for the HEAR
-                rebate or the state heat pump rebate. The Minnesota
-                Department of Commerce does not recommend delaying needed
-                repairs, but if you can wait and may be income-qualified,
-                tracking the launch is important.
+            <div className="bg-white border border-gray-200 rounded-lg p-6">
+              <h3 className="font-semibold text-gray-900 mb-2">
+                CenterPoint Energy Customers
+              </h3>
+              <ol className="space-y-2 text-gray-700 text-sm mb-4">
+                <li>
+                  <strong>1.</strong> Install qualifying ducted ASHP + gas
+                  furnace system
+                </li>
+                <li>
+                  <strong>2.</strong> Your dealer submits the rebate via{" "}
+                  <a
+                    href="https://www.centerpointenergy.com/en-us/Documents/CIP-Rebate-Forms/CNP-1375.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-brand-600 underline"
+                  >
+                    form CNP-1375
+                  </a>
+                </li>
+                <li>
+                  <strong>3.</strong> Deadline: December 31 of the
+                  installation year
+                </li>
+              </ol>
+              <p className="text-gray-500 text-xs">
+                Processing: 8–10 weeks. Rebate check expires 90 days from
+                issuance.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stacking */}
-      <section className="py-12 bg-gray-50">
-        <div className="container-narrow">
-          <div className="prose prose-lg max-w-none">
-            <h2>How stacking works (today vs. when HEAR launches)</h2>
-            <p>
-              Stacking depends on whether HEAR/HOMES has launched. Here's the
-              safe way to think about it.
-            </p>
-
-            <h3>Installing now (before HEAR launches)</h3>
-            <ol>
-              <li>
-                <strong>Utility rebate</strong> (Xcel, CenterPoint, Minnesota
-                Power, or your co-op)
-              </li>
-              <li>
-                <strong>City bonus rebate</strong> (often requires the utility
-                rebate first)
-              </li>
-            </ol>
-
-            <h3>Once HEAR launches (income-qualified households)</h3>
-            <ol>
-              <li>
-                <strong>HEAR rebate</strong> (point-of-sale, not retroactive)
-              </li>
-              <li>
-                <strong>State heat pump rebate</strong> (requires HEAR approval
-                first)
-              </li>
-              <li>
-                <strong>Utility rebate</strong> (if allowed alongside HEAR for
-                your utility/program)
-              </li>
-              <li>
-                <strong>City bonus rebate</strong> (often requires utility
-                documentation)
-              </li>
-            </ol>
-
-            <p>
-              Xcel's Whole Home Efficiency bonus (25% on standard rebates) can
-              also apply if you complete three or more qualifying projects within
-              two years and start with an energy audit.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Financing */}
-      <section className="py-12">
-        <div className="container-narrow">
-          <div className="prose prose-lg max-w-none">
-            <h2>Financing options</h2>
-            <p>
-              Even with rebates, heat pumps require significant upfront
-              investment. Minnesota has specific financing programs:
-            </p>
-            <ul>
-              <li>
-                <strong>Center for Energy and Environment (CEE)</strong> — Offers
-                several loan programs for energy upgrades including heat pumps
-              </li>
-              <li>
-                <strong>Minnesota Energy Loan Plus</strong> — Low-interest
-                financing for qualifying energy improvements
-              </li>
-              <li>
-                <strong>Home Energy Squad</strong> — Xcel/CenterPoint customers
-                can get subsidized energy audits ($200 rebate from Xcel) that
-                help plan upgrades and qualify for additional programs
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      {/* What To Do */}
-      <section className="py-12 bg-gray-50">
-        <div className="container-narrow">
-          <div className="bg-gray-900 text-white rounded-lg p-6">
-            <h2 className="text-xl font-semibold mb-4 text-white">
-              What to do next
-            </h2>
-            <ol className="space-y-3 text-gray-300">
-              <li>
-                <strong className="text-white">1.</strong> Identify your
-                utilities (electric + gas) — your rebates depend on who serves
-                your home.
-              </li>
-              <li>
-                <strong className="text-white">2.</strong> Check your city — do
-                they have a bonus rebate that stacks with utility programs?
-              </li>
-              <li>
-                <strong className="text-white">3.</strong> Get an energy audit —
-                Home Energy Squad visits help you qualify for more programs and
-                plan the right upgrades.
-              </li>
-              <li>
-                <strong className="text-white">4.</strong> If you may be
-                income-qualified (below 150% AMI), decide whether to wait for
-                HEAR or proceed with utility rebates now. Remember: HEAR is not
-                retroactive.
-              </li>
-              <li>
-                <strong className="text-white">5.</strong> If you proceed now,
-                stack utility + city rebates and enroll in Xcel's electric space
-                heating rate after installation.
-              </li>
-            </ol>
           </div>
         </div>
       </section>
@@ -806,250 +789,31 @@ export default function MinnesotaHeatPumpPage() {
             Frequently Asked Questions
           </h2>
           <div className="space-y-6">
-            <div className="border-b pb-6">
-              <h3 className="text-lg font-semibold mb-2">
-                Are there federal heat pump tax credits in Minnesota in 2026?
-              </h3>
-              <p className="text-gray-600">
-                No. Both Section 25C and 25D ended for property placed in
-                service after December 31, 2025. See our{" "}
-                <Link
-                  href="/federal-heat-pump-tax-credit-expired"
-                  className="text-brand-600 underline"
-                >
-                  federal credits explainer
-                </Link>{" "}
-                for details.
-              </p>
-            </div>
-            <div className="border-b pb-6">
-              <h3 className="text-lg font-semibold mb-2">
-                What heat pump rebates are available in Minnesota in 2026?
-              </h3>
-              <p className="text-gray-600">
-                Utility rebates are the primary incentive. Xcel Energy offers up
-                to $2,250 per heating ton for cold climate ASHPs. CenterPoint
-                offers $1,100 for ducted ASHPs paired with a gas furnace.
-                Minnesota Power and co-ops also have programs. Several cities
-                offer additional matching rebates.
-              </p>
-            </div>
-            <div className="border-b pb-6">
-              <h3 className="text-lg font-semibold mb-2">
-                Has Minnesota's HEAR/HOMES program launched?
-              </h3>
-              <p className="text-gray-600">
-                No. As of February 2, 2026, the program has not launched and
-                there is no estimated date. HEAR rebates cannot be applied
-                retroactively.
-              </p>
-            </div>
-            <div className="border-b pb-6">
-              <h3 className="text-lg font-semibold mb-2">
-                Can I stack utility and city rebates?
-              </h3>
-              <p className="text-gray-600">
-                Yes, in most cases. Cities like Minneapolis, Edina, St. Louis
-                Park, Coon Rapids, and Northfield offer bonuses that stack on
-                utility rebates. Most require the utility rebate first.
-              </p>
-            </div>
-            <div className="border-b pb-6">
-              <h3 className="text-lg font-semibold mb-2">
-                Does Xcel offer a lower electric rate for heat pump owners?
-              </h3>
-              <p className="text-gray-600">
-                Yes. The electric space heating rate is about 6.5¢/kWh from
-                October through May (check Xcel for current standard rate). Call Xcel at
-                800-895-4999 to enroll. Your heat pump must provide at least 50%
-                of your home's heating.
-              </p>
-            </div>
-            <div className="pb-6">
-              <h3 className="text-lg font-semibold mb-2">
-                Should I wait for HEAR/HOMES or install now?
-              </h3>
-              <p className="text-gray-600">
-                If you need a system now, utility and city rebates are available
-                today. If you can wait and may be income-qualified (below 150%
-                AMI), tracking the HEAR launch could mean significant additional
-                savings. The key factor: HEAR is not retroactive.
-              </p>
-            </div>
+            {faqData.map((faq) => (
+              <div key={faq.question} className="border-b pb-6">
+                <h3 className="text-lg font-semibold mb-2">
+                  {faq.question}
+                </h3>
+                <p className="text-gray-600">{faq.answer}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
+
+      {/* 2026 Minnesota rebate upgrade end */}
 
       {/* Sources */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-8 bg-gray-50">
         <div className="container-narrow">
-          <h2 className="text-xl font-bold text-gray-900 mb-6">Sources</h2>
-          <div className="space-y-4">
-            <a
-              href="https://mn.gov/commerce/energy/consumer/energy-programs/hear.jsp"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="card block hover:shadow-md transition-shadow"
-            >
-              <p className="font-semibold text-brand-600">
-                MN Dept. of Commerce — HEAR Program ↗
-              </p>
-              <p className="text-sm text-gray-500 mt-1">
-                Program status, eligibility, and "no estimated launch date"
-                notice (updated 2/2/2026)
-              </p>
-            </a>
-            <a
-              href="https://mn.gov/commerce/energy/consumer/energy-programs/homes.jsp"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="card block hover:shadow-md transition-shadow"
-            >
-              <p className="font-semibold text-brand-600">
-                MN Dept. of Commerce — HOMES Program ↗
-              </p>
-              <p className="text-sm text-gray-500 mt-1">
-                Whole-home efficiency rebate details
-              </p>
-            </a>
-            <a
-              href="https://mn.gov/commerce/energy/consumer/energy-programs/heat-pump.jsp"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="card block hover:shadow-md transition-shadow"
-            >
-              <p className="font-semibold text-brand-600">
-                MN Dept. of Commerce — State Heat Pump Rebate ↗
-              </p>
-              <p className="text-sm text-gray-500 mt-1">
-                State rebate program tied to HEAR
-              </p>
-            </a>
-            <a
-              href="https://mn.my.xcelenergy.com/s/residential/home-rebates"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="card block hover:shadow-md transition-shadow"
-            >
-              <p className="font-semibold text-brand-600">
-                Xcel Energy — Residential Rebates ↗
-              </p>
-              <p className="text-sm text-gray-500 mt-1">
-                Current rebate programs and amounts
-              </p>
-            </a>
-            <a
-              href="https://www.centerpointenergy.com/en-us/SaveEnergyandMoney/Pages/default.aspx?sa=mn&au=res"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="card block hover:shadow-md transition-shadow"
-            >
-              <p className="font-semibold text-brand-600">
-                CenterPoint Energy — MN Residential Programs ↗
-              </p>
-              <p className="text-sm text-gray-500 mt-1">
-                CIP rebate programs for gas customers
-              </p>
-            </a>
-            <a
-              href="https://www.mnashp.org/incentives-rates-financing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="card block hover:shadow-md transition-shadow"
-            >
-              <p className="font-semibold text-brand-600">
-                MN ASHP Collaborative — Incentives Database ↗
-              </p>
-              <p className="text-sm text-gray-500 mt-1">
-                Utility rebate lookup, city programs, and financing
-              </p>
-            </a>
-            <a
-              href="https://www.mncee.org/minneapolis-bonus-rebate-program"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="card block hover:shadow-md transition-shadow"
-            >
-              <p className="font-semibold text-brand-600">
-                CEE — Minneapolis Bonus Rebate Program ↗
-              </p>
-              <p className="text-sm text-gray-500 mt-1">
-                Up to $14,000 in Green Zones, $5,000 elsewhere
-              </p>
-            </a>
-            <a
-              href="https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="card block hover:shadow-md transition-shadow"
-            >
-              <p className="font-semibold text-brand-600">
-                IRS Fact Sheet 2025-05 — OBBBA Energy Credit FAQs ↗
-              </p>
-              <p className="text-sm text-gray-500 mt-1">
-                Official confirmation of 25C/25D termination
-              </p>
-            </a>
-          </div>
-          <p className="mt-6 text-sm text-gray-500">
-            Last verified: {formattedDate}
+          <p className="text-xs text-gray-400">
+            Sources: IRS.gov (25C, 25D, OBBB provisions), Xcel Energy MN
+            2024–2026 Rebate Summary, CenterPoint Energy MN Ducted ASHP
+            Rebate page, Minnesota Department of Commerce HEAR program page.
+            All information verified as of {lastVerified}. Rebate programs
+            can change without notice — verify current terms with your
+            utility before purchasing equipment.
           </p>
-        </div>
-      </section>
-
-      {/* Related */}
-      <section className="py-12">
-        <div className="container-narrow">
-          <h2 className="text-xl font-bold text-gray-900 mb-6">
-            Related guides
-          </h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <Link
-              href="/federal-heat-pump-tax-credit-expired"
-              className="card hover:shadow-md transition-shadow"
-            >
-              <h3 className="font-semibold text-gray-900 mb-2">
-                Federal Heat Pump Tax Credits Ended
-              </h3>
-              <p className="text-gray-600 text-sm">
-                Why 25C and 25D are gone, what replaced them, and what the
-                difference is between tax credits and rebates.
-              </p>
-            </Link>
-            <Link
-              href="/heat-pumps"
-              className="card hover:shadow-md transition-shadow"
-            >
-              <h3 className="font-semibold text-gray-900 mb-2">
-                Heat Pump Incentive Status
-              </h3>
-              <p className="text-gray-600 text-sm">
-                Day-accurate status on heat pump rebates by state.
-              </p>
-            </Link>
-            <Link
-              href="/battery"
-              className="card hover:shadow-md transition-shadow"
-            >
-              <h3 className="font-semibold text-gray-900 mb-2">
-                Home Battery Guide 2026
-              </h3>
-              <p className="text-gray-600 text-sm">
-                What changed for home batteries after federal credits ended.
-              </p>
-            </Link>
-            <Link
-              href="/about"
-              className="card hover:shadow-md transition-shadow"
-            >
-              <h3 className="font-semibold text-gray-900 mb-2">
-                About Our Methodology
-              </h3>
-              <p className="text-gray-600 text-sm">
-                How we verify incentive status and what our timestamps mean.
-              </p>
-            </Link>
-          </div>
         </div>
       </section>
     </>

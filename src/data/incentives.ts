@@ -21,7 +21,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: 'CA',
     stateName: 'California',
     status: 'limited',
-    lastVerified: '2026-02-18',
+    lastVerified: '2026-03-16',
     summary: 'California heat pump rebates are currently limited and vary by region. Some state and utility-run programs remain active, but funding caps, pauses, or waitlists apply in many areas. Federal tax credits (25C/25D) are not available in 2026. Availability depends on where you live and which utility serves your home.',
     sources: [
       {
