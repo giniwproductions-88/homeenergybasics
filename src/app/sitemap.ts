@@ -35,12 +35,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-  url: `${baseUrl}/heat-pumps/states/mn`,
-  lastModified: new Date(),
-  changeFrequency: 'weekly',
-  priority: 0.8,
+      url: `${baseUrl}/heat-pumps/states/mn`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
     },
-
+    {
+      url: `${baseUrl}/heat-pumps/states/me`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
     {
       url: `${baseUrl}/about`,
       lastModified: new Date(),
