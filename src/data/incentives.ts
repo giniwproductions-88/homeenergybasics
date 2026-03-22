@@ -1,4 +1,4 @@
-export type StateCode = "CA" | "MN" | "ME" | "MA" | "OR" | "WA" | "NY" | "CT";
+export type StateCode = "CA" | "MN" | "ME" | "MA" | "OR" | "WA" | "NY" | "CT" | "CO";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -249,6 +249,49 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "IRS 25C (expired)",
         url: "https://www.irs.gov/credits-deductions/energy-efficient-home-improvement-credit",
+      },
+    ],
+  },
+
+  CO: {
+    stateCode: "CO",
+    stateName: "Colorado",
+    status: "open",
+    lastVerified: "2026-03-22",
+    summary:
+      "Colorado offers HEAR rebates up to $8,000 for cold-climate heat pumps (income-qualified), Xcel Energy utility rebates up to $2,250/ton, and a $1,000 state tax credit for air-source systems. Federal 25C/25D credits ended December 31, 2025.",
+    sources: [
+      {
+        label: "Colorado HEAR program — Colorado Energy Office",
+        url: "https://energyoffice.colorado.gov/home-energy-rebates",
+      },
+      {
+        label: "Colorado HEAR FAQ — Colorado Energy Office",
+        url: "https://energyoffice.colorado.gov/ira-rebate-faq",
+      },
+      {
+        label: "Colorado state heat pump tax credit — Colorado Energy Office",
+        url: "https://energyoffice.colorado.gov/hptc",
+      },
+      {
+        label: "Xcel Energy heat pumps — residential",
+        url: "https://co.my.xcelenergy.com/s/residential/heating-cooling/heat-pumps",
+      },
+      {
+        label: "Colorado Springs Utilities — rebates and incentives",
+        url: "https://www.csu.org/rebates-incentives/residential-hvac",
+      },
+      {
+        label: "Holy Cross Energy — residential rebates 2026",
+        url: "https://www.holycross.com/member-programs/energy-efficiency-and-rebates/residential-rebates-2026",
+      },
+      {
+        label: "Weatherization Assistance Program — Colorado Energy Office",
+        url: "https://energyoffice.colorado.gov/weatherization-assistance-program",
+      },
+      {
+        label: "Colorado Sun — heat pump installations doubled in 2025",
+        url: "https://coloradosun.com/2026/02/19/heat-pump-colorado-rebates-contractors/",
       },
     ],
   },
