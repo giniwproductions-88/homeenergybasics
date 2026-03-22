@@ -1,4 +1,4 @@
-export type StateCode = "CA" | "MN" | "ME" | "MA" | "OR" | "WA" | "NY" | "CT" | "CO";
+export type StateCode = "CA" | "MN" | "ME" | "MA" | "OR" | "WA" | "NY" | "CT" | "CO" | "TX";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -292,6 +292,53 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "Colorado Sun — heat pump installations doubled in 2025",
         url: "https://coloradosun.com/2026/02/19/heat-pump-colorado-rebates-contractors/",
+      },
+    ],
+  },
+
+  TX: {
+    stateCode: "TX",
+    stateName: "Texas",
+    status: "limited",
+    lastVerified: "2026-03-22",
+    summary:
+      "Texas has no statewide heat pump rebate program and no state income tax. Rebates come from your local utility and vary widely. Austin Energy offers approximately $3,000 for whole-home projects plus 0% APR financing. Oncor provides performance-based incentives through approved contractors. CenterPoint offers up to $500 per unit. CPS Energy pays $90–$310 per ton. Federal tax credits (25C/25D) ended December 31, 2025. Texas received $690 million in IRA HOMES/HEAR rebate funding, but SECO has not launched the program.",
+    sources: [
+      {
+        label: "Austin Energy — Rebates & Incentives",
+        url: "https://savings.austinenergy.com/residential/offerings",
+      },
+      {
+        label: "Oncor — Home Energy Efficiency Program",
+        url: "https://www.oncor.com/content/oncorwww/talot/en/home/get-started/residential/home-efficiency.html",
+      },
+      {
+        label: "CenterPoint Energy — Residential Efficiency Programs",
+        url: "https://www.centerpointenergy.com/en-us/residential/save-energy-money/electric-efficiency-programs/residential-electric-efficiency?sa=ho",
+      },
+      {
+        label: "CPS Energy — SaveNow Rebates",
+        url: "https://resi-savenow.cpsenergy.com/",
+      },
+      {
+        label: "SECO — IRA Rebates (HOMES/HEAR Status)",
+        url: "https://comptroller.texas.gov/programs/seco/funding/ira/",
+      },
+      {
+        label: "IRS 25C (expired)",
+        url: "https://www.irs.gov/credits-deductions/energy-efficient-home-improvement-credit",
+      },
+      {
+        label: "AEP Texas — Residential Programs",
+        url: "https://aeptxsaves.com/residential-programs/",
+      },
+      {
+        label: "CoServ — Energy Saving Programs",
+        url: "https://www.coserv.com/energy-solutions/energy-savings/energy-saving-programs/",
+      },
+      {
+        label: "TDHCA — Weatherization Assistance Program",
+        url: "https://www.tdhca.texas.gov/ca/wap",
       },
     ],
   },
