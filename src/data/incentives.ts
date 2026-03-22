@@ -1,4 +1,4 @@
-export type StateCode = "CA" | "MN" | "ME" | "OR" | "WA" | "NY";
+export type StateCode = "CA" | "MN" | "ME" | "MA" | "OR" | "WA" | "NY";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -122,6 +122,37 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "NE Heat Pump Accelerator",
         url: "https://portal.ct.gov/deep/energy/new-england-heat-pump-accelerator",
+      },
+    ],
+  },
+
+  MA: {
+    stateCode: "MA",
+    stateName: "Massachusetts",
+    status: "open",
+    lastVerified: "2026-03-21",
+    summary:
+      "Massachusetts heat pump rebates are active through Mass Save. Whole-home rebates are $2,650 per ton (max $8,500), partial-home $1,125 per ton (max $8,500), and basic $250 per ton (max $2,500). A $500 sizing bonus and $500 weatherization bonus are available. R-410A systems no longer qualify — only next-generation refrigerants (R-32, R-454B). Federal tax credits (25C/25D) ended December 31, 2025. The 0% HEAT Loan provides up to $25,000 in financing.",
+    sources: [
+      {
+        label: "Mass Save — Air Source Heat Pumps",
+        url: "https://www.masssave.com/residential/rebates-offers-services/heating-and-cooling/heat-pumps/air-source-heat-pumps",
+      },
+      {
+        label: "Mass Save — Heat Pumps Overview",
+        url: "https://www.masssave.com/residential/rebates-offers-services/heating-and-cooling/heat-pumps",
+      },
+      {
+        label: "Mass Save — Enhanced Rebates (Income-Eligible)",
+        url: "https://www.masssave.com/residential/rebates-offers-services/income-based-offers/save-with-enhanced-incentives/enhanced-heating-and-cooling-rebates",
+      },
+      {
+        label: "MA DOER — Energy Rebates & Incentives",
+        url: "https://www.mass.gov/guides/massachusetts-energy-rebates-incentives",
+      },
+      {
+        label: "IRS 25C (expired)",
+        url: "https://www.irs.gov/credits-deductions/energy-efficient-home-improvement-credit",
       },
     ],
   },
