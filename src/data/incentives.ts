@@ -1,4 +1,4 @@
-export type StateCode = "CA" | "MN" | "ME" | "MA" | "OR" | "WA" | "NY";
+export type StateCode = "CA" | "MN" | "ME" | "OR" | "WA" | "NY";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -122,57 +122,6 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "NE Heat Pump Accelerator",
         url: "https://portal.ct.gov/deep/energy/new-england-heat-pump-accelerator",
-      },
-    ],
-  },
-
-  MA: {
-    stateCode: "MA",
-    stateName: "Massachusetts",
-    status: "open",
-    lastVerified: "2026-03-17",
-    summary:
-      "Massachusetts heat pump rebates remain among the strongest in the country through Mass Save, even after federal tax credits (25C/25D) ended December 31, 2025. Whole-home air-source rebates up to $8,500, ground-source up to $13,500, and income-qualified households can receive up to $25,000 or no-cost installations. 0% HEAT Loan financing up to $25,000 is available. HEAR rebates are authorized but not yet live for individual homeowners.",
-    sources: [
-      {
-        label: "Mass Save — Air Source Heat Pumps",
-        url: "https://www.masssave.com/residential/rebates-offers-services/heating-and-cooling/heat-pumps/air-source-heat-pumps",
-      },
-      {
-        label: "Mass Save — Ground Source Heat Pumps",
-        url: "https://www.masssave.com/residential/rebates-offers-services/heating-and-cooling/heat-pumps/ground-source-heat-pumps",
-      },
-      {
-        label: "Mass Save — Heat Pump Water Heaters",
-        url: "https://www.masssave.com/residential/rebates-offers-services/water-heating/heat-pump-water-heaters",
-      },
-      {
-        label: "Mass Save — Enhanced Income-Based Rebates",
-        url: "https://www.masssave.com/residential/rebates-offers-services/income-based-offers/save-with-enhanced-incentives",
-      },
-      {
-        label: "Mass Save — HEAT Loan (0% Financing)",
-        url: "https://www.masssave.com/residential/rebates-offers-services/financing",
-      },
-      {
-        label: "Cape Light Compact — Heat Pumps",
-        url: "https://www.capelightcompact.org/program/heat-pumps/",
-      },
-      {
-        label: "Mass.gov — Seasonal Heat Pump Electric Rates",
-        url: "https://www.mass.gov/info-details/residential-electric-seasonal-heat-pump-rates",
-      },
-      {
-        label: "MassCEC — Ground-Source Heat Pumps",
-        url: "https://goclean.masscec.com/clean-energy-solutions/ground-source-heat-pumps/",
-      },
-      {
-        label: "Mass.gov — DOER Federal Funding (HEAR/HOMES)",
-        url: "https://www.mass.gov/info-details/federal-funding-opportunities",
-      },
-      {
-        label: "IRS — OBBBA Energy Credit FAQs (25C/25D Termination)",
-        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
       },
     ],
   },
