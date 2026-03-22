@@ -1,4 +1,4 @@
-export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "OR" | "WA" | "NY" | "CT" | "CO" | "TX" | "NJ" | "PA";
+export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "OR" | "WA" | "NY" | "CT" | "CO" | "TX" | "NJ" | "PA" | "VA";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -496,6 +496,49 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "PA PUC — Act 129 Phase V Approval",
         url: "https://www.puc.pa.gov/press-release/2025/puc-approves-next-phase-of-state-energy-efficiency-program-06182025",
+      },
+    ],
+  },
+
+  VA: {
+    stateCode: "VA",
+    stateName: "Virginia",
+    status: "limited",
+    lastVerified: "2026-03-22",
+    summary:
+      "Federal tax credits expired Dec 31, 2025. Virginia's $188M in IRA-funded HOMES and HEAR rebates remain pending — Virginia Energy is assessing the impact of federal funding freezes. Utility rebates are the primary incentive: Washington Gas offers up to $2,000 for dual-fuel heat pumps in Northern Virginia, Dominion Energy offers HPWH rebates of $250–$400 and central HP rebates through its Home Retrofit Program, and Appalachian Power provides $300–$400 for mini-splits. Most electric cooperatives offer no direct rebates. Low-income households can access free upgrades through WAP and Dominion's EnergyShare program.",
+    sources: [
+      {
+        label: "Virginia Energy — Home Energy Rebates FAQ",
+        url: "https://www.energy.virginia.gov/energy-efficiency/HomeEnergyRebatesFrequentlyAskedQuestions.shtml",
+      },
+      {
+        label: "IRS — OBBBA FAQ (25C/25D Expiration)",
+        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
+      },
+      {
+        label: "Dominion Energy Savings — Water & Energy Rebates",
+        url: "https://www.domsavings.com/home-program/water-energy-rebate",
+      },
+      {
+        label: "Washington Gas — VA Home Heating Rebates",
+        url: "https://wgsmartsavings.com/programs-rebates/va/home-heating",
+      },
+      {
+        label: "Appalachian Power — TakeCharge VA Rebates",
+        url: "https://takechargeva.com/rebates",
+      },
+      {
+        label: "Virginia DHCD — Weatherization Assistance Program",
+        url: "https://www.dhcd.virginia.gov/wx",
+      },
+      {
+        label: "Charlottesville — Retrofit Mini Grant",
+        url: "https://www.charlottesville.gov/m/newsflash/home/detail/2241",
+      },
+      {
+        label: "Virginia Energy Sense — Incentives & Rebates",
+        url: "https://www.virginiaenergysense.org/incentives-and-rebates/",
       },
     ],
   },
