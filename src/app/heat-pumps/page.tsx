@@ -82,24 +82,6 @@ export default function HeatPumpsPage() {
         </div>
       </section>
 
-      {/* Coming Soon */}
-      <section className="py-12 bg-gray-50">
-        <div className="container-wide">
-          <h2 className="text-xl font-bold text-gray-900 mb-6">More States Coming</h2>
-          <p className="text-gray-600 mb-6">
-            We&apos;re adding more states soon. Priority list based on incentive availability:
-          </p>
-          <div className="grid md:grid-cols-4 gap-4">
-            {['New York', 'Massachusetts', 'Washington', 'Oregon'].map((state) => (
-              <div key={state} className="card bg-white">
-                <p className="font-medium text-gray-900">{state}</p>
-                <p className="text-sm text-gray-500">Coming soon</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Related */}
       <section className="py-12">
         <div className="container-wide">
