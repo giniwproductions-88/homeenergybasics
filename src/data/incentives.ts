@@ -1,4 +1,4 @@
-export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "OR" | "WA" | "NY" | "CT" | "CO" | "TX" | "NJ" | "PA" | "VA";
+export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -300,6 +300,41 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "Colorado Sun — heat pump installations doubled in 2025",
         url: "https://coloradosun.com/2026/02/19/heat-pump-colorado-rebates-contractors/",
+      },
+    ],
+  },
+
+  IL: {
+    stateCode: "IL",
+    stateName: "Illinois",
+    status: "open",
+    lastVerified: "2026-03-22",
+    summary:
+      "Federal tax credits expired. Utility rebates up to $2,000 are available through ComEd, Ameren Illinois, MidAmerican Energy, and some municipal utilities. Illinois HEAR and HOMES rebates are still pending launch.",
+    sources: [
+      {
+        label: "Illinois EPA — Energy Rebates",
+        url: "https://epa.illinois.gov/topics/energy/energy-rebates.html",
+      },
+      {
+        label: "ComEd — Heating & Cooling Rebates",
+        url: "https://www.comed.com/ways-to-save/for-your-home/rebates-discounts/heating-cooling-discounts",
+      },
+      {
+        label: "Ameren Illinois — HVAC Discounts",
+        url: "https://amerenillinoissavings.com/residential/products-discounts-and-rebates/hvac-and-water-heating-discounts/",
+      },
+      {
+        label: "MidAmerican Energy — Home Discounts",
+        url: "https://www.midamericanenergy.com/home-discounts-and-rebates",
+      },
+      {
+        label: "IRS — OBBB FAQs",
+        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
+      },
+      {
+        label: "EIA — Illinois State Profile",
+        url: "https://www.eia.gov/state/analysis.php?sid=IL",
       },
     ],
   },
