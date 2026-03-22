@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { incentives } from '@/data/incentives'
-import StatusCard from '@/components/StatusCard'
+import StateFilter from '@/components/StateFilter'
 
 export const metadata: Metadata = {
   title: 'Heat Pump Incentive Status | Home Energy Basics',
@@ -12,6 +12,8 @@ export const metadata: Metadata = {
 }
 
 export default function HeatPumpsPage() {
+  const allStates = Object.values(incentives);
+
   return (
     <>
       {/* Hero */}
@@ -50,22 +52,10 @@ export default function HeatPumpsPage() {
         </div>
       </section>
 
-      {/* Status Cards */}
+      {/* State Filter + Cards */}
       <section className="py-12">
-        <div className="container-narrow space-y-8">
-          {Object.values(incentives).map((incentive) => (
-            <div key={incentive.stateCode}>
-              <StatusCard incentive={incentive} />
-              <div className="mt-4">
-                <Link
-                  href={`/heat-pumps/states/${incentive.stateCode.toLowerCase()}`}
-                  className="btn-primary inline-block"
-                >
-                  View {incentive.stateName} program details &rarr;
-                </Link>
-              </div>
-            </div>
-          ))}
+        <div className="container-narrow">
+          <StateFilter states={allStates} />
         </div>
       </section>
 
