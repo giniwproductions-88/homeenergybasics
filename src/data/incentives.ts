@@ -229,8 +229,8 @@ export const incentives: Record<StateCode, StateIncentive> = {
         url: "https://www.pse.com/en/rebates/heating/electric-resistance-to-air-source-heat-pump-conversion-rebate",
       },
       {
-        label: "PSE — HEAR Program",
-        url: "https://www.pse.com/en/rebates/hear",
+        label: "PSE — Heating Rebates",
+        url: "https://www.pse.com/en/rebates/heating",
       },
       {
         label: "Seattle City Light — Home Energy Solutions",
