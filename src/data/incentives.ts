@@ -1,4 +1,4 @@
-export type StateCode = "CA" | "MN" | "ME" | "MA" | "OR" | "WA" | "NY" | "CT" | "CO" | "TX" | "NJ";
+export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "OR" | "WA" | "NY" | "CT" | "CO" | "TX" | "NJ";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -390,6 +390,57 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "NJNG SAVEGREEN Heat Pump Rebates",
         url: "https://www.savegreen.com/applications/residential-applications/hvac-and-water-heating-rebate-application.aspx",
+      },
+      {
+        label: "IRS — 25C/25D Expiration (OBBBA FAQ)",
+        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
+      },
+    ],
+  },
+
+  MD: {
+    stateCode: "MD",
+    stateName: "Maryland",
+    status: "open",
+    lastVerified: "2026-03-22",
+    summary:
+      "EmPOWER Maryland offers up to $15,000 for electrification projects (75% of cost) through all five major utilities. Midstream rebates of $800–$1,700 per heat pump are available instantly through contractors. Potomac Edison's Switch-to-Electric program adds up to $4,000 on top. Montgomery County's Electrify MC adds $2,500. Federal 25C/25D expired. HEAR/HOMES ($136.8M) not yet launched.",
+    sources: [
+      {
+        label: "BGE Smart Energy — Heating & Cooling",
+        url: "https://bgesmartenergy.com/residential/help-me-save/heating-cooling",
+      },
+      {
+        label: "Pepco — HVAC Efficiency Program",
+        url: "https://homeenergysavings.pepco.com/md/residential/hvac-efficiency-program",
+      },
+      {
+        label: "Potomac Edison — Switch to Electric",
+        url: "https://energysavemd-home.com/switch-to-electric-program/",
+      },
+      {
+        label: "Delmarva Power — HVAC Efficiency",
+        url: "https://homeenergysavings.delmarva.com/md/residential/hvac-efficiency-program",
+      },
+      {
+        label: "SMECO — Heat Pump Water Heaters",
+        url: "https://www.smeco.coop/energy-efficiency/residential-programs/appliance-rebates/heat-pump-water-heaters/",
+      },
+      {
+        label: "MEA — IRA Rebates Status",
+        url: "https://energy.maryland.gov/Pages/IRArebates.aspx",
+      },
+      {
+        label: "MEA — Financial Resources & Incentives",
+        url: "https://energy.maryland.gov/Pages/BuildingIncentives.aspx",
+      },
+      {
+        label: "Montgomery County — Electrify MC",
+        url: "https://www.montgomerycountymd.gov/DEP/energy/homes/electrify-mc.html",
+      },
+      {
+        label: "DHCD — BeSMART Home Loans",
+        url: "https://dhcd.maryland.gov/Energy-Home-Repair/pages/homeowner-loans/besmart.aspx",
       },
       {
         label: "IRS — 25C/25D Expiration (OBBBA FAQ)",
