@@ -1,4 +1,4 @@
-export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "OR" | "WA" | "NY" | "CT" | "CO" | "TX" | "NJ";
+export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "OR" | "WA" | "NY" | "CT" | "CO" | "TX" | "NJ" | "PA";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -445,6 +445,57 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "IRS — 25C/25D Expiration (OBBBA FAQ)",
         url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
+      },
+    ],
+  },
+
+  PA: {
+    stateCode: "PA",
+    stateName: "Pennsylvania",
+    status: "limited",
+    lastVerified: "2026-03-22",
+    summary:
+      "Pennsylvania heat pump incentives are limited to utility rebates under Act 129 Phase IV (expiring May 31, 2026). PECO customers can stack up to $1,950 with EAP bonuses. PPL offers $350–$1,250, Duquesne Light $375–$425, FirstEnergy $200–$325, UGI up to $1,250. Federal 25C/25D ended December 31, 2025. Penn Energy Savers ($258.9M HEAR/HOMES) has not launched — awaiting federal approval.",
+    sources: [
+      {
+        label: "PA DEP — Inflation Reduction Act / Penn Energy Savers",
+        url: "https://www.pa.gov/agencies/dep/residents/saving-energy/inflation-reduction-act",
+      },
+      {
+        label: "Penn Energy Savers (consumer site)",
+        url: "https://www.pennenergysavers.com",
+      },
+      {
+        label: "PHFA HEELP Loan Program",
+        url: "https://www.phfa.org/programs/repairs/heelp.aspx",
+      },
+      {
+        label: "EAP Residential HVAC Rebate Program",
+        url: "https://www.eap.org/rebate/2026-hvac-rebate",
+      },
+      {
+        label: "PPL Electric Savings Portal",
+        url: "https://ppl.clearesult.com/",
+      },
+      {
+        label: "Duquesne Light Watt Choices",
+        url: "https://www.dlcwattchoices.com/residentialrebates/",
+      },
+      {
+        label: "FirstEnergy PA Rebates",
+        url: "https://rebates.energysavepa.com/",
+      },
+      {
+        label: "UGI Electric Equipment Rebates",
+        url: "https://www.ugi.com/rebates-for-home/electric/equipment-rebate-program/",
+      },
+      {
+        label: "Philadelphia Energy Authority",
+        url: "https://philaenergy.org",
+      },
+      {
+        label: "PA PUC — Act 129 Phase V Approval",
+        url: "https://www.puc.pa.gov/press-release/2025/puc-approves-next-phase-of-state-energy-efficiency-program-06182025",
       },
     ],
   },
