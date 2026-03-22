@@ -21,21 +21,33 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "CA",
     stateName: "California",
     status: "limited",
-    lastVerified: "2026-02-18",
+    lastVerified: "2026-03-22",
     summary:
-      "California heat pump rebates are currently limited and vary by region. Some state and utility-run programs remain active, but funding caps, pauses, or waitlists apply in many areas. Federal tax credits (25C/25D) are not available in 2026. Availability depends on where you live and which utility serves your home.",
+      "Most California statewide heat pump rebates are fully reserved. TECH Clean California single-family incentives and HEEHRA single-family rebates are exhausted statewide. Federal tax credits (25C/25D) ended December 31, 2025. Utility rebates remain available — SMUD boosted incentives to $3,000–$4,000 in February 2026. HOMES (~$291M) and HEEHRA Phase II ($152M) are funded but not yet launched.",
     sources: [
       {
-        label: "TECH Clean California",
-        url: "https://techcleancalifornia.com/",
+        label: "TECH Clean California — Incentives",
+        url: "https://techcleanca.com/incentives/",
       },
       {
-        label: "IRS Energy Credits (expired)",
+        label: "TECH — HEEHRA Rebates",
+        url: "https://techcleanca.com/incentives/heehrarebates/",
+      },
+      {
+        label: "CA Energy Commission — IRA Rebates",
+        url: "https://www.energy.ca.gov/programs-and-topics/programs/inflation-reduction-act-residential-energy-rebate-programs",
+      },
+      {
+        label: "SMUD — Heat Pump Rebates",
+        url: "https://www.smud.org/Rebates-and-Savings-Tips/Rebates-for-My-Home/Heating-and-Cooling-Rebates",
+      },
+      {
+        label: "The Switch Is On — Incentive Finder",
+        url: "https://incentives.switchison.org/",
+      },
+      {
+        label: "IRS 25C (expired)",
         url: "https://www.irs.gov/credits-deductions/energy-efficient-home-improvement-credit",
-      },
-      {
-        label: "CPUC Self-Generation Incentive Program",
-        url: "https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/demand-side-management/self-generation-incentive-program",
       },
     ],
   },
@@ -50,35 +62,35 @@ export const incentives: Record<StateCode, StateIncentive> = {
     sources: [
       {
         label: "Xcel Energy Heat Pumps",
-        url: "https://www.xcelenergy.com/programs_and_rebates/residential_programs_and_rebates/heating_and_cooling/air_source_heat_pumps",
+        url: "https://mn.my.xcelenergy.com/s/residential/heating-cooling/heat-pumps",
       },
       {
-        label: "CenterPoint Energy Rebates",
-        url: "https://www.centerpointenergy.com/en-us/residential/save-energy-money/rebates-programs/heating-cooling",
+        label: "CenterPoint Energy — Ducted ASHP Rebate",
+        url: "https://www.centerpointenergy.com/en-us/SaveEnergyandMoney/Pages/Residential-Ducted-Air-Source-Heat-Pump-Rebate.aspx?sa=mn&au=res",
       },
       {
-        label: "Minnesota Power Rebates",
-        url: "https://www.mnpower.com/residential/rebates",
+        label: "Minnesota Power — ASHP Rebates",
+        url: "https://www.mnpower.com/ProgramsRebates/ASHPRebates",
       },
       {
-        label: "MN Commerce Dept — HEAR Status",
-        url: "https://mn.gov/commerce/energy/consumer/save-energy-money/home-energy-rebate/",
+        label: "MN Commerce — Save Energy Minnesota",
+        url: "https://mn.gov/commerce/energy/consumer/energy-programs/save-energy-mn.jsp",
       },
       {
         label: "IRS 25C (expired)",
         url: "https://www.irs.gov/credits-deductions/energy-efficient-home-improvement-credit",
       },
       {
-        label: "Minneapolis Home Energy Rebate",
-        url: "https://www.minneapolismn.gov/resident-services/property-housing/housing-assistance/home-energy/",
+        label: "Minneapolis Energy Rebates",
+        url: "https://www.minneapolismn.gov/government/programs-initiatives/environmental-programs/green-cost-share/energy-efficiency/energy-rebates/",
       },
       {
-        label: "Edina Energy Rebate",
-        url: "https://www.edinamn.gov/1614/Energy-Rebate-Programs",
+        label: "MN ASHP Collaborative — All Incentives",
+        url: "https://www.mnashp.org/incentives-rates-financing",
       },
       {
-        label: "Xcel Clean Heat Plan",
-        url: "https://co.my.xcelenergy.com/s/savings-offerings/residential/clean-heat-plan",
+        label: "Xcel Energy Programs & Rebates",
+        url: "https://www.xcelenergy.com/programs_and_rebates",
       },
     ],
   },
