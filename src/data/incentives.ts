@@ -23,7 +23,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     status: "limited",
     lastVerified: "2026-03-22",
     summary:
-      "Most California statewide heat pump rebates are fully reserved. TECH Clean California single-family incentives and HEEHRA single-family rebates are exhausted statewide. Federal tax credits (25C/25D) ended December 31, 2025. Utility rebates remain available — SMUD boosted incentives to $3,000–$4,000 in February 2026. HOMES (~$291M) and HEEHRA Phase II ($152M) are funded but not yet launched.",
+      "Most California statewide heat pump rebates are fully reserved. TECH Clean California single-family incentives and HEEHRA single-family rebates are exhausted statewide. Federal tax credits (25C/25D) ended December 31, 2025. Utility rebates remain — SMUD offers up to $3,000–$4,000 and LADWP up to $2,500/ton. HOMES (~$291M) and HEEHRA Phase II ($152M) are funded but not yet launched.",
     sources: [
       {
         label: "TECH Clean California",
@@ -36,6 +36,14 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "SMUD Heat Pump Rebates",
         url: "https://www.smud.org/en/rebates-and-savings",
+      },
+      {
+        label: "LADWP — Consumer Rebate Program",
+        url: "https://www.ladwp.com/residential-services/assistance-programs/consumer-rebate-program",
+      },
+      {
+        label: "CA Energy Commission — IRA Rebates",
+        url: "https://www.energy.ca.gov/programs-and-topics/programs/inflation-reduction-act-residential-energy-rebate-programs",
       },
       {
         label: "IRS 25C (expired)",

@@ -11,6 +11,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/ca",
   },
+  openGraph: {
+    title: "California Heat Pump Rebates 2026",
+    description:
+      "TECH and HEEHRA are exhausted. SMUD offers up to $4,000, LADWP up to $2,500/ton. HOMES and HEEHRA Phase II are coming. Here's the full picture.",
+    url: "https://homeenergybasics.com/heat-pumps/states/ca",
+    type: "article",
+  },
 };
 
 export default function CaliforniaPage() {
@@ -34,12 +41,12 @@ export default function CaliforniaPage() {
       question:
         "Which California utilities offer the best heat pump rebates right now?",
       answer:
-        "SMUD (Sacramento) boosted rebates in February 2026 — up to $3,000 for gas-to-electric HVAC and $4,000 for gas-to-electric water heater conversions. LADWP (Los Angeles) and other municipal utilities run their own programs. PG&E, SCE, and SDG&E primarily serve as administrators for statewide programs like TECH and SGIP rather than offering standalone heat pump rebates. Check The Switch Is On incentive finder for your specific utility.",
+        "SMUD (Sacramento) boosted rebates in February 2026 — up to $3,000 for gas-to-electric HVAC and $4,000 for gas-to-electric water heater conversions. LADWP (Los Angeles) offers up to $2,500 per ton for heat pump HVAC and $2,500 for heat pump water heaters — a 3-ton system can yield up to $7,500. PG&E, SCE, and SDG&E primarily serve as administrators for statewide programs rather than offering standalone heat pump rebates. Check The Switch Is On incentive finder for your specific utility.",
     },
     {
       question: "Should I wait for HOMES or install my heat pump now?",
       answer:
-        "It depends on your utility. If your utility offers a strong rebate now (like SMUD), there's no reason to wait — utility rebates are typically stackable with future state and federal programs. If you're in a service area with no current utility rebate, the math changes. HOMES and HEEHRA Phase II have no announced launch date, so waiting could mean months or longer. Programs are not retroactive.",
+        "It depends on your utility. If your utility offers a strong rebate now (like SMUD or LADWP), there's no reason to wait — utility rebates are typically stackable with future state and federal programs. If you're in a service area with no current utility rebate, the math changes. HOMES and HEEHRA Phase II have no announced launch date, so waiting could mean months or longer. Programs are not retroactive.",
     },
     {
       question:
@@ -106,6 +113,9 @@ export default function CaliforniaPage() {
             <p className="text-sm text-gray-500 mt-4">
               Last updated: {lastVerified}
             </p>
+            <p className="text-xs text-gray-400 mt-1">
+              Rates and program availability may change after this date.
+            </p>
           </div>
         </div>
       </section>
@@ -151,9 +161,10 @@ export default function CaliforniaPage() {
                 ✅ Still Available
               </p>
               <p className="text-gray-700 text-sm">
-                Utility rebates (SMUD up to $3,000–$4,000, others vary).
-                California Energy Smart Homes ($4,250+). GoGreen Financing.
-                HOMES and HEEHRA Phase II coming (not yet launched).
+                Utility rebates (SMUD up to $3,000–$4,000, LADWP up to
+                $2,500/ton, others vary). California Energy Smart Homes
+                ($4,250+). GoGreen Financing. HOMES and HEEHRA Phase II coming
+                (not yet launched).
               </p>
             </div>
           </div>
@@ -274,6 +285,41 @@ export default function CaliforniaPage() {
               .
             </p>
 
+            <div className="not-prose my-8">
+              <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+                <p className="text-green-800 font-bold text-lg mb-3">
+                  🔥 LADWP (Los Angeles) — Boosted November 2025
+                </p>
+                <p className="text-gray-700 mb-4">
+                  LADWP significantly increased rebates effective November 1,
+                  2025, making it one of the richest utility programs in
+                  California:
+                </p>
+                <ul className="space-y-2 text-gray-700">
+                  <li>
+                    <strong>Heat pump HVAC:</strong> Up to $2,500/ton (a
+                    typical 3-ton system = up to $7,500)
+                  </li>
+                  <li>
+                    <strong>Heat pump water heater:</strong> Up to $2,500/unit
+                  </li>
+                </ul>
+                <p className="text-sm text-gray-500 mt-3">
+                  Universal — no income qualification. Building permit required.
+                  Apply within 12 months of installation. Visit{" "}
+                  <a
+                    href="https://www.ladwp.com/residential-services/assistance-programs/consumer-rebate-program"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-brand-600 hover:underline"
+                  >
+                    ladwp.com
+                  </a>
+                  .
+                </p>
+              </div>
+            </div>
+
             <h3>California Energy Smart Homes Program</h3>
             <p>
               For homeowners going fully electric (capping their gas meter),
@@ -324,7 +370,8 @@ export default function CaliforniaPage() {
                   California has over 60 electric utilities. The rebates
                   available to you depend almost entirely on which utility serves
                   your home. A homeowner in Sacramento (SMUD) has access to
-                  $3,000–$4,000 in rebates right now. A homeowner in San
+                  $3,000–$4,000 in rebates right now. A homeowner in Los Angeles
+                  (LADWP) can get up to $2,500/ton. A homeowner in San
                   Francisco (PG&amp;E) may have none.
                 </p>
               </div>
@@ -451,7 +498,11 @@ export default function CaliforniaPage() {
                     system type
                   </li>
                   <li>
-                    <strong>Other utility customers:</strong> $0–$3,000 depending
+                    <strong>LADWP customers:</strong> Up to $2,500/ton HVAC +
+                    $2,500 HPWH
+                  </li>
+                  <li>
+                    <strong>Other utility customers:</strong> $0–$1,500 depending
                     on your utility
                   </li>
                   <li>
@@ -502,7 +553,7 @@ export default function CaliforniaPage() {
                 ✅ Install Now If:
               </p>
               <ul className="text-sm text-gray-700 space-y-2">
-                <li>You have access to a strong utility rebate (like SMUD)</li>
+                <li>You have access to a strong utility rebate (SMUD or LADWP)</li>
                 <li>Your current system is failing or inefficient</li>
                 <li>
                   You&apos;re planning a full electrification project (Energy
@@ -661,12 +712,12 @@ export default function CaliforniaPage() {
             <p className="text-gray-700 text-sm">
               The California Energy Commission has issued warnings about
               unscrupulous people contacting homeowners claiming to represent the
-              CEC or IRA rebate programs. The only federal IRA-funded rebates
-              currently available are HEEHRA rebates through TECH Clean
-              California-certified contractors. Never provide financial
-              statements or financial information to a contractor. If you suspect
-              a scam, contact the California Department of Consumer Affairs at
-              1-800-952-5210.
+              CEC or IRA rebate programs. HEEHRA single-family rebates are fully
+              reserved — anyone claiming they can get you an immediate federal
+              rebate for a single-family home is not being truthful. Never
+              provide financial statements or financial information to a
+              contractor. If you suspect a scam, contact the California
+              Department of Consumer Affairs at 1-800-952-5210.
             </p>
           </div>
         </div>
@@ -697,7 +748,7 @@ export default function CaliforniaPage() {
           <h2 className="text-xl font-bold text-gray-900 mb-6">
             Heat Pump Rebates in Other States
           </h2>
-          <div className="grid md:grid-cols-3 gap-4">
+          <div className="grid md:grid-cols-4 gap-4">
             <Link
               href="/heat-pumps/states/ny"
               className="card bg-white hover:shadow-md transition-shadow p-4"
@@ -742,6 +793,27 @@ export default function CaliforniaPage() {
               <p className="font-medium text-gray-900">Minnesota</p>
               <p className="text-sm text-green-600">Open — Utility CIP</p>
             </Link>
+            <Link
+              href="/heat-pumps/states/co"
+              className="card bg-white hover:shadow-md transition-shadow p-4"
+            >
+              <p className="font-medium text-gray-900">Colorado</p>
+              <p className="text-sm text-green-600">Open — HEAR + Xcel</p>
+            </Link>
+            <Link
+              href="/heat-pumps/states/ct"
+              className="card bg-white hover:shadow-md transition-shadow p-4"
+            >
+              <p className="font-medium text-gray-900">Connecticut</p>
+              <p className="text-sm text-green-600">Open — Energize CT</p>
+            </Link>
+            <Link
+              href="/heat-pumps/states/tx"
+              className="card bg-white hover:shadow-md transition-shadow p-4"
+            >
+              <p className="font-medium text-gray-900">Texas</p>
+              <p className="text-sm text-yellow-600">Limited — Utility-dependent</p>
+            </Link>
           </div>
         </div>
       </section>
@@ -785,6 +857,14 @@ export default function CaliforniaPage() {
                 className="text-sm text-brand-600 hover:underline"
               >
                 SMUD — Heating &amp; Cooling Rebates ↗
+              </a>
+              <a
+                href="https://www.ladwp.com/residential-services/assistance-programs/consumer-rebate-program"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-brand-600 hover:underline"
+              >
+                LADWP — Consumer Rebate Program ↗
               </a>
               <a
                 href="https://incentives.switchison.org/"
