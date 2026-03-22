@@ -34,8 +34,8 @@ export const incentives: Record<StateCode, StateIncentive> = {
         url: "https://www.switchison.org/",
       },
       {
-        label: "SMUD Heat Pump Rebates",
-        url: "https://www.smud.org/en/rebates-and-savings",
+        label: "SMUD — Heating & Cooling Rebates",
+        url: "https://www.smud.org/Rebates-and-Savings-Tips/Rebates-for-My-Home/Heating-and-Cooling-Rebates",
       },
       {
         label: "LADWP — Consumer Rebate Program",
