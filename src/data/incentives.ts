@@ -1,4 +1,4 @@
-export type StateCode = "CA" | "MN" | "ME" | "MA" | "OR" | "WA" | "NY" | "CT" | "CO" | "TX";
+export type StateCode = "CA" | "MN" | "ME" | "MA" | "OR" | "WA" | "NY" | "CT" | "CO" | "TX" | "NJ";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -347,6 +347,53 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "TDHCA — Weatherization Assistance Program",
         url: "https://www.tdhca.texas.gov/ca/wap",
+      },
+    ],
+  },
+
+  NJ: {
+    stateCode: "NJ",
+    stateName: "New Jersey",
+    status: "open",
+    lastVerified: "2026-03-22",
+    summary:
+      "New Jersey heat pump rebates are active through the statewide Whole Home program (up to $7,500 cash-back plus 0% financing) and all four electric utilities (PSE&G, JCP&L, Atlantic City Electric, RECO). Programs stack. Federal tax credits (25C/25D) ended December 31, 2025. The state's $185 million in IRA HEAR/HOMES funding has not launched consumer-facing programs as of March 22, 2026.",
+    sources: [
+      {
+        label: "NJ Whole Home Program (Ciel Power)",
+        url: "https://www.cielpower.com/incentives-and-rebates",
+      },
+      {
+        label: "PSE&G HVAC Instant Rebates",
+        url: "https://homeenergy.pseg.com/heatingandcooling",
+      },
+      {
+        label: "JCP&L HVAC Rebates (CLEAResult)",
+        url: "https://residential.energysavenj.com/jersey-central/hvac/",
+      },
+      {
+        label: "Atlantic City Electric HVAC Program",
+        url: "https://homeenergysavings.atlanticcityelectric.com/residential/rebates/hvac-efficiency-program",
+      },
+      {
+        label: "RECO Heat Pump Rebates",
+        url: "https://www.oru.com/en/save-money/rebates-incentives-credits/new-jersey-customers/incentives-for-residential-customers-nj/efficient-products/heating-cooling-equipment",
+      },
+      {
+        label: "NJ BPU — IRA HEAR/HOMES Funding ($185M)",
+        url: "https://www.nj.gov/bpu/newsroom/2025/approved/20250127.html",
+      },
+      {
+        label: "NJ Comfort Partners (Income-Eligible)",
+        url: "https://www.njcleanenergy.com/CP",
+      },
+      {
+        label: "NJNG SAVEGREEN Heat Pump Rebates",
+        url: "https://www.savegreen.com/applications/residential-applications/hvac-and-water-heating-rebate-application.aspx",
+      },
+      {
+        label: "IRS — 25C/25D Expiration (OBBBA FAQ)",
+        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
       },
     ],
   },
