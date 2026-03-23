@@ -1,4 +1,4 @@
-export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI";
+export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "AZ";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -801,6 +801,103 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "IRS — 25C/25D Termination FAQ",
         url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21",
+      },
+    ],
+  },
+
+  GA: {
+    stateCode: "GA",
+    stateName: "Georgia",
+    status: "open",
+    lastVerified: "2026-03-23",
+    summary:
+      "HEAR rebates cover up to $8,000 for heat pumps (\u2264150% AMI). HER whole-home rebates up to $4,000 (all incomes) or $16,000 (\u226480% AMI). Georgia Power HEIP offers up to $1,000. EMC rebates $100\u2013$600. Federal 25C/25D credits expired Dec 2025.",
+    sources: [
+      {
+        label: "Georgia\u2019s Home Energy Rebates (GEFA)",
+        url: "https://energyrebates.georgia.gov/",
+      },
+      {
+        label: "GEFA \u2014 HEAR Program Details",
+        url: "https://energyrebates.georgia.gov/home-electrification-and-appliance-rebates",
+      },
+      {
+        label: "GEFA \u2014 Home Energy Rebates FAQ",
+        url: "https://energyrebates.georgia.gov/faqs",
+      },
+      {
+        label: "Georgia Power \u2014 Home Energy Improvement Program",
+        url: "https://www.georgiapower.com/residential/save-money-and-energy/rebates-and-discounts.html/",
+      },
+      {
+        label: "Jackson EMC \u2014 Heat Pump Rebate",
+        url: "https://www.jacksonemc.com/member-services/home-services/rebates-incentives-loans/heat-pump-rebate",
+      },
+      {
+        label: "GreyStone Power \u2014 Rebate Requirements",
+        url: "https://www.greystonepower.com/rebate-requirements",
+      },
+      {
+        label: "Sawnee EMC \u2014 Rebates and Incentives",
+        url: "https://sawnee.coop/rebates-and-incentives",
+      },
+      {
+        label: "GEFA \u2014 Weatherization Assistance Program",
+        url: "https://gefa.georgia.gov/weatherization-assistance-program",
+      },
+      {
+        label: "IRS 25C (expired)",
+        url: "https://www.irs.gov/credits-deductions/energy-efficient-home-improvement-credit",
+      },
+    ],
+  },
+
+  AZ: {
+    stateCode: "AZ",
+    stateName: "Arizona",
+    status: "open",
+    lastVerified: "2026-03-23",
+    summary:
+      "Efficiency Arizona HEAR offers up to $8,000 per heat pump for households below 150% AMI. SRP Cool Cash provides up to $1,125 for variable-capacity systems. APS eliminated all residential rebates in 2026. Federal tax credits expired December 31, 2025. HOMES program expected later in 2026.",
+    sources: [
+      {
+        label: "Efficiency Arizona \u2014 HEAR Program",
+        url: "https://efficiencyarizona.com/the-hear-program/",
+      },
+      {
+        label:
+          "Arizona Governor\u2019s Office of Resiliency \u2014 Efficiency Arizona",
+        url: "https://resilient.az.gov/resiliency-programs/energy-programs/energy-affordability/efficiency-arizona",
+      },
+      {
+        label: "SRP \u2014 Air Conditioner Rebates (Cool Cash)",
+        url: "https://www.srpnet.com/energy-savings-rebates/home/rebates/air-conditioner",
+      },
+      {
+        label: "SRP \u2014 Heat Pump Water Heater Rebates",
+        url: "https://www.srpnet.com/energy-savings-rebates/home/rebates/heat-pump-water-heater",
+      },
+      {
+        label: "APS \u2014 Residential Energy Options (rebates discontinued)",
+        url: "https://www.aps.com/en/Residential/Save-Money-and-Energy/Your-Energy-Your-Options",
+      },
+      {
+        label: "TEP / UniSource \u2014 Efficient Home Program",
+        url: "https://www.uesaz.com/efficient-home-program/",
+      },
+      {
+        label:
+          "City of Flagstaff \u2014 Home Weatherization and Energy Rebate Program",
+        url: "https://www.flagstaff.az.gov/2912/Home-Weatherization-and-Energy-Rebate-Pr",
+      },
+      {
+        label:
+          "Arizona Department of Housing \u2014 Weatherization Assistance Program",
+        url: "https://housing.az.gov/arizona-weatherization-assistance-program",
+      },
+      {
+        label: "IRS \u2014 25C/25D Termination FAQ",
+        url: "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions",
       },
     ],
   },
