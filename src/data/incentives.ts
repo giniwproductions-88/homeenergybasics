@@ -1,4 +1,4 @@
-export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "AZ";
+export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "AZ" | "NV";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -894,6 +894,49 @@ export const incentives: Record<StateCode, StateIncentive> = {
         label:
           "Arizona Department of Housing \u2014 Weatherization Assistance Program",
         url: "https://housing.az.gov/arizona-weatherization-assistance-program",
+      },
+      {
+        label: "IRS \u2014 25C/25D Termination FAQ",
+        url: "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions",
+      },
+    ],
+  },
+
+  NV: {
+    stateCode: "NV",
+    stateName: "Nevada",
+    status: "limited",
+    lastVerified: "2026-03-23",
+    summary:
+      "NV Energy PowerShift offers $510\u2013$3,400 for heat pumps (active, first-come first-served). IRA-funded HEAR (up to $8,000) and HOMES programs approved but not yet launched. Federal 25C/25D tax credits expired Dec 2025. No state tax credits (no state income tax).",
+    sources: [
+      {
+        label: "NV Energy \u2014 PowerShift Rebate Program",
+        url: "https://www.nvenergy.com/save-with-powershift",
+      },
+      {
+        label: "Nevada Governor\u2019s Office of Energy \u2014 Home Efficiency Rebates",
+        url: "https://www.energy.nv.gov/funding-opportunities/home-efficiency-rebates-program/",
+      },
+      {
+        label: "Nevada Clean Energy Fund \u2014 Federal Rebates (HEAR)",
+        url: "https://nevadacef.org/federal-rebates/",
+      },
+      {
+        label: "Nevada Clean Energy Fund \u2014 RE-UP Loans",
+        url: "https://nevadacef.org/re-up-loans/",
+      },
+      {
+        label: "DSIRE \u2014 NV Energy Residential Energy Efficiency Rebate Program",
+        url: "https://programs.dsireusa.org/system/program/detail/3138",
+      },
+      {
+        label: "Nevada Housing Division \u2014 Weatherization Assistance Program",
+        url: "https://housing.nv.gov/programs/Weatherization/",
+      },
+      {
+        label: "Boulder City \u2014 Utility Rebate Program",
+        url: "https://www.bcnv.org/284/Utility-Rebate-Program",
       },
       {
         label: "IRS \u2014 25C/25D Termination FAQ",
