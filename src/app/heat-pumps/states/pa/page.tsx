@@ -190,6 +190,18 @@ export default function PennsylvaniaPage() {
         </div>
       </section>
 
+      {/* Reality Check */}
+      <section className="py-8">
+        <div className="container-narrow">
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-5">
+            <p className="font-semibold text-amber-800 mb-1">⚠ The honest picture in Pennsylvania right now</p>
+            <p className="text-sm text-amber-900">
+              Pennsylvania&apos;s heat pump incentives are weaker than neighboring states like New York or Massachusetts — and entirely dependent on which utility serves your home. PECO customers in the Philadelphia area can stack up to <strong>$1,950</strong> today. Most other PA homeowners are looking at <strong>$200–$450</strong>. The game-changer is Penn Energy Savers, but it hasn&apos;t launched yet and has no confirmed date. If you&apos;re waiting for better rebates, watch the Act 129 Phase V transition (June 2026) — but don&apos;t count on Penn Energy Savers until it actually opens.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Federal Credits Dead */}
       <section className="py-8">
         <div className="container-narrow">
@@ -704,6 +716,17 @@ export default function PennsylvaniaPage() {
             If you&apos;re planning a heat pump in Pennsylvania, your utility determines your
             rebate — so check your eligibility before getting quotes.
           </p>
+
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mt-6">
+            <p className="font-semibold text-blue-800 mb-1">Pennsylvania is the only large Northeast state where your utility matters more than your income</p>
+            <p className="text-sm text-blue-900">
+              In New York, Massachusetts, and Connecticut, the biggest rebates scale by income level — lower-income households get the most help regardless of where they live. In Pennsylvania, your zip code (utility territory) is the primary variable. A PECO customer above 150% AMI can get <strong>$1,650–$1,950</strong> today, while a FirstEnergy customer at the same income gets <strong>$200–$325</strong>. That&apos;s a 5–8x difference based purely on geography. Penn Energy Savers will eventually add an income-based layer, but until it launches, PA runs on a utility-first model.
+            </p>
+          </div>
+
+          <p className="text-sm text-gray-600 mt-4">
+            <strong>In practice:</strong> Most Pennsylvania homeowners will rely primarily on their utility rebate (<strong>$200–$1,950</strong>) and low-interest financing through HEELP or KEEP — with Penn Energy Savers as a future bonus if timing aligns.
+          </p>
         </div>
       </section>
 
@@ -789,6 +812,13 @@ export default function PennsylvaniaPage() {
             households — concentrated in rural areas and the northern tier — stand to gain the most
             from heat pump conversion due to high fuel costs.
           </p>
+
+          <div className="bg-green-50 border border-green-200 rounded-lg p-5 mt-6">
+            <p className="font-semibold text-green-800 mb-1">✓ Best candidates for a heat pump in Pennsylvania</p>
+            <p className="text-sm text-green-900">
+              <strong>Heating oil or propane users</strong> in rural PA and the northern tier — fuel cost savings alone can justify the switch even with modest rebates. <strong>PECO customers</strong> who can stack EAP bonuses for the highest available rebate in the state. <strong>Income-qualified households below 80% AMI</strong> who will benefit most when Penn Energy Savers launches (up to $8,000). <strong>Homeowners with aging electric resistance heat</strong> — heat pumps cut electricity use by 30–50% with no fuel-switching complexity. <strong>Anyone replacing a failing system now</strong> who can lock in Phase IV utility rebates before the May 2026 deadline.
+            </p>
+          </div>
         </div>
       </section>
 
