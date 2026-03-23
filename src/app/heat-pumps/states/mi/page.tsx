@@ -100,7 +100,7 @@ export default function MichiganPage() {
             / Michigan
           </nav>
 
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Michigan Heat Pump Rebates &amp; Incentives (2026)
           </h1>
 
