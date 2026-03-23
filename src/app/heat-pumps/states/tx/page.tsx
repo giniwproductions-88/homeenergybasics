@@ -187,6 +187,33 @@ export default function TexasPage() {
         </div>
       </section>
 
+      {/* Reality Check */}
+      <section style={{ padding: "2rem 1rem" }}>
+        <div className="container-narrow">
+          <div
+            style={{
+              background: "#fffbeb",
+              border: "1px solid #fde68a",
+              borderRadius: "8px",
+              padding: "1.25rem",
+            }}
+          >
+            <p style={{ fontWeight: 600, color: "#92400e", marginBottom: "0.5rem" }}>
+              ⚠ The reality in Texas right now
+            </p>
+            <p style={{ fontSize: "0.95rem", color: "#78350f" }}>
+              Texas has one of the most fragmented heat pump incentive landscapes in the
+              country. Austin homeowners can stack ~$3,000 in rebates with 0% financing,
+              while most deregulated-market homeowners are looking at a few hundred dollars
+              through their TDU contractor channel. There is no statewide program, no state
+              tax credit (Texas has no income tax), and the $690M HEAR allocation has not
+              launched. Until SECO opens that program, your utility territory determines
+              everything — not your income, not your home type, just your address.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Federal Credits Dead */}
       <section style={{ padding: "2rem 1rem" }}>
         <div className="container-narrow">
@@ -845,6 +872,34 @@ export default function TexasPage() {
             low-income households in any Texas utility territory could stack their utility
             rebate with up to $8,000 in federal point-of-sale rebates.
           </p>
+          <div
+            style={{
+              background: "#eff6ff",
+              border: "1px solid #bfdbfe",
+              borderRadius: "8px",
+              padding: "1.25rem",
+              marginTop: "1.5rem",
+            }}
+          >
+            <p style={{ fontWeight: 600, color: "#1e40af", marginBottom: "0.5rem" }}>
+              Texas received the largest IRA rebate allocation in the country — and has distributed none of it
+            </p>
+            <p style={{ fontSize: "0.95rem", color: "#1e3a5f" }}>
+              At $690 million, Texas&apos;s HOMES/HEAR allocation dwarfs every other state.
+              New York ($318M), California ($290M), and Pennsylvania ($259M) have all made
+              more progress toward launch. The gap between funding allocated and funding
+              deployed is larger in Texas than anywhere else — which means the eventual
+              launch will represent the single biggest shift in heat pump economics for any
+              state in the country.
+            </p>
+          </div>
+          <p style={{ fontSize: "0.95rem", lineHeight: 1.7, marginTop: "1rem" }}>
+            <strong>In practice:</strong> Most Texas homeowners today will rely on a
+            combination of their utility rebate ($300–$3,000 depending on location) and
+            manufacturer promotions. Austin Energy customers have the strongest setup
+            right now. For everyone else, meaningful additional savings depend on whether
+            and when SECO launches the HEAR program.
+          </p>
         </div>
       </section>
 
@@ -877,6 +932,37 @@ export default function TexasPage() {
             permits for HVAC replacement. Unpermitted work can void insurance coverage
             and manufacturer warranties.
           </p>
+        </div>
+      </section>
+
+      {/* Best Candidates */}
+      <section style={{ padding: "2rem 1rem" }}>
+        <div className="container-narrow">
+          <div
+            style={{
+              background: "#f0fdf4",
+              border: "1px solid #bbf7d0",
+              borderRadius: "8px",
+              padding: "1.25rem",
+            }}
+          >
+            <p style={{ fontWeight: 600, color: "#166534", marginBottom: "0.5rem" }}>
+              ✓ Best candidates for a heat pump in Texas
+            </p>
+            <p style={{ fontSize: "0.95rem", color: "#14532d" }}>
+              <strong>Austin Energy customers</strong> — highest rebates and 0% financing
+              available today, no waiting required.{" "}
+              <strong>Homes with high cooling demand</strong> — heat pumps excel in
+              Texas&apos;s long cooling season, and SEER2 improvements pay back fastest
+              here.{" "}
+              <strong>Homeowners upgrading a full HVAC system</strong> — whole-home programs
+              (Austin, Oncor) offer the best stacking opportunity.{" "}
+              <strong>Income-qualified households willing to wait for HEAR</strong> — up to
+              $8,000 when it launches, but no date confirmed.{" "}
+              <strong>Homes replacing electric resistance or aging AC</strong> — largest
+              efficiency gains and fastest payback regardless of rebate level.
+            </p>
+          </div>
         </div>
       </section>
 
