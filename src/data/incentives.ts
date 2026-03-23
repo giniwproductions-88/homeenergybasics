@@ -1,4 +1,4 @@
-export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI";
+export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -613,6 +613,53 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "Capital Good Fund — DoubleGreen",
         url: "https://capitalgoodfund.org/loans/weatherization/",
+      },
+    ],
+  },
+
+  VT: {
+    stateCode: "VT",
+    stateName: "Vermont",
+    status: "open",
+    lastVerified: "2026-03-22",
+    summary:
+      "Vermont heat pump rebates come from Efficiency Vermont ($2,200 ducted, $375–$475/head ductless) and utility-specific programs. Burlington Electric offers up to $7,950 for income-qualified ducted systems — the highest in the state. GMP income bonus adds $2,200/condenser for ≤80% AMI households. Federal 25C/25D ended Dec 31, 2025. HEAR ($29.2M) is on pause.",
+    sources: [
+      {
+        label: "Efficiency Vermont — Heat Pump Rebates",
+        url: "https://www.efficiencyvermont.com/rebates/list/heat-pump-heating-cooling-system",
+      },
+      {
+        label: "Green Mountain Power — Heat Pump Programs",
+        url: "https://greenmountainpower.com/rebates-programs/home-and-yard/heat-pump/",
+      },
+      {
+        label: "Burlington Electric Department — Heat Pumps",
+        url: "https://www.burlingtonelectric.com/heatpumps/",
+      },
+      {
+        label: "Vermont Electric Cooperative — Energy Transformation",
+        url: "https://vermontelectric.coop/energy-transformation-programs",
+      },
+      {
+        label: "Vermont Gas Systems — Residential Rebates",
+        url: "https://vgsvt.com/savings/residentialrebate/",
+      },
+      {
+        label: "VT Dept of Public Service — IRA Home Energy Rebates",
+        url: "https://publicservice.vermont.gov/efficiency/inflation-reduction-act-bolster-vermont-weatherization-and-electrification-efforts",
+      },
+      {
+        label: "VT DCF — Weatherization Assistance Program",
+        url: "https://dcf.vermont.gov/benefits/weatherization",
+      },
+      {
+        label: "Efficiency Vermont — Home Energy Loan",
+        url: "https://www.efficiencyvermont.com/services/financing/homes/home-energy-loan",
+      },
+      {
+        label: "IRS — OBBBA FAQ (25C/25D Expiration)",
+        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
       },
     ],
   },
