@@ -1,4 +1,4 @@
-export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT";
+export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -58,19 +58,35 @@ export const incentives: Record<StateCode, StateIncentive> = {
     status: "open",
     lastVerified: "2026-03-22",
     summary:
-      "Minnesota utility heat pump rebates are active and available now. Xcel Energy, CenterPoint Energy, Minnesota Power, and electric co-ops all offer rebates through their CIP programs. Several cities offer additional stacking rebates. Federal tax credits (25C/25D) ended December 31, 2025. The state HEAR/HOMES program has not launched.",
+      "Xcel Energy offers up to $2,000 for cold-climate heat pumps (plus $600 insulation bonus). CenterPoint adds $1,100 for dual-fuel systems. Minnesota Power offers $400 for ducted ASHP. Minneapolis Green Cost Share stacks up to $14,000. Federal 25C/25D expired Dec 31, 2025. Save Energy Minnesota (HEAR + $4,000 state HP rebate) has not launched — no date set.",
     sources: [
       {
-        label: "Xcel Energy — Heating & Cooling Rebates",
-        url: "https://www.xcelenergy.com/programs_and_rebates/residential_programs_and_rebates/heating_and_cooling",
+        label: "Xcel Energy — MN 2024-2026 Rebate Summary (PDF)",
+        url: "https://www.xcelenergy.com/staticfiles/xe-responsive/Working%20With%20Us/24-1-201%20MN%20Res%20Rebate%20Summary%20Information%20Sheet.pdf",
       },
       {
-        label: "CenterPoint Energy — Residential Rebates",
-        url: "https://www.centerpointenergy.com/en-us/SaveEnergyandMoney/Pages/Rebates-MN.aspx",
+        label: "CenterPoint Energy — MN Ducted ASHP Rebate",
+        url: "https://www.centerpointenergy.com/en-us/SaveEnergyandMoney/Pages/Residential-Ducted-Air-Source-Heat-Pump-Rebate.aspx?sa=mn&au=res",
       },
       {
-        label: "Minnesota Power — Residential Programs",
-        url: "https://www.mnpower.com/EnergyConservation/HeatingCooling",
+        label: "Minnesota Power — ASHP Rebates",
+        url: "https://www.mnpower.com/ProgramsRebates/ASHPRebates",
+      },
+      {
+        label: "MN Commerce — Save Energy Minnesota",
+        url: "https://mn.gov/commerce/energy/consumer/energy-programs/save-energy-mn.jsp",
+      },
+      {
+        label: "MN Commerce — Residential Heat Pump Rebate",
+        url: "https://mn.gov/commerce/energy/consumer/energy-programs/heat-pump.jsp",
+      },
+      {
+        label: "Minneapolis — Green Cost Share / Energy Rebates",
+        url: "https://www.minneapolismn.gov/government/programs-initiatives/environmental-programs/green-cost-share/energy-efficiency/energy-rebates/",
+      },
+      {
+        label: "CEE — Minneapolis Bonus Rebate Program",
+        url: "https://www.mncee.org/minneapolis-bonus-rebate-program",
       },
       {
         label: "IRS 25C (expired)",
@@ -660,6 +676,49 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "IRS — OBBBA FAQ (25C/25D Expiration)",
         url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
+      },
+    ],
+  },
+
+  NH: {
+    stateCode: "NH",
+    stateName: "New Hampshire",
+    status: "open",
+    lastVerified: "2026-03-22",
+    summary:
+      "NHSaves rebates of $250–$1,250/ton are the primary incentive, plus a new $650/unit NE Heat Pump Accelerator. HEAR rebates (up to $8,000) are approved but not yet launched — expected mid-Summer 2026. Federal 25C/25D expired Dec 31, 2025. Projects started before HEAR launch are not eligible. R-410A banned from NHSaves qualified list for 2026.",
+    sources: [
+      {
+        label: "NHSaves — Heat Pumps & Central A/C",
+        url: "https://nhsaves.com/residential/electric-heating-cooling-equipment/",
+      },
+      {
+        label: "NHSaves — Heat Pump Water Heater",
+        url: "https://nhsaves.com/residential/heat-pump-water-heater-2/",
+      },
+      {
+        label: "NH DOE — HEAR Program",
+        url: "https://www.energy.nh.gov/funding-opportunities/funding-opportunities-homeowners/home-electrification-and-appliance-rebates",
+      },
+      {
+        label: "NH DOE — HOMES Program",
+        url: "https://www.energy.nh.gov/funding-opportunities/funding-opportunities-homeowners/home-efficiency-rebates-program",
+      },
+      {
+        label: "NH DOE — Rebates Hub",
+        url: "https://www.energy.nh.gov/consumers/energy-efficiency/energy-efficiency-rebates-and-incentives",
+      },
+      {
+        label: "NE Heat Pump Accelerator",
+        url: "https://www.nehpa.org/",
+      },
+      {
+        label: "NH DOE — Weatherization Assistance",
+        url: "https://www.energy.nh.gov/consumers/help-energy-and-utility-bills/weatherization-assistance-program",
+      },
+      {
+        label: "IRS 25C (expired)",
+        url: "https://www.irs.gov/credits-deductions/energy-efficient-home-improvement-credit",
       },
     ],
   },

@@ -85,46 +85,28 @@ export default function TexasPage() {
       <JsonLd data={faqJsonLd} />
 
       {/* Hero */}
-      <section
-        style={{
-          background: "linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)",
-          color: "white",
-          padding: "3rem 1rem 2.5rem",
-        }}
-      >
+      <section className="bg-gradient-to-b from-blue-50 to-white py-12">
         <div className="container-narrow">
-          <p style={{ fontSize: "0.9rem", marginBottom: "1rem", opacity: 0.8 }}>
-            <Link
-              href="/"
-              style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none" }}
-            >
+          <nav className="text-sm text-gray-500 mb-6">
+            <Link href="/" className="hover:text-brand-600">
               Home
             </Link>{" "}
-            ›{" "}
-            <Link
-              href="/heat-pumps"
-              style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none" }}
-            >
+            /{" "}
+            <Link href="/heat-pumps" className="hover:text-brand-600">
               Heat Pumps
             </Link>{" "}
-            › Texas
-          </p>
-          <h1 style={{ fontSize: "2rem", marginBottom: "0.75rem" }}>
-            Texas Heat Pump Rebates &amp; Incentives (2026)
+            / Texas
+          </nav>
+
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Texas heat pump rebates and incentives in 2026
           </h1>
-          <p
-            style={{
-              fontSize: "1.1rem",
-              lineHeight: 1.6,
-              opacity: 0.9,
-              maxWidth: "700px",
-            }}
-          >
+          <p className="text-lg text-gray-700 leading-relaxed mb-6">
             Texas has no statewide heat pump program and no state income tax. Your rebate
             depends entirely on which utility serves your home. Here is what is actually
             available right now — utility by utility — with no filler.
           </p>
-          <p style={{ fontSize: "0.85rem", marginTop: "1rem", opacity: 0.6 }}>
+          <p className="text-sm text-gray-500">
             Last verified: {formattedDate}
           </p>
         </div>
