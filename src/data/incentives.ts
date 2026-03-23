@@ -1,4 +1,4 @@
-export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH";
+export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -766,6 +766,41 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "IRS 25C (expired)",
         url: "https://www.irs.gov/credits-deductions/energy-efficient-home-improvement-credit",
+      },
+    ],
+  },
+
+  WI: {
+    stateCode: "WI",
+    stateName: "Wisconsin",
+    status: "open",
+    lastVerified: "2026-03-22",
+    summary:
+      "Focus on Energy offers $400–$900 instant discounts for air-source heat pumps statewide. IRA-funded HEAR rebates cover up to $8,000 for income-qualifying households (below 150% AMI). HOMES rebates up to $10,000 are available at all income levels for whole-home projects. Federal tax credits expired December 31, 2025. Wisconsin was the first state to launch the HOMES program.",
+    sources: [
+      {
+        label: "Focus on Energy — Heating & Cooling",
+        url: "https://focusonenergy.com/residential/heating-and-cooling",
+      },
+      {
+        label: "Focus on Energy — IRA HEAR Program",
+        url: "https://focusonenergy.com/ira-hear",
+      },
+      {
+        label: "Focus on Energy — Home Energy Rebates (HOMES)",
+        url: "https://focusonenergy.com/home-energy-rebates",
+      },
+      {
+        label: "Wisconsin PSC — Federal Funding",
+        url: "https://psc.wi.gov/Pages/ServiceType/OEI/FederalFunding.aspx",
+      },
+      {
+        label: "Wisconsin PSC — Heat Pumps",
+        url: "https://psc.wi.gov/Pages/ServiceType/OEI/HeatPumps.aspx",
+      },
+      {
+        label: "IRS — 25C/25D Termination FAQ",
+        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21",
       },
     ],
   },
