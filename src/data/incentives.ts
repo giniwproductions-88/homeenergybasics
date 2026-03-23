@@ -827,7 +827,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
       },
       {
         label: "Georgia Power \u2014 Home Energy Improvement Program",
-        url: "https://www.georgiapower.com/residential/save-money-and-energy/rebates-and-discounts.html/",
+        url: "https://www.georgiapower.com/residential/solutions/home-solutions/heip.html",
       },
       {
         label: "Jackson EMC \u2014 Heat Pump Rebate",
