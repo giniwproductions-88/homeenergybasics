@@ -1,4 +1,4 @@
-export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "AZ" | "NV" | "NC";
+export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "AZ" | "NV" | "NC" | "FL";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -1000,6 +1000,49 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "Carolina SURE Loan Program",
         url: "https://energyfundsforall.org/upgrades-for-residential-efficiency/",
+      },
+      {
+        label: "IRS \u2014 25C/25D Termination FAQ",
+        url: "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions",
+      },
+    ],
+  },
+
+  FL: {
+    stateCode: "FL",
+    stateName: "Florida",
+    status: "limited",
+    lastVerified: "2026-03-23",
+    summary:
+      "No federal credits or state tax incentives. Utility rebates of $40\u2013$1,150 from FPL, Duke Energy, TECO, JEA, and OUC are the primary incentives. Florida\u2019s $346M HEAR/HOMES allocation remains unlaunched.",
+    sources: [
+      {
+        label: "FDACS \u2014 Florida Energy Saver Program",
+        url: "https://floridaenergysaverprogram.fdacs.gov/en-US/",
+      },
+      {
+        label: "FPL \u2014 Residential HVAC Program Standards",
+        url: "https://www.fpl.com/content/dam/fplgp/us/en/save/pdf/residential-air-conditioning-program-standards.pdf",
+      },
+      {
+        label: "Duke Energy Florida \u2014 HVAC Replacement Rebates",
+        url: "https://www.duke-energy.com/Home/Products/Home-Energy-Improvement/HVAC-Replacement?jur=FL01",
+      },
+      {
+        label: "Duke Energy Florida \u2014 HPWH Rebates",
+        url: "https://www.duke-energy.com/home/products/home-energy-improvement/heat-pump-water-heater",
+      },
+      {
+        label: "Tampa Electric \u2014 Heating & Cooling Program",
+        url: "https://www.tampaelectric.com/residential/saveenergy/heatingcooling/",
+      },
+      {
+        label: "JEA \u2014 Heating and Cooling Rebates",
+        url: "https://www.jea.com/residential_customers/residential_rebates/heating_and_cooling_rebates/",
+      },
+      {
+        label: "OUC \u2014 Residential Rebates",
+        url: "https://www.ouc.com/residential/save-energy-water-money/rebates",
       },
       {
         label: "IRS \u2014 25C/25D Termination FAQ",
