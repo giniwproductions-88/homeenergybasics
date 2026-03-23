@@ -1,4 +1,4 @@
-export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "AZ" | "NV";
+export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "AZ" | "NV" | "NC";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -937,6 +937,69 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "Boulder City \u2014 Utility Rebate Program",
         url: "https://www.bcnv.org/284/Utility-Rebate-Program",
+      },
+      {
+        label: "IRS \u2014 25C/25D Termination FAQ",
+        url: "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions",
+      },
+    ],
+  },
+
+  NC: {
+    stateCode: "NC",
+    stateName: "North Carolina",
+    status: "open",
+    lastVerified: "2026-03-23",
+    summary:
+      "Energy Saver NC is live statewide with up to $8,000 through HEAR or $16,000 through HOMES for income-qualifying households. Duke Energy adds $500\u2013$1,000 in utility rebates. Federal 25C/25D tax credits expired Dec 31, 2025. Households above 150% AMI are limited to utility rebates only.",
+    sources: [
+      {
+        label: "Energy Saver NC \u2014 Program Portal",
+        url: "https://www.energysavernc.org/",
+      },
+      {
+        label: "NC DEQ \u2014 Energy Saver North Carolina",
+        url: "https://www.deq.nc.gov/energy-climate/state-energy-office/energy-saver-north-carolina",
+      },
+      {
+        label: "Energy Saver NC \u2014 HEAR Program Details",
+        url: "https://www.energysavernc.org/about-the-program/home-electrification-and-appliance-rebates-hear/",
+      },
+      {
+        label: "NC DEQ \u2014 All 100 Counties Press Release (Feb 2026)",
+        url: "https://www.deq.nc.gov/news/press-releases/2026/02/10/governor-stein-deq-announce-cost-saving-energy-program-now-available-all-100-counties",
+      },
+      {
+        label: "Duke Energy \u2014 HVAC Replacement Rebates",
+        url: "https://www.duke-energy.com/home/products/home-energy-improvement/hvac-replacement",
+      },
+      {
+        label: "Duke Energy \u2014 Heat Pump Water Heater Rebates",
+        url: "https://www.duke-energy.com/home/products/home-energy-improvement/heat-pump-water-heater",
+      },
+      {
+        label: "Duke Energy \u2014 Increased Incentives Announcement (Jan 2025)",
+        url: "https://news.duke-energy.com/releases/new-year-bigger-incentives-as-temperatures-fall-in-the-carolinas-duke-energy-increases-financial-incentives-for-customer-energy-efficiency-and-demand-response-programs",
+      },
+      {
+        label: "Dominion Energy NC \u2014 Save Energy",
+        url: "https://www.dominionenergy.com/north-carolina-electric/save-energy/my-home",
+      },
+      {
+        label: "Piedmont Electric \u2014 Heat Pump Rebate",
+        url: "https://pemc.coop/rebates-and-programs/heat-pump-rebate/",
+      },
+      {
+        label: "Blue Ridge Energy \u2014 Smart Rebates",
+        url: "https://www.blueridgeenergy.com/residential/smart-rebates",
+      },
+      {
+        label: "NC DEQ \u2014 Weatherization Assistance Program",
+        url: "https://www.deq.nc.gov/energy-climate/state-energy-office/weatherization-assistance-program",
+      },
+      {
+        label: "Carolina SURE Loan Program",
+        url: "https://energyfundsforall.org/upgrades-for-residential-efficiency/",
       },
       {
         label: "IRS \u2014 25C/25D Termination FAQ",
