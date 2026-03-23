@@ -1,4 +1,4 @@
-export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "AZ" | "NV" | "NC" | "FL";
+export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "AZ" | "NV" | "NC" | "FL" | "OH";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -1043,6 +1043,53 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "OUC \u2014 Residential Rebates",
         url: "https://www.ouc.com/residential/save-energy-water-money/rebates",
+      },
+      {
+        label: "IRS \u2014 25C/25D Termination FAQ",
+        url: "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions",
+      },
+    ],
+  },
+
+  OH: {
+    stateCode: "OH",
+    stateName: "Ohio",
+    status: "limited",
+    lastVerified: "2026-03-23",
+    summary:
+      "Ohio has almost no heat pump rebates in 2026. Federal credits expired, utility programs were dismantled by HB 6, and the state\u2019s $249M in IRA rebates (HEAR/HOMES) have not launched. ECO-Link offers 3% loan rate reductions up to $50,000. AEP Ohio\u2019s HELP covers low-income households.",
+    sources: [
+      {
+        label: "Ohio Department of Development",
+        url: "https://development.ohio.gov",
+      },
+      {
+        label: "Ohio Treasurer \u2014 ECO-Link Program",
+        url: "https://www.tos.ohio.gov/",
+      },
+      {
+        label: "AEP Ohio HELP Program",
+        url: "https://www.aepohio.com/homeupgrades",
+      },
+      {
+        label: "Ohio Energy Help (HWAP)",
+        url: "https://energyhelp.ohio.gov",
+      },
+      {
+        label: "AES Ohio \u2014 HB 6 Program End Notice",
+        url: "https://www.aes-ohio.com/mandated-end-energy-efficiency-programs",
+      },
+      {
+        label: "FirstEnergy Ohio Efficiency Programs",
+        url: "https://www.firstenergycorp.com/save_energy/save_energy_ohio/for_your_home.html",
+      },
+      {
+        label: "Electrify Cincy",
+        url: "https://electrifycincy.org/replace/",
+      },
+      {
+        label: "Ohio Consumers\u2019 Counsel \u2014 HWAP Factsheet",
+        url: "https://www.occ.ohio.gov/factsheet/home-weatherization-assistance-program",
       },
       {
         label: "IRS \u2014 25C/25D Termination FAQ",
