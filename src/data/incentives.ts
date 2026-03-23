@@ -1,4 +1,4 @@
-export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH";
+export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -496,6 +496,53 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "IRS — 25C/25D Expiration (OBBBA FAQ)",
         url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
+      },
+    ],
+  },
+
+  MI: {
+    stateCode: "MI",
+    stateName: "Michigan",
+    status: "open",
+    lastVerified: "2026-03-22",
+    summary:
+      "Michigan's $210 million MiHER program offers up to $8,000 for heat pumps at point of sale for income-qualifying households (≤150% AMI). DTE Energy rebates run $150–$1,200. Consumers Energy offers $300–$350. Traverse City Light & Power offers up to $3,000. Ann Arbor's A2ZERO adds $4,000–$5,500. Federal tax credits (25C/25D) ended December 31, 2025.",
+    sources: [
+      {
+        label: "MiHER Home Energy Rebates (EGLE)",
+        url: "https://www.michigan.gov/egle/about/organization/materials-management/energy/rfps-loans/home-energy-rebate-programs",
+      },
+      {
+        label: "MiHER: How to Get Your Rebate",
+        url: "https://www.michigan.gov/egle/about/organization/materials-management/energy/rfps-loans/home-energy-rebate-programs/get-rebate",
+      },
+      {
+        label: "DTE Energy Heat Pump Rebates",
+        url: "https://www.dteenergy.com/us/en/residential/save-money-energy/rebates-and-offers/air-conditioners.html",
+      },
+      {
+        label: "Consumers Energy Heating & Cooling Rebates",
+        url: "https://www.consumersenergy.com/residential/save-money-and-energy/rebates/heating-and-cooling",
+      },
+      {
+        label: "TCLP Residential Incentives (2025–2026 PDF)",
+        url: "https://www.tclp.org/wp-content/uploads/2026/03/Energy-Rewards-Residential-Measures-Updated.pdf",
+      },
+      {
+        label: "Lansing BWL 2026 Rebate Application",
+        url: "https://www.lbwl.com/sites/default/files/documents/BWL%20HES_Residential%20Application_2026_v01.09.pdf",
+      },
+      {
+        label: "Ann Arbor A2ZERO Home Energy Rebates",
+        url: "https://www.a2gov.org/sustainability-innovations-home/sustainability-me/for-families-individuals/home-energy-rebates/",
+      },
+      {
+        label: "Michigan Saves Financing",
+        url: "https://michigansaves.org/home-energy-improvements/",
+      },
+      {
+        label: "IRS 25C (expired)",
+        url: "https://www.irs.gov/credits-deductions/energy-efficient-home-improvement-credit",
       },
     ],
   },
