@@ -1,4 +1,4 @@
-export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA";
+export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -574,6 +574,45 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "Virginia Energy Sense — Incentives & Rebates",
         url: "https://www.virginiaenergysense.org/incentives-and-rebates/",
+      },
+    ],
+  },
+
+  RI: {
+    stateCode: "RI",
+    stateName: "Rhode Island",
+    status: "open",
+    lastVerified: "2026-03-22",
+    summary:
+      "Clean Heat RI covers up to 60% of heat pump costs (max $11,500) and is the primary incentive available in 2026. Rhode Island Energy adds smaller per-ton rebates. Federal tax credits are gone, and HEAR does not cover heat pump HVAC systems in Rhode Island (only electrical upgrades and appliances).",
+    sources: [
+      {
+        label: "Clean Heat RI — OER",
+        url: "https://energy.ri.gov/heating-cooling/clean-heat-ri",
+      },
+      {
+        label: "Clean Heat RI Incentives",
+        url: "https://cleanheatri.com/resources/incentives/",
+      },
+      {
+        label: "RI Energy — Electric Heating & Cooling Rebates",
+        url: "https://www.rienergy.com/site/ways-to-save/save-money-with-rebates-and-incentives/electric-heating-and-cooling",
+      },
+      {
+        label: "HEAR/HOMES — RI OER",
+        url: "https://energy.ri.gov/energy-incentives/home-energy-rebate-programs",
+      },
+      {
+        label: "IRS — 25C/25D Expiration (OBBBA FAQ)",
+        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
+      },
+      {
+        label: "Green Energy Consumers Alliance — RI",
+        url: "https://www.greenenergyconsumers.org/heatpumps/Incentives",
+      },
+      {
+        label: "Capital Good Fund — DoubleGreen",
+        url: "https://capitalgoodfund.org/loans/weatherization/",
       },
     ],
   },
