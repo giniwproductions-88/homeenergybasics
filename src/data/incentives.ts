@@ -1,4 +1,4 @@
-export type StateCode = "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "AZ" | "NV" | "NM" | "NC" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC" | "DE" | "KY" | "LA";
+export type StateCode = "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "AZ" | "NV" | "NM" | "NC" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC" | "DE" | "KY" | "LA" | "UT";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -1622,6 +1622,49 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "IRS \u2014 25C/25D Termination FAQ",
         url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
+      },
+    ],
+  },
+
+  UT: {
+    stateCode: "UT",
+    stateName: "Utah",
+    status: "limited",
+    lastVerified: "2026-03-24",
+    summary:
+      "Rocky Mountain Power Wattsmart offers $450\u20131,700 for heat pumps. Enbridge Gas ThermWise adds $700\u20131,200 for dual-fuel systems. Stack both for $2,450\u20132,650. Federal 25C/25D credits expired Dec 2025. Utah\u2019s $101M IRA rebates (HEAR/HOMES) approved but not yet launched.",
+    sources: [
+      {
+        label: "Rocky Mountain Power \u2014 Wattsmart Homes Heat Pump Rebates",
+        url: "https://wattsmarthomes.com/rebates/air-source-heat-pumps-ut/",
+      },
+      {
+        label: "Enbridge Gas \u2014 ThermWise HVAC Rebates (Utah)",
+        url: "https://www.enbridgegas.com/utwyid/save-money/thermwise",
+      },
+      {
+        label: "Utah Clean Energy Hub \u2014 Energy Efficiency Incentives",
+        url: "https://hub.utahcleanenergy.org/energy-efficiency/energy-efficiency-incentives/",
+      },
+      {
+        label: "Utah Office of Energy Development \u2014 Energy Efficiency",
+        url: "https://energy.utah.gov/homepage/technology/energy-efficiency/",
+      },
+      {
+        label: "Provo City Power \u2014 RenewChoice Conserve Program",
+        url: "https://renewchoice.com/programs/conserve/",
+      },
+      {
+        label: "UAMPS \u2014 Cool Cash Program",
+        url: "https://www.uamps.com/cool-cash",
+      },
+      {
+        label: "Utah Department of Workforce Services \u2014 Weatherization Assistance",
+        url: "https://jobs.utah.gov/housing/scso/wap/index.html",
+      },
+      {
+        label: "IRS \u2014 25C/25D Termination FAQ (FS-2025-05)",
+        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21",
       },
     ],
   },
