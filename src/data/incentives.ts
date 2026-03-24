@@ -1,4 +1,4 @@
-export type StateCode = "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "ID" | "AZ" | "NV" | "NM" | "NC" | "ND" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC" | "DE" | "KY" | "LA" | "UT" | "SD" | "WY" | "MT";
+export type StateCode = "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "ID" | "AZ" | "NV" | "NM" | "NC" | "ND" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC" | "DE" | "KY" | "LA" | "UT" | "SD" | "WY" | "MT" | "NE";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -1875,6 +1875,48 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "Montana DEQ \u2014 Alternative Energy Revolving Loan Program",
         url: "https://deq.mt.gov/energy/Programs/AERLP",
+      },
+    ],
+  },
+  NE: {
+    stateCode: "NE",
+    stateName: "Nebraska",
+    status: "limited",
+    lastVerified: "2026-03-24",
+    summary:
+      "Nebraska has no statewide heat pump rebate and no state tax credit. Utility rebates are the primary incentive: NPPD EnergyWise offers $400\u2013$1,200 for ASHPs, OPPD pays a flat $525, and LES offers $800. The City of Lincoln adds up to $3,000 for low-income homeowners. Dollar and Energy Saving Loans offer 1.5\u20135% financing. Federal 25C/25D expired Dec 2025. HEAR/HOMES ($91M) not yet launched.",
+    sources: [
+      {
+        label: "DWEE \u2014 Energy Loans, Grants & Rebates (IRA Status)",
+        url: "https://dee.nebraska.gov/aid/energy-loans-grants-rebates",
+      },
+      {
+        label: "DWEE \u2014 Dollar & Energy Saving Loans",
+        url: "https://dee.nebraska.gov/state-energy-information/dollar-energy-saving-loans",
+      },
+      {
+        label: "OPPD \u2014 HVAC Smart Rebates",
+        url: "https://www.oppd.com/residential/products-services/save-money-save-energy/hvac-smart-rebates/",
+      },
+      {
+        label: "LES \u2014 Sustainable Energy Program",
+        url: "https://www.les.com/sustainability/sustainable-energy-program",
+      },
+      {
+        label: "City of Lincoln \u2014 Heat Pump Incentives",
+        url: "https://www.lincoln.ne.gov/City/Projects-Programs-Initiatives/Resilient-Lincoln/Heat-Pump-Incentives",
+      },
+      {
+        label: "NPPD \u2014 EnergyWise Residential Incentives",
+        url: "https://nppd.energywisenebraska.com/residential/",
+      },
+      {
+        label: "DWEE \u2014 Nebraska Weatherization Assistance Program",
+        url: "https://dee.nebraska.gov/aid/nebraska-weatherization-assistance-program",
+      },
+      {
+        label: "IRS \u2014 25C/25D Termination FAQ",
+        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
       },
     ],
   },
