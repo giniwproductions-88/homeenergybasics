@@ -1,4 +1,4 @@
-export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "AZ" | "NV" | "NM" | "NC" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO";
+export type StateCode = "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "AZ" | "NV" | "NM" | "NC" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -17,6 +17,49 @@ export interface StateIncentive {
 }
 
 export const incentives: Record<StateCode, StateIncentive> = {
+  AL: {
+    stateCode: "AL",
+    stateName: "Alabama",
+    status: "limited",
+    lastVerified: "2026-03-23",
+    summary:
+      "Alabama has no statewide heat pump rebate. TVA EnergyRight offers $500\u20131,500 in northern Alabama. Alabama Power offers $1,000 for gas-to-electric conversions. Rural co-ops offer $300\u2013400/ton. Federal tax credits expired. IRA HEAR rebates not yet launched.",
+    sources: [
+      {
+        label: "Alabama Power \u2014 Rebates & Incentives",
+        url: "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
+      },
+      {
+        label: "TVA EnergyRight \u2014 Residential Rebates",
+        url: "https://energyright.com/residential/rebates/",
+      },
+      {
+        label: "ADECA \u2014 IRA Home Energy Rebates Program",
+        url: "https://adeca.alabama.gov/ira-rebates/",
+      },
+      {
+        label: "ADECA \u2014 Weatherization Assistance Program",
+        url: "https://adeca.alabama.gov/weatherization/",
+      },
+      {
+        label: "Baldwin EMC \u2014 Heat Pump Rebate",
+        url: "https://www.baldwinemc.com/member-benefits/member-programs/heat-pump-rebate/",
+      },
+      {
+        label: "Central Alabama EC \u2014 Heat Pump Rebates",
+        url: "https://caec.coop/member-benefits-services/heat-pumps/",
+      },
+      {
+        label: "Wiregrass EC \u2014 Rebate Program",
+        url: "https://www.wiregrass.coop/energy-conservation/rebate-program/",
+      },
+      {
+        label: "IRS \u2014 25C/25D Termination FAQ",
+        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
+      },
+    ],
+  },
+
   CA: {
     stateCode: "CA",
     stateName: "California",
