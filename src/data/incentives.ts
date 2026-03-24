@@ -1,4 +1,4 @@
-export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "AZ" | "NV" | "NM" | "NC" | "FL" | "OH" | "IN" | "TN";
+export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "AZ" | "NV" | "NM" | "NC" | "FL" | "OH" | "IN" | "TN" | "SC";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -1223,6 +1223,45 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "IRS \u2014 25C/25D Termination FAQ",
         url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
+      },
+    ],
+  },
+
+  SC: {
+    stateCode: "SC",
+    stateName: "South Carolina",
+    status: "limited",
+    lastVerified: "2026-03-23",
+    summary:
+      "Utility rebates of $300\u20131,000 from Duke Energy, Dominion Energy, and Santee Cooper. SC geothermal tax credit covers 25% up to $3,500. HEAR/HOMES rebates (up to $14,000) pending launch. Federal tax credits expired.",
+    sources: [
+      {
+        label: "SC Energy Office \u2014 Rebates",
+        url: "https://energy.sc.gov/rebates",
+      },
+      {
+        label: "SC Energy Office \u2014 Home Energy Rebate Programs",
+        url: "https://energy.sc.gov/programs/funding/home-energy-rebate-programs",
+      },
+      {
+        label: "Duke Energy \u2014 Home Energy Improvement",
+        url: "https://www.duke-energy.com/home/products/home-energy-improvement",
+      },
+      {
+        label: "Dominion Energy SC \u2014 Heating & Cooling Rebates",
+        url: "https://www.dominionenergy.com/south-carolina/save-energy/heating-and-cooling-rebates",
+      },
+      {
+        label: "Santee Cooper \u2014 EmpowerHome",
+        url: "https://www.santeecooper.com/programs-incentives/empowerhome/",
+      },
+      {
+        label: "SC DOR Form TC-38 (Geothermal Credit)",
+        url: "https://dor.sc.gov/forms-site/Forms/TC38.pdf",
+      },
+      {
+        label: "Electric Cooperatives of SC \u2014 Help My House",
+        url: "https://www.ecsc.org/help-my-house",
       },
     ],
   },
