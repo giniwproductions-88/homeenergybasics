@@ -1,4 +1,4 @@
-export type StateCode = "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "ID" | "AZ" | "NV" | "NM" | "NC" | "ND" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC" | "DE" | "KY" | "LA" | "UT" | "SD" | "WY";
+export type StateCode = "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "ID" | "AZ" | "NV" | "NM" | "NC" | "ND" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC" | "DE" | "KY" | "LA" | "UT" | "SD" | "WY" | "MT";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -1833,6 +1833,48 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "Wyoming Public Media \u2014 HESP Funding Freeze",
         url: "https://www.wyomingpublicmedia.org/natural-resources-energy/2025-04-11/a-wyoming-program-to-help-people-save-on-electric-bills-is-held-up-in-federal-funds-freeze",
+      },
+    ],
+  },
+  MT: {
+    stateCode: "MT",
+    stateName: "Montana",
+    status: "limited",
+    lastVerified: "2026-03-24",
+    summary:
+      "NorthWestern Energy offers $450 per ASHP and up to $3,000 for HPWHs. BPA cooperatives like Flathead Electric provide $600\u2013$1,560. Federal 25C/25D credits expired Dec 2025. HEAR and HOMES programs remain paused pending DOE approval. Bozeman and Missoula County offer HPWH rebates that stack with utility incentives.",
+    sources: [
+      {
+        label: "Montana DEQ \u2014 Home Energy Rebates Program",
+        url: "https://deq.mt.gov/energy/Programs/efficiency",
+      },
+      {
+        label: "NorthWestern Energy \u2014 E+ Electric Rebates (Form 3743)",
+        url: "https://www.northwesternenergy.com/docs/default-source/default-document-library/billing-and-payment/e-programs/e-rebate-electric-existing-home.pdf",
+      },
+      {
+        label: "NorthWestern Energy \u2014 HPWH Program",
+        url: "https://northwesternenergyhpwh.com/",
+      },
+      {
+        label: "Flathead Electric Cooperative \u2014 Air Source Heat Pumps",
+        url: "https://www.flatheadelectric.com/energy-solutions/energy-efficiency-rebate-programs/residential-rebate-programs/heat-pumps/air-source-heat-pumps/",
+      },
+      {
+        label: "Missoula Electric Cooperative \u2014 Ductless Heat Pumps",
+        url: "https://missoulaelectric.com/energy-efficiency/residential-energy-efficiency/ductless-heat-pumps/",
+      },
+      {
+        label: "City of Bozeman \u2014 HPWH Rebate",
+        url: "https://www.bozeman.net/departments/strategic-services/sustainability/waterheaterrebate",
+      },
+      {
+        label: "Missoula County \u2014 Energy Efficiency Rebates",
+        url: "https://www.missoulacounty.us/departments/planning-development-and-sustainability/climate-action/resources-for-residents/energy-efficiency-rebates/",
+      },
+      {
+        label: "Montana DEQ \u2014 Alternative Energy Revolving Loan Program",
+        url: "https://deq.mt.gov/energy/Programs/AERLP",
       },
     ],
   },
