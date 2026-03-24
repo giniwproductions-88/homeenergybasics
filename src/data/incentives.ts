@@ -1,4 +1,4 @@
-export type StateCode = "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "AZ" | "NV" | "NM" | "NC" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO";
+export type StateCode = "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "AZ" | "NV" | "NM" | "NC" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -1352,6 +1352,45 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "Missouri Energy Office \u2014 Financing and Rebates",
         url: "https://energy.mo.gov/grants-financing",
+      },
+    ],
+  },
+
+  DC: {
+    stateCode: "DC",
+    stateName: "Washington DC",
+    status: "open",
+    lastVerified: "2026-03-23",
+    summary:
+      "DCSEU offers up to $5,000 for heat pumps and $1,600 for HPWHs when switching from gas to electric, plus $3,200 in electrification service rebates. Total realistic rebates reach $9,800. Federal 25C/25D credits expired. AHEP provides no-cost electrification for households below 80% AMI but is currently waitlisted.",
+    sources: [
+      {
+        label: "DCSEU \u2014 Residential Electrification Rebates",
+        url: "https://www.dcseu.com/residential-rebates/electrify",
+      },
+      {
+        label: "DCSEU \u2014 Residential Electric HVAC Rebates",
+        url: "https://www.dcseu.com/residential-rebates/heating-cooling",
+      },
+      {
+        label: "DCSEU \u2014 Affordable Home Electrification Program",
+        url: "https://www.dcseu.com/affordable-home-electrification",
+      },
+      {
+        label: "DOEE \u2014 IRA Rebates & Tax Incentives",
+        url: "https://doee.dc.gov/service/ira-rebates-tax-incentives",
+      },
+      {
+        label: "DCSEU \u2014 Apply for Residential Rebates",
+        url: "https://www.dcseu.com/residential-rebates/apply",
+      },
+      {
+        label: "DC Green Bank \u2014 Clean Energy Advantage Loan",
+        url: "https://cealoan.org/washington-dc/",
+      },
+      {
+        label: "DOEE \u2014 Weatherization Assistance Program",
+        url: "https://doee.dc.gov/service/wap",
       },
     ],
   },
