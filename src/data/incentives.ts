@@ -1,4 +1,4 @@
-export type StateCode = "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "AZ" | "NV" | "NM" | "NC" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC";
+export type StateCode = "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "AZ" | "NV" | "NM" | "NC" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC" | "DE";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -1481,6 +1481,57 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "DOEE \u2014 Weatherization Assistance Program",
         url: "https://doee.dc.gov/service/wap",
+      },
+    ],
+  },
+
+  DE: {
+    stateCode: "DE",
+    stateName: "Delaware",
+    status: "open",
+    lastVerified: "2026-03-23",
+    summary:
+      "Energize Delaware offers $800\u2013$2,200 for air-source heat pumps through Home Performance with ENERGY STAR. DEMEC utility customers can stack Efficiency Smart rebates ($300\u2013$750). HEAR ($8,000/HP) awaits DOE approval. Federal 25C/25D credits expired Dec 31, 2025.",
+    sources: [
+      {
+        label: "DNREC \u2014 Home Energy Rebate Programs",
+        url: "https://dnrec.delaware.gov/climate-coastal-energy/energy-office/ira/home-energy-rebates/",
+      },
+      {
+        label: "DNREC \u2014 Inflation Reduction Act Overview",
+        url: "https://dnrec.delaware.gov/climate-coastal-energy/energy-office/ira/",
+      },
+      {
+        label: "Energize Delaware \u2014 HPwES Rebate Pricing (PDF)",
+        url: "https://energizedelaware.org/wp-content/uploads/2025/09/Rebate-Pricing.pdf",
+      },
+      {
+        label: "Energize Delaware (DESEU)",
+        url: "https://energizedelaware.org/",
+      },
+      {
+        label: "Energize Delaware \u2014 Loan Program",
+        url: "https://energizedelawareloans.org/home-energy-efficiency-loan-program/",
+      },
+      {
+        label: "Efficiency Smart \u2014 Home Energy Rebates",
+        url: "https://www.efficiencysmart.org/home-energy-rebates",
+      },
+      {
+        label: "DNREC \u2014 Weatherization Assistance Program",
+        url: "https://dnrec.delaware.gov/climate-coastal-energy/sustainable-communities/weatherization/",
+      },
+      {
+        label: "IRS \u2014 25C/25D Termination FAQ",
+        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
+      },
+      {
+        label: "NEEP \u2014 Home Energy Rebates Roundup",
+        url: "https://neep.org/blog/home-energy-rebates-roundup-across-northeast-and-mid-atlantic",
+      },
+      {
+        label: "EIA \u2014 Delaware State Energy Profile",
+        url: "https://www.eia.gov/state/?sid=DE",
       },
     ],
   },
