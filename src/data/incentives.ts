@@ -1,4 +1,4 @@
-export type StateCode = "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "ID" | "AZ" | "NV" | "NM" | "NC" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC" | "DE" | "KY" | "LA" | "UT";
+export type StateCode = "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "ID" | "AZ" | "NV" | "NM" | "NC" | "ND" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC" | "DE" | "KY" | "LA" | "UT";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -1218,6 +1218,45 @@ export const incentives: Record<StateCode, StateIncentive> = {
       },
       {
         label: "IRS \u2014 25C/25D Termination FAQ",
+        url: "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions",
+      },
+    ],
+  },
+
+  ND: {
+    stateCode: "ND",
+    stateName: "North Dakota",
+    status: "limited",
+    lastVerified: "2026-03-24",
+    summary:
+      "Utility rebates only. Otter Tail Power offers $300\u2013$800/ton for heat pumps. Xcel Energy provides $1,600\u20132,000 flat-rate rebates. Minnkota co-ops offer $150/ton. MDU offers nothing. Federal 25C/25D credits expired. HEAR ($37.1M) and HOMES ($37.2M) funded but not launched.",
+    sources: [
+      {
+        label: "ND Commerce \u2014 Home Energy Rebates Program",
+        url: "https://www.commerce.nd.gov/community-services/energy-efficiency-office/home-energy-rebates-program",
+      },
+      {
+        label: "ND Commerce \u2014 Weatherization Assistance",
+        url: "https://www.commerce.nd.gov/community-services/low-income-programs/weatherization-assistance",
+      },
+      {
+        label: "Otter Tail Power \u2014 Heat Pump Rebates",
+        url: "https://www.otpco.com/ways-to-save/programs/heat-pump/",
+      },
+      {
+        label: "Xcel Energy \u2014 MN/ND Residential Rebate Summary (2024\u20132026)",
+        url: "https://www.xcelenergy.com/staticfiles/xe-responsive/Working%20With%20Us/24-1-201%20MN%20Res%20Rebate%20Summary%20Information%20Sheet.pdf",
+      },
+      {
+        label: "Minnkota Power \u2014 Rebates & Energy Incentives",
+        url: "https://www.minnkota.com/our-programs/rebates-energy-incentives",
+      },
+      {
+        label: "Montana-Dakota Utilities \u2014 Savings for Your Home",
+        url: "https://www.montana-dakota.com/energy-efficiency/savings-for-your-home/",
+      },
+      {
+        label: "IRS \u2014 25C/25D Termination (OBBB Provisions)",
         url: "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions",
       },
     ],
