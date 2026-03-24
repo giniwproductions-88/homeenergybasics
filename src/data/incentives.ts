@@ -1,4 +1,4 @@
-export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "AZ" | "NV" | "NC" | "FL" | "OH" | "IN" | "TN";
+export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "AZ" | "NV" | "NM" | "NC" | "FL" | "OH" | "IN" | "TN";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -941,6 +941,49 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "IRS \u2014 25C/25D Termination FAQ",
         url: "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions",
+      },
+    ],
+  },
+
+  NM: {
+    stateCode: "NM",
+    stateName: "New Mexico",
+    status: "limited",
+    lastVerified: "2026-03-23",
+    summary:
+      "HEAR offers up to $8,000 per heat pump but is currently restricted to households below 80% AMI. PNM rebates cover $550\u2013$700. Sustainable Building Tax Credit adds ~$500\u2013$1,000. Geothermal credit covers 30% up to $9,000 at all income levels. Federal 25C/25D credits expired.",
+    sources: [
+      {
+        label: "NM HEAR Program (ECMD)",
+        url: "https://clean.energy.nm.gov/programs/hear/",
+      },
+      {
+        label: "EMNRD Sustainable Building Tax Credit",
+        url: "https://www.emnrd.nm.gov/ecmd/tax-incentives/sustainable-building-tax-credit-sbtc/",
+      },
+      {
+        label: "EMNRD Geothermal Heat Pump Tax Credit",
+        url: "https://www.emnrd.nm.gov/ecmd/tax-incentives/ggchp-tax-credit/",
+      },
+      {
+        label: "PNM Heating & Cooling Midstream Program",
+        url: "https://www.pnm.com/midstream",
+      },
+      {
+        label: "PNM CLEAResult HPWH Rebates",
+        url: "https://pnm.clearesult.com/heat-pump-water-heaters-55-gallons-or-less",
+      },
+      {
+        label: "El Paso Electric NM Residential Programs",
+        url: "https://www.epelectric.com/energy-efficiency/new-mexico-residential-energy-efficiency-programs/residential-comprehensive",
+      },
+      {
+        label: "Tri-State Electrify and Save (Co-ops)",
+        url: "https://350newmexico.org/rural-electric-coop-rebates/",
+      },
+      {
+        label: "EMNRD HOMES/HER RFP",
+        url: "https://www.emnrd.nm.gov/ecmd/about-us/requests-for-proposals-applications/home-efficiency-rebates-her-rfp/",
       },
     ],
   },
