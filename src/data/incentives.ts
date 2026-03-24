@@ -1,4 +1,4 @@
-export type StateCode = "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "AZ" | "NV" | "NM" | "NC" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC" | "DE";
+export type StateCode = "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "AZ" | "NV" | "NM" | "NC" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC" | "DE" | "KY";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -1532,6 +1532,53 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "EIA \u2014 Delaware State Energy Profile",
         url: "https://www.eia.gov/state/?sid=DE",
+      },
+    ],
+  },
+
+  KY: {
+    stateCode: "KY",
+    stateName: "Kentucky",
+    status: "limited",
+    lastVerified: "2026-03-24",
+    summary:
+      "Kentucky utility heat pump rebates range from $250 to $3,000 depending on provider. TVA EnergyRight offers $500–$3,000; EKPC co-ops offer $500–$1,000 including a $1,000 cold-climate bonus. LG&E/KU offers $400. IRA-funded HEAR rebates (up to $8,000) are approved but not yet launched. Federal 25C/25D credits expired Dec 2025.",
+    sources: [
+      {
+        label: "Kentucky Energy Rebates Program — energyrebates.ky.gov",
+        url: "https://energyrebates.ky.gov/",
+      },
+      {
+        label: "Kentucky Energy Rebates — FAQ and Resources",
+        url: "https://energyrebates.ky.gov/faq-resources/",
+      },
+      {
+        label: "LG&E and KU — Residential Rebates",
+        url: "https://lge-ku.com/residential-rebates",
+      },
+      {
+        label: "LG&E and KU — Energy Efficiency Programs",
+        url: "https://lge-ku.com/energy-efficiency-programs",
+      },
+      {
+        label: "Duke Energy Kentucky — HVAC Replacement Rebates",
+        url: "https://www.duke-energy.com/home/products/home-energy-improvement/hvac-replacement",
+      },
+      {
+        label: "Together We Save Kentucky — EKPC Cooperative Rebates",
+        url: "https://togetherwesaveky.com/cooperatives/blue-grass-energy/",
+      },
+      {
+        label: "TVA EnergyRight — Residential Rebates",
+        url: "https://energyright.com/residential/rebates/",
+      },
+      {
+        label: "Kentucky Energy and Environment Cabinet — Home Energy Rebates",
+        url: "https://eec.ky.gov/Energy/Pages/Kentucky-Home-Energy-Rebates.aspx",
+      },
+      {
+        label: "DSIRE — Kentucky Incentives",
+        url: "https://programs.dsireusa.org/system/program/ky",
       },
     ],
   },
