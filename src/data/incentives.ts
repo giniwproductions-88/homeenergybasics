@@ -1,4 +1,4 @@
-export type StateCode = "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "AZ" | "NV" | "NM" | "NC" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC";
+export type StateCode = "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "AZ" | "NV" | "NM" | "NC" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -930,6 +930,57 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "Hawaii DLIR \u2014 Weatherization Assistance Program",
         url: "https://labor.hawaii.gov/ocs/service-programs-index/weatherization-assistance-program/",
+      },
+    ],
+  },
+
+  IA: {
+    stateCode: "IA",
+    stateName: "Iowa",
+    status: "limited",
+    lastVerified: "2026-03-23",
+    summary:
+      "MidAmerican Energy and Alliant Energy offer $300\u2013$713 instant discounts for air-source heat pumps, with cold-climate models at the top tier. Iowa\u2019s $121M HEAR/HOMES IRA allocation is funded but programs have not launched. Federal 25C/25D credits expired Dec 31, 2025.",
+    sources: [
+      {
+        label: "Iowa Energy & Infrastructure Funding Hub \u2014 HEAR/HOMES Status",
+        url: "https://iafederalfunding.org/individuals/",
+      },
+      {
+        label: "MidAmerican Energy \u2014 Home Discounts and Rebates",
+        url: "https://www.midamericanenergy.com/home-discounts-and-rebates",
+      },
+      {
+        label: "MidAmerican Energy \u2014 Iowa Residential Qualifications",
+        url: "https://www.midamericanenergy.com/ia_qualifications-and-conditions",
+      },
+      {
+        label: "Alliant Energy \u2014 Iowa Instant Discounts",
+        url: "https://www.alliantenergy.com/ways-to-save/instant-discounts/iowa",
+      },
+      {
+        label: "Alliant Energy \u2014 Rebate Terms and Conditions",
+        url: "https://www.alliantenergy.com/ways-to-save/rebates/terms",
+      },
+      {
+        label: "Iowa Economic Development Authority \u2014 Residential Energy Programs",
+        url: "https://opportunityiowa.gov/community/energy/grants-funding/residential-energy-efficiency-programs",
+      },
+      {
+        label: "Iowa HHS \u2014 Weatherization Assistance Program",
+        url: "https://hhs.iowa.gov/assistance-programs/housing-rent-assistance/weatherization-assistance",
+      },
+      {
+        label: "City of Ames \u2014 Smart Energy Residential Rebates",
+        url: "https://www.cityofames.org/My-Government/Departments/Electric/Smart-Energy/Residential-Programs",
+      },
+      {
+        label: "Eastern Iowa REC \u2014 Rebates",
+        url: "https://www.easterniowa.com/rebates",
+      },
+      {
+        label: "IRS \u2014 25C/25D Termination FAQ",
+        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
       },
     ],
   },
