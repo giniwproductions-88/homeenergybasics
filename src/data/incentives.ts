@@ -1,4 +1,4 @@
-export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "AZ" | "NV" | "NM" | "NC" | "FL" | "OH" | "IN" | "TN" | "SC";
+export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "AZ" | "NV" | "NM" | "NC" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -1262,6 +1262,53 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "Electric Cooperatives of SC \u2014 Help My House",
         url: "https://www.ecsc.org/help-my-house",
+      },
+    ],
+  },
+
+  MO: {
+    stateCode: "MO",
+    stateName: "Missouri",
+    status: "limited",
+    lastVerified: "2026-03-23",
+    summary:
+      "No statewide rebate or state tax credit. Utility rebates range $200\u2013$5,000: Ameren offers $2,000 for ducted ASHPs, Evergy $650\u2013$1,200, Columbia W&L up to $2,600. HEAR/HOMES ($151M) pending. Federal credits expired.",
+    sources: [
+      {
+        label: "Missouri DNR \u2014 IRA Home Energy Rebates Programs",
+        url: "https://dnr.mo.gov/energy/what-were-doing/inflation-reduction-act-home-energy-rebates-programs",
+      },
+      {
+        label: "Ameren Missouri \u2014 PAYS HVAC Incentives",
+        url: "https://www.ameren.com/missouri/residential/energy-efficiency/hvac",
+      },
+      {
+        label: "Evergy \u2014 Heat Pump Rebates",
+        url: "https://www.evergy.com/ways-to-save/discounts-link/heating-and-cooling/heat-pump",
+      },
+      {
+        label: "Columbia Water & Light \u2014 Heat Pump Rebates",
+        url: "https://www.como.gov/utilities/columbia-power-partners/residential-programs-and-tools/air-conditioner-and-heat-pump-rebates/",
+      },
+      {
+        label: "City Utilities of Springfield \u2014 HVAC Rebate",
+        url: "https://www.cityutilities.net/269/HVAC-Rebate",
+      },
+      {
+        label: "Missouri Rural Electric Cooperative \u2014 Rebates",
+        url: "https://www.morec.org/rebates-products/",
+      },
+      {
+        label: "Missouri DNR \u2014 Weatherization Assistance",
+        url: "https://dnr.mo.gov/energy/weatherization",
+      },
+      {
+        label: "IRS \u2014 Energy Efficient Home Improvement Credit (25C, expired)",
+        url: "https://www.irs.gov/credits-deductions/energy-efficient-home-improvement-credit",
+      },
+      {
+        label: "Missouri Energy Office \u2014 Financing and Rebates",
+        url: "https://energy.mo.gov/grants-financing",
       },
     ],
   },
