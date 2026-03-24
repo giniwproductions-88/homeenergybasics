@@ -1,4 +1,4 @@
-export type StateCode = "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "AZ" | "NV" | "NM" | "NC" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC";
+export type StateCode = "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "AZ" | "NV" | "NM" | "NC" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -891,6 +891,45 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "IRS 25C (expired)",
         url: "https://www.irs.gov/credits-deductions/energy-efficient-home-improvement-credit",
+      },
+    ],
+  },
+
+  HI: {
+    stateCode: "HI",
+    stateName: "Hawaii",
+    status: "open",
+    lastVerified: "2026-03-23",
+    summary:
+      "Hawaii Energy offers $450\u2013$700 instant rebates for heat pump water heaters and $450\u2013$550 for mini-splits through June 2026. eHale HEAR program (up to $14,000 for income-qualified households) expected to launch in 2026. Federal 25C/25D credits expired Dec 2025. KIUC offers separate $500 HPWH rebate on Kauai.",
+    sources: [
+      {
+        label: "Hawaii State Energy Office \u2014 eHale Energy Saver Rebate Program",
+        url: "https://energy.hawaii.gov/ehale-rebates/",
+      },
+      {
+        label: "Hawaii Energy \u2014 HVAC Rebates",
+        url: "https://hawaiienergy.com/for-homes/rebates/hvac/",
+      },
+      {
+        label: "Hawaii Energy \u2014 Water Heating Rebates",
+        url: "https://hawaiienergy.com/for-homes/rebates/water-heating/",
+      },
+      {
+        label: "KIUC \u2014 Heat Pump Water Heater Rebate Program",
+        url: "https://kiuc.coop/form/heat-pump-water-heater-rebate-pr",
+      },
+      {
+        label: "Hawaii Green Infrastructure Authority \u2014 GEM$ On-Bill Program",
+        url: "https://gems.hawaii.gov/gems-on-bill/",
+      },
+      {
+        label: "Governor Green \u2014 HEAR Program Announcement",
+        url: "https://governor.hawaii.gov/main/lowering-costs-for-working-class-families-the-home-electrification-and-appliance-rebates-hear-program/",
+      },
+      {
+        label: "Hawaii DLIR \u2014 Weatherization Assistance Program",
+        url: "https://labor.hawaii.gov/ocs/service-programs-index/weatherization-assistance-program/",
       },
     ],
   },
