@@ -1,4 +1,4 @@
-export type StateCode = "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "AZ" | "NV" | "NM" | "NC" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC" | "DE" | "KY" | "LA" | "UT";
+export type StateCode = "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "ID" | "AZ" | "NV" | "NM" | "NC" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC" | "DE" | "KY" | "LA" | "UT";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -981,6 +981,45 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "IRS \u2014 25C/25D Termination FAQ",
         url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
+      },
+    ],
+  },
+
+  ID: {
+    stateCode: "ID",
+    stateName: "Idaho",
+    status: "limited",
+    lastVerified: "2026-03-24",
+    summary:
+      "Federal tax credits ended Dec 31, 2025. Idaho rejected IRA-funded HEAR and HOMES rebates. Only utility rebates remain: Idaho Power $400\u2013$800, Avista $300\u2013$600, Rocky Mountain Power $450\u2013$650, Idaho Falls Power up to $2,400. No state tax credit for air-source heat pumps.",
+    sources: [
+      {
+        label: "Idaho Office of Energy and Mineral Resources \u2014 Programs & Incentives",
+        url: "https://oemr.idaho.gov/financial-information/incentives/",
+      },
+      {
+        label: "Idaho Power \u2014 Heating and Cooling Efficiency Program",
+        url: "https://www.idahopower.com/energy-environment/ways-to-save/savings-for-your-home/rebates-and-offers/heating-and-cooling-efficiency-program/",
+      },
+      {
+        label: "Avista Utilities \u2014 Idaho Single-Family Energy Rebates",
+        url: "https://www.myavista.com/energy-savings/rebates-idaho/single-family-energy-rebates-idaho",
+      },
+      {
+        label: "Rocky Mountain Power \u2014 Wattsmart Homes Idaho Heat Pumps",
+        url: "https://wattsmarthomes.com/rebates/air-source-heat-pumps-id/",
+      },
+      {
+        label: "Idaho Falls Power \u2014 Heating & Air Conditioning Rebates",
+        url: "https://www.ifpower.org/accounts-and-services/energy-efficiency/your-home/heating-air-conditioning/",
+      },
+      {
+        label: "OEMR State Energy Loan Program",
+        url: "https://oemr.idaho.gov/loan-program/",
+      },
+      {
+        label: "Idaho Capital Sun \u2014 Legislature Kills Federal Home Energy Rebate Funding",
+        url: "https://idahocapitalsun.com/2025/03/19/idaho-legislatures-budget-committee-kills-federal-funding-for-home-energy-rebates/",
       },
     ],
   },
