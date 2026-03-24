@@ -1,4 +1,4 @@
-export type StateCode = "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "ID" | "AZ" | "NV" | "NM" | "NC" | "ND" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC" | "DE" | "KY" | "LA" | "UT";
+export type StateCode = "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "ID" | "AZ" | "NV" | "NM" | "NC" | "ND" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC" | "DE" | "KY" | "LA" | "UT" | "SD";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -1743,6 +1743,57 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "IRS \u2014 25C/25D Termination FAQ (FS-2025-05)",
         url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21",
+      },
+    ],
+  },
+
+  SD: {
+    stateCode: "SD",
+    stateName: "South Dakota",
+    status: "limited",
+    lastVerified: "2026-03-24",
+    summary:
+      "South Dakota has no statewide heat pump program and is the only state to opt out of IRA HEAR/HOMES rebates ($68.56M declined). Federal credits expired. Utility rebates range from $0 (NorthWestern Energy) to over $4,000 (Otter Tail Power) depending on provider.",
+    sources: [
+      {
+        label: "SD Bureau of Administration \u2014 Energy Management",
+        url: "https://boa.sd.gov/state-engineer/energy-management.aspx",
+      },
+      {
+        label: "SD Public Utilities Commission \u2014 Energy Efficiency",
+        url: "https://puc.sd.gov/energyefficiency/default.aspx",
+      },
+      {
+        label: "Otter Tail Power \u2014 Heat Pump Rebates",
+        url: "https://otpco.com/ways-to-save/programs/heat-pump/",
+      },
+      {
+        label: "Heartland Energy \u2014 Heating & Cooling Rebates",
+        url: "https://heartlandenergy.com/for-your-home/heating-cooling-rebates/",
+      },
+      {
+        label: "Sioux Falls \u2014 Heat Pump Rebate Program",
+        url: "https://www.siouxfalls.gov/resident-services/utilities-billing/electric-light/rebate-program",
+      },
+      {
+        label: "Sioux Valley Energy \u2014 Programs & Rebates",
+        url: "https://www.siouxvalleyenergy.com/programs-and-rebates",
+      },
+      {
+        label: "Southeastern Electric Cooperative \u2014 Heat Pumps",
+        url: "https://southeasternelectric.com/member-rebates-incentives/heat-pumps/",
+      },
+      {
+        label: "Black Hills Energy \u2014 SD Electric Residential Rebates",
+        url: "https://www.blackhillsenergy.com/efficiency-and-savings/residential-rebates/south-dakota-electric-residential-rebates",
+      },
+      {
+        label: "MRES Bright Energy Solutions",
+        url: "https://www.brightenergysolutions.com",
+      },
+      {
+        label: "SD Dept. of Social Services \u2014 Weatherization",
+        url: "https://dss.sd.gov/economicassistance/energy_weatherization_assistance.aspx",
       },
     ],
   },
