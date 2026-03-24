@@ -1,4 +1,4 @@
-export type StateCode = "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "ID" | "AZ" | "NV" | "NM" | "NC" | "ND" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC" | "DE" | "KY" | "LA" | "UT" | "SD";
+export type StateCode = "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "ID" | "AZ" | "NV" | "NM" | "NC" | "ND" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC" | "DE" | "KY" | "LA" | "UT" | "SD" | "WY";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -1794,6 +1794,45 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "SD Dept. of Social Services \u2014 Weatherization",
         url: "https://dss.sd.gov/economicassistance/energy_weatherization_assistance.aspx",
+      },
+    ],
+  },
+
+  WY: {
+    stateCode: "WY",
+    stateName: "Wyoming",
+    status: "limited",
+    lastVerified: "2026-03-24",
+    summary:
+      "Rocky Mountain Power Wattsmart offers up to $1,700 for cold-climate heat pumps and $600 for HPWHs (electric resistance conversions only). Several co-ops offer $500\u20131,800. Federal tax credits expired. Wyoming\u2019s $69.2M IRA rebate program (HESP) has not launched.",
+    sources: [
+      {
+        label: "Rocky Mountain Power \u2014 Wattsmart ASHP Rebates (WY)",
+        url: "https://wattsmarthomes.com/rebates/air-source-heat-pumps-wy/",
+      },
+      {
+        label: "Wyoming Energy Authority \u2014 Home Energy Savings Program",
+        url: "https://wyoenergy.org/home-energy-savings-program/",
+      },
+      {
+        label: "Wyoming DFS \u2014 Weatherization Assistance Program",
+        url: "https://dfs.wyo.gov/assistance-programs/home-utilities-energy-assistance/weatherization-assistance-program-wap-2/",
+      },
+      {
+        label: "Black Hills Energy \u2014 Wyoming Residential Rebates",
+        url: "https://www.blackhillsenergy.com/efficiency-and-savings/residential-rebates/wyoming-gas-llc-residential-rebates-0",
+      },
+      {
+        label: "Carbon Power & Light \u2014 Rebates",
+        url: "https://www.carbonpower.com/rebates-2020",
+      },
+      {
+        label: "IRS \u2014 25C/25D Termination FAQ",
+        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
+      },
+      {
+        label: "Wyoming Public Media \u2014 HESP Funding Freeze",
+        url: "https://www.wyomingpublicmedia.org/natural-resources-energy/2025-04-11/a-wyoming-program-to-help-people-save-on-electric-bills-is-held-up-in-federal-funds-freeze",
       },
     ],
   },
