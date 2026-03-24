@@ -1,4 +1,4 @@
-export type StateCode = "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "AZ" | "NV" | "NM" | "NC" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC" | "DE" | "KY";
+export type StateCode = "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "AZ" | "NV" | "NM" | "NC" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC" | "DE" | "KY" | "LA";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -1579,6 +1579,49 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "DSIRE — Kentucky Incentives",
         url: "https://programs.dsireusa.org/system/program/ky",
+      },
+    ],
+  },
+
+  LA: {
+    stateCode: "LA",
+    stateName: "Louisiana",
+    status: "limited",
+    lastVerified: "2026-03-24",
+    summary:
+      "Utility rebates up to $3,500 from SWEPCO and Cleco. Entergy Louisiana offers $500. Energy Smart (New Orleans) offers $200\u2013$500. Federal 25C/25D credits expired. IRA-funded HEAR ($8,000) and HOMES ($2,000\u2013$4,000) programs allocated but not yet launched.",
+    sources: [
+      {
+        label: "SWEPCO \u2014 Louisiana HVAC Incentive Program",
+        url: "https://www.swepcosolutions.com/programs/residential-programs/louisiana-hvac-incentive-program/",
+      },
+      {
+        label: "Cleco \u2014 Power Wise HVAC Rebate Program",
+        url: "https://clecomarketplace.com/air-conditioning-heat-pump-rebate/",
+      },
+      {
+        label: "Entergy Louisiana \u2014 Residential Energy Efficiency",
+        url: "https://www.entergylouisiana.com/energyefficiency/residential",
+      },
+      {
+        label: "Energy Smart New Orleans \u2014 A/C Solutions",
+        url: "https://energysmartnola.info/a-c-solutions/",
+      },
+      {
+        label: "Louisiana DCE \u2014 Home Energy Rebates Programs",
+        url: "https://denr.louisiana.gov/page/home-energy-rebates-programs",
+      },
+      {
+        label: "SWEPCO \u2014 Heat Pump Water Heater Rebate Rules (PDF)",
+        url: "https://www.swepco.com/lib/docs/savings/home/money/rebates/HEATPUMPWATER_HEATER_REBATE_PROGRAM_RULES_AND_GUIDELINES_FOR_LOUISIANA_AND_TEXAS.pdf",
+      },
+      {
+        label: "Louisiana Housing Corporation \u2014 WAP",
+        url: "https://www.lhc.la.gov/weatherization",
+      },
+      {
+        label: "IRS \u2014 25C/25D Termination FAQ",
+        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
       },
     ],
   },
