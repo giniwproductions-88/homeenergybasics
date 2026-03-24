@@ -1,4 +1,4 @@
-export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "AZ" | "NV" | "NC" | "FL" | "OH";
+export type StateCode = "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "AZ" | "NV" | "NC" | "FL" | "OH" | "IN" | "TN";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -1094,6 +1094,92 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "IRS \u2014 25C/25D Termination FAQ",
         url: "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions",
+      },
+    ],
+  },
+
+  IN: {
+    stateCode: "IN",
+    stateName: "Indiana",
+    status: "open",
+    lastVerified: "2026-03-23",
+    summary:
+      "Indiana Energy Saver Program (HEAR) offers up to $8,000 for heat pumps for households below 150% AMI. HOMES rebates cover up to $4,000 for other homeowners. Utility rebates add $275\u2013$3,000. Federal tax credits expired Dec 31, 2025.",
+    sources: [
+      {
+        label: "Indiana Office of Energy Development \u2014 Home Energy Rebates",
+        url: "https://www.in.gov/oed/grants-and-funding-opportunities/homeowner-incentives/",
+      },
+      {
+        label: "Indiana Energy Saver Program",
+        url: "https://indianaenergysaver.com/",
+      },
+      {
+        label: "Indiana Energy Saver \u2014 Home Appliance Rebate (HEAR)",
+        url: "https://indianaenergysaver.com/programs/home-appliance-rebate/",
+      },
+      {
+        label: "Indiana Energy Saver \u2014 Home Efficiency Rebate (HOMES)",
+        url: "https://indianaenergysaver.com/programs/home-efficiency-rebate/",
+      },
+      {
+        label: "AES Indiana \u2014 Home Improvement Rebates",
+        url: "https://www.aesindiana.com/home-improvement-rebates",
+      },
+      {
+        label: "Duke Energy Indiana \u2014 Smart $aver Rebates",
+        url: "https://www.duke-energy.com/home/products/home-energy-improvement/hvac-replacement",
+      },
+      {
+        label: "NIPSCO \u2014 Residential Rebates",
+        url: "https://www.nipsco.com/energy-efficiency/for-your-home/rebates",
+      },
+      {
+        label: "CenterPoint Energy Indiana \u2014 Residential Rebates",
+        url: "https://centerpointenergyindiana-residential-rebate.clearesult.com/browse-products",
+      },
+      {
+        label: "IHCDA \u2014 Weatherization Assistance Program",
+        url: "https://www.in.gov/ihcda/homeowners-and-renters/weatherizationenergy-conservation/",
+      },
+      {
+        label: "Bloomington Green Home Improvement Program",
+        url: "https://bloomington.in.gov/sustainability/bghip",
+      },
+    ],
+  },
+
+  TN: {
+    stateCode: "TN",
+    stateName: "Tennessee",
+    status: "limited",
+    lastVerified: "2026-03-23",
+    summary:
+      "TVA EnergyRight rebates ($500\u2013$1,500) are the only active incentive in Tennessee in 2026. IRA-funded HEAR and HOMES rebates are approved but not yet launched (expected Q3 2026). Federal tax credits expired December 31, 2025.",
+    sources: [
+      {
+        label: "TVA EnergyRight \u2014 Heat Pump Rebates",
+        url: "https://energyright.com/residential/rebates/heat-pump/",
+      },
+      {
+        label: "TDEC \u2014 Home Energy Rebate Programs",
+        url: "https://www.tn.gov/environment/program-areas/energy/state-energy-office--seo-/programs-projects/programs-and-projects/inflation-reduction-act/home-energy-rebate-programs.html",
+      },
+      {
+        label: "EPB \u2014 Home Energy Improvement Rebates",
+        url: "https://epb.com/energy/save-energy-and-money/rebates-incentives/home-energy-improvement-rebates/",
+      },
+      {
+        label: "MTE \u2014 Home Rebates",
+        url: "https://mte.com/HomeRebates",
+      },
+      {
+        label: "THDA \u2014 Weatherization Assistance Program",
+        url: "https://thda.org/help-for-homeowners/weatherization-assistance-program/",
+      },
+      {
+        label: "IRS \u2014 25C/25D Termination FAQ",
+        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
       },
     ],
   },
