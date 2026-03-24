@@ -1,4 +1,4 @@
-export type StateCode = "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "ID" | "AZ" | "NV" | "NM" | "NC" | "ND" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC" | "DE" | "KY" | "LA" | "UT" | "SD" | "WY" | "MT" | "NE";
+export type StateCode = "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "ID" | "AZ" | "NV" | "NM" | "NC" | "ND" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC" | "DE" | "KY" | "LA" | "UT" | "SD" | "WY" | "MT" | "NE" | "OK";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -1913,6 +1913,57 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "DWEE \u2014 Nebraska Weatherization Assistance Program",
         url: "https://dee.nebraska.gov/aid/nebraska-weatherization-assistance-program",
+      },
+      {
+        label: "IRS \u2014 25C/25D Termination FAQ",
+        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
+      },
+    ],
+  },
+
+  OK: {
+    stateCode: "OK",
+    stateName: "Oklahoma",
+    status: "limited",
+    lastVerified: "2026-03-24",
+    summary:
+      "Utility rebates from OG&E (up to $3,000) and PSO ($600\u2013$1,400) are the primary incentives. Rural co-ops offer $200\u2013$1,050/ton. Oklahoma\u2019s $129M in IRA-funded HEAR/HOMES rebates have not launched. Federal 25C/25D expired Dec 2025. ONG offers no heat pump rebates.",
+    sources: [
+      {
+        label: "OG&E \u2014 Home Energy Efficiency Program",
+        url: "https://www.oge.com/wps/portal/oge/save-energy/residential/heep",
+      },
+      {
+        label: "OG&E \u2014 Oklahoma HVAC Rebate Guidelines (PDF)",
+        url: "https://www.oge.com/documents/d/portal/ok-rebates-hvac-guidelines",
+      },
+      {
+        label: "PSO Power Forward \u2014 Rebates",
+        url: "https://powerforwardwithpso.com/rebates/",
+      },
+      {
+        label: "Oklahoma Dept. of Commerce \u2014 State Energy Office",
+        url: "https://www.okcommerce.gov/community-development/local-governments-edos/oklahoma-state-energy-office/",
+      },
+      {
+        label: "Oklahoma Dept. of Commerce \u2014 Weatherization Assistance",
+        url: "https://www.okcommerce.gov/weatherization/",
+      },
+      {
+        label: "Oklahoma Natural Gas \u2014 Residential Rebates",
+        url: "https://www.oklahomanaturalgas.com/save-money/rebates-and-incentives/residential-rebates/residential-rebates-heating-system",
+      },
+      {
+        label: "Edmond Electric \u2014 Heat Pump Rebates",
+        url: "https://www.edmondok.gov/1292/Heat-Pump-Rebates",
+      },
+      {
+        label: "OMPA \u2014 Rebate Programs",
+        url: "https://www.ompa.com/services/rebate-programs/",
+      },
+      {
+        label: "NOEC \u2014 Rebates",
+        url: "https://www.noec.coop/energy-services/rebates/",
       },
       {
         label: "IRS \u2014 25C/25D Termination FAQ",
