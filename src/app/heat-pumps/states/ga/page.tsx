@@ -585,14 +585,20 @@ export default function GeorgiaPage() {
         <div className="container-narrow">
           <h2 className="text-xl font-bold text-gray-900 mb-3">See also</h2>
           <ul className="space-y-2 text-sm">
-            <li className="text-gray-500">
-              North Carolina Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link href="/heat-pumps/states/nc" className="text-brand-600 hover:underline">
+                North Carolina Heat Pump Rebates
+              </Link>
             </li>
-            <li className="text-gray-500">
-              South Carolina Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link href="/heat-pumps/states/fl" className="text-brand-600 hover:underline">
+                Florida Heat Pump Rebates
+              </Link>
             </li>
-            <li className="text-gray-500">
-              Florida Heat Pump Incentives <em>(coming soon)</em>
+            <li>
+              <Link href="/heat-pumps/states/al" className="text-brand-600 hover:underline">
+                Alabama Heat Pump Rebates
+              </Link>
             </li>
             <li>
               <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">

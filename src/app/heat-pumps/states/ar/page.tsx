@@ -584,11 +584,11 @@ export default function ArkansasPage() {
             <li>
               <Link href="/heat-pumps/states/tx" className="text-brand-600 hover:underline">Texas Heat Pump Rebates &amp; Incentives</Link>
             </li>
-            <li className="text-gray-500">
-              Louisiana Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link href="/heat-pumps/states/la" className="text-brand-600 hover:underline">Louisiana Heat Pump Rebates</Link>
             </li>
-            <li className="text-gray-500">
-              Missouri Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link href="/heat-pumps/states/mo" className="text-brand-600 hover:underline">Missouri Heat Pump Rebates</Link>
             </li>
             <li>
               <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">Federal Heat Pump Tax Credits Have Ended</Link>

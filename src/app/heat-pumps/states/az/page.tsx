@@ -128,7 +128,7 @@ export default function ArizonaPage() {
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">✗ Federal tax credits expired</p>
-              <p className="text-sm text-red-900">Section 25C and Section 25D both ended December 31, 2025. No replacement has been introduced. The only surviving federal credit applies to geothermal heat pumps.</p>
+              <p className="text-sm text-red-900">Section 25C and Section 25D both ended December 31, 2025. No federal tax credit is available for any heat pump — air-source or geothermal — installed in 2026.</p>
             </div>
             <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
               <p className="font-semibold text-amber-800 mb-1">⚠ Above 150% AMI + APS territory = no rebates currently available</p>
@@ -148,7 +148,7 @@ export default function ArizonaPage() {
             </p>
           </div>
           <p className="text-gray-700 leading-relaxed mb-4">
-            The only surviving residential clean energy tax credit applies to <strong>geothermal heat pumps</strong> under the legacy Investment Tax Credit framework. For more details, see our{" "}
+            The only surviving clean energy tax credits apply to <strong>commercial and third-party-owned systems</strong> under the Section 48E Investment Tax Credit — not to homeowner-purchased equipment. For more details, see our{" "}
             <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">
               complete guide to federal heat pump tax credit changes
             </Link>.

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title:
     "California Heat Pump Rebates 2026: $3,000–$4,000 SMUD + LADWP $2,500/Ton | Home Energy Basics",
   description:
-    "SMUD offers up to $4,000. LADWP pays $2,500/ton. TECH and HEEHRA are exhausted. Federal credits ended. Here&apos;s every California heat pump incentive in 2026.",
+    "SMUD offers up to $4,000. LADWP pays $2,500/ton. TECH and HEEHRA are exhausted. Federal credits ended. Here\u2019s every California heat pump incentive in 2026.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/ca",
   },

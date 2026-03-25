@@ -607,16 +607,18 @@ export default function FloridaPage() {
           <ul className="space-y-2 text-sm">
             <li>
               <Link href="/heat-pumps/states/ga" className="text-brand-600 hover:underline">
-                Georgia Heat Pump Rebates 2026
+                Georgia Heat Pump Rebates
               </Link>
             </li>
             <li>
-              <Link href="/heat-pumps/states/tx" className="text-brand-600 hover:underline">
-                Texas Heat Pump Rebates 2026
+              <Link href="/heat-pumps/states/al" className="text-brand-600 hover:underline">
+                Alabama Heat Pump Rebates
               </Link>
             </li>
-            <li className="text-gray-500">
-              North Carolina Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link href="/heat-pumps/states/sc" className="text-brand-600 hover:underline">
+                South Carolina Heat Pump Rebates
+              </Link>
             </li>
             <li>
               <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">

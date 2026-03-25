@@ -477,8 +477,8 @@ export default function WashingtonDCPage() {
         </div>
       </section>
 
-      {/* 15. SEE ALSO (white — alternates from gray) */}
-      <section className="py-8">
+      {/* 15. SEE ALSO */}
+      <section className="py-8 bg-gray-50">
         <div className="container-narrow">
           <h2 className="text-xl font-bold text-gray-900 mb-3">See also</h2>
           <ul className="space-y-2 text-sm">
@@ -511,8 +511,8 @@ export default function WashingtonDCPage() {
         </div>
       </section>
 
-      {/* 16. SOURCES (gray — alternates from white) */}
-      <section className="bg-gray-50 py-12">
+      {/* 16. SOURCES */}
+      <section className="py-12">
         <div className="container-narrow">
           <h2 className="text-xl font-bold text-gray-900 mb-4">Sources</h2>
           <ul className="space-y-2 text-sm">

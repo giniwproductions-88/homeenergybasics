@@ -50,7 +50,7 @@ export default function ColoradoPage() {
         name: "What is the Xcel Energy heat pump rebate in Colorado?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Xcel Energy offers up to $2,250 per ton for cold-climate air-source heat pumps that replace gas heating or include integrated backup heating controls. Standard air-source heat pumps qualify for $900 per ton. Ground-source systems receive $1,000 per ton. Heat pump water heaters receive $800. Xcel also offers a Whole Home Efficiency bonus (25% extra when completing 3+ measures) and a $600 insulation/air sealing bonus.",
+          text: "Xcel Energy offers up to $2,250 per ton for cold-climate air-source heat pumps that replace gas heating or include integrated backup heating controls. Standard air-source heat pumps qualify for $900 per ton. Ground-source systems receive $1,000 per ton. Heat pump water heaters receive $2,250. Xcel also offers a Whole Home Efficiency bonus (25% extra when completing 3+ measures) and a $600 insulation/air sealing bonus.",
         },
       },
       {
@@ -433,7 +433,7 @@ export default function ColoradoPage() {
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Heat pump water heater</td>
-                  <td className="p-3 font-semibold">$800</td>
+                  <td className="p-3 font-semibold">$2,250</td>
                   <td className="p-3">
                     ENERGY STAR certified, replaces electric resistance
                   </td>
@@ -999,8 +999,13 @@ export default function ColoradoPage() {
                 Arizona Heat Pump Rebates &amp; Incentives
               </Link>
             </li>
-            <li className="text-gray-500">
-              Utah Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link
+                href="/heat-pumps/states/ut"
+                className="text-brand-600 hover:underline"
+              >
+                Utah Heat Pump Rebates
+              </Link>
             </li>
             <li>
               <Link
