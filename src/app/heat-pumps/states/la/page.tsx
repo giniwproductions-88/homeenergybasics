@@ -651,11 +651,15 @@ export default function LouisianaPage() {
                 Texas Heat Pump Rebates &amp; Incentives (2026)
               </Link>
             </li>
-            <li className="text-gray-500">
-              Mississippi Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link href="/heat-pumps/states/ms" className="text-brand-600 hover:underline">
+                Mississippi Heat Pump Rebates
+              </Link>
             </li>
-            <li className="text-gray-500">
-              Arkansas Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link href="/heat-pumps/states/ar" className="text-brand-600 hover:underline">
+                Arkansas Heat Pump Rebates
+              </Link>
             </li>
             <li>
               <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">

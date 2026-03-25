@@ -673,12 +673,6 @@ export default function KentuckyPage() {
                 Indiana Heat Pump Rebates &amp; Incentives
               </Link>
             </li>
-            <li className="text-gray-500">
-              Ohio Heat Pump Rebates <em>(coming soon)</em>
-            </li>
-            <li className="text-gray-500">
-              West Virginia Heat Pump Rebates <em>(coming soon)</em>
-            </li>
             <li>
               <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">
                 Federal Heat Pump Tax Credits Have Expired

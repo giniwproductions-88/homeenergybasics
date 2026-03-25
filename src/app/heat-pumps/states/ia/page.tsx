@@ -618,8 +618,10 @@ export default function IowaPage() {
                 Illinois Heat Pump Rebates &amp; Incentives
               </Link>
             </li>
-            <li className="text-gray-500">
-              Missouri Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link href="/heat-pumps/states/mo" className="text-brand-600 hover:underline">
+                Missouri Heat Pump Rebates
+              </Link>
             </li>
             <li>
               <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">

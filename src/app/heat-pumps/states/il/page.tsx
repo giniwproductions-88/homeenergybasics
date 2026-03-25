@@ -99,7 +99,7 @@ export default function IllinoisPage() {
           </nav>
 
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Illinois heat pump rebates and incentives in 2026
+            Illinois Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
             With federal tax credits gone and state IRA rebate programs still
@@ -698,7 +698,10 @@ export default function IllinoisPage() {
             That means potentially eliminating your gas service charges but
             possibly requiring an electrical panel upgrade. Gas utilities offer
             no support for this transition — your electric utility is where the
-            rebates are.
+            rebates are. Considering pairing a heat pump with battery storage?{" "}
+            <Link href="/battery" className="text-brand-600 hover:underline">
+              See our guide to whether home batteries are worth it in 2026
+            </Link>.
           </p>
         </div>
       </section>
@@ -944,21 +947,33 @@ export default function IllinoisPage() {
       </section>
 
       {/* See Also */}
-      <section className="py-8">
+      <section className="py-8 bg-gray-50">
         <div className="container-narrow">
           <h2 className="text-xl font-bold text-gray-900 mb-3">See also</h2>
           <ul className="space-y-2 text-sm">
             <li>
               <Link
-                href="/heat-pumps/states/mn"
+                href="/heat-pumps/states/wi"
                 className="text-brand-600 hover:underline"
               >
-                Minnesota Heat Pump Rebates
+                Wisconsin Heat Pump Rebates
               </Link>
             </li>
-            <li className="text-gray-500">
-              Wisconsin Heat Pump Rebates{" "}
-              <em>(coming soon)</em>
+            <li>
+              <Link
+                href="/heat-pumps/states/mi"
+                className="text-brand-600 hover:underline"
+              >
+                Michigan Heat Pump Rebates
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/heat-pumps/states/in"
+                className="text-brand-600 hover:underline"
+              >
+                Indiana Heat Pump Rebates
+              </Link>
             </li>
             <li>
               <Link
@@ -970,10 +985,10 @@ export default function IllinoisPage() {
             </li>
             <li>
               <Link
-                href="/battery"
+                href="/heat-pumps"
                 className="text-brand-600 hover:underline"
               >
-                Are Home Batteries Worth It in 2026?
+                All State Heat Pump Incentives
               </Link>
             </li>
           </ul>
@@ -981,7 +996,7 @@ export default function IllinoisPage() {
       </section>
 
       {/* Sources */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-12">
         <div className="container-narrow">
           <h2 className="text-xl font-bold text-gray-900 mb-4">Sources</h2>
           <ul className="space-y-2 text-sm">

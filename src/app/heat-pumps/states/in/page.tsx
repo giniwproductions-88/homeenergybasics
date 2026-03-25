@@ -86,7 +86,7 @@ export default function IndianaPage() {
             {" "}/ Indiana
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Indiana heat pump rebates and incentives in 2026
+            Indiana Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
             Indiana&apos;s <strong>$182 million Energy Saver Program</strong> is fully operational and offers up to <strong>$8,000</strong> for a heat pump for income-qualified households. Utility rebates from AES Indiana, Duke Energy, NIPSCO, and others add <strong>$275&ndash;$3,000</strong> on top. Federal tax credits expired December 31, 2025. This guide covers all major Indiana heat pump incentives available in 2026, including the Indiana Energy Saver Program (HOMES and HEAR), utility rebates from all major providers, and local programs. Here&apos;s what&apos;s actually available.
@@ -720,21 +720,18 @@ export default function IndianaPage() {
           <ul className="space-y-2 text-sm">
             <li>
               <Link href="/heat-pumps/states/il" className="text-brand-600 hover:underline">
-                Illinois Heat Pump Rebates (2026)
+                Illinois Heat Pump Rebates
               </Link>
             </li>
             <li>
-              <Link href="/heat-pumps/states/mi" className="text-brand-600 hover:underline">
-                Michigan Heat Pump Rebates (2026)
+              <Link href="/heat-pumps/states/oh" className="text-brand-600 hover:underline">
+                Ohio Heat Pump Rebates
               </Link>
             </li>
             <li>
-              <Link href="/heat-pumps/states/wi" className="text-brand-600 hover:underline">
-                Wisconsin Heat Pump Rebates (2026)
+              <Link href="/heat-pumps/states/ky" className="text-brand-600 hover:underline">
+                Kentucky Heat Pump Rebates
               </Link>
-            </li>
-            <li className="text-gray-500">
-              Ohio Heat Pump Rebates <em>(coming soon)</em>
             </li>
             <li>
               <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">

@@ -1,5 +1,3 @@
-// src/app/heat-pumps/states/ma/page.tsx
-
 import Link from "next/link";
 import type { Metadata } from "next";
 import { incentives, formatDate } from "@/data/incentives";
@@ -640,27 +638,17 @@ export default function MassachusettsPage() {
           <ul className="space-y-2 text-sm">
             <li>
               <Link href="/heat-pumps/states/ct" className="text-brand-600 hover:underline">
-                Connecticut Heat Pump Rebates &amp; Incentives
+                Connecticut Heat Pump Rebates
               </Link>
             </li>
             <li>
               <Link href="/heat-pumps/states/ri" className="text-brand-600 hover:underline">
-                Rhode Island Heat Pump Rebates &amp; Incentives
+                Rhode Island Heat Pump Rebates
               </Link>
             </li>
             <li>
               <Link href="/heat-pumps/states/nh" className="text-brand-600 hover:underline">
-                New Hampshire Heat Pump Rebates &amp; Incentives
-              </Link>
-            </li>
-            <li>
-              <Link href="/heat-pumps/states/vt" className="text-brand-600 hover:underline">
-                Vermont Heat Pump Rebates &amp; Incentives
-              </Link>
-            </li>
-            <li>
-              <Link href="/heat-pumps/states/ny" className="text-brand-600 hover:underline">
-                New York Heat Pump Rebates &amp; Incentives
+                New Hampshire Heat Pump Rebates
               </Link>
             </li>
             <li>

@@ -808,28 +808,19 @@ export default function IdahoPage() {
           <h2 className="text-xl font-bold text-gray-900 mb-3">See also</h2>
           <ul className="space-y-2 text-sm">
             <li>
+              <Link href="/heat-pumps/states/mt" className="text-brand-600 hover:underline">
+                Montana Heat Pump Rebates
+              </Link>
+            </li>
+            <li>
               <Link href="/heat-pumps/states/wa" className="text-brand-600 hover:underline">
-                Washington Heat Pump Rebates &amp; Incentives (2026)
+                Washington Heat Pump Rebates
               </Link>
             </li>
             <li>
-              <Link href="/heat-pumps/states/or" className="text-brand-600 hover:underline">
-                Oregon Heat Pump Rebates &amp; Incentives (2026)
+              <Link href="/heat-pumps/states/ut" className="text-brand-600 hover:underline">
+                Utah Heat Pump Rebates
               </Link>
-            </li>
-            <li>
-              <Link href="/heat-pumps/states/nv" className="text-brand-600 hover:underline">
-                Nevada Heat Pump Rebates &amp; Incentives (2026)
-              </Link>
-            </li>
-            <li className="text-gray-500">
-              Montana Heat Pump Rebates <em>(coming soon)</em>
-            </li>
-            <li className="text-gray-500">
-              Utah Heat Pump Rebates <em>(coming soon)</em>
-            </li>
-            <li className="text-gray-500">
-              Wyoming Heat Pump Rebates <em>(coming soon)</em>
             </li>
             <li>
               <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">
