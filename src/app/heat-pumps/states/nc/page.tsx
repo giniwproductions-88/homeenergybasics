@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title:
     "North Carolina Heat Pump Rebates & Incentives (2026) | Energy Saver NC + Duke Energy | Home Energy Basics",
   description:
-    "Energy Saver NC offers up to $8,000 through HEAR or $16,000 through HOMES. Duke Energy adds $500–$1,000. Federal credits ended. Every NC heat pump incentive in 2026.",
+    "Energy Saver NC offers up to $8,000 HEAR or $16,000 HOMES. Duke Energy adds $500–$1,000. Federal credits ended. Every NC heat pump incentive in 2026.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/nc",
   },
@@ -88,7 +88,7 @@ export default function NorthCarolinaPage() {
             {" "}/ North Carolina
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            North Carolina heat pump rebates and incentives in 2026
+            North Carolina Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
             North Carolina still has some of the strongest heat pump incentives in the country. Energy Saver NC is now live statewide and offers up to <strong>$8,000</strong> for a qualifying heat pump through HEAR or up to <strong>$16,000</strong> in whole-home rebates through HOMES for income-eligible households. Duke Energy and some local utilities add smaller rebates on top, bringing total savings even higher. This guide covers all major North Carolina heat pump incentives available in 2026, including Energy Saver NC HEAR and HOMES, Duke Energy, Dominion Energy, electric cooperatives, and municipal utility programs. Here&apos;s what&apos;s actually available.
@@ -588,8 +588,10 @@ export default function NorthCarolinaPage() {
                 Georgia Heat Pump Rebates 2026
               </Link>
             </li>
-            <li className="text-gray-500">
-              South Carolina Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link href="/heat-pumps/states/sc" className="text-brand-600 hover:underline">
+                South Carolina Heat Pump Rebates &amp; Incentives (2026)
+              </Link>
             </li>
             <li>
               <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">

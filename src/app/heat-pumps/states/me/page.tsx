@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title:
     "Maine Heat Pump Rebates 2026: $1,000–$9,000 + Efficiency Maine | Home Energy Basics",
   description:
-    "Efficiency Maine offers $1,000–$9,000 for heat pumps. $500 whole-home bonus through Dec 2026. Federal tax credits ended. Here's every Maine heat pump incentive in 2026.",
+    "Efficiency Maine offers $1,000–$9,000 for heat pumps. $500 whole-home bonus through Dec 2026. Federal tax credits ended. Here's every Maine incentive.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/me",
   },
@@ -372,7 +372,7 @@ export default function MainePage() {
           <p className="text-gray-700 leading-relaxed mb-6">
             For eligible homes, HEAR provides up to <strong>$8,000</strong> per unit for heat pump
             systems, plus up to <strong>$1,750</strong> for heat pump water heaters,
-            <strong> $4,000</strong> for electric panel upgrades, and <strong>$2,500</strong> for
+            <strong>$4,000</strong> for electric panel upgrades, and <strong>$2,500</strong> for
             wiring — capped at <strong>$14,000 per household</strong>. Low-income households
             (≤80% of Area Median Income) receive 100% of costs. HEAR funding runs through September
             2031 or until exhausted.
@@ -387,7 +387,7 @@ export default function MainePage() {
             Pollution Reduction Grants. It aims to install 580,000 residential heat pumps region-wide
             by 2030. The program works through supply-chain incentives to equipment distributors —
             not direct-to-consumer rebates — and is expected to reduce upfront costs by an estimated
-            <strong> $700 per system</strong>. VEIC was selected as Regional Implementer.
+            <strong>$700 per system</strong>. VEIC was selected as Regional Implementer.
           </p>
           <p className="text-gray-700 leading-relaxed">
             Accelerator benefits can stack with Efficiency Maine rebates but likely cannot stack with

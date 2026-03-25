@@ -21,56 +21,56 @@ export const metadata: Metadata = {
   },
 };
 
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "What heat pump rebates are available in Mississippi in 2026?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Mississippi heat pump rebates come from three utility providers. TVA EnergyRight offers up to $1,500 for qualifying air-source heat pumps in northeast Mississippi. Entergy Mississippi offers $500\u2013$1,100 depending on efficiency tier. Mississippi Power offers $160\u2013$200 per ton. Federal tax credits (25C and 25D) expired December 31, 2025. Mississippi\u2019s IRA-funded HEAR and HOMES rebates have not yet launched.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can I stack utility rebates with HEAR in Mississippi?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "When Mississippi\u2019s HEAR program launches, utility rebates and HEAR rebates are expected to be stackable \u2014 but final rules depend on the Mississippi Development Authority\u2019s program design. HEAR could add up to $8,000 for households at or below 150% of Area Median Income. HOMES rebates of up to $4,000\u2013$8,000 may also be available. Stacking details have not been finalized.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do I need a cold-climate heat pump in Mississippi?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "No. Mississippi sits in IECC Climate Zones 2A and 3A (Hot-Humid), with winter design temperatures ranging from about 19\u00b0F in Tupelo to 32\u00b0F on the Gulf Coast. Standard air-source heat pumps operate efficiently year-round across the entire state. Cold-climate rated systems are unnecessary and may cost more without meaningful benefit.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Which Mississippi utility offers the highest heat pump rebate?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "TVA EnergyRight offers the highest rebate at $1,500 for TVA Preferred air-source heat pumps \u2014 available through 26+ local distributors in northeast Mississippi including Tupelo Water & Light, Oxford Utilities, and Central Electric Power Association. The system must use a variable-speed compressor and produce 100% rated heating at 17\u00b0F. Entergy Mississippi\u2019s top tier is $1,100 for systems meeting 18.05+ SEER2.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "When will Mississippi\u2019s IRA HEAR rebates launch?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "As of March 2026, no launch date has been announced. The Mississippi Development Authority accepted the state\u2019s $104.8 million IRA allocation for HOMES and HEAR programs but has not opened a consumer application portal. Monitor the MDA Office of Energy page at mississippi.org for updates.",
-      },
-    },
-  ],
-};
-
 export default function MississippiPage() {
   const msIncentive = incentives.MS;
   const formattedDate = formatDate(msIncentive.lastVerified);
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What heat pump rebates are available in Mississippi in 2026?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Mississippi heat pump rebates come from three utility providers. TVA EnergyRight offers up to $1,500 for qualifying air-source heat pumps in northeast Mississippi. Entergy Mississippi offers $500\u2013$1,100 depending on efficiency tier. Mississippi Power offers $160\u2013$200 per ton. Federal tax credits (25C and 25D) expired December 31, 2025. Mississippi\u2019s IRA-funded HEAR and HOMES rebates have not yet launched.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I stack utility rebates with HEAR in Mississippi?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "When Mississippi\u2019s HEAR program launches, utility rebates and HEAR rebates are expected to be stackable \u2014 but final rules depend on the Mississippi Development Authority\u2019s program design. HEAR could add up to $8,000 for households at or below 150% of Area Median Income. HOMES rebates of up to $4,000\u2013$8,000 may also be available. Stacking details have not been finalized.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do I need a cold-climate heat pump in Mississippi?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Mississippi sits in IECC Climate Zones 2A and 3A (Hot-Humid), with winter design temperatures ranging from about 19\u00b0F in Tupelo to 32\u00b0F on the Gulf Coast. Standard air-source heat pumps operate efficiently year-round across the entire state. Cold-climate rated systems are unnecessary and may cost more without meaningful benefit.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Which Mississippi utility offers the highest heat pump rebate?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "TVA EnergyRight offers the highest rebate at $1,500 for TVA Preferred air-source heat pumps \u2014 available through 26+ local distributors in northeast Mississippi including Tupelo Water & Light, Oxford Utilities, and Central Electric Power Association. The system must use a variable-speed compressor and produce 100% rated heating at 17\u00b0F. Entergy Mississippi\u2019s top tier is $1,100 for systems meeting 18.05+ SEER2.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "When will Mississippi\u2019s IRA HEAR rebates launch?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "As of March 2026, no launch date has been announced. The Mississippi Development Authority accepted the state\u2019s $104.8 million IRA allocation for HOMES and HEAR programs but has not opened a consumer application portal. Monitor the MDA Office of Energy page at mississippi.org for updates.",
+        },
+      },
+    ],
+  };
 
   return (
     <>
@@ -814,6 +814,11 @@ export default function MississippiPage() {
             <li>
               <Link href="/heat-pumps/states/la" className="text-brand-600 hover:underline">
                 Louisiana Heat Pump Rebates &amp; Incentives
+              </Link>
+            </li>
+            <li>
+              <Link href="/heat-pumps/states/ar" className="text-brand-600 hover:underline">
+                Arkansas Heat Pump Rebates &amp; Incentives
               </Link>
             </li>
             <li>

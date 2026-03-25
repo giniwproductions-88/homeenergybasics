@@ -6,9 +6,9 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title:
-    "Missouri Heat Pump Rebates 2026: $200–$5,000 + Ameren &amp; Evergy Programs | Home Energy Basics",
+    "Missouri Heat Pump Rebates 2026: $200\u2013$5,000 Ameren + Evergy Programs | Home Energy Basics",
   description:
-    "Ameren Missouri offers $2,000 heat pump rebates. Evergy covers up to $1,200. Federal tax credits ended. Here&apos;s every Missouri heat pump incentive in 2026.",
+    "Ameren Missouri offers $2,000 heat pump rebates. Evergy covers up to $1,200. Federal tax credits ended. Here\u2019s every Missouri heat pump incentive in 2026.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/mo",
   },
@@ -24,17 +24,6 @@ export const metadata: Metadata = {
 export default function MissouriPage() {
   const moIncentive = incentives.MO;
   const formattedDate = formatDate(moIncentive.lastVerified);
-
-  const articleJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: "Missouri Heat Pump Rebates & Incentives (2026)",
-    dateModified: moIncentive.lastVerified,
-    author: {
-      "@type": "Organization",
-      name: "Home Energy Basics",
-    },
-  };
 
   const faqJsonLd = {
     "@context": "https://schema.org",
@@ -85,7 +74,6 @@ export default function MissouriPage() {
 
   return (
     <>
-      <JsonLd data={articleJsonLd} />
       <JsonLd data={faqJsonLd} />
 
       {/* 1. Hero */}
@@ -758,11 +746,11 @@ export default function MissouriPage() {
             <li>
               <Link href="/heat-pumps/states/il" className="text-brand-600 hover:underline">Illinois Heat Pump Rebates</Link>
             </li>
-            <li className="text-gray-500">
-              Kansas Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link href="/heat-pumps/states/ks" className="text-brand-600 hover:underline">Kansas Heat Pump Rebates &amp; Incentives (2026)</Link>
             </li>
-            <li className="text-gray-500">
-              Arkansas Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link href="/heat-pumps/states/ar" className="text-brand-600 hover:underline">Arkansas Heat Pump Rebates &amp; Incentives (2026)</Link>
             </li>
             <li>
               <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">Federal Heat Pump Tax Credits Ended — What Changed</Link>

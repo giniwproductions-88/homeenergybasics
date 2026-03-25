@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title:
     "Minnesota Heat Pump Rebates 2026: $2,000–$14,000+ Xcel + CenterPoint + HEAR | Home Energy Basics",
   description:
-    "Xcel Energy offers up to $2,600 for cold-climate heat pumps. CenterPoint adds $1,100 dual-fuel. Federal credits ended. Here's every Minnesota heat pump incentive in 2026.",
+    "Xcel Energy offers up to $2,600 for cold-climate heat pumps. CenterPoint adds $1,100 dual-fuel. Federal credits ended. Here's every Minnesota incentive.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/mn",
   },
@@ -153,7 +153,7 @@ export default function MinnesotaPage() {
           <div className="bg-red-50 border border-red-200 rounded-lg p-6 mb-6">
             <p className="text-red-900 leading-relaxed">
               The <strong>Section 25C Energy Efficient Home Improvement Credit</strong> and <strong>Section 25D Residential Clean Energy Credit</strong> apply only to qualifying property placed in service through December 31, 2025. The One Big Beautiful Bill Act (signed July 4, 2025) accelerated their expiration by nine years. Equipment purchased in 2025 but not installed until 2026 does not qualify. See our{" "}
-              <Link href="/federal-heat-pump-tax-credit-expired" className="text-red-700 hover:underline font-semibold">
+              <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">
                 federal heat pump tax credit explainer
               </Link>{" "}
               for full details.
@@ -604,11 +604,11 @@ export default function MinnesotaPage() {
             <li>
               <Link href="/heat-pumps/states/wi" className="text-brand-600 hover:underline">Wisconsin Heat Pump Rebates &amp; Incentives (2026)</Link>
             </li>
-            <li className="text-gray-500">
-              Iowa Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link href="/heat-pumps/states/ia" className="text-brand-600 hover:underline">Iowa Heat Pump Rebates &amp; Incentives (2026)</Link>
             </li>
-            <li className="text-gray-500">
-              North Dakota Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link href="/heat-pumps/states/nd" className="text-brand-600 hover:underline">North Dakota Heat Pump Rebates &amp; Incentives (2026)</Link>
             </li>
             <li>
               <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">Why Federal Heat Pump Tax Credits Ended</Link>

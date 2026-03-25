@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title:
     "Montana Heat Pump Rebates 2026: $450–$3,000 NWE + BPA Co-op Rebates | Home Energy Basics",
   description:
-    "NorthWestern Energy offers $450 ASHP and up to $3,000 HPWH rebates. BPA co-ops cover $600–$1,560. Federal credits ended. Every Montana heat pump incentive in 2026.",
+    "NorthWestern Energy offers $450 per ASHP and up to $3,000 for HPWHs. BPA co-ops cover $600–$1,560. Federal credits ended. Every Montana incentive in 2026.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/mt",
   },
@@ -178,7 +178,7 @@ export default function MontanaPage() {
               Equipment must have been fully installed and operational by December 31, 2025 to
               qualify — purchasing or signing a contract in 2025 is not sufficient if installation
               slipped into 2026.{" "}
-              <Link href="/federal-heat-pump-tax-credit-expired" className="text-red-700 underline">
+              <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">
                 Full details on the federal credit expiration →
               </Link>
             </p>
@@ -740,14 +740,20 @@ export default function MontanaPage() {
         <div className="container-narrow">
           <h2 className="text-xl font-bold text-gray-900 mb-3">See also</h2>
           <ul className="space-y-2 text-sm">
-            <li className="text-gray-500">
-              Idaho Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link href="/heat-pumps/states/id" className="text-brand-600 hover:underline">
+                Idaho Heat Pump Rebates &amp; Incentives (2026)
+              </Link>
             </li>
-            <li className="text-gray-500">
-              Wyoming Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link href="/heat-pumps/states/wy" className="text-brand-600 hover:underline">
+                Wyoming Heat Pump Rebates &amp; Incentives (2026)
+              </Link>
             </li>
-            <li className="text-gray-500">
-              North Dakota Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link href="/heat-pumps/states/nd" className="text-brand-600 hover:underline">
+                North Dakota Heat Pump Rebates &amp; Incentives (2026)
+              </Link>
             </li>
             <li>
               <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">
