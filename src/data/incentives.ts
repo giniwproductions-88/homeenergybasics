@@ -1,4 +1,4 @@
-export type StateCode = "AK" | "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "ID" | "AZ" | "NV" | "NM" | "NC" | "ND" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC" | "DE" | "KY" | "LA" | "UT" | "SD" | "WY" | "MT" | "NE" | "OK" | "KS" | "WV";
+export type StateCode = "AK" | "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "MS" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "ID" | "AZ" | "NV" | "NM" | "NC" | "ND" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC" | "DE" | "KY" | "LA" | "UT" | "SD" | "WY" | "MT" | "NE" | "OK" | "KS" | "WV";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -1876,6 +1876,52 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "Wyoming Public Media \u2014 HESP Funding Freeze",
         url: "https://www.wyomingpublicmedia.org/natural-resources-energy/2025-04-11/a-wyoming-program-to-help-people-save-on-electric-bills-is-held-up-in-federal-funds-freeze",
+      },
+    ],
+  },
+  MS: {
+    stateCode: "MS",
+    stateName: "Mississippi",
+    status: "limited",
+    lastVerified: "2026-03-24",
+    summary:
+      "No statewide rebate program. Entergy Mississippi offers up to $1,100 for heat pumps. TVA EnergyRight provides up to $1,500 in northeast MS. Mississippi Power offers $160\u2013$200/ton. Federal 25C/25D expired. IRA HEAR/HOMES ($104.8M) not yet launched.",
+    sources: [
+      {
+        label: "Entergy Mississippi \u2014 Heating & Cooling Rebates",
+        url: "https://www.entergymississippi.com/energyefficiency/residential/heating-cooling",
+      },
+      {
+        label: "Entergy Mississippi \u2014 Appliance Rebates (HPWH)",
+        url: "https://www.entergymississippi.com/energyefficiency/residential/appliances",
+      },
+      {
+        label: "TVA EnergyRight \u2014 Residential Rebates",
+        url: "https://energyright.com/residential/rebates/",
+      },
+      {
+        label: "TVA EnergyRight \u2014 Heat Pump Water Heaters",
+        url: "https://energyright.com/heat-pump-water-heater/",
+      },
+      {
+        label: "TVA EnergyRight \u2014 Home Uplift",
+        url: "https://energyright.com/residential/home-uplift/",
+      },
+      {
+        label: "Mississippi Power \u2014 Rebates & Incentives",
+        url: "https://www.mississippipower.com/residential/ways-to-save/rebates---incentives.html",
+      },
+      {
+        label: "Mississippi Development Authority \u2014 Office of Energy",
+        url: "https://mississippi.org/community-resources/office-of-energy/",
+      },
+      {
+        label: "MDHS \u2014 Weatherization Assistance Program",
+        url: "https://www.mdhs.ms.gov/wap/",
+      },
+      {
+        label: "IRS \u2014 25C/25D Termination FAQ",
+        url: "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions",
       },
     ],
   },
