@@ -93,16 +93,23 @@ export default function RootLayout({
             <div className="mt-10 pt-8 border-t border-gray-800">
               <h4 className="text-white font-semibold mb-4">Heat Pump Rebates by State</h4>
               <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-6 gap-y-2 text-sm">
+                <li><Link href="/heat-pumps/states/az" className="hover:text-white">Arizona</Link></li>
                 <li><Link href="/heat-pumps/states/ca" className="hover:text-white">California</Link></li>
                 <li><Link href="/heat-pumps/states/co" className="hover:text-white">Colorado</Link></li>
                 <li><Link href="/heat-pumps/states/ct" className="hover:text-white">Connecticut</Link></li>
+                <li><Link href="/heat-pumps/states/ga" className="hover:text-white">Georgia</Link></li>
                 <li><Link href="/heat-pumps/states/il" className="hover:text-white">Illinois</Link></li>
                 <li><Link href="/heat-pumps/states/ma" className="hover:text-white">Massachusetts</Link></li>
                 <li><Link href="/heat-pumps/states/md" className="hover:text-white">Maryland</Link></li>
                 <li><Link href="/heat-pumps/states/me" className="hover:text-white">Maine</Link></li>
+                <li><Link href="/heat-pumps/states/mi" className="hover:text-white">Michigan</Link></li>
                 <li><Link href="/heat-pumps/states/mn" className="hover:text-white">Minnesota</Link></li>
+                <li><Link href="/heat-pumps/states/nh" className="hover:text-white">New Hampshire</Link></li>
                 <li><Link href="/heat-pumps/states/nj" className="hover:text-white">New Jersey</Link></li>
+                <li><Link href="/heat-pumps/states/nm" className="hover:text-white">New Mexico</Link></li>
+                <li><Link href="/heat-pumps/states/nv" className="hover:text-white">Nevada</Link></li>
                 <li><Link href="/heat-pumps/states/ny" className="hover:text-white">New York</Link></li>
+                <li><Link href="/heat-pumps/states/ok" className="hover:text-white">Oklahoma</Link></li>
                 <li><Link href="/heat-pumps/states/or" className="hover:text-white">Oregon</Link></li>
                 <li><Link href="/heat-pumps/states/pa" className="hover:text-white">Pennsylvania</Link></li>
                 <li><Link href="/heat-pumps/states/ri" className="hover:text-white">Rhode Island</Link></li>
@@ -110,6 +117,7 @@ export default function RootLayout({
                 <li><Link href="/heat-pumps/states/va" className="hover:text-white">Virginia</Link></li>
                 <li><Link href="/heat-pumps/states/vt" className="hover:text-white">Vermont</Link></li>
                 <li><Link href="/heat-pumps/states/wa" className="hover:text-white">Washington</Link></li>
+                <li><Link href="/heat-pumps/states/wi" className="hover:text-white">Wisconsin</Link></li>
               </ul>
             </div>
 

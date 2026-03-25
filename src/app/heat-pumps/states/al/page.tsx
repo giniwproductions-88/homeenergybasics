@@ -820,14 +820,18 @@ export default function AlabamaPage() {
                 Georgia Heat Pump Rebates
               </Link>
             </li>
-            <li className="text-gray-500">
-              Tennessee Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link href="/heat-pumps/states/tn" className="text-brand-600 hover:underline">
+                Tennessee Heat Pump Rebates
+              </Link>
+            </li>
+            <li>
+              <Link href="/heat-pumps/states/fl" className="text-brand-600 hover:underline">
+                Florida Heat Pump Rebates
+              </Link>
             </li>
             <li className="text-gray-500">
               Mississippi Heat Pump Rebates <em>(coming soon)</em>
-            </li>
-            <li className="text-gray-500">
-              Florida Heat Pump Rebates <em>(coming soon)</em>
             </li>
             <li>
               <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">
