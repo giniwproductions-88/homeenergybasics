@@ -1,4 +1,4 @@
-export type StateCode = "AK" | "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "ID" | "AZ" | "NV" | "NM" | "NC" | "ND" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC" | "DE" | "KY" | "LA" | "UT" | "SD" | "WY" | "MT" | "NE" | "OK" | "KS";
+export type StateCode = "AK" | "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "ID" | "AZ" | "NV" | "NM" | "NC" | "ND" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC" | "DE" | "KY" | "LA" | "UT" | "SD" | "WY" | "MT" | "NE" | "OK" | "KS" | "WV";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -2050,6 +2050,41 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "IRS \u2014 25C/25D Termination FAQ",
         url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
+      },
+    ],
+  },
+
+  WV: {
+    stateCode: "WV",
+    stateName: "West Virginia",
+    status: "limited",
+    lastVerified: "2026-03-24",
+    summary:
+      "West Virginia\u2019s $88.2M IRA programs (HEAR up to $8,000 and HOMES up to $20,000) are the primary incentives but launch status is unclear. Appalachian Power offers $300\u2013$400 for mini-splits and HPWHs. Mon Power and Potomac Edison offer no rebates. Federal 25C/25D credits expired Dec 2025.",
+    sources: [
+      {
+        label: "WV Office of Energy \u2014 Home Energy Rebate Programs",
+        url: "https://energywv.org/funding-opportunities/home-energy-rebate-programs/",
+      },
+      {
+        label: "WV Office of Energy \u2014 HEAR Program",
+        url: "https://energywv.org/funding-opportunities/home-energy-rebate-programs/home-electrification-and-appliance-rebates/",
+      },
+      {
+        label: "WV Office of Energy \u2014 Home Efficiency Rebates (HOMES)",
+        url: "https://energywv.org/funding-opportunities/home-energy-rebate-programs/home-efficiency-rebates/",
+      },
+      {
+        label: "TakeCharge WV \u2014 Appalachian Power Rebates",
+        url: "https://takechargewv.com/rebates",
+      },
+      {
+        label: "WVCAD \u2014 Weatherization Assistance Program",
+        url: "https://wvcad.org/sustainability/weatherization-assistance-program",
+      },
+      {
+        label: "IRS \u2014 25C/25D Termination FAQ",
+        url: "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions",
       },
     ],
   },
