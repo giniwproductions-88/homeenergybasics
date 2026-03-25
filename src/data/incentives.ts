@@ -1,4 +1,4 @@
-export type StateCode = "AK" | "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "MS" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "ID" | "AZ" | "NV" | "NM" | "NC" | "ND" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC" | "DE" | "KY" | "LA" | "UT" | "SD" | "WY" | "MT" | "NE" | "OK" | "KS" | "WV";
+export type StateCode = "AK" | "AL" | "AR" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "MS" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "ID" | "AZ" | "NV" | "NM" | "NC" | "ND" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC" | "DE" | "KY" | "LA" | "UT" | "SD" | "WY" | "MT" | "NE" | "OK" | "KS" | "WV";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -2131,6 +2131,48 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "IRS \u2014 25C/25D Termination FAQ",
         url: "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions",
+      },
+    ],
+  },
+  AR: {
+    stateCode: "AR",
+    stateName: "Arkansas",
+    status: "limited",
+    lastVerified: "2026-03-24",
+    summary:
+      "Arkansas heat pump incentives are limited to utility rebates. SWEPCO offers up to $2,200 for qualifying systems. OG\u0026E offers up to $3,000 in the Fort Smith area. Entergy Arkansas has no central HP rebate. Federal 25C/25D expired Dec 2025. The state\u2019s $105M HEAR/HOMES allocation has not launched.",
+    sources: [
+      {
+        label: "Arkansas DEQ \u2014 Home Energy Rebates Program",
+        url: "https://www.adeq.state.ar.us/energy/assistance/home-energy-rebates.aspx",
+      },
+      {
+        label: "SWEPCO \u2014 Residential Energy Efficiency Rebates",
+        url: "https://www.swepco.com/savings/home/money/incentives/hvac",
+      },
+      {
+        label: "OG\u0026E \u2014 Arkansas Rebates",
+        url: "https://www.oge.com/wps/portal/ord/energy-solutions/efficiency-programs/rebates",
+      },
+      {
+        label: "Entergy Arkansas \u2014 Residential Efficiency Programs",
+        url: "https://www.entergyarkansas.com/energyefficiency/residential/point-of-purchase",
+      },
+      {
+        label: "Carroll Electric Cooperative \u2014 Heat Pump Rebate",
+        url: "https://www.cecpower.coop/heat-pump-rebate",
+      },
+      {
+        label: "North Arkansas Electric Cooperative \u2014 Energy Efficiency Loans",
+        url: "https://www.naeci.com/loans",
+      },
+      {
+        label: "Arkansas DEQ \u2014 Weatherization Assistance Program",
+        url: "https://www.adeq.state.ar.us/energy/assistance/wap.aspx",
+      },
+      {
+        label: "IRS \u2014 25C/25D Termination FAQ",
+        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
       },
     ],
   },
