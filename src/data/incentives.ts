@@ -1,4 +1,4 @@
-export type StateCode = "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "ID" | "AZ" | "NV" | "NM" | "NC" | "ND" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC" | "DE" | "KY" | "LA" | "UT" | "SD" | "WY" | "MT" | "NE" | "OK" | "KS";
+export type StateCode = "AK" | "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "ID" | "AZ" | "NV" | "NM" | "NC" | "ND" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC" | "DE" | "KY" | "LA" | "UT" | "SD" | "WY" | "MT" | "NE" | "OK" | "KS";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -52,6 +52,49 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "Wiregrass EC \u2014 Rebate Program",
         url: "https://www.wiregrass.coop/energy-conservation/rebate-program/",
+      },
+      {
+        label: "IRS \u2014 25C/25D Termination FAQ",
+        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
+      },
+    ],
+  },
+
+  AK: {
+    stateCode: "AK",
+    stateName: "Alaska",
+    status: "limited",
+    lastVerified: "2026-03-24",
+    summary:
+      "Alaska incentives depend heavily on location. The ACES program offers $4,000\u2013$8,500 for 43 coastal communities. Fairbanks provides up to $17,500 through its air-quality change-out program. Utility rebates range $500\u2013$1,000 (Chugach Electric, Homer Electric, AP&T). Federal 25C/25D credits expired Dec 2025. HEAR/HOMES ($74.6M) have not launched.",
+    sources: [
+      {
+        label: "AHFC \u2014 Alaska Residential Energy Rebates",
+        url: "https://www.ahfc.us/efficiency/programs-for-homeowners/alaska-residential-energy-rebates",
+      },
+      {
+        label: "Alaska Heat Smart \u2014 ACES Program",
+        url: "https://akheatsmart.org/aces/",
+      },
+      {
+        label: "FNSB Air Quality \u2014 Change Out Program",
+        url: "https://aq.fnsb.gov/changeout/",
+      },
+      {
+        label: "Chugach Electric \u2014 Heat Pump Pilot Program",
+        url: "https://www.chugachelectric.com/energy-solutions/beneficial-electrification/heat-pump-pilot-program",
+      },
+      {
+        label: "Homer Electric \u2014 Heat Pump Rebate",
+        url: "https://www.homerelectric.com/energy-efficiency/heat-pump-program/",
+      },
+      {
+        label: "Alaska Power & Telephone \u2014 Heat Pumps",
+        url: "https://www.aptalaska.com/heat-pumps/",
+      },
+      {
+        label: "EPA \u2014 Southeast Conference Alaska (ACES Grant)",
+        url: "https://www.epa.gov/inflation-reduction-act/southeast-conference-alaska",
       },
       {
         label: "IRS \u2014 25C/25D Termination FAQ",
