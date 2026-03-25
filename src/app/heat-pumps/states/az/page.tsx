@@ -49,7 +49,7 @@ export default function ArizonaPage() {
       },
       {
         "@type": "Question",
-        name: "Do heat pumps make sense in Arizona&apos;s hot climate?",
+        name: "Do heat pumps make sense in Arizona's hot climate?",
         acceptedAnswer: {
           "@type": "Answer",
           text: "Yes. Heat pumps use the same vapor-compression cycle as traditional air conditioners for cooling, so they cool just as effectively. The advantage is they also provide efficient heating in winter — important because Phoenix design temperatures drop to 38°F and Tucson to 31°F. For northern Arizona cities like Flagstaff (design temp 3.9°F), cold-climate rated heat pumps are essential. About 60% of Arizona homes already heat with electricity, making heat pumps a direct efficiency upgrade.",
@@ -57,10 +57,10 @@ export default function ArizonaPage() {
       },
       {
         "@type": "Question",
-        name: "Who administers Arizona&apos;s HEAR program?",
+        name: "Who administers Arizona's HEAR program?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The Efficiency Arizona HEAR program is administered by the Arizona Governor&apos;s Office of Resiliency, funded by approximately $153 million in federal IRA allocations. The program operates through qualified contractors statewide and runs through September 30, 2031, or until funds are exhausted. Applications are processed at efficiencyarizona.com.",
+          text: "The Efficiency Arizona HEAR program is administered by the Arizona Governor's Office of Resiliency, funded by approximately $153 million in federal IRA allocations. The program operates through qualified contractors statewide and runs through September 30, 2031, or until funds are exhausted. Applications are processed at efficiencyarizona.com.",
         },
       },
       {
@@ -88,7 +88,7 @@ export default function ArizonaPage() {
             {" "}/ Arizona
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Arizona Heat Pump Rebates and Incentives (2026)
+            Arizona Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
             Arizona&apos;s heat pump incentives changed dramatically in 2026. Federal tax credits are gone, but the state&apos;s Efficiency Arizona program now offers up to <strong>$8,000</strong> per heat pump for income-qualified households. Utility rebates vary widely — SRP&apos;s Cool Cash program offers up to <strong>$1,125</strong> for a 5-ton variable-capacity system, while APS eliminated all residential rebates entirely. This guide covers all major Arizona heat pump incentives available in 2026, including Efficiency Arizona HEAR, SRP Cool Cash, TEP, and the City of Flagstaff program. Here&apos;s what&apos;s actually available.
@@ -585,13 +585,18 @@ export default function ArizonaPage() {
           <h2 id="see-also" className="text-xl font-bold text-gray-900 mb-3">See also</h2>
           <ul className="space-y-2 text-sm">
             <li>
-              <Link href="/heat-pumps/states/ca" className="text-brand-600 hover:underline">
-                California Heat Pump Rebates
+              <Link href="/heat-pumps/states/nv" className="text-brand-600 hover:underline">
+                Nevada Heat Pump Rebates
               </Link>
             </li>
             <li>
-              <Link href="/heat-pumps/states/nv" className="text-gray-500">
-                Nevada Heat Pump Rebates <em>(coming soon)</em>
+              <Link href="/heat-pumps/states/nm" className="text-brand-600 hover:underline">
+                New Mexico Heat Pump Rebates
+              </Link>
+            </li>
+            <li>
+              <Link href="/heat-pumps/states/ca" className="text-brand-600 hover:underline">
+                California Heat Pump Rebates
               </Link>
             </li>
             <li>

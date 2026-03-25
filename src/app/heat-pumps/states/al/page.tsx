@@ -86,7 +86,7 @@ export default function AlabamaPage() {
             {" "}/ Alabama
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Alabama heat pump rebates and incentives in 2026
+            Alabama Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
             Alabama has no statewide heat pump rebate, but utility programs still
@@ -138,11 +138,13 @@ export default function AlabamaPage() {
               </p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-1">✓ Rural co-op rebates: $300–$400/ton</p>
+              <p className="font-semibold text-green-800 mb-1">✓ Total potential savings: $1,200–$15,700</p>
               <p className="text-sm text-green-900">
-                Most Alabama electric cooperatives offer heat pump rebates of
-                $300–$400 per ton. For a typical 3-ton system, that&apos;s
-                $900–$1,200. Programs vary by cooperative.
+                $1,200 (above 150% AMI, Alabama Power territory) to $2,100
+                (above 150% AMI, TVA territory). When HEAR launches,
+                income-qualified households below 80% AMI could reach ~$15,700
+                in total incentives. Rural co-ops add $900–$1,200 for a
+                typical 3-ton system.
               </p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">

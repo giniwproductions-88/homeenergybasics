@@ -2140,15 +2140,19 @@ export const incentives: Record<StateCode, StateIncentive> = {
     status: "limited",
     lastVerified: "2026-03-24",
     summary:
-      "Arkansas heat pump incentives are limited to utility rebates. SWEPCO offers up to $2,200 for qualifying systems. OG\u0026E offers up to $3,000 in the Fort Smith area. Entergy Arkansas has no central HP rebate. Federal 25C/25D expired Dec 2025. The state\u2019s $105M HEAR/HOMES allocation has not launched.",
+      "Arkansas heat pump incentives are limited to utility rebates. SWEPCO offers $250\u2013$600/ton (up to ~$2,500\u2013$3,000 per address). OG\u0026E offers up to $3,000 in the Fort Smith area. Entergy Arkansas has no central HP rebate. Federal 25C/25D expired Dec 2025. The state\u2019s $105M HEAR/HOMES allocation has not launched.",
     sources: [
       {
         label: "Arkansas DEQ \u2014 Home Energy Rebates Program",
         url: "https://www.adeq.state.ar.us/energy/assistance/home-energy-rebates.aspx",
       },
       {
-        label: "SWEPCO \u2014 Residential Energy Efficiency Rebates",
-        url: "https://www.swepco.com/savings/home/money/incentives/hvac",
+        label: "SWEPCO \u2014 Residential Energy Improvement Incentives",
+        url: "https://swepcosavings.com/residential/residential-improvement-incentives",
+      },
+      {
+        label: "SWEPCO \u2014 2026 REIP Incentive Table (PDF)",
+        url: "https://swepcosavings.com/downloads/2026/REIP_Incentive_Table-2026.pdf",
       },
       {
         label: "OG\u0026E \u2014 Arkansas Rebates",

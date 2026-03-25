@@ -6,16 +6,16 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title:
-    "Arkansas Heat Pump Rebates 2026: Up to $3,000 OG&amp;E + $2,200 SWEPCO | Home Energy Basics",
+    "Arkansas Heat Pump Rebates 2026: Up to $3,000 OG&amp;E + $2,500 SWEPCO | Home Energy Basics",
   description:
-    "SWEPCO offers up to $2,200 for heat pumps. OG&E adds up to $3,000. Federal tax credits ended. Here\u2019s every Arkansas heat pump incentive in 2026.",
+    "SWEPCO offers up to $2,500 for heat pumps. OG&E adds up to $3,000. Federal tax credits ended. Here\u2019s every Arkansas heat pump incentive in 2026.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/ar",
   },
   openGraph: {
     title: "Arkansas Heat Pump Rebates 2026",
     description:
-      "SWEPCO offers up to $2,200 and OG&E up to $3,000 for heat pumps \u2014 the complete guide to Arkansas heat pump incentives after federal credits expired.",
+      "SWEPCO offers up to $2,500 and OG&E up to $3,000 for heat pumps \u2014 the complete guide to Arkansas heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/ar",
     type: "article",
   },
@@ -34,7 +34,7 @@ export default function ArkansasPage() {
         name: "What heat pump rebates are available in Arkansas in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Arkansas heat pump rebates come from your electric utility. SWEPCO offers up to $2,200 for qualifying air-source heat pumps in northwest and western Arkansas. OG\u0026E offers up to $3,000 in the Fort Smith area. Entergy Arkansas does not offer a central heat pump rebate but provides $500 for heat pump water heaters. Federal tax credits (25C/25D) expired December 31, 2025. The state\u2019s $105 million in IRA-funded HEAR/HOMES rebates have not launched yet.",
+          text: "Arkansas heat pump rebates come from your electric utility. SWEPCO offers $250\u2013$600 per ton (up to ~$2,500\u2013$3,000 for a typical 5-ton system) in northwest and western Arkansas. OG\u0026E offers up to $3,000 in the Fort Smith area. Entergy Arkansas does not offer a central heat pump rebate but provides $500 for heat pump water heaters. Federal tax credits (25C/25D) expired December 31, 2025. The state\u2019s $105 million in IRA-funded HEAR/HOMES rebates have not launched yet.",
         },
       },
       {
@@ -89,7 +89,7 @@ export default function ArkansasPage() {
             Arkansas Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Arkansas heat pump incentives in 2026 are limited to utility rebates. SWEPCO offers up to <strong>$2,200</strong> and OG&amp;E up to <strong>$3,000</strong> for qualifying systems, but Entergy Arkansas &mdash; the state&apos;s largest utility &mdash; has no central heat pump rebate. The state&apos;s <strong>$105 million</strong> in IRA-funded HEAR/HOMES rebates have not launched yet. This guide covers all major Arkansas heat pump incentives available in 2026, including SWEPCO, OG&amp;E, Entergy, cooperative programs, and the pending IRA rebates. Here&apos;s what&apos;s actually available.
+            Arkansas heat pump incentives in 2026 are limited to utility rebates. SWEPCO offers up to <strong>$2,500</strong> and OG&amp;E up to <strong>$3,000</strong> for qualifying systems, but Entergy Arkansas &mdash; the state&apos;s largest utility &mdash; has no central heat pump rebate. The state&apos;s <strong>$105 million</strong> in IRA-funded HEAR/HOMES rebates have not launched yet. This guide covers all major Arkansas heat pump incentives available in 2026, including SWEPCO, OG&amp;E, Entergy, cooperative programs, and the pending IRA rebates. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
             Last verified: {formattedDate}
@@ -114,7 +114,7 @@ export default function ArkansasPage() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ SWEPCO utility rebates</p>
-              <p className="text-sm text-green-900">Up to <strong>$2,200</strong> for qualifying air-source heat pumps in northwest and western Arkansas. Up to $1,150 for heat pump water heaters.</p>
+              <p className="text-sm text-green-900">Up to <strong>$500/ton</strong> for qualifying heat pumps (max ~$2,500 per address) or <strong>$600/ton</strong> for electric resistance conversions (max ~$3,000). Up to $1,150 for heat pump water heaters.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ OG&amp;E utility rebates</p>
@@ -122,7 +122,7 @@ export default function ArkansasPage() {
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Potential savings</p>
-              <p className="text-sm text-green-900"><strong>$3,000</strong> (above 150% AMI) to <strong>$11,000+</strong> (below 80% AMI, when HEAR launches). Full electrification packages can reach ~$17,000 total incentives.</p>
+              <p className="text-sm text-green-900"><strong>$2,500&ndash;$3,000</strong> (above 150% AMI) to <strong>$11,000+</strong> (below 80% AMI, when HEAR launches). Full electrification packages can reach ~$17,000 total incentives.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">✗ Federal tax credits expired</p>
@@ -261,7 +261,7 @@ export default function ArkansasPage() {
           {/* SWEPCO */}
           <h3 className="text-lg font-semibold text-gray-900 mb-3">SWEPCO (Northwest &amp; Western Arkansas)</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Southwestern Electric Power Company offers the strongest heat pump incentives in Arkansas through its Residential Energy Improvement Pathway.
+            Southwestern Electric Power Company offers the strongest heat pump incentives in Arkansas through its 2026 Residential Energy Improvement Program (REIP). Rebates are per-ton and tier-based.
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
@@ -273,15 +273,30 @@ export default function ArkansasPage() {
                 </tr>
               </thead>
               <tbody>
+                <tr className="border-b">
+                  <td className="p-3">Heat pump (Tier 1)</td>
+                  <td className="p-3 font-semibold">$250/ton</td>
+                  <td className="p-3">15.2&ndash;17.09 SEER2, &ge;7.25 HSPF2</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Heat pump (Tier 2)</td>
+                  <td className="p-3 font-semibold">$400/ton</td>
+                  <td className="p-3">17.1&ndash;19.94 SEER2</td>
+                </tr>
                 <tr className="border-b bg-green-50">
-                  <td className="p-3">Air-source heat pump (ducted)</td>
-                  <td className="p-3 font-semibold">Up to $2,200</td>
-                  <td className="p-3">&ge;15.2 SEER2, &ge;7.25 HSPF2</td>
+                  <td className="p-3">Heat pump (Tier 3)</td>
+                  <td className="p-3 font-semibold">$500/ton</td>
+                  <td className="p-3">&ge;19.95 SEER2</td>
+                </tr>
+                <tr className="border-b bg-green-50">
+                  <td className="p-3">Electric resistance to HP conversion</td>
+                  <td className="p-3 font-semibold">$600/ton</td>
+                  <td className="p-3">&ge;15.2 SEER2, full system replacement</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Heat pump water heater</td>
                   <td className="p-3 font-semibold">$1,150</td>
-                  <td className="p-3">ENERGY STAR, replaces electric tank</td>
+                  <td className="p-3">ENERGY STAR certified, replaces electric tank</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Smart thermostat</td>
@@ -292,7 +307,7 @@ export default function ArkansasPage() {
             </table>
           </div>
           <p className="text-gray-700 leading-relaxed mb-6">
-            All SWEPCO HVAC work must use a SWEPCO-approved contractor. The program page confirms Arkansas customers receive up to <strong>$2,200</strong> per qualifying unit (Louisiana and Texas customers receive higher amounts).
+            All SWEPCO HVAC work must use a SWEPCO-approved contractor. For a typical 3-ton system, expect <strong>$750&ndash;$1,500</strong> depending on efficiency tier. A 5-ton system at the highest tier reaches <strong>$2,500</strong>. Households replacing electric resistance heating can receive up to <strong>$600/ton</strong> &mdash; up to <strong>$3,000</strong> for a 5-ton system. SWEPCO caps total incentives at $2,500 per service address for standard replacements.
           </p>
 
           {/* OG&E */}
@@ -355,7 +370,7 @@ export default function ArkansasPage() {
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
             <p className="font-semibold text-blue-800 mb-1">Your utility territory determines your rebate</p>
-            <p className="text-sm text-blue-900">The gap between SWEPCO/OG&amp;E customers ($2,200&ndash;$3,000) and Entergy customers ($0 for central heat pumps) is the defining feature of Arkansas heat pump incentives. Check your electric bill to confirm your utility before planning.</p>
+            <p className="text-sm text-blue-900">The gap between SWEPCO/OG&amp;E customers ($1,500&ndash;$3,000) and Entergy customers ($0 for central heat pumps) is the defining feature of Arkansas heat pump incentives. Check your electric bill to confirm your utility before planning.</p>
           </div>
         </div>
       </section>
@@ -372,7 +387,7 @@ export default function ArkansasPage() {
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900 mb-2">Above 150% AMI &mdash; Ducted heat pump replacement</p>
               <ul className="text-sm text-gray-700 space-y-1">
-                <li>SWEPCO or OG&amp;E utility rebate: $2,200&ndash;$3,000</li>
+                <li>SWEPCO or OG&amp;E utility rebate: $1,500&ndash;$3,000</li>
                 <li>HEAR: not eligible</li>
                 <li>Federal tax credit: expired</li>
               </ul>
@@ -383,7 +398,7 @@ export default function ArkansasPage() {
               <p className="font-semibold text-gray-900 mb-2">80&ndash;150% AMI &mdash; Ducted heat pump replacement (when HEAR launches)</p>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>HEAR heat pump rebate (50% of cost): up to $4,000</li>
-                <li>SWEPCO or OG&amp;E utility rebate: $2,200&ndash;$3,000</li>
+                <li>SWEPCO or OG&amp;E utility rebate: $1,500&ndash;$3,000</li>
               </ul>
               <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$7,000</p>
             </div>
@@ -392,7 +407,7 @@ export default function ArkansasPage() {
               <p className="font-semibold text-green-800 mb-2">Below 80% AMI &mdash; Ducted heat pump replacement (when HEAR launches)</p>
               <ul className="text-sm text-green-900 space-y-1">
                 <li>HEAR heat pump rebate (100% of cost): up to $8,000</li>
-                <li>SWEPCO or OG&amp;E utility rebate: $2,200&ndash;$3,000</li>
+                <li>SWEPCO or OG&amp;E utility rebate: $1,500&ndash;$3,000</li>
               </ul>
               <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$11,000</p>
             </div>
