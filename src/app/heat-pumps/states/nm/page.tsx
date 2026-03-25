@@ -21,56 +21,56 @@ export const metadata: Metadata = {
   },
 };
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What heat pump rebates are available in New Mexico in 2026?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The largest incentive is the HEAR program, offering up to $8,000 for a heat pump — but currently limited to households below 80% of Area Median Income, and the heat pump category has not yet opened for applications. Utility rebates from PNM ($550–$700), El Paso Electric ($300–$525), and rural co-ops ($500–$1,500) are available at all income levels. The Sustainable Building Tax Credit adds roughly $500–$1,000. Federal Section 25C and 25D tax credits expired December 31, 2025.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can I stack HEAR rebates with utility rebates and state tax credits in New Mexico?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. HEAR rebates can be stacked with utility rebates and the Sustainable Building Tax Credit for the same installation. The maximum HEAR amount per household is $14,000 across all measures. HEAR and HOMES rebates cannot be combined for the same measure. A low-income homeowner in PNM territory could realistically stack $8,000 (HEAR) + $550 (PNM) + $1,000 (SBTC) for roughly $9,550 on a heat pump alone.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do I need a cold-climate heat pump in New Mexico?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "It depends on where you live. In southern New Mexico (Las Cruces, Roswell), standard heat pumps handle the mild winters. In Albuquerque (5,312 ft elevation), cold-climate models are recommended. In Santa Fe (7,199 ft) and Taos, cold-climate heat pumps are essential — winter design temperatures drop to 0\u00b0F or below. High altitude also reduces heat pump capacity by 17\u201326%, so proper sizing with altitude correction is critical statewide.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Who administers New Mexico\u2019s HEAR program?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The HEAR program is administered by the Energy Conservation and Management Division (ECMD) within the New Mexico Energy, Minerals and Natural Resources Department (EMNRD). Franklin Energy serves as the implementation contractor. Applications are submitted through the state portal at clean.energy.nm.gov before purchasing equipment.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does New Mexico have a geothermal heat pump tax credit?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. New Mexico offers a separate Geothermal Ground-Coupled Heat Pump Tax Credit covering 30% of purchase and installation costs, up to $9,000 maximum. This credit is refundable with a 10-year carryforward and available at all income levels through December 31, 2034. Systems must have COP of 3.4 or higher and be installed by an IGSHPA-accredited installer.",
+      },
+    },
+  ],
+};
+
 export default function NewMexicoPage() {
   const nmIncentive = incentives.NM;
   const formattedDate = formatDate(nmIncentive.lastVerified);
-
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "What heat pump rebates are available in New Mexico in 2026?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "The largest incentive is the HEAR program, offering up to $8,000 for a heat pump — but currently limited to households below 80% of Area Median Income. Utility rebates from PNM ($550–$700), El Paso Electric ($300–$525), and rural co-ops ($500–$1,500) are available at all income levels. The Sustainable Building Tax Credit adds roughly $500–$1,000. Federal Section 25C and 25D tax credits expired December 31, 2025.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Can I stack HEAR rebates with utility rebates and state tax credits in New Mexico?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes. HEAR rebates can be stacked with utility rebates and the Sustainable Building Tax Credit for the same installation. The maximum HEAR amount per household is $14,000 across all measures. HEAR and HOMES rebates cannot be combined for the same measure. A low-income homeowner in PNM territory could realistically stack $8,000 (HEAR) + $550 (PNM) + $1,000 (SBTC) for roughly $9,550 on a heat pump alone.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Do I need a cold-climate heat pump in New Mexico?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "It depends on where you live. In southern New Mexico (Las Cruces, Roswell), standard heat pumps handle the mild winters. In Albuquerque (5,312 ft elevation), cold-climate models are recommended. In Santa Fe (7,199 ft) and Taos, cold-climate heat pumps are essential — winter design temperatures drop to 0°F or below. High altitude also reduces heat pump capacity by 17–26%, so proper sizing with altitude correction is critical statewide.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Who administers New Mexico&apos;s HEAR program?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "The HEAR program is administered by the Energy Conservation and Management Division (ECMD) within the New Mexico Energy, Minerals and Natural Resources Department (EMNRD). Franklin Energy serves as the implementation contractor. Applications are submitted through the state portal at clean.energy.nm.gov before purchasing equipment.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Does New Mexico have a geothermal heat pump tax credit?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes. New Mexico offers a separate Geothermal Ground-Coupled Heat Pump Tax Credit covering 30% of purchase and installation costs, up to $9,000 maximum. This credit is refundable with a 10-year carryforward and available at all income levels through December 31, 2034. Systems must have COP of 3.4 or higher and be installed by an IGSHPA-accredited installer.",
-        },
-      },
-    ],
-  };
 
   return (
     <>
@@ -86,7 +86,7 @@ export default function NewMexicoPage() {
             {" "}/ New Mexico
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            New Mexico heat pump rebates and incentives in 2026
+            New Mexico Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
             New Mexico&apos;s HEAR program covers up to <strong>$8,000</strong> per heat pump for income-qualifying households, but most homeowners above 80% of Area Median Income (AMI) are limited to roughly <strong>$1,000–$1,800</strong> in utility rebates and state tax credits. This guide covers all major New Mexico heat pump incentives available in 2026, including HEAR, PNM and El Paso Electric utility rebates, rural co-op programs, and state tax credits. Here&apos;s what&apos;s actually available.
@@ -110,27 +110,27 @@ export default function NewMexicoPage() {
       {/* 3. SHORT VERSION */}
       <section className="py-8">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">The short version</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">The Short Version</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-1">✓ HEAR rebates up to $8,000</p>
-              <p className="text-sm text-green-900">The Home Electrification and Appliance Rebates program covers up to $8,000 per heat pump. Currently limited to households below 80% AMI. Administered by EMNRD through Franklin Energy.</p>
+              <p className="font-semibold text-green-800 mb-1">✓ Utility Rebates: $300–$1,500</p>
+              <p className="text-sm text-green-900">PNM offers $550–$700 for heat pumps and HPWHs. El Paso Electric provides $300–$525. Tri-State rural co-ops offer $500–$1,500. Available at all income levels right now.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-1">✓ Utility rebates $300–$1,500</p>
-              <p className="text-sm text-green-900">PNM offers $550–$700 for heat pumps and HPWHs. El Paso Electric provides $300–$525. Tri-State rural co-ops offer $500–$1,500. Available at all income levels.</p>
+              <p className="font-semibold text-green-800 mb-1">✓ State Tax Credits: ~$500–$9,000</p>
+              <p className="text-sm text-green-900">Sustainable Building Tax Credit adds ~$500–$1,000 for air-source HPs. Geothermal credit covers 30% up to $9,000 (all incomes, through 2034). Both active now.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-1">✓ Total potential savings: $1,050–$10,500+</p>
-              <p className="text-sm text-green-900">$1,050 (above 80% AMI) to $10,500+ (below 80% AMI). Full electrification packages for low-income homeowners can reach ~$16,000 total incentives through HEAR.</p>
+              <p className="font-semibold text-green-800 mb-1">✓ Total Potential Savings: $1,050–$10,500+</p>
+              <p className="text-sm text-green-900">$1,050 (above 80% AMI, utility + SBTC only) to $10,500+ (below 80% AMI when HEAR HP opens). Full electrification packages for low-income homeowners can reach ~$16,000 total.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
-              <p className="font-semibold text-red-800 mb-1">✗ Federal tax credits expired</p>
+              <p className="font-semibold text-red-800 mb-1">✗ Federal Tax Credits Expired</p>
               <p className="text-sm text-red-900">Section 25C ($2,000/year for heat pumps) and Section 25D (30% for geothermal) both ended December 31, 2025. No replacement credits enacted.</p>
             </div>
             <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
-              <p className="font-semibold text-amber-800 mb-1">⚠ HEAR is income-restricted — only below 80% AMI right now</p>
-              <p className="text-sm text-amber-900">New Mexico has not yet activated the 80–150% AMI tier for HEAR. Most middle-income homeowners currently qualify only for utility rebates ($550–$700 in PNM territory) and the Sustainable Building Tax Credit (~$500). The HOMES program, which would serve moderate-income homeowners, has not yet launched.</p>
+              <p className="font-semibold text-amber-800 mb-1">⚠ HEAR Heat Pump Rebates Not Yet Open — and Income-Restricted</p>
+              <p className="text-sm text-amber-900">HEAR launched for dryers, cooktops, and insulation, but heat pump rebates show &quot;Coming Soon&quot; on the state portal. When open, only households below 80% AMI qualify (the 80–150% AMI tier has not been activated). HOMES has not launched either. Most middle-income homeowners are limited to utility rebates and state tax credits.</p>
             </div>
           </div>
         </div>
@@ -139,12 +139,12 @@ export default function NewMexicoPage() {
       {/* 4. FEDERAL EXPIRED */}
       <section className="py-12 bg-gray-50">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Federal tax credits are gone</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Federal Tax Credits Have Ended</h2>
           <div className="bg-red-50 border border-red-200 rounded-lg p-6 mb-6">
             <p className="text-red-900 leading-relaxed">
               The <strong>One Big Beautiful Bill Act</strong> (signed July 4, 2025) terminated both major residential energy tax credits. <strong>Section 25C</strong> (up to $2,000/year for heat pumps) and <strong>Section 25D</strong> (30% of geothermal heat pump costs) expired for any property placed in service after <strong>December 31, 2025</strong>. A heat pump purchased in 2025 but installed in 2026 does not qualify. Homeowners who completed installations by the deadline can still claim credits on their 2025 returns.{" "}
-              <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">
-                Full details on what changed →
+              <Link href="/federal-heat-pump-tax-credit-expired" className="text-red-700 underline hover:text-red-900">
+                Full details on what changed
               </Link>
             </p>
           </div>
@@ -159,7 +159,7 @@ export default function NewMexicoPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Home Electrification and Appliance Rebates (HEAR)</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            New Mexico&apos;s HEAR program is the single largest heat pump incentive in the state. Administered by the Energy Conservation and Management Division (ECMD) within the Energy, Minerals and Natural Resources Department (EMNRD), with <strong>Franklin Energy</strong> as the implementation contractor, HEAR launched September 3, 2024 and remains open. Total state allocation: <strong>$43 million</strong> in DOE funding. The program was funded under the IRA and was not repealed by the One Big Beautiful Bill Act — it continues until funds are exhausted.
+            New Mexico&apos;s HEAR program is the single largest heat pump incentive in the state. Administered by the Energy Conservation and Management Division (ECMD) within the Energy, Minerals and Natural Resources Department (EMNRD), with <strong>Franklin Energy</strong> as the implementation contractor, HEAR launched September 3, 2024 and is being rolled out in phases. Total state allocation: <strong>$43 million</strong> in DOE funding. The program was funded under the IRA and was not repealed by the One Big Beautiful Bill Act &mdash; it continues until funds are exhausted. As of March 2026, dryers, cooktops, and insulation rebates are live, but <strong>heat pump HVAC and HPWH rebates are listed as &quot;Coming Soon&quot;</strong> on the state portal.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">HEAR rebate amounts</h3>
@@ -223,7 +223,7 @@ export default function NewMexicoPage() {
       {/* 6. HOMES / SECONDARY + STATE TAX CREDITS */}
       <section className="py-12 bg-gray-50">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">State tax credits and HOMES program</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">State Tax Credits and HOMES Program</h2>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Sustainable Building Tax Credit — Energy Conserving Products</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
@@ -253,7 +253,7 @@ export default function NewMexicoPage() {
       {/* 7. UTILITY PROGRAMS */}
       <section className="py-12">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Utility rebates</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Utility Rebate Programs</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             New Mexico&apos;s utility rebates are available at all income levels but vary significantly by territory. PNM customers in central New Mexico have the most options. El Paso Electric covers southern New Mexico. Rural co-op customers should check their specific cooperative.
           </p>
@@ -377,9 +377,9 @@ export default function NewMexicoPage() {
       </section>
 
       {/* 8. LOCAL PROGRAMS */}
-      <section className="py-12">
+      <section className="py-12 bg-gray-50">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Local programs</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Local Programs</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             No New Mexico city operates a dedicated residential heat pump rebate. However, two local programs can cover heat pumps as part of broader home upgrades for income-qualifying households:
           </p>
@@ -397,9 +397,9 @@ export default function NewMexicoPage() {
       </section>
 
       {/* 9. STACKING */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-12">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">How programs stack</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">How Programs Stack</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             New Mexico allows stacking of HEAR rebates with utility rebates and the Sustainable Building Tax Credit. HEAR and HOMES cannot be combined for the same measure. Federal tax credits are no longer available. Here&apos;s what realistic stacking looks like for a ducted air-source heat pump installation (estimated total cost: <strong>$12,000–$18,000</strong>):
           </p>
@@ -448,7 +448,7 @@ export default function NewMexicoPage() {
           </div>
 
           <div className="bg-gray-100 rounded-lg p-5 mb-6">
-            <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
+            <p className="font-semibold text-gray-900 mb-1">What You&apos;ll Actually Pay</p>
             <p className="text-sm text-gray-700">For a typical ducted ASHP installation costing $12,000–$18,000: homeowners above 80% AMI will pay <strong>$10,950–$16,950 out of pocket</strong>. Homeowners below 80% AMI in PNM territory could pay as little as <strong>$2,450–$8,450</strong>. The income gap is the defining feature of New Mexico&apos;s 2026 incentive landscape.</p>
           </div>
 
@@ -459,7 +459,7 @@ export default function NewMexicoPage() {
       </section>
 
       {/* 10. WEATHERIZATION */}
-      <section className="py-12">
+      <section className="py-12 bg-gray-50">
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Weatherization Assistance Program</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
@@ -477,9 +477,9 @@ export default function NewMexicoPage() {
       </section>
 
       {/* 11. CLIMATE */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-12">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Climate context: three zones, high altitude</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Climate Context: Three Zones, High Altitude</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             New Mexico spans IECC zones 3B through 5B — warm-dry in the south, mixed-dry in the center, and cool-dry in the mountains. This range, combined with elevations from 3,900 to 7,200+ feet, creates distinct equipment requirements across the state.
           </p>
@@ -541,9 +541,9 @@ export default function NewMexicoPage() {
       </section>
 
       {/* 12. HOW TO APPLY */}
-      <section className="py-12">
+      <section className="py-12 bg-gray-50">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">How to apply</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Apply</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             For HEAR (the primary incentive for income-qualifying households):
           </p>
@@ -598,9 +598,9 @@ export default function NewMexicoPage() {
       </section>
 
       {/* 13. WHAT TO WATCH */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-12">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">What to watch</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">What to Watch</h2>
           <div className="space-y-4">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">IRA funding runway</p>
@@ -623,9 +623,9 @@ export default function NewMexicoPage() {
       </section>
 
       {/* 14. FAQ */}
-      <section className="py-12">
+      <section className="py-12 bg-gray-50">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Frequently asked questions</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-6">
             {faqJsonLd.mainEntity.map((faq: { name: string; acceptedAnswer: { text: string } }, index: number) => (
               <div key={index} className="border-b border-gray-200 pb-6">
@@ -638,7 +638,7 @@ export default function NewMexicoPage() {
       </section>
 
       {/* 15. SEE ALSO */}
-      <section className="py-8 bg-gray-50">
+      <section className="py-8">
         <div className="container-narrow">
           <h2 className="text-xl font-bold text-gray-900 mb-3">See also</h2>
           <ul className="space-y-2 text-sm">
@@ -672,7 +672,7 @@ export default function NewMexicoPage() {
       </section>
 
       {/* 16. SOURCES */}
-      <section className="py-12">
+      <section className="py-12 bg-gray-50">
         <div className="container-narrow">
           <h2 className="text-xl font-bold text-gray-900 mb-4">Sources</h2>
           <ul className="space-y-2 text-sm">

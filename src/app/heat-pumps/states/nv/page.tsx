@@ -71,7 +71,6 @@ const faqJsonLd = {
 export default function NevadaPage() {
   const nvIncentive = incentives.NV;
   const formattedDate = formatDate(nvIncentive.lastVerified);
-  const sources = nvIncentive.sources;
 
   return (
     <>
@@ -87,7 +86,7 @@ export default function NevadaPage() {
             {" "}/ Nevada
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Nevada heat pump rebates and incentives in 2026
+            Nevada Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
             Federal tax credits are gone, and Nevada&apos;s IRA-funded state rebate programs
@@ -117,7 +116,7 @@ export default function NevadaPage() {
       {/* 3. Short Version */}
       <section className="py-8">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">The short version</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">The Short Version</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ NV Energy PowerShift rebates</p>
@@ -166,7 +165,7 @@ export default function NevadaPage() {
       {/* 4. Federal Expired */}
       <section className="py-12 bg-gray-50">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Federal tax credits are gone</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Federal Tax Credits Have Ended</h2>
           <div className="bg-red-50 border border-red-200 rounded-lg p-6 mb-6">
             <p className="text-red-900 leading-relaxed">
               <strong>Section 25C</strong> (Energy Efficient Home Improvement Credit) and{" "}
@@ -322,7 +321,7 @@ export default function NevadaPage() {
       {/* 7. NV Energy Utility Programs */}
       <section className="py-12">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">NV Energy PowerShift rebates</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">NV Energy PowerShift Rebates</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             NV Energy serves approximately 90% of Nevada — including Las Vegas, Reno, Henderson, and
             Elko — and its PowerShift program is the only currently active, confirmed rebate for heat
@@ -406,7 +405,7 @@ export default function NevadaPage() {
       {/* 9. Stacking */}
       <section className="py-12 bg-gray-50">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">How Nevada incentives stack</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">How Programs Stack</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             NV Energy PowerShift rebates can be combined with state-administered HEAR or HOMES
             rebates once those programs launch, since they come from different funding sources. NV
@@ -449,7 +448,7 @@ export default function NevadaPage() {
           </div>
 
           <div className="bg-gray-100 rounded-lg p-5">
-            <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
+            <p className="font-semibold text-gray-900 mb-1">What You&apos;ll Actually Pay</p>
             <p className="text-sm text-gray-700">
               On a $12,000–$15,000 installation: <strong>$6,000–$14,500 out of pocket</strong> for
               above-150% AMI households (NV Energy only, until HOMES launches). With HEAR,
@@ -464,7 +463,7 @@ export default function NevadaPage() {
       {/* 10. Weatherization */}
       <section className="py-12">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Weatherization and financing</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Weatherization and Financing</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             The Nevada <strong>Weatherization Assistance Program (WAP)</strong>, administered by
             the Nevada Housing Division, provides free energy efficiency upgrades — including HVAC
@@ -495,7 +494,7 @@ export default function NevadaPage() {
       {/* 11. Climate */}
       <section className="py-12 bg-gray-50">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Climate context: two different Nevadas</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Climate Context: Two Different Nevadas</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             Nevada spans two dramatically different climate zones that directly affect which heat
             pump to install. Choosing the wrong type for your location can mean inadequate heating,
@@ -585,7 +584,7 @@ export default function NevadaPage() {
       {/* 12. How to Apply */}
       <section className="py-12">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">How to apply for NV Energy rebates</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Apply</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             NV Energy PowerShift rebates are applied at the point of sale through participating
             contractors — there is no separate application or reimbursement process.
@@ -650,7 +649,7 @@ export default function NevadaPage() {
       {/* 13. What to Watch */}
       <section className="py-12 bg-gray-50">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">What to watch</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">What to Watch</h2>
           <div className="space-y-4">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">HEAR and HOMES launch date</p>
@@ -684,7 +683,7 @@ export default function NevadaPage() {
       {/* 14. FAQ */}
       <section className="py-12">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Frequently asked questions</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-6">
             {faqJsonLd.mainEntity.map((faq: { name: string; acceptedAnswer: { text: string } }, index: number) => (
               <div key={index} className="border-b border-gray-200 pb-6">
@@ -703,22 +702,27 @@ export default function NevadaPage() {
           <ul className="space-y-2 text-sm">
             <li>
               <Link href="/heat-pumps/states/ca" className="text-brand-600 hover:underline">
-                California Heat Pump Rebates
+                California Heat Pump Rebates &amp; Incentives
               </Link>
             </li>
             <li>
               <Link href="/heat-pumps/states/az" className="text-brand-600 hover:underline">
-                Arizona Heat Pump Rebates
+                Arizona Heat Pump Rebates &amp; Incentives
+              </Link>
+            </li>
+            <li>
+              <Link href="/heat-pumps/states/ut" className="text-brand-600 hover:underline">
+                Utah Heat Pump Rebates &amp; Incentives
               </Link>
             </li>
             <li>
               <Link href="/heat-pumps/states/or" className="text-brand-600 hover:underline">
-                Oregon Heat Pump Rebates
+                Oregon Heat Pump Rebates &amp; Incentives
               </Link>
             </li>
             <li>
               <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">
-                Federal Heat Pump Tax Credits — What Changed
+                Federal Heat Pump Tax Credits Have Ended &mdash; What to Know
               </Link>
             </li>
             <li>
@@ -735,7 +739,7 @@ export default function NevadaPage() {
         <div className="container-narrow">
           <h2 className="text-xl font-bold text-gray-900 mb-4">Sources</h2>
           <ul className="space-y-2 text-sm">
-            {sources.map((source: { label: string; url: string }, index: number) => (
+            {nvIncentive.sources.map((source: { label: string; url: string }, index: number) => (
               <li key={index}>
                 <a
                   href={source.url}

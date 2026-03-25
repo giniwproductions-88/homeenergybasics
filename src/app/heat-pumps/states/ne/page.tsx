@@ -21,56 +21,56 @@ export const metadata: Metadata = {
   },
 };
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What heat pump rebates are available in Nebraska in 2026?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Nebraska heat pump rebates come from public power utilities. NPPD EnergyWise offers $400\u2013$1,200 for air-source heat pumps depending on efficiency. OPPD pays a flat $525 for all heat pumps. Lincoln Electric System offers $800. The City of Lincoln adds up to $3,000 for low-income homeowners. Federal tax credits (25C/25D) expired December 31, 2025. Nebraska\u2019s IRA-funded HEAR and HOMES programs have not launched.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can I stack utility rebates and HEAR in Nebraska?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, when HEAR launches in Nebraska, federal rules allow stacking HEAR rebates with utility rebates. However, there is one important Nebraska-specific anti-stacking rule: the NPPD 1.5% Dollar and Energy Saving Loan and the NPPD EnergyWise rebate cannot be combined. You must choose one or the other. The standard 5% state loan can be combined with any utility rebate.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do I need a cold-climate heat pump in Nebraska?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Nebraska\u2019s ASHRAE 99.6% heating design temperatures range from \u22126.3\u00b0F in Lincoln to \u22128.1\u00b0F in Omaha, with western Nebraska even colder. Cold-climate-rated, inverter-driven heat pumps are strongly recommended for all Nebraska installations. A dual-fuel setup pairing a heat pump with a gas furnace backup is a practical option in urban areas with existing natural gas service.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is Nebraska\u2019s Dollar and Energy Saving Loans program?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The Dollar and Energy Saving Loans program is administered by the Nebraska Department of Water, Energy, and Environment (DWEE). It offers low-interest financing for heat pump installations through participating Nebraska banks. Rates range from 1.5% (NPPD territory) to 3% (OPPD territory) to 5% (standard). Loans go up to $125,000 with terms up to 15 years. No income requirement applies.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Who administers heat pump programs in Nebraska?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Nebraska is the only all-public-power state in the U.S., so there are no investor-owned utilities. Heat pump rebates are administered by individual public power districts (OPPD, NPPD), municipal utilities (Lincoln Electric System, Hastings Utilities), and rural cooperatives. The Dollar and Energy Saving Loans program is administered by the Nebraska DWEE. The state\u2019s IRA rebate programs will also be administered by DWEE when they launch.",
+      },
+    },
+  ],
+};
+
 export default function NebraskaPage() {
   const neIncentive = incentives.NE;
   const formattedDate = formatDate(neIncentive.lastVerified);
-
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "What heat pump rebates are available in Nebraska in 2026?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Nebraska heat pump rebates come from public power utilities. NPPD EnergyWise offers $400\u2013$1,200 for air-source heat pumps depending on efficiency. OPPD pays a flat $525 for all heat pumps. Lincoln Electric System offers $800. The City of Lincoln adds up to $3,000 for low-income homeowners. Federal tax credits (25C/25D) expired December 31, 2025. Nebraska\u2019s IRA-funded HEAR and HOMES programs have not launched.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Can I stack utility rebates and HEAR in Nebraska?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes, when HEAR launches in Nebraska, federal rules allow stacking HEAR rebates with utility rebates. However, there is one important Nebraska-specific anti-stacking rule: the NPPD 1.5% Dollar and Energy Saving Loan and the NPPD EnergyWise rebate cannot be combined. You must choose one or the other. The standard 5% state loan can be combined with any utility rebate.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Do I need a cold-climate heat pump in Nebraska?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes. Nebraska\u2019s ASHRAE 99.6% heating design temperatures range from \u22126.3\u00b0F in Lincoln to \u22128.1\u00b0F in Omaha, with western Nebraska even colder. Cold-climate-rated, inverter-driven heat pumps are strongly recommended for all Nebraska installations. A dual-fuel setup pairing a heat pump with a gas furnace backup is a practical option in urban areas with existing natural gas service.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What is Nebraska\u2019s Dollar and Energy Saving Loans program?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "The Dollar and Energy Saving Loans program is administered by the Nebraska Department of Water, Energy, and Environment (DWEE). It offers low-interest financing for heat pump installations through participating Nebraska banks. Rates range from 1.5% (NPPD territory) to 3% (OPPD territory) to 5% (standard). Loans go up to $125,000 with terms up to 15 years. No income requirement applies.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Who administers heat pump programs in Nebraska?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Nebraska is the only all-public-power state in the U.S., so there are no investor-owned utilities. Heat pump rebates are administered by individual public power districts (OPPD, NPPD), municipal utilities (Lincoln Electric System, Hastings Utilities), and rural cooperatives. The Dollar and Energy Saving Loans program is administered by the Nebraska DWEE. The state\u2019s IRA rebate programs will also be administered by DWEE when they launch.",
-        },
-      },
-    ],
-  };
 
   return (
     <>
@@ -110,7 +110,7 @@ export default function NebraskaPage() {
       {/* 3. SHORT VERSION */}
       <section className="py-8">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Short version</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">The Short Version</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ NPPD EnergyWise: up to $1,200</p>
@@ -139,7 +139,7 @@ export default function NebraskaPage() {
       {/* 4. FEDERAL EXPIRED */}
       <section className="bg-gray-50 py-12">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Federal tax credits are gone</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Federal Tax Credits Have Ended</h2>
           <div className="bg-red-50 border border-red-200 rounded-lg p-6 mb-6">
             <p className="text-red-900 leading-relaxed">
               <strong>Section 25C</strong> (Energy Efficient Home Improvement Credit) and <strong>Section 25D</strong> (Residential Clean Energy Credit) were terminated by the One Big Beautiful Bill Act, signed July 4, 2025. Both credits applied to property placed in service through <strong>December 31, 2025</strong>. No federal tax credit is available for heat pumps installed in 2026. If your system was fully installed and operational by December 31, 2025, you can still claim the credit on your 2025 tax return.
@@ -160,7 +160,7 @@ export default function NebraskaPage() {
       {/* 5. HEAR + HOMES STATUS */}
       <section className="py-12">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">IRA rebates: HEAR and HOMES status</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">IRA Rebates: HEAR and HOMES Status</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             Nebraska received approximately <strong>$91 million</strong> in IRA formula funding for the Home Electrification and Appliance Rebates (HEAR) and Home Owner Managing Energy Savings (HOMES) programs. Both programs remain in &quot;Preparing Application&quot; status with the Nebraska Department of Water, Energy, and Environment (DWEE). No launch date has been announced.
           </p>
@@ -265,7 +265,7 @@ export default function NebraskaPage() {
       {/* 7. UTILITY PROGRAMS */}
       <section className="py-12">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Utility rebates</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Utility Rebate Programs</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             Utility rebates are the main cash incentives available to Nebraska homeowners in 2026. Amounts vary significantly depending on your electric utility territory.
           </p>
@@ -434,7 +434,7 @@ export default function NebraskaPage() {
       {/* 9. STACKING */}
       <section className="bg-gray-50 py-12">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">How programs stack</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">How Programs Stack</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             Federal rules allow stacking IRA rebates (HEAR/HOMES) with utility rebates and local government programs. The Dollar and Energy Saving Loans, as financing rather than grants, are generally stackable with all rebate programs — except the NPPD 1.5% loan, which cannot combine with the EnergyWise rebate. Below are realistic scenarios for a typical <strong>$10,000</strong> whole-home heat pump installation.
           </p>
@@ -509,7 +509,7 @@ export default function NebraskaPage() {
       {/* 11. CLIMATE */}
       <section className="bg-gray-50 py-12">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Climate context</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Climate Context</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             Nebraska falls entirely within IECC Climate Zone 5A. Cold-climate-rated, inverter-driven heat pumps are essential for all installations. ASHRAE 99.6% heating design temperatures confirm how cold it gets:
           </p>
@@ -564,7 +564,7 @@ export default function NebraskaPage() {
       {/* 12. HOW TO APPLY */}
       <section className="py-12">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">How to apply</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Apply</h2>
           <div className="space-y-4">
             <div className="flex gap-4">
               <div className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
@@ -609,7 +609,7 @@ export default function NebraskaPage() {
       {/* 13. WHAT TO WATCH */}
       <section className="bg-gray-50 py-12">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">What to watch</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">What to Watch</h2>
           <div className="space-y-4">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Nebraska HEAR/HOMES launch</p>
@@ -634,9 +634,9 @@ export default function NebraskaPage() {
       {/* 14. FAQ */}
       <section className="py-12">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Frequently asked questions</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-6">
-            {faqJsonLd.mainEntity.map((faq, index) => (
+            {faqJsonLd.mainEntity.map((faq: { name: string; acceptedAnswer: { text: string } }, index: number) => (
               <div key={index} className="border-b border-gray-200 pb-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">{faq.name}</h3>
                 <p className="text-gray-700 leading-relaxed">{faq.acceptedAnswer.text}</p>
@@ -656,14 +656,20 @@ export default function NebraskaPage() {
                 Colorado Heat Pump Rebates &amp; Incentives
               </Link>
             </li>
-            <li className="text-gray-500">
-              Iowa Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link href="/heat-pumps/states/ia" className="text-brand-600 hover:underline">
+                Iowa Heat Pump Rebates &amp; Incentives
+              </Link>
             </li>
-            <li className="text-gray-500">
-              South Dakota Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link href="/heat-pumps/states/sd" className="text-brand-600 hover:underline">
+                South Dakota Heat Pump Rebates &amp; Incentives
+              </Link>
             </li>
-            <li className="text-gray-500">
-              Kansas Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link href="/heat-pumps/states/ks" className="text-brand-600 hover:underline">
+                Kansas Heat Pump Rebates &amp; Incentives
+              </Link>
             </li>
             <li>
               <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">

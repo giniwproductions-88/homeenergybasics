@@ -6,16 +6,16 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title:
-    "North Dakota Heat Pump Rebates 2026: $800/Ton Utility Rebates + HEAR Status | Home Energy Basics",
+    "North Dakota Heat Pump Rebates 2026: $1,000/Ton Utility Rebates + HEAR Status | Home Energy Basics",
   description:
-    "Otter Tail Power offers $800/ton. Xcel rebates reach $2,000. Federal credits ended. Here&apos;s every North Dakota heat pump incentive in 2026.",
+    "Otter Tail Power offers up to $1,000/ton with QI. Xcel rebates reach $2,000. Federal credits ended. Here&apos;s every North Dakota heat pump incentive in 2026.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/nd",
   },
   openGraph: {
     title: "North Dakota Heat Pump Rebates 2026",
     description:
-      "Utility rebates up to $3,200 for cold-climate systems — the complete guide to North Dakota heat pump incentives after federal credits expired.",
+      "Utility rebates up to $4,200 for cold-climate systems — the complete guide to North Dakota heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/nd",
     type: "article",
   },
@@ -30,7 +30,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in North Dakota in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "With federal tax credits expired and state HEAR/HOMES programs not yet launched, utility rebates are the only active incentives. Otter Tail Power offers $300\u2013$800 per ton for air-source heat pumps. Xcel Energy offers $1,600\u2013$2,000 flat-rate rebates. Minnkota Power co-ops offer $150 per ton. Montana-Dakota Utilities offers no rebates.",
+        text: "With federal tax credits expired and state HEAR/HOMES programs not yet launched, utility rebates are the only active incentives. Otter Tail Power offers $300\u2013$1,000 per ton for air-source heat pumps (with Quality Installation bonus). Xcel Energy offers $1,600\u2013$2,000 flat-rate rebates. Minnkota Power co-ops offer $150 per ton. Montana-Dakota Utilities offers no rebates.",
       },
     },
     {
@@ -90,7 +90,8 @@ export default function NorthDakotaPage() {
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
             North Dakota&apos;s heat pump incentives come entirely from utilities in 2026.
-            Otter Tail Power offers up to <strong>$800 per ton</strong> for cold-climate systems,
+            Otter Tail Power offers up to <strong>$1,000 per ton</strong> for cold-climate systems
+            (with Quality Installation),
             and Xcel Energy provides up to <strong>$2,000</strong> in flat-rate rebates.
             Federal tax credits are gone, and the state&apos;s IRA-funded HEAR and HOMES programs
             have not launched. This guide covers all major North Dakota heat pump incentives
@@ -119,8 +120,8 @@ export default function NorthDakotaPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">The Short Version</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-1">✓ Otter Tail Power: Up to $800/Ton</p>
-              <p className="text-sm text-green-900">Cold-climate air-source heat pumps qualify for $800 per ton. A typical 4-ton system yields $3,200 in rebates. Geothermal systems qualify for $1,200 per ton.</p>
+              <p className="font-semibold text-green-800 mb-1">✓ Otter Tail Power: Up to $1,000/Ton (With QI)</p>
+              <p className="text-sm text-green-900">Cold-climate air-source heat pumps qualify for $800 per ton base, plus a $200/ton Quality Installation bonus through certified contractors. A typical 4-ton system yields $4,000 in rebates. Geothermal systems qualify for $1,200–$1,400 per ton.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Xcel Energy: Up to $2,000 Flat Rate</p>
@@ -128,7 +129,7 @@ export default function NorthDakotaPage() {
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Total Potential Savings</p>
-              <p className="text-sm text-green-900">$900 (Minnkota co-op territory) to $3,400 (Otter Tail Power territory) from utility rebates alone. If HEAR launches, income-qualified households could reach ~$17,000 total incentives.</p>
+              <p className="text-sm text-green-900">$900 (Minnkota co-op territory) to $4,200 (Otter Tail Power territory with QI) from utility rebates alone. If HEAR launches, income-qualified households could reach ~$18,200 total incentives.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">✗ Federal Tax Credits Expired</p>
@@ -342,7 +343,8 @@ export default function NorthDakotaPage() {
                   <th className="text-left p-3 font-semibold">Equipment</th>
                   <th className="text-left p-3 font-semibold">Requirements</th>
                   <th className="text-left p-3 font-semibold">Base Rebate</th>
-                  <th className="text-left p-3 font-semibold">With Energy Control</th>
+                  <th className="text-left p-3 font-semibold">With QI</th>
+                  <th className="text-left p-3 font-semibold">With QI + Energy Control</th>
                 </tr>
               </thead>
               <tbody>
@@ -350,24 +352,28 @@ export default function NorthDakotaPage() {
                   <td className="p-3">Cold-climate ASHP (ducted)</td>
                   <td className="p-3">SEER2 ≥16.0, HSPF2 ≥8.0</td>
                   <td className="p-3 font-semibold">$800/ton</td>
-                  <td className="p-3 font-semibold">$840/ton</td>
+                  <td className="p-3 font-semibold">$1,000/ton</td>
+                  <td className="p-3 font-semibold">$1,040/ton</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Cold-climate ASHP (ductless)</td>
                   <td className="p-3">SEER2 ≥16.0, HSPF2 ≥8.0</td>
                   <td className="p-3 font-semibold">$600/ton</td>
-                  <td className="p-3 font-semibold">$640/ton</td>
+                  <td className="p-3 font-semibold">$800/ton</td>
+                  <td className="p-3 font-semibold">$840/ton</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Standard ASHP</td>
                   <td className="p-3">SEER2 ≥14.3, HSPF2 ≥7.5</td>
                   <td className="p-3 font-semibold">$300/ton</td>
-                  <td className="p-3 font-semibold">$340/ton</td>
+                  <td className="p-3 font-semibold">$500/ton</td>
+                  <td className="p-3 font-semibold">$540/ton</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Geothermal HP</td>
                   <td className="p-3">—</td>
                   <td className="p-3 font-semibold">$1,200/ton</td>
+                  <td className="p-3 font-semibold">$1,400/ton</td>
                   <td className="p-3 text-gray-500">—</td>
                 </tr>
                 <tr className="border-b">
@@ -375,13 +381,17 @@ export default function NorthDakotaPage() {
                   <td className="p-3">ENERGY STAR</td>
                   <td className="p-3 font-semibold">$200</td>
                   <td className="p-3 text-gray-500">—</td>
+                  <td className="p-3 text-gray-500">—</td>
                 </tr>
               </tbody>
             </table>
           </div>
           <p className="text-gray-700 leading-relaxed mb-6">
-            The <strong>$40/ton energy control bonus</strong> applies when the system operates on
-            OTP&apos;s Dual Fuel, Deferred Load, or Residential Demand Control rate. OTP&apos;s
+            The <strong>$200/ton Quality Installation (QI) bonus</strong> applies when a certified
+            contractor participating in OTP&apos;s QI program performs the installation. The additional{" "}
+            <strong>$40/ton energy control bonus</strong> applies when the system operates on
+            OTP&apos;s Dual Fuel, Deferred Load, or Residential Demand Control rate. With both adders,
+            a 4-ton ducted cold-climate system earns <strong>$4,160</strong> in rebates. OTP&apos;s
             Deferred Load rate can reduce electric heating costs by up to 30%. OTP also offers
             a <strong>$150 heat pump tune-up rebate</strong> (once per 10 years).
           </p>
@@ -509,12 +519,12 @@ export default function NorthDakotaPage() {
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900 mb-2">Above 150% AMI — 4-Ton Cold-Climate ASHP + HPWH</p>
               <ul className="text-sm text-gray-700 space-y-1">
-                <li>Otter Tail Power ccASHP rebate (4 tons × $800): $3,200</li>
+                <li>Otter Tail Power ccASHP rebate (4 tons × $1,000 with QI): $4,000</li>
                 <li>OTP heat pump water heater rebate: $200</li>
                 <li>Federal tax credit: $0 (expired)</li>
                 <li>HEAR: $0 (not launched; above 150% AMI ineligible even when active)</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$3,400</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$4,200</p>
               <p className="text-sm text-gray-500 mt-1">Xcel territory: ~$3,000 (ccASHP $2,000 + insulation bonus $600 + HPWH $400). Minnkota co-op territory: ~$900. MDU territory: $0.</p>
             </div>
 
@@ -524,10 +534,10 @@ export default function NorthDakotaPage() {
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>HEAR heat pump rebate (50% coverage): up to $4,000</li>
                 <li>HEAR heat pump water heater (50%): up to $875</li>
-                <li>OTP ccASHP rebate (4 tons × $800): $3,200</li>
+                <li>OTP ccASHP rebate (4 tons × $1,000 with QI): $4,000</li>
                 <li>OTP heat pump water heater rebate: $200</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum if HEAR launches: ~$8,275</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum if HEAR launches: ~$9,075</p>
               <p className="text-sm text-gray-500 mt-1">Without HEAR (current reality): same as above 150% AMI — utility rebates only.</p>
             </div>
 
@@ -538,11 +548,11 @@ export default function NorthDakotaPage() {
                 <li>HEAR heat pump rebate (100% coverage): up to $8,000</li>
                 <li>HEAR heat pump water heater (100%): up to $1,750</li>
                 <li>HEAR electrical panel (if needed): up to $4,000</li>
-                <li>OTP ccASHP rebate (4 tons × $800): $3,200</li>
+                <li>OTP ccASHP rebate (4 tons × $1,000 with QI): $4,000</li>
                 <li>OTP heat pump water heater rebate: $200</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Theoretical maximum if HEAR launches: ~$17,150 (capped at $14,000 HEAR + $3,400 utility)</p>
-              <p className="text-sm text-green-800 mt-1">Without HEAR (current reality): utility rebates only — ~$3,400 in OTP territory.</p>
+              <p className="font-semibold text-green-700 mt-2">Theoretical maximum if HEAR launches: ~$17,950 (capped at $14,000 HEAR + $4,200 utility)</p>
+              <p className="text-sm text-green-800 mt-1">Without HEAR (current reality): utility rebates only — ~$4,200 in OTP territory.</p>
             </div>
           </div>
 
@@ -551,8 +561,8 @@ export default function NorthDakotaPage() {
             <p className="font-semibold text-gray-900 mb-1">What You&apos;ll Actually Pay (2026, Utility Rebates Only)</p>
             <p className="text-sm text-gray-700">
               For a 4-ton cold-climate system installed for $16,000–$20,000: expect to pay{" "}
-              <strong>$12,600–$19,100 out of pocket</strong> depending on your utility territory.
-              OTP customers pay the least (~$12,600–$16,600). Xcel customers pay ~$13,000–$17,000.
+              <strong>$11,800–$19,100 out of pocket</strong> depending on your utility territory.
+              OTP customers using a QI contractor pay the least (~$11,800–$15,800). Xcel customers pay ~$13,000–$17,000.
               Minnkota co-op customers pay ~$15,100–$19,100. MDU customers pay the full cost with
               no utility offset.
             </p>
@@ -686,7 +696,7 @@ export default function NorthDakotaPage() {
               </div>
               <div>
                 <p className="font-semibold text-gray-900">Choose a Qualifying System and Contractor</p>
-                <p className="text-sm text-gray-700">Select a cold-climate heat pump that meets your utility&apos;s minimum efficiency requirements (SEER2, HSPF2, NEEP listing). Xcel requires a registered Quality Installation contractor. For OTP, confirm the per-ton rebate tier before purchasing.</p>
+                <p className="text-sm text-gray-700">Select a cold-climate heat pump that meets your utility&apos;s minimum efficiency requirements (SEER2, HSPF2, NEEP listing). Xcel requires a registered Quality Installation contractor. For OTP, using a QI-certified contractor adds $200/ton to your rebate — confirm the per-ton tier before purchasing.</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -761,11 +771,15 @@ export default function NorthDakotaPage() {
                 Minnesota Heat Pump Rebates &amp; Incentives
               </Link>
             </li>
-            <li className="text-gray-500">
-              South Dakota Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link href="/heat-pumps/states/sd" className="text-brand-600 hover:underline">
+                South Dakota Heat Pump Rebates &amp; Incentives
+              </Link>
             </li>
-            <li className="text-gray-500">
-              Montana Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link href="/heat-pumps/states/mt" className="text-brand-600 hover:underline">
+                Montana Heat Pump Rebates &amp; Incentives
+              </Link>
             </li>
             <li>
               <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">
