@@ -1,4 +1,4 @@
-export type StateCode = "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "ID" | "AZ" | "NV" | "NM" | "NC" | "ND" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC" | "DE" | "KY" | "LA" | "UT" | "SD" | "WY" | "MT" | "NE" | "OK";
+export type StateCode = "AL" | "CA" | "MN" | "ME" | "MA" | "MD" | "MI" | "OR" | "WA" | "NY" | "CT" | "CO" | "IL" | "TX" | "NJ" | "PA" | "VA" | "RI" | "VT" | "NH" | "WI" | "GA" | "HI" | "IA" | "ID" | "AZ" | "NV" | "NM" | "NC" | "ND" | "FL" | "OH" | "IN" | "TN" | "SC" | "MO" | "DC" | "DE" | "KY" | "LA" | "UT" | "SD" | "WY" | "MT" | "NE" | "OK" | "KS";
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
@@ -1964,6 +1964,45 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "NOEC \u2014 Rebates",
         url: "https://www.noec.coop/energy-services/rebates/",
+      },
+      {
+        label: "IRS \u2014 25C/25D Termination FAQ",
+        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
+      },
+    ],
+  },
+
+  KS: {
+    stateCode: "KS",
+    stateName: "Kansas",
+    status: "limited",
+    lastVerified: "2026-03-24",
+    summary:
+      "Evergy offers $500\u2013$1,000 for air-source heat pumps under KEEIA. KEPCo co-ops add $300\u2013$600. Midwest Energy offers on-bill financing. No state tax credits or state rebates. Federal 25C/25D expired Dec 2025. Kansas\u2019s $105.6M IRA-funded HEAR/HOMES program has not launched.",
+    sources: [
+      {
+        label: "KCC \u2014 Kansas Home Rebates (HEAR/HOMES Status)",
+        url: "https://www.kcc.ks.gov/kansas-energy-office/kansas-home-rebates",
+      },
+      {
+        label: "Evergy \u2014 Kansas Rebate Incentive Chart (PDF)",
+        url: "https://www.evergy.com/-/media/documents/ways-to-save/discounts/kansas-rebate-incentive-chart.pdf",
+      },
+      {
+        label: "Evergy \u2014 Heat Pump Rebates",
+        url: "https://www.evergy.com/ways-to-save/discounts-link/heating-and-cooling/heat-pump",
+      },
+      {
+        label: "KEPCo \u2014 Energy Efficiency Rebate Program",
+        url: "https://www.kepco.org/energy-efficiency-rebate-program/",
+      },
+      {
+        label: "Midwest Energy \u2014 How$mart Financing",
+        url: "https://www.mwenergy.com/environmental/energy-efficiency/howsmart",
+      },
+      {
+        label: "KHRC \u2014 Weatherization Assistance Program",
+        url: "https://kshousingcorp.org/weatherization-assistance/",
       },
       {
         label: "IRS \u2014 25C/25D Termination FAQ",
