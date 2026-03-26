@@ -615,7 +615,16 @@ export default function TennesseePage() {
               <strong>Disclaimer:</strong> This page covers the main statewide, utility, and IRA heat pump incentives available to Tennessee homeowners in 2026. It does not calculate savings, guarantee eligibility, or represent any incentive program. Tennessee&apos;s unique TVA structure means rebates flow through local power companies — not all 153 distributors may participate in every program at the same time. We verify status regularly but programs can change without notice. Always confirm current amounts and eligibility with TVA EnergyRight, TDEC, and your contractor before making decisions.
             </p>
           </div>
-          <div className="mt-6 text-center">
+              <p className="text-sm text-gray-600 mt-4">
+            See how this state compares →{" "}
+            <Link
+              href="/heat-pumps/rebates-by-state"
+              className="text-brand-600 hover:underline"
+            >
+              Heat Pump Rebates by State (2026)
+            </Link>
+          </p>
+      <div className="mt-6 text-center">
             <Link href="/heat-pumps" className="text-brand-600 hover:underline text-sm">
               ← Back to Heat Pumps overview
             </Link>

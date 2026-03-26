@@ -711,6 +711,15 @@ export default function PennsylvaniaPage() {
           </div>
           <div className="mt-6 text-center">
             <Link href="/heat-pumps" className="text-brand-600 hover:underline text-sm">
+          <p className="text-sm text-gray-600 mt-4">
+            See how this state compares ?{" "}
+            <Link
+              href="/heat-pumps/rebates-by-state"
+              className="text-brand-600 hover:underline"
+            >
+              Heat Pump Rebates by State (2026)
+            </Link>
+          </p>
               &#8592; Back to Heat Pumps overview
             </Link>
           </div>

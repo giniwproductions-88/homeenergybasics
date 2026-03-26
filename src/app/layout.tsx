@@ -76,6 +76,11 @@ export default function RootLayout({
                 <h4 className="text-white font-semibold mb-4">Heat Pumps</h4>
                 <ul className="space-y-2 text-sm">
                   <li><Link href="/heat-pumps" className="hover:text-white">Incentive Status</Link></li>
+                  <li><Link href="/heat-pumps/rebates-by-state" className="hover:text-white">Rebates by State</Link></li>
+                  <li><Link href="/heat-pumps/cost" className="hover:text-white">Heat Pump Cost (2026)</Link></li>
+                  <li><Link href="/heat-pumps/vs-furnace" className="hover:text-white">Heat Pump vs Furnace</Link></li>
+                  <li><Link href="/heat-pumps/stacking-rebates" className="hover:text-white">Stacking Rebates</Link></li>
+                  <li><Link href="/heat-pumps/when-not-to" className="hover:text-white">When NOT to Get One</Link></li>
                   <li><Link href="/federal-heat-pump-tax-credit-expired" className="hover:text-white">Federal Credit (Expired)</Link></li>
                 </ul>
               </div>
@@ -92,6 +97,11 @@ export default function RootLayout({
             {/* State pages — full alphabetical grid */}
             <div className="mt-10 pt-8 border-t border-gray-800">
               <h4 className="text-white font-semibold mb-4">Heat Pump Rebates by State</h4>
+              <p className="text-sm mb-4">
+                <Link href="/heat-pumps/rebates-by-state" className="hover:text-white">
+                  Where Rebates Are Still Available (2026) →
+                </Link>
+              </p>
               <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-6 gap-y-2 text-sm">
                 <li><Link href="/heat-pumps/states/ak" className="hover:text-white">Alaska</Link></li>
                 <li><Link href="/heat-pumps/states/al" className="hover:text-white">Alabama</Link></li>

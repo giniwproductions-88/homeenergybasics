@@ -657,7 +657,16 @@ export default function HawaiiPage() {
               <strong>Disclaimer:</strong> This page covers the main statewide, utility, and IRA heat pump incentives available to Hawaii homeowners in 2026. It does not calculate savings, guarantee eligibility, or represent any incentive program. Hawaii&apos;s unique island utility structure means rebate availability varies by island — Kauai residents should check KIUC programs separately. We verify status regularly but programs can change without notice. Always confirm current amounts and eligibility with the Hawaii State Energy Office, Hawaii Energy, or your contractor before making decisions.
             </p>
           </div>
-          <div className="mt-6 text-center">
+              <p className="text-sm text-gray-600 mt-4">
+            See how this state compares →{" "}
+            <Link
+              href="/heat-pumps/rebates-by-state"
+              className="text-brand-600 hover:underline"
+            >
+              Heat Pump Rebates by State (2026)
+            </Link>
+          </p>
+      <div className="mt-6 text-center">
             <Link href="/heat-pumps" className="text-brand-600 hover:underline text-sm">
               ← Back to Heat Pumps overview
             </Link>

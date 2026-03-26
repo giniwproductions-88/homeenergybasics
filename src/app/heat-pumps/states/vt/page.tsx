@@ -704,7 +704,16 @@ export default function VermontPage() {
               <strong>Disclaimer:</strong> This page covers the main statewide, utility, and IRA heat pump incentives available to Vermont homeowners in 2026. It does not calculate savings, guarantee eligibility, or represent any incentive program. Vermont&apos;s HEAR program is on pause and HOMES has not officially launched — rebate amounts shown for those programs are based on the federal framework and VT DPS guidance. Burlington Electric rebates are capped at 75% of installed cost. We verify status regularly but programs can change without notice. Always confirm current amounts and eligibility with Efficiency Vermont, your utility, and your contractor before making decisions.
             </p>
           </div>
-          <div className="mt-6 text-center">
+              <p className="text-sm text-gray-600 mt-4">
+            See how this state compares →{" "}
+            <Link
+              href="/heat-pumps/rebates-by-state"
+              className="text-brand-600 hover:underline"
+            >
+              Heat Pump Rebates by State (2026)
+            </Link>
+          </p>
+      <div className="mt-6 text-center">
             <Link href="/heat-pumps" className="text-brand-600 hover:underline text-sm">
               ← Back to Heat Pumps overview
             </Link>

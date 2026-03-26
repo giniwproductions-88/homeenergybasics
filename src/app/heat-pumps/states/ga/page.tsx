@@ -643,7 +643,16 @@ export default function GeorgiaPage() {
               <strong>Disclaimer:</strong> This page covers the main statewide, utility, and IRA heat pump incentives available to Georgia homeowners in 2026. It does not calculate savings, guarantee eligibility, or represent any incentive program. Georgia&apos;s 41 EMCs each set their own rebate terms independently; we cover the largest cooperatives but cannot list every program. We verify status regularly but programs can change without notice. Always confirm current amounts and eligibility with GEFA, Georgia Power, your EMC, and your contractor before making decisions.
             </p>
           </div>
-          <div className="mt-6 text-center">
+              <p className="text-sm text-gray-600 mt-4">
+            See how this state compares →{" "}
+            <Link
+              href="/heat-pumps/rebates-by-state"
+              className="text-brand-600 hover:underline"
+            >
+              Heat Pump Rebates by State (2026)
+            </Link>
+          </p>
+      <div className="mt-6 text-center">
             <Link href="/heat-pumps" className="text-brand-600 hover:underline text-sm">
               ← Back to Heat Pumps overview
             </Link>

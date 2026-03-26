@@ -535,7 +535,16 @@ export default function WashingtonDCPage() {
               <strong>Disclaimer:</strong> This page covers the main DCSEU, IRA, and income-qualified heat pump incentives available to Washington DC homeowners in 2026. It does not calculate savings, guarantee eligibility, or represent any incentive program. DC is not a state and has a unique incentive structure where the DCSEU administers all residential rebates rather than the electric utility. We verify status regularly but programs can change without notice. Always confirm current amounts and eligibility with the DCSEU and your contractor before making decisions.
             </p>
           </div>
-          <div className="mt-6 text-center">
+              <p className="text-sm text-gray-600 mt-4">
+            See how this state compares →{" "}
+            <Link
+              href="/heat-pumps/rebates-by-state"
+              className="text-brand-600 hover:underline"
+            >
+              Heat Pump Rebates by State (2026)
+            </Link>
+          </p>
+      <div className="mt-6 text-center">
             <Link href="/heat-pumps" className="text-brand-600 hover:underline text-sm">
               ← Back to Heat Pumps overview
             </Link>
