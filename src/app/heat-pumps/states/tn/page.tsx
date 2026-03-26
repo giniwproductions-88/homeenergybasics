@@ -86,7 +86,7 @@ export default function TennesseePage() {
             {" "}/ Tennessee
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Tennessee heat pump rebates and incentives in 2026
+            Tennessee Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
             TVA EnergyRight rebates of <strong>$500–$1,500</strong> are the only active heat pump incentive for most Tennessee homeowners right now. Federal tax credits expired December 31, 2025. IRA-funded HEAR rebates covering up to <strong>$8,000</strong> per heat pump are approved but have not yet launched. This guide covers all major Tennessee heat pump incentives available in 2026, including TVA EnergyRight, HEAR, HOMES, and utility-specific programs. Here&apos;s what&apos;s actually available.
@@ -110,7 +110,7 @@ export default function TennesseePage() {
       {/* 3. SHORT VERSION */}
       <section className="py-8">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Short version</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">The short version</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ TVA EnergyRight rebates are active</p>
@@ -552,11 +552,25 @@ export default function TennesseePage() {
                 Georgia Heat Pump Rebates 2026
               </Link>
             </li>
-            <li className="text-gray-500">
-              North Carolina Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link href="/heat-pumps/states/nc" className="text-brand-600 hover:underline">
+                North Carolina Heat Pump Rebates 2026
+              </Link>
             </li>
-            <li className="text-gray-500">
-              Kentucky Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link href="/heat-pumps/states/ky" className="text-brand-600 hover:underline">
+                Kentucky Heat Pump Rebates 2026
+              </Link>
+            </li>
+            <li>
+              <Link href="/heat-pumps/states/al" className="text-brand-600 hover:underline">
+                Alabama Heat Pump Rebates 2026
+              </Link>
+            </li>
+            <li>
+              <Link href="/heat-pumps/states/ms" className="text-brand-600 hover:underline">
+                Mississippi Heat Pump Rebates 2026
+              </Link>
             </li>
             <li>
               <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">

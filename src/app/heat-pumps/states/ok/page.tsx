@@ -951,11 +951,21 @@ export default function OklahomaPage() {
                 New Mexico Heat Pump Rebates &amp; Incentives
               </Link>
             </li>
-            <li className="text-gray-500">
-              Arkansas Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link
+                href="/heat-pumps/states/ar"
+                className="text-brand-600 hover:underline"
+              >
+                Arkansas Heat Pump Rebates &amp; Incentives
+              </Link>
             </li>
-            <li className="text-gray-500">
-              Kansas Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link
+                href="/heat-pumps/states/ks"
+                className="text-brand-600 hover:underline"
+              >
+                Kansas Heat Pump Rebates &amp; Incentives
+              </Link>
             </li>
             <li>
               <Link

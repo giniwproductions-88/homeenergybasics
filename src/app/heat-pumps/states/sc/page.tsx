@@ -86,7 +86,7 @@ export default function SouthCarolinaPage() {
             {" "}/ South Carolina
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            South Carolina heat pump rebates and incentives in 2026
+            South Carolina Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
             South Carolina heat pump incentives are limited in 2026 but not nonexistent. With federal tax credits gone and state HEAR/HOMES rebate programs still pending launch, most homeowners rely on <strong>utility rebates worth $300–$1,000</strong> from Duke Energy, Dominion Energy, or Santee Cooper, plus a <strong>$3,500 geothermal tax credit</strong> if applicable. This guide covers all major South Carolina heat pump incentives available in 2026, including utility rebates, pending federal rebates, electric cooperative programs, and the state geothermal credit. Here&apos;s what&apos;s actually available.
@@ -773,8 +773,10 @@ export default function SouthCarolinaPage() {
                 Virginia Heat Pump Rebates
               </Link>
             </li>
-            <li className="text-gray-500">
-              North Carolina Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link href="/heat-pumps/states/nc" className="text-brand-600 hover:underline">
+                North Carolina Heat Pump Rebates 2026
+              </Link>
             </li>
             <li>
               <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">

@@ -111,7 +111,7 @@ export default function SouthDakotaPage() {
       {/* 3. Short Version */}
       <section className="py-8">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Short version</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">The short version</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Otter Tail Power: up to $4,160</p>
@@ -647,11 +647,25 @@ export default function SouthDakotaPage() {
                 Minnesota Heat Pump Rebates &amp; Incentives
               </Link>
             </li>
-            <li className="text-gray-500">
-              North Dakota Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link href="/heat-pumps/states/nd" className="text-brand-600 hover:underline">
+                North Dakota Heat Pump Rebates 2026
+              </Link>
             </li>
-            <li className="text-gray-500">
-              Iowa Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link href="/heat-pumps/states/ne" className="text-brand-600 hover:underline">
+                Nebraska Heat Pump Rebates 2026
+              </Link>
+            </li>
+            <li>
+              <Link href="/heat-pumps/states/ia" className="text-brand-600 hover:underline">
+                Iowa Heat Pump Rebates 2026
+              </Link>
+            </li>
+            <li>
+              <Link href="/heat-pumps/states/wy" className="text-brand-600 hover:underline">
+                Wyoming Heat Pump Rebates 2026
+              </Link>
             </li>
             <li>
               <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">

@@ -94,7 +94,7 @@ export default function OhioPage() {
             {" "}/ Ohio
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Ohio heat pump rebates and incentives in 2026
+            Ohio Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
             Most Ohio homeowners will see little to no direct rebates until federal IRA programs launch. Federal tax credits expired, Ohio&apos;s <strong>$249 million</strong> in IRA rebate funding remains pending, and utility rebate programs were dismantled by House Bill 6 in 2019. The strongest active incentive is the ECO-Link loan program, which provides a <strong>3% interest rate reduction</strong> on qualifying home improvement loans up to <strong>$50,000</strong>. For most homeowners, this is one of the weakest incentive environments in the country right now. This guide covers all major Ohio heat pump incentives available in 2026, including HEAR, HOMES, AEP Ohio HELP, ECO-Link, and HWAP. Here&apos;s what&apos;s actually available.
@@ -641,11 +641,20 @@ export default function OhioPage() {
                 Michigan Heat Pump Rebates 2026
               </Link>
             </li>
-            <li className="text-gray-500">
-              Indiana Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link href="/heat-pumps/states/in" className="text-brand-600 hover:underline">
+                Indiana Heat Pump Rebates 2026
+              </Link>
             </li>
-            <li className="text-gray-500">
-              West Virginia Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link href="/heat-pumps/states/ky" className="text-brand-600 hover:underline">
+                Kentucky Heat Pump Rebates 2026
+              </Link>
+            </li>
+            <li>
+              <Link href="/heat-pumps/states/wv" className="text-brand-600 hover:underline">
+                West Virginia Heat Pump Rebates 2026
+              </Link>
             </li>
             <li>
               <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">
