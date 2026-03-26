@@ -6,16 +6,16 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title:
-    "Virginia Heat Pump Rebates 2026: What's Actually Available | Home Energy Basics",
+    "Virginia Heat Pump Rebates 2026: $250–$2,000 + Dominion & Washington Gas Programs | Home Energy Basics",
   description:
-    "Federal tax credits ended. Virginia's $188M in IRA rebates remain frozen. Utility rebates of $250–$2,000 are what's left. Here's the complete 2026 picture by utility territory.",
+    "Washington Gas offers up to $2,000 for dual-fuel systems. Dominion covers HPWHs up to $400. Federal credits ended. Here's every Virginia heat pump incentive in 2026.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/va",
   },
   openGraph: {
     title: "Virginia Heat Pump Rebates 2026",
     description:
-      "Dominion Energy, Appalachian Power, Washington Gas — utility-by-utility heat pump rebate guide for Virginia. Federal credits gone, state programs frozen.",
+      "Utility rebates of $250–$2,000 from Dominion, Washington Gas, and Appalachian Power — the complete guide to Virginia heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/va",
     type: "article",
   },
@@ -34,7 +34,7 @@ export default function VirginiaPage() {
         name: "What heat pump rebates are available in Virginia in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Virginia's heat pump rebates in 2026 come primarily from utilities. Dominion Energy offers rebates for heat pump water heaters ($250–$400) and central heat pumps through its Home Retrofit Program. Washington Gas provides up to $2,000 for dual-fuel heat pump installations. Appalachian Power offers $300–$400 for ductless mini-splits. The federal Section 25C tax credit expired December 31, 2025. Virginia's IRA-funded state rebate programs have not launched.",
+          text: "Virginia\u2019s heat pump rebates in 2026 come primarily from utilities. Washington Gas provides up to $2,000 for dual-fuel heat pump installations in Northern Virginia. Dominion Energy offers $250\u2013$400 for heat pump water heaters and central heat pump rebates through its Home Retrofit Program. Appalachian Power offers $300\u2013$400 for ductless mini-splits. Federal Section 25C and 25D tax credits expired December 31, 2025. Virginia\u2019s $188 million in IRA-funded state rebate programs have not launched.",
         },
       },
       {
@@ -47,18 +47,10 @@ export default function VirginiaPage() {
       },
       {
         "@type": "Question",
-        name: "What happened to Virginia's HOMES and HEAR rebate programs?",
+        name: "What happened to Virginia\u2019s HOMES and HEAR rebate programs?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Virginia was allocated $188 million in IRA-funded rebates split between the HOMES program ($94.3M for whole-home retrofits up to $8,000) and HEAR/HEEHRA ($94M for point-of-sale appliance rebates up to $14,000 per household). Neither program has launched. Virginia Energy says it is assessing the impact of federal funding freezes and executive orders on these programs.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Does Dominion Energy offer heat pump rebates?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes. Dominion Energy offers heat pump water heater rebates of $250 (40–59 gallon) or $400 (60+ gallon) and central heat pump rebates through its Home Retrofit Program. Central heat pump rebate amounts are determined through a required home energy evaluation with a participating contractor. Income-qualifying customers may receive free upgrades through the EnergyShare Weatherization program.",
+          text: "Virginia was allocated $188 million in IRA-funded rebates split between the HOMES program ($94.3M for whole-home retrofits up to $8,000) and HEAR ($94M for point-of-sale appliance rebates up to $14,000 per household). Neither program has launched. Virginia Energy says it is assessing the impact of federal funding freezes and executive orders on these programs.",
         },
       },
       {
@@ -74,7 +66,7 @@ export default function VirginiaPage() {
         name: "Can I stack Virginia heat pump rebates with state and federal programs?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Currently, utility rebates are the only active incentive layer. There is no federal credit and Virginia's state rebate programs have not launched. If the HOMES and HEAR programs do launch, federal guidance indicates they can stack with utility rebates but cannot be combined for the same measure. Households above 150% of Area Median Income would not qualify for HEAR.",
+          text: "Currently, utility rebates are the only active incentive layer. There is no federal credit and Virginia\u2019s state rebate programs have not launched. If HOMES and HEAR do launch, federal guidance indicates they can stack with utility rebates but cannot be combined for the same measure. Households above 150% of Area Median Income (AMI) would not qualify for HEAR.",
         },
       },
     ],
@@ -84,915 +76,620 @@ export default function VirginiaPage() {
     <>
       <JsonLd data={faqJsonLd} />
 
-      {/* Hero */}
-      <section className="bg-white border-b border-gray-200">
-        <div className="max-w-3xl mx-auto px-4 py-8 sm:py-12">
-          <nav className="text-sm text-gray-500 mb-4">
-            <Link href="/" className="hover:text-brand-600">
-              Home
-            </Link>
-            {" → "}
-            <Link href="/heat-pumps" className="hover:text-brand-600">
-              Heat Pumps
-            </Link>
-            {" → "}
-            <span className="text-gray-900">Virginia</span>
+      {/* 1. HERO */}
+      <section className="bg-gradient-to-b from-blue-50 to-white py-12">
+        <div className="container-narrow">
+          <nav className="text-sm text-gray-500 mb-6">
+            <Link href="/" className="hover:text-brand-600">Home</Link>
+            {" "}/{" "}
+            <Link href="/heat-pumps" className="hover:text-brand-600">Heat Pumps</Link>
+            {" "}/ Virginia
           </nav>
-
-          <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Virginia Heat Pump Rebates &amp; Incentives (2026)
           </h1>
-          <p className="text-gray-600 text-lg leading-relaxed mb-4">
-            Federal tax credits are gone. Virginia&rsquo;s $188&nbsp;million in
-            IRA-funded state rebates remain pending with no launch date. What
-            you can actually get in 2026 depends on your utility — Dominion
-            Energy, Appalachian Power, or Washington Gas each have different
-            programs, and most electric cooperatives offer no rebates at all.
+          <p className="text-lg text-gray-700 leading-relaxed mb-6">
+            Federal tax credits are gone. Virginia&apos;s <strong>$188 million</strong> in IRA-funded state rebates remain pending with no launch date. What you can actually get in 2026 depends on your utility — Washington Gas offers up to <strong>$2,000</strong> for dual-fuel systems, Dominion Energy covers heat pump water heaters at <strong>$250–$400</strong>, and Appalachian Power offers <strong>$300–$400</strong> for mini-splits. Most electric cooperatives offer no direct rebates at all. This guide covers all major Virginia heat pump incentives available in 2026, including Dominion Energy, Washington Gas, Appalachian Power, and the pending HOMES and HEAR programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
             Last verified: {formattedDate}
           </p>
-        </div>
-      </section>
-
-      {/* Status Card */}
-      <section className="max-w-3xl mx-auto px-4 py-6">
-        <StatusCard incentive={vaIncentive} />
-      </section>
-
-      {/* Short Version */}
-      <section className="max-w-3xl mx-auto px-4 py-6">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">
-          The Short Version
-        </h2>
-        <div className="grid gap-4 sm:grid-cols-3">
-          <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-            <p className="font-semibold text-red-800 mb-1">❌ Federal</p>
-            <p className="text-sm text-red-700">
-              25C ($2,000) and 25D (30% geothermal) both expired Dec&nbsp;31,
-              2025. No credit for 2026 installations.
-            </p>
-          </div>
-          <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
-            <p className="font-semibold text-amber-800 mb-1">⏳ State</p>
-            <p className="text-sm text-amber-700">
-              $188M in HOMES + HEAR funding allocated but not launched. Virginia
-              Energy is assessing the impact of federal funding freezes.
-            </p>
-          </div>
-          <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-            <p className="font-semibold text-green-800 mb-1">
-              ✓ Utility Rebates
-            </p>
-            <p className="text-sm text-green-700">
-              $250–$2,000 depending on your utility. Washington Gas has the
-              largest single rebate. Dominion covers water heaters and central
-              systems.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Federal Credits */}
-      <section className="max-w-3xl mx-auto px-4 py-6">
-        <div className="bg-red-50 border border-red-300 rounded-lg p-5">
-          <h2 className="text-lg font-bold text-red-900 mb-3">
-            Federal Tax Credits Are Gone
-          </h2>
-          <p className="text-red-800 mb-3">
-            The One Big Beautiful Bill Act (signed July&nbsp;4, 2025)
-            terminated both major residential energy tax credits ahead of their
-            original 2032 sunset:
+          <p className="text-xs text-gray-400 mt-1">
+            Rates and program availability may change after this date.
           </p>
-          <ul className="space-y-2 text-red-800 text-sm">
+        </div>
+      </section>
+
+      {/* 2. STATUS CARD */}
+      <section className="py-8">
+        <div className="container-narrow">
+          <StatusCard incentive={vaIncentive} />
+        </div>
+      </section>
+
+      {/* 3. SHORT VERSION */}
+      <section className="py-8">
+        <div className="container-narrow">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">The Short Version</h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="bg-green-50 border border-green-200 rounded-lg p-5">
+              <p className="font-semibold text-green-800 mb-1">✓ Washington Gas (Northern VA)</p>
+              <p className="text-sm text-green-900">Up to $2,000 for dual-fuel heat pump with furnace replacement. $1,400 with an existing qualifying furnace. The largest single rebate available in Virginia.</p>
+            </div>
+            <div className="bg-green-50 border border-green-200 rounded-lg p-5">
+              <p className="font-semibold text-green-800 mb-1">✓ Dominion Energy (Statewide)</p>
+              <p className="text-sm text-green-900">$250–$400 for heat pump water heaters. Central heat pump rebates through the Home Retrofit Program (audit required). $90 tune-up rebate. Free upgrades via EnergyShare for income-qualifying households.</p>
+            </div>
+            <div className="bg-green-50 border border-green-200 rounded-lg p-5">
+              <p className="font-semibold text-green-800 mb-1">✓ Total Potential Savings</p>
+              <p className="text-sm text-green-900">$250–$2,400 (above 150% AMI) depending on utility territory. If HEAR launches, income-qualified households below 80% of Area Median Income (AMI) could reach ~$14,000+ in combined incentives.</p>
+            </div>
+            <div className="bg-red-50 border border-red-200 rounded-lg p-5">
+              <p className="font-semibold text-red-800 mb-1">✗ Federal Tax Credits Expired</p>
+              <p className="text-sm text-red-900">Section 25C ($2,000 for heat pumps) and Section 25D (30% for geothermal) both ended December 31, 2025. No replacement exists in 2026.</p>
+            </div>
+            <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
+              <p className="font-semibold text-amber-800 mb-1">⚠ $188M in State Rebates Pending — No Launch Date</p>
+              <p className="text-sm text-amber-900">Virginia was allocated $188 million in HOMES and HEAR funding, but neither program is accepting applications. Virginia Energy is assessing the impact of federal funding freezes. These are not retroactive — purchases made before the launch date will not qualify. Do not count on these rebates when budgeting a 2026 installation.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. FEDERAL EXPIRED — bg-gray-50 */}
+      <section className="py-12 bg-gray-50">
+        <div className="container-narrow">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Federal Tax Credits Have Ended</h2>
+          <div className="bg-red-50 border border-red-200 rounded-lg p-6 mb-6">
+            <p className="text-red-900 leading-relaxed">
+              The One Big Beautiful Bill Act (signed July 4, 2025) terminated both major residential energy tax credits. <strong>Section 25C</strong> (up to $2,000 for heat pumps at 30% of cost) is not allowed for property placed in service after <strong>December 31, 2025</strong>. <strong>Section 25D</strong> (30% with no cap for geothermal) is not allowed for expenditures made after December 31, 2025 — expenditures are treated as made when installation is completed, so even if you paid in 2025 but installation finished in 2026, no credit. Section 25C offered no carryforward; any unused credit was forfeited permanently. If your equipment was installed and operational on or before December 31, 2025, you can still claim on your 2025 tax return using IRS Form 5695.
+            </p>
+          </div>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Virginia&apos;s state informational page on tax credits still reflects pre-OBBB timelines and should not be relied on for 2026 tax-credit availability.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            For full details on what changed, see our <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">Federal Heat Pump Tax Credits Ended</Link> guide.
+          </p>
+        </div>
+      </section>
+
+      {/* 5. HEAR / Primary — white */}
+      <section className="py-12">
+        <div className="container-narrow">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Home Electrification and Appliance Rebates (HEAR)</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Virginia was allocated approximately <strong>$94 million</strong> in HEAR funding through the Inflation Reduction Act. Virginia Energy administers the program. As of March 2026, the program has not launched — Virginia Energy says it is assessing the impact of federal funding freezes and executive orders.
+          </p>
+
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">HEAR Rebate Structure (When Launched)</h3>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            HEAR provides point-of-sale rebates for specific electrification equipment. Only households below 150% AMI are eligible. HEAR rebates apply only to replacement of a nonelectric appliance or a first-time heat pump purchase — homeowners replacing an existing heat pump should use HOMES instead.
+          </p>
+
+          <div className="overflow-x-auto mb-6">
+            <table className="min-w-full text-sm">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="text-left p-3 font-semibold">Measure</th>
+                  <th className="text-left p-3 font-semibold">≤80% AMI</th>
+                  <th className="text-left p-3 font-semibold">80–150% AMI</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b bg-green-50">
+                  <td className="p-3">Heat pump (space)</td>
+                  <td className="p-3 font-semibold">Up to $8,000 (100% of cost)</td>
+                  <td className="p-3 font-semibold">Up to $4,000 (50% of cost)</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Heat pump water heater</td>
+                  <td className="p-3 font-semibold">Up to $1,750</td>
+                  <td className="p-3 font-semibold">Up to $1,750</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Electrical panel upgrade</td>
+                  <td className="p-3 font-semibold">Up to $4,000</td>
+                  <td className="p-3 font-semibold">Up to $4,000</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Insulation / air sealing</td>
+                  <td className="p-3 font-semibold">Up to $1,600</td>
+                  <td className="p-3 font-semibold">Up to $1,600</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3 text-gray-500">Above 150% AMI</td>
+                  <td className="p-3 text-gray-500" colSpan={2}>Not eligible — utility rebates only</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p className="text-gray-700 leading-relaxed mb-4">
+            The per-household cap is <strong>$14,000</strong> across all measures. Programs remain authorized through September 30, 2031 or until funds are depleted.
+          </p>
+
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-5">
+            <p className="font-semibold text-amber-800 mb-1">⚠ Common Mistake: Counting on HEAR Before It Launches</p>
+            <p className="text-sm text-amber-900">HEAR rebates are not retroactive. If you install a heat pump before Virginia&apos;s program opens, you cannot claim the rebate later. Budget your project based on currently available utility rebates only, and treat HEAR as a potential bonus if the timing works out.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* 6. HOMES / Secondary — bg-gray-50 */}
+      <section className="py-12 bg-gray-50">
+        <div className="container-narrow">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">HOMES Performance-Based Rebates</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            The Home Owner Managing Energy Savings (HOMES) program received <strong>$94.3 million</strong> for Virginia. Unlike HEAR, HOMES pays based on measured or modeled energy savings for the whole home and is available to all income levels. Heat pumps qualify as part of a whole-home retrofit — not as a standalone measure. HOMES has not launched in Virginia.
+          </p>
+
+          <div className="overflow-x-auto mb-6">
+            <table className="min-w-full text-sm">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="text-left p-3 font-semibold">Energy Savings</th>
+                  <th className="text-left p-3 font-semibold">Standard Household</th>
+                  <th className="text-left p-3 font-semibold">Low-Income (≤80% AMI)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b">
+                  <td className="p-3">20–35% reduction</td>
+                  <td className="p-3 font-semibold">$2,000</td>
+                  <td className="p-3 font-semibold">$4,000</td>
+                </tr>
+                <tr className="border-b bg-green-50">
+                  <td className="p-3">35%+ reduction</td>
+                  <td className="p-3 font-semibold">$4,000</td>
+                  <td className="p-3 font-semibold">$8,000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p className="text-gray-700 leading-relaxed mb-4">
+            HOMES and HEAR cannot be combined for the same improvement, but a household could use HEAR for a heat pump and HOMES for insulation, or vice versa. Both can stack with utility rebates.
+          </p>
+
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">No Virginia State Tax Credit</h3>
+          <p className="text-gray-700 leading-relaxed">
+            Virginia does not offer a state-level tax credit for heat pumps. There is no state-sponsored residential loan program for heat pump installations. Residential PACE (R-PACE) financing is not available in Virginia, though Commercial PACE operates in 20+ localities for multifamily and commercial properties.
+          </p>
+        </div>
+      </section>
+
+      {/* 7. UTILITY PROGRAMS — white */}
+      <section className="py-12">
+        <div className="container-narrow">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Utility Rebate Programs</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            With federal credits expired and state programs frozen, utility rebates are the primary financial incentive for Virginia homeowners in 2026. What you can get depends entirely on which utility serves your home.
+          </p>
+
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">Dominion Energy Virginia</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Virginia&apos;s largest electric utility offers heat pump incentives through multiple programs. Due to popular demand, some 2026 programs are available on a limited basis.
+          </p>
+
+          <div className="overflow-x-auto mb-6">
+            <table className="min-w-full text-sm">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="text-left p-3 font-semibold">Measure</th>
+                  <th className="text-left p-3 font-semibold">Rebate</th>
+                  <th className="text-left p-3 font-semibold">Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b">
+                  <td className="p-3">HPWH (40–59 gallon)</td>
+                  <td className="p-3 font-semibold">$250</td>
+                  <td className="p-3">Must replace electric water heater; ENERGY STAR required</td>
+                </tr>
+                <tr className="border-b bg-green-50">
+                  <td className="p-3">HPWH (60+ gallon)</td>
+                  <td className="p-3 font-semibold">$400</td>
+                  <td className="p-3">Mail-in rebate or instant discount via marketplace</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Central heat pump</td>
+                  <td className="p-3 font-semibold">Varies</td>
+                  <td className="p-3">Home Retrofit Program; requires energy evaluation with approved contractor</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Heat pump tune-up</td>
+                  <td className="p-3 font-semibold">$90</td>
+                  <td className="p-3">Existing heat pump; participating contractor required</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p className="text-gray-700 leading-relaxed mb-6">
+            <strong>EnergyShare Weatherization</strong> provides free home energy assessments and efficiency upgrades (including heat pump equipment) for households at or below 80% AMI, customers aged 60+ at 120% of state median income, or those receiving disability payments. Funded at <strong>$130M</strong> through 2028 under Virginia&apos;s Grid Transformation and Security Act.
+          </p>
+
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">Washington Gas — VA CARE Program</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Washington Gas serves Northern Virginia gas customers. The VA CARE program offers the largest single heat pump rebate in the state.
+          </p>
+
+          <div className="overflow-x-auto mb-6">
+            <table className="min-w-full text-sm">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="text-left p-3 font-semibold">Configuration</th>
+                  <th className="text-left p-3 font-semibold">Rebate</th>
+                  <th className="text-left p-3 font-semibold">Requirements</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b bg-green-50">
+                  <td className="p-3">Dual-fuel HP + new furnace</td>
+                  <td className="p-3 font-semibold">$2,000</td>
+                  <td className="p-3">15.2 SEER2, 7.5 HSPF2 + 95% AFUE furnace</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Dual-fuel HP + existing furnace</td>
+                  <td className="p-3 font-semibold">$1,400</td>
+                  <td className="p-3">Existing furnace must be 90%+ AFUE</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p className="text-gray-700 leading-relaxed mb-6">
+            This is a dual-fuel rebate that pairs a heat pump with gas furnace backup — not a full electrification incentive. Must replace an existing central AC system and use a participating contractor.
+          </p>
+
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">Appalachian Power (AEP Virginia)</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Appalachian Power serves western Virginia. Only ductless mini-split heat pumps are rebated — no ducted whole-home heat pump rebate is offered.
+          </p>
+
+          <div className="overflow-x-auto mb-6">
+            <table className="min-w-full text-sm">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="text-left p-3 font-semibold">Program</th>
+                  <th className="text-left p-3 font-semibold">Rebate</th>
+                  <th className="text-left p-3 font-semibold">Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b">
+                  <td className="p-3">Efficient Products (mini-split)</td>
+                  <td className="p-3 font-semibold">$300</td>
+                  <td className="p-3">SEER2 ≥15, EER2 ≥12.5; 1 per customer per year</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Home Performance (mini-split/HPWH)</td>
+                  <td className="p-3 font-semibold">Up to $400/unit</td>
+                  <td className="p-3">Audit-based pathway with approved contractors</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">Electric Cooperatives and Smaller Utilities</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Virginia&apos;s electric cooperatives — including NOVEC, Rappahannock Electric Cooperative (REC), and Shenandoah Valley Electric Cooperative (SVEC) — generally do not offer direct cash rebates for heat pumps. Some provide alternative support: REC offers on-bill financing through its Vividly Brighter program, NOVEC provides low-interest HVAC financing through a bank partnership, and Harrisonburg Electric Commission offers rebates covering central heat pumps, mini-splits, and heat pump water heaters through its Energy Save &amp; Earn program.
+          </p>
+
+          <p className="text-gray-700 leading-relaxed">
+            <strong>Columbia Gas</strong> and <strong>Virginia Natural Gas</strong> offer rebates only for gas equipment — neither provides any incentive for heat pumps or fuel switching.
+          </p>
+        </div>
+      </section>
+
+      {/* 8. LOCAL PROGRAMS — bg-gray-50 */}
+      <section className="py-12 bg-gray-50">
+        <div className="container-narrow">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Local Programs</h2>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Virginia cities and counties offer minimal direct heat pump incentives. The one active local program identified:
+          </p>
+
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">Charlottesville — Retrofit Mini Grant</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Up to <strong>$2,000</strong> in partnership with the Local Energy Alliance Program (LEAP), covering heat pumps, heat pump water heaters, duct sealing, attic insulation, and electrical upgrades. This grant can stack with utility rebates.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            Richmond, Virginia Beach, Norfolk, Arlington, and Alexandria have no identified city-specific heat pump rebate programs. Arlington County has published a building electrification whitepaper but offers no direct residential rebate.
+          </p>
+        </div>
+      </section>
+
+      {/* 9. STACKING — white */}
+      <section className="py-12">
+        <div className="container-narrow">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">How Programs Stack</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            With federal credits expired and state programs frozen, the current stacking picture is straightforward — utility rebates are the only active layer. What you can get depends entirely on your utility territory.
+          </p>
+
+          <div className="space-y-4 mb-8">
+            <div className="bg-white border border-gray-200 rounded-lg p-5">
+              <p className="font-semibold text-gray-900 mb-2">Above 150% AMI — Northern Virginia (Washington Gas + Dominion)</p>
+              <ul className="text-sm text-gray-700 space-y-1">
+                <li>Washington Gas dual-fuel rebate (new furnace): $2,000</li>
+                <li>Dominion Energy HPWH (60+ gallon): $400</li>
+                <li>Federal tax credit: $0 (expired)</li>
+                <li>HEAR/HOMES: $0 (not launched)</li>
+              </ul>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$2,400</p>
+            </div>
+
+            <div className="bg-white border border-gray-200 rounded-lg p-5">
+              <p className="font-semibold text-gray-900 mb-2">Above 150% AMI — Appalachian Power Territory</p>
+              <ul className="text-sm text-gray-700 space-y-1">
+                <li>Appalachian Power mini-split: $300–$400</li>
+                <li>Federal tax credit: $0 (expired)</li>
+                <li>HEAR/HOMES: $0 (not launched)</li>
+              </ul>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$400</p>
+            </div>
+
+            <div className="bg-green-50 border border-green-200 rounded-lg p-5">
+              <p className="font-semibold text-green-800 mb-2">Below 80% AMI — If HEAR Launches (Dominion Territory)</p>
+              <ul className="text-sm text-green-900 space-y-1">
+                <li>HEAR heat pump: up to $8,000</li>
+                <li>HEAR heat pump water heater: up to $1,750</li>
+                <li>HEAR electrical panel upgrade: up to $4,000</li>
+                <li>Dominion utility programs: additional</li>
+              </ul>
+              <p className="font-semibold text-green-700 mt-2">Maximum theoretical stack: ~$14,000 (HEAR cap) + utility</p>
+            </div>
+          </div>
+
+          <div className="bg-gray-100 rounded-lg p-5">
+            <p className="font-semibold text-gray-900 mb-1">What You&apos;ll Actually Pay</p>
+            <p className="text-sm text-gray-700">On a typical <strong>$10,000–$16,000</strong> heat pump installation, most Virginia homeowners above 150% AMI will pay <strong>$8,000–$14,000 out of pocket</strong> after current utility rebates — and homeowners in co-op territory or with Appalachian Power face even higher costs. If HEAR launches for income-qualified households, out-of-pocket costs could drop to <strong>$2,000–$6,000</strong> depending on income tier and system scope.</p>
+          </div>
+
+          <p className="text-sm text-gray-500 mt-4">
+            Virginia has no state tax credit for heat pumps, no state clean energy loan program, and no residential PACE financing. HOMES and HEAR have not launched as of {formattedDate}.
+          </p>
+        </div>
+      </section>
+
+      {/* 10. WEATHERIZATION — bg-gray-50 */}
+      <section className="py-12 bg-gray-50">
+        <div className="container-narrow">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Weatherization Assistance</h2>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Virginia&apos;s Weatherization Assistance Program (WAP) remains active and accepting applications. Administered by the Virginia Department of Housing and Community Development (DHCD), WAP provides free energy efficiency upgrades — including heating and cooling system replacement — for income-qualified households.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Priority goes to elderly (60+), disabled individuals, and families with children. Waitlists are typical. Contact WAP@dhcd.virginia.gov, 804-371-7000, or visit <a href="https://www.dhcd.virginia.gov/wx" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">dhcd.virginia.gov/wx</a> for a county-by-county provider list.
+          </p>
+
+          <div className="bg-green-50 border border-green-200 rounded-lg p-5">
+            <p className="font-semibold text-green-800 mb-1">✓ Best Candidates for Virginia Heat Pump Incentives</p>
+            <p className="text-sm text-green-900">Northern Virginia homeowners with both Washington Gas and Dominion service — these unlock the best combined stack ($2,000+ in dual-fuel rebates). Electric resistance homes in Dominion territory eligible for the Home Retrofit Program. Low-income households in any territory through WAP, EnergyShare, or Appalachian Power&apos;s weatherization program. Charlottesville residents who can stack the $2,000 Retrofit Mini Grant with utility rebates.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* 11. CLIMATE — white */}
+      <section className="py-12">
+        <div className="container-narrow">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Climate Context</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Virginia spans three IECC climate zones under the 2021 code — Zone 3A (warm-humid) along the southeastern coast, Zone 4A (mixed-humid) covering most of the state, and Zone 5A (cool-humid) in the mountain counties of Highland and Alleghany. The Zone 4A designation across most of Virginia means balanced heating and cooling loads — heat pumps serve both functions efficiently year-round.
+          </p>
+
+          <div className="overflow-x-auto mb-6">
+            <table className="min-w-full text-sm">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="text-left p-3 font-semibold">Region</th>
+                  <th className="text-left p-3 font-semibold">IECC Zone</th>
+                  <th className="text-left p-3 font-semibold">Winter Design Temp</th>
+                  <th className="text-left p-3 font-semibold">Cold-Climate HP Needed?</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b">
+                  <td className="p-3">Norfolk / Virginia Beach</td>
+                  <td className="p-3">3A (Warm-Humid)</td>
+                  <td className="p-3">~20°F</td>
+                  <td className="p-3">No — standard HP works well</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Richmond</td>
+                  <td className="p-3">4A (Mixed-Humid)</td>
+                  <td className="p-3">~14–17°F</td>
+                  <td className="p-3">Standard HP fine; CCHP optional</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Northern Virginia (Dulles)</td>
+                  <td className="p-3">4A (Mixed-Humid)</td>
+                  <td className="p-3">~12°F</td>
+                  <td className="p-3 font-semibold">CCHP recommended</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Roanoke / Western VA</td>
+                  <td className="p-3">4A–5A</td>
+                  <td className="p-3">~10–14°F</td>
+                  <td className="p-3 font-semibold">CCHP recommended</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Highland / Alleghany (mountains)</td>
+                  <td className="p-3">5A (Cool-Humid)</td>
+                  <td className="p-3">Below 5°F</td>
+                  <td className="p-3 font-semibold">Essential</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Virginia already has one of the highest electric-heating adoption rates on the East Coast — roughly half of homes heat with electricity, well above the national average. Natural gas serves a significant share concentrated in Northern Virginia, while propane and fuel oil account for a smaller share in rural western and central Virginia. The primary conversion opportunities vary by region: gas furnaces in Northern Virginia suburbs, electric resistance systems in Hampton Roads/Tidewater, and propane or oil systems in rural Appalachian communities.
+          </p>
+
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
+            <p className="font-semibold text-blue-800 mb-1">Virginia is strong heat pump territory</p>
+            <p className="text-sm text-blue-900">With balanced heating and cooling loads across most of the state, standard air-source heat pumps handle the vast majority of Virginia climates effectively. Cold-climate models are only recommended for the mountain west. The high existing rate of electric heating means many Virginia homeowners are replacing less efficient electric systems with heat pumps — which qualifies for the highest utility rebate tiers from Dominion. For more on battery storage and time-of-use strategies, see our <Link href="/battery" className="text-brand-600 hover:underline">home battery guide</Link>.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* 12. HOW TO APPLY — bg-gray-50 */}
+      <section className="py-12 bg-gray-50">
+        <div className="container-narrow">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Apply</h2>
+          <div className="space-y-4">
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                1
+              </div>
+              <div>
+                <p className="font-semibold text-gray-900">Identify your utility</p>
+                <p className="text-sm text-gray-700">Check your electric bill for Dominion Energy, Appalachian Power, or a cooperative name. Check your gas bill for Washington Gas, Columbia Gas, or Virginia Natural Gas.</p>
+              </div>
+            </div>
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                2
+              </div>
+              <div>
+                <p className="font-semibold text-gray-900">Visit your utility&apos;s rebate portal</p>
+                <p className="text-sm text-gray-700">Dominion: <a href="https://www.domsavings.com" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">domsavings.com</a> · Appalachian Power: <a href="https://takechargeva.com/rebates" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">takechargeva.com</a> · Washington Gas: <a href="https://wgsmartsavings.com/programs-rebates/va/home-heating" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">wgsmartsavings.com</a></p>
+              </div>
+            </div>
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                3
+              </div>
+              <div>
+                <p className="font-semibold text-gray-900">Schedule a home energy audit (Dominion) or find a participating contractor</p>
+                <p className="text-sm text-gray-700">Dominion requires an energy evaluation before HVAC rebates. Appalachian Power and Washington Gas require using approved contractor networks. Ask your contractor about eligibility before signing.</p>
+              </div>
+            </div>
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                4
+              </div>
+              <div>
+                <p className="font-semibold text-gray-900">Check for local programs and monitor IRA launch</p>
+                <p className="text-sm text-gray-700">Charlottesville residents should also apply for the $2,000 Retrofit Mini Grant through LEAP. Bookmark <a href="https://www.energy.virginia.gov/energy-efficiency/HomeEnergyRebatesFrequentlyAskedQuestions.shtml" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">Virginia Energy&apos;s Home Energy Rebates FAQ</a> for HOMES and HEAR launch updates.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 13. WHAT TO WATCH — white */}
+      <section className="py-12">
+        <div className="container-narrow">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">What to Watch</h2>
+          <div className="space-y-4">
+            <div className="bg-white border border-gray-200 rounded-lg p-5">
+              <p className="font-semibold text-gray-900">IRA Funding Runway</p>
+              <p className="text-sm text-gray-600 mt-1">Virginia&apos;s $188 million in HOMES/HEAR funding is authorized through September 2031 but could be affected by future federal budget actions. The One Big Beautiful Bill Act preserved existing IRA rebate allocations but did not extend them.</p>
+            </div>
+            <div className="bg-white border border-gray-200 rounded-lg p-5">
+              <p className="font-semibold text-gray-900">HOMES + HEAR Launch Status</p>
+              <p className="text-sm text-gray-600 mt-1">If Virginia Energy receives and distributes its allocation, these programs would transform the incentive math — especially HEAR&apos;s $8,000 for heat pumps at ≤80% AMI. No timeline has been provided.</p>
+            </div>
+            <div className="bg-white border border-gray-200 rounded-lg p-5">
+              <p className="font-semibold text-gray-900">Dominion Program Availability</p>
+              <p className="text-sm text-gray-600 mt-1">Participation can be limited depending on contractor availability and program demand. Starting the home energy evaluation process early is recommended.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 14. FAQ — bg-gray-50 */}
+      <section className="py-12 bg-gray-50">
+        <div className="container-narrow">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+          <div className="space-y-6">
+            {faqJsonLd.mainEntity.map((faq: { name: string; acceptedAnswer: { text: string } }, index: number) => (
+              <div key={index} className="border-b border-gray-200 pb-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">{faq.name}</h3>
+                <p className="text-gray-700 leading-relaxed">{faq.acceptedAnswer.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 15. SEE ALSO — white */}
+      <section className="py-8">
+        <div className="container-narrow">
+          <h2 className="text-xl font-bold text-gray-900 mb-3">See also</h2>
+          <ul className="space-y-2 text-sm">
             <li>
-              <strong>Section 25C</strong> — up to $2,000 for heat pumps at 30%
-              of cost. The IRS confirms it is not allowed for property placed in
-              service after December&nbsp;31, 2025.
+              <Link href="/heat-pumps/states/md" className="text-brand-600 hover:underline">
+                Maryland Heat Pump Rebates &amp; Incentives
+              </Link>
             </li>
             <li>
-              <strong>Section 25D</strong> — 30% with no cap for geothermal
-              heat pumps. Not allowed for expenditures made after
-              December&nbsp;31, 2025. Expenditures are treated as made when
-              installation is completed — so even if you paid in 2025 but
-              installation finished in 2026, no credit.
+              <Link href="/heat-pumps/states/nc" className="text-brand-600 hover:underline">
+                North Carolina Heat Pump Rebates &amp; Incentives
+              </Link>
+            </li>
+            <li>
+              <Link href="/heat-pumps/states/dc" className="text-brand-600 hover:underline">
+                Washington DC Heat Pump Rebates &amp; Incentives
+              </Link>
+            </li>
+            <li>
+              <Link href="/heat-pumps/states/pa" className="text-brand-600 hover:underline">
+                Pennsylvania Heat Pump Rebates &amp; Incentives
+              </Link>
+            </li>
+            <li>
+              <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">
+                Federal Heat Pump Tax Credits Ended
+              </Link>
+            </li>
+            <li>
+              <Link href="/heat-pumps" className="text-brand-600 hover:underline">
+                All State Heat Pump Incentives
+              </Link>
             </li>
           </ul>
-          <p className="text-red-800 text-sm mt-3">
-            If your equipment was installed and operational on or before
-            December&nbsp;31, 2025, you can still claim on your 2025 tax return
-            using IRS Form 5695.
-          </p>
-          <p className="text-red-800 text-sm mt-2">
-            <em>
-              Note: Virginia&rsquo;s state informational page on tax credits
-              still reflects pre-OBBB timelines and should not be relied on for
-              2026 tax-credit availability.
-            </em>
-          </p>
-          <p className="text-sm mt-3">
-            <Link
-              href="/federal-heat-pump-tax-credit-expired"
-              className="text-red-700 underline hover:text-red-900"
-            >
-              Full explainer: What happened to the federal heat pump tax credit →
+        </div>
+      </section>
+
+      {/* 16. SOURCES — bg-gray-50 */}
+      <section className="py-12 bg-gray-50">
+        <div className="container-narrow">
+          <h2 className="text-xl font-bold text-gray-900 mb-4">Sources</h2>
+          <ul className="space-y-2 text-sm">
+            {vaIncentive.sources.map((source: { label: string; url: string }, index: number) => (
+              <li key={index}>
+                <a
+                  href={source.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-brand-600 hover:underline"
+                >
+                  {source.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* 17. DISCLAIMER */}
+      <section className="py-8">
+        <div className="container-narrow">
+          <div className="bg-gray-100 rounded-lg p-6">
+            <p className="text-gray-500 text-xs leading-relaxed">
+              <strong>Disclaimer:</strong> This page covers the main statewide, utility, and IRA heat pump incentives available to Virginia homeowners in 2026. It does not calculate savings, guarantee eligibility, or represent any incentive program. Virginia&apos;s HOMES and HEAR programs have not yet launched and rebate amounts shown for those programs are based on the federal framework — actual Virginia program details may differ. We verify status regularly but programs can change without notice. Always confirm current amounts and eligibility with your utility provider and your contractor before making decisions.
+            </p>
+          </div>
+          <div className="mt-6 text-center">
+            <Link href="/heat-pumps" className="text-brand-600 hover:underline text-sm">
+              ← Back to Heat Pumps overview
             </Link>
-          </p>
-        </div>
-      </section>
-
-      {/* Virginia State Programs — Frozen */}
-      <section className="max-w-3xl mx-auto px-4 py-6">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">
-          Virginia&rsquo;s $188M in State Rebates: Pending
-        </h2>
-        <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-4">
-          <p className="text-amber-900 font-medium mb-2">
-            ⏳ Neither program has launched. No timeline has been provided.
-          </p>
-          <p className="text-amber-800 text-sm">
-            Virginia Energy states it is &ldquo;assessing how the recent federal
-            funding freezes and executive orders may affect our programs and
-            operations.&rdquo; Monitor the official FAQ page linked in our
-            sources below.
-          </p>
-        </div>
-
-        <h3 className="text-lg font-semibold text-gray-900 mt-6 mb-2">
-          HOMES Program ($94.3M allocation)
-        </h3>
-        <p className="text-gray-700 mb-2">
-          Performance-based rebates of up to <strong>$8,000 per household</strong>{" "}
-          for whole-home energy retrofit projects achieving at least 15% modeled
-          or measured energy savings. Heat pumps qualify as part of a whole-home
-          retrofit — not as a standalone measure. Rebate levels scale by
-          household income relative to Area Median Income (AMI).
-        </p>
-
-        <h3 className="text-lg font-semibold text-gray-900 mt-6 mb-2">
-          HEAR / HEEHRA Program ($94M allocation)
-        </h3>
-        <p className="text-gray-700 mb-2">
-          Point-of-sale rebates for specific electrification equipment:
-        </p>
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm border border-gray-200 rounded-lg mt-2 mb-4">
-            <thead className="bg-gray-50">
-              <tr>
-                <th className="text-left p-3 font-semibold text-gray-700">
-                  Measure
-                </th>
-                <th className="text-left p-3 font-semibold text-gray-700">
-                  ≤80% AMI
-                </th>
-                <th className="text-left p-3 font-semibold text-gray-700">
-                  80–150% AMI
-                </th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-gray-100">
-              <tr>
-                <td className="p-3 text-gray-800">Heat pump (space)</td>
-                <td className="p-3 text-gray-800">Up to $8,000 (100% of cost)</td>
-                <td className="p-3 text-gray-800">Up to $4,000 (50% of cost)</td>
-              </tr>
-              <tr>
-                <td className="p-3 text-gray-800">Heat pump water heater</td>
-                <td className="p-3 text-gray-800">Up to $1,750</td>
-                <td className="p-3 text-gray-800">Up to $1,750</td>
-              </tr>
-              <tr>
-                <td className="p-3 text-gray-800">Electrical panel upgrade</td>
-                <td className="p-3 text-gray-800">Up to $4,000</td>
-                <td className="p-3 text-gray-800">Up to $4,000</td>
-              </tr>
-              <tr>
-                <td className="p-3 text-gray-800">
-                  Insulation / air sealing
-                </td>
-                <td className="p-3 text-gray-800">Up to $1,600</td>
-                <td className="p-3 text-gray-800">Up to $1,600</td>
-              </tr>
-              <tr className="bg-gray-50">
-                <td className="p-3 text-gray-900 font-semibold">
-                  Per-household cap
-                </td>
-                <td className="p-3 text-gray-900 font-semibold" colSpan={2}>
-                  $14,000 across all measures
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p className="text-gray-600 text-sm mb-2">
-          HEAR rebates apply only to replacement of a nonelectric appliance or a
-          first-time heat pump purchase. Homeowners replacing an existing heat
-          pump should use the HOMES program instead. Households above 150% AMI
-          do not qualify for HEAR.
-        </p>
-
-        <h3 className="text-lg font-semibold text-gray-900 mt-6 mb-2">
-          No Virginia State Tax Credit
-        </h3>
-        <p className="text-gray-700 mb-2">
-          Virginia does not offer a state-level tax credit for heat pumps. There
-          is no state-sponsored residential loan program for heat pump
-          installations. Residential PACE (R-PACE) financing is not available in
-          Virginia, though Commercial PACE operates in 20+ localities for
-          multifamily and commercial properties.
-        </p>
-      </section>
-
-      {/* Utility Programs */}
-      <section className="max-w-3xl mx-auto px-4 py-6">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">
-          Utility Rebates: What&rsquo;s Actually Available Now
-        </h2>
-        <p className="text-gray-600 mb-6">
-          With federal credits expired and state programs frozen, utility rebates
-          are the primary financial incentive for Virginia homeowners in 2026.
-          What you can get depends entirely on which utility serves your home.
-        </p>
-
-        {/* Dominion */}
-        <div className="border border-gray-200 rounded-lg p-5 mb-6">
-          <h3 className="text-lg font-bold text-gray-900 mb-2">
-            Dominion Energy Virginia
-          </h3>
-          <p className="text-sm text-gray-500 mb-3">
-            Virginia&rsquo;s largest electric utility
-          </p>
-
-          <h4 className="font-semibold text-gray-800 mt-4 mb-1">
-            Heat Pump Water Heaters
-          </h4>
-          <p className="text-gray-700 text-sm mb-2">
-            <strong>$250</strong> for 40–59 gallon units or{" "}
-            <strong>$400</strong> for 60+ gallon units. Available as a mail-in
-            rebate or instant discount through Dominion&rsquo;s water heater
-            marketplace. Must meet ENERGY STAR requirements and replace an
-            existing electric water heater.
-          </p>
-
-          <h4 className="font-semibold text-gray-800 mt-4 mb-1">
-            Central Heat Pumps (Home Retrofit Program)
-          </h4>
-          <p className="text-gray-700 text-sm mb-2">
-            Dominion offers tiered rebates for central air-source heat pumps
-            based on efficiency. Rebate amounts are determined through the Home
-            Energy Evaluation pathway and confirmed by a participating Energy
-            Solutions Contractor. A home energy audit is required to
-            participate. Eligibility can depend on existing heating type —
-            some pathways prioritize or require homes with electric resistance
-            heating.
-          </p>
-
-          <h4 className="font-semibold text-gray-800 mt-4 mb-1">
-            Heat Pump Tune-Up
-          </h4>
-          <p className="text-gray-700 text-sm mb-2">
-            <strong>$90 rebate</strong> for an existing heat pump tune-up
-            through a participating contractor.
-          </p>
-
-          <h4 className="font-semibold text-gray-800 mt-4 mb-1">
-            Income-Qualifying: EnergyShare Weatherization
-          </h4>
-          <p className="text-gray-700 text-sm mb-2">
-            <strong>Free</strong> home energy assessments and efficiency
-            upgrades (including heat pump equipment) for households at or below
-            80% AMI, customers aged 60+ at 120% of state median income, or
-            those receiving disability payments. Funded at $130M through 2028
-            under Virginia&rsquo;s Grid Transformation and Security Act.
-          </p>
-
-          <p className="text-sm mt-3">
-            <a
-              href="https://www.domsavings.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-brand-600 hover:underline"
-            >
-              domsavings.com ↗
-            </a>
-          </p>
-        </div>
-
-        {/* Washington Gas */}
-        <div className="border border-gray-200 rounded-lg p-5 mb-6">
-          <h3 className="text-lg font-bold text-gray-900 mb-2">
-            Washington Gas
-          </h3>
-          <p className="text-sm text-gray-500 mb-3">
-            Northern Virginia gas utility
-          </p>
-
-          <h4 className="font-semibold text-gray-800 mt-4 mb-1">
-            VA CARE Program — Dual-Fuel Heat Pump
-          </h4>
-          <p className="text-gray-700 text-sm mb-2">
-            <strong>$2,000</strong> for a dual-fuel heat pump with furnace
-            replacement. Requirements: heat pump must meet 15.2 SEER2 and 7.5
-            HSPF2; replacement furnace must be 95% AFUE. Or{" "}
-            <strong>$1,400</strong> with an existing qualifying furnace (90%+
-            AFUE). Must replace an existing central AC system and use a
-            participating contractor.
-          </p>
-          <p className="text-gray-600 text-sm mt-2">
-            <em>
-              Note: This is a dual-fuel rebate that pairs a heat pump with gas
-              furnace backup — not a full electrification incentive. The gas
-              furnace remains as supplemental heating.
-            </em>
-          </p>
-
-          <p className="text-sm mt-3">
-            <a
-              href="https://wgsmartsavings.com/programs-rebates/va/home-heating"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-brand-600 hover:underline"
-            >
-              wgsmartsavings.com ↗
-            </a>
-          </p>
-        </div>
-
-        {/* Appalachian Power */}
-        <div className="border border-gray-200 rounded-lg p-5 mb-6">
-          <h3 className="text-lg font-bold text-gray-900 mb-2">
-            Appalachian Power (AEP Virginia)
-          </h3>
-          <p className="text-sm text-gray-500 mb-3">
-            Western Virginia electric utility
-          </p>
-
-          <h4 className="font-semibold text-gray-800 mt-4 mb-1">
-            Ductless Mini-Split Heat Pumps
-          </h4>
-          <p className="text-gray-700 text-sm mb-2">
-            <strong>$300</strong> per ductless mini-split through the Efficient
-            Products Program (minimum SEER2 ≥15, EER2 ≥12.5). Limit of one
-            rebate per customer per calendar year.
-          </p>
-
-          <h4 className="font-semibold text-gray-800 mt-4 mb-1">
-            Home Performance Program
-          </h4>
-          <p className="text-gray-700 text-sm mb-2">
-            Up to <strong>$400 per unit</strong> for mini-splits and heat pump
-            water heaters through an audit-based pathway with approved
-            contractors. No ducted whole-home heat pump rebate is offered.
-          </p>
-
-          <h4 className="font-semibold text-gray-800 mt-4 mb-1">
-            Low-Income Weatherization
-          </h4>
-          <p className="text-gray-700 text-sm mb-2">
-            Free energy efficiency upgrades for households below 60% of state
-            median income.
-          </p>
-
-          <p className="text-sm mt-3">
-            <a
-              href="https://takechargeva.com/rebates"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-brand-600 hover:underline"
-            >
-              takechargeva.com ↗
-            </a>
-          </p>
-        </div>
-
-        {/* Co-ops and smaller utilities */}
-        <div className="border border-gray-200 rounded-lg p-5 mb-6">
-          <h3 className="text-lg font-bold text-gray-900 mb-2">
-            Electric Cooperatives &amp; Smaller Utilities
-          </h3>
-
-          <p className="text-gray-700 text-sm mb-3">
-            Virginia&rsquo;s electric cooperatives — including NOVEC,
-            Rappahannock Electric (REC), and Shenandoah Valley Electric (SVEC) —
-            generally <strong>do not offer direct cash rebates</strong> for heat
-            pumps. Some provide alternative support:
-          </p>
-          <ul className="text-gray-700 text-sm space-y-2 mb-3">
-            <li>
-              <strong>REC</strong> — Vividly Brighter program: on-bill financing
-              where REC pays upfront costs and members repay through their
-              electric bill.
-            </li>
-            <li>
-              <strong>NOVEC</strong> — Low-interest HVAC financing through a
-              bank partnership.
-            </li>
-            <li>
-              <strong>Harrisonburg Electric Commission</strong> — Energy Save
-              &amp; Earn Rebate Program covering central heat pumps, mini-splits,
-              and heat pump water heaters.
-            </li>
-          </ul>
-          <p className="text-gray-600 text-sm">
-            <strong>Columbia Gas</strong> and <strong>Virginia Natural Gas</strong>{" "}
-            offer rebates only for gas equipment — neither provides any incentive
-            for heat pumps or fuel switching.
-          </p>
-        </div>
-
-        {/* Gas utilities note */}
-        <div className="border border-gray-200 rounded-lg p-5 mb-6">
-          <h3 className="text-lg font-bold text-gray-900 mb-2">
-            Weatherization Assistance Program (WAP)
-          </h3>
-          <p className="text-gray-700 text-sm mb-2">
-            Virginia&rsquo;s WAP remains <strong>active and accepting
-            applications</strong>. Administered by the Virginia Department of
-            Housing and Community Development (DHCD), WAP provides free energy
-            efficiency upgrades — including heating and cooling system
-            replacement — for income-qualified households.
-          </p>
-          <p className="text-gray-700 text-sm mb-2">
-            Priority goes to elderly (60+), disabled individuals, and families
-            with children. Waitlists are typical.
-          </p>
-          <p className="text-gray-700 text-sm">
-            Contact: WAP@dhcd.virginia.gov, 804-371-7000, or visit{" "}
-            <a
-              href="https://www.dhcd.virginia.gov/wx"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-brand-600 hover:underline"
-            >
-              dhcd.virginia.gov/wx
-            </a>{" "}
-            for a county-by-county provider list.
-          </p>
-        </div>
-      </section>
-
-      {/* Local Programs */}
-      <section className="max-w-3xl mx-auto px-4 py-6">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">
-          Local Programs
-        </h2>
-        <p className="text-gray-700 mb-4">
-          Virginia cities and counties offer minimal direct heat pump incentives.
-          The one active local program identified:
-        </p>
-
-        <div className="border border-gray-200 rounded-lg p-5 mb-4">
-          <h3 className="font-semibold text-gray-900 mb-1">
-            Charlottesville — Retrofit Mini Grant
-          </h3>
-          <p className="text-gray-700 text-sm">
-            Up to <strong>$2,000</strong> in partnership with the Local Energy
-            Alliance Program (LEAP), covering heat pumps, heat pump water
-            heaters, duct sealing, attic insulation, and electrical upgrades.
-            This grant can stack with utility rebates.
-          </p>
-        </div>
-
-        <p className="text-gray-600 text-sm">
-          Richmond, Virginia Beach, Norfolk, Arlington, and Alexandria have no
-          identified city-specific heat pump rebate programs. Arlington County
-          has published a building electrification whitepaper but offers no
-          direct residential rebate.
-        </p>
-      </section>
-
-      {/* Stacking */}
-      <section className="max-w-3xl mx-auto px-4 py-6">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">
-          How Programs Stack
-        </h2>
-        <p className="text-gray-600 mb-4">
-          With federal credits expired and state programs frozen, the current
-          stacking picture is straightforward — utility rebates are the only
-          active layer.
-        </p>
-
-        <h3 className="text-lg font-semibold text-gray-900 mb-3">
-          Current Reality (March 2026)
-        </h3>
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm border border-gray-200 rounded-lg mb-6">
-            <thead className="bg-gray-50">
-              <tr>
-                <th className="text-left p-3 font-semibold text-gray-700">
-                  Scenario
-                </th>
-                <th className="text-left p-3 font-semibold text-gray-700">
-                  Max Incentive
-                </th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-gray-100">
-              <tr>
-                <td className="p-3 text-gray-800">
-                  Median-income, Washington Gas territory
-                </td>
-                <td className="p-3 text-gray-800 font-semibold">
-                  $2,000
-                </td>
-              </tr>
-              <tr>
-                <td className="p-3 text-gray-800">
-                  Median-income, Dominion Energy territory
-                </td>
-                <td className="p-3 text-gray-800 font-semibold">
-                  Varies (determined via home energy evaluation)
-                </td>
-              </tr>
-              <tr>
-                <td className="p-3 text-gray-800">
-                  Median-income, Appalachian Power territory
-                </td>
-                <td className="p-3 text-gray-800 font-semibold">$400</td>
-              </tr>
-              <tr>
-                <td className="p-3 text-gray-800">
-                  Median-income, electric cooperative territory
-                </td>
-                <td className="p-3 text-gray-800 font-semibold">
-                  $0 in direct rebates
-                </td>
-              </tr>
-              <tr>
-                <td className="p-3 text-gray-800">
-                  Low-income, any territory
-                </td>
-                <td className="p-3 text-gray-800 font-semibold">
-                  Free via WAP / EnergyShare / utility weatherization
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <h3 className="text-lg font-semibold text-gray-900 mb-3">
-          If Virginia&rsquo;s IRA Programs Launch
-        </h3>
-        <p className="text-gray-700 mb-3">
-          Federal guidance and Virginia Energy&rsquo;s FAQ confirm that HOMES
-          and HEAR rebates can stack with utility rebates but cannot be combined
-          for the same measure. A household could use HEAR for a heat pump and
-          HOMES for insulation, or vice versa.
-        </p>
-
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm border border-gray-200 rounded-lg mb-4">
-            <thead className="bg-gray-50">
-              <tr>
-                <th className="text-left p-3 font-semibold text-gray-700">
-                  Scenario (if HEAR launches)
-                </th>
-                <th className="text-left p-3 font-semibold text-gray-700">
-                  Potential Stack
-                </th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-gray-100">
-              <tr>
-                <td className="p-3 text-gray-800">
-                  80–150% AMI, Dominion territory
-                  <br />
-                  <span className="text-gray-500 text-xs">
-                    HEAR HP + Dominion HPWH + HEAR HPWH
-                  </span>
-                </td>
-                <td className="p-3 text-gray-800 font-semibold">
-                  Up to ~$6,000+
-                </td>
-              </tr>
-              <tr>
-                <td className="p-3 text-gray-800">
-                  ≤80% AMI, Dominion territory
-                  <br />
-                  <span className="text-gray-500 text-xs">
-                    HEAR HP + HEAR HPWH + HEAR panel + utility programs
-                  </span>
-                </td>
-                <td className="p-3 text-gray-800 font-semibold">
-                  Up to $14,000 (HEAR cap) + utility
-                </td>
-              </tr>
-              <tr>
-                <td className="p-3 text-gray-800">&gt;150% AMI</td>
-                <td className="p-3 text-gray-800 font-semibold">
-                  HOMES (if launched) + utility only
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p className="text-gray-500 text-sm">
-          These are hypothetical scenarios — HOMES and HEAR have not launched in
-          Virginia as of {formattedDate}.
-        </p>
-      </section>
-
-      {/* Climate Context */}
-      <section className="max-w-3xl mx-auto px-4 py-6">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">
-          Climate Context: Why Virginia Is Strong Heat Pump Territory
-        </h2>
-        <p className="text-gray-700 mb-4">
-          Virginia spans three IECC climate zones under the 2021 code: Zone 3A
-          (warm-humid) along the southeastern coast, Zone 4A (mixed-humid)
-          covering most of the state, and Zone 5A (cool-humid) in the mountain
-          counties of Highland and Alleghany. The Zone 4A designation across
-          most of Virginia means balanced heating and cooling loads — heat pumps
-          serve both functions efficiently year-round.
-        </p>
-        <p className="text-gray-700 mb-4">
-          Winter design temperatures across Virginia&rsquo;s major population
-          centers range from about 12°F in Northern Virginia (Dulles area) to
-          about 20°F along the coast (Norfolk/Virginia Beach). These are well
-          within the operating range of standard air-source heat pumps —
-          cold-climate models are recommended only for mountain areas in western
-          Virginia where temperatures can drop below 10°F.
-        </p>
-        <p className="text-gray-700 mb-4">
-          Virginia already has one of the highest electric-heating adoption
-          rates on the East Coast — roughly half of homes heat with electricity,
-          well above the national average. Natural gas serves a significant
-          share of homes concentrated in Northern Virginia, while propane and
-          fuel oil account for a smaller share in rural western and central
-          Virginia. The primary conversion opportunities vary by region: gas
-          furnaces in Northern Virginia suburbs, electric resistance systems in
-          Hampton Roads/Tidewater, and propane or oil systems in rural
-          Appalachian communities.
-        </p>
-      </section>
-
-      {/* How to Apply */}
-      <section className="max-w-3xl mx-auto px-4 py-6">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">How to Apply</h2>
-        <p className="text-gray-600 mb-4">
-          The process differs by utility. Start with your electric utility:
-        </p>
-        <div className="space-y-4">
-          <div className="flex gap-3">
-            <span className="flex-shrink-0 w-7 h-7 bg-brand-100 text-brand-700 rounded-full flex items-center justify-center text-sm font-bold">
-              1
-            </span>
-            <div>
-              <p className="font-semibold text-gray-900">
-                Identify your utility
-              </p>
-              <p className="text-sm text-gray-600">
-                Check your electric bill for Dominion Energy, Appalachian Power,
-                or a cooperative name. Check your gas bill for Washington Gas,
-                Columbia Gas, or Virginia Natural Gas.
-              </p>
-            </div>
           </div>
-          <div className="flex gap-3">
-            <span className="flex-shrink-0 w-7 h-7 bg-brand-100 text-brand-700 rounded-full flex items-center justify-center text-sm font-bold">
-              2
-            </span>
-            <div>
-              <p className="font-semibold text-gray-900">
-                Visit your utility&rsquo;s rebate portal
-              </p>
-              <p className="text-sm text-gray-600">
-                Dominion:{" "}
-                <a
-                  href="https://www.domsavings.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-brand-600 hover:underline"
-                >
-                  domsavings.com
-                </a>
-                {" · "}
-                Appalachian Power:{" "}
-                <a
-                  href="https://takechargeva.com/rebates"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-brand-600 hover:underline"
-                >
-                  takechargeva.com
-                </a>
-                {" · "}
-                Washington Gas:{" "}
-                <a
-                  href="https://wgsmartsavings.com/programs-rebates/va/home-heating"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-brand-600 hover:underline"
-                >
-                  wgsmartsavings.com
-                </a>
-              </p>
-            </div>
-          </div>
-          <div className="flex gap-3">
-            <span className="flex-shrink-0 w-7 h-7 bg-brand-100 text-brand-700 rounded-full flex items-center justify-center text-sm font-bold">
-              3
-            </span>
-            <div>
-              <p className="font-semibold text-gray-900">
-                Schedule a home energy audit (Dominion) or find a participating
-                contractor
-              </p>
-              <p className="text-sm text-gray-600">
-                Dominion requires an energy evaluation before HVAC rebates.
-                Appalachian Power and Washington Gas require using approved
-                contractor networks.
-              </p>
-            </div>
-          </div>
-          <div className="flex gap-3">
-            <span className="flex-shrink-0 w-7 h-7 bg-brand-100 text-brand-700 rounded-full flex items-center justify-center text-sm font-bold">
-              4
-            </span>
-            <div>
-              <p className="font-semibold text-gray-900">
-                Check for local programs
-              </p>
-              <p className="text-sm text-gray-600">
-                Charlottesville residents should also apply for the $2,000
-                Retrofit Mini Grant through LEAP. Ask your municipality about
-                any local energy programs.
-              </p>
-            </div>
-          </div>
-          <div className="flex gap-3">
-            <span className="flex-shrink-0 w-7 h-7 bg-brand-100 text-brand-700 rounded-full flex items-center justify-center text-sm font-bold">
-              5
-            </span>
-            <div>
-              <p className="font-semibold text-gray-900">
-                Monitor Virginia&rsquo;s IRA programs
-              </p>
-              <p className="text-sm text-gray-600">
-                Bookmark{" "}
-                <a
-                  href="https://www.energy.virginia.gov/energy-efficiency/HomeEnergyRebatesFrequentlyAskedQuestions.shtml"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-brand-600 hover:underline"
-                >
-                  Virginia Energy&rsquo;s Home Energy Rebates FAQ
-                </a>{" "}
-                for updates on HOMES and HEAR. If they launch, the stacking
-                math changes dramatically — especially for households at or
-                below 150% AMI.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* What to Watch */}
-      <section className="max-w-3xl mx-auto px-4 py-6">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">What to Watch</h2>
-        <div className="space-y-3">
-          <div className="bg-gray-50 rounded-lg p-4">
-            <p className="font-semibold text-gray-900 mb-1">
-              HOMES + HEAR launch status
-            </p>
-            <p className="text-sm text-gray-600">
-              If Virginia Energy receives and distributes its $188M allocation,
-              these programs would transform the incentive math — especially
-              HEAR&rsquo;s $8,000 for heat pumps at ≤80% AMI.
-            </p>
-          </div>
-          <div className="bg-gray-50 rounded-lg p-4">
-            <p className="font-semibold text-gray-900 mb-1">
-              Dominion program availability
-            </p>
-            <p className="text-sm text-gray-600">
-              Participation can be limited depending on contractor availability
-              and program demand. Starting the home energy evaluation process
-              early is recommended.
-            </p>
-          </div>
-          <div className="bg-gray-50 rounded-lg p-4">
-            <p className="font-semibold text-gray-900 mb-1">
-              Federal legislative activity
-            </p>
-            <p className="text-sm text-gray-600">
-              No legislation to reinstate 25C or 25D has been enacted as of
-              March 2026. We&rsquo;ll update this page if that changes.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="max-w-3xl mx-auto px-4 py-6">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">
-          Frequently Asked Questions
-        </h2>
-        <div className="space-y-4">
-          {faqJsonLd.mainEntity.map((faq, index) => (
-            <details
-              key={index}
-              className="border border-gray-200 rounded-lg"
-            >
-              <summary className="p-4 cursor-pointer font-semibold text-gray-900 hover:text-brand-600">
-                {faq.name}
-              </summary>
-              <p className="px-4 pb-4 text-sm text-gray-700">
-                {faq.acceptedAnswer.text}
-              </p>
-            </details>
-          ))}
-        </div>
-      </section>
-
-      {/* Sources */}
-      <section className="max-w-3xl mx-auto px-4 py-6">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">Sources</h2>
-        <div className="space-y-2">
-          {vaIncentive.sources.map((source) => (
-            <a
-              key={source.url}
-              href={source.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block text-sm text-brand-600 hover:underline"
-            >
-              {source.label} ↗
-            </a>
-          ))}
-        </div>
-        <p className="text-gray-500 text-sm mt-4">
-          All sources last verified {formattedDate}. Dollar amounts come from
-          official utility program pages and Virginia government sources. We do
-          not use blog posts or aggregator sites as primary sources for dollar
-          amounts.
-        </p>
-      </section>
-
-      {/* Cross-links */}
-      <section className="max-w-3xl mx-auto px-4 py-6 border-t border-gray-200">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">Related</h2>
-        <div className="grid gap-3 sm:grid-cols-2">
-          <Link
-            href="/federal-heat-pump-tax-credit-expired"
-            className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
-          >
-            <p className="font-semibold text-gray-900">
-              Federal Heat Pump Tax Credits Ended
-            </p>
-            <p className="text-sm text-gray-600">
-              What happened to 25C and 25D
-            </p>
-          </Link>
-          <Link
-            href="/heat-pumps"
-            className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
-          >
-            <p className="font-semibold text-gray-900">
-              All State Heat Pump Incentives
-            </p>
-            <p className="text-sm text-gray-600">
-              Compare programs across states
-            </p>
-          </Link>
-          <Link
-            href="/heat-pumps/states/ny"
-            className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
-          >
-            <p className="font-semibold text-gray-900">
-              New York Heat Pump Rebates
-            </p>
-            <p className="text-sm text-gray-600">Clean Heat Program + 6 utilities</p>
-          </Link>
-          <Link
-            href="/battery"
-            className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
-          >
-            <p className="font-semibold text-gray-900">
-              Home Batteries in 2026
-            </p>
-            <p className="text-sm text-gray-600">
-              Costs, incentives, and economics
-            </p>
-          </Link>
-        </div>
-        <p className="text-gray-500 text-sm mt-4">
-          Maryland and North Carolina guides coming soon.
-        </p>
-      </section>
-
-      {/* Disclaimer */}
-      <section className="max-w-3xl mx-auto px-4 py-6 mb-8">
-        <div className="bg-gray-50 rounded-lg p-4">
-          <p className="text-xs text-gray-500 leading-relaxed">
-            <strong>Disclaimer:</strong> This page is for informational purposes
-            only and is not tax, legal, or financial advice. Program details,
-            eligibility, and rebate amounts can change without notice. Verify
-            all information directly with your utility and the relevant program
-            administrator before making purchasing decisions. Home Energy Basics
-            is not affiliated with any government agency, utility company, or
-            equipment manufacturer.
-          </p>
         </div>
       </section>
     </>

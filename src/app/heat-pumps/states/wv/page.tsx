@@ -24,7 +24,6 @@ export const metadata: Metadata = {
 export default function WestVirginiaPage() {
   const wvIncentive = incentives.WV;
   const formattedDate = formatDate(wvIncentive.lastVerified);
-  const sources = wvIncentive.sources;
 
   const faqJsonLd = {
     "@context": "https://schema.org",
@@ -122,7 +121,7 @@ export default function WestVirginiaPage() {
       {/* 3. SHORT VERSION */}
       <section className="py-8">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Short Version</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">The Short Version</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ HEAR rebates up to $8,000</p>
@@ -795,6 +794,11 @@ export default function WestVirginiaPage() {
               </Link>
             </li>
             <li>
+              <Link href="/heat-pumps/states/oh" className="text-brand-600 hover:underline">
+                Ohio Heat Pump Rebates &amp; Incentives
+              </Link>
+            </li>
+            <li>
               <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">
                 Federal Heat Pump Tax Credits Ended &mdash; What It Means
               </Link>
@@ -813,7 +817,7 @@ export default function WestVirginiaPage() {
         <div className="container-narrow">
           <h2 className="text-xl font-bold text-gray-900 mb-4">Sources</h2>
           <ul className="space-y-2 text-sm">
-            {sources.map((source: { label: string; url: string }, index: number) => (
+            {wvIncentive.sources.map((source: { label: string; url: string }, index: number) => (
               <li key={index}>
                 <a
                   href={source.url}

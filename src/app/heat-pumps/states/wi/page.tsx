@@ -93,7 +93,7 @@ export default function WisconsinPage() {
           </nav>
 
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Wisconsin heat pump rebates and incentives in 2026
+            Wisconsin Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
             Federal tax credits are gone, but Wisconsin&apos;s incentive picture
@@ -880,7 +880,7 @@ export default function WisconsinPage() {
       {/* FAQ */}
       <section className="py-12">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">
             Frequently asked questions
           </h2>
           <div className="space-y-6">
@@ -913,7 +913,7 @@ export default function WisconsinPage() {
                 href="/heat-pumps/states/mn"
                 className="text-brand-600 hover:underline"
               >
-                Minnesota Heat Pump Rebates
+                Minnesota Heat Pump Rebates &amp; Incentives
               </Link>
             </li>
             <li>
@@ -921,7 +921,7 @@ export default function WisconsinPage() {
                 href="/heat-pumps/states/mi"
                 className="text-brand-600 hover:underline"
               >
-                Michigan Heat Pump Rebates
+                Michigan Heat Pump Rebates &amp; Incentives
               </Link>
             </li>
             <li>
@@ -929,7 +929,15 @@ export default function WisconsinPage() {
                 href="/heat-pumps/states/il"
                 className="text-brand-600 hover:underline"
               >
-                Illinois Heat Pump Rebates
+                Illinois Heat Pump Rebates &amp; Incentives
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/heat-pumps/states/ia"
+                className="text-brand-600 hover:underline"
+              >
+                Iowa Heat Pump Rebates &amp; Incentives
               </Link>
             </li>
             <li>

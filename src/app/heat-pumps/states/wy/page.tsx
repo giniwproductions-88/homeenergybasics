@@ -21,56 +21,56 @@ export const metadata: Metadata = {
   },
 };
 
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "What heat pump rebates are available in Wyoming in 2026?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Rocky Mountain Power\u2019s Wattsmart program is the primary incentive, offering up to $1,700 for ducted cold-climate air-source heat pumps and up to $4,000 for ASHP-plus-window bundles (electric resistance conversions only). Several rural electric cooperatives offer $500\u2013$1,800 through Tri-State Generation partnerships. Federal Section 25C and 25D tax credits expired December 31, 2025. Wyoming has no state income tax and therefore no state-level energy tax credits. The state\u2019s IRA-funded Home Energy Savings Program (HESP) has not launched.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can I stack Wattsmart rebates with other programs in Wyoming?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Currently there is very little to stack. Federal tax credits expired, the state offers no rebates or tax credits, and the IRA-funded HESP program has not launched. Most Wyoming homeowners can only access their utility rebate. If HESP activates, IRA statute permits stacking HEAR rebates with utility incentives, which could bring total incentives to $10,000 or more for income-qualified households.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do cold-climate heat pumps work in Wyoming\u2019s extreme winters?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, but equipment selection matters. Wyoming\u2019s ASHRAE 99% design temperatures range from -1\u00b0F in Cheyenne to -10\u00b0F in Jackson Hole. Modern cold-climate heat pumps on the NEEP Qualified Products list can operate to -15\u00b0F or lower, but supplemental backup heat is strongly recommended. Dual-fuel systems pairing a cold-climate heat pump with a gas furnace are particularly practical given Wyoming\u2019s low natural gas prices.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What happened to Wyoming\u2019s IRA Home Energy Savings Program?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "The Wyoming Energy Authority applied for and received a conditional award for approximately $69.2 million in IRA funding ($34.7M for HOMES, $34.5M for HEAR). However, an executive order in January 2025 froze IRA disbursements before Wyoming received its funds. As of March 2026, the program remains on pause. The funding is legally authorized through September 30, 2031, and was not repealed by the OBBB.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Who administers Wyoming\u2019s heat pump incentive programs?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Rocky Mountain Power administers the Wattsmart Homes rebate program, Wyoming\u2019s largest utility incentive. The Wyoming Energy Authority oversees the frozen HESP program. The Wyoming Department of Family Services administers the Weatherization Assistance Program through two nonprofit providers. Individual rural electric cooperatives administer their own rebate programs through Tri-State Generation partnerships.",
-      },
-    },
-  ],
-};
-
 export default function WyomingPage() {
   const wyIncentive = incentives.WY;
   const formattedDate = formatDate(wyIncentive.lastVerified);
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What heat pump rebates are available in Wyoming in 2026?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Rocky Mountain Power\u2019s Wattsmart program is the primary incentive, offering up to $1,700 for ducted cold-climate air-source heat pumps and up to $4,000 for ASHP-plus-window bundles (electric resistance conversions only). Several rural electric cooperatives offer $500\u2013$1,800 through Tri-State Generation partnerships. Federal Section 25C and 25D tax credits expired December 31, 2025. Wyoming has no state income tax and therefore no state-level energy tax credits. The state\u2019s IRA-funded Home Energy Savings Program (HESP) has not launched.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I stack Wattsmart rebates with other programs in Wyoming?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Currently there is very little to stack. Federal tax credits expired, the state offers no rebates or tax credits, and the IRA-funded HESP program has not launched. Most Wyoming homeowners can only access their utility rebate. If HESP activates, IRA statute permits stacking HEAR rebates with utility incentives, which could bring total incentives to $10,000 or more for income-qualified households.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do cold-climate heat pumps work in Wyoming\u2019s extreme winters?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, but equipment selection matters. Wyoming\u2019s ASHRAE 99% design temperatures range from -1\u00b0F in Cheyenne to -10\u00b0F in Jackson Hole. Modern cold-climate heat pumps on the NEEP Qualified Products list can operate to -15\u00b0F or lower, but supplemental backup heat is strongly recommended. Dual-fuel systems pairing a cold-climate heat pump with a gas furnace are particularly practical given Wyoming\u2019s low natural gas prices.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What happened to Wyoming\u2019s IRA Home Energy Savings Program?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The Wyoming Energy Authority applied for and received a conditional award for approximately $69.2 million in IRA funding ($34.7M for HOMES, $34.5M for HEAR). However, an executive order in January 2025 froze IRA disbursements before Wyoming received its funds. As of March 2026, the program remains on pause. The funding is legally authorized through September 30, 2031, and was not repealed by the OBBB.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Who administers Wyoming\u2019s heat pump incentive programs?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Rocky Mountain Power administers the Wattsmart Homes rebate program, Wyoming\u2019s largest utility incentive. The Wyoming Energy Authority oversees the frozen HESP program. The Wyoming Department of Family Services administers the Weatherization Assistance Program through two nonprofit providers. Individual rural electric cooperatives administer their own rebate programs through Tri-State Generation partnerships.",
+        },
+      },
+    ],
+  };
 
   return (
     <>
@@ -110,7 +110,7 @@ export default function WyomingPage() {
       {/* 3. Short Version */}
       <section className="py-8">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Short version</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">The Short Version</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Rocky Mountain Power Wattsmart</p>
@@ -210,7 +210,7 @@ export default function WyomingPage() {
       </section>
 
       {/* 6. Utility Programs */}
-      <section className="py-12">
+      <section className="py-12 bg-gray-50">
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Utility rebates by provider</h2>
 
@@ -326,7 +326,7 @@ export default function WyomingPage() {
       </section>
 
       {/* 7. Stacking */}
-      <section className="bg-gray-50 py-12">
+      <section className="py-12">
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">How programs stack</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
@@ -379,7 +379,7 @@ export default function WyomingPage() {
       </section>
 
       {/* 8. Weatherization */}
-      <section className="py-12">
+      <section className="py-12 bg-gray-50">
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Weatherization Assistance Program</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
@@ -398,7 +398,7 @@ export default function WyomingPage() {
       </section>
 
       {/* 9. Climate */}
-      <section className="bg-gray-50 py-12">
+      <section className="py-12">
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Wyoming&apos;s climate demands cold-climate equipment</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
@@ -457,7 +457,7 @@ export default function WyomingPage() {
       </section>
 
       {/* 10. How to Apply */}
-      <section className="py-12">
+      <section className="py-12 bg-gray-50">
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">How to apply for Wattsmart rebates</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
@@ -505,7 +505,7 @@ export default function WyomingPage() {
       </section>
 
       {/* 11. What to Watch */}
-      <section className="bg-gray-50 py-12">
+      <section className="py-12">
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">What to watch</h2>
           <div className="space-y-4">
@@ -526,7 +526,7 @@ export default function WyomingPage() {
       </section>
 
       {/* 12. FAQ */}
-      <section className="py-12">
+      <section className="py-12 bg-gray-50">
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Frequently asked questions</h2>
           <div className="space-y-6">
@@ -541,21 +541,30 @@ export default function WyomingPage() {
       </section>
 
       {/* 13. See Also */}
-      <section className="py-8 bg-gray-50">
+      <section className="py-8">
         <div className="container-narrow">
           <h2 className="text-xl font-bold text-gray-900 mb-3">See also</h2>
           <ul className="space-y-2 text-sm">
             <li>
               <Link href="/heat-pumps/states/co" className="text-brand-600 hover:underline">Colorado Heat Pump Rebates &amp; Incentives</Link>
             </li>
-            <li className="text-gray-500">
-              Montana Heat Pump Rebates <em>(coming soon)</em>
-            </li>
-            <li className="text-gray-500">
-              Utah Heat Pump Rebates <em>(coming soon)</em>
+            <li>
+              <Link href="/heat-pumps/states/mt" className="text-brand-600 hover:underline">Montana Heat Pump Rebates &amp; Incentives</Link>
             </li>
             <li>
-              <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">Federal Heat Pump Tax Credits Ended — What Changed</Link>
+              <Link href="/heat-pumps/states/ut" className="text-brand-600 hover:underline">Utah Heat Pump Rebates &amp; Incentives</Link>
+            </li>
+            <li>
+              <Link href="/heat-pumps/states/id" className="text-brand-600 hover:underline">Idaho Heat Pump Rebates &amp; Incentives</Link>
+            </li>
+            <li>
+              <Link href="/heat-pumps/states/sd" className="text-brand-600 hover:underline">South Dakota Heat Pump Rebates &amp; Incentives</Link>
+            </li>
+            <li>
+              <Link href="/heat-pumps/states/ne" className="text-brand-600 hover:underline">Nebraska Heat Pump Rebates &amp; Incentives</Link>
+            </li>
+            <li>
+              <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">Federal Heat Pump Tax Credits Ended</Link>
             </li>
             <li>
               <Link href="/heat-pumps" className="text-brand-600 hover:underline">All State Heat Pump Incentives</Link>
@@ -565,7 +574,7 @@ export default function WyomingPage() {
       </section>
 
       {/* 14. Sources */}
-      <section className="py-12">
+      <section className="py-12 bg-gray-50">
         <div className="container-narrow">
           <h2 className="text-xl font-bold text-gray-900 mb-4">Sources</h2>
           <ul className="space-y-2 text-sm">

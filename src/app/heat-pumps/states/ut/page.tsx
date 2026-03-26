@@ -434,11 +434,7 @@ export default function UtahPage() {
         </div>
       </section>
 
-      {/* 9. STACKING — bg-gray-50 would be two grays in a row, so this section is bg-gray-50 and we need to check alternation */}
-      {/* Section 8 is bg-gray-50, so section 9 must be white — but ruleset says stacking is bg-gray-50. Adapting: stacking goes white here since local was gray. */}
-      {/* Actually, re-reading ruleset: sections 5-8 adapt, and "9. Stacking bg-gray-50" is the default. Since 8 is bg-gray-50, I need to ensure no two grays in a row. Let me make stacking white and shift alternation. The ruleset says "Never two gray sections in a row." */}
-
-      {/* 9. STACKING — white (avoiding two grays) */}
+      {/* 9. STACKING — white */}
       <section className="py-12">
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">How Programs Stack</h2>
@@ -692,6 +688,16 @@ export default function UtahPage() {
             <li>
               <Link href="/heat-pumps/states/nm" className="text-brand-600 hover:underline">
                 New Mexico Heat Pump Rebates &amp; Incentives
+              </Link>
+            </li>
+            <li>
+              <Link href="/heat-pumps/states/id" className="text-brand-600 hover:underline">
+                Idaho Heat Pump Rebates &amp; Incentives
+              </Link>
+            </li>
+            <li>
+              <Link href="/heat-pumps/states/wy" className="text-brand-600 hover:underline">
+                Wyoming Heat Pump Rebates &amp; Incentives
               </Link>
             </li>
             <li>
