@@ -273,8 +273,9 @@ export default function VsFurnacePage() {
 
           <p className="text-gray-700 leading-relaxed mb-6">
             Operating costs depend on three things: your fuel prices, your climate, and
-            the efficiency of your equipment. Here is the comparison using national
-            average energy prices.
+            the efficiency of your equipment. Here is the per-unit heating cost at two
+            common electricity rates. Formula: (electricity rate × 29.3 kWh per therm)
+            ÷ COP = cost per therm of delivered heat.
           </p>
 
           <div className="overflow-x-auto mb-6">
@@ -291,20 +292,20 @@ export default function VsFurnacePage() {
                 <tr className="border-b bg-green-50">
                   <td className="p-3">Heat pump (COP 3.0, mild weather)</td>
                   <td className="p-3">300% (COP 3.0)</td>
+                  <td className="p-3">$0.12/kWh</td>
+                  <td className="p-3 font-semibold">$1.17/therm</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Heat pump (COP 3.0, mild weather)</td>
+                  <td className="p-3">300% (COP 3.0)</td>
                   <td className="p-3">$0.16/kWh</td>
-                  <td className="p-3 font-semibold">$0.53/therm</td>
+                  <td className="p-3 font-semibold">$1.56/therm</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Heat pump (COP 2.0, cold weather)</td>
                   <td className="p-3">200% (COP 2.0)</td>
                   <td className="p-3">$0.16/kWh</td>
-                  <td className="p-3 font-semibold">$0.80/therm</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">Heat pump (COP 1.0, backup resistance)</td>
-                  <td className="p-3">100% (COP 1.0)</td>
-                  <td className="p-3">$0.16/kWh</td>
-                  <td className="p-3 font-semibold text-red-700">$1.60/therm</td>
+                  <td className="p-3 font-semibold text-red-700">$2.34/therm</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Gas furnace (96% AFUE)</td>
@@ -322,39 +323,51 @@ export default function VsFurnacePage() {
             </table>
           </div>
 
-          <p className="text-gray-700 leading-relaxed mb-6">
-            At average energy prices, a heat pump is cheaper to run than a gas furnace
-            for most of the heating season. But efficiency drops in cold weather. In
-            climates where temperatures stay below 10°F for extended periods, the
-            seasonal average COP may drop to 2.0–2.5, narrowing the gap.
-          </p>
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-6">
+            <p className="font-semibold text-blue-800 mb-1">
+              Per-unit heating cost often favors gas — but that is not the full picture
+            </p>
+            <p className="text-sm text-blue-900">
+              At the national average electricity rate ($0.16/kWh), a heat pump at COP 3.0
+              costs <strong>more per therm of heat</strong> than a 96% gas furnace at average
+              gas prices. A heat pump only beats gas on per-unit heating cost when electricity
+              is below ~$0.12/kWh. So why do heat pump owners often have lower total bills?
+              Two reasons: (1) a heat pump replaces your AC too — you compare one energy bill
+              against two, and (2) seasonal COP averages 3.0–4.0+ because mild-weather
+              operation (COP 4–6 at 40–60°F) outweighs cold-weather dips. The annual total
+              is what matters, not the per-therm snapshot.
+            </p>
+          </div>
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-amber-800 mb-1">⚠ The cheap gas exception</p>
             <p className="text-sm text-amber-900">
               If your gas rate is below <strong>$0.80/therm</strong> (common in Texas,
-              Oklahoma, Ohio, and parts of the Midwest) and your electricity rate is
-              above $0.14/kWh, a gas furnace can be cheaper to run in cold weather.
-              The breakeven depends on your specific rates and climate —{" "}
+              Oklahoma, Ohio, and parts of the Midwest), even a heat pump with a seasonal
+              COP of 3.5 struggles to beat gas on heating cost alone. The heat pump&apos;s
+              advantage in those markets comes primarily from eliminating separate AC costs,
+              not cheaper heating per unit.{" "}
               <Link href="/heat-pumps/when-not-to" className="text-brand-600 hover:underline">
-                see when a heat pump may not make sense
+                See when a heat pump may not make sense
               </Link>.
             </p>
           </div>
 
           <div className="bg-white border border-gray-200 rounded-lg p-5">
-            <p className="font-semibold text-gray-900 mb-2">Typical annual operating cost</p>
+            <p className="font-semibold text-gray-900 mb-2">Typical annual operating cost (total HVAC)</p>
             <p className="text-sm text-gray-700">
               For a 2,000 sq ft home in a cold climate (5,500 heating degree days):
             </p>
             <ul className="text-sm text-gray-700 space-y-1 mt-2">
-              <li>Heat pump (seasonal COP ~2.5): <strong>$900–$1,300/year</strong> (heating + cooling)</li>
-              <li>Gas furnace + AC: <strong>$1,200–$1,800/year</strong> (gas + electricity for AC)</li>
-              <li>Annual savings with heat pump: <strong>$200–$600/year</strong></li>
+              <li>Heat pump (seasonal COP ~3.0, heating + cooling): <strong>$900–$1,300/year</strong></li>
+              <li>Gas furnace + central AC (gas heating + electricity for cooling): <strong>$1,200–$1,800/year</strong></li>
+              <li>Typical annual savings with heat pump: <strong>$200–$600/year</strong></li>
             </ul>
             <p className="text-xs text-gray-500 mt-2">
-              Estimates based on national average rates. Your actual savings depend on
-              local gas/electric prices, insulation, and climate.
+              Estimates based on national average rates. The heat pump number includes both
+              heating and cooling. The gas number includes gas for heating plus electricity
+              for a separate AC unit. Your actual savings depend on local gas/electric
+              prices, insulation, and climate.
             </p>
           </div>
         </div>
@@ -496,7 +509,7 @@ export default function VsFurnacePage() {
                 </tr>
                 <tr className="border-b bg-green-50">
                   <td className="p-3 font-semibold">15-year total</td>
-                  <td className="p-3 font-semibold text-green-700">$29,250</td>
+                  <td className="p-3 font-semibold text-green-700">$28,750</td>
                   <td className="p-3 font-semibold">$38,500</td>
                 </tr>
               </tbody>
@@ -505,12 +518,12 @@ export default function VsFurnacePage() {
 
           <div className="bg-gray-100 rounded-lg p-5 mb-6">
             <p className="font-semibold text-gray-900 mb-1">
-              15-year savings with heat pump: ~$9,250
+              15-year savings with heat pump: ~$9,750
             </p>
             <p className="text-sm text-gray-700">
               In this scenario, the heat pump saves roughly <strong>$400/year</strong> in
               operating costs, starts $3,000 cheaper after rebates, and delivers about
-              <strong> ~$9,250 in total savings</strong> over 15 years. Without rebates,
+              <strong> ~$9,750 in total savings</strong> over 15 years. Without rebates,
               the savings shrink to about $3,000–$4,000 over 15 years.
             </p>
           </div>

@@ -213,10 +213,12 @@ export default function WhenNotToPage() {
               <p className="text-sm text-gray-600 mt-1">
                 A 96% efficient gas furnace burning gas at $0.80/therm costs roughly
                 $0.83/therm of delivered heat. A heat pump with a COP of 3.0 using
-                electricity at $0.15/kWh costs roughly $0.50/therm equivalent — cheaper.
-                But at a COP of 2.0 (cold weather), that rises to $0.75/therm, and with
-                backup electric resistance heat at COP 1.0, it hits $1.50/therm. The
-                colder it gets, the worse the heat pump compares to cheap gas.
+                electricity at $0.16/kWh costs roughly $1.56/therm — nearly double.
+                Even at a lower electricity rate of $0.12/kWh, the heat pump costs
+                about $1.17/therm, still above cheap gas. The heat pump only wins on
+                total annual HVAC cost when its seasonal COP is high (3.5+) and you
+                factor in eliminated AC costs. In cold weather at COP 2.0, the heat
+                pump climbs to $2.34/therm at $0.16/kWh — far above gas.
               </p>
             </div>
           </div>
@@ -696,6 +698,16 @@ export default function WhenNotToPage() {
             <li>
               <Link href="/heat-pumps/stacking-rebates" className="text-brand-600 hover:underline">
                 Can You Stack Heat Pump Rebates? State-by-State Stacking Rules
+              </Link>
+            </li>
+            <li>
+              <Link href="/heat-pumps/vs-furnace" className="text-brand-600 hover:underline">
+                Heat Pump vs Furnace: The Real Math in 2026
+              </Link>
+            </li>
+            <li>
+              <Link href="/heat-pumps/cost" className="text-brand-600 hover:underline">
+                The Real Cost of Installing a Heat Pump in 2026
               </Link>
             </li>
             <li>
