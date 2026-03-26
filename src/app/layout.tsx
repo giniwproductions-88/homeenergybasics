@@ -93,31 +93,57 @@ export default function RootLayout({
             <div className="mt-10 pt-8 border-t border-gray-800">
               <h4 className="text-white font-semibold mb-4">Heat Pump Rebates by State</h4>
               <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-6 gap-y-2 text-sm">
+                <li><Link href="/heat-pumps/states/ak" className="hover:text-white">Alaska</Link></li>
+                <li><Link href="/heat-pumps/states/al" className="hover:text-white">Alabama</Link></li>
+                <li><Link href="/heat-pumps/states/ar" className="hover:text-white">Arkansas</Link></li>
                 <li><Link href="/heat-pumps/states/az" className="hover:text-white">Arizona</Link></li>
                 <li><Link href="/heat-pumps/states/ca" className="hover:text-white">California</Link></li>
                 <li><Link href="/heat-pumps/states/co" className="hover:text-white">Colorado</Link></li>
                 <li><Link href="/heat-pumps/states/ct" className="hover:text-white">Connecticut</Link></li>
+                <li><Link href="/heat-pumps/states/dc" className="hover:text-white">Washington DC</Link></li>
+                <li><Link href="/heat-pumps/states/de" className="hover:text-white">Delaware</Link></li>
+                <li><Link href="/heat-pumps/states/fl" className="hover:text-white">Florida</Link></li>
                 <li><Link href="/heat-pumps/states/ga" className="hover:text-white">Georgia</Link></li>
+                <li><Link href="/heat-pumps/states/hi" className="hover:text-white">Hawaii</Link></li>
+                <li><Link href="/heat-pumps/states/ia" className="hover:text-white">Iowa</Link></li>
+                <li><Link href="/heat-pumps/states/id" className="hover:text-white">Idaho</Link></li>
                 <li><Link href="/heat-pumps/states/il" className="hover:text-white">Illinois</Link></li>
+                <li><Link href="/heat-pumps/states/in" className="hover:text-white">Indiana</Link></li>
+                <li><Link href="/heat-pumps/states/ks" className="hover:text-white">Kansas</Link></li>
+                <li><Link href="/heat-pumps/states/ky" className="hover:text-white">Kentucky</Link></li>
+                <li><Link href="/heat-pumps/states/la" className="hover:text-white">Louisiana</Link></li>
                 <li><Link href="/heat-pumps/states/ma" className="hover:text-white">Massachusetts</Link></li>
                 <li><Link href="/heat-pumps/states/md" className="hover:text-white">Maryland</Link></li>
                 <li><Link href="/heat-pumps/states/me" className="hover:text-white">Maine</Link></li>
                 <li><Link href="/heat-pumps/states/mi" className="hover:text-white">Michigan</Link></li>
                 <li><Link href="/heat-pumps/states/mn" className="hover:text-white">Minnesota</Link></li>
+                <li><Link href="/heat-pumps/states/mo" className="hover:text-white">Missouri</Link></li>
+                <li><Link href="/heat-pumps/states/ms" className="hover:text-white">Mississippi</Link></li>
+                <li><Link href="/heat-pumps/states/mt" className="hover:text-white">Montana</Link></li>
+                <li><Link href="/heat-pumps/states/nc" className="hover:text-white">North Carolina</Link></li>
+                <li><Link href="/heat-pumps/states/nd" className="hover:text-white">North Dakota</Link></li>
+                <li><Link href="/heat-pumps/states/ne" className="hover:text-white">Nebraska</Link></li>
                 <li><Link href="/heat-pumps/states/nh" className="hover:text-white">New Hampshire</Link></li>
                 <li><Link href="/heat-pumps/states/nj" className="hover:text-white">New Jersey</Link></li>
                 <li><Link href="/heat-pumps/states/nm" className="hover:text-white">New Mexico</Link></li>
                 <li><Link href="/heat-pumps/states/nv" className="hover:text-white">Nevada</Link></li>
                 <li><Link href="/heat-pumps/states/ny" className="hover:text-white">New York</Link></li>
+                <li><Link href="/heat-pumps/states/oh" className="hover:text-white">Ohio</Link></li>
                 <li><Link href="/heat-pumps/states/ok" className="hover:text-white">Oklahoma</Link></li>
                 <li><Link href="/heat-pumps/states/or" className="hover:text-white">Oregon</Link></li>
                 <li><Link href="/heat-pumps/states/pa" className="hover:text-white">Pennsylvania</Link></li>
                 <li><Link href="/heat-pumps/states/ri" className="hover:text-white">Rhode Island</Link></li>
+                <li><Link href="/heat-pumps/states/sc" className="hover:text-white">South Carolina</Link></li>
+                <li><Link href="/heat-pumps/states/sd" className="hover:text-white">South Dakota</Link></li>
+                <li><Link href="/heat-pumps/states/tn" className="hover:text-white">Tennessee</Link></li>
                 <li><Link href="/heat-pumps/states/tx" className="hover:text-white">Texas</Link></li>
+                <li><Link href="/heat-pumps/states/ut" className="hover:text-white">Utah</Link></li>
                 <li><Link href="/heat-pumps/states/va" className="hover:text-white">Virginia</Link></li>
                 <li><Link href="/heat-pumps/states/vt" className="hover:text-white">Vermont</Link></li>
                 <li><Link href="/heat-pumps/states/wa" className="hover:text-white">Washington</Link></li>
                 <li><Link href="/heat-pumps/states/wi" className="hover:text-white">Wisconsin</Link></li>
+                <li><Link href="/heat-pumps/states/wv" className="hover:text-white">West Virginia</Link></li>
+                <li><Link href="/heat-pumps/states/wy" className="hover:text-white">Wyoming</Link></li>
               </ul>
             </div>
 
