@@ -77,6 +77,7 @@ export default function RootLayout({
                 <ul className="space-y-2 text-sm">
                   <li><Link href="/heat-pumps" className="hover:text-white">Incentive Status</Link></li>
                   <li><Link href="/heat-pumps/rebates-by-state" className="hover:text-white">Rebates by State</Link></li>
+                  <li><Link href="/heat-pumps/tracker" className="hover:text-white">Rebate Tracker</Link></li>
                   <li><Link href="/heat-pumps/cost" className="hover:text-white">Heat Pump Cost (2026)</Link></li>
                   <li><Link href="/heat-pumps/vs-furnace" className="hover:text-white">Heat Pump vs Furnace</Link></li>
                   <li><Link href="/heat-pumps/stacking-rebates" className="hover:text-white">Stacking Rebates</Link></li>
