@@ -814,6 +814,29 @@ export default function VsFurnacePage() {
         </div>
       </section>
 
+      {/* ---- AUTHOR BLOCK ---- */}
+      <section className="py-8">
+        <div className="container-narrow">
+          <div className="bg-white border border-gray-200 rounded-lg p-5">
+            <p className="text-sm text-gray-500 mb-1">About this guide</p>
+            <p className="text-gray-700 leading-relaxed">
+              Researched and maintained by Giniw at{" "}
+              <Link href="/" className="text-brand-600 hover:underline">
+                Home Energy Basics
+              </Link>
+              , an independent guide tracking U.S. heat pump rebates and home
+              electrification incentives. Every rebate amount, program status,
+              and source link is verified against official state, utility, and
+              federal program pages before publishing.{" "}
+              <Link href="/about" className="text-brand-600 hover:underline">
+                See our verification methodology
+              </Link>
+              .
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* ---- 12. DISCLAIMER ---- */}
       <section className="py-8">
         <div className="container-narrow">
