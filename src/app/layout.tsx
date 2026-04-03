@@ -32,6 +32,9 @@ export default function RootLayout({
               <Link href="/about" className="text-gray-600 hover:text-gray-900 font-medium">
                 About
               </Link>
+              <Link href="/contact" className="text-gray-600 hover:text-gray-900 font-medium">
+                Contact
+              </Link>
             </nav>
 
             {/* Mobile menu button */}
@@ -91,6 +94,7 @@ export default function RootLayout({
                 <h4 className="text-white font-semibold mb-4">Info</h4>
                 <ul className="space-y-2 text-sm">
                   <li><Link href="/about" className="hover:text-white">About</Link></li>
+                  <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
                 </ul>
               </div>
             </div>
