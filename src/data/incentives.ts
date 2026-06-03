@@ -185,7 +185,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "ME",
     stateName: "Maine",
     status: "open",
-    lastVerified: "2026-03-22",
+    lastVerified: "2026-06-03",
     summary:
       "Efficiency Maine heat pump rebates are active and well-funded through Triennial Plan VI ($529.3M). Rebates range from $1,000–$3,000 per unit for non-ducted systems and $3,000–$9,000 for ducted whole-home systems, with income-based tiers. A $500 whole-home bonus is available March–December 2026. Federal tax credits (25C/25D) ended December 31, 2025. HEAR is partially active for mobile homes and affordable multifamily only.",
     sources: [

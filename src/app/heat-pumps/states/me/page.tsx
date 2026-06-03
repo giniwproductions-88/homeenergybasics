@@ -36,7 +36,7 @@ export default function MainePage() {
         name: "What heat pump rebates are available in Maine in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Efficiency Maine offers $1,000–$3,000 per outdoor unit for non-ducted systems (lifetime cap $3,000–$9,000 depending on income) and $3,000–$9,000 lump sum for ducted whole-home systems. A $500 whole-home bonus runs through December 2026. Heat pump water heaters get an $1,100 instant discount or $1,050 mail-in rebate. Geothermal systems receive one-third of cost up to $3,000. Federal 25C/25D tax credits are not available in 2026.",
+          text: "Efficiency Maine offers $1,000–$3,000 per outdoor unit for non-ducted systems (lifetime cap $3,000–$9,000 depending on income) and $3,000–$9,000 lump sum for ducted whole-home systems. A $500 whole-home bonus runs through December 2026. Heat pump water heaters get up to $1,150 (instant discount at participating retailers or mail-in rebate). Geothermal systems receive one-third of cost up to $3,000. Federal 25C/25D tax credits are not available in 2026.",
         },
       },
       {
@@ -130,7 +130,7 @@ export default function MainePage() {
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Bonus + Water Heaters + Loans</p>
               <p className="text-sm text-green-900">
-                $500 whole-home bonus through Dec 2026. $1,050–$1,100 for heat pump water heaters. 0% APR loans up to $25,000 through Efficiency Maine&apos;s Green Bank.
+                $500 whole-home bonus through Dec 2026. Up to $1,150 for heat pump water heaters. 0% APR loans up to $25,000 through Efficiency Maine&apos;s Green Bank.
               </p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
@@ -331,11 +331,13 @@ export default function MainePage() {
             Heat Pump Water Heaters
           </h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Efficiency Maine offers two HPWH incentive tracks. The <strong>$1,100 instant discount</strong> is
-            applied at point of purchase at participating retailers (Home Depot, Lowe&apos;s, Granite Group,
-            Selco, and Winsupply locations) through March 31, 2026. The <strong>$1,050 mail-in rebate</strong> has
-            no stated end date. Equipment must be ENERGY STAR certified — any brand and tank size. DIY
-            installation qualifies. Only one HPWH incentive per installation address per calendar year.
+            Efficiency Maine offers up to <strong>$1,150</strong> for a qualifying heat pump water
+            heater, delivered two ways: an <strong>instant discount</strong> at participating
+            retailers (including Lowe&apos;s and Home Depot) applied at the register, or a
+            <strong> $1,150 mail-in rebate</strong> for purchases made without an instant discount.
+            The two cannot be combined. Equipment must be ENERGY STAR certified — any brand and tank
+            size. DIY installation qualifies. Only one HPWH incentive per installation address per
+            calendar year.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">
@@ -730,10 +732,13 @@ export default function MainePage() {
               </p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900">HPWH Instant Discount Deadline</p>
+              <p className="font-semibold text-gray-900">Rebate Structure Changes</p>
               <p className="text-sm text-gray-600 mt-1">
-                The $1,100 instant discount at participating retailers expires March 31, 2026.
-                The $1,050 mail-in rebate has no stated end date but is subject to change.
+                Efficiency Maine has signaled it is updating the residential heat pump rebate
+                structure to simplify claims and improve whole-home heat distribution. The current
+                per-outdoor-unit amounts ($1,000–$3,000 by income) remain in effect, but the
+                ducted/non-ducted structure could shift. Confirm current terms with your registered
+                vendor before installing.
               </p>
             </div>
           </div>
