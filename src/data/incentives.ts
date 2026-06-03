@@ -539,7 +539,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "MD",
     stateName: "Maryland",
     status: "open",
-    lastVerified: "2026-03-22",
+    lastVerified: "2026-06-02",
     summary:
       "EmPOWER Maryland offers up to $15,000 for electrification projects (75% of cost) through all five major utilities. Midstream rebates of $800–$1,700 per heat pump are available instantly through contractors. Potomac Edison's Switch-to-Electric program adds up to $4,000 on top. Montgomery County's Electrify MC adds $2,500. Federal 25C/25D expired. HEAR/HOMES ($136.8M) not yet launched.",
     sources: [

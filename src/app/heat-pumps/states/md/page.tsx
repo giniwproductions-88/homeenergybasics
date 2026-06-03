@@ -50,7 +50,7 @@ export default function MarylandPage() {
         name: "Has Maryland launched the HEAR/HOMES rebate program?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "No. Maryland was allocated approximately $136.8 million in IRA rebate funding, but neither HEAR nor HOMES has launched as of March 2026. MEA cannot confirm a launch date. When HEAR opens, it could provide up to $8,000 for heat pumps for income-qualified households.",
+          text: "No. Maryland was allocated approximately $136.8 million in IRA rebate funding, but neither HEAR nor HOMES has launched as of June 2026. MEA cannot confirm a launch date. When HEAR opens, it could provide up to $8,000 for heat pumps for income-qualified households.",
         },
       },
       {
@@ -161,7 +161,7 @@ export default function MarylandPage() {
               <p className="font-semibold text-amber-800 mb-1">⚠ $136.8M HEAR/HOMES Still Pending</p>
               <p className="text-sm text-amber-900">
                 Maryland was allocated $136.8 million in IRA rebates ($68.6M HOMES + $68.2M
-                HEAR). Neither program has launched as of March 2026. MEA cannot confirm a
+                HEAR). Neither program has launched as of June 2026. MEA cannot confirm a
                 date. When HEAR opens, it could add up to $8,000 for income-qualified
                 households on top of EmPOWER.
               </p>
@@ -199,7 +199,7 @@ export default function MarylandPage() {
               Environmental Service issued an RFP for a service provider in July 2025.
             </p>
             <p className="text-sm text-amber-900">
-              <strong>As of March 2026, neither program is accepting applications.</strong>{" "}
+              <strong>As of June 2026, neither program is accepting applications.</strong>{" "}
               When HEAR launches, income-qualified households (below 80% AMI) could
               receive up to $8,000 for heat pumps and $1,750 for heat pump water heaters.
               These are separate from EmPOWER rebates and are expected to stack.
@@ -853,10 +853,23 @@ export default function MarylandPage() {
               </p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900">EmPOWER Cycle Budget</p>
+              <p className="font-semibold text-gray-900">EmPOWER Cuts Begin in 2027</p>
               <p className="text-sm text-gray-600 mt-1">
-                Current funding is confirmed through 2026. The Public Service Commission
-                reviews budgets annually. 2027 levels are not guaranteed at current amounts.
+                Maryland&apos;s Utility RELIEF Act, passed in April 2026, cuts EmPOWER&apos;s
+                energy-savings targets by roughly a third for 2027&ndash;2029 (returning to
+                current levels by 2036) to reduce the ratepayer surcharge. Heat pump rebates
+                are expected to shrink starting in 2027, so 2026 is the year to act on current
+                amounts. Separately, gas-utility efficiency programs end by the close of 2026,
+                though the electric-side heat pump rebates above are unaffected for now.
+              </p>
+            </div>
+            <div className="bg-white border border-gray-200 rounded-lg p-5">
+              <p className="font-semibold text-gray-900">New Residential Energy Equity Program</p>
+              <p className="text-sm text-gray-600 mt-1">
+                The same law funds a new <strong>$72.65 million</strong> Residential Energy
+                Equity Program through the Maryland Energy Administration to help low- and
+                moderate-income households install heat pumps, beginning in fiscal year 2027.
+                Details and a launch date have not been published yet &mdash; watch MEA.
               </p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
@@ -872,7 +885,8 @@ export default function MarylandPage() {
               <p className="text-sm text-gray-600 mt-1">
                 Maryland&apos;s $136.8M in HEAR/HOMES funding comes from the Inflation
                 Reduction Act. Federal policy changes could affect the timeline or
-                availability of these programs. EmPOWER is state-funded and unaffected.
+                availability of these programs. EmPOWER is state-funded and not subject to
+                these federal IRA changes (though see the 2027 state cuts noted above).
               </p>
             </div>
           </div>
