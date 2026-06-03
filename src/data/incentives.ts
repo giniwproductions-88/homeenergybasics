@@ -1309,9 +1309,9 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "FL",
     stateName: "Florida",
     status: "limited",
-    lastVerified: "2026-03-23",
+    lastVerified: "2026-06-02",
     summary:
-      "No federal credits or state tax incentives. Utility rebates of $40\u2013$1,150 from FPL, Duke Energy, TECO, JEA, and OUC are the primary incentives. Florida\u2019s $346M HEAR/HOMES allocation remains unlaunched.",
+      "No federal credits or state tax incentives. Utility rebates of $40\u2013$1,150 from FPL, Duke Energy, TECO, JEA, and OUC are the primary incentives. Florida\u2019s $346M HEAR/HOMES allocation is being administered by FDACS (HEAR first phase, up to $14,000) but remains pending U.S. DOE approval and has not launched.",
     sources: [
       {
         label: "FDACS \u2014 Florida Energy Saver Program",

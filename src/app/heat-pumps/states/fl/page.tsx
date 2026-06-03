@@ -38,7 +38,7 @@ const faqJsonLd = {
       name: "Can I stack utility rebates with HEAR or HOMES in Florida?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "If HEAR and HOMES launch in Florida, DOE rules permit combining them with utility rebates on the same project, provided the same equipment cost is not double-counted and total rebates do not exceed total project cost. HEAR and HOMES cannot be combined with each other on the same single upgrade but can cover different measures in a multi-measure project. As of March 2026, only utility rebates are available to stack.",
+        text: "If HEAR and HOMES launch in Florida, DOE rules permit combining them with utility rebates on the same project, provided the same equipment cost is not double-counted and total rebates do not exceed total project cost. HEAR and HOMES cannot be combined with each other on the same single upgrade but can cover different measures in a multi-measure project. As of June 2026, only utility rebates are available to stack.",
       },
     },
     {
@@ -90,7 +90,7 @@ export default function FloridaPage() {
             Florida heat pump rebates and incentives in 2026
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Florida&apos;s heat pump incentive landscape in 2026 is defined by absence. Federal tax credits expired seven years early, and the state&apos;s <strong>$346 million</strong> IRA allocation for HEAR and HOMES rebates remains unlaunched with an uncertain future. Utility rebates of <strong>$40–$1,150</strong> depending on your provider are currently the only widely available incentives. This guide covers all major Florida heat pump incentives available in 2026, including FPL, Duke Energy, TECO, JEA, and OUC utility programs, HEAR/HOMES status, and financing options. Here&apos;s what&apos;s actually available.
+            Florida&apos;s heat pump incentive landscape in 2026 is defined by absence. Federal tax credits expired seven years early, and the state&apos;s <strong>$346 million</strong> IRA allocation for HEAR and HOMES rebates remains pending U.S. Department of Energy approval and has not launched. Utility rebates of <strong>$40–$1,150</strong> depending on your provider are currently the only widely available incentives. This guide covers all major Florida heat pump incentives available in 2026, including FPL, Duke Energy, TECO, JEA, and OUC utility programs, HEAR/HOMES status, and financing options. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-600 mt-2 mb-6">
             Florida has no statewide rebate program in 2026.
@@ -134,7 +134,7 @@ export default function FloridaPage() {
             </div>
             <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
               <p className="font-semibold text-amber-800 mb-1">⚠ HEAR and HOMES programs not launched</p>
-              <p className="text-sm text-amber-900">Florida&apos;s <strong>$346 million</strong> IRA allocation for Home Electrification and Appliance Rebates (HEAR) and Home Efficiency Rebates (HOMES) remains unlaunched as of March 2026. Credible reports suggest Florida may have declined the funding entirely. Do not count on these programs being available.</p>
+              <p className="text-sm text-amber-900">Florida&apos;s <strong>$346 million</strong> IRA allocation for Home Electrification and Appliance Rebates (HEAR) and Home Efficiency Rebates (HOMES) had not launched as of June 2026. FDACS is administering them in phases (HEAR first) and accepting registrations, but they remain pending U.S. DOE approval — not yet accepting rebate applications, so don&apos;t count on them for a near-term purchase.</p>
             </div>
             <div className="md:col-span-2 bg-gray-100 border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900 mb-1">→ Bottom line</p>
@@ -170,12 +170,12 @@ export default function FloridaPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Home Electrification and Appliance Rebates (HEAR)</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Florida&apos;s Department of Agriculture and Consumer Services (FDACS) Office of Energy was allocated approximately <strong>$346 million</strong> in combined IRA funding for HEAR and HOMES. As of March 2026, neither program has launched, and the program&apos;s future is uncertain. The official FDACS portal still displays the message that programs are &quot;expected to launch in the future&quot; with no timeline.
+            Florida&apos;s Department of Agriculture and Consumer Services (FDACS) Office of Energy was allocated approximately <strong>$346 million</strong> in combined IRA funding for HEAR and HOMES. As of June 2026, neither program has launched &mdash; both are pending U.S. Department of Energy approval. FDACS is administering them through its Florida Energy Saver Program, rolling out in phases beginning with HEAR, and is accepting registrations at the official portal. No firm launch date has been published.
           </p>
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-amber-800 mb-1">⚠ Status: not launched — timeline unknown</p>
-            <p className="text-sm text-amber-900">The FDACS portal accepts user registrations but provides no launch date. One third-party tracker reports that Florida returned its IRA allocation entirely, though the FDACS portal remains live and still references the $346M allocation. Treat this program as unavailable until officially launched.</p>
+            <p className="text-sm text-amber-900">FDACS is accepting registrations and has published detailed HEAR eligibility (up to <strong>$14,000</strong> per household for those under 150% AMI), but the program is pending U.S. DOE approval with no firm launch date. A third-party tracker claiming Florida &quot;returned&quot; the funds is contradicted by the active FDACS program &mdash; still, treat the rebates as not-yet-available when planning a purchase.</p>
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-4">
@@ -409,7 +409,7 @@ export default function FloridaPage() {
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-amber-800 mb-1">⚠ The biggest mistake Florida homeowners make</p>
-            <p className="text-sm text-amber-900">Waiting for HEAR rebates to launch. There is no confirmed timeline — and credible reports suggest Florida may have declined the funding entirely. If your system is failing, waiting could cost you months (or years) of savings from reduced energy bills. The operational savings from replacing strip heat with a heat pump (60–75% heating energy reduction) often exceed the rebate value within a few years.</p>
+            <p className="text-sm text-amber-900">Waiting for HEAR rebates to launch. The program is pending U.S. DOE approval and not yet open, with no confirmed launch date. If your system is failing, waiting could cost you months (or years) of savings from reduced energy bills. The operational savings from replacing strip heat with a heat pump (60–75% heating energy reduction) often exceed the rebate value within a few years.</p>
           </div>
 
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
@@ -567,7 +567,7 @@ export default function FloridaPage() {
           <div className="space-y-4">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">HEAR/HOMES launch status</p>
-              <p className="text-sm text-gray-600 mt-1">The FDACS portal remains live but provides no timeline. Monitor floridaenergysaverprogram.fdacs.gov for official announcements. If Florida did decline the funding, other states may absorb the allocation.</p>
+              <p className="text-sm text-gray-600 mt-1">FDACS is administering the program and accepting registrations, but it remains pending U.S. DOE approval with no confirmed launch date. HEAR is slated as the first phase, with HOMES to follow. Monitor floridaenergysaverprogram.fdacs.gov for official announcements.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">IRA funding runway</p>
