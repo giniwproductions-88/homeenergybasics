@@ -50,7 +50,7 @@ export default function CaliforniaPage() {
         name: "Why are California heat pump rebates so limited right now?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "California\u2019s statewide programs were massively oversubscribed. TECH Clean California single-family HVAC incentives were fully reserved by January 2025. HEEHRA single-family rebates were fully reserved statewide by February 24, 2026. Federal tax credits expired December 31, 2025 under the One Big Beautiful Bill Act. Two major replacement programs \u2014 HOMES ($291 million) and HEEHRA Phase II ($152 million) \u2014 are funded but have not launched yet.",
+          text: "California\u2019s statewide programs were massively oversubscribed. TECH Clean California single-family incentives closed to new reservations on November 14, 2025. HEEHRA single-family rebates were fully reserved statewide by February 24, 2026. Federal tax credits expired December 31, 2025 under the One Big Beautiful Bill Act. Two major replacement programs \u2014 HOMES ($291 million) and HEEHRA Phase II ($152 million) \u2014 are funded but have not launched yet.",
         },
       },
       {
