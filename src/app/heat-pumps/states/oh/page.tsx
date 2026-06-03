@@ -38,7 +38,7 @@ const faqJsonLd = {
       name: "Can I stack HEAR, HOMES, and utility rebates in Ohio?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Federal rules permit stacking HOMES, HEAR, and utility rebates on the same project, but HEAR and HOMES cannot both be applied to the same measure. They can be braided across different measures in one project. For example, HEAR could cover the heat pump while HOMES covers insulation. Total stacked incentives cannot exceed total project cost. However, Ohio\u2019s HEAR and HOMES programs have not yet launched as of March 2026.",
+        text: "Federal rules permit stacking HOMES, HEAR, and utility rebates on the same project, but HEAR and HOMES cannot both be applied to the same measure. They can be braided across different measures in one project. For example, HEAR could cover the heat pump while HOMES covers insulation. Total stacked incentives cannot exceed total project cost. However, Ohio\u2019s HEAR and HOMES programs have not yet launched as of June 2026.",
       },
     },
     {
@@ -138,7 +138,7 @@ export default function OhioPage() {
             </div>
             <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
               <p className="font-semibold text-amber-800 mb-1">⚠ Ohio&apos;s IRA programs have not launched yet</p>
-              <p className="text-sm text-amber-900">Ohio was awarded $249 million in HEAR and HOMES funding, but neither program is accepting applications as of March 2026. Homeowners who can wait may benefit from monitoring the Ohio Department of Development for launch announcements. Contractors claiming specific HEAR/HOMES rebate amounts are premature.</p>
+              <p className="text-sm text-amber-900">Ohio was awarded $249 million in HEAR and HOMES funding, but neither program is accepting applications as of June 2026. Homeowners who can wait may benefit from monitoring the Ohio Department of Development for launch announcements. Contractors claiming specific HEAR/HOMES rebate amounts are premature.</p>
             </div>
           </div>
         </div>
@@ -170,7 +170,7 @@ export default function OhioPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Home Electrification and Appliance Rebates (HEAR) — pending</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Ohio was awarded approximately <strong>$124.2 million</strong> in HEAR funding under the Inflation Reduction Act. The program is administered by the Ohio Department of Development. As of March 2026, the program has not launched. HEAR provides point-of-sale rebates exclusively for households below 150% of Area Median Income (AMI), verified at the county level using HUD income data.
+            Ohio was awarded approximately <strong>$124.2 million</strong> in HEAR funding under the Inflation Reduction Act. The program is administered by the Ohio Department of Development. As of June 2026, the program has not launched. HEAR provides point-of-sale rebates exclusively for households below 150% of Area Median Income (AMI), verified at the county level using HUD income data.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Expected HEAR rebate amounts</h3>
@@ -235,7 +235,7 @@ export default function OhioPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Home Efficiency Rebates (HOMES) — pending</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Ohio was also awarded approximately <strong>$124.6 million</strong> in HOMES funding. Unlike HEAR, HOMES is available to all income levels based on demonstrated whole-home energy savings via modeling or measurement. As of March 2026, this program has not launched either.
+            Ohio was also awarded approximately <strong>$124.6 million</strong> in HOMES funding. Unlike HEAR, HOMES is available to all income levels based on demonstrated whole-home energy savings via modeling or measurement. As of June 2026, this program has not launched either.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Expected HOMES rebate amounts</h3>
@@ -334,7 +334,7 @@ export default function OhioPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">FirstEnergy Ohio — previous program expired</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            FirstEnergy&apos;s Ohio subsidiaries (Ohio Edison, The Illuminating Company, Toledo Edison) operated a residential products rebate program from June 2023 to May 2024 that offered <strong>$500 heat pump water heater rebates</strong> but did not include air-source heat pump rebates. As of March 2026, only a smart thermostat rebate and the Community Connections program (free energy services for customers ≤200% FPG) remain active. FirstEnergy filed a sixth Electric Security Plan (ESP6) with PUCO in January 2025 proposing new efficiency programs, but ESP6 has not yet been approved.
+            FirstEnergy&apos;s Ohio subsidiaries (Ohio Edison, The Illuminating Company, Toledo Edison) operated a residential products rebate program from June 2023 to May 2024 that offered <strong>$500 heat pump water heater rebates</strong> but did not include air-source heat pump rebates. As of June 2026, only a smart thermostat rebate and the Community Connections program (free energy services for customers ≤200% FPG) remain active. In May 2026, FirstEnergy filed a new Three-Year Rate Plan with PUCO that continues those weatherization and smart-thermostat programs but does not propose a residential air-source heat pump rebate.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Natural gas utilities — no heat pump programs</h3>
@@ -600,8 +600,8 @@ export default function OhioPage() {
               <p className="text-sm text-gray-600 mt-1">The Ohio Department of Development received DOE approval but has not announced a launch date. Industry sources expected launch sometime in 2026. When the programs go live, demand will likely be high — get your energy audit and contractor quotes prepared in advance.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900">FirstEnergy ESP6 proceedings</p>
-              <p className="text-sm text-gray-600 mt-1">FirstEnergy filed its sixth Electric Security Plan with PUCO in January 2025, proposing new residential efficiency programs for Ohio Edison, The Illuminating Company, and Toledo Edison customers. If approved, this could restore utility rebates for northeastern Ohio homeowners. Monitor PUCO docket proceedings for updates.</p>
+              <p className="font-semibold text-gray-900">FirstEnergy rate-plan proceedings</p>
+              <p className="text-sm text-gray-600 mt-1">FirstEnergy&apos;s Ohio utilities (Ohio Edison, The Illuminating Company, Toledo Edison) filed a new Three-Year Rate Plan with PUCO in May 2026. It continues income-eligible weatherization and smart-thermostat rebates but does not propose a residential heat pump rebate. A separate January 2026 PUCO settlement over the HB6 scandal directs $20 million to low-income weatherization and efficiency. No broad heat pump rebate is currently on the table for northeastern Ohio — monitor PUCO for changes.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">State legislative action on efficiency mandates</p>
@@ -691,7 +691,7 @@ export default function OhioPage() {
         <div className="container-narrow">
           <div className="bg-gray-100 rounded-lg p-6">
             <p className="text-gray-500 text-xs leading-relaxed">
-              <strong>Disclaimer:</strong> This page covers the main statewide, utility, and IRA heat pump incentives available to Ohio homeowners in 2026. It does not calculate savings, guarantee eligibility, or represent any incentive program. Ohio&apos;s HEAR and HOMES programs have not launched as of March 2026, and expected rebate amounts may change when programs are finalized. We verify status regularly but programs can change without notice. Always confirm current amounts and eligibility with the Ohio Department of Development, your utility, and your contractor before making decisions.
+              <strong>Disclaimer:</strong> This page covers the main statewide, utility, and IRA heat pump incentives available to Ohio homeowners in 2026. It does not calculate savings, guarantee eligibility, or represent any incentive program. Ohio&apos;s HEAR and HOMES programs have not launched as of June 2026, and expected rebate amounts may change when programs are finalized. We verify status regularly but programs can change without notice. Always confirm current amounts and eligibility with the Ohio Department of Development, your utility, and your contractor before making decisions.
             </p>
           </div>
               <p className="text-sm text-gray-600 mt-4">

@@ -1352,7 +1352,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "OH",
     stateName: "Ohio",
     status: "limited",
-    lastVerified: "2026-03-23",
+    lastVerified: "2026-06-02",
     summary:
       "Ohio has almost no heat pump rebates in 2026. Federal credits expired, utility programs were dismantled by HB 6, and the state\u2019s $249M in IRA rebates (HEAR/HOMES) have not launched. ECO-Link offers 3% loan rate reductions up to $50,000. AEP Ohio\u2019s HELP covers low-income households.",
     sources: [
