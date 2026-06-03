@@ -145,7 +145,7 @@ export default function IndianaPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Federal heat pump tax credits have expired</h2>
           <div className="bg-red-50 border border-red-200 rounded-lg p-6 mb-6">
             <p className="text-red-900 leading-relaxed">
-              <strong>Section 25C</strong> (Energy Efficient Home Improvement Credit) and <strong>Section 25D</strong> (Residential Clean Energy Credit) both expired on <strong>December 31, 2025</strong>. The One Big Beautiful Bill Act accelerated their termination from the original 2032 sunset. No heat pump installed after December 31, 2025 qualifies for either credit. Section 25D allows carryforward of unused credit from pre-2026 installations, but Section 25C does not. As of March 2026, no legislation to reinstate these credits has been introduced.
+              <strong>Section 25C</strong> (Energy Efficient Home Improvement Credit) and <strong>Section 25D</strong> (Residential Clean Energy Credit) both expired on <strong>December 31, 2025</strong>. The One Big Beautiful Bill Act accelerated their termination from the original 2032 sunset. No heat pump installed after December 31, 2025 qualifies for either credit. Section 25D allows carryforward of unused credit from pre-2026 installations, but Section 25C does not. As of June 2026, no legislation to reinstate these credits has been introduced.
             </p>
           </div>
           <p className="text-gray-700 leading-relaxed mb-4">
@@ -684,7 +684,7 @@ export default function IndianaPage() {
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Federal credit reinstatement unlikely</p>
-              <p className="text-sm text-gray-600 mt-1">No legislation to restore Section 25C or 25D credits has been introduced as of March 2026. The current political environment makes reinstatement before 2029 unlikely. Planning around state and utility incentives only is the safest approach.</p>
+              <p className="text-sm text-gray-600 mt-1">No legislation to restore Section 25C or 25D credits has been introduced as of June 2026. The current political environment makes reinstatement before 2029 unlikely. Planning around state and utility incentives only is the safest approach.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Utility program year-end deadlines</p>

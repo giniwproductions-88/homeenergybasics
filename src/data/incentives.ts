@@ -1399,7 +1399,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "IN",
     stateName: "Indiana",
     status: "open",
-    lastVerified: "2026-03-23",
+    lastVerified: "2026-06-03",
     summary:
       "Indiana Energy Saver Program (HEAR) offers up to $8,000 for heat pumps for households below 150% AMI. HOMES rebates cover up to $4,000 for other homeowners. Utility rebates add $275\u2013$3,000. Federal tax credits expired Dec 31, 2025.",
     sources: [
