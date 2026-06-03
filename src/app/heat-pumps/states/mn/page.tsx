@@ -408,7 +408,7 @@ export default function MinnesotaPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">How Programs Stack</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Most Minnesota homeowners outside Minneapolis will see <strong>$2,000–$3,700</strong> in utility rebates today (depending on Xcel insulation bonus eligibility). If Save Energy Minnesota launches, income-qualifying households could see <strong>$10,000–$15,000+</strong>. Minneapolis residents can stack city rebates on top of everything. Below are realistic scenarios for a 3-ton cold-climate ducted system at <strong>$15,000</strong> installed cost in Xcel + CenterPoint territory.
+            Most Minnesota homeowners outside Minneapolis will see <strong>$3,100–$3,700</strong> in utility rebates today (depending on Xcel insulation bonus eligibility). If Save Energy Minnesota launches, income-qualifying households could see <strong>$10,000–$15,000+</strong>. Minneapolis residents can stack city rebates on top of everything. Below are realistic scenarios for a 3-ton cold-climate ducted system at <strong>$15,000</strong> installed cost in Xcel + CenterPoint territory.
           </p>
 
           <div className="space-y-4 mb-8">
