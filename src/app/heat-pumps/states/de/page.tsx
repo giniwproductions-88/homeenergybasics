@@ -62,7 +62,7 @@ const faqJsonLd = {
       name: "When will Delaware\u2019s HEAR rebates launch?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "As of March 2026, Delaware\u2019s Home Electrification and Appliance Rebates (HEAR) program is still awaiting final DOE approval. DNREC submitted its application in August 2024. When launched, HEAR would provide up to $8,000 per heat pump for households below 80% of Area Median Income. Contact DNREC at 302-735-3480 for the latest status.",
+        text: "As of June 2026, Delaware\u2019s Home Electrification and Appliance Rebates (HEAR) program is still awaiting final DOE approval. DNREC submitted its application in August 2024. When launched, HEAR would provide up to $8,000 per heat pump for households below 80% of Area Median Income. Contact DNREC at 302-735-3480 for the latest status.",
       },
     },
   ],
@@ -73,7 +73,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Delaware Heat Pump Rebates & Incentives (2026)",
   datePublished: "2026-03-23",
-  dateModified: "2026-03-23",
+  dateModified: "2026-06-03",
   author: {
     "@type": "Organization",
     name: "Home Energy Basics",
@@ -169,7 +169,7 @@ export default function DelawarePage() {
               <p className="font-semibold text-amber-800 mb-1">⚠ HEAR program has not launched yet</p>
               <p className="text-sm text-amber-900">
                 Delaware&apos;s IRA-funded Home Electrification and Appliance Rebates (HEAR) program is still
-                awaiting DOE approval as of March 2026. The rebates (up to $8,000 per heat pump for income-eligible
+                awaiting DOE approval as of June 2026. The rebates (up to $8,000 per heat pump for income-eligible
                 households) are not yet available. Do not count on HEAR when budgeting a 2026 installation. Check
                 with DNREC at 302-735-3480 for the latest status.
               </p>
@@ -372,7 +372,7 @@ export default function DelawarePage() {
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-amber-800 mb-1">⚠ Both programs are still awaiting DOE approval</p>
             <p className="text-sm text-amber-900">
-              As of March 2026, neither HEAR nor HOMES has launched in Delaware. The NEEP regional tracker listed both
+              As of June 2026, neither HEAR nor HOMES has launched in Delaware. The NEEP regional tracker listed both
               programs as &quot;Awaiting Final Approval by DOE&quot; as of July 2025. Delaware was not among the 23
               states with active programs as of February 2026. Contact DNREC at 302-735-3480 or email
               DNREC.EnergyPrograms@delaware.gov for current status.

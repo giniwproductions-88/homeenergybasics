@@ -1610,7 +1610,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "DE",
     stateName: "Delaware",
     status: "open",
-    lastVerified: "2026-03-23",
+    lastVerified: "2026-06-03",
     summary:
       "Energize Delaware offers $800\u2013$2,200 for air-source heat pumps through Home Performance with ENERGY STAR. DEMEC utility customers can stack Efficiency Smart rebates ($300\u2013$750). HEAR ($8,000/HP) awaits DOE approval. Federal 25C/25D credits expired Dec 31, 2025.",
     sources: [
