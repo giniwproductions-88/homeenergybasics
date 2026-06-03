@@ -1450,9 +1450,9 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "TN",
     stateName: "Tennessee",
     status: "limited",
-    lastVerified: "2026-03-23",
+    lastVerified: "2026-06-02",
     summary:
-      "TVA EnergyRight rebates ($500\u2013$1,500) are the only active incentive in Tennessee in 2026. IRA-funded HEAR and HOMES rebates are approved but not yet launched (expected Q3 2026). Federal tax credits expired December 31, 2025.",
+      "TVA EnergyRight rebates ($500\u2013$1,500) are the only active incentive in Tennessee in 2026. IRA-funded HEAR and HOMES rebates are approved but not yet launched, with no confirmed date. Federal tax credits expired December 31, 2025.",
     sources: [
       {
         label: "TVA EnergyRight \u2014 Heat Pump Rebates",

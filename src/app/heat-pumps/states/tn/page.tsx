@@ -38,7 +38,7 @@ const faqJsonLd = {
       name: "Can I stack TVA EnergyRight and HEAR rebates in Tennessee?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, once HEAR launches (expected Q3 2026), TVA EnergyRight rebates can stack with HEAR rebates. CLEAResult, TVA\u0027s program implementer, is building technology to facilitate seamless stacking. For a household below 80% of Area Median Income, this could mean up to $1,500 from TVA plus $8,000 from HEAR — a potential $9,500 toward a heat pump. Total combined rebates cannot exceed total project cost.",
+        text: "Yes, once HEAR launches, TVA EnergyRight rebates can stack with HEAR rebates. CLEAResult, TVA\u0027s program implementer, is building technology to facilitate seamless stacking. For a household below 80% of Area Median Income, this could mean up to $1,500 from TVA plus $8,000 from HEAR — a potential $9,500 toward a heat pump. Total combined rebates cannot exceed total project cost.",
       },
     },
     {
@@ -54,7 +54,7 @@ const faqJsonLd = {
       name: "When will Tennessee\u0027s IRA rebate programs launch?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Tennessee received conditional DOE approval for HEAR and HOMES programs in January 2025, with full launch targeted for Q3 2026. The Tennessee Department of Environment and Conservation (TDEC) administers both programs, with TVA\u0027s Quality Contractor Network handling implementation. Tennessee\u0027s total HEAR allocation is $83.4 million. The programs were not affected by the One Big Beautiful Bill Act and remain funded until depleted or September 30, 2031.",
+        text: "Tennessee received conditional DOE approval for HEAR and HOMES programs in January 2025, but as of June 2026 they have not launched and TDEC has not confirmed a launch date. The Tennessee Department of Environment and Conservation (TDEC) administers both programs, with TVA\u0027s Quality Contractor Network handling implementation. Tennessee\u0027s total HEAR allocation is $83.4 million. The programs were not affected by the One Big Beautiful Bill Act and remain funded until depleted or September 30, 2031.",
       },
     },
     {
@@ -118,7 +118,7 @@ export default function TennesseePage() {
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ HEAR rebates approved (not yet launched)</p>
-              <p className="text-sm text-green-900">Up to $8,000 per heat pump for households below 80% of Area Median Income (AMI). Up to $4,000 for 80–150% AMI. Expected Q3 2026 launch.</p>
+              <p className="text-sm text-green-900">Up to $8,000 per heat pump for households below 80% of Area Median Income (AMI). Up to $4,000 for 80–150% AMI. Not yet launched — no confirmed date.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Potential stacked savings once HEAR launches</p>
@@ -239,7 +239,7 @@ export default function TennesseePage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">IRA rebate programs: HEAR and HOMES</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            The Home Electrification and Appliance Rebates (HEAR) and Home Owner Managing Energy Savings (HOMES) programs — funded by the Inflation Reduction Act and not affected by the One Big Beautiful Bill Act — are Tennessee&apos;s largest pending incentive opportunity. The Tennessee Department of Environment and Conservation (TDEC), Office of Energy Programs, is the administering agency, with TVA&apos;s QCN serving as implementation partner. Tennessee received conditional DOE approval in January 2025, with full launch targeted for <strong>Q3 2026</strong>. Tennessee&apos;s total HEAR allocation is <strong>$83.4 million</strong>.
+            The Home Electrification and Appliance Rebates (HEAR) and Home Owner Managing Energy Savings (HOMES) programs — funded by the Inflation Reduction Act and not affected by the One Big Beautiful Bill Act — are Tennessee&apos;s largest pending incentive opportunity. The Tennessee Department of Environment and Conservation (TDEC), Office of Energy Programs, is the administering agency, with TVA&apos;s QCN serving as implementation partner. Tennessee received conditional DOE approval in January 2025, but as of June 2026 the programs remain unlaunched, with no confirmed launch date &mdash; TDEC must still secure full DOE approval and complete contracting with TVA. Tennessee&apos;s total HEAR allocation is <strong>$83.4 million</strong>.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">HEAR rebate structure (when launched)</h3>
@@ -504,7 +504,7 @@ export default function TennesseePage() {
           <div className="space-y-4">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">HEAR launch timeline</p>
-              <p className="text-sm text-gray-600 mt-1">Tennessee&apos;s HEAR and HOMES programs are targeted for Q3 2026 launch. Watch the TDEC Home Energy Rebate Programs page for updates. Once live, these rebates — especially HEAR&apos;s $8,000 for low-income households — will dramatically change the incentive landscape.</p>
+              <p className="text-sm text-gray-600 mt-1">Tennessee&apos;s HEAR and HOMES programs are not yet launched, with no confirmed date. Watch the TDEC Home Energy Rebate Programs page for updates. Once live, these rebates — especially HEAR&apos;s $8,000 for low-income households — will dramatically change the incentive landscape.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">IRA funding runway</p>
