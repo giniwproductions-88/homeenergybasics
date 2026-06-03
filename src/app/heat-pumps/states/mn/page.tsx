@@ -36,7 +36,7 @@ export default function MinnesotaPage() {
         name: "What heat pump rebates are available in Minnesota in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Utility rebates are the primary incentive. Xcel Energy offers up to $2,000 for cold-climate air-source heat pumps (plus a $600 insulation bonus). CenterPoint offers $1,100 for ducted heat pumps paired with a gas furnace. Minnesota Power offers $400 for ducted systems. Minneapolis residents can stack up to $14,000 in additional city rebates. Federal 25C/25D tax credits ended December 31, 2025. The state HEAR program and MN Residential Heat Pump Rebate ($4,000) have not launched.",
+          text: "Utility rebates are the primary incentive. Xcel Energy offers up to $2,000 for cold-climate air-source heat pumps (plus a $600 insulation bonus). CenterPoint offers $1,100 for ducted heat pumps paired with a gas furnace. Minnesota Power offers up to $1,200 for cold-climate heat pumps (enhanced rebate through June 2026). Minneapolis residents can stack up to $14,000 in additional city rebates. Federal 25C/25D tax credits ended December 31, 2025. The state HEAR program and MN Residential Heat Pump Rebate ($4,000) have not launched.",
         },
       },
       {
