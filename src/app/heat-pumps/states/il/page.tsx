@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title:
     "Illinois Heat Pump Rebates & Incentives 2026: ComEd, Ameren, MidAmerican | Home Energy Basics",
   description:
-    "Federal tax credits ended. Utility rebates of $300–$2,000 through ComEd, Ameren Illinois, and MidAmerican Energy are the primary incentive. Illinois HEAR and HOMES remain pending. Here's the complete 2026 picture.",
+    "Federal tax credits ended. Utility rebates of $300–$1,400 through ComEd, Ameren Illinois, and MidAmerican Energy are the primary incentive. Illinois HEAR and HOMES remain pending. Here's the complete 2026 picture.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/il",
   },
@@ -34,7 +34,7 @@ export default function IllinoisPage() {
         name: "What heat pump rebates are available in Illinois in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Illinois heat pump rebates in 2026 come from your electric utility. ComEd offers up to $2,000 for ducted heat pumps and up to $1,000 for ductless systems. Ameren Illinois offers $900 for ducted and $630 for ductless. MidAmerican Energy offers $300–$713 with a cold-climate premium. The federal 25C tax credit expired December 31, 2025. Illinois HEAR and HOMES rebate programs have not yet launched.",
+          text: "Illinois heat pump rebates in 2026 come from your electric utility. ComEd offers up to $1,400 for ducted heat pumps and up to $1,000 for ductless systems. Ameren Illinois offers $900 for ducted and $630 for ductless. MidAmerican Energy offers $300–$713 with a cold-climate premium. The federal 25C tax credit expired December 31, 2025. Illinois HEAR and HOMES rebate programs have not yet launched.",
         },
       },
       {
@@ -50,7 +50,7 @@ export default function IllinoisPage() {
         name: "What is the status of Illinois HEAR rebates?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Illinois received $131.5 million for the HEAR program (Home Electrification and Appliance Rebates), but as of March 2026 the program is not operational. DOE approval has not been finalized. Illinois is initially allocating 100% of HEAR funds to low-income households at or below 80% AMI. Retroactive rebates will not be offered.",
+          text: "Illinois received $131.5 million for the HEAR program (Home Electrification and Appliance Rebates), but as of June 2026 the program is not operational. DOE approval has not been finalized. Illinois is initially allocating 100% of HEAR funds to low-income households at or below 80% AMI. Retroactive rebates will not be offered.",
         },
       },
       {
@@ -105,7 +105,7 @@ export default function IllinoisPage() {
             With federal tax credits gone and state IRA rebate programs still
             pending launch, utility rebates are the main financial incentive
             available to Illinois homeowners in 2026. ComEd customers in the
-            Chicago area can access up to $2,000, Ameren Illinois serves central
+            Chicago area can access up to $1,400, Ameren Illinois serves central
             and southern Illinois with instant discounts up to $900, and
             MidAmerican Energy is the only major utility offering a cold-climate
             heat pump premium. Here&apos;s what&apos;s actually available.
@@ -138,7 +138,7 @@ export default function IllinoisPage() {
                 ✓ Available now
               </div>
               <p className="text-gray-900 font-medium">
-                ComEd rebates (up to $2,000)
+                ComEd rebates (up to $1,400)
               </p>
               <p className="text-sm text-gray-600 mt-1">
                 Ducted heat pumps in Chicago metro and northern Illinois.
@@ -347,7 +347,7 @@ export default function IllinoisPage() {
             </h3>
             <div className="grid md:grid-cols-3 gap-3 mb-4">
               <div className="bg-green-50 rounded-lg p-4 text-center">
-                <p className="text-2xl font-bold text-green-700">Up to $2,000</p>
+                <p className="text-2xl font-bold text-green-700">Up to $1,400</p>
                 <p className="text-sm text-gray-600">Ducted heat pump</p>
               </div>
               <div className="bg-green-50 rounded-lg p-4 text-center">
@@ -355,18 +355,21 @@ export default function IllinoisPage() {
                 <p className="text-sm text-gray-600">Ductless mini-split</p>
               </div>
               <div className="bg-green-50 rounded-lg p-4 text-center">
-                <p className="text-2xl font-bold text-green-700">Up to $2,075</p>
-                <p className="text-sm text-gray-600">With smart thermostat</p>
+                <p className="text-2xl font-bold text-green-700">Tonnage-tiered</p>
+                <p className="text-sm text-gray-600">
+                  Ducted amount scales with heating capacity
+                </p>
               </div>
             </div>
             <p className="text-gray-700 leading-relaxed mb-3">
-              Rebates are tiered by efficiency — higher SEER2 and HSPF2 ratings
-              earn larger rebates. A{" "}
+              As of March 1, 2026, ComEd rebates are tiered by heating capacity
+              (tonnage) rather than a flat amount, and equipment must still meet
+              ENERGY STAR cold-climate efficiency floors to qualify. A{" "}
               <strong>
                 ComEd Residential Heating and Cooling Trade Ally
               </strong>{" "}
               must perform the installation. Check ComEd&apos;s current program
-              materials for application deadlines.
+              materials for the latest per-ton amounts and application deadlines.
             </p>
             <p className="text-gray-700 leading-relaxed">
               <strong>Income-eligible customers</strong> can access enhanced
@@ -573,7 +576,7 @@ export default function IllinoisPage() {
                 {[
                   { label: "Federal 25C", amt: "$0", note: "Expired" },
                   { label: "HEAR rebate", amt: "$0", note: "Not eligible above 150% AMI" },
-                  { label: "ComEd utility rebate", amt: "Up to $2,000", note: "Available now" },
+                  { label: "ComEd utility rebate", amt: "Up to $1,400", note: "Available now" },
                 ].map((row) => (
                   <tr key={row.label} className="border-b border-gray-100">
                     <td className="py-2 px-3">{row.label}</td>
@@ -588,7 +591,7 @@ export default function IllinoisPage() {
                 <tr className="bg-blue-50">
                   <td className="py-2 px-3 font-bold">Realistic total</td>
                   <td className="py-2 px-3 text-right font-bold text-green-700">
-                    $1,400–$2,000
+                    Up to $1,400
                   </td>
                   <td className="py-2 px-3"></td>
                 </tr>
@@ -610,7 +613,7 @@ export default function IllinoisPage() {
                 {[
                   { label: "HEAR (heat pump)", amt: "Up to $8,000", note: "When launched" },
                   { label: "HEAR (panel + wiring)", amt: "Up to $6,500", note: "When launched" },
-                  { label: "ComEd income-eligible", amt: "~$2,000+", note: "Available now" },
+                  { label: "ComEd income-eligible", amt: "Enhanced", note: "Higher than market rate" },
                 ].map((row) => (
                   <tr key={row.label} className="border-b border-gray-100">
                     <td className="py-2 px-3">{row.label}</td>
