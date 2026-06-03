@@ -142,9 +142,9 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "MN",
     stateName: "Minnesota",
     status: "open",
-    lastVerified: "2026-03-22",
+    lastVerified: "2026-06-03",
     summary:
-      "Xcel Energy offers up to $2,000 for cold-climate heat pumps (plus $600 insulation bonus). CenterPoint adds $1,100 for dual-fuel systems. Minnesota Power offers $400 for ducted ASHP. Minneapolis Green Cost Share stacks up to $14,000. Federal 25C/25D expired Dec 31, 2025. Save Energy Minnesota (HEAR + $4,000 state HP rebate) has not launched — no date set.",
+      "Xcel Energy offers up to $2,000 for cold-climate heat pumps (plus $600 insulation bonus). CenterPoint adds $1,100 for dual-fuel systems. Minnesota Power offers up to $1,200 for cold-climate heat pumps (enhanced rebate). Minneapolis Green Cost Share stacks up to $14,000. Federal 25C/25D expired Dec 31, 2025. Save Energy Minnesota (HEAR + $4,000 state HP rebate) has not launched — no date set.",
     sources: [
       {
         label: "Xcel Energy — MN 2024-2026 Rebate Summary (PDF)",

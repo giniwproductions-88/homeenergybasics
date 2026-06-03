@@ -52,7 +52,7 @@ export default function MinnesotaPage() {
         name: "Has Minnesota's HEAR rebate program launched?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "No. As of the Minnesota Department of Commerce's February 2, 2026 update, Save Energy Minnesota has not launched. The state is waiting for formal DOE approval. There is no estimated launch date. Federal guidelines do not allow retroactive rebates for installations before launch. A separate state Residential Heat Pump Rebate of up to $4,000 is designed to stack with HEAR but also has not launched.",
+          text: "No. As of the Minnesota Department of Commerce's April 8, 2026 update, Save Energy Minnesota has not launched. The state is waiting for formal DOE approval. There is no estimated launch date. Federal guidelines do not allow retroactive rebates for installations before launch. A separate state Residential Heat Pump Rebate of up to $4,000 is designed to stack with HEAR but also has not launched.",
         },
       },
       {
@@ -99,7 +99,7 @@ export default function MinnesotaPage() {
             Minnesota Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Federal heat pump tax credits ended December 31, 2025. Utility rebates from Xcel Energy (up to <strong>$2,600</strong> with insulation bonus), CenterPoint (<strong>$1,100</strong> dual-fuel), and Minnesota Power (<strong>$400</strong>) are what&apos;s available now, plus up to <strong>$14,000</strong> in Minneapolis city rebates. Save Energy Minnesota (HEAR + a <strong>$4,000</strong> state rebate) has not launched. This guide covers all major Minnesota heat pump incentives available in 2026, including Xcel Energy, CenterPoint Energy, Minnesota Power, Minneapolis Green Cost Share, and the pending Save Energy Minnesota program. Here&apos;s what&apos;s actually available.
+            Federal heat pump tax credits ended December 31, 2025. Utility rebates from Xcel Energy (up to <strong>$2,600</strong> with insulation bonus), CenterPoint (<strong>$1,100</strong> dual-fuel), and Minnesota Power (<strong>$1,200</strong> cold-climate, enhanced through June 2026) are what&apos;s available now, plus up to <strong>$14,000</strong> in Minneapolis city rebates. Save Energy Minnesota (HEAR + a <strong>$4,000</strong> state rebate) has not launched. This guide covers all major Minnesota heat pump incentives available in 2026, including Xcel Energy, CenterPoint Energy, Minnesota Power, Minneapolis Green Cost Share, and the pending Save Energy Minnesota program. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
             Last verified: {formattedDate}
@@ -132,7 +132,7 @@ export default function MinnesotaPage() {
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Total potential savings</p>
-              <p className="text-sm text-green-900">$2,000–$3,100 (above 150% AMI) to $14,100+ (below 80% AMI, after HEAR launches). Full electrification packages with Minneapolis rebates can reach ~$17,000+ total incentives.</p>
+              <p className="text-sm text-green-900">$3,100–$3,700 (above 150% AMI) to ~$15,000 (below 80% AMI, after HEAR launches). Full electrification packages with Minneapolis rebates can reach ~$17,000+ total incentives.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">✗ Federal tax credits expired</p>
@@ -170,7 +170,7 @@ export default function MinnesotaPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Save Energy Minnesota: Not Yet Launched</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            As of the Minnesota Department of Commerce&apos;s February 2, 2026 update, Save Energy Minnesota has not launched. The state is waiting for formal DOE approval. There is <strong>no estimated program launch date</strong>. When it does launch, two programs will be available.
+            As of the Minnesota Department of Commerce&apos;s April 8, 2026 update, Save Energy Minnesota has not launched. The state is waiting for formal DOE approval. There is <strong>no estimated program launch date</strong>. When it does launch, two programs will be available.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Home Electrification and Appliance Rebates (HEAR)</h3>
@@ -194,7 +194,7 @@ export default function MinnesotaPage() {
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">80–150% AMI</td>
-                  <td className="p-3 font-semibold">Up to $8,000</td>
+                  <td className="p-3 font-semibold">Up to $4,000</td>
                   <td className="p-3 font-semibold">$7,000</td>
                 </tr>
                 <tr className="border-b">
@@ -205,6 +205,10 @@ export default function MinnesotaPage() {
               </tbody>
             </table>
           </div>
+
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Minnesota set its moderate-income (80&ndash;150% AMI) rebate levels below the federal maximum &mdash; <strong>$4,000</strong> for a heat pump rather than $8,000 &mdash; to direct more funding to households below 80% AMI. The full <strong>$8,000</strong> heat pump rebate applies only to households below 80% AMI.
+          </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">MN Residential Heat Pump Rebate</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
@@ -337,9 +341,14 @@ export default function MinnesotaPage() {
               </thead>
               <tbody>
                 <tr className="border-b">
-                  <td className="p-3">Ducted ASHP</td>
+                  <td className="p-3">Ducted ASHP (standard)</td>
                   <td className="p-3 font-semibold">$400</td>
                   <td className="p-3">ENERGY STAR certified; participating contractor required</td>
+                </tr>
+                <tr className="border-b bg-green-50">
+                  <td className="p-3">Cold-climate ASHP (ducted or ductless)</td>
+                  <td className="p-3 font-semibold">$1,200</td>
+                  <td className="p-3">Enhanced rebate, installs through June 30, 2026; ccASHP rated to 5°F</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Ground-source (geothermal)</td>
@@ -420,10 +429,10 @@ export default function MinnesotaPage() {
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>Xcel cold-climate ASHP (Combo/Gas): $2,000</li>
                 <li>CenterPoint dual-fuel: $1,100</li>
-                <li>HEAR (capped at $7,000 household): up to $7,000</li>
+                <li>HEAR heat pump (80–150% AMI cap): up to $4,000</li>
                 <li>MN State HP Rebate: up to $4,000</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$14,100</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$11,100</p>
             </div>
 
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
@@ -440,7 +449,7 @@ export default function MinnesotaPage() {
 
           <div className="bg-gray-100 rounded-lg p-5">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
-            <p className="text-sm text-gray-700">On a $15,000 installed system: <strong>$11,300 to $11,900 out of pocket</strong> with today&apos;s utility rebates. If HEAR launches and you qualify at 80–150% Area Median Income (AMI), that drops to roughly <strong>$900</strong>. Below 80% AMI, the system could be free or near-free. Minneapolis Green Zone residents can stack an additional $5,000–$14,000 on top of any scenario above.</p>
+            <p className="text-sm text-gray-700">On a $15,000 installed system: <strong>$11,300 to $11,900 out of pocket</strong> with today&apos;s utility rebates. If HEAR launches and you qualify at 80–150% Area Median Income (AMI), that drops to roughly <strong>$3,900</strong>. Below 80% AMI, the system could be free or near-free. Minneapolis Green Zone residents can stack an additional $5,000–$14,000 on top of any scenario above.</p>
           </div>
 
           <p className="text-gray-700 leading-relaxed mt-6 mb-4">
@@ -563,7 +572,7 @@ export default function MinnesotaPage() {
           <div className="space-y-4">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Save Energy Minnesota launch</p>
-              <p className="text-sm text-gray-600 mt-1">No date set as of February 2, 2026. Monitor <a href="https://mn.gov/commerce/energy/consumer/energy-programs/save-energy-mn.jsp" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">mn.gov/commerce</a> for the official announcement. Projects before launch don&apos;t qualify for HEAR.</p>
+              <p className="text-sm text-gray-600 mt-1">No date set as of April 8, 2026. Monitor <a href="https://mn.gov/commerce/energy/consumer/energy-programs/save-energy-mn.jsp" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">mn.gov/commerce</a> for the official announcement. Projects before launch don&apos;t qualify for HEAR.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">MN Residential Heat Pump Rebate ($4,000)</p>
