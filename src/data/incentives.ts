@@ -688,7 +688,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "VA",
     stateName: "Virginia",
     status: "limited",
-    lastVerified: "2026-03-22",
+    lastVerified: "2026-06-03",
     summary:
       "Federal tax credits expired Dec 31, 2025. Virginia's $188M in IRA-funded HOMES and HEAR rebates remain pending — Virginia Energy is assessing the impact of federal funding freezes. Utility rebates are the primary incentive: Washington Gas offers up to $2,000 for dual-fuel heat pumps in Northern Virginia, Dominion Energy offers HPWH rebates of $250–$400 and central HP rebates through its Home Retrofit Program, and Appalachian Power provides $300–$400 for mini-splits. Most electric cooperatives offer no direct rebates. Low-income households can access free upgrades through WAP and Dominion's EnergyShare program.",
     sources: [
@@ -1207,7 +1207,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "NC",
     stateName: "North Carolina",
     status: "open",
-    lastVerified: "2026-03-23",
+    lastVerified: "2026-06-03",
     summary:
       "Energy Saver NC is live statewide with up to $8,000 through HEAR or $16,000 through HOMES for income-qualifying households. Duke Energy adds $500\u2013$1,000 in utility rebates. Federal 25C/25D tax credits expired Dec 31, 2025. Households above 150% AMI are limited to utility rebates only.",
     sources: [
