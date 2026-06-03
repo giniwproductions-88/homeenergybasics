@@ -34,7 +34,7 @@ export default function CaliforniaPage() {
         name: "What heat pump rebates are available in California in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "California\u2019s statewide programs (TECH Clean California and HEEHRA Phase I) are fully reserved for single-family homes. Utility rebates are the primary path: SMUD offers up to $3,000 for heat pump HVAC and $4,000 for heat pump water heaters. LADWP offers up to $2,500 per ton. The California Energy Smart Homes program provides $4,250 or more for full electrification projects. Federal tax credits (Section 25C and Section 25D) expired December 31, 2025. HOMES and HEEHRA Phase II are funded but have not launched.",
+          text: "California\u2019s statewide programs (TECH Clean California and HEEHRA Phase I) are fully reserved for single-family homes. Utility rebates are the primary path: SMUD offers up to $3,000 for heat pump HVAC and $4,000 for heat pump water heaters. LADWP offers up to $2,500 per ton. The California Energy Smart Homes program offered $4,250 or more for full electrification, but its 2026 funding became fully subscribed in April 2026. Federal tax credits (Section 25C and Section 25D) expired December 31, 2025. HOMES and HEEHRA Phase II are funded but have not launched.",
         },
       },
       {
@@ -42,7 +42,7 @@ export default function CaliforniaPage() {
         name: "Can I stack utility rebates with future state programs in California?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "When multiple programs are active, stacking is generally allowed in California. HEEHRA rebates were explicitly stackable with utility incentives. Future HOMES and HEEHRA Phase II rebates are also expected to be stackable with utility programs. Right now, stacking opportunities are limited to utility rebates plus the Energy Smart Homes program for full electrification projects.",
+          text: "When multiple programs are active, stacking is generally allowed in California. HEEHRA rebates were explicitly stackable with utility incentives. Future HOMES and HEEHRA Phase II rebates are also expected to be stackable with utility programs. Right now, stacking opportunities are limited mainly to utility rebates (SMUD, LADWP), since Energy Smart Homes 2026 funding is fully subscribed and the statewide TECH and HEEHRA programs are exhausted.",
         },
       },
       {
@@ -123,8 +123,8 @@ export default function CaliforniaPage() {
               <p className="text-sm text-green-900">Up to $2,500/ton for heat pump HVAC (a 3-ton system = up to $7,500) and $2,500 for heat pump water heaters. No income qualification required.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-1">✓ Energy Smart Homes &#8212; Full Electrification</p>
-              <p className="text-sm text-green-900">$4,250+ for homeowners going fully electric (capping gas meter). Bonuses for variable-capacity heat pumps and load management. Confirmed through 2027.</p>
+              <p className="font-semibold text-green-800 mb-1">✓ GoGreen Financing &#8212; Statewide</p>
+              <p className="text-sm text-green-900">Low-interest loans for heat pumps and electrification, available statewide regardless of your utility. This is financing, not a rebate &#8212; but it&apos;s the one option open to every California homeowner while statewide rebates are exhausted.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">✗ Federal Tax Credits &#8212; Expired</p>
@@ -169,7 +169,7 @@ export default function CaliforniaPage() {
             <p className="text-sm text-amber-900">As of February 24, 2026, HEEHRA single-family rebates are fully reserved for projects statewide. The program is no longer accepting new income verification applications. Central and Southern California regions were exhausted by January 7, 2026. All unapproved reservation requests have been waitlisted. Waitlisted projects are only eligible if the heat pump is installed after the reservation is approved.</p>
           </div>
           <p className="text-gray-700 leading-relaxed mb-4">
-            TECH Clean California single-family HVAC incentives were fully reserved by January 17, 2025. Single-family heat pump water heater incentives were fully reserved by November 14, 2025. Commercial incentives were exhausted by October 31, 2025.
+            TECH Clean California single-family heat pump HVAC and heat pump water heater incentives closed to new sales and reservations on November 14, 2025, after the budget was nearly fully reserved statewide. Commercial incentives were exhausted earlier in 2025.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">
@@ -292,7 +292,7 @@ export default function CaliforniaPage() {
             California Energy Smart Homes Program
           </h3>
           <p className="text-gray-700 leading-relaxed mb-6">
-            For homeowners going fully electric (capping their gas meter), Energy Smart Homes provides at least <strong>$4,250</strong> in incentives, with bonuses for variable-capacity heat pumps, thermal energy storage, and load management that can push totals above <strong>$12,000</strong>. Confirmed through 2027 with no reductions to incentive levels expected. Applies to existing home alterations, not just new construction.
+            For homeowners going fully electric (capping their gas meter), Energy Smart Homes offered at least <strong>$4,250</strong> in incentives, with bonuses for variable-capacity heat pumps, thermal energy storage, and load management that could push totals above <strong>$12,000</strong>. However, as of <strong>April 20, 2026</strong>, the program&apos;s 2026 funding is fully subscribed &#8212; no new applications are being funded this year. The program is slated to continue through 2027, but future funding availability has not been confirmed. When funded, it applies to existing home alterations, not just new construction.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">
@@ -339,16 +339,16 @@ export default function CaliforniaPage() {
               <p className="font-semibold text-gray-900 mb-2">PG&amp;E / SCE / SDG&amp;E Customer &#8212; No Income Qualification</p>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>Utility standalone rebate: likely $0 (most run statewide programs)</li>
-                <li>Energy Smart Homes (if capping gas): $4,250+</li>
+                <li>Energy Smart Homes: $0 (2026 funding fully subscribed as of April 2026)</li>
                 <li>Federal tax credits: $0 (expired)</li>
                 <li>TECH/HEEHRA: $0 (exhausted)</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$0&#8211;$4,250+</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$0 until HOMES / HEEHRA Phase II launch</p>
             </div>
           </div>
           <div className="bg-gray-100 rounded-lg p-5 mb-6">
             <p className="font-semibold text-gray-900 mb-1">What You&apos;ll Actually Pay</p>
-            <p className="text-sm text-gray-700">A typical whole-home heat pump HVAC installation in California costs <strong>$8,000&#8211;$16,000</strong> before incentives. SMUD customers installing now may pay <strong>$0&#8211;$7,000 out of pocket</strong> after rebates. LADWP customers may pay <strong>$0&#8211;$6,000</strong>. PG&amp;E/SCE/SDG&amp;E customers without Energy Smart Homes may pay <strong>$8,000&#8211;$16,000</strong> &#8212; the full cost &#8212; until HOMES or HEEHRA Phase II launch.</p>
+            <p className="text-sm text-gray-700">A typical whole-home heat pump HVAC installation in California costs <strong>$8,000&#8211;$16,000</strong> before incentives. SMUD customers installing now may pay <strong>$0&#8211;$7,000 out of pocket</strong> after rebates. LADWP customers may pay <strong>$0&#8211;$6,000</strong>. PG&amp;E, SCE, and SDG&amp;E customers may pay <strong>$8,000&#8211;$16,000</strong> &#8212; the full cost &#8212; until HOMES or HEEHRA Phase II launch, since Energy Smart Homes 2026 funding is fully subscribed.</p>
           </div>
           <p className="text-sm text-gray-500">
             No state tax credit for heat pumps is available in California. GoGreen Financing provides low-interest loans but is not a rebate.
@@ -489,7 +489,7 @@ export default function CaliforniaPage() {
 
           <div className="mt-4 bg-green-50 border border-green-200 rounded-lg p-5">
             <p className="font-semibold text-green-800 mb-1">✓ Best Candidates for Installing Now</p>
-            <p className="text-sm text-green-900">SMUD customers (up to $9,000 combined for full conversion), LADWP customers (up to $10,000 for HVAC + HPWH), homeowners capping their gas meter (Energy Smart Homes $4,250+), and homeowners whose existing heating system is failing and cannot afford to wait for HOMES/HEEHRA Phase II.</p>
+            <p className="text-sm text-green-900">SMUD customers (up to $9,000 combined for full conversion), LADWP customers (up to $10,000 for HVAC + HPWH), and homeowners whose existing heating system is failing and cannot afford to wait for HOMES/HEEHRA Phase II.</p>
           </div>
         </div>
       </section>
