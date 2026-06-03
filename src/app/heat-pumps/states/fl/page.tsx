@@ -245,12 +245,12 @@ export default function FloridaPage() {
               <tbody>
                 <tr className="border-b">
                   <td className="p-3">20–34% reduction</td>
-                  <td className="p-3 font-semibold">$8,000 (100% of cost)</td>
+                  <td className="p-3 font-semibold">$4,000 (80% of cost)</td>
                   <td className="p-3 font-semibold">$2,000 (50% of cost)</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">35%+ reduction</td>
-                  <td className="p-3 font-semibold">$16,000 (100% of cost)</td>
+                  <td className="p-3 font-semibold">$8,000 (80% of cost)</td>
                   <td className="p-3 font-semibold">$4,000 (50% of cost)</td>
                 </tr>
               </tbody>
