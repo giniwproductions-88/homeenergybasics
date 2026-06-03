@@ -606,10 +606,8 @@ export default function CaliforniaPage() {
               <strong>Disclaimer:</strong> This page covers the main statewide, utility, and IRA heat pump incentives available to California homeowners in 2026. It does not calculate savings, guarantee eligibility, or represent any incentive program. California has dozens of utilities and overlapping programs &#8212; your specific situation depends on your service area, income, home type, and timing. We verify status regularly but programs can change without notice. Always confirm current amounts and eligibility with your utility, the California Energy Commission, and your contractor before making decisions.
             </p>
           </div>
-          <div className="mt-6 text-center">
-            <Link href="/heat-pumps" className="text-brand-600 hover:underline text-sm">
           <p className="text-sm text-gray-600 mt-4">
-            See how this state compares ?{" "}
+            See how this state compares &rarr;{" "}
             <Link
               href="/heat-pumps/rebates-by-state"
               className="text-brand-600 hover:underline"
@@ -617,6 +615,8 @@ export default function CaliforniaPage() {
               Heat Pump Rebates by State (2026)
             </Link>
           </p>
+          <div className="mt-6 text-center">
+            <Link href="/heat-pumps" className="text-brand-600 hover:underline text-sm">
               &#8592; Back to Heat Pumps overview
             </Link>
           </div>

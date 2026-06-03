@@ -578,10 +578,8 @@ export default function TexasPage() {
               <strong>Disclaimer:</strong> This page covers the main utility and IRA-related heat pump incentives available to Texas homeowners in 2026. It does not calculate savings, guarantee eligibility, or represent any incentive program. Texas has no statewide heat pump program &mdash; rebates vary entirely by utility territory and may change without notice. Oncor and CenterPoint incentives are performance-based and amounts shown are estimates. We verify status regularly but programs can change without notice. Always confirm current amounts and eligibility with your utility and your contractor before making decisions.
             </p>
           </div>
-          <div className="mt-6 text-center">
-            <Link href="/heat-pumps" className="text-brand-600 hover:underline text-sm">
           <p className="text-sm text-gray-600 mt-4">
-            See how this state compares ?{" "}
+            See how this state compares &rarr;{" "}
             <Link
               href="/heat-pumps/rebates-by-state"
               className="text-brand-600 hover:underline"
@@ -589,6 +587,8 @@ export default function TexasPage() {
               Heat Pump Rebates by State (2026)
             </Link>
           </p>
+          <div className="mt-6 text-center">
+            <Link href="/heat-pumps" className="text-brand-600 hover:underline text-sm">
               &#8592; Back to Heat Pumps overview
             </Link>
           </div>

@@ -629,10 +629,8 @@ export default function ArkansasPage() {
               <strong>Disclaimer:</strong> This page covers the main utility and IRA heat pump incentives available to Arkansas homeowners in 2026. It does not calculate savings, guarantee eligibility, or represent any incentive program. Cooperative rebates and municipal utility programs may vary &mdash; contact your local utility for current details. We verify status regularly but programs can change without notice. Always confirm current amounts and eligibility with your utility and contractor before making decisions.
             </p>
           </div>
-          <div className="mt-6 text-center">
-            <Link href="/heat-pumps" className="text-brand-600 hover:underline text-sm">
           <p className="text-sm text-gray-600 mt-4">
-            See how this state compares ?{" "}
+            See how this state compares &rarr;{" "}
             <Link
               href="/heat-pumps/rebates-by-state"
               className="text-brand-600 hover:underline"
@@ -640,6 +638,8 @@ export default function ArkansasPage() {
               Heat Pump Rebates by State (2026)
             </Link>
           </p>
+          <div className="mt-6 text-center">
+            <Link href="/heat-pumps" className="text-brand-600 hover:underline text-sm">
               &larr; Back to Heat Pumps overview
             </Link>
           </div>

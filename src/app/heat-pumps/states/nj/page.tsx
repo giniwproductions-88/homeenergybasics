@@ -651,10 +651,8 @@ export default function NewJerseyPage() {
               Power, and your contractor before making decisions.
             </p>
           </div>
-          <div className="mt-6 text-center">
-            <Link href="/heat-pumps" className="text-brand-600 hover:underline text-sm">
           <p className="text-sm text-gray-600 mt-4">
-            See how this state compares ?{" "}
+            See how this state compares &rarr;{" "}
             <Link
               href="/heat-pumps/rebates-by-state"
               className="text-brand-600 hover:underline"
@@ -662,6 +660,8 @@ export default function NewJerseyPage() {
               Heat Pump Rebates by State (2026)
             </Link>
           </p>
+          <div className="mt-6 text-center">
+            <Link href="/heat-pumps" className="text-brand-600 hover:underline text-sm">
               &#8592; Back to Heat Pumps overview
             </Link>
           </div>

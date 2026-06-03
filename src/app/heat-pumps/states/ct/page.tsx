@@ -556,10 +556,8 @@ export default function ConnecticutPage() {
               <strong>Disclaimer:</strong> This page covers the main statewide, utility, and IRA heat pump incentives available to Connecticut homeowners in 2026. It does not calculate savings, guarantee eligibility, or represent any incentive program. Connecticut has multiple overlapping programs with different rules &mdash; your specific situation depends on your utility, income, home type, and timing. We verify status regularly but programs can change without notice. Always confirm current amounts and eligibility with Energize CT and your contractor before making decisions.
             </p>
           </div>
-          <div className="mt-6 text-center">
-            <Link href="/heat-pumps" className="text-brand-600 hover:underline text-sm">
           <p className="text-sm text-gray-600 mt-4">
-            See how this state compares ?{" "}
+            See how this state compares &rarr;{" "}
             <Link
               href="/heat-pumps/rebates-by-state"
               className="text-brand-600 hover:underline"
@@ -567,6 +565,8 @@ export default function ConnecticutPage() {
               Heat Pump Rebates by State (2026)
             </Link>
           </p>
+          <div className="mt-6 text-center">
+            <Link href="/heat-pumps" className="text-brand-600 hover:underline text-sm">
               &larr; Back to Heat Pumps overview
             </Link>
           </div>
