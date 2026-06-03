@@ -54,7 +54,7 @@ const faqJsonLd = {
       name: "Has New Jersey launched the IRA HEAR/HOMES rebates?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No. As of March 2026, New Jersey has not launched consumer-facing HEAR or HOMES rebates. The state received over $185 million in IRA funding, but program design is still in progress. NJ\u2019s plan directs most funds toward low-income multifamily housing through a planned M-RISE program rather than broad single-family rebates.",
+        text: "No. As of June 2026, New Jersey has not launched consumer-facing HEAR or HOMES rebates. The state received over $185 million in IRA funding, but program design is still in progress. NJ\u2019s plan directs most funds toward low-income multifamily housing through a planned M-RISE program rather than broad single-family rebates.",
       },
     },
     {

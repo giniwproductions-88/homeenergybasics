@@ -492,9 +492,9 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "NJ",
     stateName: "New Jersey",
     status: "open",
-    lastVerified: "2026-03-22",
+    lastVerified: "2026-06-02",
     summary:
-      "New Jersey heat pump rebates are active through the statewide Whole Home program (up to $7,500 cash-back plus 0% financing) and all four electric utilities (PSE&G, JCP&L, Atlantic City Electric, RECO). Programs stack. Federal tax credits (25C/25D) ended December 31, 2025. The state's $185 million in IRA HEAR/HOMES funding has not launched consumer-facing programs as of March 22, 2026.",
+      "New Jersey heat pump rebates are active through the statewide Whole Home program (up to $7,500 cash-back plus 0% financing) and all four electric utilities (PSE&G, JCP&L, Atlantic City Electric, RECO). Programs stack. Federal tax credits (25C/25D) ended December 31, 2025. The state's $185 million in IRA HEAR/HOMES funding has not launched consumer-facing programs as of June 2, 2026.",
     sources: [
       {
         label: "NJ Whole Home Program (Ciel Power)",
