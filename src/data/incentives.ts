@@ -942,9 +942,9 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "HI",
     stateName: "Hawaii",
     status: "open",
-    lastVerified: "2026-03-23",
+    lastVerified: "2026-06-03",
     summary:
-      "Hawaii Energy offers $450\u2013$700 instant rebates for heat pump water heaters and $450\u2013$550 for mini-splits through June 2026. eHale HEAR program (up to $14,000 for income-qualified households) expected to launch in 2026. Federal 25C/25D credits expired Dec 2025. KIUC offers separate $500 HPWH rebate on Kauai.",
+      "Hawaii Energy offers $500\u2013$700 instant rebates for heat pump water heaters and $450\u2013$550 for mini-splits through June 30, 2026. eHale HEAR program (up to $14,000 for income-qualified households) expected to launch in 2026 but not yet accepting applications. Federal 25C/25D credits expired Dec 2025. KIUC offers separate $500 HPWH rebate on Kauai.",
     sources: [
       {
         label: "Hawaii State Energy Office \u2014 eHale Energy Saver Rebate Program",

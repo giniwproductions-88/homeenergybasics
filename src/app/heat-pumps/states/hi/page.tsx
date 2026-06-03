@@ -237,7 +237,7 @@ export default function HawaiiPage() {
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
             <p className="font-semibold text-blue-800 mb-1">Hawaii&apos;s high cost of living means more families qualify</p>
-            <p className="text-sm text-blue-900">Hawaii&apos;s AMI thresholds are among the highest in the country. A Honolulu family of four earning up to $121,600 qualifies for 100% cost coverage under HEAR, and a family earning up to ~$228,000 qualifies for 50% coverage. Categorical eligibility through SNAP, Medicaid, TANF, or WIC also applies.</p>
+            <p className="text-sm text-blue-900">Hawaii&apos;s AMI thresholds are among the highest in the country. A Honolulu family of four earning up to $121,600 qualifies for 100% cost coverage under HEAR, and a family earning up to ~$228,000 qualifies for 50% coverage. Categorical eligibility through SNAP, Medicaid, SSI, or WIC also applies.</p>
           </div>
         </div>
       </section>
@@ -524,7 +524,7 @@ export default function HawaiiPage() {
               </div>
               <div>
                 <p className="font-semibold text-gray-900">Check your eHale HEAR eligibility</p>
-                <p className="text-sm text-gray-700">Determine your household income relative to your county&apos;s AMI thresholds. Households below 150% AMI will qualify for HEAR rebates once the program launches. Categorical eligibility through SNAP, Medicaid, TANF, or WIC also applies.</p>
+                <p className="text-sm text-gray-700">Determine your household income relative to your county&apos;s AMI thresholds. Households below 150% AMI will qualify for HEAR rebates once the program launches. Categorical eligibility through SNAP, Medicaid, SSI, or WIC also applies.</p>
               </div>
             </div>
             <div className="flex gap-4">
