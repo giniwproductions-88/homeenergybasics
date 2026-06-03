@@ -30,7 +30,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in Pennsylvania in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Pennsylvania heat pump rebates come from your electric utility under Act 129 Phase IV. PECO customers can get up to $1,950 (with EAP stacking), PPL offers $350\u2013$1,250, Duquesne Light $375\u2013$425, FirstEnergy companies $200\u2013$325, and UGI Electric up to $1,250. Federal tax credits ended December 31, 2025. The Penn Energy Savers (HEAR) program has not yet launched.",
+        text: "Pennsylvania heat pump rebates come from your electric utility under Act 129. Phase IV ran through May 31, 2026; Phase V began June 1, 2026, with utility-specific amounts not yet published, so the figures here reflect the most recent (Phase IV) levels: PECO customers up to $1,950 (with EAP stacking), PPL $350\u2013$1,250, Duquesne Light $375\u2013$425, FirstEnergy companies $200\u2013$325, and UGI Electric up to $1,250. Confirm current Phase V amounts with your utility. Federal tax credits ended December 31, 2025. The Penn Energy Savers (HEAR) program has not yet launched.",
       },
     },
     {
@@ -38,7 +38,7 @@ const faqJsonLd = {
       name: "Can I stack utility rebates with Penn Energy Savers in Pennsylvania?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Act 129 utility rebates and Penn Energy Savers use different funding sources and can be combined. If Penn Energy Savers launches before Act 129 Phase IV expires (May 31, 2026), you may be able to stack both. HEELP and KEEP loan programs also stack with utility rebates. Total incentives generally cannot exceed total project cost.",
+        text: "Yes. Act 129 utility rebates and Penn Energy Savers use different funding sources and can be combined. Act 129 Phase V began June 1, 2026 and continues to offer utility rebates that can stack with Penn Energy Savers once it launches. HEELP and KEEP loan programs also stack with utility rebates. Total incentives generally cannot exceed total project cost.",
       },
     },
     {
@@ -46,7 +46,7 @@ const faqJsonLd = {
       name: "What is the Penn Energy Savers program?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Penn Energy Savers is Pennsylvania\u2019s IRA-funded rebate program (HEAR/HOMES), allocated $258.9 million. When launched, HEAR will offer up to $8,000 for heat pumps for households below 80% AMI, and 50% of costs for those at 80\u2013150% AMI. As of March 2026, the program is awaiting final DOE approval and has no confirmed launch date.",
+        text: "Penn Energy Savers is Pennsylvania\u2019s IRA-funded rebate program (HEAR/HOMES), allocated $258.9 million. When launched, HEAR will offer up to $8,000 for heat pumps for households below 80% AMI, and 50% of costs for those at 80\u2013150% AMI. As of June 2026, the program is awaiting final DOE approval and has no confirmed launch date.",
       },
     },
     {
@@ -54,7 +54,7 @@ const faqJsonLd = {
       name: "When do Pennsylvania Act 129 utility rebates expire?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Current Act 129 Phase IV rebates expire May 31, 2026. Phase V begins June 1, 2026 and was approved by the PUC in June 2025. Phase V is expected to include higher heat pump incentives, but specific amounts have not been published. If you are buying a heat pump now, apply for your utility rebate before the Phase IV deadline.",
+        text: "Act 129 Phase IV ran through May 31, 2026. Phase V began June 1, 2026 and was approved by the PUC in June 2025. Phase V is expected to include higher heat pump incentives, but specific amounts have not yet been published \u2014 check with your utility for current Phase V rebate levels before assuming the Phase IV figures shown here still apply.",
       },
     },
     {
@@ -122,7 +122,7 @@ export default function PennsylvaniaPage() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; Utility rebates: $200&ndash;$1,950</p>
-              <p className="text-sm text-green-900">Act 129 Phase IV rebates active through May 31, 2026. Amount depends on your electric utility. PECO territory (Philadelphia) has the best stacking opportunity with EAP bonuses.</p>
+              <p className="text-sm text-green-900">Act 129 utility rebates. Phase IV ran through May 31, 2026; Phase V began June 1, 2026 (amounts not yet published). PECO territory (Philadelphia) has the best stacking opportunity with EAP bonuses.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; Low-interest loans available now</p>
@@ -138,7 +138,7 @@ export default function PennsylvaniaPage() {
             </div>
             <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
               <p className="font-semibold text-amber-800 mb-1">&#9888; Penn Energy Savers has not launched yet</p>
-              <p className="text-sm text-amber-900">Pennsylvania was allocated $258.9 million in HEAR/HOMES funding. Program administrators have been hired (EGIS BLN for HEAR, Resource Innovations for HOMES). As of March 2026, the program is still awaiting final DOE approval &mdash; no confirmed launch date. Do not sign contracts contingent on Penn Energy Savers funding until the program officially opens.</p>
+              <p className="text-sm text-amber-900">Pennsylvania was allocated $258.9 million in HEAR/HOMES funding. Program administrators have been hired (EGIS BLN for HEAR, Resource Innovations for HOMES). As of June 2026, the program is still awaiting final DOE approval &mdash; no confirmed launch date. Do not sign contracts contingent on Penn Energy Savers funding until the program officially opens.</p>
             </div>
           </div>
         </div>
@@ -170,7 +170,7 @@ export default function PennsylvaniaPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Penn Energy Savers (HEAR/HOMES) &mdash; not yet launched</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Pennsylvania was allocated <strong>$258.9 million</strong> ($129.2M for HEAR, $130M for HOMES). Program administrators have been hired &mdash; EGIS BLN for HEAR (December 2025) and Resource Innovations for HOMES (August 2025). As of March 2026, <strong>the program is still awaiting final DOE approval</strong>.
+            Pennsylvania was allocated <strong>$258.9 million</strong> ($129.2M for HEAR, $130M for HOMES). Program administrators have been hired &mdash; EGIS BLN for HEAR (December 2025) and Resource Innovations for HOMES (August 2025). As of June 2026, <strong>the program is still awaiting final DOE approval</strong>.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">HEAR rebate amounts (when live)</h3>
@@ -222,7 +222,7 @@ export default function PennsylvaniaPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Utility rebates &mdash; your main incentive right now</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            All Pennsylvania utility rebates operate under Act 129 Phase IV and <strong>expire May 31, 2026</strong>. Phase V begins June 1, 2026 and is expected to include higher heat pump incentives. The amount you receive depends entirely on your electric utility.
+            All Pennsylvania utility rebates operate under Act 129. <strong>Phase IV ran through May 31, 2026; Phase V began June 1, 2026</strong> and is expected to include higher heat pump incentives, though specific Phase V amounts have not yet been published. The figures below reflect the most recent (Phase IV) levels &mdash; confirm current amounts with your utility. The amount you receive depends entirely on your electric utility.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">PECO (Philadelphia area &mdash; ~1.6M customers)</h3>
@@ -465,8 +465,8 @@ export default function PennsylvaniaPage() {
           </div>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-6">
-            <p className="font-semibold text-blue-800 mb-1">Timing matters: Act 129 Phase IV deadline</p>
-            <p className="text-sm text-blue-900">All Act 129 Phase IV rebates expire May 31, 2026. If Penn Energy Savers launches before that date, you may be able to stack both. If it launches after, you&apos;ll get HEAR but miss Phase IV &mdash; though Phase V (starting June 1, 2026) is expected to include higher heat pump rebates.</p>
+            <p className="font-semibold text-blue-800 mb-1">Timing: Act 129 has moved to Phase V</p>
+            <p className="text-sm text-blue-900">Act 129 Phase IV ran through May 31, 2026; Phase V began June 1, 2026 and continues utility rebates (specific amounts not yet published). When Penn Energy Savers launches, it can stack with current Act 129 utility rebates. The Phase IV figures above are the most recent published levels &mdash; confirm Phase V amounts with your utility.</p>
           </div>
 
           <p className="text-xs text-gray-400">
@@ -556,7 +556,7 @@ export default function PennsylvaniaPage() {
 
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
             <p className="font-semibold text-green-800 mb-1">&#10003; Best candidates for a heat pump in Pennsylvania</p>
-            <p className="text-sm text-green-900">Heating oil or propane users in rural PA and the northern tier &mdash; fuel cost savings alone can justify the switch. PECO customers who can stack EAP bonuses for the highest available rebate in the state. Income-qualified households below 80% AMI who will benefit most when Penn Energy Savers launches. Homeowners with aging electric resistance heat &mdash; heat pumps cut electricity use by 30&ndash;50%. Anyone replacing a failing system who can lock in Phase IV utility rebates before the May 2026 deadline.</p>
+            <p className="text-sm text-green-900">Heating oil or propane users in rural PA and the northern tier &mdash; fuel cost savings alone can justify the switch. PECO customers who can stack EAP bonuses for the highest available rebate in the state. Income-qualified households below 80% AMI who will benefit most when Penn Energy Savers launches. Homeowners with aging electric resistance heat &mdash; heat pumps cut electricity use by 30&ndash;50%. Anyone replacing a failing system can still use Act 129 utility rebates, now under Phase V.</p>
           </div>
         </div>
       </section>
@@ -587,7 +587,7 @@ export default function PennsylvaniaPage() {
               <div className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-bold">3</div>
               <div>
                 <p className="font-semibold text-gray-900">Submit your rebate application within the deadline</p>
-                <p className="text-sm text-gray-700">Usually 90&ndash;180 days after installation depending on your utility. Final cutoff for Act 129 Phase IV: <strong>May&ndash;June 2026</strong>.</p>
+                <p className="text-sm text-gray-700">Usually 90&ndash;180 days after installation depending on your utility. Act 129 Phase IV closed May 31, 2026; Phase V rebates apply to qualifying installations from June 1, 2026 onward.</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -616,7 +616,7 @@ export default function PennsylvaniaPage() {
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Act 129 Phase V (June 1, 2026)</p>
-              <p className="text-sm text-gray-600 mt-1">Phase V runs through May 2031 and was approved by the PUC in June 2025. It is expected to include higher heat pump rebates, but specific amounts have not been published. Current Phase IV rebates end May 31, 2026.</p>
+              <p className="text-sm text-gray-600 mt-1">Phase V runs June 1, 2026 through May 2031 and was approved by the PUC in June 2025. It is expected to include higher heat pump rebates, but specific amounts have not yet been published. Phase IV ended May 31, 2026.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Governor Shapiro&apos;s Lightning Plan</p>
@@ -706,13 +706,11 @@ export default function PennsylvaniaPage() {
         <div className="container-narrow">
           <div className="bg-gray-100 rounded-lg p-6">
             <p className="text-gray-500 text-xs leading-relaxed">
-              <strong>Disclaimer:</strong> This page covers the main statewide, utility, and IRA heat pump incentives available to Pennsylvania homeowners in 2026. It does not calculate savings, guarantee eligibility, or represent any incentive program. Pennsylvania&apos;s incentives vary entirely by utility territory &mdash; amounts shown are based on each utility&apos;s published Act 129 Phase IV programs as of March 2026. Penn Energy Savers has not launched and expected amounts may change when finalized. We verify status regularly but programs can change without notice. Always confirm current amounts and eligibility with your utility, the PA DEP, and your contractor before making decisions.
+              <strong>Disclaimer:</strong> This page covers the main statewide, utility, and IRA heat pump incentives available to Pennsylvania homeowners in 2026. It does not calculate savings, guarantee eligibility, or represent any incentive program. Pennsylvania&apos;s incentives vary entirely by utility territory &mdash; amounts shown are based on each utility&apos;s published Act 129 Phase IV programs (Phase IV ended May 31, 2026; Phase V amounts had not yet been published as of June 2026). Penn Energy Savers has not launched and expected amounts may change when finalized. We verify status regularly but programs can change without notice. Always confirm current amounts and eligibility with your utility, the PA DEP, and your contractor before making decisions.
             </p>
           </div>
-          <div className="mt-6 text-center">
-            <Link href="/heat-pumps" className="text-brand-600 hover:underline text-sm">
           <p className="text-sm text-gray-600 mt-4">
-            See how this state compares ?{" "}
+            See how this state compares &rarr;{" "}
             <Link
               href="/heat-pumps/rebates-by-state"
               className="text-brand-600 hover:underline"
@@ -720,6 +718,8 @@ export default function PennsylvaniaPage() {
               Heat Pump Rebates by State (2026)
             </Link>
           </p>
+          <div className="mt-6 text-center">
+            <Link href="/heat-pumps" className="text-brand-600 hover:underline text-sm">
               &#8592; Back to Heat Pumps overview
             </Link>
           </div>

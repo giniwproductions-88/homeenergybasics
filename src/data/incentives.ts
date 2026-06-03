@@ -637,9 +637,9 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "PA",
     stateName: "Pennsylvania",
     status: "limited",
-    lastVerified: "2026-03-22",
+    lastVerified: "2026-06-02",
     summary:
-      "Pennsylvania heat pump incentives are limited to utility rebates under Act 129 Phase IV (expiring May 31, 2026). PECO customers can stack up to $1,950 with EAP bonuses. PPL offers $350–$1,250, Duquesne Light $375–$425, FirstEnergy $200–$325, UGI up to $1,250. Federal 25C/25D ended December 31, 2025. Penn Energy Savers ($258.9M HEAR/HOMES) has not launched — awaiting federal approval.",
+      "Pennsylvania heat pump incentives come from Act 129 utility rebates (Phase IV ended May 31, 2026; Phase V began June 1, amounts not yet published). PECO stacks up to $1,950 with EAP bonuses; PPL $350–$1,250, Duquesne $375–$425, FirstEnergy $200–$325, UGI up to $1,250. Federal 25C/25D ended December 31, 2025. Penn Energy Savers ($258.9M HEAR/HOMES) not yet launched.",
     sources: [
       {
         label: "PA DEP — Inflation Reduction Act / Penn Energy Savers",
