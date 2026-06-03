@@ -30,7 +30,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in Nevada in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "NV Energy\u2019s PowerShift program offers $510\u2013$3,400 for air-source heat pumps and $400 for heat pump water heaters. Federal Section 25C and 25D tax credits expired December 31, 2025. Nevada\u2019s IRA-funded HEAR and HOMES rebate programs (up to $8,000 for qualifying households) are approved but have not yet launched as of March 2026. Nevada has no state income tax, so there are no state-level heat pump tax credits.",
+        text: "NV Energy\u2019s PowerShift program offers $510\u2013$3,400 for air-source heat pumps and $400 for heat pump water heaters. Federal Section 25C and 25D tax credits expired December 31, 2025. Nevada\u2019s IRA-funded HEAR and HOMES rebate programs (up to $8,000 for qualifying households) are approved but have not yet launched as of June 2026. Nevada has no state income tax, so there are no state-level heat pump tax credits.",
       },
     },
     {
@@ -62,7 +62,7 @@ const faqJsonLd = {
       name: "When will Nevada\u2019s HEAR and HOMES rebate programs launch?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "As of March 2026, the launch date remains listed as \u201cTBD \u2014 Pending federal review and program guidance\u201d on the Governor\u2019s Office of Energy website. Nevada was allocated approximately $96 million in IRA funding and awarded an implementation contract in December 2024. Homeowners should monitor energy.nv.gov for launch announcements.",
+        text: "As of June 2026, the launch date remains listed as \u201cTBD \u2014 Pending federal review and program guidance\u201d on the Governor\u2019s Office of Energy website. Nevada was allocated approximately $96 million in IRA funding and awarded an implementation contract in December 2024. Homeowners should monitor energy.nv.gov for launch announcements.",
       },
     },
   ],
@@ -152,7 +152,7 @@ export default function NevadaPage() {
             <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
               <p className="font-semibold text-amber-800 mb-1">⚠ HEAR and HOMES have not launched yet</p>
               <p className="text-sm text-amber-900">
-                As of March 2026, only NV Energy rebates are confirmed active. The state&apos;s $96 million
+                As of June 2026, only NV Energy rebates are confirmed active. The state&apos;s $96 million
                 IRA allocation is approved but consumer-facing programs remain pending. Apply for NV
                 Energy PowerShift rebates now — HEAR and HOMES can be applied for separately when
                 they become available.
@@ -206,7 +206,7 @@ export default function NevadaPage() {
             </Link>, HEAR is the primary federal incentive pathway for Nevada homeowners. The
             Governor&apos;s Office of Energy (GOE) awarded a <strong>$96 million</strong>{" "}
             implementation contract to a consortium of VEIC, Everblue, and APTIM in December 2024.
-            As of March 2026, the program launch date is listed as &quot;TBD — Pending federal
+            As of June 2026, the program launch date is listed as &quot;TBD — Pending federal
             review and program guidance.&quot;
           </p>
 

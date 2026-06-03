@@ -1121,7 +1121,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "NV",
     stateName: "Nevada",
     status: "limited",
-    lastVerified: "2026-03-23",
+    lastVerified: "2026-06-03",
     summary:
       "NV Energy PowerShift offers $510\u2013$3,400 for heat pumps (active, first-come first-served). IRA-funded HEAR (up to $8,000) and HOMES programs approved but not yet launched. Federal 25C/25D tax credits expired Dec 2025. No state tax credits (no state income tax).",
     sources: [
