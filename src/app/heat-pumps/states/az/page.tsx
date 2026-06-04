@@ -546,7 +546,7 @@ export default function ArizonaPage() {
           <div className="space-y-4">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">IRA funding runway</p>
-              <p className="text-sm text-gray-600 mt-1">Arizona&apos;s $153 million HEAR allocation runs through September 2031, but only ~800 rebates have been issued so far. If adoption accelerates — especially as contractors become more familiar with the program — funds could deplete faster than projected.</p>
+              <p className="text-sm text-gray-600 mt-1">Arizona&apos;s $153 million HEAR allocation runs through September 2031, with more than 1,000 rebates issued as of April 30, 2026. If adoption accelerates — especially as contractors become more familiar with the program — funds could deplete faster than projected.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">HOMES program launch</p>
