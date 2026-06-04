@@ -903,7 +903,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "GA",
     stateName: "Georgia",
     status: "open",
-    lastVerified: "2026-03-23",
+    lastVerified: "2026-06-03",
     summary:
       "HEAR rebates cover up to $8,000 for heat pumps (\u2264150% AMI). HER whole-home rebates up to $4,000 (all incomes) or $16,000 (\u226480% AMI). Georgia Power HEIP offers up to $1,000. EMC rebates $100\u2013$600. Federal 25C/25D credits expired Dec 2025.",
     sources: [

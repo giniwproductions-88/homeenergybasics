@@ -240,7 +240,7 @@ export default function GeorgiaPage() {
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Above 80% AMI</td>
-                  <td className="p-3 font-semibold">Up to $4,000</td>
+                  <td className="p-3 font-semibold">Up to $2,000</td>
                   <td className="p-3 font-semibold">Up to $4,000</td>
                 </tr>
               </tbody>
@@ -277,20 +277,12 @@ export default function GeorgiaPage() {
               </thead>
               <tbody>
                 <tr className="border-b bg-green-50">
-                  <td className="p-3">Air-source heat pump conversion</td>
-                  <td className="p-3 font-semibold">Up to $1,000</td>
-                </tr>
-                <tr className="border-b bg-green-50">
-                  <td className="p-3">Mini-split heat pump</td>
+                  <td className="p-3">Conversion to air-source heat pump</td>
                   <td className="p-3 font-semibold">Up to $1,000</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-3">Ground-source heat pump</td>
+                  <td className="p-3">Conversion to ground-source heat pump</td>
                   <td className="p-3 font-semibold">Up to $300</td>
-                </tr>
-                <tr className="border-b bg-green-50">
-                  <td className="p-3">Heat pump water heater</td>
-                  <td className="p-3 font-semibold">Up to $1,000</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Home Comfort Bundle (insulation + air sealing + duct sealing)</td>
@@ -387,7 +379,7 @@ export default function GeorgiaPage() {
               <p className="font-semibold text-gray-900 mb-2">Above 150% AMI {"\u2014"} ducted heat pump + insulation</p>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>HER whole-home rebate (20%+ energy savings): up to $4,000</li>
-                <li>Georgia Power HEIP heat pump water heater: up to $1,000</li>
+                <li>Georgia Power HEIP air-source heat pump conversion: up to $1,000</li>
                 <li>Georgia Power Home Comfort Bundle: up to $1,250</li>
               </ul>
               <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$5,000{"\u2013"}$6,000</p>
@@ -397,10 +389,10 @@ export default function GeorgiaPage() {
               <p className="font-semibold text-gray-900 mb-2">80{"\u2013"}150% AMI {"\u2014"} gas-to-heat-pump conversion + water heater</p>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>HEAR heat pump rebate (50% of cost): up to $8,000</li>
-                <li>Georgia Power HEIP heat pump water heater: up to $1,000</li>
+                <li>HEAR heat pump water heater (50% of cost): up to $1,750</li>
                 <li>HER (additional insulation/air sealing): up to $4,000</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$8,000{"\u2013"}$12,000</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$9,000{"\u2013"}$13,000</p>
             </div>
 
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
