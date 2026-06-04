@@ -243,17 +243,21 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "OR",
     stateName: "Oregon",
     status: "open",
-    lastVerified: "2026-03-22",
+    lastVerified: "2026-06-03",
     summary:
-      "Oregon heat pump rebates are available through Energy Trust of Oregon for Portland General Electric and Pacific Power customers. Rebates range from $800–$3,500+ depending on system type, efficiency, and income qualification. The Oregon Department of Energy also offers a Residential Energy Tax Credit for certain installations. Federal tax credits (25C/25D) ended December 31, 2025. Oregon's HEAR program launched in 2025.",
+      "Energy Trust of Oregon is the primary rebate — $800–$1,000 for most homeowners, up to $3,000 income-qualified. ODOE's HP3 program adds up to $2,000 (owner-occupied funding reserved; rental and new construction still open). Oregon has no state tax credit (RETC expired 2017). Federal 25C/25D credits ended December 31, 2025. The state's $113M HEAR/HOMES rebates have not launched — ODOE targets a phased 2026 rollout, pending U.S. DOE approval.",
     sources: [
       {
         label: "Energy Trust of Oregon — Heating & Cooling",
         url: "https://www.energytrust.org/residential/heating-cooling/",
       },
       {
-        label: "Oregon Dept of Energy — Residential Energy Tax Credits",
-        url: "https://www.oregon.gov/energy/Incentives/Pages/RETC.aspx",
+        label: "Oregon Dept of Energy — Home Energy Rebate Programs (HOMES/HEAR status)",
+        url: "https://www.oregon.gov/energy/incentives/pages/home-energy-rebates.aspx",
+      },
+      {
+        label: "Oregon Dept of Energy — Heat Pump Purchase Program (HP3)",
+        url: "https://www.oregon.gov/energy/Incentives/Pages/HP3.aspx",
       },
       {
         label: "IRS 25C (expired)",

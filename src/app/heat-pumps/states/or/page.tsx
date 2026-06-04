@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title:
     "Oregon Heat Pump Rebates 2026: $800\u2013$8,000 + Energy Trust & ODOE HP3 | Home Energy Basics",
   description:
-    "Energy Trust offers $800\u2013$1,000. HP3 adds $2,000. HEAR up to $8,000 coming Spring 2026. Federal credits ended. Here\u2019s every Oregon heat pump incentive in 2026.",
+    "Energy Trust offers $800\u2013$1,000. HP3 adds $2,000. HEAR up to $8,000 pending 2026 launch. Federal credits ended. Here\u2019s every Oregon heat pump incentive in 2026.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/or",
   },
@@ -30,7 +30,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in Oregon in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Oregon heat pump rebates in 2026 come primarily from Energy Trust of Oregon ($800\u20131,000 for most homeowners, up to $3,000 income-qualified) and the ODOE Heat Pump Purchase Program (HP3, up to $2,000 \u2014 owner-occupied funding exhausted, rental and new construction still available). The Community Heat Pump Deployment Program offers up to $7,000 in select counties. Federal tax credits (25C/25D) expired December 31, 2025. HOMES and HEAR rebates (up to $8,000) are expected to launch Spring 2026 but are not yet available.",
+        text: "Oregon heat pump rebates in 2026 come primarily from Energy Trust of Oregon ($800\u20131,000 for most homeowners, up to $3,000 income-qualified) and the ODOE Heat Pump Purchase Program (HP3, up to $2,000 \u2014 owner-occupied funding exhausted, rental and new construction still available). The Community Heat Pump Deployment Program offers up to $7,000 in select counties. Federal tax credits (25C/25D) expired December 31, 2025. HOMES and HEAR rebates (up to $8,000) have not yet launched (ODOE targets a phased 2026 rollout, pending U.S. DOE approval).",
       },
     },
     {
@@ -54,7 +54,7 @@ const faqJsonLd = {
       name: "When will Oregon\u2019s HOMES and HEAR rebates launch?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "ODOE expects HOMES and HEAR to launch in Spring 2026, but no specific date has been announced and all timelines are subject to U.S. DOE approval. Energy Trust will administer rebates in PGE and Pacific Power service areas. Earth Advantage handles consumer-owned utility and Idaho Power territories. Rebates are not retroactive \u2014 installations must occur after program launch.",
+        text: "ODOE has targeted a phased launch beginning in spring 2026, but no firm date has been set and all timelines remain subject to U.S. DOE approval; as of June 2026 the programs are not yet accepting applications. Energy Trust will administer rebates in PGE and Pacific Power service areas. Earth Advantage handles consumer-owned utility and Idaho Power territories. Rebates are not retroactive \u2014 installations must occur after program launch.",
       },
     },
     {
@@ -138,7 +138,7 @@ export default function OregonPage() {
             </div>
             <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
               <p className="font-semibold text-amber-800 mb-1">&#9888; HOMES and HEAR have not launched yet</p>
-              <p className="text-sm text-amber-900">Oregon was awarded over $113 million in HOMES/HEAR funding, but neither program is accepting applications as of March 2026. ODOE expects a Spring 2026 launch pending DOE approval. Rebates are not retroactive &#8212; installations must occur after launch. Do not rely on contractor claims about HEAR amounts until the program is live.</p>
+              <p className="text-sm text-amber-900">Oregon was awarded over $113 million in HOMES/HEAR funding, but neither program is accepting applications as of June 2026. ODOE&apos;s planned phased rollout (individual homes first) remains pending U.S. DOE approval. Rebates are not retroactive &#8212; installations must occur after launch. Do not rely on contractor claims about HEAR amounts until the program is live.</p>
             </div>
           </div>
         </div>
@@ -231,7 +231,7 @@ export default function OregonPage() {
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-amber-800 mb-1">&#9888; Common mistake: assuming HP3 owner-occupied funding is still available</p>
-            <p className="text-sm text-amber-900">Round 1 and Round 2 funding for owner-occupied homes is fully reserved. Rental property funding ($6.5M remaining) and new construction funding ($6.8M remaining) are still available as of February 2026. HP3 can stack with Energy Trust but <strong>cannot</strong> stack with HOMES or HEAR &#8212; you must choose one path.</p>
+            <p className="text-sm text-amber-900">Round 1 and Round 2 funding for owner-occupied homes is fully reserved. Rental property and new construction funding remained available as of May 2026 &#8212; check the ODOE HP3 page for current balances. HP3 can stack with Energy Trust but <strong>cannot</strong> stack with HOMES or HEAR &#8212; you must choose one path.</p>
           </div>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Community Heat Pump Deployment Program (CHPDP) &#8212; up to $7,000</h3>
@@ -249,9 +249,9 @@ export default function OregonPage() {
       {/* 7. HOMES / HEAR */}
       <section className="py-12">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">HOMES and HEAR &#8212; expected Spring 2026</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">HOMES and HEAR &#8212; pending launch</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Oregon was awarded over <strong>$113 million</strong> (~$57M per program) in IRA-funded HOMES and HEAR rebates. As of March 2026, <strong>neither program has launched for consumers</strong>. ODOE expects a Spring 2026 launch pending U.S. DOE approval. Energy Trust will administer in PGE and Pacific Power service areas; Earth Advantage handles consumer-owned utility and Idaho Power territories.
+            Oregon was awarded over <strong>$113 million</strong> (~$57M per program) in IRA-funded HOMES and HEAR rebates. As of June 2026, <strong>neither program has launched for consumers</strong>. ODOE&apos;s planned phased rollout remains pending U.S. DOE approval. Energy Trust will administer in PGE and Pacific Power service areas; Earth Advantage handles consumer-owned utility and Idaho Power territories.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">HEAR rebate amounts (when live)</h3>
@@ -518,7 +518,7 @@ export default function OregonPage() {
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">HP3 remaining funds</p>
-              <p className="text-sm text-gray-600 mt-1">Owner-occupied funding is exhausted, but rental property ($6.5M) and new construction ($6.8M) funding remain available. Once depleted, HP3 will not be replenished &#8212; it is a one-time EPA grant. Rental property owners and developers should act while funding lasts.</p>
+              <p className="text-sm text-gray-600 mt-1">Owner-occupied funding is exhausted, but rental property and new construction funding remained available as of May 2026. Once depleted, HP3 will not be replenished &#8212; it is a one-time EPA grant. Rental property owners and developers should act while funding lasts.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Energy Trust 2026 program changes</p>
@@ -603,7 +603,7 @@ export default function OregonPage() {
         <div className="container-narrow">
           <div className="bg-gray-100 rounded-lg p-6">
             <p className="text-gray-500 text-xs leading-relaxed">
-              <strong>Disclaimer:</strong> This page covers the main statewide, utility, and IRA heat pump incentives available to Oregon homeowners in 2026. It does not calculate savings, guarantee eligibility, or represent any incentive program. Oregon&apos;s HOMES and HEAR programs have not launched as of March 2026, and expected rebate amounts may change when programs are finalized. Energy Trust rebate amounts are subject to change. We verify status regularly but programs can change without notice. Always confirm current amounts and eligibility with Energy Trust of Oregon, ODOE, and your contractor before making decisions.
+              <strong>Disclaimer:</strong> This page covers the main statewide, utility, and IRA heat pump incentives available to Oregon homeowners in 2026. It does not calculate savings, guarantee eligibility, or represent any incentive program. Oregon&apos;s HOMES and HEAR programs have not launched as of June 2026, and expected rebate amounts may change when programs are finalized. Energy Trust rebate amounts are subject to change. We verify status regularly but programs can change without notice. Always confirm current amounts and eligibility with Energy Trust of Oregon, ODOE, and your contractor before making decisions.
             </p>
           </div>
           <p className="text-sm text-gray-600 mt-4">
