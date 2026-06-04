@@ -97,7 +97,7 @@ export default function VermontPage() {
             Vermont Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Vermont still offers heat pump rebates in 2026 — but they&apos;re smaller and more fragmented than before. With federal tax credits gone and the Clean Heat Standard canceled, most homeowners now rely on utility programs through Efficiency Vermont and Burlington Electric. Rebates range from about <strong>$2,000 to $7,950</strong> depending on your utility and income. Burlington Electric leads the state at up to <strong>$7,950</strong> for income-qualified ducted systems. Green Mountain Power customers can stack up to <strong>$5,400</strong> at ≤80% AMI. This guide covers all major Vermont heat pump incentives available in 2026, including Efficiency Vermont, Burlington Electric, Green Mountain Power, VEC, and the paused HEAR program. Here&apos;s what&apos;s actually available.
+            Vermont still offers heat pump rebates in 2026 — but they&apos;re smaller and more fragmented than before. With federal tax credits gone and the Clean Heat Standard canceled, most homeowners now rely on utility programs through Efficiency Vermont and Burlington Electric. Rebates range from about <strong>$2,000 to $7,950</strong> for a ducted system — up to <strong>~$9,150</strong> with a heat pump water heater — depending on your utility and income. Burlington Electric leads the state at up to <strong>$7,950</strong> for income-qualified ducted systems. Green Mountain Power customers can stack up to <strong>$5,400</strong> at ≤80% AMI. This guide covers all major Vermont heat pump incentives available in 2026, including Efficiency Vermont, Burlington Electric, Green Mountain Power, VEC, and the paused HEAR program. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
             Last verified: {formattedDate}
@@ -285,7 +285,7 @@ export default function VermontPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Utility Programs — Where You Live Changes the Math</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Vermont&apos;s six major electric utilities offer strikingly different incentive levels. Your utility determines whether you get about $2,200 or as much as $7,950 for the same installation.
+            Vermont&apos;s six major utilities offer strikingly different incentive levels. Your utility determines whether you get about $2,200 or as much as $7,950 for the same installation.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Green Mountain Power (GMP) — 75% of Vermont Customers</h3>
