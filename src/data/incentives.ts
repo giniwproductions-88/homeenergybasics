@@ -216,9 +216,9 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "MA",
     stateName: "Massachusetts",
     status: "open",
-    lastVerified: "2026-03-22",
+    lastVerified: "2026-06-03",
     summary:
-      "Mass Save heat pump rebates are active and recently restructured. Whole-home rebates reach $2,650/ton (max $8,500) with income-based adders. Partial-home rebates are $1,125/ton. A $500 sizing bonus and $500 weatherization bonus are available. R-410A refrigerant systems are excluded — must use R-32 or R-454B. Federal tax credits (25C/25D) ended December 31, 2025. HEAR funding is being delivered through Mass Save for households ≤60% AMI.",
+      "Mass Save heat pump rebates are active and recently restructured. Whole-home rebates reach $2,650/ton (max $8,500) with income-based adders. Partial-home rebates are $1,125/ton. A $500 sizing bonus and $500 weatherization bonus are available. R-410A refrigerant systems are excluded — must use R-32 or R-454B. Federal tax credits (25C/25D) ended December 31, 2025. HEAR funding is being integrated into Mass Save's income-eligible programs but is not yet separately claimable.",
     sources: [
       {
         label: "Mass Save — Heat Pump Rebates",

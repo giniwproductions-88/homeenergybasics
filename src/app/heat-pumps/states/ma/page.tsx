@@ -50,7 +50,7 @@ export default function MassachusettsPage() {
         name: "What is the seasonal heat pump electric rate in Massachusetts?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Since November 2025, Eversource, National Grid, and Unitil offer reduced distribution and transmission charges for heat pump households from November 1 through April 30 each year. The DPU estimates average savings of approximately $540 per winter. Customers who installed heat pumps through Mass Save since January 2019 were auto-enrolled.",
+          text: "Since November 2025, Eversource, National Grid, and Unitil offer reduced winter distribution charges for heat pump households from November 1 through April 30 each year (Eversource also reduces the transmission charge). The DPU estimates average savings of approximately $540 per winter. Customers who installed heat pumps through Mass Save since January 2019 were auto-enrolled.",
         },
       },
       {
