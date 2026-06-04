@@ -30,7 +30,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in New York in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "NYS Clean Heat offers $6,000\u2013$12,000 for air-source heat pumps (depending on utility and DAC status) and $14,000\u2013$25,000 for geothermal. EmPower+ with HEAR funding provides up to $24,000 for income-eligible households at or below 80% AMI. The new Weatherized Tier (launched March 1, 2026) unlocks bonus incentives and the 85% project cost cap. Federal 25C and 25D tax credits expired December 31, 2025.",
+        text: "NYS Clean Heat offers $6,000\u2013$12,000 for air-source heat pumps (depending on utility and DAC status) and $14,000\u2013$25,000 for geothermal. EmPower+ with HEAR funding provides up to $24,000 for income-eligible households at or below 80% AMI. The new Weatherized Tier, which unlocks bonus incentives and the 85% project cost cap, was delayed from March 1 to September 1, 2026. Federal 25C and 25D tax credits expired December 31, 2025.",
       },
     },
     {
@@ -130,7 +130,7 @@ export default function NewYorkPage() {
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; Total Potential Savings</p>
-              <p className="text-sm text-green-900">$6,000&ndash;$12,000 (above 80% AMI, Clean Heat only) to $24,000+ (below 80% AMI, EmPower+ with HEAR). Geothermal: $14,000&ndash;$25,000 plus 25% state tax credit up to $5,000.</p>
+              <p className="text-sm text-green-900">$6,000&ndash;$12,000 (above 80% AMI, Clean Heat only) to $24,000+ (below 80% AMI, EmPower+ with HEAR). Geothermal: $14,000&ndash;$25,000 plus 25% state tax credit up to $10,000.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">&#10007; Federal Tax Credits Expired</p>
@@ -530,7 +530,7 @@ export default function NewYorkPage() {
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">NY State Geothermal Tax Credit</p>
-              <p className="text-sm text-gray-600 mt-1">The 25% state geothermal tax credit (up to $5,000) remains active for 2026. Combined with Clean Heat rebates of $14,000&ndash;$25,000, this makes NY one of the best states for ground-source systems.</p>
+              <p className="text-sm text-gray-600 mt-1">The 25% state geothermal tax credit (up to $10,000) remains active for 2026. Combined with Clean Heat rebates of $14,000&ndash;$25,000, this makes NY one of the best states for ground-source systems.</p>
             </div>
           </div>
         </div>

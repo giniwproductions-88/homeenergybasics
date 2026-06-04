@@ -289,9 +289,9 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "NY",
     stateName: "New York",
     status: "open",
-    lastVerified: "2026-03-22",
+    lastVerified: "2026-06-03",
     summary:
-      "New York heat pump incentives are active through the NYS Clean Heat Program, administered by six utilities. Rebates range from $5,000–$12,000 for air-source heat pumps depending on utility territory, decommissioning status, and DAC designation. EmPower+ and HEAR provide up to $24,000 for income-qualified households. The state geothermal tax credit covers 25% up to $10,000. Federal tax credits (25C/25D) ended December 31, 2025.",
+      "New York heat pump incentives are active through the NYS Clean Heat Program, administered by six utilities. As of January 2026, residential rebates are limited to 1–4 unit homes. Rebates range from $5,000–$12,000 for air-source heat pumps depending on utility territory, decommissioning status, and DAC designation. EmPower+ and HEAR provide up to $24,000 for income-qualified households. The state geothermal tax credit covers 25% up to $10,000. Federal tax credits (25C/25D) ended December 31, 2025.",
     sources: [
       {
         label: "NYSERDA — NYS Clean Heat Program",
