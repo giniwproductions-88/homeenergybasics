@@ -309,9 +309,10 @@ export default function ColoradoPage() {
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            HEAR is available to single-family homes, apartments, and condos;
-            manufactured/mobile homes and small multifamily buildings are being
-            added through the Home Efficiency Rebates (HER) program during 2026.
+            HEAR is available to single-family homes, apartments, and condos,
+            with small multifamily buildings being added in 2026;
+            manufactured/mobile homes are covered through the separate Home
+            Efficiency Rebates (HER) program.
             Federal HEAR funding runs through September 30, 2031 or until funds
             are exhausted &mdash; but Front Range demand has been intense. The
             Colorado Energy Office split single-family funding into two regions,
@@ -974,10 +975,12 @@ export default function ColoradoPage() {
                 HER housing-type rollout
               </p>
               <p className="text-sm text-gray-600 mt-1">
-                HEAR already covers single-family homes, apartments, and condos.
-                Manufactured/mobile homes and small multifamily buildings are
-                being added through the Home Efficiency Rebates (HER) program
-                during 2026. Check the CEO website for current eligibility.
+                HEAR already covers single-family homes, apartments, and condos,
+                with small multifamily buildings being added in 2026.
+                Manufactured/mobile homes and large multifamily buildings are
+                covered through the separate Home Efficiency Rebates (HER)
+                program, now rolling out. Check the CEO website for current
+                eligibility.
               </p>
             </div>
           </div>
