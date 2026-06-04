@@ -144,7 +144,7 @@ export default function ArizonaPage() {
           <h2 id="federal-expired" className="text-2xl font-bold text-gray-900 mb-4">Federal tax credits are gone</h2>
           <div className="bg-red-50 border border-red-200 rounded-lg p-6 mb-6">
             <p className="text-red-900 leading-relaxed">
-              <strong>Section 25C</strong> (Energy Efficient Home Improvement Credit) and <strong>Section 25D</strong> (Residential Clean Energy Credit) were both repealed effective December 31, 2025, under the One Big Beautiful Bill Act. These credits were originally scheduled to run through 2032–2034 under the Inflation Reduction Act but were terminated roughly seven years early. There is no &quot;placed in service&quot; exception — a heat pump purchased in 2025 but installed in 2026 does not qualify. No replacement legislation has been introduced as of March 2026.
+              <strong>Section 25C</strong> (Energy Efficient Home Improvement Credit) and <strong>Section 25D</strong> (Residential Clean Energy Credit) were both repealed effective December 31, 2025, under the One Big Beautiful Bill Act. These credits were originally scheduled to run through 2032–2034 under the Inflation Reduction Act but were terminated roughly seven years early. There is no &quot;placed in service&quot; exception — a heat pump purchased in 2025 but installed in 2026 does not qualify. No replacement legislation has been introduced as of June 2026.
             </p>
           </div>
           <p className="text-gray-700 leading-relaxed mb-4">
@@ -161,7 +161,7 @@ export default function ArizonaPage() {
         <div className="container-narrow">
           <h2 id="hear-program" className="text-2xl font-bold text-gray-900 mb-4">Efficiency Arizona HEAR program</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Arizona&apos;s Home Electrification and Appliance Rebates (HEAR) program — branded <strong>Efficiency Arizona</strong> — is the largest heat pump incentive currently operating in the state. Administered by the Arizona Governor&apos;s Office of Resiliency and funded by approximately <strong>$153 million</strong> in federal IRA allocations, the program launched in early 2025 and runs through <strong>September 30, 2031</strong>, or until funds are exhausted. As of mid-March 2026, approximately 800 rebates had been issued statewide.
+            Arizona&apos;s Home Electrification and Appliance Rebates (HEAR) program — branded <strong>Efficiency Arizona</strong> — is the largest heat pump incentive currently operating in the state. Administered by the Arizona Governor&apos;s Office of Resiliency and funded by approximately <strong>$153 million</strong> in federal IRA allocations, the program launched in early 2025 and runs through <strong>September 30, 2031</strong>, or until funds are exhausted. As of April 30, 2026, the program had issued more than 1,000 rebates statewide (1,076), with more than three-quarters going to low-income households.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">HEAR rebate amounts</h3>
@@ -252,7 +252,7 @@ export default function ArizonaPage() {
         <div className="container-narrow">
           <h2 id="homes-program" className="text-2xl font-bold text-gray-900 mb-4">HOMES program — pending launch</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Arizona&apos;s Home Efficiency Rebates (HOMES) program has <strong>not yet launched</strong> as of March 2026. Multiple sources indicate it will start later in the year. Unlike HEAR, HOMES uses a whole-home performance approach and will be available to <strong>all income levels</strong> — making it the first Arizona incentive available to above-150% AMI households since federal credits expired.
+            Arizona&apos;s Home Efficiency Rebates (HOMES) program has <strong>not yet launched</strong> as of mid-2026; the Governor&apos;s Office of Resiliency has indicated Efficiency Arizona will expand to multifamily units in the coming months. Unlike HEAR, HOMES uses a whole-home performance approach and will be available to <strong>all income levels</strong> — making it the first Arizona incentive available to above-150% AMI households since federal credits expired.
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
@@ -301,7 +301,7 @@ export default function ArizonaPage() {
             <p className="text-sm text-amber-900">Many contractors and third-party sites still list APS rebates that no longer exist. The APS residential rebate program ended January 1, 2026. If you&apos;re an APS customer, your options are Efficiency Arizona HEAR (if income-qualified) or waiting for the HOMES program launch.</p>
           </div>
 
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">SRP Cool Cash — active through April 30, 2026</h3>
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">SRP Cool Cash — active through April 30, 2027</h3>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
               <thead>
@@ -554,11 +554,11 @@ export default function ArizonaPage() {
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">SRP Cool Cash renewal</p>
-              <p className="text-sm text-gray-600 mt-1">The current program year expires April 30, 2026. SRP has not yet confirmed renewal terms or rebate levels for the next cycle. If you&apos;re an SRP customer planning a heat pump installation, submitting before April 30 locks in the current rates.</p>
+              <p className="text-sm text-gray-600 mt-1">SRP renewed Cool Cash for the new program year at the same rebate levels ($75/$150/$225 per ton, up to $1,125), with qualifying installs now accepted through April 30, 2027. SRP can change or cancel the program at any time, so confirm current terms before scheduling.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">APS regulatory proceedings</p>
-              <p className="text-sm text-gray-600 mt-1">APS eliminated rebates following ACC Decision 81584. Future rate cases or policy changes could restore some form of residential efficiency program, but nothing has been proposed as of March 2026.</p>
+              <p className="text-sm text-gray-600 mt-1">APS eliminated rebates following ACC Decision 81584. Future rate cases or policy changes could restore some form of residential efficiency program, but nothing has been proposed as of June 2026.</p>
             </div>
           </div>
         </div>

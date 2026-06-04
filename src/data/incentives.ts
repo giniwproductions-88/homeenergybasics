@@ -1075,7 +1075,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "AZ",
     stateName: "Arizona",
     status: "open",
-    lastVerified: "2026-03-23",
+    lastVerified: "2026-06-03",
     summary:
       "Efficiency Arizona HEAR offers up to $8,000 per heat pump for households below 150% AMI. SRP Cool Cash provides up to $1,125 for variable-capacity systems. APS eliminated all residential rebates in 2026. Federal tax credits expired December 31, 2025. HOMES program expected later in 2026.",
     sources: [
