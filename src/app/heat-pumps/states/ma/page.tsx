@@ -460,7 +460,7 @@ export default function MassachusettsPage() {
           <div className="space-y-4">
             <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
               <p className="font-semibold text-blue-800 mb-1">Seasonal heat pump electric rate (~$540/winter)</p>
-              <p className="text-sm text-blue-900">Since November 2025, Eversource, National Grid, and Unitil offer reduced distribution and transmission charges for heat pump households from November 1 through April 30. Over 100,000 customers were auto-enrolled — those who installed heat pumps through Mass Save since January 2019. A Switchbox/Acadia Center analysis found 64% of Massachusetts households would save money switching to a heat pump under these rates.</p>
+              <p className="text-sm text-blue-900">Since November 2025, Eversource, National Grid, and Unitil offer reduced winter distribution charges for heat pump households from November 1 through April 30 (Eversource also reduces the transmission charge). Over 100,000 customers were auto-enrolled — those who installed heat pumps through Mass Save since January 2019. A Switchbox/Acadia Center analysis found 64% of Massachusetts households would save money switching to a heat pump under these rates.</p>
             </div>
 
             <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
