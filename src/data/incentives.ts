@@ -266,9 +266,9 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "WA",
     stateName: "Washington",
     status: "open",
-    lastVerified: "2026-03-22",
+    lastVerified: "2026-06-03",
     summary:
-      "Washington heat pump rebates are available through multiple utilities. Puget Sound Energy offers up to $4,000 for ducted heat pumps and $1,500 for ductless. Avista, Clark Public Utilities, and Snohomish PUD also offer programs. Washington's HEAR program launched in 2025 with up to $14,000 for income-qualified households. Federal tax credits (25C/25D) ended December 31, 2025.",
+      "Washington has two rebate tracks plus utility programs. The state HEAR program (Climate Commitment Act, ~$103.6M) is active for households \u2264150% AMI. The federal HARP/HOMES rebates (up to $8,000) are administered by Guidehouse but have not launched. PSE utility rebates run $1,500\u2013$4,000 (income-qualified). Federal tax credits (25C/25D) ended December 31, 2025.",
     sources: [
       {
         label: "Puget Sound Energy — Heat Pump Rebates",
