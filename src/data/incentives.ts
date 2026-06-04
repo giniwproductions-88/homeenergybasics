@@ -590,7 +590,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "MI",
     stateName: "Michigan",
     status: "open",
-    lastVerified: "2026-03-22",
+    lastVerified: "2026-06-03",
     summary:
       "Michigan's $210 million MiHER program offers up to $8,000 for heat pumps at point of sale for income-qualifying households (≤150% AMI). DTE Energy rebates run $150–$1,200. Consumers Energy offers $300–$350. Traverse City Light & Power offers up to $3,000. Ann Arbor's A2ZERO adds $4,000–$5,500. Federal tax credits (25C/25D) ended December 31, 2025.",
     sources: [

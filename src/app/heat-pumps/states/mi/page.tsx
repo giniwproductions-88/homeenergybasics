@@ -74,7 +74,7 @@ export default function MichiganPage() {
         name: "What happened to the federal heat pump tax credit?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Both the Section 25C ($2,000/year for heat pumps) and Section 25D (30% for geothermal) federal tax credits expired December 31, 2025 under the One Big Beautiful Bill Act. As of March 2026, the IRS guidance reflects the credits as ended and no replacement federal heat pump credit is active.",
+          text: "Both the Section 25C ($2,000/year for heat pumps) and Section 25D (30% for geothermal) federal tax credits expired December 31, 2025 under the One Big Beautiful Bill Act. As of June 2026, the IRS guidance reflects the credits as ended and no replacement federal heat pump credit is active.",
         },
       },
     ],
@@ -185,7 +185,7 @@ export default function MichiganPage() {
               defines the expenditure date as when installation is completed, not when
               equipment is purchased or paid for. For 25D, unused credit from
               qualifying 2025 expenditures can be carried forward to future tax
-              years. Section 25C offers no carryforward. As of March 2026, no
+              years. Section 25C offers no carryforward. As of June 2026, no
               replacement federal heat pump credit is active.{" "}
               <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">
                 Full details on the federal credit expiration →
