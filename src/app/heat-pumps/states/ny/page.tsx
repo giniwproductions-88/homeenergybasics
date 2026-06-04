@@ -432,7 +432,7 @@ export default function NewYorkPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Climate Context</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            New York spans climate zones 4A (NYC, Long Island) through 6A (Adirondacks, far upstate). All NHSaves-qualifying equipment must be on the NEEP Cold Climate Product List, rated to -15&#176;F.
+            New York spans climate zones 4A (NYC, Long Island) through 6A (Adirondacks, far upstate). All NYS Clean Heat&ndash;qualifying equipment must be on the NEEP Cold Climate Product List, rated to -15&#176;F.
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
