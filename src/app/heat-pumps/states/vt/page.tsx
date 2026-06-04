@@ -50,7 +50,7 @@ export default function VermontPage() {
         name: "Can I get 0% financing for a heat pump in Vermont?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. The Home Energy Loan program offers 0% interest for low- and moderate-income households, with loans up to $40,000 and terms up to 15 years. Lending partners include VSECU, EastRise Credit Union, and Opportunities Credit Union. Work must be done by an Efficiency Excellence Network contractor.",
+          text: "Yes. The Home Energy Loan offers 0% interest for income-eligible households, financing up to 100% of a project (maximum $25,000) with terms up to 15 years. Lending partners are EastRise Credit Union and Cornerstone Housing Partners. Work must be done by an Efficiency Excellence Network contractor.",
         },
       },
       {
@@ -174,7 +174,7 @@ export default function VermontPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">HOMES for Low-Income via WAP</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            HOMES was targeted for January 2026 launch through the Weatherization Assistance Program for low-income households (≤80% AMI), providing up to <strong>$16,000</strong> in efficiency upgrades at no cost. However, no official launch announcement has been confirmed. Contact your <a href="https://dcf.vermont.gov/benefits/weatherization" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">local Community Action Agency</a> regardless.
+            HOMES is delivered through the Weatherization Assistance Program for low-income households (≤80% AMI), providing up to <strong>$16,000</strong> in efficiency upgrades at no cost. No IRA-funded consumer launch has been confirmed, but eligible households can sign up for weatherization services now through their <a href="https://dcf.vermont.gov/benefits/weatherization" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">local Community Action Agency</a>.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">HEAR Rebate Structure (If Launched)</h3>
@@ -227,7 +227,7 @@ export default function VermontPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Efficiency Vermont — The Statewide Baseline</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Efficiency Vermont operates the baseline rebate program covering nearly all Vermont electric customers (except Burlington Electric territory). Rebates are applied as instant point-of-sale discounts through participating HVAC distributors. Equipment must be new, installed in Vermont, and carry <strong>ENERGY STAR Cold Climate certification</strong>.
+            Efficiency Vermont operates the baseline rebate program covering nearly all Vermont electric customers (except Burlington Electric territory). Rebates are applied as instant point-of-sale discounts through participating HVAC distributors. Equipment must be new, installed in Vermont, and carry <strong>ENERGY STAR Cold Climate certification</strong>. These 2026 rebate levels apply to projects completed by November 2026.
           </p>
 
           <div className="overflow-x-auto mb-6">
@@ -256,11 +256,6 @@ export default function VermontPage() {
                   <td className="p-3">Central ducted cold-climate ASHP</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-3">Air-to-water heat pump</td>
-                  <td className="p-3 font-semibold">Up to $6,000</td>
-                  <td className="p-3">Hydronic distribution systems</td>
-                </tr>
-                <tr className="border-b">
                   <td className="p-3">Heat pump water heater</td>
                   <td className="p-3 font-semibold">$600</td>
                   <td className="p-3">Instant discount at purchase</td>
@@ -280,7 +275,7 @@ export default function VermontPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Home Energy Loan — 0% Financing</h3>
           <p className="text-gray-700 leading-relaxed">
-            The Home Energy Loan offers <strong>0% interest</strong> for low- and moderate-income households, with loans up to <strong>$40,000</strong> and terms up to 15 years. Standard rates start at 4.99% APR. Lending partners include VSECU, EastRise Credit Union, and Opportunities Credit Union. Work must be done by an Efficiency Excellence Network contractor.
+            The Home Energy Loan offers <strong>0% interest</strong> for income-eligible households, financing up to 100% of a project (maximum <strong>$25,000</strong>) with terms up to 15 years. Households above the moderate-income limits may pay market interest rates. Lending partners are EastRise Credit Union and Cornerstone Housing Partners. Work must be done by an Efficiency Excellence Network contractor.
           </p>
         </div>
       </section>
@@ -546,7 +541,7 @@ export default function VermontPage() {
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-6">
-            About <strong>60% of Vermont homes</strong> still heat with fuel oil or propane — more expensive and volatile than electricity. Heating oil runs roughly <strong>$3.70–$3.96/gallon</strong>, propane about <strong>$3.74–$3.77/gallon</strong>. Electric heating adoption has more than tripled since 2013, with Green Mountain Power alone spurring installation of over 28,000 mini-splits and 2,700 whole-building systems between 2020 and 2024. For more on battery storage and time-of-use strategies, see our <Link href="/battery" className="text-brand-600 hover:underline">home battery guide</Link>.
+            About <strong>60% of Vermont homes</strong> still heat with fuel oil or propane — more expensive and volatile than electricity. By the end of the 2025–26 heating season, Vermont residential heating oil had climbed to roughly <strong>$4.90/gallon</strong> and propane to about <strong>$3.80/gallon</strong> (EIA), with 2026 fuel-market volatility pushing prices higher still. Electric heating adoption has more than tripled since 2013, with Green Mountain Power alone spurring installation of over 28,000 mini-splits and 2,700 whole-building heat pumps since 2020. For more on battery storage and time-of-use strategies, see our <Link href="/battery" className="text-brand-600 hover:underline">home battery guide</Link>.
           </p>
         </div>
       </section>
@@ -607,7 +602,7 @@ export default function VermontPage() {
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">New England Heat Pump Accelerator</p>
-              <p className="text-sm text-gray-600 mt-1">A $450 million group-purchasing program across VT, MA, CT, RI, ME, and NH launched in early 2026. This may reduce installed costs but details are still emerging.</p>
+              <p className="text-sm text-gray-600 mt-1">A $450 million regional group-purchasing program launched in early 2026 across five neighboring states — Connecticut, Maine, Massachusetts, New Hampshire, and Rhode Island. Vermont is not a participating state, so Accelerator incentives are not available to Vermont homeowners, though the regional effort may influence equipment pricing over time.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Clean Heat Standard Is Dead</p>
