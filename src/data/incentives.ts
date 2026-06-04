@@ -328,9 +328,9 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "CT",
     stateName: "Connecticut",
     status: "open",
-    lastVerified: "2026-03-22",
+    lastVerified: "2026-06-03",
     summary:
-      "Connecticut heat pump incentives are active through Energize CT. Rebates range from $250–$1,000 per ton depending on system type and fuel switching. Federal tax credits ended December 31, 2025. HEAR rebates are funded but not yet available. The Smart-E Loan offers 0.99% APR financing through March 31, 2026.",
+      "Connecticut heat pump incentives are active through Energize CT. Rebates range from $250–$1,000 per ton depending on system type and fuel switching. Federal tax credits ended December 31, 2025. HEAR rebates are funded but not yet available. The Smart-E Loan offers 0.99% APR heat pump financing, extended through June 30, 2026.",
     sources: [
       {
         label: "Energize CT — Air-Source Heat Pump Rebates",
@@ -357,6 +357,10 @@ export const incentives: Record<StateCode, StateIncentive> = {
         url: "https://www.energizect.com/IRA-FAQ",
       },
       {
+        label: "CT Green Bank — Smart-E Heat Pump Special Offer (0.99% APR through June 30, 2026)",
+        url: "https://www.ctgreenbank.com/smart-e-heat-pump-special-offer-2026/",
+      },
+      {
         label: "IRS 25C (expired)",
         url: "https://www.irs.gov/credits-deductions/energy-efficient-home-improvement-credit",
       },
@@ -367,9 +371,9 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "CO",
     stateName: "Colorado",
     status: "open",
-    lastVerified: "2026-03-22",
+    lastVerified: "2026-06-03",
     summary:
-      "Colorado offers HEAR rebates up to $8,000 for cold-climate heat pumps (income-qualified), Xcel Energy utility rebates up to $2,250/ton, and a $1,000 state tax credit for air-source systems. Federal 25C/25D credits ended December 31, 2025.",
+      "Xcel Energy offers $2,250/ton for cold-climate heat pumps (no income limit), stackable with Colorado's $1,000 state tax credit. Income-qualified HEAR rebates up to $8,000 are available, but Front Range single-family funding is fully reserved as of April 2026 — only the rest of the state is still accepting applications. Federal 25C/25D credits expired December 31, 2025.",
     sources: [
       {
         label: "Colorado HEAR program — Colorado Energy Office",
