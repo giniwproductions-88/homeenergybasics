@@ -8,14 +8,14 @@ export const metadata: Metadata = {
   title:
     "Rhode Island Heat Pump Rebates 2026: Up to $11,500 + Clean Heat RI & RI Energy | Home Energy Basics",
   description:
-    "Clean Heat RI covers up to 60% of heat pump costs (max $11,500). RI Energy adds $400\u2013$1,250/ton. Federal credits ended. Here\u2019s every Rhode Island incentive in 2026.",
+    "Clean Heat RI covers up to 60% of heat pump costs (max $11,500). RI Energy adds $625\u2013$1,500/ton. Federal credits ended. Here\u2019s every Rhode Island incentive in 2026.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/ri",
   },
   openGraph: {
     title: "Rhode Island Heat Pump Rebates 2026",
     description:
-      "Clean Heat RI up to $11,500, RI Energy $400\u2013$1,250/ton, HEAR electrical upgrades \u2014 the complete guide to Rhode Island heat pump incentives after federal credits expired.",
+      "Clean Heat RI up to $11,500, RI Energy $625\u2013$1,500/ton, HEAR electrical upgrades \u2014 the complete guide to Rhode Island heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/ri",
     type: "article",
   },
@@ -30,7 +30,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in Rhode Island in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Clean Heat RI covers up to 60% of heat pump installation costs, capped at $11,500 per address. The original $25 million ARPA market-rate funding is exhausted, but a new $10 million RGGI-funded round launched in July 2025 prioritizing moderate- and low-income households. Rhode Island Energy adds $150\u2013$400 per ton in utility rebates ($1,250/ton for electric resistance replacement). Heat pump water heaters qualify for $2,500 from Clean Heat RI plus $600 from RI Energy. Federal tax credits expired December 31, 2025. The HEAR program covers electrical upgrades but not heat pump HVAC systems in Rhode Island.",
+        text: "Clean Heat RI covers up to 60% of heat pump installation costs, capped at $11,500 per address. The original $25 million ARPA market-rate funding is exhausted, but a new $10 million RGGI-funded round launched in July 2025 prioritizing moderate- and low-income households. Rhode Island Energy adds up to $625 per ton in utility rebates ($1,500/ton for electric resistance replacement). Heat pump water heaters qualify for $2,500 from Clean Heat RI plus $600 from RI Energy. Federal tax credits expired December 31, 2025. The HEAR program covers electrical upgrades but not heat pump HVAC systems in Rhode Island.",
       },
     },
     {
@@ -97,7 +97,7 @@ export default function RhodeIslandPage() {
             Rhode Island Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Clean Heat RI &mdash; covering up to 60% of heat pump costs (max <strong>$11,500</strong>) &mdash; is the main incentive for Rhode Island homeowners in 2026. The original $25 million ARPA funding is largely spent, but a new <strong>$10 million</strong> RGGI-funded round launched in July 2025 for moderate- and low-income households. RI Energy utility rebates add <strong>$400&ndash;$1,250 per ton</strong> and stack cleanly. Total realistic incentives land between <strong>$10,000 and $13,300</strong> for standard-income homeowners, and low-income households can qualify for <strong>$0 out-of-pocket</strong> projects. This guide covers all major Rhode Island heat pump incentives available in 2026, including Clean Heat RI, RI Energy, HEAR, Block Island Power, and financing programs. Here&apos;s what&apos;s actually available.
+            Clean Heat RI &mdash; covering up to 60% of heat pump costs (max <strong>$11,500</strong>) &mdash; is the main incentive for Rhode Island homeowners in 2026. The original $25 million ARPA funding is largely spent, but a new <strong>$10 million</strong> RGGI-funded round launched in July 2025 for moderate- and low-income households. RI Energy utility rebates add <strong>$625&ndash;$1,500 per ton</strong> and stack cleanly. As of its July 2025 relaunch, Clean Heat RI is limited to households at or below 150% of State Median Income; eligible homeowners can see roughly <strong>$13,000 or more</strong> in combined incentives, and lower-income households can qualify for <strong>$0 out-of-pocket</strong> projects. Higher-income households are limited to RI Energy utility rebates. This guide covers all major Rhode Island heat pump incentives available in 2026, including Clean Heat RI, RI Energy, HEAR, Block Island Power, and financing programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
             Last verified: {formattedDate}
@@ -122,15 +122,15 @@ export default function RhodeIslandPage() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; Clean Heat RI: up to $11,500</p>
-              <p className="text-sm text-green-900">60% of system + installation cost. Income-eligible: 100% up to $18,000. Original ARPA market-rate funding exhausted &mdash; new $10M RGGI round active for moderate/low-income. ARPA deadline: Dec 31, 2026.</p>
+              <p className="text-sm text-green-900">60% of system + installation cost for households at or below 150% SMI; lower-income up to 100% ($18,000 cap). Original ARPA market-rate funding exhausted &mdash; new $10M RGGI round active for moderate/low-income only. ARPA deadline: Dec 31, 2026.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; RI Energy utility rebates</p>
-              <p className="text-sm text-green-900">$150&ndash;$400/ton standard (fossil fuel replacement). $1,250/ton for electric resistance replacement. HPWH: $600. Ratepayer-funded, unaffected by federal changes.</p>
+              <p className="text-sm text-green-900">Up to $625/ton standard (fossil fuel replacement). $1,500/ton for electric resistance replacement. HPWH: $600. Ratepayer-funded, unaffected by federal changes.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-1">&#10003; Potential savings: $1,200 to $18,000+</p>
-              <p className="text-sm text-green-900">$1,200 (RI Energy only, above 150% AMI if Clean Heat RI exhausted) to $18,000+ (below 150% SMI, income-eligible Clean Heat RI + HEAR electrical upgrades). Full electrification projects can reach $0 out-of-pocket for low-income households.</p>
+              <p className="font-semibold text-green-800 mb-1">&#10003; Potential savings: $1,875 to $18,000+</p>
+              <p className="text-sm text-green-900">$1,875 (RI Energy only, above 150% SMI &mdash; not eligible for Clean Heat RI) to $18,000+ (lower-income Clean Heat RI + HEAR electrical upgrades). Full electrification projects can reach $0 out-of-pocket for low-income households.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">&#10007; Federal tax credits expired</p>
@@ -173,9 +173,9 @@ export default function RhodeIslandPage() {
             Administered by the Rhode Island Office of Energy Resources and operated by Abode Energy Management, Clean Heat RI was originally funded with <strong>$25 million</strong> from ARPA. The market-rate residential program exhausted its initial ARPA funding by early 2025 after issuing over 3,900 residential rebates. In July 2025, Governor McKee announced a <strong>new $10 million round</strong> using RGGI (Regional Greenhouse Gas Initiative) proceeds, prioritizing moderate- and low-income households. All ARPA funds must be spent by December 31, 2026.
           </p>
 
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">Standard residential (all income levels)</h3>
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">Standard rebate (households at or below 150% SMI)</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Must be displacing natural gas, propane, or oil heating. Electric resistance customers should use RI Energy&apos;s enhanced rebate instead.
+            Since the program&apos;s July 2025 RGGI-funded relaunch, all Clean Heat RI applicants must earn at or below 150% of State Median Income (about $178,500 for a family of four). Households above that limit are no longer eligible and should look to RI Energy utility rebates instead. Eligible projects must displace natural gas, propane, or oil heating; electric-resistance customers should use RI Energy&apos;s enhanced rebate.
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
@@ -206,14 +206,14 @@ export default function RhodeIslandPage() {
             </table>
           </div>
 
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">Income-eligible (&#8804;150% State Median Income)</h3>
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">Lower-income households &mdash; up to 100% coverage</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Covers <strong>100% of project cost, up to $18,000</strong> per address &mdash; including electrical service upgrades. Income limit for a family of four: $178,500. This tier currently has a waitlist. The rebate is applied at point of sale &mdash; the contractor deducts it directly from your invoice.
+            Lower-income households can receive <strong>100% of project cost, up to $18,000</strong> per address &mdash; including electrical service upgrades. This tier currently has a waitlist. The rebate is applied at point of sale &mdash; the contractor deducts it directly from your invoice.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Equipment requirements</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Equipment must meet <strong>ENERGY STAR 6.1 Cold Climate</strong> criteria and appear on the NEEP Qualified Products List. Heat pump water heaters need <strong>UEF &#8805;3.30</strong> (240V) or <strong>UEF &#8805;2.20</strong> (120V/split). Installation must use a contractor from the Clean Heat RI Heat Pump Installer Network (HPIN). The home must be sufficiently weatherized.
+            Equipment must meet <strong>ENERGY STAR 6.1 Cold Climate</strong> criteria and appear on the NEEP Qualified Products List. Heat pump water heaters need <strong>UEF &#8805;3.30</strong> (240V) or <strong>UEF &#8805;2.20</strong> (120V/split). Installation must use a contractor from the Clean Heat RI Heat Pump Installer Network (HPIN). The home must be sufficiently weatherized. As of January 1, 2026, systems using <strong>R-410A refrigerant no longer qualify</strong> for state or utility heat pump incentives &mdash; equipment must use a low-GWP A2L refrigerant.
           </p>
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5">
@@ -264,7 +264,7 @@ export default function RhodeIslandPage() {
             </table>
           </div>
           <p className="text-gray-700 leading-relaxed">
-            The moderate-income pathway (80&ndash;150% AMI) remains under development. Contact: Energy.HEAR@energy.ri.gov.
+            The moderate-income pathway (80&ndash;150% AMI) launched as a coupon-based pilot in 2026 across 11 municipalities (Pawtucket, East Providence, Barrington, Warren, Bristol, Little Compton, Tiverton, Portsmouth, Middletown, Newport, and Jamestown), with statewide expansion planned later in the year. Contact: Energy.HEAR@energy.ri.gov.
           </p>
         </div>
       </section>
@@ -288,12 +288,8 @@ export default function RhodeIslandPage() {
               </thead>
               <tbody>
                 <tr className="border-b">
-                  <td className="p-3">Ducted central / ducted mini-split</td>
-                  <td className="p-3 font-semibold">Up to $400/ton</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">Ductless mini-split</td>
-                  <td className="p-3 font-semibold">$150&ndash;$200/ton</td>
+                  <td className="p-3">Central or mini-split heat pump</td>
+                  <td className="p-3 font-semibold">Up to $625/ton</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Heat pump water heater</td>
@@ -309,7 +305,7 @@ export default function RhodeIslandPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Enhanced rebates (replacing electric resistance)</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            If you&apos;re replacing electric resistance heating (baseboard, wall heaters), RI Energy offers <strong>$1,250 per ton</strong> &mdash; significantly higher than the standard rate. For a 3-ton system, that&apos;s <strong>$3,750</strong>.
+            If you&apos;re replacing electric resistance heating (baseboard, wall heaters), RI Energy offers <strong>$1,500 per ton</strong> &mdash; significantly higher than the standard rate. For a 3-ton system, that&apos;s <strong>$4,500</strong>.
           </p>
 
           <p className="text-gray-700 leading-relaxed mb-4">
@@ -358,30 +354,30 @@ export default function RhodeIslandPage() {
 
           <div className="space-y-4 mb-8">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900 mb-2">Above 150% AMI &mdash; replacing oil ($18,500 total)</p>
+              <p className="font-semibold text-gray-900 mb-2">Above 150% SMI &mdash; RI Energy only (not eligible for Clean Heat RI)</p>
+              <ul className="text-sm text-gray-700 space-y-1">
+                <li>RI Energy heat pump ($625/ton &#215; 3): $1,875</li>
+                <li>RI Energy &mdash; HPWH: $600</li>
+                <li>Clean Heat RI: $0 (income above 150% SMI)</li>
+                <li>Federal 25C: $0 (expired)</li>
+              </ul>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$2,475</p>
+            </div>
+
+            <div className="bg-white border border-gray-200 rounded-lg p-5">
+              <p className="font-semibold text-gray-900 mb-2">At or below 150% SMI &mdash; standard 60% (replacing oil, $18,500 project)</p>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>Clean Heat RI (60% of $15,000): $9,000</li>
-                <li>RI Energy ($400/ton &#215; 3): $1,200</li>
+                <li>RI Energy heat pump ($625/ton &#215; 3): $1,875</li>
                 <li>Clean Heat RI &mdash; HPWH: $2,500</li>
                 <li>RI Energy &mdash; HPWH: $600</li>
                 <li>Federal 25C: $0 (expired)</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$13,300 (you pay ~$5,200)</p>
-            </div>
-
-            <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900 mb-2">80&ndash;150% AMI &mdash; replacing oil ($18,500 total)</p>
-              <ul className="text-sm text-gray-700 space-y-1">
-                <li>Clean Heat RI (new RGGI round, moderate-income): up to $11,500</li>
-                <li>RI Energy ($400/ton &#215; 3): $1,200</li>
-                <li>HEAR &mdash; panel upgrade: up to $2,000</li>
-                <li>Clean Heat RI &mdash; HPWH: $2,500</li>
-              </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$15,200+</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$13,975 (you pay ~$4,500)</p>
             </div>
 
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-2">Below 80% AMI &mdash; replacing oil + electrical upgrades ($23,500 total)</p>
+              <p className="font-semibold text-green-800 mb-2">Lower-income (&#8804;80% AMI) &mdash; replacing oil + electrical upgrades ($23,500 project)</p>
               <ul className="text-sm text-green-900 space-y-1">
                 <li>Clean Heat RI income-eligible (100%, up to $18,000): $18,000</li>
                 <li>HEAR &mdash; panel upgrade: $4,000</li>
@@ -393,7 +389,7 @@ export default function RhodeIslandPage() {
 
           <div className="bg-gray-100 rounded-lg p-5 mb-6">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
-            <p className="text-sm text-gray-700">Standard-income homeowners replacing oil or propane typically pay <strong>$5,000&ndash;$8,000 out of pocket</strong> after stacking Clean Heat RI + RI Energy on a full heat pump + HPWH project. Low-income households (&#8804;80% AMI) have a clear path to <strong>$0 out-of-pocket</strong> through Clean Heat RI income-eligible + HEAR electrical upgrades. If Clean Heat RI funding is exhausted, RI Energy utility rebates alone cover <strong>$1,200&ndash;$3,750</strong> on a typical 3-ton system.</p>
+            <p className="text-sm text-gray-700">Income-eligible homeowners (at or below 150% SMI) replacing oil or propane typically pay <strong>$4,500&ndash;$8,000 out of pocket</strong> after stacking Clean Heat RI + RI Energy on a full heat pump + HPWH project. Low-income households (&#8804;80% AMI) have a clear path to <strong>$0 out-of-pocket</strong> through Clean Heat RI income-eligible + HEAR electrical upgrades. If Clean Heat RI funding is exhausted, RI Energy utility rebates alone cover <strong>$1,875&ndash;$4,500</strong> on a typical 3-ton system.</p>
           </div>
 
           <p className="text-xs text-gray-400">
@@ -460,7 +456,7 @@ export default function RhodeIslandPage() {
 
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
             <p className="font-semibold text-green-800 mb-1">&#10003; Best candidates for a heat pump in Rhode Island</p>
-            <p className="text-sm text-green-900">Oil and propane households &mdash; fuel cost savings alone can justify the switch even at RI&apos;s high electricity rates. Income-eligible households (&#8804;150% SMI) who can access 100% coverage through Clean Heat RI. Electric resistance heating users who qualify for RI Energy&apos;s enhanced $1,250/ton rebate. Homeowners needing both heating and cooling &mdash; heat pumps replace both systems at once. Anyone who acts while Clean Heat RI funding remains available.</p>
+            <p className="text-sm text-green-900">Oil and propane households &mdash; fuel cost savings alone can justify the switch even at RI&apos;s high electricity rates. Income-eligible households (&#8804;150% SMI) who can access 100% coverage through Clean Heat RI. Electric resistance heating users who qualify for RI Energy&apos;s enhanced $1,500/ton rebate. Homeowners needing both heating and cooling &mdash; heat pumps replace both systems at once. Anyone who acts while Clean Heat RI funding remains available.</p>
           </div>
         </div>
       </section>

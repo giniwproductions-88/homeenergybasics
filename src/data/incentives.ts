@@ -739,7 +739,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "RI",
     stateName: "Rhode Island",
     status: "open",
-    lastVerified: "2026-03-22",
+    lastVerified: "2026-06-03",
     summary:
       "Clean Heat RI covers up to 60% of heat pump costs (max $11,500) and is the primary incentive available in 2026. Rhode Island Energy adds smaller per-ton rebates. Federal tax credits are gone, and HEAR does not cover heat pump HVAC systems in Rhode Island (only electrical upgrades and appliances).",
     sources: [
