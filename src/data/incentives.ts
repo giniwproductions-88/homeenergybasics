@@ -868,7 +868,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "WI",
     stateName: "Wisconsin",
     status: "open",
-    lastVerified: "2026-03-22",
+    lastVerified: "2026-06-05",
     summary:
       "Focus on Energy offers $400–$900 instant discounts for air-source heat pumps statewide. IRA-funded HEAR rebates cover up to $8,000 for income-qualifying households (below 150% AMI). HOMES rebates up to $10,000 are available at all income levels for whole-home projects. Federal tax credits expired December 31, 2025. Wisconsin was the first state to launch the HOMES program.",
     sources: [

@@ -206,7 +206,7 @@ export default function WisconsinPage() {
             The one exception: taxpayers who completed qualifying installations
             by December 31, 2025, but whose 25D credit exceeded their tax
             liability can carry forward unused credits. No extension of either
-            credit has been enacted or proposed as of March 2026.
+            credit has been enacted as of June 2026.
           </p>
           <p className="text-sm text-gray-500 mt-4">
             <Link
@@ -856,11 +856,15 @@ export default function WisconsinPage() {
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">
-                Focus on Energy program year
+                Focus on Energy offer period
               </p>
               <p className="text-sm text-gray-600 mt-1">
-                The current program year runs January 1 through December 31,
-                2026. Rebate amounts and tier thresholds could change for 2027.
+                Focus on Energy&apos;s current heating and cooling rebate
+                schedule covers equipment purchased and installed January 1
+                through June 30, 2026. Rebate applications must be submitted
+                within 60 days of installation, no later than August 31, 2026.
+                Rebate amounts and tier thresholds may be refreshed for the
+                second half of 2026 — confirm current figures before installing.
               </p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
