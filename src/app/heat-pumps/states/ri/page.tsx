@@ -30,7 +30,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in Rhode Island in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Clean Heat RI covers up to 60% of heat pump installation costs, capped at $11,500 per address. The original $25 million ARPA market-rate funding is exhausted, but a new $10 million RGGI-funded round launched in July 2025 prioritizing moderate- and low-income households. Rhode Island Energy adds up to $625 per ton in utility rebates ($1,500/ton for electric resistance replacement). Heat pump water heaters qualify for $2,500 from Clean Heat RI plus $600 from RI Energy. Federal tax credits expired December 31, 2025. The HEAR program covers electrical upgrades but not heat pump HVAC systems in Rhode Island.",
+        text: "Clean Heat RI covers up to 60% of heat pump installation costs, capped at $11,500 per address. As of its July 2025 relaunch, the rebate is limited to households at or below 150% of State Median Income; higher-income households are limited to RI Energy utility rebates. The original $25 million ARPA market-rate funding is exhausted, but a new $10 million RGGI-funded round launched in July 2025 prioritizing moderate- and low-income households. Rhode Island Energy adds up to $625 per ton in utility rebates ($1,500/ton for electric resistance replacement). Heat pump water heaters qualify for $2,500 from Clean Heat RI plus $600 from RI Energy. Federal tax credits expired December 31, 2025. The HEAR program covers electrical upgrades but not heat pump HVAC systems in Rhode Island.",
       },
     },
     {
