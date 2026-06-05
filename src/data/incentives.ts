@@ -739,7 +739,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "RI",
     stateName: "Rhode Island",
     status: "open",
-    lastVerified: "2026-06-03",
+    lastVerified: "2026-06-05",
     summary:
       "Clean Heat RI covers up to 60% of heat pump costs (max $11,500) and is the primary incentive available in 2026. Rhode Island Energy adds smaller per-ton rebates. Federal tax credits are gone, and HEAR does not cover heat pump HVAC systems in Rhode Island (only electrical upgrades and appliances).",
     sources: [
@@ -778,7 +778,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "VT",
     stateName: "Vermont",
     status: "open",
-    lastVerified: "2026-06-03",
+    lastVerified: "2026-06-05",
     summary:
       "Vermont heat pump rebates come from Efficiency Vermont ($2,200 ducted, $375–$475/head ductless) and utility-specific programs. Burlington Electric offers up to $7,950 for income-qualified ducted systems — the highest in the state. GMP income bonus adds $2,200/condenser for ≤80% AMI households. Federal 25C/25D ended Dec 31, 2025. HEAR ($29.2M) is on pause.",
     sources: [
@@ -825,9 +825,9 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "NH",
     stateName: "New Hampshire",
     status: "open",
-    lastVerified: "2026-03-22",
+    lastVerified: "2026-06-05",
     summary:
-      "NHSaves rebates of $250–$1,250/ton are the primary incentive, plus a new $650/unit NE Heat Pump Accelerator. HEAR rebates (up to $8,000) are approved but not yet launched — expected mid-Summer 2026. Federal 25C/25D expired Dec 31, 2025. Projects started before HEAR launch are not eligible. R-410A banned from NHSaves qualified list for 2026.",
+      "NHSaves rebates of $250–$2,000/ton are the primary incentive ($2,000/ton enhanced electric-resistance tier effective March 23, 2026), plus a $650/unit NE Heat Pump Accelerator. HEAR rebates (up to $8,000) are approved but not yet launched — expected mid-Summer 2026. Federal 25C/25D expired Dec 31, 2025. Projects started before HEAR launch are not eligible. R-410A banned from NHSaves qualified list for 2026.",
     sources: [
       {
         label: "NHSaves — Heat Pumps & Central A/C",

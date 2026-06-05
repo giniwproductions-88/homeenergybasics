@@ -30,7 +30,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in New Hampshire in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "NHSaves offers $250 per ton (standard) or up to $2,000 per ton (replacing electric resistance heat, Eversource/Liberty/Unitil as of March 23, 2026). NHEC offers up to $1,250 per ton for electric resistance replacement. The New England Heat Pump Accelerator adds $650 per outdoor unit. Heat pump water heaters receive $900 from NHSaves plus $300 from the Accelerator. There is no federal tax credit for 2026 installations. HEAR rebates (up to $8,000) are expected to launch mid-Summer 2026.",
+        text: "NHSaves offers $250 per ton (standard) or up to $2,000 per ton (replacing electric resistance heat, Eversource/Liberty/Unitil as of March 23, 2026). NHEC offers up to $2,000 per ton for electric resistance replacement. The New England Heat Pump Accelerator adds $650 per outdoor unit. Heat pump water heaters receive $900 from NHSaves plus $300 from the Accelerator. There is no federal tax credit for 2026 installations. HEAR rebates (up to $8,000) are expected to launch mid-Summer 2026.",
       },
     },
     {
@@ -114,7 +114,7 @@ export default function NewHampshirePage() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; NHSaves Utility Rebates</p>
-              <p className="text-sm text-green-900">$250/ton standard or up to $2,000/ton replacing electric resistance (Eversource/Liberty/Unitil, as of 3/23/2026). NHEC offers up to $1,250/ton. $900 for heat pump water heaters.</p>
+              <p className="text-sm text-green-900">$250/ton standard or up to $2,000/ton replacing electric resistance (Eversource/Liberty/Unitil, as of 3/23/2026). NHEC also offers up to $2,000/ton. $900 for heat pump water heaters.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; NE Heat Pump Accelerator: $650/Unit</p>
@@ -252,7 +252,7 @@ export default function NewHampshirePage() {
                 </tr>
                 <tr className="border-b bg-green-50">
                   <td className="p-3">Electric resistance retrofit</td>
-                  <td className="p-3 font-semibold">$1,250/ton</td>
+                  <td className="p-3 font-semibold">$2,000/ton</td>
                   <td className="p-3">Separate path, requires &#8805;80% load offset</td>
                 </tr>
               </tbody>
@@ -342,7 +342,7 @@ export default function NewHampshirePage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">HEAR Rebates: Approved But Not Yet Launched</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            New Hampshire&apos;s HEAR program (Home Electrification and Appliance Rebates) has been approved by the U.S. Department of Energy. The state&apos;s <strong>$34.7 million</strong> allocation has been received, but the NH Department of Energy is still selecting a program implementer. Launch is currently expected <strong>mid-Summer 2026</strong>.
+            New Hampshire&apos;s HEAR program (Home Electrification and Appliance Rebates) has been approved by the U.S. Department of Energy. The state&apos;s <strong>$34.7 million</strong> allocation has been received, and NH DOE has selected Everblue as its program implementer &mdash; the Governor and Council approved the contract on March 25, 2026, and work is now underway. Launch is currently expected <strong>mid-Summer 2026</strong>.
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
@@ -547,7 +547,7 @@ export default function NewHampshirePage() {
               <div className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-bold">2</div>
               <div>
                 <p className="font-semibold text-gray-900">If Replacing Electric Resistance: Pre-Verify</p>
-                <p className="text-sm text-gray-700">Go to NHSaves.com/GetVerified before installation to qualify for the enhanced tier ($2,000/ton at Eversource/Liberty/Unitil, $1,250/ton at NHEC).</p>
+                <p className="text-sm text-gray-700">Go to NHSaves.com/GetVerified before installation to qualify for the enhanced tier ($2,000/ton for electric-resistance replacement at all four utilities &mdash; Eversource, Liberty, Unitil, and NHEC).</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -587,7 +587,7 @@ export default function NewHampshirePage() {
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">NHSaves Enhanced Tier Rate Change</p>
-              <p className="text-sm text-gray-600 mt-1">As of March 23, 2026, the enhanced tier for electric resistance replacement at Eversource/Liberty/Unitil increased from $1,250/ton to $2,000/ton. NHEC remains at $1,250/ton. Confirm your utility&apos;s current rate before installation.</p>
+              <p className="text-sm text-gray-600 mt-1">As of March 23, 2026, the enhanced tier for electric resistance replacement at Eversource/Liberty/Unitil increased from $1,250/ton to $2,000/ton. NHEC&apos;s electric-resistance retrofit incentive is also $2,000/ton. Confirm your utility&apos;s current rate before installation.</p>
             </div>
           </div>
         </div>
