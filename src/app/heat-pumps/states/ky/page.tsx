@@ -6,16 +6,16 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title:
-    "Kentucky Heat Pump Rebates 2026: $250–$3,000 Utility Rebates + HEAR Coming | Home Energy Basics",
+    "Kentucky Heat Pump Rebates 2026: $250–$1,500 Utility Rebates + HEAR Coming | Home Energy Basics",
   description:
-    "KY utility heat pump rebates range from $250 to $3,000. HEAR rebates up to $8,000 pending. Federal credits expired. Every Kentucky incentive in 2026.",
+    "KY utility heat pump rebates range from $250 to $1,500. HEAR rebates up to $8,000 pending. Federal credits expired. Every Kentucky incentive in 2026.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/ky",
   },
   openGraph: {
     title: "Kentucky Heat Pump Rebates 2026",
     description:
-      "Utility rebates $250–$3,000, HEAR up to $8,000 pending launch — the complete guide to Kentucky heat pump incentives after federal credits expired.",
+      "Utility rebates $250–$1,500, HEAR up to $8,000 pending launch — the complete guide to Kentucky heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/ky",
     type: "article",
   },
@@ -30,7 +30,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in Kentucky in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Kentucky heat pump rebates come exclusively from utility programs right now. LG&E and KU offer $400 for air-source heat pumps and $300 for heat pump water heaters. EKPC cooperatives offer $500–$1,000, with $1,000 for cold-climate models. Duke Energy Kentucky offers approximately $865 for HVAC upgrades. TVA-served western Kentucky utilities offer $500–$800 for heat pumps and up to $3,000 for geothermal. Federal tax credits expired December 31, 2025, and the state\u0027s IRA-funded HEAR/HOMES programs have not yet launched.",
+        text: "Kentucky heat pump rebates come exclusively from utility programs right now. LG&E and KU offer $400 for air-source heat pumps and $300 for heat pump water heaters. EKPC cooperatives offer $500–$1,000, with $1,000 for cold-climate models. Duke Energy Kentucky offers approximately $865 for HVAC upgrades. TVA-served western Kentucky utilities offer $500–$800 for heat pumps and up to $1,500 for geothermal. Federal tax credits expired December 31, 2025, and the state\u0027s IRA-funded HEAR/HOMES programs have not yet launched.",
       },
     },
     {
@@ -54,7 +54,7 @@ const faqJsonLd = {
       name: "Which Kentucky utility offers the best heat pump rebates?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "TVA-served utilities in western Kentucky offer the highest rebates: $500–$800 for air-source heat pumps, up to $900 for heat pump water heaters, and $3,000 for geothermal systems. EKPC cooperatives in central and eastern Kentucky are second best at $500–$1,000, with a notable $1,000 incentive for cold-climate heat pumps. LG&E/KU customers in Louisville and Lexington receive more modest $300–$400 rebates.",
+        text: "TVA-served utilities in western Kentucky offer the highest rebates: $500–$800 for air-source heat pumps, up to $900 for heat pump water heaters, and $1,500 for geothermal systems. EKPC cooperatives in central and eastern Kentucky are second best at $500–$1,000, with a notable $1,000 incentive for cold-climate heat pumps. LG&E/KU customers in Louisville and Lexington receive more modest $300–$400 rebates.",
       },
     },
     {
@@ -89,7 +89,7 @@ export default function KentuckyPage() {
             Kentucky Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Kentucky heat pump rebates and incentives are still available in 2026, but the landscape is narrower than a year ago. Federal tax credits ended December 31, 2025, and the state&apos;s IRA-funded HEAR program has not yet launched. Utility rebates of <strong>$250–$3,000</strong> are the primary incentive today, with TVA-served and EKPC cooperative territories offering the strongest programs. This guide covers all major Kentucky heat pump incentives available in 2026, including LG&amp;E/KU, Duke Energy, EKPC cooperatives, TVA EnergyRight, and the pending HEAR/HOMES programs. Here&apos;s what&apos;s actually available.
+            Kentucky heat pump rebates and incentives are still available in 2026, but the landscape is narrower than a year ago. Federal tax credits ended December 31, 2025, and the state&apos;s IRA-funded HEAR program has not yet launched. Utility rebates of <strong>$250–$1,500</strong> are the primary incentive today, with TVA-served and EKPC cooperative territories offering the strongest programs. This guide covers all major Kentucky heat pump incentives available in 2026, including LG&amp;E/KU, Duke Energy, EKPC cooperatives, TVA EnergyRight, and the pending HEAR/HOMES programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
             Last verified: {formattedDate}
@@ -114,7 +114,7 @@ export default function KentuckyPage() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Utility rebates are active</p>
-              <p className="text-sm text-green-900">$250–$3,000 depending on your utility and equipment. TVA-served and EKPC cooperative areas offer the strongest rebates.</p>
+              <p className="text-sm text-green-900">$250–$1,500 depending on your utility and equipment. TVA-served and EKPC cooperative areas offer the strongest rebates.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ HEAR rebates approved but not launched</p>
@@ -424,7 +424,7 @@ export default function KentuckyPage() {
                 </tr>
                 <tr className="border-b bg-green-50">
                   <td className="p-3">Geothermal heat pump</td>
-                  <td className="p-3 font-semibold">$3,000</td>
+                  <td className="p-3 font-semibold">$1,500</td>
                 </tr>
               </tbody>
             </table>
