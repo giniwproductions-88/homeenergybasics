@@ -21,7 +21,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "AL",
     stateName: "Alabama",
     status: "limited",
-    lastVerified: "2026-03-23",
+    lastVerified: "2026-06-10",
     summary:
       "Alabama has no statewide heat pump rebate. TVA EnergyRight offers $500\u20131,500 in northern Alabama. Alabama Power offers $1,000 for gas-to-electric conversions. Rural co-ops offer $300\u2013400/ton. Federal tax credits expired. IRA HEAR rebates not yet launched.",
     sources: [

@@ -38,7 +38,7 @@ const faqJsonLd = {
       name: "Can I stack TVA EnergyRight and Alabama Power rebates?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No. TVA EnergyRight and Alabama Power serve different territories — you cannot be a customer of both for the same home. You can stack your utility rebate with future HEAR rebates once Alabama launches that program. TVA customers can combine heat pump, water heater, insulation, and duct sealing rebates on the same project for up to roughly $2,100 total.",
+        text: "No. TVA EnergyRight and Alabama Power serve different territories — you cannot be a customer of both for the same home. You can stack your utility rebate with future HEAR rebates once Alabama launches that program. TVA customers can combine heat pump, insulation, and duct sealing rebates on the same project for up to roughly $2,100 total.",
       },
     },
     {
@@ -62,7 +62,7 @@ const faqJsonLd = {
       name: "When will Alabama launch HEAR rebates?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "As of March 2026, ADECA has not announced a launch date for Alabama\u2019s Home Electrification and Appliance Rebates (HEAR) program. The program remains under development. When launched, HEAR could provide up to $8,000 per heat pump for households below 80% of Area Median Income. Sign up for notifications at rebates@adeca.alabama.gov.",
+        text: "As of June 2026, ADECA has not announced a launch date for Alabama\u2019s Home Electrification and Appliance Rebates (HEAR) program. The program remains under development. When launched, HEAR could provide up to $8,000 per heat pump for households below 80% of Area Median Income. Sign up for notifications at rebates@adeca.alabama.gov.",
       },
     },
   ],
@@ -271,8 +271,7 @@ export default function AlabamaPage() {
             <p className="font-semibold text-amber-800 mb-1">⚠ No launch date set</p>
             <p className="text-sm text-amber-900">
               ADECA issued an RFP for a program implementation consultant in late
-              2024, but the program remains in the planning phase. As of early 2026,
-              23 states have launched HEAR programs — Alabama is not among them. Sign
+              2024, but the program remains in the planning phase. Many states have already launched HEAR programs; as of mid-2026, Alabama is still not among them. Sign
               up for notifications at rebates@adeca.alabama.gov or call 334-353-3004.
             </p>
           </div>
