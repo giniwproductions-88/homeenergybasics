@@ -1716,7 +1716,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "LA",
     stateName: "Louisiana",
     status: "limited",
-    lastVerified: "2026-03-24",
+    lastVerified: "2026-06-10",
     summary:
       "Utility rebates up to $3,500 from SWEPCO and Cleco. Entergy Louisiana offers $500. Energy Smart (New Orleans) offers $200\u2013$500. Federal 25C/25D credits expired. IRA-funded HEAR ($8,000) and HOMES ($2,000\u2013$4,000) programs allocated but not yet launched.",
     sources: [
@@ -1737,7 +1737,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
         url: "https://energysmartnola.info/a-c-solutions/",
       },
       {
-        label: "Louisiana DCE \u2014 Home Energy Rebates Programs",
+        label: "Louisiana DENR \u2014 Home Energy Rebates Programs",
         url: "https://denr.louisiana.gov/page/home-energy-rebates-programs",
       },
       {

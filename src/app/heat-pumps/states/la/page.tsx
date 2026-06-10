@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://homeenergybasics.com/heat-pumps/states/la",
     type: "article",
     publishedTime: "2026-03-24",
-    modifiedTime: "2026-03-24",
+    modifiedTime: "2026-06-10",
     section: "Heat Pumps",
   },
 };
@@ -62,7 +62,7 @@ export default function LouisianaPage() {
         name: "Who administers Louisiana\u2019s heat pump incentive programs?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Utility rebates are administered directly by each utility: SWEPCO, Cleco Power (Power Wise program), Entergy Louisiana (Entergy Solutions), and Entergy New Orleans (Energy Smart). The upcoming IRA-funded HEAR and HOMES rebate programs are administered by the Louisiana Department of Conservation and Energy (DCE), formerly the Department of Energy and Natural Resources, in partnership with the Office of Community Development. The Weatherization Assistance Program is administered by the Louisiana Housing Corporation.",
+          text: "Utility rebates are administered directly by each utility: SWEPCO, Cleco Power (Power Wise program), Entergy Louisiana (Entergy Solutions), and Entergy New Orleans (Energy Smart). The upcoming IRA-funded HEAR and HOMES rebate programs are administered by the Louisiana Department of Energy and Natural Resources (DENR), in partnership with the Office of Community Development. The Weatherization Assistance Program is administered by the Louisiana Housing Corporation.",
         },
       },
       {
@@ -70,7 +70,7 @@ export default function LouisianaPage() {
         name: "When will Louisiana\u2019s HEAR and HOMES rebate programs launch?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "As of March 2026, Louisiana has not launched either the HEAR (up to $8,000 for heat pumps) or HOMES ($2,000\u2013$4,000 performance-based) rebate programs, despite receiving over $200 million in IRA funding. The Department of Conservation and Energy previously indicated a late 2025 to early 2026 timeline, but that has slipped. Homeowners should monitor dce.louisiana.gov for launch announcements.",
+          text: "As of June 2026, Louisiana has not launched either the HEAR (up to $8,000 for heat pumps) or HOMES ($2,000\u2013$4,000 performance-based) rebate programs, despite receiving over $200 million in IRA funding. The Department of Energy and Natural Resources previously indicated a late 2025 to early 2026 timeline, but that has slipped. Homeowners should monitor denr.louisiana.gov for launch announcements.",
         },
       },
     ],
@@ -160,7 +160,7 @@ export default function LouisianaPage() {
             </div>
             <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
               <p className="font-semibold text-amber-800 mb-1">⚠ HEAR &amp; HOMES rebates not yet launched</p>
-              <p className="text-sm text-amber-900">Louisiana received over <strong>$200 million</strong> in IRA funding for HEAR (up to $8,000 per heat pump) and HOMES ($2,000–$4,000 performance-based) rebates, but neither program is accepting applications yet. Monitor the Department of Conservation and Energy at dce.louisiana.gov for launch announcements.</p>
+              <p className="text-sm text-amber-900">Louisiana received over <strong>$200 million</strong> in IRA funding for HEAR (up to $8,000 per heat pump) and HOMES ($2,000–$4,000 performance-based) rebates, but neither program is accepting applications yet. Monitor the Department of Energy and Natural Resources at denr.louisiana.gov for launch announcements.</p>
             </div>
           </div>
         </div>
@@ -192,12 +192,12 @@ export default function LouisianaPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">IRA Rebates: HEAR (Home Electrification and Appliance Rebates)</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Louisiana was allocated over <strong>$200 million</strong> in combined IRA funding for the Home Electrification and Appliance Rebates (HEAR) and Home Efficiency Rebates (HOMES) programs. The administering agency is the Louisiana Department of Conservation and Energy (DCE). As of March 2026, neither program has launched for applications.
+            Louisiana was allocated over <strong>$200 million</strong> in combined IRA funding for the Home Electrification and Appliance Rebates (HEAR) and Home Efficiency Rebates (HOMES) programs. The administering agency is the Louisiana Department of Energy and Natural Resources (DENR). As of June 2026, neither program has launched for applications.
           </p>
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-amber-800 mb-1">⚠ Not yet accepting applications</p>
-            <p className="text-sm text-amber-900">DCE previously indicated a late 2025 to early 2026 timeline, but that has slipped. Louisiana is not among the roughly dozen states that have launched their programs.</p>
+            <p className="text-sm text-amber-900">DENR previously indicated a late 2025 to early 2026 timeline, but that has slipped. Louisiana is not among the roughly dozen states that have launched their programs.</p>
           </div>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">When HEAR launches, expected rebates include:</h3>
@@ -348,7 +348,7 @@ export default function LouisianaPage() {
           {/* Entergy Louisiana */}
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Entergy Louisiana — Up to $500 (Most of the State)</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Entergy Louisiana, the state&apos;s largest utility, offers more limited heat pump incentives through the Entergy Solutions program: up to <strong>$500</strong> per heat pump, <strong>$200</strong> per central air conditioner, and <strong>$150</strong> for an A/C tune-up through participating trade allies. ENERGY STAR certification and SEER2/HSPF2 ratings are required. Income-qualified weatherization is available for households at or below 200% of the federal poverty level.
+            Entergy Louisiana, the state&apos;s largest utility, offers more limited heat pump incentives through the Entergy Solutions program: up to <strong>$500</strong> per heat pump, <strong>$200</strong> per central air conditioner, and <strong>$150</strong> for an A/C tune-up through participating trade allies. Following Louisiana Public Service Commission program changes, Entergy Solutions has recently been in transition, so confirm the program is currently accepting residential HVAC applications before counting on these amounts. ENERGY STAR certification and SEER2/HSPF2 ratings are required. Income-qualified weatherization is available for households at or below 200% of the federal poverty level.
           </p>
 
           {/* Entergy New Orleans */}
@@ -487,7 +487,7 @@ export default function LouisianaPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">HELP (Home Energy Loan Program)</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            The Department of Conservation and Energy administers the HELP program, offering loans of up to <strong>$12,000 over 5 years</strong> for qualifying energy improvements including heat pumps. DCE provides half (up to $6,000) at a fixed <strong>2% interest rate</strong>, while a participating lender provides the other half at market rate. Contact DCE at (225) 342-4498 to verify participating lenders are currently active.
+            The Department of Energy and Natural Resources administers the HELP program, offering loans of up to <strong>$12,000 over 5 years</strong> for qualifying energy improvements including heat pumps. DENR provides half (up to $6,000) at a fixed <strong>2% interest rate</strong>, while a participating lender provides the other half at market rate. Contact DENR at (225) 342-4498 to verify participating lenders are currently active.
           </p>
 
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
@@ -608,7 +608,7 @@ export default function LouisianaPage() {
           <div className="space-y-4">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">HEAR and HOMES program launch</p>
-              <p className="text-sm text-gray-600 mt-1">Louisiana&apos;s $200 million+ IRA allocation could transform the incentive landscape overnight. When HEAR launches, income-qualified homeowners below 80% AMI could access up to $8,000 for a heat pump — stacking with existing utility rebates. Monitor dce.louisiana.gov for announcements.</p>
+              <p className="text-sm text-gray-600 mt-1">Louisiana&apos;s $200 million+ IRA allocation could transform the incentive landscape overnight. When HEAR launches, income-qualified homeowners below 80% AMI could access up to $8,000 for a heat pump — stacking with existing utility rebates. Monitor denr.louisiana.gov for announcements.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">IRA funding runway</p>
