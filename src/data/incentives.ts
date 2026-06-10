@@ -453,9 +453,9 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "TX",
     stateName: "Texas",
     status: "limited",
-    lastVerified: "2026-03-22",
+    lastVerified: "2026-06-06",
     summary:
-      "Texas has no statewide heat pump rebate program and no state income tax. Rebates come from your local utility and vary widely. Austin Energy offers approximately $3,000 for whole-home projects plus 0% APR financing. Oncor provides performance-based incentives through approved contractors. CenterPoint offers up to $500 per unit. CPS Energy pays $90–$310 per ton. Federal tax credits (25C/25D) ended December 31, 2025. Texas received $690 million in IRA HOMES/HEAR rebate funding, but SECO has not launched the program.",
+      "Texas has no statewide heat pump rebate program and no state income tax. Rebates come from your local utility and vary widely. Austin Energy offers approximately $3,000 for whole-home projects plus 0% APR financing. Oncor provides performance-based incentives through approved contractors. CenterPoint offers up to $500 per unit. CPS Energy pays $100–$275 per ton. Federal tax credits (25C/25D) ended December 31, 2025. Texas received $690 million in IRA HOMES/HEAR funding; SECO signed APTIM as implementer and targets a fall 2026 launch but has not opened the program.",
     sources: [
       {
         label: "Austin Energy — Rebates & Incentives",

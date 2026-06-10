@@ -30,7 +30,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in Texas in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Texas has no statewide heat pump rebate program. Rebates come from your local utility. Austin Energy offers approximately $3,000 for whole-home projects plus 0% APR financing. Oncor provides performance-based incentives through approved contractors. CenterPoint offers up to $500 per unit. CPS Energy pays $90\u2013$310 per ton. Federal Section 25C and 25D tax credits expired December 31, 2025. Texas has no state income tax, so no state-level credits are possible.",
+        text: "Texas has no statewide heat pump rebate program. Rebates come from your local utility. Austin Energy offers approximately $3,000 for whole-home projects plus 0% APR financing. Oncor provides performance-based incentives through approved contractors. CenterPoint offers up to $500 per unit. CPS Energy pays $100\u2013$275 per ton. Federal Section 25C and 25D tax credits expired December 31, 2025. Texas has no state income tax, so no state-level credits are possible.",
       },
     },
     {
@@ -54,7 +54,7 @@ const faqJsonLd = {
       name: "What happened to the $690 million in IRA rebates for Texas?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Texas was allocated $690 million in federal HOMES and HEAR rebate funding through the Inflation Reduction Act \u2014 the largest allocation in the country. The State Energy Conservation Office (SECO) is still in the procurement process for a program implementer and has not launched either program. SECO warns there are no approved contractors yet. When launched, income-qualified households could receive up to $8,000 for heat pump installations.",
+        text: "Texas was allocated $690 million in federal HOMES and HEAR rebate funding through the Inflation Reduction Act \u2014 the largest allocation in the country. The State Energy Conservation Office (SECO) selected APTIM Federal Services as program implementer and signed a roughly $689 million contract in May 2026. Early implementation work is underway, and SECO is targeting a launch in fall 2026 pending final federal approval. As of June 2026 the program has still not launched and there are no approved contractors yet. When launched, income-qualified households could receive up to $8,000 for heat pump installations.",
       },
     },
     {
@@ -62,7 +62,7 @@ const faqJsonLd = {
       name: "Which Texas utility offers the best heat pump rebate?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Austin Energy offers the most generous rebates in Texas, with whole-home heat pump projects averaging $3,000 in rebates plus 0% APR financing through Velocity Credit Union. CPS Energy in San Antonio offers $90\u2013$310 per ton. In the deregulated market, Oncor provides performance-based incentives that can reach $2,000\u2013$3,400 for large, high-efficiency installations.",
+        text: "Austin Energy offers the most generous rebates in Texas, with whole-home heat pump projects averaging $3,000 in rebates plus 0% APR financing through Velocity Credit Union. CPS Energy in San Antonio offers $100\u2013$275 per ton. In the deregulated market, Oncor provides performance-based incentives that can reach $2,000\u2013$3,400 for large, high-efficiency installations.",
       },
     },
     {
@@ -126,7 +126,7 @@ export default function TexasPage() {
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; Deregulated TDU rebates: $300&ndash;$3,400</p>
-              <p className="text-sm text-green-900">Oncor: performance-based, potentially $2,000&ndash;$3,400 for large high-efficiency systems. CenterPoint: up to $500/unit. CPS Energy: $90&ndash;$310/ton. AEP Texas: contractor-channel only.</p>
+              <p className="text-sm text-green-900">Oncor: performance-based, potentially $2,000&ndash;$3,400 for large high-efficiency systems. CenterPoint: up to $500/unit. CPS Energy: $100&ndash;$275/ton. AEP Texas: contractor-channel only.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; Potential savings: $0 to $11,000+</p>
@@ -138,7 +138,7 @@ export default function TexasPage() {
             </div>
             <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
               <p className="font-semibold text-amber-800 mb-1">&#9888; $690M in IRA rebates allocated but not launched</p>
-              <p className="text-sm text-amber-900">Texas received the largest IRA rebate allocation in the country &mdash; $690 million for HOMES and HEAR &mdash; and has distributed none of it. SECO is still in procurement for a program implementer. There are no approved contractors. Do not sign contracts based on HEAR rebate amounts until the program officially opens.</p>
+              <p className="text-sm text-amber-900">Texas received the largest IRA rebate allocation in the country &mdash; $690 million for HOMES and HEAR &mdash; and has distributed none of it. SECO has signed APTIM Federal Services as implementer and is targeting a fall 2026 launch, but the program is not yet open and there are no approved contractors. Do not sign contracts based on HEAR rebate amounts until the program officially opens.</p>
             </div>
           </div>
         </div>
@@ -170,7 +170,7 @@ export default function TexasPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">$690 million in IRA rebates: allocated but not launched</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Texas was allocated <strong>$690 million</strong> in federal HOMES (~$346M) and HEAR (~$344M) rebate funding &mdash; the largest allocation in the country. The State Energy Conservation Office (SECO) published an RFP for a program implementer with responses due July 30, 2025. A separate monitoring RFP was issued in early 2026. As of March 2026, <strong>the program has not launched and there are no approved contractors</strong>.
+            Texas was allocated <strong>$690 million</strong> in federal HOMES (~$346M) and HEAR (~$344M) rebate funding &mdash; the largest allocation in the country. The State Energy Conservation Office (SECO) selected APTIM Federal Services as its program implementer, signing a roughly $689 million contract in May 2026, and APTIM has begun early implementation work &mdash; building rebate-processing systems, developing contractor networks, and creating customer tools. SECO is targeting a launch in fall 2026, pending final federal approval. As of June 2026, <strong>the program has still not launched and there are no approved contractors</strong>.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">HEAR rebate amounts (when launched)</h3>
@@ -248,7 +248,7 @@ export default function TexasPage() {
                 <tr className="border-b">
                   <td className="p-3 font-semibold">CPS Energy</td>
                   <td className="p-3">San Antonio, Bexar County (regulated)</td>
-                  <td className="p-3 font-semibold">$90&ndash;$310/ton ($360&ndash;$1,240 typical)</td>
+                  <td className="p-3 font-semibold">$100&ndash;$275/ton ($400&ndash;$1,100 typical)</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3 font-semibold">CenterPoint</td>
@@ -296,7 +296,7 @@ export default function TexasPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">CPS Energy &mdash; San Antonio</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Tiered per-ton rebates of <strong>$90&ndash;$310 per ton</strong> depending on efficiency and replacement type. For a typical 4-ton system at the highest tier, that&apos;s roughly $1,100 in rebates. TDLR-licensed contractor required. 2026 program dates: February 1, 2026 &ndash; January 31, 2027. Casa Verde Weatherization provides ~$5,000 in free improvements for income-qualified customers.
+            Tiered per-ton rebates of <strong>$100&ndash;$275 per ton</strong> depending on efficiency and replacement type. For a typical 4-ton system at the highest tier, that&apos;s roughly $1,100 in rebates. TDLR-licensed contractor required. 2026 program dates: February 1, 2026 &ndash; January 31, 2027. Casa Verde Weatherization provides ~$5,000 in free improvements for income-qualified customers.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Other utilities</h3>
@@ -486,7 +486,7 @@ export default function TexasPage() {
           <div className="space-y-4">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">IRA funding runway</p>
-              <p className="text-sm text-gray-600 mt-1">Texas&apos;s $690 million HOMES/HEAR allocation is authorized through September 30, 2031 or until depleted. The OBBBA did not rescind these funds. SECO is in active procurement for a program implementer &mdash; no launch date announced.</p>
+              <p className="text-sm text-gray-600 mt-1">Texas&apos;s $690 million HOMES/HEAR allocation is authorized through September 30, 2031 or until depleted. The OBBBA did not rescind these funds. SECO has signed APTIM Federal Services as implementer and is targeting a fall 2026 launch &mdash; no firm consumer go-live date has been published yet.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Oncor budget depletion</p>
