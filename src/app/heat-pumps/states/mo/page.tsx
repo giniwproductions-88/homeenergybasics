@@ -66,7 +66,7 @@ export default function MissouriPage() {
         name: "When will Missouri\u2019s HEAR and HOMES rebate programs launch?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Missouri\u2019s Division of Energy submitted applications to the U.S. DOE on November 22, 2024, for both programs. No launch date has been announced as of March 2026. The combined allocation is $151 million ($75.4M for HEAR, $75.8M for HOMES). Sign up for updates at dnr.mo.gov or email energy@dnr.mo.gov.",
+          text: "Missouri\u2019s Division of Energy submitted applications to the U.S. DOE on November 22, 2024, for both programs. No launch date has been announced as of June 2026. The combined allocation is $151 million ($75.4M for HEAR, $75.8M for HOMES). Sign up for updates at dnr.mo.gov or email energy@dnr.mo.gov.",
         },
       },
     ],
@@ -521,7 +521,7 @@ export default function MissouriPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Show-Me Green Sales Tax Holiday</h3>
           <p className="text-gray-700 leading-relaxed">
-            The annual Show-Me Green Sales Tax Holiday (April 19–25 in 2026) exempts ENERGY STAR appliances from state sales tax. A qualifying heat pump purchased during this window could save <strong>$300–$500</strong> in sales tax depending on system cost.
+            The annual Show-Me Green Sales Tax Holiday (April 19–25 annually) exempts ENERGY STAR appliances from state sales tax. A qualifying heat pump purchased during this window could save <strong>$300–$500</strong> in sales tax depending on system cost.
           </p>
         </div>
       </section>
@@ -713,7 +713,7 @@ export default function MissouriPage() {
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Liberty Utilities (Empire District) program status</p>
-              <p className="text-sm text-gray-600 mt-1">Liberty Utilities&apos; HVAC rebate page in southwest Missouri returns a 404 error as of March 2026. If you&apos;re a Liberty customer, call 1-800-206-2300 to confirm current rebate availability.</p>
+              <p className="text-sm text-gray-600 mt-1">Liberty Utilities (Empire District) provides little public detail on residential HVAC rebates in southwest Missouri. If you&apos;re a Liberty customer, call 1-800-206-2300 to confirm current rebate availability.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Ameren PAYS program capacity</p>

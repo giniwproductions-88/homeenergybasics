@@ -1532,7 +1532,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "MO",
     stateName: "Missouri",
     status: "limited",
-    lastVerified: "2026-03-23",
+    lastVerified: "2026-06-10",
     summary:
       "No statewide rebate or state tax credit. Utility rebates range $200\u2013$5,000: Ameren offers $2,000 for ducted ASHPs, Evergy $650\u2013$1,200, Columbia W&L up to $2,600. HEAR/HOMES ($151M) pending. Federal credits expired.",
     sources: [
