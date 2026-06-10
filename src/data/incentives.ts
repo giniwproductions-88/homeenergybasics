@@ -1493,9 +1493,9 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "SC",
     stateName: "South Carolina",
     status: "limited",
-    lastVerified: "2026-03-23",
+    lastVerified: "2026-06-10",
     summary:
-      "Utility rebates of $300\u20131,000 from Duke Energy, Dominion Energy, and Santee Cooper. SC geothermal tax credit covers 25% up to $3,500. HEAR/HOMES rebates (up to $14,000) pending launch. Federal tax credits expired.",
+      "Utility rebates of $300\u20131,000 from Duke Energy, Dominion Energy, and Santee Cooper. SC geothermal tax credit covers 25% up to $3,500. HEAR/HOMES rebates (up to $16,000) pending launch. Federal tax credits expired.",
     sources: [
       {
         label: "SC Energy Office \u2014 Rebates",

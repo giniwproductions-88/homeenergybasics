@@ -162,7 +162,7 @@ export default function SouthCarolinaPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Home Electrification and Appliance Rebates (HEAR)</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            The SC Energy Office (within the Office of Regulatory Staff) administers HEAR, which is funded through the IRA with approximately <strong>$69 million</strong> allocated to South Carolina. The program has not launched yet — SC submitted its full application in January 2025 and the program remains in development as of March 2026.
+            The SC Energy Office (within the Office of Regulatory Staff) administers HEAR, which is funded through the IRA with approximately <strong>$69 million</strong> allocated to South Carolina. The program has not launched yet — SC submitted its full application in January 2025 and the program remains in development as of June 2026 — the SC Energy Office is finalizing program software and contractor enrollment, with launch anticipated later in 2026.
           </p>
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
@@ -257,7 +257,7 @@ export default function SouthCarolinaPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Home Efficiency Rebates (HOMES)</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            HOMES is the second IRA-funded rebate program, with approximately <strong>$68 million</strong> allocated to South Carolina. Unlike HEAR, HOMES is available to <strong>all income levels</strong> and focuses on whole-home energy savings rather than fuel-switching. This makes HOMES the more broadly applicable program for SC homeowners, since most already heat with electricity.
+            HOMES is the second IRA-funded rebate program, with approximately <strong>$68 million</strong> allocated to South Carolina. Unlike HEAR, HOMES is available to <strong>all income levels</strong> and focuses on whole-home energy savings rather than fuel-switching. This makes HOMES the more broadly applicable program for SC homeowners, since most already heat with electricity. South Carolina&apos;s program materials advertise HOMES rebates ranging up to <strong>$16,000</strong> for income-qualified households achieving the deepest whole-home energy savings; the amounts in the table below reflect the standard modeled-savings caps, with final rebate tiers to be confirmed at launch.
           </p>
 
           <div className="overflow-x-auto mb-6">
