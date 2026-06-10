@@ -122,7 +122,7 @@ export default function TexasPage() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; Austin Energy: ~$3,000 + 0% financing</p>
-              <p className="text-sm text-green-900">Whole-home projects average $3,000 in rebates. Heat pump rebates $1,000&ndash;$1,600 by tier, plus duct sealing, insulation, and solar screen add-ons. 0% APR loans up to $25,000 through September 2026.</p>
+              <p className="text-sm text-green-900">Whole-home projects average $3,000 in rebates. Heat pump rebates $1,000&ndash;$1,600 by tier, plus duct sealing, insulation, and solar screen add-ons. 0% APR financing (5&ndash;10 yr terms) through September 2026.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; Deregulated TDU rebates: $300&ndash;$3,400</p>
@@ -278,7 +278,7 @@ export default function TexasPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Austin Energy &mdash; best rebates in Texas</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Austin Energy operates the most generous heat pump incentive program in Texas. The <strong>Home Energy Savings</strong> whole-home program averages <strong>~$3,000</strong> in total rebates (heat pump $1,000&ndash;$1,600 by tier, plus duct sealing, insulation, smart thermostats, and solar screens). The standalone AC/heat pump rebate offers <strong>$250&ndash;$425</strong> for single-equipment replacement. Austin Energy also offers <strong>0% APR financing</strong> through Velocity Credit Union ($1,500&ndash;$25,000, up to 10 years) available through September 30, 2026.
+            Austin Energy operates the most generous heat pump incentive program in Texas. The <strong>Home Energy Savings</strong> whole-home program averages <strong>~$3,000</strong> in total rebates (heat pump $1,000&ndash;$1,600 by tier, plus duct sealing, insulation, smart thermostats, and solar screens). The standalone AC/heat pump rebate averages <strong>~$800</strong>, with qualifying heat pumps earning <strong>$1,000&ndash;$1,600</strong> by efficiency tier. Austin Energy also offers <strong>0% APR financing</strong> through Velocity Credit Union (5- or 10-year terms, no prepayment penalty) available through September 30, 2026.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Income-qualified customers (&#8804;80% MFI) can access free weatherization plus rebates and 0% financing on heat pump systems through the Customer Assistance Program.
