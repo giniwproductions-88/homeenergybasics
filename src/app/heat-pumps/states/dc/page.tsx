@@ -346,7 +346,7 @@ export default function WashingtonDCPage() {
             DOEE runs the <strong>Weatherization Assistance Program (WAP)</strong> for DC households below 60% of State Median Income. WAP can include insulation, air sealing, and heating system repairs or replacement — including heat pump installation in some cases. The program is free for qualifying households.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            The <strong>Emergency Mechanical Systems (EMS)</strong> program provides emergency repair or replacement of heating and cooling systems for income-eligible homeowners and renters. Both WAP and EMS are currently accepting applications for a waitlist, with work anticipated in late March/April 2026.
+            The <strong>Emergency Mechanical Systems (EMS)</strong> program provides emergency repair or replacement of heating and cooling systems for income-eligible homeowners and renters. Both WAP and EMS are currently accepting waitlist applications, with work scheduled as funding and crew capacity allow.
           </p>
           <p className="text-gray-700 leading-relaxed">
             Contact DOEE at (202) 535-2600 or visit{" "}
