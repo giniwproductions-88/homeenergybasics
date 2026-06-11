@@ -582,7 +582,7 @@ export default function AlabamaPage() {
             free home energy upgrades — including potential heat pump installation —
             for qualifying low-income households. Eligibility requires household
             income at or below <strong>200% of the federal poverty level</strong>{" "}
-            (approximately $62,400 for a family of four in 2026).
+            (approximately $66,000 for a family of four in 2026).
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
             WAP covers a home energy audit, air sealing, insulation, and HVAC

@@ -479,7 +479,7 @@ export default function LouisianaPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Weatherization &amp; Low-Income Programs</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            The Louisiana Weatherization Assistance Program (WAP), administered by the Louisiana Housing Corporation, provides free energy efficiency upgrades to households at or below <strong>200% of the federal poverty level</strong> (approximately $62,400 for a family of four). Services include insulation, air sealing, duct repair, window improvements, and in some cases HVAC replacement — including heat pumps when determined cost-effective.
+            The Louisiana Weatherization Assistance Program (WAP), administered by the Louisiana Housing Corporation, provides free energy efficiency upgrades to households at or below <strong>200% of the federal poverty level</strong> (approximately $66,000 for a family of four). Services include insulation, air sealing, duct repair, window improvements, and in some cases HVAC replacement — including heat pumps when determined cost-effective.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
             Priority is given to elderly, disabled, and households with children. Automatic eligibility applies to TANF, SSI, and LIHEAP recipients. Wait lists are common. Previously weatherized homes (within 15 years) are generally ineligible.
