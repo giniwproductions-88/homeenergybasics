@@ -38,7 +38,7 @@ const faqJsonLd = {
       name: "Can I stack utility rebates and HEAR in Nebraska?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, when HEAR launches in Nebraska, federal rules allow stacking HEAR rebates with utility rebates. However, there is one important Nebraska-specific anti-stacking rule: the NPPD 1.5% Dollar and Energy Saving Loan and the NPPD EnergyWise rebate cannot be combined. You must choose one or the other. The standard 5% state loan can be combined with any utility rebate.",
+        text: "Yes, when HEAR launches in Nebraska, federal rules allow stacking HEAR rebates with utility rebates. However, there is one important Nebraska-specific anti-stacking rule: the NPPD 1.5% Dollar and Energy Saving Loan and the NPPD EnergyWise rebate cannot be combined. You must choose one or the other. The standard-rate state loan can be combined with any utility rebate.",
       },
     },
     {
