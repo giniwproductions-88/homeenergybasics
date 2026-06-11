@@ -1278,9 +1278,9 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "ND",
     stateName: "North Dakota",
     status: "limited",
-    lastVerified: "2026-03-24",
+    lastVerified: "2026-06-11",
     summary:
-      "Utility rebates only. Otter Tail Power offers $300\u2013$800/ton for heat pumps. Xcel Energy provides $1,600\u20132,000 flat-rate rebates. Minnkota co-ops offer $150/ton. MDU offers nothing. Federal 25C/25D credits expired. HEAR ($37.1M) and HOMES ($37.2M) funded but not launched.",
+      "Utility rebates only. Otter Tail Power offers $300\u2013$1,040/ton for heat pumps with adders. Xcel Energy provides $1,600\u20132,000 flat-rate rebates. Minnkota co-ops offer $150/ton. MDU offers nothing. Federal 25C/25D credits expired. HEAR ($37.1M) and HOMES ($37.2M) funded but not launched.",
     sources: [
       {
         label: "ND Commerce \u2014 Home Energy Rebates Program",

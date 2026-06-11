@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title:
     "North Dakota Heat Pump Rebates 2026: $1,000/Ton Utility Rebates + HEAR Status | Home Energy Basics",
   description:
-    "Otter Tail Power offers up to $1,000/ton with QI. Xcel rebates reach $2,000. Federal credits ended. Here&apos;s every North Dakota heat pump incentive in 2026.",
+    "Otter Tail Power offers up to $1,000/ton with QI. Xcel rebates reach $2,000. Federal credits ended. Here's every North Dakota heat pump incentive in 2026.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/nd",
   },
@@ -121,7 +121,7 @@ export default function NorthDakotaPage() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Otter Tail Power: Up to $1,000/Ton (With QI)</p>
-              <p className="text-sm text-green-900">Cold-climate air-source heat pumps qualify for $800 per ton base, plus a $200/ton Quality Installation bonus through certified contractors. A typical 4-ton system yields $4,000 in rebates. Geothermal systems qualify for $1,200–$1,400 per ton.</p>
+              <p className="text-sm text-green-900">Cold-climate air-source heat pumps qualify for $800 per ton base, plus a $200/ton Quality Installation bonus through certified contractors. A typical 4-ton system yields $4,000 in rebates. Geothermal systems qualify for $1,200–$1,640 per ton with adders.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Xcel Energy: Up to $2,000 Flat Rate</p>
@@ -164,8 +164,10 @@ export default function NorthDakotaPage() {
           <p className="text-gray-700 leading-relaxed mb-4">
             The IRS has clarified that eligibility depends on when <strong>installation is completed</strong>,
             not when payment is made. A heat pump purchased in December 2025 but installed in January 2026
-            does not qualify. However, homeowners who completed qualifying installations before the deadline
-            but lacked sufficient tax liability may carry forward unused credit amounts to future tax years.
+            does not qualify. One distinction matters for homeowners who did install before the deadline:
+            the 25C heat pump credit is nonrefundable with <strong>no carryforward</strong> — any credit
+            beyond your 2025 tax liability is lost. Unused <strong>25D credit (geothermal)</strong> can be
+            carried forward to reduce tax owed in future years.
           </p>
         </div>
       </section>
@@ -367,14 +369,14 @@ export default function NorthDakotaPage() {
                   <td className="p-3">SEER2 ≥14.3, HSPF2 ≥7.5</td>
                   <td className="p-3 font-semibold">$300/ton</td>
                   <td className="p-3 font-semibold">$500/ton</td>
-                  <td className="p-3 font-semibold">$540/ton</td>
+                  <td className="p-3 text-gray-500">—</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Geothermal HP</td>
-                  <td className="p-3">—</td>
+                  <td className="p-3">ENERGY STAR or COP/EER minimums</td>
                   <td className="p-3 font-semibold">$1,200/ton</td>
                   <td className="p-3 font-semibold">$1,400/ton</td>
-                  <td className="p-3 text-gray-500">—</td>
+                  <td className="p-3 font-semibold">$1,440/ton</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Heat pump water heater</td>
@@ -389,8 +391,11 @@ export default function NorthDakotaPage() {
           <p className="text-gray-700 leading-relaxed mb-6">
             The <strong>$200/ton Quality Installation (QI) bonus</strong> applies when a certified
             contractor participating in OTP&apos;s QI program performs the installation. The additional{" "}
-            <strong>$40/ton energy control bonus</strong> applies when the system operates on
-            OTP&apos;s Dual Fuel, Deferred Load, or Residential Demand Control rate. With both adders,
+            <strong>$40/ton energy control bonus</strong> applies to cold-climate, air-to-water, and
+            geothermal units operating on OTP&apos;s Dual Fuel, Deferred Load, or Residential Demand
+            Control rate (it does not apply to standard heat pumps). Geothermal systems can also add{" "}
+            <strong>$200/ton for a desuperheater</strong> used for domestic hot water preheating,
+            bringing the geothermal maximum to <strong>$1,640/ton</strong>. With both ccASHP adders,
             a 4-ton ducted cold-climate system earns <strong>$4,160</strong> in rebates. OTP&apos;s
             Deferred Load rate can reduce electric heating costs by up to 30%. OTP also offers
             a <strong>$150 heat pump tune-up rebate</strong> (once per 10 years).
@@ -401,8 +406,8 @@ export default function NorthDakotaPage() {
           <p className="text-gray-700 leading-relaxed mb-6">
             MDU serves Bismarck, Dickinson, Williston, and other western communities primarily
             as a natural gas utility. MDU explicitly states:{" "}
-            <strong>&quot;There are no incentive programs for North Dakota residential customers
-            at this time.&quot;</strong> No heat pump, heat pump water heater, or energy efficiency
+            <strong>&quot;There are no incentive programs for North Dakota and Wyoming residential
+            customers at this time.&quot;</strong> No heat pump, heat pump water heater, or energy efficiency
             rebates of any kind are available from MDU in North Dakota.
           </p>
 
@@ -443,8 +448,10 @@ export default function NorthDakotaPage() {
             </table>
           </div>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Minnkota co-ops do <strong>not</strong> require heat pumps to participate in off-peak load
-            management to receive the rebate. Off-peak electric rates range from{" "}
+            Minnkota co-ops do <strong>not</strong> require air-source or mini-split heat pumps to
+            participate in off-peak load management to receive the rebate. For ground-source systems,
+            electric resistance backup heat must be on the off-peak program to qualify. Off-peak
+            electric rates range from{" "}
             <strong>$0.064–$0.081/kWh</strong>, providing significant ongoing savings beyond the
             upfront rebate.
           </p>
