@@ -34,7 +34,7 @@ export default function WestVirginiaPage() {
         name: "What heat pump rebates are available in West Virginia in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "West Virginia\u2019s primary incentives are the IRA-funded HEAR program (up to $8,000 for heat pumps for households at or below 150% AMI) and the HOMES program (up to $20,000 for whole-home retrofits for low-income households). Appalachian Power offers smaller rebates of $300 for mini-splits and $400 for heat pump water heaters. Federal Section 25C and 25D tax credits expired December 31, 2025. Mon Power and Potomac Edison customers have no utility-level heat pump rebates.",
+          text: "West Virginia\u2019s primary incentives will be the IRA-funded HEAR program (up to $8,000 for heat pumps for households at or below 150% AMI) and the HOMES program (up to $20,000 for whole-home retrofits for low-income households) \u2014 but neither program is accepting applications as of June 2026. Appalachian Power offers the only active rebates: $300 for mini-splits and $400 for heat pump water heaters. Federal Section 25C and 25D tax credits expired December 31, 2025. Mon Power and Potomac Edison customers have no utility-level heat pump rebates.",
         },
       },
       {
@@ -91,13 +91,12 @@ export default function WestVirginiaPage() {
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
             West Virginia&apos;s <strong>$88.2 million</strong> in IRA-funded
             Home Electrification and Appliance Rebates (HEAR) and Home Efficiency
-            Rebates (HOMES) represent the state&apos;s primary heat pump incentives
-            in 2026, covering up to <strong>$8,000–$20,000</strong> depending on
-            income and project scope. Federal tax credits ended December 31, 2025.
-            Most homeowners can expect about <strong>$4,000</strong> in incentives
-            today. Low-income households may qualify for{" "}
-            <strong>$14,000–$20,000</strong>.
-            Utility rebates exist only in Appalachian Power territory. This guide
+            Rebates (HOMES) will be the state&apos;s primary heat pump incentives
+            — covering up to <strong>$8,000–$20,000</strong> depending on
+            income and project scope — but neither program has launched as of
+            June 2026. Federal tax credits ended December 31, 2025. Until the
+            state programs open, the only active incentives are Appalachian
+            Power utility rebates of <strong>$300–$400</strong>. This guide
             covers all major West Virginia heat pump incentives available in 2026,
             including HEAR, HOMES, and Appalachian Power&apos;s TakeCharge WV
             program. Here&apos;s what&apos;s actually available.
@@ -156,13 +155,15 @@ export default function WestVirginiaPage() {
               </p>
             </div>
             <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
-              <p className="font-semibold text-amber-800 mb-1">⚠ HEAR and HOMES launch status unclear</p>
+              <p className="font-semibold text-amber-800 mb-1">⚠ HEAR and HOMES have not launched</p>
               <p className="text-sm text-amber-900">
-                The WV Office of Energy received DOE approval in January 2025 and
-                has published contractor lists and qualification forms, but
-                consumer-facing applications may still be in a pilot phase. Contact
-                WVOE at 800-982-3386 to confirm current availability before
-                starting any project.
+                The WV Office of Energy states these programs are NOT yet
+                available to West Virginia residents — any claims otherwise are
+                fraudulent — and a pilot launch date is still to be announced.
+                In June 2026, DOE published revised national guidance restarting
+                the rebate funding process under new rules. Contact WVOE at
+                800-982-3386 to confirm current availability before starting any
+                project.
               </p>
             </div>
           </div>
@@ -269,14 +270,17 @@ export default function WestVirginiaPage() {
           </div>
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5">
-            <p className="font-semibold text-amber-800 mb-1">⚠ Common mistake: HEAR usually requires fuel switching</p>
+            <p className="font-semibold text-amber-800 mb-1">⚠ Eligibility rules are in flux</p>
             <p className="text-sm text-amber-900">
-              HEAR rebates generally apply only to fuel-switching upgrades (e.g.,
-              replacing a gas furnace with a heat pump) or first-time purchases.
-              Replacing an existing electric system with a newer electric system
-              typically does not qualify, with limited exceptions for tank water
-              heater to heat pump water heater conversions. A certified energy
-              assessment is required before installation.
+              West Virginia originally designed HEAR around fuel-switching and
+              electrification upgrades. In June 2026, DOE published revised
+              national guidance that no longer supports switching from fossil
+              fuels to electric heating, and West Virginia has not yet published
+              final program rules under the new guidance. Do not assume any
+              specific upgrade qualifies — confirm eligibility with the WV
+              Office of Energy before committing to a project. A certified
+              energy assessment is expected to be required before heat pump
+              installation.
             </p>
           </div>
         </div>
@@ -412,6 +416,14 @@ export default function WestVirginiaPage() {
             </p>
           </div>
 
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Appalachian Power also runs a Home Performance Program offering home
+            energy assessments and additional efficiency incentives through
+            participating contractors — worth checking before a major HVAC
+            project, since some measures are rebated through that program rather
+            than the standard appliance rebate forms.
+          </p>
+
           <h3 className="text-lg font-semibold text-gray-900 mb-3">
             Mon Power &amp; Potomac Edison (FirstEnergy)
           </h3>
@@ -455,7 +467,9 @@ export default function WestVirginiaPage() {
             programs. Total rebates cannot exceed total project cost. West Virginia
             has no state tax credit for heat pumps. A limited state energy loan
             program may be available through the West Virginia Housing Development
-            Fund.
+            Fund. The scenarios below assume HEAR and HOMES launch as originally
+            designed — as of June 2026, neither is accepting applications, so
+            only the Appalachian Power line items are available today.
           </p>
 
           <div className="space-y-4 mb-8">
@@ -496,11 +510,14 @@ export default function WestVirginiaPage() {
           <div className="bg-gray-100 rounded-lg p-5">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
             <p className="text-sm text-gray-700">
-              For a typical ducted heat pump installation costing $12,000–$18,000:
-              homeowners above 150% AMI can expect <strong>$8,000 to $14,000 out
-              of pocket</strong>. Homeowners below 80% AMI using HEAR may pay
+              Until HEAR and HOMES launch, expect to pay nearly full price: for
+              a typical ducted heat pump installation costing $12,000–$18,000,
+              that means <strong>$11,600 to $18,000 out of pocket</strong> today
+              (only the $300–$400 Appalachian Power rebates apply). Once the
+              programs open, homeowners above 150% AMI could see costs drop by
+              ~$4,000, and homeowners below 80% AMI using HEAR may pay
               <strong> $0 to $3,000 out of pocket</strong> for the heat pump
-              itself, and HOMES can cover entire project costs up to $20,000.
+              itself, with HOMES able to cover entire project costs up to $20,000.
               Mon Power and Potomac Edison customers receive no utility rebates,
               so their stacks are $400 lower.
             </p>
@@ -722,10 +739,13 @@ export default function WestVirginiaPage() {
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">HEAR and HOMES launch confirmation</p>
               <p className="text-sm text-gray-600 mt-1">
-                The WV Office of Energy received DOE approval in January 2025 but
-                consumer-facing applications may still be in a pilot phase as of
-                March 2026. Monitor energywv.org or call 800-982-3386 for launch
-                updates before committing to a project timeline.
+                The WV Office of Energy received DOE approval in January 2025,
+                but as of June 2026 the programs have not launched and a pilot
+                phase start date is still to be announced. DOE published revised
+                national guidance in June 2026 restarting the rebate funding
+                process, which may allow West Virginia to move forward — under
+                modified rules. Monitor energywv.org or call 800-982-3386 for
+                launch updates before committing to a project timeline.
               </p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
@@ -842,7 +862,7 @@ export default function WestVirginiaPage() {
               utility, and IRA heat pump incentives available to West Virginia
               homeowners in 2026. It does not calculate savings, guarantee
               eligibility, or represent any incentive program. West Virginia&apos;s
-              HEAR and HOMES programs may still be in a pilot phase &mdash; confirm
+              HEAR and HOMES programs have not yet launched &mdash; confirm
               current application status before starting work. We verify status
               regularly but programs can change without notice. Always confirm
               current amounts and eligibility with the WV Office of Energy, your

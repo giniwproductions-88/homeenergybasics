@@ -2112,9 +2112,9 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "WV",
     stateName: "West Virginia",
     status: "limited",
-    lastVerified: "2026-03-24",
+    lastVerified: "2026-06-11",
     summary:
-      "West Virginia\u2019s $88.2M IRA programs (HEAR up to $8,000 and HOMES up to $20,000) are the primary incentives but launch status is unclear. Appalachian Power offers $300\u2013$400 for mini-splits and HPWHs. Mon Power and Potomac Edison offer no rebates. Federal 25C/25D credits expired Dec 2025.",
+      "West Virginia\u2019s $88.2M IRA programs (HEAR up to $8,000 and HOMES up to $20,000) have not launched \u2014 the WV Office of Energy says a pilot start date is still to be announced. Appalachian Power offers $300\u2013$400 for mini-splits and HPWHs. Mon Power and Potomac Edison offer no rebates. Federal 25C/25D credits expired Dec 2025.",
     sources: [
       {
         label: "WV Office of Energy \u2014 Home Energy Rebate Programs",
