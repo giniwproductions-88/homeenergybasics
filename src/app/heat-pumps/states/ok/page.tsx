@@ -30,7 +30,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in Oklahoma in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Oklahoma heat pump rebates in 2026 come primarily from utilities. OG&E offers up to $3,000 for qualifying heat pumps. PSO (AEP Oklahoma) offers $600\u2013$1,400 based on SEER2 rating, plus $750 for heat pump water heaters. Rural electric cooperatives offer $200\u2013$1,050 per ton. Federal tax credits (25C/25D) expired December 31, 2025. Oklahoma\u2019s IRA-funded HEAR and HOMES rebates have not launched yet.",
+        text: "Oklahoma heat pump rebates in 2026 come primarily from utilities. OG&E\u2019s program offers up to $3,000 for qualifying heat pumps, but Oklahoma applications are temporarily closed as of June 2026 \u2014 check oge.com for reopening. PSO (AEP Oklahoma) offers $600\u2013$1,400 based on SEER2 rating, plus $750 for heat pump water heaters. Rural electric cooperatives offer $200\u2013$1,050 per ton. Federal tax credits (25C/25D) expired December 31, 2025. Oklahoma\u2019s IRA-funded HEAR and HOMES rebates have not launched yet.",
       },
     },
     {
@@ -46,7 +46,7 @@ const faqJsonLd = {
       name: "When will Oklahoma\u2019s IRA HEAR rebates launch?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "As of March 2026, Oklahoma\u2019s HEAR and HOMES programs have not launched for consumers. The Oklahoma Department of Commerce originally estimated an 18\u201324-month development timeline. A solicitation for implementation contractors was issued in late September 2024. No specific launch date has been announced. Households below 150% of Area Median Income will be eligible for up to $8,000 per heat pump once the program goes live.",
+        text: "As of June 2026, Oklahoma\u2019s HEAR and HOMES programs have not launched for consumers. The Oklahoma Department of Commerce originally estimated an 18\u201324-month development timeline. A solicitation for implementation contractors was issued in late September 2024. No specific launch date has been announced. Households below 150% of Area Median Income will be eligible for up to $8,000 per heat pump once the program goes live.",
       },
     },
     {
@@ -96,8 +96,10 @@ export default function OklahomaPage() {
             Oklahoma heat pump incentives in 2026 are limited but still
             available. Federal tax credits expired in 2025 and the state&apos;s
             IRA rebate programs have not launched yet, leaving utility rebates as
-            the main financial incentive. Most homeowners can currently access{" "}
-            <strong>$600–$3,000</strong> through utilities like OG&amp;E and PSO.
+            the main financial incentive. PSO customers can currently access{" "}
+            <strong>$600–$1,400</strong> in rebates, while OG&amp;E&apos;s
+            up-to-<strong>$3,000</strong> program has temporarily closed
+            Oklahoma applications.
             This guide covers all major Oklahoma heat pump incentives available
             in 2026, including OG&amp;E, PSO, rural cooperative rebates, and the
             upcoming HEAR and HOMES programs. Here&apos;s what&apos;s actually
@@ -126,14 +128,15 @@ export default function OklahomaPage() {
             Short Version
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
-            <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-1">
-                ✓ OG&amp;E Utility Rebates
+            <div className="bg-amber-50 border border-amber-200 rounded-lg p-5">
+              <p className="font-semibold text-amber-800 mb-1">
+                ⚠ OG&amp;E Applications Temporarily Closed
               </p>
-              <p className="text-sm text-green-900">
-                Up to $500/ton for air-source heat pumps (max $3,000 per year).
-                Geothermal rebates reach $750–$1,000/ton. Must be ENERGY STAR
-                certified.
+              <p className="text-sm text-amber-900">
+                OG&amp;E&apos;s program pays up to $500/ton (max $3,000 per
+                year) plus $750–$1,000/ton geothermal, but Oklahoma rebate
+                applications are temporarily closed as of June 2026. Check
+                oge.com for reopening before purchasing.
               </p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
@@ -233,7 +236,7 @@ export default function OklahomaPage() {
             Oklahoma received <strong>$129 million</strong> in combined HEAR and
             HOMES funding through the Inflation Reduction Act. The Oklahoma
             Department of Commerce (ODOC) administers both programs through its
-            State Energy Office. As of March 2026,{" "}
+            State Energy Office. As of June 2026,{" "}
             <strong>neither program has launched for consumers</strong>.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
@@ -296,7 +299,7 @@ export default function OklahomaPage() {
           <p className="text-gray-700 leading-relaxed mb-4">
             No specific date has been announced. Based on ODOC&apos;s original
             18–24-month timeline from late 2024, the earliest realistic window
-            is mid-to-late 2026. Twenty-three states have launched HEAR programs
+            is mid-to-late 2026. More than twenty states have launched HEAR programs
             — Oklahoma is not yet among them. Homeowners with urgent
             replacements should secure utility rebates now. Those with
             flexibility may benefit from waiting for HEAR launch announcements on
@@ -365,7 +368,7 @@ export default function OklahomaPage() {
             can apply to different measures within the same home — for example,
             HEAR for a heat pump and HOMES for a whole-house insulation and air
             sealing project. Like HEAR, the HOMES program has not launched in
-            Oklahoma as of March 2026.
+            Oklahoma as of June 2026.
           </p>
         </div>
       </section>
@@ -394,6 +397,18 @@ export default function OklahomaPage() {
             <strong>$750–$1,000 per ton</strong>. All systems must be ENERGY
             STAR certified and installed by a licensed professional.
           </p>
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
+            <p className="font-semibold text-amber-800 mb-1">
+              ⚠ Oklahoma Applications Temporarily Closed
+            </p>
+            <p className="text-sm text-amber-900">
+              As of June 2026, OG&amp;E&apos;s rebate page states that Oklahoma
+              rebate applications are temporarily closed (Arkansas applications
+              remain open). The amounts below are the program&apos;s published
+              rates — confirm applications have reopened at oge.com before
+              purchasing equipment.
+            </p>
+          </div>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
               <thead>
@@ -428,7 +443,8 @@ export default function OklahomaPage() {
             Restrictions: homes built within the last 10 years are ineligible,
             multi-family properties do not qualify, and systems can only be
             rebated once every 20 years. Funding is limited and first-come,
-            first-served. OG&amp;E also runs a Home Energy Efficiency Program
+            first-served — and as of June 2026, Oklahoma applications are
+            temporarily closed. OG&amp;E also runs a Home Energy Efficiency Program
             (HEEP) providing free assessments and up to{" "}
             <strong>$4,000</strong> for eligible measures including HVAC for
             qualifying customers.
@@ -614,7 +630,7 @@ export default function OklahomaPage() {
                 Above 150% AMI — 3-Ton Ducted Heat Pump
               </p>
               <ul className="text-sm text-gray-700 space-y-1">
-                <li>OG&amp;E utility rebate: $1,500</li>
+                <li>OG&amp;E utility rebate (when applications reopen): $1,500</li>
                 <li>HEAR: not eligible</li>
                 <li>HOMES (when launched, 20%+ savings): $2,000</li>
               </ul>
@@ -628,7 +644,7 @@ export default function OklahomaPage() {
                 80–150% AMI — 3-Ton Ducted Heat Pump
               </p>
               <ul className="text-sm text-gray-700 space-y-1">
-                <li>OG&amp;E utility rebate: $1,500</li>
+                <li>OG&amp;E utility rebate (when applications reopen): $1,500</li>
                 <li>HEAR (when launched, 50% of cost): up to $4,000–$5,000</li>
               </ul>
               <p className="font-semibold text-green-700 mt-2">
@@ -641,7 +657,7 @@ export default function OklahomaPage() {
                 Below 80% AMI — 3-Ton Ducted Heat Pump
               </p>
               <ul className="text-sm text-green-900 space-y-1">
-                <li>OG&amp;E utility rebate: $1,500</li>
+                <li>OG&amp;E utility rebate (when applications reopen): $1,500</li>
                 <li>
                   HEAR (when launched, 100% of cost): up to $8,000
                 </li>
@@ -880,9 +896,10 @@ export default function OklahomaPage() {
               </p>
               <p className="text-sm text-gray-600 mt-1">
                 OG&amp;E&apos;s rebate programs are limited in annual funding
-                and operate first-come, first-served. In high-demand years,
-                funds can be exhausted before year-end. Apply early if you plan
-                to install during peak season (spring or fall).
+                and operate first-come, first-served. As of June 2026, Oklahoma
+                rebate applications are temporarily closed on OG&amp;E&apos;s
+                site. Watch oge.com for reopening and apply early once
+                applications resume.
               </p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">

@@ -2022,9 +2022,9 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "OK",
     stateName: "Oklahoma",
     status: "limited",
-    lastVerified: "2026-03-24",
+    lastVerified: "2026-06-11",
     summary:
-      "Utility rebates from OG&E (up to $3,000) and PSO ($600\u2013$1,400) are the primary incentives. Rural co-ops offer $200\u2013$1,050/ton. Oklahoma\u2019s $129M in IRA-funded HEAR/HOMES rebates have not launched. Federal 25C/25D expired Dec 2025. ONG offers no heat pump rebates.",
+      "PSO rebates ($600\u2013$1,400) are the primary active incentive \u2014 OG&E\u2019s program (up to $3,000) has temporarily closed Oklahoma applications. Rural co-ops offer $200\u2013$1,050/ton. Oklahoma\u2019s $129M in IRA-funded HEAR/HOMES rebates have not launched. Federal 25C/25D expired Dec 2025. ONG offers no heat pump rebates.",
     sources: [
       {
         label: "OG&E \u2014 Home Energy Efficiency Program",
