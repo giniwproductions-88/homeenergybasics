@@ -1040,7 +1040,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "ID",
     stateName: "Idaho",
     status: "limited",
-    lastVerified: "2026-03-24",
+    lastVerified: "2026-06-11",
     summary:
       "Federal tax credits ended Dec 31, 2025. Idaho rejected IRA-funded HEAR and HOMES rebates. Only utility rebates remain: Idaho Power $400\u2013$800, Avista $300\u2013$600, Rocky Mountain Power $450\u2013$650, Idaho Falls Power up to $2,400. No state tax credit for air-source heat pumps.",
     sources: [

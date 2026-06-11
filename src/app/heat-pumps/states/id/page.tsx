@@ -760,7 +760,7 @@ export default function IdahoPage() {
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Federal Credit Reinstatement</p>
               <p className="text-sm text-gray-600 mt-1">
-                No legislation to reinstate Sections 25C or 25D has been introduced as of March
+                No legislation to reinstate Sections 25C or 25D has been introduced as of June
                 2026. A change in political control would be required for reinstatement to become
                 plausible. Do not delay an installation expecting credits to return.
               </p>
