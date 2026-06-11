@@ -497,7 +497,7 @@ export default function KentuckyPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Weatherization Assistance Program (WAP)</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Kentucky&apos;s WAP is administered by the Kentucky Housing Corporation through 22 local Community Action Agencies. The program serves households at or below <strong>200% of the federal poverty level</strong> (roughly $52,400 for a family of four in 2026) and can cover heating system replacement, insulation, air sealing, and duct work at no cost.
+            Kentucky&apos;s WAP is administered by the Kentucky Housing Corporation through 22 local Community Action Agencies. The program serves households at or below <strong>200% of the federal poverty level</strong> (roughly $66,000 for a family of four in 2026) and can cover heating system replacement, insulation, air sealing, and duct work at no cost.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
             Priority goes to elderly, disabled, and high-energy-burden households. Applications go through local Community Action Agencies listed at capky.org/network.
