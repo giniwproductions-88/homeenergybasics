@@ -1759,9 +1759,9 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "UT",
     stateName: "Utah",
     status: "limited",
-    lastVerified: "2026-03-24",
+    lastVerified: "2026-06-11",
     summary:
-      "Rocky Mountain Power Wattsmart offers $450\u20131,700 for heat pumps. Enbridge Gas ThermWise adds $700\u20131,200 for dual-fuel systems. Stack both for $2,450\u20132,650. Federal 25C/25D credits expired Dec 2025. Utah\u2019s $101M IRA rebates (HEAR/HOMES) approved but not yet launched.",
+      "Rocky Mountain Power Wattsmart offers $450\u20131,700 for heat pumps. Enbridge Gas ThermWise adds $700\u20131,200 for dual-fuel systems. Stack both for $2,450\u20132,650. Federal 25C/25D credits expired Dec 2025. Utah\u2019s $101M IRA rebates (HEAR/HOMES) on hold pending DOE approval \u2014 not launched.",
     sources: [
       {
         label: "Rocky Mountain Power \u2014 Wattsmart Homes Heat Pump Rebates",

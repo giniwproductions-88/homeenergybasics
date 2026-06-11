@@ -34,7 +34,7 @@ export default function UtahPage() {
         name: "What heat pump rebates are available in Utah in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Utah\u2019s main heat pump rebates in 2026 come from Rocky Mountain Power\u2019s Wattsmart program ($450\u2013$1,700 depending on system type) and Enbridge Gas\u2019s ThermWise program ($700\u2013$1,200 for dual-fuel systems). Federal Section 25C and 25D tax credits expired December 31, 2025. Utah\u2019s $101 million in IRA-funded HEAR and HOMES rebates have been approved but have not yet launched. Provo City Power and UAMPS member cities offer additional rebates of $200\u2013$1,000.",
+          text: "Utah\u2019s main heat pump rebates in 2026 come from Rocky Mountain Power\u2019s Wattsmart program ($450\u2013$1,700 depending on system type) and Enbridge Gas\u2019s ThermWise program ($700\u2013$1,200 for dual-fuel systems). Federal Section 25C and 25D tax credits expired December 31, 2025. Utah\u2019s $101 million in IRA-funded HEAR and HOMES rebates are on hold pending U.S. Department of Energy approval and have not launched. Provo City Power and UAMPS member cities offer additional rebates of $200\u2013$1,000.",
         },
       },
       {
@@ -66,7 +66,7 @@ export default function UtahPage() {
         name: "When will Utah\u2019s IRA rebates (HEAR and HOMES) launch?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "As of March 2026, Utah\u2019s HEAR and HOMES programs have not launched. Utah was approved for approximately $101 million in combined funding, and the programs remain authorized through September 30, 2031. The Utah Office of Energy Development is the administering agency. The programs are not retroactive \u2014 purchases made before the launch date will not qualify for rebates.",
+          text: "As of June 2026, Utah\u2019s HEAR and HOMES programs have not launched and are on hold until further notice. The Utah Office of Energy Development applied to the U.S. Department of Energy in December 2024 for approximately $101 million in combined funding, but DOE has not yet approved Utah\u2019s application, and no funding will be distributed until it does. The federal programs remain authorized through September 30, 2031. The programs are not retroactive \u2014 purchases made before the launch date will not qualify for rebates.",
         },
       },
     ],
@@ -129,8 +129,8 @@ export default function UtahPage() {
               <p className="text-sm text-red-900">Section 25C ($2,000 for heat pumps) and Section 25D (30% for geothermal) both ended December 31, 2025. No replacement exists in 2026.</p>
             </div>
             <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
-              <p className="font-semibold text-amber-800 mb-1">⚠ IRA Rebates Approved But Not Launched</p>
-              <p className="text-sm text-amber-900">Utah was approved for $101 million in HEAR/HOMES funding, but neither program is accepting applications yet. These are not retroactive — purchases made before the launch date will not qualify. Do not count on these rebates when budgeting a 2026 installation.</p>
+              <p className="font-semibold text-amber-800 mb-1">⚠ IRA Rebates On Hold — Not Launched</p>
+              <p className="text-sm text-amber-900">Utah applied for $101 million in HEAR/HOMES funding, but the program is on hold until further notice — the U.S. Department of Energy has not yet approved Utah&apos;s application, and neither program is accepting applications. These are not retroactive — purchases made before the launch date will not qualify. Do not count on these rebates when budgeting a 2026 installation.</p>
             </div>
           </div>
         </div>
@@ -156,7 +156,7 @@ export default function UtahPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Home Electrification and Appliance Rebates (HEAR)</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Utah was approved for approximately <strong>$101 million</strong> in combined HEAR and HOMES funding through the Inflation Reduction Act. The Utah Office of Energy Development administers both programs. As of March 2026, neither program has launched. About 23 states have live programs — Utah is not yet among them.
+            Utah applied for approximately <strong>$101 million</strong> in combined HEAR and HOMES funding through the Inflation Reduction Act in December 2024. The Utah Office of Energy Development will administer both programs, but as of June 2026 the U.S. Department of Energy has not approved Utah&apos;s application, and the state lists the program as on hold until further notice. Neither program has launched — many other states have live programs, but Utah is not among them.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">HEAR Rebate Structure (When Launched)</h3>
@@ -636,7 +636,7 @@ export default function UtahPage() {
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">HEAR/HOMES Launch Date</p>
-              <p className="text-sm text-gray-600 mt-1">The Utah Office of Energy Development has not announced a launch date. When these programs open, income-qualified households could see dramatically larger rebates — up to $14,000 from HEAR alone.</p>
+              <p className="text-sm text-gray-600 mt-1">The program is on hold pending U.S. Department of Energy approval of Utah&apos;s application, and the Office of Energy Development has not announced a launch date. When these programs open, income-qualified households could see dramatically larger rebates — up to $14,000 from HEAR alone.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">HB 549 (2026 Legislative Session)</p>
