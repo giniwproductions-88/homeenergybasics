@@ -34,7 +34,7 @@ export default function KansasPage() {
         name: "What heat pump rebates are available in Kansas in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Evergy offers $500–$1,000 for air-source heat pumps and $1,000–$1,500 for ground-source heat pumps under the KEEIA program. KEPCo rural electric cooperatives offer $50–$100 per half-ton ($300–$600 for a typical 3-ton system). Midwest Energy offers on-bill financing through How$mart. Federal tax credits (25C/25D) ended December 31, 2025. Kansas has no state tax credits or state-funded rebates. The $105.6 million IRA-funded Kansas Home Rebates Program (HEAR/HOMES) has not launched.",
+          text: "Evergy offers $500–$1,000 for air-source heat pumps and $1,000 for ground-source heat pumps under the KEEIA program. KEPCo rural electric cooperatives offer $50–$100 per half-ton ($300–$600 for a typical 3-ton system). Midwest Energy offers on-bill financing through How$mart. Federal tax credits (25C/25D) ended December 31, 2025. Kansas has no state tax credits or state-funded rebates. The $105.6 million IRA-funded Kansas Home Rebates Program (HEAR/HOMES) has not launched.",
         },
       },
       {
@@ -42,7 +42,7 @@ export default function KansasPage() {
         name: "Can I stack Evergy and IRA rebates in Kansas?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes, utility rebates from Evergy or KEPCo cooperatives can generally stack with federal IRA rebates (HEAR and HOMES) once those programs launch, provided total incentives do not exceed the project cost. However, the Kansas Home Rebates Program has not launched as of March 2026, so only utility rebates are currently available to stack.",
+          text: "Yes, utility rebates from Evergy or KEPCo cooperatives can generally stack with federal IRA rebates (HEAR and HOMES) once those programs launch, provided total incentives do not exceed the project cost. However, the Kansas Home Rebates Program has not launched as of June 2026, so only utility rebates are currently available to stack.",
         },
       },
       {
@@ -50,7 +50,7 @@ export default function KansasPage() {
         name: "Do I need a cold-climate heat pump in Kansas?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Kansas heating design temperatures range from -2°F in Kansas City to 3°F in Wichita, meaning standard heat pumps lose significant capacity during the coldest weeks. Cold-climate-rated models (ccASHP) maintain rated output down to -5°F to -15°F and are the recommended choice. Dual-fuel systems pairing a heat pump with an existing gas furnace are also common in Kansas.",
+          text: "Yes. Kansas heating design temperatures range from 3°F in Kansas City to 7°F in Wichita, meaning standard heat pumps lose significant capacity during the coldest weeks. Cold-climate-rated models (ccASHP) maintain rated output down to -5°F to -15°F and are the recommended choice. Dual-fuel systems pairing a heat pump with an existing gas furnace are also common in Kansas.",
         },
       },
       {
@@ -66,7 +66,7 @@ export default function KansasPage() {
         name: "When will Kansas launch the HEAR and HOMES rebate programs?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "As of March 2026, the Kansas Home Rebates Program website (kshomerebates.gov) states the program is coming soon. Contractor recruitment is underway, but no consumer launch date has been announced. Kansas was allocated $105.6 million ($52.9M for HOMES and $52.6M for HEAR). Homeowners can sign up for updates at kshomerebates.gov.",
+          text: "As of June 2026, the Kansas Home Rebates Program website (kshomerebates.gov) states the program is coming soon. Contractor recruitment is underway, but no consumer launch date has been announced. Kansas was allocated $105.6 million ($52.9M for HOMES and $52.6M for HEAR). Homeowners can sign up for updates at kshomerebates.gov.",
         },
       },
     ],
@@ -123,7 +123,7 @@ export default function KansasPage() {
               <p className="font-semibold text-green-800 mb-1">✓ Evergy KEEIA Rebates</p>
               <p className="text-sm text-green-900">
                 $500–$1,000 for ducted air-source heat pumps depending on SEER2 rating.
-                $1,000–$1,500 for ground-source. Must use an Evergy-authorized contractor.
+                $1,000 for ground-source. Must use an Evergy-authorized contractor.
               </p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
@@ -367,7 +367,7 @@ export default function KansasPage() {
                 <tr className="border-b">
                   <td className="p-3">Ground-source HP (replacing working unit)</td>
                   <td className="p-3">—</td>
-                  <td className="p-3 font-semibold">$1,500</td>
+                  <td className="p-3 font-semibold">$1,000</td>
                 </tr>
               </tbody>
             </table>

@@ -2073,7 +2073,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "KS",
     stateName: "Kansas",
     status: "limited",
-    lastVerified: "2026-03-24",
+    lastVerified: "2026-06-11",
     summary:
       "Evergy offers $500\u2013$1,000 for air-source heat pumps under KEEIA. KEPCo co-ops add $300\u2013$600. Midwest Energy offers on-bill financing. No state tax credits or state rebates. Federal 25C/25D expired Dec 2025. Kansas\u2019s $105.6M IRA-funded HEAR/HOMES program has not launched.",
     sources: [
