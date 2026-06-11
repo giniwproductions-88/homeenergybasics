@@ -989,7 +989,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "IA",
     stateName: "Iowa",
     status: "limited",
-    lastVerified: "2026-03-23",
+    lastVerified: "2026-06-11",
     summary:
       "MidAmerican Energy and Alliant Energy offer $300\u2013$713 instant discounts for air-source heat pumps, with cold-climate models at the top tier. Iowa\u2019s $121M HEAR/HOMES IRA allocation is funded but programs have not launched. Federal 25C/25D credits expired Dec 31, 2025.",
     sources: [
