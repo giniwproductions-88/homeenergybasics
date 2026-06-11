@@ -1937,7 +1937,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "MT",
     stateName: "Montana",
     status: "limited",
-    lastVerified: "2026-03-24",
+    lastVerified: "2026-06-11",
     summary:
       "NorthWestern Energy offers $450 per ASHP and up to $3,000 for HPWHs. BPA cooperatives like Flathead Electric provide $600\u2013$1,560. Federal 25C/25D credits expired Dec 2025. HEAR and HOMES programs remain paused pending DOE approval. Bozeman and Missoula County offer HPWH rebates that stack with utility incentives.",
     sources: [

@@ -60,7 +60,7 @@ export default function MontanaPage() {
         name: "Who administers Montana\u0027s HEAR and HOMES programs?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The Montana Department of Environmental Quality (DEQ) Energy Bureau is the designated administrator for both the HEAR and HOMES IRA rebate programs. DEQ submitted its implementation application to the U.S. Department of Energy in November 2024. Program design was paused in February 2025 pending updated DOE guidance, and no launch date has been announced as of March 2026.",
+          text: "The Montana Department of Environmental Quality (DEQ) Energy Bureau is the designated administrator for both the HEAR and HOMES IRA rebate programs. DEQ submitted its implementation application to the U.S. Department of Energy in November 2024. Program design was paused in February 2025 pending updated DOE guidance, and no launch date has been announced as of June 2026.",
         },
       },
       {
@@ -405,7 +405,9 @@ export default function MontanaPage() {
           <p className="text-gray-700 leading-relaxed mb-4">
             The Electrify Missoula partnership between the city, county, and Climate Smart Missoula
             offers <strong>$1,435</strong> for heat pump water heaters (for purchases after May 1, 2025).
-            Products must be on NEEA&apos;s Qualified Products List and require a plumbing permit with
+            Funding is limited and distributed first-come, first-served — one of the grants funding
+            the rebate expires June 30, 2026, with roughly 40 rebates remaining as of the last
+            program update. Products must be on NEEA&apos;s Qualified Products List and require a plumbing permit with
             final inspection. For NWE customers, this stacks with the up to $3,000 NWE rebate for a
             combined total of up to <strong>$4,435</strong>. Missoula Electric Cooperative members can
             stack with the co-op&apos;s $700–$900 HPWH rebate instead.
@@ -423,7 +425,7 @@ export default function MontanaPage() {
 
           <p className="text-sm text-gray-500 mt-4">
             Billings, Great Falls, and Helena have no city- or county-level heat pump incentive programs
-            as of March 2026.
+            as of June 2026.
           </p>
         </div>
       </section>
