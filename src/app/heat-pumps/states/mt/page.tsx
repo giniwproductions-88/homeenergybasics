@@ -523,8 +523,8 @@ export default function MontanaPage() {
             to <strong>$40,000</strong> with a 10-year maximum term and no down payment. Ground-source
             heat pumps qualify directly. Air-source heat pumps may qualify only when installed
             alongside a qualifying alternative energy system (such as solar). Applications are scored
-            competitively — demand has exceeded available funds since April 2023. The next application
-            window opens April 1–30, 2026.
+            competitively — demand has exceeded available funds since April 2023. The most recent
+            application window ran April 1–30, 2026; check DEQ for the next annual cycle.
           </p>
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5">
