@@ -746,7 +746,7 @@ export default function AlaskaPage() {
               <p className="font-semibold text-gray-900">HEAR &amp; HOMES Launch Timeline</p>
               <p className="text-sm text-gray-600 mt-1">
                 Alaska&apos;s $74.6 million in IRA rebate funding is allocated but the consumer-facing
-                programs have not launched. AHFC and AEA have not announced a date. Sign up for
+                programs have not launched. AHFC has not announced a date. Sign up for
                 updates at ahfc.us to be notified when applications open.
               </p>
             </div>
