@@ -66,7 +66,7 @@ export default function MississippiPage() {
         name: "When will Mississippi\u2019s IRA HEAR rebates launch?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "As of March 2026, no launch date has been announced. The Mississippi Development Authority accepted the state\u2019s $104.8 million IRA allocation for HOMES and HEAR programs but has not opened a consumer application portal. Monitor the MDA Office of Energy page at mississippi.org for updates.",
+          text: "As of June 2026, no launch date has been announced. The Mississippi Development Authority accepted the state\u2019s $104.8 million IRA allocation for HOMES and HEAR programs but has not opened a consumer application portal. Monitor the MDA Office of Energy page at mississippi.org for updates.",
         },
       },
     ],
@@ -175,7 +175,7 @@ export default function MississippiPage() {
           <p className="text-gray-700 leading-relaxed mb-6">
             Mississippi was allocated <strong>$52,237,320</strong> in HEAR funding under the Inflation
             Reduction Act. The <strong>Mississippi Development Authority (MDA), Office of Energy</strong> is
-            the administering agency. As of March 2026, no consumer application portal has been opened
+            the administering agency. As of June 2026, no consumer application portal has been opened
             and no launch date has been announced.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">

@@ -1891,7 +1891,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "MS",
     stateName: "Mississippi",
     status: "limited",
-    lastVerified: "2026-03-24",
+    lastVerified: "2026-06-11",
     summary:
       "No statewide rebate program. Entergy Mississippi offers up to $1,100 for heat pumps. TVA EnergyRight provides up to $1,500 in northeast MS. Mississippi Power offers $160\u2013$200/ton. Federal 25C/25D expired. IRA HEAR/HOMES ($104.8M) not yet launched.",
     sources: [
