@@ -66,7 +66,7 @@ export default function AlaskaPage() {
         name: "Has Alaska launched the HEAR rebate program?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "No. As of March 2026, Alaska\u2019s HEAR and HOMES programs have not launched and no start date has been announced. Alaska was allocated approximately $74.6 million for both programs, administered by the Alaska Energy Authority in partnership with AHFC. When launched, HEAR would provide up to $8,000 for heat pump HVAC and up to $14,000 total per household for income-qualifying homeowners. The programs survived the One Big Beautiful Bill Act and remain funded through 2031.",
+          text: "No. As of June 2026, Alaska\u2019s HEAR and HOMES programs have not launched and no start date has been announced. Alaska was allocated approximately $74.6 million for both programs, administered through the Alaska Housing Finance Corporation (AHFC) alongside awards to the Tanana Chiefs Conference and the Alaska Native Tribal Health Consortium. When launched, HEAR would provide up to $8,000 for heat pump HVAC and up to $14,000 total per household for income-qualifying homeowners. The programs survived the One Big Beautiful Bill Act and remain funded through 2031.",
         },
       },
     ],
@@ -244,8 +244,8 @@ export default function AlaskaPage() {
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Other Alaska Heat Smart Programs</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
             Alaska Heat Smart also administers two smaller programs. The <strong>Clean Heat Incentive
-            Program (CHIP)</strong> provides $1,500–$3,000 for homeowners in Juneau and Sitka earning
-            80–125% of AMI. The <strong>Healthy Homes Program</strong> offers up to $15,000 in comprehensive
+            Program (CHIP)</strong> provides $1,500–$3,000 for homeowners in Juneau and Sitka with
+            household incomes up to 100% of AMI. The <strong>Healthy Homes Program</strong> offers up to $15,000 in comprehensive
             home improvements including heat pumps for qualified lower-income families in Juneau.
           </p>
 
@@ -272,8 +272,9 @@ export default function AlaskaPage() {
           <p className="text-gray-700 leading-relaxed mb-6">
             Alaska was allocated approximately <strong>$74.6 million</strong> in IRA funding for the
             Home Electrification and Appliance Rebates (HEAR) and Home Efficiency Rebates (HOMES)
-            programs, administered by the Alaska Energy Authority in partnership with AHFC.
-            As of March 2026, neither program has launched and no start date has been announced.
+            programs, administered through the Alaska Housing Finance Corporation (AHFC) alongside
+            awards to the Tanana Chiefs Conference and the Alaska Native Tribal Health Consortium.
+            As of June 2026, neither program has launched and no start date has been announced.
             Federal funding freezes in early 2025 and program design complexity have contributed
             to the delay.
           </p>

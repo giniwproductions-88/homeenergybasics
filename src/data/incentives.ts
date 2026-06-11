@@ -64,7 +64,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "AK",
     stateName: "Alaska",
     status: "limited",
-    lastVerified: "2026-03-24",
+    lastVerified: "2026-06-11",
     summary:
       "Alaska incentives depend heavily on location. The ACES program offers $4,000\u2013$8,500 for 43 coastal communities. Fairbanks provides up to $17,500 through its air-quality change-out program. Utility rebates range $500\u2013$1,000 (Chugach Electric, Homer Electric, AP&T). Federal 25C/25D credits expired Dec 2025. HEAR/HOMES ($74.6M) have not launched.",
     sources: [
