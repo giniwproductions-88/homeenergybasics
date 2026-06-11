@@ -51,7 +51,7 @@ export default function SouthDakotaPage() {
         name: "Why did South Dakota opt out of IRA energy rebates?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "South Dakota is the only state in the nation to have opted out of the Inflation Reduction Act\u0027s Home Electrification and Appliance Rebates (HEAR) and Home Efficiency Rebates (HOMES) programs. The state\u0027s Bureau of Finance and Management declined the $68.56 million allocation in August 2024, citing limited staff capacity at the State Energy Management Office and policy disagreement with the IRA. That funding is being redistributed to participating states.",
+          text: "South Dakota was the first state in the nation to opt out of the Inflation Reduction Act\u0027s Home Electrification and Appliance Rebates (HEAR) and Home Efficiency Rebates (HOMES) programs. The state\u0027s Bureau of Finance and Management declined the $68.56 million allocation in August 2024, citing limited staff capacity at the State Energy Management Office and policy disagreement with the IRA. Idaho\u0027s legislature later voted to block participation as well. The declined funding is being redistributed to participating states.",
         },
       },
       {
@@ -90,7 +90,7 @@ export default function SouthDakotaPage() {
             South Dakota Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            South Dakota is the only state in America that opted out of federal IRA heat pump rebate funding, and federal tax credits expired at the end of 2025. The only incentives left come from individual electric utilities, with rebates ranging from <strong>$0 to over $4,000</strong> depending on your provider. This guide covers all major South Dakota heat pump incentives available in 2026, including Otter Tail Power, Heartland Energy, Sioux Valley Energy, Black Hills Energy, and cooperative programs. Here&apos;s what&apos;s actually available.
+            South Dakota was the first state in America to opt out of federal IRA heat pump rebate funding — Idaho&apos;s legislature later voted to block participation too — and federal tax credits expired at the end of 2025. The only incentives left come from individual electric utilities, with rebates ranging from <strong>$0 to over $4,000</strong> depending on your provider. This guide covers all major South Dakota heat pump incentives available in 2026, including Otter Tail Power, Heartland Energy, Sioux Valley Energy, Black Hills Energy, and cooperative programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
             Last verified: {formattedDate}
@@ -127,7 +127,7 @@ export default function SouthDakotaPage() {
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">✗ Federal credits expired + SD opted out of IRA rebates</p>
-              <p className="text-sm text-red-900">Section 25C and 25D tax credits ended December 31, 2025. South Dakota is the only state to reject the IRA&apos;s $68.56 million HEAR/HOMES allocation. No statewide program exists.</p>
+              <p className="text-sm text-red-900">Section 25C and 25D tax credits ended December 31, 2025. South Dakota rejected its entire $68.56 million HEAR/HOMES allocation outright in 2024 — the first state to do so. No statewide program exists.</p>
             </div>
             <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 md:col-span-2">
               <p className="font-semibold text-amber-800 mb-1">⚠ Your electric utility determines everything</p>
@@ -153,7 +153,7 @@ export default function SouthDakotaPage() {
             Equipment purchased in 2025 but installed in 2026 does not qualify — the IRS uses &quot;placed in service&quot; language requiring full installation by the deadline. One narrow exception: Section 25D allows <strong>carryforward of unused credit</strong> from a qualifying geothermal system installed before January 1, 2026.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            No legislation has been introduced to restore either credit as of March 2026.
+            Neither credit has been restored as of June 2026.
           </p>
         </div>
       </section>
@@ -163,7 +163,7 @@ export default function SouthDakotaPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">South Dakota opted out of IRA rebate programs</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            South Dakota is the only state in the nation to have declined the Inflation Reduction Act&apos;s Home Electrification and Appliance Rebates (HEAR) and Home Efficiency Rebates (HOMES) programs. The state was allocated <strong>$68.56 million</strong> for these programs. In August 2024, the Bureau of Finance and Management formally declined participation, missing the federal deadline to accept.
+            South Dakota was the first state in the nation to decline the Inflation Reduction Act&apos;s Home Electrification and Appliance Rebates (HEAR) and Home Efficiency Rebates (HOMES) programs. The state was allocated <strong>$68.56 million</strong> for these programs. In August 2024, the Bureau of Finance and Management formally declined participation, missing the federal deadline to accept. In 2025, Idaho&apos;s legislature also voted to block its state&apos;s participation.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Officials cited limited staff capacity — the State Energy Management Office has one full-time employee — and policy disagreement with the Inflation Reduction Act. The $68.56 million is being redistributed to participating states.
@@ -171,7 +171,7 @@ export default function SouthDakotaPage() {
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-blue-800 mb-1">What South Dakota homeowners missed</p>
-            <p className="text-sm text-blue-900">Had South Dakota participated, low-income households (below 80% of Area Median Income) could have received up to $8,000 for heat pump HVAC and $1,750 for heat pump water heaters. Moderate-income households (80–150% AMI) would have received 50% of costs up to those caps. These programs are now active in 49 other states and the District of Columbia.</p>
+            <p className="text-sm text-blue-900">Had South Dakota participated, low-income households (below 80% of Area Median Income) could have received up to $8,000 for heat pump HVAC and $1,750 for heat pump water heaters. Moderate-income households (80–150% AMI) would have received 50% of costs up to those caps. These programs are live or in development in most other states and the District of Columbia.</p>
           </div>
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5">
@@ -226,10 +226,10 @@ export default function SouthDakotaPage() {
                 <tr className="border-b">
                   <td className="p-3">Standard ASHP (≥14.3 SEER2, ≥7.5 HSPF2)</td>
                   <td className="p-3 font-semibold">$300/ton</td>
-                  <td className="p-3 font-semibold">Up to $540/ton</td>
+                  <td className="p-3 font-semibold">Up to $500/ton</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-3">High-efficiency ASHP (≥16.0 SEER2, ≥8.0 HSPF2)</td>
+                  <td className="p-3">Cold-climate ductless HP (≥16.0 SEER2, ≥8.0 HSPF2)</td>
                   <td className="p-3 font-semibold">$600/ton</td>
                   <td className="p-3 font-semibold">Up to $840/ton</td>
                 </tr>
@@ -239,14 +239,9 @@ export default function SouthDakotaPage() {
                   <td className="p-3 font-semibold">Up to $1,040/ton</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-3">Closed-loop geothermal</td>
+                  <td className="p-3">Geothermal HP (ENERGY STAR or COP/EER minimums)</td>
                   <td className="p-3 font-semibold">$1,200/ton</td>
                   <td className="p-3 font-semibold">Up to $1,640/ton</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">Open-loop geothermal</td>
-                  <td className="p-3 font-semibold">$900/ton</td>
-                  <td className="p-3 font-semibold">Up to $1,340/ton</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Heat pump water heater</td>
@@ -612,7 +607,7 @@ export default function SouthDakotaPage() {
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Black Hills / NorthWestern Energy merger</p>
-              <p className="text-sm text-gray-600 mt-1">The pending merger between Black Hills Corporation and NorthWestern Energy could reshape the utility incentive landscape in South Dakota. If completed, the combined entity&apos;s approach to residential rebates will affect hundreds of thousands of customers. Monitor proceedings at the South Dakota Public Utilities Commission (puc.sd.gov).</p>
+              <p className="text-sm text-gray-600 mt-1">Shareholders of both companies approved the all-stock merger in April 2026, and Nebraska became the first state to sign off in May 2026. The combined company — Bright Horizon Energy Corporation — is expected to close in the second half of 2026, pending South Dakota PUC, Montana, FERC, and antitrust approvals. The merged entity&apos;s approach to residential rebates will affect hundreds of thousands of South Dakota customers. Monitor proceedings at puc.sd.gov.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Utility budget depletion</p>

@@ -1802,9 +1802,9 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "SD",
     stateName: "South Dakota",
     status: "limited",
-    lastVerified: "2026-03-24",
+    lastVerified: "2026-06-11",
     summary:
-      "South Dakota has no statewide heat pump program and is the only state to opt out of IRA HEAR/HOMES rebates ($68.56M declined). Federal credits expired. Utility rebates range from $0 (NorthWestern Energy) to over $4,000 (Otter Tail Power) depending on provider.",
+      "South Dakota has no statewide heat pump program and was the first state to decline IRA HEAR/HOMES rebates outright ($68.56M). Federal credits expired. Utility rebates range from $0 (NorthWestern Energy) to over $4,000 (Otter Tail Power) depending on provider.",
     sources: [
       {
         label: "SD Bureau of Administration \u2014 Energy Management",
