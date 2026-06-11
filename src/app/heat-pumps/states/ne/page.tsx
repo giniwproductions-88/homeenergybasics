@@ -54,7 +54,7 @@ const faqJsonLd = {
       name: "What is Nebraska\u2019s Dollar and Energy Saving Loans program?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The Dollar and Energy Saving Loans program is administered by the Nebraska Department of Water, Energy, and Environment (DWEE). It offers low-interest financing for heat pump installations through participating Nebraska banks. Rates range from 1.5% (NPPD territory) to 3% (OPPD territory) to 5% (standard). Loans go up to $125,000 with terms up to 15 years. No income requirement applies.",
+        text: "The Dollar and Energy Saving Loans program is administered by the Nebraska Department of Water, Energy, and Environment (DWEE). It offers low-interest financing for heat pump installations through participating Nebraska banks. Rates range from 1.5% (NPPD territory) to 3% (OPPD territory) to 3.5\u20135% (standard, varying by lender and project). Loans go up to $125,000 with terms up to 15 years. No income requirement applies.",
       },
     },
     {
@@ -244,8 +244,8 @@ export default function NebraskaPage() {
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Standard (all other areas)</td>
-                  <td className="p-3 font-semibold">5%</td>
-                  <td className="p-3">Available statewide</td>
+                  <td className="p-3 font-semibold">3.5–5%</td>
+                  <td className="p-3">Available statewide; rate varies by lender and project</td>
                 </tr>
               </tbody>
             </table>
