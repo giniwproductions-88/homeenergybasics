@@ -1853,9 +1853,9 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "WY",
     stateName: "Wyoming",
     status: "limited",
-    lastVerified: "2026-03-24",
+    lastVerified: "2026-06-11",
     summary:
-      "Rocky Mountain Power Wattsmart offers up to $1,700 for cold-climate heat pumps and $600 for HPWHs (electric resistance conversions only). Several co-ops offer $500\u20131,800. Federal tax credits expired. Wyoming\u2019s $69.2M IRA rebate program (HESP) has not launched.",
+      "Rocky Mountain Power Wattsmart offers up to $1,700 for cold-climate heat pumps and $600 for HPWHs (electric resistance conversions only). Several co-ops offer $500\u20131,800. Black Hills Energy suspended all rebates in 2026. Federal tax credits expired. Wyoming\u2019s $69.2M IRA rebate program (HESP) has not launched.",
     sources: [
       {
         label: "Rocky Mountain Power \u2014 Wattsmart ASHP Rebates (WY)",

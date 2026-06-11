@@ -58,7 +58,7 @@ export default function WyomingPage() {
         name: "What happened to Wyoming\u2019s IRA Home Energy Savings Program?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The Wyoming Energy Authority applied for and received a conditional award for approximately $69.2 million in IRA funding ($34.7M for HOMES, $34.5M for HEAR). However, an executive order in January 2025 froze IRA disbursements before Wyoming received its funds. As of March 2026, the program remains on pause. The funding is legally authorized through September 30, 2031, and was not repealed by the OBBB.",
+          text: "The Wyoming Energy Authority applied for and received a conditional award for approximately $69.2 million in IRA funding ($34.7M for HOMES, $34.5M for HEAR). However, an executive order in January 2025 froze IRA disbursements before Wyoming received its funds, and as of June 2026 the program has not launched. In June 2026, DOE published revised national guidance restarting the rebate funding process under modified rules, which may allow Wyoming to move forward. The funding is legally authorized through September 30, 2031, and was not repealed by the OBBB.",
         },
       },
       {
@@ -146,7 +146,7 @@ export default function WyomingPage() {
             </p>
           </div>
           <p className="text-gray-700 leading-relaxed mb-4">
-            A heat pump purchased in 2025 but not installed until 2026 does not qualify — equipment must have been installed and operational by December 31, 2025. One narrow exception: unused Section 25D credits from prior years can be carried forward to 2026 tax returns if the homeowner&apos;s tax liability was too low to use the full credit in the year of installation. Congress has not introduced replacement legislation as of March 2026.
+            A heat pump purchased in 2025 but not installed until 2026 does not qualify — equipment must have been installed and operational by December 31, 2025. One narrow exception: unused Section 25D credits from prior years can be carried forward to 2026 tax returns if the homeowner&apos;s tax liability was too low to use the full credit in the year of installation. Neither credit has been restored as of June 2026.
           </p>
           <p className="text-gray-700 leading-relaxed">
             <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">Read more about what changed with federal heat pump tax credits</Link>.
@@ -162,12 +162,12 @@ export default function WyomingPage() {
             The Wyoming Energy Authority (WEA) was allocated approximately <strong>$69.2 million</strong> in IRA funding — <strong>$34.7 million</strong> for the Home Owner Managing Energy Savings (HOMES) program and <strong>$34.5 million</strong> for the Home Electrification and Appliance Rebates (HEAR) program. Wyoming branded both programs together as the <strong>Home Energy Savings Program (HESP)</strong>.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            WEA issued an RFP for a program designer in August 2024, hosted public input sessions in December 2024, and submitted its application to DOE by the January 31, 2025 deadline. However, Executive Order 14154 froze IRA disbursements before Wyoming received its funds. As of March 2026, WEA has confirmed the program remains on pause pending direction from DOE. The website still references a 2025 launch target that has not been updated.
+            WEA issued an RFP for a program designer in August 2024, hosted public input sessions in December 2024, and submitted its application to DOE by the January 31, 2025 deadline. However, Executive Order 14154 froze IRA disbursements before Wyoming received its funds. As of June 2026, HESP has not launched — the WEA website still references a 2025 launch target that has not been updated. In June 2026, DOE published revised national guidance restarting the rebate funding process under modified rules, which may allow Wyoming to move forward.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">What HESP would offer if it launches</h3>
           <p className="text-gray-700 leading-relaxed mb-6">
-            The HOMES and HEAR programs are legally authorized through September 30, 2031, and were not repealed by the OBBB. If Wyoming&apos;s HESP activates, the federal statutory rebate amounts would apply. Wyoming had not finalized specific program rules before the pause.
+            The HOMES and HEAR programs are legally authorized through September 30, 2031, and were not repealed by the OBBB. If Wyoming&apos;s HESP activates, the federal statutory rebate amounts below would be the ceiling — but final amounts and eligibility will follow DOE&apos;s revised June 2026 guidance, which no longer supports switching from fossil fuels to electric heating. Wyoming had not finalized specific program rules before the pause.
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
@@ -511,15 +511,15 @@ export default function WyomingPage() {
           <div className="space-y-4">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">HESP launch status</p>
-              <p className="text-sm text-gray-600 mt-1">Wyoming&apos;s $69.2 million IRA allocation could activate at any point, transforming the incentive landscape with HEAR rebates up to $8,000 for income-qualified households. The Wyoming Energy Authority has done the groundwork — the program was near launch when funds were frozen. Monitor wyoenergy.org for updates.</p>
+              <p className="text-sm text-gray-600 mt-1">Wyoming&apos;s $69.2 million IRA allocation could activate, transforming the incentive landscape with HEAR rebates up to $8,000 for income-qualified households. The Wyoming Energy Authority has done the groundwork — the program was near launch when funds were frozen — and DOE&apos;s June 2026 revised guidance restarted the national funding process, though under modified rules. Monitor wyoenergy.org for updates.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">IRA funding runway</p>
               <p className="text-sm text-gray-600 mt-1">The HOMES and HEAR programs are authorized through September 30, 2031. The OBBB did not repeal this funding but did terminate federal tax credits (25C/25D) seven years early. Future legislative action could further affect IRA program funding or extend it.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900">Black Hills Energy program redesign</p>
-              <p className="text-sm text-gray-600 mt-1">Black Hills suspended all rebate programs in 2026 and is redesigning its demand-side management portfolio through public workshops with the Wyoming Public Service Commission. New programs could restore rebates for approximately 76,000 Wyoming utility customers in the Cheyenne metro area.</p>
+              <p className="font-semibold text-gray-900">Black Hills Energy program redesign — and merger</p>
+              <p className="text-sm text-gray-600 mt-1">Black Hills suspended all rebate programs in 2026 and is redesigning its demand-side management portfolio through public workshops with the Wyoming Public Service Commission. Adding to the uncertainty, Black Hills Corp. and NorthWestern Energy are merging into Bright Horizon Energy Corporation — shareholders approved the deal in April 2026, with closing expected in the second half of 2026 pending regulatory approvals. New programs from the combined company could restore rebates for approximately 76,000 Wyoming utility customers in the Cheyenne metro area.</p>
             </div>
           </div>
         </div>
