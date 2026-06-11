@@ -18,7 +18,20 @@ export const metadata: Metadata = {
       "ComEd, Ameren Illinois, MidAmerican Energy — utility-by-utility heat pump rebate guide for Illinois. Federal credits gone, state IRA programs pending.",
     url: "https://homeenergybasics.com/heat-pumps/states/il",
     type: "article",
+    publishedTime: "2026-03-22T18:05:06-05:00",
+    modifiedTime: `${incentives.IL.lastVerified}T00:00:00Z`,
   },
+};
+
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Illinois Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-22T18:05:06-05:00",
+  dateModified: `${incentives.IL.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/il",
 };
 
 export default function IllinoisPage() {
@@ -83,6 +96,7 @@ export default function IllinoisPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* Hero */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -111,7 +125,7 @@ export default function IllinoisPage() {
             heat pump premium. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

@@ -19,20 +19,9 @@ export const metadata: Metadata = {
     url: "https://homeenergybasics.com/heat-pumps/states/la",
     type: "article",
     publishedTime: "2026-03-24",
-    modifiedTime: `${incentives.LA.lastVerified}T00:00:00Z`,
+    modifiedTime: "2026-06-10",
     section: "Heat Pumps",
   },
-};
-
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Louisiana Heat Pump Rebates & Incentives (2026)",
-  datePublished: "2026-03-24",
-  dateModified: `${incentives.LA.lastVerified}T00:00:00Z`,
-  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
-  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
-  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/la",
 };
 
 export default function LouisianaPage() {
@@ -116,7 +105,6 @@ export default function LouisianaPage() {
     <>
       <JsonLd data={faqJsonLd} />
       <JsonLd data={breadcrumbJsonLd} />
-      <JsonLd data={articleJsonLd} />
 
       {/* 1. Hero */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -134,7 +122,7 @@ export default function LouisianaPage() {
             Louisiana heat pump incentives in 2026 are a utility-by-utility story. SWEPCO and Cleco customers can claim up to <strong>$3,500</strong> per heat pump, while Entergy Louisiana offers <strong>$500</strong>. Federal tax credits expired December 31, 2025, and the state&apos;s IRA-funded HEAR program (up to <strong>$8,000</strong>) has not yet launched. This guide covers all major Louisiana heat pump incentives available in 2026, including SWEPCO, Cleco, Entergy, and Energy Smart programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} — verified against official program sources
+            Last verified: {formattedDate}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

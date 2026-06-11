@@ -20,7 +20,20 @@ export const metadata: Metadata = {
       "NWE $450 ASHP, up to $3,000 HPWH, BPA co-ops $600–$1,560 — the complete guide to Montana heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/mt",
     type: "article",
+    publishedTime: "2026-03-24T14:21:01-05:00",
+    modifiedTime: `${incentives.MT.lastVerified}T00:00:00Z`,
   },
+};
+
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Montana Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-24T14:21:01-05:00",
+  dateModified: `${incentives.MT.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/mt",
 };
 
 export default function MontanaPage() {
@@ -77,6 +90,7 @@ export default function MontanaPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. HERO */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -100,7 +114,7 @@ export default function MontanaPage() {
             state tax credits, and HEAR/HOMES status. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

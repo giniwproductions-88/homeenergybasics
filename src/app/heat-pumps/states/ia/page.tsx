@@ -18,6 +18,8 @@ export const metadata: Metadata = {
       "Utility rebates of $300–$713 are the only active Iowa heat pump incentives — the complete guide after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/ia",
     type: "article",
+    publishedTime: "2026-03-23T22:15:04-05:00",
+    modifiedTime: `${incentives.IA.lastVerified}T00:00:00Z`,
   },
 };
 
@@ -68,6 +70,17 @@ const faqJsonLd = {
   ],
 };
 
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Iowa Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-23T22:15:04-05:00",
+  dateModified: `${incentives.IA.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/ia",
+};
+
 export default function IowaPage() {
   const iaIncentive = incentives.IA;
   const formattedDate = formatDate(iaIncentive.lastVerified);
@@ -76,6 +89,7 @@ export default function IowaPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. Hero */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -93,7 +107,7 @@ export default function IowaPage() {
             Iowa homeowners can claim <strong>$300–$713</strong> in utility instant discounts from MidAmerican Energy and Alliant Energy for air-source heat pumps. Federal tax credits expired December 31, 2025, and Iowa&apos;s IRA-funded HEAR and HOMES programs remain funded but unlaunched. This guide covers all major Iowa heat pump incentives available in 2026, including utility discounts, municipal programs, rural cooperative rebates, and HEAR/HOMES status. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

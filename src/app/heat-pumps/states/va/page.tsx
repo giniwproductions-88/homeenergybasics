@@ -18,7 +18,20 @@ export const metadata: Metadata = {
       "Utility rebates of $250–$2,000 from Dominion, Washington Gas, and Appalachian Power — the complete guide to Virginia heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/va",
     type: "article",
+    publishedTime: "2026-03-22T17:32:39-05:00",
+    modifiedTime: `${incentives.VA.lastVerified}T00:00:00Z`,
   },
+};
+
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Virginia Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-22T17:32:39-05:00",
+  dateModified: `${incentives.VA.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/va",
 };
 
 export default function VirginiaPage() {
@@ -75,6 +88,7 @@ export default function VirginiaPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. HERO */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -92,7 +106,7 @@ export default function VirginiaPage() {
             Federal tax credits are gone. Virginia&apos;s <strong>$188 million</strong> in IRA-funded state rebates remain pending with no launch date. What you can actually get in 2026 depends on your utility — Washington Gas offers up to <strong>$2,000</strong> for dual-fuel systems, Dominion Energy covers heat pump water heaters at <strong>$250–$400</strong>, and Appalachian Power offers <strong>$300–$400</strong> for mini-splits. Most electric cooperatives offer no direct rebates at all. This guide covers all major Virginia heat pump incentives available in 2026, including Dominion Energy, Washington Gas, Appalachian Power, and the pending HOMES and HEAR programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

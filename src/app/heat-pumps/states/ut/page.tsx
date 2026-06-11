@@ -18,7 +18,20 @@ export const metadata: Metadata = {
       "Wattsmart rebates up to $1,700, ThermWise up to $1,200, IRA rebates pending — the complete guide to Utah heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/ut",
     type: "article",
+    publishedTime: "2026-03-24T10:19:20-05:00",
+    modifiedTime: `${incentives.UT.lastVerified}T00:00:00Z`,
   },
+};
+
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Utah Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-24T10:19:20-05:00",
+  dateModified: `${incentives.UT.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/ut",
 };
 
 export default function UtahPage() {
@@ -75,6 +88,7 @@ export default function UtahPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. HERO */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -92,7 +106,7 @@ export default function UtahPage() {
             Utah homeowners can currently stack Rocky Mountain Power Wattsmart rebates of up to <strong>$1,700</strong> with Enbridge Gas ThermWise rebates of up to <strong>$1,200</strong> for a combined <strong>$2,450–$2,650</strong> on dual-fuel heat pump systems. Federal tax credits ended in 2025, and Utah&apos;s $101 million in IRA-funded HEAR and HOMES rebates have not yet launched. This guide covers all major Utah heat pump incentives available in 2026, including Wattsmart, ThermWise, Provo RenewChoice, and UAMPS Cool Cash. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

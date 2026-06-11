@@ -18,6 +18,8 @@ export const metadata: Metadata = {
       "NYS Clean Heat up to $12,000 plus EmPower+ up to $24,000 \u2014 the complete guide to New York heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/ny",
     type: "article",
+    publishedTime: "2026-03-21T23:25:20-05:00",
+    modifiedTime: `${incentives.NY.lastVerified}T00:00:00Z`,
   },
 };
 
@@ -76,6 +78,17 @@ const faqJsonLd = {
   ],
 };
 
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "New York Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-21T23:25:20-05:00",
+  dateModified: `${incentives.NY.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/ny",
+};
+
 export default function NewYorkPage() {
   const nyIncentive = incentives.NY;
   const formattedDate = formatDate(nyIncentive.lastVerified);
@@ -83,6 +96,7 @@ export default function NewYorkPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. Hero */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -100,7 +114,7 @@ export default function NewYorkPage() {
             New York offers some of the largest heat pump rebates in the U.S. through the NYS Clean Heat program &mdash; up to <strong>$12,000</strong> for air-source systems and <strong>$25,000</strong> for geothermal. Income-eligible households can receive up to <strong>$24,000</strong> through EmPower+ with HEAR funding. Federal tax credits ended December 31, 2025, but state and utility incentives make New York one of the best places to install a heat pump in 2026. This guide covers all major New York heat pump incentives available in 2026, including NYS Clean Heat, Con Edison, National Grid, PSEG Long Island, Central Hudson, EmPower+, the Weatherized Tier, and the state geothermal credit. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

@@ -18,6 +18,8 @@ export const metadata: Metadata = {
       "Utility rebates $250–$1,500, HEAR up to $8,000 pending launch — the complete guide to Kentucky heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/ky",
     type: "article",
+    publishedTime: "2026-03-24T08:17:07-05:00",
+    modifiedTime: `${incentives.KY.lastVerified}T00:00:00Z`,
   },
 };
 
@@ -68,6 +70,17 @@ const faqJsonLd = {
   ],
 };
 
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Kentucky Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-24T08:17:07-05:00",
+  dateModified: `${incentives.KY.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/ky",
+};
+
 export default function KentuckyPage() {
   const kyIncentive = incentives.KY;
   const formattedDate = formatDate(kyIncentive.lastVerified);
@@ -75,6 +88,7 @@ export default function KentuckyPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. HERO */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -92,7 +106,7 @@ export default function KentuckyPage() {
             Kentucky heat pump rebates and incentives are still available in 2026, but the landscape is narrower than a year ago. Federal tax credits ended December 31, 2025, and the state&apos;s IRA-funded HEAR program has not yet launched. Utility rebates of <strong>$250–$1,500</strong> are the primary incentive today, with TVA-served and EKPC cooperative territories offering the strongest programs. This guide covers all major Kentucky heat pump incentives available in 2026, including LG&amp;E/KU, Duke Energy, EKPC cooperatives, TVA EnergyRight, and the pending HEAR/HOMES programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

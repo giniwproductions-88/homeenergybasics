@@ -18,6 +18,8 @@ export const metadata: Metadata = {
       "Utility rebates of $40–$1,150 are the primary incentive after federal credits expired — the complete guide to Florida heat pump incentives in 2026.",
     url: "https://homeenergybasics.com/heat-pumps/states/fl",
     type: "article",
+    publishedTime: "2026-03-23T17:21:12-05:00",
+    modifiedTime: `${incentives.FL.lastVerified}T00:00:00Z`,
   },
 };
 
@@ -68,6 +70,17 @@ const faqJsonLd = {
   ],
 };
 
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Florida Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-23T17:21:12-05:00",
+  dateModified: `${incentives.FL.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/fl",
+};
+
 export default function FloridaPage() {
   const flIncentive = incentives.FL;
   const { sources } = flIncentive;
@@ -76,6 +89,7 @@ export default function FloridaPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. HERO */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -96,7 +110,7 @@ export default function FloridaPage() {
             Florida has no statewide rebate program in 2026.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

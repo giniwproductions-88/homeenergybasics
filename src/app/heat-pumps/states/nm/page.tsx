@@ -18,6 +18,8 @@ export const metadata: Metadata = {
       "HEAR covers up to $8,000 per heat pump for income-qualifying households — the complete guide to New Mexico heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/nm",
     type: "article",
+    publishedTime: "2026-03-23T20:08:09-05:00",
+    modifiedTime: `${incentives.NM.lastVerified}T00:00:00Z`,
   },
 };
 
@@ -68,6 +70,17 @@ const faqJsonLd = {
   ],
 };
 
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "New Mexico Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-23T20:08:09-05:00",
+  dateModified: `${incentives.NM.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/nm",
+};
+
 export default function NewMexicoPage() {
   const nmIncentive = incentives.NM;
   const formattedDate = formatDate(nmIncentive.lastVerified);
@@ -75,6 +88,7 @@ export default function NewMexicoPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. HERO */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -92,7 +106,7 @@ export default function NewMexicoPage() {
             New Mexico&apos;s HEAR program covers up to <strong>$8,000</strong> per heat pump for income-qualifying households, but most homeowners above 80% of Area Median Income (AMI) are limited to roughly <strong>$1,000–$1,800</strong> in utility rebates and state tax credits. This guide covers all major New Mexico heat pump incentives available in 2026, including HEAR, PNM and El Paso Electric utility rebates, rural co-op programs, and state tax credits. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

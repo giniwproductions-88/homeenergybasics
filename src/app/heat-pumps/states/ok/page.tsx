@@ -18,6 +18,8 @@ export const metadata: Metadata = {
       "Utility rebates up to $3,000 from OG&E and $1,400 from PSO \u2014 the complete guide to Oklahoma heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/ok",
     type: "article",
+    publishedTime: "2026-03-24T18:37:37-05:00",
+    modifiedTime: `${incentives.OK.lastVerified}T00:00:00Z`,
   },
 };
 
@@ -68,6 +70,17 @@ const faqJsonLd = {
   ],
 };
 
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Oklahoma Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-24T18:37:37-05:00",
+  dateModified: `${incentives.OK.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/ok",
+};
+
 export default function OklahomaPage() {
   const okIncentive = incentives.OK;
   const formattedDate = formatDate(okIncentive.lastVerified);
@@ -75,6 +88,7 @@ export default function OklahomaPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. Hero */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -106,7 +120,7 @@ export default function OklahomaPage() {
             available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

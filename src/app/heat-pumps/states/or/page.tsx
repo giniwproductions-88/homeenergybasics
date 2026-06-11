@@ -18,6 +18,8 @@ export const metadata: Metadata = {
       "Energy Trust rebates up to $1,000 plus HP3 and upcoming HEAR up to $8,000 \u2014 the complete guide to Oregon heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/or",
     type: "article",
+    publishedTime: "2026-03-21T23:25:20-05:00",
+    modifiedTime: `${incentives.OR.lastVerified}T00:00:00Z`,
   },
 };
 
@@ -76,6 +78,17 @@ const faqJsonLd = {
   ],
 };
 
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Oregon Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-21T23:25:20-05:00",
+  dateModified: `${incentives.OR.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/or",
+};
+
 export default function OregonPage() {
   const orIncentive = incentives.OR;
   const formattedDate = formatDate(orIncentive.lastVerified);
@@ -83,6 +96,7 @@ export default function OregonPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. HERO */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -100,7 +114,7 @@ export default function OregonPage() {
             Federal tax credits are gone, but Oregon has one of the strongest layered incentive structures in the country. Energy Trust of Oregon offers <strong>$800&#8211;$1,000</strong> for most homeowners (up to <strong>$3,000</strong> income-qualified), the ODOE Heat Pump Purchase Program adds up to <strong>$2,000</strong>, and upcoming HOMES/HEAR rebates could bring totals to <strong>$8,000+</strong> for income-qualifying households. This guide covers all major Oregon heat pump incentives available in 2026, including Energy Trust, HP3, CHPDP, HOMES, HEAR, and Portland Clean Energy Fund programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

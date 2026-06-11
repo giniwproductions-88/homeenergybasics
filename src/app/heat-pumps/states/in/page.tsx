@@ -18,7 +18,20 @@ export const metadata: Metadata = {
       "Up to $8,000 through Indiana Energy Saver plus $275\u2013$3,000 in utility rebates \u2014 the complete guide to Indiana heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/in",
     type: "article",
+    publishedTime: "2026-03-23T18:53:35-05:00",
+    modifiedTime: `${incentives.IN.lastVerified}T00:00:00Z`,
   },
+};
+
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Indiana Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-23T18:53:35-05:00",
+  dateModified: `${incentives.IN.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/in",
 };
 
 export default function IndianaPage() {
@@ -75,6 +88,7 @@ export default function IndianaPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. HERO */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -92,7 +106,7 @@ export default function IndianaPage() {
             Indiana&apos;s <strong>$182 million Energy Saver Program</strong> is fully operational and offers up to <strong>$8,000</strong> for a heat pump for income-qualified households. Utility rebates from AES Indiana, Duke Energy, NIPSCO, and others add <strong>$275&ndash;$3,000</strong> on top. Federal tax credits expired December 31, 2025. This guide covers all major Indiana heat pump incentives available in 2026, including the Indiana Energy Saver Program (HOMES and HEAR), utility rebates from all major providers, and local programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

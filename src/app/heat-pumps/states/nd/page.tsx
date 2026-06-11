@@ -18,6 +18,8 @@ export const metadata: Metadata = {
       "Utility rebates up to $4,200 for cold-climate systems — the complete guide to North Dakota heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/nd",
     type: "article",
+    publishedTime: "2026-03-24T11:08:03-05:00",
+    modifiedTime: `${incentives.ND.lastVerified}T00:00:00Z`,
   },
 };
 
@@ -68,6 +70,17 @@ const faqJsonLd = {
   ],
 };
 
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "North Dakota Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-24T11:08:03-05:00",
+  dateModified: `${incentives.ND.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/nd",
+};
+
 export default function NorthDakotaPage() {
   const ndIncentive = incentives.ND;
   const formattedDate = formatDate(ndIncentive.lastVerified);
@@ -75,6 +88,7 @@ export default function NorthDakotaPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. Hero */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -99,7 +113,7 @@ export default function NorthDakotaPage() {
             and the pending HEAR/HOMES programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

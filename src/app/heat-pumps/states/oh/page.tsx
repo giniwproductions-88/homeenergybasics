@@ -18,6 +18,8 @@ export const metadata: Metadata = {
       "Ohio&apos;s $249M in IRA rebates remain pending and utility programs were dismantled — the complete guide to Ohio heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/oh",
     type: "article",
+    publishedTime: "2026-03-23T17:39:46-05:00",
+    modifiedTime: `${incentives.OH.lastVerified}T00:00:00Z`,
   },
 };
 
@@ -76,6 +78,17 @@ const faqJsonLd = {
   ],
 };
 
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Ohio Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-23T17:39:46-05:00",
+  dateModified: `${incentives.OH.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/oh",
+};
+
 export default function OhioPage() {
   const ohIncentive = incentives.OH;
   const formattedDate = formatDate(ohIncentive.lastVerified);
@@ -83,6 +96,7 @@ export default function OhioPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. HERO */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -100,7 +114,7 @@ export default function OhioPage() {
             Most Ohio homeowners will see little to no direct rebates until federal IRA programs launch. Federal tax credits expired, Ohio&apos;s <strong>$249 million</strong> in IRA rebate funding remains pending, and utility rebate programs were dismantled by House Bill 6 in 2019. The strongest active incentive is the ECO-Link loan program, which provides a <strong>3% interest rate reduction</strong> on qualifying home improvement loans up to <strong>$50,000</strong>. For most homeowners, this is one of the weakest incentive environments in the country right now. This guide covers all major Ohio heat pump incentives available in 2026, including HEAR, HOMES, AEP Ohio HELP, ECO-Link, and HWAP. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

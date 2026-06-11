@@ -18,7 +18,20 @@ export const metadata: Metadata = {
       "Mass Save rebates up to $8,500 ($25,000 income-qualified), 0% HEAT Loan, seasonal electric rate — the complete guide to Massachusetts heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/ma",
     type: "article",
+    publishedTime: "2026-03-18T00:11:03-05:00",
+    modifiedTime: `${incentives.MA.lastVerified}T00:00:00Z`,
   },
+};
+
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Massachusetts Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-18T00:11:03-05:00",
+  dateModified: `${incentives.MA.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/ma",
 };
 
 export default function MassachusettsPage() {
@@ -75,6 +88,7 @@ export default function MassachusettsPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. Hero */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -99,7 +113,7 @@ export default function MassachusettsPage() {
             actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

@@ -20,7 +20,20 @@ export const metadata: Metadata = {
       "Focus on Energy instant discounts, HEAR up to $8,000, HOMES up to $10,000 — the complete guide to Wisconsin heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/wi",
     type: "article",
+    publishedTime: "2026-03-22T22:48:47-05:00",
+    modifiedTime: `${incentives.WI.lastVerified}T00:00:00Z`,
   },
+};
+
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Wisconsin Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-22T22:48:47-05:00",
+  dateModified: `${incentives.WI.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/wi",
 };
 
 export default function WisconsinPage() {
@@ -77,6 +90,7 @@ export default function WisconsinPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* Hero */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -107,7 +121,7 @@ export default function WisconsinPage() {
             available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

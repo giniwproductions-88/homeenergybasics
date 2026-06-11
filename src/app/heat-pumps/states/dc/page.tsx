@@ -18,6 +18,8 @@ export const metadata: Metadata = {
       "Up to $9,800 in DCSEU rebates for gas-to-electric conversions — the complete guide to DC heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/dc",
     type: "article",
+    publishedTime: "2026-03-23T21:36:24-05:00",
+    modifiedTime: `${incentives.DC.lastVerified}T00:00:00Z`,
   },
 };
 
@@ -68,6 +70,17 @@ const faqJsonLd = {
   ],
 };
 
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Washington DC Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-23T21:36:24-05:00",
+  dateModified: `${incentives.DC.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/dc",
+};
+
 export default function WashingtonDCPage() {
   const dcIncentive = incentives.DC;
   const formattedDate = formatDate(dcIncentive.lastVerified);
@@ -75,6 +88,7 @@ export default function WashingtonDCPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. HERO */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -92,7 +106,7 @@ export default function WashingtonDCPage() {
             With federal tax credits gone, DC homeowners switching from gas to electric heat pumps can still claim up to <strong>$9,800</strong> in rebates through the DC Sustainable Energy Utility (DCSEU). Income-qualified households below 80% of Area Median Income (AMI) may receive whole-home electrification at no cost through the Affordable Home Electrification Program, though it&apos;s currently waitlisted. This guide covers all major Washington DC heat pump incentives available in 2026, including DCSEU rebates, AHEP, and DC Green Bank financing. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

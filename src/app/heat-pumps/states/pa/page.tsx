@@ -18,6 +18,8 @@ export const metadata: Metadata = {
       "PECO, PPL, Duquesne Light utility rebates plus Penn Energy Savers up to $8,000 pending \u2014 the complete guide to PA heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/pa",
     type: "article",
+    publishedTime: "2026-03-22T16:55:34-05:00",
+    modifiedTime: `${incentives.PA.lastVerified}T00:00:00Z`,
   },
 };
 
@@ -76,6 +78,17 @@ const faqJsonLd = {
   ],
 };
 
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Pennsylvania Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-22T16:55:34-05:00",
+  dateModified: `${incentives.PA.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/pa",
+};
+
 export default function PennsylvaniaPage() {
   const paIncentive = incentives.PA;
   const formattedDate = formatDate(paIncentive.lastVerified);
@@ -83,6 +96,7 @@ export default function PennsylvaniaPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. HERO */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -100,7 +114,7 @@ export default function PennsylvaniaPage() {
             Pennsylvania heat pump rebates vary entirely by utility territory &mdash; there is no single statewide program in 2026. Federal tax credits are gone and Penn Energy Savers hasn&apos;t launched yet, leaving Act 129 utility rebates as the only real incentives today &mdash; typically <strong>$200&ndash;$1,950 depending on your utility</strong>. PECO customers in Philadelphia can stack up to <strong>$1,950</strong> with EAP bonuses, while FirstEnergy customers get as little as <strong>$200</strong>. This guide covers all major Pennsylvania heat pump incentives available in 2026, including PECO, PPL, Duquesne Light, FirstEnergy, UGI, Penn Energy Savers, HEELP, and KEEP programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

@@ -18,8 +18,6 @@ export const metadata: Metadata = {
       "Energize Delaware rebates cover $800–$2,200 for qualifying heat pumps — the complete guide to Delaware heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/de",
     type: "article",
-    publishedTime: "2026-03-23",
-    modifiedTime: `${incentives.DE.lastVerified}T00:00:00Z`,
   },
 };
 
@@ -75,10 +73,12 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Delaware Heat Pump Rebates & Incentives (2026)",
   datePublished: "2026-03-23",
-  dateModified: `${incentives.DE.lastVerified}T00:00:00Z`,
-  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
-  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
-  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/de",
+  dateModified: "2026-06-03",
+  author: {
+    "@type": "Organization",
+    name: "Home Energy Basics",
+    url: "https://homeenergybasics.com",
+  },
 };
 
 export default function DelawarePage() {
@@ -114,7 +114,7 @@ export default function DelawarePage() {
             IRA rebate programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} — verified against official program sources
+            Last verified: {formattedDate}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

@@ -18,7 +18,20 @@ export const metadata: Metadata = {
       "Up to $14,000 in income-qualified rebates plus Hawaii Energy instant rebates \u2014 the complete guide to Hawaii heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/hi",
     type: "article",
+    publishedTime: "2026-03-23T21:52:26-05:00",
+    modifiedTime: `${incentives.HI.lastVerified}T00:00:00Z`,
   },
+};
+
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Hawaii Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-23T21:52:26-05:00",
+  dateModified: `${incentives.HI.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/hi",
 };
 
 export default function HawaiiPage() {
@@ -75,6 +88,7 @@ export default function HawaiiPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. Hero */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -92,7 +106,7 @@ export default function HawaiiPage() {
             Hawaii homeowners can access up to <strong>$14,000</strong> in income-qualified heat pump rebates in 2026 through the upcoming eHale program, plus instant rebates of <strong>$450–$700</strong> from Hawaii Energy right now. Federal tax credits have expired, but Hawaii&apos;s nation-high electricity rates make heat pumps the highest-ROI energy upgrade in the country. This guide covers all major Hawaii heat pump incentives available in 2026, including Hawaii Energy, eHale HEAR, and KIUC programs. Here&apos;s the complete breakdown.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

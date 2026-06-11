@@ -20,7 +20,20 @@ export const metadata: Metadata = {
       "Xcel Energy, CenterPoint, Minnesota Power, Minneapolis Green Cost Share, and pending HEAR — the complete guide to Minnesota heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/mn",
     type: "article",
+    publishedTime: "2026-02-18T18:04:10-06:00",
+    modifiedTime: `${incentives.MN.lastVerified}T00:00:00Z`,
   },
+};
+
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Minnesota Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-02-18T18:04:10-06:00",
+  dateModified: `${incentives.MN.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/mn",
 };
 
 export default function MinnesotaPage() {
@@ -85,6 +98,7 @@ export default function MinnesotaPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. Hero */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -102,7 +116,7 @@ export default function MinnesotaPage() {
             Federal heat pump tax credits ended December 31, 2025. Utility rebates from Xcel Energy (up to <strong>$2,600</strong> with insulation bonus), CenterPoint (<strong>$1,100</strong> dual-fuel), and Minnesota Power (<strong>$1,200</strong> cold-climate, enhanced through June 2026) are what&apos;s available now, plus up to <strong>$14,000</strong> in Minneapolis city rebates. Save Energy Minnesota (HEAR + a <strong>$4,000</strong> state rebate) has not launched. This guide covers all major Minnesota heat pump incentives available in 2026, including Xcel Energy, CenterPoint Energy, Minnesota Power, Minneapolis Green Cost Share, and the pending Save Energy Minnesota program. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

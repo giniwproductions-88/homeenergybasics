@@ -18,7 +18,20 @@ export const metadata: Metadata = {
       "MiHER HEAR rebates up to $8,000 + utility rebates from DTE, Consumers Energy, TCLP, and more \u2014 the complete guide to Michigan heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/mi",
     type: "article",
+    publishedTime: "2026-03-22T22:05:30-05:00",
+    modifiedTime: `${incentives.MI.lastVerified}T00:00:00Z`,
   },
+};
+
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Michigan Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-22T22:05:30-05:00",
+  dateModified: `${incentives.MI.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/mi",
 };
 
 export default function MichiganPage() {
@@ -83,6 +96,7 @@ export default function MichiganPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. Hero */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -106,7 +120,7 @@ export default function MichiganPage() {
             A2ZERO program. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

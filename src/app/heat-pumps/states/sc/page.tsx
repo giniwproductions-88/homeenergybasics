@@ -18,6 +18,8 @@ export const metadata: Metadata = {
       "Utility rebates of $300–$1,000 plus pending HEAR/HOMES rebates up to $14,000 — the complete guide to South Carolina heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/sc",
     type: "article",
+    publishedTime: "2026-03-23T20:13:51-05:00",
+    modifiedTime: `${incentives.SC.lastVerified}T00:00:00Z`,
   },
 };
 
@@ -68,6 +70,17 @@ const faqJsonLd = {
   ],
 };
 
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "South Carolina Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-23T20:13:51-05:00",
+  dateModified: `${incentives.SC.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/sc",
+};
+
 export default function SouthCarolinaPage() {
   const scIncentive = incentives.SC;
   const formattedDate = formatDate(scIncentive.lastVerified);
@@ -75,6 +88,7 @@ export default function SouthCarolinaPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. Hero */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -92,7 +106,7 @@ export default function SouthCarolinaPage() {
             South Carolina heat pump incentives are limited in 2026 but not nonexistent. With federal tax credits gone and state HEAR/HOMES rebate programs still pending launch, most homeowners rely on <strong>utility rebates worth $300–$1,000</strong> from Duke Energy, Dominion Energy, or Santee Cooper, plus a <strong>$3,500 geothermal tax credit</strong> if applicable. This guide covers all major South Carolina heat pump incentives available in 2026, including utility rebates, pending federal rebates, electric cooperative programs, and the state geothermal credit. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

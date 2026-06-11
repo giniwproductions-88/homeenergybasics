@@ -18,7 +18,20 @@ export const metadata: Metadata = {
       "PSE up to $5,000, state-funded HEAR active, federal HARP pending — the complete guide to Washington heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/wa",
     type: "article",
+    publishedTime: "2026-03-21T23:25:20-05:00",
+    modifiedTime: `${incentives.WA.lastVerified}T00:00:00Z`,
   },
+};
+
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Washington Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-21T23:25:20-05:00",
+  dateModified: `${incentives.WA.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/wa",
 };
 
 export default function WashingtonPage() {
@@ -83,6 +96,7 @@ export default function WashingtonPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. HERO */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -100,7 +114,7 @@ export default function WashingtonPage() {
             Federal tax credits are gone, but Washington has more active incentive layers than most states. Utility rebates from PSE reach up to <strong>$5,000</strong> income-qualified, a state-funded HEAR program backed by <strong>$103.6 million</strong> in Climate Commitment Act revenue is accepting applications, and federal HARP rebates (up to <strong>$8,000</strong>) are in final preparation. Seattle City Light offers <strong>$2,000</strong> for oil-to-heat-pump conversions. This guide covers all major Washington heat pump incentives available in 2026, including PSE, Seattle City Light, Snohomish PUD, Avista, the state HEAR program, and the pending federal HARP/HOMES programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

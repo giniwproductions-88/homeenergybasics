@@ -18,7 +18,20 @@ export const metadata: Metadata = {
       "ACES grants up to $8,500, Fairbanks change-out up to $17,500, utility rebates up to $1,000 — the complete guide to Alaska heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/ak",
     type: "article",
+    publishedTime: "2026-03-24T19:40:20-05:00",
+    modifiedTime: `${incentives.AK.lastVerified}T00:00:00Z`,
   },
+};
+
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Alaska Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-24T19:40:20-05:00",
+  dateModified: `${incentives.AK.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/ak",
 };
 
 export default function AlaskaPage() {
@@ -75,6 +88,7 @@ export default function AlaskaPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. Hero — gradient */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -98,7 +112,7 @@ export default function AlaskaPage() {
             utility rebates, and IRA program status. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

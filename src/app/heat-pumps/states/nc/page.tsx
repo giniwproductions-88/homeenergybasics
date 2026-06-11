@@ -20,7 +20,20 @@ export const metadata: Metadata = {
       "Energy Saver NC up to $8,000 HEAR or $16,000 HOMES, Duke Energy rebates up to $1,000 — the complete guide to North Carolina heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/nc",
     type: "article",
+    publishedTime: "2026-03-23T12:00:17-05:00",
+    modifiedTime: `${incentives.NC.lastVerified}T00:00:00Z`,
   },
+};
+
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "North Carolina Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-23T12:00:17-05:00",
+  dateModified: `${incentives.NC.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/nc",
 };
 
 export default function NorthCarolinaPage() {
@@ -77,6 +90,7 @@ export default function NorthCarolinaPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. HERO */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -94,7 +108,7 @@ export default function NorthCarolinaPage() {
             North Carolina still has some of the strongest heat pump incentives in the country. Energy Saver NC is now live statewide and offers up to <strong>$8,000</strong> for a qualifying heat pump through HEAR or up to <strong>$16,000</strong> in whole-home rebates through HOMES for income-eligible households. Duke Energy and some local utilities add smaller rebates on top, bringing total savings even higher. This guide covers all major North Carolina heat pump incentives available in 2026, including Energy Saver NC HEAR and HOMES, Duke Energy, Dominion Energy, electric cooperatives, and municipal utility programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

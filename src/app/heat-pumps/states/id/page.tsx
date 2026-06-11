@@ -18,6 +18,8 @@ export const metadata: Metadata = {
       "Utility rebates from $300–$2,400 are all that remain — the complete guide to Idaho heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/id",
     type: "article",
+    publishedTime: "2026-03-24T10:25:32-05:00",
+    modifiedTime: `${incentives.ID.lastVerified}T00:00:00Z`,
   },
 };
 
@@ -68,6 +70,17 @@ const faqJsonLd = {
   ],
 };
 
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Idaho Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-24T10:25:32-05:00",
+  dateModified: `${incentives.ID.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/id",
+};
+
 export default function IdahoPage() {
   const idIncentive = incentives.ID;
   const formattedDate = formatDate(idIncentive.lastVerified);
@@ -75,6 +88,7 @@ export default function IdahoPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. HERO */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -99,7 +113,7 @@ export default function IdahoPage() {
             Program. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

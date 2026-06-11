@@ -18,7 +18,20 @@ export const metadata: Metadata = {
       "EmPOWER up to $15,000 for electrification. Potomac Edison Switch-to-Electric up to $5,700. Montgomery County adds $2,500 \u2014 the complete guide to Maryland heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/md",
     type: "article",
+    publishedTime: "2026-03-22T16:18:36-05:00",
+    modifiedTime: `${incentives.MD.lastVerified}T00:00:00Z`,
   },
+};
+
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Maryland Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-22T16:18:36-05:00",
+  dateModified: `${incentives.MD.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/md",
 };
 
 export default function MarylandPage() {
@@ -83,6 +96,7 @@ export default function MarylandPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. Hero */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -106,7 +120,7 @@ export default function MarylandPage() {
             Electrify MC. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

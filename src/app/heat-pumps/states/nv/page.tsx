@@ -18,6 +18,8 @@ export const metadata: Metadata = {
       "NV Energy rebates up to $3,400 plus pending IRA programs up to $8,000 — the complete guide to Nevada heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/nv",
     type: "article",
+    publishedTime: "2026-03-23T11:45:42-05:00",
+    modifiedTime: `${incentives.NV.lastVerified}T00:00:00Z`,
   },
 };
 
@@ -68,6 +70,17 @@ const faqJsonLd = {
   ],
 };
 
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Nevada Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-23T11:45:42-05:00",
+  dateModified: `${incentives.NV.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/nv",
+};
+
 export default function NevadaPage() {
   const nvIncentive = incentives.NV;
   const formattedDate = formatDate(nvIncentive.lastVerified);
@@ -75,6 +88,7 @@ export default function NevadaPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. Hero */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -98,7 +112,7 @@ export default function NevadaPage() {
             actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

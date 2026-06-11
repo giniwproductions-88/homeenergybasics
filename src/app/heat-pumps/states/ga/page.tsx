@@ -18,6 +18,8 @@ export const metadata: Metadata = {
       "HEAR rebates up to $8,000, Georgia Power HEIP up to $1,000, EMC rebates $100\u2013$600 \u2014 the complete guide to Georgia heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/ga",
     type: "article",
+    publishedTime: "2026-03-23T11:16:55-05:00",
+    modifiedTime: `${incentives.GA.lastVerified}T00:00:00Z`,
   },
 };
 
@@ -68,6 +70,17 @@ const faqJsonLd = {
   ],
 };
 
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Georgia Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-23T11:16:55-05:00",
+  dateModified: `${incentives.GA.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/ga",
+};
+
 export default function GeorgiaPage() {
   const gaIncentive = incentives.GA;
   const formattedDate = formatDate(gaIncentive.lastVerified);
@@ -76,6 +89,7 @@ export default function GeorgiaPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. HERO */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -93,7 +107,7 @@ export default function GeorgiaPage() {
             Georgia homeowners can still access <strong>$4,000 to $14,000+</strong> in heat pump rebates in 2026 {"\u2014"} but the landscape shifted after federal tax credits expired. The main incentives now come from Georgia&apos;s IRA-funded HEAR and HER programs, plus utility rebates from Georgia Power and the state&apos;s EMCs. This guide covers all major Georgia heat pump incentives available in 2026, including HEAR, HER, Georgia Power HEIP, and EMC programs. Here&apos;s what&apos;s actually available {"\u2014"} and what you&apos;ll realistically get after rebates.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

@@ -18,7 +18,20 @@ export const metadata: Metadata = {
       "Wattsmart rebates up to $1,700 for cold-climate ASHPs, co-op rebates up to $1,800 — the complete guide to Wyoming heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/wy",
     type: "article",
+    publishedTime: "2026-03-24T14:13:47-05:00",
+    modifiedTime: `${incentives.WY.lastVerified}T00:00:00Z`,
   },
+};
+
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Wyoming Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-24T14:13:47-05:00",
+  dateModified: `${incentives.WY.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/wy",
 };
 
 export default function WyomingPage() {
@@ -75,6 +88,7 @@ export default function WyomingPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. Hero */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -92,7 +106,7 @@ export default function WyomingPage() {
             Wyoming&apos;s heat pump incentive landscape is thin. Federal tax credits expired, the state has no income tax (and therefore no state energy credits), and the <strong>$69.2 million</strong> IRA-funded Home Energy Savings Program has not launched. The main incentive available is Rocky Mountain Power&apos;s Wattsmart program, offering up to <strong>$1,700</strong> for cold-climate heat pumps converting from electric resistance. This guide covers all major Wyoming heat pump incentives available in 2026, including Wattsmart rebates, rural co-op programs, and the frozen IRA allocation. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

@@ -18,6 +18,8 @@ export const metadata: Metadata = {
       "TVA EnergyRight $500–$1,500, Alabama Power $1,000 gas-to-electric, co-op rebates $300–$400/ton — the complete guide to Alabama heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/al",
     type: "article",
+    publishedTime: "2026-03-23T20:51:10-05:00",
+    modifiedTime: `${incentives.AL.lastVerified}T00:00:00Z`,
   },
 };
 
@@ -68,6 +70,17 @@ const faqJsonLd = {
   ],
 };
 
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Alabama Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-23T20:51:10-05:00",
+  dateModified: `${incentives.AL.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/al",
+};
+
 export default function AlabamaPage() {
   const alIncentive = incentives.AL;
   const formattedDate = formatDate(alIncentive.lastVerified);
@@ -75,6 +88,7 @@ export default function AlabamaPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. Hero */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -99,7 +113,7 @@ export default function AlabamaPage() {
             cooperative rebates. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

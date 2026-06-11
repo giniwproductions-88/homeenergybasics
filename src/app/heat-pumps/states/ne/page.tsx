@@ -18,6 +18,8 @@ export const metadata: Metadata = {
       "Utility rebates from $525 to $1,200 plus 1.5% state energy loans \u2014 the complete guide to Nebraska heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/ne",
     type: "article",
+    publishedTime: "2026-03-24T18:28:24-05:00",
+    modifiedTime: `${incentives.NE.lastVerified}T00:00:00Z`,
   },
 };
 
@@ -68,6 +70,17 @@ const faqJsonLd = {
   ],
 };
 
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Nebraska Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-24T18:28:24-05:00",
+  dateModified: `${incentives.NE.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/ne",
+};
+
 export default function NebraskaPage() {
   const neIncentive = incentives.NE;
   const formattedDate = formatDate(neIncentive.lastVerified);
@@ -75,6 +88,7 @@ export default function NebraskaPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. HERO */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -92,7 +106,7 @@ export default function NebraskaPage() {
             Nebraska heat pump incentives are limited in 2026. <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">Federal tax credits expired</Link> in December 2025, and the state&apos;s IRA-funded rebate programs have not launched. Most homeowners rely on utility rebates from OPPD (<strong>$525</strong>), LES (<strong>$800</strong>), or NPPD (up to <strong>$1,200</strong>). Nebraska&apos;s Dollar and Energy Saving Loans offer financing as low as <strong>1.5%</strong> interest. This guide covers all major Nebraska heat pump incentives available in 2026, including utility rebates, state energy loans, the Lincoln city incentive, and IRA program status. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

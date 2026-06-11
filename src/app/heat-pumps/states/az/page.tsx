@@ -20,7 +20,20 @@ export const metadata: Metadata = {
       "Efficiency Arizona HEAR up to $8,000, SRP Cool Cash up to $1,125 — the complete guide to Arizona heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/az",
     type: "article",
+    publishedTime: "2026-03-23T11:16:55-05:00",
+    modifiedTime: `${incentives.AZ.lastVerified}T00:00:00Z`,
   },
+};
+
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Arizona Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-23T11:16:55-05:00",
+  dateModified: `${incentives.AZ.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/az",
 };
 
 export default function ArizonaPage() {
@@ -77,6 +90,7 @@ export default function ArizonaPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. HERO */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -94,7 +108,7 @@ export default function ArizonaPage() {
             Arizona&apos;s heat pump incentives changed dramatically in 2026. Federal tax credits are gone, but the state&apos;s Efficiency Arizona program now offers up to <strong>$8,000</strong> per heat pump for income-qualified households. Utility rebates vary widely — SRP&apos;s Cool Cash program offers up to <strong>$1,125</strong> for a 5-ton variable-capacity system, while APS eliminated all residential rebates entirely. This guide covers all major Arizona heat pump incentives available in 2026, including Efficiency Arizona HEAR, SRP Cool Cash, TEP, and the City of Flagstaff program. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

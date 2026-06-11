@@ -18,6 +18,8 @@ export const metadata: Metadata = {
       "TVA EnergyRight rebates up to $1,500 plus pending HEAR rebates up to $8,000 — the complete guide to Tennessee heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/tn",
     type: "article",
+    publishedTime: "2026-03-23T19:16:59-05:00",
+    modifiedTime: `${incentives.TN.lastVerified}T00:00:00Z`,
   },
 };
 
@@ -68,6 +70,17 @@ const faqJsonLd = {
   ],
 };
 
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Tennessee Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-23T19:16:59-05:00",
+  dateModified: `${incentives.TN.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/tn",
+};
+
 export default function TennesseePage() {
   const tnIncentive = incentives.TN;
   const formattedDate = formatDate(tnIncentive.lastVerified);
@@ -75,6 +88,7 @@ export default function TennesseePage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. HERO */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -92,7 +106,7 @@ export default function TennesseePage() {
             TVA EnergyRight rebates of <strong>$500–$1,500</strong> are the only active heat pump incentive for most Tennessee homeowners right now. Federal tax credits expired December 31, 2025. IRA-funded HEAR rebates covering up to <strong>$8,000</strong> per heat pump are approved but have not yet launched. This guide covers all major Tennessee heat pump incentives available in 2026, including TVA EnergyRight, HEAR, HOMES, and utility-specific programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

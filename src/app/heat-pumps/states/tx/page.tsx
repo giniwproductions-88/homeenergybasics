@@ -18,6 +18,8 @@ export const metadata: Metadata = {
       "Utility-by-utility heat pump rebate guide for Texas \u2014 Austin Energy, Oncor, CenterPoint, CPS Energy plus $690M HEAR pending after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/tx",
     type: "article",
+    publishedTime: "2026-03-22T13:43:35-05:00",
+    modifiedTime: `${incentives.TX.lastVerified}T00:00:00Z`,
   },
 };
 
@@ -76,6 +78,17 @@ const faqJsonLd = {
   ],
 };
 
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Texas Heat Pump Rebates & Incentives (2026)",
+  datePublished: "2026-03-22T13:43:35-05:00",
+  dateModified: `${incentives.TX.lastVerified}T00:00:00Z`,
+  author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
+  mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/tx",
+};
+
 export default function TexasPage() {
   const txIncentive = incentives.TX;
   const formattedDate = formatDate(txIncentive.lastVerified);
@@ -83,6 +96,7 @@ export default function TexasPage() {
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={articleJsonLd} />
 
       {/* 1. HERO */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-12">
@@ -100,7 +114,7 @@ export default function TexasPage() {
             Texas has no statewide heat pump program and no state income tax. Your rebate depends entirely on which utility serves your home. Austin Energy offers approximately <strong>$3,000</strong> for whole-home projects with 0% financing. In the deregulated market, Oncor provides performance-based incentives and CenterPoint offers up to <strong>$500</strong>. The state&apos;s <strong>$690 million</strong> IRA allocation &mdash; the largest in the country &mdash; has not launched. This guide covers all major Texas heat pump incentives available in 2026, including Austin Energy, Oncor, CenterPoint, CPS Energy, AEP Texas, CoServ, and the pending HEAR/HOMES programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            Updated {formattedDate} — verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.
