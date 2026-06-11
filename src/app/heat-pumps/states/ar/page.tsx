@@ -66,7 +66,7 @@ export default function ArkansasPage() {
         name: "When will Arkansas launch its IRA rebate program?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Arkansas was allocated roughly $105 million in IRA HEAR/HOMES funding. The Arkansas Energy Office anticipated launching in early 2026, but as of March 2026 the program remains unavailable. The program page at ADEQ says the Home Energy Rebates Program is not yet available in Arkansas. Contact Home.Energy.Rebates@arkansas.gov for updates.",
+          text: "Arkansas was allocated roughly $105 million in IRA HEAR/HOMES funding. The Arkansas Energy Office anticipated launching in early 2026, but as of June 2026 the program remains unavailable. The program page at ADEQ says the Home Energy Rebates Program is not yet available in Arkansas. Contact Home.Energy.Rebates@arkansas.gov for updates.",
         },
       },
     ],

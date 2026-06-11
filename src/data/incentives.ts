@@ -2146,7 +2146,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "AR",
     stateName: "Arkansas",
     status: "limited",
-    lastVerified: "2026-03-24",
+    lastVerified: "2026-06-11",
     summary:
       "Arkansas heat pump incentives are limited to utility rebates. SWEPCO offers $250\u2013$600/ton (up to ~$2,500\u2013$3,000 per address). OG\u0026E offers up to $3,000 in the Fort Smith area. Entergy Arkansas has no central HP rebate. Federal 25C/25D expired Dec 2025. The state\u2019s $105M HEAR/HOMES allocation has not launched.",
     sources: [
