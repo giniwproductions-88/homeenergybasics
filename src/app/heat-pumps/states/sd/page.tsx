@@ -603,7 +603,7 @@ export default function SouthDakotaPage() {
           <div className="space-y-4">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">IRA funding runway</p>
-              <p className="text-sm text-gray-600 mt-1">The One Big Beautiful Bill Act accelerated termination of federal clean energy tax credits. No legislation has been introduced to restore Section 25C or 25D. South Dakota&apos;s HEAR/HOMES opt-out means even if IRA programs continue in other states, South Dakota homeowners will not benefit without a reversal of the state&apos;s decision.</p>
+              <p className="text-sm text-gray-600 mt-1">The One Big Beautiful Bill Act accelerated termination of federal clean energy tax credits. Neither Section 25C nor 25D has been restored. South Dakota&apos;s HEAR/HOMES opt-out means even if IRA programs continue in other states, South Dakota homeowners will not benefit without a reversal of the state&apos;s decision.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Black Hills / NorthWestern Energy merger</p>
