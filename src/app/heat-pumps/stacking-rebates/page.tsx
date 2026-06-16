@@ -61,7 +61,7 @@ const faqJsonLd = {
       name: "Do state tax credits stack with rebates?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. State tax credits (available in Colorado, New Mexico, New York, Oregon, South Carolina, and a few others) stack on top of rebate programs because they are a different type of incentive. A tax credit reduces your state income tax owed, while a rebate reduces your upfront cost. They do not count against each other.",
+        text: "Yes. State tax credits (available in Colorado, New Mexico, New York, South Carolina, and a few others) stack on top of rebate programs because they are a different type of incentive. A tax credit reduces your state income tax owed, while a rebate reduces your upfront cost. They do not count against each other.",
       },
     },
     {
@@ -214,11 +214,11 @@ export default function StackingRebatesPage() {
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">
-            Layer 3: Utility rebates — $200–$4,000
+            Layer 3: Utility rebates — $200–$5,000
           </h3>
           <p className="text-gray-700 leading-relaxed mb-4">
             Your electric utility likely offers its own rebate, separate from state and
-            federal programs. These range from $200 (small co-ops) to $4,000+ (PSE in
+            federal programs. These range from $200 (small co-ops) to $5,000+ (PSE in
             Washington, Con Edison in New York). Utility rebates almost always stack with
             HEAR and HOMES because they come from different funding sources (ratepayer
             charges, not federal money).
@@ -230,8 +230,8 @@ export default function StackingRebatesPage() {
           <p className="text-gray-700 leading-relaxed mb-4">
             A handful of states offer their own tax credits for heat pumps. Colorado
             has a <strong>$1,000</strong> credit, New York covers{" "}
-            <strong>25% up to $10,000</strong> for geothermal, Oregon offers the
-            Residential Energy Tax Credit, and New Mexico has both a sustainable building
+            <strong>25% up to $10,000</strong> for geothermal, South Carolina offers a
+            <strong> 25% geothermal credit (up to $3,500)</strong>, and New Mexico has both a sustainable building
             credit and a geothermal credit. Tax credits always stack with rebates because
             they are a different type of incentive — they reduce your state taxes, not
             your upfront cost.
@@ -293,6 +293,9 @@ export default function StackingRebatesPage() {
             </p>
             <p className="text-sm text-gray-600 mt-1">
               Out of pocket on a $15,000 project: ~$1,500
+            </p>
+            <p className="text-sm text-gray-600 mt-1">
+              Note: Front Range single-family HEAR funding is fully reserved as of April 2026. The $8,000 HEAR layer remains available in the rest of the state; Front Range homeowners currently stack Xcel and the state tax credit only.
             </p>
           </div>
 
@@ -436,11 +439,11 @@ export default function StackingRebatesPage() {
           </h3>
           <div className="bg-white border border-gray-200 rounded-lg p-5 mb-6">
             <ul className="text-sm text-gray-700 space-y-1">
-              <li>NHSaves utility rebate: <strong>$250–$1,250/ton</strong></li>
+              <li>NHSaves utility rebate: <strong>$250–$2,000/ton</strong> ($2,000/ton for electric-resistance conversions)</li>
               <li>NE Heat Pump Accelerator: <strong>$650/unit</strong></li>
             </ul>
             <p className="font-semibold text-green-700 mt-2">
-              Total stacked: ~$1,900–$4,150 (depending on system size)
+              Total stacked: ~$1,900–$6,650 (depending on system size and tier)
             </p>
             <p className="text-sm text-gray-600 mt-1">
               When HEAR launches (expected mid-summer 2026), income-qualifying households
@@ -826,7 +829,7 @@ export default function StackingRebatesPage() {
               <p className="text-sm text-gray-600 mt-1">
                 Utility rebate programs reset annually. Amounts, equipment requirements,
                 and eligibility rules can change each program year. Pennsylvania&apos;s
-                Act 129 Phase IV expires May 2026, and APS in Arizona eliminated all
+                Act 129 Phase IV ended May 31, 2026 (Phase V began June 1), and APS in Arizona eliminated all
                 residential rebates in 2026.
               </p>
             </div>
