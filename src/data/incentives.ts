@@ -270,9 +270,9 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "WA",
     stateName: "Washington",
     status: "open",
-    lastVerified: "2026-06-03",
+    lastVerified: "2026-06-16",
     summary:
-      "Washington has two rebate tracks plus utility programs. The state HEAR program (Climate Commitment Act, ~$103.6M) is active for households \u2264150% AMI. The federal HARP/HOMES rebates (up to $8,000) are administered by Guidehouse but have not launched. PSE utility rebates run $1,500\u2013$4,000 (income-qualified). Federal tax credits (25C/25D) ended December 31, 2025.",
+      "Washington has two rebate tracks plus utility programs. The state HEAR program (Climate Commitment Act, ~$103.6M) is active for households \u2264150% AMI. The federal HARP/HOMES rebates (up to $8,000) are administered by Guidehouse but have not launched. PSE utility rebates run up to $5,000 (income-qualified). Federal tax credits (25C/25D) ended December 31, 2025.",
     sources: [
       {
         label: "Puget Sound Energy — Heat Pump Rebates",
