@@ -143,7 +143,7 @@ const faqJsonLd = {
 };
 
 export default function RebatesByStatePage() {
-  const verifiedDate = "2026-03-24";
+  const verifiedDate = "2026-06-16";
   const formattedDate = formatDate(verifiedDate);
 
   function StateRow({ state }: { state: StateTier }) {

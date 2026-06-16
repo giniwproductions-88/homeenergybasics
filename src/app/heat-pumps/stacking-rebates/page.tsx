@@ -76,7 +76,7 @@ const faqJsonLd = {
 };
 
 export default function StackingRebatesPage() {
-  const verifiedDate = "2026-03-24";
+  const verifiedDate = "2026-06-16";
   const formattedDate = formatDate(verifiedDate);
 
   return (
