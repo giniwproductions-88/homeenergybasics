@@ -92,7 +92,7 @@ const faqJsonLd = {
 };
 
 export default function HeatPumpCostPage() {
-  const verifiedDate = "2026-03-25";
+  const verifiedDate = "2026-06-16";
   const formattedDate = formatDate(verifiedDate);
 
   return (

@@ -84,7 +84,7 @@ const faqJsonLd = {
 };
 
 export default function VsFurnacePage() {
-  const verifiedDate = "2026-03-25";
+  const verifiedDate = "2026-06-16";
   const formattedDate = formatDate(verifiedDate);
 
   return (

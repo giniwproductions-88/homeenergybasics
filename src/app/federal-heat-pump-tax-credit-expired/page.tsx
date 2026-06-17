@@ -2,7 +2,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-const LAST_UPDATED = "February 18, 2026";
+const LAST_UPDATED = "June 16, 2026";
 
 export const metadata: Metadata = {
   title:
@@ -81,7 +81,7 @@ export default function FederalCreditExpiredPage() {
         name: "Is the Minnesota HEAR/HOMES program available yet?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "No. As of February 2, 2026, Minnesota's Save Energy Minnesota program has not launched. The state is waiting for formal approval from the US Department of Energy. There is no estimated launch date. HEAR rebates cannot be applied retroactively.",
+          text: "No. As of June 2026, Minnesota's Save Energy Minnesota program still has not launched. Per the Minnesota Department of Commerce, the state is waiting for formal approval from the US Department of Energy, with no estimated launch date. HEAR rebates cannot be applied retroactively.",
         },
       },
     ],
@@ -297,9 +297,10 @@ export default function FederalCreditExpiredPage() {
               grants — <strong>has not launched</strong>.
             </p>
             <p className="text-gray-700 mb-4">
-              As of February 2, 2026, the Minnesota Department of Commerce
-              states: "Minnesota is waiting for formal approval from US
-              Department of Energy to launch the program. There is{" "}
+              As of June 2026, the program still has not launched. The
+              Minnesota Department of Commerce states: "Minnesota is waiting
+              for formal approval from US Department of Energy to launch the
+              program. There is{" "}
               <strong>no estimated program launch date</strong>."
             </p>
             <p className="text-gray-700 mb-4">
@@ -416,8 +417,8 @@ export default function FederalCreditExpiredPage() {
                 Is the Minnesota HEAR/HOMES program available yet?
               </h3>
               <p className="text-gray-600">
-                No. As of February 2, 2026, Minnesota's Save Energy Minnesota
-                program has not launched. The state is waiting for formal DOE
+                No. As of June 2026, Minnesota's Save Energy Minnesota
+                program still has not launched. The state is waiting for formal DOE
                 approval. There is no estimated launch date, and HEAR rebates
                 cannot be applied retroactively.
               </p>
@@ -483,7 +484,7 @@ export default function FederalCreditExpiredPage() {
               </p>
               <p className="text-sm text-gray-500 mt-1">
                 Minnesota HEAR status, eligibility, and "no estimated launch
-                date" notice (updated 2/2/2026)
+                date" notice (MN Commerce; still no launch date as of June 2026)
               </p>
             </a>
             <a

@@ -163,7 +163,7 @@ export default function TrackerContent() {
             </button>
           </div>
           <p className="text-gray-700 leading-relaxed mb-4">
-            As of March 2026, <strong>{counts.open} U.S. states have active heat pump rebate programs</strong>, while <strong>{counts.limited} states only offer limited incentives</strong> through utilities or pending HEAR/HOMES programs.
+            As of June 2026, <strong>{counts.open} U.S. states have active heat pump rebate programs</strong>, while <strong>{counts.limited} states only offer limited incentives</strong> through utilities or pending HEAR/HOMES programs.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
             <strong>&quot;Open&quot;</strong> means the state has active,
@@ -364,7 +364,7 @@ export default function TrackerContent() {
               <p className="text-sm text-blue-900">
                 Even in states marked &quot;limited,&quot; most homeowners can
                 access some utility rebate. The range is wide: from $40 (FPL in
-                Florida) to $4,000+ (Puget Sound Energy in Washington). Check
+                Florida) to $5,000 (Puget Sound Energy in Washington). Check
                 your specific utility on the state page.
               </p>
             </div>
