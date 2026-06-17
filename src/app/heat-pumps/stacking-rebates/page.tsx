@@ -807,7 +807,7 @@ export default function StackingRebatesPage() {
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">HEAR launches in more states</p>
               <p className="text-sm text-gray-600 mt-1">
-                As of March 2026, about a dozen states have launched HEAR. Dozens more
+                As of June 2026, about a dozen states have launched HEAR. Dozens more
                 have approved funding. Each new launch adds an $8,000 stacking layer for
                 income-qualifying households. Check your state guide for the latest status.
               </p>

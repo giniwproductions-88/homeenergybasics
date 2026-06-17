@@ -120,7 +120,7 @@ const faqJsonLd = {
       name: "What is the HEAR program and which states have it?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "HEAR (Home Electrification and Appliance Rebates) is a federally funded, state-administered rebate program offering up to $8,000 per heat pump for income-qualifying households (below 150% of Area Median Income). As of March 2026, about a dozen states have launched HEAR programs including Colorado, Wisconsin, Michigan, North Carolina, Georgia, Indiana, Arizona, and Washington. Many other states have received funding but have not launched consumer-facing programs.",
+        text: "HEAR (Home Electrification and Appliance Rebates) is a federally funded, state-administered rebate program offering up to $8,000 per heat pump for income-qualifying households (below 150% of Area Median Income). As of June 2026, about a dozen states have launched HEAR programs including Colorado, Wisconsin, Michigan, North Carolina, Georgia, Indiana, Arizona, and Washington. Many other states have received funding but have not launched consumer-facing programs.",
       },
     },
     {
