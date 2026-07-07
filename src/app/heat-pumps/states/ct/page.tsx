@@ -240,7 +240,7 @@ export default function ConnecticutPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Energize CT rebates &mdash; the primary path in 2026</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Energize CT is funded through a charge on customer energy bills and provides heat pump rebates to residential electric customers of <strong>Eversource</strong> and <strong>United Illuminating (UI)</strong>. Two tiers are available based on how completely you replace your existing heating system.
+            Energize CT is funded through a charge on customer energy bills and provides heat pump rebates to residential electric customers of <strong>Eversource</strong> and <strong>United Illuminating (UI)</strong>. Three tiers are available based on how completely you replace your existing heating system and, since April 2026, your income or existing heat type.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Air-source heat pump rebates</h3>
