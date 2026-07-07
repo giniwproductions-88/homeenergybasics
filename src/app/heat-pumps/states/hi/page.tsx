@@ -132,7 +132,7 @@ export default function HawaiiPage() {
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Hawaii Energy instant rebates (open now)</p>
-              <p className="text-sm text-green-900">$450–$550 for mini-split systems, $500–$700 for heat pump water heaters, and $1,250 for central AC retrofits. Available through June 30, 2026 on all islands except Kauai.</p>
+              <p className="text-sm text-green-900">$450–$550 for mini-split systems, $500–$700 for heat pump water heaters, and $1,250 for central AC retrofits. Offered first-come, first-served on all islands except Kauai; amounts carried over into the program year that began July 2026.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Total potential savings</p>
@@ -261,7 +261,7 @@ export default function HawaiiPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Hawaii Energy instant rebates</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Hawaii Energy is the state&apos;s ratepayer-funded efficiency program, operated by Leidos as the Public Benefits Fee Administrator. Its PY25 program runs from <strong>July 2025 through June 30, 2026</strong> on a first-come, first-served basis. Hawaii Energy serves ratepayers on Oahu, Maui, Molokai, Lanai, and Hawaii Island. Kauai residents are not eligible — they are served separately by KIUC.
+            Hawaii Energy is the state&apos;s ratepayer-funded efficiency program, operated by Leidos as the Public Benefits Fee Administrator. Rebates operate on a July&ndash;June program year, first-come, first-served while funding lasts; the amounts below carried over into the program year that began <strong>July 2026</strong>. Hawaii Energy serves ratepayers on Oahu, Maui, Molokai, Lanai, and Hawaii Island. Kauai residents are not eligible — they are served separately by KIUC.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Heat pump water heater rebates</h3>
@@ -413,7 +413,7 @@ export default function HawaiiPage() {
                 <li>eHale HEAR heat pump (50% of cost): up to $8,000</li>
                 <li>eHale HEAR HPWH (50% of cost): up to $1,750</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$11,000</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$7,250 on a $12,000 project (50% coverage; caps allow more on larger projects)</p>
             </div>
 
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
@@ -430,7 +430,7 @@ export default function HawaiiPage() {
 
           <div className="bg-gray-100 rounded-lg p-5">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
-            <p className="text-sm text-gray-700">For a typical mini-split + HPWH installation costing $8,000–$12,000 total: homeowners above 150% AMI can expect <strong>$6,750–$10,750 out of pocket</strong>. Homeowners between 80–150% AMI may pay <strong>$1,000–$5,000 out of pocket</strong>. Income-qualified households below 80% AMI may pay <strong>$0–$1,000 out of pocket</strong> once eHale HEAR launches.</p>
+            <p className="text-sm text-gray-700">For a typical mini-split + HPWH installation costing $8,000–$12,000 total: homeowners above 150% AMI can expect <strong>$6,750–$10,750 out of pocket</strong>. Homeowners between 80–150% AMI may pay roughly <strong>$2,750–$4,750 out of pocket</strong> once eHale HEAR launches. Income-qualified households below 80% AMI may pay <strong>$0–$1,000 out of pocket</strong> once eHale HEAR launches.</p>
           </div>
           <p className="text-sm text-gray-500 mt-4">
             Note: Hawaii&apos;s state renewable energy tax credit (RETITC) does not cover heat pumps or heat pump water heaters. No additional state tax credit is available. GEM$ on-bill financing can cover remaining out-of-pocket costs for eligible households.
@@ -577,8 +577,8 @@ export default function HawaiiPage() {
               <p className="text-sm text-gray-600 mt-1">Hawaii&apos;s $69 million allocation is available until depleted or September 30, 2031. However, as a direct appropriation that survived the OBBB, funds could be redirected by future legislation. Applying early once the program opens maximizes certainty.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900">Hawaii Energy PY25 program end date</p>
-              <p className="text-sm text-gray-600 mt-1">Current instant rebates run through June 30, 2026 on a first-come, first-served basis. Rebate amounts and availability for the next program year (PY26) have not been announced.</p>
+              <p className="font-semibold text-gray-900">Hawaii Energy program-year funding</p>
+              <p className="text-sm text-gray-600 mt-1">Rebate amounts carried over into the program year that began July 2026 and remain first-come, first-served while funding lasts. Hawaii Energy is also rolling out a new application portal, so application steps may change mid-year.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">KIUC program expansion</p>
