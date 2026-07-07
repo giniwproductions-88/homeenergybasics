@@ -6,16 +6,16 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title:
-    "Connecticut Heat Pump Rebates 2026: $250\u2013$1,000/Ton Energize CT + Smart-E Loan | Home Energy Basics",
+    "Connecticut Heat Pump Rebates 2026: $250\u2013$1,500/Ton Energize CT + Smart-E Loan | Home Energy Basics",
   description:
-    "Energize CT offers $250\u2013$1,000/ton. Smart-E Loan at 0.99% APR. Federal credits ended. Here\u2019s every Connecticut heat pump incentive in 2026.",
+    "Energize CT offers $250\u2013$1,500/ton. Smart-E Loan at 0.99% APR. Federal credits ended. Here\u2019s every Connecticut heat pump incentive in 2026.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/ct",
   },
   openGraph: {
     title: "Connecticut Heat Pump Rebates 2026",
     description:
-      "Energize CT $250\u2013$1,000/ton, Smart-E Loan 0.99% APR, HES-IE free installs \u2014 the complete guide to Connecticut heat pump incentives after federal credits expired.",
+      "Energize CT $250\u2013$1,500/ton, Smart-E Loan 0.99% APR, HES-IE free installs \u2014 the complete guide to Connecticut heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/ct",
     type: "article",
     publishedTime: "2026-03-22T11:41:24-05:00",
@@ -32,7 +32,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in Connecticut in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Energize CT offers $250 per ton (standard) or $1,000 per ton (Energy Optimization tier for fuel-switching) for qualifying air-source heat pumps, up to $10,000 per home. Heat pump water heaters receive a $900 instant discount. The Smart-E Loan provides 0.99% APR financing through March 31, 2026. Federal tax credits (25C/25D) expired December 31, 2025. HEAR rebates (~$49.7 million allocated) have not launched in Connecticut.",
+        text: "Energize CT offers $250 per ton (standard) or $1,000 per ton (Energy Optimization tier for fuel-switching) for qualifying air-source heat pumps, up to $10,000 per home. Since April 1, 2026, enhanced incentives of up to $1,500 per ton are available for electric-resistance replacements and income-verified households between 60% of state median income and 80% of Area Median Income. Heat pump water heaters receive a $900 instant discount. The Smart-E Loan special offer provides 0.99% APR financing through July 31, 2026. Federal tax credits (25C/25D) expired December 31, 2025. HEAR rebates (~$49.7 million allocated) have not launched in Connecticut.",
       },
     },
     {
@@ -40,7 +40,7 @@ const faqJsonLd = {
       name: "Can I stack Energize CT rebates with HEAR when it launches?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "When HEAR launches, it is expected to be stackable with Energize CT utility rebates since they come from different funding sources. Right now, the primary stack is the Energize CT rebate plus Smart-E Loan financing. Income-eligible households at or below 60% AMI can access free heat pump installations through HES-IE instead.",
+        text: "When HEAR launches, it is expected to be stackable with Energize CT utility rebates since they come from different funding sources. Right now, the primary stack is the Energize CT rebate plus Smart-E Loan financing. Income-eligible households at or below 60% of state median income can access free heat pump installations through HES-IE instead.",
       },
     },
     {
@@ -64,7 +64,7 @@ const faqJsonLd = {
       name: "Are Connecticut HEAR rebates available?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No. As of March 2026, Connecticut\u2019s HEAR program has not launched. CT DEEP submitted its implementation blueprints to DOE in April 2025 but no confirmed launch date has been set. When active, HEAR is expected to provide up to $8,000 per heat pump and $14,000 total for income-qualified households below 150% AMI. Do not factor HEAR into current project budgets.",
+        text: "No. As of July 2026, Connecticut\u2019s HEAR program has not launched. CT DEEP submitted its implementation blueprints to DOE in April 2025 but no confirmed launch date has been set. When active, HEAR is expected to provide up to $8,000 per heat pump and $14,000 total for income-qualified households below 150% AMI. Do not factor HEAR into current project budgets.",
       },
     },
   ],
@@ -103,7 +103,7 @@ export default function ConnecticutPage() {
             Connecticut Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Energize CT rebates of <strong>$250&ndash;$1,000 per ton</strong> are the primary heat pump incentive in Connecticut for 2026. The Smart-E Loan offers <strong>0.99% APR</strong> financing through March 31, 2026. Federal tax credits ended December 31, 2025. Connecticut&apos;s <strong>$49.7 million</strong> in HEAR funding has not launched. This guide covers all major Connecticut heat pump incentives available in 2026, including Energize CT rebates, the Smart-E Loan, HES-IE income-eligible programs, and HEAR status. Here&apos;s what&apos;s actually available.
+            Energize CT rebates of <strong>$250&ndash;$1,500 per ton</strong> are the primary heat pump incentive in Connecticut for 2026. The Smart-E Loan special offer provides <strong>0.99% APR</strong> financing through July 31, 2026. Federal tax credits ended December 31, 2025. Connecticut&apos;s <strong>$49.7 million</strong> in HEAR funding has not launched. This guide covers all major Connecticut heat pump incentives available in 2026, including Energize CT rebates, the Smart-E Loan, HES-IE income-eligible programs, and HEAR status. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
             Updated {formattedDate} — verified against official program sources
@@ -135,13 +135,13 @@ export default function ConnecticutPage() {
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Smart-E Loan: 0.99% APR financing</p>
               <p className="text-sm text-green-900">
-                Up to $50,000 through CT Green Bank. 5&ndash;20 year terms, no money down, unsecured. Rate expires March 31, 2026 &mdash; lock in before this date.
+                0.99% on 5&ndash;7 year terms up to $25,000 through CT Green Bank (2.99% on 10-year terms up to $30,000). Requires a pre-verified Energize CT rebate. Offer extended through July 31, 2026.
               </p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Total potential savings: $750&ndash;$10,000+</p>
               <p className="text-sm text-green-900">
-                $750 (standard tier, 3-ton system) to $10,000 (Energy Optimization, large system). Income-eligible households below 60% AMI may receive free installations through HES-IE.
+                $750 (standard tier, 3-ton system) to $10,000 (Energy Optimization, large system; enhanced $1,500/ton tiers since April 2026). Households at or below 60% of state median income may receive free installations through HES-IE.
               </p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
@@ -183,7 +183,7 @@ export default function ConnecticutPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">HEAR rebates: funded but not yet available</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            The Home Electrification and Appliance Rebates (HEAR) program is the largest potential incentive for Connecticut homeowners. CT DEEP submitted its State Implementation Blueprints to DOE at the end of April 2025. DEEP plans to contract with Eversource and United Illuminating to administer the program. As of March 2026, HEAR is not available to homeowners and no confirmed launch date has been set.
+            The Home Electrification and Appliance Rebates (HEAR) program is the largest potential incentive for Connecticut homeowners. CT DEEP submitted its State Implementation Blueprints to DOE at the end of April 2025. DEEP plans to contract with Eversource and United Illuminating to administer the program. As of July 2026, HEAR is not available to homeowners and no confirmed launch date has been set.
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
@@ -267,6 +267,12 @@ export default function ConnecticutPage() {
                   <td className="p-3">$10,000</td>
                   <td className="p-3">Replacing oil, propane, gas, or electric resistance as primary heat &mdash; must decommission old system or use qualified integrated control</td>
                 </tr>
+                <tr className="border-b">
+                  <td className="p-3">Enhanced (since April 1, 2026)</td>
+                  <td className="p-3 font-semibold">Up to $1,500/ton</td>
+                  <td className="p-3">$10,000</td>
+                  <td className="p-3">Replacing verified electric resistance (baseboard) heat, or income-verified households between 60% of state median income and 80% of AMI</td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -282,6 +288,9 @@ export default function ConnecticutPage() {
           <p className="text-gray-700 leading-relaxed mb-4">
             To qualify for the $1,000/ton tier, you must either fully decommission the old heating system (fuel line disconnected and capped, thermostat disconnected, system disabled or removed) or integrate it using a qualified control listed on the Energize CT Heat Pump QPL that automatically switches below a set outdoor temperature (must be below 30&deg;F). If inspection finds these requirements are not met, the rebate is downgraded to $250/ton.
           </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            The enhanced <strong>$1,500/ton</strong> tiers require verification before installation: electric-resistance replacements through a virtual heat verification inspection, and income-based eligibility (above 60% of state median income and below 80% of AMI) through the Energize CT income verification portal.
+          </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Heat pump water heaters</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
@@ -290,7 +299,7 @@ export default function ConnecticutPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Smart-E Loan financing</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            The Connecticut Green Bank Smart-E Loan provides <strong>0.99% APR</strong> financing up to <strong>$50,000</strong> with 5&ndash;20 year terms, no money down, no prepayment penalty, and no home equity required. Must be an Eversource or UI customer using an HPIN contractor.
+            The Connecticut Green Bank Smart-E special heat pump offer, extended through <strong>July 31, 2026</strong>, provides <strong>0.99% APR</strong> on 5- and 7-year terms up to <strong>$25,000</strong>, and 2.99% on 10-year terms up to $30,000. The overall Smart-E cap remains $50,000 (amounts above the special-offer limits carry a blended rate), with no money down, no prepayment penalty, and no home equity required. Must be an Eversource or UI customer using an HPIN contractor, with a pre-verified Energize CT heat pump rebate.
           </p>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
@@ -329,8 +338,17 @@ export default function ConnecticutPage() {
               </ul>
               <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$3,000</p>
             </div>
+            <div className="bg-white border border-gray-200 rounded-lg p-5">
+              <p className="font-semibold text-gray-900 mb-2">60% SMI&ndash;80% AMI or electric-resistance replacement &mdash; Enhanced tier</p>
+              <ul className="text-sm text-gray-700 space-y-1">
+                <li>Energize CT Enhanced (3 tons &times; $1,500): $4,500</li>
+                <li>Federal tax credit: $0 (expired)</li>
+                <li>HEAR: $0 (not launched)</li>
+              </ul>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$4,500</p>
+            </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-2">Below 60% AMI &mdash; HES-IE (best case, available now)</p>
+              <p className="font-semibold text-green-800 mb-2">At or below 60% state median income &mdash; HES-IE (best case, available now)</p>
               <ul className="text-sm text-green-900 space-y-1">
                 <li>HES-IE: free heat pump installation + weatherization</li>
                 <li>No out-of-pocket cost for qualifying households</li>
@@ -342,7 +360,7 @@ export default function ConnecticutPage() {
           <div className="bg-gray-100 rounded-lg p-5 mb-6">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
             <p className="text-sm text-gray-700">
-              Against a typical <strong>$12,000&ndash;$16,000</strong> installation: Energy Optimization reduces out-of-pocket to roughly <strong>$9,000&ndash;$13,000</strong>. Standard tier reduces it to roughly <strong>$11,250&ndash;$15,250</strong>. Income-eligible households through HES-IE may pay <strong>$0</strong>. Smart-E Loan financing spreads the remainder across 5&ndash;20 years at 0.99% APR.
+              Against a typical <strong>$12,000&ndash;$16,000</strong> installation: Energy Optimization reduces out-of-pocket to roughly <strong>$9,000&ndash;$13,000</strong>, and the enhanced tier to roughly <strong>$7,500&ndash;$11,500</strong>. Standard tier reduces it to roughly <strong>$11,250&ndash;$15,250</strong>. Income-eligible households through HES-IE may pay <strong>$0</strong>. Smart-E financing spreads the remainder at 0.99% APR on 5&ndash;7 year terms through July 31, 2026 (longer terms at higher rates).
             </p>
           </div>
 
@@ -366,7 +384,7 @@ export default function ConnecticutPage() {
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
             <p className="font-semibold text-green-800 mb-1">✓ Best candidates for Connecticut heat pump incentives</p>
             <p className="text-sm text-green-900">
-              Oil or propane homes replacing their heating system (highest Energy Optimization rebate, largest energy savings, loan payments often lower than prior fuel costs). Electric resistance (baseboard) homes (qualifies for Energy Optimization, heat pumps are 2&ndash;3&times; more efficient). Low-income households below 60% AMI (free installation through HES-IE).
+              Oil or propane homes replacing their heating system (highest Energy Optimization rebate, largest energy savings, loan payments often lower than prior fuel costs). Electric resistance (baseboard) homes (qualifies for the enhanced $1,500/ton tier, heat pumps are 2&ndash;3&times; more efficient). Low-income households at or below 60% of state median income (free installation through HES-IE).
             </p>
           </div>
         </div>
@@ -473,7 +491,7 @@ export default function ConnecticutPage() {
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Smart-E Loan rate expiration</p>
               <p className="text-sm text-gray-600 mt-1">
-                The 0.99% APR expires March 31, 2026. Lock in before this date if you plan to finance your installation.
+                The 0.99% special offer has been extended twice and currently runs through July 31, 2026 &mdash; weeks away. Rebate pre-verification is required to qualify, so start that process now if you plan to finance.
               </p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">

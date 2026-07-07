@@ -332,9 +332,9 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "CT",
     stateName: "Connecticut",
     status: "open",
-    lastVerified: "2026-06-03",
+    lastVerified: "2026-07-06",
     summary:
-      "Connecticut heat pump incentives are active through Energize CT. Rebates range from $250–$1,000 per ton depending on system type and fuel switching. Federal tax credits ended December 31, 2025. HEAR rebates are funded but not yet available. The Smart-E Loan offers 0.99% APR heat pump financing, extended through June 30, 2026.",
+      "Connecticut heat pump incentives are active through Energize CT. Rebates range from $250–$1,500 per ton depending on system type, fuel switching, and income (enhanced tiers added April 2026). Federal tax credits ended December 31, 2025. HEAR rebates are funded but not yet available. The Smart-E Loan offers 0.99% APR heat pump financing, extended through July 31, 2026.",
     sources: [
       {
         label: "Energize CT — Air-Source Heat Pump Rebates",
@@ -361,7 +361,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
         url: "https://www.energizect.com/IRA-FAQ",
       },
       {
-        label: "CT Green Bank — Smart-E Heat Pump Special Offer (0.99% APR through June 30, 2026)",
+        label: "CT Green Bank — Smart-E Heat Pump Special Offer (0.99% APR through July 31, 2026)",
         url: "https://www.ctgreenbank.com/smart-e-heat-pump-special-offer-2026/",
       },
       {
@@ -825,9 +825,9 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "NH",
     stateName: "New Hampshire",
     status: "open",
-    lastVerified: "2026-06-05",
+    lastVerified: "2026-07-06",
     summary:
-      "NHSaves rebates of $250–$2,000/ton are the primary incentive ($2,000/ton enhanced electric-resistance tier effective March 23, 2026), plus a $650/unit NE Heat Pump Accelerator. HEAR rebates (up to $8,000) are approved but not yet launched — expected mid-Summer 2026. Federal 25C/25D expired Dec 31, 2025. Projects started before HEAR launch are not eligible. R-410A banned from NHSaves qualified list for 2026.",
+      "NHSaves rebates of $250–$2,000/ton are the primary incentive ($2,000/ton enhanced electric-resistance tier effective March 23, 2026), plus a $650/unit NE Heat Pump Accelerator. HEAR rebates (up to $8,000) are not yet launched — implementer Everblue is contracted, launch expected mid-Summer 2026. Federal 25C/25D expired Dec 31, 2025. Projects started before HEAR launch are not eligible. R-410A banned from NHSaves qualified list for 2026.",
     sources: [
       {
         label: "NHSaves — Heat Pumps & Central A/C",
@@ -950,9 +950,9 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "HI",
     stateName: "Hawaii",
     status: "open",
-    lastVerified: "2026-06-03",
+    lastVerified: "2026-07-06",
     summary:
-      "Hawaii Energy offers $500\u2013$700 instant rebates for heat pump water heaters and $450\u2013$550 for mini-splits through June 30, 2026. eHale HEAR program (up to $14,000 for income-qualified households) expected to launch in 2026 but not yet accepting applications. Federal 25C/25D credits expired Dec 2025. KIUC offers separate $500 HPWH rebate on Kauai.",
+      "Hawaii Energy offers $500\u2013$700 instant rebates for heat pump water heaters and up to $550 for mini-splits under its current program year. eHale HEAR program (up to $14,000 for income-qualified households) expected to launch in 2026 but not yet accepting applications. Federal 25C/25D credits expired Dec 2025. KIUC offers separate $500 HPWH rebate on Kauai.",
     sources: [
       {
         label: "Hawaii State Energy Office \u2014 eHale Energy Saver Rebate Program",
