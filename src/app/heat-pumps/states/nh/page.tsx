@@ -267,7 +267,7 @@ export default function NewHampshirePage() {
                 <tr className="border-b bg-green-50">
                   <td className="p-3">Electric resistance retrofit</td>
                   <td className="p-3 font-semibold">$2,000/ton</td>
-                  <td className="p-3">Separate path, requires &#8805;80% load offset</td>
+                  <td className="p-3">Separate path, requires &#8805;80% load offset. Pre-verification at NHSaves.com/GetVerified required.</td>
                 </tr>
               </tbody>
             </table>
@@ -554,7 +554,7 @@ export default function NewHampshirePage() {
               <div className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-bold">1</div>
               <div>
                 <p className="font-semibold text-gray-900">Check Your Utility</p>
-                <p className="text-sm text-gray-700">Your electric utility determines your rebate structure. Find your utility on your electric bill or at nhsaves.com. Eversource, Liberty, Unitil, and NHEC each have different enhanced-tier structures.</p>
+                <p className="text-sm text-gray-700">Your electric utility determines your rebate structure. Find your utility on your electric bill or at nhsaves.com. Eversource, Liberty, and Unitil share an identical structure; NHEC uses a different adder-based system.</p>
               </div>
             </div>
             <div className="flex gap-4">
