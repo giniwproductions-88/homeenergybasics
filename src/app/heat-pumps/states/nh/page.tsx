@@ -169,7 +169,7 @@ export default function NewHampshirePage() {
             </p>
           </div>
           <p className="text-gray-700 leading-relaxed">
-            Equipment purchased in 2025 but not installed until 2026 does not qualify. The &quot;placed in service&quot; date is when installation was complete and the system was operational. Homeowners who completed installations before the deadline but lacked sufficient tax liability may carry forward unused credit amounts.
+            Equipment purchased in 2025 but not installed until 2026 does not qualify. The &quot;placed in service&quot; date is when installation was complete and the system was operational. Homeowners who completed geothermal installations before the deadline but lacked sufficient tax liability may carry forward unused Section 25D credit amounts; Section 25C had no carryforward provision.
           </p>
         </div>
       </section>
@@ -533,7 +533,7 @@ export default function NewHampshirePage() {
             </table>
           </div>
           <p className="text-gray-700 leading-relaxed mb-6">
-            At NH electricity rates ($0.22&ndash;$0.26/kWh), a cold-climate heat pump costs roughly <strong>$2,000&ndash;$2,300/year</strong> to operate a typical home &mdash; compared to <strong>$2,800&ndash;$3,200/year</strong> for oil or propane. Annual savings of <strong>$600&ndash;$1,200</strong> depending on the fuel being displaced.
+            At NH electricity rates ($0.22&ndash;$0.26/kWh), a cold-climate heat pump costs roughly <strong>$2,000&ndash;$2,300/year</strong> to operate a typical home &mdash; compared to <strong>$2,800&ndash;$3,200/year</strong> for oil or propane. Annual savings of <strong>$500&ndash;$1,200</strong> depending on the fuel being displaced.
           </p>
           <p className="text-gray-700 leading-relaxed">
             For more on how home batteries interact with heat pumps and time-of-use rates, see our{" "}
