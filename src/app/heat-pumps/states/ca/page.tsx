@@ -71,7 +71,7 @@ export default function CaliforniaPage() {
         name: "Which California utilities offer the best heat pump rebates?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "SMUD (Sacramento) boosted rebates in February 2026 \u2014 up to $3,000 for gas-to-electric HVAC and $4,000 for gas-to-electric water heater conversions. LADWP (Los Angeles) offers up to $2,500 per ton for heat pump HVAC and $2,500 for heat pump water heaters. PG&E, SCE, and SDG&E primarily administer statewide programs rather than offering standalone heat pump rebates. Use the Switch Is On incentive finder at switchison.org to check your specific utility.",
+          text: "SMUD (Sacramento) boosted rebates in February 2026 \u2014 up to $3,000 for gas-to-electric HVAC and $4,000 for gas-to-electric water heater conversions. LADWP (Los Angeles) offers up to $2,500 per ton for high-efficiency ductless heat pumps ($1,000\u2013$1,250 per ton for central ducted systems) and up to $2,500 for heat pump water heaters. PG&E, SCE, and SDG&E primarily administer statewide programs rather than offering standalone heat pump rebates. Use the Switch Is On incentive finder at switchison.org to check your specific utility.",
         },
       },
       {
@@ -103,7 +103,7 @@ export default function CaliforniaPage() {
             California Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            California&apos;s statewide heat pump programs are fully reserved for single-family homes. SMUD offers up to <strong>$3,000&#8211;$4,000</strong> and LADWP up to <strong>$2,500/ton</strong> through utility rebates. Federal tax credits ended December 31, 2025. Two major programs &#8212; HOMES (~$291 million) and HEEHRA Phase II ($152 million) &#8212; are funded but have not launched. This guide covers all major California heat pump incentives available in 2026, including TECH Clean California status, HEEHRA, utility programs, and Energy Smart Homes. Here&apos;s what&apos;s actually available.
+            California&apos;s statewide heat pump programs are fully reserved for single-family homes. SMUD offers up to <strong>$3,000&#8211;$4,000</strong> and LADWP up to <strong>$2,500/ton</strong> (ductless top tier) through utility rebates. Federal tax credits ended December 31, 2025. Two major programs &#8212; HOMES (~$291 million) and HEEHRA Phase II ($152 million) &#8212; are funded but have not launched. This guide covers all major California heat pump incentives available in 2026, including TECH Clean California status, HEEHRA, utility programs, and Energy Smart Homes. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
             Updated {formattedDate} — verified against official program sources
@@ -134,7 +134,7 @@ export default function CaliforniaPage() {
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ LADWP (Los Angeles) &#8212; Active</p>
-              <p className="text-sm text-green-900">Up to $2,500/ton for heat pump HVAC (a 3-ton system = up to $7,500) and $2,500 for heat pump water heaters. No income qualification required.</p>
+              <p className="text-sm text-green-900">Up to $2,500/ton for high-efficiency ductless heat pumps ($1,000&#8211;$1,250/ton central ducted) and up to $2,500 for heat pump water heaters. No income qualification required.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ GoGreen Financing &#8212; Statewide</p>
@@ -180,7 +180,7 @@ export default function CaliforniaPage() {
           </p>
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-amber-800 mb-1">⚠ Current Status: Fully Reserved Statewide</p>
-            <p className="text-sm text-amber-900">As of February 24, 2026, HEEHRA single-family rebates are fully reserved for projects statewide. The program is no longer accepting new income verification applications. Central and Southern California regions were exhausted by January 7, 2026. All unapproved reservation requests have been waitlisted. Waitlisted projects are only eligible if the heat pump is installed after the reservation is approved.</p>
+            <p className="text-sm text-amber-900">As of February 24, 2026, HEEHRA single-family rebates are fully reserved for projects statewide. The program is no longer accepting new income verification applications. Central and Southern California regions were exhausted by January 7, 2026. Unapproved Northern California reservation requests and anything submitted after February 24 have been waitlisted in case funding returns. Waitlisted projects are only eligible if the heat pump is installed after the reservation is approved. As of July 2026, multifamily HEEHRA has also paused new Stage 1 applications while existing submissions are processed. Note: since July 15, 2025, a project cannot receive both a TECH incentive and a HEEHRA rebate.</p>
           </div>
           <p className="text-gray-700 leading-relaxed mb-4">
             TECH Clean California single-family heat pump HVAC and heat pump water heater incentives closed to new sales and reservations on November 14, 2025, after the budget was nearly fully reserved statewide. Commercial incentives were exhausted earlier in 2025.
@@ -279,20 +279,25 @@ export default function CaliforniaPage() {
               </thead>
               <tbody>
                 <tr className="border-b bg-green-50">
-                  <td className="p-3">Heat pump HVAC</td>
-                  <td className="p-3 font-semibold">Up to $2,500/ton</td>
-                  <td className="p-3">3-ton system = up to $7,500</td>
+                  <td className="p-3">Heat pump HVAC &#8212; ductless mini/multi-split</td>
+                  <td className="p-3 font-semibold">$1,500&#8211;$2,500/ton</td>
+                  <td className="p-3">Top rate requires &gt;20.5 SEER2; 3-ton top-tier ductless = up to $7,500</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Heat pump HVAC &#8212; central ducted</td>
+                  <td className="p-3 font-semibold">$1,000&#8211;$1,250/ton</td>
+                  <td className="p-3">Tiered by SEER2/HSPF2; 3-ton ducted = $3,000&#8211;$3,750</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Heat pump water heater</td>
-                  <td className="p-3 font-semibold">Up to $2,500/unit</td>
-                  <td className="p-3">No income qualification</td>
+                  <td className="p-3 font-semibold">$1,500&#8211;$2,500/unit</td>
+                  <td className="p-3">Tiered by gallon capacity and UEF</td>
                 </tr>
               </tbody>
             </table>
           </div>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Universal &#8212; no income qualification. Building permit required. Apply within 12 months of installation.
+            Universal &#8212; no income qualification. Building permit required. Applications must be postmarked within 12 months of the purchase date. New construction and ADUs are not eligible. LADWP&apos;s rebate page also points LA-basin residents to South Coast AQMD&apos;s GO ZERO program, which offers up to <strong>$3,000</strong> for a qualified heat pump.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">
@@ -342,12 +347,13 @@ export default function CaliforniaPage() {
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900 mb-2">LADWP Customer &#8212; 3-Ton Heat Pump HVAC + HPWH</p>
               <ul className="text-sm text-gray-700 space-y-1">
-                <li>LADWP heat pump HVAC: $7,500 (3 tons &#215; $2,500)</li>
-                <li>LADWP heat pump water heater: $2,500</li>
+                <li>LADWP heat pump HVAC (top-tier ductless, 3 tons &#215; $2,500): $7,500</li>
+                <li>LADWP heat pump HVAC (typical central ducted, 3 tons &#215; $1,000&#8211;$1,250): $3,000&#8211;$3,750</li>
+                <li>LADWP heat pump water heater (tiered): $1,500&#8211;$2,500</li>
                 <li>Federal tax credits: $0 (expired)</li>
                 <li>TECH/HEEHRA: $0 (exhausted)</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$10,000</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$4,500 (central ducted) to ~$10,000 (top-tier ductless)</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900 mb-2">PG&amp;E / SCE / SDG&amp;E Customer &#8212; No Income Qualification</p>
@@ -362,7 +368,7 @@ export default function CaliforniaPage() {
           </div>
           <div className="bg-gray-100 rounded-lg p-5 mb-6">
             <p className="font-semibold text-gray-900 mb-1">What You&apos;ll Actually Pay</p>
-            <p className="text-sm text-gray-700">A typical whole-home heat pump HVAC installation in California costs <strong>$8,000&#8211;$16,000</strong> before incentives. SMUD customers installing now may pay <strong>$0&#8211;$7,000 out of pocket</strong> after rebates. LADWP customers may pay <strong>$0&#8211;$6,000</strong>. PG&amp;E, SCE, and SDG&amp;E customers may pay <strong>$8,000&#8211;$16,000</strong> &#8212; the full cost &#8212; until HOMES or HEEHRA Phase II launch, since Energy Smart Homes 2026 funding is fully subscribed.</p>
+            <p className="text-sm text-gray-700">A typical whole-home heat pump HVAC installation in California costs <strong>$8,000&#8211;$16,000</strong> before incentives. SMUD customers installing now may pay <strong>$0&#8211;$7,000 out of pocket</strong> after rebates. LADWP customers may pay roughly <strong>$3,500&#8211;$11,500</strong> with a typical central ducted system, or as little as <strong>$0&#8211;$6,000</strong> with a top-tier ductless system. PG&amp;E, SCE, and SDG&amp;E customers may pay <strong>$8,000&#8211;$16,000</strong> &#8212; the full cost &#8212; until HOMES or HEEHRA Phase II launch, since Energy Smart Homes 2026 funding is fully subscribed.</p>
           </div>
           <p className="text-sm text-gray-500">
             No state tax credit for heat pumps is available in California. GoGreen Financing provides low-interest loans but is not a rebate.
@@ -380,7 +386,7 @@ export default function CaliforniaPage() {
             California operates several weatherization and low-income energy programs that may cover heat pump installations at no cost for qualifying households.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            <strong>PG&amp;E Energy Savings Assistance Program</strong> provides no-cost heat pump water heater and furnace upgrades for income-eligible homeowners in PG&amp;E territory. Participants must live in a home at least five years old and meet income guidelines. The program runs through May 31, 2026.
+            <strong>PG&amp;E Energy Savings Assistance Program</strong> provides no-cost heat pump water heater and furnace upgrades for income-eligible homeowners in PG&amp;E territory. Participants must live in a home at least five years old and meet income guidelines. The program cycle was scheduled through May 31, 2026 &#8212; confirm current availability with PG&amp;E before planning around it.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
             <strong>Community Action Agencies</strong> administer California&apos;s Weatherization Assistance Program (WAP) with federal DOE and LIHEAP funding. Eligible households can receive free weatherization services and in some cases heating system replacements.
