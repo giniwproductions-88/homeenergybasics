@@ -32,7 +32,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in New Hampshire in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "NHSaves offers $250 per ton (standard) or up to $2,000 per ton (replacing electric resistance heat, Eversource/Liberty/Unitil as of March 23, 2026). NHEC offers up to $2,000 per ton for electric resistance replacement. The New England Heat Pump Accelerator adds $650 per outdoor unit. Heat pump water heaters receive $900 from NHSaves plus $300 from the Accelerator. There is no federal tax credit for 2026 installations. HEAR rebates (up to $8,000) are expected to launch mid-Summer 2026.",
+        text: "NHSaves offers $250 per ton (standard) or up to $2,000 per ton (replacing electric resistance heat, Eversource/Liberty/Unitil as of March 23, 2026). NHEC offers up to $2,000 per ton for electric resistance replacement. The New England Heat Pump Accelerator adds $650 per outdoor unit. Heat pump water heaters receive $900 from NHSaves; the Accelerator offers $300 per HPWH, though NHSaves rules may prevent combining both on one unit. There is no federal tax credit for 2026 installations. HEAR rebates (up to $8,000) are expected to launch mid-Summer 2026.",
       },
     },
     {
@@ -132,11 +132,11 @@ export default function NewHampshirePage() {
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; NE Heat Pump Accelerator: $650/Unit</p>
-              <p className="text-sm text-green-900">$650 per cold-climate heat pump outdoor unit plus $300 per HPWH. Instant point-of-sale discount through participating distributors. Stacks with NHSaves.</p>
+              <p className="text-sm text-green-900">$650 per cold-climate heat pump outdoor unit (limit two per dwelling) plus $300 per HPWH. Instant point-of-sale discount through participating distributors. Stacks with NHSaves for heat pumps.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; Total Potential Savings</p>
-              <p className="text-sm text-green-900">$900 (standard oil replacement) to $10,650+ (electric resistance replacement with Accelerator). If HEAR launches, income-qualified households could reach ~$11,000+ total incentives.</p>
+              <p className="text-sm text-green-900">$1,400 (standard tier, 3-ton system with Accelerator) to $10,650 (5-ton electric-resistance replacement with Accelerator). If HEAR launches, income-qualified households could reach ~$11,000+ total incentives.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">&#10007; Federal Tax Credits Expired</p>
@@ -341,7 +341,7 @@ export default function NewHampshirePage() {
             </table>
           </div>
           <p className="text-gray-700 leading-relaxed mb-4">
-            These incentives <strong>stack with NHSaves rebates</strong> (different funding sources &mdash; ratepayer vs. federal CPRG grants). However, they will <strong>likely not stack with HEAR</strong> when it launches, since both are federally funded.
+            Heat pump incentives are limited to <strong>two per dwelling</strong> (or one HPWH incentive). For heat pumps, these <strong>stack with NHSaves rebates</strong> (different funding sources &mdash; ratepayer vs. federal CPRG grants). For water heaters, NHSaves eligibility rules bar units already receiving HPWH incentives through another program &mdash; so the $300 Accelerator discount and the $900 NHSaves rebate may not combine on the same unit. The Accelerator will also <strong>likely not stack with HEAR</strong> when it launches, since both are federally funded.
           </p>
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5">
