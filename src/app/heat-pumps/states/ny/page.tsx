@@ -72,7 +72,7 @@ const faqJsonLd = {
       name: "Who administers New York\u2019s heat pump programs?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "NYS Clean Heat is administered jointly by NYSERDA and six major electric utilities: Con Edison, National Grid, PSEG Long Island, Central Hudson, NYSEG, and RG&E. EmPower+ and HEAR are administered by NYSERDA. The NY State geothermal tax credit is claimed through the state tax return.",
+        text: "NYS Clean Heat is administered jointly by NYSERDA and six major electric utilities: Con Edison, National Grid, NYSEG, RG&E, Central Hudson, and Orange & Rockland. PSEG Long Island runs its own separate heat pump program for Long Island homeowners. EmPower+ and HEAR are administered by NYSERDA. The NY State geothermal tax credit is claimed through the state tax return.",
       },
     },
   ],
@@ -212,7 +212,7 @@ export default function NewYorkPage() {
                 <tr className="border-b">
                   <td className="p-3">Full load heating (fossil retained as backup)</td>
                   <td className="p-3 font-semibold">$2,500</td>
-                  <td className="p-3 text-gray-500">&mdash;</td>
+                  <td className="p-3 font-semibold">$4,500</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Heat pump water heater</td>
