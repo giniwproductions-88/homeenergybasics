@@ -49,7 +49,7 @@ export default function MainePage() {
         name: "What heat pump rebates are available in Maine in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Efficiency Maine offers $1,000–$3,000 per outdoor unit for non-ducted systems (lifetime cap $3,000–$9,000 depending on income) and $3,000–$9,000 lump sum for ducted whole-home systems. A $500 whole-home bonus runs through December 2026. Heat pump water heaters get up to $1,150 (instant discount at participating retailers or mail-in rebate). Geothermal systems receive one-third of cost up to $3,000. Federal 25C/25D tax credits are not available in 2026.",
+          text: "Efficiency Maine offers $1,000–$3,000 per outdoor unit for non-ducted systems (lifetime cap $3,000–$9,000 depending on income) and $3,000–$9,000 lump sum for ducted whole-home systems. A $500 whole-home bonus runs through December 2026. Heat pump water heaters get a $1,150 mail-in rebate or larger instant discounts at participating retailers. Geothermal systems receive one-third of cost up to $3,000. Federal 25C/25D tax credits are not available in 2026.",
         },
       },
       {
@@ -65,7 +65,7 @@ export default function MainePage() {
         name: "Do cold-climate heat pumps work in Maine winters?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Efficiency Maine requires equipment to have rated heating capacity at ASHRAE 99.6% design temperatures — 0°F for Portland, −7°F for Bangor, and −14°F for Caribou. Maine surpassed its 100,000-heat-pump goal in 2023 and is targeting 175,000 more by 2027. Systems must cover at least 80% of peak heating load, with electric backup covering the remaining 20%.",
+          text: "Yes. Efficiency Maine requires equipment to have rated heating capacity at ASHRAE 99.6% design temperatures — 0°F for Portland, −7°F for Bangor, and −14°F for Caribou. Maine surpassed its 100,000-heat-pump goal in 2023, has since passed 200,000 installations, and is targeting 275,000 total by 2027. Systems must cover at least 80% of peak heating load, with electric backup covering the remaining 20%.",
         },
       },
       {
@@ -144,7 +144,7 @@ export default function MainePage() {
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Bonus + Water Heaters + Loans</p>
               <p className="text-sm text-green-900">
-                $500 whole-home bonus through Dec 2026. Up to $1,150 for heat pump water heaters. 0% APR loans up to $25,000 through Efficiency Maine&apos;s Green Bank.
+                $500 whole-home bonus through Dec 2026. $1,150+ for heat pump water heaters. 0% APR loans up to $25,000 through Efficiency Maine&apos;s Green Bank.
               </p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
@@ -177,9 +177,10 @@ export default function MainePage() {
           </h2>
           <div className="bg-red-50 border border-red-200 rounded-lg p-6 mb-6">
             <p className="text-red-900 leading-relaxed">
-              The <strong>Section 25C</strong> Energy Efficient Home Improvement Credit
-              and the <strong>Section 25D</strong> Residential Clean Energy Credit apply
-              only to qualifying property placed in service through <strong>December 31, 2025</strong>.
+              The <strong>Section 25C</strong> Energy Efficient Home Improvement Credit applies
+              only to qualifying property placed in service through <strong>December 31, 2025</strong>,
+              and the <strong>Section 25D</strong> Residential Clean Energy Credit applies only to
+              expenditures made through the same date.
               This change was part of the One Big Beautiful Bill Act (OBBBA) signed July 4, 2025.
               Previously, homeowners could claim up to <strong>$2,000</strong> for a qualifying
               heat pump under 25C, or 30% of geothermal system costs (no cap) under 25D.
@@ -206,7 +207,7 @@ export default function MainePage() {
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             Efficiency Maine Trust administers all statewide heat pump rebates under Triennial Plan VI
-            (<strong>$529.3 million</strong>). Maine hit its 100,000-heat-pump goal in 2023 — two years early — and is now targeting another <strong>175,000</strong> installations by 2027.
+            (<strong>$529.3 million</strong>). Maine hit its 100,000-heat-pump goal in 2023 — two years early — has since surpassed <strong>200,000</strong> installations (as of early 2026), and is targeting <strong>275,000</strong> total by 2027.
             Rebates are applied at point of sale through your installer — you pay the reduced price,
             not the full amount.
           </p>
@@ -332,7 +333,9 @@ export default function MainePage() {
             qualify for rebates. Multi-zone systems are not rebatable, but their heating capacity can
             count toward the total. Heat pumps must be sized for at least <strong>80% of the
             home&apos;s peak heating load</strong> at ASHRAE 99.6% design temperature. Combined with
-            supplemental electric heat, the system must cover 100% of peak load.
+            supplemental electric heat, the system must cover 100% of peak load. One additional
+            eligibility rule: the housing unit must <strong>not have had a natural gas utility
+            account</strong> before the upgrade.
           </p>
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-amber-800 mb-1">⚠ Common Mistake: Dual Fuel Systems Are Not Eligible</p>
@@ -345,13 +348,15 @@ export default function MainePage() {
             Heat Pump Water Heaters
           </h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Efficiency Maine offers up to <strong>$1,150</strong> for a qualifying heat pump water
-            heater, delivered two ways: an <strong>instant discount</strong> at participating
-            retailers (including Lowe&apos;s and Home Depot) applied at the register, or a
-            <strong> $1,150 mail-in rebate</strong> for purchases made without an instant discount.
-            The two cannot be combined. Equipment must be ENERGY STAR certified — any brand and tank
-            size. DIY installation qualifies. Only one HPWH incentive per installation address per
-            calendar year.
+            Efficiency Maine offers heat pump water heater incentives two ways: an{" "}
+            <strong>instant discount</strong> at participating retailers and distributors
+            (for example, $1,200 off at Home Depot as of May 2026 &mdash; amounts vary by retailer),
+            or a <strong>$1,150 mail-in rebate</strong> for purchases made without an instant
+            discount. The two cannot be combined. Equipment must be ENERGY STAR certified &mdash;
+            any brand and tank size. DIY installation qualifies. Only one HPWH incentive per
+            installation address per calendar year, and mail-in claims must be emailed or postmarked
+            within six months of purchase. These discounts are funded in part by Maine&apos;s share
+            of the New England Heat Pump Accelerator (see below).
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">
@@ -400,16 +405,18 @@ export default function MainePage() {
           <p className="text-gray-700 leading-relaxed mb-4">
             The NE Heat Pump Accelerator (NEHPA) is a collaboration between Connecticut, Maine,
             Massachusetts, New Hampshire, and Rhode Island, funded by <strong>$450 million</strong> in
-            EPA Climate Pollution Reduction Grants — more than $70 million of it flowing to Maine.
-            It aims to install 580,000 residential heat pumps region-wide by 2030. Now live, it delivers
-            point-of-sale instant discounts through participating distributors and contractors:{" "}
-            <strong>$650 per heat pump unit</strong> (up to two per dwelling), <strong>$300</strong> per
-            heat pump water heater, and <strong>$750</strong> for air-to-water or geothermal systems,
-            available through 2029. VEIC is the Regional Implementer.
+            EPA Climate Pollution Reduction Grants and running through 2029. It aims to install
+            580,000 residential heat pumps region-wide by 2030. Maine&apos;s arrangement differs from
+            the other four states: instead of the per-unit pass-through discounts offered in CT, MA,
+            NH, and RI, Maine&apos;s roughly <strong>$43 million</strong> share funds the heat pump
+            water heater instant discounts at participating Maine distributors and retailers
+            (targeting 30,000 additional installations), plus pilot projects addressing barriers to
+            whole-home heat pump adoption.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            NEHPA discounts stack with Efficiency Maine rebates. Whether they can be combined with
-            federal HEAR rebates is unconfirmed.
+            In practice this means Maine homeowners access Accelerator funding automatically through
+            Efficiency Maine&apos;s existing water heater discounts &mdash; there is no separate NEHPA
+            consumer rebate to apply for or stack in Maine.
           </p>
         </div>
       </section>
@@ -422,7 +429,9 @@ export default function MainePage() {
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             Efficiency Maine&apos;s Green Bank offers unsecured loans — no lien on property or
-            equipment — with no application fee or prepayment penalty. Funds are disbursed directly
+            equipment — with no prepayment penalty. Rates, fees, and terms are adjusted
+            periodically; confirm current terms (including any origination fee on the 0% option)
+            at efficiencymaine.com before applying. Funds are disbursed directly
             to the Registered Vendor after project completion.
           </p>
           <div className="overflow-x-auto mb-6">
@@ -484,11 +493,10 @@ export default function MainePage() {
             How Maine Heat Pump Incentives Stack
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Efficiency Maine rebates and the $500 whole-home bonus stack automatically. NEHPA
-            discounts also stack, but they are applied by the distributor at purchase and are not
-            included in the scenario totals below &mdash; they reduce equipment cost by up to $1,300
-            (two units) on top of these figures. HEAR stacks only for eligible mobile/manufactured
-            homes (NEHPA-plus-HEAR stacking is unconfirmed). Total incentives cannot
+            Efficiency Maine rebates and the $500 whole-home bonus stack automatically. HEAR
+            stacks only for eligible mobile/manufactured homes. NEHPA funds in Maine flow through
+            Efficiency Maine&apos;s water heater discounts, so there is no separate Accelerator
+            discount to stack on heat pump projects. Total incentives cannot
             exceed project cost.
           </p>
           <div className="space-y-4 mb-8">
