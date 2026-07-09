@@ -49,7 +49,7 @@ export default function MainePage() {
         name: "What heat pump rebates are available in Maine in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Efficiency Maine offers $1,000–$3,000 per outdoor unit for non-ducted systems (lifetime cap $3,000–$9,000 depending on income) and $3,000–$9,000 lump sum for ducted whole-home systems. A $500 whole-home bonus runs through December 2026. Heat pump water heaters get a $1,150 mail-in rebate or larger instant discounts at participating retailers. Geothermal systems receive one-third of cost up to $3,000. Federal 25C/25D tax credits are not available in 2026.",
+          text: "Efficiency Maine offers $1,000–$3,000 per outdoor unit for non-ducted systems (lifetime cap $3,000–$9,000 depending on income) and $3,000–$9,000 lump sum for ducted whole-home systems. A $500 whole-home bonus runs through December 2026. Heat pump water heaters get a $1,150 mail-in rebate or larger instant discounts at participating retailers. Geothermal systems receive a flat $3,000 rebate. Federal 25C/25D tax credits are not available in 2026.",
         },
       },
       {
@@ -73,7 +73,7 @@ export default function MainePage() {
         name: "Who administers Maine’s heat pump rebate programs?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Efficiency Maine Trust administers all statewide heat pump rebates. Funding comes from RGGI (Regional Greenhouse Gas Initiative) credits and utility surcharges — not federal dollars — under Triennial Plan VI ($529.3 million). HEAR is funded by $35.7 million in IRA Section 50122 dollars and administered by Efficiency Maine under the Maine Department of Energy Resources.",
+          text: "Efficiency Maine Trust administers all statewide heat pump rebates. Core funding comes primarily from utility ratepayers and RGGI (Regional Greenhouse Gas Initiative) proceeds under Triennial Plan VI ($529.3 million), supplemented by federal grants for specific initiatives. HEAR is funded by $35.7 million in IRA Section 50122 dollars and administered by Efficiency Maine under the Maine Department of Energy Resources.",
         },
       },
       {
@@ -193,7 +193,7 @@ export default function MainePage() {
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
             <p className="font-semibold text-blue-800 mb-1">Maine&apos;s Funding Is Independent of Federal Policy</p>
             <p className="text-sm text-blue-900">
-              Unlike states that depend on IRA dollars, Efficiency Maine&apos;s rebates are funded by RGGI (Regional Greenhouse Gas Initiative) credits and utility surcharges — sources independent of federal policy changes. Efficiency Maine executive director Michael Stoddard has confirmed no plans to modify rebate levels.
+              Efficiency Maine&apos;s core heat pump rebates are funded primarily by utility ratepayers and RGGI (Regional Greenhouse Gas Initiative) proceeds, supplemented by federal grants for specific initiatives — so rebate levels do not depend on the expired federal tax credits. Executive director Michael Stoddard confirmed in December 2025 that Efficiency Maine has no plans to modify its heat pump incentives following the federal expiration.
             </p>
           </div>
         </div>
@@ -363,9 +363,9 @@ export default function MainePage() {
             Geothermal Heat Pump Rebates
           </h3>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Efficiency Maine offers a geothermal rebate of <strong>one-third of project cost up to
-            $3,000</strong>, with a lifetime limit of one geothermal rebate per housing unit. No
-            income-based tiers — the $3,000 maximum applies to all income levels. Equipment must be
+            Efficiency Maine offers a flat <strong>$3,000 rebate</strong> for qualifying geothermal heat
+            pumps, with a lifetime limit of one geothermal rebate per housing unit. No
+            income-based tiers — the same $3,000 applies at all income levels. Equipment must be
             ENERGY STAR certified and installation must be done by a Residential Registered Vendor
             for Geothermal Systems. With the federal Section 25D credit gone, this is the sole
             remaining incentive for residential geothermal in Maine.
