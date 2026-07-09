@@ -216,21 +216,45 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "MA",
     stateName: "Massachusetts",
     status: "open",
-    lastVerified: "2026-06-03",
+    lastVerified: "2026-07-09",
     summary:
-      "Mass Save heat pump rebates are active and recently restructured. Whole-home rebates reach $2,650/ton (max $8,500) with income-based adders. Partial-home rebates are $1,125/ton. A $500 sizing bonus and $500 weatherization bonus are available. R-410A refrigerant systems are excluded — must use R-32 or R-454B. Federal tax credits (25C/25D) ended December 31, 2025. HEAR funding is being integrated into Mass Save's income-eligible programs but is not yet separately claimable.",
+      "Mass Save heat pump rebates are active: whole-home $2,650/ton (max $8,500), partial $1,125/ton, ground-source $13,500. Income-qualified households (family of four up to $132,764) get $16,000–$25,000 or no-cost turnkey — pre-existing oil, propane, or electric-resistance heat required. NEHPA adds $650/unit at point of sale. R-410A excluded. Federal 25C/25D ended Dec 31, 2025.",
     sources: [
       {
-        label: "Mass Save — Heat Pump Rebates",
-        url: "https://www.masssave.com/residential/rebates-and-incentives/heating-and-cooling",
+        label: "Mass Save — Air-Source Heat Pump Rebates",
+        url: "https://www.masssave.com/residential/rebates-offers-services/heating-and-cooling/heat-pumps/air-source-heat-pumps",
+      },
+      {
+        label: "Mass Save — Ground-Source Heat Pump Rebates",
+        url: "https://www.masssave.com/residential/rebates-offers-services/heating-and-cooling/heat-pumps/ground-source-heat-pumps",
+      },
+      {
+        label: "Mass Save — Income-Based Offers (eligibility bands)",
+        url: "https://www.masssave.com/residential/rebates-offers-services/income-based-offers",
+      },
+      {
+        label: "Mass Save — Enhanced Heat Pump Rebates",
+        url: "https://www.masssave.com/residential/rebates-offers-services/income-based-offers/save-with-enhanced-incentives/enhanced-heating-and-cooling-rebates",
+      },
+      {
+        label: "Mass Save — Heat Pump Qualified Products List",
+        url: "https://www.masssave.com/heat-pump-qualified-list",
+      },
+      {
+        label: "Mass Save — Seasonal Heat Pump Rates",
+        url: "https://www.masssave.com/residential/rebates-offers-services/heating-and-cooling/heat-pumps/seasonal-heat-pump-rates",
       },
       {
         label: "Mass Save — HEAT Loan (0% Financing)",
-        url: "https://www.masssave.com/residential/rebates-and-incentives/heat-loan-program",
+        url: "https://www.masssave.com/residential/rebates-offers-services/financing",
       },
       {
-        label: "Mass Save — Income-Eligible Programs",
-        url: "https://www.masssave.com/residential/income-eligible-programs",
+        label: "NEHPA — New England Heat Pump Accelerator",
+        url: "https://www.nehpa.org/",
+      },
+      {
+        label: "Mass.gov — $146M IRA Home Energy Rebates (HEAR/HOMES)",
+        url: "https://www.mass.gov/news/healey-driscoll-administration-submits-applications-for-146-million-ira-home-energy-rebate-programs",
       },
       {
         label: "IRS 25C (expired)",
@@ -902,7 +926,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
       },
       {
         label: "IRS — 25C/25D Termination FAQ",
-        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21",
+        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
       },
     ],
   },
@@ -1801,7 +1825,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
       },
       {
         label: "IRS \u2014 25C/25D Termination FAQ (FS-2025-05)",
-        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21",
+        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
       },
     ],
   },

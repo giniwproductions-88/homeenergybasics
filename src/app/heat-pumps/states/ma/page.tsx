@@ -47,7 +47,7 @@ export default function MassachusettsPage() {
         name: "What heat pump rebates are available in Massachusetts in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Mass Save offers up to $8,500 for whole-home air-source heat pump installations ($2,650 per ton), up to $13,500 for ground-source systems, and $750 for heat pump water heaters. Income-qualified households can receive up to $16,000–$25,000, and the lowest-income households may qualify for no-cost installation. Federal tax credits (25C/25D) ended December 31, 2025.",
+          text: "Mass Save offers up to $8,500 for whole-home air-source heat pump installations ($2,650 per ton), up to $13,500 for ground-source systems, and $750 for heat pump water heaters. Income-qualified households can receive up to $16,000–$25,000 (pre-existing heat must be oil, propane, or electric resistance), and the lowest-income households may qualify for no-cost installation. Federal tax credits (25C/25D) ended December 31, 2025.",
         },
       },
       {
@@ -55,7 +55,7 @@ export default function MassachusettsPage() {
         name: "Can I stack Mass Save rebates with other incentives in Massachusetts?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Mass Save rebates stack with the HEAT Loan (0% APR, up to $25,000), Alternative Energy Credits, the 6.25% sales tax exemption on heat pump equipment, and the seasonal heat pump electric rate. You cannot combine multiple Mass Save rebate types on the same piece of equipment. Federal tax credits are no longer available to stack.",
+          text: "Yes. Mass Save rebates stack with the HEAT Loan (0% APR, up to $25,000), Alternative Energy Credits, the 6.25% sales tax exemption on heat pump equipment, the seasonal heat pump electric rate, and NEHPA point-of-sale instant discounts (a separate federally funded regional program). You cannot combine multiple Mass Save rebate types on the same piece of equipment. Federal tax credits are no longer available to stack.",
         },
       },
       {
@@ -139,11 +139,11 @@ export default function MassachusettsPage() {
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Income-qualified — up to $25,000</p>
-              <p className="text-sm text-green-900">Enhanced rebates for households at or below 60% state median income. Lowest-income households may qualify for no-cost installation with full project management.</p>
+              <p className="text-sm text-green-900">Two income bands (household of four, 2025&ndash;26 season): up to $99,573 qualifies for no-cost turnkey installation; $99,574&ndash;$132,764 qualifies for enhanced rebates ($16,000 ASHP / $25,000 GSHP). Pre-existing heat must be oil, propane, or electric resistance.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Total potential savings</p>
-              <p className="text-sm text-green-900">$8,500 (above 150% AMI) to $25,000+ (below 60% SMI). Full electrification packages with weatherization, HEAT Loan, and AECs can reach ~$35,000 total incentives.</p>
+              <p className="text-sm text-green-900">$8,500 (standard, no income limit) to $25,000 (income-qualified). Full electrification packages with weatherization, HEAT Loan, and AECs can reach ~$35,000 total incentives.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">✗ Federal tax credits expired</p>
@@ -213,19 +213,19 @@ export default function MassachusettsPage() {
                   <td className="p-3">Whole-home</td>
                   <td className="p-3 font-semibold">$2,650/ton</td>
                   <td className="p-3 font-semibold">$8,500</td>
-                  <td className="p-3">Remove/disconnect fossil fuel system; home must be sufficiently weatherized</td>
+                  <td className="p-3">Heat pump is the sole heating/cooling source; home must be sufficiently weatherized</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Partial-home</td>
                   <td className="p-3 font-semibold">$1,125/ton</td>
                   <td className="p-3 font-semibold">$8,500</td>
-                  <td className="p-3">Integrated controls from QPL; fossil fuel backup switches at ≤30°F (gas/oil) or ≤5°F (propane)</td>
+                  <td className="p-3">Integrated control from the Mass Save QPL required where oil, propane, or gas remains in use</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Basic</td>
                   <td className="p-3 font-semibold">$250/ton</td>
                   <td className="p-3 font-semibold">$2,500</td>
-                  <td className="p-3">Replacing existing heat pump, additions under 500 sq ft, or previously unconditioned spaces</td>
+                  <td className="p-3">Replacing an existing heat pump or central AC, previously unconditioned spaces, or homes not occupied in winter</td>
                 </tr>
               </tbody>
             </table>
@@ -235,8 +235,13 @@ export default function MassachusettsPage() {
             Partial-home installations can earn two additional bonuses: a{" "}
             <strong>$500 sizing bonus</strong> when sized via ACCA Manual J to meet
             90–120% of total heating load, and a <strong>$500 weatherization bonus</strong> when
-            recommended insulation and air sealing are completed within 12 months.
+            recommended insulation and air sealing are completed within one year before or up to six months after installation.
           </p>
+
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-6">
+            <p className="font-semibold text-blue-800 mb-1">NEHPA instant discounts (separate from Mass Save)</p>
+            <p className="text-sm text-blue-900">The New England Heat Pump Accelerator &mdash; a state-led, federally funded regional initiative &mdash; offers point-of-sale discounts through participating distributors and contractors: <strong>$650 per heat pump unit</strong> (up to two per dwelling) and <strong>$300 per heat pump water heater</strong>, available through 2029. It is not administered by Mass Save and stacks with Mass Save rebates. See NEHPA.org.</p>
+          </div>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Ground-Source &amp; Water Heating</h3>
           <div className="overflow-x-auto mb-6">
@@ -257,7 +262,7 @@ export default function MassachusettsPage() {
                 <tr className="border-b">
                   <td className="p-3">Ground-source HP (partial)</td>
                   <td className="p-3 font-semibold">$2,000/ton (cap $13,500)</td>
-                  <td className="p-3">Cape Light Compact cap is $15,000</td>
+                  <td className="p-3">Income-qualified Cape Light Compact customers get 80% of installed cost instead</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Heat pump water heater</td>
@@ -270,8 +275,12 @@ export default function MassachusettsPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Income-Qualified Enhanced Rebates</h3>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Mass Save dramatically increases rebate values for lower-income households. A family
-            of four earning <strong>$132,764 or less</strong> may qualify. Households enrolled
+            Mass Save uses two income bands (limits vary by area &mdash; check your zip code at
+            masssave.com). For a household of four in the 2025&ndash;26 heating season: the Income
+            Eligible band (<strong>up to $99,573</strong>) qualifies for no-cost turnkey installation,
+            and the Enhanced Incentive band (<strong>$99,574&ndash;$132,764</strong>) qualifies for the
+            enhanced rebates below. Enhanced heat pump rebates require pre-existing <strong>oil,
+            propane, or electric-resistance</strong> heat. Households enrolled
             in SNAP, MassHealth, LIHEAP, or fuel assistance may auto-qualify without income
             documentation.
           </p>
@@ -316,7 +325,7 @@ export default function MassachusettsPage() {
 
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
             <p className="font-semibold text-green-800 mb-1">✓ Best candidates for Massachusetts heat pumps</p>
-            <p className="text-sm text-green-900">Income-qualified households (below 60% SMI) eligible for no-cost turnkey installation. Oil or propane heating households converting to whole-home heat pumps ($2,650/ton tier). Homeowners ready to act in 2026 before rebates decline further. Households already weatherized or built after 2000 (fastest path to whole-home tier).</p>
+            <p className="text-sm text-green-900">Income-qualified households (up to $99,573 for a household of four) eligible for no-cost turnkey installation. Oil or propane heating households converting to whole-home heat pumps ($2,650/ton tier). Homeowners ready to act in 2026 before rebates decline further. Households already weatherized or built after 2000 (fastest path to whole-home tier).</p>
           </div>
         </div>
       </section>
@@ -339,15 +348,15 @@ export default function MassachusettsPage() {
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            The HOMES allocation is split between a Municipal Light Plant program (~$25M for 50
-            communities not covered by Mass Save) and an Affordable Housing Decarbonization Grant
+            The HOMES allocation is split between a Municipal Light Plant program (~$25M for the 40
+            Municipal Light Plant communities not covered by Mass Save) and an Affordable Housing Decarbonization Grant
             Program (~$45M for deed-restricted affordable rental housing). Neither is available to
             individual homeowners in standard Mass Save territory.
           </p>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
             <p className="font-semibold text-blue-800 mb-1">Massachusetts HEAR integration approach</p>
-            <p className="text-sm text-blue-900">Unlike most states launching HEAR as a standalone program, Massachusetts is layering HEAR funding into the existing Mass Save income-eligible framework. This means no separate application — but it also means HEAR benefits are limited to households already qualifying for Mass Save&apos;s enhanced tier (at or below 60% SMI). Households between 60–80% AMI may need to wait for full HEAR deployment.</p>
+            <p className="text-sm text-blue-900">Unlike most states launching HEAR as a standalone program, Massachusetts is layering HEAR funding into the existing Mass Save income-eligible framework. This means no separate application. HEAR funding flows through Mass Save&apos;s Income Eligible and enhanced income-qualified pathways &mdash; aligned with the federal &le;80% of Area Median Income limit &mdash; and can cover up to 100% of eligible electrification costs for qualifying households.</p>
           </div>
         </div>
       </section>
@@ -384,7 +393,7 @@ export default function MassachusettsPage() {
                 <tr className="border-b">
                   <td className="p-3">Cape Light Compact</td>
                   <td className="p-3 font-semibold">Standard Mass Save</td>
-                  <td className="p-3">GSHP partial cap $15,000 (vs $13,500); 80–100% for income-qualified</td>
+                  <td className="p-3">Income-qualified rebates differ: 80% of installed heat pump cost</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Unitil</td>
@@ -403,14 +412,14 @@ export default function MassachusettsPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">How Programs Stack</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             Mass Save rebates stack with the HEAT Loan (0% APR), Alternative Energy Credits, the
-            6.25% sales tax exemption, and the seasonal electric rate. You cannot combine multiple
+            6.25% sales tax exemption, the seasonal electric rate, and NEHPA point-of-sale discounts. You cannot combine multiple
             Mass Save rebate types on the same piece of equipment. Federal tax credits are no longer
             available. When HEAR launches, it will stack for income-eligible households only.
           </p>
 
           <div className="space-y-4 mb-8">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900 mb-2">Above 150% AMI — Whole-Home Ducted ASHP (3 ton)</p>
+              <p className="font-semibold text-gray-900 mb-2">Standard (no income limit) — Whole-Home Ducted ASHP (3 ton)</p>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>Mass Save whole-home rebate: $7,950 (3 × $2,650)</li>
                 <li>Sales tax exemption (6.25%): ~$625</li>
@@ -422,7 +431,7 @@ export default function MassachusettsPage() {
             </div>
 
             <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900 mb-2">80–150% AMI — Partial-Home ASHP (3 ton) with bonuses</p>
+              <p className="font-semibold text-gray-900 mb-2">Standard (no income limit) — Partial-Home ASHP (3 ton) with bonuses</p>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>Mass Save partial-home rebate: $3,375 (3 × $1,125)</li>
                 <li>Sizing bonus: $500</li>
@@ -435,9 +444,10 @@ export default function MassachusettsPage() {
             </div>
 
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-2">Below 60% SMI — Income-Qualified Whole-Home ASHP</p>
+              <p className="font-semibold text-green-800 mb-2">Income-Qualified — Enhanced Whole-Home ASHP (household of 4 up to $132,764)</p>
               <ul className="text-sm text-green-900 space-y-1">
                 <li>Mass Save enhanced rebate: up to $16,000</li>
+                <li>Requires pre-existing oil, propane, or electric-resistance heat</li>
                 <li>Weatherization: no-cost (100% covered)</li>
                 <li>Electrical panel upgrade: 100% covered</li>
                 <li>HEAR (when launched): up to $8,000 additional</li>
@@ -449,7 +459,7 @@ export default function MassachusettsPage() {
 
           <div className="bg-gray-100 rounded-lg p-5">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
-            <p className="text-sm text-gray-700">For a typical 3-ton whole-home ASHP installation (~$18,000–$22,000 installed), expect <strong>$9,000 to $14,000 out of pocket</strong> for households above 150% AMI after Mass Save rebate, sales tax exemption, and AECs. The HEAT Loan covers the remainder at 0% interest. Income-qualified households pay significantly less — potentially nothing.</p>
+            <p className="text-sm text-gray-700">For a typical 3-ton whole-home ASHP installation (~$18,000–$22,000 installed), expect <strong>$9,000 to $13,500 out of pocket</strong> at the standard tier after Mass Save rebate, sales tax exemption, and AECs. The HEAT Loan covers the remainder at 0% interest. Income-qualified households pay significantly less — potentially nothing.</p>
           </div>
 
           <p className="text-sm text-gray-500 mt-4">
