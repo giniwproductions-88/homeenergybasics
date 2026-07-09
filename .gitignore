@@ -31,3 +31,7 @@ yarn-error.log*
 # TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+scripts/source-latest.json
+scripts/source-diff-report.md
+scripts/server.pid
