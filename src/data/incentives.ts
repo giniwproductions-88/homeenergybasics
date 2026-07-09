@@ -279,13 +279,17 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "OR",
     stateName: "Oregon",
     status: "open",
-    lastVerified: "2026-06-03",
+    lastVerified: "2026-07-09",
     summary:
-      "Energy Trust of Oregon is the primary rebate — $800–$1,000 for most homeowners, up to $3,000 income-qualified. ODOE's HP3 program adds up to $2,000 (owner-occupied funding reserved; rental and new construction still open). Oregon has no state tax credit (RETC expired 2017). Federal 25C/25D credits ended December 31, 2025. The state's $113M HEAR/HOMES rebates have not launched — ODOE targets a phased 2026 rollout, pending U.S. DOE approval.",
+      "Energy Trust of Oregon is the primary rebate — $800–$1,000 for most homeowners, up to $3,000 income-qualified. ODOE's HP3 program adds up to $2,000 (owner-occupied funding reserved; rental and new construction still open). Oregon has no state tax credit (RETC expired 2017). Federal 25C/25D credits ended December 31, 2025. The state's $113M HEAR/HOMES rebates have not launched and have no announced launch date — ODOE's planned spring 2026 start did not happen and it now awaits U.S. DOE approval.",
     sources: [
       {
-        label: "Energy Trust of Oregon — Heating & Cooling",
-        url: "https://www.energytrust.org/residential/heating-cooling/",
+        label: "Oregon Home Energy Rebates — official program site (no rebates available yet)",
+        url: "https://www.homeenergyrebates.oregon.gov/",
+      },
+      {
+        label: "Energy Trust of Oregon — HOMES and HEAR (awaiting DOE approval)",
+        url: "https://www.energytrust.org/communities/homes-hear/",
       },
       {
         label: "Oregon Dept of Energy — Home Energy Rebate Programs (HOMES/HEAR status)",
