@@ -306,17 +306,25 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "WA",
     stateName: "Washington",
     status: "open",
-    lastVerified: "2026-06-16",
+    lastVerified: "2026-07-09",
     summary:
-      "Washington has two rebate tracks plus utility programs. The state HEAR program (Climate Commitment Act, ~$103.6M) is active for households \u2264150% AMI. The federal HARP/HOMES rebates (up to $8,000) are administered by Guidehouse but have not launched. PSE utility rebates run up to $5,000 (income-qualified). Federal tax credits (25C/25D) ended December 31, 2025.",
+      "Washington has two rebate tracks plus utility programs. The state HEAR program (Climate Commitment Act, ~$103.6M) is open and paying rebates for households \u2264150% AMI. The federal HARP/HOMES rebates (up to $8,000, Guidehouse administering) have no launch date \u2014 DOE issued revised program guidelines June 1, 2026 and Commerce is reassessing. PSE utility rebates run up to $5,000 (income-qualified) and have required a Trade Ally contractor since April 2, 2026. Federal tax credits (25C/25D) ended December 31, 2025.",
     sources: [
       {
         label: "Puget Sound Energy — Heat Pump Rebates",
         url: "https://www.pse.com/rebates/heat-pump-rebates",
       },
       {
-        label: "WA Dept of Commerce — Home Energy Rebates",
-        url: "https://www.commerce.wa.gov/growing-the-economy/energy/home-energy-rebates/",
+        label: "WA Commerce — State HEAR Program (open)",
+        url: "https://www.commerce.wa.gov/energy-incentives/hear/",
+      },
+      {
+        label: "WA Commerce — IRA Home Energy Rebates (HARP/HOMES)",
+        url: "https://www.commerce.wa.gov/energy-incentives/ira-home-energy-rebates/",
+      },
+      {
+        label: "United Hub — WA HEAR administrator (Clark, King, Pierce, Thurston, Yakima)",
+        url: "https://www.wahear.com/",
       },
       {
         label: "IRS 25C (expired)",
