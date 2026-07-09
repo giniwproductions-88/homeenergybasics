@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-09T16:31:53.354Z",
+ "generatedAt": "2026-07-09T16:46:46.670Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -4118,7 +4118,7 @@
     "WV"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:56.003Z",
+   "fetchedAt": "2026-07-09T16:31:09.067Z",
    "length": 161285,
    "kind": "html",
    "textHash": "344bd9425ddeb801",
@@ -4962,7 +4962,7 @@
     "OH"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:08.623Z",
+   "fetchedAt": "2026-07-09T16:31:17.348Z",
    "length": 295194,
    "kind": "html",
    "textHash": "adf61acb9e82efdc",
@@ -4980,7 +4980,7 @@
     "OH"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:07.911Z",
+   "fetchedAt": "2026-07-09T16:31:17.264Z",
    "length": 40769,
    "kind": "html",
    "textHash": "b9aa5f4378883989",
@@ -4999,8 +4999,8 @@
     "OH"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:10.518Z",
-   "length": 189295,
+   "fetchedAt": "2026-07-09T16:31:19.223Z",
+   "length": 189296,
    "kind": "html",
    "textHash": "051e0983170b2172",
    "dollars": [
@@ -5029,13 +5029,18 @@
   },
   "https://energyhelp.ohio.gov": {
    "url": "https://energyhelp.ohio.gov",
-   "finalUrl": "https://energyhelp.ohio.gov",
+   "finalUrl": "https://jfs.ohio.gov/public-assistance/energy-and-community-assistance",
    "label": "Ohio Energy Help (HWAP)",
    "states": [
     "OH"
    ],
-   "fetchedAt": "2026-07-09T15:15:59.727Z",
-   "error": "timeout"
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-09T16:31:19.302Z",
+   "length": 1102861,
+   "kind": "html",
+   "textHash": "d3c046ed8ad1e02c",
+   "dollars": [],
+   "keywords": {}
   },
   "https://www.aes-ohio.com/mandated-end-energy-efficiency-programs": {
    "url": "https://www.aes-ohio.com/mandated-end-energy-efficiency-programs",
@@ -5045,7 +5050,7 @@
     "OH"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:09.127Z",
+   "fetchedAt": "2026-07-09T16:31:18.452Z",
    "length": 60555,
    "kind": "html",
    "textHash": "57d3a406dc250452",
@@ -5062,7 +5067,7 @@
     "OH"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:09.010Z",
+   "fetchedAt": "2026-07-09T16:31:18.292Z",
    "length": 60419,
    "kind": "html",
    "textHash": "aaa550df4c482867",
@@ -5077,7 +5082,7 @@
     "OH"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:08.814Z",
+   "fetchedAt": "2026-07-09T16:31:18.324Z",
    "length": 228682,
    "kind": "html",
    "textHash": "7274a3cb13ffaa58",
@@ -5097,7 +5102,7 @@
     "OH"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:09.225Z",
+   "fetchedAt": "2026-07-09T16:31:18.888Z",
    "length": 38796,
    "kind": "html",
    "textHash": "7a89ba1343e1efaf",
@@ -5618,7 +5623,7 @@
     "MO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:16.215Z",
+   "fetchedAt": "2026-07-09T16:31:26.182Z",
    "length": 115950,
    "kind": "html",
    "textHash": "c2e9e027d6f01df5",
@@ -5630,20 +5635,17 @@
   },
   "https://www.ameren.com/missouri/residential/energy-efficiency/hvac": {
    "url": "https://www.ameren.com/missouri/residential/energy-efficiency/hvac",
-   "finalUrl": "https://www.ameren.com/efficiency/programs",
+   "finalUrl": "https://www.ameren.com/missouri/residential/energy-efficiency/hvac",
    "label": "Ameren Missouri — PAYS HVAC Incentives",
    "states": [
     "MO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:16.624Z",
-   "length": 276078,
+   "fetchedAt": "2026-07-09T16:31:26.085Z",
+   "length": 6183,
    "kind": "html",
-   "textHash": "cbe1fac44927bcab",
-   "dollars": [
-    "$25",
-    "$50"
-   ],
+   "textHash": "fc2ad2e92ce35a06",
+   "dollars": [],
    "keywords": {}
   },
   "https://www.evergy.com/ways-to-save/discounts-link/heating-and-cooling/heat-pump": {
@@ -5655,8 +5657,8 @@
     "KS"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:17.238Z",
-   "length": 40017,
+   "fetchedAt": "2026-07-09T16:31:27.341Z",
+   "length": 40709,
    "kind": "html",
    "textHash": "3b1cfb9b4eb2fdb2",
    "dollars": [],
@@ -5670,10 +5672,10 @@
     "MO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:18.572Z",
-   "length": 246422,
+   "fetchedAt": "2026-07-09T16:31:28.714Z",
+   "length": 246426,
    "kind": "html",
-   "textHash": "5d93b002d4858a7f",
+   "textHash": "9a5656942da8b783",
    "dollars": [
     "$800",
     "$1,200"
@@ -5690,7 +5692,7 @@
     "MO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:16.580Z",
+   "fetchedAt": "2026-07-09T16:31:26.796Z",
    "length": 103366,
    "kind": "html",
    "textHash": "44e389a8ab827bd3",
@@ -5711,7 +5713,7 @@
     "MO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:17.932Z",
+   "fetchedAt": "2026-07-09T16:31:26.774Z",
    "length": 82506,
    "kind": "html",
    "textHash": "9bc6a87dfd8ef11b",
@@ -5736,8 +5738,8 @@
     "MO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:17.732Z",
-   "length": 120608,
+   "fetchedAt": "2026-07-09T16:31:27.136Z",
+   "length": 120609,
    "kind": "html",
    "textHash": "be77f69cc01ef531",
    "dollars": [],
@@ -5751,8 +5753,8 @@
     "MO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:17.848Z",
-   "length": 126715,
+   "fetchedAt": "2026-07-09T16:31:27.287Z",
+   "length": 126714,
    "kind": "html",
    "textHash": "80e2d45be1b0baf3",
    "dollars": [],
