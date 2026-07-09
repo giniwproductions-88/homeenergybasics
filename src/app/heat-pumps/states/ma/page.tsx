@@ -262,7 +262,7 @@ export default function MassachusettsPage() {
                 <tr className="border-b">
                   <td className="p-3">Ground-source HP (partial)</td>
                   <td className="p-3 font-semibold">$2,000/ton (cap $13,500)</td>
-                  <td className="p-3">Income-qualified Cape Light Compact customers get 80% of installed cost instead</td>
+                  <td className="p-3">Cape Light Compact income-qualified customers: 80% of installed cost (all heat pump types)</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Heat pump water heater</td>
@@ -459,7 +459,7 @@ export default function MassachusettsPage() {
 
           <div className="bg-gray-100 rounded-lg p-5">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
-            <p className="text-sm text-gray-700">For a typical 3-ton whole-home ASHP installation (~$18,000–$22,000 installed), expect <strong>$9,000 to $13,500 out of pocket</strong> at the standard tier after Mass Save rebate, sales tax exemption, and AECs. The HEAT Loan covers the remainder at 0% interest. Income-qualified households pay significantly less — potentially nothing.</p>
+            <p className="text-sm text-gray-700">For a typical 3-ton whole-home ASHP installation (~$18,000–$22,000 installed), expect <strong>$9,000 to $13,000 out of pocket</strong> at the standard tier after Mass Save rebate, sales tax exemption, and AECs. The HEAT Loan covers the remainder at 0% interest. Income-qualified households pay significantly less — potentially nothing.</p>
           </div>
 
           <p className="text-sm text-gray-500 mt-4">
