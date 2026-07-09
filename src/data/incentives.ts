@@ -689,9 +689,9 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "PA",
     stateName: "Pennsylvania",
     status: "limited",
-    lastVerified: "2026-06-02",
+    lastVerified: "2026-07-09",
     summary:
-      "Pennsylvania heat pump incentives come from Act 129 utility rebates (Phase IV ended May 31, 2026; Phase V began June 1, amounts not yet published). PECO stacks up to $1,950 with EAP bonuses; PPL $350–$1,250, Duquesne $375–$425, FirstEnergy $200–$325, UGI up to $1,250. Federal 25C/25D ended December 31, 2025. Penn Energy Savers ($258.9M HEAR/HOMES) not yet launched.",
+      "Pennsylvania is between Act 129 phases: Phase IV utility rebates closed to new purchases May 31, 2026, and no utility has published Phase V amounts (Duquesne Light's program is \"being refreshed\"). Penn Energy Savers ($258.9M HEAR/HOMES) still has not launched — DOE issued new guidance June 1, 2026 and DEP is revising the program. Federal 25C/25D ended Dec 31, 2025. Available now: HEELP (1% APR) and KEEP loans, WAP, LIHEAP, and Philadelphia's Built to Last.",
     sources: [
       {
         label: "PA DEP — Inflation Reduction Act / Penn Energy Savers",
@@ -714,8 +714,8 @@ export const incentives: Record<StateCode, StateIncentive> = {
         url: "https://ppl.clearesult.com/",
       },
       {
-        label: "Duquesne Light Watt Choices",
-        url: "https://www.dlcwattchoices.com/residentialrebates/",
+        label: "Duquesne Light — Energy Rebates hub (program being refreshed)",
+        url: "https://dlcenergyrebates.com/",
       },
       {
         label: "FirstEnergy PA Rebates",
@@ -1421,8 +1421,8 @@ export const incentives: Record<StateCode, StateIncentive> = {
         url: "https://www.aepohio.com/homeupgrades",
       },
       {
-        label: "Ohio JFS - Energy & Community Assistance (HWAP)",
-        url: "https://jfs.ohio.gov/public-assistance/energy-and-community-assistance",
+        label: "Ohio Energy Help (HWAP)",
+        url: "https://energyhelp.ohio.gov",
       },
       {
         label: "AES Ohio \u2014 HB 6 Program End Notice",
