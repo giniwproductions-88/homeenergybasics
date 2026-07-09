@@ -185,25 +185,37 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "ME",
     stateName: "Maine",
     status: "open",
-    lastVerified: "2026-06-03",
+    lastVerified: "2026-07-09",
     summary:
-      "Efficiency Maine heat pump rebates are active and well-funded through Triennial Plan VI ($529.3M). Rebates range from $1,000–$3,000 per unit for non-ducted systems and $3,000–$9,000 for ducted whole-home systems, with income-based tiers. A $500 whole-home bonus is available March–December 2026. Federal tax credits (25C/25D) ended December 31, 2025. HEAR is partially active for mobile homes and affordable multifamily only.",
+      "Efficiency Maine heat pump rebates are active through Triennial Plan VI ($529.3M): $1,000–$3,000 per outdoor unit (all-other-whole-home systems) and $3,000–$9,000 lump sum (ducted), by income tier. A $500/unit whole-home bonus runs March–December 2026. NEHPA adds $650/unit at point of sale. HEAR is limited to mobile homes and affordable multifamily. Federal 25C/25D ended Dec 31, 2025.",
     sources: [
-      {
-        label: "Efficiency Maine — Residential Heat Pump Rebates",
-        url: "https://www.efficiencymaine.com/at-home/residential-heat-pump-rebates/",
-      },
       {
         label: "Efficiency Maine — Whole-Home Heat Pump Rebates",
         url: "https://www.efficiencymaine.com/whole-home-heat-pump-rebates/",
       },
       {
+        label: "Efficiency Maine — Ducted Heat Pump Rebates",
+        url: "https://www.efficiencymaine.com/residential-ducted-heat-pump-rebates/",
+      },
+      {
         label: "Efficiency Maine — Heat Pump Water Heaters",
-        url: "https://www.efficiencymaine.com/at-home/heat-pump-water-heaters/",
+        url: "https://www.efficiencymaine.com/about-heat-pump-water-heaters/",
+      },
+      {
+        label: "Efficiency Maine — Geothermal Rebates",
+        url: "https://www.efficiencymaine.com/at-home/geothermal/",
       },
       {
         label: "Efficiency Maine — Home Energy Loans",
-        url: "https://www.efficiencymaine.com/at-home/energy-loans/",
+        url: "https://www.efficiencymaine.com/home-energy-loans/",
+      },
+      {
+        label: "Maine DOER — Home Energy Rebates (HEAR status)",
+        url: "https://www.maine.gov/energy/initiatives/infrastructure/home-energy-rebates",
+      },
+      {
+        label: "NEHPA — New England Heat Pump Accelerator",
+        url: "https://www.nehpa.org/",
       },
       {
         label: "IRS 25C (expired)",

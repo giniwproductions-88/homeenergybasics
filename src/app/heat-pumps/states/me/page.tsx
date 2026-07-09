@@ -65,7 +65,7 @@ export default function MainePage() {
         name: "Do cold-climate heat pumps work in Maine winters?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Efficiency Maine requires equipment to have rated heating capacity at ASHRAE 99.6% design temperatures — 0°F for Portland, −7°F for Bangor, and −14°F for Caribou. Over 100,000 heat pumps have been installed statewide. Systems must cover at least 80% of peak heating load, with electric backup covering the remaining 20%.",
+          text: "Yes. Efficiency Maine requires equipment to have rated heating capacity at ASHRAE 99.6% design temperatures — 0°F for Portland, −7°F for Bangor, and −14°F for Caribou. Maine surpassed its 100,000-heat-pump goal in 2023 and is targeting 175,000 more by 2027. Systems must cover at least 80% of peak heating load, with electric backup covering the remaining 20%.",
         },
       },
       {
@@ -162,7 +162,7 @@ export default function MainePage() {
             <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 md:col-span-2">
               <p className="font-semibold text-amber-800 mb-1">⚠ HEAR Is Limited to Mobile Homes and Affordable Multifamily</p>
               <p className="text-sm text-amber-900">
-                Maine&apos;s Home Electrification and Appliance Rebates (HEAR) program is only partially active. Standard single-family homeowners are not eligible. No expansion to single-family has been announced.
+                Maine&apos;s Home Electrification and Appliance Rebates (HEAR) program is only partially active. Standard single-family homeowners are not eligible. A second HEAR phase for moderate-income households is planned, but no launch date has been announced.
               </p>
             </div>
           </div>
@@ -206,13 +206,13 @@ export default function MainePage() {
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             Efficiency Maine Trust administers all statewide heat pump rebates under Triennial Plan VI
-            (<strong>$529.3 million</strong>). Over 100,000 heat pumps have been installed statewide.
+            (<strong>$529.3 million</strong>). Maine hit its 100,000-heat-pump goal in 2023 — two years early — and is now targeting another <strong>175,000</strong> installations by 2027.
             Rebates are applied at point of sale through your installer — you pay the reduced price,
             not the full amount.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">
-            Non-Ducted (Mini-Split) — Per Outdoor Unit
+            All Other Whole-Home Systems (Mini-Splits) — Per Outdoor Unit
           </h3>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
@@ -244,7 +244,7 @@ export default function MainePage() {
           </div>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">
-            Ducted Whole-Home — Per Housing Unit
+            Ducted Whole-Home Systems — Per Housing Unit
           </h3>
           <p className="text-gray-700 leading-relaxed mb-4">
             Ducted systems receive a single lump-sum rebate. Requirements are stricter: the system
@@ -286,7 +286,7 @@ export default function MainePage() {
           <div className="bg-green-50 border border-green-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-green-800 mb-1">✓ $500 Bonus Active Now</p>
             <p className="text-sm text-green-900">
-              An additional <strong>$500</strong> for eligible whole-home heat pump upgrades completed,
+              An additional <strong>$500 per housing unit</strong> for eligible whole-home heat pump upgrades completed,
               and rebate claims emailed or postmarked, between March 1 and December 31, 2026.
               Stacks on top of standard non-ducted or ducted rebates. Single-wide mobile homes are not eligible.
             </p>
@@ -377,7 +377,7 @@ export default function MainePage() {
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-amber-800 mb-1">⚠ Partially Active — Limited Eligibility</p>
             <p className="text-sm text-amber-900">
-              HEAR is available only for mobile/manufactured homes and new affordable multifamily construction. Standard single-family homes are not eligible. No expansion to single-family has been announced.
+              HEAR is available only for mobile/manufactured homes and new affordable multifamily construction. Standard single-family homes are not eligible. A second HEAR phase opening rebates to moderate-income households is planned under the current Triennial Plan, but no launch date has been announced.
             </p>
           </div>
           <p className="text-gray-700 leading-relaxed mb-4">
@@ -398,16 +398,18 @@ export default function MainePage() {
             New England Heat Pump Accelerator ($450M, 5-State)
           </h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            The NE Heat Pump Accelerator is a collaboration between Connecticut, Maine, Massachusetts,
-            New Hampshire, and Rhode Island, funded by <strong>$450 million</strong> in EPA Climate
-            Pollution Reduction Grants. It aims to install 580,000 residential heat pumps region-wide
-            by 2030. The program works through supply-chain incentives to equipment distributors —
-            not direct-to-consumer rebates — and is expected to reduce upfront costs by an estimated
-            <strong>$700 per system</strong>. VEIC was selected as Regional Implementer.
+            The NE Heat Pump Accelerator (NEHPA) is a collaboration between Connecticut, Maine,
+            Massachusetts, New Hampshire, and Rhode Island, funded by <strong>$450 million</strong> in
+            EPA Climate Pollution Reduction Grants — more than $70 million of it flowing to Maine.
+            It aims to install 580,000 residential heat pumps region-wide by 2030. Now live, it delivers
+            point-of-sale instant discounts through participating distributors and contractors:
+            <strong>$650 per heat pump unit</strong> (up to two per dwelling), <strong>$300</strong> per
+            heat pump water heater, and <strong>$750</strong> for air-to-water or geothermal systems,
+            available through 2029. VEIC is the Regional Implementer.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Accelerator benefits can stack with Efficiency Maine rebates but likely cannot stack with
-            federal HEAR rebates.
+            NEHPA discounts stack with Efficiency Maine rebates. Whether they can be combined with
+            federal HEAR rebates is unconfirmed.
           </p>
         </div>
       </section>
@@ -483,8 +485,8 @@ export default function MainePage() {
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             Efficiency Maine rebates and the $500 whole-home bonus stack automatically. HEAR stacks
-            only for eligible mobile/manufactured homes. The NE Heat Pump Accelerator supply-chain
-            discount stacks with Efficiency Maine but likely not with HEAR. Total incentives cannot
+            only for eligible mobile/manufactured homes. NEHPA point-of-sale discounts stack with
+            Efficiency Maine rebates (HEAR stacking unconfirmed). Total incentives cannot
             exceed project cost.
           </p>
           <div className="space-y-4 mb-8">
@@ -733,8 +735,8 @@ export default function MainePage() {
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">HEAR Expansion to Single-Family</p>
               <p className="text-sm text-gray-600 mt-1">
-                No date has been announced for expanding HEAR beyond mobile homes and affordable
-                multifamily. If expansion happens, single-family homeowners could access up to
+                The approved Triennial Plan includes a second HEAR phase opening rebates to moderate-income
+                households, but no launch date has been announced. If expansion reaches single-family homes, single-family homeowners could access up to
                 $8,000 in additional rebates that stack with Efficiency Maine.
               </p>
             </div>
@@ -748,11 +750,11 @@ export default function MainePage() {
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Rebate Structure Changes</p>
               <p className="text-sm text-gray-600 mt-1">
-                Efficiency Maine has signaled it is updating the residential heat pump rebate
-                structure to simplify claims and improve whole-home heat distribution. The current
-                per-outdoor-unit amounts ($1,000–$3,000 by income) remain in effect, but the
-                ducted/non-ducted structure could shift. Confirm current terms with your registered
-                vendor before installing.
+                The anticipated restructure landed as new branding: Efficiency Maine now presents all
+                residential heat pump rebates as &quot;Whole-Home Heat Pump Rebates&quot; (ducted systems vs.
+                all other whole-home systems), reinforcing that heat pumps must serve as the primary
+                heating system. Rebate amounts are unchanged. Watch for further structural changes at
+                the next plan update.
               </p>
             </div>
           </div>
