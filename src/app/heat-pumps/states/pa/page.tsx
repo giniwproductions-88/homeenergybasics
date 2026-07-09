@@ -140,11 +140,11 @@ export default function PennsylvaniaPage() {
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; Low-interest loans available now</p>
-              <p className="text-sm text-green-900">HEELP: $1,000&ndash;$10,000 at 1% fixed APR for 10 years. KEEP: $2,500&ndash;$25,000 at below-market rates. Both stack with utility rebates.</p>
+              <p className="text-sm text-green-900">HEELP: $1,000&ndash;$10,000 at 1% fixed APR for 10 years. KEEP: $2,500&ndash;$25,000 at below-market rates. Both are open today and will stack with utility rebates when Phase V amounts publish.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-1">&#10003; Available today: loans and assistance</p>
-              <p className="text-sm text-green-900">HEELP, KEEP, Weatherization Assistance (at or below 200% FPL), LIHEAP crisis grants, and Philadelphia&apos;s Built to Last (100% coverage, low-income). Rebate stacking returns when Phase V amounts publish and Penn Energy Savers launches.</p>
+              <p className="font-semibold text-green-800 mb-1">&#10003; Income-based help is unaffected</p>
+              <p className="text-sm text-green-900">Weatherization Assistance (at or below 200% FPL), LIHEAP crisis grants, and Philadelphia&apos;s Built to Last (100% coverage for low-income homeowners) never ran on Act 129 money and are open now.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">&#10007; Federal tax credits expired</p>
@@ -569,7 +569,7 @@ export default function PennsylvaniaPage() {
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            <strong>Hybrid/dual-fuel systems</strong> (heat pump + gas furnace backup) are common in PA and make particular sense in Pittsburgh and Scranton where design temps hit 5&#176;F. PECO&apos;s EAP bonus includes a $250 dual-fuel adder that specifically rewards this approach.
+            <strong>Hybrid/dual-fuel systems</strong> (heat pump + gas furnace backup) are common in PA and make particular sense in Pittsburgh and Scranton where design temps hit 5&#176;F. PECO&apos;s Phase IV EAP bonus included a $250 dual-fuel adder rewarding this approach; whether Phase V keeps it is unknown.
           </p>
 
           <p className="text-gray-700 leading-relaxed mb-4">
@@ -584,7 +584,7 @@ export default function PennsylvaniaPage() {
 
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
             <p className="font-semibold text-green-800 mb-1">&#10003; Best candidates for a heat pump in Pennsylvania</p>
-            <p className="text-sm text-green-900">Heating oil or propane users in rural PA and the northern tier &mdash; fuel cost savings alone can justify the switch. PECO customers who can stack EAP bonuses for the highest available rebate in the state. Income-qualified households below 80% AMI who will benefit most when Penn Energy Savers launches. Homeowners with aging electric resistance heat &mdash; heat pumps cut electricity use by 30&ndash;50%. Anyone replacing a failing system can still use Act 129 utility rebates, now under Phase V.</p>
+            <p className="text-sm text-green-900">Heating oil or propane users in rural PA and the northern tier &mdash; fuel cost savings alone can justify the switch, with no rebate required. Income-qualified households below 80% AMI, who will benefit most when Penn Energy Savers launches and who may qualify for Weatherization Assistance or Built to Last today. Homeowners with aging electric resistance heat &mdash; heat pumps cut electricity use by 30&ndash;50%. Homeowners who can wait: Phase V rebates and Penn Energy Savers are both expected, and neither reimburses equipment bought beforehand.</p>
           </div>
         </div>
       </section>
@@ -594,35 +594,35 @@ export default function PennsylvaniaPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">How to apply for Pennsylvania incentives</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            With multiple utility territories and program timelines, start by identifying your electric utility &mdash; that determines your rebate amount and application path.
+            No Pennsylvania utility is paying heat pump rebates right now. These steps describe the path you will follow once Phase V amounts publish &mdash; and the financing and assistance you can apply for today.
           </p>
           <div className="space-y-4">
             <div className="flex gap-4">
               <div className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-bold">1</div>
               <div>
                 <p className="font-semibold text-gray-900">Identify your electric utility</p>
-                <p className="text-sm text-gray-700">Check your electric bill &mdash; PECO, PPL, Duquesne Light, Met-Ed, Penelec, Penn Power, West Penn Power, or UGI Electric. Your utility determines your rebate amount.</p>
+                <p className="text-sm text-gray-700">Check your electric bill &mdash; PECO, PPL, Duquesne Light, Met-Ed, Penelec, Penn Power, West Penn Power, or UGI Electric. Your utility will determine your Phase V rebate amount once it is published, and its website is where that announcement will appear.</p>
               </div>
             </div>
             <div className="flex gap-4">
               <div className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-bold">2</div>
               <div>
                 <p className="font-semibold text-gray-900">Check rebate eligibility and get quotes</p>
-                <p className="text-sm text-gray-700">All PA utilities require ENERGY STAR certification and minimum SEER2/HSPF2 thresholds. Higher-efficiency equipment qualifies for larger rebates. PECO EAP bonuses require a participating EAP contractor.</p>
+                <p className="text-sm text-gray-700">Ask your utility whether Phase V rebate amounts have been published before you sign anything. Under Phase IV all PA utilities required ENERGY STAR certification and minimum SEER2/HSPF2 thresholds, with higher-efficiency equipment earning larger rebates; PECO&apos;s EAP bonuses required a participating EAP contractor.</p>
               </div>
             </div>
             <div className="flex gap-4">
               <div className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-bold">3</div>
               <div>
                 <p className="font-semibold text-gray-900">Submit your rebate application within the deadline</p>
-                <p className="text-sm text-gray-700">Usually 90&ndash;180 days after installation depending on your utility. Act 129 Phase IV closed May 31, 2026; Phase V rebates apply to qualifying installations from June 1, 2026 onward.</p>
+                <p className="text-sm text-gray-700">Under Phase IV, deadlines ran 90&ndash;180 days after installation depending on the utility. Phase IV closed to new purchases May 31, 2026. Whether Phase V rebates will cover installations completed before its amounts are announced is a question only your utility can answer &mdash; ask before you install.</p>
               </div>
             </div>
             <div className="flex gap-4">
               <div className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-bold">4</div>
               <div>
                 <p className="font-semibold text-gray-900">Apply for financing if needed</p>
-                <p className="text-sm text-gray-700">HEELP (1% APR) and KEEP (below-market) loans can cover remaining costs after rebates. Apply separately &mdash; loan programs and utility rebates use different funding sources.</p>
+                <p className="text-sm text-gray-700">HEELP (1% APR) and KEEP (below-market) loans are available today and are the main incentive most PA homeowners can actually use right now. Apply separately &mdash; loan programs and utility rebates use different funding sources.</p>
               </div>
             </div>
           </div>
@@ -734,7 +734,7 @@ export default function PennsylvaniaPage() {
         <div className="container-narrow">
           <div className="bg-gray-100 rounded-lg p-6">
             <p className="text-gray-500 text-xs leading-relaxed">
-              <strong>Disclaimer:</strong> This page covers the main statewide, utility, and IRA heat pump incentives available to Pennsylvania homeowners in 2026. It does not calculate savings, guarantee eligibility, or represent any incentive program. Pennsylvania&apos;s incentives vary entirely by utility territory &mdash; amounts shown are based on each utility&apos;s published Act 129 Phase IV programs (Phase IV ended May 31, 2026; Phase V amounts had not yet been published as of June 2026). Penn Energy Savers has not launched and expected amounts may change when finalized. We verify status regularly but programs can change without notice. Always confirm current amounts and eligibility with your utility, the PA DEP, and your contractor before making decisions.
+              <strong>Disclaimer:</strong> This page covers the main statewide, utility, and IRA heat pump incentives available to Pennsylvania homeowners in 2026. It does not calculate savings, guarantee eligibility, or represent any incentive program. Pennsylvania&apos;s incentives vary entirely by utility territory &mdash; amounts shown are based on each utility&apos;s published Act 129 Phase IV programs (Phase IV closed to new purchases May 31, 2026; Phase V amounts had not been published as of July 2026). Penn Energy Savers has not launched and expected amounts may change when finalized. We verify status regularly but programs can change without notice. Always confirm current amounts and eligibility with your utility, the PA DEP, and your contractor before making decisions.
             </p>
           </div>
           <p className="text-sm text-gray-600 mt-4">
