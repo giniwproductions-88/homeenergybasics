@@ -79,7 +79,7 @@ export default function WashingtonPage() {
         name: "What is Initiative 2066 and does it affect heat pump rebates?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Initiative 2066 was a voter-approved measure in November 2024 that aimed to prevent limits on natural gas. A King County judge struck it down as unconstitutional in March 2025 for violating the state constitution\u2019s single-subject rule. The state and the Building Industry Association of Washington appealed directly to the Washington Supreme Court, which heard oral arguments on January 22, 2026 and is reviewing the case de novo. As of July 2026 the court has not issued a decision and gave no timeline for one. The superior court ruling stands in the meantime. Existing heat pump rebate programs have not been affected by I-2066 either way.",
+          text: "Initiative 2066 was a voter-approved measure in November 2024 that aimed to prevent limits on natural gas. A King County judge struck it down as unconstitutional in March 2025 for violating the state constitution\u2019s single-subject rule. The Building Industry Association of Washington appealed directly to the Washington Supreme Court, which heard oral arguments on January 22, 2026 and is reviewing the case de novo. As of July 2026 the court has not issued a decision and gave no timeline for one. The superior court ruling stands in the meantime. Existing heat pump rebate programs have not been affected by I-2066 either way.",
         },
       },
       {
@@ -111,7 +111,7 @@ export default function WashingtonPage() {
             Washington Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Federal tax credits are gone, but Washington has more active incentive layers than most states. Utility rebates from PSE reach up to <strong>$5,000</strong> income-qualified, a state-funded HEAR program backed by <strong>$103.6 million</strong> in Climate Commitment Act revenue is accepting applications, and federal HARP rebates (up to <strong>$8,000</strong>) are in final preparation. Seattle City Light offers <strong>$2,000</strong> for oil-to-heat-pump conversions. This guide covers all major Washington heat pump incentives available in 2026, including PSE, Seattle City Light, Snohomish PUD, Avista, the state HEAR program, and the pending federal HARP/HOMES programs. Here&apos;s what&apos;s actually available.
+            Federal tax credits are gone, but Washington has more active incentive layers than most states. Utility rebates from PSE reach up to <strong>$5,000</strong> income-qualified, a state-funded HEAR program backed by <strong>$103.6 million</strong> in Climate Commitment Act revenue is open and paying rebates, and federal HARP rebates (up to <strong>$8,000</strong>) remain unlaunched after DOE revised its program guidelines on June 1, 2026. Seattle City Light offers <strong>$2,000</strong> for oil-to-heat-pump conversions. This guide covers all major Washington heat pump incentives available in 2026, including PSE, Seattle City Light, Snohomish PUD, Avista, the state HEAR program, and the pending federal HARP/HOMES programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
             Updated {formattedDate} — verified against official program sources
@@ -357,7 +357,7 @@ export default function WashingtonPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Initiative 2066 &amp; What It Means for Rebates</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Initiative 2066 was a voter-approved measure in November 2024 that aimed to prevent limits on natural gas — blocking building codes from discouraging gas, stopping PSE&apos;s gas transition plan, and restricting municipal energy standards. In March 2025, a King County judge struck I-2066 down as unconstitutional. The Building Industry Association of Washington appealed directly to the Washington Supreme Court, which heard oral arguments on January 22, 2026. A ruling is expected by approximately summer 2026.
+            Initiative 2066 was a voter-approved measure in November 2024 that aimed to prevent limits on natural gas — blocking building codes from discouraging gas, stopping PSE&apos;s gas transition plan, and restricting municipal energy standards. In March 2025, a King County judge struck I-2066 down as unconstitutional. The Building Industry Association of Washington appealed directly to the Washington Supreme Court, which heard oral arguments on January 22, 2026 and is reviewing the case de novo. As of July 2026 the court has not ruled and has given no timeline. The superior court decision stands in the meantime, and the Washington Building Code Council has held off on related code changes while the case is pending.
           </p>
           <div className="bg-white border border-gray-200 rounded-lg p-5">
             <p className="font-semibold text-gray-900 mb-1">What this means for heat pump rebates:</p>
