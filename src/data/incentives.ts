@@ -293,10 +293,14 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "NY",
     stateName: "New York",
     status: "open",
-    lastVerified: "2026-06-03",
+    lastVerified: "2026-07-09",
     summary:
-      "New York heat pump incentives are active through the NYS Clean Heat Program, administered by six utilities. As of January 2026, residential rebates are limited to 1–4 unit homes. Rebates range from $5,000–$12,000 for air-source heat pumps depending on utility territory, decommissioning status, and DAC designation. EmPower+ and HEAR provide up to $24,000 for income-qualified households. The state geothermal tax credit covers 25% up to $10,000. Federal tax credits (25C/25D) ended December 31, 2025.",
+      "NYS Clean Heat (2026–2030) pays $2,500–$12,000 for air-source heat pumps and $14,000–$40,000 for geothermal, varying by utility, project category, and DAC status. EmPower+ provides $12,000–$14,000 base plus up to $14,000 in HEAR funds for income-eligible households. A 25% geothermal tax credit (max $10,000) remains. Federal 25C/25D expired Dec 31, 2025.",
     sources: [
+      {
+        label: "NYS Clean Heat — Program Manual v2 (March 2026)",
+        url: "https://cleanheat.ny.gov/assets/pdf/NYS%20Clean%20Heat%20Program%20Manual%202025_v2.pdf",
+      },
       {
         label: "NYSERDA — NYS Clean Heat Program",
         url: "https://www.nyserda.ny.gov/All-Programs/Heat-Pump-Program",
@@ -316,6 +320,10 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "Central Hudson — Heat Pump Incentives",
         url: "https://www.cenhud.com/en/my-energy/save-energy-money/residential-incentives/heatpumpincentives/",
+      },
+      {
+        label: "Orange & Rockland — Heat Pump Incentives",
+        url: "https://www.oru.com/en/save-money/rebates-incentives-credits/new-york-customers/incentives-for-residential-customers-ny/clean-heating-cooling-with-heat-pumps/heat-pump-incentives",
       },
       {
         label: "PSEG Long Island — Heat Pump Rebates",

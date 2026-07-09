@@ -6,16 +6,16 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title:
-    "New York Heat Pump Rebates 2026: $12,000 Clean Heat + $24,000 EmPower+ | Home Energy Basics",
+    "New York Heat Pump Rebates 2026: $12,000 Clean Heat + $40,000 Geothermal | Home Energy Basics",
   description:
-    "NYS Clean Heat offers $6,000\u2013$12,000 for air-source, $25,000 for geothermal. EmPower+ covers up to $24,000. Federal credits ended. Every NY incentive in 2026.",
+    "NYS Clean Heat pays $2,500\u2013$12,000 for air-source, up to $40,000 for geothermal. EmPower+ adds up to $28,000 with HEAR. Federal credits ended.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/ny",
   },
   openGraph: {
     title: "New York Heat Pump Rebates 2026",
     description:
-      "NYS Clean Heat up to $12,000 plus EmPower+ up to $24,000 \u2014 the complete guide to New York heat pump incentives after federal credits expired.",
+      "NYS Clean Heat up to $12,000 for air-source and $40,000 for geothermal \u2014 the complete guide to New York heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/ny",
     type: "article",
     publishedTime: "2026-03-21T23:25:20-05:00",
@@ -32,7 +32,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in New York in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "NYS Clean Heat offers $6,000\u2013$12,000 for air-source heat pumps (depending on utility and DAC status) and $14,000\u2013$25,000 for geothermal. EmPower+ with HEAR funding provides up to $24,000 for income-eligible households at or below 80% AMI. The new Weatherized Tier, which unlocks bonus incentives and the 85% project cost cap, was delayed from March 1 to September 1, 2026. Federal 25C and 25D tax credits expired December 31, 2025.",
+        text: "NYS Clean Heat offers $2,500\u2013$12,000 for air-source heat pumps (depending on utility, project category, and DAC status) and $14,000\u2013$40,000 for geothermal. EmPower+ provides $12,000\u2013$14,000 in base incentives plus up to $14,000 in HEAR funding for income-eligible households at or below 80% of State or Area Median Income. The new Weatherized Tier, which unlocks bonus incentives and the 85% project cost cap, was delayed from March 1 to September 1, 2026. Federal 25C and 25D tax credits expired December 31, 2025.",
       },
     },
     {
@@ -40,7 +40,7 @@ const faqJsonLd = {
       name: "Can I stack NYS Clean Heat rebates with HEAR in New York?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "EmPower+ (which delivers HEAR funding) and NYS Clean Heat utility incentives cannot be combined for the same installed measure. Income-eligible households must choose one pathway for the heat pump itself. However, different programs can cover different measures in the same project. For market-rate homeowners, Clean Heat is the primary pathway ($6,000\u2013$12,000). Total Clean Heat incentives are capped at 70% of project cost (non-DAC) or 85% (DAC, Central Hudson, or Weatherized Tier).",
+        text: "EmPower+ (which delivers HEAR funding) and NYS Clean Heat utility incentives cannot be combined for the same installed measure. Income-eligible households must choose one pathway for the heat pump itself. However, different programs can cover different measures in the same project. For market-rate homeowners, Clean Heat is the primary pathway ($2,500\u2013$12,000). Total Clean Heat incentives are capped at 70% of project cost (non-DAC) or 85% (DAC, Central Hudson, or Weatherized Tier).",
       },
     },
     {
@@ -48,7 +48,7 @@ const faqJsonLd = {
       name: "What is the NYS Clean Heat Weatherized Tier?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Originally scheduled for March 1, 2026, the Weatherized Tier launch was extended to September 1, 2026 per Program Manual Version 2. It provides bonus incentives and the higher 85% project cost cap for homes meeting insulation and air-sealing standards. You qualify through four pathways: built after 2010, prior weatherization program participation, NYSERDA Virtual Energy Assessment, or certified home energy assessment. This is a bonus in 2026\u20132027 but becomes mandatory starting March 1, 2028.",
+        text: "Originally scheduled for March 1, 2026, the Weatherized Tier launch was extended to September 1, 2026 per Program Manual Version 2. It provides bonus incentives and the higher 85% project cost cap for homes meeting insulation and air-sealing standards. You qualify through four pathways: built after 2010, prior weatherization program participation, NYSERDA Virtual Energy Assessment, or certified home energy assessment. This is a bonus in 2026\u20132027, but the Public Service Commission order requires weatherization as a prerequisite for all Clean Heat incentives by March 1, 2028, at a standard still to be defined.",
       },
     },
     {
@@ -56,7 +56,7 @@ const faqJsonLd = {
       name: "What is EmPower+ and how does it connect to HEAR?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "EmPower+ is NYSERDA\u2019s program for income-eligible households at or below 80% of Area Median Income (AMI). New York channels federal HEAR funding through EmPower+, enabling up to $24,000 per qualifying household for heat pumps, weatherization, electrical upgrades, and heat pump water heaters \u2014 potentially covering 100% of project costs with zero out-of-pocket expense.",
+        text: "EmPower+ is NYSERDA\u2019s program for income-eligible households at or below 80% of the State or Area Median Income (whichever is greater). Low-income households receive no-cost improvements capped at $12,000 (upstate) or $14,000 (downstate) per project. New York channels federal HEAR funding through EmPower+ on top of that \u2014 up to $14,000 in additional rebates per household (including up to $8,000 toward a heat pump) \u2014 for a combined ceiling of roughly $26,000\u2013$28,000, potentially covering 100% of project costs with zero out-of-pocket expense.",
       },
     },
     {
@@ -111,7 +111,7 @@ export default function NewYorkPage() {
             New York Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            New York offers some of the largest heat pump rebates in the U.S. through the NYS Clean Heat program &mdash; up to <strong>$12,000</strong> for air-source systems and <strong>$25,000</strong> for geothermal. Income-eligible households can receive up to <strong>$24,000</strong> through EmPower+ with HEAR funding. Federal tax credits ended December 31, 2025, but state and utility incentives make New York one of the best places to install a heat pump in 2026. This guide covers all major New York heat pump incentives available in 2026, including NYS Clean Heat, Con Edison, National Grid, PSEG Long Island, Central Hudson, EmPower+, the Weatherized Tier, and the state geothermal credit. Here&apos;s what&apos;s actually available.
+            New York offers some of the largest heat pump rebates in the U.S. through the NYS Clean Heat program &mdash; up to <strong>$12,000</strong> for air-source systems and up to <strong>$40,000</strong> for geothermal. Income-eligible households can combine EmPower+ base incentives of <strong>$12,000&ndash;$14,000</strong> with up to <strong>$14,000</strong> in additional HEAR funding. Federal tax credits ended December 31, 2025, but state and utility incentives make New York one of the best places to install a heat pump in 2026. This guide covers all major New York heat pump incentives available in 2026, including NYS Clean Heat, Con Edison, National Grid, PSEG Long Island, Central Hudson, EmPower+, the Weatherized Tier, and the state geothermal credit. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
             Updated {formattedDate} — verified against official program sources
@@ -135,16 +135,16 @@ export default function NewYorkPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">The Short Version</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-1">&#10003; NYS Clean Heat: $6,000&ndash;$12,000</p>
+              <p className="font-semibold text-green-800 mb-1">&#10003; NYS Clean Heat: $2,500&ndash;$12,000</p>
               <p className="text-sm text-green-900">Reauthorized 2026&ndash;2030 with $5.36 billion. Six utilities participate. Full fossil fuel removal earns the highest rebates. DAC areas get enhanced amounts.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-1">&#10003; EmPower+ (HEAR): Up to $24,000</p>
-              <p className="text-sm text-green-900">For income-eligible households at or below 80% AMI. Currently live &mdash; potentially free installations covering 100% of project costs.</p>
+              <p className="font-semibold text-green-800 mb-1">&#10003; EmPower+ (HEAR): Up to ~$28,000 Combined</p>
+              <p className="text-sm text-green-900">For income-eligible households at or below 80% of State or Area Median Income (SMI/AMI). $12,000&ndash;$14,000 base plus up to $14,000 in HEAR funds &mdash; potentially free installations covering 100% of project costs.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; Total Potential Savings</p>
-              <p className="text-sm text-green-900">$6,000&ndash;$12,000 (above 80% AMI, Clean Heat only) to $24,000+ (below 80% AMI, EmPower+ with HEAR). Geothermal: $14,000&ndash;$25,000 plus 25% state tax credit up to $10,000.</p>
+              <p className="text-sm text-green-900">$2,500&ndash;$12,000 (above 80% SMI/AMI, Clean Heat only) to ~$28,000 (below 80% SMI/AMI, EmPower+ with HEAR). Geothermal: $14,000&ndash;$40,000 plus 25% state tax credit up to $10,000.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">&#10007; Federal Tax Credits Expired</p>
@@ -152,7 +152,7 @@ export default function NewYorkPage() {
             </div>
             <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
               <p className="font-semibold text-amber-800 mb-1">&#9888; Weatherized Tier: Bonus Now Launching September 2026, Mandatory in 2028</p>
-              <p className="text-sm text-amber-900">Originally scheduled for March 1, 2026, the Weatherized Tier launch was extended to <strong>September 1, 2026</strong> per Program Manual Version 2. It unlocks bonus incentives and the 85% project cost cap. It&apos;s optional through 2027 but becomes <strong>mandatory starting March 1, 2028</strong> &mdash; meaning homes will eventually need to meet weatherization standards to receive any Clean Heat incentive.</p>
+              <p className="text-sm text-amber-900">Originally scheduled for March 1, 2026, the Weatherized Tier launch was extended to <strong>September 1, 2026</strong> per Program Manual Version 2. It unlocks bonus incentives and the 85% project cost cap. It&apos;s optional through 2027, but weatherization becomes <strong>mandatory by March 1, 2028</strong> (at a standard still to be defined) &mdash; meaning homes will eventually need to meet weatherization standards to receive any Clean Heat incentive.</p>
             </div>
           </div>
         </div>
@@ -164,7 +164,7 @@ export default function NewYorkPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Federal Tax Credits Have Ended</h2>
           <div className="bg-red-50 border border-red-200 rounded-lg p-6 mb-6">
             <p className="text-red-900 leading-relaxed">
-              <strong>Section 25C</strong> (up to $2,000/year for heat pumps) and <strong>Section 25D</strong> (30% for geothermal) both expired <strong>December 31, 2025</strong> under the One Big Beautiful Bill Act. No federal tax credit is available for 2026 installations. New York&apos;s state programs more than compensate &mdash; NYS Clean Heat offers up to $12,000 for air-source and $25,000 for geothermal, significantly more than the expired federal credits. For details, see our{" "}
+              <strong>Section 25C</strong> (up to $2,000/year for heat pumps) and <strong>Section 25D</strong> (30% for geothermal) both expired <strong>December 31, 2025</strong> under the One Big Beautiful Bill Act. No federal tax credit is available for 2026 installations. New York&apos;s state programs more than compensate &mdash; NYS Clean Heat offers up to $12,000 for air-source and $40,000 for geothermal, significantly more than the expired federal credits. For details, see our{" "}
               <Link href="/federal-heat-pump-tax-credit-expired" className="text-red-700 underline hover:text-red-900">
                 federal heat pump tax credit explainer
               </Link>.
@@ -213,6 +213,11 @@ export default function NewYorkPage() {
                   <td className="p-3">Full load heating (fossil retained as backup)</td>
                   <td className="p-3 font-semibold">$2,500</td>
                   <td className="p-3 font-semibold">$4,500</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Ground source (GSHP, whole building)</td>
+                  <td className="p-3 font-semibold">$30,000</td>
+                  <td className="p-3 font-semibold">$40,000</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Heat pump water heater</td>
@@ -315,6 +320,49 @@ export default function NewYorkPage() {
             </table>
           </div>
 
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">Orange &amp; Rockland (Lower Hudson Valley)</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            O&amp;R publishes no rebate amounts on its own site &mdash; incentives flow through NYS Clean Heat Participating Contractors. Single-family amounts per the 2026 Program Manual:
+          </p>
+          <div className="overflow-x-auto mb-6">
+            <table className="min-w-full text-sm">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="text-left p-3 font-semibold">Category</th>
+                  <th className="text-left p-3 font-semibold">Non-DAC (SF)</th>
+                  <th className="text-left p-3 font-semibold">DAC (SF)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b bg-green-50">
+                  <td className="p-3">Cat. 2b &mdash; Full load, fossil removed</td>
+                  <td className="p-3 font-semibold">$9,000</td>
+                  <td className="p-3 font-semibold">$10,000</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Cat. 2 &mdash; Full load, fossil retained</td>
+                  <td className="p-3 font-semibold">$5,000</td>
+                  <td className="p-3 font-semibold">$6,000</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Cat. 3 &mdash; GSHP retrofit</td>
+                  <td className="p-3 font-semibold">$14,000</td>
+                  <td className="p-3 font-semibold">$15,000</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Cat. 4 &mdash; Partial to full load</td>
+                  <td className="p-3 font-semibold">$3,000</td>
+                  <td className="p-3 font-semibold">$3,000</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Cat. 5 &mdash; HPWH</td>
+                  <td className="p-3 font-semibold">$1,250</td>
+                  <td className="p-3 font-semibold">$1,250</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
           <h3 className="text-lg font-semibold text-gray-900 mb-3">PSEG Long Island</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
             Rebates range from <strong>$4,000 to $10,500</strong> depending on project type and income eligibility. Income-eligible rate can cover up to <strong>$11,000</strong>, potentially eliminating all out-of-pocket costs.
@@ -322,7 +370,7 @@ export default function NewYorkPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">NYSEG &amp; RG&amp;E (Southern Tier, Rochester)</h3>
           <p className="text-gray-700 leading-relaxed">
-            NYSEG and RG&amp;E ended their standalone residential rebate programs on June 30, 2025. All heat pump incentives now flow exclusively through NYS Clean Heat via Participating Contractors.
+            NYSEG and RG&amp;E ended their standalone residential rebate programs on June 30, 2025. All heat pump incentives now flow exclusively through NYS Clean Heat via Participating Contractors. Under the 2026 Program Manual, both pay <strong>$6,000</strong> for single-family full-load projects with fossil retained and <strong>$10,000</strong> with full fossil removal (NYSEG adds $1,000 in DACs; RG&amp;E&apos;s DAC adder applies only to apartments). GSHP retrofits earn <strong>$17,000</strong> ($18,000 in DACs).
           </p>
         </div>
       </section>
@@ -330,17 +378,17 @@ export default function NewYorkPage() {
       {/* 7. EmPower+ / HEAR */}
       <section className="py-12">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">EmPower+ &amp; Federal HEAR &mdash; Up to $24,000</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">EmPower+ &amp; Federal HEAR &mdash; Up to ~$28,000 Combined</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            New York was the <strong>first state</strong> to launch IRA-funded home energy rebates (June 2024). Federal HEAR funding flows through NYSERDA&apos;s EmPower+ program, enabling up to <strong>$24,000 per qualifying household</strong> (combining state EmPower+ and federal HEAR funding) for heat pumps, weatherization, electrical upgrades, and heat pump water heaters.
+            New York was the <strong>first state</strong> to launch IRA-funded home energy rebates (June 2024). EmPower+ covers low-income households&apos; improvements at no cost up to <strong>$12,000</strong> per project upstate or <strong>$14,000</strong> downstate (moderate-income households get 50% coverage up to $6,000&ndash;$7,000). Federal HEAR funding flows through EmPower+ <strong>on top of</strong> those caps &mdash; up to <strong>$14,000</strong> in additional rebates per household, including up to $8,000 toward a heat pump &mdash; for a combined ceiling of roughly <strong>$26,000&ndash;$28,000</strong> covering heat pumps, weatherization, electrical upgrades, and heat pump water heaters.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Eligible households at or below <strong>80% of Area Median Income (AMI)</strong> can receive <strong>100% of project costs covered</strong> with zero out-of-pocket expense. HOMES rebates for moderate- and market-rate households are also available.
+            Eligible households at or below <strong>80% of the State or Area Median Income (SMI/AMI, whichever is greater)</strong> can receive <strong>100% of project costs covered</strong> with zero out-of-pocket expense. HOMES rebates for moderate- and market-rate households are also available.
           </p>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
             <p className="font-semibold text-blue-800 mb-1">EmPower+ and Clean Heat: Choose One Per Measure</p>
-            <p className="text-sm text-blue-900">EmPower+ and NYS Clean Heat utility incentives cannot be combined for the same installed measure. Income-eligible households should choose EmPower+ (higher ceiling of $24,000) for the heat pump itself. Clean Heat can potentially cover other measures in the same project. Market-rate households above 80% AMI use Clean Heat as their primary pathway.</p>
+            <p className="text-sm text-blue-900">EmPower+ and NYS Clean Heat utility incentives cannot be combined for the same installed measure. Income-eligible households should choose EmPower+ (higher combined ceiling of ~$28,000) for the heat pump itself. Clean Heat can potentially cover other measures in the same project. Market-rate households above 80% SMI/AMI use Clean Heat as their primary pathway.</p>
           </div>
         </div>
       </section>
@@ -350,7 +398,7 @@ export default function NewYorkPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Weatherized Tier &mdash; Launching September 1, 2026</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            The new Weatherized Tier rewards homes meeting insulation and air-sealing standards with bonus incentives and the <strong>85% project cost cap</strong> (same as DAC areas). Originally scheduled for March 1, 2026, the launch was extended to <strong>September 1, 2026</strong> per Program Manual Version 2 (March 5, 2026). This is a bonus for 2026&ndash;2027 but becomes <strong>mandatory starting March 1, 2028</strong> &mdash; meaning homes will eventually need to meet weatherization standards to receive any Clean Heat incentive.
+            The new Weatherized Tier rewards homes meeting insulation and air-sealing standards with bonus incentives and the <strong>85% project cost cap</strong> (same as DAC areas). Originally scheduled for March 1, 2026, the launch was extended to <strong>September 1, 2026</strong> per Program Manual Version 2 (March 5, 2026). This is a bonus for 2026&ndash;2027, but the Commission&apos;s order requires weatherization as a prerequisite for all Clean Heat incentives <strong>by March 1, 2028</strong>, at a standard still to be defined &mdash; meaning homes will eventually need to meet weatherization standards to receive any Clean Heat incentive.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">How to Qualify (Any One Pathway)</h3>
@@ -385,7 +433,7 @@ export default function NewYorkPage() {
 
           <div className="space-y-4 mb-8">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900 mb-2">Above 80% AMI &mdash; Con Edison (Non-DAC)</p>
+              <p className="font-semibold text-gray-900 mb-2">Above 80% SMI/AMI &mdash; Con Edison (Non-DAC)</p>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>Clean Heat full replacement: $8,000</li>
                 <li>Cap: 70% of $20,000 = $14,000</li>
@@ -395,7 +443,7 @@ export default function NewYorkPage() {
             </div>
 
             <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900 mb-2">Above 80% AMI &mdash; National Grid (DAC)</p>
+              <p className="font-semibold text-gray-900 mb-2">Above 80% SMI/AMI &mdash; National Grid (DAC)</p>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>Clean Heat Cat. 2b (fossil removed): $12,000</li>
                 <li>Cap: 85% of $20,000 = $17,000</li>
@@ -404,20 +452,21 @@ export default function NewYorkPage() {
             </div>
 
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-2">Below 80% AMI &mdash; EmPower+ with HEAR (Best Case)</p>
+              <p className="font-semibold text-green-800 mb-2">Below 80% SMI/AMI &mdash; EmPower+ with HEAR (Best Case)</p>
               <ul className="text-sm text-green-900 space-y-1">
-                <li>EmPower+ / HEAR combined: up to $24,000</li>
+                <li>EmPower+ base (low-income): up to $12,000&ndash;$14,000</li>
+                <li>Additional HEAR funding: up to $14,000 ($8,000 max toward the heat pump)</li>
                 <li>Coverage: up to 100% of project costs</li>
                 <li>Note: cannot also receive Clean Heat for same HP</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$20,000&ndash;$24,000 (potentially free)</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$20,000 (project fully covered &mdash; free)</p>
             </div>
           </div>
 
           <div className="bg-gray-100 rounded-lg p-5">
             <p className="font-semibold text-gray-900 mb-1">What You&apos;ll Actually Pay</p>
             <p className="text-sm text-gray-700">
-              For a $20,000 whole-home system: market-rate homeowners in non-DAC areas pay <strong>$8,000&ndash;$14,000 out of pocket</strong>. DAC-area homeowners pay <strong>$5,000&ndash;$8,000</strong>. Income-eligible households through EmPower+ may pay <strong>$0</strong>. On-Bill Recovery Loans and NYSERDA Smart Energy Loans can finance remaining costs.
+              For a $20,000 whole-home system with full fossil removal: market-rate homeowners in non-DAC areas pay <strong>$10,000&ndash;$12,000 out of pocket</strong> (rebates run $8,000&ndash;$10,000 by utility). DAC-area homeowners pay <strong>$8,000&ndash;$10,000</strong> (rebates $10,000&ndash;$12,000). Keeping a fossil backup cuts the rebate sharply &mdash; as low as $2,500 at Con Edison. Income-eligible households through EmPower+ may pay <strong>$0</strong>. On-Bill Recovery Loans and NYSERDA Smart Energy Loans can finance remaining costs.
             </p>
           </div>
         </div>
@@ -436,7 +485,7 @@ export default function NewYorkPage() {
 
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
             <p className="font-semibold text-green-800 mb-1">&#10003; Best Candidates for a Heat Pump in New York</p>
-            <p className="text-sm text-green-900">Income-eligible households (EmPower+ covers up to $24,000 &mdash; potentially free). Homeowners in DAC areas ($10,000&ndash;$12,000 Clean Heat + 85% cap). Oil-heated homes (highest fuel cost savings + strongest rebate tiers for fossil fuel removal). Anyone with a Weatherized Tier-qualifying home (85% cap + bonus incentives).</p>
+            <p className="text-sm text-green-900">Income-eligible households (EmPower+ with HEAR covers up to ~$28,000 combined &mdash; potentially free). Homeowners in DAC areas ($10,000&ndash;$12,000 Clean Heat + 85% cap). Oil-heated homes (highest fuel cost savings + strongest rebate tiers for fossil fuel removal). Anyone with a Weatherized Tier-qualifying home (85% cap + bonus incentives).</p>
           </div>
         </div>
       </section>
@@ -504,7 +553,7 @@ export default function NewYorkPage() {
               <div className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-bold">2</div>
               <div>
                 <p className="font-semibold text-gray-900">Check Income Eligibility for EmPower+</p>
-                <p className="text-sm text-gray-700">If you may qualify (at or below 80% AMI), apply at nyserda.ny.gov or call 1-866-NYSERDA. This unlocks up to $24,000 in combined incentives.</p>
+                <p className="text-sm text-gray-700">If you may qualify (at or below 80% of State or Area Median Income), apply at nyserda.ny.gov or call 1-866-NYSERDA. This unlocks up to ~$28,000 in combined EmPower+ and HEAR incentives.</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -540,11 +589,11 @@ export default function NewYorkPage() {
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">2028 Weatherization Mandate</p>
-              <p className="text-sm text-gray-600 mt-1">Starting March 1, 2028, homes must meet weatherization standards to receive any Clean Heat incentive. Qualifying now earns the bonus and avoids future compliance costs.</p>
+              <p className="text-sm text-gray-600 mt-1">By March 1, 2028, weatherization becomes a prerequisite for all Clean Heat incentives (the required standard is still to be defined). Qualifying now earns the bonus and avoids future compliance costs.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">NY State Geothermal Tax Credit</p>
-              <p className="text-sm text-gray-600 mt-1">The 25% state geothermal tax credit (up to $10,000) remains active for 2026. Combined with Clean Heat rebates of $14,000&ndash;$25,000, this makes NY one of the best states for ground-source systems.</p>
+              <p className="text-sm text-gray-600 mt-1">The 25% state geothermal tax credit (up to $10,000) remains active for 2026. Combined with Clean Heat rebates of $14,000&ndash;$40,000, this makes NY one of the best states for ground-source systems.</p>
             </div>
           </div>
         </div>
@@ -641,7 +690,8 @@ export default function NewYorkPage() {
               eligibility, or represent any incentive program. NYS Clean Heat
               rebate amounts vary by utility territory, DAC status, project
               category, and Weatherized Tier qualification. EmPower+ eligibility
-              requires income verification at or below 80% AMI. We verify status
+              requires income verification at or below 80% of State or Area
+              Median Income. We verify status
               regularly but programs can change without notice. Always confirm
               current amounts and eligibility with your utility, NYSERDA, and
               your contractor before making decisions.
