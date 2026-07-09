@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-09T16:06:08.195Z",
+ "generatedAt": "2026-07-09T16:31:53.354Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -482,7 +482,7 @@
     "MO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T16:04:45.440Z",
+   "fetchedAt": "2026-07-09T16:30:39.216Z",
    "length": 114446,
    "kind": "html",
    "textHash": "5f26bc2d77d90d83",
@@ -660,7 +660,7 @@
     "ME"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:25.349Z",
+   "fetchedAt": "2026-07-09T16:30:41.199Z",
    "length": 77898,
    "kind": "html",
    "textHash": "b04fa28fbf53f41c",
@@ -3149,11 +3149,12 @@
    "finalUrl": "https://www.nehpa.org/",
    "label": "NEHPA — New England Heat Pump Accelerator",
    "states": [
+    "ME",
     "MA",
     "NH"
    ],
    "httpStatus": 403,
-   "fetchedAt": "2026-07-09T16:04:51.579Z",
+   "fetchedAt": "2026-07-09T16:30:44.738Z",
    "length": 1142269,
    "error": "HTTP 403"
   },
@@ -8059,6 +8060,102 @@
     "$72",
     "$73",
     "$146"
+   ],
+   "keywords": {}
+  },
+  "https://www.efficiencymaine.com/residential-ducted-heat-pump-rebates/": {
+   "url": "https://www.efficiencymaine.com/residential-ducted-heat-pump-rebates/",
+   "finalUrl": "https://www.efficiencymaine.com/residential-ducted-heat-pump-rebates/",
+   "label": "Efficiency Maine — Ducted Heat Pump Rebates",
+   "states": [
+    "ME"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-09T16:30:41.230Z",
+   "length": 83384,
+   "kind": "html",
+   "textHash": "87fef94589cdb514",
+   "dollars": [
+    "$3,000",
+    "$6,000",
+    "$9,000",
+    "$70,000",
+    "$100,000"
+   ],
+   "keywords": {}
+  },
+  "https://www.efficiencymaine.com/about-heat-pump-water-heaters/": {
+   "url": "https://www.efficiencymaine.com/about-heat-pump-water-heaters/",
+   "finalUrl": "https://www.efficiencymaine.com/about-heat-pump-water-heaters/",
+   "label": "Efficiency Maine — Heat Pump Water Heaters",
+   "states": [
+    "ME"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-09T16:30:41.502Z",
+   "length": 80149,
+   "kind": "html",
+   "textHash": "83c75ab2d3922b91",
+   "dollars": [
+    "$1,150"
+   ],
+   "keywords": {}
+  },
+  "https://www.efficiencymaine.com/at-home/geothermal/": {
+   "url": "https://www.efficiencymaine.com/at-home/geothermal/",
+   "finalUrl": "https://www.efficiencymaine.com/at-home/geothermal/",
+   "label": "Efficiency Maine — Geothermal Rebates",
+   "states": [
+    "ME"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-09T16:30:41.548Z",
+   "length": 80789,
+   "kind": "html",
+   "textHash": "42c1c45ee43cf27b",
+   "dollars": [
+    "$3,000"
+   ],
+   "keywords": {}
+  },
+  "https://www.efficiencymaine.com/home-energy-loans/": {
+   "url": "https://www.efficiencymaine.com/home-energy-loans/",
+   "finalUrl": "https://www.efficiencymaine.com/home-energy-loans/",
+   "label": "Efficiency Maine — Home Energy Loans",
+   "states": [
+    "ME"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-09T16:30:41.587Z",
+   "length": 90219,
+   "kind": "html",
+   "textHash": "0a6b91c8fb827866",
+   "dollars": [
+    "$0",
+    "$10,",
+    "$25",
+    "$500",
+    "$7,500",
+    "$25,000"
+   ],
+   "keywords": {}
+  },
+  "https://www.maine.gov/energy/initiatives/infrastructure/home-energy-rebates": {
+   "url": "https://www.maine.gov/energy/initiatives/infrastructure/home-energy-rebates",
+   "finalUrl": "https://www.maine.gov/energy/initiatives/infrastructure/home-energy-rebates",
+   "label": "Maine DOER — Home Energy Rebates (HEAR status)",
+   "states": [
+    "ME"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-09T16:30:42.393Z",
+   "length": 35505,
+   "kind": "html",
+   "textHash": "b35d83fb5d0a6a66",
+   "dollars": [
+    "$35",
+    "$71",
+    "$72"
    ],
    "keywords": {}
   }
