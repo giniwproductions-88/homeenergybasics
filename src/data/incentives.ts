@@ -1421,8 +1421,8 @@ export const incentives: Record<StateCode, StateIncentive> = {
         url: "https://www.aepohio.com/homeupgrades",
       },
       {
-        label: "Ohio Energy Help (HWAP)",
-        url: "https://energyhelp.ohio.gov",
+        label: "Ohio JFS - Energy & Community Assistance (HWAP)",
+        url: "https://jfs.ohio.gov/public-assistance/energy-and-community-assistance",
       },
       {
         label: "AES Ohio \u2014 HB 6 Program End Notice",
