@@ -288,6 +288,10 @@ export const incentives: Record<StateCode, StateIncentive> = {
         url: "https://www.homeenergyrebates.oregon.gov/",
       },
       {
+        label: "Energy Trust of Oregon — Heating & Cooling (rebate amounts)",
+        url: "https://www.energytrust.org/residential/heating-cooling/",
+      },
+      {
         label: "Energy Trust of Oregon — HOMES and HEAR (awaiting DOE approval)",
         url: "https://www.energytrust.org/communities/homes-hear/",
       },

@@ -64,7 +64,7 @@ const faqJsonLd = {
       name: "Is the HP3 program still accepting applications?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Owner-occupied Round 1 and Round 2 funding is fully reserved as of early 2026. Rental property and new construction funding remain available. Each HP3 incentive is up to $2,000 per residence. HP3 is funded by a $24 million EPA Climate Pollution Reduction Grant. Check oregon.gov/energy for current status.",
+        text: "Owner-occupied Round 1 and Round 2 funding is fully reserved. Rental property and new construction funding remain available as of July 6, 2026. Each HP3 incentive is up to $2,000 per residence. HP3 is funded through Oregon\u2019s EPA Climate Pollution Reduction Grant award. Check oregon.gov/energy for current status.",
       },
     },
     {
@@ -111,7 +111,7 @@ export default function OregonPage() {
             Oregon Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Federal tax credits are gone, but Oregon has one of the strongest layered incentive structures in the country. Energy Trust of Oregon offers <strong>$800&#8211;$1,000</strong> for most homeowners (up to <strong>$3,000</strong> income-qualified), the ODOE Heat Pump Purchase Program adds up to <strong>$2,000</strong>, and upcoming HOMES/HEAR rebates could bring totals to <strong>$8,000+</strong> for income-qualifying households. This guide covers all major Oregon heat pump incentives available in 2026, including Energy Trust, HP3, CHPDP, HOMES, HEAR, and Portland Clean Energy Fund programs. Here&apos;s what&apos;s actually available.
+            Federal tax credits are gone, but Oregon has one of the strongest layered incentive structures in the country. Energy Trust of Oregon offers <strong>$800&#8211;$1,000</strong> for most homeowners (up to <strong>$3,000</strong> income-qualified), the ODOE Heat Pump Purchase Program adds up to <strong>$2,000</strong>, and upcoming HOMES/HEAR rebates could bring totals to <strong>$9,000+</strong> for income-qualifying households. This guide covers all major Oregon heat pump incentives available in 2026, including Energy Trust, HP3, CHPDP, HOMES, HEAR, and Portland Clean Energy Fund programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
             Updated {formattedDate} — verified against official program sources
@@ -164,7 +164,7 @@ export default function OregonPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Federal tax credits: both expired</h2>
           <div className="bg-red-50 border border-red-200 rounded-lg p-6 mb-6">
             <p className="text-red-900 leading-relaxed">
-              <strong>Section 25C</strong> (Energy Efficient Home Improvement Credit) and <strong>Section 25D</strong> (Residential Clean Energy Credit) both terminated for any property placed in service after December 31, 2025. The One Big Beautiful Bill Act (OBBBA), signed July 4, 2025, accelerated the sunset of both credits. A heat pump purchased in 2025 but installed in January 2026 <strong>does not qualify</strong> &#8212; the &quot;placed in service&quot; date is the controlling event. For more details, see our{" "}
+              <strong>Section 25C</strong> (Energy Efficient Home Improvement Credit) terminated for any property placed in service after December 31, 2025, and <strong>Section 25D</strong> (Residential Clean Energy Credit) terminated for expenditures made after December 31, 2025. The One Big Beautiful Bill Act (OBBBA), signed July 4, 2025, accelerated the sunset of both credits. A heat pump purchased in 2025 but installed in January 2026 <strong>does not qualify</strong> for Section 25C &#8212; the &quot;placed in service&quot; date is the controlling event. For more details, see our{" "}
               <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">
                 federal heat pump tax credit explainer
               </Link>.
@@ -240,12 +240,12 @@ export default function OregonPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Heat Pump Purchase Program (HP3) &#8212; up to $2,000</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            HP3 provides up to <strong>$2,000 per residence</strong> for heat pump installations, funded by a <strong>$24 million</strong> EPA Climate Pollution Reduction Grant. It covers both air-source and ground-source systems. ODOE released $12 million in additional Round 2 funding in November 2025, but owner-occupied funding was quickly exhausted.
+            HP3 provides up to <strong>$2,000 per residence</strong> for heat pump installations, funded through Oregon&apos;s EPA Climate Pollution Reduction Grant award. It covers both air-source and ground-source systems. ODOE released $12 million in additional Round 2 funding in November 2025, but owner-occupied funding was quickly exhausted.
           </p>
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-amber-800 mb-1">&#9888; Common mistake: assuming HP3 owner-occupied funding is still available</p>
-            <p className="text-sm text-amber-900">Round 1 and Round 2 funding for owner-occupied homes is fully reserved. Rental property and new construction funding remained available as of May 2026 &#8212; check the ODOE HP3 page for current balances. HP3 can stack with Energy Trust but <strong>cannot</strong> stack with HOMES or HEAR &#8212; you must choose one path.</p>
+            <p className="text-sm text-amber-900">Round 1 and Round 2 funding for owner-occupied homes is fully reserved. Rental property and new construction funding remained available as of July 6, 2026 (about $4.5 million rental and $6.8 million new construction, per ODOE&apos;s posted balances) &#8212; check the ODOE HP3 page for current balances. HP3 can stack with Energy Trust but <strong>cannot</strong> stack with HOMES or HEAR &#8212; you must choose one path.</p>
           </div>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Community Heat Pump Deployment Program (CHPDP) &#8212; up to $7,000</h3>
@@ -532,7 +532,7 @@ export default function OregonPage() {
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">HP3 remaining funds</p>
-              <p className="text-sm text-gray-600 mt-1">Owner-occupied funding is exhausted, but rental property and new construction funding remained available as of May 2026. Once depleted, HP3 will not be replenished &#8212; it is a one-time EPA grant. Rental property owners and developers should act while funding lasts.</p>
+              <p className="text-sm text-gray-600 mt-1">Owner-occupied funding is exhausted, but rental property and new construction funding remained available as of July 6, 2026. Once depleted, HP3 will not be replenished &#8212; it is a one-time EPA grant. Rental property owners and developers should act while funding lasts.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Energy Trust 2026 program changes</p>
@@ -617,7 +617,7 @@ export default function OregonPage() {
         <div className="container-narrow">
           <div className="bg-gray-100 rounded-lg p-6">
             <p className="text-gray-500 text-xs leading-relaxed">
-              <strong>Disclaimer:</strong> This page covers the main statewide, utility, and IRA heat pump incentives available to Oregon homeowners in 2026. It does not calculate savings, guarantee eligibility, or represent any incentive program. Oregon&apos;s HOMES and HEAR programs have not launched as of June 2026, and expected rebate amounts may change when programs are finalized. Energy Trust rebate amounts are subject to change. We verify status regularly but programs can change without notice. Always confirm current amounts and eligibility with Energy Trust of Oregon, ODOE, and your contractor before making decisions.
+              <strong>Disclaimer:</strong> This page covers the main statewide, utility, and IRA heat pump incentives available to Oregon homeowners in 2026. It does not calculate savings, guarantee eligibility, or represent any incentive program. Oregon&apos;s HOMES and HEAR programs have not launched as of July 2026, and expected rebate amounts may change when programs are finalized. Energy Trust rebate amounts are subject to change. We verify status regularly but programs can change without notice. Always confirm current amounts and eligibility with Energy Trust of Oregon, ODOE, and your contractor before making decisions.
             </p>
           </div>
           <p className="text-sm text-gray-600 mt-4">
