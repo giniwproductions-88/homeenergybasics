@@ -136,7 +136,7 @@ export default function NewYorkPage() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; NYS Clean Heat: $2,500&ndash;$12,000</p>
-              <p className="text-sm text-green-900">Reauthorized 2026&ndash;2030 with $5.36 billion. Six utilities participate. Full fossil fuel removal earns the highest rebates. DAC areas get enhanced amounts.</p>
+              <p className="text-sm text-green-900">Reauthorized 2026&ndash;2030 with $5.36 billion. Six utilities participate. Full fossil fuel removal earns the highest rebates. DAC areas get enhanced amounts at most utilities.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; EmPower+ (HEAR): Up to ~$28,000 Combined</p>
@@ -364,9 +364,35 @@ export default function NewYorkPage() {
           </div>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">PSEG Long Island</h3>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            Rebates range from <strong>$4,000 to $10,500</strong> depending on project type and income eligibility. Income-eligible rate can cover up to <strong>$11,000</strong>, potentially eliminating all out-of-pocket costs.
+          <p className="text-gray-700 leading-relaxed mb-6">
+            PSEG Long Island runs its own program outside NYS Clean Heat, with rebates tiered by income. Whole-house cold-climate air-source rebates for single-family homes run <strong>$4,000</strong> (market rate), <strong>$5,000</strong> (DAC or moderate income, below 80% AMI), and <strong>$7,500</strong> (low income, below 60% AMI). Geothermal is far larger &mdash; up to <strong>$24,000 per dwelling</strong> for new systems at the low-income rate. Systems must be NEEP-listed, sized to 100&ndash;120% of the dwelling&apos;s heating load via Manual J, and installed by a participating Home Comfort Partner. Note that PSEG Long Island&apos;s income tiers (60%/80% AMI) differ from EmPower+&apos;s 80% SMI/AMI standard.
           </p>
+          <div className="overflow-x-auto mb-6">
+            <table className="min-w-full text-sm">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="text-left p-3 font-semibold">Geothermal (per dwelling)</th>
+                  <th className="text-left p-3 font-semibold">Market rate</th>
+                  <th className="text-left p-3 font-semibold">DAC / moderate income</th>
+                  <th className="text-left p-3 font-semibold">Low income</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b">
+                  <td className="p-3">New system</td>
+                  <td className="p-3 font-semibold">$12,000</td>
+                  <td className="p-3 font-semibold">$15,000</td>
+                  <td className="p-3 font-semibold">$24,000</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Retrofit</td>
+                  <td className="p-3 font-semibold">$6,000</td>
+                  <td className="p-3 font-semibold">$7,500</td>
+                  <td className="p-3 font-semibold">$12,000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">NYSEG &amp; RG&amp;E (Southern Tier, Rochester)</h3>
           <p className="text-gray-700 leading-relaxed">
@@ -466,7 +492,7 @@ export default function NewYorkPage() {
           <div className="bg-gray-100 rounded-lg p-5">
             <p className="font-semibold text-gray-900 mb-1">What You&apos;ll Actually Pay</p>
             <p className="text-sm text-gray-700">
-              For a $20,000 whole-home system with full fossil removal: market-rate homeowners in non-DAC areas pay <strong>$10,000&ndash;$12,000 out of pocket</strong> (rebates run $8,000&ndash;$10,000 by utility). DAC-area homeowners pay <strong>$8,000&ndash;$10,000</strong> (rebates $10,000&ndash;$12,000). Keeping a fossil backup cuts the rebate sharply &mdash; as low as $2,500 at Con Edison. Income-eligible households through EmPower+ may pay <strong>$0</strong>. On-Bill Recovery Loans and NYSERDA Smart Energy Loans can finance remaining costs.
+              For a $20,000 whole-home system with full fossil removal: market-rate homeowners in non-DAC areas pay <strong>$10,000&ndash;$12,000 out of pocket</strong> (rebates run $8,000&ndash;$10,000 across the six Clean Heat utilities; PSEG Long Island&apos;s separate program pays $4,000&ndash;$7,500 for air-source). DAC-area homeowners pay <strong>$8,000&ndash;$10,000</strong> (rebates $10,000&ndash;$12,000 &mdash; except Central Hudson, which pays the same $8,000 with or without DAC status). Keeping a fossil backup cuts the rebate sharply &mdash; as low as $2,500 at Con Edison. Income-eligible households through EmPower+ may pay <strong>$0</strong>. On-Bill Recovery Loans and NYSERDA Smart Energy Loans can finance remaining costs.
             </p>
           </div>
         </div>
@@ -485,7 +511,7 @@ export default function NewYorkPage() {
 
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
             <p className="font-semibold text-green-800 mb-1">&#10003; Best Candidates for a Heat Pump in New York</p>
-            <p className="text-sm text-green-900">Income-eligible households (EmPower+ with HEAR covers up to ~$28,000 combined &mdash; potentially free). Homeowners in DAC areas ($10,000&ndash;$12,000 Clean Heat + 85% cap). Oil-heated homes (highest fuel cost savings + strongest rebate tiers for fossil fuel removal). Anyone with a Weatherized Tier-qualifying home (85% cap + bonus incentives).</p>
+            <p className="text-sm text-green-900">Income-eligible households (EmPower+ with HEAR covers up to ~$28,000 combined &mdash; potentially free). Homeowners in DAC areas ($10,000&ndash;$12,000 Clean Heat at most utilities + 85% cap). Oil-heated homes (highest fuel cost savings + strongest rebate tiers for fossil fuel removal). Anyone with a Weatherized Tier-qualifying home (85% cap + bonus incentives).</p>
           </div>
         </div>
       </section>
@@ -531,7 +557,7 @@ export default function NewYorkPage() {
             </table>
           </div>
           <p className="text-gray-700 leading-relaxed">
-            Approximately 36% of NY homes heat with natural gas, 27% with fuel oil, and 18% with electricity. The high share of oil heating makes New York one of the most compelling states for heat pump economics. For more on energy storage, see our{" "}
+            Approximately 61% of NY homes heat with natural gas, 17% with fuel oil, and 16% with electricity (EIA RECS 2020). New York&apos;s fuel-oil share is among the highest in the nation, which makes it one of the most compelling states for heat pump economics. For more on energy storage, see our{" "}
             <Link href="/battery" className="text-brand-600 hover:underline">home battery guide</Link>.
           </p>
         </div>
