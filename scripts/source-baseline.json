@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-09T15:15:59.728Z",
+ "generatedAt": "2026-07-09T15:51:59.764Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -149,10 +149,12 @@
     "VA",
     "RI",
     "VT",
+    "WI",
     "IA",
     "TN",
     "DE",
     "LA",
+    "UT",
     "WY",
     "NE",
     "OK",
@@ -160,7 +162,7 @@
     "AR"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:21.044Z",
+   "fetchedAt": "2026-07-09T15:50:35.449Z",
    "length": 102975,
    "kind": "html",
    "textHash": "d764cdb7c3a0ce47",
@@ -480,7 +482,7 @@
     "MO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:23.392Z",
+   "fetchedAt": "2026-07-09T15:50:36.011Z",
    "length": 114446,
    "kind": "html",
    "textHash": "5f26bc2d77d90d83",
@@ -3145,12 +3147,13 @@
   "https://www.nehpa.org/": {
    "url": "https://www.nehpa.org/",
    "finalUrl": "https://www.nehpa.org/",
-   "label": "NE Heat Pump Accelerator",
+   "label": "NEHPA — New England Heat Pump Accelerator",
    "states": [
+    "MA",
     "NH"
    ],
    "httpStatus": 403,
-   "fetchedAt": "2026-07-09T15:14:48.684Z",
+   "fetchedAt": "2026-07-09T15:50:41.961Z",
    "length": 1142269,
    "error": "HTTP 403"
   },
@@ -3177,7 +3180,7 @@
     "WI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:47.464Z",
+   "fetchedAt": "2026-07-09T15:50:58.794Z",
    "length": 87416,
    "kind": "html",
    "textHash": "64f709a71f9a88ba",
@@ -3213,7 +3216,7 @@
     "WI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:47.467Z",
+   "fetchedAt": "2026-07-09T15:50:58.807Z",
    "length": 98116,
    "kind": "html",
    "textHash": "9385b835fbb66653",
@@ -3236,7 +3239,7 @@
     "WI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:47.854Z",
+   "fetchedAt": "2026-07-09T15:50:58.833Z",
    "length": 96722,
    "kind": "html",
    "textHash": "b2b5cf120e61b393",
@@ -3255,7 +3258,7 @@
     "WI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:47.421Z",
+   "fetchedAt": "2026-07-09T15:50:58.955Z",
    "length": 102517,
    "kind": "html",
    "textHash": "4f32d193a4285e7d",
@@ -3275,7 +3278,7 @@
     "WI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:47.772Z",
+   "fetchedAt": "2026-07-09T15:50:59.264Z",
    "length": 154157,
    "kind": "html",
    "textHash": "8475b5adfefb5677",
@@ -6352,7 +6355,7 @@
     "UT"
    ],
    "httpStatus": 403,
-   "fetchedAt": "2026-07-09T15:15:25.946Z",
+   "fetchedAt": "2026-07-09T15:51:34.563Z",
    "length": 548,
    "error": "HTTP 403"
   },
@@ -6364,7 +6367,7 @@
     "UT"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:24.711Z",
+   "fetchedAt": "2026-07-09T15:51:33.574Z",
    "length": 95930,
    "kind": "html",
    "textHash": "1d24c201950bc00b",
@@ -6379,7 +6382,7 @@
     "UT"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:25.102Z",
+   "fetchedAt": "2026-07-09T15:51:33.649Z",
    "length": 147030,
    "kind": "html",
    "textHash": "726eb797059ba050",
@@ -6404,7 +6407,7 @@
     "UT"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:25.124Z",
+   "fetchedAt": "2026-07-09T15:51:33.349Z",
    "length": 99817,
    "kind": "html",
    "textHash": "f336b5546cd11942",
@@ -6424,7 +6427,7 @@
     "UT"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:25.577Z",
+   "fetchedAt": "2026-07-09T15:51:33.713Z",
    "length": 42458,
    "kind": "html",
    "textHash": "ae833d8bf21c9838",
@@ -6443,7 +6446,7 @@
     "UT"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:25.889Z",
+   "fetchedAt": "2026-07-09T15:51:34.064Z",
    "length": 42803,
    "kind": "html",
    "textHash": "57157fbf2be0048f",
@@ -6470,7 +6473,7 @@
     "UT"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:25.952Z",
+   "fetchedAt": "2026-07-09T15:51:34.237Z",
    "length": 63509,
    "kind": "html",
    "textHash": "87b384cd784fab01",
@@ -7849,6 +7852,215 @@
    "keywords": {
     "closed": 1
    }
+  },
+  "https://www.masssave.com/residential/rebates-offers-services/heating-and-cooling/heat-pumps/air-source-heat-pumps": {
+   "url": "https://www.masssave.com/residential/rebates-offers-services/heating-and-cooling/heat-pumps/air-source-heat-pumps",
+   "finalUrl": "https://www.masssave.com/residential/rebates-offers-services/heating-and-cooling/heat-pumps/air-source-heat-pumps",
+   "label": "Mass Save — Air-Source Heat Pump Rebates",
+   "states": [
+    "MA"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-09T15:50:39.232Z",
+   "length": 101170,
+   "kind": "html",
+   "textHash": "6bd1264089a8a5b8",
+   "dollars": [
+    "$250",
+    "$500",
+    "$1,000",
+    "$1,125",
+    "$2,500",
+    "$2,650",
+    "$6,000",
+    "$8,500",
+    "$12,000",
+    "$13,500",
+    "$16,000",
+    "$22,000",
+    "$25,000"
+   ],
+   "keywords": {
+    "no longer": 1,
+    "expired": 1
+   }
+  },
+  "https://www.masssave.com/residential/rebates-offers-services/heating-and-cooling/heat-pumps/ground-source-heat-pumps": {
+   "url": "https://www.masssave.com/residential/rebates-offers-services/heating-and-cooling/heat-pumps/ground-source-heat-pumps",
+   "finalUrl": "https://www.masssave.com/residential/rebates-offers-services/heating-and-cooling/heat-pumps/ground-source-heat-pumps",
+   "label": "Mass Save — Ground-Source Heat Pump Rebates",
+   "states": [
+    "MA"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-09T15:50:39.324Z",
+   "length": 93253,
+   "kind": "html",
+   "textHash": "3881f25f16fc6d28",
+   "dollars": [
+    "$500",
+    "$1,000",
+    "$2,000",
+    "$13,500",
+    "$19,000",
+    "$25,000",
+    "$30,500",
+    "$44,000"
+   ],
+   "keywords": {
+    "expired": 1
+   }
+  },
+  "https://www.masssave.com/residential/rebates-offers-services/income-based-offers": {
+   "url": "https://www.masssave.com/residential/rebates-offers-services/income-based-offers",
+   "finalUrl": "https://www.masssave.com/residential/rebates-offers-services/income-based-offers",
+   "label": "Mass Save — Income-Based Offers (eligibility bands)",
+   "states": [
+    "MA"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-09T15:50:39.117Z",
+   "length": 79182,
+   "kind": "html",
+   "textHash": "261dfd6ec337cb15",
+   "dollars": [
+    "$51,777",
+    "$51,778",
+    "$67,709",
+    "$67,710",
+    "$69,036",
+    "$83,641",
+    "$83,642",
+    "$90,279",
+    "$99,573",
+    "$99,574",
+    "$111,522",
+    "$115,504",
+    "$115,505",
+    "$131,436",
+    "$131,437",
+    "$132,764",
+    "$134,423",
+    "$134,424",
+    "$137,410",
+    "$137,411",
+    "$140,397",
+    "$140,398",
+    "$143,385",
+    "$143,386",
+    "$146,372",
+    "$146,373",
+    "$149,360",
+    "$149,361",
+    "$152,347",
+    "$152,348",
+    "$154,006",
+    "$155,334",
+    "$155,335",
+    "$158,322",
+    "$161,308",
+    "$161,309",
+    "$164,295",
+    "$164,296",
+    "$175,248",
+    "$179,231",
+    "$183,214",
+    "$185,163",
+    "$187,196",
+    "$191,180",
+    "$199,147",
+    "$203,130",
+    "$207,112",
+    "$211,095",
+    "$215,078",
+    "$219,060"
+   ],
+   "keywords": {}
+  },
+  "https://www.masssave.com/residential/rebates-offers-services/income-based-offers/save-with-enhanced-incentives/enhanced-heating-and-cooling-rebates": {
+   "url": "https://www.masssave.com/residential/rebates-offers-services/income-based-offers/save-with-enhanced-incentives/enhanced-heating-and-cooling-rebates",
+   "finalUrl": "https://www.masssave.com/residential/rebates-offers-services/income-based-offers/save-with-enhanced-incentives/enhanced-heating-and-cooling-rebates",
+   "label": "Mass Save — Enhanced Heat Pump Rebates",
+   "states": [
+    "MA"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-09T15:50:39.197Z",
+   "length": 73834,
+   "kind": "html",
+   "textHash": "ac6f3a2076f3d859",
+   "dollars": [
+    "$16,000",
+    "$25,000"
+   ],
+   "keywords": {}
+  },
+  "https://www.masssave.com/heat-pump-qualified-list": {
+   "url": "https://www.masssave.com/heat-pump-qualified-list",
+   "finalUrl": "https://www.masssave.com/heat-pump-qualified-list",
+   "label": "Mass Save — Heat Pump Qualified Products List",
+   "states": [
+    "MA"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-09T15:50:39.291Z",
+   "length": 66308,
+   "kind": "html",
+   "textHash": "21bdbb58ba784e78",
+   "dollars": [],
+   "keywords": {}
+  },
+  "https://www.masssave.com/residential/rebates-offers-services/heating-and-cooling/heat-pumps/seasonal-heat-pump-rates": {
+   "url": "https://www.masssave.com/residential/rebates-offers-services/heating-and-cooling/heat-pumps/seasonal-heat-pump-rates",
+   "finalUrl": "https://www.masssave.com/residential/rebates-offers-services/heating-and-cooling/heat-pumps/seasonal-heat-pump-rates",
+   "label": "Mass Save — Seasonal Heat Pump Rates",
+   "states": [
+    "MA"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-09T15:50:39.532Z",
+   "length": 61233,
+   "kind": "html",
+   "textHash": "1acb41794054efcf",
+   "dollars": [],
+   "keywords": {}
+  },
+  "https://www.masssave.com/residential/rebates-offers-services/financing": {
+   "url": "https://www.masssave.com/residential/rebates-offers-services/financing",
+   "finalUrl": "https://www.masssave.com/residential/rebates-offers-services/financing",
+   "label": "Mass Save — HEAT Loan (0% Financing)",
+   "states": [
+    "MA"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-09T15:50:39.829Z",
+   "length": 75838,
+   "kind": "html",
+   "textHash": "afe5778ba5564304",
+   "dollars": [
+    "$25,000"
+   ],
+   "keywords": {}
+  },
+  "https://www.mass.gov/news/healey-driscoll-administration-submits-applications-for-146-million-ira-home-energy-rebate-programs": {
+   "url": "https://www.mass.gov/news/healey-driscoll-administration-submits-applications-for-146-million-ira-home-energy-rebate-programs",
+   "finalUrl": "https://www.mass.gov/news/healey-driscoll-administration-submits-applications-for-146-million-ira-home-energy-rebate-programs",
+   "label": "Mass.gov — $146M IRA Home Energy Rebates (HEAR/HOMES)",
+   "states": [
+    "MA"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-09T15:50:40.492Z",
+   "length": 208112,
+   "kind": "html",
+   "textHash": "b298ecc8c513da60",
+   "dollars": [
+    "$20",
+    "$72",
+    "$73",
+    "$146"
+   ],
+   "keywords": {}
   }
  }
 }
