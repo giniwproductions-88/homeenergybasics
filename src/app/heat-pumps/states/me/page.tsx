@@ -484,11 +484,11 @@ export default function MainePage() {
             How Maine Heat Pump Incentives Stack
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Efficiency Maine rebates and the $500 whole-home bonus stack automatically. NEHPA discounts
-            are applied by the distributor at purchase and are not included in the scenario totals
-            below &mdash; they reduce equipment cost by up to $1,300 (two units) on top of these
-            figures. HEAR stacks only for eligible mobile/manufactured homes. NEHPA point-of-sale discounts stack with
-            Efficiency Maine rebates (HEAR stacking unconfirmed). Total incentives cannot
+            Efficiency Maine rebates and the $500 whole-home bonus stack automatically. NEHPA
+            discounts also stack, but they are applied by the distributor at purchase and are not
+            included in the scenario totals below &mdash; they reduce equipment cost by up to $1,300
+            (two units) on top of these figures. HEAR stacks only for eligible mobile/manufactured
+            homes (NEHPA-plus-HEAR stacking is unconfirmed). Total incentives cannot
             exceed project cost.
           </p>
           <div className="space-y-4 mb-8">
