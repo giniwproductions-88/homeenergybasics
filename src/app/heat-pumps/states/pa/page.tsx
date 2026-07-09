@@ -386,6 +386,9 @@ export default function PennsylvaniaPage() {
           </div>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">UGI Electric (northeastern PA)</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            UGI Electric&apos;s Phase IV equipment rebates closed with the rest of Phase IV on May 31, 2026. Phase V amounts are not yet published.
+          </p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
               <thead>
@@ -614,7 +617,7 @@ export default function PennsylvaniaPage() {
             <div className="flex gap-4">
               <div className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-bold">3</div>
               <div>
-                <p className="font-semibold text-gray-900">Submit your rebate application within the deadline</p>
+                <p className="font-semibold text-gray-900">Know the application deadline before you install</p>
                 <p className="text-sm text-gray-700">Under Phase IV, deadlines ran 90&ndash;180 days after installation depending on the utility. Phase IV closed to new purchases May 31, 2026. Whether Phase V rebates will cover installations completed before its amounts are announced is a question only your utility can answer &mdash; ask before you install.</p>
               </div>
             </div>
