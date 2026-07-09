@@ -457,11 +457,12 @@ export default function PennsylvaniaPage() {
               <p className="font-semibold text-gray-900 mb-2">Above 150% AMI &mdash; PECO territory ($12,000 installed, illustrative)</p>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>PECO + EAP under Phase IV (SEER2 &#8805;17.1): $1,300&ndash;$1,700 &mdash; closed</li>
-                <li>Dual-fuel adder: +$250</li>
+                <li>Dual-fuel adder under Phase IV: +$250 &mdash; closed</li>
                 <li>Penn Energy Savers: not eligible</li>
                 <li>HOMES (when launched, 20%+ savings): $2,000</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$1,950&ndash;$3,950</p>
+              <p className="font-semibold text-gray-900 mt-2">Claimable today: <span className="text-red-700">$0 in rebates</span></p>
+              <p className="text-sm text-gray-600">If Phase V restores Phase IV levels and HOMES launches: ~$1,950&ndash;$3,950</p>
             </div>
 
             <div className="bg-white border border-gray-200 rounded-lg p-5">
@@ -470,7 +471,8 @@ export default function PennsylvaniaPage() {
                 <li>PECO + EAP under Phase IV: $1,300&ndash;$1,950 &mdash; closed</li>
                 <li>HEAR (when launched, 50% of cost): up to $6,000</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$4,500&ndash;$6,000</p>
+              <p className="font-semibold text-gray-900 mt-2">Claimable today: <span className="text-red-700">$0 in rebates</span> (HEELP/KEEP financing available)</p>
+              <p className="text-sm text-gray-600">If Phase V restores Phase IV levels and HEAR launches: ~$4,500&ndash;$6,000</p>
             </div>
 
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
@@ -480,7 +482,8 @@ export default function PennsylvaniaPage() {
                 <li>HEAR (when launched, 100% of cost): up to $8,000</li>
                 <li>PEA Built to Last (Philadelphia): potential full coverage</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$9,300&ndash;$9,950</p>
+              <p className="font-semibold text-gray-900 mt-2">Claimable today: <span className="text-red-700">$0 in rebates</span> &mdash; but Built to Last (Philadelphia) and Weatherization Assistance may cover work now</p>
+              <p className="text-sm text-gray-600">If Phase V restores Phase IV levels and HEAR launches: ~$9,300&ndash;$9,950</p>
             </div>
           </div>
 
