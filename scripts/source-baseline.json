@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-09T16:46:46.670Z",
+ "generatedAt": "2026-07-09T17:58:09.673Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -482,7 +482,7 @@
     "MO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T16:30:39.216Z",
+   "fetchedAt": "2026-07-09T17:56:59.938Z",
    "length": 114446,
    "kind": "html",
    "textHash": "5f26bc2d77d90d83",
@@ -836,7 +836,7 @@
     "WA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:29.258Z",
+   "fetchedAt": "2026-07-09T17:57:06.774Z",
    "length": 125675,
    "kind": "html",
    "textHash": "347d28de00a0c33e",
@@ -8159,6 +8159,60 @@
     "$71",
     "$72"
    ],
+   "keywords": {}
+  },
+  "https://www.commerce.wa.gov/energy-incentives/hear/": {
+   "url": "https://www.commerce.wa.gov/energy-incentives/hear/",
+   "finalUrl": "https://www.commerce.wa.gov/energy-incentives/hear/",
+   "label": "WA Commerce — State HEAR Program (open)",
+   "states": [
+    "WA"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-09T17:57:06.740Z",
+   "length": 92574,
+   "kind": "html",
+   "textHash": "1fa544bc35bef83d",
+   "dollars": [
+    "$30",
+    "$73"
+   ],
+   "keywords": {
+    "accepting applications": 2
+   }
+  },
+  "https://www.commerce.wa.gov/energy-incentives/ira-home-energy-rebates/": {
+   "url": "https://www.commerce.wa.gov/energy-incentives/ira-home-energy-rebates/",
+   "finalUrl": "https://www.commerce.wa.gov/energy-incentives/ira-home-energy-rebates/",
+   "label": "WA Commerce — IRA Home Energy Rebates (HARP/HOMES)",
+   "states": [
+    "WA"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-09T17:57:06.479Z",
+   "length": 111875,
+   "kind": "html",
+   "textHash": "52bc888696649a85",
+   "dollars": [
+    "$500"
+   ],
+   "keywords": {
+    "now available": 1
+   }
+  },
+  "https://www.wahear.com/": {
+   "url": "https://www.wahear.com/",
+   "finalUrl": "https://www.wahear.com/",
+   "label": "United Hub — WA HEAR administrator (Clark, King, Pierce, Thurston, Yakima)",
+   "states": [
+    "WA"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-09T17:57:06.436Z",
+   "length": 1133141,
+   "kind": "html",
+   "textHash": "c375f088610274dd",
+   "dollars": [],
    "keywords": {}
   }
  }
