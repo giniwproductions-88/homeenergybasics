@@ -70,7 +70,7 @@ export default function MainePage() {
       },
       {
         "@type": "Question",
-        name: "Who administers Maine&apos;s heat pump rebate programs?",
+        name: "Who administers Maine’s heat pump rebate programs?",
         acceptedAnswer: {
           "@type": "Answer",
           text: "Efficiency Maine Trust administers all statewide heat pump rebates. Funding comes from RGGI (Regional Greenhouse Gas Initiative) credits and utility surcharges — not federal dollars — under Triennial Plan VI ($529.3 million). HEAR is funded by $35.7 million in IRA Section 50122 dollars and administered by Efficiency Maine under the Maine Department of Energy Resources.",
@@ -81,7 +81,7 @@ export default function MainePage() {
         name: "What equipment qualifies for Efficiency Maine heat pump rebates?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Only single-zone heat pumps on Efficiency Maine&apos;s eligible product list qualify for rebates. Multi-zone systems are not rebatable, but their capacity can count toward the 80% heating load requirement. Dual fuel (heat pump plus fossil fuel furnace) systems are not eligible. Equipment must have heating capacity at your location&apos;s ASHRAE 99.6% design temperature.",
+          text: "Only single-zone heat pumps on Efficiency Maine’s eligible product list qualify for rebates. Multi-zone systems are not rebatable, but their capacity can count toward the 80% heating load requirement. Dual fuel (heat pump plus fossil fuel furnace) systems are not eligible. Equipment must have heating capacity at your location’s ASHRAE 99.6% design temperature.",
         },
       },
     ],
@@ -150,7 +150,7 @@ export default function MainePage() {
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Total Potential Savings</p>
               <p className="text-sm text-green-900">
-                $3,500 (any income) to $9,500+ (low income). Full electrification packages with HEAR-eligible mobile homes can reach ~$17,500 total incentives.
+                $3,500 (any income) to $9,500+ (low income). HEAR-eligible mobile homes can reach ~$17,000 total incentives.
               </p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
@@ -387,7 +387,7 @@ export default function MainePage() {
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
             For eligible homes, HEAR provides up to <strong>$8,000</strong> per unit for heat pump
-            systems, plus up to <strong>$1,750</strong> for heat pump water heaters,
+            systems, plus up to <strong>$1,750</strong> for heat pump water heaters,{" "}
             <strong>$4,000</strong> for electric panel upgrades, and <strong>$2,500</strong> for
             wiring — capped at <strong>$14,000 per household</strong>. Low-income households
             (≤80% of Area Median Income) receive 100% of costs. HEAR funding runs through September
@@ -402,7 +402,7 @@ export default function MainePage() {
             Massachusetts, New Hampshire, and Rhode Island, funded by <strong>$450 million</strong> in
             EPA Climate Pollution Reduction Grants — more than $70 million of it flowing to Maine.
             It aims to install 580,000 residential heat pumps region-wide by 2030. Now live, it delivers
-            point-of-sale instant discounts through participating distributors and contractors:
+            point-of-sale instant discounts through participating distributors and contractors:{" "}
             <strong>$650 per heat pump unit</strong> (up to two per dwelling), <strong>$300</strong> per
             heat pump water heater, and <strong>$750</strong> for air-to-water or geothermal systems,
             available through 2029. VEIC is the Regional Implementer.
@@ -484,8 +484,10 @@ export default function MainePage() {
             How Maine Heat Pump Incentives Stack
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Efficiency Maine rebates and the $500 whole-home bonus stack automatically. HEAR stacks
-            only for eligible mobile/manufactured homes. NEHPA point-of-sale discounts stack with
+            Efficiency Maine rebates and the $500 whole-home bonus stack automatically. NEHPA discounts
+            are applied by the distributor at purchase and are not included in the scenario totals
+            below &mdash; they reduce equipment cost by up to $1,300 (two units) on top of these
+            figures. HEAR stacks only for eligible mobile/manufactured homes. NEHPA point-of-sale discounts stack with
             Efficiency Maine rebates (HEAR stacking unconfirmed). Total incentives cannot
             exceed project cost.
           </p>
@@ -513,7 +515,7 @@ export default function MainePage() {
                 <li>Whole-home bonus: $500</li>
                 <li>HEAR (mobile homes only): up to $8,000</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$9,500 (single-family) or ~$17,500 (HEAR-eligible mobile home)</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$9,500 (single-family) or ~$17,000 (HEAR-eligible single-wide mobile home, which does not get the $500 bonus)</p>
             </div>
           </div>
           <div className="bg-gray-100 rounded-lg p-5">
