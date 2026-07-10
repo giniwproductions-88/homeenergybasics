@@ -191,7 +191,7 @@ export default function MainePage() {
             </p>
           </div>
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
-            <p className="font-semibold text-blue-800 mb-1">Maine&apos;s Funding Is Independent of Federal Policy</p>
+            <p className="font-semibold text-blue-800 mb-1">Core Rebates Don&apos;t Depend on the Expired Federal Credits</p>
             <p className="text-sm text-blue-900">
               Efficiency Maine&apos;s core heat pump rebates are funded primarily by utility ratepayers and RGGI (Regional Greenhouse Gas Initiative) proceeds, supplemented by federal grants for specific initiatives — so rebate levels do not depend on the expired federal tax credits. Executive director Michael Stoddard confirmed in December 2025 that Efficiency Maine has no plans to modify its heat pump incentives following the federal expiration.
             </p>
@@ -207,7 +207,7 @@ export default function MainePage() {
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             Efficiency Maine Trust administers all statewide heat pump rebates under Triennial Plan VI
-            (<strong>$529.3 million</strong>). Maine hit its 100,000-heat-pump goal in 2023 — two years early — has since surpassed <strong>200,000</strong> installations (as of early 2026), and is targeting <strong>275,000</strong> total by 2027.
+            (<strong>$529.3 million</strong> if fully funded). Maine hit its 100,000-heat-pump goal in 2023 — two years early — has since surpassed <strong>200,000</strong> installations (as of early 2026), and is targeting <strong>275,000</strong> total by 2027.
             Rebates are applied at point of sale through your installer — you pay the reduced price,
             not the full amount.
           </p>
@@ -278,7 +278,7 @@ export default function MainePage() {
           </div>
           <p className="text-gray-700 leading-relaxed mb-4">
             Single-wide mobile homes may qualify for up to <strong>$12,900</strong> in ducted rebates.
-            The Registered Vendor must also assess and mitigate frozen pipe risk as part of the installation.
+           
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">
@@ -434,51 +434,9 @@ export default function MainePage() {
             at efficiencymaine.com before applying. Funds are disbursed directly
             to the Registered Vendor after project completion.
           </p>
-          <div className="overflow-x-auto mb-6">
-            <table className="min-w-full text-sm">
-              <thead>
-                <tr className="bg-gray-100">
-                  <th className="text-left p-3 font-semibold">Loan Type</th>
-                  <th className="text-left p-3 font-semibold">Rate</th>
-                  <th className="text-left p-3 font-semibold">Term</th>
-                  <th className="text-left p-3 font-semibold">Max</th>
-                  <th className="text-left p-3 font-semibold">Min FICO</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="border-b bg-green-50">
-                  <td className="p-3">1-Year 0% APR</td>
-                  <td className="p-3 font-semibold">0%</td>
-                  <td className="p-3">1 year</td>
-                  <td className="p-3">$25,000</td>
-                  <td className="p-3">620</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">5-Year Fixed</td>
-                  <td className="p-3 font-semibold">5.99%</td>
-                  <td className="p-3">5 years</td>
-                  <td className="p-3">$25,000</td>
-                  <td className="p-3">620</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">10-Year Fixed</td>
-                  <td className="p-3 font-semibold">7.99%</td>
-                  <td className="p-3">10 years</td>
-                  <td className="p-3">$25,000</td>
-                  <td className="p-3">620</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">Income-Based 10-Year</td>
-                  <td className="p-3 font-semibold">5.99%</td>
-                  <td className="p-3">10 years</td>
-                  <td className="p-3">$7,500</td>
-                  <td className="p-3">580</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          
           <p className="text-gray-700 leading-relaxed">
-            Projects must be installed within 120 days of Notice to Proceed. Eligible upgrades
+            Options have included a 1-year 0% APR loan and fixed-rate 5- and 10-year terms up to $25,000, plus an income-based option, but rates, fees, and FICO minimums have shifted since our last direct confirmation, so we are not publishing a rate table until re-verified against Efficiency Maine&apos;s loan page. Eligible upgrades
             include heat pumps (not dual fuel), electrical panel upgrades required for heat pump
             projects, insulation, air sealing, and health/safety improvements up to 25% of the
             financed amount.
@@ -537,7 +495,7 @@ export default function MainePage() {
             </p>
           </div>
           <p className="text-sm text-gray-500 mt-4">
-            Municipal ARPA-funded programs (South Portland, Portland, Auburn, Bangor) may provide
+            Municipal ARPA-funded programs (South Portland, Portland, Auburn) may provide
             additional stacking where available. No state tax credit is available in Maine.
           </p>
         </div>
@@ -738,8 +696,8 @@ export default function MainePage() {
               <p className="font-semibold text-gray-900">IRA Funding Runway</p>
               <p className="text-sm text-gray-600 mt-1">
                 HEAR funding ($35.7M) runs through September 2031 but could be affected by federal
-                policy changes. Efficiency Maine&apos;s core rebates are independently funded through
-                RGGI and utility surcharges and are not at risk from federal budget decisions.
+                policy changes. Efficiency Maine&apos;s core rebates are funded primarily through
+                ratepayers and RGGI proceeds, so rebate levels do not depend on federal tax policy.
               </p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
