@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import type { Metadata } from "next";
 import { incentives, formatDate } from "@/data/incentives";
 import StatusCard from "@/components/StatusCard";
@@ -114,7 +114,7 @@ export default function PennsylvaniaPage() {
             Pennsylvania&apos;s utility rebates are coming back online. Act 129 <strong>Phase V began June 1, 2026</strong>, and three of the five rebate-paying utilities &mdash; PECO, PPL, and UGI Electric &mdash; have published new heat pump rebate schedules that are claimable today. Duquesne Light&apos;s program is &quot;currently being refreshed,&quot; and FirstEnergy&apos;s portal still shows only Phase IV closeout information. Federal tax credits ended December 31, 2025, and <strong>Penn Energy Savers still has not launched</strong>. This guide covers each utility&apos;s current amounts, the Philadelphia-area EAP rebate returning this fall, the 1% HEELP loan, and what to watch for.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} — verified against official program sources
+            Updated {formattedDate} â€” verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.
@@ -245,7 +245,7 @@ export default function PennsylvaniaPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">PECO (Philadelphia area &mdash; ~1.6M customers)</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            PECO&apos;s heating and cooling rebate schedule is live: applications for equipment purchased or installed <strong>on or after June 1, 2026</strong> must be received within 90 days of purchase or installation. (Phase IV closeout: paper applications for pre&ndash;June 1 purchases were due July 20, 2026; online applications are due July 31, 2026.) The separate <strong>EAP rebate</strong> &mdash; covered below &mdash; can be combined with PECO rebates.
+            PECO&apos;s heating and cooling rebate schedule is live: applications for equipment purchased or installed <strong>on or after June 1, 2026</strong> must be received within 90 days of purchase or installation. (Phase IV closeout: paper applications for pre&ndash;June 1 purchases are due July 20, 2026; online applications are due July 31, 2026.) The separate <strong>EAP rebate</strong> &mdash; covered below &mdash; can be combined with PECO rebates.
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
