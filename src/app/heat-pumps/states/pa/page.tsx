@@ -6,16 +6,16 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title:
-    "Pennsylvania Heat Pump Rebates 2026: Utility Programs in Transition | Home Energy Basics",
+    "Pennsylvania Heat Pump Rebates 2026: Phase V Utility Amounts Rolling Out | Home Energy Basics",
   description:
-    "Act 129 Phase IV rebates closed May 31, 2026; Phase V amounts unpublished. Penn Energy Savers still not launched. What PA homeowners can actually claim now.",
+    "Act 129 Phase V is live: PECO, PPL, and UGI have published new rebate amounts; Duquesne Light and FirstEnergy have not. Penn Energy Savers still not launched. What PA homeowners can claim now.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/pa",
   },
   openGraph: {
     title: "Pennsylvania Heat Pump Rebates 2026",
     description:
-      "PA utility heat pump rebates are between Act 129 phases and Penn Energy Savers has not launched \u2014 an honest guide to what Pennsylvania homeowners can claim in 2026.",
+      "Act 129 Phase V rebates are live at PECO, PPL, and UGI, pending at Duquesne Light and FirstEnergy, and Penn Energy Savers has not launched \u2014 what Pennsylvania homeowners can claim in 2026.",
     url: "https://homeenergybasics.com/heat-pumps/states/pa",
     type: "article",
     publishedTime: "2026-03-22T16:55:34-05:00",
@@ -32,7 +32,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in Pennsylvania in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Fewer than at any point in recent years. Act 129 Phase IV utility rebate programs closed to new purchases on May 31, 2026, and Phase V rebate amounts have not been published by any Pennsylvania utility. Duquesne Light states its rebate program is being refreshed. The Penn Energy Savers (HEAR/HOMES) program has still not launched \u2014 DOE issued new program guidance on June 1, 2026, and DEP is revising the program to comply. Federal 25C/25D credits ended December 31, 2025. What remains available today: the PHFA HEELP loan (1% APR), the KEEP loan, PA Weatherization Assistance, LIHEAP crisis grants, and \u2014 in Philadelphia \u2014 the Energy Authority\u2019s Built to Last program. Check directly with your utility before assuming any rebate exists.",
+        text: "It depends on your utility. Act 129 Phase V began June 1, 2026, and three utilities have published new, claimable rebate schedules: PECO (up to $300 for an air-source heat pump, up to $300 for a ductless mini-split), PPL ($225\u2013$325 for heat pumps, or $350\u2013$475 for households at or below 250% of the federal poverty level), and UGI Electric ($500 air-source heat pump; mini-splits $175\u2013$300 per ton, up to $1,500). Duquesne Light\u2019s program is \u201ccurrently being refreshed\u201d with no published amounts, and FirstEnergy\u2019s portal still shows only Phase IV closeout information. The Penn Energy Savers (HEAR/HOMES) program has still not launched \u2014 DOE issued new program guidance on June 1, 2026, and DEP is revising the program to comply. Federal 25C/25D credits ended December 31, 2025. Also available: the PHFA HEELP loan (1% APR), the KEEP loan, PA Weatherization Assistance, LIHEAP crisis grants, and \u2014 in Philadelphia \u2014 the Energy Authority\u2019s Built to Last program.",
       },
     },
     {
@@ -40,7 +40,7 @@ const faqJsonLd = {
       name: "Can I stack utility rebates with Penn Energy Savers in Pennsylvania?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "In principle yes \u2014 Act 129 utility rebates and Penn Energy Savers draw on different funding sources. But neither is claimable right now: Phase IV rebates closed May 31, 2026, Phase V amounts are unpublished, and Penn Energy Savers has not launched. HEELP and KEEP loans are available today and will stack with utility rebates whenever Phase V offerings appear. Total incentives generally cannot exceed total project cost.",
+        text: "Yes in principle \u2014 Act 129 utility rebates and Penn Energy Savers draw on different funding sources. Today only the utility side is claimable: PECO, PPL, and UGI have published Phase V rebates, while Penn Energy Savers has not launched. HEELP and KEEP loans are available now and stack with utility rebates. Total incentives generally cannot exceed total project cost.",
       },
     },
     {
@@ -56,7 +56,7 @@ const faqJsonLd = {
       name: "When do Pennsylvania Act 129 utility rebates expire?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Act 129 Phase IV rebate programs closed to new purchases on May 31, 2026 (Duquesne Light accepted final applications for prior installs through June 6, 2026). Phase V runs June 1, 2026 through May 2031; utilities filed their Phase V energy efficiency plans with the PUC on December 1, 2025. As of July 2026 no Pennsylvania utility has published Phase V heat pump rebate amounts, and Duquesne Light says its rebate program is being refreshed. Do not budget around a utility rebate until your utility publishes its Phase V amounts.",
+        text: "Act 129 Phase V runs June 1, 2026 through May 31, 2031, so utility rebate funding is in place for five years \u2014 but each utility publishes its own schedule and can modify amounts or exhaust annual funding. As of July 2026, PECO, PPL, and UGI have published Phase V amounts; Duquesne Light\u2019s program is being refreshed and FirstEnergy has not posted a new schedule. PECO requires applications within 90 days of purchase or installation for equipment bought on or after June 1, 2026, and PPL requires postmark within 180 days of installation. Confirm the deadline with your utility before you install.",
       },
     },
     {
@@ -111,7 +111,7 @@ export default function PennsylvaniaPage() {
             Pennsylvania Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Pennsylvania is in an incentive gap. Act 129 <strong>Phase IV utility rebates closed to new purchases on May 31, 2026</strong>, and no utility has published Phase V rebate amounts &mdash; Duquesne Light says its program is &quot;currently being refreshed.&quot; Federal tax credits ended December 31, 2025, and <strong>Penn Energy Savers still has not launched</strong>. What Pennsylvania homeowners can actually claim today is financing and income-based assistance: the 1% HEELP loan, the KEEP loan, Weatherization Assistance, and Philadelphia&apos;s Built to Last program. This guide covers where each utility stands, the Phase IV amounts for reference, and what to watch for.
+            Pennsylvania&apos;s utility rebates are coming back online. Act 129 <strong>Phase V began June 1, 2026</strong>, and three of the five rebate-paying utilities &mdash; PECO, PPL, and UGI Electric &mdash; have published new heat pump rebate schedules that are claimable today. Duquesne Light&apos;s program is &quot;currently being refreshed,&quot; and FirstEnergy&apos;s portal still shows only Phase IV closeout information. Federal tax credits ended December 31, 2025, and <strong>Penn Energy Savers still has not launched</strong>. This guide covers each utility&apos;s current amounts, the Philadelphia-area EAP rebate returning this fall, the 1% HEELP loan, and what to watch for.
           </p>
           <p className="text-sm text-gray-500">
             Updated {formattedDate} — verified against official program sources
@@ -135,12 +135,12 @@ export default function PennsylvaniaPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">The short version</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-amber-50 border border-amber-200 rounded-lg p-5">
-              <p className="font-semibold text-amber-800 mb-1">&#9888; Utility rebates: between phases</p>
-              <p className="text-sm text-amber-900">Act 129 Phase IV rebates closed to new purchases May 31, 2026. Phase V began June 1, 2026 but no utility has published rebate amounts. Duquesne Light&apos;s program is being refreshed. Confirm with your utility before assuming any rebate.</p>
+              <p className="font-semibold text-amber-800 mb-1">&#9888; Utility rebates: rolling out territory by territory</p>
+              <p className="text-sm text-amber-900">Act 129 Phase V began June 1, 2026. PECO, PPL, and UGI Electric have published new rebate amounts and are accepting applications. Duquesne Light&apos;s program is being refreshed and FirstEnergy has not posted a Phase V schedule. Confirm your utility&apos;s current amounts before you buy.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; Low-interest loans available now</p>
-              <p className="text-sm text-green-900">HEELP: $1,000&ndash;$10,000 at 1% fixed APR for 10 years. KEEP: $2,500&ndash;$25,000 at below-market rates. Both are open today and will stack with utility rebates when Phase V amounts publish.</p>
+              <p className="text-sm text-green-900">HEELP: $1,000&ndash;$10,000 at 1% fixed APR for 10 years. KEEP: $2,500&ndash;$25,000 at below-market rates. Both are open today and stack with utility rebates.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; Income-based help is unaffected</p>
@@ -234,10 +234,10 @@ export default function PennsylvaniaPage() {
       {/* 6. UTILITY PROGRAMS */}
       <section className="bg-gray-50 py-12">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Utility rebates &mdash; closed between phases</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Utility rebates &mdash; Phase V is rolling out</h2>
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
-            <p className="font-semibold text-amber-800 mb-1">&#9888; The tables below are Phase IV amounts. They are not currently claimable.</p>
-            <p className="text-sm text-amber-900">Act 129 Phase IV rebate programs closed to new purchases on <strong>May 31, 2026</strong>. Phase V runs June 1, 2026 through May 2031, and utilities filed their Phase V plans with the PUC on December 1, 2025 &mdash; but as of July 2026 <strong>no Pennsylvania utility has published Phase V heat pump rebate amounts</strong>. We keep the Phase IV figures below as a reference point for what Phase V may resemble. Verify with your utility before counting on any rebate.</p>
+            <p className="font-semibold text-amber-800 mb-1">&#9888; Phase V schedules are appearing utility by utility</p>
+            <p className="text-sm text-amber-900">Act 129 Phase IV closed to new purchases on <strong>May 31, 2026</strong>, and Phase V (June 1, 2026 through May 31, 2031) is now in effect. As of July 10, 2026, <strong>PECO, PPL, and UGI Electric have published Phase V rebate amounts</strong> &mdash; shown below &mdash; while Duquesne Light and FirstEnergy have not. Base amounts at PPL are lower than Phase IV, with larger income-qualified tiers added. Verify with your utility before counting on any rebate.</p>
           </div>
           <p className="text-gray-700 leading-relaxed mb-6">
             All Pennsylvania utility rebates operate under Act 129, and the amount you receive depends entirely on your electric utility. Here is where each stands.
@@ -245,42 +245,40 @@ export default function PennsylvaniaPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">PECO (Philadelphia area &mdash; ~1.6M customers)</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Under Phase IV, PECO&apos;s base rebates were modest but <strong>stackable EAP bonuses</strong> made the Philadelphia area the most incentivized territory in Pennsylvania. Phase IV offerings ran June 2021 through May 2026; Phase V amounts are not yet published.
+            PECO&apos;s heating and cooling rebate schedule is live: applications for equipment purchased or installed <strong>on or after June 1, 2026</strong> must be received within 90 days of purchase or installation. (Phase IV closeout: paper applications for pre&ndash;June 1 purchases were due July 20, 2026; online applications are due July 31, 2026.) The separate <strong>EAP rebate</strong> &mdash; covered below &mdash; can be combined with PECO rebates.
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
               <thead>
                 <tr className="bg-gray-100">
                   <th className="text-left p-3 font-semibold">Equipment</th>
-                  <th className="text-left p-3 font-semibold">PECO base</th>
-                  <th className="text-left p-3 font-semibold">EAP bonus</th>
-                  <th className="text-left p-3 font-semibold">Combined max</th>
+                  <th className="text-left p-3 font-semibold">Rebate (as listed July 10, 2026)</th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="border-b">
-                  <td className="p-3">Ducted ASHP (SEER2 15.2&ndash;17.0)</td>
-                  <td className="p-3">$200</td>
-                  <td className="p-3">+$500</td>
-                  <td className="p-3 font-semibold">$700</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">Ducted ASHP (SEER2 &#8805;17.1)</td>
-                  <td className="p-3">$300</td>
-                  <td className="p-3">+$1,000&ndash;$1,400</td>
-                  <td className="p-3 font-semibold">$1,300&ndash;$1,700</td>
+                  <td className="p-3">ENERGY STAR air-source heat pump (SEER2 15.2&ndash;17.0, EER2 11.0, HSPF2 7.8+)</td>
+                  <td className="p-3 font-semibold">$200</td>
                 </tr>
                 <tr className="border-b bg-green-50">
-                  <td className="p-3">+ Dual-fuel/hybrid adder</td>
-                  <td className="p-3">&mdash;</td>
-                  <td className="p-3">+$250</td>
-                  <td className="p-3 font-semibold">up to $1,950</td>
+                  <td className="p-3">ENERGY STAR air-source heat pump (SEER2 17.1+, EER2 11.0, HSPF2 7.8+)</td>
+                  <td className="p-3 font-semibold">$300</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-3">Heat pump water heater</td>
-                  <td className="p-3">$300</td>
-                  <td className="p-3">&mdash;</td>
-                  <td className="p-3">$300</td>
+                  <td className="p-3">ENERGY STAR ductless mini-split heat pump</td>
+                  <td className="p-3 font-semibold">up to $300</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">ENERGY STAR central air conditioning</td>
+                  <td className="p-3 font-semibold">up to $200</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Heat pump / central A/C maintenance</td>
+                  <td className="p-3 font-semibold">up to $50</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">ECM fan motor</td>
+                  <td className="p-3 font-semibold">$50</td>
                 </tr>
               </tbody>
             </table>
@@ -288,7 +286,7 @@ export default function PennsylvaniaPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">PPL Electric Utilities (eastern/central PA &mdash; ~1.4M customers)</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Under Phase IV, PPL offered the best base rebates of any PA utility for ducted systems and the strongest ductless rebates by capacity. PPL filed its Phase V plan (Docket M-2025-3057329) on December 1, 2025; rebate amounts are not yet published.
+            PPL published its Phase V rebate schedule on <strong>June 1, 2026</strong> (Docket M-2025-3057329). Base rebates are lower than Phase IV, but households at or below <strong>250% of the federal poverty level</strong> qualify for enhanced amounts, and households at 0&ndash;200% FPL can access no-cost upgrades through WRAP. Applications must be postmarked within 180 days of installation.
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
@@ -299,21 +297,29 @@ export default function PennsylvaniaPage() {
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b">
-                  <td className="p-3">Ducted ASHP Tier 1 (SEER2 &#8805;15.2)</td>
-                  <td className="p-3 font-semibold">$350</td>
+                <tr className="border-b bg-green-50">
+                  <td className="p-3">Ducted ASHP Tier 1 (SEER2 &#8805;15.2, HSPF2 &#8805;7.8)</td>
+                  <td className="p-3 font-semibold">$225 standard / $350 enhanced (&#8804;250% FPL)</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Ducted ASHP Tier 2 (SEER2 &#8805;16.3, HSPF2 &#8805;8.2)</td>
-                  <td className="p-3 font-semibold">$450</td>
+                  <td className="p-3 font-semibold">$325 standard / $475 enhanced</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-3">Ductless mini-split (per outdoor unit)</td>
-                  <td className="p-3 font-semibold">$400&ndash;$1,250</td>
+                  <td className="p-3">Mini-split heat pump (SEER2 &#8805;15.2, HSPF2 &#8805;7.8)</td>
+                  <td className="p-3 font-semibold">$225 standard / $350 enhanced</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-3">Heat pump water heater</td>
-                  <td className="p-3 font-semibold">$400</td>
+                  <td className="p-3">Heat pump water heater (UEF &#8805;3.3)</td>
+                  <td className="p-3 font-semibold">$400 standard / $500 enhanced</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Ground-source heat pump</td>
+                  <td className="p-3 font-semibold">$500</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Multi-measure bonus (insulation/air sealing + two major measures)</td>
+                  <td className="p-3 font-semibold">$350, enhanced tier only</td>
                 </tr>
               </tbody>
             </table>
@@ -322,43 +328,20 @@ export default function PennsylvaniaPage() {
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Duquesne Light (Pittsburgh area &mdash; ~600K customers)</h3>
           <div className="bg-red-50 border border-red-200 rounded-lg p-5 mb-4">
             <p className="font-semibold text-red-800 mb-1">&#10007; No heat pump rebate available right now</p>
-            <p className="text-sm text-red-900">Duquesne Light&apos;s Watt Choices residential rebate program closed to new purchases on May 31, 2026, with final applications for prior installations due June 6, 2026. Its rebate hub now states the program is <strong>&quot;currently being refreshed&quot;</strong> with no published restart date. The Phase IV amounts below are shown for reference only. Income-eligible customers should look at Duquesne&apos;s income-qualified energy assessment instead.</p>
+            <p className="text-sm text-red-900">Duquesne Light&apos;s residential rebate program closed to new purchases on May 31, 2026, and as of July 10, 2026 its rebate hub still states the program is <strong>&quot;currently being refreshed&quot;</strong> with no published restart date or amounts. What is live today: $50 refrigerator/freezer recycling, the whole-house energy audit, and the income-qualified energy assessment.</p>
           </div>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            Under Phase IV, Duquesne Light was the only PA utility with a <strong>dedicated cold-climate ASHP rebate category</strong>. It filed its Phase V plan (Docket M-2025-3057325) on December 1, 2025.
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Duquesne filed its Phase V plan (Docket M-2025-3057325) on December 1, 2025, and its residential rebate programs are now administered by Franklin Energy. When new amounts post, they will appear on Duquesne&apos;s energy rebates hub &mdash; check it before you buy.
           </p>
-          <div className="overflow-x-auto mb-6">
-            <table className="min-w-full text-sm">
-              <thead>
-                <tr className="bg-gray-100">
-                  <th className="text-left p-3 font-semibold">Equipment</th>
-                  <th className="text-left p-3 font-semibold">Rebate</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="border-b">
-                  <td className="p-3">Ducted ASHP Tier 1 (SEER2 &#8805;16.3, HSPF2 &#8805;8.2)</td>
-                  <td className="p-3 font-semibold">$375</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">Ducted ASHP Tier 2 (SEER2 &#8805;18.3, HSPF2 &#8805;8.5)</td>
-                  <td className="p-3 font-semibold">$425</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">Cold-climate ASHP (SEER2 &#8805;15.2, HSPF2 &#8805;8.5)</td>
-                  <td className="p-3 font-semibold">$375</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">Geothermal heat pump</td>
-                  <td className="p-3 font-semibold">$650</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">FirstEnergy &mdash; Met-Ed, Penelec, Penn Power, West Penn Power</h3>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            FirstEnergy&apos;s Pennsylvania rebate portal is back online, but as of July 10, 2026 it still describes only the Phase IV program &mdash; rebates for products &quot;purchased between June 1, 2021 and May 31, 2026&quot; &mdash; and no Phase V schedule has been posted for Met-Ed, Penelec, Penn Power, or West Penn Power customers. Do not budget around a FirstEnergy rebate until a new schedule appears.
+          </p>
+
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">UGI Electric (northeastern PA)</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            FirstEnergy&apos;s Phase IV rebate programs ran through May 2026. Its Pennsylvania rebate portal is currently unreachable, and Phase V amounts are unpublished. Penn Power discontinued income-eligible rebates in its service area after May 9, 2025.
+            UGI Electric (Luzerne and Wyoming counties) is advertising a live &quot;Save Smart 2026&quot; equipment rebate schedule with an open online application, promoted as up to $1,500 in rebates.
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
@@ -369,13 +352,17 @@ export default function PennsylvaniaPage() {
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b">
-                  <td className="p-3">Ducted ASHP Tier 1 (SEER2 15.2&ndash;17.0)</td>
-                  <td className="p-3 font-semibold">$200</td>
+                <tr className="border-b bg-green-50">
+                  <td className="p-3">Air-source heat pump (SEER 15.2+)</td>
+                  <td className="p-3 font-semibold">$500</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-3">Ducted ASHP Tier 2 (SEER2 &#8805;17.1) + promo adder</td>
-                  <td className="p-3 font-semibold">$325</td>
+                  <td className="p-3">Mini-split heat pump, per ton (SEER2 &#8805;15.2 / &#8805;18.1 / &#8805;20)</td>
+                  <td className="p-3 font-semibold">$175 / $250 / $300 per ton, up to $1,500</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Central air conditioner (SEER 15.2+)</td>
+                  <td className="p-3 font-semibold">$300</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Heat pump water heater</td>
@@ -385,34 +372,10 @@ export default function PennsylvaniaPage() {
             </table>
           </div>
 
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">UGI Electric (northeastern PA)</h3>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            UGI Electric&apos;s Phase IV equipment rebates closed with the rest of Phase IV on May 31, 2026. Phase V amounts are not yet published.
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">EAP HVAC rebate (Philadelphia area) &mdash; Fall 2026 program coming</h3>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            The Electrical Association of Philadelphia runs a separate, seasonal instant-rebate program through participating contractors. It is a trade-association program, not an Act 129 utility rebate &mdash; PECO&apos;s involvement is limited to publicizing it &mdash; and per EAP it <strong>can be combined with PECO rebates</strong> (but not with manufacturer rebates). EAP&apos;s Fall 2026 program advertises savings of <strong>$250&ndash;$1,650</strong>, with details due in mid-July; fall programs usually run early August to mid-November. For reference, the Spring 2026 program paid $500 / $1,000 / $1,400 for heat pump systems at SEER2 15.2+ / 16+ / 18+, plus a $250 dual-fuel adder, applied as an instant discount on the participating contractor&apos;s invoice.
           </p>
-          <div className="overflow-x-auto mb-6">
-            <table className="min-w-full text-sm">
-              <thead>
-                <tr className="bg-gray-100">
-                  <th className="text-left p-3 font-semibold">Equipment</th>
-                  <th className="text-left p-3 font-semibold">Rebate</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="border-b">
-                  <td className="p-3">Ducted ASHP</td>
-                  <td className="p-3 font-semibold">$400</td>
-                </tr>
-                <tr className="border-b bg-green-50">
-                  <td className="p-3">Mini-split (tiered by capacity, up to 5+ ton)</td>
-                  <td className="p-3 font-semibold">$150&ndash;$1,250</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">Heat pump water heater</td>
-                  <td className="p-3 font-semibold">$400</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
 
           <p className="text-gray-700 leading-relaxed mb-4">
             <strong>Note about gas utilities:</strong> Philadelphia Gas Works (PGW) and Columbia Gas of PA do <strong>not</strong> offer electric heat pump rebates. PGW&apos;s EnergySense program covers gas furnaces and boilers only.
@@ -420,7 +383,7 @@ export default function PennsylvaniaPage() {
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
             <p className="font-semibold text-blue-800 mb-1">Pennsylvania is the only large Northeast state where your utility matters more than your income</p>
-            <p className="text-sm text-blue-900">In New York, Massachusetts, and Connecticut, the biggest rebates scale by income level. In Pennsylvania, your zip code (utility territory) is the primary variable. Under Phase IV, a PECO customer could stack to <strong>$1,950</strong> while a FirstEnergy customer at the same income received <strong>$200&ndash;$325</strong> &mdash; a 5&ndash;8x difference based purely on geography. Whether Phase V preserves that gap is unknown until utilities publish their amounts.</p>
+            <p className="text-sm text-blue-900">In New York, Massachusetts, and Connecticut, the biggest rebates scale by income level. In Pennsylvania, your zip code (utility territory) is still the primary variable: under the published Phase V schedules, a UGI customer gets a <strong>$500</strong> heat pump rebate, a PECO customer <strong>up to $300</strong> (plus up to $1,650 more from EAP&apos;s fall program in the Philadelphia area), and a Duquesne Light customer currently <strong>$0</strong>. But income matters more than it did under Phase IV: PPL pays $350&ndash;$475 instead of $225&ndash;$325 for households at or below 250% of the federal poverty level.</p>
           </div>
         </div>
       </section>
@@ -452,52 +415,54 @@ export default function PennsylvaniaPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">How programs stack in Pennsylvania</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Act 129 utility rebates, Penn Energy Savers, and loan programs draw on different funding sources and can be combined in principle. In practice, <strong>neither the utility rebates nor Penn Energy Savers is claimable today</strong> &mdash; Phase IV closed May 31, 2026, Phase V amounts are unpublished, and Penn Energy Savers has not launched. The scenarios below show what stacking looked like under Phase IV and what it could look like once both return, for a typical 3-ton ducted heat pump costing <strong>$10,000&ndash;$14,000</strong>:
+            Act 129 utility rebates, EAP&apos;s Philadelphia-area program, Penn Energy Savers, and loan programs draw on different funding sources and can generally be combined. Today the utility rebates at PECO, PPL, and UGI are claimable; EAP&apos;s fall program opens around August; Penn Energy Savers has not launched. The scenarios below use a typical 3-ton ducted heat pump costing <strong>$10,000&ndash;$14,000</strong>:
           </p>
 
           <div className="space-y-4 mb-8">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900 mb-2">Above 150% AMI &mdash; PECO territory ($12,000 installed, illustrative)</p>
               <ul className="text-sm text-gray-700 space-y-1">
-                <li>PECO + EAP under Phase IV (SEER2 &#8805;17.1): $1,300&ndash;$1,700 &mdash; closed</li>
-                <li>Dual-fuel adder under Phase IV: +$250 &mdash; closed</li>
+                <li>PECO Phase V rebate: up to $300 &mdash; claimable now</li>
+                <li>EAP Fall 2026 program (opens ~August): $250&ndash;$1,650</li>
                 <li>Penn Energy Savers: not eligible</li>
                 <li>HOMES (when launched, 20%+ savings): $2,000</li>
               </ul>
-              <p className="font-semibold text-gray-900 mt-2">Claimable today: <span className="text-red-700">$0 in rebates</span></p>
-              <p className="text-sm text-gray-600">If Phase V restores Phase IV levels and HOMES launches: ~$1,950&ndash;$3,950</p>
+              <p className="font-semibold text-gray-900 mt-2">Claimable today: <span className="text-green-700">up to $300</span></p>
+              <p className="text-sm text-gray-600">With EAP&apos;s fall window and a HOMES launch: potentially ~$2,550&ndash;$3,950</p>
             </div>
 
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900 mb-2">81&ndash;150% AMI &mdash; PECO territory ($12,000 installed, illustrative)</p>
               <ul className="text-sm text-gray-700 space-y-1">
-                <li>PECO + EAP under Phase IV: $1,300&ndash;$1,950 &mdash; closed</li>
+                <li>PECO Phase V rebate: up to $300 &mdash; claimable now</li>
+                <li>EAP Fall 2026 program (opens ~August): $250&ndash;$1,650</li>
                 <li>HEAR (when launched, 50% of cost): up to $6,000</li>
               </ul>
-              <p className="font-semibold text-gray-900 mt-2">Claimable today: <span className="text-red-700">$0 in rebates</span> (HEELP/KEEP financing available)</p>
-              <p className="text-sm text-gray-600">If Phase V restores Phase IV levels and HEAR launches: ~$4,500&ndash;$6,000</p>
+              <p className="font-semibold text-gray-900 mt-2">Claimable today: <span className="text-green-700">up to $300</span> (plus HEELP/KEEP financing)</p>
+              <p className="text-sm text-gray-600">With EAP&apos;s fall window and a HEAR launch: potentially ~$6,550&ndash;$7,950</p>
             </div>
 
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-2">Below 80% AMI &mdash; PECO territory ($12,000 installed, illustrative)</p>
               <ul className="text-sm text-green-900 space-y-1">
-                <li>PECO + EAP under Phase IV: $1,300&ndash;$1,950 &mdash; closed</li>
+                <li>PECO Phase V rebate: up to $300 &mdash; claimable now</li>
+                <li>EAP Fall 2026 program (opens ~August): $250&ndash;$1,650</li>
                 <li>HEAR (when launched, 100% of cost): up to $8,000</li>
                 <li>PEA Built to Last (Philadelphia): potential full coverage</li>
               </ul>
-              <p className="font-semibold text-gray-900 mt-2">Claimable today: <span className="text-red-700">$0 in rebates</span> &mdash; but Built to Last (Philadelphia) and Weatherization Assistance may cover work now</p>
-              <p className="text-sm text-gray-600">If Phase V restores Phase IV levels and HEAR launches: ~$9,300&ndash;$9,950</p>
+              <p className="font-semibold text-gray-900 mt-2">Claimable today: <span className="text-green-700">up to $300</span> &mdash; and Built to Last (Philadelphia) and Weatherization Assistance may cover work now</p>
+              <p className="text-sm text-gray-600">With EAP&apos;s fall window and a HEAR launch: potentially ~$8,550&ndash;$9,950 (capped at project cost)</p>
             </div>
           </div>
 
           <div className="bg-gray-100 rounded-lg p-5 mb-6">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
-            <p className="text-sm text-gray-700">With Phase IV closed and Penn Energy Savers not yet launched, most Pennsylvania homeowners currently pay the <strong>full $10,000&ndash;$14,000</strong> for a ducted heat pump, offset only by financing (HEELP at 1% APR, KEEP) and, for income-qualified households, Weatherization Assistance or Philadelphia&apos;s Built to Last. If you can wait, waiting is rational: Phase V amounts and Penn Energy Savers are both expected, and neither program can reimburse equipment purchased before it opens.</p>
+            <p className="text-sm text-gray-700">On a $10,000&ndash;$14,000 ducted heat pump, a PPL customer today gets $225&ndash;$475 back, a PECO customer up to $300, and a UGI customer $500 &mdash; helpful, but most of the cost stays out of pocket, offset by financing (HEELP at 1% APR, KEEP) and, for income-qualified households, Weatherization Assistance or Philadelphia&apos;s Built to Last. If you are income-eligible for Penn Energy Savers (up to $8,000 for a heat pump) and your current system still works, waiting for its launch remains the biggest lever &mdash; it cannot reimburse equipment purchased before it opens.</p>
           </div>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-blue-800 mb-1">Timing: why waiting may pay</p>
-            <p className="text-sm text-blue-900">Neither Penn Energy Savers nor Act 129 Phase V can reimburse equipment bought before the program opens &mdash; Penn Energy Savers explicitly cannot fund work completed before application approval. Phase V runs through May 2031, so utility rebates will return; the open question is at what level. If your system is failing you may not have the option to wait, but if you are planning ahead, watch for Phase V amounts and a Penn Energy Savers launch date before committing.</p>
+            <p className="text-sm text-blue-900">Penn Energy Savers cannot fund work completed before application approval, and EAP&apos;s fall rebate requires a contract signed inside its program window &mdash; so sequencing matters. Utility rebates at PECO, PPL, and UGI are claimable now (mind the 90&ndash;180 day application deadlines). If you are income-qualified and can wait, Penn Energy Savers is the larger prize; if you are in PECO territory and can schedule installation for the fall window, the EAP rebate adds up to $1,650.</p>
           </div>
 
           <p className="text-xs text-gray-400">
@@ -572,7 +537,7 @@ export default function PennsylvaniaPage() {
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            <strong>Hybrid/dual-fuel systems</strong> (heat pump + gas furnace backup) are common in PA and make particular sense in Pittsburgh and Scranton where design temps hit 5&#176;F. PECO&apos;s Phase IV EAP bonus included a $250 dual-fuel adder rewarding this approach; whether Phase V keeps it is unknown.
+            <strong>Hybrid/dual-fuel systems</strong> (heat pump + gas furnace backup) are common in PA and make particular sense in Pittsburgh and Scranton where design temps hit 5&#176;F. EAP&apos;s Spring 2026 program included a $250 dual-fuel adder rewarding this approach; watch its Fall 2026 details (due mid-July) to see whether it returns.
           </p>
 
           <p className="text-gray-700 leading-relaxed mb-4">
@@ -587,7 +552,7 @@ export default function PennsylvaniaPage() {
 
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
             <p className="font-semibold text-green-800 mb-1">&#10003; Best candidates for a heat pump in Pennsylvania</p>
-            <p className="text-sm text-green-900">Heating oil or propane users in rural PA and the northern tier &mdash; fuel cost savings alone can justify the switch, with no rebate required. Income-qualified households below 80% AMI, who will benefit most when Penn Energy Savers launches and who may qualify for Weatherization Assistance or Built to Last today. Homeowners with aging electric resistance heat &mdash; heat pumps cut electricity use by 30&ndash;50%. Homeowners who can wait: Phase V rebates and Penn Energy Savers are both expected, and neither reimburses equipment bought beforehand.</p>
+            <p className="text-sm text-green-900">Heating oil or propane users in rural PA and the northern tier &mdash; fuel cost savings alone can justify the switch, with no rebate required. Income-qualified households below 80% AMI, who will benefit most when Penn Energy Savers launches and who may qualify for Weatherization Assistance or Built to Last today. Homeowners with aging electric resistance heat &mdash; heat pumps cut electricity use by 30&ndash;50%. Income-qualified homeowners who can wait: Penn Energy Savers is expected to be the largest rebate and cannot reimburse equipment bought before it launches.</p>
           </div>
         </div>
       </section>
@@ -597,35 +562,35 @@ export default function PennsylvaniaPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">How to apply for Pennsylvania incentives</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            No Pennsylvania utility is paying heat pump rebates right now. These steps describe the path you will follow once Phase V amounts publish &mdash; and the financing and assistance you can apply for today.
+            PECO, PPL, and UGI Electric are paying heat pump rebates right now; Duquesne Light and FirstEnergy are not. Here is the path:
           </p>
           <div className="space-y-4">
             <div className="flex gap-4">
               <div className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-bold">1</div>
               <div>
                 <p className="font-semibold text-gray-900">Identify your electric utility</p>
-                <p className="text-sm text-gray-700">Check your electric bill &mdash; PECO, PPL, Duquesne Light, Met-Ed, Penelec, Penn Power, West Penn Power, or UGI Electric. Your utility will determine your Phase V rebate amount once it is published, and its website is where that announcement will appear.</p>
+                <p className="text-sm text-gray-700">Check your electric bill &mdash; PECO, PPL, Duquesne Light, Met-Ed, Penelec, Penn Power, West Penn Power, or UGI Electric. Your utility determines your rebate: PECO, PPL, and UGI have published Phase V amounts; Duquesne Light and FirstEnergy have not.</p>
               </div>
             </div>
             <div className="flex gap-4">
               <div className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-bold">2</div>
               <div>
                 <p className="font-semibold text-gray-900">Check rebate eligibility and get quotes</p>
-                <p className="text-sm text-gray-700">Ask your utility whether Phase V rebate amounts have been published before you sign anything. Under Phase IV all PA utilities required ENERGY STAR certification and minimum SEER2/HSPF2 thresholds, with higher-efficiency equipment earning larger rebates; PECO&apos;s EAP bonuses required a participating EAP contractor.</p>
+                <p className="text-sm text-gray-700">Confirm your equipment meets your utility&apos;s published thresholds before you sign anything &mdash; the current PA schedules require ENERGY STAR certification and minimum SEER2/HSPF2 ratings, with higher-efficiency equipment earning larger rebates. In PECO territory, the separate EAP rebate requires a participating EAP contractor and a contract signed inside the program window.</p>
               </div>
             </div>
             <div className="flex gap-4">
               <div className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-bold">3</div>
               <div>
                 <p className="font-semibold text-gray-900">Know the application deadline before you install</p>
-                <p className="text-sm text-gray-700">Under Phase IV, deadlines ran 90&ndash;180 days after installation depending on the utility. Phase IV closed to new purchases May 31, 2026. Whether Phase V rebates will cover installations completed before its amounts are announced is a question only your utility can answer &mdash; ask before you install.</p>
+                <p className="text-sm text-gray-700">Deadlines are live again: PECO requires applications within 90 days of purchase or installation (for equipment bought on or after June 1, 2026), and PPL requires postmark within 180 days of installation. Duquesne Light and FirstEnergy have no open rebate to apply for &mdash; if you are in those territories, ask your utility before you install.</p>
               </div>
             </div>
             <div className="flex gap-4">
               <div className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-bold">4</div>
               <div>
                 <p className="font-semibold text-gray-900">Apply for financing if needed</p>
-                <p className="text-sm text-gray-700">HEELP (1% APR) and KEEP (below-market) loans are available today and are the main incentive most PA homeowners can actually use right now. Apply separately &mdash; loan programs and utility rebates use different funding sources.</p>
+                <p className="text-sm text-gray-700">HEELP (1% APR) and KEEP (below-market) loans are available in every territory and stack with utility rebates. Apply separately &mdash; loan programs and utility rebates use different funding sources.</p>
               </div>
             </div>
           </div>
@@ -646,8 +611,8 @@ export default function PennsylvaniaPage() {
               <p className="text-sm text-gray-600 mt-1">The biggest variable for PA heat pump economics. Funding is allocated and administrators are hired, but DOE issued new program guidance on June 1, 2026 and DEP is revising the program to comply. Monitor pennenergysavers.com; DEP takes resident questions at RA-EPHomeEngRebates@pa.gov.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900">Phase V rebate amounts (the near-term one to watch)</p>
-              <p className="text-sm text-gray-600 mt-1">Phase IV rebates closed to new purchases May 31, 2026. Utilities filed Phase V plans with the PUC on December 1, 2025 (Duquesne M-2025-3057325, PPL M-2025-3057329), and Phase V runs through May 2031 &mdash; but no utility has published heat pump rebate amounts. Duquesne Light says its program is being refreshed. This is the single fact most likely to change on this page.</p>
+              <p className="font-semibold text-gray-900">Duquesne Light and FirstEnergy Phase V amounts (the near-term ones to watch)</p>
+              <p className="text-sm text-gray-600 mt-1">PECO, PPL, and UGI published Phase V schedules in June 2026. Duquesne Light (Docket M-2025-3057325) says its program is being refreshed, and FirstEnergy&apos;s portal still shows only Phase IV closeout text. Phase V runs through May 2031, so both will return &mdash; the question is when and at what level. Also watch EAP&apos;s Fall 2026 program details, due mid-July.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Governor Shapiro&apos;s Lightning Plan</p>
@@ -737,7 +702,7 @@ export default function PennsylvaniaPage() {
         <div className="container-narrow">
           <div className="bg-gray-100 rounded-lg p-6">
             <p className="text-gray-500 text-xs leading-relaxed">
-              <strong>Disclaimer:</strong> This page covers the main statewide, utility, and IRA heat pump incentives available to Pennsylvania homeowners in 2026. It does not calculate savings, guarantee eligibility, or represent any incentive program. Pennsylvania&apos;s incentives vary entirely by utility territory &mdash; amounts shown are based on each utility&apos;s published Act 129 Phase IV programs (Phase IV closed to new purchases May 31, 2026; Phase V amounts had not been published as of July 2026). Penn Energy Savers has not launched and expected amounts may change when finalized. We verify status regularly but programs can change without notice. Always confirm current amounts and eligibility with your utility, the PA DEP, and your contractor before making decisions.
+              <strong>Disclaimer:</strong> This page covers the main statewide, utility, and IRA heat pump incentives available to Pennsylvania homeowners in 2026. It does not calculate savings, guarantee eligibility, or represent any incentive program. Pennsylvania&apos;s incentives vary entirely by utility territory &mdash; amounts shown are based on each utility&apos;s published schedules as of July 10, 2026 (Act 129 Phase V began June 1, 2026; Duquesne Light and FirstEnergy had not published Phase V amounts as of that date). Penn Energy Savers has not launched and expected amounts may change when finalized. We verify status regularly but programs can change without notice. Always confirm current amounts and eligibility with your utility, the PA DEP, and your contractor before making decisions.
             </p>
           </div>
           <p className="text-sm text-gray-600 mt-4">
