@@ -191,7 +191,7 @@ export default function MainePage() {
             </p>
           </div>
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
-            <p className="font-semibold text-blue-800 mb-1">Maine&apos;s Funding Is Independent of Federal Policy</p>
+            <p className="font-semibold text-blue-800 mb-1">Core Rebates Don&apos;t Depend on the Expired Federal Credits</p>
             <p className="text-sm text-blue-900">
               Efficiency Maine&apos;s core heat pump rebates are funded primarily by utility ratepayers and RGGI (Regional Greenhouse Gas Initiative) proceeds, supplemented by federal grants for specific initiatives — so rebate levels do not depend on the expired federal tax credits. Executive director Michael Stoddard confirmed in December 2025 that Efficiency Maine has no plans to modify its heat pump incentives following the federal expiration.
             </p>
@@ -207,7 +207,7 @@ export default function MainePage() {
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             Efficiency Maine Trust administers all statewide heat pump rebates under Triennial Plan VI
-            (<strong>$529.3 million</strong>). Maine hit its 100,000-heat-pump goal in 2023 — two years early — has since surpassed <strong>200,000</strong> installations (as of early 2026), and is targeting <strong>275,000</strong> total by 2027.
+            (<strong>$529.3 million</strong> if fully funded). Maine hit its 100,000-heat-pump goal in 2023 — two years early — has since surpassed <strong>200,000</strong> installations (as of early 2026), and is targeting <strong>275,000</strong> total by 2027.
             Rebates are applied at point of sale through your installer — you pay the reduced price,
             not the full amount.
           </p>
@@ -215,270 +215,8 @@ export default function MainePage() {
           <h3 className="text-lg font-semibold text-gray-900 mb-3">
             All Other Whole-Home Systems (Mini-Splits) — Per Outdoor Unit
           </h3>
-          <div className="overflow-x-auto mb-6">
-            <table className="min-w-full text-sm">
-              <thead>
-                <tr className="bg-gray-100">
-                  <th className="text-left p-3 font-semibold">Income Tier</th>
-                  <th className="text-left p-3 font-semibold">Per Outdoor Unit</th>
-                  <th className="text-left p-3 font-semibold">Lifetime Cap</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="border-b bg-green-50">
-                  <td className="p-3">Low income</td>
-                  <td className="p-3 font-semibold">$3,000</td>
-                  <td className="p-3 font-semibold">$9,000</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">Moderate income</td>
-                  <td className="p-3 font-semibold">$2,000</td>
-                  <td className="p-3">$6,000</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">Any income</td>
-                  <td className="p-3 font-semibold">$1,000</td>
-                  <td className="p-3">$3,000</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">
-            Ducted Whole-Home Systems — Per Housing Unit
-          </h3>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            Ducted systems receive a single lump-sum rebate. Requirements are stricter: the system
-            must be sized for <strong>100% of peak heating load</strong>, and all fossil fuel forced
-            hot air furnaces must be <strong>physically removed</strong>.
-          </p>
-          <div className="overflow-x-auto mb-6">
-            <table className="min-w-full text-sm">
-              <thead>
-                <tr className="bg-gray-100">
-                  <th className="text-left p-3 font-semibold">Income Tier</th>
-                  <th className="text-left p-3 font-semibold">Rebate (Per Housing Unit)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="border-b bg-green-50">
-                  <td className="p-3">Low income</td>
-                  <td className="p-3 font-semibold">$9,000</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">Moderate income</td>
-                  <td className="p-3 font-semibold">$6,000</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">Any income</td>
-                  <td className="p-3 font-semibold">$3,000</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            Single-wide mobile homes may qualify for up to <strong>$12,900</strong> in ducted rebates.
-            The Registered Vendor must also assess and mitigate frozen pipe risk as part of the installation.
-          </p>
-
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">
-            $500 Whole-Home Heat Pump Bonus (March–December 2026)
-          </h3>
-          <div className="bg-green-50 border border-green-200 rounded-lg p-5 mb-6">
-            <p className="font-semibold text-green-800 mb-1">✓ $500 Bonus Active Now</p>
-            <p className="text-sm text-green-900">
-              An additional <strong>$500 per housing unit</strong> for eligible whole-home heat pump upgrades completed,
-              and rebate claims emailed or postmarked, between March 1 and December 31, 2026.
-              Stacks on top of standard non-ducted or ducted rebates. Single-wide mobile homes are not eligible.
-            </p>
-          </div>
-
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">
-            Income Qualification
-          </h3>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            <strong>Low income:</strong> Homeowner or household member participates in MaineCare, HEAP,
-            SNAP, or TANF. Must{" "}
-            <a
-              href="https://www.efficiencymaine.com/income-based-eligibility-verification/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-brand-600 hover:underline"
-            >
-              verify eligibility
-            </a>{" "}
-            before installation.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            <strong>Moderate income:</strong> Adjusted Gross Income (AGI) up to $70,000 for individual
-            filers, or $100,000 for joint filers. Must verify eligibility before installation.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            <strong>Any income:</strong> No income verification required. Available to all Maine homeowners.
-          </p>
-
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">
-            Equipment and Sizing Requirements
-          </h3>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            Only <strong>single-zone heat pumps</strong> on Efficiency Maine&apos;s{" "}
-            <a
-              href="https://www.efficiencymaine.com/docs/Rebate-Eligible-Heat-Pumps.xlsx"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-brand-600 hover:underline"
-            >
-              eligible product list
-            </a>{" "}
-            qualify for rebates. Multi-zone systems are not rebatable, but their heating capacity can
-            count toward the total. Heat pumps must be sized for at least <strong>80% of the
-            home&apos;s peak heating load</strong> at ASHRAE 99.6% design temperature. Combined with
-            supplemental electric heat, the system must cover 100% of peak load. One additional
-            eligibility rule: the housing unit must <strong>not have had a natural gas utility
-            account</strong> before the upgrade.
-          </p>
-          <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
-            <p className="font-semibold text-amber-800 mb-1">⚠ Common Mistake: Dual Fuel Systems Are Not Eligible</p>
-            <p className="text-sm text-amber-900">
-              Dual fuel (heat pump + fossil fuel furnace) systems do not qualify for Efficiency Maine rebates. Primary fossil-fuel systems can remain only as emergency backup — their capacity does not count toward the 100% requirement. Plan for full electric backup if keeping an oil or gas system.
-            </p>
-          </div>
-
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">
-            Heat Pump Water Heaters
-          </h3>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            Efficiency Maine offers heat pump water heater incentives two ways: an{" "}
-            <strong>instant discount</strong> at participating retailers and distributors
-            (for example, $1,200 off at Home Depot as of May 2026 &mdash; amounts vary by retailer),
-            or a <strong>$1,150 mail-in rebate</strong> for purchases made without an instant
-            discount. The two cannot be combined. Equipment must be ENERGY STAR certified &mdash;
-            any brand and tank size. DIY installation qualifies. Only one HPWH incentive per
-            installation address per calendar year, and mail-in claims must be emailed or postmarked
-            within six months of purchase. These discounts are funded in part by Maine&apos;s share
-            of the New England Heat Pump Accelerator (see below).
-          </p>
-
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">
-            Geothermal Heat Pump Rebates
-          </h3>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            Efficiency Maine offers a flat <strong>$3,000 rebate</strong> for qualifying geothermal heat
-            pumps, with a lifetime limit of one geothermal rebate per housing unit. No
-            income-based tiers — the same $3,000 applies at all income levels. Equipment must be
-            ENERGY STAR certified and installation must be done by a Residential Registered Vendor
-            for Geothermal Systems. With the federal Section 25D credit gone, this is the sole
-            remaining incentive for residential geothermal in Maine.
-          </p>
-        </div>
-      </section>
-
-      {/* 6. HEAR Status */}
-      <section className="bg-gray-50 py-12">
-        <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            HEAR Program Status (Home Electrification and Appliance Rebates)
-          </h2>
-          <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
-            <p className="font-semibold text-amber-800 mb-1">⚠ Partially Active — Limited Eligibility</p>
-            <p className="text-sm text-amber-900">
-              HEAR is available only for mobile/manufactured homes and new affordable multifamily construction. Standard single-family homes are not eligible. A second HEAR phase opening rebates to moderate-income households is planned under the current Triennial Plan, but no launch date has been announced.
-            </p>
-          </div>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            Maine&apos;s HEAR program is funded by <strong>$35.7 million</strong> in IRA Section 50122
-            dollars and administered by Efficiency Maine Trust under the Maine Department of Energy
-            Resources. It is deployed in phases, starting with the most energy-burdened housing types.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            For eligible homes, HEAR provides up to <strong>$8,000</strong> per unit for heat pump
-            systems, plus up to <strong>$1,750</strong> for heat pump water heaters,{" "}
-            <strong>$4,000</strong> for electric panel upgrades, and <strong>$2,500</strong> for
-            wiring — capped at <strong>$14,000 per household</strong>. Low-income households
-            (≤80% of Area Median Income) receive 100% of costs. HEAR funding runs through September
-            2031 or until exhausted.
-          </p>
-
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">
-            New England Heat Pump Accelerator ($450M, 5-State)
-          </h3>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            The NE Heat Pump Accelerator (NEHPA) is a collaboration between Connecticut, Maine,
-            Massachusetts, New Hampshire, and Rhode Island, funded by <strong>$450 million</strong> in
-            EPA Climate Pollution Reduction Grants and running through 2029. It aims to install
-            580,000 residential heat pumps region-wide by 2030. Maine&apos;s arrangement differs from
-            the other four states: instead of the per-unit pass-through discounts offered in CT, MA,
-            NH, and RI, Maine&apos;s roughly <strong>$43 million</strong> share funds the heat pump
-            water heater instant discounts at participating Maine distributors and retailers
-            (targeting 30,000 additional installations), plus pilot projects addressing barriers to
-            whole-home heat pump adoption.
-          </p>
           <p className="text-gray-700 leading-relaxed">
-            In practice this means Maine homeowners access Accelerator funding automatically through
-            Efficiency Maine&apos;s existing water heater discounts &mdash; there is no separate NEHPA
-            consumer rebate to apply for or stack in Maine.
-          </p>
-        </div>
-      </section>
-
-      {/* 7. Home Energy Loans */}
-      <section className="py-12">
-        <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Efficiency Maine Home Energy Loans
-          </h2>
-          <p className="text-gray-700 leading-relaxed mb-6">
-            Efficiency Maine&apos;s Green Bank offers unsecured loans — no lien on property or
-            equipment — with no prepayment penalty. Rates, fees, and terms are adjusted
-            periodically; confirm current terms (including any origination fee on the 0% option)
-            at efficiencymaine.com before applying. Funds are disbursed directly
-            to the Registered Vendor after project completion.
-          </p>
-          <div className="overflow-x-auto mb-6">
-            <table className="min-w-full text-sm">
-              <thead>
-                <tr className="bg-gray-100">
-                  <th className="text-left p-3 font-semibold">Loan Type</th>
-                  <th className="text-left p-3 font-semibold">Rate</th>
-                  <th className="text-left p-3 font-semibold">Term</th>
-                  <th className="text-left p-3 font-semibold">Max</th>
-                  <th className="text-left p-3 font-semibold">Min FICO</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="border-b bg-green-50">
-                  <td className="p-3">1-Year 0% APR</td>
-                  <td className="p-3 font-semibold">0%</td>
-                  <td className="p-3">1 year</td>
-                  <td className="p-3">$25,000</td>
-                  <td className="p-3">620</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">5-Year Fixed</td>
-                  <td className="p-3 font-semibold">5.99%</td>
-                  <td className="p-3">5 years</td>
-                  <td className="p-3">$25,000</td>
-                  <td className="p-3">620</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">10-Year Fixed</td>
-                  <td className="p-3 font-semibold">7.99%</td>
-                  <td className="p-3">10 years</td>
-                  <td className="p-3">$25,000</td>
-                  <td className="p-3">620</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">Income-Based 10-Year</td>
-                  <td className="p-3 font-semibold">5.99%</td>
-                  <td className="p-3">10 years</td>
-                  <td className="p-3">$7,500</td>
-                  <td className="p-3">580</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <p className="text-gray-700 leading-relaxed">
-            Projects must be installed within 120 days of Notice to Proceed. Eligible upgrades
+            Options have included a 1-year 0% APR loan and fixed-rate 5- and 10-year terms up to $25,000, plus an income-based option, but rates, fees, and FICO minimums have shifted since our last direct confirmation, so we are not publishing a rate table until re-verified against Efficiency Maine&apos;s loan page. Eligible upgrades
             include heat pumps (not dual fuel), electrical panel upgrades required for heat pump
             projects, insulation, air sealing, and health/safety improvements up to 25% of the
             financed amount.
@@ -537,7 +275,7 @@ export default function MainePage() {
             </p>
           </div>
           <p className="text-sm text-gray-500 mt-4">
-            Municipal ARPA-funded programs (South Portland, Portland, Auburn, Bangor) may provide
+            Municipal ARPA-funded programs (South Portland, Portland, Auburn) may provide
             additional stacking where available. No state tax credit is available in Maine.
           </p>
         </div>
@@ -738,8 +476,8 @@ export default function MainePage() {
               <p className="font-semibold text-gray-900">IRA Funding Runway</p>
               <p className="text-sm text-gray-600 mt-1">
                 HEAR funding ($35.7M) runs through September 2031 but could be affected by federal
-                policy changes. Efficiency Maine&apos;s core rebates are independently funded through
-                RGGI and utility surcharges and are not at risk from federal budget decisions.
+                policy changes. Efficiency Maine&apos;s core rebates are funded primarily through
+                ratepayers and RGGI proceeds, so rebate levels do not depend on federal tax policy.
               </p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
