@@ -47,7 +47,7 @@ export default function WashingtonPage() {
         name: "What heat pump rebates are available in Washington in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Washington heat pump rebates come from three layers: utility rebates (PSE up to $5,000 income-qualified, Seattle City Light $300\u2013$2,000, Snohomish PUD $1,800\u2013$2,500), the active state-funded HEAR program ($103.6M from Climate Commitment Act for households \u2264150% AMI), and the upcoming federal HARP program (up to $8,000, not yet launched). Federal 25C and 25D tax credits expired December 31, 2025.",
+          text: "Washington heat pump rebates come from three layers: utility rebates (PSE up to $5,000 income-qualified, Seattle City Light/Clean Heat $300\u2013$6,000, Snohomish PUD $1,800\u2013$2,500), the active state-funded HEAR program ($103.6M from Climate Commitment Act for households \u2264150% AMI), and the upcoming federal HARP program (up to $8,000, not yet launched). Federal 25C and 25D tax credits expired December 31, 2025.",
         },
       },
       {
@@ -71,7 +71,7 @@ export default function WashingtonPage() {
         name: "What PSE rebates are available for heat pumps?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Puget Sound Energy offers $1,500 for converting from electric resistance to an air-source heat pump ($2,400 for income-qualified). Gas-to-heat-pump fuel switching commands up to $4,000 income-qualified. The Pierce County HEAR program adds $5,000 for cold-climate heat pump installations. Since April 2, 2026, all installations must use a PSE Trade Ally or Recommended Energy Professional.",
+          text: "Puget Sound Energy offers $1,500 for converting from electric resistance to an air-source heat pump ($2,400 for income-qualified). Gas-to-heat-pump full conversion is a $4,000 income-qualified rebate; the standard-tier option for gas customers is a hybrid heat pump paired with a gas furnace ($1,500, or $2,400 income-qualified). The separate Pierce County HEAR program offers $5,000 for income-qualified cold-climate heat pump installations. PSE requires all rebate installations to use a PSE Trade Ally or Recommended Energy Professional \u2014 out-of-network contractors and DIY installs do not qualify.",
         },
       },
       {
@@ -79,7 +79,7 @@ export default function WashingtonPage() {
         name: "What is Initiative 2066 and does it affect heat pump rebates?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Initiative 2066 was a voter-approved measure in November 2024 that aimed to prevent limits on natural gas. A King County judge struck it down as unconstitutional in March 2025 for violating the state constitution\u2019s single-subject rule. The Building Industry Association of Washington appealed directly to the Washington Supreme Court, which heard oral arguments on January 22, 2026 and is reviewing the case de novo. As of July 2026 the court has not issued a decision and gave no timeline for one. The superior court ruling stands in the meantime. Existing heat pump rebate programs have not been affected by I-2066 either way.",
+          text: "Initiative 2066 was a voter-approved measure in November 2024 that aimed to prevent limits on natural gas. A King County judge struck it down as unconstitutional in March 2025 for violating the state constitution\u2019s single-subject rule and related requirements for initiatives. The Building Industry Association of Washington appealed directly to the Washington Supreme Court, which heard oral arguments on January 22, 2026 and is reviewing the case de novo. As of July 2026 the court has not issued a decision and gave no timeline for one. I-2066\u2019s legal status remains unresolved while the appeal is pending. Existing heat pump rebate programs have not been affected by I-2066 either way.",
         },
       },
       {
@@ -87,7 +87,7 @@ export default function WashingtonPage() {
         name: "Do I need a cold-climate heat pump in Washington?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "It depends on where you live. Western Washington\u2019s mild maritime climate works well with standard heat pumps. Eastern Washington (Spokane, Pullman) requires cold-climate models rated to 0\u00b0F or below. Most utility programs now require minimum HSPF2 ratings of 7.5\u20138.5. All state HEAR-funded installations require cold-climate rated systems.",
+          text: "It depends on where you live. Western Washington\u2019s mild maritime climate works well with standard heat pumps. Eastern Washington (Spokane, Pullman) requires cold-climate models rated to 0\u00b0F or below. Most utility programs now require minimum HSPF2 ratings of 7.5\u20138.5. State HEAR-funded equipment must be ENERGY STAR or AHRI certified, and some administrators \u2014 like PSE\u2019s Pierce County HEAR program \u2014 require cold-climate rated models.",
         },
       },
     ],
@@ -111,7 +111,7 @@ export default function WashingtonPage() {
             Washington Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Federal tax credits are gone, but Washington has more active incentive layers than most states. Utility rebates from PSE reach up to <strong>$5,000</strong> income-qualified, a state-funded HEAR program backed by <strong>$103.6 million</strong> in Climate Commitment Act revenue is open and paying rebates, and federal HARP rebates (up to <strong>$8,000</strong>) remain unlaunched after DOE revised its program guidelines on June 1, 2026. Seattle City Light offers <strong>$2,000</strong> for oil-to-heat-pump conversions. This guide covers all major Washington heat pump incentives available in 2026, including PSE, Seattle City Light, Snohomish PUD, Avista, the state HEAR program, and the pending federal HARP/HOMES programs. Here&apos;s what&apos;s actually available.
+            Federal tax credits are gone, but Washington has more active incentive layers than most states. Utility rebates from PSE reach up to <strong>$5,000</strong> income-qualified, a state-funded HEAR program backed by <strong>$103.6 million</strong> in Climate Commitment Act revenue is open and paying rebates, and federal HARP rebates (up to <strong>$8,000</strong>) remain unlaunched after DOE revised its program guidelines on June 1, 2026. Seattle&apos;s Clean Heat program offers <strong>$2,000</strong> for oil-to-heat-pump conversions at any income — up to <strong>$6,000</strong> with the moderate-income bonus (installations by September 30, 2026). This guide covers all major Washington heat pump incentives available in 2026, including PSE, Seattle City Light, Snohomish PUD, Avista, the state HEAR program, and the pending federal HARP/HOMES programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
             Updated {formattedDate} — verified against official program sources
@@ -136,15 +136,15 @@ export default function WashingtonPage() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ State HEAR — Active Now</p>
-              <p className="text-sm text-green-900">~$103.6M from Climate Commitment Act. For households ≤150% AMI. Apply through local community administrators. All heat pumps must be cold-climate rated.</p>
+              <p className="text-sm text-green-900">~$103.6M from Climate Commitment Act. For households ≤150% AMI. Apply through local community administrators. Equipment must be ENERGY STAR or AHRI certified (some administrators require cold-climate models).</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Utility Rebates — Active</p>
-              <p className="text-sm text-green-900">PSE: $1,500–$5,000. Seattle City Light: $300–$2,000. Snohomish PUD: $1,800–$2,500. Tacoma Power: $1,000–$2,000. No income restrictions for standard tiers.</p>
+              <p className="text-sm text-green-900">PSE: $1,500–$5,000. Seattle City Light/Clean Heat: $300–$6,000. Snohomish PUD: $1,800–$2,500. Tacoma Power: $1,000–$2,000. No income restrictions for standard tiers.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Total Potential Savings</p>
-              <p className="text-sm text-green-900">$1,500–$5,000 (above 150% AMI) from utility rebates alone. Income-qualified households can stack state HEAR + utility for substantially more. Full electrification packages could reach near-zero out-of-pocket if HARP launches.</p>
+              <p className="text-sm text-green-900">$1,500–$2,000 (above 150% AMI) from utility rebates alone — the largest amounts (PSE&apos;s $5,000 Pierce County HEAR, Seattle&apos;s $6,000 Clean Heat total) are income-qualified. Income-qualified households can stack state HEAR + utility for substantially more. Full electrification packages could reach near-zero out-of-pocket if HARP launches.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">✗ Federal Tax Credits Expired</p>
@@ -152,7 +152,7 @@ export default function WashingtonPage() {
             </div>
             <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
               <p className="font-semibold text-amber-800 mb-1">⚠ Federal HARP/HOMES — Not Yet Launched</p>
-              <p className="text-sm text-amber-900">Washington&apos;s $69M HARP + $64M HOMES allocation has no launch date. DOE issued revised program guidelines on June 1, 2026 and Commerce is reworking next steps with Guidehouse, its statewide administrator. Rebates will not be retroactive — do not count on these when budgeting a 2026 installation.</p>
+              <p className="text-sm text-amber-900">Washington&apos;s federal HARP/HOMES programs (over $165M applied for, per Commerce) have no launch date. DOE issued revised program guidelines on June 1, 2026 and Commerce is reworking next steps with Guidehouse, its statewide administrator. Rebates will not be retroactive — do not count on these when budgeting a 2026 installation.</p>
             </div>
           </div>
         </div>
@@ -178,7 +178,11 @@ export default function WashingtonPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">State HEAR Program — Active Now</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Washington&apos;s state-funded HEAR program is separate from the federal IRA programs, and Commerce confirms it is <strong>open and paying rebates</strong>. It draws on roughly <strong>$103.6 million</strong> in Climate Commitment Act cap-and-invest revenue — about $73.5 million already invested across 55 rebate and incentive programs in 2024–2025, plus a further $30.1 million anticipated to continue existing programs and establish new ones — and serves households at or below 150% of Area Median Income (AMI). The program covers heat pumps (ducted, ductless, air-source, ground-source), heat pump water heaters, and induction cooking. All heat pumps must be cold-climate rated.
+            Washington&apos;s state-funded HEAR program is separate from the federal IRA programs, and Commerce confirms it is <strong>open and paying rebates</strong>. It draws on roughly <strong>$103.6 million</strong> in Climate Commitment Act cap-and-invest revenue — about $73.5 million already invested across 55 rebate and incentive programs in 2024–2025, plus a further $30.1 million anticipated to continue existing programs and establish new ones — and serves households at or below 150% of Area Median Income (AMI). The program covers heat pumps (ducted, ductless, air-source, ground-source), heat pump water heaters, heat pump clothes dryers, induction cooking, and electric panel and wiring upgrades needed to install the new equipment. Equipment must be ENERGY STAR or AHRI certified; some administrators require cold-climate rated models.
+          </p>
+
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Rebate levels are set by each administrator. United Hub, the largest, funds <strong>50%</strong> of qualified equipment purchase and installation costs for homeowners below 150% AMI, and <strong>100%</strong> for homeowners below 80% AMI, in its five counties.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Known Active Administrators</h3>
@@ -227,7 +231,7 @@ export default function WashingtonPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Federal HARP &amp; HOMES Rebates — Not Yet Launched</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Washington&apos;s allocation is <strong>$69 million for HARP</strong> and <strong>$64 million for HOMES</strong>, with <strong>Guidehouse</strong> as the statewide administrator. The program was in late-stage launch preparation through early 2026, but on <strong>June 1, 2026</strong> the U.S. Department of Energy issued revised program guidelines (program notices 26-1 and 26-2). Commerce says it is evaluating how those changes affect the program and working with its administrator to determine next steps. No launch date has been announced. Rebates will not be retroactive — nothing purchased or installed before approval can be reimbursed. Commerce&apos;s own advice in the meantime is to check the state HEAR program, which is already running.
+            Washington applied for <strong>over $165 million</strong> in federal HARP and HOMES funding (per Commerce), with <strong>Guidehouse</strong> as the statewide administrator. The program was in late-stage launch preparation through early 2026, but on <strong>June 1, 2026</strong> the U.S. Department of Energy issued revised program guidelines (program notices 26-1 and 26-2). Commerce says it is evaluating how those changes affect the program and working with its administrator to determine next steps. No launch date has been announced. Rebates will not be retroactive — nothing purchased or installed before approval can be reimbursed. Commerce&apos;s own advice in the meantime is to check the state HEAR program, which is already running.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">HARP Rebate Structure (When Launched)</h3>
@@ -261,7 +265,7 @@ export default function WashingtonPage() {
           </div>
 
           <p className="text-gray-700 leading-relaxed">
-            The <strong>$14,000 per household</strong> cap applies across all HARP measures combined. HOMES provides performance-based rebates of <strong>$2,000–$8,000</strong> for whole-home retrofits achieving 20–35%+ energy savings, available at all income levels.
+            Under the federal framework, a <strong>$14,000 per household</strong> cap applies across all HARP measures combined, with heat pump rebates capped at $8,000. HOMES provides performance-based rebates of roughly <strong>$2,000–$8,000</strong> for whole-home retrofits achieving 20–35%+ energy savings — available at all income levels, with the largest amounts reserved for lower-income households. Washington&apos;s final program design may differ.
           </p>
         </div>
       </section>
@@ -291,9 +295,14 @@ export default function WashingtonPage() {
                   <td className="p-3 font-semibold">$2,400</td>
                 </tr>
                 <tr className="border-b bg-green-50">
-                  <td className="p-3">Gas → heat pump (fuel switch)</td>
-                  <td className="p-3 font-semibold">Up to $2,500</td>
-                  <td className="p-3 font-semibold">Up to $4,000</td>
+                  <td className="p-3">Gas → heat pump (full conversion)</td>
+                  <td className="p-3 text-gray-500">Not offered — income-qualified only</td>
+                  <td className="p-3 font-semibold">$4,000</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Hybrid heat pump + gas furnace</td>
+                  <td className="p-3 font-semibold">$1,500</td>
+                  <td className="p-3 font-semibold">$2,400</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Pierce County HEAR (cold-climate HP)</td>
@@ -304,12 +313,12 @@ export default function WashingtonPage() {
             </table>
           </div>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Since <strong>April 2, 2026</strong>, all PSE heat pump installations must use a PSE Trade Ally or Recommended Energy Professional. The City of Lacey has partnered with PSE to offer matching <strong>$4,000</strong> rebates for income-qualified gas customers.
+            PSE requires all heat pump rebate installations to use a PSE Trade Ally or Recommended Energy Professional — out-of-network contractors and DIY installs do not qualify. PSE describes the Pierce County HEAR rebate as a limited-time offer. Separately, the City of Lacey matches PSE rebates for residents inside city limits: a <strong>100% match on income-qualified rebates</strong> (a second $4,000 on the gas-to-heat-pump rebate) and a 50% match on standard rebates, while funding lasts.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Seattle City Light</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Standard rebates of <strong>$300–$600</strong>, with <strong>$2,000</strong> for oil-to-heat-pump conversions under the Clean Heat program (targeting oil-free Seattle by 2030). The <strong>HomeWise Program</strong> provides free heat pump installations for income-eligible Seattle households. The <strong>Energy Smart Eastside</strong> collaborative (Bellevue, Issaquah, Kirkland, Mercer Island, Redmond, Sammamish) offers a Boost Program that fully covers heat pump costs for households at ≤80% AMI, stackable with PSE utility incentives.
+            Standard rebates of <strong>$300–$600</strong>, with a <strong>$2,000</strong> instant rebate at any income for oil-to-heat-pump conversions under the city&apos;s Clean Heat program (targeting oil-free Seattle by 2030). Moderate-income households (81–150% AMI) get a <strong>$4,000 bonus</strong> on top — up to <strong>$6,000 total</strong> — for installations completed by <strong>September 30, 2026</strong>; the bonus is funded by the state HEAR program. Clean Heat currently applies to qualifying Mitsubishi heat pumps installed by participating contractors, and lower-income households may qualify for a free conversion through the Office of Housing. The <strong>HomeWise Program</strong> provides free heat pump installations for income-eligible Seattle households. The <strong>Energy Smart Eastside</strong> collaborative (Bellevue, Issaquah, Kirkland, Mercer Island, Redmond, Sammamish) offers a Boost Program that fully covers heat pump costs for households at ≤80% AMI, stackable with PSE utility incentives.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Other Utilities</h3>
@@ -357,7 +366,7 @@ export default function WashingtonPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Initiative 2066 &amp; What It Means for Rebates</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Initiative 2066 was a voter-approved measure in November 2024 that aimed to prevent limits on natural gas — blocking building codes from discouraging gas, stopping PSE&apos;s gas transition plan, and restricting municipal energy standards. In March 2025, a King County judge struck I-2066 down as unconstitutional. The Building Industry Association of Washington appealed directly to the Washington Supreme Court, which heard oral arguments on January 22, 2026 and is reviewing the case de novo. As of July 2026 the court has not ruled and has given no timeline. The superior court decision stands in the meantime, and the Washington Building Code Council has held off on related code changes while the case is pending.
+            Initiative 2066 was a voter-approved measure in November 2024 that aimed to prevent limits on natural gas — blocking building codes from discouraging gas, stopping PSE&apos;s gas transition plan, and restricting municipal energy standards. In March 2025, a King County judge struck I-2066 down as unconstitutional. The Building Industry Association of Washington appealed directly to the Washington Supreme Court, which heard oral arguments on January 22, 2026 and is reviewing the case de novo. As of July 2026 the court has not ruled and has given no timeline. I-2066&apos;s legal status remains unresolved while the appeal is pending, and the state Building Code Council has kept the existing 2021 energy codes in place while it investigates changes.
           </p>
           <div className="bg-white border border-gray-200 rounded-lg p-5">
             <p className="font-semibold text-gray-900 mb-1">What this means for heat pump rebates:</p>
@@ -371,26 +380,26 @@ export default function WashingtonPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">How Programs Stack</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Washington has two separate HEAR-type programs plus utility rebates. State HEAR and utility rebates can stack. Federal HARP (when launched) is expected to stack with utility rebates but cannot combine with HOMES for the same measure. Total incentives cannot exceed project cost.
+            Washington has two separate HEAR-type programs plus utility rebates. State HEAR and utility rebates can stack. Federal HARP (when launched) is expected to stack with utility rebates and, under the federal framework, cannot combine with HOMES for the same measure. Total incentives cannot exceed project cost.
           </p>
 
           <div className="space-y-4 mb-8">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900 mb-2">Above 150% AMI — PSE Territory</p>
               <ul className="text-sm text-gray-700 space-y-1">
-                <li>PSE electric resistance → HP: $1,500</li>
+                <li>PSE electric resistance → HP (or hybrid): $1,500</li>
                 <li>State HEAR: Not eligible (income-restricted)</li>
                 <li>Federal HARP: Not eligible (income-restricted)</li>
                 <li>Federal tax credit: $0 (expired)</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$1,500–$2,500</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$1,500</p>
             </div>
 
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900 mb-2">80–150% AMI — PSE Territory (Current)</p>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>PSE income-qualified (electric resistance → HP): $2,400</li>
-                <li>State HEAR (through local administrator): varies</li>
+                <li>State HEAR (through local administrator): varies — United Hub pays 50% of qualified project costs in its five counties</li>
                 <li>Federal HARP: $0 (not launched)</li>
               </ul>
               <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$2,400 + state HEAR</p>
@@ -399,8 +408,8 @@ export default function WashingtonPage() {
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-2">Below 80% AMI — PSE Territory (If HARP Launches)</p>
               <ul className="text-sm text-green-900 space-y-1">
-                <li>PSE income-qualified (gas → HP): up to $4,000</li>
-                <li>State HEAR: additional (varies by administrator)</li>
+                <li>PSE income-qualified (gas → HP): $4,000</li>
+                <li>State HEAR: varies by administrator — United Hub funds 100% of qualified costs below 80% AMI in its five counties</li>
                 <li>Federal HARP: up to $8,000</li>
               </ul>
               <p className="font-semibold text-green-700 mt-2">Some households could see near-zero out-of-pocket costs</p>
@@ -409,7 +418,7 @@ export default function WashingtonPage() {
 
           <div className="bg-gray-100 rounded-lg p-5">
             <p className="font-semibold text-gray-900 mb-1">What You&apos;ll Actually Pay</p>
-            <p className="text-sm text-gray-700">On a typical <strong>$8,000–$15,000</strong> heat pump installation, most Washington homeowners above 150% AMI will pay <strong>$5,500–$13,500 out of pocket</strong> after utility rebates. Income-qualified households in PSE territory with active state HEAR can cut that significantly. If federal HARP launches, the best-case scenario for ≤80% AMI households could approach <strong>near-zero out of pocket</strong> — but confirm stacking eligibility with each program before relying on combined amounts.</p>
+            <p className="text-sm text-gray-700">On a typical <strong>$8,000–$15,000</strong> heat pump installation, most Washington homeowners above 150% AMI will pay <strong>$6,000–$13,500 out of pocket</strong> after utility rebates ($1,500–$2,000 depending on utility). Income-qualified households in PSE territory with active state HEAR can cut that significantly. If federal HARP launches, the best-case scenario for ≤80% AMI households could approach <strong>near-zero out of pocket</strong> — but confirm stacking eligibility with each program before relying on combined amounts.</p>
           </div>
         </div>
       </section>
@@ -419,15 +428,15 @@ export default function WashingtonPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Weatherization Assistance</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Washington&apos;s Weatherization Assistance Program provides free energy efficiency upgrades for income-qualified households. Contact the Washington Department of Commerce at <a href="https://www.commerce.wa.gov/growing-the-economy/energy/home-energy-rebates/" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">commerce.wa.gov</a> for more information.
+            Washington&apos;s Weatherization Assistance Program provides free energy efficiency upgrades for income-qualified households. Contact the Washington Department of Commerce at <a href="https://www.commerce.wa.gov/weatherization/" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">commerce.wa.gov/weatherization</a> for more information.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Seattle City Light&apos;s HomeWise Program and Energy Smart Eastside&apos;s Boost Program both provide no-cost heat pump installations for income-eligible households, effectively serving as enhanced weatherization pathways.
+            The City of Seattle&apos;s HomeWise Program and Energy Smart Eastside&apos;s Boost Program both provide no-cost heat pump installations for income-eligible households, effectively serving as enhanced weatherization pathways.
           </p>
 
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
             <p className="font-semibold text-green-800 mb-1">✓ Best Candidates for Washington Heat Pump Incentives</p>
-            <p className="text-sm text-green-900">Income-qualified PSE customers replacing electric resistance heating — $2,400 utility rebate plus state HEAR. Seattle residents heating with oil — $2,000 Clean Heat rebate from Seattle City Light. Eastside residents (Bellevue, Kirkland, Redmond, etc.) at ≤80% AMI — Energy Smart Eastside Boost covers full cost plus PSE stacks. Pierce County households at ≤150% AMI — $5,000 Pierce County HEAR through PSE. Any household at ≤150% AMI — apply to state HEAR through your local administrator now while federal HARP is pending.</p>
+            <p className="text-sm text-green-900">Income-qualified PSE customers replacing electric resistance heating — $2,400 utility rebate plus state HEAR. Seattle residents heating with oil — $2,000 Clean Heat rebate at any income, up to $6,000 for moderate-income households (installations by September 30, 2026). Eastside residents (Bellevue, Kirkland, Redmond, etc.) at ≤80% AMI — Energy Smart Eastside Boost covers full cost plus PSE stacks. Pierce County households at ≤150% AMI — $5,000 Pierce County HEAR through PSE. Any household at ≤150% AMI — apply to state HEAR through your local administrator now while federal HARP is pending.</p>
           </div>
         </div>
       </section>
@@ -480,7 +489,7 @@ export default function WashingtonPage() {
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-6">
-            Western Washington&apos;s mild maritime climate makes standard heat pumps efficient year-round. Oil-to-heat-pump conversion programs are particularly active in Seattle. Eastern Washington requires cold-climate models rated to 0°F or below, and building code allows backup gas systems for extreme cold. Most utility programs now require minimum HSPF2 ratings of 7.5–8.5. All state HEAR-funded installations require cold-climate rated systems statewide. For more on battery storage and time-of-use strategies, see our <Link href="/battery" className="text-brand-600 hover:underline">home battery guide</Link>.
+            Western Washington&apos;s mild maritime climate makes standard heat pumps efficient year-round. Oil-to-heat-pump conversion programs are particularly active in Seattle. Eastern Washington requires cold-climate models rated to 0°F or below, and building code allows backup gas systems for extreme cold. Most utility programs now require minimum HSPF2 ratings of 7.5–8.5. State HEAR equipment must be ENERGY STAR or AHRI certified; PSE&apos;s Pierce County HEAR program requires cold-climate rated systems. For more on battery storage and time-of-use strategies, see our <Link href="/battery" className="text-brand-600 hover:underline">home battery guide</Link>.
           </p>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
@@ -501,7 +510,7 @@ export default function WashingtonPage() {
               </div>
               <div>
                 <p className="font-semibold text-gray-900">For utility rebates (PSE, SCL, Tacoma Power, etc.)</p>
-                <p className="text-sm text-gray-700">Apply through your utility&apos;s rebate portal after installation. PSE has required Trade Ally contractors since April 2, 2026. Check your utility&apos;s website for current application forms.</p>
+                <p className="text-sm text-gray-700">Apply through your utility&apos;s rebate portal after installation. PSE requires Trade Ally or REP contractors for rebate eligibility. Check your utility&apos;s website for current application forms.</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -542,19 +551,19 @@ export default function WashingtonPage() {
           <div className="space-y-4">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">IRA Funding Runway</p>
-              <p className="text-sm text-gray-600 mt-1">Washington&apos;s $133M in HARP/HOMES funding is authorized through September 2031 but could be affected by future federal budget actions. The One Big Beautiful Bill Act preserved existing IRA rebate allocations but did not extend them.</p>
+              <p className="text-sm text-gray-600 mt-1">Washington&apos;s IRA-funded HARP/HOMES rebates remain in preparation, but federal guidance changes have already delayed the launch once and future federal budget actions could affect the program. Check Commerce&apos;s IRA Home Energy Rebates page for status.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Federal HARP Launch Date</p>
-              <p className="text-sm text-gray-600 mt-1">Guidehouse is the selected administrator, but DOE&apos;s June 1, 2026 program notices (26-1 and 26-2) sent Commerce back to reassess program design, and no launch date has been announced. The same federal guidance has delayed rebate programs in other states. When live, HARP could add $4,000–$8,000 for income-qualified households on top of existing utility and state HEAR rebates.</p>
+              <p className="text-sm text-gray-600 mt-1">Guidehouse is the selected administrator, but DOE&apos;s June 1, 2026 program notices (26-1 and 26-2) sent Commerce back to reassess program design, and no launch date has been announced. When live, HARP could add $4,000–$8,000 for income-qualified households; stacking rules with utility and state HEAR rebates will be set at launch.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">I-2066 Supreme Court Ruling</p>
-              <p className="text-sm text-gray-600 mt-1">Argued January 22, 2026; no decision as of July 2026, and the court set no timeline. The Washington Building Code Council has held off on related code changes while the case is pending. A ruling does not affect existing rebate programs but would shape future building code and utility electrification planning.</p>
+              <p className="text-sm text-gray-600 mt-1">Argued January 22, 2026; no decision as of July 2026, and the court set no timeline. The state Building Code Council has kept the existing 2021 energy codes in place while it investigates changes. A ruling does not affect existing rebate programs but would shape future building code and utility electrification planning.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">PSE Trade Ally Requirement (in effect)</p>
-              <p className="text-sm text-gray-600 mt-1">Since April 2, 2026, all PSE heat pump installations must use a PSE Trade Ally or Recommended Energy Professional to qualify for rebates. Confirm your contractor is in the network before signing.</p>
+              <p className="text-sm text-gray-600 mt-1">All PSE heat pump installations must use a PSE Trade Ally or Recommended Energy Professional to qualify for rebates. Confirm your contractor is in the network before signing.</p>
             </div>
           </div>
         </div>

@@ -314,13 +314,25 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "WA",
     stateName: "Washington",
     status: "open",
-    lastVerified: "2026-07-09",
+    lastVerified: "2026-07-10",
     summary:
-      "Washington has two rebate tracks plus utility programs. The state HEAR program (Climate Commitment Act, ~$103.6M) is open and paying rebates for households \u2264150% AMI. The federal HARP/HOMES rebates (up to $8,000, Guidehouse administering) have no launch date \u2014 DOE issued revised program guidelines June 1, 2026 and Commerce is reassessing. PSE utility rebates run up to $5,000 (income-qualified) and have required a Trade Ally contractor since April 2, 2026. Federal tax credits (25C/25D) ended December 31, 2025.",
+      "Washington has two rebate tracks plus utility programs. The state HEAR program (Climate Commitment Act, ~$103.6M) is open and paying rebates for households \u2264150% AMI. The federal HARP/HOMES rebates (up to $8,000, Guidehouse administering) have no launch date \u2014 DOE issued revised program guidelines June 1, 2026 and Commerce is reassessing. PSE utility rebates run up to $5,000 (income-qualified) and require a PSE Trade Ally or REP contractor. Seattle's Clean Heat program pays $2,000 for oil-to-heat-pump conversions at any income, up to $6,000 with the moderate-income bonus (installations by September 30, 2026). Federal tax credits (25C/25D) ended December 31, 2025.",
     sources: [
       {
-        label: "Puget Sound Energy — Heat Pump Rebates",
-        url: "https://www.pse.com/rebates/heat-pump-rebates",
+        label: "Puget Sound Energy — Home Heating Rebates",
+        url: "https://www.pse.com/en/rebates/heating",
+      },
+      {
+        label: "PSE — Pierce County HEAR ($5,000 cold-climate, income-qualified)",
+        url: "https://www.pse.com/en/rebates/hear",
+      },
+      {
+        label: "Seattle Clean Heat Program (oil-to-heat-pump rebates)",
+        url: "https://www.seattle.gov/environment/climate-change/buildings-and-energy/seattles-clean-heat-program",
+      },
+      {
+        label: "PSE — Doubled rebates for City of Lacey residents",
+        url: "https://www.pse.com/en/rebates/doubled-rebates-for-city-of-lacey-residents",
       },
       {
         label: "WA Commerce — State HEAR Program (open)",
