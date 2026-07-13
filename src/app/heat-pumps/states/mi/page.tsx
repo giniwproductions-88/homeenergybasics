@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title:
     "Michigan Heat Pump Rebates 2026: Up to $8,000 MiHER + Utility Programs | Home Energy Basics",
   description:
-    "MiHER offers up to $8,000 for heat pumps. DTE, Consumers Energy, TCLP add $200\u2013$3,000. Ann Arbor A2ZERO stacks $4,000\u2013$5,500. Federal credits ended.",
+    "MiHER offers up to $8,000 for heat pumps (income-qualified; Detroit District intake paused). DTE and Consumers Energy add $150\u2013$1,200. Federal credits ended.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/mi",
   },
@@ -47,7 +47,7 @@ export default function MichiganPage() {
         name: "What heat pump rebates are available in Michigan in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Michigan\u2019s main heat pump rebate is the MiHER HEAR program, which offers up to $8,000 for a heat pump at point of sale for households at or below 150% of Area Median Income. Utility rebates add $200\u2013$3,000 depending on your provider. DTE Energy offers $150\u2013$1,200, Consumers Energy offers $300\u2013$350, Traverse City Light & Power offers up to $3,000, and Lansing BWL offers $200\u2013$600. The federal Section 25C tax credit expired December 31, 2025.",
+          text: "Michigan\u2019s main heat pump rebate is the MiHER HEAR program, which offers up to $8,000 for a heat pump at point of sale for households at or below 150% of Area Median Income. Utility rebates add $150\u2013$1,200 from the major utilities: DTE Energy offers $150\u2013$1,200, Consumers Energy offers $300\u2013$350, and Lansing BWL offers $200\u2013$600. Traverse City Light & Power offered up to $3,000 in its 2025\u20132026 program year, which ended June 30, 2026; a new schedule had not been posted as of July 2026. The federal Section 25C tax credit expired December 31, 2025.",
         },
       },
       {
@@ -55,7 +55,7 @@ export default function MichiganPage() {
         name: "Is the Michigan MiHER program still open?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Michigan\u2019s MiHER program launched statewide on April 14, 2025 and is accepting applications. It includes both HEAR (appliance-specific rebates) and HOMES (whole-home performance rebates). Funding of $210 million is expected to last until depleted or September 30, 2031.",
+          text: "Yes, with two important restrictions as of July 2026. EGLE states that applications are currently open to low- to moderate-income households only (at or below 150% of Area Median Income), and new income-qualified applications for properties in the EGLE Detroit District are temporarily suspended while the program reviews current applications against its regional funding allocations. Elsewhere in Michigan, income-qualified households can apply. MiHER includes both HEAR (appliance-specific rebates) and HOMES (whole-home performance rebates), with $210 million in total funding.",
         },
       },
       {
@@ -63,7 +63,7 @@ export default function MichiganPage() {
         name: "Can I get a heat pump rebate if I heat with natural gas in Michigan?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "DTE Energy and Consumers Energy restrict most heat pump rebates to customers replacing existing electric heating, not gas-to-electric conversions. However, the MiHER HEAR program specifically supports fuel-switching from gas or propane to electric heat pumps. Ann Arbor\u2019s A2ZERO program also covers gas-to-electric conversions.",
+          text: "Not from the big utilities. DTE Energy restricts heat pump rebates to electric customers replacing existing electric heating. Consumers Energy is stricter still: its ducted air-source and ground-source rebates require replacement of an existing heat pump, and only its mini-split rebate allows replacing any primary electric heat system. Neither covers gas-to-electric conversions. However, the MiHER HEAR program specifically supports fuel-switching from gas or propane to electric heat pumps. Ann Arbor\u2019s A2ZERO program also covered gas-to-electric conversions in its 2025\u20132026 year, which closed June 30, 2026, with renewal planned.",
         },
       },
       {
@@ -79,7 +79,7 @@ export default function MichiganPage() {
         name: "Can I stack Michigan heat pump rebates?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Utility rebates, MiHER (HEAR or HOMES), and local programs like Ann Arbor\u2019s A2ZERO draw from different funding sources and can stack. The key constraint is that HOMES and HEAR cannot cover the same individual measure. A low-income household in Ann Arbor could potentially combine HEAR ($8,000) + A2ZERO ($5,500) + DTE ($1,200) for over $14,000 toward a cold-climate system.",
+          text: "Yes. Utility rebates, MiHER (HEAR or HOMES), and local programs like Ann Arbor\u2019s A2ZERO draw from different funding sources and can stack. The key constraint is that HOMES and HEAR cannot cover the same individual measure. When A2ZERO\u2019s 2025\u20132026 year was open, a low-income Ann Arbor household could combine HEAR ($8,000) + A2ZERO ($5,500) + DTE ($1,200) for over $14,000 toward a cold-climate system; with A2ZERO between program years as of July 2026, the live stack is HEAR plus a utility rebate where eligible.",
         },
       },
       {
@@ -87,7 +87,7 @@ export default function MichiganPage() {
         name: "What happened to the federal heat pump tax credit?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Both the Section 25C ($2,000/year for heat pumps) and Section 25D (30% for geothermal) federal tax credits expired December 31, 2025 under the One Big Beautiful Bill Act. As of June 2026, the IRS guidance reflects the credits as ended and no replacement federal heat pump credit is active.",
+          text: "Both the Section 25C ($2,000/year for heat pumps) and Section 25D (30% for geothermal) federal tax credits expired December 31, 2025 under the One Big Beautiful Bill Act. As of July 2026, the IRS guidance reflects the credits as ended and no replacement federal heat pump credit is active.",
         },
       },
     ],
@@ -112,12 +112,14 @@ export default function MichiganPage() {
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
             Federal tax credits are gone, but Michigan&apos;s <strong>$210 million</strong> MiHER
-            program offers up to <strong>$8,000</strong> per heat pump for qualifying households.
-            Utility rebates add <strong>$200–$3,000</strong> depending on your provider. Ann
-            Arbor stacks even higher. This guide covers all major Michigan heat pump
-            incentives available in 2026, including MiHER HEAR and HOMES, utility
-            rebates from DTE, Consumers Energy, TCLP, and BWL, plus Ann Arbor&apos;s
-            A2ZERO program. Here&apos;s what&apos;s actually available.
+            program offers up to <strong>$8,000</strong> per heat pump for income-qualified
+            households — with applications currently limited to low- to moderate-income
+            households, and new income-qualified applications paused in the EGLE Detroit
+            District. Utility rebates add <strong>$150–$1,200</strong> from DTE and Consumers
+            Energy. This guide covers all major Michigan heat pump incentives available
+            in 2026, including MiHER HEAR and HOMES, utility rebates from DTE, Consumers
+            Energy, TCLP, and BWL, plus Ann Arbor&apos;s A2ZERO program. Here&apos;s
+            what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
             Updated {formattedDate} — verified against official program sources
@@ -146,22 +148,28 @@ export default function MichiganPage() {
                 Up to <strong>$8,000</strong> per heat pump at point of sale for households
                 ≤150% AMI. Enhanced rebates (100% of costs) for ≤80% AMI. Covers
                 fuel-switching from gas/propane. <strong>$14,000</strong> total household cap.
+                As of July 2026, applications are open to low- to moderate-income households
+                only, and new income-qualified applications are paused in the EGLE Detroit
+                District.
               </p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Utility Rebates</p>
               <p className="text-sm text-green-900">
                 DTE Energy up to <strong>$1,200</strong>. Consumers Energy <strong>$300–$350</strong>.
-                TCLP up to <strong>$3,000</strong>. BWL up to <strong>$600</strong>. Ann Arbor A2ZERO
-                adds <strong>$4,000–$5,500</strong>. All stack with MiHER.
+                BWL up to <strong>$600</strong>. All stack with MiHER. TCLP&apos;s up-to-<strong>$3,000</strong> rebate
+                and Ann Arbor A2ZERO&apos;s <strong>$4,000–$5,500</strong> both belong to 2025–26
+                program years that ended June 30, 2026 — new schedules were pending as of July 2026.
               </p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Total Potential Savings</p>
               <p className="text-sm text-green-900">
-                $600 (above 150% AMI, utility only) to $14,700+ (low income, Ann Arbor).
-                Full electrification packages with HEAR + A2ZERO + DTE can reach
-                ~$14,700 total incentives.
+                Up to ~$9,200 today for income-qualified households (HEAR $8,000 + DTE
+                $1,200 where eligible). Households above 150% AMI are currently limited
+                to utility rebates ($150–$1,200, and only when replacing existing electric
+                heat). If A2ZERO renews at prior levels, low-income Ann Arbor stacks can
+                again reach ~$14,700.
               </p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
@@ -174,10 +182,14 @@ export default function MichiganPage() {
             <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 md:col-span-2">
               <p className="font-semibold text-amber-800 mb-1">⚠ DTE and Consumers Energy Restrict Gas-to-Electric Conversions</p>
               <p className="text-sm text-amber-900">
-                Michigan&apos;s two largest utilities restrict most heat pump rebates to
-                customers replacing existing electric heating — not gas furnaces. Since
-                most Michigan homes heat with gas, this pushes fuel-switching households
-                toward MiHER HEAR, which specifically covers gas-to-electric conversions.
+                Michigan&apos;s two largest utilities exclude gas-to-electric conversions.
+                DTE limits heat pump rebates to electric customers replacing existing
+                electric heating. Consumers Energy is stricter: ducted air-source and
+                ground-source rebates require replacing an existing heat pump, and only
+                the mini-split rebate allows replacing any primary electric heat system.
+                Since most Michigan homes heat with gas, this pushes fuel-switching
+                households toward MiHER HEAR, which specifically covers gas-to-electric
+                conversions.
               </p>
             </div>
           </div>
@@ -199,7 +211,7 @@ export default function MichiganPage() {
               defines the expenditure date as when installation is completed, not when
               equipment is purchased or paid for. For 25D, unused credit from
               qualifying 2025 expenditures can be carried forward to future tax
-              years. Section 25C offers no carryforward. As of June 2026, no
+              years. Section 25C offers no carryforward. As of July 2026, no
               replacement federal heat pump credit is active.{" "}
               <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">
                 Full details on the federal credit expiration →
@@ -222,6 +234,21 @@ export default function MichiganPage() {
             funding: <strong>$210 million</strong>. CLEAResult handles implementation and
             application processing (call center: 855-510-7080).
           </p>
+
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
+            <p className="font-semibold text-amber-800 mb-1">⚠ Current Application Status (July 2026)</p>
+            <p className="text-sm text-amber-900">
+              EGLE states that applications are currently open to <strong>low- to
+              moderate-income households only</strong> — households above 150% AMI cannot
+              currently apply. In addition, new income-qualified applications for
+              properties in the <strong>EGLE Detroit District</strong> are temporarily
+              suspended while the program reviews submitted applications against its
+              regional funding allocations; Detroit District participation is approaching
+              the program&apos;s single-family funding cap. Applications already submitted
+              continue to be processed, and applicants whose applications expire during
+              the suspension will be permitted to reapply once intake reopens.
+            </p>
+          </div>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">
             HEAR (Home Electrification and Appliance Rebates)
@@ -300,7 +327,7 @@ export default function MichiganPage() {
                 <tr className="border-b">
                   <td className="p-3">&gt;150% AMI</td>
                   <td className="p-3 text-gray-500">Not eligible for HEAR</td>
-                  <td className="p-3 text-gray-500">No — HOMES only</td>
+                  <td className="p-3 text-gray-500">No — and cannot currently apply to MiHER at all (as of July 2026)</td>
                 </tr>
               </tbody>
             </table>
@@ -325,7 +352,9 @@ export default function MichiganPage() {
           </h3>
           <p className="text-gray-700 leading-relaxed mb-4">
             Whole-home performance approach. Rebates scale with modeled energy savings.
-            Available at all income levels — the main option for households above 150% AMI.
+            HOMES was designed to serve all income levels, but as of July 2026 EGLE is
+            accepting MiHER applications from low- to moderate-income households only —
+            so households above 150% AMI cannot currently access HOMES either.
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
@@ -367,20 +396,24 @@ export default function MichiganPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Utility Rebates</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Michigan&apos;s utility rebates vary enormously.{" "}
-            <strong>DTE and Consumers Energy restrict most heat pump rebates to
-            customers replacing existing electric heating</strong>, not gas-to-electric
-            conversions. Since most Michigan homes heat with natural gas, this pushes
+            Michigan&apos;s utility rebates vary enormously, and{" "}
+            <strong>neither DTE nor Consumers Energy covers gas-to-electric
+            conversions</strong>. DTE limits heat pump rebates to electric customers
+            replacing existing electric heating; Consumers Energy requires replacement
+            of an existing heat pump for its ducted air-source and ground-source rebates
+            (only its mini-split rebate allows replacing any primary electric heat
+            system). Since most Michigan homes heat with natural gas, this pushes
             fuel-switching households toward MiHER HEAR.
           </p>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-6">
-            <p className="font-semibold text-blue-800 mb-1">Traverse City Offers Michigan&apos;s Best Utility Rebates</p>
+            <p className="font-semibold text-blue-800 mb-1">Traverse City Has Offered Michigan&apos;s Best Utility Rebates</p>
             <p className="text-sm text-blue-900">
-              TCLP customers can receive up to <strong>$3,000</strong> per cold-climate heat pump
-              system — far more than DTE&apos;s $1,200 or Consumers Energy&apos;s $350. TCLP
-              also offers on-bill financing ($5,000–$30,000). If you&apos;re in the Traverse
-              City area, the utility rebate alone covers a significant portion of project cost.
+              TCLP&apos;s 2025–26 program year paid up to <strong>$3,000</strong> per cold-climate
+              heat pump system — far more than DTE&apos;s $1,200 or Consumers Energy&apos;s $350.
+              That program year ended June 30, 2026, and TCLP had not posted a new-year
+              schedule as of July 2026; confirm current amounts at 231-922-4940 before
+              purchase. TCLP also offers on-bill financing ($5,000–$30,000).
             </p>
           </div>
 
@@ -420,8 +453,9 @@ export default function MichiganPage() {
           </div>
           <p className="text-sm text-gray-500 mb-6">
             All equipment must be AHRI-certified matched systems. Rebates
-            limited to customers replacing existing electric heating. Monitor
-            fund availability — DTE shows a 20% funding indicator.
+            limited to customers replacing existing electric heating. Funds are
+            first-come, first-served and limited — DTE&apos;s rebate page shows a live
+            funds-remaining gauge, so check availability before committing.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Consumers Energy</h3>
@@ -451,12 +485,16 @@ export default function MichiganPage() {
             </table>
           </div>
           <p className="text-sm text-gray-500 mb-6">
-            2026 program runs through December 31, 2026 or until funds are
-            exhausted. Does not differentiate between cold-climate and standard ASHPs.
+            2026 program covers installs January 1 – December 31, 2026, first-come,
+            first-served while funds last. Does not differentiate between cold-climate
+            and standard ASHPs. Eligibility is narrow: the ducted ASHP and ground-source
+            rebates require replacement of an existing heat pump; the mini-split rebate
+            allows replacement of any primary electric heat system. Equipment must be
+            installed by a participating Trade Ally, who submits the application.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Traverse City Light &amp; Power (TCLP)</h3>
-          <p className="text-sm text-gray-500 mb-4">Traverse City area — Michigan&apos;s most generous utility rebates</p>
+          <p className="text-sm text-gray-500 mb-4">Traverse City area — Michigan&apos;s most generous utility rebates in 2025–26; new program year pending</p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
               <thead>
@@ -490,7 +528,11 @@ export default function MichiganPage() {
             </table>
           </div>
           <p className="text-sm text-gray-500 mb-6">
-            Program year: July 1, 2025 – June 30, 2026. On-bill financing available ($5,000–$30,000).
+            Amounts above are from TCLP&apos;s 2025–26 program year (July 1, 2025 – June 30,
+            2026), which has ended; TCLP had not posted a 2026–27 schedule as of July 2026.
+            The panel upgrade rebate required installation of an EV charger or a 240V
+            appliance. On-bill financing available ($5,000–$30,000). Confirm current
+            offers at 231-922-4940.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Lansing Board of Water &amp; Light (BWL)</h3>
@@ -552,7 +594,7 @@ export default function MichiganPage() {
             Ann Arbor: A2ZERO Home Energy Rebate Program
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Ann Arbor operates Michigan&apos;s only major city-level heat pump incentive, funded by a voter-approved Community Climate Action Millage ($1.9M annually). Dual-fuel systems (heat pump + gas furnace backup) are not eligible — the program pushes toward full electrification. Equipment must be NEEP-listed with minimum SEER2 15.2 and HSPF2 8.0.
+            Ann Arbor operates Michigan&apos;s only major city-level heat pump incentive, funded by a voter-approved Community Climate Action Millage ($1.9M annually). Dual-fuel systems (heat pump + gas furnace backup) are not eligible — the program pushes toward full electrification. Equipment must be NEEP-listed with minimum SEER2 15.2 and HSPF2 8.0. Rebates are capped at 90% of project cost; up to two mini-split systems per address can each earn the heat pump rebate. The amounts below are from the 2025–26 program year, which closed June 30, 2026 — see the note under the table.
           </p>
 
           <div className="overflow-x-auto mb-6">
@@ -589,7 +631,12 @@ export default function MichiganPage() {
             </table>
           </div>
           <p className="text-sm text-gray-500">
-            Program runs through June 30, 2026 with plans for annual renewal. Ann Arbor explicitly encourages stacking A2ZERO with MiHER and utility rebates.
+            The 2025–26 program year closed June 30, 2026 — rebate amounts were valid
+            through that date, and applications were due by it. The city has said it
+            plans to offer these rebates in future years under the Community Climate
+            Action Millage, but a 2026–27 application had not been posted as of July
+            2026; check osi.a2gov.org/rebates for the new program year. Ann Arbor
+            explicitly encourages stacking A2ZERO with MiHER and utility rebates.
           </p>
         </div>
       </section>
@@ -599,60 +646,63 @@ export default function MichiganPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">How Programs Stack</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Utility rebates, MiHER (HOMES/HEAR), and A2ZERO draw from different funding sources and can stack. The key constraint: HOMES and HEAR cannot cover the same measure. Scenario: <strong>$17,500</strong> whole-home ducted cold-climate ASHP installation.
+            Utility rebates, MiHER (HOMES/HEAR), and A2ZERO draw from different funding sources and can stack. The key constraint: HOMES and HEAR cannot cover the same measure. Two program-status caveats shape every scenario as of July 2026: MiHER applications are open to low- to moderate-income households only (with new income-qualified applications paused in the EGLE Detroit District), and A2ZERO is between program years. Scenario: <strong>$17,500</strong> whole-home ducted cold-climate ASHP installation.
           </p>
 
           <div className="space-y-4 mb-8">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900 mb-2">Above 150% AMI — HOMES + Utility</p>
+              <p className="font-semibold text-gray-900 mb-2">Above 150% AMI — Utility Only (for now)</p>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>HEAR: not eligible</li>
-                <li>HOMES: up to $4,000 (if 35%+ savings)</li>
-                <li>Utility rebate: $300–$1,200</li>
+                <li>HOMES: not currently available — MiHER applications are limited to ≤150% AMI households as of July 2026</li>
+                <li>Utility rebate: $150–$1,200 (DTE, only when replacing existing electric heating; Consumers only when replacing an existing heat pump or, for mini-splits, electric heat)</li>
                 <li>Federal 25C/25D: $0 (expired)</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$600–$5,200</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: $0–$1,200 (often $0 for gas-heated homes)</p>
             </div>
 
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900 mb-2">Above 150% AMI in Ann Arbor</p>
               <ul className="text-sm text-gray-700 space-y-1">
-                <li>HOMES: up to $4,000 (if 35%+ savings)</li>
-                <li>A2ZERO (market rate): $4,000</li>
-                <li>DTE rebate: up to $1,200</li>
+                <li>HOMES: not currently available (see above)</li>
+                <li>A2ZERO (market rate, $4,000 in 2025–26): between program years — renewal planned but not yet posted</li>
+                <li>DTE rebate: up to $1,200 (electric-heat replacements only)</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$9,200</p>
-            </div>
-
-            <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900 mb-2">80–150% AMI — HEAR + Utility</p>
-              <ul className="text-sm text-gray-700 space-y-1">
-                <li>HEAR heat pump rebate: up to $8,000</li>
-                <li>DTE or Consumers rebate: $300–$1,200</li>
-              </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$8,300–$9,200</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum today: $0–$1,200; ~$5,200 if A2ZERO renews at prior levels</p>
             </div>
 
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-2">Below 80% AMI in Ann Arbor — Best Case</p>
+              <p className="font-semibold text-green-800 mb-2">80–150% AMI — HEAR + Utility (the live stack)</p>
               <ul className="text-sm text-green-900 space-y-1">
-                <li>HEAR heat pump rebate: up to $8,000</li>
-                <li>A2ZERO (income-qualified): $5,500</li>
-                <li>DTE rebate: up to $1,200</li>
+                <li>HEAR heat pump rebate: up to $8,000 (new applications paused in the EGLE Detroit District)</li>
+                <li>DTE or Consumers rebate: $150–$1,200 where the replacement rules above are met</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$14,700</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$8,000–$9,200</p>
+            </div>
+
+            <div className="bg-white border border-gray-200 rounded-lg p-5">
+              <p className="font-semibold text-gray-900 mb-2">Below 80% AMI in Ann Arbor — Best Case (when A2ZERO reopens)</p>
+              <ul className="text-sm text-gray-700 space-y-1">
+                <li>HEAR heat pump rebate: up to $8,000 (up to 100% of approved costs at this income tier)</li>
+                <li>A2ZERO (income-qualified, $5,500 in 2025–26): between program years</li>
+                <li>DTE rebate: up to $1,200 (electric-heat replacements only)</li>
+              </ul>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum today: ~$9,200; ~$14,700 if A2ZERO renews at prior levels</p>
             </div>
           </div>
 
           <div className="bg-gray-100 rounded-lg p-5 mb-6">
             <p className="font-semibold text-gray-900 mb-1">What You&apos;ll Actually Pay</p>
             <p className="text-sm text-gray-700">
-              On a <strong>$17,500</strong> project: <strong>$2,800 (low-income Ann Arbor) to $16,900 (above 150% AMI, utility rebate only) out of pocket</strong>. Most qualifying households (≤150% AMI) will see $8,000–$9,000 in MiHER incentives alone. The loss of the $2,000 Section 25C credit is most acutely felt by households above 150% AMI. No state tax credit exists for air-source heat pumps in Michigan.
+              On a <strong>$17,500</strong> project as of July 2026: <strong>roughly $8,300 (income-qualified with HEAR $8,000 + DTE $1,200) up to the full $17,500 (above 150% AMI in a gas-heated home, where no rebate currently applies)</strong>. Qualifying households (≤150% AMI, outside the paused Detroit District) will see up to $8,000 in MiHER incentives on the heat pump itself — and households ≤80% AMI can have up to 100% of approved costs covered within HEAR&apos;s caps. If A2ZERO reopens at prior levels, low-income Ann Arbor out-of-pocket can fall to ~$2,800. The loss of the $2,000 Section 25C credit is most acutely felt by households above 150% AMI, who currently have no MiHER path at all. No state tax credit exists for air-source heat pumps in Michigan.
             </p>
           </div>
 
           <p className="text-sm text-gray-500">
-            The 25C loss adds ~$2,000 to out-of-pocket for above-150% AMI households. HOMES partially offsets this for whole-home projects achieving 35%+ energy savings.
+            The 25C loss adds ~$2,000 to out-of-pocket for above-150% AMI households.
+            HOMES was designed to partially offset this for whole-home projects achieving
+            35%+ energy savings, but is not currently open to that income group while
+            MiHER intake is limited to low- to moderate-income households.
           </p>
         </div>
       </section>
@@ -675,7 +725,7 @@ export default function MichiganPage() {
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
             <p className="font-semibold text-green-800 mb-1">✓ Best Candidates for Heat Pumps in Michigan</p>
             <p className="text-sm text-green-900">
-              Households ≤150% AMI who qualify for MiHER HEAR (up to $8,000). Homeowners switching from propane or fuel oil in rural and northern Michigan (largest operating cost savings). Ann Arbor residents who can stack A2ZERO + MiHER + DTE. TCLP customers in Traverse City (up to $3,000 utility rebate alone). Low-income households who may qualify for both WAP and HEAR.
+              Households ≤150% AMI who qualify for MiHER HEAR (up to $8,000), outside the paused EGLE Detroit District. Homeowners switching from propane or fuel oil in rural and northern Michigan (largest operating cost savings). Ann Arbor residents, once A2ZERO&apos;s next program year opens, who can stack A2ZERO + MiHER + DTE. TCLP customers in Traverse City if TCLP renews its up-to-$3,000 rebate. Low-income households who may qualify for both WAP and HEAR.
             </p>
           </div>
         </div>
@@ -744,7 +794,7 @@ export default function MichiganPage() {
               <div className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-bold">1</div>
               <div>
                 <p className="font-semibold text-gray-900">Check your income eligibility</p>
-                <p className="text-sm text-gray-700">HEAR requires ≤150% AMI. Enhanced rebates at ≤80% AMI. Use your household size and county to determine your AMI level.</p>
+                <p className="text-sm text-gray-700">HEAR requires ≤150% AMI. Enhanced rebates at ≤80% AMI. Use your household size and county to determine your AMI level. As of July 2026, MiHER applications are open to low- to moderate-income households only, and new income-qualified applications are paused for properties in the EGLE Detroit District.</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -765,7 +815,7 @@ export default function MichiganPage() {
               <div className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-bold">4</div>
               <div>
                 <p className="font-semibold text-gray-900">Apply for your utility rebate separately</p>
-                <p className="text-sm text-gray-700">Utility rebates use their own application processes. Your contractor can often help with this. Ann Arbor residents should also apply for A2ZERO through the City of Ann Arbor — it stacks with MiHER and utility rebates.</p>
+                <p className="text-sm text-gray-700">Utility rebates use their own application processes. Your contractor can often help with this. Ann Arbor residents should also watch for A2ZERO&apos;s next program year through the City of Ann Arbor — it stacks with MiHER and utility rebates when open.</p>
               </div>
             </div>
           </div>
@@ -778,20 +828,24 @@ export default function MichiganPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">What to Watch</h2>
           <div className="space-y-4">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
+              <p className="font-semibold text-gray-900">MiHER Intake Restrictions</p>
+              <p className="text-sm text-gray-600 mt-1">As of July 2026, MiHER applications are open to low- to moderate-income households only, and new income-qualified applications are paused in the EGLE Detroit District while the program assesses participation against its regional funding allocations. EGLE has said the Detroit District will reopen if its assessment finds sufficient capacity, and that applicants whose applications expire during the pause can reapply once intake reopens. Either restriction lifting — or the pause widening — changes this page&apos;s numbers.</p>
+            </div>
+            <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">IRA Funding Runway</p>
-              <p className="text-sm text-gray-600 mt-1">MiHER&apos;s $210 million in IRA funding is expected to last until September 2031 or until depleted. Federal policy changes could affect the timeline. Monitor fund levels at michigan.gov/egle or call 855-510-7080.</p>
+              <p className="text-sm text-gray-600 mt-1">MiHER&apos;s $210 million in IRA funding is expected to last until September 2031 or until depleted — and the Detroit District pause shows regional allocations can bind much sooner. Federal policy changes could affect the timeline. Monitor fund levels at michigan.gov/egle or call 855-510-7080.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900">DTE Funding Indicator</p>
-              <p className="text-sm text-gray-600 mt-1">DTE shows a 20% funding indicator for its heat pump rebate program. When funds run out, the program pauses until the next cycle. Check availability before committing to a project.</p>
+              <p className="font-semibold text-gray-900">DTE Funding Availability</p>
+              <p className="text-sm text-gray-600 mt-1">DTE rebate funds are first-come, first-served and limited; DTE&apos;s rebate page displays a live funds-remaining gauge. When funds run out, the program pauses until the next cycle. Check availability before committing to a project.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900">A2ZERO Program Renewal</p>
-              <p className="text-sm text-gray-600 mt-1">Ann Arbor&apos;s A2ZERO program runs through June 30, 2026 with plans for annual renewal. Budget and rebate amounts may change for the next program year.</p>
+              <p className="font-semibold text-gray-900">TCLP and A2ZERO New Program Years</p>
+              <p className="text-sm text-gray-600 mt-1">Both TCLP&apos;s residential incentive program and Ann Arbor&apos;s A2ZERO rebates ran on program years that ended June 30, 2026. Ann Arbor has said it plans to offer rebates in future years under the Community Climate Action Millage; TCLP&apos;s posted measures list still shows the 2025–26 year. New schedules for either could raise or change the amounts on this page.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Utility Gas-to-Electric Policy</p>
-              <p className="text-sm text-gray-600 mt-1">DTE and Consumers Energy currently restrict most heat pump rebates to electric-to-electric replacements. If either utility expands to cover gas-to-electric fuel-switching, it would significantly change the rebate landscape for most Michigan homeowners.</p>
+              <p className="text-sm text-gray-600 mt-1">DTE currently limits heat pump rebates to electric-heat replacements, and Consumers Energy requires an existing heat pump for its ducted and ground-source rebates. If either utility expands to cover gas-to-electric fuel-switching, it would significantly change the rebate landscape for most Michigan homeowners.</p>
             </div>
           </div>
         </div>

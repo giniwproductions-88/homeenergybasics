@@ -669,10 +669,10 @@ export const incentives: Record<StateCode, StateIncentive> = {
   MI: {
     stateCode: "MI",
     stateName: "Michigan",
-    status: "open",
-    lastVerified: "2026-06-03",
+    status: "limited",
+    lastVerified: "2026-07-13",
     summary:
-      "Michigan's $210 million MiHER program offers up to $8,000 for heat pumps at point of sale for income-qualifying households (≤150% AMI). DTE Energy rebates run $150–$1,200. Consumers Energy offers $300–$350. Traverse City Light & Power offers up to $3,000. Ann Arbor's A2ZERO adds $4,000–$5,500. Federal tax credits (25C/25D) ended December 31, 2025.",
+      "Michigan's $210 million MiHER program offers up to $8,000 for heat pumps at point of sale — but as of July 2026, applications are open to low- to moderate-income households (≤150% AMI) only, and new income-qualified applications are paused in the EGLE Detroit District. DTE Energy rebates run $150–$1,200 (electric-heat replacements only). Consumers Energy offers $300–$350 (existing-heat-pump replacements for ducted/GSHP). TCLP's up-to-$3,000 rebate and Ann Arbor A2ZERO's $4,000–$5,500 belong to 2025–26 program years that ended June 30, 2026; new schedules were pending. Federal tax credits (25C/25D) ended December 31, 2025.",
     sources: [
       {
         label: "MiHER Home Energy Rebates (EGLE)",
@@ -683,23 +683,27 @@ export const incentives: Record<StateCode, StateIncentive> = {
         url: "https://www.michigan.gov/egle/about/organization/materials-management/energy/rfps-loans/home-energy-rebate-programs/get-rebate",
       },
       {
+        label: "MiHER Program Status Notice (CLEAResult Help Center)",
+        url: "https://mienergyrebates.clearesult.com/help-center",
+      },
+      {
         label: "DTE Energy Heat Pump Rebates",
         url: "https://www.dteenergy.com/us/en/residential/save-money-energy/rebates-and-offers/air-conditioners.html",
       },
       {
-        label: "Consumers Energy Heating & Cooling Rebates",
-        url: "https://www.consumersenergy.com/residential/save-money-and-energy/rebates/heating-and-cooling",
+        label: "Consumers Energy 2026 Qualifying Measures (PDF)",
+        url: "https://www.consumersenergy.com/-/media/CE/Documents/residential/save-money-and-energy/rebates/hvac/res-programs.pdf",
       },
       {
-        label: "TCLP Residential Incentives (2025–2026 PDF)",
-        url: "https://www.tclp.org/wp-content/uploads/2026/03/Energy-Rewards-Residential-Measures-Updated.pdf",
+        label: "TCLP Residential Incentives (2025–2026 PDF, program year ended June 30, 2026)",
+        url: "https://www.tclp.org/wp-content/uploads/2026/04/Energy-Rewards-Residential-Measures-Updated.pdf",
       },
       {
         label: "Lansing BWL 2026 Rebate Application",
         url: "https://www.lbwl.com/sites/default/files/documents/BWL%20HES_Residential%20Application_2026_v01.09.pdf",
       },
       {
-        label: "Ann Arbor A2ZERO Home Energy Rebates",
+        label: "Ann Arbor A2ZERO Home Energy Rebates (2025–26 year closed June 30, 2026)",
         url: "https://www.a2gov.org/sustainability-innovations-home/sustainability-me/for-families-individuals/home-energy-rebates/",
       },
       {
