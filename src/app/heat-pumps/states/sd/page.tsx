@@ -435,7 +435,7 @@ export default function SouthDakotaPage() {
               <p className="font-semibold text-green-800 mb-2">Below 80% AMI — Weatherization Assistance Program</p>
               <ul className="text-sm text-green-900 space-y-1">
                 <li>WAP may cover full heating system replacement at no cost</li>
-                <li>Income threshold: ~$31,300/year (single) or ~$64,300/year (family of 4)</li>
+                <li>Income threshold: ~$31,920/year (single) or ~$66,000/year (family of 4)</li>
                 <li>Priority: elderly, disabled, families with children</li>
                 <li>Contact: 800-233-8503</li>
               </ul>
@@ -459,7 +459,7 @@ export default function SouthDakotaPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Weatherization Assistance Program</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            The federal Weatherization Assistance Program (WAP) is administered in South Dakota by the Department of Social Services. Services are free for income-eligible households at or below 200% of the Federal Poverty Level — approximately <strong>$31,300 annually</strong> for a single person and <strong>$64,300</strong> for a family of four.
+            The federal Weatherization Assistance Program (WAP) is administered in South Dakota by the Department of Social Services. Services are free for income-eligible households at or below 200% of the Federal Poverty Level — <strong>$31,920 annually</strong> for a single person and <strong>$66,000</strong> for a family of four under the 2026 federal poverty guidelines.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
             WAP can cover heating system replacement when the existing system is non-functional, and federal rules permit heat pump installation when cost-effective. However, the program typically replaces like-with-like. Priority goes to elderly, disabled, and families with children.

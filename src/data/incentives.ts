@@ -1936,7 +1936,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
       },
       {
         label: "SD Dept. of Social Services \u2014 Weatherization",
-        url: "https://dss.sd.gov/economicassistance/energy_weatherization_assistance.aspx",
+        url: "https://dss.sd.gov/economicassistance/energyassistance/weatherization.aspx",
       },
     ],
   },
