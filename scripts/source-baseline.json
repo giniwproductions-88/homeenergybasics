@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-09T17:58:09.673Z",
+ "generatedAt": "2026-07-14T17:20:44.420Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -482,7 +482,7 @@
     "MO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T17:56:59.938Z",
+   "fetchedAt": "2026-07-14T17:02:01.588Z",
    "length": 114446,
    "kind": "html",
    "textHash": "5f26bc2d77d90d83",
@@ -660,8 +660,8 @@
     "ME"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T16:30:41.199Z",
-   "length": 77898,
+   "fetchedAt": "2026-07-14T17:02:03.449Z",
+   "length": 77900,
    "kind": "html",
    "textHash": "b04fa28fbf53f41c",
    "dollars": [
@@ -772,13 +772,13 @@
   "https://www.energytrust.org/residential/heating-cooling/": {
    "url": "https://www.energytrust.org/residential/heating-cooling/",
    "finalUrl": "https://www.energytrust.org/residential/heating-cooling/",
-   "label": "Energy Trust of Oregon — Heating & Cooling",
+   "label": "Energy Trust of Oregon — Heating & Cooling (rebate amounts)",
    "states": [
     "OR"
    ],
    "httpStatus": 404,
-   "fetchedAt": "2026-07-09T15:14:28.111Z",
-   "length": 269332,
+   "fetchedAt": "2026-07-14T17:02:07.722Z",
+   "length": 242048,
    "error": "HTTP 404"
   },
   "https://www.oregon.gov/energy/incentives/pages/home-energy-rebates.aspx": {
@@ -789,8 +789,8 @@
     "OR"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:26.983Z",
-   "length": 85242,
+   "fetchedAt": "2026-07-14T17:02:09.618Z",
+   "length": 86801,
    "kind": "html",
    "textHash": "5c67aa54aea2a4a1",
    "dollars": [
@@ -809,7 +809,7 @@
     "OR"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:27.010Z",
+   "fetchedAt": "2026-07-14T17:02:09.586Z",
    "length": 99689,
    "kind": "html",
    "textHash": "a6fb3b98e6b2c317",
@@ -1162,8 +1162,8 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:32.343Z",
-   "length": 104421,
+   "fetchedAt": "2026-07-14T17:02:18.040Z",
+   "length": 104415,
    "kind": "html",
    "textHash": "4eccf379136ac51b",
    "dollars": [
@@ -1195,8 +1195,8 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:32.490Z",
-   "length": 129021,
+   "fetchedAt": "2026-07-14T17:02:18.278Z",
+   "length": 129015,
    "kind": "html",
    "textHash": "3e353a410f3efaf5",
    "dollars": [
@@ -1217,8 +1217,8 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:32.621Z",
-   "length": 79221,
+   "fetchedAt": "2026-07-14T17:02:18.734Z",
+   "length": 79198,
    "kind": "html",
    "textHash": "e09bbb5dc25aa784",
    "dollars": [
@@ -1249,8 +1249,8 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:33.256Z",
-   "length": 359436,
+   "fetchedAt": "2026-07-14T17:02:20.468Z",
+   "length": 359494,
    "kind": "html",
    "textHash": "ca7b531bda525ec3",
    "dollars": [],
@@ -1264,7 +1264,7 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:32.884Z",
+   "fetchedAt": "2026-07-14T17:02:19.406Z",
    "length": 599473,
    "kind": "html",
    "textHash": "25a26d2be8a0a801",
@@ -1284,8 +1284,8 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:33.125Z",
-   "length": 782741,
+   "fetchedAt": "2026-07-14T17:02:20.095Z",
+   "length": 782859,
    "kind": "html",
    "textHash": "62867137a6a9dfaf",
    "dollars": [
@@ -1340,8 +1340,8 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:32.681Z",
-   "length": 98190,
+   "fetchedAt": "2026-07-14T17:02:20.519Z",
+   "length": 98184,
    "kind": "html",
    "textHash": "ddd5d082db6d6866",
    "dollars": [],
@@ -1355,10 +1355,10 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:34.211Z",
-   "length": 311899,
+   "fetchedAt": "2026-07-14T17:02:22.771Z",
+   "length": 313600,
    "kind": "html",
-   "textHash": "1f4711bf3409ca32",
+   "textHash": "01f92ae917b84e76",
    "dollars": [
     "$2",
     "$5",
@@ -2131,10 +2131,10 @@
     "MI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:37.640Z",
-   "length": 393249,
+   "fetchedAt": "2026-07-14T17:02:30.730Z",
+   "length": 391631,
    "kind": "html",
-   "textHash": "6657949115c3dfff",
+   "textHash": "a23877ee988d4d02",
    "dollars": [
     "$105"
    ],
@@ -2150,10 +2150,10 @@
     "MI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:37.823Z",
-   "length": 416423,
+   "fetchedAt": "2026-07-14T17:02:29.540Z",
+   "length": 414811,
    "kind": "html",
-   "textHash": "e19ac7d21e3d55ab",
+   "textHash": "6583a04c153868b4",
    "dollars": [],
    "keywords": {
     "accepting applications": 1
@@ -2167,7 +2167,7 @@
     "MI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:38.236Z",
+   "fetchedAt": "2026-07-14T17:02:30.861Z",
    "length": 597811,
    "kind": "html",
    "textHash": "a370fa48f8b7ca62",
@@ -2233,7 +2233,7 @@
     "MI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:38.368Z",
+   "fetchedAt": "2026-07-14T17:02:31.718Z",
    "length": 329906,
    "kind": "pdf",
    "bytesHash": "e97b9669bcf081ca"
@@ -2241,12 +2241,12 @@
   "https://www.a2gov.org/sustainability-innovations-home/sustainability-me/for-families-individuals/home-energy-rebates/": {
    "url": "https://www.a2gov.org/sustainability-innovations-home/sustainability-me/for-families-individuals/home-energy-rebates/",
    "finalUrl": "https://www.a2gov.org/sustainability-innovations-home/sustainability-me/for-families-individuals/a2zero-rebates/",
-   "label": "Ann Arbor A2ZERO Home Energy Rebates",
+   "label": "Ann Arbor A2ZERO Home Energy Rebates (2025–26 year closed June 30, 2026)",
    "states": [
     "MI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:38.828Z",
+   "fetchedAt": "2026-07-14T17:02:32.013Z",
    "length": 116209,
    "kind": "html",
    "textHash": "08486e2474abca08",
@@ -2286,10 +2286,10 @@
     "MI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:39.014Z",
-   "length": 294648,
+   "fetchedAt": "2026-07-14T17:02:31.620Z",
+   "length": 294652,
    "kind": "html",
-   "textHash": "af74215d8c37778d",
+   "textHash": "eecf24d83ec73fe5",
    "dollars": [
     "$1,000",
     "$4,999",
@@ -2311,10 +2311,10 @@
     "PA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:39.583Z",
+   "fetchedAt": "2026-07-14T17:02:32.791Z",
    "length": 451811,
    "kind": "html",
-   "textHash": "90d70b29c1bf8d20",
+   "textHash": "dee34f3dce5f8d4e",
    "dollars": [
     "$3",
     "$4",
@@ -2341,7 +2341,7 @@
     "PA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:39.160Z",
+   "fetchedAt": "2026-07-14T17:02:32.338Z",
    "length": 193453,
    "kind": "html",
    "textHash": "261c7514084ea8e6",
@@ -2356,10 +2356,10 @@
     "PA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:39.481Z",
-   "length": 59948,
+   "fetchedAt": "2026-07-14T17:02:32.621Z",
+   "length": 59100,
    "kind": "html",
-   "textHash": "8919b618e15e3674",
+   "textHash": "d422d2eed11d5230",
    "dollars": [
     "$0",
     "$44",
@@ -2391,15 +2391,15 @@
   "https://www.eap.org/rebate/2026-hvac-rebate": {
    "url": "https://www.eap.org/rebate/2026-hvac-rebate",
    "finalUrl": "https://www.eap.org/rebate/2026-hvac-rebate",
-   "label": "EAP Residential HVAC Rebate Program",
+   "label": "EAP Residential HVAC Rebate Program (2026, incl. Fall program)",
    "states": [
     "PA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:39.439Z",
-   "length": 225410,
+   "fetchedAt": "2026-07-14T17:02:33.144Z",
+   "length": 223872,
    "kind": "html",
-   "textHash": "003c4a36a955d7c6",
+   "textHash": "f1ba56eb3a769071",
    "dollars": [
     "$200",
     "$250",
@@ -2419,8 +2419,8 @@
     "PA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:51.921Z",
-   "length": 146511,
+   "fetchedAt": "2026-07-14T17:02:34.478Z",
+   "length": 149439,
    "kind": "html",
    "textHash": "63ee48180d93fa80",
    "dollars": [
@@ -2450,7 +2450,7 @@
    "states": [
     "PA"
    ],
-   "fetchedAt": "2026-07-09T15:14:40.976Z",
+   "fetchedAt": "2026-07-14T17:02:35.828Z",
    "error": "fetch failed"
   },
   "https://www.ugi.com/rebates-for-home/electric/equipment-rebate-program/": {
@@ -2461,7 +2461,7 @@
     "PA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:40.022Z",
+   "fetchedAt": "2026-07-14T17:02:35.177Z",
    "length": 151121,
    "kind": "html",
    "textHash": "dc7f0a5c58be1192",
@@ -2484,16 +2484,19 @@
     "PA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:40.929Z",
-   "length": 42083,
+   "fetchedAt": "2026-07-14T17:02:36.667Z",
+   "length": 41858,
    "kind": "html",
-   "textHash": "5c2c2769f801e3fa",
+   "textHash": "e41dfc157ffcf097",
    "dollars": [
     "$1",
     "$14",
-    "$14.99"
+    "$14.99",
+    "$30"
    ],
-   "keywords": {}
+   "keywords": {
+    "closed": 1
+   }
   },
   "https://www.puc.pa.gov/press-release/2025/puc-approves-next-phase-of-state-energy-efficiency-program-06182025": {
    "url": "https://www.puc.pa.gov/press-release/2025/puc-approves-next-phase-of-state-energy-efficiency-program-06182025",
@@ -2503,7 +2506,7 @@
     "PA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:40.286Z",
+   "fetchedAt": "2026-07-14T17:02:36.046Z",
    "length": 49394,
    "kind": "html",
    "textHash": "1f71b6bc802492ea",
@@ -3154,7 +3157,7 @@
     "NH"
    ],
    "httpStatus": 403,
-   "fetchedAt": "2026-07-09T16:30:44.738Z",
+   "fetchedAt": "2026-07-14T17:02:06.312Z",
    "length": 1142269,
    "error": "HTTP 403"
   },
@@ -7864,8 +7867,8 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T16:04:48.284Z",
-   "length": 101170,
+   "fetchedAt": "2026-07-14T17:02:04.910Z",
+   "length": 101098,
    "kind": "html",
    "textHash": "6bd1264089a8a5b8",
    "dollars": [
@@ -7896,8 +7899,8 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T16:04:48.681Z",
-   "length": 93251,
+   "fetchedAt": "2026-07-14T17:02:04.872Z",
+   "length": 93181,
    "kind": "html",
    "textHash": "3881f25f16fc6d28",
    "dollars": [
@@ -7922,8 +7925,8 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T16:04:48.614Z",
-   "length": 79182,
+   "fetchedAt": "2026-07-14T17:02:04.865Z",
+   "length": 79114,
    "kind": "html",
    "textHash": "261dfd6ec337cb15",
    "dollars": [
@@ -7988,8 +7991,8 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T16:04:48.652Z",
-   "length": 73834,
+   "fetchedAt": "2026-07-14T17:02:05.178Z",
+   "length": 73836,
    "kind": "html",
    "textHash": "ac6f3a2076f3d859",
    "dollars": [
@@ -8006,8 +8009,8 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T16:04:48.692Z",
-   "length": 66308,
+   "fetchedAt": "2026-07-14T17:02:05.375Z",
+   "length": 66136,
    "kind": "html",
    "textHash": "21bdbb58ba784e78",
    "dollars": [],
@@ -8021,8 +8024,8 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T16:04:49.371Z",
-   "length": 61231,
+   "fetchedAt": "2026-07-14T17:02:05.662Z",
+   "length": 61060,
    "kind": "html",
    "textHash": "1acb41794054efcf",
    "dollars": [],
@@ -8036,8 +8039,8 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T16:04:49.680Z",
-   "length": 75840,
+   "fetchedAt": "2026-07-14T17:02:05.542Z",
+   "length": 75838,
    "kind": "html",
    "textHash": "afe5778ba5564304",
    "dollars": [
@@ -8053,7 +8056,7 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T16:04:49.194Z",
+   "fetchedAt": "2026-07-14T17:02:05.679Z",
    "length": 208112,
    "kind": "html",
    "textHash": "b298ecc8c513da60",
@@ -8073,8 +8076,8 @@
     "ME"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T16:30:41.230Z",
-   "length": 83384,
+   "fetchedAt": "2026-07-14T17:02:03.459Z",
+   "length": 83386,
    "kind": "html",
    "textHash": "87fef94589cdb514",
    "dollars": [
@@ -8094,8 +8097,8 @@
     "ME"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T16:30:41.502Z",
-   "length": 80149,
+   "fetchedAt": "2026-07-14T17:02:03.632Z",
+   "length": 80151,
    "kind": "html",
    "textHash": "83c75ab2d3922b91",
    "dollars": [
@@ -8111,8 +8114,8 @@
     "ME"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T16:30:41.548Z",
-   "length": 80789,
+   "fetchedAt": "2026-07-14T17:02:03.609Z",
+   "length": 80791,
    "kind": "html",
    "textHash": "42c1c45ee43cf27b",
    "dollars": [
@@ -8128,8 +8131,8 @@
     "ME"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T16:30:41.587Z",
-   "length": 90219,
+   "fetchedAt": "2026-07-14T17:02:03.746Z",
+   "length": 90221,
    "kind": "html",
    "textHash": "0a6b91c8fb827866",
    "dollars": [
@@ -8150,7 +8153,7 @@
     "ME"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T16:30:42.393Z",
+   "fetchedAt": "2026-07-14T17:02:04.139Z",
    "length": 35505,
    "kind": "html",
    "textHash": "b35d83fb5d0a6a66",
@@ -8169,7 +8172,7 @@
     "WA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T17:57:06.740Z",
+   "fetchedAt": "2026-07-14T17:02:10.705Z",
    "length": 92574,
    "kind": "html",
    "textHash": "1fa544bc35bef83d",
@@ -8189,7 +8192,7 @@
     "WA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T17:57:06.479Z",
+   "fetchedAt": "2026-07-14T17:02:10.867Z",
    "length": 111875,
    "kind": "html",
    "textHash": "52bc888696649a85",
@@ -8208,11 +8211,251 @@
     "WA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T17:57:06.436Z",
-   "length": 1133141,
+   "fetchedAt": "2026-07-14T17:02:11.262Z",
+   "length": 1134280,
    "kind": "html",
    "textHash": "c375f088610274dd",
    "dollars": [],
+   "keywords": {}
+  },
+  "https://energyoffice.colorado.gov/hear-dashboard": {
+   "url": "https://energyoffice.colorado.gov/hear-dashboard",
+   "finalUrl": "https://energyoffice.colorado.gov/hear-dashboard",
+   "label": "HEAR Program Dashboard — Colorado Energy Office",
+   "states": [
+    "CO"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-14T17:02:18.469Z",
+   "length": 57859,
+   "kind": "html",
+   "textHash": "7ff996e4418b95b1",
+   "dollars": [
+    "$0",
+    "$2",
+    "$13",
+    "$31",
+    "$45"
+   ],
+   "keywords": {
+    "closed": 1
+   }
+  },
+  "https://poweraheadcolorado.org/": {
+   "url": "https://poweraheadcolorado.org/",
+   "finalUrl": "https://poweraheadcolorado.org/",
+   "label": "Power Ahead Colorado (DRCOG)",
+   "states": [
+    "CO"
+   ],
+   "httpStatus": 403,
+   "fetchedAt": "2026-07-14T17:02:20.580Z",
+   "length": 5732,
+   "error": "HTTP 403"
+  },
+  "https://mienergyrebates.clearesult.com/help-center": {
+   "url": "https://mienergyrebates.clearesult.com/help-center",
+   "finalUrl": "https://mienergyrebates.clearesult.com/help-center",
+   "label": "MiHER Program Status Notice (CLEAResult Help Center)",
+   "states": [
+    "MI"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-14T17:02:30.981Z",
+   "length": 145727,
+   "kind": "html",
+   "textHash": "0fe49963780b34fc",
+   "dollars": [
+    "$2,053,680",
+    "$3,720,797",
+    "$4,650,425",
+    "$8,518,698",
+    "$12,828,464",
+    "$13,310,031"
+   ],
+   "keywords": {
+    "temporarily": 1
+   }
+  },
+  "https://www.consumersenergy.com/-/media/CE/Documents/residential/save-money-and-energy/rebates/hvac/res-programs.pdf": {
+   "url": "https://www.consumersenergy.com/-/media/CE/Documents/residential/save-money-and-energy/rebates/hvac/res-programs.pdf",
+   "finalUrl": "https://www.consumersenergy.com/-/media/CE/Documents/residential/save-money-and-energy/rebates/hvac/res-programs.pdf",
+   "label": "Consumers Energy 2026 Qualifying Measures (PDF)",
+   "states": [
+    "MI"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-14T17:02:30.282Z",
+   "length": 167990,
+   "kind": "pdf",
+   "bytesHash": "6dfc027bc52a045e"
+  },
+  "https://www.tclp.org/wp-content/uploads/2026/04/Energy-Rewards-Residential-Measures-Updated.pdf": {
+   "url": "https://www.tclp.org/wp-content/uploads/2026/04/Energy-Rewards-Residential-Measures-Updated.pdf",
+   "finalUrl": "https://www.tclp.org/wp-content/uploads/2026/04/Energy-Rewards-Residential-Measures-Updated.pdf",
+   "label": "TCLP Residential Incentives (2025–2026 PDF, program year ended June 30, 2026)",
+   "states": [
+    "MI"
+   ],
+   "httpStatus": 404,
+   "fetchedAt": "2026-07-14T17:02:36.696Z",
+   "length": 98967,
+   "error": "HTTP 404"
+  },
+  "https://www.pse.com/en/rebates/heating": {
+   "url": "https://www.pse.com/en/rebates/heating",
+   "finalUrl": "https://www.pse.com/en/rebates/heating",
+   "label": "Puget Sound Energy — Home Heating Rebates",
+   "states": [
+    "WA"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-14T17:02:10.197Z",
+   "length": 139005,
+   "kind": "html",
+   "textHash": "76d56d1067067466",
+   "dollars": [],
+   "keywords": {}
+  },
+  "https://www.pse.com/en/rebates/hear": {
+   "url": "https://www.pse.com/en/rebates/hear",
+   "finalUrl": "https://www.pse.com/en/404-error-page",
+   "label": "PSE — Pierce County HEAR ($5,000 cold-climate, income-qualified)",
+   "states": [
+    "WA"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-14T17:02:11.126Z",
+   "length": 126109,
+   "kind": "html",
+   "textHash": "347d28de00a0c33e",
+   "dollars": [],
+   "keywords": {}
+  },
+  "https://www.seattle.gov/environment/climate-change/buildings-and-energy/seattles-clean-heat-program": {
+   "url": "https://www.seattle.gov/environment/climate-change/buildings-and-energy/seattles-clean-heat-program",
+   "finalUrl": "https://www.seattle.gov/environment/climate-change/buildings-and-energy/seattles-clean-heat-program",
+   "label": "Seattle Clean Heat Program (oil-to-heat-pump rebates)",
+   "states": [
+    "WA"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-14T17:02:10.084Z",
+   "length": 89332,
+   "kind": "html",
+   "textHash": "d2a74f93eefc28e4",
+   "dollars": [
+    "$2,000",
+    "$4,000",
+    "$6,000",
+    "$75,000",
+    "$81,700",
+    "$93,350",
+    "$105,000",
+    "$116,650",
+    "$126,000",
+    "$135,350",
+    "$144,650",
+    "$154,000",
+    "$172,650",
+    "$197,300",
+    "$221,950",
+    "$246,600",
+    "$266,350",
+    "$286,100",
+    "$305,800",
+    "$325,550"
+   ],
+   "keywords": {}
+  },
+  "https://www.pse.com/en/rebates/doubled-rebates-for-city-of-lacey-residents": {
+   "url": "https://www.pse.com/en/rebates/doubled-rebates-for-city-of-lacey-residents",
+   "finalUrl": "https://www.pse.com/en/rebates/doubled-rebates-for-city-of-lacey-residents",
+   "label": "PSE — Doubled rebates for City of Lacey residents",
+   "states": [
+    "WA"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-14T17:02:11.193Z",
+   "length": 127753,
+   "kind": "html",
+   "textHash": "f7b864e067cb27c6",
+   "dollars": [],
+   "keywords": {}
+  },
+  "https://www.homeenergyrebates.oregon.gov/": {
+   "url": "https://www.homeenergyrebates.oregon.gov/",
+   "finalUrl": "https://www.homeenergyrebates.oregon.gov/",
+   "label": "Oregon Home Energy Rebates — official program site (no rebates available yet)",
+   "states": [
+    "OR"
+   ],
+   "fetchedAt": "2026-07-14T17:02:27.768Z",
+   "error": "fetch failed"
+  },
+  "https://www.energytrust.org/communities/homes-hear/": {
+   "url": "https://www.energytrust.org/communities/homes-hear/",
+   "finalUrl": "https://www.energytrust.org/communities/homes-hear/",
+   "label": "Energy Trust of Oregon — HOMES and HEAR (awaiting DOE approval)",
+   "states": [
+    "OR"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-14T17:02:06.172Z",
+   "length": 347739,
+   "kind": "html",
+   "textHash": "300e0651358999e3",
+   "dollars": [
+    "$25",
+    "$113"
+   ],
+   "keywords": {
+    "closed": 3
+   }
+  },
+  "https://www.peco.com/ways-to-save/for-your-home/rebates-discounts/heating-cooling-rebates": {
+   "url": "https://www.peco.com/ways-to-save/for-your-home/rebates-discounts/heating-cooling-rebates",
+   "finalUrl": "https://www.peco.com/ways-to-save/for-your-home/rebates-discounts/heating-cooling-rebates",
+   "label": "PECO Heating & Cooling Rebates",
+   "states": [
+    "PA"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-14T17:02:33.216Z",
+   "length": 8421,
+   "kind": "html",
+   "textHash": "e3b0c44298fc1c14",
+   "dollars": [],
+   "keywords": {}
+  },
+  "https://www.pplelectricsavings.com/ppl/media/allresrebates_612026.pdf": {
+   "url": "https://www.pplelectricsavings.com/ppl/media/allresrebates_612026.pdf",
+   "finalUrl": "https://www.pplelectricsavings.com/ppl/media/allresrebates_612026.pdf",
+   "label": "PPL Rebates Overview PDF (published June 1, 2026)",
+   "states": [
+    "PA"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-14T17:02:35.166Z",
+   "length": 228022,
+   "kind": "pdf",
+   "bytesHash": "bc7be9a2e2e0709d"
+  },
+  "https://dlcenergyrebates.com/": {
+   "url": "https://dlcenergyrebates.com/",
+   "finalUrl": "https://dlcenergyrebates.com/",
+   "label": "Duquesne Light — Energy Rebates hub (program being refreshed)",
+   "states": [
+    "PA"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-14T17:02:33.981Z",
+   "length": 94863,
+   "kind": "html",
+   "textHash": "83a4c08582f795a2",
+   "dollars": [
+    "$50"
+   ],
    "keywords": {}
   }
  }
