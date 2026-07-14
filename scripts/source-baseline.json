@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-14T22:56:15.783Z",
+ "generatedAt": "2026-07-14T23:18:16.918Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -5386,8 +5386,8 @@
     "TN"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:12.524Z",
-   "length": 241758,
+   "fetchedAt": "2026-07-14T17:03:07.997Z",
+   "length": 250685,
    "kind": "html",
    "textHash": "e8777ffa348c14fa",
    "dollars": [
@@ -5408,27 +5408,10 @@
    "states": [
     "TN"
    ],
-   "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:14.356Z",
-   "length": 81558,
-   "kind": "html",
-   "textHash": "81f943d4e4c054d0",
-   "dollars": [
-    "$8",
-    "$1,600",
-    "$1,750",
-    "$2,000",
-    "$2,500",
-    "$4,000",
-    "$8,000",
-    "$14,000",
-    "$400,00",
-    "$200,000",
-    "$400,000",
-    "$83,390,060",
-    "$83,708,676"
-   ],
-   "keywords": {}
+   "httpStatus": 404,
+   "fetchedAt": "2026-07-14T17:03:10.260Z",
+   "length": 44876,
+   "error": "HTTP 404"
   },
   "https://epb.com/energy/save-energy-and-money/rebates-incentives/home-energy-improvement-rebates/": {
    "url": "https://epb.com/energy/save-energy-and-money/rebates-incentives/home-energy-improvement-rebates/",
@@ -5438,10 +5421,10 @@
     "TN"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:13.071Z",
-   "length": 248969,
+   "fetchedAt": "2026-07-14T17:03:08.771Z",
+   "length": 248852,
    "kind": "html",
-   "textHash": "a63627fda5cdeb24",
+   "textHash": "294f180f5840dc74",
    "dollars": [
     "$15",
     "$50",
@@ -5463,10 +5446,10 @@
     "TN"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:13.885Z",
-   "length": 214414,
+   "fetchedAt": "2026-07-14T17:03:09.317Z",
+   "length": 215014,
    "kind": "html",
-   "textHash": "735fd56a324d928a",
+   "textHash": "6effbbf782d49db3",
    "dollars": [],
    "keywords": {}
   },
@@ -5478,10 +5461,10 @@
     "TN"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:13.926Z",
-   "length": 99019,
+   "fetchedAt": "2026-07-14T17:03:09.417Z",
+   "length": 99057,
    "kind": "html",
-   "textHash": "0455d5caa59bfa81",
+   "textHash": "f6a8a0cdcb7ac26e",
    "dollars": [],
    "keywords": {}
   },
