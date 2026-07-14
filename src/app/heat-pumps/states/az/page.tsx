@@ -312,7 +312,7 @@ export default function ArizonaPage() {
           </p>
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-amber-800 mb-1">⚠ Common mistake: assuming APS still offers heat pump rebates</p>
-            <p className="text-sm text-amber-900">Many contractors and third-party sites still list APS rebates that no longer exist. The APS residential rebate program ended January 1, 2026. If you&apos;re an APS customer, your options are Efficiency Arizona HEAR (if income-qualified) or waiting for the HOMES program launch.</p>
+            <p className="text-sm text-amber-900">Many contractors and third-party sites still list APS rebates that no longer exist. The APS residential rebate program ended January 1, 2026. If you&apos;re an APS customer, your options are Efficiency Arizona HEAR (if income-qualified), the City of Flagstaff rebate (if you live in Flagstaff), or waiting for the HOMES program launch.</p>
           </div>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">SRP Cool Cash — active through April 30, 2027</h3>
@@ -375,11 +375,11 @@ export default function ArizonaPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">City of Flagstaff — Home Weatherization and Energy Rebate Program</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            No Arizona city or county other than Flagstaff offers direct financial rebates for heat pump installations. Under the FY25–26 cycle, Flagstaff offered up to <strong>$3,000</strong> (primary heating source installation) or <strong>$2,500</strong> (non-primary source) through a sliding income-based scale: 25% of project cost for lowest-income households, 15% for middle-income, and 5% for above-median-income residents — meaning all income levels qualified at some percentage. All heat pumps must be <strong>cold climate rated</strong> and listed on the NEEP Product List. The city has posted its FY26–27 program guide covering work completed July 1, 2026 through June 30, 2027; confirm current rebate amounts with the Sustainability Office before committing to a project.
+            No Arizona city or county other than Flagstaff offers direct financial rebates for heat pump installations. For the FY26–27 cycle (work completed July 1, 2026 through June 30, 2027), Flagstaff offers up to <strong>$2,000</strong> for a primary-source heat pump or <strong>$1,500</strong> for a non-primary-source installation — down from $3,000/$2,500 in the prior cycle — through a sliding income-based scale: 25% of project cost for the lowest income tier, 15% for the middle tier, and 5% for the highest, meaning all income levels qualify at some percentage. Both homeowners and renters (with landlord authorization) are eligible, limited to one heat pump rebate per household. Heat pumps must be <strong>cold climate rated</strong> and listed on the NEEP Product List; air-to-water heat pumps on the city&apos;s qualified product list are also eligible. Primary-source rebates additionally require a BPI energy audit showing the home meets minimum weatherization standards (air sealing, attic and crawl space insulation, duct sealing).
           </p>
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5">
             <p className="font-semibold text-amber-800 mb-1">⚠ Flagstaff funds run out fast — the FY26–27 cycle just opened</p>
-            <p className="text-sm text-amber-900">The FY25–26 cycle exhausted 100% of its funding by March 25, 2026 — months before the fiscal year ended. A new funding cycle opened July 1, 2026, covering work completed through June 30, 2027, with funds awarded first-come, first-served. Contact the City of Flagstaff Sustainability Office to confirm remaining funding before applying.</p>
+            <p className="text-sm text-amber-900">The FY25–26 cycle exhausted 100% of its funding by March 25, 2026 — months before the fiscal year ended. The new cycle opened July 1, 2026, with funds awarded first-come, first-served; the city&apos;s funding tracker showed <strong>$41,670 remaining</strong> as of July 14, 2026. Check current funding on the city&apos;s program page before committing to a project.</p>
           </div>
         </div>
       </section>
