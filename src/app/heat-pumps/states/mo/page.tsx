@@ -281,7 +281,7 @@ export default function MissouriPage() {
           {/* Ameren Missouri */}
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Ameren Missouri (St. Louis metro, central &amp; eastern Missouri)</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Missouri&apos;s largest electric utility offers all heat pump rebates through the <strong>Pay As You Save (PAYS)</strong> program. The standalone HVAC rebate program that ran for 11 years ended December 31, 2024. PAYS combines upfront rebates with optional on-bill financing — no credit check required. Rebates require tier 4 PAYS participation and at least 12 months living in the home (Ameren runs a usage analysis); HVAC rebates additionally require that the existing AC meets at least one condition: installed 10 or more years ago, rated 14 SEER or less, or no longer working.
+            Missouri&apos;s largest electric utility offers all heat pump rebates through the <strong>Pay As You Save (PAYS)</strong> program. The standalone HVAC rebate program that ran for 11 years ended December 31, 2024. PAYS combines upfront rebates with optional on-bill financing — no credit check required. Rebates require tier 4 PAYS participation and at least 12 months living in the home (Ameren runs a usage analysis); HVAC rebates additionally require that any existing central AC meets at least one condition: installed 10 or more years ago, rated 14 SEER or less, or no longer working.
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
