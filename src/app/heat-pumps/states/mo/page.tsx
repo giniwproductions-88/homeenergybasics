@@ -47,7 +47,7 @@ export default function MissouriPage() {
         name: "What heat pump rebates are available in Missouri in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Missouri heat pump rebates in 2026 come from utility programs only. Ameren Missouri offers $2,000 for ducted air-source heat pumps and $5,000 for geothermal through its PAYS program. Evergy provides $650\u2013$1,200 depending on efficiency tier. Columbia Water & Light offers up to $1,200 plus a $1,400 electrification bonus. City Utilities of Springfield provides $500 for ASHPs. Rural electric cooperatives offer $300\u2013$500 per ton. Federal tax credits under Sections 25C and 25D expired December 31, 2025. Missouri\u2019s IRA-funded HEAR and HOMES programs have not yet launched.",
+          text: "Missouri heat pump rebates in 2026 come from utility programs only. Ameren Missouri offers $2,000 for ducted air-source heat pumps and $5,000 for replacing an existing ground-source (geothermal) system through its PAYS program. Evergy provides $650\u2013$1,200 depending on efficiency tier. Columbia Water & Light offers up to $1,200 plus a $1,400 electrification bonus. City Utilities of Springfield provides $500 for ASHPs. Rural electric cooperatives offer $300\u2013$500 per ton. Federal tax credits under Sections 25C and 25D expired December 31, 2025. Missouri\u2019s IRA-funded HEAR and HOMES programs have not yet launched.",
         },
       },
       {
@@ -128,7 +128,7 @@ export default function MissouriPage() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Utility rebates are active</p>
-              <p className="text-sm text-green-900">Ameren Missouri offers <strong>$2,000</strong> for ducted ASHPs and <strong>$5,000</strong> for geothermal through the PAYS program. Evergy provides <strong>$650–$1,200</strong> depending on SEER2 tier. Columbia Water &amp; Light offers up to <strong>$2,600</strong> when replacing gas heating.</p>
+              <p className="text-sm text-green-900">Ameren Missouri offers <strong>$2,000</strong> for ducted ASHPs and <strong>$5,000</strong> for geothermal (replacing an existing ground-source system) through the PAYS program. Evergy provides <strong>$650–$1,200</strong> depending on SEER2 tier. Columbia Water &amp; Light offers up to <strong>$2,600</strong> when replacing gas heating.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Rural co-ops offer per-ton rebates</p>
@@ -281,7 +281,7 @@ export default function MissouriPage() {
           {/* Ameren Missouri */}
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Ameren Missouri (St. Louis metro, central &amp; eastern Missouri)</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Missouri&apos;s largest electric utility offers all heat pump rebates through the <strong>Pay As You Save (PAYS)</strong> program. The standalone HVAC rebate program that ran for 11 years ended December 31, 2024. PAYS combines upfront rebates with optional on-bill financing — no credit check required.
+            Missouri&apos;s largest electric utility offers all heat pump rebates through the <strong>Pay As You Save (PAYS)</strong> program. The standalone HVAC rebate program that ran for 11 years ended December 31, 2024. PAYS combines upfront rebates with optional on-bill financing — no credit check required. Rebates require tier 4 PAYS participation and at least 12 months living in the home (Ameren runs a usage analysis); HVAC rebates additionally require that the existing AC meets at least one condition: installed 10 or more years ago, rated 14 SEER or less, or no longer working.
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
@@ -309,7 +309,7 @@ export default function MissouriPage() {
                   <td className="p-3 font-semibold">$500/ton</td>
                 </tr>
                 <tr className="border-b bg-green-50">
-                  <td className="p-3">Ground-source heat pump</td>
+                  <td className="p-3">Ground-source heat pump (replacing existing GSHP)</td>
                   <td className="p-3">23 EER2</td>
                   <td className="p-3 font-semibold">$5,000/system</td>
                 </tr>

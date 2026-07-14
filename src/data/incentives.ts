@@ -1633,8 +1633,8 @@ export const incentives: Record<StateCode, StateIncentive> = {
         url: "https://dnr.mo.gov/energy/what-were-doing/inflation-reduction-act-home-energy-rebates-programs",
       },
       {
-        label: "Ameren Missouri \u2014 PAYS HVAC Incentives",
-        url: "https://www.ameren.com/missouri/residential/energy-efficiency/hvac",
+        label: "Ameren Missouri \u2014 PAYS 2026 Incentive Chart (PDF)",
+        url: "https://www.ameren.com/-/media/files/save-money-energy/energy-efficiency/pays-incentives.ashx",
       },
       {
         label: "Evergy \u2014 Heat Pump Rebates",
