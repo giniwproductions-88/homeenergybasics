@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-14T17:20:44.420Z",
+ "generatedAt": "2026-07-14T18:54:09.536Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -162,7 +162,7 @@
     "AR"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T16:04:44.232Z",
+   "fetchedAt": "2026-07-14T17:02:00.233Z",
    "length": 102975,
    "kind": "html",
    "textHash": "d764cdb7c3a0ce47",
@@ -2682,8 +2682,8 @@
     "RI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:42.521Z",
-   "length": 92684,
+   "fetchedAt": "2026-07-14T17:02:37.711Z",
+   "length": 92688,
    "kind": "html",
    "textHash": "7ae42ec5a56885ab",
    "dollars": [
@@ -2701,8 +2701,8 @@
     "RI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:45.298Z",
-   "length": 128282,
+   "fetchedAt": "2026-07-14T17:02:37.998Z",
+   "length": 128286,
    "kind": "html",
    "textHash": "81f853388799ed3c",
    "dollars": [
@@ -2736,8 +2736,8 @@
     "RI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:43.519Z",
-   "length": 5735975,
+   "fetchedAt": "2026-07-14T17:02:38.838Z",
+   "length": 5736536,
    "kind": "html",
    "textHash": "8630d39a579c12ac",
    "dollars": [
@@ -2758,7 +2758,7 @@
     "RI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:42.810Z",
+   "fetchedAt": "2026-07-14T17:02:38.267Z",
    "length": 85262,
    "kind": "html",
    "textHash": "fa2eb08e23198856",
@@ -2778,19 +2778,19 @@
     "RI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:42.993Z",
-   "length": 88969,
+   "fetchedAt": "2026-07-14T17:02:38.968Z",
+   "length": 89017,
    "kind": "html",
-   "textHash": "3013d180551174b4",
+   "textHash": "296d73f06b1b0738",
    "dollars": [
-    "$400",
     "$500",
     "$600",
-    "$800",
-    "$1,250",
+    "$625",
+    "$1,125",
+    "$1,500",
     "$2,500",
-    "$3,000",
-    "$10,000",
+    "$2,650",
+    "$8,500",
     "$11,500",
     "$16,000",
     "$18,000",
@@ -2806,7 +2806,7 @@
     "RI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:44.504Z",
+   "fetchedAt": "2026-07-14T17:02:38.748Z",
    "length": 88232,
    "kind": "html",
    "textHash": "5d00d92a9a2e4707",
