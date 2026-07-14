@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-14T23:18:16.918Z",
+ "generatedAt": "2026-07-14T23:41:05.773Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -6483,7 +6483,7 @@
     "SD"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:26.534Z",
+   "fetchedAt": "2026-07-14T17:03:19.908Z",
    "length": 962068,
    "kind": "html",
    "textHash": "5f2def7920fb121f",
@@ -6498,7 +6498,7 @@
     "SD"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:26.090Z",
+   "fetchedAt": "2026-07-14T17:03:19.120Z",
    "length": 13345,
    "kind": "html",
    "textHash": "9f68cf3eac4bb638",
@@ -6515,10 +6515,10 @@
     "SD"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:26.474Z",
-   "length": 41734,
+   "fetchedAt": "2026-07-14T17:03:19.977Z",
+   "length": 41436,
    "kind": "html",
-   "textHash": "99c04aa21127470d",
+   "textHash": "77dc6c589e7b3ba0",
    "dollars": [
     "$40",
     "$200",
@@ -6546,8 +6546,8 @@
     "SD"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:26.705Z",
-   "length": 60995,
+   "fetchedAt": "2026-07-14T17:03:19.724Z",
+   "length": 60994,
    "kind": "html",
    "textHash": "d29414b533e16a9a",
    "dollars": [
@@ -6565,10 +6565,10 @@
     "SD"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:26.802Z",
-   "length": 83575,
+   "fetchedAt": "2026-07-14T17:03:19.953Z",
+   "length": 84586,
    "kind": "html",
-   "textHash": "9570c40f32be31e3",
+   "textHash": "41d56fcc4a3c6d88",
    "dollars": [
     "$50"
    ],
@@ -6582,10 +6582,10 @@
     "SD"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:26.698Z",
-   "length": 187151,
+   "fetchedAt": "2026-07-14T17:03:19.855Z",
+   "length": 185165,
    "kind": "html",
-   "textHash": "d54e11717bacfe5c",
+   "textHash": "556f449a56fa5726",
    "dollars": [
     "$60",
     "$100",
@@ -6594,8 +6594,7 @@
     "$400",
     "$500",
     "$600",
-    "$1,200",
-    "$15,000,"
+    "$1,200"
    ],
    "keywords": {}
   },
@@ -6607,7 +6606,7 @@
     "SD"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:28.018Z",
+   "fetchedAt": "2026-07-14T17:03:21.224Z",
    "length": 354448,
    "kind": "html",
    "textHash": "a0e318efd7b4de1b",
@@ -6629,8 +6628,8 @@
     "SD"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:27.351Z",
-   "length": 37320,
+   "fetchedAt": "2026-07-14T17:03:20.599Z",
+   "length": 41319,
    "kind": "html",
    "textHash": "69dba7c2e0702255",
    "dollars": [],
@@ -6644,7 +6643,7 @@
     "SD"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:27.216Z",
+   "fetchedAt": "2026-07-14T17:03:20.565Z",
    "length": 92419,
    "kind": "html",
    "textHash": "70b0e7eb433467df",
@@ -6661,10 +6660,10 @@
     "SD"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:27.241Z",
-   "length": 38411,
+   "fetchedAt": "2026-07-14T17:03:20.550Z",
+   "length": 38491,
    "kind": "html",
-   "textHash": "c4dd2a798d0f8ad0",
+   "textHash": "bf143cc9db2b0920",
    "dollars": [
     "$7,825",
     "$10,575",
@@ -6681,7 +6680,9 @@
     "$29,825",
     "$32,575"
    ],
-   "keywords": {}
+   "keywords": {
+    "coming soon": 1
+   }
   },
   "https://wattsmarthomes.com/rebates/air-source-heat-pumps-wy/": {
    "url": "https://wattsmarthomes.com/rebates/air-source-heat-pumps-wy/",
