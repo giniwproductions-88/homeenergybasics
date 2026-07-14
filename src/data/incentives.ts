@@ -446,10 +446,10 @@ export const incentives: Record<StateCode, StateIncentive> = {
   CO: {
     stateCode: "CO",
     stateName: "Colorado",
-    status: "open",
-    lastVerified: "2026-06-03",
+    status: "limited",
+    lastVerified: "2026-07-13",
     summary:
-      "Xcel Energy offers $2,250/ton for cold-climate heat pumps (no income limit), stackable with Colorado's $1,000 state tax credit. Income-qualified HEAR rebates up to $8,000 are available, but Front Range single-family funding is fully reserved as of April 2026 — only the rest of the state is still accepting applications. Federal 25C/25D credits expired December 31, 2025.",
+      "Xcel Energy offers $2,250/ton for cold-climate heat pumps (no income limit), stackable with Colorado's $1,000 state tax credit. Income-qualified HEAR rebates up to $8,000 are closed for the Front Range (Region 1) and accepting applications in the rest of the state (Region 2) only until August 1, 2026, unless funding is reserved sooner. DRCOG's $1,500 Power Ahead rebate (Denver metro) reportedly opened June 29, 2026 — confirm at poweraheadcolorado.org. Federal 25C/25D credits expired December 31, 2025.",
     sources: [
       {
         label: "Colorado HEAR program — Colorado Energy Office",
@@ -460,8 +460,16 @@ export const incentives: Record<StateCode, StateIncentive> = {
         url: "https://energyoffice.colorado.gov/ira-rebate-faq",
       },
       {
+        label: "HEAR Program Dashboard — Colorado Energy Office",
+        url: "https://energyoffice.colorado.gov/hear-dashboard",
+      },
+      {
         label: "Colorado state heat pump tax credit — Colorado Energy Office",
         url: "https://energyoffice.colorado.gov/hptc",
+      },
+      {
+        label: "Power Ahead Colorado (DRCOG)",
+        url: "https://poweraheadcolorado.org/",
       },
       {
         label: "Xcel Energy heat pumps — residential",
