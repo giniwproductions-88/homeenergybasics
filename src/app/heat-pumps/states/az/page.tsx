@@ -73,7 +73,7 @@ export default function ArizonaPage() {
         name: "Who administers Arizona's HEAR program?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The Efficiency Arizona HEAR program is administered by the Arizona Governor's Office of Resiliency, funded by approximately $153 million in federal IRA allocations. The program operates through qualified contractors statewide and runs through September 30, 2031, or until funds are exhausted. Applications are processed at efficiencyarizona.com.",
+          text: "The Efficiency Arizona HEAR program is administered by the Arizona Governor's Office of Resiliency and funded from Arizona's roughly $153 million federal Home Energy Rebates allocation \u2014 about half of which funds HEAR, with the rest reserved for the HOMES program. It operates through qualified contractors and participating retailers statewide. The federal deadline for spending the funds is September 30, 2031, but the Governor's Office of Resiliency says funding is anticipated to be available through 2029. Applications are processed at efficiencyarizona.com.",
         },
       },
       {
@@ -146,7 +146,7 @@ export default function ArizonaPage() {
             </div>
             <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
               <p className="font-semibold text-amber-800 mb-1">⚠ Above 150% AMI + APS territory = no rebates currently available</p>
-              <p className="text-sm text-amber-900">APS discontinued all residential rebates in 2026 and HEAR is income-restricted. If you&apos;re above 150% AMI in APS territory, wait for the HOMES program (expected later in 2026), which will serve all income levels with performance-based rebates up to $4,000.</p>
+              <p className="text-sm text-amber-900">APS discontinued all residential rebates in 2026 and HEAR is income-restricted. If you&apos;re above 150% AMI in APS territory, your only path is the HOMES program, which will serve all income levels with performance-based rebates up to $4,000 — but it has not launched and no launch date has been announced. (One exception: Flagstaff residents qualify for the city&apos;s rebate program at every income level.)</p>
             </div>
           </div>
         </div>
@@ -175,7 +175,7 @@ export default function ArizonaPage() {
         <div className="container-narrow">
           <h2 id="hear-program" className="text-2xl font-bold text-gray-900 mb-4">Efficiency Arizona HEAR program</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Arizona&apos;s Home Electrification and Appliance Rebates (HEAR) program — branded <strong>Efficiency Arizona</strong> — is the largest heat pump incentive currently operating in the state. Administered by the Arizona Governor&apos;s Office of Resiliency and funded by approximately <strong>$153 million</strong> in federal IRA allocations, the program launched in early 2025 and runs through <strong>September 30, 2031</strong>, or until funds are exhausted. As of April 30, 2026, the program had issued more than 1,000 rebates statewide (1,076), with more than three-quarters going to low-income households.
+            Arizona&apos;s Home Electrification and Appliance Rebates (HEAR) program — branded <strong>Efficiency Arizona</strong> — is the largest heat pump incentive currently operating in the state. Administered by the Arizona Governor&apos;s Office of Resiliency, it is funded from Arizona&apos;s roughly <strong>$153 million</strong> federal Home Energy Rebates allocation — about half of which funds HEAR, with the rest reserved for the HOMES program. The program launched in late 2024. The federal deadline for spending the funds is <strong>September 30, 2031</strong>, but the Governor&apos;s Office says funding is anticipated to be available <strong>through 2029</strong>. As of April 30, 2026, the program had issued more than 1,000 rebates statewide (1,076), with more than three-quarters going to low-income households.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">HEAR rebate amounts</h3>
@@ -251,12 +251,12 @@ export default function ArizonaPage() {
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            HEAR operates as a <strong>point-of-sale rebate</strong> — the discount appears directly on the contractor&apos;s invoice, not as a post-purchase reimbursement. Projects must be approved before installation begins. Homes with existing heat pumps cannot receive the heat pump rebate — this is for first-time heat pump installations only.
+            HEAR operates as a <strong>point-of-sale rebate</strong> — the discount appears directly on the contractor&apos;s invoice, not as a post-purchase reimbursement. Projects must be approved before installation begins; completed or in-progress projects are not eligible. Homes with existing heat pumps cannot receive the heat pump rebate — this is for first-time heat pump installations only. The new heat pump must replace a non-electric heating system (gas, propane, oil) or electric resistance heating such as an electric furnace, boiler, or baseboard units, and replaced gas appliances must be disconnected and removed from the home.
           </p>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
             <p className="font-semibold text-blue-800 mb-1">The 150% AMI cliff is the defining feature of Arizona&apos;s incentive landscape</p>
-            <p className="text-sm text-blue-900">Because federal credits are gone and APS dropped its rebates, households above 150% AMI in APS territory currently have access to zero heat pump incentives. The upcoming HOMES program will partially address this gap by offering performance-based rebates up to $4,000 at all income levels.</p>
+            <p className="text-sm text-blue-900">Because federal credits are gone and APS dropped its rebates, households above 150% AMI in APS territory — outside Flagstaff — currently have access to zero heat pump incentives. The upcoming HOMES program will partially address this gap by offering performance-based rebates up to $4,000 at all income levels.</p>
           </div>
         </div>
       </section>
@@ -266,7 +266,7 @@ export default function ArizonaPage() {
         <div className="container-narrow">
           <h2 id="homes-program" className="text-2xl font-bold text-gray-900 mb-4">HOMES program — pending launch</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Arizona&apos;s Home Efficiency Rebates (HOMES) program has <strong>not yet launched</strong> as of mid-2026; the Governor&apos;s Office of Resiliency has indicated Efficiency Arizona will expand to multifamily units in the coming months. Unlike HEAR, HOMES uses a whole-home performance approach and will be available to <strong>all income levels</strong> — making it the first Arizona incentive available to above-150% AMI households since federal credits expired.
+            Arizona&apos;s Home Efficiency Rebates (HOMES) program has <strong>not yet launched</strong> as of July 2026, and no launch date has been announced — the Governor&apos;s Office of Resiliency&apos;s most recent timeline statement (May 2026) covers only HEAR&apos;s expansion to multifamily units &quot;in the coming months.&quot; Unlike HEAR, HOMES uses a whole-home performance approach and will be available to <strong>all income levels</strong> — making it the first Arizona incentive available to above-150% AMI households since federal credits expired.
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
@@ -355,7 +355,7 @@ export default function ArizonaPage() {
             </table>
           </div>
           <p className="text-gray-700 leading-relaxed mb-6">
-            SRP also offers a <strong>$500</strong> rebate for heat pump water heaters with a UEF of 2.8 or better. Both programs require installation by an Arizona-licensed contractor and replacement of an existing system. Applications must be submitted within 6 months of installation, with a limit of 5 rebates per customer. There are no income-qualified tiers — Cool Cash is available to all SRP customers.
+            SRP also offers a <strong>$500</strong> rebate for heat pump water heaters with a UEF of 2.8 or better, limited to one HPWH rebate per customer every 10 years. Both programs require installation by an Arizona-licensed contractor. Cool Cash systems must replace or supplement an existing central heat pump or central AC — on split systems, both the air handler and the condensing unit must be replaced — and single-stage systems require Manual J load calculations with the application. Applications must be submitted within 6 months of installation, with a limit of 5 cooling-system rebates per customer. There are no income-qualified tiers — Cool Cash is available to all SRP customers.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">TEP — Efficient Home Program</h3>
@@ -375,11 +375,11 @@ export default function ArizonaPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">City of Flagstaff — Home Weatherization and Energy Rebate Program</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            No Arizona city or county other than Flagstaff offers direct financial rebates for heat pump installations. Flagstaff offers up to <strong>$3,000</strong> (primary source installation) or <strong>$2,500</strong> (non-primary source) through a sliding income-based scale: 25% of project cost for lowest-income households, 15% for middle-income, and 5% for above-median-income residents — meaning all income levels qualify at some percentage. All heat pumps must be <strong>cold climate rated</strong> and listed on the NEEP Product List.
+            No Arizona city or county other than Flagstaff offers direct financial rebates for heat pump installations. Under the FY25–26 cycle, Flagstaff offered up to <strong>$3,000</strong> (primary heating source installation) or <strong>$2,500</strong> (non-primary source) through a sliding income-based scale: 25% of project cost for lowest-income households, 15% for middle-income, and 5% for above-median-income residents — meaning all income levels qualified at some percentage. All heat pumps must be <strong>cold climate rated</strong> and listed on the NEEP Product List. The city has posted its FY26–27 program guide covering work completed July 1, 2026 through June 30, 2027; confirm current rebate amounts with the Sustainability Office before committing to a project.
           </p>
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5">
-            <p className="font-semibold text-amber-800 mb-1">⚠ Flagstaff funding is nearly exhausted</p>
-            <p className="text-sm text-amber-900">As of October 2025, 99% of FY25-26 funding had been distributed. New awards are unlikely until the next fiscal year beginning July 1, 2026. Contact the City of Flagstaff Sustainability office to confirm availability before applying.</p>
+            <p className="font-semibold text-amber-800 mb-1">⚠ Flagstaff funds run out fast — the FY26–27 cycle just opened</p>
+            <p className="text-sm text-amber-900">The FY25–26 cycle exhausted 100% of its funding by March 25, 2026 — months before the fiscal year ended. A new funding cycle opened July 1, 2026, covering work completed through June 30, 2027, with funds awarded first-come, first-served. Contact the City of Flagstaff Sustainability Office to confirm remaining funding before applying.</p>
           </div>
         </div>
       </section>
@@ -389,7 +389,7 @@ export default function ArizonaPage() {
         <div className="container-narrow">
           <h2 id="stacking" className="text-2xl font-bold text-gray-900 mb-4">How programs stack</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Efficiency Arizona HEAR rebates can be combined with utility rebates from SRP, TEP, or UniSource. HEAR and HOMES cannot stack on the same measure but can apply to different measures in the same home. Federal credits are no longer available.
+            Efficiency Arizona HEAR rebates can be combined with utility rebates from SRP, TEP, or UniSource — the program explicitly allows &quot;stacking,&quot; with the condition that total rebates and discounts may not exceed the total project cost. HEAR and HOMES cannot stack on the same measure but can apply to different measures in the same home. Federal credits are no longer available.
           </p>
           <div className="space-y-4 mb-8">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
@@ -425,7 +425,7 @@ export default function ArizonaPage() {
 
           <div className="bg-gray-100 rounded-lg p-5 mb-4">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
-            <p className="text-sm text-gray-700">For a typical ducted heat pump installation ($8,000–$12,000 before incentives): above 150% AMI in SRP territory, expect <strong>$6,375–$10,375 out of pocket</strong>. At 80–150% AMI with SRP, expect <strong>$1,875–$3,875</strong>. Below 80% AMI, out-of-pocket costs could approach <strong>$0</strong> if project costs fall within rebate caps. In APS territory, above 150% AMI, expect to pay <strong>full price</strong> until HOMES launches.</p>
+            <p className="text-sm text-gray-700">For a typical ducted heat pump installation ($8,000–$12,000 before incentives): above 150% AMI in SRP territory, expect <strong>$6,375–$10,375 out of pocket</strong>. At 80–150% AMI with SRP, expect <strong>$1,875–$3,875</strong>. Below 80% AMI, out-of-pocket costs can approach <strong>$0</strong> when project costs fall within the rebate caps — though the program&apos;s own published figures show an average qualified heat pump project costing <strong>$13,263</strong>, leaving roughly <strong>$5,263</strong> out of pocket after the $8,000 cap (before utility rebates). In APS territory, above 150% AMI, expect to pay <strong>full price</strong> until HOMES launches.</p>
           </div>
           <p className="text-sm text-gray-500">
             Arizona has no state tax credit for heat pumps and no state-level loan program specifically for heat pumps. SHILA (Sustainable Home Improvement Loans of Arizona) offers flexible-term home improvement loans at shilaaz.org.
@@ -445,7 +445,7 @@ export default function ArizonaPage() {
           </p>
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
             <p className="font-semibold text-green-800 mb-1">✓ Best candidates for Arizona heat pump incentives in 2026</p>
-            <p className="text-sm text-green-900">Households below 80% AMI in SRP territory replacing an existing AC with a first-time heat pump installation. This group can stack HEAR (up to $8,000) + SRP Cool Cash (up to $1,125) + free WAP weatherization for a potentially zero-cost project. Homeowners replacing electric resistance heat gain the largest efficiency improvement — roughly 2–3× the heating output per kilowatt-hour consumed.</p>
+            <p className="text-sm text-green-900">Households below 80% AMI in SRP territory replacing an existing AC with a first-time heat pump installation. This group can stack HEAR (up to $8,000) + SRP Cool Cash (up to $1,125) + free WAP weatherization for the lowest possible out-of-pocket cost — in the best cases approaching zero, though the program&apos;s published averages show most below-80% AMI heat pump projects still involve several thousand dollars out of pocket. Homeowners replacing electric resistance heat gain the largest efficiency improvement — roughly 2–3× the heating output per kilowatt-hour consumed.</p>
           </div>
         </div>
       </section>
@@ -519,7 +519,7 @@ export default function ArizonaPage() {
               </div>
               <div>
                 <p className="font-semibold text-gray-900">Check income eligibility for Efficiency Arizona HEAR</p>
-                <p className="text-sm text-gray-700">Visit <a href="https://efficiencyarizona.com" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">efficiencyarizona.com</a> to determine if your household income falls below 150% AMI. Households above 150% AMI should wait for the HOMES program or proceed with utility rebates only.</p>
+                <p className="text-sm text-gray-700">Use the Eligibility Screening Tool at <a href="https://efficiencyarizona.com" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">efficiencyarizona.com</a> to see if your household income falls at or below 150% AMI — or qualifies categorically through enrollment in programs like LIHEAP, SNAP, AHCCCS, WIC, or SSI. Households above 150% AMI should wait for the HOMES program or proceed with utility rebates only.</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -527,8 +527,8 @@ export default function ArizonaPage() {
                 2
               </div>
               <div>
-                <p className="font-semibold text-gray-900">Find an Efficiency Arizona–qualified contractor</p>
-                <p className="text-sm text-gray-700">HEAR requires using a qualified contractor or approved retail pathway. The contractor handles the rebate application on your behalf.</p>
+                <p className="font-semibold text-gray-900">Submit your application at efficiencyarizona.com</p>
+                <p className="text-sm text-gray-700">Homeowners apply directly — the application takes about 10–15 minutes with income documentation ready. Approval is required before any work begins; completed or in-progress projects are not eligible.</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -536,8 +536,8 @@ export default function ArizonaPage() {
                 3
               </div>
               <div>
-                <p className="font-semibold text-gray-900">Apply before installation begins</p>
-                <p className="text-sm text-gray-700">HEAR approval is required before work starts. The rebate appears as a point-of-sale discount on your contractor&apos;s invoice.</p>
+                <p className="font-semibold text-gray-900">Work with your assigned Qualified Contractor</p>
+                <p className="text-sm text-gray-700">After approval, a Qualified Contractor is assigned to your project — or you can select your preferred contractor from the network list. The rebate is applied to the contractor&apos;s invoice and deducted from the project cost. For heat pump water heaters, dryers, and cooking appliances, an approved retail coupon pathway is also available.</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -545,8 +545,8 @@ export default function ArizonaPage() {
                 4
               </div>
               <div>
-                <p className="font-semibold text-gray-900">Submit utility rebate after installation</p>
-                <p className="text-sm text-gray-700">SRP Cool Cash, TEP, and UniSource rebates are submitted separately after installation is complete. SRP requires applications within 6 months of installation. Confirm your utility&apos;s current program before starting.</p>
+                <p className="font-semibold text-gray-900">Claim your utility rebate</p>
+                <p className="text-sm text-gray-700">SRP Cool Cash is submitted after installation — within 6 months, with a limit of 5 cooling-system rebates per customer. TEP and UniSource rebates are instant: the participating contractor deducts the rebate from your final project cost. Confirm your utility&apos;s current program before starting.</p>
               </div>
             </div>
           </div>
@@ -560,11 +560,11 @@ export default function ArizonaPage() {
           <div className="space-y-4">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">IRA funding runway</p>
-              <p className="text-sm text-gray-600 mt-1">Arizona&apos;s $153 million HEAR allocation runs through September 2031, with more than 1,000 rebates issued as of April 30, 2026. If adoption accelerates — especially as contractors become more familiar with the program — funds could deplete faster than projected.</p>
+              <p className="text-sm text-gray-600 mt-1">The Governor&apos;s Office of Resiliency says HEAR funding is anticipated to be available through 2029 — well before the September 30, 2031 federal spending deadline. HEAR draws on roughly half of Arizona&apos;s $153 million Home Energy Rebates allocation, and more than 1,000 rebates had been issued as of April 30, 2026. If adoption accelerates — especially as contractors become more familiar with the program — funds could deplete faster than projected.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">HOMES program launch</p>
-              <p className="text-sm text-gray-600 mt-1">Expected later in 2026. This will be the first incentive available to above-150% AMI households since federal credits expired. Watch efficiencyarizona.com for launch announcements.</p>
+              <p className="text-sm text-gray-600 mt-1">Not yet launched, and no launch date has been announced — the Governor&apos;s Office of Resiliency&apos;s most recent timeline statement (May 2026) covers only HEAR&apos;s expansion to multifamily units &quot;in the coming months.&quot; HOMES will be the first incentive available to above-150% AMI households since federal credits expired. Watch efficiencyarizona.com for launch announcements.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">SRP Cool Cash renewal</p>
@@ -572,7 +572,7 @@ export default function ArizonaPage() {
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">APS regulatory proceedings</p>
-              <p className="text-sm text-gray-600 mt-1">APS eliminated rebates following ACC Decision 81584. Future rate cases or policy changes could restore some form of residential efficiency program, but nothing has been proposed as of June 2026.</p>
+              <p className="text-sm text-gray-600 mt-1">APS eliminated rebates following ACC Decision 81584, and its program pages continue to list them as discontinued. Future rate cases or policy changes could restore some form of residential efficiency program, but nothing had been restored as of July 2026.</p>
             </div>
           </div>
         </div>
