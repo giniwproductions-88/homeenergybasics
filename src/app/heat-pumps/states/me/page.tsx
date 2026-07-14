@@ -144,7 +144,7 @@ export default function MainePage() {
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Bonus + Water Heaters + Loans</p>
               <p className="text-sm text-green-900">
-                $500 whole-home bonus through Dec 2026. $1,150+ for heat pump water heaters. 0% APR loans up to $25,000 through Efficiency Maine&apos;s Green Bank.
+                $500 whole-home bonus through Dec 2026. $1,150+ for heat pump water heaters. Green Bank loans up to $25,000 — 1-year 0% APR ($500 origination fee) or 5.99%–7.99% fixed.
               </p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
@@ -428,15 +428,58 @@ export default function MainePage() {
             Efficiency Maine Home Energy Loans
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Efficiency Maine&apos;s Green Bank offers unsecured loans — no lien on property or
-            equipment — with no prepayment penalty. Rates, fees, and terms are adjusted
-            periodically; confirm current terms (including any origination fee on the 0% option)
-            at efficiencymaine.com before applying. Funds are disbursed directly
-            to the Registered Vendor after project completion.
+            Efficiency Maine&apos;s Green Bank offers unsecured, fixed-rate loans — no lien on
+            property or equipment — with no application fee and no prepayment penalty. Four
+            options are available. Note that the 1-year 0% APR loan carries a{" "}
+            <strong>$500 origination fee</strong>; the other three options have no origination
+            fee. Funds are disbursed directly to the Registered Vendor after project completion.
           </p>
-          
+          <div className="overflow-x-auto mb-6">
+            <table className="min-w-full text-sm">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="text-left p-3 font-semibold">Loan Option</th>
+                  <th className="text-left p-3 font-semibold">APR</th>
+                  <th className="text-left p-3 font-semibold">Max Amount</th>
+                  <th className="text-left p-3 font-semibold">Fees &amp; Underwriting</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b">
+                  <td className="p-3">1-Year</td>
+                  <td className="p-3 font-semibold">0%</td>
+                  <td className="p-3">$25,000</td>
+                  <td className="p-3">$500 origination fee; FICO 620+, DTI up to 55%</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">5-Year</td>
+                  <td className="p-3 font-semibold">5.99%</td>
+                  <td className="p-3">$25,000</td>
+                  <td className="p-3">No origination fee; FICO 620+, DTI up to 55%</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">10-Year</td>
+                  <td className="p-3 font-semibold">7.99%</td>
+                  <td className="p-3">$25,000</td>
+                  <td className="p-3">No origination fee; FICO 620+, DTI up to 55%</td>
+                </tr>
+                <tr className="border-b bg-green-50">
+                  <td className="p-3">Income-Based 10-Year</td>
+                  <td className="p-3 font-semibold">5.99%</td>
+                  <td className="p-3">$7,500</td>
+                  <td className="p-3">No origination fee; FICO 580+, DTI up to 70%; income eligibility must be verified by Efficiency Maine within the past year</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="text-sm text-gray-500 mb-6">
+            Rates verified July 14, 2026 against Efficiency Maine&apos;s loan page; rates are
+            subject to change. The financed amount cannot exceed net project cost (total cost
+            minus anticipated rebates), and a project does not need to receive an Efficiency
+            Maine rebate to qualify for a loan.
+          </p>
           <p className="text-gray-700 leading-relaxed">
-            Options have included a 1-year 0% APR loan and fixed-rate 5- and 10-year terms up to $25,000, plus an income-based option, but rates, fees, and FICO minimums have shifted since our last direct confirmation, so we are not publishing a rate table until re-verified against Efficiency Maine&apos;s loan page. Eligible upgrades
+            Eligible upgrades
             include heat pumps (not dual fuel), electrical panel upgrades required for heat pump
             projects, insulation, air sealing, and health/safety improvements up to 25% of the
             financed amount.
@@ -490,8 +533,9 @@ export default function MainePage() {
               A typical 3-zone mini-split system costs <strong>$12,000–$18,000</strong> installed.
               After Efficiency Maine rebates: <strong>$8,500–$14,500</strong> out of pocket (any
               income) to <strong>$2,500–$8,500</strong> out of pocket (low income). HEAR-eligible
-              mobile home owners may pay close to $0. Financing through the 0% APR loan can
-              eliminate the upfront cost entirely.
+              mobile home owners may pay close to $0. Efficiency Maine&apos;s Home Energy Loans
+              can eliminate the upfront cost entirely — the 1-year 0% APR option carries a $500
+              origination fee, and 5- and 10-year terms run 5.99%–7.99% (see loan table above).
             </p>
           </div>
           <p className="text-sm text-gray-500 mt-4">

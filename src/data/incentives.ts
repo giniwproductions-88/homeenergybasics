@@ -185,7 +185,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "ME",
     stateName: "Maine",
     status: "open",
-    lastVerified: "2026-07-09",
+    lastVerified: "2026-07-14",
     summary:
       "Efficiency Maine heat pump rebates are active through Triennial Plan VI ($529.3M): $1,000–$3,000 per outdoor unit (all-other-whole-home systems) and $3,000–$9,000 lump sum (ducted), by income tier. A $500/unit whole-home bonus runs March–December 2026. NEHPA funds in Maine flow through Efficiency Maine’s water heater discounts — no separate per-unit consumer discount. HEAR is limited to mobile homes and affordable multifamily. Federal 25C/25D ended Dec 31, 2025.",
     sources: [
