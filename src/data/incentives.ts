@@ -1560,7 +1560,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
       },
       {
         label: "TDEC \u2014 Home Energy Rebate Programs",
-        url: "https://www.tn.gov/environment/program-areas/energy/state-energy-office--seo-/programs-projects/programs-and-projects/inflation-reduction-act/home-energy-rebate-programs.html",
+        url: "https://www.tn.gov/environment/program-areas/energy/state-energy-office--seo-/programs-projects/programs-and-projects/inflation-reduction-act/home-energy-rebate.html",
       },
       {
         label: "EPB \u2014 Home Energy Improvement Rebates",
