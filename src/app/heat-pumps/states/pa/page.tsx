@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import type { Metadata } from "next";
 import { incentives, formatDate } from "@/data/incentives";
 import StatusCard from "@/components/StatusCard";
@@ -111,10 +111,10 @@ export default function PennsylvaniaPage() {
             Pennsylvania Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Pennsylvania&apos;s utility rebates are coming back online. Act 129 <strong>Phase V began June 1, 2026</strong>, and three of the five rebate-paying utilities &mdash; PECO, PPL, and UGI Electric &mdash; have published new heat pump rebate schedules that are claimable today. Duquesne Light&apos;s program is &quot;currently being refreshed,&quot; and FirstEnergy&apos;s portal still shows only Phase IV closeout information. Federal tax credits ended December 31, 2025, and <strong>Penn Energy Savers still has not launched</strong>. This guide covers each utility&apos;s current amounts, the Philadelphia-area EAP rebate returning this fall, the 1% HEELP loan, and what to watch for.
+            Pennsylvania&apos;s utility rebates are coming back online. Act 129 <strong>Phase V began June 1, 2026</strong>, and three of the five rebate-paying utilities &mdash; PECO, PPL, and UGI Electric &mdash; have published new heat pump rebate schedules that are claimable today. Duquesne Light&apos;s program is &quot;currently being refreshed,&quot; and FirstEnergy&apos;s portal still shows only Phase IV closeout information. Federal tax credits ended December 31, 2025, and <strong>Penn Energy Savers still has not launched</strong>. This guide covers each utility&apos;s current amounts, the Philadelphia-area EAP fall rebate (contract window August 3&ndash;November 13), the 1% HEELP loan, and what to watch for.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} â€” verified against official program sources
+            Updated {formattedDate} &mdash; verified against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.
@@ -372,9 +372,50 @@ export default function PennsylvaniaPage() {
             </table>
           </div>
 
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">EAP HVAC rebate (Philadelphia area) &mdash; Fall 2026 program coming</h3>
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">EAP HVAC rebate (Philadelphia area) &mdash; Fall 2026 program published</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            The Electrical Association of Philadelphia runs a separate, seasonal instant-rebate program through participating contractors. It is a trade-association program, not an Act 129 utility rebate &mdash; PECO&apos;s involvement is limited to publicizing it &mdash; and per EAP it <strong>can be combined with PECO rebates</strong> (but not with manufacturer rebates). Fall 2026 details are now published on EAP&apos;s program page (posted as of July 8, 2026). Here are the heat pump rebates, paid as an instant discount on the participating contractor&apos;s invoice:
+          </p>
+          <div className="overflow-x-auto mb-4">
+            <table className="min-w-full text-sm">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="text-left p-3 font-semibold">System</th>
+                  <th className="text-left p-3 font-semibold">Minimum efficiency</th>
+                  <th className="text-left p-3 font-semibold">Rebate</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b">
+                  <td className="p-3">Heat pump &mdash; Tier 1</td>
+                  <td className="p-3">SEER2 15.2+ / EER2 11.0 / HSPF2 7.8</td>
+                  <td className="p-3 font-semibold">$500</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Heat pump &mdash; Tier 2</td>
+                  <td className="p-3">SEER2 16+ / EER2 11.0 / HSPF2 7.8</td>
+                  <td className="p-3 font-semibold">$1,000</td>
+                </tr>
+                <tr className="border-b bg-green-50">
+                  <td className="p-3">Heat pump &mdash; Tier 3</td>
+                  <td className="p-3">SEER2 18+ / EER2 11.0 / HSPF2 7.8</td>
+                  <td className="p-3 font-semibold">$1,400</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Mini-split heat pump</td>
+                  <td className="p-3">SEER2 17 / EER2 12 / HSPF2 8.5</td>
+                  <td className="p-3 font-semibold">$250 single zone, or $200 per zone multizone</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">+ Dual-fuel (hybrid) adder</td>
+                  <td className="p-3">Heat pump must meet a tier above; outdoor unit, indoor coil, and furnace all installed</td>
+                  <td className="p-3 font-semibold">+$250 (not a separate rebate)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <p className="text-gray-700 leading-relaxed mb-6">
-            The Electrical Association of Philadelphia runs a separate, seasonal instant-rebate program through participating contractors. It is a trade-association program, not an Act 129 utility rebate &mdash; PECO&apos;s involvement is limited to publicizing it &mdash; and per EAP it <strong>can be combined with PECO rebates</strong> (but not with manufacturer rebates). EAP&apos;s Fall 2026 program advertises savings of <strong>$250&ndash;$1,650</strong>, with details due in mid-July; fall programs usually run early August to mid-November. For reference, the Spring 2026 program paid $500 / $1,000 / $1,400 for heat pump systems at SEER2 15.2+ / 16+ / 18+, plus a $250 dual-fuel adder, applied as an instant discount on the participating contractor&apos;s invoice.
+            The advertised <strong>$250&ndash;$1,650</strong> range is the single-zone mini-split at the bottom and Tier 3 plus the dual-fuel adder at the top. Fall program timeline: contracts may not be signed before <strong>August 3, 2026</strong>, must be signed by <strong>November 13, 2026</strong>, systems installed by <strong>November 27, 2026</strong>, and claim forms received by EAP by <strong>December 4, 2026</strong>. Rebates flow only through participating contractors installing participating brands &mdash; EAP lists the Fall 2026 brand roster on its program page (including Trane, Ruud, American Standard, Amana/Goodman, Bosch, Lennox, York, Bryant and Carrier with tier exclusions, and for mini-splits Mitsubishi and Daikin).
           </p>
 
           <p className="text-gray-700 leading-relaxed mb-4">
@@ -415,7 +456,7 @@ export default function PennsylvaniaPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">How programs stack in Pennsylvania</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Act 129 utility rebates, EAP&apos;s Philadelphia-area program, Penn Energy Savers, and loan programs draw on different funding sources and can generally be combined. Today the utility rebates at PECO, PPL, and UGI are claimable; EAP&apos;s fall program opens around August; Penn Energy Savers has not launched. The scenarios below use a typical 3-ton ducted heat pump costing <strong>$10,000&ndash;$14,000</strong>:
+            Act 129 utility rebates, EAP&apos;s Philadelphia-area program, Penn Energy Savers, and loan programs draw on different funding sources and can generally be combined. Today the utility rebates at PECO, PPL, and UGI are claimable; EAP&apos;s fall contract window is August 3&ndash;November 13; Penn Energy Savers has not launched. The scenarios below use a typical 3-ton ducted heat pump costing <strong>$10,000&ndash;$14,000</strong>:
           </p>
 
           <div className="space-y-4 mb-8">
@@ -423,7 +464,7 @@ export default function PennsylvaniaPage() {
               <p className="font-semibold text-gray-900 mb-2">Above 150% AMI &mdash; PECO territory ($12,000 installed, illustrative)</p>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>PECO Phase V rebate: up to $300 &mdash; claimable now</li>
-                <li>EAP Fall 2026 program (opens ~August): $250&ndash;$1,650</li>
+                <li>EAP Fall 2026 program (contracts Aug 3&ndash;Nov 13): $250&ndash;$1,650</li>
                 <li>Penn Energy Savers: not eligible</li>
                 <li>HOMES (when launched, 20%+ savings): $2,000</li>
               </ul>
@@ -435,7 +476,7 @@ export default function PennsylvaniaPage() {
               <p className="font-semibold text-gray-900 mb-2">81&ndash;150% AMI &mdash; PECO territory ($12,000 installed, illustrative)</p>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>PECO Phase V rebate: up to $300 &mdash; claimable now</li>
-                <li>EAP Fall 2026 program (opens ~August): $250&ndash;$1,650</li>
+                <li>EAP Fall 2026 program (contracts Aug 3&ndash;Nov 13): $250&ndash;$1,650</li>
                 <li>HEAR (when launched, 50% of cost): up to $6,000</li>
               </ul>
               <p className="font-semibold text-gray-900 mt-2">Claimable today: <span className="text-green-700">up to $300</span> (plus HEELP/KEEP financing)</p>
@@ -446,7 +487,7 @@ export default function PennsylvaniaPage() {
               <p className="font-semibold text-green-800 mb-2">Below 80% AMI &mdash; PECO territory ($12,000 installed, illustrative)</p>
               <ul className="text-sm text-green-900 space-y-1">
                 <li>PECO Phase V rebate: up to $300 &mdash; claimable now</li>
-                <li>EAP Fall 2026 program (opens ~August): $250&ndash;$1,650</li>
+                <li>EAP Fall 2026 program (contracts Aug 3&ndash;Nov 13): $250&ndash;$1,650</li>
                 <li>HEAR (when launched, 100% of cost): up to $8,000</li>
                 <li>PEA Built to Last (Philadelphia): potential full coverage</li>
               </ul>
@@ -462,7 +503,7 @@ export default function PennsylvaniaPage() {
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-blue-800 mb-1">Timing: why waiting may pay</p>
-            <p className="text-sm text-blue-900">Penn Energy Savers cannot fund work completed before application approval, and EAP&apos;s fall rebate requires a contract signed inside its program window &mdash; so sequencing matters. Utility rebates at PECO, PPL, and UGI are claimable now (mind the 90&ndash;180 day application deadlines). If you are income-qualified and can wait, Penn Energy Savers is the larger prize; if you are in PECO territory and can schedule installation for the fall window, the EAP rebate adds up to $1,650.</p>
+            <p className="text-sm text-blue-900">Penn Energy Savers cannot fund work completed before application approval, and EAP&apos;s fall rebate requires a contract signed inside its program window (August 3&ndash;November 13, with installation by November 27) &mdash; so sequencing matters. Utility rebates at PECO, PPL, and UGI are claimable now (mind the 90&ndash;180 day application deadlines). If you are income-qualified and can wait, Penn Energy Savers is the larger prize; if you are in PECO territory and can schedule installation for the fall window, the EAP rebate adds up to $1,650.</p>
           </div>
 
           <p className="text-xs text-gray-400">
@@ -537,7 +578,7 @@ export default function PennsylvaniaPage() {
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            <strong>Hybrid/dual-fuel systems</strong> (heat pump + gas furnace backup) are common in PA and make particular sense in Pittsburgh and Scranton where design temps hit 5&#176;F. EAP&apos;s Spring 2026 program included a $250 dual-fuel adder rewarding this approach; watch its Fall 2026 details (due mid-July) to see whether it returns.
+            <strong>Hybrid/dual-fuel systems</strong> (heat pump + gas furnace backup) are common in PA and make particular sense in Pittsburgh and Scranton where design temps hit 5&#176;F. EAP&apos;s Fall 2026 program keeps the $250 dual-fuel adder rewarding this approach &mdash; the heat pump must meet one of the rebate tiers, and the outdoor unit, indoor coil, and furnace must all be installed.
           </p>
 
           <p className="text-gray-700 leading-relaxed mb-4">
@@ -576,7 +617,7 @@ export default function PennsylvaniaPage() {
               <div className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-bold">2</div>
               <div>
                 <p className="font-semibold text-gray-900">Check rebate eligibility and get quotes</p>
-                <p className="text-sm text-gray-700">Confirm your equipment meets your utility&apos;s published thresholds before you sign anything &mdash; the current PA schedules require ENERGY STAR certification and minimum SEER2/HSPF2 ratings, with higher-efficiency equipment earning larger rebates. In PECO territory, the separate EAP rebate requires a participating EAP contractor and a contract signed inside the program window.</p>
+                <p className="text-sm text-gray-700">Confirm your equipment meets your utility&apos;s published thresholds before you sign anything &mdash; the current PA schedules require ENERGY STAR certification and minimum SEER2/HSPF2 ratings, with higher-efficiency equipment earning larger rebates. In PECO territory, the separate EAP rebate requires a participating EAP contractor installing a participating brand, and a contract signed inside the program window (August 3&ndash;November 13 for Fall 2026).</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -612,7 +653,7 @@ export default function PennsylvaniaPage() {
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Duquesne Light and FirstEnergy Phase V amounts (the near-term ones to watch)</p>
-              <p className="text-sm text-gray-600 mt-1">PECO, PPL, and UGI published Phase V schedules in June 2026. Duquesne Light (Docket M-2025-3057325) says its program is being refreshed, and FirstEnergy&apos;s portal still shows only Phase IV closeout text. Phase V runs through May 2031, so both will return &mdash; the question is when and at what level. Also watch EAP&apos;s Fall 2026 program details, due mid-July.</p>
+              <p className="text-sm text-gray-600 mt-1">PECO, PPL, and UGI published Phase V schedules in June 2026. Duquesne Light (Docket M-2025-3057325) says its program is being refreshed, and FirstEnergy&apos;s portal still shows only Phase IV closeout text. Phase V runs through May 2031, so both will return &mdash; the question is when and at what level.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Governor Shapiro&apos;s Lightning Plan</p>

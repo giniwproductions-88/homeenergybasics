@@ -729,9 +729,9 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "PA",
     stateName: "Pennsylvania",
     status: "limited",
-    lastVerified: "2026-07-10",
+    lastVerified: "2026-07-13",
     summary:
-      "Act 129 Phase V (June 2026\u2013May 2031) is rolling out: PECO (heat pumps up to $300), PPL ($225\u2013$325 standard, $350\u2013$475 for households at or below 250% FPL), and UGI ($500 ASHP; mini-splits $175\u2013$300/ton up to $1,500) have published claimable schedules, while Duquesne Light's program is \"currently being refreshed\" and FirstEnergy has not posted Phase V amounts. Philadelphia-area EAP rebates ($250\u2013$1,650) return in the Fall 2026 program (~Aug\u2013Nov). Penn Energy Savers ($258.9M HEAR/HOMES) still has not launched \u2014 DEP is revising the program per DOE's June 1, 2026 guidance. Federal 25C/25D ended Dec 31, 2025. Also available: HEELP (1% APR) and KEEP loans, WAP, LIHEAP, and Philadelphia's Built to Last.",
+      "Act 129 Phase V (June 2026\u2013May 2031) is rolling out: PECO (heat pumps up to $300), PPL ($225\u2013$325 standard, $350\u2013$475 for households at or below 250% FPL), and UGI ($500 ASHP; mini-splits $175\u2013$300/ton up to $1,500) have published claimable schedules, while Duquesne Light's program is \"currently being refreshed\" and FirstEnergy has not posted Phase V amounts. Philadelphia-area EAP rebates ($250\u2013$1,650) are published for the Fall 2026 program (contracts Aug 3\u2013Nov 13). Penn Energy Savers ($258.9M HEAR/HOMES) still has not launched \u2014 DEP is revising the program per DOE's June 1, 2026 guidance. Federal 25C/25D ended Dec 31, 2025. Also available: HEELP (1% APR) and KEEP loans, WAP, LIHEAP, and Philadelphia's Built to Last.",
     sources: [
       {
         label: "PA DEP — Inflation Reduction Act / Penn Energy Savers",
