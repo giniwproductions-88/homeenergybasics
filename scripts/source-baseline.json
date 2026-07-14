@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-14T20:49:13.048Z",
+ "generatedAt": "2026-07-14T22:56:15.783Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -3984,7 +3984,7 @@
     "AZ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:53.963Z",
+   "fetchedAt": "2026-07-14T17:02:50.164Z",
    "length": 78682,
    "kind": "html",
    "textHash": "25412edda71a3d79",
@@ -4001,7 +4001,7 @@
     "AZ"
    ],
    "httpStatus": 403,
-   "fetchedAt": "2026-07-09T15:14:55.231Z",
+   "fetchedAt": "2026-07-14T17:02:51.959Z",
    "length": 6037,
    "error": "HTTP 403"
   },
@@ -4013,7 +4013,7 @@
     "AZ"
    ],
    "httpStatus": 403,
-   "fetchedAt": "2026-07-09T15:14:55.254Z",
+   "fetchedAt": "2026-07-14T17:02:51.883Z",
    "length": 3378,
    "error": "HTTP 403"
   },
@@ -4025,7 +4025,7 @@
     "AZ"
    ],
    "httpStatus": 403,
-   "fetchedAt": "2026-07-09T15:14:55.581Z",
+   "fetchedAt": "2026-07-14T17:02:51.958Z",
    "length": 3378,
    "error": "HTTP 403"
   },
@@ -4037,10 +4037,10 @@
     "AZ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:55.899Z",
-   "length": 121905,
+   "fetchedAt": "2026-07-14T17:02:52.147Z",
+   "length": 121815,
    "kind": "html",
-   "textHash": "c254c44a942463d1",
+   "textHash": "c57e25368b7517a4",
    "dollars": [],
    "keywords": {}
   },
@@ -4052,8 +4052,8 @@
     "AZ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:55.593Z",
-   "length": 186165,
+   "fetchedAt": "2026-07-14T17:02:55.419Z",
+   "length": 186179,
    "kind": "html",
    "textHash": "21bc8262133e457a",
    "dollars": [
@@ -4074,10 +4074,10 @@
     "AZ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:56.110Z",
-   "length": 137231,
+   "fetchedAt": "2026-07-14T17:02:53.087Z",
+   "length": 129097,
    "kind": "html",
-   "textHash": "a82a3b470721f4d3",
+   "textHash": "21eb4f776d7cfec2",
    "dollars": [
     "$200",
     "$300",
@@ -4087,7 +4087,8 @@
     "$1,200",
     "$1,400",
     "$2,000",
-    "$2,200"
+    "$2,200",
+    "$41,670"
    ],
    "keywords": {
     "now open": 1,
@@ -4102,7 +4103,7 @@
     "AZ"
    ],
    "httpStatus": 403,
-   "fetchedAt": "2026-07-09T15:14:57.211Z",
+   "fetchedAt": "2026-07-14T17:02:54.097Z",
    "length": 5890,
    "error": "HTTP 403"
   },
@@ -4121,7 +4122,7 @@
     "WV"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T16:31:09.067Z",
+   "fetchedAt": "2026-07-14T17:02:52.642Z",
    "length": 161285,
    "kind": "html",
    "textHash": "344bd9425ddeb801",
