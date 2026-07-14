@@ -236,7 +236,7 @@ export default function RhodeIslandPage() {
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5">
             <p className="font-semibold text-amber-800 mb-1">&#9888; Common mistake: assuming market-rate funding is still available</p>
-            <p className="text-sm text-amber-900">The original ARPA market-rate residential program exhausted its funding by early 2025. The new $10M RGGI round prioritizes moderate- and low-income households. Check cleanheatri.com for current funding availability before planning your project. Income-eligible applications remain active.</p>
+            <p className="text-sm text-amber-900">The original ARPA market-rate residential program exhausted its funding by early 2025. The new $10M RGGI round prioritizes moderate- and low-income households. Check cleanheatri.com for current funding availability before planning your project &mdash; the program publishes a Remaining Funds page. Applications for the current income-limited program remain open.</p>
           </div>
         </div>
       </section>
@@ -277,6 +277,11 @@ export default function RhodeIslandPage() {
                   <td className="p-3">ENERGY STAR HP clothes dryer</td>
                   <td className="p-3">Up to $840</td>
                   <td className="p-3">Up to $420</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Gas-line capping (with an eligible appliance)</td>
+                  <td className="p-3">Up to $250 ($300 for two)</td>
+                  <td className="p-3">Up to $250 ($300 for two)</td>
                 </tr>
               </tbody>
             </table>
