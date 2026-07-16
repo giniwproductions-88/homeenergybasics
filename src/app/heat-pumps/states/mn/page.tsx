@@ -247,9 +247,7 @@ export default function MinnesotaPage() {
           {/* Xcel Energy */}
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Xcel Energy — Statewide (Electric Service Areas)</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Xcel Energy offers Minnesota&apos;s broadest utility heat pump rebate program, covering ducted systems, ductless mini-splits, ground-source, and heat pump water heaters. Rebate amounts depend on equipment type and your fuel relationship with Xcel. Xcel&apos;s rebates differ by state &mdash; our{" "}
-            <Link href="/heat-pumps/utilities/xcel-energy" className="text-brand-600 hover:underline">Xcel Energy heat pump rebates guide</Link>{" "}
-            covers every territory Xcel serves.
+            Xcel Energy offers Minnesota&apos;s broadest utility heat pump rebate program, covering ducted systems, ductless mini-splits, ground-source, and heat pump water heaters. Rebate amounts depend on equipment type and your fuel relationship with Xcel.
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
@@ -304,6 +302,18 @@ export default function MinnesotaPage() {
             <a href="https://www.ahridirectory.org" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">AHRI directory</a>. Cold-climate systems must also appear on the{" "}
             <a href="https://ashp.neep.org" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">NEEP cold-climate product list</a>{" "}
             with COP ≥ 1.75 at 5°F and capacity at 5°F ≥ 70% of 47°F rated capacity.
+          </p>
+
+          <p className="text-sm text-gray-600 mb-6">
+            Xcel serves customers in several states, and its rebate amounts differ by
+            territory. See our{" "}
+            <Link
+              href="/heat-pumps/utilities/xcel-energy"
+              className="text-brand-600 hover:underline"
+            >
+              complete Xcel Energy heat pump rebate guide
+            </Link>
+            .
           </p>
 
           {/* CenterPoint Energy */}
