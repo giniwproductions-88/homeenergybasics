@@ -2,7 +2,10 @@
 /**
  * check-sources.mjs — homeenergybasics.com source change detector
  * Zero dependencies. Node 18+. Reads source URLs directly from src/data/incentives.ts
- * so the watch list can never drift from the site.
+ * AND src/data/utilities.ts (utility pilot pages, if present) so the watch list can
+ * never drift from the site. URLs on JS-walled hosts (HUMAN_VERIFY_HOSTS, e.g.
+ * my.xcelenergy.com portals) are never fetched — automated fetches false-miss there —
+ * and are instead listed in every report as standing browser-check reminders.
  *
  * USAGE (from repo root):
  *   node scripts/check-sources.mjs parse                 # sanity: list states + URL counts, no network
@@ -32,6 +35,21 @@ import path from "node:path";
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(scriptDir, "..");
 const INCENTIVES = path.join(ROOT, "src", "data", "incentives.ts");
+const UTILITIES = path.join(ROOT, "src", "data", "utilities.ts"); // optional; parsed if present
+
+// JS-walled hosts: a plain fetch returns a shell page, so hash/dollar diffs are
+// guaranteed false-misses. These are excluded from fetching entirely and surfaced
+// in every report as HUMAN VERIFY reminders. Matches the host and all subdomains.
+const HUMAN_VERIFY_HOSTS = ["my.xcelenergy.com"];
+
+function isHumanVerify(url) {
+  try {
+    const h = new URL(url).host.toLowerCase();
+    return HUMAN_VERIFY_HOSTS.some((d) => h === d || h.endsWith("." + d));
+  } catch {
+    return false;
+  }
+}
 const BASELINE_F = path.join(scriptDir, "source-baseline.json");
 const LATEST_F = path.join(scriptDir, "source-latest.json");
 const REPORT_F = path.join(scriptDir, "source-diff-report.md");
@@ -96,6 +114,39 @@ function parseIncentives() {
     }
   }
   return { states: marks.map((x) => x.code), urls };
+}
+
+function parseUtilities() {
+  // Optional second data file for utility pilot pages (Xcel etc.). Same
+  // label/url source convention as incentives.ts. Entries are grouped by the
+  // utility's slug ("xcel-energy" -> code "XCEL-ENERGY") so `--only` and
+  // `accept XCEL-ENERGY` work exactly like state codes.
+  const urls = new Map();
+  if (!existsSync(UTILITIES)) return { utilities: [], urls };
+  const src = readFileSync(UTILITIES, "utf8");
+  const re = /slug:\s*"([a-z0-9-]+)"/g;
+  const marks = [];
+  let m;
+  while ((m = re.exec(src))) marks.push({ code: m[1].toUpperCase(), idx: m.index });
+  if (!marks.length) marks.push({ code: "UTILITY", idx: 0 }); // no slug field found: single bucket
+  for (let i = 0; i < marks.length; i++) {
+    const end = i + 1 < marks.length ? marks[i + 1].idx : src.length;
+    const chunk = src.slice(marks[i].idx, end);
+    const pair = /label:\s*"((?:[^"\\]|\\.)*)"\s*,\s*url:\s*"((?:[^"\\]|\\.)*)"/g;
+    let p;
+    while ((p = pair.exec(chunk))) {
+      const label = decodeEscapes(p[1]);
+      const url = decodeEscapes(p[2]);
+      if (!urls.has(url)) urls.set(url, { label, states: [] });
+      if (!urls.get(url).states.includes(marks[i].code)) urls.get(url).states.push(marks[i].code);
+    }
+  }
+  if (!urls.size) {
+    console.error(
+      `WARNING: ${UTILITIES} exists but 0 label/url source pairs were parsed — its structure differs from incentives.ts. Utility sources are NOT being watched. Fix the parser before trusting a "clean" run.`
+    );
+  }
+  return { utilities: marks.map((x) => x.code), urls };
 }
 
 /* ------------------------------------------------------------------ */
@@ -265,7 +316,7 @@ function diffEntry(base, cur) {
 /* report                                                               */
 /* ------------------------------------------------------------------ */
 
-function writeReport(baseline, latest, ignoreSet) {
+function writeReport(baseline, latest, ignoreSet, humanVerify = []) {
   const rows = []; // {states, tier, label, url, level, notes}
   const baseMap = baseline.entries, curMap = latest.entries;
   let unchanged = 0, ignored = 0;
@@ -275,7 +326,7 @@ function writeReport(baseline, latest, ignoreSet) {
     const cur = curMap[url];
     const base = baseMap[url];
     if (!base) {
-      rows.push({ ...pick(cur), level: "NEW", notes: ["not in baseline (source added to incentives.ts) — run accept to adopt"] });
+      rows.push({ ...pick(cur), level: "NEW", notes: ["not in baseline (source added to incentives.ts/utilities.ts) — run accept to adopt"] });
       continue;
     }
     const { level, notes } = diffEntry(base, cur);
@@ -283,8 +334,8 @@ function writeReport(baseline, latest, ignoreSet) {
     rows.push({ ...pick(cur), level, notes });
   }
   for (const url of Object.keys(baseMap)) {
-    if (!curMap[url] && !ignoreSet.has(url)) {
-      rows.push({ ...pick(baseMap[url]), level: "REMOVED", notes: ["in baseline but no longer in incentives.ts"] });
+    if (!curMap[url] && !ignoreSet.has(url) && !isHumanVerify(url)) {
+      rows.push({ ...pick(baseMap[url]), level: "REMOVED", notes: ["in baseline but no longer in incentives.ts/utilities.ts"] });
     }
   }
 
@@ -312,6 +363,14 @@ function writeReport(baseline, latest, ignoreSet) {
     }
     md += "\n";
   }
+  if (humanVerify.length) {
+    md += `## HUMAN VERIFY (${humanVerify.length}) — JS-walled, never fetched\n\n`;
+    md += `Automated fetches false-miss on these hosts. Check each in a browser on the regular cadence; a quiet report does NOT cover them.\n\n`;
+    for (const hv of humanVerify) {
+      md += `- **[${hv.states.join(",")}]** ${hv.label}\n  ${hv.url}\n`;
+    }
+    md += "\n";
+  }
   md += `---\nWorkflow: verify HIGH states at full checklist depth -> update pages -> \`node scripts/check-sources.mjs accept <STATE>\` -> commit source-baseline.json.\nDate-stamp rule: a flag here is NOT verification. Bump lastVerified only after real source verification.\n`;
   writeFileSync(REPORT_F, md);
   return { rows, statesToVerify, unchanged };
@@ -326,7 +385,7 @@ function loadJson(f, fallback) {
 }
 
 function filterUrls(urls, onlyArg) {
-  if (!onlyArg) return urls;
+  if (!onlyArg) return new Map(urls); // copy: caller deletes human-verify entries from the result
   const want = onlyArg.split(",").map((s) => s.trim().toUpperCase()).filter(Boolean);
   const out = new Map();
   for (const [u, meta] of urls) if (meta.states.some((s) => want.includes(s))) out.set(u, meta);
@@ -348,8 +407,19 @@ async function main() {
 
   if (mode === "selftest") return selftest();
 
-  const { states, urls: allUrls } = parseIncentives();
+  const { states, urls: stateUrls } = parseIncentives();
+  const { utilities, urls: utilUrls } = parseUtilities();
+  const allUrls = new Map(stateUrls);
+  for (const [u, meta] of utilUrls) {
+    if (!allUrls.has(u)) allUrls.set(u, { ...meta, states: [...meta.states] });
+    else for (const c of meta.states) if (!allUrls.get(u).states.includes(c)) allUrls.get(u).states.push(c);
+  }
   const urls = filterUrls(allUrls, only);
+  // Partition out JS-walled URLs: never fetched, always reported for manual checks.
+  const humanVerify = [...urls.entries()]
+    .filter(([u]) => isHumanVerify(u))
+    .map(([url, meta]) => ({ url, label: meta.label, states: meta.states }));
+  for (const hv of humanVerify) urls.delete(hv.url);
 
   if (mode === "parse") {
     console.log(`states: ${states.length} | unique URLs: ${allUrls.size}`);
@@ -359,6 +429,13 @@ async function main() {
     const shared = [...allUrls.entries()].filter(([, m]) => m.states.length > 3);
     console.log(`shared URLs (>3 states): ${shared.length}`);
     for (const [u, m] of shared) console.log(`  [${m.states.length} states] ${u}`);
+    console.log(`utilities (from utilities.ts): ${utilities.length ? utilities.join(", ") : "(none)"} | utility URLs: ${utilUrls.size}`);
+    for (const [u, m] of utilUrls) {
+      console.log(`  [${m.states.join(",")}]${isHumanVerify(u) ? " [HUMAN VERIFY]" : ""} ${m.label} — ${u}`);
+    }
+    if (humanVerify.length) {
+      console.log(`human-verify URLs (never fetched): ${humanVerify.length}`);
+    }
     return;
   }
 
@@ -376,6 +453,7 @@ async function main() {
     }
     const errs = Object.values(snap.entries).filter((e) => e.error);
     console.log(`Baseline written: ${BASELINE_F}`);
+    if (humanVerify.length) console.log(`Excluded ${humanVerify.length} HUMAN VERIFY URL(s) (JS-walled) — these are never baselined; browser-check them on schedule.`);
     console.log(`OK: ${Object.keys(snap.entries).length - errs.length} | errors: ${errs.length}`);
     for (const e of errs) console.log(`  ERROR [${e.states.join(",")}] ${e.url} -> ${e.error}`);
     console.log(`\nCommit the baseline: git add scripts/source-baseline.json`);
@@ -390,8 +468,12 @@ async function main() {
     const latest = await snapshotAll(urls);
     writeFileSync(LATEST_F, JSON.stringify(latest, null, 1));
     const ignoreSet = new Set(loadJson(IGNORE_F, []));
-    const { rows, statesToVerify, unchanged } = writeReport(baseline, latest, ignoreSet);
+    const { rows, statesToVerify, unchanged } = writeReport(baseline, latest, ignoreSet, humanVerify);
     console.log(`\nReport: ${REPORT_F}`);
+    if (humanVerify.length) {
+      console.log(`HUMAN VERIFY (JS-walled, browser-check on schedule): ${humanVerify.length}`);
+      for (const hv of humanVerify) console.log(`  [${hv.states.join(",")}] ${hv.label} — ${hv.url}`);
+    }
     console.log(`unchanged: ${unchanged} | flagged: ${rows.length}`);
     console.log(`HIGH: ${rows.filter((r) => r.level === "HIGH").length} | FETCH: ${rows.filter((r) => r.level === "FETCH").length} | LOW: ${rows.filter((r) => r.level === "LOW").length}`);
     console.log(`States to verify: ${statesToVerify.join(", ") || "(none)"}`);

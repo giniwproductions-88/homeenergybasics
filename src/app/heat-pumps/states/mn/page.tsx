@@ -247,7 +247,9 @@ export default function MinnesotaPage() {
           {/* Xcel Energy */}
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Xcel Energy — Statewide (Electric Service Areas)</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Xcel Energy offers Minnesota&apos;s broadest utility heat pump rebate program, covering ducted systems, ductless mini-splits, ground-source, and heat pump water heaters. Rebate amounts depend on equipment type and your fuel relationship with Xcel.
+            Xcel Energy offers Minnesota&apos;s broadest utility heat pump rebate program, covering ducted systems, ductless mini-splits, ground-source, and heat pump water heaters. Rebate amounts depend on equipment type and your fuel relationship with Xcel. Xcel&apos;s rebates differ by state &mdash; our{" "}
+            <Link href="/heat-pumps/utilities/xcel-energy" className="text-brand-600 hover:underline">Xcel Energy heat pump rebates guide</Link>{" "}
+            covers every territory Xcel serves.
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">

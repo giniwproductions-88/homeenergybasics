@@ -85,6 +85,7 @@ export default function RootLayout({
                   <li><Link href="/heat-pumps/vs-furnace" className="hover:text-white">Heat Pump vs Furnace</Link></li>
                   <li><Link href="/heat-pumps/stacking-rebates" className="hover:text-white">Stacking Rebates</Link></li>
                   <li><Link href="/heat-pumps/when-not-to" className="hover:text-white">When NOT to Get One</Link></li>
+                  <li><Link href="/heat-pumps/utilities/xcel-energy" className="hover:text-white">Xcel Energy Rebates</Link></li>
                   <li><Link href="/federal-heat-pump-tax-credit-expired" className="hover:text-white">Federal Credit (Expired)</Link></li>
                 </ul>
               </div>
