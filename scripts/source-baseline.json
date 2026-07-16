@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-14T23:41:05.773Z",
+ "generatedAt": "2026-07-16T02:54:23.638Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -482,7 +482,7 @@
     "MO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:01.588Z",
+   "fetchedAt": "2026-07-16T02:52:29.108Z",
    "length": 114446,
    "kind": "html",
    "textHash": "5f26bc2d77d90d83",
@@ -503,10 +503,11 @@
    "label": "Xcel Energy — MN 2024-2026 Rebate Summary (PDF)",
    "states": [
     "MN",
-    "ND"
+    "ND",
+    "XCEL-ENERGY"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:25.467Z",
+   "fetchedAt": "2026-07-16T02:52:31.888Z",
    "length": 2442505,
    "kind": "pdf",
    "bytesHash": "3817f7be21562cbd"
@@ -519,8 +520,8 @@
     "MN"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:24.025Z",
-   "length": 101734,
+   "fetchedAt": "2026-07-16T02:52:30.009Z",
+   "length": 101642,
    "kind": "html",
    "textHash": "5fba7fa06b975fa2",
    "dollars": [
@@ -537,8 +538,8 @@
     "MN"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:24.086Z",
-   "length": 46673,
+   "fetchedAt": "2026-07-16T02:52:30.030Z",
+   "length": 46677,
    "kind": "html",
    "textHash": "0f317a8529c284b9",
    "dollars": [
@@ -550,13 +551,13 @@
   },
   "https://mn.gov/commerce/energy/consumer/energy-programs/save-energy-mn.jsp": {
    "url": "https://mn.gov/commerce/energy/consumer/energy-programs/save-energy-mn.jsp",
-   "finalUrl": "http://validate.perfdrive.com/d5bd5333eafe8b0ccd6023ba818d1aa6/?ssa=6c9f9cf0-be35-4c9e-a9d5-034694326135&ssb=95250283563&ssc=https%3A%2F%2Fmn.gov%2Fcommerce%2Fenergy%2Fconsumer%2Fenergy-programs%2Fsave-energy-mn.jsp&ssi=39ddf1fb-bf56-4041-9f97-6f01e2095e72&ssk=support@shieldsquare.com&ssm=02810027579736627103460836941899&ssn=048103870e90e8fa3e77051e8041c27a4395529af507-11c1-4015-9c0083&sso=65363064-a45a3c58ad6ab25f9938687b8f4d51387d1f7bb4b51aea25&ssp=00554259451783676343178366600357414&ssq=13838851006407375196810064016488698868786&ssr=NTAuODEuMjI0LjE3Mw==&sst=Mozilla/5.0%20(Windows%20NT%2010.0;%20Win64;%20x64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/126.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=W10=",
+   "finalUrl": "http://validate.perfdrive.com/d5bd5333eafe8b0ccd6023ba818d1aa6/?ssa=d28c0635-5e38-4544-b83c-bab6cd51cd19&ssb=27148206015&ssc=https%3A%2F%2Fmn.gov%2Fcommerce%2Fenergy%2Fconsumer%2Fenergy-programs%2Fsave-energy-mn.jsp&ssi=df8e8f45-bf56-476f-b72a-608cfa718658&ssk=support@shieldsquare.com&ssm=02298817840904193108435046260387&ssn=c05325f8bf6afa8950712f2c5446c7882e90514b0bfc-fd68-4ad6-9b927a&sso=33c95605-4a1b7d29ec769a133ab7e91c20f6fde2cd4ab1cfd7903597&ssp=10886224811784186296178411857723346&ssq=76703097035384388836770353986375248114225&ssr=NTAuODEuMjI0LjE3Mw==&sst=Mozilla/5.0%20(Windows%20NT%2010.0;%20Win64;%20x64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/126.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=W10=",
    "label": "MN Commerce — Save Energy Minnesota",
    "states": [
     "MN"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:24.637Z",
+   "fetchedAt": "2026-07-16T02:52:30.938Z",
    "length": 21621,
    "kind": "html",
    "textHash": "e2d017885975c36d",
@@ -565,13 +566,13 @@
   },
   "https://mn.gov/commerce/energy/consumer/energy-programs/heat-pump.jsp": {
    "url": "https://mn.gov/commerce/energy/consumer/energy-programs/heat-pump.jsp",
-   "finalUrl": "http://validate.perfdrive.com/d5bd5333eafe8b0ccd6023ba818d1aa6/?ssa=58671b24-32e8-4f23-a8a5-de18062459db&ssb=95250283563&ssc=https%3A%2F%2Fmn.gov%2Fcommerce%2Fenergy%2Fconsumer%2Fenergy-programs%2Fheat-pump.jsp&ssi=e502be96-bf56-46c7-969e-16fa5be92e2e&ssk=support@shieldsquare.com&ssm=02810027579736627103460836941899&ssn=0481038772e7d3c6ace41f891541c27a43954fb68e81-92f6-41e2-bc0083&sso=653634cf-08b14e2bc20fb25f99389cf2ed10c3614a9f145cb51aea25&ssp=00554259451783676343178366600357414&ssq=13838851006407375196810064016488698868786&ssr=NTAuODEuMjI0LjE3Mw==&sst=Mozilla/5.0%20(Windows%20NT%2010.0;%20Win64;%20x64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/126.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=W10=",
+   "finalUrl": "http://validate.perfdrive.com/d5bd5333eafe8b0ccd6023ba818d1aa6/?ssa=aed5f858-35f1-4675-b83a-125887dca7fb&ssb=27148206015&ssc=https%3A%2F%2Fmn.gov%2Fcommerce%2Fenergy%2Fconsumer%2Fenergy-programs%2Fheat-pump.jsp&ssi=4a332055-bf56-42c0-92aa-76b1b792e5d2&ssk=support@shieldsquare.com&ssm=02298817840904193108435046260387&ssn=c05325f8cef83c06648670f5ecffc7882e90fca3f2f1-1a23-4027-bb927a&sso=33c956b5-583ea03da2fc9a133ab7ad254c3aef0fc2b64324d7903597&ssp=10886224811784186296178411857723346&ssq=76703097035384388836770353986375248114225&ssr=NTAuODEuMjI0LjE3Mw==&sst=Mozilla/5.0%20(Windows%20NT%2010.0;%20Win64;%20x64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/126.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=W10=",
    "label": "MN Commerce — Residential Heat Pump Rebate",
    "states": [
     "MN"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:24.637Z",
+   "fetchedAt": "2026-07-16T02:52:30.950Z",
    "length": 21621,
    "kind": "html",
    "textHash": "e2d017885975c36d",
@@ -586,8 +587,8 @@
     "MN"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:24.721Z",
-   "length": 200022,
+   "fetchedAt": "2026-07-16T02:52:30.787Z",
+   "length": 199962,
    "kind": "html",
    "textHash": "304b75c84ba6da09",
    "dollars": [
@@ -604,7 +605,7 @@
     "MN"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:24.819Z",
+   "fetchedAt": "2026-07-16T02:52:30.888Z",
    "length": 65158,
    "kind": "html",
    "textHash": "e4a3f90067ba3435",
@@ -8444,6 +8445,49 @@
    "dollars": [
     "$50"
    ],
+   "keywords": {}
+  },
+  "https://www.xcelenergy.com/staticfiles/xe-responsive/Programs%20and%20Rebates/Residential/24-01-506_MN-Res_HVAC_OpenPrgms_app.pdf": {
+   "url": "https://www.xcelenergy.com/staticfiles/xe-responsive/Programs%20and%20Rebates/Residential/24-01-506_MN-Res_HVAC_OpenPrgms_app.pdf",
+   "finalUrl": "https://www.xcelenergy.com/staticfiles/xe-responsive/Programs%20and%20Rebates/Residential/24-01-506_MN-Res_HVAC_OpenPrgms_app.pdf",
+   "label": "Xcel Energy — MN Residential HVAC Rebate Application 24-01-506 (PDF)",
+   "states": [
+    "XCEL-ENERGY"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-16T02:54:21.610Z",
+   "length": 256427,
+   "kind": "pdf",
+   "bytesHash": "b26f570888599bdb"
+  },
+  "https://eu.clearesult.com/": {
+   "url": "https://eu.clearesult.com/",
+   "finalUrl": "https://eu.clearesult.com/",
+   "label": "Efficiency United (Michigan statewide program; Xcel is a participating utility)",
+   "states": [
+    "XCEL-ENERGY"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-16T02:54:21.453Z",
+   "length": 42662,
+   "kind": "html",
+   "textHash": "d362587f618cb1c4",
+   "dollars": [],
+   "keywords": {}
+  },
+  "https://focusonenergy.com": {
+   "url": "https://focusonenergy.com",
+   "finalUrl": "https://focusonenergy.com/",
+   "label": "Focus on Energy (Wisconsin statewide program)",
+   "states": [
+    "XCEL-ENERGY"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-16T02:54:21.852Z",
+   "length": 80383,
+   "kind": "html",
+   "textHash": "7a566bad89551cab",
+   "dollars": [],
    "keywords": {}
   }
  }
