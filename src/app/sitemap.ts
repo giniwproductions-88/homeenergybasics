@@ -1,9 +1,9 @@
 import { MetadataRoute } from "next";
 import { incentives } from "@/data/incentives";
+import { shippedUtilities } from "@/data/utilities";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://homeenergybasics.com";
-
   const staticPages: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
@@ -72,7 +72,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
   ];
-
   const statePages: MetadataRoute.Sitemap = Object.values(incentives).map(
     (state) => ({
       url: `${baseUrl}/heat-pumps/states/${state.stateCode.toLowerCase()}`,
@@ -81,6 +80,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     })
   );
-
-  return [...staticPages, ...statePages];
+  const utilityPages: MetadataRoute.Sitemap = shippedUtilities().map(
+    (utility) => ({
+      url: `${baseUrl}/heat-pumps/utilities/${utility.slug}`,
+      lastModified: new Date(`${utility.lastVerified}T00:00:00Z`),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    })
+  );
+  return [...staticPages, ...statePages, ...utilityPages];
 }
