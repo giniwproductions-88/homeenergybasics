@@ -49,7 +49,7 @@ export default function MinnesotaPage() {
         name: "What heat pump rebates are available in Minnesota in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Utility rebates are the primary incentive. Xcel Energy offers up to $2,000 for cold-climate air-source heat pumps (plus a $600 insulation bonus). CenterPoint offers $1,100 for ducted heat pumps paired with a gas furnace. Minnesota Power offers up to $1,200 for cold-climate heat pumps (enhanced rebate through June 2026). Minneapolis residents can stack up to $14,000 in additional city rebates. Federal 25C/25D tax credits ended December 31, 2025. The state HEAR program and MN Residential Heat Pump Rebate ($4,000) have not launched.",
+          text: "Utility rebates are the primary incentive. Xcel Energy offers up to $2,000 for cold-climate air-source heat pumps (plus a $600 insulation bonus). CenterPoint offers $1,100 for ducted heat pumps paired with a gas furnace. Minnesota Power offers $1,000 for cold-climate heat pumps. Minneapolis residents can stack up to $14,000 in additional city rebates. Federal 25C/25D tax credits ended December 31, 2025. The state HEAR program and MN Residential Heat Pump Rebate ($4,000) have not launched.",
         },
       },
       {
@@ -65,7 +65,7 @@ export default function MinnesotaPage() {
         name: "Has Minnesota's HEAR rebate program launched?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "No. As of the Minnesota Department of Commerce's April 8, 2026 update, Save Energy Minnesota has not launched. The state is waiting for formal DOE approval. There is no estimated launch date. Federal guidelines do not allow retroactive rebates for installations before launch. A separate state Residential Heat Pump Rebate of up to $4,000 is designed to stack with HEAR but also has not launched.",
+          text: "No. As of our July 15, 2026 verification, the Minnesota Department of Commerce states that Save Energy Minnesota has not launched, the state is waiting for formal DOE approval, and there is no estimated launch date. DOE has also issued new program rules that change how the HEAR and HOMES rebates will work in Minnesota, and the state is updating its program documents in response. Federal guidelines do not allow retroactive rebates for installations before launch. A separate state Residential Heat Pump Rebate of up to $4,000 is designed to stack with HEAR but also has not launched.",
         },
       },
       {
@@ -113,7 +113,7 @@ export default function MinnesotaPage() {
             Minnesota Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Federal heat pump tax credits ended December 31, 2025. Utility rebates from Xcel Energy (up to <strong>$2,600</strong> with insulation bonus), CenterPoint (<strong>$1,100</strong> dual-fuel), and Minnesota Power (<strong>$1,200</strong> cold-climate, enhanced through June 2026) are what&apos;s available now, plus up to <strong>$14,000</strong> in Minneapolis city rebates. Save Energy Minnesota (HEAR + a <strong>$4,000</strong> state rebate) has not launched. This guide covers all major Minnesota heat pump incentives available in 2026, including Xcel Energy, CenterPoint Energy, Minnesota Power, Minneapolis Green Cost Share, and the pending Save Energy Minnesota program. Here&apos;s what&apos;s actually available.
+            Federal heat pump tax credits ended December 31, 2025. Utility rebates from Xcel Energy (up to <strong>$2,600</strong> with insulation bonus), CenterPoint (<strong>$1,100</strong> dual-fuel), and Minnesota Power (<strong>$1,000</strong> cold-climate) are what&apos;s available now, plus up to <strong>$14,000</strong> in Minneapolis city rebates. Save Energy Minnesota (HEAR + a <strong>$4,000</strong> state rebate) has not launched. This guide covers all major Minnesota heat pump incentives available in 2026, including Xcel Energy, CenterPoint Energy, Minnesota Power, Minneapolis Green Cost Share, and the pending Save Energy Minnesota program. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
             Updated {formattedDate} — verified against official program sources
@@ -184,7 +184,7 @@ export default function MinnesotaPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Save Energy Minnesota: Not Yet Launched</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            As of the Minnesota Department of Commerce&apos;s April 8, 2026 update, Save Energy Minnesota has not launched. The state is waiting for formal DOE approval. There is <strong>no estimated program launch date</strong>. When it does launch, two programs will be available.
+            As of our July 15, 2026 verification, the Minnesota Department of Commerce states that Save Energy Minnesota has not launched. The state is waiting for formal DOE approval, and there is <strong>no estimated program launch date</strong>. DOE has recently issued new program rules that change how the HEAR and HOMES rebates will work in Minnesota, and the state is updating its program documents in response. When the program does launch, two programs will be available.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Home Electrification and Appliance Rebates (HEAR)</h3>
@@ -354,7 +354,7 @@ export default function MinnesotaPage() {
           {/* Minnesota Power */}
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Minnesota Power — Northeastern MN</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Minnesota Power serves northeastern Minnesota (Duluth, Iron Range, Grand Rapids). Their rebate program covers ducted ASHP, geothermal, and heat pump water heaters. All require a participating contractor and ENERGY STAR certification. Rebates cannot exceed 75% of project cost.
+            Minnesota Power serves northeastern Minnesota (Duluth, Iron Range, Grand Rapids). Their rebate program covers ducted and ductless ASHPs, geothermal, and heat pump water heaters. All require a participating contractor; standard units must be ENERGY STAR certified, and cold-climate units must operate efficiently down to 5°F. Rebates cannot exceed 75% of project cost.
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
@@ -371,10 +371,15 @@ export default function MinnesotaPage() {
                   <td className="p-3 font-semibold">$400</td>
                   <td className="p-3">ENERGY STAR certified; participating contractor required</td>
                 </tr>
+                <tr className="border-b">
+                  <td className="p-3">Ductless ASHP (standard)</td>
+                  <td className="p-3 font-semibold">$400</td>
+                  <td className="p-3">ENERGY STAR certified; participating contractor required</td>
+                </tr>
                 <tr className="border-b bg-green-50">
                   <td className="p-3">Cold-climate ASHP (ducted or ductless)</td>
-                  <td className="p-3 font-semibold">$1,200</td>
-                  <td className="p-3">Enhanced rebate, installs through June 30, 2026; ccASHP rated to 5°F</td>
+                  <td className="p-3 font-semibold">$1,000</td>
+                  <td className="p-3">Purchases Jan 1–Dec 31, 2026; ccASHP rated to 5°F</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Ground-source (geothermal)</td>
@@ -598,7 +603,7 @@ export default function MinnesotaPage() {
           <div className="space-y-4">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Save Energy Minnesota launch</p>
-              <p className="text-sm text-gray-600 mt-1">No date set as of April 8, 2026. Monitor <a href="https://mn.gov/commerce/energy/consumer/energy-programs/save-energy-mn.jsp" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">mn.gov/commerce</a> for the official announcement. Projects before launch don&apos;t qualify for HEAR.</p>
+              <p className="text-sm text-gray-600 mt-1">No date set as of our July 15, 2026 check. Monitor <a href="https://mn.gov/commerce/energy/consumer/energy-programs/save-energy-mn.jsp" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">mn.gov/commerce</a> for the official announcement. Projects before launch don&apos;t qualify for HEAR.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">MN Residential Heat Pump Rebate ($4,000)</p>
