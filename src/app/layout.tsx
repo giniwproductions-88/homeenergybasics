@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { incentives } from '@/data/incentives'
+import { shippedUtilities } from '@/data/utilities'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -16,6 +17,7 @@ export default function RootLayout({
   const footerStates = Object.values(incentives).sort((a, b) =>
     a.stateName.localeCompare(b.stateName)
   )
+  const footerUtilities = shippedUtilities()
 
   return (
     <html lang="en">
@@ -94,7 +96,13 @@ export default function RootLayout({
                   <li><Link href="/heat-pumps/vs-furnace" className="hover:text-white">Heat Pump vs Furnace</Link></li>
                   <li><Link href="/heat-pumps/stacking-rebates" className="hover:text-white">Stacking Rebates</Link></li>
                   <li><Link href="/heat-pumps/when-not-to" className="hover:text-white">When NOT to Get One</Link></li>
-                  <li><Link href="/heat-pumps/utilities/xcel-energy" className="hover:text-white">Xcel Energy Rebates</Link></li>
+                  {footerUtilities.map((utility) => (
+                    <li key={utility.slug}>
+                      <Link href={`/heat-pumps/utilities/${utility.slug}`} className="hover:text-white">
+                        {utility.name} Rebates
+                      </Link>
+                    </li>
+                  ))}
                   <li><Link href="/federal-heat-pump-tax-credit-expired" className="hover:text-white">Federal Credit (Expired)</Link></li>
                 </ul>
               </div>

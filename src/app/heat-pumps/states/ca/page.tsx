@@ -262,7 +262,11 @@ export default function CaliforniaPage() {
             </table>
           </div>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Must use a participating contractor in the SMUD Contractor Network. Rebates are subject to funding availability on a first-come, first-served basis. A SMUD customer doing a full gas-to-electric HVAC + HPWH conversion with panel upgrade can reach <strong>~$9,000</strong> in combined SMUD rebates.
+            Must use a participating contractor in the SMUD Contractor Network. Rebates are subject to funding availability on a first-come, first-served basis. A SMUD customer doing a full gas-to-electric HVAC + HPWH conversion with panel upgrade can reach <strong>~$9,000</strong> in combined SMUD rebates. For the full breakdown &#8212; water heater size tiers, Go Electric circuit rules, induction rebates and SMUD&apos;s published installation costs &#8212; see our{" "}
+            <Link href="/heat-pumps/utilities/smud" className="text-brand-600 hover:underline">
+              SMUD heat pump rebates guide
+            </Link>
+            .
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">

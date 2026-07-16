@@ -175,13 +175,25 @@ export const utilities: Record<UtilitySlug, UtilityEntity> = {
     name: "SMUD",
     shortName: "SMUD",
     type: "municipal",
+    // Single-territory municipal utility: ~900 sq mi, most of Sacramento
+    // County + small adjoining portions of Placer and Yolo counties.
+    // Verified 2026-07-16 at rule-1 depth (fetched smud.org program pages,
+    // quotes in session). Amounts reflect the February 2026 increase.
+    // No income tiers in SMUD's published residential rebate tables.
     territories: [
-      { state: "CA", hasHeatPumpProgram: true, note: "VERIFY at build — CA page carries verified SMUD figures" },
+      { state: "CA", hasHeatPumpProgram: true, note: "$1,000–$3,000 heat pump HVAC and $1,000–$4,000 HPWH by conversion type; $2,000 Go Electric bonus" },
     ],
     status: "open",
-    lastVerified: "",
-    summary: "STUB",
-    sources: [],
+    lastVerified: "2026-07-16",
+    summary: "SMUD, Sacramento's community-owned utility, pays $2,000–$3,000 for gas-to-electric heat pump HVAC conversions and $3,000–$4,000 for heat pump water heaters, plus a $2,000 Go Electric panel-and-circuit bonus — up to ~$9,750 combined with induction. Federal 25C/25D credits ended Dec 31, 2025.",
+    sources: [
+      { label: "SMUD — Heating and Cooling Rebates (heat pump HVAC)", url: "https://www.smud.org/Rebates-and-Savings-Tips/Rebates-for-My-Home/Heating-and-Cooling-Rebates" },
+      { label: "SMUD — Appliance Rebates (heat pump water heater, induction)", url: "https://www.smud.org/Rebates-and-Savings-Tips/Rebates-for-My-Home/Home-Appliances-and-Electronics-Rebates" },
+      { label: "SMUD — Go Electric Bonus Rebates", url: "https://www.smud.org/Rebates-and-Savings-Tips/Improve-Home-Efficiency/Go-Electric-Bonus-Package" },
+      { label: "SMUD — News: SMUD Boosts Rebates for Heat Pumps (February 2026)", url: "https://www.smud.org/Corporate/About-us/News-and-Media/2026/2026/SMUD-boosts-rebates-for-heat-pumps" },
+      { label: "SMUD — Service Territory Map", url: "https://www.smud.org/Corporate/About-us/SMUDs-Territory-Map" },
+      { label: "SMUD Contractor Network", url: "https://smudcontractornetwork.org/" },
+    ],
   },
 };
 
