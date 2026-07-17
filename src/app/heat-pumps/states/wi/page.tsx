@@ -321,7 +321,12 @@ export default function WisconsinPage() {
             The maximum combined HEAR rebate per household is{" "}
             <strong>$14,000</strong>. Heat pump installations must use an IRA
             Registered Contractor. Store-purchased heat pump water heaters also
-            qualify.
+            qualify, though the retail path is changing: post-purchase retail
+            applications for appliances that replace fossil-fuel equipment must
+            be submitted by <strong>August 31, 2026</strong>, at 5:30 p.m. CT,
+            and new eligibility requirements take effect September 1, 2026.
+            Installations through IRA Registered Contractors are a separate
+            path and are not covered by that deadline.
           </p>
         </div>
       </section>
