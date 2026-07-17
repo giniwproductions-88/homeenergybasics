@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-17T16:51:50.293Z",
+ "generatedAt": "2026-07-17T17:20:36.825Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -162,7 +162,7 @@
     "AR"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:00.233Z",
+   "fetchedAt": "2026-07-17T16:45:08.057Z",
    "length": 102975,
    "kind": "html",
    "textHash": "d764cdb7c3a0ce47",
@@ -3187,8 +3187,8 @@
     "WI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T16:05:08.009Z",
-   "length": 87416,
+   "fetchedAt": "2026-07-17T16:45:44.020Z",
+   "length": 87418,
    "kind": "html",
    "textHash": "64f709a71f9a88ba",
    "dollars": [
@@ -3223,10 +3223,10 @@
     "WI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T16:05:08.021Z",
-   "length": 98116,
+   "fetchedAt": "2026-07-17T16:45:44.001Z",
+   "length": 98524,
    "kind": "html",
-   "textHash": "9385b835fbb66653",
+   "textHash": "e81ec4c4448b8a65",
    "dollars": [
     "$840",
     "$1,600",
@@ -3236,7 +3236,10 @@
     "$8,000",
     "$14,000"
    ],
-   "keywords": {}
+   "keywords": {
+    "no longer": 1,
+    "expired": 1
+   }
   },
   "https://focusonenergy.com/home-energy-rebates": {
    "url": "https://focusonenergy.com/home-energy-rebates",
@@ -3246,8 +3249,8 @@
     "WI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T16:05:08.041Z",
-   "length": 96722,
+   "fetchedAt": "2026-07-17T16:45:44.010Z",
+   "length": 96724,
    "kind": "html",
    "textHash": "b2b5cf120e61b393",
    "dollars": [
@@ -3265,8 +3268,8 @@
     "WI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T16:05:08.083Z",
-   "length": 102517,
+   "fetchedAt": "2026-07-17T16:45:44.103Z",
+   "length": 100949,
    "kind": "html",
    "textHash": "4f32d193a4285e7d",
    "dollars": [
@@ -3285,8 +3288,8 @@
     "WI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T16:05:08.247Z",
-   "length": 154157,
+   "fetchedAt": "2026-07-17T16:45:44.224Z",
+   "length": 152589,
    "kind": "html",
    "textHash": "8475b5adfefb5677",
    "dollars": [],
@@ -3482,14 +3485,14 @@
     "HI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:49.414Z",
-   "length": 153281,
+   "fetchedAt": "2026-07-17T16:45:44.979Z",
+   "length": 161656,
    "kind": "html",
-   "textHash": "3aa634b72070f1c2",
+   "textHash": "f88f6224f7c98c03",
    "dollars": [],
    "keywords": {
     "accepting applications": 2,
-    "coming soon": 2
+    "coming soon": 1
    }
   },
   "https://hawaiienergy.com/for-homes/rebates/hvac/": {
@@ -3500,8 +3503,8 @@
     "HI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:50.201Z",
-   "length": 213271,
+   "fetchedAt": "2026-07-17T16:45:45.747Z",
+   "length": 213512,
    "kind": "html",
    "textHash": "3152988c10e9bd64",
    "dollars": [
@@ -3523,8 +3526,8 @@
     "HI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:50.331Z",
-   "length": 199299,
+   "fetchedAt": "2026-07-17T16:45:45.850Z",
+   "length": 199540,
    "kind": "html",
    "textHash": "3814d83fecbb8ff6",
    "dollars": [
@@ -3543,10 +3546,10 @@
     "HI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:50.010Z",
-   "length": 149651,
+   "fetchedAt": "2026-07-17T16:45:45.574Z",
+   "length": 148831,
    "kind": "html",
-   "textHash": "4313ff21eef3d386",
+   "textHash": "3b08cbc3e5221d21",
    "dollars": [],
    "keywords": {
     "first-come": 2
@@ -3560,10 +3563,10 @@
     "HI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:50.402Z",
-   "length": 85976,
+   "fetchedAt": "2026-07-17T16:45:45.597Z",
+   "length": 116452,
    "kind": "html",
-   "textHash": "18c8cb2e5468eae0",
+   "textHash": "e05af327ac062ca0",
    "dollars": [],
    "keywords": {}
   },
@@ -3575,8 +3578,8 @@
     "HI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:51.642Z",
-   "length": 70987,
+   "fetchedAt": "2026-07-17T16:45:45.703Z",
+   "length": 73514,
    "kind": "html",
    "textHash": "4b1656b8fe4ebcda",
    "dollars": [
@@ -3600,10 +3603,10 @@
     "HI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:51.406Z",
-   "length": 151291,
+   "fetchedAt": "2026-07-17T16:45:47.117Z",
+   "length": 158479,
    "kind": "html",
-   "textHash": "639a49344025f073",
+   "textHash": "0daa7e14282b25d5",
    "dollars": [
     "$3",
     "$74,582.00",
@@ -7288,10 +7291,10 @@
     "OK"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:35.553Z",
-   "length": 371712,
+   "fetchedAt": "2026-07-17T16:46:20.550Z",
+   "length": 372685,
    "kind": "html",
-   "textHash": "b2bf2e6953eddb27",
+   "textHash": "cce2f8ca9b078ae9",
    "dollars": [],
    "keywords": {
     "expired": 2
@@ -7305,7 +7308,7 @@
     "OK"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:35.463Z",
+   "fetchedAt": "2026-07-17T16:46:20.498Z",
    "length": 73482,
    "kind": "pdf",
    "bytesHash": "658be48e99ad7f47"
@@ -7318,7 +7321,7 @@
     "OK"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:36.263Z",
+   "fetchedAt": "2026-07-17T16:46:21.126Z",
    "length": 597045,
    "kind": "html",
    "textHash": "45eaeb2e62558d6b",
@@ -7381,8 +7384,8 @@
     "OK"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:35.761Z",
-   "length": 365735,
+   "fetchedAt": "2026-07-17T16:46:20.688Z",
+   "length": 365842,
    "kind": "html",
    "textHash": "71b6d74b1db92e66",
    "dollars": [
@@ -7411,8 +7414,8 @@
     "OK"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:39.243Z",
-   "length": 472380,
+   "fetchedAt": "2026-07-17T16:46:20.790Z",
+   "length": 472465,
    "kind": "html",
    "textHash": "684043e25014dbef",
    "dollars": [],
@@ -7426,10 +7429,10 @@
     "OK"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:36.239Z",
-   "length": 186370,
+   "fetchedAt": "2026-07-17T16:46:21.385Z",
+   "length": 187247,
    "kind": "html",
-   "textHash": "27f22a6f22da409f",
+   "textHash": "18269efc54752070",
    "dollars": [
     "$550",
     "$1,950",
@@ -7437,6 +7440,7 @@
    ],
    "keywords": {
     "depleted": 2,
+    "temporarily": 1,
     "first-come": 2
    }
   },
@@ -7448,10 +7452,10 @@
     "OK"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:37.310Z",
-   "length": 124236,
+   "fetchedAt": "2026-07-17T16:46:21.449Z",
+   "length": 124548,
    "kind": "html",
-   "textHash": "9c1b207f8fe8f663",
+   "textHash": "bad2c97f6e02c1b8",
    "dollars": [
     "$50",
     "$75",
@@ -7476,7 +7480,7 @@
     "OK"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:36.489Z",
+   "fetchedAt": "2026-07-17T16:46:21.371Z",
    "length": 108795,
    "kind": "html",
    "textHash": "16f7d8506ecdebf5",
@@ -7493,8 +7497,8 @@
     "OK"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:39.172Z",
-   "length": 91574,
+   "fetchedAt": "2026-07-17T16:46:23.621Z",
+   "length": 94554,
    "kind": "html",
    "textHash": "a9cc9713ad7188f2",
    "dollars": [
