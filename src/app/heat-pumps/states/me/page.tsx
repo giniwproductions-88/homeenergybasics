@@ -49,7 +49,7 @@ export default function MainePage() {
         name: "What heat pump rebates are available in Maine in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Efficiency Maine offers $1,000–$3,000 per outdoor unit for non-ducted systems (lifetime cap $3,000–$9,000 depending on income) and $3,000–$9,000 lump sum for ducted whole-home systems. A $500 whole-home bonus runs through December 2026. Heat pump water heaters get a $1,150 mail-in rebate or larger instant discounts at participating retailers. Geothermal systems receive a flat $3,000 rebate. Federal 25C/25D tax credits are not available in 2026.",
+          text: "Efficiency Maine offers $1,000–$3,000 per outdoor unit for non-ducted systems (lifetime cap $3,000–$9,000 depending on income) and $3,000–$9,000 lump sum for ducted whole-home systems. A $500 whole-home bonus runs through December 2026. Heat pump water heaters get a $1,150 mail-in rebate or larger instant discounts at participating retailers. Geothermal systems receive one-third of project cost up to $3,000. Federal 25C/25D tax credits are not available in 2026.",
         },
       },
       {
@@ -209,7 +209,11 @@ export default function MainePage() {
             Efficiency Maine Trust administers all statewide heat pump rebates under Triennial Plan VI
             (<strong>$529.3 million</strong> if fully funded). Maine hit its 100,000-heat-pump goal in 2023 — two years early — has since surpassed <strong>200,000</strong> installations (as of early 2026), and is targeting <strong>275,000</strong> total by 2027.
             Rebates are applied at point of sale through your installer — you pay the reduced price,
-            not the full amount.
+            not the full amount. For every rebate Efficiency Maine administers — heat pumps, water
+            heaters, geothermal, and loans — see our{" "}
+            <Link href="/heat-pumps/utilities/efficiency-maine" className="text-brand-600 hover:underline">
+              Efficiency Maine program guide
+            </Link>.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">
@@ -363,9 +367,9 @@ export default function MainePage() {
             Geothermal Heat Pump Rebates
           </h3>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Efficiency Maine offers a flat <strong>$3,000 rebate</strong> for qualifying geothermal heat
+            Efficiency Maine covers <strong>one-third of project cost up to $3,000</strong> for qualifying geothermal heat
             pumps, with a lifetime limit of one geothermal rebate per housing unit. No
-            income-based tiers — the same $3,000 applies at all income levels. Equipment must be
+            income-based tiers — the same formula applies at all income levels. Equipment must be
             ENERGY STAR certified and installation must be done by a Residential Registered Vendor
             for Geothermal Systems. With the federal Section 25D credit gone, this is the sole
             remaining incentive for residential geothermal in Maine.

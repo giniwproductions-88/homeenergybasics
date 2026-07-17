@@ -108,20 +108,37 @@ export const utilities: Record<UtilitySlug, UtilityEntity> = {
     ],
   },
 
-  // ── PILOT 2-6 — schema placeholders, do not ship ─────────────────────
+  // ── PILOT 3 — Efficiency Maine (administrator, single territory) ─────
   "efficiency-maine": {
     slug: "efficiency-maine",
     name: "Efficiency Maine",
     shortName: "Efficiency Maine",
     type: "administrator",
+    // Statewide program administrator — one territory, all of Maine.
+    // Verified 2026-07-16 at rule-1 depth: whole-home rebate matrix
+    // (brochure rev 249, 6/24/2026 + live page fetch), HPWH claim form
+    // rev 210 (4/22/2026), geothermal page (live fetch — 1/3 of cost up
+    // to $3,000, NOT flat), LMI reservation request rev 1/1/2026
+    // (low-income supplemental = $3,000 for one unit), loans PDF rev
+    // 5-15-2025 (program active; rates verified 7/14 via operator paste).
     territories: [
-      { state: "ME", hasHeatPumpProgram: true, note: "VERIFY at build (ME state page verified 7/14 — reuse research, re-confirm)" },
+      { state: "ME", hasHeatPumpProgram: true, note: "$1,000–$9,000 by income and system type; $500 whole-home bonus through Dec 2026" },
     ],
     status: "open",
-    lastVerified: "",
-    summary: "STUB",
-    sources: [],
+    lastVerified: "2026-07-16",
+    summary: "Efficiency Maine, the state's independent efficiency program administrator, pays $1,000–$3,000 per outdoor unit or $3,000–$9,000 for ducted whole-home heat pumps by income tier, plus a $500 bonus through Dec 2026, $1,150 for heat pump water heaters, and Green Bank loans up to $25,000. Federal 25C/25D credits ended Dec 31, 2025.",
+    sources: [
+      { label: "Efficiency Maine — Whole-Home Heat Pump Rebates", url: "https://www.efficiencymaine.com/whole-home-heat-pump-rebates/" },
+      { label: "Efficiency Maine — Heat Pump Rebate Brochure (PDF)", url: "https://www.efficiencymaine.com/docs/Heat-Pump-Rebate-Brochure.pdf" },
+      { label: "Efficiency Maine — Heat Pump Water Heater Rebate (PDF)", url: "https://www.efficiencymaine.com/docs/HPWH_Rebate.pdf" },
+      { label: "Efficiency Maine — Geothermal Heat Pump Rebates", url: "https://www.efficiencymaine.com/at-home/geothermal/" },
+      { label: "Efficiency Maine — LMI Heat Pump Reservation Request (PDF)", url: "https://www.efficiencymaine.com/docs/LMI_Residential_HP_Reservation_Request.pdf" },
+      { label: "Efficiency Maine — Home Energy Loans (PDF)", url: "https://www.efficiencymaine.com/docs/EMT-Home-Energy-Loans.pdf" },
+      { label: "Maine DOER — Home Energy Rebates (HEAR)", url: "https://www.maine.gov/energy/initiatives/infrastructure/home-energy-rebates" },
+    ],
   },
+
+  // ── Duke / TVA / FPL — schema placeholders, do not ship ──────────────
   "duke-energy": {
     slug: "duke-energy",
     name: "Duke Energy",
