@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-17T00:49:42.563Z",
+ "generatedAt": "2026-07-17T00:58:35.105Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -483,7 +483,7 @@
     "MO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-16T02:52:29.108Z",
+   "fetchedAt": "2026-07-17T00:43:33.067Z",
    "length": 114446,
    "kind": "html",
    "textHash": "5f26bc2d77d90d83",
@@ -662,8 +662,8 @@
     "ME"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:03.449Z",
-   "length": 77900,
+   "fetchedAt": "2026-07-17T00:43:35.023Z",
+   "length": 77899,
    "kind": "html",
    "textHash": "b04fa28fbf53f41c",
    "dollars": [
@@ -3159,7 +3159,7 @@
     "NH"
    ],
    "httpStatus": 403,
-   "fetchedAt": "2026-07-14T17:02:06.312Z",
+   "fetchedAt": "2026-07-17T00:43:37.539Z",
    "length": 1142269,
    "error": "HTTP 403"
   },
@@ -7857,8 +7857,8 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:04.910Z",
-   "length": 101098,
+   "fetchedAt": "2026-07-17T00:43:36.339Z",
+   "length": 101170,
    "kind": "html",
    "textHash": "6bd1264089a8a5b8",
    "dollars": [
@@ -7889,8 +7889,8 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:04.872Z",
-   "length": 93181,
+   "fetchedAt": "2026-07-17T00:43:36.599Z",
+   "length": 93253,
    "kind": "html",
    "textHash": "3881f25f16fc6d28",
    "dollars": [
@@ -7915,8 +7915,8 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:04.865Z",
-   "length": 79114,
+   "fetchedAt": "2026-07-17T00:43:36.441Z",
+   "length": 79184,
    "kind": "html",
    "textHash": "261dfd6ec337cb15",
    "dollars": [
@@ -7981,8 +7981,8 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:05.178Z",
-   "length": 73836,
+   "fetchedAt": "2026-07-17T00:43:36.560Z",
+   "length": 73837,
    "kind": "html",
    "textHash": "ac6f3a2076f3d859",
    "dollars": [
@@ -7999,8 +7999,8 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:05.375Z",
-   "length": 66136,
+   "fetchedAt": "2026-07-17T00:43:36.732Z",
+   "length": 66308,
    "kind": "html",
    "textHash": "21bdbb58ba784e78",
    "dollars": [],
@@ -8014,8 +8014,8 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:05.662Z",
-   "length": 61060,
+   "fetchedAt": "2026-07-17T00:43:37.172Z",
+   "length": 61231,
    "kind": "html",
    "textHash": "1acb41794054efcf",
    "dollars": [],
@@ -8029,8 +8029,8 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:05.542Z",
-   "length": 75838,
+   "fetchedAt": "2026-07-17T00:43:37.175Z",
+   "length": 75766,
    "kind": "html",
    "textHash": "afe5778ba5564304",
    "dollars": [
@@ -8046,8 +8046,8 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:05.679Z",
-   "length": 208112,
+   "fetchedAt": "2026-07-17T00:43:37.147Z",
+   "length": 208221,
    "kind": "html",
    "textHash": "b298ecc8c513da60",
    "dollars": [
@@ -8066,8 +8066,8 @@
     "ME"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:03.459Z",
-   "length": 83386,
+   "fetchedAt": "2026-07-17T00:43:35.029Z",
+   "length": 83385,
    "kind": "html",
    "textHash": "87fef94589cdb514",
    "dollars": [
@@ -8087,8 +8087,8 @@
     "ME"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:03.632Z",
-   "length": 80151,
+   "fetchedAt": "2026-07-17T00:43:35.027Z",
+   "length": 80150,
    "kind": "html",
    "textHash": "83c75ab2d3922b91",
    "dollars": [
@@ -8104,8 +8104,8 @@
     "ME"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:03.609Z",
-   "length": 80791,
+   "fetchedAt": "2026-07-17T00:43:35.047Z",
+   "length": 80790,
    "kind": "html",
    "textHash": "42c1c45ee43cf27b",
    "dollars": [
@@ -8121,8 +8121,8 @@
     "ME"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:03.746Z",
-   "length": 90221,
+   "fetchedAt": "2026-07-17T00:43:35.174Z",
+   "length": 90220,
    "kind": "html",
    "textHash": "0a6b91c8fb827866",
    "dollars": [
@@ -8143,8 +8143,8 @@
     "ME"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:04.139Z",
-   "length": 35505,
+   "fetchedAt": "2026-07-17T00:43:35.889Z",
+   "length": 35472,
    "kind": "html",
    "textHash": "b35d83fb5d0a6a66",
    "dollars": [
