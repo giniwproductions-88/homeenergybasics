@@ -169,7 +169,7 @@ export default function EfficiencyMainePage() {
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Total Potential Savings</p>
               <p className="text-sm text-green-900">
-                $3,500 (any income) to $9,500+ (below the low-income thresholds).
+                $3,500 (any income) to $9,500+ (low income).
                 HEAR-eligible mobile homes can reach ~$17,000 total incentives.
               </p>
             </div>
@@ -378,7 +378,7 @@ export default function EfficiencyMainePage() {
               Homeowners heating with oil or propane who can commit to heat pumps as the
               primary heating system. Low- and moderate-income households, who qualify for
               2&ndash;3x the base rebate. Mobile home owners, who have both the richest
-              ducted rebates and the only HEAR access in the state.
+              ducted rebates and the only homeowner path to HEAR in the state.
             </p>
           </div>
 
