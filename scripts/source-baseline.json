@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-16T02:54:23.638Z",
+ "generatedAt": "2026-07-17T00:49:42.563Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -343,10 +343,11 @@
    "finalUrl": "https://www.smud.org/Rebates-and-Savings-Tips/Rebates-for-My-Home/Heating-and-Cooling-Rebates",
    "label": "SMUD — Heating & Cooling Rebates",
    "states": [
-    "CA"
+    "CA",
+    "SMUD"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:23.072Z",
+   "fetchedAt": "2026-07-17T00:43:32.608Z",
    "length": 75979,
    "kind": "html",
    "textHash": "1888c554f07387e0",
@@ -8487,6 +8488,118 @@
    "length": 80383,
    "kind": "html",
    "textHash": "7a566bad89551cab",
+   "dollars": [],
+   "keywords": {}
+  },
+  "https://www.smud.org/Rebates-and-Savings-Tips/Rebates-for-My-Home/Home-Appliances-and-Electronics-Rebates": {
+   "url": "https://www.smud.org/Rebates-and-Savings-Tips/Rebates-for-My-Home/Home-Appliances-and-Electronics-Rebates",
+   "finalUrl": "https://www.smud.org/Rebates-and-Savings-Tips/Rebates-for-My-Home/Home-Appliances-and-Electronics-Rebates",
+   "label": "SMUD — Appliance Rebates (heat pump water heater, induction)",
+   "states": [
+    "SMUD"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-17T00:45:06.982Z",
+   "length": 126452,
+   "kind": "html",
+   "textHash": "c1a779fb8f6f5dff",
+   "dollars": [
+    "$50",
+    "$100",
+    "$750",
+    "$1,000",
+    "$2,000",
+    "$3,000",
+    "$3,500",
+    "$4,000",
+    "$4,086",
+    "$4,208",
+    "$4,600",
+    "$5,500",
+    "$6,188",
+    "$6,194",
+    "$6,234",
+    "$6,244",
+    "$6,258",
+    "$6,278",
+    "$6,300",
+    "$6,374",
+    "$8,784",
+    "$9,291",
+    "$9,820",
+    "$10,895",
+    "$13,172",
+    "$13,395"
+   ],
+   "keywords": {}
+  },
+  "https://www.smud.org/Rebates-and-Savings-Tips/Improve-Home-Efficiency/Go-Electric-Bonus-Package": {
+   "url": "https://www.smud.org/Rebates-and-Savings-Tips/Improve-Home-Efficiency/Go-Electric-Bonus-Package",
+   "finalUrl": "https://www.smud.org/Rebates-and-Savings-Tips/Improve-Home-Efficiency/Go-Electric-Bonus-Package",
+   "label": "SMUD — Go Electric Bonus Rebates",
+   "states": [
+    "SMUD"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-17T00:45:07.016Z",
+   "length": 46784,
+   "kind": "html",
+   "textHash": "7f065731cf3d4425",
+   "dollars": [
+    "$500",
+    "$2,000"
+   ],
+   "keywords": {}
+  },
+  "https://www.smud.org/Corporate/About-us/News-and-Media/2026/2026/SMUD-boosts-rebates-for-heat-pumps": {
+   "url": "https://www.smud.org/Corporate/About-us/News-and-Media/2026/2026/SMUD-boosts-rebates-for-heat-pumps",
+   "finalUrl": "https://www.smud.org/Corporate/About-us/News-and-Media/2026/2026/SMUD-boosts-rebates-for-heat-pumps",
+   "label": "SMUD — News: SMUD Boosts Rebates for Heat Pumps (February 2026)",
+   "states": [
+    "SMUD"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-17T00:45:07.114Z",
+   "length": 46458,
+   "kind": "html",
+   "textHash": "aafce8dff3328a69",
+   "dollars": [
+    "$500",
+    "$1,000",
+    "$3,000",
+    "$4,000"
+   ],
+   "keywords": {
+    "expired": 1
+   }
+  },
+  "https://www.smud.org/Corporate/About-us/SMUDs-Territory-Map": {
+   "url": "https://www.smud.org/Corporate/About-us/SMUDs-Territory-Map",
+   "finalUrl": "https://www.smud.org/Corporate/About-us/SMUDs-Territory-Map",
+   "label": "SMUD — Service Territory Map",
+   "states": [
+    "SMUD"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-17T00:45:07.201Z",
+   "length": 86590,
+   "kind": "html",
+   "textHash": "2cbec4026131307b",
+   "dollars": [],
+   "keywords": {}
+  },
+  "https://smudcontractornetwork.org/": {
+   "url": "https://smudcontractornetwork.org/",
+   "finalUrl": "https://www.smudcontractornetwork.org/",
+   "label": "SMUD Contractor Network",
+   "states": [
+    "SMUD"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-17T00:45:07.828Z",
+   "length": 24444,
+   "kind": "html",
+   "textHash": "d795876f3dbb5ff9",
    "dollars": [],
    "keywords": {}
   }
