@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-17T00:58:35.105Z",
+ "generatedAt": "2026-07-17T16:51:50.293Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -483,7 +483,7 @@
     "MO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T00:43:33.067Z",
+   "fetchedAt": "2026-07-17T16:45:09.905Z",
    "length": 114446,
    "kind": "html",
    "textHash": "5f26bc2d77d90d83",
@@ -508,7 +508,7 @@
     "XCEL-ENERGY"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-16T02:52:31.888Z",
+   "fetchedAt": "2026-07-17T16:45:23.943Z",
    "length": 2442505,
    "kind": "pdf",
    "bytesHash": "3817f7be21562cbd"
@@ -659,10 +659,11 @@
    "finalUrl": "https://www.efficiencymaine.com/whole-home-heat-pump-rebates/",
    "label": "Efficiency Maine — Whole-Home Heat Pump Rebates",
    "states": [
-    "ME"
+    "ME",
+    "EFFICIENCY-MAINE"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T00:43:35.023Z",
+   "fetchedAt": "2026-07-17T16:45:11.669Z",
    "length": 77899,
    "kind": "html",
    "textHash": "b04fa28fbf53f41c",
@@ -3159,7 +3160,7 @@
     "NH"
    ],
    "httpStatus": 403,
-   "fetchedAt": "2026-07-17T00:43:37.539Z",
+   "fetchedAt": "2026-07-17T16:45:14.319Z",
    "length": 1142269,
    "error": "HTTP 403"
   },
@@ -4124,7 +4125,7 @@
     "WV"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:52.642Z",
+   "fetchedAt": "2026-07-17T16:45:50.976Z",
    "length": 161285,
    "kind": "html",
    "textHash": "344bd9425ddeb801",
@@ -4725,14 +4726,16 @@
     "ND"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:06.821Z",
-   "length": 144432,
+   "fetchedAt": "2026-07-17T16:45:58.371Z",
+   "length": 144878,
    "kind": "html",
-   "textHash": "a335ad2378c7841e",
+   "textHash": "c7a5e58e9e4f54be",
    "dollars": [
     "$37"
    ],
-   "keywords": {}
+   "keywords": {
+    "now open": 1
+   }
   },
   "https://www.commerce.nd.gov/community-services/low-income-programs/weatherization-assistance": {
    "url": "https://www.commerce.nd.gov/community-services/low-income-programs/weatherization-assistance",
@@ -4742,10 +4745,10 @@
     "ND"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:06.711Z",
-   "length": 161938,
+   "fetchedAt": "2026-07-17T16:45:58.193Z",
+   "length": 162384,
    "kind": "html",
-   "textHash": "9e27b4b7ba034925",
+   "textHash": "856a6a1971dfdf61",
    "dollars": [
     "$1.00",
     "$10,000",
@@ -4759,7 +4762,9 @@
     "$100,080",
     "$111,440"
    ],
-   "keywords": {}
+   "keywords": {
+    "now open": 1
+   }
   },
   "https://www.otpco.com/ways-to-save/programs/heat-pump/": {
    "url": "https://www.otpco.com/ways-to-save/programs/heat-pump/",
@@ -4769,10 +4774,10 @@
     "ND"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:06.674Z",
-   "length": 41734,
+   "fetchedAt": "2026-07-17T16:45:58.357Z",
+   "length": 41436,
    "kind": "html",
-   "textHash": "99c04aa21127470d",
+   "textHash": "77dc6c589e7b3ba0",
    "dollars": [
     "$40",
     "$200",
@@ -4800,7 +4805,7 @@
     "ND"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:06.786Z",
+   "fetchedAt": "2026-07-17T16:45:58.107Z",
    "length": 26428,
    "kind": "html",
    "textHash": "9a645896c80a6560",
@@ -4828,8 +4833,8 @@
     "ND"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:06.950Z",
-   "length": 270304,
+   "fetchedAt": "2026-07-17T16:45:58.478Z",
+   "length": 270342,
    "kind": "html",
    "textHash": "b2e5690efe51cfb4",
    "dollars": [
@@ -5612,10 +5617,10 @@
     "MO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:03:10.649Z",
-   "length": 115979,
+   "fetchedAt": "2026-07-17T16:46:05.901Z",
+   "length": 115964,
    "kind": "html",
-   "textHash": "8d89be7800f71d99",
+   "textHash": "5e6e5fabf85a4a02",
    "dollars": [
     "$75",
     "$76"
@@ -5649,8 +5654,8 @@
     "KS"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:03:11.422Z",
-   "length": 40737,
+   "fetchedAt": "2026-07-17T16:46:06.327Z",
+   "length": 40591,
    "kind": "html",
    "textHash": "3b1cfb9b4eb2fdb2",
    "dollars": [],
@@ -5664,10 +5669,10 @@
     "MO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:03:13.073Z",
-   "length": 246713,
+   "fetchedAt": "2026-07-17T16:46:08.006Z",
+   "length": 247210,
    "kind": "html",
-   "textHash": "2e6e925eca3e423e",
+   "textHash": "9b9c88d76f59dd64",
    "dollars": [
     "$800",
     "$1,200"
@@ -5684,7 +5689,7 @@
     "MO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:03:11.515Z",
+   "fetchedAt": "2026-07-17T16:46:06.245Z",
    "length": 103366,
    "kind": "html",
    "textHash": "44e389a8ab827bd3",
@@ -5705,8 +5710,8 @@
     "MO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:03:12.363Z",
-   "length": 82565,
+   "fetchedAt": "2026-07-17T16:46:06.119Z",
+   "length": 82270,
    "kind": "html",
    "textHash": "9bc6a87dfd8ef11b",
    "dollars": [
@@ -5730,10 +5735,10 @@
     "MO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:03:10.960Z",
-   "length": 120639,
+   "fetchedAt": "2026-07-17T16:46:07.681Z",
+   "length": 120623,
    "kind": "html",
-   "textHash": "9f6bf6f698e0e3c1",
+   "textHash": "0ff05415628b7930",
    "dollars": [],
    "keywords": {}
   },
@@ -5745,10 +5750,10 @@
     "MO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:03:11.677Z",
-   "length": 126745,
+   "fetchedAt": "2026-07-17T16:46:06.506Z",
+   "length": 126729,
    "kind": "html",
-   "textHash": "548d2f8f8b4a98f3",
+   "textHash": "ae598cf537c05589",
    "dollars": [],
    "keywords": {}
   },
@@ -6485,8 +6490,8 @@
     "SD"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:03:19.908Z",
-   "length": 962068,
+   "fetchedAt": "2026-07-17T16:46:14.555Z",
+   "length": 962372,
    "kind": "html",
    "textHash": "5f2def7920fb121f",
    "dollars": [],
@@ -6500,7 +6505,7 @@
     "SD"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:03:19.120Z",
+   "fetchedAt": "2026-07-17T16:46:13.873Z",
    "length": 13345,
    "kind": "html",
    "textHash": "9f68cf3eac4bb638",
@@ -6517,7 +6522,7 @@
     "SD"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:03:19.977Z",
+   "fetchedAt": "2026-07-17T16:46:14.189Z",
    "length": 41436,
    "kind": "html",
    "textHash": "77dc6c589e7b3ba0",
@@ -6548,8 +6553,8 @@
     "SD"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:03:19.724Z",
-   "length": 60994,
+   "fetchedAt": "2026-07-17T16:46:15.042Z",
+   "length": 60997,
    "kind": "html",
    "textHash": "d29414b533e16a9a",
    "dollars": [
@@ -6567,10 +6572,10 @@
     "SD"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:03:19.953Z",
-   "length": 84586,
+   "fetchedAt": "2026-07-17T16:46:14.584Z",
+   "length": 84726,
    "kind": "html",
-   "textHash": "41d56fcc4a3c6d88",
+   "textHash": "86315d9e69e5c1fa",
    "dollars": [
     "$50"
    ],
@@ -6584,10 +6589,10 @@
     "SD"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:03:19.855Z",
-   "length": 185165,
+   "fetchedAt": "2026-07-17T16:46:14.356Z",
+   "length": 185055,
    "kind": "html",
-   "textHash": "556f449a56fa5726",
+   "textHash": "a52780590d11d1e9",
    "dollars": [
     "$60",
     "$100",
@@ -6608,8 +6613,8 @@
     "SD"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:03:21.224Z",
-   "length": 354448,
+   "fetchedAt": "2026-07-17T16:46:15.705Z",
+   "length": 354446,
    "kind": "html",
    "textHash": "a0e318efd7b4de1b",
    "dollars": [
@@ -6630,8 +6635,8 @@
     "SD"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:03:20.599Z",
-   "length": 41319,
+   "fetchedAt": "2026-07-17T16:46:15.217Z",
+   "length": 37320,
    "kind": "html",
    "textHash": "69dba7c2e0702255",
    "dollars": [],
@@ -6645,7 +6650,7 @@
     "SD"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:03:20.565Z",
+   "fetchedAt": "2026-07-17T16:46:15.050Z",
    "length": 92419,
    "kind": "html",
    "textHash": "70b0e7eb433467df",
@@ -7857,8 +7862,8 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T00:43:36.339Z",
-   "length": 101170,
+   "fetchedAt": "2026-07-17T16:45:14.649Z",
+   "length": 101171,
    "kind": "html",
    "textHash": "6bd1264089a8a5b8",
    "dollars": [
@@ -7889,8 +7894,8 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T00:43:36.599Z",
-   "length": 93253,
+   "fetchedAt": "2026-07-17T16:45:14.345Z",
+   "length": 93180,
    "kind": "html",
    "textHash": "3881f25f16fc6d28",
    "dollars": [
@@ -7915,8 +7920,8 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T00:43:36.441Z",
-   "length": 79184,
+   "fetchedAt": "2026-07-17T16:45:15.048Z",
+   "length": 79113,
    "kind": "html",
    "textHash": "261dfd6ec337cb15",
    "dollars": [
@@ -7981,8 +7986,8 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T00:43:36.560Z",
-   "length": 73837,
+   "fetchedAt": "2026-07-17T16:45:14.974Z",
+   "length": 73835,
    "kind": "html",
    "textHash": "ac6f3a2076f3d859",
    "dollars": [
@@ -7999,7 +8004,7 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T00:43:36.732Z",
+   "fetchedAt": "2026-07-17T16:45:16.278Z",
    "length": 66308,
    "kind": "html",
    "textHash": "21bdbb58ba784e78",
@@ -8014,7 +8019,7 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T00:43:37.172Z",
+   "fetchedAt": "2026-07-17T16:45:15.905Z",
    "length": 61231,
    "kind": "html",
    "textHash": "1acb41794054efcf",
@@ -8029,8 +8034,8 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T00:43:37.175Z",
-   "length": 75766,
+   "fetchedAt": "2026-07-17T16:45:16.061Z",
+   "length": 75838,
    "kind": "html",
    "textHash": "afe5778ba5564304",
    "dollars": [
@@ -8046,7 +8051,7 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T00:43:37.147Z",
+   "fetchedAt": "2026-07-17T16:45:15.794Z",
    "length": 208221,
    "kind": "html",
    "textHash": "b298ecc8c513da60",
@@ -8066,7 +8071,7 @@
     "ME"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T00:43:35.029Z",
+   "fetchedAt": "2026-07-17T16:45:11.854Z",
    "length": 83385,
    "kind": "html",
    "textHash": "87fef94589cdb514",
@@ -8087,7 +8092,7 @@
     "ME"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T00:43:35.027Z",
+   "fetchedAt": "2026-07-17T16:45:11.686Z",
    "length": 80150,
    "kind": "html",
    "textHash": "83c75ab2d3922b91",
@@ -8101,10 +8106,11 @@
    "finalUrl": "https://www.efficiencymaine.com/at-home/geothermal/",
    "label": "Efficiency Maine — Geothermal Rebates",
    "states": [
-    "ME"
+    "ME",
+    "EFFICIENCY-MAINE"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T00:43:35.047Z",
+   "fetchedAt": "2026-07-17T16:45:11.886Z",
    "length": 80790,
    "kind": "html",
    "textHash": "42c1c45ee43cf27b",
@@ -8121,7 +8127,7 @@
     "ME"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T00:43:35.174Z",
+   "fetchedAt": "2026-07-17T16:45:11.912Z",
    "length": 90220,
    "kind": "html",
    "textHash": "0a6b91c8fb827866",
@@ -8140,10 +8146,11 @@
    "finalUrl": "https://www.maine.gov/energy/initiatives/infrastructure/home-energy-rebates",
    "label": "Maine DOER — Home Energy Rebates (HEAR status)",
    "states": [
-    "ME"
+    "ME",
+    "EFFICIENCY-MAINE"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T00:43:35.889Z",
+   "fetchedAt": "2026-07-17T16:45:12.402Z",
    "length": 35472,
    "kind": "html",
    "textHash": "b35d83fb5d0a6a66",
@@ -8600,6 +8607,86 @@
    "length": 24444,
    "kind": "html",
    "textHash": "d795876f3dbb5ff9",
+   "dollars": [],
+   "keywords": {}
+  },
+  "https://www.efficiencymaine.com/docs/Heat-Pump-Rebate-Brochure.pdf": {
+   "url": "https://www.efficiencymaine.com/docs/Heat-Pump-Rebate-Brochure.pdf",
+   "finalUrl": "https://www.efficiencymaine.com/docs/Heat-Pump-Rebate-Brochure.pdf",
+   "label": "Efficiency Maine — Heat Pump Rebate Brochure (PDF)",
+   "states": [
+    "EFFICIENCY-MAINE"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-17T16:46:27.450Z",
+   "length": 245269,
+   "kind": "pdf",
+   "bytesHash": "f47d3be97177401e"
+  },
+  "https://www.efficiencymaine.com/docs/HPWH_Rebate.pdf": {
+   "url": "https://www.efficiencymaine.com/docs/HPWH_Rebate.pdf",
+   "finalUrl": "https://www.efficiencymaine.com/docs/HPWH_Rebate.pdf",
+   "label": "Efficiency Maine — Heat Pump Water Heater Rebate (PDF)",
+   "states": [
+    "EFFICIENCY-MAINE"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-17T16:46:26.491Z",
+   "length": 228784,
+   "kind": "pdf",
+   "bytesHash": "22af6f41fad77d65"
+  },
+  "https://www.efficiencymaine.com/docs/LMI_Residential_HP_Reservation_Request.pdf": {
+   "url": "https://www.efficiencymaine.com/docs/LMI_Residential_HP_Reservation_Request.pdf",
+   "finalUrl": "https://www.efficiencymaine.com/docs/LMI_Residential_HP_Reservation_Request.pdf",
+   "label": "Efficiency Maine — LMI Heat Pump Reservation Request (PDF)",
+   "states": [
+    "EFFICIENCY-MAINE"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-17T16:46:26.376Z",
+   "length": 85735,
+   "kind": "pdf",
+   "bytesHash": "78deb7a3702ffee1"
+  },
+  "https://www.efficiencymaine.com/docs/EMT-Home-Energy-Loans.pdf": {
+   "url": "https://www.efficiencymaine.com/docs/EMT-Home-Energy-Loans.pdf",
+   "finalUrl": "https://www.efficiencymaine.com/docs/EMT-Home-Energy-Loans.pdf",
+   "label": "Efficiency Maine — Home Energy Loans (PDF)",
+   "states": [
+    "EFFICIENCY-MAINE"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-17T16:46:26.743Z",
+   "length": 551818,
+   "kind": "pdf",
+   "bytesHash": "61a127f499c0e9c0"
+  },
+  "https://www.ameren.com/-/media/files/save-money-energy/energy-efficiency/pays-incentives.ashx": {
+   "url": "https://www.ameren.com/-/media/files/save-money-energy/energy-efficiency/pays-incentives.ashx",
+   "finalUrl": "https://www.ameren.com/-/media/files/save-money-energy/energy-efficiency/pays-incentives.ashx",
+   "label": "Ameren Missouri — PAYS 2026 Incentive Chart (PDF)",
+   "states": [
+    "MO"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-17T16:46:05.396Z",
+   "length": 72467,
+   "kind": "pdf",
+   "bytesHash": "3572cbb0238b52be"
+  },
+  "https://dss.sd.gov/economicassistance/energyassistance/weatherization.aspx": {
+   "url": "https://dss.sd.gov/economicassistance/energyassistance/weatherization.aspx",
+   "finalUrl": "https://dss.sd.gov/economicassistance/energyassistance/weatherization.aspx",
+   "label": "SD Dept. of Social Services — Weatherization",
+   "states": [
+    "SD"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-17T16:46:14.971Z",
+   "length": 152,
+   "kind": "html",
+   "textHash": "e3b0c44298fc1c14",
    "dollars": [],
    "keywords": {}
   }
