@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-17T17:20:36.825Z",
+ "generatedAt": "2026-07-18T15:13:40.585Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -162,7 +162,7 @@
     "AR"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T16:45:08.057Z",
+   "fetchedAt": "2026-07-18T15:13:16.921Z",
    "length": 102975,
    "kind": "html",
    "textHash": "d764cdb7c3a0ce47",
@@ -1727,29 +1727,6 @@
    "dollars": [],
    "keywords": {}
   },
-  "https://www.cielpower.com/incentives-and-rebates": {
-   "url": "https://www.cielpower.com/incentives-and-rebates",
-   "finalUrl": "https://www.cielpower.com/incentives-and-rebates",
-   "label": "NJ Whole Home Program (Ciel Power)",
-   "states": [
-    "NJ"
-   ],
-   "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:35.429Z",
-   "length": 255952,
-   "kind": "html",
-   "textHash": "4eb3948b298b7596",
-   "dollars": [
-    "$100",
-    "$200",
-    "$2,000",
-    "$7,400",
-    "$7,500",
-    "$10,000",
-    "$25,000"
-   ],
-   "keywords": {}
-  },
   "https://homeenergy.pseg.com/heatingandcooling": {
    "url": "https://homeenergy.pseg.com/heatingandcooling",
    "finalUrl": "https://homeenergy.pseg.com/heatingandcooling",
@@ -1757,42 +1734,8 @@
    "states": [
     "NJ"
    ],
-   "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:35.854Z",
-   "length": 202859,
-   "kind": "html",
-   "textHash": "a8b63e1bf91ba214",
-   "dollars": [
-    "$60",
-    "$75",
-    "$120",
-    "$150",
-    "$240",
-    "$300",
-    "$450",
-    "$540",
-    "$600",
-    "$750",
-    "$780",
-    "$1,000",
-    "$1,050",
-    "$1,500",
-    "$2,000",
-    "$2,500",
-    "$3,000",
-    "$4,000",
-    "$5,000",
-    "$6,000",
-    "$10,000",
-    "$10,001",
-    "$12,000",
-    "$25,000",
-    "$50,000",
-    "$75,000"
-   ],
-   "keywords": {
-    "closed": 2
-   }
+   "fetchedAt": "2026-07-18T15:13:40.390Z",
+   "error": "fetch failed"
   },
   "https://residential.energysavenj.com/jersey-central/hvac/": {
    "url": "https://residential.energysavenj.com/jersey-central/hvac/",
@@ -1802,7 +1745,7 @@
     "NJ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:36.079Z",
+   "fetchedAt": "2026-07-18T15:13:17.179Z",
    "length": 72778,
    "kind": "html",
    "textHash": "7fe9da266651fcd2",
@@ -1826,10 +1769,10 @@
     "NJ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:35.869Z",
-   "length": 45027,
+   "fetchedAt": "2026-07-18T15:13:16.896Z",
+   "length": 46370,
    "kind": "html",
-   "textHash": "91b7f127ddaa63d9",
+   "textHash": "076ab9ca8c782fb3",
    "dollars": [
     "$100",
     "$150",
@@ -1852,8 +1795,8 @@
     "NJ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:36.170Z",
-   "length": 146785,
+   "fetchedAt": "2026-07-18T15:13:17.844Z",
+   "length": 146876,
    "kind": "html",
    "textHash": "ec431fe0509cb61b",
    "dollars": [
@@ -1887,7 +1830,7 @@
     "NJ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:35.878Z",
+   "fetchedAt": "2026-07-18T15:13:17.659Z",
    "length": 23373,
    "kind": "html",
    "textHash": "fb35784e9754c272",
@@ -1912,7 +1855,7 @@
     "NJ"
    ],
    "httpStatus": 404,
-   "fetchedAt": "2026-07-09T15:14:38.722Z",
+   "fetchedAt": "2026-07-18T15:13:20.475Z",
    "length": 587068,
    "error": "HTTP 404"
   },
@@ -1924,7 +1867,7 @@
     "NJ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:36.467Z",
+   "fetchedAt": "2026-07-18T15:13:17.539Z",
    "length": 34527,
    "kind": "html",
    "textHash": "68af232adfe36dac",
@@ -8692,6 +8635,50 @@
    "kind": "html",
    "textHash": "e3b0c44298fc1c14",
    "dollars": [],
+   "keywords": {}
+  },
+  "https://homeenergy.pseg.com/WHES": {
+   "url": "https://homeenergy.pseg.com/WHES",
+   "finalUrl": "https://myhomeenergy.pseg.com/home-energy-assessments/whole-home-energy-solutions",
+   "label": "PSE&G Whole Home Energy Solutions",
+   "states": [
+    "NJ"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-18T15:13:17.739Z",
+   "length": 323380,
+   "kind": "html",
+   "textHash": "93946f1a708c6f1b",
+   "dollars": [
+    "$7,500",
+    "$10,000",
+    "$10,001",
+    "$25,000",
+    "$50,000",
+    "$75,000"
+   ],
+   "keywords": {
+    "closed": 1
+   }
+  },
+  "https://www.savegreen.com/residential/whole-home-efficiency.aspx": {
+   "url": "https://www.savegreen.com/residential/whole-home-efficiency.aspx",
+   "finalUrl": "https://www.savegreen.com/residential/whole-home-efficiency.aspx",
+   "label": "NJNG Whole Home Energy Solutions (TES rebate schedule)",
+   "states": [
+    "NJ"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-18T15:13:17.033Z",
+   "length": 39035,
+   "kind": "html",
+   "textHash": "cd20cf8adf1ac1b6",
+   "dollars": [
+    "$200",
+    "$2,000",
+    "$7,500",
+    "$25,000"
+   ],
    "keywords": {}
   }
  }
