@@ -2,6 +2,14 @@ export type StateCode = "AK" | "AL" | "AR" | "CA" | "MN" | "ME" | "MA" | "MD" | 
 
 export type IncentiveStatus = "open" | "limited" | "paused";
 
+/**
+ * ISO calendar date, YYYY-MM-DD, zero-padded month and day.
+ * Compile-time rejects: "7/17/26", "17-07-2026", "2026-7-17".
+ */
+type DateDigit = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
+export type ISODate =
+  `${number}-${DateDigit}${DateDigit}-${DateDigit}${DateDigit}`;
+
 export interface IncentiveSource {
   label: string;
   url: string;
@@ -11,7 +19,16 @@ export interface StateIncentive {
   stateCode: StateCode;
   stateName: string;
   status: IncentiveStatus;
-  lastVerified: string; // YYYY-MM-DD
+  /** Last checked against primary sources. Bump only after quoted-source verification (playbook rule 1). */
+  lastVerified: ISODate;
+  /**
+   * Last date the entry/page content actually changed.
+   * Invariant: lastUpdated <= lastVerified (a verification pass that finds
+   * no changes bumps lastVerified only).
+   * Initialized 2026-07-17 from lastVerified (best available history);
+   * exact for all touches after that date.
+   */
+  lastUpdated: ISODate;
   summary: string;
   sources: IncentiveSource[];
 }
@@ -22,6 +39,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Alabama",
     status: "limited",
     lastVerified: "2026-06-10",
+    lastUpdated: "2026-06-10",
     summary:
       "Alabama has no statewide heat pump rebate. TVA EnergyRight offers $500\u20131,500 in northern Alabama. Alabama Power offers $1,000 for gas-to-electric conversions. Rural co-ops offer $300\u2013400/ton. Federal tax credits expired. IRA HEAR rebates not yet launched.",
     sources: [
@@ -65,6 +83,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Alaska",
     status: "limited",
     lastVerified: "2026-06-11",
+    lastUpdated: "2026-06-11",
     summary:
       "Alaska incentives depend heavily on location. The ACES program offers $4,000\u2013$8,500 for 43 coastal communities. Fairbanks provides up to $17,500 through its air-quality change-out program. Utility rebates range $500\u2013$1,000 (Chugach Electric, Homer Electric, AP&T). Federal 25C/25D credits expired Dec 2025. HEAR/HOMES ($74.6M) have not launched.",
     sources: [
@@ -108,6 +127,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "California",
     status: "limited",
     lastVerified: "2026-07-06",
+    lastUpdated: "2026-07-06",
     summary:
       "Most California statewide heat pump rebates are fully reserved. TECH Clean California single-family incentives and HEEHRA single-family rebates are exhausted statewide. Federal tax credits (25C/25D) ended December 31, 2025. Utility rebates remain — SMUD offers up to $3,000–$4,000 and LADWP up to $2,500/ton. HOMES (~$291M) and HEEHRA Phase II ($152M) are funded but not yet launched.",
     sources: [
@@ -143,6 +163,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Minnesota",
     status: "open",
     lastVerified: "2026-07-15",
+    lastUpdated: "2026-07-15",
     summary:
       "Xcel Energy offers up to $2,000 for cold-climate heat pumps (plus $600 insulation bonus). CenterPoint adds $1,100 for dual-fuel systems. Minnesota Power offers $1,000 for cold-climate heat pumps. Minneapolis Green Cost Share stacks up to $14,000. Federal 25C/25D expired Dec 31, 2025. Save Energy Minnesota (HEAR + $4,000 state HP rebate) has not launched — no date set.",
     sources: [
@@ -186,6 +207,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Maine",
     status: "open",
     lastVerified: "2026-07-14",
+    lastUpdated: "2026-07-14",
     summary:
       "Efficiency Maine heat pump rebates are active through Triennial Plan VI ($529.3M): $1,000–$3,000 per outdoor unit (all-other-whole-home systems) and $3,000–$9,000 lump sum (ducted), by income tier. A $500/unit whole-home bonus runs March–December 2026. NEHPA funds in Maine flow through Efficiency Maine’s water heater discounts — no separate per-unit consumer discount. HEAR is limited to mobile homes and affordable multifamily. Federal 25C/25D ended Dec 31, 2025.",
     sources: [
@@ -229,6 +251,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Massachusetts",
     status: "open",
     lastVerified: "2026-07-09",
+    lastUpdated: "2026-07-09",
     summary:
       "Mass Save heat pump rebates are active: whole-home $2,650/ton (max $8,500), partial $1,125/ton, ground-source $13,500. Income-qualified households (family of four up to $132,764) get $16,000–$25,000 or no-cost turnkey — pre-existing oil, propane, or electric-resistance heat required. NEHPA adds $650/unit at point of sale. R-410A excluded. Federal 25C/25D ended Dec 31, 2025.",
     sources: [
@@ -280,6 +303,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Oregon",
     status: "open",
     lastVerified: "2026-07-09",
+    lastUpdated: "2026-07-09",
     summary:
       "Energy Trust of Oregon is the primary rebate — $800–$1,000 for most homeowners, up to $3,000 income-qualified. ODOE's HP3 program adds up to $2,000 (owner-occupied funding reserved; rental and new construction still open). Oregon has no state tax credit (RETC expired 2017). Federal 25C/25D credits ended December 31, 2025. The state's $113M HEAR/HOMES rebates have not launched and have no announced launch date — ODOE's planned spring 2026 start did not happen and it now awaits U.S. DOE approval.",
     sources: [
@@ -315,6 +339,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Washington",
     status: "open",
     lastVerified: "2026-07-10",
+    lastUpdated: "2026-07-10",
     summary:
       "Washington has two rebate tracks plus utility programs. The state HEAR program (Climate Commitment Act, ~$103.6M) is open and paying rebates for households \u2264150% AMI. The federal HARP/HOMES rebates (up to $8,000, Guidehouse administering) have no launch date \u2014 DOE issued revised program guidelines June 1, 2026 and Commerce is reassessing. PSE utility rebates run up to $5,000 (income-qualified) and require a PSE Trade Ally or REP contractor. Seattle's Clean Heat program pays $2,000 for oil-to-heat-pump conversions at any income, up to $6,000 with the moderate-income bonus (installations by September 30, 2026). Federal tax credits (25C/25D) ended December 31, 2025.",
     sources: [
@@ -358,6 +383,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "New York",
     status: "open",
     lastVerified: "2026-07-09",
+    lastUpdated: "2026-07-09",
     summary:
       "NYS Clean Heat (2026–2030) pays $2,500–$12,000 for air-source heat pumps and $14,000–$40,000 for geothermal, varying by utility, project category, and DAC status. EmPower+ provides $12,000–$14,000 base plus up to $14,000 in HEAR funds for income-eligible households. A 25% geothermal tax credit (max $10,000) remains. Federal 25C/25D expired Dec 31, 2025.",
     sources: [
@@ -405,6 +431,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Connecticut",
     status: "open",
     lastVerified: "2026-07-06",
+    lastUpdated: "2026-07-06",
     summary:
       "Connecticut heat pump incentives are active through Energize CT. Rebates range from $250–$1,500 per ton depending on system type, fuel switching, and income (enhanced tiers added April 2026). Federal tax credits ended December 31, 2025. HEAR rebates are funded but not yet available. The Smart-E Loan offers 0.99% APR heat pump financing, extended through July 31, 2026.",
     sources: [
@@ -448,6 +475,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Colorado",
     status: "limited",
     lastVerified: "2026-07-13",
+    lastUpdated: "2026-07-13",
     summary:
       "Xcel Energy offers $2,250/ton for cold-climate heat pumps (no income limit), stackable with Colorado's $1,000 state tax credit. Income-qualified HEAR rebates up to $8,000 are closed for the Front Range (Region 1) and accepting applications in the rest of the state (Region 2) only until August 1, 2026, unless funding is reserved sooner. DRCOG's $1,500 Power Ahead rebate (Denver metro) reportedly opened June 29, 2026 — confirm at poweraheadcolorado.org. Federal 25C/25D credits expired December 31, 2025.",
     sources: [
@@ -499,6 +527,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Illinois",
     status: "open",
     lastVerified: "2026-06-02",
+    lastUpdated: "2026-06-02",
     summary:
       "Federal tax credits expired. Utility rebates up to $1,800 are available through ComEd, Ameren Illinois, MidAmerican Energy, and some municipal utilities. Illinois HEAR and HOMES rebates are still pending launch.",
     sources: [
@@ -534,6 +563,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Texas",
     status: "limited",
     lastVerified: "2026-06-06",
+    lastUpdated: "2026-06-06",
     summary:
       "Texas has no statewide heat pump rebate program and no state income tax. Rebates come from your local utility and vary widely. Austin Energy offers approximately $3,000 for whole-home projects plus 0% APR financing. Oncor provides performance-based incentives through approved contractors. CenterPoint offers up to $500 per unit. CPS Energy pays $100–$275 per ton. Federal tax credits (25C/25D) ended December 31, 2025. Texas received $690 million in IRA HOMES/HEAR funding; SECO signed APTIM as implementer and targets a fall 2026 launch but has not opened the program.",
     sources: [
@@ -580,13 +610,18 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "NJ",
     stateName: "New Jersey",
     status: "open",
-    lastVerified: "2026-06-02",
+    lastVerified: "2026-07-17",
+    lastUpdated: "2026-07-17",
     summary:
-      "New Jersey heat pump rebates are active through the statewide Whole Home program (up to $7,500 cash-back plus 0% financing) and all four electric utilities (PSE&G, JCP&L, Atlantic City Electric, RECO). Programs stack. Federal tax credits (25C/25D) ended December 31, 2025. The state's $185 million in IRA HEAR/HOMES funding has not launched consumer-facing programs as of June 2, 2026.",
+      "New Jersey heat pump rebates are active through the statewide Whole Home program (up to $7,500 cash-back plus 0% financing) and all four electric utilities (PSE&G, JCP&L, Atlantic City Electric, RECO). Programs stack. Federal tax credits (25C/25D) ended December 31, 2025. The state's $185 million in IRA HEAR/HOMES funding has not launched consumer-facing programs as of July 17, 2026.",
     sources: [
       {
-        label: "NJ Whole Home Program (Ciel Power)",
-        url: "https://www.cielpower.com/incentives-and-rebates",
+        label: "PSE&G Whole Home Energy Solutions",
+        url: "https://homeenergy.pseg.com/WHES",
+      },
+      {
+        label: "NJNG Whole Home Energy Solutions (TES rebate schedule)",
+        url: "https://www.savegreen.com/residential/whole-home-efficiency.aspx",
       },
       {
         label: "PSE&G HVAC Instant Rebates",
@@ -628,6 +663,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Maryland",
     status: "open",
     lastVerified: "2026-06-02",
+    lastUpdated: "2026-06-02",
     summary:
       "EmPOWER Maryland offers up to $15,000 for electrification projects (75% of cost) through all five major utilities. Midstream rebates of $800–$1,700 per heat pump are available instantly through contractors. Potomac Edison's Switch-to-Electric program adds up to $4,000 on top. Montgomery County's Electrify MC adds $2,500. Federal 25C/25D expired. HEAR/HOMES ($136.8M) not yet launched.",
     sources: [
@@ -679,6 +715,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Michigan",
     status: "limited",
     lastVerified: "2026-07-13",
+    lastUpdated: "2026-07-13",
     summary:
       "Michigan's $210 million MiHER program offers up to $8,000 for heat pumps at point of sale — but as of July 2026, applications are open to low- to moderate-income households (≤150% AMI) only, and new income-qualified applications are paused in the EGLE Detroit District. DTE Energy rebates run $150–$1,200 (electric-heat replacements only). Consumers Energy offers $300–$350 (existing-heat-pump replacements for ducted/GSHP). TCLP's up-to-$3,000 rebate and Ann Arbor A2ZERO's $4,000–$5,500 belong to 2025–26 program years that ended June 30, 2026; new schedules were pending. Federal tax credits (25C/25D) ended December 31, 2025.",
     sources: [
@@ -730,6 +767,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Pennsylvania",
     status: "limited",
     lastVerified: "2026-07-13",
+    lastUpdated: "2026-07-13",
     summary:
       "Act 129 Phase V (June 2026\u2013May 2031) is rolling out: PECO (heat pumps up to $300), PPL ($225\u2013$325 standard, $350\u2013$475 for households at or below 250% FPL), and UGI ($500 ASHP; mini-splits $175\u2013$300/ton up to $1,500) have published claimable schedules, while Duquesne Light's program is \"currently being refreshed\" and FirstEnergy has not posted Phase V amounts. Philadelphia-area EAP rebates ($250\u2013$1,650) are published for the Fall 2026 program (contracts Aug 3\u2013Nov 13). Penn Energy Savers ($258.9M HEAR/HOMES) still has not launched \u2014 DEP is revising the program per DOE's June 1, 2026 guidance. Federal 25C/25D ended Dec 31, 2025. Also available: HEELP (1% APR) and KEEP loans, WAP, LIHEAP, and Philadelphia's Built to Last.",
     sources: [
@@ -789,6 +827,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Virginia",
     status: "limited",
     lastVerified: "2026-06-03",
+    lastUpdated: "2026-06-03",
     summary:
       "Federal tax credits expired Dec 31, 2025. Virginia's $188M in IRA-funded HOMES and HEAR rebates remain pending — Virginia Energy is assessing the impact of federal funding freezes. Utility rebates are the primary incentive: Washington Gas offers up to $2,000 for dual-fuel heat pumps in Northern Virginia, Dominion Energy offers HPWH rebates of $250–$400 and central HP rebates through its Home Retrofit Program, and Appalachian Power provides $300–$400 for mini-splits. Most electric cooperatives offer no direct rebates. Low-income households can access free upgrades through WAP and Dominion's EnergyShare program.",
     sources: [
@@ -832,6 +871,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Rhode Island",
     status: "open",
     lastVerified: "2026-07-14",
+    lastUpdated: "2026-07-14",
     summary:
       "Clean Heat RI covers up to 60% of heat pump costs (max $11,500) and is the primary incentive available in 2026. Rhode Island Energy adds smaller per-ton rebates. Federal tax credits are gone, and HEAR does not cover heat pump HVAC systems in Rhode Island (only electrical upgrades and appliances).",
     sources: [
@@ -871,6 +911,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Vermont",
     status: "open",
     lastVerified: "2026-06-05",
+    lastUpdated: "2026-06-05",
     summary:
       "Vermont heat pump rebates come from Efficiency Vermont ($2,200 ducted, $375–$475/head ductless) and utility-specific programs. Burlington Electric offers up to $7,950 for income-qualified ducted systems — the highest in the state. GMP income bonus adds $2,200/condenser for ≤80% AMI households. Federal 25C/25D ended Dec 31, 2025. HEAR ($29.2M) is on pause.",
     sources: [
@@ -918,6 +959,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "New Hampshire",
     status: "open",
     lastVerified: "2026-07-06",
+    lastUpdated: "2026-07-06",
     summary:
       "NHSaves rebates of $250–$2,000/ton are the primary incentive ($2,000/ton enhanced electric-resistance tier effective March 23, 2026), plus a $650/unit NE Heat Pump Accelerator. HEAR rebates (up to $8,000) are not yet launched — implementer Everblue is contracted, launch expected mid-Summer 2026. Federal 25C/25D expired Dec 31, 2025. Projects started before HEAR launch are not eligible. R-410A banned from NHSaves qualified list for 2026.",
     sources: [
@@ -961,6 +1003,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Wisconsin",
     status: "open",
     lastVerified: "2026-07-17",
+    lastUpdated: "2026-07-17",
     summary:
       "Focus on Energy offers $400–$900 instant discounts for air-source heat pumps statewide. IRA-funded HEAR rebates cover up to $8,000 for income-qualifying households (below 150% AMI). HOMES rebates up to $10,000 are available at all income levels for whole-home projects. Federal tax credits expired December 31, 2025. Wisconsin was the first state to launch the HOMES program.",
     sources: [
@@ -996,6 +1039,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Georgia",
     status: "open",
     lastVerified: "2026-06-03",
+    lastUpdated: "2026-06-03",
     summary:
       "HEAR rebates cover up to $8,000 for heat pumps (\u2264150% AMI). HER whole-home rebates up to $4,000 (all incomes) or $16,000 (\u226480% AMI). Georgia Power HEIP offers up to $1,000. EMC rebates $100\u2013$600. Federal 25C/25D credits expired Dec 2025.",
     sources: [
@@ -1043,6 +1087,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Hawaii",
     status: "open",
     lastVerified: "2026-07-06",
+    lastUpdated: "2026-07-06",
     summary:
       "Hawaii Energy offers $500\u2013$700 instant rebates for heat pump water heaters and up to $550 for mini-splits under its current program year. eHale HEAR program (up to $14,000 for income-qualified households) expected to launch in 2026 but not yet accepting applications. Federal 25C/25D credits expired Dec 2025. KIUC offers separate $500 HPWH rebate on Kauai.",
     sources: [
@@ -1082,6 +1127,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Iowa",
     status: "limited",
     lastVerified: "2026-06-11",
+    lastUpdated: "2026-06-11",
     summary:
       "MidAmerican Energy and Alliant Energy offer $300\u2013$713 instant discounts for air-source heat pumps, with cold-climate models at the top tier. Iowa\u2019s $121M HEAR/HOMES IRA allocation is funded but programs have not launched. Federal 25C/25D credits expired Dec 31, 2025.",
     sources: [
@@ -1133,6 +1179,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Idaho",
     status: "limited",
     lastVerified: "2026-06-11",
+    lastUpdated: "2026-06-11",
     summary:
       "Federal tax credits ended Dec 31, 2025. Idaho rejected IRA-funded HEAR and HOMES rebates. Only utility rebates remain: Idaho Power $400\u2013$800, Avista $300\u2013$600, Rocky Mountain Power $450\u2013$650, Idaho Falls Power up to $2,400. No state tax credit for air-source heat pumps.",
     sources: [
@@ -1172,6 +1219,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Arizona",
     status: "open",
     lastVerified: "2026-07-14",
+    lastUpdated: "2026-07-14",
     summary:
       "Efficiency Arizona HEAR offers up to $8,000 per heat pump for households below 150% AMI. SRP Cool Cash provides up to $1,125 for variable-capacity systems. APS eliminated all residential rebates in 2026. Federal tax credits expired December 31, 2025. HOMES has not launched; no date announced.",
     sources: [
@@ -1222,6 +1270,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Nevada",
     status: "limited",
     lastVerified: "2026-06-03",
+    lastUpdated: "2026-06-03",
     summary:
       "NV Energy PowerShift offers $510\u2013$3,400 for heat pumps (active, first-come first-served). IRA-funded HEAR (up to $8,000) and HOMES programs approved but not yet launched. Federal 25C/25D tax credits expired Dec 2025. No state tax credits (no state income tax).",
     sources: [
@@ -1265,6 +1314,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "New Mexico",
     status: "limited",
     lastVerified: "2026-06-03",
+    lastUpdated: "2026-06-03",
     summary:
       "HEAR offers up to $8,000 per heat pump (applications now open) but is restricted to households below 80% AMI. PNM rebates cover $550\u2013$700. Sustainable Building Tax Credit adds up to $1,000\u2013$2,000. Geothermal credit covers 30% up to $9,000 at all income levels. Federal 25C/25D credits expired.",
     sources: [
@@ -1308,6 +1358,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "North Carolina",
     status: "open",
     lastVerified: "2026-06-03",
+    lastUpdated: "2026-06-03",
     summary:
       "Energy Saver NC is live statewide with up to $8,000 through HEAR or $16,000 through HOMES for income-qualifying households. Duke Energy adds $500\u2013$1,000 in utility rebates. Federal 25C/25D tax credits expired Dec 31, 2025. Households above 150% AMI are limited to utility rebates only.",
     sources: [
@@ -1371,6 +1422,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "North Dakota",
     status: "limited",
     lastVerified: "2026-06-11",
+    lastUpdated: "2026-06-11",
     summary:
       "Utility rebates only. Otter Tail Power offers $300\u2013$1,040/ton for heat pumps with adders. Xcel Energy provides $1,600\u20132,000 flat-rate rebates. Minnkota co-ops offer $150/ton. MDU offers nothing. Federal 25C/25D credits expired. HEAR ($37.1M) and HOMES ($37.2M) funded but not launched.",
     sources: [
@@ -1410,6 +1462,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Florida",
     status: "limited",
     lastVerified: "2026-06-02",
+    lastUpdated: "2026-06-02",
     summary:
       "No federal credits or state tax incentives. Utility rebates of $40\u2013$1,150 from FPL, Duke Energy, TECO, JEA, and OUC are the primary incentives. Florida\u2019s $346M HEAR/HOMES allocation is being administered by FDACS (HEAR first phase, up to $14,000) but remains pending U.S. DOE approval and has not launched.",
     sources: [
@@ -1453,6 +1506,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Ohio",
     status: "limited",
     lastVerified: "2026-06-02",
+    lastUpdated: "2026-06-02",
     summary:
       "Ohio has almost no heat pump rebates in 2026. Federal credits expired, utility programs were dismantled by HB 6, and the state\u2019s $249M in IRA rebates (HEAR/HOMES) have not launched. ECO-Link offers 3% loan rate reductions up to $50,000. AEP Ohio\u2019s HELP covers low-income households.",
     sources: [
@@ -1500,6 +1554,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Indiana",
     status: "open",
     lastVerified: "2026-06-03",
+    lastUpdated: "2026-06-03",
     summary:
       "Indiana Energy Saver Program (HEAR) offers up to $8,000 for heat pumps for households below 150% AMI. HOMES rebates cover up to $4,000 for other homeowners. Utility rebates add $275\u2013$3,000. Federal tax credits expired Dec 31, 2025.",
     sources: [
@@ -1551,6 +1606,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Tennessee",
     status: "limited",
     lastVerified: "2026-06-02",
+    lastUpdated: "2026-06-02",
     summary:
       "TVA EnergyRight rebates ($500\u2013$1,500) are the only active incentive in Tennessee in 2026. IRA-funded HEAR and HOMES rebates are approved but not yet launched, with no confirmed date. Federal tax credits expired December 31, 2025.",
     sources: [
@@ -1586,6 +1642,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "South Carolina",
     status: "limited",
     lastVerified: "2026-06-10",
+    lastUpdated: "2026-06-10",
     summary:
       "Utility rebates of $300\u20131,000 from Duke Energy, Dominion Energy, and Santee Cooper. SC geothermal tax credit covers 25% up to $3,500. HEAR/HOMES rebates (up to $16,000) pending launch. Federal tax credits expired.",
     sources: [
@@ -1625,6 +1682,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Missouri",
     status: "limited",
     lastVerified: "2026-06-10",
+    lastUpdated: "2026-06-10",
     summary:
       "No statewide rebate or state tax credit. Utility rebates range $200\u2013$5,000: Ameren offers $2,000 for ducted ASHPs, Evergy $650\u2013$1,200, Columbia W&L up to $2,600. HEAR/HOMES ($151M) pending. Federal credits expired.",
     sources: [
@@ -1672,6 +1730,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Washington DC",
     status: "open",
     lastVerified: "2026-06-10",
+    lastUpdated: "2026-06-10",
     summary:
       "DCSEU offers up to $5,000 for heat pumps and $1,600 for HPWHs when switching from gas to electric, plus $3,200 in electrification service rebates. Total realistic rebates reach $9,800. Federal 25C/25D credits expired. AHEP provides no-cost electrification for households below 80% AMI but is currently waitlisted.",
     sources: [
@@ -1711,6 +1770,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Delaware",
     status: "open",
     lastVerified: "2026-06-03",
+    lastUpdated: "2026-06-03",
     summary:
       "Energize Delaware offers $800\u2013$2,200 for air-source heat pumps through Home Performance with ENERGY STAR. DEMEC utility customers can stack Efficiency Smart rebates ($300\u2013$750). HEAR ($8,000/HP) awaits DOE approval. Federal 25C/25D credits expired Dec 31, 2025.",
     sources: [
@@ -1762,6 +1822,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Kentucky",
     status: "limited",
     lastVerified: "2026-06-10",
+    lastUpdated: "2026-06-10",
     summary:
       "Kentucky utility heat pump rebates range from $250 to $1,500 depending on provider. TVA EnergyRight offers $500–$1,500; EKPC co-ops offer $500–$1,000 including a $1,000 cold-climate bonus. LG&E/KU offers $400. IRA-funded HEAR rebates (up to $8,000) are approved but not yet launched. Federal 25C/25D credits expired Dec 2025.",
     sources: [
@@ -1809,6 +1870,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Louisiana",
     status: "limited",
     lastVerified: "2026-06-10",
+    lastUpdated: "2026-06-10",
     summary:
       "Utility rebates up to $3,500 from SWEPCO and Cleco. Entergy Louisiana offers $500. Energy Smart (New Orleans) offers $200\u2013$500. Federal 25C/25D credits expired. IRA-funded HEAR ($8,000) and HOMES ($2,000\u2013$4,000) programs allocated but not yet launched.",
     sources: [
@@ -1852,6 +1914,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Utah",
     status: "limited",
     lastVerified: "2026-06-11",
+    lastUpdated: "2026-06-11",
     summary:
       "Rocky Mountain Power Wattsmart offers $450\u20131,700 for heat pumps. Enbridge Gas ThermWise adds $700\u20131,200 for dual-fuel systems. Stack both for $2,450\u20132,650. Federal 25C/25D credits expired Dec 2025. Utah\u2019s $101M IRA rebates (HEAR/HOMES) on hold pending DOE approval \u2014 not launched.",
     sources: [
@@ -1895,6 +1958,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "South Dakota",
     status: "limited",
     lastVerified: "2026-06-11",
+    lastUpdated: "2026-06-11",
     summary:
       "South Dakota has no statewide heat pump program and was the first state to decline IRA HEAR/HOMES rebates outright ($68.56M). Federal credits expired. Utility rebates range from $0 (NorthWestern Energy) to over $4,000 (Otter Tail Power) depending on provider.",
     sources: [
@@ -1946,6 +2010,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Wyoming",
     status: "limited",
     lastVerified: "2026-06-11",
+    lastUpdated: "2026-06-11",
     summary:
       "Rocky Mountain Power Wattsmart offers up to $1,700 for cold-climate heat pumps and $600 for HPWHs (electric resistance conversions only). Several co-ops offer $500\u20131,800. Black Hills Energy suspended all rebates in 2026. Federal tax credits expired. Wyoming\u2019s $69.2M IRA rebate program (HESP) has not launched.",
     sources: [
@@ -1984,6 +2049,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Mississippi",
     status: "limited",
     lastVerified: "2026-06-11",
+    lastUpdated: "2026-06-11",
     summary:
       "No statewide rebate program. Entergy Mississippi offers up to $1,100 for heat pumps. TVA EnergyRight provides up to $1,500 in northeast MS. Mississippi Power offers $160\u2013$200/ton. Federal 25C/25D expired. IRA HEAR/HOMES ($104.8M) not yet launched.",
     sources: [
@@ -2030,6 +2096,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Montana",
     status: "limited",
     lastVerified: "2026-06-11",
+    lastUpdated: "2026-06-11",
     summary:
       "NorthWestern Energy offers $450 per ASHP and up to $3,000 for HPWHs. BPA cooperatives like Flathead Electric provide $600\u2013$1,560. Federal 25C/25D credits expired Dec 2025. HEAR and HOMES programs remain paused pending DOE approval. Bozeman and Missoula County offer HPWH rebates that stack with utility incentives.",
     sources: [
@@ -2072,6 +2139,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Nebraska",
     status: "limited",
     lastVerified: "2026-06-11",
+    lastUpdated: "2026-06-11",
     summary:
       "Nebraska has no statewide heat pump rebate and no state tax credit. Utility rebates are the primary incentive: NPPD EnergyWise offers $400\u2013$1,200 for ASHPs, OPPD pays a flat $525, and LES offers $800. The City of Lincoln adds up to $3,000 for low-income homeowners. Dollar and Energy Saving Loans offer 1.5\u20135% financing. Federal 25C/25D expired Dec 2025. HEAR/HOMES ($91M) not yet launched.",
     sources: [
@@ -2115,6 +2183,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Oklahoma",
     status: "limited",
     lastVerified: "2026-06-11",
+    lastUpdated: "2026-06-11",
     summary:
       "PSO rebates ($600\u2013$1,400) are the primary active incentive \u2014 OG&E\u2019s program (up to $3,000) has temporarily closed Oklahoma applications. Rural co-ops offer $200\u2013$1,050/ton. Oklahoma\u2019s $129M in IRA-funded HEAR/HOMES rebates have not launched. Federal 25C/25D expired Dec 2025. ONG offers no heat pump rebates.",
     sources: [
@@ -2166,6 +2235,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Kansas",
     status: "limited",
     lastVerified: "2026-06-11",
+    lastUpdated: "2026-06-11",
     summary:
       "Evergy offers $500\u2013$1,000 for air-source heat pumps under KEEIA. KEPCo co-ops add $300\u2013$600. Midwest Energy offers on-bill financing. No state tax credits or state rebates. Federal 25C/25D expired Dec 2025. Kansas\u2019s $105.6M IRA-funded HEAR/HOMES program has not launched.",
     sources: [
@@ -2205,6 +2275,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "West Virginia",
     status: "limited",
     lastVerified: "2026-06-11",
+    lastUpdated: "2026-06-11",
     summary:
       "West Virginia\u2019s $88.2M IRA programs (HEAR up to $8,000 and HOMES up to $20,000) have not launched \u2014 the WV Office of Energy says a pilot start date is still to be announced. Appalachian Power offers $300\u2013$400 for mini-splits and HPWHs. Mon Power and Potomac Edison offer no rebates. Federal 25C/25D credits expired Dec 2025.",
     sources: [
@@ -2239,6 +2310,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Arkansas",
     status: "limited",
     lastVerified: "2026-06-11",
+    lastUpdated: "2026-06-11",
     summary:
       "Arkansas heat pump incentives are limited to utility rebates. SWEPCO offers $250\u2013$600/ton (up to ~$2,500\u2013$3,000 per address). OG\u0026E offers up to $3,000 in the Fort Smith area. Entergy Arkansas has no central HP rebate. Federal 25C/25D expired Dec 2025. The state\u2019s $105M HEAR/HOMES allocation has not launched.",
     sources: [

@@ -136,7 +136,7 @@ export default function NewJerseyPage() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; Whole Home: Up to $7,500 Cash Back</p>
-              <p className="text-sm text-green-900">Statewide program through Ciel Power. Cash-back rebates scale with energy savings achieved (5&ndash;33% TES). Plus 0% financing up to $25,000.</p>
+              <p className="text-sm text-green-900">Offered through each NJ utility. Cash-back rebates scale with energy savings achieved (5&ndash;33% TES). Plus 0% financing up to $25,000.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; Utility Rebates: $300&ndash;$1,000</p>
@@ -180,10 +180,10 @@ export default function NewJerseyPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">NJ Whole Home Program: Up to $7,500 Cash Back</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            The NJ Whole Home Energy Efficiency Incentive Program (formerly Home Performance with ENERGY STAR) is the largest single incentive available statewide. Administered by Ciel Power, it provides cash-back rebates plus 0% interest financing for comprehensive home energy upgrades.
+            The NJ Whole Home Energy Efficiency Incentive Program (formerly Home Performance with ENERGY STAR) is the largest single incentive available statewide. Offered through New Jersey&apos;s regulated utilities and delivered by BPI-certified participating contractors, it provides cash-back rebates plus 0% interest on-bill financing for comprehensive home energy upgrades.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Rebates scale with projected Total Energy Savings (TES): <strong>$2,000</strong> base at 5% TES, plus <strong>$200</strong> per additional percentage point, up to <strong>$7,500</strong> at 33% TES. Eligible measures include air-source and ground-source heat pumps, ductless mini-splits, heat pump water heaters, insulation, and air sealing. A BPI-certified energy audit through Ciel Power is required, and all work must be performed by a BPI-certified participating contractor. No income requirements for eligibility. 0% financing up to <strong>$25,000</strong> is available.
+            Rebates scale with projected Total Energy Savings (TES): <strong>$2,000</strong> base at 5% TES, plus <strong>$200</strong> per additional percentage point, up to <strong>$7,500</strong> at 33% TES. Eligible measures include air-source and ground-source heat pumps, ductless mini-splits, heat pump water heaters, insulation, and air sealing. A home energy assessment is required, and all work must be performed by a BPI-certified contractor participating in your utility&apos;s program. No income requirements for eligibility. 0% financing up to <strong>$25,000</strong> is available.
           </p>
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5">
             <p className="font-semibold text-amber-800 mb-1">&#9888; COOLAdvantage and WARMAdvantage Are Closed</p>
@@ -224,7 +224,7 @@ export default function NewJerseyPage() {
                 <tr className="border-b bg-green-50">
                   <td className="p-3">Cold-climate ASHP</td>
                   <td className="p-3 font-semibold">$600</td>
-                  <td className="p-3">HSPF2 &#8805; 8.1, COP &#8805; 1.75 at 5&#176;F</td>
+                  <td className="p-3">SEER2 &#8805; 15.2, EER2 &#8805; 10, HSPF2 &#8805; 8.1, COP &#8805; 1.75 at 5&#176;F</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Heat pump water heater</td>
@@ -529,7 +529,7 @@ export default function NewJerseyPage() {
               <div className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-bold">1</div>
               <div>
                 <p className="font-semibold text-gray-900">Schedule a Whole Home Energy Audit</p>
-                <p className="text-sm text-gray-700">Contact Ciel Power (the program administrator) at cielpower.com or call your utility. A BPI-certified auditor will assess your home and identify eligible measures.</p>
+                <p className="text-sm text-gray-700">Contact your utility&apos;s Whole Home program &mdash; PSE&amp;G: homeenergy.pseg.com or 1-855-846-2895; NJNG: savegreen.com; or your electric utility&apos;s efficiency site. A BPI-certified assessor will evaluate your home and identify eligible measures.</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -661,8 +661,8 @@ export default function NewJerseyPage() {
               RECO) and PSE&amp;G Building Decarbonization incentives require full
               fossil fuel displacement and Manual J/S documentation. We verify
               status regularly but programs can change without notice. Always
-              confirm current amounts and eligibility with your utility, Ciel
-              Power, and your contractor before making decisions.
+              confirm current amounts and eligibility with your utility and your
+              contractor before making decisions.
             </p>
           </div>
           <p className="text-sm text-gray-600 mt-4">
