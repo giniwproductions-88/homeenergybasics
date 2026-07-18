@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-18T15:13:40.585Z",
+ "generatedAt": "2026-07-18T15:23:44.106Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -2257,7 +2257,7 @@
     "PA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:32.791Z",
+   "fetchedAt": "2026-07-18T15:18:00.560Z",
    "length": 451811,
    "kind": "html",
    "textHash": "dee34f3dce5f8d4e",
@@ -2287,8 +2287,8 @@
     "PA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:32.338Z",
-   "length": 193453,
+   "fetchedAt": "2026-07-18T15:18:00.129Z",
+   "length": 227362,
    "kind": "html",
    "textHash": "261c7514084ea8e6",
    "dollars": [],
@@ -2302,7 +2302,7 @@
     "PA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:32.621Z",
+   "fetchedAt": "2026-07-18T15:18:00.344Z",
    "length": 59100,
    "kind": "html",
    "textHash": "d422d2eed11d5230",
@@ -2342,7 +2342,7 @@
     "PA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:33.144Z",
+   "fetchedAt": "2026-07-18T15:18:00.378Z",
    "length": 223872,
    "kind": "html",
    "textHash": "f1ba56eb3a769071",
@@ -2365,8 +2365,8 @@
     "PA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:34.478Z",
-   "length": 149439,
+   "fetchedAt": "2026-07-18T15:18:02.404Z",
+   "length": 149440,
    "kind": "html",
    "textHash": "63ee48180d93fa80",
    "dollars": [
@@ -2377,27 +2377,17 @@
    ],
    "keywords": {}
   },
-  "https://www.dlcwattchoices.com/residentialrebates/": {
-   "url": "https://www.dlcwattchoices.com/residentialrebates/",
-   "finalUrl": "https://www.dlcwattchoices.com/residentialrebates/",
-   "label": "Duquesne Light Watt Choices",
-   "states": [
-    "PA"
-   ],
-   "httpStatus": 410,
-   "fetchedAt": "2026-07-09T15:14:41.839Z",
-   "length": 3514,
-   "error": "HTTP 410"
-  },
   "https://rebates.energysavepa.com/": {
    "url": "https://rebates.energysavepa.com/",
-   "finalUrl": "https://rebates.energysavepa.com/",
+   "finalUrl": "https://firstenergy.clearesult.com/",
    "label": "FirstEnergy PA Rebates",
    "states": [
     "PA"
    ],
-   "fetchedAt": "2026-07-14T17:02:35.828Z",
-   "error": "fetch failed"
+   "httpStatus": 401,
+   "fetchedAt": "2026-07-18T15:18:02.708Z",
+   "length": 22,
+   "error": "HTTP 401"
   },
   "https://www.ugi.com/rebates-for-home/electric/equipment-rebate-program/": {
    "url": "https://www.ugi.com/rebates-for-home/electric/equipment-rebate-program/",
@@ -2407,7 +2397,7 @@
     "PA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:35.177Z",
+   "fetchedAt": "2026-07-18T15:18:05.121Z",
    "length": 151121,
    "kind": "html",
    "textHash": "dc7f0a5c58be1192",
@@ -2430,7 +2420,7 @@
     "PA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:36.667Z",
+   "fetchedAt": "2026-07-18T15:18:02.168Z",
    "length": 41858,
    "kind": "html",
    "textHash": "e41dfc157ffcf097",
@@ -2452,7 +2442,7 @@
     "PA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:36.046Z",
+   "fetchedAt": "2026-07-18T15:18:01.456Z",
    "length": 49394,
    "kind": "html",
    "textHash": "1f71b6bc802492ea",
@@ -8365,7 +8355,7 @@
     "PA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:33.216Z",
+   "fetchedAt": "2026-07-18T15:18:00.274Z",
    "length": 8421,
    "kind": "html",
    "textHash": "e3b0c44298fc1c14",
@@ -8380,7 +8370,7 @@
     "PA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:35.166Z",
+   "fetchedAt": "2026-07-18T15:18:01.703Z",
    "length": 228022,
    "kind": "pdf",
    "bytesHash": "bc7be9a2e2e0709d"
@@ -8393,7 +8383,7 @@
     "PA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:33.981Z",
+   "fetchedAt": "2026-07-18T15:18:00.782Z",
    "length": 94863,
    "kind": "html",
    "textHash": "83a4c08582f795a2",
