@@ -56,7 +56,7 @@ const faqJsonLd = {
       name: "Has New Jersey launched the IRA HEAR/HOMES rebates?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No. As of June 2026, New Jersey has not launched consumer-facing HEAR or HOMES rebates. The state received over $185 million in IRA funding, but program design is still in progress. NJ\u2019s plan directs most funds toward low-income multifamily housing through a planned M-RISE program rather than broad single-family rebates.",
+        text: "No. As of July 2026, New Jersey has not launched consumer-facing HEAR or HOMES rebates. The state received over $185 million in IRA funding, but program design is still in progress. NJ\u2019s plan directs most funds toward low-income multifamily housing through a planned M-RISE program rather than broad single-family rebates.",
       },
     },
     {
@@ -528,7 +528,7 @@ export default function NewJerseyPage() {
             <div className="flex gap-4">
               <div className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-bold">1</div>
               <div>
-                <p className="font-semibold text-gray-900">Schedule a Whole Home Energy Audit</p>
+                <p className="font-semibold text-gray-900">Schedule a Whole Home Energy Assessment</p>
                 <p className="text-sm text-gray-700">Contact your utility&apos;s Whole Home program &mdash; PSE&amp;G: homeenergy.pseg.com or 1-855-846-2895; NJNG: savegreen.com; or your electric utility&apos;s efficiency site. A BPI-certified assessor will evaluate your home and identify eligible measures.</p>
               </div>
             </div>
