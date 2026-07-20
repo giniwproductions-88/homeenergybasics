@@ -38,10 +38,10 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "AL",
     stateName: "Alabama",
     status: "limited",
-    lastVerified: "2026-06-10",
-    lastUpdated: "2026-06-10",
+    lastVerified: "2026-07-20",
+    lastUpdated: "2026-07-20",
     summary:
-      "Alabama has no statewide heat pump rebate. TVA EnergyRight offers $500\u20131,500 in northern Alabama. Alabama Power offers $1,000 for gas-to-electric conversions. Rural co-ops offer $300\u2013400/ton. Federal tax credits expired. IRA HEAR rebates not yet launched.",
+      "Alabama has no statewide heat pump rebate. TVA EnergyRight offers $500\u2013800 for air-source heat pumps ($1,500 geothermal) in northern Alabama. Alabama Power offers $1,000 for gas-to-electric conversions. Rural co-ops offer $300\u2013400/ton. Federal tax credits expired. IRA HEAR rebates not yet launched.",
     sources: [
       {
         label: "Alabama Power \u2014 Rebates & Incentives",
@@ -50,6 +50,10 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "TVA EnergyRight \u2014 Residential Rebates",
         url: "https://energyright.com/residential/rebates/",
+      },
+      {
+        label: "TVA EnergyRight \u2014 Air Sealing & Insulation Rebates",
+        url: "https://energyright.com/residential/rebates/home-insulation-air-sealing/",
       },
       {
         label: "ADECA \u2014 IRA Home Energy Rebates Program",

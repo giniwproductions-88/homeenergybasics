@@ -6,16 +6,16 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title:
-    "Alabama Heat Pump Rebates 2026: $500–$1,500 TVA + Alabama Power | Home Energy Basics",
+    "Alabama Heat Pump Rebates 2026: $1,000 Alabama Power + $800 TVA | Home Energy Basics",
   description:
-    "TVA EnergyRight offers $500–$1,500. Alabama Power covers $1,000 for gas-to-electric. Federal tax credits ended. Every Alabama heat pump incentive in 2026.",
+    "Alabama Power offers $1,000 gas-to-electric. TVA EnergyRight pays $500–$800, $1,500 geothermal. Federal credits ended. Every Alabama heat pump incentive, 2026.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/al",
   },
   openGraph: {
     title: "Alabama Heat Pump Rebates 2026",
     description:
-      "TVA EnergyRight $500–$1,500, Alabama Power $1,000 gas-to-electric, co-op rebates $300–$400/ton — the complete guide to Alabama heat pump incentives after federal credits expired.",
+      "Alabama Power $1,000 gas-to-electric, TVA EnergyRight $500–$800 ($1,500 geothermal), co-op rebates $300–$400/ton — the complete guide to Alabama heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/al",
     type: "article",
     publishedTime: "2026-03-23T20:51:10-05:00",
@@ -32,7 +32,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in Alabama in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Alabama has no statewide heat pump rebate program. The main incentives come from utilities: TVA EnergyRight offers $500–$1,500 for qualifying heat pumps in northern Alabama, Alabama Power offers $1,000 for gas-to-electric conversions statewide, and rural electric cooperatives offer approximately $300–$400 per ton. Federal tax credits (Sections 25C and 25D) expired December 31, 2025. Alabama\u2019s IRA-funded HEAR rebates have not launched yet.",
+        text: "Alabama has no statewide heat pump rebate program. The main incentives come from utilities: TVA EnergyRight offers $500–$800 for qualifying air-source heat pumps ($1,500 for geothermal) in northern Alabama, Alabama Power offers $1,000 for gas-to-electric conversions in its service territory, and rural electric cooperatives offer approximately $300–$400 per ton. Federal tax credits (Sections 25C and 25D) expired December 31, 2025. Alabama\u2019s IRA-funded HEAR rebates have not launched yet.",
       },
     },
     {
@@ -40,7 +40,7 @@ const faqJsonLd = {
       name: "Can I stack TVA EnergyRight and Alabama Power rebates?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No. TVA EnergyRight and Alabama Power serve different territories — you cannot be a customer of both for the same home. You can stack your utility rebate with future HEAR rebates once Alabama launches that program. TVA customers can combine heat pump, insulation, and duct sealing rebates on the same project for up to roughly $2,100 total.",
+        text: "No. TVA EnergyRight and Alabama Power serve different territories — you cannot be a customer of both for the same home. You can stack your utility rebate with future HEAR rebates once Alabama launches that program. TVA customers can combine heat pump, heat pump water heater, duct sealing, and attic insulation rebates on the same project for roughly $2,900 total.",
       },
     },
     {
@@ -64,7 +64,7 @@ const faqJsonLd = {
       name: "When will Alabama launch HEAR rebates?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "As of June 2026, ADECA has not announced a launch date for Alabama\u2019s Home Electrification and Appliance Rebates (HEAR) program. The program remains under development. When launched, HEAR could provide up to $8,000 per heat pump for households below 80% of Area Median Income. Sign up for notifications at rebates@adeca.alabama.gov.",
+        text: `As of ${formatDate(incentives.AL.lastVerified)}, ADECA has not announced a launch date for Alabama\u2019s Home Electrification and Appliance Rebates (HEAR) program. ADECA\u2019s own IRA rebates page describes the program as still in development. When launched, HEAR could provide up to $8,000 per heat pump for households below 80% of Area Median Income. Sign up for notifications at rebates@adeca.alabama.gov.`,
       },
     },
   ],
@@ -104,8 +104,9 @@ export default function AlabamaPage() {
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
             Alabama has no statewide heat pump rebate, but utility programs still
-            offer <strong>$500–$1,500</strong> through TVA EnergyRight in
-            northern Alabama and <strong>$1,000</strong> through Alabama Power
+            offer <strong>$500–$800</strong> through TVA EnergyRight in
+            northern Alabama (plus <strong>$1,500</strong> for geothermal) and{" "}
+            <strong>$1,000</strong> through Alabama Power
             for gas-to-electric conversions. Federal tax credits ended December 31,
             2025, and the state&apos;s IRA-funded rebate programs have not launched.
             This guide covers all major Alabama heat pump incentives available in
@@ -134,12 +135,13 @@ export default function AlabamaPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">The short version</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-1">✓ TVA EnergyRight: $500–$1,500</p>
+              <p className="font-semibold text-green-800 mb-1">✓ TVA EnergyRight: $500–$800</p>
               <p className="text-sm text-green-900">
                 Northern Alabama residents served by TVA distributors can claim
-                $500–$1,500 for qualifying heat pumps, plus $900 for heat pump
-                water heaters. The $1,500 &quot;Preferred&quot; tier requires a
-                variable-speed system rated 15.2+ SEER2 and 8.1+ HSPF2.
+                $500–$800 for qualifying air-source or dual-fuel heat pumps
+                ($800 at 17+ SEER2), $1,500 for geothermal, and up to $1,300 in
+                instant discounts on heat pump water heaters. All work must be
+                done by a Quality Contractor Network member.
               </p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
@@ -152,11 +154,11 @@ export default function AlabamaPage() {
               </p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-1">✓ Total potential savings: $1,200–$15,700</p>
+              <p className="font-semibold text-green-800 mb-1">✓ Total potential savings: $1,200–$15,200</p>
               <p className="text-sm text-green-900">
-                $1,200 (above 150% AMI, Alabama Power territory) to $2,100
+                $1,200 (above 150% AMI, Alabama Power territory) to $1,600
                 (above 150% AMI, TVA territory). When HEAR launches,
-                income-qualified households below 80% AMI could reach ~$15,700
+                income-qualified households below 80% AMI could reach ~$15,200
                 in total incentives. Rural co-ops add $900–$1,200 for a
                 typical 3-ton system.
               </p>
@@ -285,8 +287,10 @@ export default function AlabamaPage() {
             <p className="font-semibold text-amber-800 mb-1">⚠ No launch date set</p>
             <p className="text-sm text-amber-900">
               ADECA issued an RFP for a program implementation consultant in late
-              2024, but the program remains in the planning phase. Many states have already launched HEAR programs; as of mid-2026, Alabama is still not among them. Sign
-              up for notifications at rebates@adeca.alabama.gov or call 334-353-3004.
+              2024, and its IRA rebates page still describes the program as in
+              development. As of {formattedDate}, no launch date has been
+              announced. Sign up for notifications at rebates@adeca.alabama.gov
+              or call 334-353-3004.
             </p>
           </div>
         </div>
@@ -380,7 +384,8 @@ export default function AlabamaPage() {
             <strong>461,000 Alabama households</strong> in 16 northern counties
             through distributors including Huntsville Utilities, Decatur Utilities,
             Florence Utilities, Athens Utilities, and Joe Wheeler EMC. TVA&apos;s
-            EnergyRight program offers the strongest heat pump rebates in the state.
+            EnergyRight program offers the broadest rebate menu in the state,
+            spanning heat pumps, water heaters, ductwork, and insulation.
           </p>
 
           <div className="overflow-x-auto mb-6">
@@ -394,44 +399,44 @@ export default function AlabamaPage() {
               </thead>
               <tbody>
                 <tr className="border-b bg-green-50">
-                  <td className="p-3">TVA Preferred air-source heat pump</td>
-                  <td className="p-3 font-semibold">$1,500</td>
-                  <td className="p-3">Variable-speed, 15.2+ SEER2, 8.1+ HSPF2, 100% capacity at 17°F</td>
+                  <td className="p-3">Heat pump (air source or dual fuel), 17+ SEER2</td>
+                  <td className="p-3 font-semibold">$800</td>
+                  <td className="p-3">Installed by a Quality Contractor Network member</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-3">Heat pump or dual fuel, 17+ SEER2</td>
-                  <td className="p-3 font-semibold">$800</td>
-                  <td className="p-3">Must replace existing electric heat</td>
+                  <td className="p-3">Heat pump (air source or dual fuel), 15–16.99 SEER2</td>
+                  <td className="p-3 font-semibold">$500</td>
+                  <td className="p-3">Installed by a Quality Contractor Network member</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Mini-split, 17+ SEER2</td>
                   <td className="p-3 font-semibold">$800</td>
-                  <td className="p-3">Must replace existing electric heat</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">Heat pump, 15–16.99 SEER2</td>
-                  <td className="p-3 font-semibold">$500</td>
-                  <td className="p-3">Must replace existing electric heat</td>
+                  <td className="p-3">Replaces your existing unit</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Geothermal heat pump</td>
                   <td className="p-3 font-semibold">$1,500</td>
-                  <td className="p-3">Verify current amount at energyright.com</td>
+                  <td className="p-3">Qualifying geothermal heat pump</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Heat pump water heater</td>
-                  <td className="p-3 font-semibold">$900</td>
-                  <td className="p-3">ENERGY STAR, must replace electric water heater</td>
+                  <td className="p-3 font-semibold">Up to $1,300</td>
+                  <td className="p-3">Instant discount via Quality Contractor Network, participating retailers, and online</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-3">Duct sealing/repair/insulation</td>
+                  <td className="p-3">Duct sealing, repair, insulation, or replacement</td>
                   <td className="p-3 font-semibold">$300</td>
-                  <td className="p-3">Per system</td>
+                  <td className="p-3">Complete duct system must be brought to TVA standards</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Attic insulation</td>
-                  <td className="p-3 font-semibold">$300</td>
-                  <td className="p-3">Per home</td>
+                  <td className="p-3 font-semibold">$500</td>
+                  <td className="p-3">Limited-time rebate</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Tune-up (existing heat pump or central AC)</td>
+                  <td className="p-3 font-semibold">$50</td>
+                  <td className="p-3">Per system</td>
                 </tr>
               </tbody>
             </table>
@@ -440,9 +445,10 @@ export default function AlabamaPage() {
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-blue-800 mb-1">TVA territory is Alabama&apos;s best incentive zone</p>
             <p className="text-sm text-blue-900">
-              A Huntsville homeowner installing a TVA Preferred heat pump, heat pump
-              water heater, and duct sealing can stack up to <strong>$2,700</strong> in
-              rebates from a single program — more than double what&apos;s available
+              A Huntsville homeowner installing a 17+ SEER2 heat pump, heat pump
+              water heater, duct sealing, and attic insulation can stack roughly{" "}
+              <strong>$2,900</strong> in rebates from a single program — well
+              beyond what&apos;s available
               in Alabama Power territory. TVA also runs the Home Uplift program,
               providing an average of <strong>~$10,000</strong> in free home energy
               upgrades for income-eligible customers.
@@ -450,10 +456,13 @@ export default function AlabamaPage() {
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-6">
-            All TVA rebates require work by a TVA Quality Contractor Network member.
-            Unlike Alabama Power, TVA rebates require replacing an existing{" "}
-            <strong>electric</strong> heating system — gas-to-electric conversions
-            do not qualify. Rebates are delivered as paper checks mailed to homeowners.
+            All TVA rebates require work by a TVA Quality Contractor Network member,
+            and your contractor submits the rebate for you — TVA EnergyRight then
+            emails you a redemption code to claim it. Heat pump water heater
+            discounts are applied instantly at the point of purchase. Dual-fuel
+            systems (a heat pump with gas backup) qualify for the same rebate
+            tiers as all-electric systems. Affordable, $0 down financing may be
+            available from your local power company.
           </p>
 
           <p className="text-gray-700 leading-relaxed mb-6">
@@ -548,35 +557,35 @@ export default function AlabamaPage() {
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900 mb-2">TVA territory — above 150% AMI</p>
               <ul className="text-sm text-gray-700 space-y-1">
-                <li>TVA EnergyRight Preferred heat pump: $1,500</li>
+                <li>TVA heat pump rebate (17+ SEER2): $800</li>
                 <li>TVA duct sealing: $300</li>
-                <li>TVA attic insulation: $300</li>
+                <li>TVA attic insulation (limited time): $500</li>
                 <li>Federal tax credit: $0 (expired)</li>
                 <li>HEAR: $0 (not launched)</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$2,100</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$1,600</p>
             </div>
 
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-2">TVA territory — below 80% AMI (best case, when HEAR launches)</p>
               <ul className="text-sm text-green-900 space-y-1">
-                <li>TVA EnergyRight Preferred heat pump: $1,500</li>
-                <li>TVA duct sealing + insulation: $600</li>
+                <li>TVA heat pump rebate (17+ SEER2): $800</li>
+                <li>TVA duct sealing + attic insulation: $800</li>
                 <li>HEAR heat pump rebate: up to $8,000</li>
                 <li>HEAR panel/wiring upgrade: up to $4,000</li>
                 <li>HEAR insulation/air sealing: up to $1,600</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$15,700 (HEAR not yet available)</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$15,200 (HEAR not yet available)</p>
             </div>
           </div>
 
           <div className="bg-gray-100 rounded-lg p-5 mb-6">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
             <p className="text-sm text-gray-700">
-              Without HEAR, most Alabama homeowners will pay{" "}
-              <strong>$13,000–$19,000 out of pocket</strong> for a whole-home heat
+              Without HEAR, Alabama Power customers will pay roughly{" "}
+              <strong>$13,800–$18,800 out of pocket</strong> for a whole-home heat
               pump system after utility rebates. In TVA territory, that drops to
-              roughly <strong>$12,900–$17,900</strong>. When HEAR eventually
+              roughly <strong>$13,400–$18,400</strong>. When HEAR eventually
               launches, income-qualified households could see costs drop dramatically
               — potentially to under $5,000 with full stacking.
             </p>
@@ -613,8 +622,9 @@ export default function AlabamaPage() {
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
             <p className="font-semibold text-green-800 mb-1">✓ Best candidates for Alabama heat pump incentives</p>
             <p className="text-sm text-green-900">
-              TVA-territory homeowners replacing electric resistance heat (highest rebates,
-              largest energy savings). Alabama Power customers converting from gas furnaces
+              TVA-territory homeowners upgrading to a 17+ SEER2 system (the
+              state&apos;s deepest rebate menu, and the largest bill savings when
+              replacing electric resistance heat). Alabama Power customers converting from gas furnaces
               (only way to qualify for the $1,000 rebate). Low-income households in any
               territory (TVA Home Uplift averages ~$10,000 in free upgrades; WAP covers full
               costs). Co-op members replacing older systems (per-ton rebates add up on larger
@@ -742,9 +752,10 @@ export default function AlabamaPage() {
                 <p className="font-semibold text-gray-900">Install the system and file your rebate</p>
                 <p className="text-sm text-gray-700">
                   Keep all receipts, the AHRI certificate, and contractor documentation.
-                  Alabama Power requires applications within 90 days of purchase. TVA
-                  rebates are processed through your local distributor. Cooperative
-                  timelines vary — contact yours before installation.
+                  Alabama Power requires applications within 90 days of purchase. In TVA
+                  territory, your Quality Contractor Network contractor submits the rebate
+                  for you — watch for an email from TVA EnergyRight with your redemption
+                  code. Cooperative timelines vary — contact yours before installation.
                 </p>
               </div>
             </div>
@@ -799,12 +810,13 @@ export default function AlabamaPage() {
               </p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900">TVA EnergyRight updates</p>
+              <p className="font-semibold text-gray-900">TVA EnergyRight menu changes</p>
               <p className="text-sm text-gray-600 mt-1">
-                TVA&apos;s $1.5 billion energy initiative runs through 2027.
-                Rebate amounts and equipment tiers may be updated as the program
-                evolves. The Preferred tier specification could change with new
-                equipment standards.
+                TVA&apos;s rebate menu changed during 2026 — the top air-source
+                tier is now $800 and the attic insulation rebate is labeled
+                limited-time. Menu updates typically align with TVA&apos;s fiscal
+                year, which begins October 1. Confirm current amounts with a
+                Quality Contractor Network contractor before signing a contract.
               </p>
             </div>
           </div>
