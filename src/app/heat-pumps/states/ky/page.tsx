@@ -32,7 +32,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in Kentucky in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Kentucky heat pump rebates come exclusively from utility programs right now. LG&E and KU offer $400 for air-source heat pumps and $300 for heat pump water heaters. EKPC cooperatives offer $500–$1,000, with $1,000 for cold-climate models. Duke Energy Kentucky offers approximately $865 for HVAC upgrades. TVA-served western Kentucky utilities offer $500–$800 for heat pumps and up to $1,500 for geothermal. Federal tax credits expired December 31, 2025, and the state\u0027s IRA-funded HEAR/HOMES programs have not yet launched.",
+        text: "Kentucky heat pump rebates come exclusively from utility programs right now. LG&E and KU offer $400 for air-source heat pumps and $300 for heat pump water heaters. EKPC cooperatives offer $500–$1,000, with $1,000 for cold-climate models. Duke Energy Kentucky offers $300–$800 for heat pump replacements through its Smart $aver program, plus $800 for converting from electric resistance heat. TVA-served western Kentucky utilities offer $500–$800 for heat pumps and up to $1,500 for geothermal. Federal tax credits expired December 31, 2025, and the state\u0027s IRA-funded HEAR/HOMES programs have not yet launched.",
       },
     },
     {
@@ -84,6 +84,7 @@ const articleJsonLd = {
 export default function KentuckyPage() {
   const kyIncentive = incentives.KY;
   const formattedDate = formatDate(kyIncentive.lastVerified);
+  const updatedDate = formatDate(kyIncentive.lastUpdated);
 
   return (
     <>
@@ -106,7 +107,7 @@ export default function KentuckyPage() {
             Kentucky heat pump rebates and incentives are still available in 2026, but the landscape is narrower than a year ago. Federal tax credits ended December 31, 2025, and the state&apos;s IRA-funded HEAR program has not yet launched. Utility rebates of <strong>$250–$1,500</strong> are the primary incentive today, with TVA-served and EKPC cooperative territories offering the strongest programs. This guide covers all major Kentucky heat pump incentives available in 2026, including LG&amp;E/KU, Duke Energy, EKPC cooperatives, TVA EnergyRight, and the pending HEAR/HOMES programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} — verified against official program sources
+            Updated {updatedDate} · Verified {formattedDate}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.
@@ -128,15 +129,15 @@ export default function KentuckyPage() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Utility rebates are active</p>
-              <p className="text-sm text-green-900">$250–$1,500 depending on your utility and equipment. TVA-served and EKPC cooperative areas offer the strongest rebates.</p>
+              <p className="text-sm text-green-900">$250–$1,500 for heat pump equipment, depending on your utility. TVA-served and EKPC cooperative areas offer the strongest rebates.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ HEAR rebates approved but not launched</p>
               <p className="text-sm text-green-900">Up to $8,000 per heat pump for households below 80% of Area Median Income (AMI). Up to $4,000 for 80–150% AMI. Will stack with utility rebates once live.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-1">✓ Potential savings: $400–$9,000+</p>
-              <p className="text-sm text-green-900">$400 (above 150% AMI, LG&amp;E/KU territory) to $9,000+ (below 80% AMI, once HEAR launches). Full electrification packages can reach ~$14,000 total incentives.</p>
+              <p className="font-semibold text-green-800 mb-1">✓ Potential savings: $300–$9,000+</p>
+              <p className="text-sm text-green-900">$300 (above 150% AMI, lowest Duke Smart $aver tier) to $9,000+ (below 80% AMI, once HEAR launches). Full electrification packages can reach ~$14,000 total incentives.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">✗ Federal tax credits expired</p>
@@ -329,7 +330,7 @@ export default function KentuckyPage() {
           {/* Duke Energy Kentucky */}
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Duke Energy Kentucky</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Duke Energy Kentucky serves approximately <strong>145,000 customers</strong> in Northern Kentucky (Covington, Florence, Burlington, Fort Thomas, Newport). The Home Energy Improvement program requires a free Home Energy Check before qualifying for rebates.
+            Duke Energy Kentucky serves approximately <strong>145,000 customers</strong> in Northern Kentucky (Covington, Florence, Burlington, Fort Thomas, Newport). Its residential rebate program is <strong>Smart $aver</strong> — the same program Duke runs in the Carolinas and Indiana, but Kentucky&apos;s amounts and eligible measures differ from those states.
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
@@ -341,22 +342,37 @@ export default function KentuckyPage() {
               </thead>
               <tbody>
                 <tr className="border-b">
-                  <td className="p-3">HVAC system (heat pump or AC)</td>
-                  <td className="p-3 font-semibold">~$865</td>
+                  <td className="p-3">Heat pump replacement (three efficiency tiers)</td>
+                  <td className="p-3 font-semibold">$300–$800</td>
+                </tr>
+                <tr className="border-b bg-green-50">
+                  <td className="p-3">Heat pump replacing electric resistance heat</td>
+                  <td className="p-3 font-semibold">$800</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-3">Heat pump water heater</td>
-                  <td className="p-3 font-semibold">$350</td>
+                  <td className="p-3">Geothermal heat pump</td>
+                  <td className="p-3 font-semibold">$500–$800</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-3">Duct / air sealing</td>
-                  <td className="p-3 font-semibold">$100+</td>
+                  <td className="p-3">Central air conditioner (early replacement only)</td>
+                  <td className="p-3 font-semibold">$300</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Smart thermostat</td>
+                  <td className="p-3 font-semibold">$65</td>
                 </tr>
               </tbody>
             </table>
           </div>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Amounts within the ranges above depend on the replacement path: <strong>replace-on-failure</strong> (your existing equipment has already died) and <strong>early replacement</strong> (proactively replacing working equipment) pay different amounts, with early replacement qualifying for the higher figures. Equipment needs AHRI certification and an ECM blower motor, and duct sealing is included with replacements. Your contractor submits the rebate application within 60 days of installation, and rebates are paid as a prepaid Mastercard.
+          </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Duke Energy&apos;s national site shows potentially higher amounts — up to <strong>$1,000</strong> for converting from electric resistance to a high-efficiency heat pump. Kentucky-specific amounts may differ; homeowners should confirm directly at (866) 785-6209.
+            Duke Energy Kentucky also offers a Smart $aver rebate for <strong>heat pump water heaters</strong> (ENERGY STAR certified, UEF ≥3.3; tankless and standard electric models don&apos;t qualify, and the unit must be installed and operable before applying). We haven&apos;t been able to verify the current Kentucky rebate amount for this measure — confirm the figure on{" "}
+            <a href="https://www.duke-energy.com/home/products/smart-saver" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">Duke&apos;s Smart $aver page</a>{" "}
+            or with your contractor before purchase. For Duke&apos;s programs across all six states it serves, see our{" "}
+            <Link href="/heat-pumps/utilities/duke-energy" className="text-brand-600 hover:underline">Duke Energy heat pump rebates</Link>{" "}
+            breakdown.
           </p>
 
           {/* EKPC Cooperatives */}
@@ -464,40 +480,40 @@ export default function KentuckyPage() {
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900 mb-2">Above 150% AMI — any utility territory</p>
               <ul className="text-sm text-gray-700 space-y-1">
-                <li>Utility rebate: $400–$800 (varies by utility)</li>
+                <li>Utility rebate: $300–$1,000 (varies by utility and equipment tier)</li>
                 <li>HEAR: not eligible</li>
                 <li>HOMES: not yet launched</li>
                 <li>Federal credit: expired</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$400–$800</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$300–$1,000</p>
             </div>
 
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900 mb-2">80–150% AMI — once HEAR launches</p>
               <ul className="text-sm text-gray-700 space-y-1">
-                <li>Utility rebate: $400–$1,000</li>
+                <li>Utility rebate: $300–$1,000</li>
                 <li>HEAR: up to $4,000 (50% of remaining cost)</li>
                 <li>Federal credit: expired</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$4,400–$5,000</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$4,300–$5,000</p>
             </div>
 
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-2">Below 80% AMI — once HEAR launches (best case)</p>
               <ul className="text-sm text-green-900 space-y-1">
-                <li>Utility rebate: $400–$1,000</li>
+                <li>Utility rebate: $300–$1,000</li>
                 <li>HEAR: up to $8,000 (100% of remaining cost)</li>
                 <li>WAP: potentially full cost if qualified</li>
                 <li>Federal credit: expired</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$8,400–$9,000+</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$8,300–$9,000+</p>
             </div>
           </div>
 
           <div className="bg-gray-100 rounded-lg p-5 mb-6">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
             <p className="text-sm text-gray-700">
-              For a typical <strong>$8,000–$12,000</strong> ducted heat pump installation: above 150% AMI homeowners pay <strong>$7,200–$11,600 out of pocket</strong> today (utility rebate only). Once HEAR launches, 80–150% AMI homeowners could pay <strong>$5,000–$7,600</strong>, and below 80% AMI homeowners could pay <strong>$1,000–$3,600</strong> or potentially nothing depending on utility territory and WAP eligibility.
+              For a typical <strong>$8,000–$12,000</strong> ducted heat pump installation: above 150% AMI homeowners pay <strong>$7,000–$11,700 out of pocket</strong> today (utility rebate only). Once HEAR launches, 80–150% AMI homeowners could pay roughly <strong>$3,500–$7,700</strong>, and below 80% AMI homeowners could pay <strong>$0–$3,700</strong> — at the lower end of project costs, HEAR&apos;s $8,000 cap can cover the entire post-rebate balance for income-qualified households.
             </p>
           </div>
           <p className="text-sm text-gray-500">
@@ -597,7 +613,7 @@ export default function KentuckyPage() {
               </div>
               <div>
                 <p className="font-semibold text-gray-900">Confirm rebate requirements before installation</p>
-                <p className="text-sm text-gray-700">Each utility has specific requirements — ENERGY STAR certification, AHRI certificates, efficiency minimums, or pre-installation energy checks (Duke Energy). TVA requires a Quality Contractor Network member. EKPC co-ops require pre- and post-inspections.</p>
+                <p className="text-sm text-gray-700">Each utility has specific requirements — ENERGY STAR certification, AHRI certificates, and efficiency minimums. TVA requires a Quality Contractor Network member. EKPC co-ops require pre- and post-inspections. Duke Energy requires AHRI-certified equipment with an ECM blower motor.</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -615,7 +631,7 @@ export default function KentuckyPage() {
               </div>
               <div>
                 <p className="font-semibold text-gray-900">Submit your rebate application</p>
-                <p className="text-sm text-gray-700">LG&amp;E/KU: apply online through My Account. Duke Energy: apply through the Home Energy Improvement portal. EKPC co-ops: contact your local cooperative directly. TVA: rebates may be applied automatically through your contractor.</p>
+                <p className="text-sm text-gray-700">LG&amp;E/KU: apply online through My Account. Duke Energy: your contractor submits the Smart $aver application within 60 days of installation. EKPC co-ops: contact your local cooperative directly. TVA: rebates may be applied automatically through your contractor.</p>
               </div>
             </div>
             <div className="flex gap-4">

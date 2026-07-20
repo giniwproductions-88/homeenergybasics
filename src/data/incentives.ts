@@ -1825,8 +1825,8 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "KY",
     stateName: "Kentucky",
     status: "limited",
-    lastVerified: "2026-06-10",
-    lastUpdated: "2026-06-10",
+    lastVerified: "2026-07-20",
+    lastUpdated: "2026-07-20",
     summary:
       "Kentucky utility heat pump rebates range from $250 to $1,500 depending on provider. TVA EnergyRight offers $500–$1,500; EKPC co-ops offer $500–$1,000 including a $1,000 cold-climate bonus. LG&E/KU offers $400. IRA-funded HEAR rebates (up to $8,000) are approved but not yet launched. Federal 25C/25D credits expired Dec 2025.",
     sources: [
@@ -1847,8 +1847,8 @@ export const incentives: Record<StateCode, StateIncentive> = {
         url: "https://lge-ku.com/energy-efficiency-programs",
       },
       {
-        label: "Duke Energy Kentucky — HVAC Replacement Rebates",
-        url: "https://www.duke-energy.com/home/products/home-energy-improvement/hvac-replacement",
+        label: "Duke Energy — Smart $aver Rebates",
+        url: "https://www.duke-energy.com/home/products/smart-saver",
       },
       {
         label: "Together We Save Kentucky — EKPC Cooperative Rebates",
