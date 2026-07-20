@@ -215,12 +215,12 @@ export default function NewJerseyPage() {
                 <tr className="border-b">
                   <td className="p-3">ASHP &mdash; Tier 1</td>
                   <td className="p-3 font-semibold">$300</td>
-                  <td className="p-3">SEER2 &#8805; 15.2</td>
+                  <td className="p-3">SEER2 &#8805; 15.2, EER2 &#8805; 11.7, HSPF2 &#8805; 7.8</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">ASHP &mdash; Tier 2</td>
                   <td className="p-3 font-semibold">$450</td>
-                  <td className="p-3">SEER2 &#8805; 17.1</td>
+                  <td className="p-3">SEER2 &#8805; 17.1, EER2 &#8805; 11.7, HSPF2 &#8805; 7.8</td>
                 </tr>
                 <tr className="border-b bg-green-50">
                   <td className="p-3">Cold-climate ASHP</td>
