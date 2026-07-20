@@ -1,13 +1,21 @@
 // src/data/utilities.ts
 // Utility / program-administrator data model — first-class entity.
-// Mirrors incentives.ts conventions: status enum, lastVerified (YYYY-MM-DD,
-// monotonic — never moves backward), sources array rendered on-page.
+// Mirrors incentives.ts conventions: status enum, ISODate stamps, sources
+// array rendered on-page.
 //
-// IMPORTANT: lastVerified follows playbook rule 1 — it is set only after a
-// real verification pass with quoted source text. Entries below that have
-// lastVerified: "" are SCHEMA STUBS and must not ship until verified.
+// DATE FIELDS (parity with incentives.ts, 2026-07-20):
+//   lastVerified — last checked against primary sources. Playbook rule 1:
+//     set only after a real verification pass with quoted source text.
+//   lastUpdated  — last actual content change to this entity's data/page.
+//   INVARIANT: lastUpdated <= lastVerified. A verify-no-changes pass bumps
+//   lastVerified ONLY. Both monotonic — never move backward.
+// Entries with lastVerified: "" are SCHEMA STUBS and must not ship until
+// verified (shippedUtilities() gates on this).
 
 import type { StateCode } from "./incentives";
+
+type Digit = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9";
+export type ISODate = `${number}-${Digit}${Digit}-${Digit}${Digit}`;
 
 export type UtilitySlug =
   | "xcel-energy"
@@ -60,7 +68,8 @@ export interface UtilityEntity {
   type: UtilityType;
   territories: UtilityTerritory[];
   status: UtilityStatus; // overall: open if any territory program open
-  lastVerified: string; // YYYY-MM-DD — monotonic, rule-1 gated
+  lastVerified: ISODate | ""; // rule-1 gated; "" = unshipped stub
+  lastUpdated: ISODate | ""; // last content change; <= lastVerified
   // 2-3 sentence hub-card summary. Same constraints as state summaries:
   // primary dollar amounts, primary program names, ~350 chars max.
   summary: string;
@@ -68,7 +77,7 @@ export interface UtilityEntity {
 }
 
 export const utilities: Record<UtilitySlug, UtilityEntity> = {
-  // ── PILOT 1 — build first ────────────────────────────────────────────
+  // ── PILOT 1 — shipped 2026-07-15 ─────────────────────────────────────
   "xcel-energy": {
     slug: "xcel-energy",
     name: "Xcel Energy",
@@ -92,6 +101,7 @@ export const utilities: Record<UtilitySlug, UtilityEntity> = {
     ],
     status: "open",
     lastVerified: "2026-07-14",
+    lastUpdated: "2026-07-14",
     summary: "Xcel offers heat pump rebates in 3 of its 8 states: up to $2,000 in Minnesota, $2,250 per heating ton in Colorado (with fuel-burning-system bonus), and unpublished installer-quoted amounts in New Mexico. Federal 25C/25D credits ended Dec 31, 2025.",
     sources: [
       { label: "Xcel Energy — Minnesota 2024–2026 Rebate Summary (PDF)", url: "https://www.xcelenergy.com/staticfiles/xe-responsive/Working%20With%20Us/24-1-201%20MN%20Res%20Rebate%20Summary%20Information%20Sheet.pdf" },
@@ -126,6 +136,7 @@ export const utilities: Record<UtilitySlug, UtilityEntity> = {
     ],
     status: "open",
     lastVerified: "2026-07-16",
+    lastUpdated: "2026-07-16",
     summary: "Efficiency Maine, the state's independent efficiency program administrator, pays $1,000–$3,000 per outdoor unit or $3,000–$9,000 for ducted whole-home heat pumps by income tier, plus a $500 bonus through Dec 2026, $1,150 for heat pump water heaters, and Green Bank loans up to $25,000. Federal 25C/25D credits ended Dec 31, 2025.",
     sources: [
       { label: "Efficiency Maine — Whole-Home Heat Pump Rebates", url: "https://www.efficiencymaine.com/whole-home-heat-pump-rebates/" },
@@ -138,25 +149,48 @@ export const utilities: Record<UtilitySlug, UtilityEntity> = {
     ],
   },
 
-  // ── Duke / TVA / FPL — schema placeholders, do not ship ──────────────
+  // ── PILOT 4 — Duke Energy (six states, five programs) ────────────────
   "duke-energy": {
     slug: "duke-energy",
     name: "Duke Energy",
     shortName: "Duke",
     type: "iou",
+    // All 6 territories verified 2026-07-20 at administrator depth via
+    // operator browser pastes (duke-energy.com serves content by a
+    // location cookie; each capture confirmed by the header's state
+    // indicator). NC/SC/IN/KY run Smart $aver with per-state tables and
+    // effective dates; FL runs the separate Home Energy Improvement
+    // program (Home Energy Check prerequisite); OH has NO residential
+    // heat pump or efficiency rebates (post-deregulation menu carries
+    // supplier-choice and renewable programs only — affirmative absence
+    // captured 7/20).
+    // SCRAPER NOTE: duke-energy.com bot-blocks fetchers AND cookie-gates
+    // jurisdictions — mute-list candidate, human-verify browser cadence
+    // like Xcel. Do not add to check-sources.mjs targets.
+    // KY HPWH: category offered; amount not captured 7/20 — verify on
+    // next Duke touch before quoting a KY HPWH figure anywhere.
     territories: [
-      { state: "NC", hasHeatPumpProgram: false, note: "VERIFY — Progress vs Carolinas territories differ" },
-      { state: "SC", hasHeatPumpProgram: false, note: "VERIFY" },
-      { state: "FL", hasHeatPumpProgram: false, note: "VERIFY" },
-      { state: "IN", hasHeatPumpProgram: false, note: "VERIFY" },
-      { state: "OH", hasHeatPumpProgram: false, note: "VERIFY" },
-      { state: "KY", hasHeatPumpProgram: false, note: "VERIFY" },
+      { state: "NC", hasHeatPumpProgram: true, note: "Smart $aver: $350–$900 heat pump replacement, up to $2,500 conversions; $500 HPWH" },
+      { state: "SC", hasHeatPumpProgram: true, note: "Same Smart $aver tables as NC; some Greenwood-area customers excluded from the HPWH rebate" },
+      { state: "IN", hasHeatPumpProgram: true, note: "Smart $aver: $400–$700 replacement, up to $3,000 dual-fuel conversion; $350 HPWH" },
+      { state: "FL", hasHeatPumpProgram: true, note: "Home Energy Improvement: $500 heat pump, up to $1,000 strip-heat conversion; free Home Energy Check required" },
+      { state: "KY", hasHeatPumpProgram: true, note: "Smart $aver: $300–$800 by efficiency tier and replacement timing" },
+      { state: "OH", hasHeatPumpProgram: false, note: "No residential heat pump or efficiency rebates; supplier-choice and renewable programs only" },
     ],
     status: "open",
-    lastVerified: "",
-    summary: "STUB",
-    sources: [],
+    lastVerified: "2026-07-20",
+    lastUpdated: "2026-07-20",
+    summary: "Duke Energy pays residential heat pump rebates in 5 of its 6 states: up to $2,500 for conversions in North Carolina and South Carolina, $3,000 in Indiana, $1,000 in Florida, and $800 in Kentucky, plus $350–$500 heat pump water heater rebates. Ohio has no residential program. Federal 25C/25D credits ended Dec 31, 2025.",
+    sources: [
+      { label: "Duke Energy — Smart $aver Home Improvement Rebates (NC, SC, IN, KY — content set by site location)", url: "https://www.duke-energy.com/home/products/smart-saver" },
+      { label: "Duke Energy — Smart $aver Heat Pump Water Heater Rebate (content set by site location)", url: "https://www.duke-energy.com/home/products/smart-saver/heat-pump-water-heater" },
+      { label: "Duke Energy Florida — Home Energy Improvement HVAC Replacement", url: "https://www.duke-energy.com/home/products/home-energy-improvement/hvac-replacement" },
+      { label: "Duke Energy Florida — Home Energy Improvement Heat Pump Water Heater", url: "https://www.duke-energy.com/home/products/home-energy-improvement/heat-pump-water-heater" },
+      { label: "NC DEQ — Energy Saver North Carolina Energy Efficiency Rebates (stacking rules)", url: "https://www.deq.nc.gov/energy-climate/state-energy-office/energy-saver-north-carolina/energy-efficiency-rebates" },
+    ],
   },
+
+  // ── TVA / FPL — schema placeholders, do not ship ─────────────────────
   "tva-energyright": {
     slug: "tva-energyright",
     name: "TVA EnergyRight",
@@ -171,6 +205,7 @@ export const utilities: Record<UtilitySlug, UtilityEntity> = {
     ],
     status: "open",
     lastVerified: "",
+    lastUpdated: "",
     summary: "STUB",
     sources: [],
   },
@@ -184,6 +219,7 @@ export const utilities: Record<UtilitySlug, UtilityEntity> = {
     ],
     status: "open",
     lastVerified: "",
+    lastUpdated: "",
     summary: "STUB",
     sources: [],
   },
@@ -202,6 +238,7 @@ export const utilities: Record<UtilitySlug, UtilityEntity> = {
     ],
     status: "open",
     lastVerified: "2026-07-16",
+    lastUpdated: "2026-07-16",
     summary: "SMUD, Sacramento's community-owned utility, pays $2,000–$3,000 for gas-to-electric heat pump HVAC conversions and $3,000–$4,000 for heat pump water heaters, plus a $2,000 Go Electric panel-and-circuit bonus — up to ~$9,750 combined with induction. Federal 25C/25D credits ended Dec 31, 2025.",
     sources: [
       { label: "SMUD — Heating and Cooling Rebates (heat pump HVAC)", url: "https://www.smud.org/Rebates-and-Savings-Tips/Rebates-for-My-Home/Heating-and-Cooling-Rebates" },
