@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-20T20:30:40.438Z",
+ "generatedAt": "2026-07-20T21:21:49.755Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -163,7 +163,7 @@
     "AR"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-18T15:13:16.921Z",
+   "fetchedAt": "2026-07-20T20:28:26.774Z",
    "length": 102975,
    "kind": "html",
    "textHash": "d764cdb7c3a0ce47",
@@ -484,7 +484,7 @@
     "MO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T16:45:09.905Z",
+   "fetchedAt": "2026-07-20T20:28:28.577Z",
    "length": 114446,
    "kind": "html",
    "textHash": "5f26bc2d77d90d83",
@@ -1730,13 +1730,28 @@
   },
   "https://homeenergy.pseg.com/heatingandcooling": {
    "url": "https://homeenergy.pseg.com/heatingandcooling",
-   "finalUrl": "https://homeenergy.pseg.com/heatingandcooling",
+   "finalUrl": "https://myhomeenergy.pseg.com/appliance-offers/heatingandcooling",
    "label": "PSE&G HVAC Instant Rebates",
    "states": [
     "NJ"
    ],
-   "fetchedAt": "2026-07-18T15:13:40.390Z",
-   "error": "fetch failed"
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-20T20:28:59.420Z",
+   "length": 358883,
+   "kind": "html",
+   "textHash": "2b421fa6ea83604d",
+   "dollars": [
+    "$300",
+    "$2,000",
+    "$10,000",
+    "$10,001",
+    "$25,000",
+    "$50,000",
+    "$75,000"
+   ],
+   "keywords": {
+    "closed": 1
+   }
   },
   "https://residential.energysavenj.com/jersey-central/hvac/": {
    "url": "https://residential.energysavenj.com/jersey-central/hvac/",
@@ -1746,7 +1761,7 @@
     "NJ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-18T15:13:17.179Z",
+   "fetchedAt": "2026-07-20T20:28:59.668Z",
    "length": 72778,
    "kind": "html",
    "textHash": "7fe9da266651fcd2",
@@ -1770,10 +1785,10 @@
     "NJ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-18T15:13:16.896Z",
-   "length": 46370,
+   "fetchedAt": "2026-07-20T20:28:59.264Z",
+   "length": 45027,
    "kind": "html",
-   "textHash": "076ab9ca8c782fb3",
+   "textHash": "91b7f127ddaa63d9",
    "dollars": [
     "$100",
     "$150",
@@ -1796,8 +1811,8 @@
     "NJ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-18T15:13:17.844Z",
-   "length": 146876,
+   "fetchedAt": "2026-07-20T20:29:00.025Z",
+   "length": 146871,
    "kind": "html",
    "textHash": "ec431fe0509cb61b",
    "dollars": [
@@ -1831,8 +1846,8 @@
     "NJ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-18T15:13:17.659Z",
-   "length": 23373,
+   "fetchedAt": "2026-07-20T20:28:59.796Z",
+   "length": 23374,
    "kind": "html",
    "textHash": "fb35784e9754c272",
    "dollars": [
@@ -1856,7 +1871,7 @@
     "NJ"
    ],
    "httpStatus": 404,
-   "fetchedAt": "2026-07-18T15:13:20.475Z",
+   "fetchedAt": "2026-07-20T20:29:02.651Z",
    "length": 587068,
    "error": "HTTP 404"
   },
@@ -1868,7 +1883,7 @@
     "NJ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-18T15:13:17.539Z",
+   "fetchedAt": "2026-07-20T20:28:59.901Z",
    "length": 34527,
    "kind": "html",
    "textHash": "68af232adfe36dac",
@@ -3094,7 +3109,7 @@
     "NH"
    ],
    "httpStatus": 403,
-   "fetchedAt": "2026-07-17T16:45:14.319Z",
+   "fetchedAt": "2026-07-20T20:28:34.367Z",
    "length": 1142269,
    "error": "HTTP 403"
   },
@@ -7801,10 +7816,10 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T16:45:14.649Z",
-   "length": 101171,
+   "fetchedAt": "2026-07-20T20:28:33.870Z",
+   "length": 112274,
    "kind": "html",
-   "textHash": "6bd1264089a8a5b8",
+   "textHash": "38641d91207b9a04",
    "dollars": [
     "$250",
     "$500",
@@ -7814,7 +7829,6 @@
     "$2,650",
     "$6,000",
     "$8,500",
-    "$12,000",
     "$13,500",
     "$16,000",
     "$22,000",
@@ -7833,7 +7847,7 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T16:45:14.345Z",
+   "fetchedAt": "2026-07-20T20:28:33.858Z",
    "length": 93180,
    "kind": "html",
    "textHash": "3881f25f16fc6d28",
@@ -7859,8 +7873,8 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T16:45:15.048Z",
-   "length": 79113,
+   "fetchedAt": "2026-07-20T20:28:33.886Z",
+   "length": 79112,
    "kind": "html",
    "textHash": "261dfd6ec337cb15",
    "dollars": [
@@ -7925,8 +7939,8 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T16:45:14.974Z",
-   "length": 73835,
+   "fetchedAt": "2026-07-20T20:28:33.909Z",
+   "length": 73834,
    "kind": "html",
    "textHash": "ac6f3a2076f3d859",
    "dollars": [
@@ -7943,8 +7957,8 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T16:45:16.278Z",
-   "length": 66308,
+   "fetchedAt": "2026-07-20T20:28:32.728Z",
+   "length": 66236,
    "kind": "html",
    "textHash": "21bdbb58ba784e78",
    "dollars": [],
@@ -7958,7 +7972,7 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T16:45:15.905Z",
+   "fetchedAt": "2026-07-20T20:28:33.882Z",
    "length": 61231,
    "kind": "html",
    "textHash": "1acb41794054efcf",
@@ -7973,7 +7987,7 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T16:45:16.061Z",
+   "fetchedAt": "2026-07-20T20:28:34.595Z",
    "length": 75838,
    "kind": "html",
    "textHash": "afe5778ba5564304",
@@ -7990,7 +8004,7 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T16:45:15.794Z",
+   "fetchedAt": "2026-07-20T20:28:34.619Z",
    "length": 208221,
    "kind": "html",
    "textHash": "b298ecc8c513da60",
@@ -8637,7 +8651,7 @@
     "NJ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-18T15:13:17.739Z",
+   "fetchedAt": "2026-07-20T20:28:59.453Z",
    "length": 323380,
    "kind": "html",
    "textHash": "93946f1a708c6f1b",
@@ -8661,7 +8675,7 @@
     "NJ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-18T15:13:17.033Z",
+   "fetchedAt": "2026-07-20T20:28:58.815Z",
    "length": 39035,
    "kind": "html",
    "textHash": "cd20cf8adf1ac1b6",
