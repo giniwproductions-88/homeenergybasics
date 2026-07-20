@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-20T21:23:30.616Z",
+ "generatedAt": "2026-07-20T21:51:34.556Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -5380,10 +5380,10 @@
     "TN"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:03:08.771Z",
-   "length": 248852,
+   "fetchedAt": "2026-07-20T20:29:45.168Z",
+   "length": 248973,
    "kind": "html",
-   "textHash": "294f180f5840dc74",
+   "textHash": "10f2fff679ca6f87",
    "dollars": [
     "$15",
     "$50",
@@ -5405,10 +5405,10 @@
     "TN"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:03:09.317Z",
-   "length": 215014,
+   "fetchedAt": "2026-07-20T20:29:45.813Z",
+   "length": 214564,
    "kind": "html",
-   "textHash": "6effbbf782d49db3",
+   "textHash": "003820f493145b9b",
    "dollars": [],
    "keywords": {}
   },
@@ -5420,8 +5420,8 @@
     "TN"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:03:09.417Z",
-   "length": 99057,
+   "fetchedAt": "2026-07-20T20:29:45.923Z",
+   "length": 99780,
    "kind": "html",
    "textHash": "f6a8a0cdcb7ac26e",
    "dollars": [],
@@ -8765,6 +8765,16 @@
    "fetchedAt": "2026-07-20T20:30:14.222Z",
    "length": 5839,
    "error": "HTTP 403"
+  },
+  "https://www.tn.gov/environment/program-areas/energy/state-energy-office--seo-/programs-projects/programs-and-projects/inflation-reduction-act/home-energy-rebate.html": {
+   "url": "https://www.tn.gov/environment/program-areas/energy/state-energy-office--seo-/programs-projects/programs-and-projects/inflation-reduction-act/home-energy-rebate.html",
+   "finalUrl": "https://www.tn.gov/environment/program-areas/energy/state-energy-office--seo-/programs-projects/programs-and-projects/inflation-reduction-act/home-energy-rebate.html",
+   "label": "TDEC — Home Energy Rebate Programs",
+   "states": [
+    "TN"
+   ],
+   "fetchedAt": "2026-07-20T20:29:45.951Z",
+   "error": "fetch failed"
   }
  }
 }
