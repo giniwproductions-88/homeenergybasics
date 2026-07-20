@@ -1557,8 +1557,8 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "IN",
     stateName: "Indiana",
     status: "open",
-    lastVerified: "2026-06-03",
-    lastUpdated: "2026-06-03",
+    lastVerified: "2026-07-20",
+    lastUpdated: "2026-07-20",
     summary:
       "Indiana Energy Saver Program (HEAR) offers up to $8,000 for heat pumps for households below 150% AMI. HOMES rebates cover up to $4,000 for other homeowners. Utility rebates add $275\u2013$3,000. Federal tax credits expired Dec 31, 2025.",
     sources: [
@@ -1584,7 +1584,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
       },
       {
         label: "Duke Energy Indiana \u2014 Smart $aver Rebates",
-        url: "https://www.duke-energy.com/home/products/home-energy-improvement/hvac-replacement",
+        url: "https://www.duke-energy.com/home/products/smart-saver",
       },
       {
         label: "NIPSCO \u2014 Residential Rebates",

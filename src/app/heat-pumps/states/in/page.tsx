@@ -36,7 +36,8 @@ const articleJsonLd = {
 
 export default function IndianaPage() {
   const inIncentive = incentives.IN;
-  const formattedDate = formatDate(inIncentive.lastVerified);
+  const formattedVerified = formatDate(inIncentive.lastVerified);
+  const formattedUpdated = formatDate(inIncentive.lastUpdated);
 
   const faqJsonLd = {
     "@context": "https://schema.org",
@@ -106,7 +107,7 @@ export default function IndianaPage() {
             Indiana&apos;s <strong>$182 million Energy Saver Program</strong> is fully operational and offers up to <strong>$8,000</strong> for a heat pump for income-qualified households. Utility rebates from AES Indiana, Duke Energy, NIPSCO, and others add <strong>$275&ndash;$3,000</strong> on top. Federal tax credits expired December 31, 2025. This guide covers all major Indiana heat pump incentives available in 2026, including the Indiana Energy Saver Program (HOMES and HEAR), utility rebates from all major providers, and local programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} — verified against official program sources
+            Updated {formattedUpdated} &middot; Verified {formattedVerified}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.
@@ -139,7 +140,7 @@ export default function IndianaPage() {
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Total potential savings</p>
-              <p className="text-sm text-green-900"><strong>$2,600&ndash;$5,000</strong> (above 150% AMI) to <strong>$9,000&ndash;$14,000+</strong> (below 80% AMI). Full electrification packages can reach ~$32,000 total incentives.</p>
+              <p className="text-sm text-green-900"><strong>$2,300&ndash;$7,000</strong> (above 150% AMI, via HOMES plus utility rebates) to <strong>$9,000&ndash;$14,000+</strong> (below 80% AMI). Full electrification packages can reach ~$32,000 total incentives.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">✗ Federal tax credits expired</p>
@@ -339,7 +340,10 @@ export default function IndianaPage() {
           {/* Duke Energy Indiana */}
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Duke Energy Indiana (central and southern Indiana)</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Duke Energy&apos;s Smart $aver program offers the most generous utility conversion rebates in Indiana. A free Home Energy Check is required within 24 months before installation. Rebates are paid via prepaid Mastercard.
+            Duke Energy&apos;s Smart $aver program offers the most generous utility conversion rebates in Indiana, effective for equipment installed after July 31, 2025. There is no assessment prerequisite &mdash; Duke&apos;s free Home Energy House Call is optional &mdash; and there is no homeowner application to file for HVAC rebates: your Smart $aver participating contractor completes the work and submits the rebate application within 60 days. Rebates are paid via prepaid Mastercard.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Most tiers pay two rates depending on timing: a <strong>Replace on Failure</strong> rate when your existing equipment has failed, and a higher <strong>Early Replacement</strong> rate when you proactively replace a working system. Unusually, Duke&apos;s biggest Indiana rebate rewards <em>adding</em> gas: the dual-fuel conversion pays up to <strong>$3,000</strong> for pairing a heat pump with a gas furnace backup.
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
@@ -352,38 +356,52 @@ export default function IndianaPage() {
               </thead>
               <tbody>
                 <tr className="border-b">
-                  <td className="p-3">Standard HP replacement</td>
-                  <td className="p-3 font-semibold">$500&ndash;$1,000</td>
-                  <td className="p-3">Tiered by SEER2</td>
+                  <td className="p-3">Replace existing heat pump</td>
+                  <td className="p-3 font-semibold">$400&ndash;$700</td>
+                  <td className="p-3">Two efficiency tiers, Replace on Failure / Early Replacement</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Electric resistance &rarr; heat pump</td>
+                  <td className="p-3 font-semibold">$800</td>
+                  <td className="p-3">Conversion</td>
                 </tr>
                 <tr className="border-b bg-green-50">
-                  <td className="p-3">Dual-fuel conversion</td>
-                  <td className="p-3 font-semibold">Up to $3,000</td>
-                  <td className="p-3">Expanded conversion rebate</td>
+                  <td className="p-3">Heat pump &rarr; dual-fuel system (adds gas backup)</td>
+                  <td className="p-3 font-semibold">$2,500 / $3,000</td>
+                  <td className="p-3">Replace on Failure / Early Replacement &mdash; Duke&apos;s biggest Indiana rebate</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-3">Cold-climate / ducted mini-split</td>
-                  <td className="p-3 font-semibold">Up to $2,500</td>
-                  <td className="p-3">Conversion rebate</td>
+                  <td className="p-3">Heat pump &rarr; cold-climate heat pump</td>
+                  <td className="p-3 font-semibold">$2,000 / $2,500</td>
+                  <td className="p-3">Replace on Failure / Early Replacement</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-3">Geothermal</td>
-                  <td className="p-3 font-semibold">Up to $2,300</td>
-                  <td className="p-3">Conversion rebate</td>
+                  <td className="p-3">Heat pump &rarr; geothermal</td>
+                  <td className="p-3 font-semibold">$2,300</td>
+                  <td className="p-3">Flat; COP &ge; 3.6, EER2 &ge; 17.1</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-3">HPWH (50 gal)</td>
-                  <td className="p-3 font-semibold">$500</td>
-                  <td className="p-3">UEF &ge; 3.3</td>
+                  <td className="p-3">Mini-split</td>
+                  <td className="p-3 font-semibold">$500 / $700</td>
+                  <td className="p-3">Replace on Failure / Early Replacement</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-3">HPWH (80 gal)</td>
-                  <td className="p-3 font-semibold">$800</td>
-                  <td className="p-3">UEF &ge; 3.3</td>
+                  <td className="p-3">Heat pump water heater</td>
+                  <td className="p-3 font-semibold">$350</td>
+                  <td className="p-3">ENERGY STAR, UEF &ge; 3.3</td>
                 </tr>
               </tbody>
             </table>
           </div>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            HVAC systems must be AHRI-matched with an ECM blower motor, and duct sealing is included with replacements. The dual-fuel, cold-climate, and geothermal conversion rebates require an existing heat pump with electric resistance strip heat serving at least 1,000 square feet; mini-splits must condition at least 1,000 square feet. The heat pump water heater rebate excludes tankless and standard electric models; the unit must be installed and operable before applying, with a retail path at smartsaverincentives.com for self-purchased units. A <strong>$65</strong> smart thermostat rebate is also available.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Duke&apos;s Indiana amounts differ from its other five states &mdash; the Carolinas pay different figures under the same Smart $aver name, and Florida and Kentucky run different programs entirely. For the full state-by-state breakdown, see our{" "}
+            <Link href="/heat-pumps/utilities/duke-energy" className="text-brand-600 hover:underline">
+              Duke Energy heat pump rebates guide
+            </Link>.
+          </p>
 
           {/* NIPSCO */}
           <h3 className="text-lg font-semibold text-gray-900 mb-3">NIPSCO (northern Indiana)</h3>
@@ -468,7 +486,7 @@ export default function IndianaPage() {
               <p className="font-semibold text-gray-900 mb-2">Above 150% AMI &mdash; Ducted cold-climate heat pump ($15,000 installed)</p>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>HOMES rebate (35%+ energy savings): $4,000</li>
-                <li>Duke Energy conversion rebate: $2,500</li>
+                <li>Duke Smart $aver &mdash; heat pump to cold-climate conversion (Early Replacement): $2,500</li>
                 <li>Federal tax credit: $0 (expired)</li>
               </ul>
               <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$6,500</p>
@@ -671,7 +689,7 @@ export default function IndianaPage() {
               </div>
               <div>
                 <p className="font-semibold text-gray-900">Apply for your utility rebate separately</p>
-                <p className="text-sm text-gray-700">Utility rebates (AES Indiana, Duke Energy, NIPSCO, CenterPoint) require separate applications. Check your utility&apos;s website for deadlines and required documentation like AHRI certificates.</p>
+                <p className="text-sm text-gray-700">Utility rebates (AES Indiana, Duke Energy, NIPSCO, CenterPoint) are separate from Indiana Energy Saver. For Duke, your Smart $aver participating contractor submits the application &mdash; there&apos;s no homeowner form for HVAC rebates. For the others, check your utility&apos;s website for deadlines and required documentation like AHRI certificates.</p>
               </div>
             </div>
             <div className="flex gap-4">
