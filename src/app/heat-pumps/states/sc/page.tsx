@@ -583,7 +583,7 @@ export default function SouthCarolinaPage() {
 
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
             <p className="font-semibold text-green-800 mb-1">✓ Best candidates for SC incentives in 2026</p>
-            <p className="text-sm text-green-900">Homes switching from gas, propane, or electric resistance (strip heat) to a heat pump. Low-income households below 200% FPG (WAP) or below 150% AMI (HEAR, when it launches). Duke Energy Carolinas customers in the Upstate (highest standard rebates). Geothermal system installers (state tax credit still active).</p>
+            <p className="text-sm text-green-900">Homes switching from gas, propane, or electric resistance (strip heat) to a heat pump. Low-income households below 200% FPG (WAP) or below 150% AMI (HEAR, when it launches). Duke Energy customers — Progress or Carolinas — where Smart $aver pays the state&apos;s highest utility rebates. Geothermal system installers (state tax credit still active).</p>
           </div>
         </div>
       </section>
@@ -650,7 +650,7 @@ export default function SouthCarolinaPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">How to apply for South Carolina heat pump rebates</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            The process varies by utility. For most SC homeowners, the utility rebate is the only active incentive right now. Here&apos;s the general process for Duke Energy Carolinas (the largest provider in the state):
+            The process varies by utility. For most SC homeowners, the utility rebate is the only active incentive right now. Here&apos;s the general process for Duke Energy (the largest provider in the state):
           </p>
           <div className="space-y-4">
             <div className="flex gap-4">
