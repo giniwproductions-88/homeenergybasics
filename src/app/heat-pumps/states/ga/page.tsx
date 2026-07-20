@@ -372,8 +372,14 @@ export default function GeorgiaPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-gray-500 mb-6">
             Contact your EMC directly for current program details. Rebate amounts and eligibility can change without notice.
+          </p>
+
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">TVA-served Georgia communities</h3>
+          <p className="text-gray-700 leading-relaxed">
+            Local power companies in parts of Georgia distribute TVA power and participate in the region-wide TVA EnergyRight program instead: <strong>$500{"\u2013"}$800</strong> for ducted heat pumps by SEER2 tier, <strong>$800</strong> for mini splits, and <strong>$1,500</strong> for geothermal, with installation required through TVA&apos;s Quality Contractor Network. If your electric bill comes from a TVA-served utility, see our{" "}
+            <Link href="/heat-pumps/utilities/tva-energyright" className="text-brand-600 hover:underline">complete TVA EnergyRight guide</Link>.
           </p>
         </div>
       </section>

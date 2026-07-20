@@ -245,6 +245,11 @@ export default function TennesseePage() {
             <p className="font-semibold text-green-800 mb-1">✓ Best candidates for TVA EnergyRight rebates</p>
             <p className="text-sm text-green-900">Homeowners replacing existing electric heating (heat pumps, electric furnaces, or electric resistance heat). Rural Tennessee households on electric resistance heat or propane stand to benefit most — both from the rebate and from significantly lower operating costs with a heat pump.</p>
           </div>
+
+          <p className="text-gray-700 leading-relaxed mt-6">
+            For the full region-wide rebate menu, financing terms, and Home Uplift details, see our{" "}
+            <Link href="/heat-pumps/utilities/tva-energyright" className="text-brand-600 hover:underline">complete TVA EnergyRight guide</Link>.
+          </p>
         </div>
       </section>
 

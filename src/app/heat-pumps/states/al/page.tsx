@@ -456,6 +456,11 @@ export default function AlabamaPage() {
             do not qualify. Rebates are delivered as paper checks mailed to homeowners.
           </p>
 
+          <p className="text-gray-700 leading-relaxed mb-6">
+            For the full region-wide rebate menu, financing terms, and Home Uplift details, see our{" "}
+            <Link href="/heat-pumps/utilities/tva-energyright" className="text-brand-600 hover:underline">complete TVA EnergyRight guide</Link>.
+          </p>
+
           <h3 className="text-lg font-semibold text-gray-900 mb-3">
             Rural electric cooperatives
           </h3>

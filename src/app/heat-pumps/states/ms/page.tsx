@@ -441,6 +441,11 @@ export default function MississippiPage() {
             <p className="text-sm text-blue-900">TVA&apos;s Home Uplift program provides an average of $10,000 in free home energy upgrades — including HVAC replacement, insulation, and appliances — for households at or below 200% of the federal poverty level. Contact your local TVA distributor to check availability in your area.</p>
           </div>
 
+          <p className="text-gray-700 leading-relaxed mb-6">
+            For the full region-wide rebate menu, financing terms, and Home Uplift details, see our{" "}
+            <Link href="/heat-pumps/utilities/tva-energyright" className="text-brand-600 hover:underline">complete TVA EnergyRight guide</Link>.
+          </p>
+
           {/* Mississippi Power */}
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Mississippi Power (southeast Mississippi)</h3>
           <p className="text-gray-700 leading-relaxed mb-4">

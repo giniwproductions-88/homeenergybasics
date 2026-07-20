@@ -378,6 +378,10 @@ export default function NorthCarolinaPage() {
           <p className="text-gray-700 leading-relaxed mb-4">
             North Carolina&apos;s 26 electric cooperatives each set their own programs. Highlights: Piedmont Electric offers up to <strong>$600</strong> per heat pump system. Blue Ridge Energy offers <strong>$150</strong> for an ASHP (15.2+ SEER2) or <strong>$250</strong> for geothermal. Municipal programs vary — Fayetteville PWC offers <strong>$250–$400</strong> tiered by efficiency, Concord offers <strong>$400</strong> flat, and several smaller towns offer <strong>$300–$500</strong>. Check with your specific utility for current amounts.
           </p>
+          <p className="text-gray-700 leading-relaxed">
+            Local power companies in parts of North Carolina distribute TVA power and participate in the region-wide TVA EnergyRight program instead: <strong>$500–$800</strong> for ducted heat pumps by SEER2 tier, <strong>$800</strong> for mini splits, and <strong>$1,500</strong> for geothermal, with installation required through TVA&apos;s Quality Contractor Network. If your electric bill comes from a TVA-served utility, see our{" "}
+            <Link href="/heat-pumps/utilities/tva-energyright" className="text-brand-600 hover:underline">complete TVA EnergyRight guide</Link>.
+          </p>
         </div>
       </section>
 

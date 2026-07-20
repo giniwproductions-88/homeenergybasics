@@ -391,8 +391,13 @@ export default function VirginiaPage() {
             Virginia&apos;s electric cooperatives — including NOVEC, Rappahannock Electric Cooperative (REC), and Shenandoah Valley Electric Cooperative (SVEC) — generally do not offer direct cash rebates for heat pumps. Some provide alternative support: REC offers on-bill financing through its Vividly Brighter program, NOVEC provides low-interest HVAC financing through a bank partnership, and Harrisonburg Electric Commission offers rebates covering central heat pumps, mini-splits, and heat pump water heaters through its Energy Save &amp; Earn program.
           </p>
 
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-gray-700 leading-relaxed mb-4">
             <strong>Columbia Gas</strong> and <strong>Virginia Natural Gas</strong> offer rebates only for gas equipment — neither provides any incentive for heat pumps or fuel switching.
+          </p>
+
+          <p className="text-gray-700 leading-relaxed">
+            Local power companies in parts of Virginia distribute TVA power and participate in the region-wide TVA EnergyRight program: <strong>$500–$800</strong> for ducted heat pumps by SEER2 tier, <strong>$800</strong> for mini splits, and <strong>$1,500</strong> for geothermal, with installation required through TVA&apos;s Quality Contractor Network. If your electric bill comes from a TVA-served utility, see our{" "}
+            <Link href="/heat-pumps/utilities/tva-energyright" className="text-brand-600 hover:underline">complete TVA EnergyRight guide</Link>.
           </p>
         </div>
       </section>

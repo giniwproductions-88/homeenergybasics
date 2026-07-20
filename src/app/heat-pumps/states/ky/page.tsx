@@ -56,7 +56,7 @@ const faqJsonLd = {
       name: "Which Kentucky utility offers the best heat pump rebates?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "TVA-served utilities in western Kentucky offer the highest rebates: $500–$800 for air-source heat pumps, up to $900 for heat pump water heaters, and $1,500 for geothermal systems. EKPC cooperatives in central and eastern Kentucky are second best at $500–$1,000, with a notable $1,000 incentive for cold-climate heat pumps. LG&E/KU customers in Louisville and Lexington receive more modest $300–$400 rebates.",
+        text: "TVA-served utilities in western Kentucky offer the highest rebates: $500–$800 for air-source heat pumps and $1,500 for geothermal systems. EKPC cooperatives in central and eastern Kentucky are second best at $500–$1,000, with a notable $1,000 incentive for cold-climate heat pumps. LG&E/KU customers in Louisville and Lexington receive more modest $300–$400 rebates.",
       },
     },
     {
@@ -277,7 +277,7 @@ export default function KentuckyPage() {
             </table>
           </div>
           <p className="text-gray-700 leading-relaxed">
-            HOMES requires minimum energy savings thresholds (typically 20–35%+) demonstrated through modeling. Unlike HEAR, households above 150% AMI are eligible at the same rate as moderate-income households. Key program rules: no retroactive rebates for pre-launch projects, mandatory use of program-registered contractors, and rebates delivered as upfront point-of-sale discounts.
+            HOMES requires minimum energy savings thresholds (typically 20–35%+) demonstrated through modeling. Unlike HEAR, households above 150% AMI are eligible at the same rate as moderate-income households. Program details published so far indicate no retroactive rebates for pre-launch projects, mandatory use of program-registered contractors, and delivery as upfront point-of-sale discounts — but rules are not final until Kentucky launches the program.
           </p>
         </div>
       </section>
@@ -448,10 +448,6 @@ export default function KentuckyPage() {
                   <td className="p-3">Ductless mini-split (17+ SEER2)</td>
                   <td className="p-3 font-semibold">$800</td>
                 </tr>
-                <tr className="border-b">
-                  <td className="p-3">Heat pump water heater</td>
-                  <td className="p-3 font-semibold">Up to $900</td>
-                </tr>
                 <tr className="border-b bg-green-50">
                   <td className="p-3">Geothermal heat pump</td>
                   <td className="p-3 font-semibold">$1,500</td>
@@ -459,8 +455,12 @@ export default function KentuckyPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-gray-700 leading-relaxed mb-4">
             All work must be completed by a TVA Quality Contractor Network member, and heat pumps must replace an existing primary electric heat source. TVA&apos;s Home Uplift program provides free comprehensive energy upgrades to qualifying low-income households. TVA also offers <strong>$0-down fixed-rate financing</strong> for qualifying upgrades through participating local power companies.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            The current TVA EnergyRight menu lists no heat pump water heater rebate — HPWHs are financeable through the $0-down loans, and some local power companies offer their own. For the full region-wide menu, financing terms, and Home Uplift details, see our{" "}
+            <Link href="/heat-pumps/utilities/tva-energyright" className="text-brand-600 hover:underline">complete TVA EnergyRight guide</Link>.
           </p>
         </div>
       </section>
