@@ -179,7 +179,7 @@ export default function TennesseePage() {
             Since Tennessee has no state income tax, there are no state-level heat pump tax credits. The Tennessee Valley Authority&apos;s (TVA) EnergyRight program is the primary active rebate for Tennessee homeowners. TVA is investing <strong>$1.5 billion</strong> in EnergyRight through 2027, and the program operates through 153 local power companies across TVA&apos;s service territory.
           </p>
 
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">Air-source heat pump rebate tiers</h3>
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">Current TVA EnergyRight rebate menu</h3>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
               <thead>
@@ -514,7 +514,7 @@ export default function TennesseePage() {
               </div>
               <div>
                 <p className="font-semibold text-gray-900">Contractor submits rebate through TVA EnergyRight</p>
-                <p className="text-sm text-gray-700">Your contractor handles the paperwork. TVA mails a rebate check directly to you within 4–6 weeks of approval.</p>
+                <p className="text-sm text-gray-700">Your contractor completes the upgrade and submits the rebate to TVA EnergyRight for processing. Watch for an email from TVA EnergyRight with a redemption code, then claim your rebate online.</p>
               </div>
             </div>
           </div>
@@ -536,7 +536,7 @@ export default function TennesseePage() {
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">TVA EnergyRight rebate schedule changes</p>
-              <p className="text-sm text-gray-600 mt-1">TVA periodically updates its rebate tiers and amounts. The current schedule (version 26) has been in effect since early 2024. Changes typically align with TVA&apos;s fiscal year (October 1). Check with your contractor for the most current amounts before starting a project.</p>
+              <p className="text-sm text-gray-600 mt-1">TVA periodically updates its rebate tiers and amounts — the menu changed during 2026, and changes typically align with TVA&apos;s fiscal year (October 1). Check with your contractor for the most current amounts before starting a project.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Chattanooga Gas counter-incentives</p>
