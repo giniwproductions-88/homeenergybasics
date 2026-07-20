@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-20T22:09:58.379Z",
+ "generatedAt": "2026-07-20T22:58:04.228Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -9,10 +9,10 @@
     "AL"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:20.939Z",
-   "length": 172267,
+   "fetchedAt": "2026-07-20T20:28:27.046Z",
+   "length": 172985,
    "kind": "html",
-   "textHash": "4a439b0931c36976",
+   "textHash": "682ab6f3a397faed",
    "dollars": [
     "$150",
     "$200",
@@ -55,8 +55,8 @@
     "AL"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:20.534Z",
-   "length": 67998,
+   "fetchedAt": "2026-07-20T20:28:26.239Z",
+   "length": 68044,
    "kind": "html",
    "textHash": "45be0453d5028cd5",
    "dollars": [],
@@ -70,7 +70,7 @@
     "AL"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:20.501Z",
+   "fetchedAt": "2026-07-20T20:28:26.251Z",
    "length": 85826,
    "kind": "html",
    "textHash": "75af553e7eace184",
@@ -85,7 +85,7 @@
     "AL"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:21.038Z",
+   "fetchedAt": "2026-07-20T20:28:26.681Z",
    "length": 73174,
    "kind": "html",
    "textHash": "13d858826b2ec983",
@@ -104,8 +104,8 @@
     "AL"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:22.939Z",
-   "length": 51070,
+   "fetchedAt": "2026-07-20T20:28:27.508Z",
+   "length": 51068,
    "kind": "html",
    "textHash": "8d8f4a4d0fad7143",
    "dollars": [
@@ -125,8 +125,8 @@
     "AL"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:21.436Z",
-   "length": 462082,
+   "fetchedAt": "2026-07-20T20:28:26.962Z",
+   "length": 462086,
    "kind": "html",
    "textHash": "78036abb629d0e5b",
    "dollars": [
