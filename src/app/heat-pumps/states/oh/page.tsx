@@ -56,7 +56,7 @@ const faqJsonLd = {
       name: "When will Ohio\u2019s IRA rebate programs (HEAR and HOMES) launch?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Ohio was awarded approximately $249 million in IRA rebate funding. The Ohio Department of Development designed the programs and received DOE approval, but has not announced a firm launch date. Industry sources expected launch sometime in 2026. IRA funding for these programs remains authorized through September 30, 2031. Monitor development.ohio.gov for official launch announcements.",
+        text: "Ohio was awarded approximately $249 million in IRA rebate funding. The Ohio Department of Development designed the programs but has not announced a firm launch date. Industry sources expected launch sometime in 2026. IRA funding for these programs remains authorized through September 30, 2031. Monitor development.ohio.gov for official launch announcements.",
       },
     },
     {
@@ -92,6 +92,7 @@ const articleJsonLd = {
 export default function OhioPage() {
   const ohIncentive = incentives.OH;
   const formattedDate = formatDate(ohIncentive.lastVerified);
+  const updatedDate = formatDate(ohIncentive.lastUpdated);
 
   return (
     <>
@@ -114,7 +115,7 @@ export default function OhioPage() {
             Most Ohio homeowners will see little to no direct rebates until federal IRA programs launch. Federal tax credits expired, Ohio&apos;s <strong>$249 million</strong> in IRA rebate funding remains pending, and utility rebate programs were dismantled by House Bill 6 in 2019. The strongest active incentive is the ECO-Link loan program, which provides a <strong>3% interest rate reduction</strong> on qualifying home improvement loans up to <strong>$50,000</strong>. For most homeowners, this is one of the weakest incentive environments in the country right now. This guide covers all major Ohio heat pump incentives available in 2026, including HEAR, HOMES, AEP Ohio HELP, ECO-Link, and HWAP. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} — verified against official program sources
+            Updated {updatedDate} · Verified {formattedDate}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.
@@ -143,8 +144,8 @@ export default function OhioPage() {
               <p className="text-sm text-green-900">The ECO-Link program from the Ohio Treasurer provides a 3% interest rate reduction on qualifying home improvement loans, including heat pump installations. This is the strongest active incentive available to all Ohio homeowners.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-1">✓ Potential savings: $500 to $8,000+</p>
-              <p className="text-sm text-green-900">$500–$750 (above 150% AMI via utility rebates) to $8,000+ (below 80% AMI via HEAR when launched). Full electrification packages can reach ~$16,000 total incentives for income-qualified households.</p>
+              <p className="font-semibold text-green-800 mb-1">✓ Potential savings: up to $1,500 today, $8,000+ pending</p>
+              <p className="text-sm text-green-900">Up to $1,500 today via the Cincinnati-area GCEA rebate — most of Ohio has no active general-population rebate. Up to $8,000+ per heat pump (below 80% AMI) once HEAR launches, with a $14,000 HEAR household cap for full electrification packages.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">✗ Federal tax credits expired</p>
@@ -338,7 +339,9 @@ export default function OhioPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Duke Energy Ohio — no active program</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Duke Energy&apos;s Ohio service territory residential rebate programs were discontinued following HB 6. Duke&apos;s national website displays HVAC rebate pages, but these serve other jurisdictions (Carolinas, Florida, Indiana) — not Ohio. Duke serves approximately 730,000 electric customers in southwestern Ohio.
+            Duke Energy&apos;s Ohio service territory residential rebate programs were discontinued following HB 6. Duke&apos;s national website displays HVAC rebate pages, but these serve other jurisdictions (the Carolinas, Florida, Indiana, and Kentucky) — not Ohio. As of July 2026, the Savings &amp; Solutions menu shown to Duke&apos;s Ohio customers lists no rebate offerings — only electric supplier choice and the GoGreen renewable-energy program. Duke serves approximately 730,000 electric customers in southwestern Ohio. For what Duke offers in its five other states — and why Ohio is the exception — see our{" "}
+            <Link href="/heat-pumps/utilities/duke-energy" className="text-brand-600 hover:underline">Duke Energy heat pump rebates</Link>{" "}
+            breakdown.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">AES Ohio (Dayton area) — no active program</h3>
@@ -410,7 +413,7 @@ export default function OhioPage() {
 
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
             <p className="font-semibold text-green-800 mb-1">✓ Best candidates for ECO-Link</p>
-            <p className="text-sm text-green-900">Homeowners above 150% AMI who are not eligible for HEAR. A 3% rate reduction on a $15,000 heat pump loan saves approximately $1,200–$1,400 in interest over 5 years. Combined with a utility rebate of $500–$750 (where available), this is the primary incentive path for middle- and upper-income Ohio homeowners in 2026.</p>
+            <p className="text-sm text-green-900">Homeowners above 150% AMI who are not eligible for HEAR. A 3% rate reduction on a $15,000 heat pump loan saves approximately $1,200–$1,400 in interest over 5 years. With no general-population utility rebates left in Ohio, this financing reduction is the primary incentive path for middle- and upper-income Ohio homeowners in 2026.</p>
           </div>
         </div>
       </section>
@@ -430,10 +433,11 @@ export default function OhioPage() {
                 <li>HEAR: $0 (not eligible)</li>
                 <li>HOMES (35%+ savings): up to $4,000</li>
                 <li>Section 25C: $0 (expired)</li>
-                <li>Utility rebate (best case): $500–$750</li>
+                <li>Utility rebate: $0 (no general-population programs remain)</li>
+                <li>Local rebate (Cincinnati-area GCEA): up to $1,500</li>
                 <li>ECO-Link: 3% rate reduction on loan (not a rebate)</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$4,500–$4,750</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$4,000 (HOMES, once launched) — up to $1,500 today in the Cincinnati area</p>
             </div>
 
             <div className="bg-white border border-gray-200 rounded-lg p-5">
@@ -442,9 +446,9 @@ export default function OhioPage() {
                 <li>HEAR (50% of costs): up to $7,500</li>
                 <li>HOMES (separate weatherization, 35%+ savings): up to $4,000</li>
                 <li>Section 25C: $0 (expired)</li>
-                <li>Utility rebate: $500–$750</li>
+                <li>Utility rebate: $0 (no general-population programs remain)</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum (HP only): ~$8,000–$8,250</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum (HP only): ~$7,500</p>
             </div>
 
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
@@ -461,7 +465,7 @@ export default function OhioPage() {
 
           <div className="bg-gray-100 rounded-lg p-5 mb-6">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
-            <p className="text-sm text-gray-700">For a typical $15,000 ducted heat pump installation: above-150% AMI homeowners should expect <strong>$10,250–$14,500 out of pocket</strong> depending on whether HOMES launches and utility rebates are available. Low-income homeowners (below 80% AMI) have a path to near-zero cost through HEAR + HWAP + utility programs, but only after HEAR launches. Until then, most Ohio homeowners pay full price minus financing savings from ECO-Link.</p>
+            <p className="text-sm text-gray-700">For a typical $15,000 ducted heat pump installation: above-150% AMI homeowners should expect <strong>$11,000–$15,000 out of pocket</strong> — full price in most of the state today (minus ECO-Link financing savings), $13,500 in the Cincinnati-area GCEA counties, and $11,000 only once HOMES launches. Low-income homeowners (below 80% AMI) have a path to near-zero cost through HEAR + HWAP, but only after HEAR launches. Until then, most Ohio homeowners pay full price minus financing savings from ECO-Link.</p>
           </div>
 
           <p className="text-xs text-gray-400">
@@ -475,7 +479,7 @@ export default function OhioPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Ohio Home Weatherization Assistance Program (HWAP)</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            HWAP provides <strong>free</strong> weatherization services — including potential heating system replacement — for households at or below 200% of the Federal Poverty Guidelines (e.g., <strong>$64,300</strong> for a family of four in 2025). The program is administered by the Ohio Department of Development through 35 Community Action Agencies across all 88 Ohio counties.
+            HWAP provides <strong>free</strong> weatherization services — including potential heating system replacement — for households at or below 200% of the Federal Poverty Guidelines (e.g., <strong>$64,300</strong> for a family of four in 2025). The program is delivered through 35 Community Action Agencies across all 88 Ohio counties. Effective April 6, 2026, state administration moved from the Ohio Department of Development to the Ohio Department of Job and Family Services, with no interruption of service or change in the application process.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
             HWAP can include heat pump installation if an energy audit determines it is the most cost-effective solution. Since 1977, the program has weatherized over <strong>304,000</strong> Ohio homes, with average energy bill reductions of 20–30%. The program is active year-round but has extensive waiting lists.
@@ -611,7 +615,7 @@ export default function OhioPage() {
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">HEAR/HOMES launch timing</p>
-              <p className="text-sm text-gray-600 mt-1">The Ohio Department of Development received DOE approval but has not announced a launch date. Industry sources expected launch sometime in 2026. When the programs go live, demand will likely be high — get your energy audit and contractor quotes prepared in advance.</p>
+              <p className="text-sm text-gray-600 mt-1">The Ohio Department of Development has not announced a launch date. Industry sources expected launch sometime in 2026. When the programs go live, demand will likely be high — get your energy audit and contractor quotes prepared in advance.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">FirstEnergy rate-plan proceedings</p>
