@@ -93,9 +93,8 @@ const STATE_NAMES: Record<string, string> = {
 };
 
 // State pages that exist today; non-members render as plain text.
-// OPERATOR: confirm against `ls src\app\heat-pumps\states` and add any of
-// AL / GA / MS / VA that have live pages before push.
-const LIVE_STATE_PAGES = new Set(["TN", "KY", "NC"]);
+// Confirmed 2026-07-20: every state has a page — all seven territories link.
+const LIVE_STATE_PAGES = new Set(["TN", "AL", "GA", "KY", "MS", "NC", "VA"]);
 
 export default function TvaEnergyRightPage() {
   const utility = utilities["tva-energyright"];
