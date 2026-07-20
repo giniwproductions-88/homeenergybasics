@@ -1357,10 +1357,10 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "NC",
     stateName: "North Carolina",
     status: "open",
-    lastVerified: "2026-06-03",
-    lastUpdated: "2026-06-03",
+    lastVerified: "2026-07-20",
+    lastUpdated: "2026-07-20",
     summary:
-      "Energy Saver NC is live statewide with up to $8,000 through HEAR or $16,000 through HOMES for income-qualifying households. Duke Energy adds $500\u2013$1,000 in utility rebates. Federal 25C/25D tax credits expired Dec 31, 2025. Households above 150% AMI are limited to utility rebates only.",
+      "Energy Saver NC is live statewide with up to $8,000 through HEAR or $16,000 through HOMES for income-qualifying households. Duke Energy Smart $aver adds $350\u2013$2,500 depending on the upgrade. Federal 25C/25D tax credits expired Dec 31, 2025. Households above 150% AMI are limited to utility rebates only.",
     sources: [
       {
         label: "Energy Saver NC \u2014 Program Portal",
@@ -1379,12 +1379,16 @@ export const incentives: Record<StateCode, StateIncentive> = {
         url: "https://www.deq.nc.gov/news/press-releases/2026/02/10/governor-stein-deq-announce-cost-saving-energy-program-now-available-all-100-counties",
       },
       {
-        label: "Duke Energy \u2014 HVAC Replacement Rebates",
-        url: "https://www.duke-energy.com/home/products/home-energy-improvement/hvac-replacement",
+        label: "Duke Energy \u2014 Smart $aver Rebates",
+        url: "https://www.duke-energy.com/home/products/smart-saver",
       },
       {
-        label: "Duke Energy \u2014 Heat Pump Water Heater Rebates",
-        url: "https://www.duke-energy.com/home/products/home-energy-improvement/heat-pump-water-heater",
+        label: "Duke Energy \u2014 Smart $aver Heat Pump Water Heater",
+        url: "https://www.duke-energy.com/home/products/smart-saver/heat-pump-water-heater",
+      },
+      {
+        label: "NC DEQ \u2014 Energy Efficiency Rebates FAQ",
+        url: "https://www.deq.nc.gov/energy-climate/state-energy-office/energy-saver-north-carolina/energy-efficiency-rebates",
       },
       {
         label: "Duke Energy \u2014 Increased Incentives Announcement (Jan 2025)",

@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   title:
     "North Carolina Heat Pump Rebates & Incentives (2026) | Energy Saver NC + Duke Energy | Home Energy Basics",
   description:
-    "Energy Saver NC offers up to $8,000 HEAR or $16,000 HOMES. Duke Energy adds $500–$1,000. Federal credits ended. Every NC heat pump incentive in 2026.",
+    "Energy Saver NC offers up to $8,000 HEAR or $16,000 HOMES. Duke Smart $aver adds $350–$2,500. Federal credits ended. Every NC heat pump incentive in 2026.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/nc",
   },
   openGraph: {
     title: "North Carolina Heat Pump Rebates 2026",
     description:
-      "Energy Saver NC up to $8,000 HEAR or $16,000 HOMES, Duke Energy rebates up to $1,000 — the complete guide to North Carolina heat pump incentives after federal credits expired.",
+      "Energy Saver NC up to $8,000 HEAR or $16,000 HOMES, Duke Energy Smart $aver rebates up to $2,500 — the complete guide to North Carolina heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/nc",
     type: "article",
     publishedTime: "2026-03-23T12:00:17-05:00",
@@ -38,7 +38,8 @@ const articleJsonLd = {
 
 export default function NorthCarolinaPage() {
   const ncIncentive = incentives.NC;
-  const formattedDate = formatDate(ncIncentive.lastVerified);
+  const formattedVerified = formatDate(ncIncentive.lastVerified);
+  const formattedUpdated = formatDate(ncIncentive.lastUpdated);
 
   const faqJsonLd = {
     "@context": "https://schema.org",
@@ -49,7 +50,7 @@ export default function NorthCarolinaPage() {
         name: "What heat pump rebates are available in North Carolina in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "North Carolina heat pump rebates in 2026 come from three main sources: Energy Saver NC HEAR rebates up to $8,000 for a heat pump (for households below 150% of Area Median Income), HOMES whole-home rebates up to $16,000 for the lowest-income tier, and Duke Energy utility rebates of $500\u2013$1,000 for qualifying equipment upgrades. Federal tax credits under Sections 25C and 25D expired December 31, 2025.",
+          text: "North Carolina heat pump rebates in 2026 come from three main sources: Energy Saver NC HEAR rebates up to $8,000 for a heat pump (for households below 150% of Area Median Income), HOMES whole-home rebates up to $16,000 for the lowest-income tier, and Duke Energy Smart $aver rebates of $350\u2013$2,500 depending on the upgrade \u2014 up to $900 for replacing an existing heat pump and up to $2,500 for conversions to dual-fuel, cold-climate, or geothermal systems. Federal tax credits under Sections 25C and 25D expired December 31, 2025.",
         },
       },
       {
@@ -57,7 +58,7 @@ export default function NorthCarolinaPage() {
         name: "Can I stack Energy Saver NC rebates with Duke Energy rebates in North Carolina?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Duke Energy utility rebates can stack with either HEAR or HOMES rebates from Energy Saver NC. The only restriction is that combined incentives cannot exceed the total project cost, and you cannot receive both HEAR and HOMES for the same individual upgrade. In the best case, a household below 80% AMI could reduce out-of-pocket costs to near zero by combining HOMES with HEAR for different appliances plus Duke Energy rebates.",
+          text: "Yes. NC DEQ confirms that households can receive both Energy Saver NC rebates and utility incentives for the same product. Two limits apply: combined rebates for a product cannot exceed the purchase price of that product, and you cannot receive both HEAR and HOMES for the same individual upgrade. In the best case, a household below 80% AMI can reduce out-of-pocket costs to near zero by combining HOMES with HEAR for different appliances plus Duke Energy Smart $aver rebates.",
         },
       },
       {
@@ -81,7 +82,7 @@ export default function NorthCarolinaPage() {
         name: "Does HEAR cover replacing an existing heat pump in North Carolina?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "No. The HEAR program only covers upgrading from a non-heat-pump system to a heat pump. If you already have a heat pump and need to replace it, HEAR does not apply. You may still qualify for HOMES rebates (which are based on whole-home energy savings, not system type) or Duke Energy utility rebates of $500 for a qualifying heat pump upgrade.",
+          text: "No. The HEAR program only covers upgrading from a non-heat-pump system to a heat pump. If you already have a heat pump and need to replace it, HEAR does not apply. You may still qualify for HOMES rebates (which are based on whole-home energy savings, not system type) or Duke Energy Smart $aver rebates \u2014 $350\u2013$900 for replacing an existing heat pump, or $2,000\u2013$2,500 for converting an existing heat pump to a dual-fuel, cold-climate, or geothermal system.",
         },
       },
     ],
@@ -108,7 +109,7 @@ export default function NorthCarolinaPage() {
             North Carolina still has some of the strongest heat pump incentives in the country. Energy Saver NC is now live statewide and offers up to <strong>$8,000</strong> for a qualifying heat pump through HEAR or up to <strong>$16,000</strong> in whole-home rebates through HOMES for income-eligible households. Duke Energy and some local utilities add smaller rebates on top, bringing total savings even higher. This guide covers all major North Carolina heat pump incentives available in 2026, including Energy Saver NC HEAR and HOMES, Duke Energy, Dominion Energy, electric cooperatives, and municipal utility programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} — verified against official program sources
+            Updated {formattedUpdated} &middot; Verified {formattedVerified}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.
@@ -133,12 +134,12 @@ export default function NorthCarolinaPage() {
               <p className="text-sm text-green-900">Home Electrification and Appliance Rebates cover up to $8,000 for a heat pump, plus up to $1,750 for a heat pump water heater. Available to households below 150% of Area Median Income (AMI) — not available above 150% AMI. Instant point-of-sale discount.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-1">✓ Duke Energy rebates: $500–$1,000</p>
-              <p className="text-sm text-green-900">Both Duke Energy Progress and Duke Energy Carolinas offer $500–$1,000 for qualifying heat pump installations, plus $500–$800 for heat pump water heaters. Available to all Duke customers regardless of income.</p>
+              <p className="font-semibold text-green-800 mb-1">✓ Duke Energy Smart $aver: $350–$2,500</p>
+              <p className="text-sm text-green-900">Duke Energy Progress and Duke Energy Carolinas share the Smart $aver program: $350–$900 for replacing an existing heat pump, $1,500 for switching from electric resistance, up to $2,500 for dual-fuel, cold-climate, or geothermal conversions, plus a flat $500 for heat pump water heaters. Available to all Duke customers regardless of income.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-1">✓ Total potential savings: $9,000–$14,500+ (typical stacked scenarios)</p>
-              <p className="text-sm text-green-900">$9,000 (80–150% AMI) to $14,500+ (below 80% AMI). Full electrification packages through HOMES can reach ~$16,000 total incentives for the lowest-income households.</p>
+              <p className="font-semibold text-green-800 mb-1">✓ Total potential savings: $2,000–$14,250+ (typical stacked scenarios)</p>
+              <p className="text-sm text-green-900">$2,000 (above 150% AMI) to $14,250+ (below 80% AMI). Full electrification packages through HOMES can reach ~$16,000 total incentives for the lowest-income households.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">✗ Federal tax credits expired</p>
@@ -146,7 +147,7 @@ export default function NorthCarolinaPage() {
             </div>
             <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 md:col-span-2">
               <p className="font-semibold text-amber-800 mb-1">⚠ HEAR is only for switching to a heat pump — not replacing one</p>
-              <p className="text-sm text-amber-900">The HEAR heat pump rebate only applies when upgrading from a non-heat-pump system (like electric resistance, gas furnace, or propane). If you already have a heat pump and need to replace it, HEAR does not cover the heat pump itself. You may still qualify for HOMES whole-home rebates or Duke Energy&apos;s $500 upgrade rebate.</p>
+              <p className="text-sm text-amber-900">The HEAR heat pump rebate only applies when upgrading from a non-heat-pump system (like electric resistance, gas furnace, or propane). If you already have a heat pump and need to replace it, HEAR does not cover the heat pump itself. You may still qualify for HOMES whole-home rebates or Duke Energy&apos;s Smart $aver replacement rebate ($350–$900).</p>
             </div>
           </div>
         </div>
@@ -208,7 +209,7 @@ export default function NorthCarolinaPage() {
             </table>
           </div>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Enrollment in federal assistance programs (SNAP, LIEAP, Medicaid) auto-qualifies a household for Tier 1.
+            Enrollment in federal assistance programs (SNAP, LIEAP, Medicaid) auto-qualifies a household for Tier 1. Renters can participate with landlord approval, and multifamily building owners can receive a greater rebate level if over 50% of tenants meet the income eligibility requirements. HEAR rebates are not retroactive — get approved and use a Registered Contractor before work begins.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Maximum HEAR rebate amounts (up to $14,000 total per dwelling)</h3>
@@ -255,8 +256,11 @@ export default function NorthCarolinaPage() {
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
             <p className="font-semibold text-blue-800 mb-1">HEAR is an instant point-of-sale discount</p>
-            <p className="text-sm text-blue-900">Unlike most rebate programs, HEAR applies the discount at the time of purchase — you do not pay the full cost and wait for reimbursement. All work must be performed by an Energy Saver NC Registered Contractor. One rebate per appliance type per dwelling.</p>
+            <p className="text-sm text-blue-900">Unlike most rebate programs, HEAR applies the discount at the time of purchase — you do not pay the full cost and wait for reimbursement. All work must be performed by an Energy Saver NC Registered Contractor — self-installation projects do not qualify. One rebate per appliance type per dwelling.</p>
           </div>
+          <p className="text-gray-700 leading-relaxed mt-6">
+            If you&apos;re replacing broken equipment in a hurry, NC DEQ recommends the HEAR pathway — unlike HOMES, HEAR does not require scheduling a full home energy assessment first.
+          </p>
         </div>
       </section>
 
@@ -265,7 +269,7 @@ export default function NorthCarolinaPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Energy Saver NC: Homeowners Managing Efficiency Savings (HOMES)</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            HOMES provides rebates based on modeled whole-home energy savings, verified through a free energy assessment. Unlike HEAR&apos;s per-appliance approach, HOMES rewards the total energy reduction from your project.
+            HOMES provides rebates based on modeled whole-home energy savings, verified through a free energy assessment. Unlike HEAR&apos;s per-appliance approach, HOMES rewards the total energy reduction from your project. HOMES is also the one Energy Saver NC pathway that can be retroactive: projects started on or after August 16, 2022 may qualify if they meet all DOE requirements under the modeled approach North Carolina uses.
           </p>
 
           <div className="overflow-x-auto mb-6">
@@ -312,45 +316,57 @@ export default function NorthCarolinaPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Duke Energy Progress and Duke Energy Carolinas</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Both Duke utilities operate the Home Energy Improvement (HEI) Rebate Program with identical amounts. A free Home Energy Check within the prior 24 months is required before applying.
+            Both Duke utilities share the <strong>Smart $aver</strong> rebate program with identical amounts, effective for HVAC equipment installed after August 1, 2025. There is no assessment prerequisite — Duke&apos;s free Home Energy House Call is optional — and there is no homeowner application to file for HVAC rebates: your contractor completes the work and submits the rebate application. Rebates arrive as a prepaid Mastercard.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Most tiers pay two rates depending on timing: a <strong>Replace on Failure</strong> rate when your existing equipment has failed, and a higher <strong>Early Replacement</strong> rate when you proactively replace a working system. Duke&apos;s own Smart $aver page cross-promotes Energy Saver NC — the programs are designed to stack.
           </p>
 
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
               <thead>
                 <tr className="bg-gray-100">
-                  <th className="text-left p-3 font-semibold">Scenario</th>
-                  <th className="text-left p-3 font-semibold">Efficiency requirement</th>
+                  <th className="text-left p-3 font-semibold">Upgrade</th>
                   <th className="text-left p-3 font-semibold">Rebate</th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="border-b">
-                  <td className="p-3">Strip heat → heat pump (high eff.)</td>
-                  <td className="p-3">15.2 SEER2 / 7.5 HSPF2</td>
-                  <td className="p-3 font-semibold">$600</td>
+                  <td className="p-3">Replace existing heat pump (three efficiency tiers)</td>
+                  <td className="p-3 font-semibold">$350–$900</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Electric resistance → heat pump</td>
+                  <td className="p-3 font-semibold">$1,500</td>
                 </tr>
                 <tr className="border-b bg-green-50">
-                  <td className="p-3">Strip heat → heat pump (higher eff.)</td>
-                  <td className="p-3">16.0 SEER2 / 7.5 HSPF2</td>
-                  <td className="p-3 font-semibold">$1,000</td>
+                  <td className="p-3">Heat pump → dual-fuel system (adds gas backup)</td>
+                  <td className="p-3 font-semibold">$2,000 (Replace on Failure) / $2,500 (Early Replacement)</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-3">Upgrade existing heat pump</td>
-                  <td className="p-3">15.2 SEER2 / 7.5 HSPF2</td>
-                  <td className="p-3 font-semibold">$500</td>
+                  <td className="p-3">Heat pump → cold-climate heat pump</td>
+                  <td className="p-3 font-semibold">$2,100 (Replace on Failure) / $2,400 (Early Replacement)</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-3">Geothermal heat pump</td>
-                  <td className="p-3">17+ EER2 with ECM</td>
-                  <td className="p-3 font-semibold">$800</td>
+                  <td className="p-3">Heat pump → geothermal</td>
+                  <td className="p-3 font-semibold">$2,300 (Replace on Failure) / $2,500 (Early Replacement)</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Mini-split, 18+ SEER2</td>
+                  <td className="p-3 font-semibold">$700 (Replace on Failure) / $900 (Early Replacement)</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            Heat pump water heater rebates: <strong>$500</strong> for 50-gallon or <strong>$800</strong> for 80-gallon (ENERGY STAR, UEF 3.3+). Both condensing unit and air handler must be replaced simultaneously. Mini-splits and ductless systems are not eligible for Duke&apos;s HVAC rebates. Rebates are paid via prepaid Mastercard.
+            Heat pump water heater rebate: a flat <strong>$500</strong> for units installed after January 1, 2025 (ENERGY STAR certified, UEF 3.3 or higher; tankless and standard electric models excluded). The unit must be installed and operable before applying, and your contractor submits the application within 60 days — self-purchased units can use the retail path at smartsaverincentives.com. HVAC systems must be AHRI-matched with an ECM blower motor, and duct sealing is included with replacements. The dual-fuel, cold-climate, and geothermal conversion rebates require an existing heat pump with electric resistance strip heat serving at least 1,000 square feet; mini-splits must condition at least 1,000 square feet. A <strong>$125</strong> smart thermostat rebate is also available.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Duke&apos;s rebates differ significantly across the six states it serves — the amounts above are the Duke Energy Progress and Duke Energy Carolinas program, and Florida, Indiana, and Kentucky customers get different rebates entirely. For the full state-by-state breakdown, see our{" "}
+            <Link href="/heat-pumps/utilities/duke-energy" className="text-brand-600 hover:underline">
+              Duke Energy heat pump rebates guide
+            </Link>.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Dominion Energy North Carolina</h3>
@@ -380,51 +396,52 @@ export default function NorthCarolinaPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">How programs stack</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            NC DEQ confirms that utility rebates can stack with Energy Saver NC rebates. The only restriction: combined incentives cannot exceed the total project cost, and you cannot receive both HEAR and HOMES for the same upgrade. Households above 150% AMI are limited to utility rebates only.
+            NC DEQ confirms that households can receive both Energy Saver NC rebates and utility incentives for the same product. Two limits apply: combined rebates for a product cannot exceed the purchase price of that product, and you cannot receive both HEAR and HOMES for the same upgrade. Households above 150% AMI are limited to utility rebates only.
           </p>
 
           <div className="space-y-4 mb-8">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900 mb-2">Above 150% AMI — ducted heat pump + HPWH (~$15,500 project)</p>
+              <p className="font-semibold text-gray-900 mb-2">Above 150% AMI — electric resistance to ducted heat pump + HPWH (~$15,500 project)</p>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>Energy Saver NC: $0 (not eligible)</li>
-                <li>Duke Energy — HP upgrade rebate: $500</li>
-                <li>Duke Energy — 80-gal HPWH rebate: $800</li>
+                <li>Duke Smart $aver — electric resistance to heat pump: $1,500</li>
+                <li>Duke Smart $aver — heat pump water heater: $500</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$1,300</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$2,000</p>
             </div>
 
             <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900 mb-2">80–150% AMI — ducted heat pump + HPWH (~$15,500 project)</p>
+              <p className="font-semibold text-gray-900 mb-2">80–150% AMI — electric resistance to ducted heat pump + HPWH (~$15,500 project)</p>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>HEAR — heat pump (50% of $12,000, capped at $8,000): $6,000</li>
                 <li>HEAR — HPWH (50% of $3,500, capped at $1,750): $1,750</li>
-                <li>Duke Energy — HP upgrade rebate: $500</li>
-                <li>Duke Energy — 80-gal HPWH rebate: $800</li>
+                <li>Duke Smart $aver — electric resistance to heat pump: $1,500</li>
+                <li>Duke Smart $aver — heat pump water heater: $500</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$9,050</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$9,750</p>
             </div>
 
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-2">Below 80% AMI — ducted heat pump + HPWH (~$15,500 project)</p>
+              <p className="font-semibold text-green-800 mb-2">Below 80% AMI — electric resistance to ducted heat pump + HPWH (~$15,500 project)</p>
               <ul className="text-sm text-green-900 space-y-1">
                 <li>HOMES — heat pump (100% of $12,000 costs): $12,000</li>
+                <li>Duke Smart $aver — heat pump: $0 (HOMES already covers the product&apos;s full purchase price)</li>
                 <li>HEAR — HPWH (100% of $3,500, capped at $1,750): $1,750</li>
-                <li>Duke Energy — HPWH rebate: $800</li>
+                <li>Duke Smart $aver — heat pump water heater: $500</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$14,550</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$14,250</p>
             </div>
           </div>
 
           <div className="bg-gray-100 rounded-lg p-5">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
             <p className="text-sm text-gray-700">
-              For a typical ~$15,500 heat pump + water heater project: <strong>~$14,000 out of pocket</strong> for households above 150% AMI, <strong>$5,950–$6,450</strong> for 80–150% AMI, or as little as <strong>$950 or less</strong> for households below 80% AMI. Adding insulation and air sealing to the project scope can push the lowest-income tier to $0 out of pocket through HOMES.
+              For a typical ~$15,500 electric-resistance-to-heat-pump + water heater project: <strong>~$13,500 out of pocket</strong> for households above 150% AMI, <strong>~$5,750</strong> for 80–150% AMI, or as little as <strong>$1,250 or less</strong> for households below 80% AMI. Adding insulation and air sealing to the project scope can push the lowest-income tier to $0 out of pocket through HOMES.
             </p>
           </div>
 
           <p className="text-sm text-gray-500 mt-4">
-            North Carolina has no state tax credit for heat pumps. No state loan program directly reduces the purchase price, though Carolina SURE and Duke Energy&apos;s Improve &amp; Save on-bill financing can help with the remaining balance.
+            Note: Duke Smart $aver has no rebate tier for converting a gas furnace to a heat pump — households making that switch rely on HEAR or HOMES alone for the heat pump itself. North Carolina has no state tax credit for heat pumps. No state loan program directly reduces the purchase price, though Carolina SURE and Duke Energy&apos;s Improve &amp; Save on-bill financing can help with the remaining balance.
           </p>
         </div>
       </section>
@@ -547,8 +564,8 @@ export default function NorthCarolinaPage() {
                 4
               </div>
               <div>
-                <p className="font-semibold text-gray-900">Apply separately for Duke Energy rebates (this is separate from Energy Saver NC)</p>
-                <p className="text-sm text-gray-700">Duke rebates are a separate process. Complete a free Home Energy Check first, then submit your rebate application through <a href="https://www.duke-energy.com/home/products/home-energy-improvement/hvac-replacement" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">Duke&apos;s HEI portal</a> after installation. Rebate arrives as a prepaid Mastercard.</p>
+                <p className="font-semibold text-gray-900">Have your contractor submit your Duke Smart $aver rebate (this is separate from Energy Saver NC)</p>
+                <p className="text-sm text-gray-700">Duke rebates are a separate process, but there&apos;s no homeowner application to file for HVAC rebates — your contractor completes the work and submits the rebate application. Duke&apos;s free Home Energy House Call assessment is optional, not required. See <a href="https://www.duke-energy.com/home/products/smart-saver" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">Duke&apos;s Smart $aver page</a> for current requirements. Rebate arrives as a prepaid Mastercard.</p>
               </div>
             </div>
           </div>
