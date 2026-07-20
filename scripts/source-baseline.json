@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-18T15:23:44.106Z",
+ "generatedAt": "2026-07-20T20:30:40.438Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -30,13 +30,14 @@
    "states": [
     "AL",
     "KY",
-    "MS"
+    "MS",
+    "TVA-ENERGYRIGHT"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:20.665Z",
-   "length": 226431,
+   "fetchedAt": "2026-07-20T20:28:26.539Z",
+   "length": 227866,
    "kind": "html",
-   "textHash": "0835eef0b96a867a",
+   "textHash": "ff45e3cc3ae52fe8",
    "dollars": [
     "$0",
     "$0.05",
@@ -5326,13 +5327,14 @@
    "finalUrl": "https://energyright.com/residential/rebates/heat-pump/",
    "label": "TVA EnergyRight — Heat Pump Rebates",
    "states": [
-    "TN"
+    "TN",
+    "TVA-ENERGYRIGHT"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:03:07.997Z",
-   "length": 250685,
+   "fetchedAt": "2026-07-20T20:29:44.271Z",
+   "length": 252321,
    "kind": "html",
-   "textHash": "e8777ffa348c14fa",
+   "textHash": "57bfc1d1bacd9af7",
    "dollars": [
     "$0",
     "$0.05",
@@ -8670,6 +8672,86 @@
     "$25,000"
    ],
    "keywords": {}
+  },
+  "https://energyright.com/residential/rebates/geothermal-heat-pump/": {
+   "url": "https://energyright.com/residential/rebates/geothermal-heat-pump/",
+   "finalUrl": "https://energyright.com/residential/rebates/geothermal-heat-pump/",
+   "label": "TVA EnergyRight — Geothermal Heat Pump Rebate",
+   "states": [
+    "TVA-ENERGYRIGHT"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-20T20:30:12.186Z",
+   "length": 251612,
+   "kind": "html",
+   "textHash": "705a24dadba326a1",
+   "dollars": [
+    "$0",
+    "$0.05",
+    "$400",
+    "$800",
+    "$1,500"
+   ],
+   "keywords": {
+    "now available": 1
+   }
+  },
+  "https://energyright.com/residential/energy-upgrades-bill-assistance/financing/": {
+   "url": "https://energyright.com/residential/energy-upgrades-bill-assistance/financing/",
+   "finalUrl": "https://energyright.com/residential/energy-upgrades-bill-assistance/financing/",
+   "label": "TVA EnergyRight — Financing",
+   "states": [
+    "TVA-ENERGYRIGHT"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-20T20:30:12.252Z",
+   "length": 236142,
+   "kind": "html",
+   "textHash": "ef354ef03379606f",
+   "dollars": [
+    "$0",
+    "$0.05",
+    "$200",
+    "$400",
+    "$800",
+    "$2,500",
+    "$20,000"
+   ],
+   "keywords": {}
+  },
+  "https://energyright.com/residential/energy-upgrades-bill-assistance/home-uplift/": {
+   "url": "https://energyright.com/residential/energy-upgrades-bill-assistance/home-uplift/",
+   "finalUrl": "https://energyright.com/residential/energy-upgrades-bill-assistance/home-uplift/",
+   "label": "TVA EnergyRight — Home Uplift",
+   "states": [
+    "TVA-ENERGYRIGHT"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-20T20:30:12.481Z",
+   "length": 218215,
+   "kind": "html",
+   "textHash": "91f779c7a8ab6a22",
+   "dollars": [
+    "$0",
+    "$0.05",
+    "$400",
+    "$500",
+    "$800",
+    "$10,000"
+   ],
+   "keywords": {}
+  },
+  "https://www.tva.com/energy/public-power-partnerships": {
+   "url": "https://www.tva.com/energy/public-power-partnerships",
+   "finalUrl": "https://www.tva.com/energy/public-power-partnerships",
+   "label": "TVA — Public Power Partnerships (153 local power companies)",
+   "states": [
+    "TVA-ENERGYRIGHT"
+   ],
+   "httpStatus": 403,
+   "fetchedAt": "2026-07-20T20:30:14.222Z",
+   "length": 5839,
+   "error": "HTTP 403"
   }
  }
 }
