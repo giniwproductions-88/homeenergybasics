@@ -6,16 +6,16 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title:
-    "Tennessee Heat Pump Rebates 2026: $500–$1,500 TVA EnergyRight + $8,000 HEAR | Home Energy Basics",
+    "Tennessee Heat Pump Rebates 2026: $500–$800 TVA EnergyRight + $8,000 HEAR | Home Energy Basics",
   description:
-    "TVA EnergyRight offers $500–$1,500 rebates. HEAR adds up to $8,000. Federal tax credits ended. Here\u0027s what\u0027s actually available in Tennessee in 2026.",
+    "TVA EnergyRight offers $500–$800 heat pump rebates. HEAR adds up to $8,000. Federal tax credits ended. Here\u0027s what\u0027s actually available in Tennessee in 2026.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/tn",
   },
   openGraph: {
     title: "Tennessee Heat Pump Rebates 2026: TVA EnergyRight + HEAR",
     description:
-      "TVA EnergyRight rebates up to $1,500 plus pending HEAR rebates up to $8,000 — the complete guide to Tennessee heat pump incentives after federal credits expired.",
+      "TVA EnergyRight heat pump rebates up to $800 ($1,500 geothermal) plus pending HEAR rebates up to $8,000 — the complete guide to Tennessee heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/tn",
     type: "article",
     publishedTime: "2026-03-23T19:16:59-05:00",
@@ -32,7 +32,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in Tennessee in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "TVA EnergyRight rebates of $500–$1,500 are the only active heat pump incentive for most Tennessee homeowners in 2026. The amount depends on system efficiency: $500 for 15–16.99 SEER2, $800 for 17+ SEER2 or ductless mini-splits, and $1,500 for TVA Preferred systems with variable-speed compressors and full heating capacity at 17°F. Federal tax credits (Sections 25C and 25D) expired December 31, 2025. IRA-funded HEAR rebates (up to $8,000 for qualifying households) are approved but not yet launched in Tennessee.",
+        text: "TVA EnergyRight rebates of $500–$800 are the only active heat pump incentive for most Tennessee homeowners in 2026. The amount depends on system efficiency: $500 for 15–16.99 SEER2 systems and $800 for 17+ SEER2 systems or ductless mini-splits. Geothermal heat pumps earn $1,500. Federal tax credits (Sections 25C and 25D) expired December 31, 2025. IRA-funded HEAR rebates (up to $8,000 for qualifying households) are approved but not yet launched in Tennessee.",
       },
     },
     {
@@ -40,7 +40,7 @@ const faqJsonLd = {
       name: "Can I stack TVA EnergyRight and HEAR rebates in Tennessee?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, once HEAR launches, TVA EnergyRight rebates can stack with HEAR rebates. CLEAResult, TVA\u0027s program implementer, is building technology to facilitate seamless stacking. For a household below 80% of Area Median Income, this could mean up to $1,500 from TVA plus $8,000 from HEAR — a potential $9,500 toward a heat pump. Total combined rebates cannot exceed total project cost.",
+        text: "Yes, once HEAR launches, TVA EnergyRight rebates can stack with HEAR rebates. CLEAResult, TVA\u0027s program implementer, is building technology to facilitate seamless stacking. For a household below 80% of Area Median Income, this could mean up to $800 from TVA plus $8,000 from HEAR — a potential $8,800 toward a heat pump. Total combined rebates cannot exceed total project cost.",
       },
     },
     {
@@ -56,7 +56,7 @@ const faqJsonLd = {
       name: "When will Tennessee\u0027s IRA rebate programs launch?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Tennessee received conditional DOE approval for HEAR and HOMES programs in January 2025, but as of June 2026 they have not launched and TDEC has not confirmed a launch date. The Tennessee Department of Environment and Conservation (TDEC) administers both programs, with TVA\u0027s Quality Contractor Network handling implementation. Tennessee\u0027s total HEAR allocation is $83.4 million. The programs were not affected by the One Big Beautiful Bill Act and remain funded until depleted or September 30, 2031.",
+        text: "Tennessee received conditional DOE approval for HEAR and HOMES programs in January 2025, but as of July 2026 they have not launched and TDEC has not confirmed a launch date. TDEC states that funding for the Tennessee IRA Home Energy Rebate Programs is not yet available. The Tennessee Department of Environment and Conservation (TDEC) administers both programs, with TVA\u0027s Quality Contractor Network handling implementation. Tennessee\u0027s total HEAR allocation is $83.4 million. The programs were not affected by the One Big Beautiful Bill Act and remain funded until depleted or September 30, 2031.",
       },
     },
     {
@@ -64,7 +64,7 @@ const faqJsonLd = {
       name: "Do all Tennessee utilities offer the same heat pump rebates?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "All major Tennessee electric utilities participate in TVA EnergyRight and offer the same rebate amounts ($500–$1,500 for heat pumps). No utility was found to offer additional rebates on top of TVA\u0027s amounts. The key differences are in supplementary services: EPB in Chattanooga is the most active promoter with free energy consultations, while MLGW in Memphis does not actively promote heat pump rebates due to its dual role as both electric and gas provider.",
+        text: "All major Tennessee electric utilities participate in TVA EnergyRight and offer the same rebate amounts ($500–$800 for air-source heat pumps, $1,500 for geothermal). No utility was found to offer additional rebates on top of TVA\u0027s amounts. The key differences are in supplementary services: EPB in Chattanooga is the most active promoter with free energy consultations, while MLGW in Memphis does not actively promote heat pump rebates due to its dual role as both electric and gas provider.",
       },
     },
   ],
@@ -103,7 +103,7 @@ export default function TennesseePage() {
             Tennessee Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            TVA EnergyRight rebates of <strong>$500–$1,500</strong> are the only active heat pump incentive for most Tennessee homeowners right now. Federal tax credits expired December 31, 2025. IRA-funded HEAR rebates covering up to <strong>$8,000</strong> per heat pump are approved but have not yet launched. This guide covers all major Tennessee heat pump incentives available in 2026, including TVA EnergyRight, HEAR, HOMES, and utility-specific programs. Here&apos;s what&apos;s actually available.
+            TVA EnergyRight rebates of <strong>$500–$800</strong> for air-source heat pumps (and <strong>$1,500</strong> for geothermal) are the only active heat pump incentive for most Tennessee homeowners right now. Federal tax credits expired December 31, 2025. IRA-funded HEAR rebates covering up to <strong>$8,000</strong> per heat pump are approved but have not yet launched. This guide covers all major Tennessee heat pump incentives available in 2026, including TVA EnergyRight, HEAR, HOMES, and utility-specific programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
             Updated {formattedDate} — verified against official program sources
@@ -128,7 +128,7 @@ export default function TennesseePage() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ TVA EnergyRight rebates are active</p>
-              <p className="text-sm text-green-900">$500–$1,500 depending on system efficiency tier. Available through all TVA local power companies. Must replace existing electric heating — no gas conversions.</p>
+              <p className="text-sm text-green-900">$500–$800 depending on system efficiency tier; geothermal earns $1,500. Available through all TVA local power companies. Must replace existing electric heating — no gas conversions.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ HEAR rebates approved (not yet launched)</p>
@@ -136,7 +136,7 @@ export default function TennesseePage() {
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Potential stacked savings once HEAR launches</p>
-              <p className="text-sm text-green-900">$1,500 (above 150% AMI) to $9,500+ (below 80% AMI). Full electrification packages can reach ~$15,500 total incentives for income-qualified households.</p>
+              <p className="text-sm text-green-900">$800 (above 150% AMI) to $8,800+ (below 80% AMI). Full electrification packages can reach ~$14,800 total incentives for income-qualified households.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">✗ Federal tax credits expired</p>
@@ -191,17 +191,12 @@ export default function TennesseePage() {
               </thead>
               <tbody>
                 <tr className="border-b bg-green-50">
-                  <td className="p-3">TVA Preferred air-source HP</td>
-                  <td className="p-3 font-semibold">$1,500</td>
-                  <td className="p-3">≥15.2 SEER2, ≥8.1 HSPF2, variable-speed, 100% capacity at 17°F, Manual J</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">High-efficiency HP (17+ SEER2)</td>
+                  <td className="p-3">High-efficiency HP (17+ SEER2, air source or dual fuel)</td>
                   <td className="p-3 font-semibold">$800</td>
                   <td className="p-3">17+ SEER2, QCN contractor</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-3">Standard efficiency HP</td>
+                  <td className="p-3">Standard efficiency HP (air source or dual fuel)</td>
                   <td className="p-3 font-semibold">$500</td>
                   <td className="p-3">15–16.99 SEER2, QCN contractor</td>
                 </tr>
@@ -217,15 +212,25 @@ export default function TennesseePage() {
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Heat pump water heater</td>
-                  <td className="p-3 font-semibold">$800–$1,300</td>
-                  <td className="p-3">ENERGY STAR certified; instant retail rebates available at select retailers</td>
+                  <td className="p-3 font-semibold">Up to $1,300</td>
+                  <td className="p-3">ENERGY STAR certified; instant rebate through the Quality Contractor Network and at participating retail locations</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">HVAC tune-up (existing HP or central AC)</td>
+                  <td className="p-3 font-semibold">$50</td>
+                  <td className="p-3">QCN contractor</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Duct sealing, repair, insulation, or replacement</td>
+                  <td className="p-3 font-semibold">$300</td>
+                  <td className="p-3">Complete duct system must be brought to TVA standards</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-6">
-            The <strong>$1,500 TVA Preferred tier</strong> is the standout incentive. Its requirement for 100% heating capacity at 17°F effectively requires a cold-climate-capable system in most cases — which aligns well with Tennessee&apos;s winter design temperatures. All rebate-eligible work must be performed by a Quality Contractor Network (QCN) member — approximately 350 contractors operate in Tennessee.
+            The top air-source tier pays <strong>$800</strong> for 17+ SEER2 equipment (ducted, dual fuel, or ductless mini-split); geothermal systems earn the program&apos;s largest rebate at <strong>$1,500</strong>. All rebate-eligible work must be performed by a Quality Contractor Network (QCN) member — approximately 350 contractors operate in Tennessee.
           </p>
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
@@ -258,7 +263,7 @@ export default function TennesseePage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">IRA rebate programs: HEAR and HOMES</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            The Home Electrification and Appliance Rebates (HEAR) and Home Owner Managing Energy Savings (HOMES) programs — funded by the Inflation Reduction Act and not affected by the One Big Beautiful Bill Act — are Tennessee&apos;s largest pending incentive opportunity. The Tennessee Department of Environment and Conservation (TDEC), Office of Energy Programs, is the administering agency, with TVA&apos;s QCN serving as implementation partner. Tennessee received conditional DOE approval in January 2025, but as of June 2026 the programs remain unlaunched, with no confirmed launch date &mdash; TDEC must still secure full DOE approval and complete contracting with TVA. Tennessee&apos;s total HEAR allocation is <strong>$83.4 million</strong>.
+            The Home Electrification and Appliance Rebates (HEAR) and Home Owner Managing Energy Savings (HOMES) programs — funded by the Inflation Reduction Act and not affected by the One Big Beautiful Bill Act — are Tennessee&apos;s largest pending incentive opportunity. The Tennessee Department of Environment and Conservation (TDEC), Office of Energy Programs, is the administering agency, with TVA&apos;s QCN serving as implementation partner. Tennessee received conditional DOE approval in January 2025, but as of {formattedDate} the programs remain unlaunched, with no confirmed launch date — TDEC&apos;s rebate page states plainly that &ldquo;Funding for the Tennessee IRA Home Energy Rebate Programs is not yet available.&rdquo; Tennessee&apos;s total HEAR allocation is <strong>$83.4 million</strong>.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">HEAR rebate structure (when launched)</h3>
@@ -363,34 +368,34 @@ export default function TennesseePage() {
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900 mb-2">Above 150% AMI — ducted heat pump system (~$12,000–$18,000 installed)</p>
               <ul className="text-sm text-gray-700 space-y-1">
-                <li>TVA EnergyRight (Preferred tier): $1,500</li>
+                <li>TVA EnergyRight (17+ SEER2 tier): $800</li>
                 <li>HEAR: not eligible</li>
                 <li>HOMES (if 35%+ energy reduction, when launched): up to $4,000</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$5,500</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$4,800</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900 mb-2">80–150% AMI — ducted heat pump system (~$12,000–$18,000 installed)</p>
               <ul className="text-sm text-gray-700 space-y-1">
-                <li>TVA EnergyRight (Preferred tier): $1,500</li>
+                <li>TVA EnergyRight (17+ SEER2 tier): $800</li>
                 <li>HEAR (50% of costs, when launched): up to $4,000</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$5,500</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$4,800</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-2">Below 80% AMI — ducted heat pump system (~$12,000–$18,000 installed)</p>
               <ul className="text-sm text-green-900 space-y-1">
-                <li>TVA EnergyRight (Preferred tier): $1,500</li>
+                <li>TVA EnergyRight (17+ SEER2 tier): $800</li>
                 <li>HEAR (100% of costs, when launched): up to $8,000</li>
                 <li>Additional HEAR for panel, insulation, wiring: up to $6,000</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$15,500 (full electrification package)</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$14,800 (full electrification package)</p>
             </div>
           </div>
 
           <div className="bg-gray-100 rounded-lg p-5">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
-            <p className="text-sm text-gray-700">For a typical ducted heat pump installation (<strong>$12,000–$18,000</strong>), expect to pay <strong>$10,500–$16,500 out of pocket</strong> today (TVA rebate only). Once HEAR launches, out-of-pocket costs for income-qualifying households could drop to <strong>$2,500–$8,500</strong> depending on income tier and system cost. Tennessee has no state tax credits, no state loan program, and no widely available local rebate programs were found to add on top.</p>
+            <p className="text-sm text-gray-700">For a typical ducted heat pump installation (<strong>$12,000–$18,000</strong>), expect to pay <strong>$11,200–$17,200 out of pocket</strong> today (TVA rebate only). Once HEAR launches, out-of-pocket costs for income-qualifying households could drop to <strong>$3,200–$9,200</strong> depending on income tier and system cost. Tennessee has no state tax credits, no state loan program, and no widely available local rebate programs were found to add on top.</p>
           </div>
         </div>
       </section>
@@ -452,7 +457,7 @@ export default function TennesseePage() {
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-6">
-            These temperatures are well above the thresholds where modern heat pumps lose significant efficiency. Variable-speed units — including those qualifying for TVA&apos;s <strong>$1,500 Preferred tier</strong> — maintain full heating capacity down to 17°F, covering most of Tennessee without requiring specialized cold-climate equipment. Eastern mountain communities at higher elevations may see design temperatures 5–10°F colder and benefit most from cold-climate-rated units.
+            These temperatures are well above the thresholds where modern heat pumps lose significant efficiency. Modern variable-speed units maintain strong heating output at these design temperatures, covering most of Tennessee without requiring specialized cold-climate equipment. Eastern mountain communities at higher elevations may see design temperatures 5–10°F colder and benefit most from cold-climate-rated units.
           </p>
 
           <p className="text-gray-700 leading-relaxed mb-6">
@@ -491,7 +496,7 @@ export default function TennesseePage() {
               </div>
               <div>
                 <p className="font-semibold text-gray-900">Complete a Manual J load calculation and system design</p>
-                <p className="text-sm text-gray-700">Required for the $1,500 Preferred tier. The contractor performs this as part of the project — it ensures the system is properly sized for your home.</p>
+                <p className="text-sm text-gray-700">TVA&apos;s own guidance recommends requesting a Manual J load calculation — the contractor performs this as part of the project, and it ensures the system is properly sized for your home.</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -500,7 +505,7 @@ export default function TennesseePage() {
               </div>
               <div>
                 <p className="font-semibold text-gray-900">Install qualifying equipment</p>
-                <p className="text-sm text-gray-700">System must meet the efficiency requirements for your target tier (minimum 15 SEER2 for any rebate, 17+ SEER2 for $800, TVA Preferred specs for $1,500).</p>
+                <p className="text-sm text-gray-700">System must meet the efficiency requirements for your target tier (15–16.99 SEER2 for $500, 17+ SEER2 for $800).</p>
               </div>
             </div>
             <div className="flex gap-4">

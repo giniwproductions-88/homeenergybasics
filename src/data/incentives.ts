@@ -1609,18 +1609,22 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "TN",
     stateName: "Tennessee",
     status: "limited",
-    lastVerified: "2026-06-02",
-    lastUpdated: "2026-06-02",
+    lastVerified: "2026-07-20",
+    lastUpdated: "2026-07-20",
     summary:
-      "TVA EnergyRight rebates ($500\u2013$1,500) are the only active incentive in Tennessee in 2026. IRA-funded HEAR and HOMES rebates are approved but not yet launched, with no confirmed date. Federal tax credits expired December 31, 2025.",
+      "TVA EnergyRight heat pump rebates ($500\u2013$800 air-source; $1,500 geothermal; up to $1,300 heat pump water heater) are the only active incentive in Tennessee in 2026. IRA-funded HEAR and HOMES rebates are approved but not yet launched, with no confirmed date. Federal tax credits expired December 31, 2025.",
     sources: [
       {
         label: "TVA EnergyRight \u2014 Heat Pump Rebates",
         url: "https://energyright.com/residential/rebates/heat-pump/",
       },
       {
+        label: "TVA EnergyRight \u2014 Water Heater Instant Rebates",
+        url: "https://energyright.com/residential-upgrades-water-heater/",
+      },
+      {
         label: "TDEC \u2014 Home Energy Rebate Programs",
-        url: "https://www.tn.gov/environment/program-areas/energy/state-energy-office--seo-/programs-projects/programs-and-projects/inflation-reduction-act/home-energy-rebate.html",
+        url: "https://www.tn.gov/environment/program-areas/energy/state-energy-office--seo-/programs-projects/programs-and-projects/inflation-reduction-act/home-energy-rebate-programs.html",
       },
       {
         label: "EPB \u2014 Home Energy Improvement Rebates",
