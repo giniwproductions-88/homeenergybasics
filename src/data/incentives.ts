@@ -1465,8 +1465,8 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "FL",
     stateName: "Florida",
     status: "limited",
-    lastVerified: "2026-06-02",
-    lastUpdated: "2026-06-02",
+    lastVerified: "2026-07-20",
+    lastUpdated: "2026-07-20",
     summary:
       "No federal credits or state tax incentives. Utility rebates of $40\u2013$1,150 from FPL, Duke Energy, TECO, JEA, and OUC are the primary incentives. Florida\u2019s $346M HEAR/HOMES allocation is being administered by FDACS (HEAR first phase, up to $14,000) but remains pending U.S. DOE approval and has not launched.",
     sources: [
@@ -1484,7 +1484,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
       },
       {
         label: "Duke Energy Florida \u2014 HPWH Rebates",
-        url: "https://www.duke-energy.com/home/products/home-energy-improvement/heat-pump-water-heater",
+        url: "https://www.duke-energy.com/home/products/home-energy-improvement/heat-pump-water-heater?jur=FL01",
       },
       {
         label: "Tampa Electric \u2014 Heating & Cooling Program",

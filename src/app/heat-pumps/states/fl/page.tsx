@@ -40,7 +40,7 @@ const faqJsonLd = {
       name: "Can I stack utility rebates with HEAR or HOMES in Florida?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "If HEAR and HOMES launch in Florida, DOE rules permit combining them with utility rebates on the same project, provided the same equipment cost is not double-counted and total rebates do not exceed total project cost. HEAR and HOMES cannot be combined with each other on the same single upgrade but can cover different measures in a multi-measure project. As of June 2026, only utility rebates are available to stack.",
+        text: "If HEAR and HOMES launch in Florida, DOE rules permit combining them with utility rebates on the same project, provided the same equipment cost is not double-counted and total rebates do not exceed total project cost. HEAR and HOMES cannot be combined with each other on the same single upgrade but can cover different measures in a multi-measure project. As of July 2026, only utility rebates are available to stack.",
       },
     },
     {
@@ -84,7 +84,8 @@ const articleJsonLd = {
 export default function FloridaPage() {
   const flIncentive = incentives.FL;
   const { sources } = flIncentive;
-  const formattedDate = formatDate(flIncentive.lastVerified);
+  const formattedVerified = formatDate(flIncentive.lastVerified);
+  const formattedUpdated = formatDate(flIncentive.lastUpdated);
 
   return (
     <>
@@ -110,7 +111,7 @@ export default function FloridaPage() {
             Florida has no statewide rebate program in 2026.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} — verified against official program sources
+            Updated {formattedUpdated} &middot; Verified {formattedVerified}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.
@@ -148,7 +149,7 @@ export default function FloridaPage() {
             </div>
             <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
               <p className="font-semibold text-amber-800 mb-1">⚠ HEAR and HOMES programs not launched</p>
-              <p className="text-sm text-amber-900">Florida&apos;s <strong>$346 million</strong> IRA allocation for Home Electrification and Appliance Rebates (HEAR) and Home Efficiency Rebates (HOMES) had not launched as of June 2026. FDACS is administering them in phases (HEAR first) and accepting registrations, but they remain pending U.S. DOE approval — not yet accepting rebate applications, so don&apos;t count on them for a near-term purchase.</p>
+              <p className="text-sm text-amber-900">Florida&apos;s <strong>$346 million</strong> IRA allocation for Home Electrification and Appliance Rebates (HEAR) and Home Efficiency Rebates (HOMES) had not launched as of July 2026. FDACS is administering them in phases (HEAR first) and accepting registrations, but they remain pending U.S. DOE approval — not yet accepting rebate applications, so don&apos;t count on them for a near-term purchase.</p>
             </div>
             <div className="md:col-span-2 bg-gray-100 border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900 mb-1">→ Bottom line</p>
@@ -184,7 +185,7 @@ export default function FloridaPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Home Electrification and Appliance Rebates (HEAR)</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Florida&apos;s Department of Agriculture and Consumer Services (FDACS) Office of Energy was allocated approximately <strong>$346 million</strong> in combined IRA funding for HEAR and HOMES. As of June 2026, neither program has launched &mdash; both are pending U.S. Department of Energy approval. FDACS is administering them through its Florida Energy Saver Program, rolling out in phases beginning with HEAR, and is accepting registrations at the official portal. No firm launch date has been published.
+            Florida&apos;s Department of Agriculture and Consumer Services (FDACS) Office of Energy was allocated approximately <strong>$346 million</strong> in combined IRA funding for HEAR and HOMES. As of July 2026, neither program has launched &mdash; both are pending U.S. Department of Energy approval. FDACS is administering them through its Florida Energy Saver Program, rolling out in phases beginning with HEAR, and is accepting registrations at the official portal. No firm launch date has been published.
           </p>
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
@@ -294,7 +295,7 @@ export default function FloridaPage() {
           {/* Duke Energy */}
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Duke Energy Florida — up to $1,000, most comprehensive program</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Duke Energy Florida serves approximately 2 million customers in central and northern Florida and offers the most generous utility rebates in the state through its Home Energy Improvement (HEI) Program. A free Home Energy Check must be completed within 24 months before work begins (12-month grace period for emergency replacements).
+            Duke Energy Florida serves approximately 2 million customers in central and northern Florida and offers the most generous utility rebates in the state through its Home Energy Improvement (HEI) Program. A free Home Energy Check must be completed before work begins or within the prior 24 months. For emergency replacement of a failed system, Duke allows the check to be completed after installation — rebate paperwork is due within 12 months of the install date either way.
           </p>
 
           <div className="overflow-x-auto mb-6">
@@ -334,8 +335,14 @@ export default function FloridaPage() {
             </table>
           </div>
 
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Efficiency minimums: <strong>15.2 SEER2 and 7.5 HSPF2</strong> for the standard tier; <strong>16 SEER2 and 7.5 HSPF2</strong> for the higher tier on strip-heat conversions. The condensing unit and air handler must be changed at the same time. Heat pump water heater rebates (amounts effective May 7, 2025) require ENERGY STAR certification with UEF of 3.3 or higher. Unlike FPL, Duke lets you select your own licensed and insured contractor — applications are submitted through the HEI Rebate Portal, and rebates are delivered via prepaid Mastercard. Duke also offers up to <strong>$800</strong> for attic insulation and <strong>$450</strong> for duct repair.
+          </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Efficiency minimums: <strong>15.2 SEER2 and 7.5 HSPF2</strong> for the standard tier; <strong>16 SEER2 and 7.5 HSPF2</strong> for the higher tier on strip-heat conversions. Heat pump water heaters must be ENERGY STAR certified with UEF of 3.3 or higher. Rebates are delivered via prepaid Mastercard. Duke also offers up to <strong>$800</strong> for attic insulation and <strong>$450</strong> for duct repair.
+            Note that Duke&apos;s Florida program is entirely separate from the Smart $aver program its Carolinas, Indiana, and Kentucky customers get — different rebates, different rules. For the full state-by-state breakdown, see our{" "}
+            <Link href="/heat-pumps/utilities/duke-energy" className="text-brand-600 hover:underline">
+              Duke Energy heat pump rebates guide
+            </Link>.
           </p>
 
           {/* TECO */}
@@ -418,7 +425,7 @@ export default function FloridaPage() {
 
           <div className="bg-gray-100 rounded-lg p-5 mb-6">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay today</p>
-            <p className="text-sm text-gray-700">With only utility rebates available, most Florida homeowners pay <strong>$10,800 to $11,800 out of pocket</strong> for a typical $12,000 ducted heat pump installation. In FPL territory, the rebate drops to $200. The gap between what&apos;s theoretically possible (if HEAR launches) and what&apos;s actually accessible today is enormous.</p>
+            <p className="text-sm text-gray-700">With only utility rebates available, most Florida homeowners pay <strong>$10,850 to $11,800 out of pocket</strong> for a typical $12,000 ducted heat pump installation. In FPL territory, the rebate drops to $200. The gap between what&apos;s theoretically possible (if HEAR launches) and what&apos;s actually accessible today is enormous.</p>
           </div>
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
@@ -540,7 +547,7 @@ export default function FloridaPage() {
               </div>
               <div>
                 <p className="font-semibold text-gray-900">Complete any required pre-install steps</p>
-                <p className="text-sm text-gray-700">Duke Energy requires a free Home Energy Check within 24 months before work begins (12-month grace period for emergencies). FPL requires use of a Participating Independent Contractor. Check your utility&apos;s specific prerequisites.</p>
+                <p className="text-sm text-gray-700">Duke Energy requires a free Home Energy Check before work begins or within the prior 24 months (emergency replacements of a failed system may complete it after installation). FPL requires use of a Participating Independent Contractor. Check your utility&apos;s specific prerequisites.</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -558,7 +565,7 @@ export default function FloridaPage() {
               </div>
               <div>
                 <p className="font-semibold text-gray-900">Have the system installed by a licensed contractor</p>
-                <p className="text-sm text-gray-700">All Florida HVAC installations require a DBPR Class A or Class B Air-Conditioning Contractor license, building permits, and code compliance inspection. FPL and Duke require use of their approved contractor networks.</p>
+                <p className="text-sm text-gray-700">All Florida HVAC installations require a DBPR Class A or Class B Air-Conditioning Contractor license, building permits, and code compliance inspection. FPL requires use of a Participating Independent Contractor; Duke Energy lets you select your own licensed and insured contractor and still qualify.</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -567,7 +574,7 @@ export default function FloridaPage() {
               </div>
               <div>
                 <p className="font-semibold text-gray-900">Submit your rebate application within the required window</p>
-                <p className="text-sm text-gray-700">TECO requires applications within 90 days of installation. FPL processes instant rebates at point of sale through approved contractors. Duke Energy delivers rebates via prepaid Mastercard after verification. Keep all invoices and permit documentation.</p>
+                <p className="text-sm text-gray-700">TECO requires applications within 90 days of installation. FPL processes instant rebates at point of sale through approved contractors. Duke Energy applications go through the HEI Rebate Portal within 12 months of installation, with rebates delivered via prepaid Mastercard after verification. Keep all invoices and permit documentation.</p>
               </div>
             </div>
           </div>
