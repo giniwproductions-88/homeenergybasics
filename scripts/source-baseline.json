@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-20T21:51:34.556Z",
+ "generatedAt": "2026-07-20T22:09:58.379Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -4076,10 +4076,10 @@
     "WV"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T16:45:50.976Z",
-   "length": 161285,
+   "fetchedAt": "2026-07-20T20:29:31.936Z",
+   "length": 177969,
    "kind": "html",
-   "textHash": "344bd9425ddeb801",
+   "textHash": "1a66b9b6195eb76b",
    "dollars": [
     "$0.20",
     "$1.00",
@@ -4088,7 +4088,11 @@
     "$1700",
     "$2,500",
     "$5,000",
-    "$20,000,"
+    "$20,000,",
+    "$150,000",
+    "$1,000,000",
+    "$2,500,000",
+    "$4,000,000"
    ],
    "keywords": {
     "no longer": 2
@@ -6769,8 +6773,8 @@
     "MS"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:28.873Z",
-   "length": 81724,
+   "fetchedAt": "2026-07-20T20:30:00.959Z",
+   "length": 81737,
    "kind": "html",
    "textHash": "fd3d1637770e0b24",
    "dollars": [
@@ -6793,8 +6797,8 @@
     "MS"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:29.934Z",
-   "length": 80218,
+   "fetchedAt": "2026-07-20T20:30:00.910Z",
+   "length": 80231,
    "kind": "html",
    "textHash": "2e0c3a61d9a15dce",
    "dollars": [
@@ -6815,10 +6819,10 @@
     "MS"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:30.598Z",
-   "length": 226431,
+   "fetchedAt": "2026-07-20T20:30:02.972Z",
+   "length": 227866,
    "kind": "html",
-   "textHash": "0835eef0b96a867a",
+   "textHash": "ff45e3cc3ae52fe8",
    "dollars": [
     "$0",
     "$0.05",
@@ -6836,10 +6840,10 @@
     "MS"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:30.824Z",
-   "length": 216221,
+   "fetchedAt": "2026-07-20T20:30:04.217Z",
+   "length": 218215,
    "kind": "html",
-   "textHash": "adfeed02abb7d2d2",
+   "textHash": "91f779c7a8ab6a22",
    "dollars": [
     "$0",
     "$0.05",
@@ -6858,8 +6862,8 @@
     "MS"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:30.563Z",
-   "length": 117885,
+   "fetchedAt": "2026-07-20T20:30:01.516Z",
+   "length": 117884,
    "kind": "html",
    "textHash": "5f130a4fa532aaef",
    "dollars": [
@@ -6879,17 +6883,17 @@
     "MS"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:31.793Z",
-   "length": 218972,
+   "fetchedAt": "2026-07-20T20:30:02.002Z",
+   "length": 219129,
    "kind": "html",
-   "textHash": "d3671ebdf83e03a2",
+   "textHash": "3f3f24344b0ea939",
    "dollars": [
     "$1",
     "$2,000,650",
     "$17,965,540"
    ],
    "keywords": {
-    "closed": 1
+    "closed": 2
    }
   },
   "https://www.mdhs.ms.gov/wap/": {
@@ -6900,10 +6904,10 @@
     "MS"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:32.648Z",
-   "length": 178404,
+   "fetchedAt": "2026-07-20T20:30:03.080Z",
+   "length": 176904,
    "kind": "html",
-   "textHash": "edf719da5cdea25b",
+   "textHash": "add91111f5d00275",
    "dollars": [
     "$15,650",
     "$21,150",
