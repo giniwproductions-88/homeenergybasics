@@ -518,7 +518,7 @@ export default function IndianaPage() {
 
           <div className="bg-gray-100 rounded-lg p-5">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
-            <p className="text-sm text-gray-700">For a typical <strong>$12,000&ndash;$15,000</strong> ducted heat pump installation: above 150% AMI homeowners should expect <strong>$8,500&ndash;$12,400 out of pocket</strong> after HOMES + utility rebates. Homeowners at 80&ndash;150% AMI can bring that down to <strong>$5,000&ndash;$9,000</strong> with HEAR. Below 80% AMI, out-of-pocket costs can be <strong>$0</strong> for qualifying projects.</p>
+            <p className="text-sm text-gray-700">For a typical <strong>$12,000&ndash;$15,000</strong> ducted heat pump installation: above 150% AMI homeowners should expect <strong>$8,500&ndash;$12,700 out of pocket</strong> after HOMES + utility rebates. Homeowners at 80&ndash;150% AMI can bring that down to <strong>$5,000&ndash;$9,000</strong> with HEAR. Below 80% AMI, out-of-pocket costs can be <strong>$0</strong> for qualifying projects.</p>
           </div>
           <p className="text-sm text-gray-500 mt-4">
             Indiana has no state income tax credit for heat pumps. The Indiana Energy Independence Fund (PowerSave Indiana) offers below-market financing to cover remaining out-of-pocket costs.
