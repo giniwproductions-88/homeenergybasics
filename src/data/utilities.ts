@@ -190,25 +190,47 @@ export const utilities: Record<UtilitySlug, UtilityEntity> = {
     ],
   },
 
-  // ── TVA / FPL — schema placeholders, do not ship ─────────────────────
+  // ── PILOT 5 — TVA EnergyRight (federal power, seven states) ──────────
   "tva-energyright": {
     slug: "tva-energyright",
     name: "TVA EnergyRight",
     shortName: "TVA",
     type: "federal-power",
+    // Verified 2026-07-20 at rule-1 depth: energyright.com heat-pump page
+    // (modified 7/15/26), geothermal page (6/18/26), rebates index
+    // (3/28/26), financing (7/13/26), Home Uplift (4/17/26) all fetched
+    // live with quotes in session; entity facts (153 LPCs, seven states)
+    // quoted from tva.com. The rebate menu is REGION-WIDE and identical in
+    // every territory — one program, not seven — which is why the notes
+    // repeat: the many-to-many join here carries coverage truth, not
+    // program differentiation. Delivery is via local power companies;
+    // financing and Home Uplift participation vary by LPC, not by state.
+    // HPWH: ABSENT from the current TVA residential menu (financeable
+    // only; some LPCs run their own) — no TVA-level HPWH figure anywhere.
     territories: [
-      { state: "TN", hasHeatPumpProgram: false, note: "VERIFY — delivered via local power companies" },
-      { state: "AL", hasHeatPumpProgram: false, note: "VERIFY" },
-      { state: "MS", hasHeatPumpProgram: false, note: "VERIFY" },
-      { state: "KY", hasHeatPumpProgram: false, note: "VERIFY" },
-      { state: "GA", hasHeatPumpProgram: false, note: "VERIFY — small NW GA territory" },
+      { state: "TN", hasHeatPumpProgram: true, note: "Full EnergyRight menu; TVA serves almost all of the state" },
+      { state: "AL", hasHeatPumpProgram: true, note: "Full EnergyRight menu; partial TVA coverage — confirm your local power company is TVA-served" },
+      { state: "GA", hasHeatPumpProgram: true, note: "Full EnergyRight menu; partial TVA coverage — confirm your local power company is TVA-served" },
+      { state: "KY", hasHeatPumpProgram: true, note: "Full EnergyRight menu; partial TVA coverage — confirm your local power company is TVA-served" },
+      { state: "MS", hasHeatPumpProgram: true, note: "Full EnergyRight menu; partial TVA coverage — confirm your local power company is TVA-served" },
+      { state: "NC", hasHeatPumpProgram: true, note: "Full EnergyRight menu; partial TVA coverage — confirm your local power company is TVA-served" },
+      { state: "VA", hasHeatPumpProgram: true, note: "Full EnergyRight menu; partial TVA coverage — confirm your local power company is TVA-served" },
     ],
     status: "open",
-    lastVerified: "",
-    lastUpdated: "",
-    summary: "STUB",
-    sources: [],
+    lastVerified: "2026-07-20",
+    lastUpdated: "2026-07-20",
+    summary: "TVA EnergyRight pays $500–$800 for ducted heat pumps, $800 for mini splits, and $1,500 for geothermal region-wide across all seven Valley states, delivered through 153 local power companies. $0-down financing to $20,000 and ~$10,000 average free upgrades via Home Uplift where the LPC participates. Federal 25C/25D credits ended Dec 31, 2025.",
+    sources: [
+      { label: "TVA EnergyRight — Heat Pump Rebate", url: "https://energyright.com/residential/rebates/heat-pump/" },
+      { label: "TVA EnergyRight — Geothermal Heat Pump Rebate", url: "https://energyright.com/residential/rebates/geothermal-heat-pump/" },
+      { label: "TVA EnergyRight — All Residential Rebates", url: "https://energyright.com/residential/rebates/" },
+      { label: "TVA EnergyRight — Financing", url: "https://energyright.com/residential/energy-upgrades-bill-assistance/financing/" },
+      { label: "TVA EnergyRight — Home Uplift", url: "https://energyright.com/residential/energy-upgrades-bill-assistance/home-uplift/" },
+      { label: "TVA — Public Power Partnerships (153 local power companies)", url: "https://www.tva.com/energy/public-power-partnerships" },
+    ],
   },
+
+  // ── FPL — schema placeholder, do not ship ────────────────────────────
   "florida-power-light": {
     slug: "florida-power-light",
     name: "Florida Power & Light",
