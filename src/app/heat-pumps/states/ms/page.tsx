@@ -793,7 +793,7 @@ export default function MississippiPage() {
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">TVA rebate schedule updates</p>
-              <p className="text-sm text-gray-600 mt-1">TVA periodically updates its EnergyRight rebate schedule. The current schedule (v26) has been in effect since early 2024. Check energyright.com for any changes to amounts or efficiency requirements.</p>
+              <p className="text-sm text-gray-600 mt-1">TVA periodically updates its EnergyRight rebate schedule — the menu changed during 2026, and changes typically align with TVA&apos;s fiscal year (October 1). Check energyright.com for current amounts before starting a project.</p>
             </div>
           </div>
         </div>
