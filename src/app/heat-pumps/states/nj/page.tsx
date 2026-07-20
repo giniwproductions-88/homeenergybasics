@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://homeenergybasics.com/heat-pumps/states/nj",
     type: "article",
     publishedTime: "2026-03-22T15:44:19-05:00",
-    modifiedTime: `${incentives.NJ.lastVerified}T00:00:00Z`,
+    modifiedTime: `${incentives.NJ.lastUpdated}T00:00:00Z`,
   },
 };
 
@@ -32,7 +32,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in New Jersey in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The NJ Whole Home program offers up to $7,500 in cash-back incentives plus 0% financing. Each electric utility (PSE&G, JCP&L, Atlantic City Electric, RECO) offers additional HVAC rebates of $300\u2013$1,000 depending on equipment efficiency. PSE&G\u2019s Building Decarbonization program offers up to $10,000\u2013$12,000 for full fossil fuel displacement. These programs stack. Federal tax credits are not available for 2026 installations.",
+        text: "The NJ Whole Home program offers up to $7,500 in cash-back incentives plus 0% financing. Each electric utility (PSE&G, JCP&L, Atlantic City Electric, RECO) offers additional HVAC rebates of $300\u2013$2,000 depending on equipment efficiency, with ACE paying up to $2,000 for cold-climate heat pumps through December 31, 2026. PSE&G\u2019s Building Decarbonization program offers up to $10,000\u2013$12,000 for full fossil fuel displacement. These programs stack. Federal tax credits are not available for 2026 installations.",
       },
     },
     {
@@ -40,7 +40,7 @@ const faqJsonLd = {
       name: "Can I stack NJ Whole Home rebates with utility rebates?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. The NJ Whole Home program and utility HVAC equipment rebates are explicitly stackable. A homeowner can receive up to $7,500 from Whole Home plus $600\u2013$1,000 from their electric utility, plus gas utility rebates where available (NJNG offers up to $1,000).",
+        text: "Yes. The NJ Whole Home program and utility HVAC equipment rebates are explicitly stackable. A homeowner can receive up to $7,500 from Whole Home plus $600\u2013$2,000 from their electric utility, plus gas utility rebates where available (NJNG offers up to $1,000).",
       },
     },
     {
@@ -56,7 +56,7 @@ const faqJsonLd = {
       name: "Has New Jersey launched the IRA HEAR/HOMES rebates?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No. As of July 2026, New Jersey has not launched consumer-facing HEAR or HOMES rebates. The state received over $185 million in IRA funding, but program design is still in progress. NJ\u2019s plan directs most funds toward low-income multifamily housing through a planned M-RISE program rather than broad single-family rebates.",
+        text: "No. As of July 2026, New Jersey has not launched consumer-facing HEAR or HOMES rebates. The state received over $185 million in IRA funding, but program design is still in progress. NJ\u2019s plan directs funds toward low-income households through two planned programs \u2014 M-RISE (low-income multifamily housing) and CP-HEAR (an electrification adder to the Comfort Partners program) \u2014 rather than broad single-family rebates.",
       },
     },
     {
@@ -72,7 +72,7 @@ const faqJsonLd = {
       name: "What is the NJ Comfort Partners program?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Comfort Partners provides free energy efficiency improvements \u2014 including heating system repair or replacement \u2014 to income-eligible households. Eligibility is based on household income at or below 225\u2013250% of the Federal Poverty Level, or enrollment in assistance programs like LIHEAP, SNAP, or Section 8.",
+        text: "Comfort Partners provides free energy efficiency improvements \u2014 including heating system repair or replacement \u2014 to income-eligible households. Eligibility is based on household income at or below 250% of the Federal Poverty Guidelines, or participation in federal/safety-net programs like LIHEAP, SNAP, or Section 8.",
       },
     },
   ],
@@ -83,7 +83,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "New Jersey Heat Pump Rebates & Incentives (2026)",
   datePublished: "2026-03-22T15:44:19-05:00",
-  dateModified: `${incentives.NJ.lastVerified}T00:00:00Z`,
+  dateModified: `${incentives.NJ.lastUpdated}T00:00:00Z`,
   author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/nj",
@@ -92,6 +92,7 @@ const articleJsonLd = {
 export default function NewJerseyPage() {
   const njIncentive = incentives.NJ;
   const formattedDate = formatDate(njIncentive.lastVerified);
+  const formattedUpdated = formatDate(njIncentive.lastUpdated);
 
   return (
     <>
@@ -114,7 +115,7 @@ export default function NewJerseyPage() {
             New Jersey has some of the strongest heat pump incentives in the country in 2026. The statewide Whole Home program offers up to <strong>$7,500</strong> in cash-back rebates, and all four electric utilities run their own programs on top. PSE&amp;G&apos;s Building Decarbonization program adds up to <strong>$10,000&ndash;$12,000</strong> for full fossil fuel displacement. Federal tax credits expired December 31, 2025. This guide covers all major New Jersey heat pump incentives available in 2026, including Whole Home, PSE&amp;G, JCP&amp;L, Atlantic City Electric, RECO, NJNG, and IRA program status. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} — verified against official program sources
+            Updated {formattedUpdated} · Last verified {formattedDate} against official program sources
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.
@@ -139,8 +140,8 @@ export default function NewJerseyPage() {
               <p className="text-sm text-green-900">Offered through each NJ utility. Cash-back rebates scale with energy savings achieved (5&ndash;33% TES). Plus 0% financing up to $25,000.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-1">&#10003; Utility Rebates: $300&ndash;$1,000</p>
-              <p className="text-sm text-green-900">All four electric utilities (PSE&amp;G, JCP&amp;L, ACE, RECO) have active HVAC rebate programs. Stack with Whole Home. LMI adders available.</p>
+              <p className="font-semibold text-green-800 mb-1">&#10003; Utility Rebates: $300&ndash;$2,000</p>
+              <p className="text-sm text-green-900">All four electric utilities (PSE&amp;G, JCP&amp;L, ACE, RECO) have active HVAC rebate programs. ACE pays up to <strong>$2,000</strong> for cold-climate heat pumps through December 31, 2026. Stack with Whole Home. LMI adders available.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; Total Potential: $8,100&ndash;$9,500+</p>
@@ -152,7 +153,7 @@ export default function NewJerseyPage() {
             </div>
             <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
               <p className="font-semibold text-amber-800 mb-1">&#9888; $185M IRA Funding Not Yet Launched</p>
-              <p className="text-sm text-amber-900">New Jersey received over $185 million for HEAR/HOMES rebates but has not launched consumer-facing programs. NJ&apos;s plan directs most funds toward low-income multifamily housing (M-RISE) rather than broad single-family rebates. Do not sign contracts contingent on HEAR funding.</p>
+              <p className="text-sm text-amber-900">New Jersey received over $185 million for HEAR/HOMES rebates but has not launched consumer-facing programs. NJ&apos;s plan directs funds toward low-income households via M-RISE (multifamily) and a planned Comfort Partners electrification adder (CP-HEAR) rather than broad single-family rebates. Do not sign contracts contingent on HEAR funding.</p>
             </div>
           </div>
         </div>
@@ -276,9 +277,12 @@ export default function NewJerseyPage() {
             </table>
           </div>
           <p className="text-gray-700 leading-relaxed mb-4">
-            <strong>0% on-bill repayment</strong> &mdash; no credit check required &mdash; covers up to <strong>$25,000</strong> standard plus an additional <strong>$50,000</strong> for decarbonization projects ($75,000 total). The obligation transfers to the next homeowner if you sell.
+            <strong>0% on-bill repayment</strong> &mdash; no credit check required &mdash; covers up to <strong>$25,000</strong> standard plus an additional <strong>$50,000</strong> for decarbonization projects ($75,000 total). If the account is closed for any reason, including a home sale, the unpaid balance is due to PSE&amp;G within 30 days.
           </p>
 
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Partial-displacement paths also qualify: <strong>Dual Heat</strong> (keep the fossil fuel system, add a cold-climate heat pump with integrated controls) pays the lesser of <strong>$5,000</strong> or 50% of project cost ($6,000 or 60% for LMI) plus up to <strong>$1,500</strong> per integrated control unit (limit two). <strong>Hybrid Heat</strong> (replace the cooling system, keep existing heating) pays the lesser of <strong>$2,000</strong> or 30% ($3,000 or 40% for LMI). Replacing a fossil fuel water heater with a heat pump water heater earns a <strong>$750</strong> conversion rebate.
+          </p>
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
             <p className="font-semibold text-blue-800 mb-1">PSE&amp;G Decarb + Whole Home = Strongest Stack in NJ</p>
             <p className="text-sm text-blue-900">A PSE&amp;G customer who fully replaces gas heating could receive <strong>$10,000+</strong> from Building Decarb plus up to <strong>$7,500</strong> from Whole Home &mdash; a realistic <strong>$17,500+</strong> in combined incentives for a whole-home cold-climate heat pump project. This is among the best incentive stacks in any state.</p>
@@ -308,22 +312,22 @@ export default function NewJerseyPage() {
                 <tr className="border-b">
                   <td className="p-3">Ducted ASHP &mdash; Tier 1</td>
                   <td className="p-3 font-semibold">$500</td>
-                  <td className="p-3">SEER2 &#8805; 15.2, HSPF2 &#8805; 7.8</td>
+                  <td className="p-3">SEER2 &#8805; 15.2, EER2 &#8805; 11.7, HSPF2 &#8805; 7.8</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Ducted ASHP &mdash; Tier 2</td>
                   <td className="p-3 font-semibold">$750</td>
-                  <td className="p-3">SEER2 &#8805; 17.1, HSPF2 &#8805; 7.8</td>
+                  <td className="p-3">SEER2 &#8805; 17.1, EER2 &#8805; 11.7, HSPF2 &#8805; 7.8</td>
                 </tr>
                 <tr className="border-b bg-green-50">
                   <td className="p-3">Cold-climate ASHP (ducted)</td>
                   <td className="p-3 font-semibold">$1,000</td>
-                  <td className="p-3">SEER2 &#8805; 15.2, HSPF2 &#8805; 8.1, COP &#8805; 1.75 at 5&#176;F</td>
+                  <td className="p-3">SEER2 &#8805; 15.2, EER2 &#8805; 10, HSPF2 &#8805; 8.1, COP &#8805; 1.75 at 5&#176;F</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Ductless mini-split</td>
                   <td className="p-3 font-semibold">$750</td>
-                  <td className="p-3">SEER2 &#8805; 17.1, HSPF2 &#8805; 7.8</td>
+                  <td className="p-3">SEER2 &#8805; 17.1, EER2 &#8805; 11.7, HSPF2 &#8805; 7.8</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Heat pump water heater</td>
@@ -351,22 +355,27 @@ export default function NewJerseyPage() {
                 <tr className="border-b">
                   <td className="p-3">ASHP split &mdash; Tier 1</td>
                   <td className="p-3 font-semibold">$500</td>
-                  <td className="p-3">SEER2 &#8805; 15.2, HSPF2 &#8805; 7.8</td>
+                  <td className="p-3">SEER2 &#8805; 15.2, EER2 &#8805; 11.7, HSPF2 &#8805; 7.8</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">ASHP split &mdash; Tier 2</td>
                   <td className="p-3 font-semibold">$750</td>
-                  <td className="p-3">SEER2 &#8805; 17.1, HSPF2 &#8805; 7.8</td>
+                  <td className="p-3">SEER2 &#8805; 17.1, EER2 &#8805; 11.7, HSPF2 &#8805; 7.8</td>
                 </tr>
                 <tr className="border-b bg-green-50">
-                  <td className="p-3">Cold-climate ASHP</td>
-                  <td className="p-3 font-semibold">$1,000</td>
-                  <td className="p-3">SEER2 &#8805; 15.2, HSPF2 &#8805; 8.1, COP &#8805; 1.75 at 5&#176;F</td>
+                  <td className="p-3">Cold-climate ASHP (ducted or ductless)</td>
+                  <td className="p-3 font-semibold">$2,000</td>
+                  <td className="p-3">SEER2 &#8805; 15.2, EER2 &#8805; 10, HSPF2 &#8805; 8.1, COP &#8805; 1.75 at 5&#176;F</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Geothermal heat pump</td>
+                  <td className="p-3 font-semibold">50% of project cost, up to $10,000</td>
+                  <td className="p-3">ENERGY STAR certified; replacing an electric heating system only</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Ductless mini-split</td>
                   <td className="p-3 font-semibold">$750</td>
-                  <td className="p-3">SEER2 &#8805; 17.1, HSPF2 &#8805; 7.8</td>
+                  <td className="p-3">SEER2 &#8805; 17.1, EER2 &#8805; 11.7, HSPF2 &#8805; 7.8</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Heat pump water heater</td>
@@ -377,7 +386,7 @@ export default function NewJerseyPage() {
             </table>
           </div>
           <p className="text-gray-700 leading-relaxed mb-6">
-            LMI customers receive an additional <strong>$300</strong> per unit. NEIF 0% financing available up to $25,000.
+            LMI customers receive an additional <strong>$300</strong> per qualified unit (geothermal excluded). The <strong>$2,000</strong> cold-climate rebate is an enhanced limited-time amount available April 1 through December 31, 2026. NEIF 0% financing available up to $25,000.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Rockland Electric (RECO) &mdash; Bergen, Passaic &amp; Sussex Counties</h3>
@@ -387,7 +396,7 @@ export default function NewJerseyPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">NJ Natural Gas (NJNG) &mdash; Gas Utility</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            NJNG offers heat pump rebates through its SAVEGREEN&#174; program: <strong>$500</strong> (Tier 1) to <strong>$1,000</strong> (cold-climate) for ASHPs and mini-splits, with a <strong>$300</strong> LMI adder. Also offers a Hybrid Heat program pairing cold-climate heat pumps with gas backup. 0% on-bill repayment up to $25,000 is available. South Jersey Gas and Elizabethtown Gas do not currently offer direct heat pump rebates.
+            NJNG offers heat pump rebates through its SAVEGREEN&#174; program: <strong>$500</strong> (Tier 1) to <strong>$1,000</strong> (cold-climate) for ASHPs and mini-splits, with a <strong>$300</strong> LMI adder per qualifying unit. Its Building Decarbonization Hybrid Heating offer pairs a heat pump with gas backup and pays up to <strong>$2,000</strong> for a single-zone system or up to <strong>$4,000</strong> for a two-zone system. 0% on-bill repayment up to $25,000 is available; all loans are net of NJNG rebates. Current offers apply to qualifying equipment installed by June 30, 2027. South Jersey Gas and Elizabethtown Gas do not currently offer direct heat pump rebates.
           </p>
         </div>
       </section>
@@ -400,7 +409,7 @@ export default function NewJerseyPage() {
             New Jersey received over <strong>$185 million</strong> from the DOE under the Inflation Reduction Act: approximately $91.6 million for HOMES (Home Efficiency Rebates), $91.3 million for HEAR (Home Electrification and Appliance Rebates), and $3.5 million for contractor training.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            As of {formattedDate}, these programs have not launched and are still awaiting final program administrator selection. NJ&apos;s design directs nearly all funds toward low-income multifamily housing through a planned &ldquo;M-RISE&rdquo; program rather than broad single-family homeowner rebates.
+            As of {formattedDate}, these programs have not launched. NJ&apos;s design directs funds toward low-income households through two planned programs: &ldquo;M-RISE,&rdquo; supporting whole-building efficiency projects in low-income multifamily housing, and &ldquo;CP-HEAR,&rdquo; an electrification adder to the existing Comfort Partners program &mdash; rather than broad single-family homeowner rebates.
           </p>
         </div>
       </section>
@@ -418,11 +427,11 @@ export default function NewJerseyPage() {
               <p className="font-semibold text-gray-900 mb-2">Above 150% AMI &mdash; JCP&amp;L or ACE Territory</p>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>Whole Home cash-back (assuming ~25% TES): ~$6,000</li>
-                <li>Electric utility cold-climate ASHP rebate: $1,000</li>
+                <li>Electric utility cold-climate ASHP rebate: $1,000 (JCP&amp;L) or $2,000 (ACE, through Dec 31, 2026)</li>
                 <li>Federal tax credit: $0 (expired)</li>
                 <li>HEAR: $0 (not launched)</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$7,000</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$7,000&ndash;$8,000</p>
             </div>
 
             <div className="bg-white border border-gray-200 rounded-lg p-5">
@@ -450,7 +459,7 @@ export default function NewJerseyPage() {
           <div className="bg-gray-100 rounded-lg p-5">
             <p className="font-semibold text-gray-900 mb-1">What You&apos;ll Actually Pay</p>
             <p className="text-sm text-gray-700">
-              For a $18,000 whole-home cold-climate system: most homeowners in JCP&amp;L/ACE territory pay <strong>$11,000&ndash;$12,000 out of pocket</strong>. PSE&amp;G standard customers pay <strong>$10,400&ndash;$12,000</strong>. PSE&amp;G Building Decarb customers who fully displace fossil fuel may pay <strong>under $5,000</strong> after all incentives. 0% financing stretches remaining costs over 7&ndash;10 years.
+              For a $18,000 whole-home cold-climate system: most homeowners in JCP&amp;L territory pay <strong>$11,000&ndash;$12,000 out of pocket</strong>; ACE customers pay <strong>$10,000&ndash;$11,000</strong> while the $2,000 cold-climate rebate runs (through December 31, 2026). PSE&amp;G standard customers pay <strong>$10,400&ndash;$12,000</strong>. PSE&amp;G Building Decarb customers who fully displace fossil fuel may pay <strong>under $5,000</strong> after all incentives. 0% financing stretches remaining costs over 7&ndash;10 years.
             </p>
           </div>
         </div>
@@ -461,7 +470,7 @@ export default function NewJerseyPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Income-Qualified Programs and Weatherization</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            <strong>Comfort Partners</strong> provides free energy efficiency improvements &mdash; including heating system repair or replacement, insulation, and air sealing &mdash; to households at or below 225&ndash;250% of the Federal Poverty Level, or enrolled in LIHEAP, SNAP, TANF, SSI, or Section 8. The program is active and fully available.
+            <strong>Comfort Partners</strong> provides free energy efficiency improvements &mdash; including heating system repair or replacement, insulation, and air sealing &mdash; to households at or below 250% of the Federal Poverty Guidelines, or participating in federal/safety-net programs such as LIHEAP, SNAP, TANF, SSI, or Section 8. The program is active and fully available.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
             The <strong>Weatherization Assistance Program (WAP)</strong>, administered by the NJ Department of Community Affairs for households at or below 200% FPL, covers insulation, air sealing, and heating system replacement (including heat pumps when cost-effective). Priority goes to seniors, individuals with disabilities, and families with young children.

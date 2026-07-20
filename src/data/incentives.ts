@@ -610,10 +610,10 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "NJ",
     stateName: "New Jersey",
     status: "open",
-    lastVerified: "2026-07-17",
-    lastUpdated: "2026-07-17",
+    lastVerified: "2026-07-20",
+    lastUpdated: "2026-07-20",
     summary:
-      "New Jersey heat pump rebates are active through the statewide Whole Home program (up to $7,500 cash-back plus 0% financing) and all four electric utilities (PSE&G, JCP&L, Atlantic City Electric, RECO). Programs stack. Federal tax credits (25C/25D) ended December 31, 2025. The state's $185 million in IRA HEAR/HOMES funding has not launched consumer-facing programs as of July 17, 2026.",
+      "New Jersey heat pump rebates are active through the statewide Whole Home program (up to $7,500 cash-back plus 0% financing) and all four electric utilities (PSE&G, JCP&L, Atlantic City Electric, RECO); ACE pays up to $2,000 for cold-climate heat pumps through December 31, 2026. Programs stack. Federal tax credits (25C/25D) ended December 31, 2025. The state's $185 million in IRA HEAR/HOMES funding has not launched consumer-facing programs as of July 20, 2026.",
     sources: [
       {
         label: "PSE&G Whole Home Energy Solutions",
@@ -625,7 +625,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
       },
       {
         label: "PSE&G HVAC Instant Rebates",
-        url: "https://homeenergy.pseg.com/heatingandcooling",
+        url: "https://myhomeenergy.pseg.com/appliance-offers/heatingandcooling",
       },
       {
         label: "JCP&L HVAC Rebates (CLEAResult)",
@@ -636,16 +636,16 @@ export const incentives: Record<StateCode, StateIncentive> = {
         url: "https://homeenergysavings.atlanticcityelectric.com/residential/rebates/hvac-efficiency-program",
       },
       {
-        label: "RECO Heat Pump Rebates",
-        url: "https://www.oru.com/en/save-money/rebates-incentives-credits/new-jersey-customers/incentives-for-residential-customers-nj/efficient-products/heating-cooling-equipment",
+        label: "RECO Heat Pump Guide (NJ)",
+        url: "https://www.oru.com/en/save-money/rebates-incentives-credits/new-jersey-customers/incentives-for-residential-customers-nj/clean-heating-cooling-with-heat-pumps/heat-pump-guide",
       },
       {
         label: "NJ BPU — IRA HEAR/HOMES Funding ($185M)",
         url: "https://www.nj.gov/bpu/newsroom/2025/approved/20250127.html",
       },
       {
-        label: "NJ Comfort Partners (Income-Eligible)",
-        url: "https://www.njcleanenergy.com/CP",
+        label: "NJ Comfort Partners (Income-Eligible, via JCP&L)",
+        url: "https://www.firstenergycorp.com/save_energy/save_energy_new_jersey/comfort-partners.html",
       },
       {
         label: "NJNG SAVEGREEN Heat Pump Rebates",
