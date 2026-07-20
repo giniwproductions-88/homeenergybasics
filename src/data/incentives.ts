@@ -1645,10 +1645,10 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "SC",
     stateName: "South Carolina",
     status: "limited",
-    lastVerified: "2026-06-10",
-    lastUpdated: "2026-06-10",
+    lastVerified: "2026-07-20",
+    lastUpdated: "2026-07-20",
     summary:
-      "Utility rebates of $300\u20131,000 from Duke Energy, Dominion Energy, and Santee Cooper. SC geothermal tax credit covers 25% up to $3,500. HEAR/HOMES rebates (up to $16,000) pending launch. Federal tax credits expired.",
+      "Utility rebates of $300\u2013$2,500 from Duke Energy (Smart $aver), Dominion Energy, and Santee Cooper. SC geothermal tax credit covers 25% up to $3,500. HEAR/HOMES rebates (up to $16,000) pending launch. Federal tax credits expired.",
     sources: [
       {
         label: "SC Energy Office \u2014 Rebates",
@@ -1659,8 +1659,8 @@ export const incentives: Record<StateCode, StateIncentive> = {
         url: "https://energy.sc.gov/programs/funding/home-energy-rebate-programs",
       },
       {
-        label: "Duke Energy \u2014 Home Energy Improvement",
-        url: "https://www.duke-energy.com/home/products/home-energy-improvement",
+        label: "Duke Energy \u2014 Smart $aver Rebates",
+        url: "https://www.duke-energy.com/home/products/smart-saver",
       },
       {
         label: "Dominion Energy SC \u2014 Heating & Cooling Rebates",

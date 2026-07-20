@@ -6,16 +6,16 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title:
-    "South Carolina Heat Pump Rebates 2026: What You Can Actually Get ($300–$1,000 + HEAR Coming) | Home Energy Basics",
+    "South Carolina Heat Pump Rebates 2026: What You Can Actually Get ($300–$2,500 + HEAR Coming) | Home Energy Basics",
   description:
-    "Duke Energy offers $500–$1,000. Dominion covers up to $750. Federal tax credits ended. Here\u2019s every South Carolina heat pump incentive in 2026.",
+    "Duke Smart $aver pays $350\u2013$2,500. Dominion covers up to $750. Federal tax credits ended. Here\u2019s every South Carolina heat pump incentive in 2026.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/sc",
   },
   openGraph: {
     title: "South Carolina Heat Pump Rebates 2026",
     description:
-      "Utility rebates of $300–$1,000 plus pending HEAR/HOMES rebates up to $14,000 — the complete guide to South Carolina heat pump incentives after federal credits expired.",
+      "Utility rebates of $300–$2,500 plus pending HEAR/HOMES rebates up to $14,000 — the complete guide to South Carolina heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/sc",
     type: "article",
     publishedTime: "2026-03-23T20:13:51-05:00",
@@ -32,7 +32,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in South Carolina in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "South Carolina homeowners can access utility rebates of $300\u2013$1,000 from Duke Energy, Dominion Energy, and Santee Cooper for air-source heat pumps. A state geothermal tax credit covers 25% of costs up to $3,500. Federal HEAR rebates (up to $8,000 for heat pumps) and HOMES rebates (up to $8,000 for whole-home efficiency) are expected to launch later in 2026 but are not yet available. Federal Section 25C and 25D tax credits expired December 31, 2025.",
+        text: "South Carolina homeowners can access utility rebates of $300\u2013$2,500 from Duke Energy, Dominion Energy, and Santee Cooper for air-source heat pumps. A state geothermal tax credit covers 25% of costs up to $3,500. Federal HEAR rebates (up to $8,000 for heat pumps) and HOMES rebates (up to $8,000 for whole-home efficiency) are expected to launch later in 2026 but are not yet available. Federal Section 25C and 25D tax credits expired December 31, 2025.",
       },
     },
     {
@@ -56,7 +56,7 @@ const faqJsonLd = {
       name: "Which South Carolina utility offers the best heat pump rebates?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Duke Energy Carolinas currently offers the highest standard heat pump rebates in South Carolina, up to $1,000 for converting from strip heat to a high-efficiency heat pump. For heat pump water heaters, Dominion Energy SC leads at $750. Santee Cooper offers lower rebates but uniquely provides low-interest loans up to $20,000 for qualifying equipment.",
+        text: "Duke Energy Progress and Duke Energy Carolinas share the Smart $aver program and offer the highest rebates in South Carolina \u2014 $1,500 for switching from electric resistance to a heat pump, and $2,000\u2013$2,500 for converting an existing heat pump to a dual-fuel, cold-climate, or geothermal system. For heat pump water heaters, Dominion Energy SC leads at $750 (Duke pays a flat $500). Santee Cooper offers lower rebates but uniquely provides low-interest loans up to $20,000 for qualifying equipment.",
       },
     },
     {
@@ -83,7 +83,8 @@ const articleJsonLd = {
 
 export default function SouthCarolinaPage() {
   const scIncentive = incentives.SC;
-  const formattedDate = formatDate(scIncentive.lastVerified);
+  const formattedVerified = formatDate(scIncentive.lastVerified);
+  const formattedUpdated = formatDate(scIncentive.lastUpdated);
 
   return (
     <>
@@ -103,10 +104,10 @@ export default function SouthCarolinaPage() {
             South Carolina Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            South Carolina heat pump incentives are limited in 2026 but not nonexistent. With federal tax credits gone and state HEAR/HOMES rebate programs still pending launch, most homeowners rely on <strong>utility rebates worth $300–$1,000</strong> from Duke Energy, Dominion Energy, or Santee Cooper, plus a <strong>$3,500 geothermal tax credit</strong> if applicable. This guide covers all major South Carolina heat pump incentives available in 2026, including utility rebates, pending federal rebates, electric cooperative programs, and the state geothermal credit. Here&apos;s what&apos;s actually available.
+            South Carolina heat pump incentives are limited in 2026 but not nonexistent. With federal tax credits gone and state HEAR/HOMES rebate programs still pending launch, most homeowners rely on <strong>utility rebates worth $300–$2,500</strong> from Duke Energy, Dominion Energy, or Santee Cooper, plus a <strong>$3,500 geothermal tax credit</strong> if applicable. This guide covers all major South Carolina heat pump incentives available in 2026, including utility rebates, pending federal rebates, electric cooperative programs, and the state geothermal credit. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} — verified against official program sources
+            Updated {formattedUpdated} &middot; Verified {formattedVerified}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.
@@ -128,15 +129,15 @@ export default function SouthCarolinaPage() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Utility rebates are active now</p>
-              <p className="text-sm text-green-900">Duke Energy, Dominion Energy SC, and Santee Cooper offer <strong>$300–$1,000</strong> for air-source heat pumps and <strong>$400–$800</strong> for heat pump water heaters. Available to all income levels.</p>
+              <p className="text-sm text-green-900">Duke Energy, Dominion Energy SC, and Santee Cooper offer <strong>$300–$2,500</strong> for air-source heat pumps and <strong>$400–$750</strong> for heat pump water heaters. Available to all income levels.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ SC geothermal tax credit: up to $3,500</p>
               <p className="text-sm text-green-900">South Carolina offers a <strong>25% state income tax credit up to $3,500</strong> for geothermal heat pump installations. Air-source heat pumps do not qualify. Unused credit carries forward up to 10 years.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-1">✓ Potential savings: $650 to $22,000+</p>
-              <p className="text-sm text-green-900">$650 (above 150% AMI) to $22,000+ (below 80% AMI, when HEAR/HOMES launch). Full electrification packages can reach ~$23,000 total incentives for income-qualified households switching from fossil fuels.</p>
+              <p className="font-semibold text-green-800 mb-1">✓ Potential savings: $2,000 to $22,500+</p>
+              <p className="text-sm text-green-900">$2,000 (above 150% AMI) to $22,500+ (below 80% AMI, when HEAR/HOMES launch). Full electrification packages can reach ~$22,500 total incentives for income-qualified households switching from fossil fuels.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">✗ Federal tax credits expired</p>
@@ -322,101 +323,66 @@ export default function SouthCarolinaPage() {
             Utility rebates are the primary active incentives for South Carolina homeowners right now. Four major utilities serve the state, each with different programs, amounts, and requirements.
           </p>
           <p className="text-sm text-gray-500 mb-6">
-            Duke Energy Carolinas currently offers the highest standard rebates (up to $1,000 for strip heat conversion), while Dominion Energy SC leads on heat pump water heater incentives ($750).
+            Duke Energy&apos;s shared Smart $aver program offers the highest rebates — up to $2,500 for system conversions — while Dominion Energy SC leads on heat pump water heater incentives ($750).
           </p>
 
-          {/* Duke Energy Carolinas */}
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">Duke Energy Carolinas — Home Energy Improvement</h3>
+          {/* Duke Energy — shared Smart $aver (DEC + DEP) */}
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">Duke Energy Progress and Duke Energy Carolinas — Smart $aver</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Serves upstate SC including Greenville, Spartanburg, Anderson, and Rock Hill. All rebates require completing a free Home Energy Check within 24 months prior to application. Rebate paid via prepaid Mastercard within 4–6 weeks.
+            Duke Energy Carolinas serves the Upstate (Greenville, Spartanburg, Anderson, Rock Hill); Duke Energy Progress serves parts of the Pee Dee, Florence, and some coastal areas. Both share the <strong>Smart $aver</strong> rebate program with identical amounts — the same program Duke runs in North Carolina — effective for HVAC equipment installed after August 1, 2025. There is no assessment prerequisite (Duke&apos;s free Home Energy House Call is optional), and there is no homeowner application to file for HVAC rebates: your Smart $aver participating contractor completes the work and submits the rebate application within 60 days. Rebates arrive as a prepaid Mastercard.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Most tiers pay two rates depending on timing: a <strong>Replace on Failure</strong> rate when your existing equipment has failed, and a higher <strong>Early Replacement</strong> rate when you proactively replace a working system.
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
               <thead>
                 <tr className="bg-gray-100">
-                  <th className="text-left p-3 font-semibold">Measure</th>
+                  <th className="text-left p-3 font-semibold">Upgrade</th>
                   <th className="text-left p-3 font-semibold">Rebate</th>
-                  <th className="text-left p-3 font-semibold">Minimum efficiency</th>
                 </tr>
               </thead>
               <tbody>
+                <tr className="border-b">
+                  <td className="p-3">Replace existing heat pump (three efficiency tiers)</td>
+                  <td className="p-3 font-semibold">$350–$900</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Electric resistance → heat pump</td>
+                  <td className="p-3 font-semibold">$1,500</td>
+                </tr>
                 <tr className="border-b bg-green-50">
-                  <td className="p-3">Strip heat → heat pump (higher eff.)</td>
-                  <td className="p-3 font-semibold">$1,000</td>
-                  <td className="p-3">16 SEER2 / 7.5 HSPF2</td>
+                  <td className="p-3">Heat pump → dual-fuel system (adds gas backup)</td>
+                  <td className="p-3 font-semibold">$2,000 (Replace on Failure) / $2,500 (Early Replacement)</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-3">Strip heat → heat pump (high eff.)</td>
-                  <td className="p-3 font-semibold">$600</td>
-                  <td className="p-3">15.2 SEER2 / 7.5 HSPF2</td>
+                  <td className="p-3">Heat pump → cold-climate heat pump</td>
+                  <td className="p-3 font-semibold">$2,100 (Replace on Failure) / $2,400 (Early Replacement)</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-3">Heat pump replacement</td>
-                  <td className="p-3 font-semibold">$500</td>
-                  <td className="p-3">15.2 SEER2 / 7.5 HSPF2</td>
+                  <td className="p-3">Heat pump → geothermal</td>
+                  <td className="p-3 font-semibold">$2,300 (Replace on Failure) / $2,500 (Early Replacement)</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-3">HPWH — 50 gallon</td>
-                  <td className="p-3 font-semibold">$500</td>
-                  <td className="p-3">UEF ≥ 3.3, ENERGY STAR</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">HPWH — 80 gallon</td>
-                  <td className="p-3 font-semibold">$800</td>
-                  <td className="p-3">UEF ≥ 3.3, ENERGY STAR</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">Income-qualified HVAC replacement</td>
-                  <td className="p-3 font-semibold">Up to $8,000</td>
-                  <td className="p-3">Below 200% FPG</td>
+                  <td className="p-3">Mini-split, 18+ SEER2</td>
+                  <td className="p-3 font-semibold">$700 (Replace on Failure) / $900 (Early Replacement)</td>
                 </tr>
               </tbody>
             </table>
           </div>
-
-          {/* Duke Energy Progress */}
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">Duke Energy Progress — Smart $aver</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Serves parts of the Pee Dee, Florence, and some coastal areas. Requires a Smart $aver participating contractor. Has two tiers: non-operational (broken) equipment replacement and early replacement (still working, with duct sealing).
+            Heat pump water heater rebate: a flat <strong>$500</strong> for units installed after August 1, 2025 (ENERGY STAR certified, UEF 3.3 or higher; tankless and standard electric models excluded; the unit must be installed and operable before applying, and self-purchased units can use the retail path at smartsaverincentives.com). HVAC systems must be AHRI-matched with an ECM blower motor, and duct sealing is included with replacements. The dual-fuel, cold-climate, and geothermal conversion rebates require an existing heat pump with electric resistance strip heat serving at least 1,000 square feet; mini-splits must condition at least 1,000 square feet. A <strong>$125</strong> smart thermostat rebate is also available.
           </p>
-          <div className="overflow-x-auto mb-6">
-            <table className="min-w-full text-sm">
-              <thead>
-                <tr className="bg-gray-100">
-                  <th className="text-left p-3 font-semibold">Measure</th>
-                  <th className="text-left p-3 font-semibold">Non-operational</th>
-                  <th className="text-left p-3 font-semibold">Early replacement</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="border-b">
-                  <td className="p-3">ASHP — Tier 1 (15.2 SEER2)</td>
-                  <td className="p-3 font-semibold">$300</td>
-                  <td className="p-3 font-semibold">$600</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">ASHP — Tier 2 (16 SEER2)</td>
-                  <td className="p-3 font-semibold">$400</td>
-                  <td className="p-3 font-semibold">$700</td>
-                </tr>
-                <tr className="border-b bg-green-50">
-                  <td className="p-3">ASHP — Tier 3 (17+ SEER2)</td>
-                  <td className="p-3 text-gray-500">—</td>
-                  <td className="p-3 font-semibold">$800</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">HPWH — 50 gallon</td>
-                  <td className="p-3 font-semibold">$500</td>
-                  <td className="p-3 text-gray-500">—</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">HPWH — 80 gallon</td>
-                  <td className="p-3 font-semibold">$800</td>
-                  <td className="p-3 text-gray-500">—</td>
-                </tr>
-              </tbody>
-            </table>
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
+            <p className="font-semibold text-amber-800 mb-1">⚠ Greenwood-area customers: HPWH rebate excluded</p>
+            <p className="text-sm text-amber-900">Duke&apos;s own FAQ states that some customers in the Greenwood area are not eligible for the heat pump water heater rebate. Duke doesn&apos;t explain why, so Greenwood-area customers should confirm eligibility with Duke before purchasing.</p>
           </div>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Duke&apos;s rebates differ significantly across the six states it serves — South Carolina and North Carolina share these amounts, while Florida, Indiana, and Kentucky customers get different programs entirely. For the full state-by-state breakdown, see our{" "}
+            <Link href="/heat-pumps/utilities/duke-energy" className="text-brand-600 hover:underline">
+              Duke Energy heat pump rebates guide
+            </Link>.
+          </p>
 
           {/* Dominion Energy SC */}
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Dominion Energy South Carolina — EnergyWise</h3>
@@ -560,13 +526,13 @@ export default function SouthCarolinaPage() {
 
           <div className="space-y-4 mb-8">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900 mb-2">Above 150% AMI — ducted heat pump system</p>
+              <p className="font-semibold text-gray-900 mb-2">Above 150% AMI — today, utility rebates only (Duke territory, electric resistance to heat pump + HPWH)</p>
               <ul className="text-sm text-gray-700 space-y-1">
-                <li>HEAR heat pump rebate: $0 (not eligible above 150% AMI)</li>
-                <li>HOMES rebate (35%+ savings): up to $4,000</li>
-                <li>Utility rebate (Duke Energy Carolinas): $500–$1,000</li>
+                <li>HEAR / HOMES: $0 (not launched)</li>
+                <li>Duke Smart $aver — electric resistance to heat pump: $1,500</li>
+                <li>Duke Smart $aver — heat pump water heater: $500</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$5,000</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$2,000</p>
             </div>
 
             <div className="bg-white border border-gray-200 rounded-lg p-5">
@@ -588,15 +554,15 @@ export default function SouthCarolinaPage() {
                 <li>HEAR electrical panel: $4,000</li>
                 <li>HEAR household cap applies: $14,000</li>
                 <li>HOMES (separate whole-home measures, 35%+): $8,000</li>
-                <li>Utility rebate (Duke Energy Carolinas): $1,000</li>
+                <li>Duke Smart $aver — HPWH: $500 (Duke has no rebate tier for gas-furnace-to-heat-pump conversions)</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$23,000</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$22,500</p>
             </div>
           </div>
 
           <div className="bg-gray-100 rounded-lg p-5 mb-4">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
-            <p className="text-sm text-gray-700">A typical heat pump installation in South Carolina costs <strong>$8,000–$15,000</strong>. With only utility rebates (the current reality), expect <strong>$7,000–$14,500 out of pocket</strong>. When HEAR/HOMES launch, income-qualified homeowners switching from fossil fuels could pay <strong>$0–$6,000</strong>. Most SC homeowners in 2026 will fall in the <strong>$7,000–$12,000</strong> range unless they qualify for future federal rebates. Pairing with <Link href="/battery" className="text-brand-600 hover:underline">a home battery</Link> or time-of-use rates can further offset ongoing energy costs.</p>
+            <p className="text-sm text-gray-700">A typical heat pump installation in South Carolina costs <strong>$8,000–$15,000</strong>. With only utility rebates (the current reality), expect <strong>$6,000–$14,700 out of pocket</strong>. When HEAR/HOMES launch, income-qualified homeowners switching from fossil fuels could pay <strong>$0–$6,000</strong>. Most SC homeowners in 2026 will fall in the <strong>$7,000–$12,000</strong> range unless they qualify for future federal rebates. Pairing with <Link href="/battery" className="text-brand-600 hover:underline">a home battery</Link> or time-of-use rates can further offset ongoing energy costs.</p>
           </div>
           <p className="text-sm text-gray-500">
             South Carolina has no state air-source heat pump tax credit and no state residential loan program. The geothermal tax credit ($3,500) applies only to ground-source systems.
@@ -692,8 +658,8 @@ export default function SouthCarolinaPage() {
                 1
               </div>
               <div>
-                <p className="font-semibold text-gray-900">Schedule a free Home Energy Check</p>
-                <p className="text-sm text-gray-700">Duke Energy Carolinas requires a home energy assessment within 24 months before applying for HVAC rebates. Dominion Energy SC and Santee Cooper do not require a pre-assessment.</p>
+                <p className="font-semibold text-gray-900">Check your utility&apos;s prerequisites</p>
+                <p className="text-sm text-gray-700">No pre-installation assessment is required for Duke Energy Smart $aver rebates — Duke&apos;s free Home Energy House Call is optional. Dominion Energy SC and Santee Cooper do not require a pre-assessment either.</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -702,7 +668,7 @@ export default function SouthCarolinaPage() {
               </div>
               <div>
                 <p className="font-semibold text-gray-900">Get quotes from qualified contractors</p>
-                <p className="text-sm text-gray-700">Confirm equipment meets the minimum efficiency requirements for your utility (typically 15.2+ SEER2 / 7.2+ HSPF2). Duke Energy Progress requires a Smart $aver participating contractor. Santee Cooper requires a Trade Ally contractor.</p>
+                <p className="text-sm text-gray-700">Confirm equipment meets the minimum efficiency requirements for your utility (typically 15.2+ SEER2 / 7.2+ HSPF2). Duke Energy (both Progress and Carolinas) requires a Smart $aver participating contractor. Santee Cooper requires a Trade Ally contractor.</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -711,7 +677,7 @@ export default function SouthCarolinaPage() {
               </div>
               <div>
                 <p className="font-semibold text-gray-900">Install the equipment and submit your rebate application</p>
-                <p className="text-sm text-gray-700">Filing deadlines vary: Duke Energy Carolinas allows 12 months after installation, Dominion Energy SC requires 90 days, and Santee Cooper requires 30 business days. Your contractor may submit on your behalf depending on the program.</p>
+                <p className="text-sm text-gray-700">Filing deadlines vary: Duke Energy&apos;s contractor submits the application within 60 days of installation, Dominion Energy SC requires 90 days, and Santee Cooper requires 30 business days. Your contractor may submit on your behalf depending on the program.</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -720,7 +686,7 @@ export default function SouthCarolinaPage() {
               </div>
               <div>
                 <p className="font-semibold text-gray-900">Receive your rebate</p>
-                <p className="text-sm text-gray-700">Duke Energy pays via prepaid Mastercard in 4–6 weeks. Dominion Energy pays by check in 4–6 weeks. Santee Cooper pays by check in 6–8 weeks.</p>
+                <p className="text-sm text-gray-700">Duke Energy pays via prepaid Mastercard. Dominion Energy pays by check in 4–6 weeks. Santee Cooper pays by check in 6–8 weeks.</p>
               </div>
             </div>
           </div>
@@ -747,7 +713,7 @@ export default function SouthCarolinaPage() {
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Duke Energy SC incentive changes</p>
-              <p className="text-sm text-gray-600 mt-1">Duke Energy increased SC rebates effective August 2025 with SC Public Service Commission approval. Further changes are possible as Duke files updated demand-side management plans. Income-qualified programs (up to $8,000) could expand.</p>
+              <p className="text-sm text-gray-600 mt-1">Duke Energy increased SC rebates effective August 2025 with SC Public Service Commission approval. Further changes are possible as Duke files updated demand-side management plans. Duke also runs income-qualified assistance programs whose amounts and eligibility change — verify current terms with Duke directly.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">SC geothermal credit sunset</p>
