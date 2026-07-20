@@ -6,16 +6,16 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title:
-    "Mississippi Heat Pump Rebates 2026: Up to $1,500 + TVA EnergyRight | Home Energy Basics",
+    "Mississippi Heat Pump Rebates 2026: $1,100 Entergy + $800 TVA EnergyRight | Home Energy Basics",
   description:
-    "TVA EnergyRight offers up to $1,500. Entergy MS covers up to $1,100. Federal tax credits ended. Here\u2019s every Mississippi heat pump incentive in 2026.",
+    "Entergy MS covers up to $1,100. TVA EnergyRight offers up to $800 ($1,500 geothermal). Federal tax credits ended. Every Mississippi heat pump incentive in 2026.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/ms",
   },
   openGraph: {
     title: "Mississippi Heat Pump Rebates 2026",
     description:
-      "Utility rebates up to $1,500 from TVA and $1,100 from Entergy \u2014 the complete guide to Mississippi heat pump incentives after federal credits expired.",
+      "Utility rebates up to $1,100 from Entergy and $800 from TVA ($1,500 geothermal) \u2014 the complete guide to Mississippi heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/ms",
     type: "article",
     publishedTime: "2026-03-24T20:44:57-05:00",
@@ -47,7 +47,7 @@ export default function MississippiPage() {
         name: "What heat pump rebates are available in Mississippi in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Mississippi heat pump rebates come from three utility providers. TVA EnergyRight offers up to $1,500 for qualifying air-source heat pumps in northeast Mississippi. Entergy Mississippi offers $500\u2013$1,100 depending on efficiency tier. Mississippi Power offers $160\u2013$200 per ton. Federal tax credits (25C and 25D) expired December 31, 2025. Mississippi\u2019s IRA-funded HEAR and HOMES rebates have not yet launched.",
+          text: "Mississippi heat pump rebates come from three utility providers. TVA EnergyRight offers up to $800 for qualifying air-source heat pumps in northeast Mississippi ($1,500 for geothermal). Entergy Mississippi offers $500\u2013$1,100 depending on efficiency tier. Mississippi Power offers $160\u2013$200 per ton. Federal tax credits (25C and 25D) expired December 31, 2025. Mississippi\u2019s IRA-funded HEAR and HOMES rebates have not yet launched.",
         },
       },
       {
@@ -71,7 +71,7 @@ export default function MississippiPage() {
         name: "Which Mississippi utility offers the highest heat pump rebate?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "TVA EnergyRight offers the highest rebate at $1,500 for TVA Preferred air-source heat pumps \u2014 available through 26+ local distributors in northeast Mississippi including Tupelo Water & Light, Oxford Utilities, and Central Electric Power Association. The system must use a variable-speed compressor and produce 100% rated heating at 17\u00b0F. Entergy Mississippi\u2019s top tier is $1,100 for systems meeting 18.05+ SEER2.",
+          text: "Entergy Mississippi offers the highest air-source rebate at $1,100 for systems meeting 18.05+ SEER2. TVA EnergyRight tops out at $800 for 17+ SEER2 air-source or dual fuel systems \u2014 available through 26+ local distributors in northeast Mississippi including Tupelo Water & Light, Oxford Utilities, and Central Electric Power Association \u2014 with $1,500 for geothermal heat pumps.",
         },
       },
       {
@@ -79,7 +79,7 @@ export default function MississippiPage() {
         name: "When will Mississippi\u2019s IRA HEAR rebates launch?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "As of June 2026, no launch date has been announced. The Mississippi Development Authority accepted the state\u2019s $104.8 million IRA allocation for HOMES and HEAR programs but has not opened a consumer application portal. Monitor the MDA Office of Energy page at mississippi.org for updates.",
+          text: "As of July 2026, no launch date has been announced. The Mississippi Development Authority accepted the state\u2019s $104.8 million IRA allocation for HOMES and HEAR programs but has not opened a consumer application portal. MDA\u2019s Home Energy Rebates page describes a program to be delivered by local utilities but lists no launch date, rebate amounts, or application portal. Monitor the MDA Office of Energy page at mississippi.org for updates.",
         },
       },
     ],
@@ -104,9 +104,10 @@ export default function MississippiPage() {
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
             With federal tax credits expired and the state&apos;s IRA rebate programs still pending,
-            Mississippi homeowners rely on utility rebates for heat pump savings in 2026. TVA
-            EnergyRight offers up to <strong>$1,500</strong> in northeast Mississippi, and Entergy
-            Mississippi covers up to <strong>$1,100</strong> statewide. This guide covers all major
+            Mississippi homeowners rely on utility rebates for heat pump savings in 2026. Entergy
+            Mississippi covers up to <strong>$1,100</strong> in its service territory, and TVA
+            EnergyRight offers up to <strong>$800</strong> for air-source systems ($1,500 for
+            geothermal) in northeast Mississippi. This guide covers all major
             Mississippi heat pump incentives available in 2026, including Entergy Mississippi,
             TVA EnergyRight, Mississippi Power, and rural cooperative programs.
             Here&apos;s what&apos;s actually available.
@@ -134,7 +135,7 @@ export default function MississippiPage() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ TVA EnergyRight (northeast MS)</p>
-              <p className="text-sm text-green-900">Up to $1,500 for TVA Preferred air-source heat pumps through 26+ local distributors. Up to $900 instant rebate on heat pump water heaters at participating retailers.</p>
+              <p className="text-sm text-green-900">$500–$800 for air-source heat pumps ($1,500 for geothermal) through 26+ local distributors. Up to $1,300 instant rebate on heat pump water heaters through the Quality Contractor Network and participating retailers.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Entergy Mississippi (central/south MS)</p>
@@ -142,7 +143,7 @@ export default function MississippiPage() {
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Potential savings when HEAR launches</p>
-              <p className="text-sm text-green-900">$500–$1,500 (above 150% AMI, utility only) to $9,500+ (below 80% AMI with HEAR). Full electrification packages can reach ~$17,000+ total incentives for income-qualified households.</p>
+              <p className="text-sm text-green-900">$500–$1,100 (above 150% AMI, utility only) to $8,800+ (below 80% AMI with HEAR). Full electrification packages can reach ~$15,850 total incentives for income-qualified households.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">✗ Federal tax credits expired</p>
@@ -189,8 +190,10 @@ export default function MississippiPage() {
           <p className="text-gray-700 leading-relaxed mb-6">
             Mississippi was allocated <strong>$52,237,320</strong> in HEAR funding under the Inflation
             Reduction Act. The <strong>Mississippi Development Authority (MDA), Office of Energy</strong> is
-            the administering agency. As of June 2026, no consumer application portal has been opened
-            and no launch date has been announced.
+            the administering agency. As of {formattedDate}, no consumer application portal has been opened
+            and no launch date has been announced — MDA&apos;s Home Energy Rebates page describes a
+            program to be delivered by local utilities, with no launch date, rebate amounts, or
+            application portal listed.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
             When launched, HEAR rebates will be available to households at or below 150% of Area Median
@@ -393,19 +396,14 @@ export default function MississippiPage() {
               </thead>
               <tbody>
                 <tr className="border-b bg-green-50">
-                  <td className="p-3">TVA Preferred ASHP</td>
-                  <td className="p-3">Variable-speed, ≥15.2 SEER2, ≥8.1 HSPF2, 100% heating at 17°F</td>
-                  <td className="p-3 font-semibold">$1,500</td>
+                  <td className="p-3">Heat pump, 17+ SEER2</td>
+                  <td className="p-3">Air source or dual fuel</td>
+                  <td className="p-3 font-semibold">$800</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Geothermal heat pump</td>
                   <td className="p-3">Replaces existing electric heat</td>
                   <td className="p-3 font-semibold">$1,500</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">Heat pump, 17+ SEER2</td>
-                  <td className="p-3">Air source or dual fuel</td>
-                  <td className="p-3 font-semibold">$800</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Heat pump, 15–16.99 SEER2</td>
@@ -420,20 +418,21 @@ export default function MississippiPage() {
                 <tr className="border-b">
                   <td className="p-3">Heat pump water heater</td>
                   <td className="p-3">ENERGY STAR certified</td>
-                  <td className="p-3 font-semibold">Up to $900 instant</td>
+                  <td className="p-3 font-semibold">Up to $1,300 instant</td>
                 </tr>
               </tbody>
             </table>
           </div>
           <p className="text-gray-700 leading-relaxed mb-4">
-            The <strong>$1,500 TVA Preferred</strong> tier requires a variable-speed compressor (two-stage
-            excluded), 100% rated heating capacity at 17°F without backup heat, cooling capacity no more
-            than 125% of cooling load, a Manual J 8th Edition load calculation, and installation by a
-            Quality Contractor Network (QCN) member. All TVA rebates require QCN installation.
+            The top air-source tier pays <strong>$800</strong> for 17+ SEER2 equipment (ducted, dual fuel, or
+            ductless mini-split); geothermal systems earn the program&apos;s largest rebate at
+            <strong> $1,500</strong>. All TVA rebates require installation by a Quality Contractor
+            Network (QCN) member.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            The <strong>$900 HPWH instant rebate</strong> is applied at the point of sale at participating
-            Lowe&apos;s and Home Depot locations — this is the only true point-of-sale rebate in Mississippi.
+            The <strong>up to $1,300 HPWH instant rebate</strong> is applied at the point of sale — through
+            the Quality Contractor Network, in stores, and online at participating retail locations —
+            the only true point-of-sale rebate in Mississippi.
           </p>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-6">
@@ -558,12 +557,12 @@ export default function MississippiPage() {
               <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$1,850</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900 mb-2">Above 150% AMI — TVA Preferred HP + HPWH (TVA territory)</p>
+              <p className="font-semibold text-gray-900 mb-2">Above 150% AMI — TVA 17+ SEER2 HP + HPWH (TVA territory)</p>
               <ul className="text-sm text-gray-700 space-y-1">
-                <li>TVA Preferred ASHP: $1,500</li>
-                <li>TVA HPWH instant rebate: $900</li>
+                <li>TVA 17+ SEER2 ASHP: $800</li>
+                <li>TVA HPWH instant rebate: up to $1,300</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$2,400</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$2,100</p>
             </div>
           </div>
 
@@ -572,23 +571,23 @@ export default function MississippiPage() {
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900 mb-2">80–150% AMI — ducted HP + HPWH (TVA territory)</p>
               <ul className="text-sm text-gray-700 space-y-1">
-                <li>TVA Preferred ASHP: $1,500</li>
-                <li>TVA HPWH instant rebate: $900</li>
+                <li>TVA 17+ SEER2 ASHP: $800</li>
+                <li>TVA HPWH instant rebate: up to $1,300</li>
                 <li>HEAR HP (50% of cost, up to): $4,000</li>
                 <li>HEAR HPWH (50% of cost, up to): $875</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Projected maximum: ~$7,275</p>
+              <p className="font-semibold text-green-700 mt-2">Projected maximum: ~$6,975</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-2">Below 80% AMI — full electrification (TVA territory)</p>
               <ul className="text-sm text-green-900 space-y-1">
-                <li>TVA Preferred ASHP: $1,500</li>
-                <li>TVA HPWH instant rebate: $900</li>
+                <li>TVA 17+ SEER2 ASHP: $800</li>
+                <li>TVA HPWH instant rebate: up to $1,300</li>
                 <li>HEAR HP (100% of cost, up to): $8,000</li>
                 <li>HEAR HPWH (100% of cost, up to): $1,750</li>
                 <li>HEAR panel upgrade (up to): $4,000</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Projected maximum: ~$16,150</p>
+              <p className="font-semibold text-green-700 mt-2">Projected maximum: ~$15,850</p>
             </div>
           </div>
 
@@ -596,9 +595,9 @@ export default function MississippiPage() {
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
             <p className="text-sm text-gray-700">
               For a typical <strong>$12,000–$18,000</strong> ducted heat pump installation: with utility
-              rebates only, expect to pay <strong>$10,500–$16,500</strong> out of pocket. If HEAR launches
-              and you qualify at the 80% AMI tier, out-of-pocket costs could drop to{" "}
-              <strong>$2,000–$6,000</strong>. Mississippi Power territory customers receive the smallest
+              rebates only, expect to pay <strong>$10,900–$17,200</strong> out of pocket. If HEAR launches
+              and you qualify below 80% AMI, out-of-pocket costs on the heat pump could drop to{" "}
+              <strong>$3,200–$9,200</strong>. Mississippi Power territory customers receive the smallest
               utility rebates and will benefit the most when HEAR launches.
             </p>
           </div>
@@ -759,7 +758,7 @@ export default function MississippiPage() {
               </div>
               <div>
                 <p className="font-semibold text-gray-900">Get a Manual J load calculation</p>
-                <p className="text-sm text-gray-700">Required for TVA Preferred tier ($1,500). The QCN contractor will perform this as part of the installation process.</p>
+                <p className="text-sm text-gray-700">TVA&apos;s own guidance recommends requesting a Manual J load calculation — the QCN contractor performs this as part of the installation process to ensure proper sizing.</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -768,7 +767,7 @@ export default function MississippiPage() {
               </div>
               <div>
                 <p className="font-semibold text-gray-900">Contractor submits rebate</p>
-                <p className="text-sm text-gray-700">The QCN contractor submits documentation to your local power company. For HPWHs, purchase at a participating Lowe&apos;s or Home Depot for the instant $900 rebate at checkout.</p>
+                <p className="text-sm text-gray-700">The QCN contractor completes the upgrade and submits the rebate to TVA EnergyRight for processing — watch for an email from TVA EnergyRight with a redemption code, then claim your rebate online. HPWH instant rebates of up to $1,300 are applied at the point of sale through the QCN and at participating retail locations.</p>
               </div>
             </div>
           </div>

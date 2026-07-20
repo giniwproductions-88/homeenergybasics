@@ -2056,10 +2056,10 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "MS",
     stateName: "Mississippi",
     status: "limited",
-    lastVerified: "2026-06-11",
-    lastUpdated: "2026-06-11",
+    lastVerified: "2026-07-20",
+    lastUpdated: "2026-07-20",
     summary:
-      "No statewide rebate program. Entergy Mississippi offers up to $1,100 for heat pumps. TVA EnergyRight provides up to $1,500 in northeast MS. Mississippi Power offers $160\u2013$200/ton. Federal 25C/25D expired. IRA HEAR/HOMES ($104.8M) not yet launched.",
+      "No statewide rebate program. Entergy Mississippi offers up to $1,100 for heat pumps. TVA EnergyRight provides up to $800 air-source ($1,500 geothermal; up to $1,300 HPWH instant) in northeast MS. Mississippi Power offers $160\u2013$200/ton. Federal 25C/25D expired. IRA HEAR/HOMES ($104.8M) not yet launched.",
     sources: [
       {
         label: "Entergy Mississippi \u2014 Heating & Cooling Rebates",
@@ -2074,12 +2074,12 @@ export const incentives: Record<StateCode, StateIncentive> = {
         url: "https://energyright.com/residential/rebates/",
       },
       {
-        label: "TVA EnergyRight \u2014 Heat Pump Water Heaters",
-        url: "https://energyright.com/heat-pump-water-heater/",
+        label: "TVA EnergyRight \u2014 Water Heater Instant Rebates",
+        url: "https://energyright.com/residential-upgrades-water-heater/",
       },
       {
         label: "TVA EnergyRight \u2014 Home Uplift",
-        url: "https://energyright.com/residential/home-uplift/",
+        url: "https://energyright.com/residential/energy-upgrades-bill-assistance/home-uplift/",
       },
       {
         label: "Mississippi Power \u2014 Rebates & Incentives",
