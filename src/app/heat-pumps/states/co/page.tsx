@@ -87,7 +87,7 @@ export default function ColoradoPage() {
         name: "Do I need a cold-climate heat pump in Colorado?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Cold-climate heat pumps are strongly recommended for most of Colorado. The state spans ASHRAE climate zones 4B through 7, with most Front Range communities in zone 5B. Cold-climate models are also financially incentivized \u2014 Xcel\u2019s cold-climate rebate ($2,250/ton) is 2.5 times the standard rate ($900/ton). Altitude also affects performance, so proper sizing through Manual J calculations is essential.",
+          text: "Cold-climate heat pumps are strongly recommended for most of Colorado. The state spans ASHRAE climate zones 4B through 7, with most Front Range communities in zone 5B. Cold-climate models are also financially incentivized \u2014 at Xcel\u2019s with-bonus tier, cold-climate systems earn 2.5 times the standard-equipment rate ($2,250 vs. $900 per ton). Altitude also affects performance, so proper sizing through Manual J calculations is essential.",
         },
       },
     ],
@@ -170,7 +170,7 @@ export default function ColoradoPage() {
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">
-                ✓ Xcel Energy rebates (up to $2,250/ton)
+                ✓ Xcel Energy rebates (up to $2,250/ton cold-climate ASHP)
               </p>
               <p className="text-sm text-green-900">
                 $2,250 per heating ton for cold-climate heat pumps at the
@@ -534,6 +534,18 @@ export default function ColoradoPage() {
             says 50&ndash;100% of upgrade costs can be covered, pending
             eligibility.
           </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Xcel serves customers in eight states, and its rebate menus differ
+            in each &mdash; for the full program breakdown, financing, and
+            Minnesota comparison, see our complete{" "}
+            <Link
+              href="/heat-pumps/utilities/xcel-energy"
+              className="text-brand-600 hover:underline"
+            >
+              Xcel Energy heat pump rebate guide
+            </Link>
+            .
+          </p>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-blue-800 mb-1">
@@ -833,9 +845,10 @@ export default function ColoradoPage() {
             Colorado spans ASHRAE climate zones 4B through 7, with most Front
             Range communities in zone 5B (cool-dry) and mountain areas in 6B or
             7 (cold to very cold). Cold-climate heat pumps are strongly
-            recommended statewide and financially incentivized &mdash;
-            Xcel&apos;s cold-climate rebate (<strong>$2,250/ton</strong>) is 2.5
-            times the standard ASHP rebate (<strong>$900/ton</strong>).
+            recommended statewide and financially incentivized &mdash; at
+            Xcel&apos;s with-bonus tier, cold-climate systems earn 2.5 times
+            the standard-equipment rate (<strong>$2,250</strong> vs.{" "}
+            <strong>$900</strong> per ton).
           </p>
 
           <div className="overflow-x-auto mb-6">
