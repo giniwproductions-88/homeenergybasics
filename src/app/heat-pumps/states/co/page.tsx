@@ -8,14 +8,14 @@ export const metadata: Metadata = {
   title:
     "Colorado Heat Pump Rebates 2026: Up to $8,000 HEAR + Xcel Energy + $1,000 State Credit | Home Energy Basics",
   description:
-    "Colorado HEAR rebates cover up to $8,000. Xcel Energy offers up to $2,250/ton. State tax credit adds $1,000. Federal credits ended. Here's every Colorado heat pump incentive in 2026.",
+    "Colorado HEAR covers up to $8,000. Xcel: up to $2,250/ton for cold-climate systems. State tax credit adds $1,000. Every Colorado heat pump incentive in 2026.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/co",
   },
   openGraph: {
     title: "Colorado Heat Pump Rebates 2026",
     description:
-      "HEAR rebates up to $8,000, Xcel Energy up to $2,250/ton, and $1,000 state tax credit \u2014 the complete guide to Colorado heat pump incentives after federal credits expired.",
+      "HEAR rebates up to $8,000, Xcel Energy up to $2,250/ton for cold-climate systems, and $1,000 state tax credit \u2014 the complete guide to Colorado heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/co",
     type: "article",
     publishedTime: "2026-03-22T12:31:12-05:00",
@@ -47,7 +47,7 @@ export default function ColoradoPage() {
         name: "What heat pump rebates are available in Colorado in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Colorado has three main incentive layers in 2026. Two are open to everyone with no income limit: Xcel Energy utility rebates (up to $2,250 per ton for cold-climate systems replacing gas heat) and the Colorado state heat pump tax credit ($1,000 for air-source). The third is HEAR (up to $8,000 for income-qualified households at or below 150% AMI) \u2014 but HEAR single-family funding for the Front Range (Region 1) closed in late April 2026, and the Colorado Energy Office says the rest of the state (Region 2) is accepting applications only until August 1, 2026, unless funding is reserved sooner. The federal 25C tax credit ended December 31, 2025. DRCOG\u2019s Power Ahead Colorado ($1,500, Denver metro) reportedly began accepting applications June 29, 2026 per contractor communications, though DRCOG\u2019s own site had not yet published application details as of mid-July \u2014 confirm at poweraheadcolorado.org before counting on it.",
+          text: "Colorado has four main incentive layers in 2026. Two are open to everyone with no income limit: Xcel Energy utility rebates (up to $2,250 per ton for cold-climate systems replacing gas heat) and the Colorado state heat pump tax credit ($1,000 for air-source). The third is HEAR (up to $8,000 for income-qualified households at or below 150% AMI) \u2014 but HEAR single-family funding for the Front Range (Region 1) closed in late April 2026, and the Colorado Energy Office says the rest of the state (Region 2) continues to accept applications until remaining funding is fully reserved. The fourth, DRCOG\u2019s Power Ahead Colorado ($1,500 per cold-climate heat pump, Denver metro, no income limit), is live \u2014 DRCOG\u2019s own site now publishes full application details, and projects must be submitted for preapproval before work begins. The federal 25C tax credit ended December 31, 2025.",
         },
       },
       {
@@ -63,7 +63,7 @@ export default function ColoradoPage() {
         name: "What is the Xcel Energy heat pump rebate in Colorado?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Xcel Energy offers up to $2,250 per ton for cold-climate air-source heat pumps that replace gas heating or include integrated backup heating controls. Standard air-source heat pumps qualify for $900 per ton. Ground-source systems receive $1,000 per ton. Heat pump water heaters receive $2,250. Xcel also offers a Whole Home Efficiency bonus (25% extra when completing 3+ measures) and a $600 insulation/air sealing bonus. Note: effective November 16, 2025, Xcel\u2019s bonus rebates are no longer available to homes that already heat with electricity (e.g., baseboard) \u2014 those homes still qualify for standard rebates. Installations must be invoiced by December 31, 2026; rebate applications are accepted through September 30, 2027.",
+          text: "Xcel Energy\u2019s current Colorado rebate sheet (effective November 16, 2025) pays $2,250 per heating ton for cold-climate air-source heat pumps and $900 per cooling ton for standard ASHPs at the with-bonus rate available to customers with a fuel-burning system (e.g., replacing gas heat); the standard rates are $750 and $300 per ton. Ground-source systems earn $3,300 per heating ton with the bonus ($1,100 standard), and heat pump water heaters $2,250 ($750 standard). Xcel also offers a Whole Home Efficiency bonus (25% on standard rebates when installing 3+ measures) and a $600 insulation/air sealing bonus. Note: effective November 16, 2025, bonus rebates are no longer available to homes that already heat with electricity (e.g., baseboard) \u2014 those homes still qualify for standard rebates. Installations must be invoiced by December 31, 2026; rebate applications are accepted through September 30, 2027.",
         },
       },
       {
@@ -118,13 +118,15 @@ export default function ColoradoPage() {
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
             Colorado still has a strong heat pump incentive stack in 2026, even
             after the federal 25C tax credit ended December 31, 2025. Xcel
-            Energy customers can earn up to <strong>$2,250 per ton</strong> in
-            utility rebates and the state&apos;s contractor-claimed heat pump
+            Energy customers replacing gas heat can earn up to{" "}
+            <strong>$2,250 per heating ton</strong> for cold-climate systems
+            (ground-source earns up to $3,300 per ton) and the state&apos;s
+            contractor-claimed heat pump
             tax credit remains active at <strong>$1,000</strong> for air-source
             systems &mdash; both with no income limit. Income-qualified
             households outside the Front Range can still access HEAR rebates of
-            up to <strong>$8,000</strong>, but only until{" "}
-            <strong>August 1, 2026</strong>, unless funding is reserved sooner;
+            up to <strong>$8,000</strong> until remaining Region 2 funding is
+            fully reserved;
             Front Range (Region 1) HEAR applications closed in late April.
             This guide covers all major Colorado heat pump incentives available
             in 2026, including HEAR, Xcel Energy rebates, the state tax credit,
@@ -162,8 +164,8 @@ export default function ColoradoPage() {
                 Income-qualified households at or below 150% of Area Median
                 Income (AMI). Point-of-sale discount through CEO-registered
                 contractors. Total household cap of $14,000. Region 2 (outside
-                the Front Range) only, and only until August 1, 2026, unless
-                funding is reserved sooner.
+                the Front Range) only, until remaining funding is fully
+                reserved.
               </p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
@@ -171,9 +173,12 @@ export default function ColoradoPage() {
                 ✓ Xcel Energy rebates (up to $2,250/ton)
               </p>
               <p className="text-sm text-green-900">
-                For cold-climate heat pumps replacing gas heat. Standard ASHPs
-                qualify at $900/ton. No income limits. Additional Whole Home
-                Efficiency bonus available.
+                $2,250 per heating ton for cold-climate heat pumps at the
+                with-bonus rate (customers with a fuel-burning system, e.g.,
+                gas replacement); $750/ton standard. Ground-source earns up to
+                $3,300/ton with the bonus. No income limits, and
+                income-qualified customers can have up to the full cost
+                covered.
               </p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
@@ -197,19 +202,19 @@ export default function ColoradoPage() {
             </div>
             <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 md:col-span-2">
               <p className="font-semibold text-amber-800 mb-1">
-                ⚠ Front Range HEAR is closed; Region 2 HEAR ends August 1, 2026
+                ⚠ Front Range HEAR is closed; Region 2 is open until funds run out
               </p>
               <p className="text-sm text-amber-900">
                 Income-qualified HEAR funding for the Front Range (Region 1)
                 was fully reserved in late April 2026 &mdash; new single-family
                 applications there are closed. The Colorado Energy Office says
-                the rest of the state (Region 2) is accepting applications
-                until August 1, 2026, unless funding is reserved sooner.
-                DRCOG&apos;s Power Ahead Colorado ($1,500 per cold-climate heat
-                pump, Denver metro, no income limit) reportedly began accepting
-                applications June 29, 2026, and stacks with Xcel and the state
-                credit, but not with HEAR &mdash; confirm current status at
-                poweraheadcolorado.org.
+                the rest of the state (Region 2) continues to accept
+                applications until remaining funding is fully reserved &mdash;
+                roughly $4.6 million was left at the dashboard&apos;s last
+                update. DRCOG&apos;s Power Ahead Colorado ($1,500 per
+                cold-climate heat pump, Denver metro, no income limit) is now
+                live per DRCOG&apos;s own site and stacks with Xcel and the
+                state credit, but not with HEAR.
               </p>
             </div>
           </div>
@@ -325,17 +330,17 @@ export default function ColoradoPage() {
               household income exceeds that threshold, HEAR does not apply to
               you. Your primary incentives are Xcel Energy rebates, the state
               tax credit, and &mdash; in the Denver metro &mdash; the DRCOG
-              Power Ahead rebate (reported open as of June 29, 2026; confirm at
-              poweraheadcolorado.org). Don&apos;t delay a project waiting for
+              Power Ahead rebate (now live per DRCOG&apos;s site).
+              Don&apos;t delay a project waiting for
               HEAR if you don&apos;t qualify.
             </p>
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-4">
             HEAR is available for upgrades in a single-family home, apartment,
-            condo, or manufactured/mobile home, with rebates for small
-            multifamily buildings expected in 2026 (per the CEO dashboard, not
-            yet available as of its latest update). The CEO says the rebates
+            condo, or manufactured/mobile home; the CEO dashboard says
+            small-multifamily rebates &quot;will not be available until later
+            this year,&quot; with $13.7 million set aside for them. The CEO says the rebates
             run for an anticipated four-year period, through 2029 or until
             funds are spent, whichever occurs first &mdash; but demand has far
             outpaced that schedule. The Colorado Energy Office split
@@ -344,10 +349,11 @@ export default function ColoradoPage() {
             other counties) stopped accepting new single-family applications in
             late April 2026</strong> after funds were fully reserved (proposals
             submitted after April 27 are denied).
-            <strong> Region 2 (all other counties) is accepting applications
-            until August 1, 2026, unless funding is reserved sooner</strong>{" "}
+            <strong> Region 2 (all other counties) continues to accept
+            applications until remaining funding is fully reserved</strong>{" "}
             &mdash; the CEO dashboard showed roughly $4.6 million remaining for
-            Region 2 as of its May 15 update. Check the{" "}
+            Region 2 as of its May 15 update, still the latest posted as of{" "}
+            {formattedDate}. Check the{" "}
             <a
               href="https://energyoffice.colorado.gov/hear-dashboard"
               target="_blank"
@@ -367,8 +373,8 @@ export default function ColoradoPage() {
               HER (also called HOMES) targets whole-home efficiency
               improvements for manufactured/mobile homes and large multifamily
               buildings 50,000 square feet or larger. The Colorado Energy
-              Office says these rebates will be available in 2026; as of our
-              mid-July check, CEO had not announced that HER applications were
+              Office says these rebates will be available in 2026; as of{" "}
+              {formattedDate}, CEO had not announced that HER applications were
               open. It does not apply to site-built single-family homes. HEAR
               and HER cannot be combined on the same upgrade, but a household
               can use both programs for different measures.
@@ -447,8 +453,9 @@ export default function ColoradoPage() {
             Xcel Energy is Colorado&apos;s largest electric utility and offers
             the state&apos;s most substantial utility-level heat pump rebates.
             Xcel issued 10,640 heat pump rebates worth{" "}
-            <strong>$57 million</strong> in 2025 and maintained elevated rebate
-            levels into 2026.
+            <strong>$57 million</strong> in 2025, and its current
+            2025&ndash;2026 rebate sheet (effective November 16, 2025) carries
+            elevated rates through 2026.
           </p>
 
           <div className="overflow-x-auto mb-6">
@@ -465,49 +472,67 @@ export default function ColoradoPage() {
               <tbody>
                 <tr className="border-b bg-green-50">
                   <td className="p-3">
-                    Cold-climate ASHP (gas replacement or integrated controls)
+                    Cold-climate ASHP (ducted, non-ducted, or mixed)
                   </td>
-                  <td className="p-3 font-semibold">$2,250/ton</td>
+                  <td className="p-3 font-semibold">
+                    $2,250/heating ton (with bonus) &middot; $750 standard
+                  </td>
                   <td className="p-3">
-                    Must replace gas heating or include integrated backup heating
-                    controls
+                    COP &ge;1.75 at 5&deg;F, 70% of rated heating capacity
+                    retained at 5&deg;F; bonus requires a fuel-burning system
+                    (e.g., gas replacement)
                   </td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Standard ASHP</td>
-                  <td className="p-3 font-semibold">$900/ton</td>
-                  <td className="p-3">ENERGY STAR certified</td>
+                  <td className="p-3 font-semibold">
+                    $900/cooling ton (with bonus) &middot; $300 standard
+                  </td>
+                  <td className="p-3">15.2 SEER2, 11.7 EER2, 7.8 HSPF2</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Ground-source heat pump</td>
-                  <td className="p-3 font-semibold">$1,000/ton</td>
-                  <td className="p-3">ENERGY STAR certified</td>
+                  <td className="p-3 font-semibold">
+                    $3,300/heating ton (with bonus) &middot; $1,100 standard
+                  </td>
+                  <td className="p-3">16 EER2, 3.3 COP</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Heat pump water heater</td>
-                  <td className="p-3 font-semibold">$2,250</td>
-                  <td className="p-3">
-                    ENERGY STAR certified, replaces electric resistance
+                  <td className="p-3 font-semibold">
+                    $2,250 (with bonus) &middot; $750 standard
                   </td>
+                  <td className="p-3">ENERGY STAR rated</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            Xcel also offers a <strong>Whole Home Efficiency bonus</strong>{" "}
-            (25% extra on the standard rebate when completing 3+ measures) and a{" "}
-            <strong>$600 insulation/air sealing bonus</strong> that can further
-            reduce project costs. Two program rules from Xcel are worth
+            The with-bonus rates are available to customers with a fuel-burning
+            heating system; rebates are per heating ton at 5&deg;F for
+            cold-climate and ground-source systems, and per cooling ton at
+            95&deg;F for standard ASHPs. Xcel also offers a{" "}
+            <strong>Whole Home Efficiency bonus</strong> (25% on all standard
+            rebates when installing three or more measures within two years of
+            enrolling) and a <strong>$600 insulation/air sealing bonus</strong>{" "}
+            for customers who complete qualifying insulation and air sealing
+            before installing a rebate-qualifying heat pump, within two years of
+            each other. Two program rules from Xcel are worth
             knowing: effective November 16, 2025, bonus rebates are no longer
             available to homes with existing electric heating systems (e.g.,
             baseboard heat), though those homes still qualify for standard
             rebates; and installations must be invoiced by{" "}
             <strong>December 31, 2026</strong>, with rebate applications
-            accepted through <strong>September 30, 2027</strong>. For
-            mini-splits, contractor requirements may differ from ducted and
-            ground-source programs &mdash; confirm your exact rebate tier with
-            Xcel before signing a proposal.
+            accepted through <strong>September 30, 2027</strong>. Non-ducted
+            mini-splits can be self-installed and still qualify &mdash; Xcel
+            offers a DIY rebate path &mdash; while ducted and ground-source
+            installs go through Xcel&apos;s Trade Partner Network.
+            Income-qualified customers may be eligible for additional rebates
+            and services covering up to the full cost of a heat pump and its
+            installation &mdash; Xcel&apos;s Income-Qualified Home Energy Squad
+            says 50&ndash;100% of upgrade costs can be covered, pending
+            eligibility.
           </p>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-6">
@@ -593,14 +618,15 @@ export default function ColoradoPage() {
             The rebate is <strong>$1,500</strong> per ENERGY STAR cold-climate
             certified heat pump &mdash; ducted or ductless. No income limits.
             DRCOG plans to issue 40,000+ rebates over the five-year program.
-            Per contractor communications, applications opened{" "}
-            <strong>June 29, 2026</strong>, with eligibility based on the
-            project completion date (installs completed on or after June 29
-            qualify). As of our mid-July check, DRCOG&apos;s own site still
-            described additional incentives as &quot;planned for later in
-            2026&quot; and had not published rebate application details &mdash;
-            confirm current status at poweraheadcolorado.org before counting
-            the $1,500 in your budget.
+            DRCOG&apos;s site now publishes full application details: choose a
+            Power Ahead&ndash;approved contractor, and the contractor must
+            submit the project for <strong>preapproval before work
+            begins</strong>. Retrofits only &mdash; new construction is
+            ineligible &mdash; in DRCOG-participating municipalities and
+            counties. The initial phase covers cold-climate air-source heat
+            pumps; DRCOG says future phases will add other heat pump types and
+            heat pump water heaters. The rebate program is implemented by
+            Vermont Energy Investment Corporation.
           </p>
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-4">
@@ -628,7 +654,7 @@ export default function ColoradoPage() {
             >
               poweraheadcolorado.org
             </a>{" "}
-            for launch details.
+            for current program details.
           </p>
         </div>
       </section>
@@ -649,10 +675,10 @@ export default function ColoradoPage() {
             only available at or below 150% AMI, and total incentives cannot
             exceed project cost. Note that HEAR single-family funding for the
             Front Range (Region 1) was fully reserved in late April 2026 and is
-            closed to new applications there; Region 2 (all other counties) is
-            accepting applications only until August 1, 2026, unless funding is
-            reserved sooner &mdash; so the HEAR scenarios below apply to Region
-            2 applicants who get a reservation in time, and to Front Range
+            closed to new applications there; Region 2 (all other counties) continues to
+            accept applications until remaining funding is fully reserved
+            &mdash; so the HEAR scenarios below apply to Region
+            2 applicants who secure a reservation, and to Front Range
             projects whose proposals were already reserved.
           </p>
 
@@ -666,8 +692,8 @@ export default function ColoradoPage() {
                 <li>Xcel Energy rebate ($2,250 &times; 3 tons): $6,750</li>
                 <li>Colorado state heat pump tax credit: $1,000</li>
                 <li>
-                  Power Ahead (reported open June 29, 2026 &mdash; confirm;
-                  Denver metro only): $1,500
+                  Power Ahead Colorado (Denver metro only, preapproval before
+                  work begins): $1,500
                 </li>
               </ul>
               <p className="font-semibold text-green-700 mt-2">
@@ -786,11 +812,11 @@ export default function ColoradoPage() {
             </p>
             <p className="text-sm text-green-900">
               Xcel Energy customers replacing gas heat (highest utility
-              rebates), Region 2 households below 150% AMI who apply before the
-              August 1, 2026 HEAR deadline, homeowners in Mountain Energy
+              rebates), Region 2 households below 150% AMI who secure a HEAR
+              reservation before remaining funds run out, homeowners in Mountain Energy
               Project communities (dramatically enhanced Xcel rebates), Denver
-              metro residents (Power Ahead $1,500, reported open June 29,
-              2026), and anyone planning multiple upgrades (Whole Home
+              metro residents (Power Ahead $1,500 &mdash; preapproval before
+              work begins), and anyone planning multiple upgrades (Whole Home
               Efficiency bonus).
             </p>
           </div>
@@ -913,8 +939,8 @@ export default function ColoradoPage() {
                 <p className="text-sm text-gray-700">
                   Use the Colorado Energy Office portal or call 866-336-0016.
                   HEAR is only available at or below 150% AMI, and for new
-                  applications, only in Region 2 (outside the Front Range)
-                  until August 1, 2026. CEO says applications are taking longer
+                  applications, only in Region 2 (outside the Front Range),
+                  until remaining funding is fully reserved. CEO says applications are taking longer
                   to review due to high demand, so start immediately if you
                   intend to apply.
                 </p>
@@ -945,9 +971,10 @@ export default function ColoradoPage() {
                   Verify Xcel rebate tier with your contractor
                 </p>
                 <p className="text-sm text-gray-700">
-                  Confirm whether your installation qualifies for the
-                  $2,250/ton cold-climate rate or the $900/ton standard rate.
-                  If you&apos;re not an Xcel customer, check your utility
+                  Confirm which equipment tier applies (cold-climate vs.
+                  standard) and whether you qualify for the with-bonus rate
+                  (fuel-burning system, e.g., gas replacement) or the standard
+                  rate. If you&apos;re not an Xcel customer, check your utility
                   directly.
                 </p>
               </div>
@@ -997,16 +1024,19 @@ export default function ColoradoPage() {
           <div className="space-y-4">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">
-                HEAR wind-down: August 1, 2026
+                HEAR wind-down: Region 2 funds
               </p>
               <p className="text-sm text-gray-600 mt-1">
                 The Colorado Energy Office planned an anticipated four-year
                 rebate period, through 2029 or until funds are spent &mdash;
                 but demand has far outrun that schedule. Region 1 (the Front
                 Range) was fully reserved and stopped taking new single-family
-                applications in late April 2026, and CEO says Region 2 (all
-                other counties) is accepting applications only until August 1,
-                2026, unless funding is reserved sooner. Check the CEO HEAR
+                applications in late April 2026. CEO had set an August 1, 2026
+                application cutoff for Region 2, then replaced it: as of{" "}
+                {formattedDate} its page says Region 2 &quot;is accepting
+                applications until remaining available funding is fully
+                reserved.&quot; The dashboard showed roughly $4.6 million left
+                at its last posted update. Check the CEO HEAR
                 dashboard for current balances before starting paperwork.
               </p>
             </div>
@@ -1017,12 +1047,13 @@ export default function ColoradoPage() {
               <p className="text-sm text-gray-600 mt-1">
                 $1,500 per cold-climate heat pump for Denver metro residents.
                 No income limits. Does not stack with HEAR but stacks with Xcel
-                and the state credit. Contractor communications report
-                applications opened June 29, 2026 (installs completed on or
-                after that date qualify), but DRCOG&apos;s own site had not
-                published application details as of mid-July &mdash; a key
-                option for above-150% AMI households in the Denver area once
-                confirmed at poweraheadcolorado.org.
+                and the state credit. Now live: DRCOG&apos;s site publishes
+                full application details &mdash; preapproval before work
+                begins, approved contractor required, cold-climate air-source
+                systems only in the initial phase. A key option for
+                above-150% AMI households in the Denver area. DRCOG says future
+                phases will add other heat pump types and heat pump water
+                heaters.
               </p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
@@ -1031,12 +1062,27 @@ export default function ColoradoPage() {
               </p>
               <p className="text-sm text-gray-600 mt-1">
                 HEAR already covers single-family homes, apartments, condos,
-                and manufactured/mobile homes, with small multifamily rebates
-                expected in 2026 (not yet available per the CEO dashboard).
+                and manufactured/mobile homes; the CEO dashboard says
+                small-multifamily rebates &quot;will not be available until
+                later this year,&quot; with $13.7 million reserved.
                 The separate Home Efficiency Rebates (HER) program for
                 manufactured/mobile homes and large multifamily buildings is
-                slated for 2026 but had not opened as of our mid-July check.
+                slated for 2026 but had not opened as of {formattedDate}.
                 Check the CEO website for current eligibility.
+              </p>
+            </div>
+            <div className="bg-white border border-gray-200 rounded-lg p-5">
+              <p className="font-semibold text-gray-900">
+                Xcel rebate funding cycle
+              </p>
+              <p className="text-sm text-gray-600 mt-1">
+                Xcel&apos;s rebate sheet notes that funding is limited,
+                first-come first-served, and that rebates are available
+                &quot;until the funding approved by the Public Utility
+                Commission for the rebate program is expended, or the rebate
+                program is discontinued.&quot; Amounts and terms can change at
+                any time &mdash; confirm current rates with Xcel or your
+                contractor before purchasing.
               </p>
             </div>
           </div>

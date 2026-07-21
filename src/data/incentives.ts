@@ -478,10 +478,10 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "CO",
     stateName: "Colorado",
     status: "limited",
-    lastVerified: "2026-07-13",
-    lastUpdated: "2026-07-13",
+    lastVerified: "2026-07-20",
+    lastUpdated: "2026-07-20",
     summary:
-      "Xcel Energy offers $2,250/ton for cold-climate heat pumps (no income limit), stackable with Colorado's $1,000 state tax credit. Income-qualified HEAR rebates up to $8,000 are closed for the Front Range (Region 1) and accepting applications in the rest of the state (Region 2) only until August 1, 2026, unless funding is reserved sooner. DRCOG's $1,500 Power Ahead rebate (Denver metro) reportedly opened June 29, 2026 — confirm at poweraheadcolorado.org. Federal 25C/25D credits expired December 31, 2025.",
+      "Xcel Energy pays $2,250/heating ton for cold-climate heat pumps at its with-bonus rate for customers replacing gas heat ($750 standard), stackable with Colorado's $1,000 state tax credit. Income-qualified HEAR rebates up to $8,000 are closed for the Front Range (Region 1); Region 2 accepts applications until remaining funding is fully reserved. DRCOG's $1,500 Power Ahead rebate (Denver metro, no income limit) is live — preapproval required before work begins. Federal 25C/25D credits expired December 31, 2025.",
     sources: [
       {
         label: "Colorado HEAR program — Colorado Energy Office",
@@ -500,8 +500,12 @@ export const incentives: Record<StateCode, StateIncentive> = {
         url: "https://energyoffice.colorado.gov/hptc",
       },
       {
-        label: "Power Ahead Colorado (DRCOG)",
-        url: "https://poweraheadcolorado.org/",
+        label: "Power Ahead Colorado (DRCOG) — Rebate Program Overview",
+        url: "https://poweraheadcolorado.org/resources/rebate-program-overview",
+      },
+      {
+        label: "Xcel Energy — Income-Qualified Home Energy Squad",
+        url: "https://xcelenergycores.clearesult.com/income-qualified",
       },
       {
         label: "Xcel Energy heat pumps — residential",
