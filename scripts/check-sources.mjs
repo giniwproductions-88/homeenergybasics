@@ -14,6 +14,7 @@
  *   node scripts/check-sources.mjs check --only NY,MA    # limit to specific states
  *   node scripts/check-sources.mjs accept NY MA          # after verifying a flagged state, fold its fresh snapshot into baseline
  *   node scripts/check-sources.mjs accept all
+ *   node scripts/check-sources.mjs prune                 # drop baseline entries for URLs removed from the data files
  *   node scripts/check-sources.mjs selftest              # offline test of the diff engine
  *
  * WORKFLOW (playbook Phase 4): baseline once -> check every ~2 days -> HIGH items get
@@ -480,6 +481,30 @@ async function main() {
     process.exit(rows.some((r) => r.level === "HIGH" || r.level === "FETCH") ? 1 : 0);
   }
 
+  if (mode === "prune") {
+    // Remove baseline entries whose URL is no longer present in
+    // incentives.ts/utilities.ts (the REMOVED rows in the report). accept
+    // never deletes, so deliberate source swaps leave orphans behind —
+    // this is the cleanup. HUMAN VERIFY URLs are excluded from the keep
+    // set on purpose: they are never baselined, so any baseline entry on
+    // those hosts is itself an orphan. Ignores --only by design: prune is
+    // all-or-nothing so the keep set always reflects the full data files.
+    const baseline = loadJson(BASELINE_F, null);
+    if (!baseline) { console.error("No baseline to prune."); process.exit(2); }
+    const keep = new Set([...allUrls.keys()].filter((u) => !isHumanVerify(u)));
+    const orphans = Object.keys(baseline.entries).filter((u) => !keep.has(u));
+    if (!orphans.length) { console.log("No orphaned baseline entries. Nothing to prune."); return; }
+    for (const u of orphans) {
+      console.log(`  pruned [${(baseline.entries[u].states || []).join(",")}] ${baseline.entries[u].label || ""} — ${u}`);
+      delete baseline.entries[u];
+    }
+    baseline.generatedAt = new Date().toISOString();
+    writeFileSync(BASELINE_F, JSON.stringify(baseline, null, 1));
+    console.log(`Pruned ${orphans.length} orphaned entr${orphans.length === 1 ? "y" : "ies"} from baseline.`);
+    console.log(`Commit it: git add scripts/source-baseline.json`);
+    return;
+  }
+
   if (mode === "accept") {
     const baseline = loadJson(BASELINE_F, null);
     const latest = loadJson(LATEST_F, null);
@@ -499,7 +524,7 @@ async function main() {
     return;
   }
 
-  console.error(`Unknown mode: ${mode}. Modes: parse | baseline | check | accept | selftest`);
+  console.error(`Unknown mode: ${mode}. Modes: parse | baseline | check | accept | prune | selftest`);
   process.exit(2);
 }
 

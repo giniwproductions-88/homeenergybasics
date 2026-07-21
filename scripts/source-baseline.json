@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-21T20:23:00.000Z",
+ "generatedAt": "2026-07-21T20:31:22.889Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -9,8 +9,8 @@
     "AL"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:27.046Z",
-   "length": 172985,
+   "fetchedAt": "2026-07-21T20:21:25.584Z",
+   "length": 172984,
    "kind": "html",
    "textHash": "682ab6f3a397faed",
    "dollars": [
@@ -34,14 +34,21 @@
     "TVA-ENERGYRIGHT"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:26.539Z",
-   "length": 227866,
+   "fetchedAt": "2026-07-21T20:21:25.715Z",
+   "length": 233219,
    "kind": "html",
-   "textHash": "ff45e3cc3ae52fe8",
+   "textHash": "3b463a2c47769688",
    "dollars": [
     "$0",
     "$0.05",
+    "$20",
+    "$50",
+    "$65",
+    "$100",
+    "$250",
+    "$300",
     "$400",
+    "$500",
     "$800",
     "$1,500"
    ],
@@ -55,7 +62,7 @@
     "AL"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:26.239Z",
+   "fetchedAt": "2026-07-21T20:21:25.614Z",
    "length": 68044,
    "kind": "html",
    "textHash": "45be0453d5028cd5",
@@ -70,7 +77,7 @@
     "AL"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:26.251Z",
+   "fetchedAt": "2026-07-21T20:21:25.604Z",
    "length": 85826,
    "kind": "html",
    "textHash": "75af553e7eace184",
@@ -85,7 +92,7 @@
     "AL"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:26.681Z",
+   "fetchedAt": "2026-07-21T20:21:25.944Z",
    "length": 73174,
    "kind": "html",
    "textHash": "13d858826b2ec983",
@@ -104,8 +111,8 @@
     "AL"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:27.508Z",
-   "length": 51068,
+   "fetchedAt": "2026-07-21T20:21:27.107Z",
+   "length": 51069,
    "kind": "html",
    "textHash": "8d8f4a4d0fad7143",
    "dollars": [
@@ -125,8 +132,8 @@
     "AL"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:26.962Z",
-   "length": 462086,
+   "fetchedAt": "2026-07-21T20:21:26.657Z",
+   "length": 494611,
    "kind": "html",
    "textHash": "78036abb629d0e5b",
    "dollars": [
@@ -163,10 +170,10 @@
     "AR"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:26.774Z",
-   "length": 102975,
+   "fetchedAt": "2026-07-21T20:21:26.022Z",
+   "length": 102732,
    "kind": "html",
-   "textHash": "d764cdb7c3a0ce47",
+   "textHash": "f87b5af60e3ef0b7",
    "dollars": [],
    "keywords": {
     "no longer": 1
@@ -348,41 +355,40 @@
     "SMUD"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:28.457Z",
-   "length": 75979,
+   "fetchedAt": "2026-07-21T20:21:28.206Z",
+   "length": 75980,
    "kind": "html",
-   "textHash": "1888c554f07387e0",
+   "textHash": "a8180c99f5d8e5d9",
    "dollars": [
     "$1,000",
     "$2,000",
     "$3,000",
-    "$5,000",
-    "$6,500",
+    "$3,500",
     "$7,250",
-    "$8,720",
-    "$9,100",
-    "$9,803",
+    "$9,000",
+    "$9,550",
     "$10,000",
-    "$10,720",
     "$11,600",
-    "$14,843",
-    "$15,142",
-    "$17,440",
-    "$17,526",
-    "$17,533",
-    "$17,707",
-    "$18,846",
-    "$18,897",
-    "$19,139",
-    "$19,351",
-    "$20,500",
+    "$14,842",
+    "$15,870",
+    "$15,980",
+    "$17,006",
+    "$17,147",
+    "$17,336",
+    "$18,646",
+    "$18,804",
+    "$18,975",
+    "$19,218",
+    "$19,584",
+    "$19,703",
+    "$21,296",
     "$23,540",
-    "$28,800",
-    "$32,000",
-    "$32,869",
-    "$39,111",
+    "$26,500",
+    "$39,045",
+    "$40,050",
+    "$44,763",
     "$49,051",
-    "$49,211",
+    "$51,814",
     "$65,620"
    ],
    "keywords": {}
@@ -632,29 +638,6 @@
    ],
    "keywords": {}
   },
-  "https://www.efficiencymaine.com/at-home/residential-heat-pump-rebates/": {
-   "url": "https://www.efficiencymaine.com/at-home/residential-heat-pump-rebates/",
-   "finalUrl": "https://www.efficiencymaine.com/at-home/residential-heat-pump-rebates/",
-   "label": "Efficiency Maine — Residential Heat Pump Rebates",
-   "states": [
-    "ME"
-   ],
-   "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:25.393Z",
-   "length": 86458,
-   "kind": "html",
-   "textHash": "8efe39edc29ed3d2",
-   "dollars": [
-    "$1,000",
-    "$2,000",
-    "$3,000",
-    "$6,000",
-    "$9,000",
-    "$70,000",
-    "$100,000"
-   ],
-   "keywords": {}
-  },
   "https://www.efficiencymaine.com/whole-home-heat-pump-rebates/": {
    "url": "https://www.efficiencymaine.com/whole-home-heat-pump-rebates/",
    "finalUrl": "https://www.efficiencymaine.com/whole-home-heat-pump-rebates/",
@@ -678,100 +661,6 @@
     "$12,900"
    ],
    "keywords": {}
-  },
-  "https://www.efficiencymaine.com/at-home/heat-pump-water-heaters/": {
-   "url": "https://www.efficiencymaine.com/at-home/heat-pump-water-heaters/",
-   "finalUrl": "https://www.efficiencymaine.com/at-home/water-heating-solutions/heat-pump-water-heaters/",
-   "label": "Efficiency Maine — Heat Pump Water Heaters",
-   "states": [
-    "ME"
-   ],
-   "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:26.057Z",
-   "length": 85455,
-   "kind": "html",
-   "textHash": "ac2f77c99456649d",
-   "dollars": [
-    "$223",
-    "$320",
-    "$419",
-    "$500",
-    "$692",
-    "$739",
-    "$915",
-    "$1,150",
-    "$1,889",
-    "$5,000"
-   ],
-   "keywords": {}
-  },
-  "https://www.efficiencymaine.com/at-home/energy-loans/": {
-   "url": "https://www.efficiencymaine.com/at-home/energy-loans/",
-   "finalUrl": "https://www.efficiencymaine.com/home-energy-loans/",
-   "label": "Efficiency Maine — Home Energy Loans",
-   "states": [
-    "ME"
-   ],
-   "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:25.987Z",
-   "length": 90219,
-   "kind": "html",
-   "textHash": "0a6b91c8fb827866",
-   "dollars": [
-    "$0",
-    "$10,",
-    "$25",
-    "$500",
-    "$7,500",
-    "$25,000"
-   ],
-   "keywords": {}
-  },
-  "https://www.masssave.com/residential/rebates-and-incentives/heating-and-cooling": {
-   "url": "https://www.masssave.com/residential/rebates-and-incentives/heating-and-cooling",
-   "finalUrl": "https://www.masssave.com/residential/rebates-offers-services/heating-and-cooling",
-   "label": "Mass Save — Heat Pump Rebates",
-   "states": [
-    "MA"
-   ],
-   "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:26.794Z",
-   "length": 78886,
-   "kind": "html",
-   "textHash": "88efc2c8e2e3f045",
-   "dollars": [
-    "$10,000"
-   ],
-   "keywords": {}
-  },
-  "https://www.masssave.com/residential/rebates-and-incentives/heat-loan-program": {
-   "url": "https://www.masssave.com/residential/rebates-and-incentives/heat-loan-program",
-   "finalUrl": "https://www.masssave.com/residential/rebates-offers-services/financing",
-   "label": "Mass Save — HEAT Loan (0% Financing)",
-   "states": [
-    "MA"
-   ],
-   "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:26.761Z",
-   "length": 75768,
-   "kind": "html",
-   "textHash": "afe5778ba5564304",
-   "dollars": [
-    "$25,000"
-   ],
-   "keywords": {}
-  },
-  "https://www.masssave.com/residential/income-eligible-programs": {
-   "url": "https://www.masssave.com/residential/income-eligible-programs",
-   "finalUrl": "https://www.masssave.com/residential/income-eligible-programs",
-   "label": "Mass Save — Income-Eligible Programs",
-   "states": [
-    "MA"
-   ],
-   "httpStatus": 404,
-   "fetchedAt": "2026-07-09T15:14:30.197Z",
-   "length": 45609,
-   "error": "HTTP 404"
   },
   "https://www.energytrust.org/residential/heating-cooling/": {
    "url": "https://www.energytrust.org/residential/heating-cooling/",
@@ -831,33 +720,6 @@
     "no longer": 1,
     "accepting applications": 1
    }
-  },
-  "https://www.pse.com/rebates/heat-pump-rebates": {
-   "url": "https://www.pse.com/rebates/heat-pump-rebates",
-   "finalUrl": "https://www.pse.com/en/404-error-page",
-   "label": "Puget Sound Energy — Heat Pump Rebates",
-   "states": [
-    "WA"
-   ],
-   "httpStatus": 200,
-   "fetchedAt": "2026-07-09T17:57:06.774Z",
-   "length": 125675,
-   "kind": "html",
-   "textHash": "347d28de00a0c33e",
-   "dollars": [],
-   "keywords": {}
-  },
-  "https://www.commerce.wa.gov/growing-the-economy/energy/home-energy-rebates/": {
-   "url": "https://www.commerce.wa.gov/growing-the-economy/energy/home-energy-rebates/",
-   "finalUrl": "https://www.commerce.wa.gov/growing-the-economy/energy/home-energy-rebates/",
-   "label": "WA Dept of Commerce — Home Energy Rebates",
-   "states": [
-    "WA"
-   ],
-   "httpStatus": 404,
-   "fetchedAt": "2026-07-09T15:14:30.177Z",
-   "length": 79826,
-   "error": "HTTP 404"
   },
   "https://cleanheat.ny.gov/assets/pdf/NYS%20Clean%20Heat%20Program%20Manual%202025_v2.pdf": {
    "url": "https://cleanheat.ny.gov/assets/pdf/NYS%20Clean%20Heat%20Program%20Manual%202025_v2.pdf",
@@ -1165,7 +1027,7 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:47.425Z",
+   "fetchedAt": "2026-07-21T20:21:43.209Z",
    "length": 104792,
    "kind": "html",
    "textHash": "bc1432e6f10db7f1",
@@ -1198,7 +1060,7 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:47.766Z",
+   "fetchedAt": "2026-07-21T20:21:43.233Z",
    "length": 129392,
    "kind": "html",
    "textHash": "0c55acf05b3673b6",
@@ -1220,7 +1082,7 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:48.051Z",
+   "fetchedAt": "2026-07-21T20:21:43.204Z",
    "length": 79575,
    "kind": "html",
    "textHash": "07e541d07893c999",
@@ -1244,21 +1106,6 @@
     "expired": 1
    }
   },
-  "https://co.my.xcelenergy.com/s/residential/heating-cooling/heat-pumps": {
-   "url": "https://co.my.xcelenergy.com/s/residential/heating-cooling/heat-pumps",
-   "finalUrl": "https://co.my.xcelenergy.com/s/residential/heating-cooling/heat-pumps",
-   "label": "Xcel Energy heat pumps — residential",
-   "states": [
-    "CO"
-   ],
-   "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:20.468Z",
-   "length": 359494,
-   "kind": "html",
-   "textHash": "ca7b531bda525ec3",
-   "dollars": [],
-   "keywords": {}
-  },
   "https://www.csu.org/rebates-incentives/residential-hvac": {
    "url": "https://www.csu.org/rebates-incentives/residential-hvac",
    "finalUrl": "https://www.csu.org/rebates-incentives/residential-hvac",
@@ -1267,7 +1114,7 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:48.885Z",
+   "fetchedAt": "2026-07-21T20:21:43.705Z",
    "length": 599633,
    "kind": "html",
    "textHash": "ee651b2efd7826d0",
@@ -1287,8 +1134,8 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:49.230Z",
-   "length": 782863,
+   "fetchedAt": "2026-07-21T20:21:44.080Z",
+   "length": 782888,
    "kind": "html",
    "textHash": "62867137a6a9dfaf",
    "dollars": [
@@ -1343,10 +1190,10 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:49.149Z",
-   "length": 98561,
+   "fetchedAt": "2026-07-21T20:21:43.746Z",
+   "length": 98742,
    "kind": "html",
-   "textHash": "2cc90ed59e842fc7",
+   "textHash": "a42212f781ac2626",
    "dollars": [],
    "keywords": {}
   },
@@ -1358,7 +1205,7 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:51.735Z",
+   "fetchedAt": "2026-07-21T20:21:44.230Z",
    "length": 313596,
    "kind": "html",
    "textHash": "0e62c06868ca931e",
@@ -1727,31 +1574,6 @@
    "dollars": [],
    "keywords": {}
   },
-  "https://homeenergy.pseg.com/heatingandcooling": {
-   "url": "https://homeenergy.pseg.com/heatingandcooling",
-   "finalUrl": "https://myhomeenergy.pseg.com/appliance-offers/heatingandcooling",
-   "label": "PSE&G HVAC Instant Rebates",
-   "states": [
-    "NJ"
-   ],
-   "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:59.420Z",
-   "length": 358883,
-   "kind": "html",
-   "textHash": "2b421fa6ea83604d",
-   "dollars": [
-    "$300",
-    "$2,000",
-    "$10,000",
-    "$10,001",
-    "$25,000",
-    "$50,000",
-    "$75,000"
-   ],
-   "keywords": {
-    "closed": 1
-   }
-  },
   "https://residential.energysavenj.com/jersey-central/hvac/": {
    "url": "https://residential.energysavenj.com/jersey-central/hvac/",
    "finalUrl": "https://residential.energysavenj.com/jersey-central/hvac/",
@@ -1760,7 +1582,7 @@
     "NJ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:59.668Z",
+   "fetchedAt": "2026-07-21T20:21:47.888Z",
    "length": 72778,
    "kind": "html",
    "textHash": "7fe9da266651fcd2",
@@ -1784,7 +1606,7 @@
     "NJ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:59.264Z",
+   "fetchedAt": "2026-07-21T20:21:47.624Z",
    "length": 45027,
    "kind": "html",
    "textHash": "91b7f127ddaa63d9",
@@ -1802,41 +1624,6 @@
    ],
    "keywords": {}
   },
-  "https://www.oru.com/en/save-money/rebates-incentives-credits/new-jersey-customers/incentives-for-residential-customers-nj/efficient-products/heating-cooling-equipment": {
-   "url": "https://www.oru.com/en/save-money/rebates-incentives-credits/new-jersey-customers/incentives-for-residential-customers-nj/efficient-products/heating-cooling-equipment",
-   "finalUrl": "https://www.oru.com/en/save-money/rebates-incentives-credits/new-jersey-customers/incentives-for-residential-customers-nj/efficient-products/heating-cooling-equipment",
-   "label": "RECO Heat Pump Rebates",
-   "states": [
-    "NJ"
-   ],
-   "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:29:00.025Z",
-   "length": 146871,
-   "kind": "html",
-   "textHash": "ec431fe0509cb61b",
-   "dollars": [
-    "$70",
-    "$140",
-    "$280",
-    "$350",
-    "$525",
-    "$700",
-    "$750",
-    "$1,000",
-    "$1,120",
-    "$1,400",
-    "$2,000",
-    "$2,500",
-    "$3,000",
-    "$4,000",
-    "$5,000",
-    "$6,000",
-    "$10,000",
-    "$12,000",
-    "$25,000,"
-   ],
-   "keywords": {}
-  },
   "https://www.nj.gov/bpu/newsroom/2025/approved/20250127.html": {
    "url": "https://www.nj.gov/bpu/newsroom/2025/approved/20250127.html",
    "finalUrl": "https://www.nj.gov/bpu/newsroom/2025/approved/20250127.html",
@@ -1845,7 +1632,7 @@
     "NJ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:59.796Z",
+   "fetchedAt": "2026-07-21T20:21:47.958Z",
    "length": 23374,
    "kind": "html",
    "textHash": "fb35784e9754c272",
@@ -1862,18 +1649,6 @@
    ],
    "keywords": {}
   },
-  "https://www.njcleanenergy.com/CP": {
-   "url": "https://www.njcleanenergy.com/CP",
-   "finalUrl": "https://cleanenergy.nj.gov/cp",
-   "label": "NJ Comfort Partners (Income-Eligible)",
-   "states": [
-    "NJ"
-   ],
-   "httpStatus": 404,
-   "fetchedAt": "2026-07-20T20:29:02.651Z",
-   "length": 587068,
-   "error": "HTTP 404"
-  },
   "https://www.savegreen.com/applications/residential-applications/hvac-and-water-heating-rebate-application.aspx": {
    "url": "https://www.savegreen.com/applications/residential-applications/hvac-and-water-heating-rebate-application.aspx",
    "finalUrl": "https://www.savegreen.com/applications/residential-applications/hvac-and-water-heating-rebate-application.aspx",
@@ -1882,7 +1657,7 @@
     "NJ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:59.901Z",
+   "fetchedAt": "2026-07-21T20:21:47.952Z",
    "length": 34527,
    "kind": "html",
    "textHash": "68af232adfe36dac",
@@ -2150,41 +1925,6 @@
    "keywords": {
     "first-come": 2
    }
-  },
-  "https://www.consumersenergy.com/residential/save-money-and-energy/rebates/heating-and-cooling": {
-   "url": "https://www.consumersenergy.com/residential/save-money-and-energy/rebates/heating-and-cooling",
-   "finalUrl": "https://www.consumersenergy.com/residential/savings-and-clean-energy/rebates/heating-and-cooling",
-   "label": "Consumers Energy Heating & Cooling Rebates",
-   "states": [
-    "MI"
-   ],
-   "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:38.507Z",
-   "length": 97769,
-   "kind": "html",
-   "textHash": "a42c42efc27aeada",
-   "dollars": [
-    "$65",
-    "$100",
-    "$150",
-    "$200",
-    "$300",
-    "$350"
-   ],
-   "keywords": {}
-  },
-  "https://www.tclp.org/wp-content/uploads/2026/03/Energy-Rewards-Residential-Measures-Updated.pdf": {
-   "url": "https://www.tclp.org/wp-content/uploads/2026/03/Energy-Rewards-Residential-Measures-Updated.pdf",
-   "finalUrl": "https://www.tclp.org/wp-content/uploads/2026/03/Energy-Rewards-Residential-Measures-Updated.pdf",
-   "label": "TCLP Residential Incentives (2025–2026 PDF)",
-   "states": [
-    "MI"
-   ],
-   "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:38.825Z",
-   "length": 717785,
-   "kind": "pdf",
-   "bytesHash": "75eecf38079c9503"
   },
   "https://www.lbwl.com/sites/default/files/documents/BWL%20HES_Residential%20Application_2026_v01.09.pdf": {
    "url": "https://www.lbwl.com/sites/default/files/documents/BWL%20HES_Residential%20Application_2026_v01.09.pdf",
@@ -3245,19 +2985,6 @@
     "closed": 1
    }
   },
-  "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21": {
-   "url": "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21",
-   "finalUrl": "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21",
-   "label": "IRS — 25C/25D Termination FAQ",
-   "states": [
-    "WI",
-    "UT"
-   ],
-   "httpStatus": 503,
-   "fetchedAt": "2026-07-09T15:14:49.909Z",
-   "length": 981,
-   "error": "HTTP 503"
-  },
   "https://energyrebates.georgia.gov/": {
    "url": "https://energyrebates.georgia.gov/",
    "finalUrl": "https://energyrebates.georgia.gov/",
@@ -4076,10 +3803,10 @@
     "WV"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:29:31.936Z",
-   "length": 177969,
+   "fetchedAt": "2026-07-21T20:22:06.039Z",
+   "length": 177726,
    "kind": "html",
-   "textHash": "1a66b9b6195eb76b",
+   "textHash": "dec47240e934c076",
    "dollars": [
     "$0.20",
     "$1.00",
@@ -4421,7 +4148,7 @@
     "NC"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:01.034Z",
+   "fetchedAt": "2026-07-21T20:22:11.090Z",
    "length": 230918,
    "kind": "html",
    "textHash": "1994e515f06d9da7",
@@ -4436,8 +4163,8 @@
     "NC"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:02.002Z",
-   "length": 206897,
+   "fetchedAt": "2026-07-21T20:22:11.737Z",
+   "length": 207337,
    "kind": "html",
    "textHash": "e64cc99925dc2431",
    "dollars": [
@@ -4466,8 +4193,8 @@
     "NC"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:03.277Z",
-   "length": 229787,
+   "fetchedAt": "2026-07-21T20:22:11.886Z",
+   "length": 229852,
    "kind": "html",
    "textHash": "7c7ceff826383d62",
    "dollars": [],
@@ -4481,8 +4208,8 @@
     "NC"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:03.286Z",
-   "length": 71648,
+   "fetchedAt": "2026-07-21T20:22:11.833Z",
+   "length": 72042,
    "kind": "html",
    "textHash": "a5acc2361195d416",
    "dollars": [
@@ -4559,10 +4286,10 @@
     "NC"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:03.982Z",
-   "length": 42539,
+   "fetchedAt": "2026-07-21T20:22:12.576Z",
+   "length": 42659,
    "kind": "html",
-   "textHash": "8fb97a192e60361a",
+   "textHash": "e4e4162898c35247",
    "dollars": [
     "$1",
     "$3.50",
@@ -4571,7 +4298,6 @@
     "$30",
     "$42",
     "$50",
-    "$96",
     "$150",
     "$300",
     "$350",
@@ -4592,10 +4318,10 @@
     "NC"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:05.788Z",
-   "length": 317822,
+   "fetchedAt": "2026-07-21T20:22:13.431Z",
+   "length": 320763,
    "kind": "html",
-   "textHash": "877e350246681454",
+   "textHash": "f95b35af030ff9bf",
    "dollars": [
     "$300",
     "$400"
@@ -4610,8 +4336,8 @@
     "NC"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:05.291Z",
-   "length": 179017,
+   "fetchedAt": "2026-07-21T20:22:16.206Z",
+   "length": 179025,
    "kind": "html",
    "textHash": "3f1d981474ef21cb",
    "dollars": [
@@ -4628,10 +4354,10 @@
     "NC"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:05.158Z",
-   "length": 103946,
+   "fetchedAt": "2026-07-21T20:22:13.260Z",
+   "length": 104910,
    "kind": "html",
-   "textHash": "e1eaf18def55694a",
+   "textHash": "e077cce06e3ee2bc",
    "dollars": [
     "$25",
     "$100",
@@ -4649,8 +4375,8 @@
     "NC"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:05.582Z",
-   "length": 75234,
+   "fetchedAt": "2026-07-21T20:22:12.737Z",
+   "length": 75677,
    "kind": "html",
    "textHash": "e6e2078895db25f8",
    "dollars": [
@@ -4666,8 +4392,8 @@
     "NC"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:05.825Z",
-   "length": 116387,
+   "fetchedAt": "2026-07-21T20:22:16.107Z",
+   "length": 116298,
    "kind": "html",
    "textHash": "52691772e53d84ab",
    "dollars": [],
@@ -5350,10 +5076,10 @@
     "TVA-ENERGYRIGHT"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:29:44.271Z",
-   "length": 252321,
+   "fetchedAt": "2026-07-21T20:22:20.135Z",
+   "length": 252625,
    "kind": "html",
-   "textHash": "57bfc1d1bacd9af7",
+   "textHash": "76c9b6d0c9d05ac9",
    "dollars": [
     "$0",
     "$0.05",
@@ -5372,10 +5098,8 @@
    "states": [
     "TN"
    ],
-   "httpStatus": 404,
-   "fetchedAt": "2026-07-14T17:03:10.260Z",
-   "length": 44876,
-   "error": "HTTP 404"
+   "fetchedAt": "2026-07-21T20:22:21.742Z",
+   "error": "fetch failed"
   },
   "https://epb.com/energy/save-energy-and-money/rebates-incentives/home-energy-improvement-rebates/": {
    "url": "https://epb.com/energy/save-energy-and-money/rebates-incentives/home-energy-improvement-rebates/",
@@ -5385,10 +5109,10 @@
     "TN"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:29:45.168Z",
-   "length": 248973,
+   "fetchedAt": "2026-07-21T20:22:20.941Z",
+   "length": 248972,
    "kind": "html",
-   "textHash": "10f2fff679ca6f87",
+   "textHash": "294f180f5840dc74",
    "dollars": [
     "$15",
     "$50",
@@ -5410,10 +5134,10 @@
     "TN"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:29:45.813Z",
-   "length": 214564,
+   "fetchedAt": "2026-07-21T20:22:21.618Z",
+   "length": 214664,
    "kind": "html",
-   "textHash": "003820f493145b9b",
+   "textHash": "70b4fa2c18dbe324",
    "dollars": [],
    "keywords": {}
   },
@@ -5425,7 +5149,7 @@
     "TN"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:29:45.923Z",
+   "fetchedAt": "2026-07-21T20:22:21.625Z",
    "length": 99780,
    "kind": "html",
    "textHash": "f6a8a0cdcb7ac26e",
@@ -5467,29 +5191,6 @@
     "$2,000",
     "$14,000",
     "$16,000,"
-   ],
-   "keywords": {}
-  },
-  "https://www.duke-energy.com/home/products/home-energy-improvement": {
-   "url": "https://www.duke-energy.com/home/products/home-energy-improvement",
-   "finalUrl": "https://www.duke-energy.com/home/products/home-energy-improvement",
-   "label": "Duke Energy — Home Energy Improvement",
-   "states": [
-    "SC"
-   ],
-   "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:14.659Z",
-   "length": 992042,
-   "kind": "html",
-   "textHash": "ce27c39ed0a2549e",
-   "dollars": [
-    "$350",
-    "$450",
-    "$600",
-    "$800",
-    "$1,000",
-    "$1,050",
-    "$3,800"
    ],
    "keywords": {}
   },
@@ -5581,24 +5282,6 @@
    "dollars": [
     "$75",
     "$76"
-   ],
-   "keywords": {}
-  },
-  "https://www.ameren.com/missouri/residential/energy-efficiency/hvac": {
-   "url": "https://www.ameren.com/missouri/residential/energy-efficiency/hvac",
-   "finalUrl": "https://www.ameren.com/efficiency/programs",
-   "label": "Ameren Missouri — PAYS HVAC Incentives",
-   "states": [
-    "MO"
-   ],
-   "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:03:11.240Z",
-   "length": 276075,
-   "kind": "html",
-   "textHash": "cbe1fac44927bcab",
-   "dollars": [
-    "$25",
-    "$50"
    ],
    "keywords": {}
   },
@@ -6616,38 +6299,6 @@
    ],
    "keywords": {}
   },
-  "https://dss.sd.gov/economicassistance/energy_weatherization_assistance.aspx": {
-   "url": "https://dss.sd.gov/economicassistance/energy_weatherization_assistance.aspx",
-   "finalUrl": "https://dss.sd.gov/economicassistance/energy_weatherization_assistance.aspx",
-   "label": "SD Dept. of Social Services — Weatherization",
-   "states": [
-    "SD"
-   ],
-   "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:03:20.550Z",
-   "length": 38491,
-   "kind": "html",
-   "textHash": "bf143cc9db2b0920",
-   "dollars": [
-    "$7,825",
-    "$10,575",
-    "$13,325",
-    "$16,075",
-    "$18,825",
-    "$21,575",
-    "$22,514",
-    "$23,014",
-    "$23,514",
-    "$24,325",
-    "$24,431",
-    "$27,075",
-    "$29,825",
-    "$32,575"
-   ],
-   "keywords": {
-    "coming soon": 1
-   }
-  },
   "https://wattsmarthomes.com/rebates/air-source-heat-pumps-wy/": {
    "url": "https://wattsmarthomes.com/rebates/air-source-heat-pumps-wy/",
    "finalUrl": "https://wattsmarthomes.com/rebates/air-source-heat-pumps-wy/",
@@ -6774,7 +6425,7 @@
     "MS"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:30:00.959Z",
+   "fetchedAt": "2026-07-21T20:22:36.292Z",
    "length": 81737,
    "kind": "html",
    "textHash": "fd3d1637770e0b24",
@@ -6798,8 +6449,8 @@
     "MS"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:30:00.910Z",
-   "length": 80231,
+   "fetchedAt": "2026-07-21T20:22:36.311Z",
+   "length": 80232,
    "kind": "html",
    "textHash": "2e0c3a61d9a15dce",
    "dollars": [
@@ -6812,49 +6463,6 @@
    ],
    "keywords": {}
   },
-  "https://energyright.com/heat-pump-water-heater/": {
-   "url": "https://energyright.com/heat-pump-water-heater/",
-   "finalUrl": "https://energyright.com/residential/rebates/",
-   "label": "TVA EnergyRight — Heat Pump Water Heaters",
-   "states": [
-    "MS"
-   ],
-   "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:30:02.972Z",
-   "length": 227866,
-   "kind": "html",
-   "textHash": "ff45e3cc3ae52fe8",
-   "dollars": [
-    "$0",
-    "$0.05",
-    "$400",
-    "$800",
-    "$1,500"
-   ],
-   "keywords": {}
-  },
-  "https://energyright.com/residential/home-uplift/": {
-   "url": "https://energyright.com/residential/home-uplift/",
-   "finalUrl": "https://energyright.com/residential/energy-upgrades-bill-assistance/home-uplift/",
-   "label": "TVA EnergyRight — Home Uplift",
-   "states": [
-    "MS"
-   ],
-   "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:30:04.217Z",
-   "length": 218215,
-   "kind": "html",
-   "textHash": "91f779c7a8ab6a22",
-   "dollars": [
-    "$0",
-    "$0.05",
-    "$400",
-    "$500",
-    "$800",
-    "$10,000"
-   ],
-   "keywords": {}
-  },
   "https://www.mississippipower.com/residential/ways-to-save/rebates---incentives.html": {
    "url": "https://www.mississippipower.com/residential/ways-to-save/rebates---incentives.html",
    "finalUrl": "https://www.mississippipower.com/residential/ways-to-save/rebates---incentives.html",
@@ -6863,7 +6471,7 @@
     "MS"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:30:01.516Z",
+   "fetchedAt": "2026-07-21T20:22:36.865Z",
    "length": 117884,
    "kind": "html",
    "textHash": "5f130a4fa532aaef",
@@ -6884,8 +6492,8 @@
     "MS"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:30:02.002Z",
-   "length": 219129,
+   "fetchedAt": "2026-07-21T20:22:36.916Z",
+   "length": 219090,
    "kind": "html",
    "textHash": "3f3f24344b0ea939",
    "dollars": [
@@ -6905,7 +6513,7 @@
     "MS"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:30:03.080Z",
+   "fetchedAt": "2026-07-21T20:22:38.357Z",
    "length": 176904,
    "kind": "html",
    "textHash": "add91111f5d00275",
@@ -8179,7 +7787,7 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:47.920Z",
+   "fetchedAt": "2026-07-21T20:21:43.231Z",
    "length": 58236,
    "kind": "html",
    "textHash": "1941d19e52432f6a",
@@ -8193,18 +7801,6 @@
    "keywords": {
     "closed": 1
    }
-  },
-  "https://poweraheadcolorado.org/": {
-   "url": "https://poweraheadcolorado.org/",
-   "finalUrl": "https://poweraheadcolorado.org/",
-   "label": "Power Ahead Colorado (DRCOG)",
-   "states": [
-    "CO"
-   ],
-   "httpStatus": 403,
-   "fetchedAt": "2026-07-20T20:28:50.157Z",
-   "length": 5732,
-   "error": "HTTP 403"
   },
   "https://mienergyrebates.clearesult.com/help-center": {
    "url": "https://mienergyrebates.clearesult.com/help-center",
@@ -8462,7 +8058,7 @@
     "SMUD"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:30:12.868Z",
+   "fetchedAt": "2026-07-21T20:22:47.484Z",
    "length": 126387,
    "kind": "html",
    "textHash": "604a677cbb95405f",
@@ -8505,7 +8101,7 @@
     "SMUD"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:30:12.793Z",
+   "fetchedAt": "2026-07-21T20:22:47.372Z",
    "length": 46784,
    "kind": "html",
    "textHash": "7f065731cf3d4425",
@@ -8523,7 +8119,7 @@
     "SMUD"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:30:12.986Z",
+   "fetchedAt": "2026-07-21T20:22:47.470Z",
    "length": 46458,
    "kind": "html",
    "textHash": "aafce8dff3328a69",
@@ -8545,7 +8141,7 @@
     "SMUD"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:30:13.265Z",
+   "fetchedAt": "2026-07-21T20:22:47.600Z",
    "length": 86590,
    "kind": "html",
    "textHash": "2cbec4026131307b",
@@ -8560,7 +8156,7 @@
     "SMUD"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:30:13.559Z",
+   "fetchedAt": "2026-07-21T20:22:59.719Z",
    "length": 24444,
    "kind": "html",
    "textHash": "d795876f3dbb5ff9",
@@ -8655,7 +8251,7 @@
     "NJ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:59.453Z",
+   "fetchedAt": "2026-07-21T20:21:47.976Z",
    "length": 323380,
    "kind": "html",
    "textHash": "93946f1a708c6f1b",
@@ -8679,7 +8275,7 @@
     "NJ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:58.815Z",
+   "fetchedAt": "2026-07-21T20:21:46.997Z",
    "length": 39035,
    "kind": "html",
    "textHash": "cd20cf8adf1ac1b6",
@@ -8742,13 +8338,14 @@
    "finalUrl": "https://energyright.com/residential/energy-upgrades-bill-assistance/home-uplift/",
    "label": "TVA EnergyRight — Home Uplift",
    "states": [
+    "MS",
     "TVA-ENERGYRIGHT"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:30:12.481Z",
-   "length": 218215,
+   "fetchedAt": "2026-07-21T20:22:36.474Z",
+   "length": 217952,
    "kind": "html",
-   "textHash": "91f779c7a8ab6a22",
+   "textHash": "45c2b01f9e56a9e1",
    "dollars": [
     "$0",
     "$0.05",
@@ -8770,16 +8367,6 @@
    "fetchedAt": "2026-07-20T20:30:14.222Z",
    "length": 5839,
    "error": "HTTP 403"
-  },
-  "https://www.tn.gov/environment/program-areas/energy/state-energy-office--seo-/programs-projects/programs-and-projects/inflation-reduction-act/home-energy-rebate.html": {
-   "url": "https://www.tn.gov/environment/program-areas/energy/state-energy-office--seo-/programs-projects/programs-and-projects/inflation-reduction-act/home-energy-rebate.html",
-   "finalUrl": "https://www.tn.gov/environment/program-areas/energy/state-energy-office--seo-/programs-projects/programs-and-projects/inflation-reduction-act/home-energy-rebate.html",
-   "label": "TDEC — Home Energy Rebate Programs",
-   "states": [
-    "TN"
-   ],
-   "fetchedAt": "2026-07-20T20:29:45.951Z",
-   "error": "fetch failed"
   },
   "https://www.fpl.com/save/programs/ac-rebate.html": {
    "url": "https://www.fpl.com/save/programs/ac-rebate.html",
@@ -8893,6 +8480,238 @@
    "kind": "html",
    "textHash": "60dfd1f63e542a5d",
    "dollars": [],
+   "keywords": {}
+  },
+  "https://energyright.com/residential/rebates/home-insulation-air-sealing/": {
+   "url": "https://energyright.com/residential/rebates/home-insulation-air-sealing/",
+   "finalUrl": "https://energyright.com/residential/rebates/home-insulation-air-sealing/",
+   "label": "TVA EnergyRight — Air Sealing & Insulation Rebates",
+   "states": [
+    "AL"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-21T20:21:25.705Z",
+   "length": 247780,
+   "kind": "html",
+   "textHash": "b201e564741d50c1",
+   "dollars": [
+    "$0",
+    "$0.05",
+    "$300",
+    "$400",
+    "$500",
+    "$800"
+   ],
+   "keywords": {}
+  },
+  "https://poweraheadcolorado.org/resources/rebate-program-overview": {
+   "url": "https://poweraheadcolorado.org/resources/rebate-program-overview",
+   "finalUrl": "https://poweraheadcolorado.org/resources/rebate-program-overview",
+   "label": "Power Ahead Colorado (DRCOG) — Rebate Program Overview",
+   "states": [
+    "CO"
+   ],
+   "httpStatus": 403,
+   "fetchedAt": "2026-07-21T20:21:45.428Z",
+   "length": 5895,
+   "error": "HTTP 403"
+  },
+  "https://xcelenergycores.clearesult.com/income-qualified": {
+   "url": "https://xcelenergycores.clearesult.com/income-qualified",
+   "finalUrl": "https://xcelenergycores.clearesult.com/income-qualified",
+   "label": "Xcel Energy — Income-Qualified Home Energy Squad",
+   "states": [
+    "CO"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-21T20:21:47.377Z",
+   "length": 166943,
+   "kind": "html",
+   "textHash": "ca710cced536fbc4",
+   "dollars": [],
+   "keywords": {}
+  },
+  "https://myhomeenergy.pseg.com/appliance-offers/heatingandcooling": {
+   "url": "https://myhomeenergy.pseg.com/appliance-offers/heatingandcooling",
+   "finalUrl": "https://myhomeenergy.pseg.com/appliance-offers/heatingandcooling",
+   "label": "PSE&G HVAC Instant Rebates",
+   "states": [
+    "NJ"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-21T20:21:47.505Z",
+   "length": 358883,
+   "kind": "html",
+   "textHash": "2b421fa6ea83604d",
+   "dollars": [
+    "$300",
+    "$2,000",
+    "$10,000",
+    "$10,001",
+    "$25,000",
+    "$50,000",
+    "$75,000"
+   ],
+   "keywords": {
+    "closed": 1
+   }
+  },
+  "https://www.oru.com/en/save-money/rebates-incentives-credits/new-jersey-customers/incentives-for-residential-customers-nj/clean-heating-cooling-with-heat-pumps/heat-pump-guide": {
+   "url": "https://www.oru.com/en/save-money/rebates-incentives-credits/new-jersey-customers/incentives-for-residential-customers-nj/clean-heating-cooling-with-heat-pumps/heat-pump-guide",
+   "finalUrl": "https://www.oru.com/en/save-money/rebates-incentives-credits/new-jersey-customers/incentives-for-residential-customers-nj/clean-heating-cooling-with-heat-pumps/heat-pump-guide",
+   "label": "RECO Heat Pump Guide (NJ)",
+   "states": [
+    "NJ"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-21T20:21:47.954Z",
+   "length": 113904,
+   "kind": "html",
+   "textHash": "9a3d761d51aac110",
+   "dollars": [
+    "$350",
+    "$900",
+    "$1,500"
+   ],
+   "keywords": {
+    "no longer": 1
+   }
+  },
+  "https://www.firstenergycorp.com/save_energy/save_energy_new_jersey/comfort-partners.html": {
+   "url": "https://www.firstenergycorp.com/save_energy/save_energy_new_jersey/comfort-partners.html",
+   "finalUrl": "https://www.firstenergycorp.com/save_energy/save_energy_new_jersey/comfort-partners.html",
+   "label": "NJ Comfort Partners (Income-Eligible, via JCP&L)",
+   "states": [
+    "NJ"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-21T20:21:48.182Z",
+   "length": 59634,
+   "kind": "html",
+   "textHash": "08acd59ec9fd443b",
+   "dollars": [
+    "$273",
+    "$767",
+    "$1,040",
+    "$1,183",
+    "$1,313",
+    "$1,587",
+    "$1,860",
+    "$2,133",
+    "$2,406",
+    "$2,679",
+    "$3,325",
+    "$4,508",
+    "$5,692",
+    "$6,875",
+    "$8,058",
+    "$9,242",
+    "$10,425",
+    "$11,608",
+    "$14,200",
+    "$39,900",
+    "$54,100",
+    "$68,300",
+    "$82,500",
+    "$96,700",
+    "$110,900",
+    "$125,100",
+    "$139,300"
+   ],
+   "keywords": {}
+  },
+  "https://www.duke-energy.com/home/products/smart-saver": {
+   "url": "https://www.duke-energy.com/home/products/smart-saver",
+   "finalUrl": "https://www.duke-energy.com/home/products/smart-saver",
+   "label": "Duke Energy — Smart $aver Rebates",
+   "states": [
+    "NC",
+    "IN",
+    "SC",
+    "KY",
+    "DUKE-ENERGY"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-21T20:22:12.322Z",
+   "length": 960725,
+   "kind": "html",
+   "textHash": "e5ac542a6eb82fde",
+   "dollars": [],
+   "keywords": {}
+  },
+  "https://www.duke-energy.com/home/products/smart-saver/heat-pump-water-heater": {
+   "url": "https://www.duke-energy.com/home/products/smart-saver/heat-pump-water-heater",
+   "finalUrl": "https://www.duke-energy.com/home/products/smart-saver/heat-pump-water-heater",
+   "label": "Duke Energy — Smart $aver Heat Pump Water Heater",
+   "states": [
+    "NC",
+    "DUKE-ENERGY"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-21T20:22:12.677Z",
+   "length": 923363,
+   "kind": "html",
+   "textHash": "3334e4a58875d441",
+   "dollars": [],
+   "keywords": {}
+  },
+  "https://www.deq.nc.gov/energy-climate/state-energy-office/energy-saver-north-carolina/energy-efficiency-rebates": {
+   "url": "https://www.deq.nc.gov/energy-climate/state-energy-office/energy-saver-north-carolina/energy-efficiency-rebates",
+   "finalUrl": "https://www.deq.nc.gov/energy-climate/state-energy-office/energy-saver-north-carolina/energy-efficiency-rebates",
+   "label": "NC DEQ — Energy Efficiency Rebates FAQ",
+   "states": [
+    "NC",
+    "DUKE-ENERGY"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-21T20:22:12.433Z",
+   "length": 83131,
+   "kind": "html",
+   "textHash": "47a2f02f27487263",
+   "dollars": [
+    "$35",
+    "$208",
+    "$391",
+    "$840",
+    "$1,600",
+    "$1,750",
+    "$2,500",
+    "$4,000",
+    "$8,000",
+    "$14,000",
+    "$16,000"
+   ],
+   "keywords": {
+    "waitlist": 1
+   }
+  },
+  "https://energyright.com/residential-upgrades-water-heater/": {
+   "url": "https://energyright.com/residential-upgrades-water-heater/",
+   "finalUrl": "https://energyright.com/residential/rebates/",
+   "label": "TVA EnergyRight — Water Heater Instant Rebates",
+   "states": [
+    "TN",
+    "MS"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-21T20:22:21.087Z",
+   "length": 233219,
+   "kind": "html",
+   "textHash": "3b463a2c47769688",
+   "dollars": [
+    "$0",
+    "$0.05",
+    "$20",
+    "$50",
+    "$65",
+    "$100",
+    "$250",
+    "$300",
+    "$400",
+    "$500",
+    "$800",
+    "$1,500"
+   ],
    "keywords": {}
   }
  }
