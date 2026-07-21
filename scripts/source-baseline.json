@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-20T22:58:04.228Z",
+ "generatedAt": "2026-07-21T00:48:01.391Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -1165,10 +1165,10 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:18.040Z",
-   "length": 104415,
+   "fetchedAt": "2026-07-20T20:28:47.425Z",
+   "length": 104792,
    "kind": "html",
-   "textHash": "4eccf379136ac51b",
+   "textHash": "bc1432e6f10db7f1",
    "dollars": [
     "$840",
     "$1,600",
@@ -1198,10 +1198,10 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:18.278Z",
-   "length": 129015,
+   "fetchedAt": "2026-07-20T20:28:47.766Z",
+   "length": 129392,
    "kind": "html",
-   "textHash": "3e353a410f3efaf5",
+   "textHash": "0c55acf05b3673b6",
    "dollars": [
     "$1",
     "$14,000"
@@ -1220,10 +1220,10 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:18.734Z",
-   "length": 79198,
+   "fetchedAt": "2026-07-20T20:28:48.051Z",
+   "length": 79575,
    "kind": "html",
-   "textHash": "e09bbb5dc25aa784",
+   "textHash": "07e541d07893c999",
    "dollars": [
     "$83",
     "$166.65",
@@ -1267,10 +1267,10 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:19.406Z",
-   "length": 599473,
+   "fetchedAt": "2026-07-20T20:28:48.885Z",
+   "length": 599633,
    "kind": "html",
-   "textHash": "25a26d2be8a0a801",
+   "textHash": "ee651b2efd7826d0",
    "dollars": [
     "$900",
     "$1,200",
@@ -1287,8 +1287,8 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:20.095Z",
-   "length": 782859,
+   "fetchedAt": "2026-07-20T20:28:49.230Z",
+   "length": 782863,
    "kind": "html",
    "textHash": "62867137a6a9dfaf",
    "dollars": [
@@ -1343,10 +1343,10 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:20.519Z",
-   "length": 98184,
+   "fetchedAt": "2026-07-20T20:28:49.149Z",
+   "length": 98561,
    "kind": "html",
-   "textHash": "ddd5d082db6d6866",
+   "textHash": "2cc90ed59e842fc7",
    "dollars": [],
    "keywords": {}
   },
@@ -1358,10 +1358,10 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:22.771Z",
-   "length": 313600,
+   "fetchedAt": "2026-07-20T20:28:51.735Z",
+   "length": 313596,
    "kind": "html",
-   "textHash": "01f92ae917b84e76",
+   "textHash": "0e62c06868ca931e",
    "dollars": [
     "$2",
     "$5",
@@ -8179,10 +8179,10 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:18.469Z",
-   "length": 57859,
+   "fetchedAt": "2026-07-20T20:28:47.920Z",
+   "length": 58236,
    "kind": "html",
-   "textHash": "7ff996e4418b95b1",
+   "textHash": "1941d19e52432f6a",
    "dollars": [
     "$0",
     "$2",
@@ -8202,7 +8202,7 @@
     "CO"
    ],
    "httpStatus": 403,
-   "fetchedAt": "2026-07-14T17:02:20.580Z",
+   "fetchedAt": "2026-07-20T20:28:50.157Z",
    "length": 5732,
    "error": "HTTP 403"
   },
