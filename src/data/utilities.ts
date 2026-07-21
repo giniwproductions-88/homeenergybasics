@@ -22,7 +22,7 @@ export type UtilitySlug =
   | "efficiency-maine"
   | "duke-energy"
   | "tva-energyright"
-  | "florida-power-light"
+  | "fpl"
   | "smud";
 
 // "administrator" covers non-utility program operators (Efficiency Maine,
@@ -230,20 +230,46 @@ export const utilities: Record<UtilitySlug, UtilityEntity> = {
     ],
   },
 
-  // ── FPL — schema placeholder, do not ship ────────────────────────────
-  "florida-power-light": {
-    slug: "florida-power-light",
+  // ── PILOT 6 — FPL (IOU, single territory) ────────────────────────────
+  fpl: {
+    slug: "fpl",
     name: "Florida Power & Light",
     shortName: "FPL",
     type: "iou",
+    // Single-territory IOU: most of eastern/southern Florida plus the
+    // Northwest Florida region (former Gulf Power) — one statewide rebate
+    // program, verified identical on both regional subsites 2026-07-20.
+    // Verified at rule-1 depth (all fetched live with quotes in session):
+    // Residential HVAC Program Standards PDF eff. 9/1/2025 ("$200 per
+    // qualifying unit"; SEER2 one point above federal = 15.2 per live
+    // page; excludes window units and single-zone mini splits; 2-year
+    // re-rebate limit w/ disaster waiver); Ceiling Insulation Standards
+    // PDF eff. 9/1/2025 ("$220 per installation"; R<8; once/20yr per
+    // FPL's insulation guide); On Call page (rate card $6 A/C Apr–Oct,
+    // $2.75 heat Nov–Mar, $1.50 WH + $1.50 pool year-round; "maximum
+    // annual savings is $91.75" — math re-derived exact); programs hub
+    // enumerates full residential menu — NO HPWH, duct, or income-
+    // qualified rebate (affirmative absence, Duke-OH class); company
+    // profile: ">6 million customer accounts... ~12 million people."
+    // SCRAPER NOTE: fpl.com fetched clean (NOT Xcel-class) — ordinary
+    // targets OK. NEVER target source.fpl.com / webdev.fpl.com /
+    // www-lc.fpl.com — stale mirrors still serving the old $150 program.
     territories: [
-      { state: "FL", hasHeatPumpProgram: false, note: "VERIFY" },
+      { state: "FL", hasHeatPumpProgram: true, note: "$200 instant HVAC rebate + $220 ceiling insulation statewide, including Northwest Florida" },
     ],
     status: "open",
-    lastVerified: "",
-    lastUpdated: "",
-    summary: "STUB",
-    sources: [],
+    lastVerified: "2026-07-20",
+    lastUpdated: "2026-07-20",
+    summary: "Florida Power & Light pays a $200 instant rebate on qualifying heat pump and A/C replacements (SEER2 15.2+) and $220 for ceiling insulation, both as invoice credits through Participating Independent Contractors, plus On Call bill credits up to $91.75 per year. No heat pump water heater rebate. Federal 25C/25D credits ended Dec 31, 2025.",
+    sources: [
+      { label: "FPL — Residential HVAC Program Standards (PDF, effective September 1, 2025)", url: "https://www.fpl.com/content/dam/fplgp/us/en/save/pdf/residential-air-conditioning-program-standards.pdf" },
+      { label: "FPL — Air Conditioning Rebate", url: "https://www.fpl.com/save/programs/ac-rebate.html" },
+      { label: "FPL — Residential Ceiling Insulation Program Standards (PDF, effective September 1, 2025)", url: "https://www.fpl.com/content/dam/fplgp/us/en/save/pdf/residential-ceiling-insulation-program-standards.pdf" },
+      { label: "FPL — Ceiling Insulation Rebate", url: "https://www.fpl.com/save/resources/ceiling-insulation.html" },
+      { label: "FPL — On Call Program", url: "https://www.fpl.com/save/programs/on-call-program.html" },
+      { label: "FPL — Programs and Resources (residential menu)", url: "https://www.fpl.com/save/programs.html" },
+      { label: "FPL — Company Profile", url: "https://www.fpl.com/about/company-profile.html" },
+    ],
   },
   smud: {
     slug: "smud",

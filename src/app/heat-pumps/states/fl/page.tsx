@@ -56,7 +56,7 @@ const faqJsonLd = {
       name: "Which Florida utility offers the best heat pump rebates?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Duke Energy Florida offers the most comprehensive program, with up to $1,000 for converting from strip heat to a high-efficiency heat pump, plus $500–$800 for heat pump water heaters. OUC in Orlando offers the highest single rebate at up to $1,150 for high-efficiency heat pump AC systems. FPL, despite serving nearly 6 million customers, offers a comparatively modest $200 flat rebate with no heat pump water heater or mini-split coverage.",
+        text: "Duke Energy Florida offers the most comprehensive program, with up to $1,000 for converting from strip heat to a high-efficiency heat pump, plus $500–$800 for heat pump water heaters. OUC in Orlando offers the highest single rebate at up to $1,150 for high-efficiency heat pump AC systems. FPL, despite serving more than 6 million customer accounts, offers a comparatively modest $200 flat rebate with no heat pump water heater coverage and an exclusion for single-zone mini splits.",
       },
     },
     {
@@ -289,7 +289,13 @@ export default function FloridaPage() {
           {/* FPL */}
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Florida Power &amp; Light (FPL) — $200 flat rebate</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            FPL serves approximately 5.8 million customers across most of eastern and southern Florida, including the former Gulf Power territory in Northwest Florida. The Residential HVAC Program provides a <strong>$200</strong> instant rebate applied as a credit on the contractor&apos;s invoice. Requirements include a minimum SEER2 of 15.2 (approximately 16 SEER), complete system replacement (condenser, air handler, and coil), and installation by an FPL Participating Independent Contractor (PIC). FPL does not offer rebates for heat pump water heaters or mini-split systems.
+            FPL delivers power to more than 6 million customer accounts across most of eastern and southern Florida, including the former Gulf Power territory in Northwest Florida. The Residential HVAC Program provides a <strong>$200</strong> instant rebate applied as a credit on the contractor&apos;s invoice. Requirements include a minimum SEER2 of 15.2 (approximately 16 SEER), complete system replacement (condenser, air handler, and coil), and installation by an FPL Participating Independent Contractor (PIC). FPL does not offer rebates for heat pump water heaters, and its program standards exclude window units and single-zone mini splits.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            FPL also pays <strong>$220</strong> for ceiling insulation upgrades and On Call bill credits up to <strong>$91.75</strong> per year. For equipment requirements, the two-year re-rebate rule, and how the pieces combine, see our{" "}
+            <Link href="/heat-pumps/utilities/fpl" className="text-brand-600 hover:underline">
+              FPL heat pump rebates guide
+            </Link>.
           </p>
 
           {/* Duke Energy */}
@@ -370,8 +376,8 @@ export default function FloridaPage() {
           </p>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
-            <p className="font-semibold text-blue-800 mb-1">FPL serves nearly 6 million customers but offers the lowest rebate</p>
-            <p className="text-sm text-blue-900">FPL&apos;s <strong>$200</strong> flat rebate with no heat pump water heater or mini-split coverage is notably modest compared to Duke Energy&apos;s <strong>$1,000</strong> maximum or OUC&apos;s <strong>$1,150</strong>. If you&apos;re in FPL territory, the utility rebate alone may not significantly offset installation costs. Focus on operational savings: replacing strip heat with a heat pump cuts heating energy use by 60–75%.</p>
+            <p className="font-semibold text-blue-800 mb-1">FPL serves more than 6 million customer accounts but offers the lowest rebate</p>
+            <p className="text-sm text-blue-900">FPL&apos;s <strong>$200</strong> flat rebate with no heat pump water heater coverage and a single-zone mini-split exclusion is notably modest compared to Duke Energy&apos;s <strong>$1,000</strong> maximum or OUC&apos;s <strong>$1,150</strong>. If you&apos;re in FPL territory, the utility rebate alone may not significantly offset installation costs. Focus on operational savings: replacing strip heat with a heat pump cuts heating energy use by 60–75%.</p>
           </div>
         </div>
       </section>
