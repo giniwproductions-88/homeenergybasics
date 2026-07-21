@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-21T00:50:16.024Z",
+ "generatedAt": "2026-07-21T00:54:13.884Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -5610,8 +5610,8 @@
     "KS"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T16:46:06.327Z",
-   "length": 40591,
+   "fetchedAt": "2026-07-20T20:29:47.671Z",
+   "length": 41060,
    "kind": "html",
    "textHash": "3b1cfb9b4eb2fdb2",
    "dollars": [],
@@ -7466,7 +7466,7 @@
    "states": [
     "KS"
    ],
-   "fetchedAt": "2026-07-09T15:15:38.521Z",
+   "fetchedAt": "2026-07-20T20:30:08.619Z",
    "error": "fetch failed"
   },
   "https://www.evergy.com/-/media/documents/ways-to-save/discounts/kansas-rebate-incentive-chart.pdf": {
@@ -7477,7 +7477,7 @@
     "KS"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:37.461Z",
+   "fetchedAt": "2026-07-20T20:30:07.778Z",
    "length": 328663,
    "kind": "pdf",
    "bytesHash": "9f560a39915d4f4c"
@@ -7490,8 +7490,8 @@
     "KS"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:38.129Z",
-   "length": 137405,
+   "fetchedAt": "2026-07-20T20:30:07.608Z",
+   "length": 137401,
    "kind": "html",
    "textHash": "dd55e122d46b28ec",
    "dollars": [
@@ -7512,10 +7512,10 @@
     "KS"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:38.608Z",
+   "fetchedAt": "2026-07-20T20:30:07.921Z",
    "length": 36447,
    "kind": "html",
-   "textHash": "7c5edea36d0cfba9",
+   "textHash": "e9f09cfee8bf45e4",
    "dollars": [],
    "keywords": {}
   },
@@ -7527,10 +7527,10 @@
     "KS"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:39.307Z",
-   "length": 1138841,
+   "fetchedAt": "2026-07-20T20:30:08.074Z",
+   "length": 1146587,
    "kind": "html",
-   "textHash": "f0cf74ddcdbd9585",
+   "textHash": "b58388f5b56165fe",
    "dollars": [
     "$2",
     "$3.16",
@@ -7562,7 +7562,6 @@
     "$19,166,250.50"
    ],
    "keywords": {
-    "now available": 2,
     "applications open": 2
    }
   },
