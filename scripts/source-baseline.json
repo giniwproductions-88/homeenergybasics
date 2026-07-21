@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-21T01:00:58.759Z",
+ "generatedAt": "2026-07-21T20:23:00.000Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -4826,10 +4826,11 @@
    "finalUrl": "https://www.fpl.com/content/dam/fplgp/us/en/save/pdf/residential-air-conditioning-program-standards.pdf",
    "label": "FPL — Residential HVAC Program Standards",
    "states": [
-    "FL"
+    "FL",
+    "FPL"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:07.327Z",
+   "fetchedAt": "2026-07-21T20:22:15.080Z",
    "length": 135813,
    "kind": "pdf",
    "bytesHash": "7010aaedafe2dc1b"
@@ -8779,6 +8780,120 @@
    ],
    "fetchedAt": "2026-07-20T20:29:45.951Z",
    "error": "fetch failed"
+  },
+  "https://www.fpl.com/save/programs/ac-rebate.html": {
+   "url": "https://www.fpl.com/save/programs/ac-rebate.html",
+   "finalUrl": "https://www.fpl.com/save/programs/ac-rebate.html",
+   "label": "FPL — Air Conditioning Rebate",
+   "states": [
+    "FPL"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-21T20:22:46.658Z",
+   "length": 76633,
+   "kind": "html",
+   "textHash": "ca8ab0962bdb90c0",
+   "dollars": [
+    "$90",
+    "$200",
+    "$5,000"
+   ],
+   "keywords": {}
+  },
+  "https://www.fpl.com/content/dam/fplgp/us/en/save/pdf/residential-ceiling-insulation-program-standards.pdf": {
+   "url": "https://www.fpl.com/content/dam/fplgp/us/en/save/pdf/residential-ceiling-insulation-program-standards.pdf",
+   "finalUrl": "https://www.fpl.com/content/dam/fplgp/us/en/save/pdf/residential-ceiling-insulation-program-standards.pdf",
+   "label": "FPL — Residential Ceiling Insulation Program Standards (PDF, effective September 1, 2025)",
+   "states": [
+    "FPL"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-21T20:22:47.004Z",
+   "length": 133643,
+   "kind": "pdf",
+   "bytesHash": "ec6464d4325e9f88"
+  },
+  "https://www.fpl.com/save/resources/ceiling-insulation.html": {
+   "url": "https://www.fpl.com/save/resources/ceiling-insulation.html",
+   "finalUrl": "https://www.fpl.com/save/resources/ceiling-insulation.html",
+   "label": "FPL — Ceiling Insulation Rebate",
+   "states": [
+    "FPL"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-21T20:22:46.867Z",
+   "length": 77653,
+   "kind": "html",
+   "textHash": "6b1adb175fa0eec5",
+   "dollars": [
+    "$90",
+    "$220",
+    "$5,000"
+   ],
+   "keywords": {}
+  },
+  "https://www.fpl.com/save/programs/on-call-program.html": {
+   "url": "https://www.fpl.com/save/programs/on-call-program.html",
+   "finalUrl": "https://www.fpl.com/save/programs/on-call-program.html",
+   "label": "FPL — On Call Program",
+   "states": [
+    "FPL"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-21T20:22:46.880Z",
+   "length": 115988,
+   "kind": "html",
+   "textHash": "dc269222405a8e19",
+   "dollars": [
+    "$0",
+    "$1.50",
+    "$2.75",
+    "$6",
+    "$90",
+    "$91.75",
+    "$100",
+    "$200",
+    "$220",
+    "$5,000"
+   ],
+   "keywords": {
+    "temporarily": 1
+   }
+  },
+  "https://www.fpl.com/save/programs.html": {
+   "url": "https://www.fpl.com/save/programs.html",
+   "finalUrl": "https://www.fpl.com/save/programs.html",
+   "label": "FPL — Programs and Resources (residential menu)",
+   "states": [
+    "FPL"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-21T20:22:46.814Z",
+   "length": 102624,
+   "kind": "html",
+   "textHash": "61703f2f1a1264d1",
+   "dollars": [
+    "$90",
+    "$200",
+    "$220",
+    "$5,000"
+   ],
+   "keywords": {}
+  },
+  "https://www.fpl.com/about/company-profile.html": {
+   "url": "https://www.fpl.com/about/company-profile.html",
+   "finalUrl": "https://www.fpl.com/about/company-profile.html",
+   "label": "FPL — Company Profile",
+   "states": [
+    "FPL"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-21T20:22:47.069Z",
+   "length": 49487,
+   "kind": "html",
+   "textHash": "60dfd1f63e542a5d",
+   "dollars": [],
+   "keywords": {}
   }
  }
 }
