@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-21T20:31:22.889Z",
+ "generatedAt": "2026-07-24T22:58:27.457Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -490,8 +490,8 @@
     "MO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:28.577Z",
-   "length": 114446,
+   "fetchedAt": "2026-07-24T22:37:02.112Z",
+   "length": 114425,
    "kind": "html",
    "textHash": "5f26bc2d77d90d83",
    "dollars": [
@@ -670,8 +670,8 @@
     "OR"
    ],
    "httpStatus": 404,
-   "fetchedAt": "2026-07-14T17:02:07.722Z",
-   "length": 242048,
+   "fetchedAt": "2026-07-24T22:37:08.670Z",
+   "length": 269335,
    "error": "HTTP 404"
   },
   "https://www.oregon.gov/energy/incentives/pages/home-energy-rebates.aspx": {
@@ -682,8 +682,8 @@
     "OR"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:09.618Z",
-   "length": 86801,
+   "fetchedAt": "2026-07-24T22:37:07.137Z",
+   "length": 86753,
    "kind": "html",
    "textHash": "5c67aa54aea2a4a1",
    "dollars": [
@@ -702,8 +702,8 @@
     "OR"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:09.586Z",
-   "length": 99689,
+   "fetchedAt": "2026-07-24T22:37:07.573Z",
+   "length": 99641,
    "kind": "html",
    "textHash": "a6fb3b98e6b2c317",
    "dollars": [
@@ -5405,8 +5405,8 @@
     "DC"
    ],
    "httpStatus": 403,
-   "fetchedAt": "2026-07-09T15:15:19.419Z",
-   "length": 30397,
+   "fetchedAt": "2026-07-24T22:37:52.391Z",
+   "length": 30416,
    "error": "HTTP 403"
   },
   "https://www.dcseu.com/residential-rebates/heating-cooling": {
@@ -5417,8 +5417,8 @@
     "DC"
    ],
    "httpStatus": 403,
-   "fetchedAt": "2026-07-09T15:15:19.517Z",
-   "length": 30397,
+   "fetchedAt": "2026-07-24T22:37:52.517Z",
+   "length": 30416,
    "error": "HTTP 403"
   },
   "https://www.dcseu.com/affordable-home-electrification": {
@@ -5429,8 +5429,8 @@
     "DC"
    ],
    "httpStatus": 403,
-   "fetchedAt": "2026-07-09T15:15:19.580Z",
-   "length": 30397,
+   "fetchedAt": "2026-07-24T22:37:52.658Z",
+   "length": 30416,
    "error": "HTTP 403"
   },
   "https://doee.dc.gov/service/ira-rebates-tax-incentives": {
@@ -5441,8 +5441,8 @@
     "DC"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:18.580Z",
-   "length": 130089,
+   "fetchedAt": "2026-07-24T22:37:51.490Z",
+   "length": 129967,
    "kind": "html",
    "textHash": "42a8c2a8dd572354",
    "dollars": [],
@@ -5456,8 +5456,8 @@
     "DC"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:19.836Z",
-   "length": 126212,
+   "fetchedAt": "2026-07-24T22:37:52.248Z",
+   "length": 126231,
    "kind": "html",
    "textHash": "346e6d33ad88843a",
    "dollars": [
@@ -5482,8 +5482,8 @@
     "DC"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:19.338Z",
-   "length": 82609,
+   "fetchedAt": "2026-07-24T22:37:51.924Z",
+   "length": 82611,
    "kind": "html",
    "textHash": "dc24dc20425f910c",
    "dollars": [
@@ -5503,10 +5503,10 @@
     "DC"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:19.695Z",
-   "length": 129758,
+   "fetchedAt": "2026-07-24T22:37:52.205Z",
+   "length": 129762,
    "kind": "html",
-   "textHash": "d32a2158df9df4b4",
+   "textHash": "59f236c9caea2366",
    "dollars": [
     "$61,841",
     "$80,869",
@@ -5520,7 +5520,9 @@
     "$171,253"
    ],
    "keywords": {
-    "waitlist": 3
+    "waitlist": 4,
+    "now open": 1,
+    "first-come": 1
    }
   },
   "https://dnrec.delaware.gov/climate-coastal-energy/energy-office/ira/home-energy-rebates/": {
@@ -7939,8 +7941,13 @@
    "states": [
     "OR"
    ],
-   "fetchedAt": "2026-07-14T17:02:27.768Z",
-   "error": "fetch failed"
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-24T22:37:06.812Z",
+   "length": 153340,
+   "kind": "html",
+   "textHash": "2e1b2715094488aa",
+   "dollars": [],
+   "keywords": {}
   },
   "https://www.energytrust.org/communities/homes-hear/": {
    "url": "https://www.energytrust.org/communities/homes-hear/",
@@ -7950,10 +7957,10 @@
     "OR"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:06.172Z",
-   "length": 347739,
+   "fetchedAt": "2026-07-24T22:37:07.096Z",
+   "length": 347740,
    "kind": "html",
-   "textHash": "300e0651358999e3",
+   "textHash": "8e4028aa7a4058e2",
    "dollars": [
     "$25",
     "$113"
