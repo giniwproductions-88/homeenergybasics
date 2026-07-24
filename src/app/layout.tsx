@@ -7,6 +7,9 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Home Energy Basics',
   description: 'Heat pump rebates and incentives by state, verified against official program sources. Utility rebates, state programs, and federal status in one place.',
+  other: {
+    'impact-site-verification': '54003e3a-8b6e-4728-a44b-a43f1dc30ecd',
+  },
 }
 
 export default function RootLayout({
