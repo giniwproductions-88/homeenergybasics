@@ -1,4 +1,4 @@
-import type { MetadataRoute } from "next";
+import { MetadataRoute } from "next";
 import { incentives } from "@/data/incentives";
 import { shippedUtilities } from "@/data/utilities";
 
@@ -42,12 +42,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/heat-pumps/tracker`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
       url: `${baseUrl}/heat-pumps/stacking-rebates`,
       lastModified: new Date(),
       changeFrequency: "monthly",
@@ -80,7 +74,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${baseUrl}/contact`,
       lastModified: new Date(),
-      changeFrequency: "monthly",
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/privacy`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/affiliate-disclosure`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
       priority: 0.3,
     },
   ];

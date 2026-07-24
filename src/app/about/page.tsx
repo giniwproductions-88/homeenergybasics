@@ -76,16 +76,27 @@ export default function AboutPage() {
             <ul>
               <li><strong>Calculate savings:</strong> Too many variables we can't know about your situation</li>
               <li><strong>Guarantee eligibility:</strong> Program rules change and have exceptions we can't anticipate</li>
-              <li><strong>Recommend specific products:</strong> We're not a review site or sales channel</li>
+              <li><strong>Sell placement:</strong> No company pays to be mentioned, ranked, or recommended on this site</li>
               <li><strong>Provide tax advice:</strong> Consult a tax professional for credit eligibility</li>
             </ul>
+
+            <h2>How This Site Is Funded</h2>
+            <p>
+              Some pages may contain affiliate links, limited to commercial-intent content 
+              such as buying guides and cost comparisons. When affiliate links are present 
+              and you make a purchase through one, we may earn a commission from the retailer 
+              at no additional cost to you. State rebate and incentive pages remain 
+              informational and free of product promotion. Details are in our{' '}
+              <Link href="/affiliate-disclosure">Affiliate Disclosure</Link> and{' '}
+              <Link href="/privacy">Privacy Policy</Link>.
+            </p>
 
             <h2>Contact</h2>
             <p>
               Found an error? Have a suggestion? We want to hear from you.
             </p>
             <p>
-              Email: <a href="mailto:hello@homeenergybasics.com">hello@homeenergybasics.com</a>
+              Email: <a href="mailto:contact@homeenergybasics.com">contact@homeenergybasics.com</a>
             </p>
 
           </div>
