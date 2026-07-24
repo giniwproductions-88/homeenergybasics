@@ -1745,8 +1745,8 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "DC",
     stateName: "Washington DC",
     status: "open",
-    lastVerified: "2026-06-10",
-    lastUpdated: "2026-06-10",
+    lastVerified: "2026-07-24",
+    lastUpdated: "2026-07-24",
     summary:
       "DCSEU offers up to $5,000 for heat pumps and $1,600 for HPWHs when switching from gas to electric, plus $3,200 in electrification service rebates. Total realistic rebates reach $9,800. Federal 25C/25D credits expired. AHEP provides no-cost electrification for households below 80% AMI but is currently waitlisted.",
     sources: [

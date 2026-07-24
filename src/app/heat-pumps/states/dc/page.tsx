@@ -287,7 +287,7 @@ export default function WashingtonDCPage() {
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-amber-800 mb-1">⚠ AHEP is currently accepting waitlist applications only</p>
-            <p className="text-sm text-amber-900">Due to overwhelming demand and limited funding, AHEP is not processing new applications immediately. Homeowners who qualify should still apply to join the waitlist, as the no-cost benefit far exceeds any combination of standard rebates.</p>
+            <p className="text-sm text-amber-900">Due to overwhelming demand and limited funding, AHEP is not processing new applications immediately. Households who qualify — owners and renters alike — should still apply to join the waitlist, as the no-cost benefit far exceeds any combination of standard rebates.</p>
           </div>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">DC&apos;s federal rebate structure is unusual</h3>
@@ -342,7 +342,7 @@ export default function WashingtonDCPage() {
 
           <div className="bg-gray-100 rounded-lg p-5 mb-6">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
-            <p className="text-sm text-gray-700">For a typical gas-to-electric conversion costing $15,000–$22,000 installed, a market-rate DC homeowner claiming the full <strong>$9,800</strong> in DCSEU rebates would pay <strong>$5,200 to $12,200 out of pocket</strong>. DC Green Bank&apos;s Clean Energy Advantage Loan Program offers financing from 5.75% APR (secured) or 8.25% APR (unsecured) for terms of 3, 5, or 10 years, up to $35,000. Income-qualified homeowners accepted into AHEP pay nothing.</p>
+            <p className="text-sm text-gray-700">For a typical gas-to-electric conversion costing $15,000–$22,000 installed, a market-rate DC homeowner claiming the full <strong>$9,800</strong> in DCSEU rebates would pay <strong>$5,200 to $12,200 out of pocket</strong>. DC Green Bank&apos;s Clean Energy Advantage Loan Program offers financing from 5.75% APR (secured) or 8.25% APR (unsecured) for terms of 3, 5, or 10 years, up to $35,000. Income-qualified households accepted into AHEP pay nothing.</p>
           </div>
 
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
@@ -360,7 +360,7 @@ export default function WashingtonDCPage() {
             DOEE runs the <strong>Weatherization Assistance Program (WAP)</strong> for DC households below 60% of State Median Income. WAP can include insulation, air sealing, and heating system repairs or replacement — including heat pump installation in some cases. The program is free for qualifying households.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            The <strong>Emergency Mechanical Systems (EMS)</strong> program provides emergency repair or replacement of heating and cooling systems for income-eligible homeowners and renters. Both WAP and EMS are currently accepting waitlist applications, with work scheduled as funding and crew capacity allow.
+            The <strong>Emergency Mechanical Systems (EMS)</strong> program provides emergency repair or replacement of heating and cooling systems for income-eligible homeowners and renters. As of late July 2026, DOEE reports that FY2026 program openings for WAP and EMS are delayed, and its team has begun contacting waitlisted applicants individually with updates. New applications are still accepted, but applicants join the waitlist rather than receiving immediate service.
           </p>
           <p className="text-gray-700 leading-relaxed">
             Contact DOEE at (202) 535-2600 or visit{" "}
