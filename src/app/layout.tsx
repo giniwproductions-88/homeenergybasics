@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import SiteHeader from '@/components/SiteHeader'
 import { incentives } from '@/data/incentives'
 import { shippedUtilities } from '@/data/utilities'
 import './globals.css'
@@ -25,40 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen flex flex-col">
-        {/* Header */}
-        <header className="border-b border-gray-100 bg-white sticky top-0 z-50">
-          <div className="container-wide py-4 flex items-center justify-between">
-            <Link href="/" className="text-xl font-bold text-gray-900 hover:text-brand-600 transition-colors">
-              ⚡ Home Energy Basics
-            </Link>
-            
-            <nav className="hidden md:flex items-center gap-8">
-              <Link href="/battery" className="text-gray-600 hover:text-gray-900 font-medium">
-                Home Batteries
-              </Link>
-              <Link href="/heat-pumps" className="text-gray-600 hover:text-gray-900 font-medium">
-                Heat Pumps
-              </Link>
-              <Link href="/about" className="text-gray-600 hover:text-gray-900 font-medium">
-                About
-              </Link>
-              <Link href="/contact" className="text-gray-600 hover:text-gray-900 font-medium">
-                Contact
-              </Link>
-            </nav>
-
-            {/* Mobile menu button */}
-            <button
-              type="button"
-              aria-label="Open navigation menu"
-              className="md:hidden p-2 text-gray-600"
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
-          </div>
-        </header>
+        <SiteHeader />
 
         {/* Main Content */}
         <main className="flex-grow">
