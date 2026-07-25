@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-24T22:58:27.457Z",
+ "generatedAt": "2026-07-25T00:35:19.912Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -515,7 +515,7 @@
     "XCEL-ENERGY"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T16:45:23.943Z",
+   "fetchedAt": "2026-07-24T22:37:04.821Z",
    "length": 2442505,
    "kind": "pdf",
    "bytesHash": "3817f7be21562cbd"
@@ -528,8 +528,8 @@
     "MN"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-16T02:52:30.009Z",
-   "length": 101642,
+   "fetchedAt": "2026-07-24T22:37:02.708Z",
+   "length": 101641,
    "kind": "html",
    "textHash": "5fba7fa06b975fa2",
    "dollars": [
@@ -546,26 +546,28 @@
     "MN"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-16T02:52:30.030Z",
-   "length": 46677,
+   "fetchedAt": "2026-07-24T22:37:02.642Z",
+   "length": 47831,
    "kind": "html",
-   "textHash": "0f317a8529c284b9",
+   "textHash": "d66958a082762411",
    "dollars": [
     "$25",
     "$400",
     "$1000"
    ],
-   "keywords": {}
+   "keywords": {
+    "temporarily": 1
+   }
   },
   "https://mn.gov/commerce/energy/consumer/energy-programs/save-energy-mn.jsp": {
    "url": "https://mn.gov/commerce/energy/consumer/energy-programs/save-energy-mn.jsp",
-   "finalUrl": "http://validate.perfdrive.com/d5bd5333eafe8b0ccd6023ba818d1aa6/?ssa=d28c0635-5e38-4544-b83c-bab6cd51cd19&ssb=27148206015&ssc=https%3A%2F%2Fmn.gov%2Fcommerce%2Fenergy%2Fconsumer%2Fenergy-programs%2Fsave-energy-mn.jsp&ssi=df8e8f45-bf56-476f-b72a-608cfa718658&ssk=support@shieldsquare.com&ssm=02298817840904193108435046260387&ssn=c05325f8bf6afa8950712f2c5446c7882e90514b0bfc-fd68-4ad6-9b927a&sso=33c95605-4a1b7d29ec769a133ab7e91c20f6fde2cd4ab1cfd7903597&ssp=10886224811784186296178411857723346&ssq=76703097035384388836770353986375248114225&ssr=NTAuODEuMjI0LjE3Mw==&sst=Mozilla/5.0%20(Windows%20NT%2010.0;%20Win64;%20x64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/126.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=W10=",
+   "finalUrl": "http://validate.perfdrive.com/d5bd5333eafe8b0ccd6023ba818d1aa6/?ssa=ab7cf5a3-059e-4f02-9928-eafe0e6274d9&ssb=65872285299&ssc=https%3A%2F%2Fmn.gov%2Fcommerce%2Fenergy%2Fconsumer%2Fenergy-programs%2Fsave-energy-mn.jsp&ssi=c0e9c71b-bf56-403b-9144-219acb7f7760&ssk=support@shieldsquare.com&ssm=90386983551975450103677275240080&ssn=c703e49f18d38f91493294d479e542ad3fcdf0e85ddd-d406-4fa0-b3a481&sso=908d4407-35bd556e1d743c6f79f5e017ef529889ad14ecfaafc94061&ssp=33807335941784911087178496346257910&ssq=41183753262336066184632623192809366514891&ssr=NTAuODEuMjI0LjE3Mw==&sst=Mozilla/5.0%20(Windows%20NT%2010.0;%20Win64;%20x64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/126.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=W10=",
    "label": "MN Commerce — Save Energy Minnesota",
    "states": [
     "MN"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-16T02:52:30.938Z",
+   "fetchedAt": "2026-07-24T22:37:03.220Z",
    "length": 21621,
    "kind": "html",
    "textHash": "e2d017885975c36d",
@@ -574,13 +576,13 @@
   },
   "https://mn.gov/commerce/energy/consumer/energy-programs/heat-pump.jsp": {
    "url": "https://mn.gov/commerce/energy/consumer/energy-programs/heat-pump.jsp",
-   "finalUrl": "http://validate.perfdrive.com/d5bd5333eafe8b0ccd6023ba818d1aa6/?ssa=aed5f858-35f1-4675-b83a-125887dca7fb&ssb=27148206015&ssc=https%3A%2F%2Fmn.gov%2Fcommerce%2Fenergy%2Fconsumer%2Fenergy-programs%2Fheat-pump.jsp&ssi=4a332055-bf56-42c0-92aa-76b1b792e5d2&ssk=support@shieldsquare.com&ssm=02298817840904193108435046260387&ssn=c05325f8cef83c06648670f5ecffc7882e90fca3f2f1-1a23-4027-bb927a&sso=33c956b5-583ea03da2fc9a133ab7ad254c3aef0fc2b64324d7903597&ssp=10886224811784186296178411857723346&ssq=76703097035384388836770353986375248114225&ssr=NTAuODEuMjI0LjE3Mw==&sst=Mozilla/5.0%20(Windows%20NT%2010.0;%20Win64;%20x64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/126.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=W10=",
+   "finalUrl": "http://validate.perfdrive.com/d5bd5333eafe8b0ccd6023ba818d1aa6/?ssa=0dd24457-dc50-4eb9-ab86-f237f1dab646&ssb=65872285299&ssc=https%3A%2F%2Fmn.gov%2Fcommerce%2Fenergy%2Fconsumer%2Fenergy-programs%2Fheat-pump.jsp&ssi=9db4d493-bf56-493b-9265-2d92b8fb7e2d&ssk=support@shieldsquare.com&ssm=90386983551975450103677275240080&ssn=c703e49fe1ad8494aedbacdd391b42ad3fcd03d4219b-d708-45ac-a3a481&sso=908d4054-6e23d3a7669d3c6f79f5f4a62fd6aed7d7aaf917afc94061&ssp=33807335941784911087178496346257910&ssq=41183753262336066184632623192809366514891&ssr=NTAuODEuMjI0LjE3Mw==&sst=Mozilla/5.0%20(Windows%20NT%2010.0;%20Win64;%20x64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/126.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=W10=",
    "label": "MN Commerce — Residential Heat Pump Rebate",
    "states": [
     "MN"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-16T02:52:30.950Z",
+   "fetchedAt": "2026-07-24T22:37:03.238Z",
    "length": 21621,
    "kind": "html",
    "textHash": "e2d017885975c36d",
@@ -595,10 +597,10 @@
     "MN"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-16T02:52:30.787Z",
-   "length": 199962,
+   "fetchedAt": "2026-07-24T22:37:03.174Z",
+   "length": 200149,
    "kind": "html",
-   "textHash": "304b75c84ba6da09",
+   "textHash": "3904f5da1aa37baf",
    "dollars": [
     "$5,000",
     "$14,000"
@@ -613,10 +615,10 @@
     "MN"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-16T02:52:30.888Z",
-   "length": 65158,
+   "fetchedAt": "2026-07-24T22:37:03.438Z",
+   "length": 65144,
    "kind": "html",
-   "textHash": "e4a3f90067ba3435",
+   "textHash": "fe42ea89f0c88fcf",
    "dollars": [
     "$0",
     "$400",
