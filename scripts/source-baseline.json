@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-25T00:35:19.912Z",
+ "generatedAt": "2026-07-25T02:23:37.443Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -558,36 +558,6 @@
    "keywords": {
     "temporarily": 1
    }
-  },
-  "https://mn.gov/commerce/energy/consumer/energy-programs/save-energy-mn.jsp": {
-   "url": "https://mn.gov/commerce/energy/consumer/energy-programs/save-energy-mn.jsp",
-   "finalUrl": "http://validate.perfdrive.com/d5bd5333eafe8b0ccd6023ba818d1aa6/?ssa=ab7cf5a3-059e-4f02-9928-eafe0e6274d9&ssb=65872285299&ssc=https%3A%2F%2Fmn.gov%2Fcommerce%2Fenergy%2Fconsumer%2Fenergy-programs%2Fsave-energy-mn.jsp&ssi=c0e9c71b-bf56-403b-9144-219acb7f7760&ssk=support@shieldsquare.com&ssm=90386983551975450103677275240080&ssn=c703e49f18d38f91493294d479e542ad3fcdf0e85ddd-d406-4fa0-b3a481&sso=908d4407-35bd556e1d743c6f79f5e017ef529889ad14ecfaafc94061&ssp=33807335941784911087178496346257910&ssq=41183753262336066184632623192809366514891&ssr=NTAuODEuMjI0LjE3Mw==&sst=Mozilla/5.0%20(Windows%20NT%2010.0;%20Win64;%20x64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/126.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=W10=",
-   "label": "MN Commerce — Save Energy Minnesota",
-   "states": [
-    "MN"
-   ],
-   "httpStatus": 200,
-   "fetchedAt": "2026-07-24T22:37:03.220Z",
-   "length": 21621,
-   "kind": "html",
-   "textHash": "e2d017885975c36d",
-   "dollars": [],
-   "keywords": {}
-  },
-  "https://mn.gov/commerce/energy/consumer/energy-programs/heat-pump.jsp": {
-   "url": "https://mn.gov/commerce/energy/consumer/energy-programs/heat-pump.jsp",
-   "finalUrl": "http://validate.perfdrive.com/d5bd5333eafe8b0ccd6023ba818d1aa6/?ssa=0dd24457-dc50-4eb9-ab86-f237f1dab646&ssb=65872285299&ssc=https%3A%2F%2Fmn.gov%2Fcommerce%2Fenergy%2Fconsumer%2Fenergy-programs%2Fheat-pump.jsp&ssi=9db4d493-bf56-493b-9265-2d92b8fb7e2d&ssk=support@shieldsquare.com&ssm=90386983551975450103677275240080&ssn=c703e49fe1ad8494aedbacdd391b42ad3fcd03d4219b-d708-45ac-a3a481&sso=908d4054-6e23d3a7669d3c6f79f5f4a62fd6aed7d7aaf917afc94061&ssp=33807335941784911087178496346257910&ssq=41183753262336066184632623192809366514891&ssr=NTAuODEuMjI0LjE3Mw==&sst=Mozilla/5.0%20(Windows%20NT%2010.0;%20Win64;%20x64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/126.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=W10=",
-   "label": "MN Commerce — Residential Heat Pump Rebate",
-   "states": [
-    "MN"
-   ],
-   "httpStatus": 200,
-   "fetchedAt": "2026-07-24T22:37:03.238Z",
-   "length": 21621,
-   "kind": "html",
-   "textHash": "e2d017885975c36d",
-   "dollars": [],
-   "keywords": {}
   },
   "https://www.minneapolismn.gov/government/programs-initiatives/environmental-programs/green-cost-share/energy-efficiency/energy-rebates/": {
    "url": "https://www.minneapolismn.gov/government/programs-initiatives/environmental-programs/green-cost-share/energy-efficiency/energy-rebates/",
@@ -1419,31 +1389,6 @@
    "kind": "html",
    "textHash": "2dfd01d725d1ecc8",
    "dollars": [],
-   "keywords": {}
-  },
-  "https://savings.austinenergy.com/residential/offerings": {
-   "url": "https://savings.austinenergy.com/residential/offerings",
-   "finalUrl": "https://austinenergy.com/energy-efficiency/rebates-incentives/residential",
-   "label": "Austin Energy — Rebates & Incentives",
-   "states": [
-    "TX"
-   ],
-   "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:35.305Z",
-   "length": 161632,
-   "kind": "html",
-   "textHash": "6326de233e6d84ad",
-   "dollars": [
-    "$50",
-    "$75",
-    "$300",
-    "$750",
-    "$800",
-    "$1,000",
-    "$1,500",
-    "$2,500",
-    "$3,000"
-   ],
    "keywords": {}
   },
   "https://www.oncor.com/content/oncorwww/talot/en/home/get-started/residential/home-efficiency.html": {

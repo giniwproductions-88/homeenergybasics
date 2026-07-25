@@ -15,6 +15,7 @@
  *   node scripts/check-sources.mjs accept NY MA          # after verifying a flagged state, fold its fresh snapshot into baseline
  *   node scripts/check-sources.mjs accept all
  *   node scripts/check-sources.mjs prune                 # drop baseline entries for URLs removed from the data files
+ *   node scripts/check-sources.mjs unbaselined           # list watched URLs with no baseline entry (no network)
  *   node scripts/check-sources.mjs selftest              # offline test of the diff engine
  *
  * WORKFLOW (playbook Phase 4): baseline once -> check every ~2 days -> HIGH items get
@@ -41,7 +42,15 @@ const UTILITIES = path.join(ROOT, "src", "data", "utilities.ts"); // optional; p
 // JS-walled hosts: a plain fetch returns a shell page, so hash/dollar diffs are
 // guaranteed false-misses. These are excluded from fetching entirely and surfaced
 // in every report as HUMAN VERIFY reminders. Matches the host and all subdomains.
-const HUMAN_VERIFY_HOSTS = ["my.xcelenergy.com"];
+const HUMAN_VERIFY_HOSTS = [
+  "my.xcelenergy.com",
+  // mn.gov: both MN Commerce pages sit behind a perfdrive/ShieldSquare bot
+  // wall that returns HTTP 200 — the scraper diffed wall-vs-wall and reported
+  // "unchanged" while blind (proven 7/24: the 6/12 banner update happened
+  // behind the wall). Host-level match catches exactly the two Commerce
+  // pages; minneapolismn.gov does NOT match (different host suffix).
+  "mn.gov",
+];
 
 function isHumanVerify(url) {
   try {
@@ -51,6 +60,43 @@ function isHumanVerify(url) {
     return false;
   }
 }
+
+// Off-domain redirect detection (bot-wall class). A redirect to a different
+// registrable domain (perfdrive.com, validate.*, captcha hosts) means the
+// content fetched is NOT the target page — diffing it produces silent
+// blindness that is strictly worse than a fetch failure. Approximation:
+// last two host labels, www-stripped ("savings.austinenergy.com" ->
+// "austinenergy.com"), so subdomain/apex moves do NOT trip it but any
+// third-party wall does. Good enough for this watch list (US .gov/.com/.org).
+function registrableHost(u) {
+  try {
+    const h = new URL(u).host.toLowerCase().replace(/^www\./, "");
+    return h.split(".").slice(-2).join(".");
+  } catch {
+    return u;
+  }
+}
+// Extra state tags: URLs whose page serves more states than the data files
+// reference. The OG&E /ord/ rebates page carries BOTH the AR tab and the
+// Oklahoma closure sentence ("Oklahoma rebates are closed and will return
+// in 2027") — a flag there implicates both states (7/24 AR/OG&E lesson).
+// Tags affect report labels, triage lists, --only filters, and accept.
+const EXTRA_STATE_TAGS = {
+  "https://www.oge.com/wps/portal/ord/energy-solutions/efficiency-programs/rebates": ["OK"],
+};
+
+// Monitor-only targets: watched URLs that are NOT reader-facing sources in
+// incentives.ts/utilities.ts (funding trackers etc). They join the watch
+// list and survive prune, but never render on any page. Keep this list
+// short — the watch list is supposed to derive from the site.
+const EXTRA_TARGETS = [
+  {
+    url: "https://cleanheatri.com/resources/remaining-funds/",
+    label: "Clean Heat RI — Remaining Funds tracker (monitor-only)",
+    states: ["RI"], // RI's #1 trigger: depletion or program closure
+  },
+];
+
 const BASELINE_F = path.join(scriptDir, "source-baseline.json");
 const LATEST_F = path.join(scriptDir, "source-latest.json");
 const REPORT_F = path.join(scriptDir, "source-diff-report.md");
@@ -79,6 +125,16 @@ const KEYWORDS = [
   "applications open", "accepting applications", "coming soon",
   "temporarily", "sold out", "while funds last", "first-come",
 ];
+
+// Keywords that false-flag on site furniture ("temporarily" in a cookie
+// banner or outage notice — MN Power class, 7/24). Scoped keywords only
+// count when program vocabulary appears within `window` chars either side.
+// NOTE: scoping changes counts vs an unscoped baseline — expect a one-time
+// keyword-shift flag on pages where the old count included furniture hits;
+// glance and accept.
+const KEYWORD_SCOPE = {
+  temporarily: { window: 120, near: /rebate|program|incentiv|applicat|fund|waitlist|offer|enroll/ },
+};
 
 /* ------------------------------------------------------------------ */
 /* incentives.ts parsing                                               */
@@ -188,8 +244,17 @@ function keywordCounts(text) {
   const t = text.toLowerCase();
   const out = {};
   for (const k of KEYWORDS) {
+    const scope = KEYWORD_SCOPE[k];
     let n = 0, i = 0;
-    while ((i = t.indexOf(k, i)) !== -1) { n++; i += k.length; }
+    while ((i = t.indexOf(k, i)) !== -1) {
+      if (!scope) {
+        n++;
+      } else {
+        const ctx = t.slice(Math.max(0, i - scope.window), i + k.length + scope.window);
+        if (scope.near.test(ctx)) n++;
+      }
+      i += k.length;
+    }
     if (n) out[k] = n;
   }
   return out;
@@ -219,6 +284,12 @@ async function fetchSnapshot(url, meta) {
         url, finalUrl, label: meta.label, states: meta.states,
         httpStatus: res.status, fetchedAt: new Date().toISOString(), length: buf.length,
       };
+      if (registrableHost(finalUrl) !== registrableHost(url)) {
+        // Bot wall / interstitial host. Classify as FETCH failure so it is
+        // never diffed and never counts as "unchanged" (MN lesson, 7/24).
+        let fh = finalUrl; try { fh = new URL(finalUrl).host; } catch {}
+        return { ...base, error: `off-domain redirect -> ${fh} (bot wall?)` };
+      }
       if (!res.ok) return { ...base, error: `HTTP ${res.status}` };
       if (ct.includes("pdf") || /\.pdf(\?|$)/i.test(finalUrl)) {
         return { ...base, kind: "pdf", bytesHash: sha(buf) };
@@ -382,7 +453,9 @@ function writeReport(baseline, latest, ignoreSet, humanVerify = []) {
 /* ------------------------------------------------------------------ */
 
 function loadJson(f, fallback) {
-  return existsSync(f) ? JSON.parse(readFileSync(f, "utf8")) : fallback;
+  // BOM strip: PS 5.1 Set-Content writes UTF-8 with BOM by default, which
+  // JSON.parse rejects (crashed the 7/24 run on source-ignore.json).
+  return existsSync(f) ? JSON.parse(readFileSync(f, "utf8").replace(/^\uFEFF/, "")) : fallback;
 }
 
 function filterUrls(urls, onlyArg) {
@@ -414,6 +487,16 @@ async function main() {
   for (const [u, meta] of utilUrls) {
     if (!allUrls.has(u)) allUrls.set(u, { ...meta, states: [...meta.states] });
     else for (const c of meta.states) if (!allUrls.get(u).states.includes(c)) allUrls.get(u).states.push(c);
+  }
+  // Monitor-only targets (never rendered on pages; survive prune).
+  for (const x of EXTRA_TARGETS) {
+    if (!allUrls.has(x.url)) allUrls.set(x.url, { label: x.label, states: [...x.states] });
+    else for (const c of x.states) if (!allUrls.get(x.url).states.includes(c)) allUrls.get(x.url).states.push(c);
+  }
+  // Extra state tags (pages serving more states than the data files reference).
+  for (const [u, extra] of Object.entries(EXTRA_STATE_TAGS)) {
+    if (!allUrls.has(u)) continue; // URL left the data files: tag is moot, not an error
+    for (const c of extra) if (!allUrls.get(u).states.includes(c)) allUrls.get(u).states.push(c);
   }
   const urls = filterUrls(allUrls, only);
   // Partition out JS-walled URLs: never fetched, always reported for manual checks.
@@ -481,6 +564,19 @@ async function main() {
     process.exit(rows.some((r) => r.level === "HIGH" || r.level === "FETCH") ? 1 : 0);
   }
 
+  if (mode === "unbaselined") {
+    // No network. Lists fetchable targets that have no baseline entry —
+    // these show as NEW every check run and are silently un-watched between
+    // runs. (Built for the 404-entries-vs-405-targets gap, 7/24.)
+    const baseline = loadJson(BASELINE_F, null);
+    if (!baseline) { console.error("No baseline."); process.exit(2); }
+    const missing = [...urls.entries()].filter(([u]) => !baseline.entries[u]);
+    console.log(`fetchable targets: ${urls.size} | baseline entries: ${Object.keys(baseline.entries).length} | un-baselined: ${missing.length}`);
+    for (const [u, m] of missing) console.log(`  [${m.states.join(",")}] ${m.label} — ${u}`);
+    if (missing.length) console.log(`\nAdopt after a check run with: accept <STATE>  (or baseline --only <STATE> to snapshot now)`);
+    return;
+  }
+
   if (mode === "prune") {
     // Remove baseline entries whose URL is no longer present in
     // incentives.ts/utilities.ts (the REMOVED rows in the report). accept
@@ -524,7 +620,7 @@ async function main() {
     return;
   }
 
-  console.error(`Unknown mode: ${mode}. Modes: parse | baseline | check | accept | prune | selftest`);
+  console.error(`Unknown mode: ${mode}. Modes: parse | baseline | check | accept | prune | unbaselined | selftest`);
   process.exit(2);
 }
 
@@ -559,6 +655,25 @@ function selftest() {
   const fpOk = d.join(",") === "$500,$3,000" && k.waitlist === 1 && k.closed === 1 && !text.includes("$99");
   if (!fpOk) fail++;
   console.log(`${fpOk ? "PASS" : "FAIL"}  fingerprint: dollars=[${d.join(", ")}] keywords=${JSON.stringify(k)} (script content excluded)`);
+  // scoped keyword: "temporarily" only counts near program vocabulary
+  const kFurniture = keywordCounts("This website is temporarily experiencing display issues.");
+  const kProgram = keywordCounts("Rebate applications are temporarily unavailable while funds are reallocated.");
+  const scopeOk = !kFurniture.temporarily && kProgram.temporarily === 1;
+  if (!scopeOk) fail++;
+  console.log(`${scopeOk ? "PASS" : "FAIL"}  keyword scoping: furniture=${JSON.stringify(kFurniture)} program=${JSON.stringify(kProgram)}`);
+  // registrable-host approximation (off-domain wall detector)
+  const rhCases = [
+    ["https://mn.gov/commerce/x", "https://validate.perfdrive.com/y", false],
+    ["https://savings.austinenergy.com/a", "https://austinenergy.com/b", true],
+    ["https://www.oge.com/a", "https://oge.com/b", true],
+    ["https://cleanheatri.com/a", "https://captcha.shieldsquare.com/b", false],
+  ];
+  for (const [a, b, same] of rhCases) {
+    const got = registrableHost(a) === registrableHost(b);
+    const ok = got === same;
+    if (!ok) fail++;
+    console.log(`${ok ? "PASS" : "FAIL"}  registrableHost: ${a} vs ${b} -> same=${got} (want ${same})`);
+  }
   console.log(fail ? `\n${fail} FAILURES` : "\nAll selftests passed.");
   process.exit(fail ? 1 : 0);
 }

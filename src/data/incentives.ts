@@ -577,7 +577,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     sources: [
       {
         label: "Austin Energy — Rebates & Incentives",
-        url: "https://savings.austinenergy.com/residential/offerings",
+        url: "https://austinenergy.com/energy-efficiency/rebates-incentives/residential",
       },
       {
         label: "Oncor — Home Energy Efficiency Program",
