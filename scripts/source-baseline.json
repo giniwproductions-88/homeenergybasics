@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-25T02:23:37.443Z",
+ "generatedAt": "2026-07-25T04:34:15.280Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -4346,25 +4346,6 @@
    "dollars": [],
    "keywords": {}
   },
-  "https://www.commerce.nd.gov/community-services/energy-efficiency-office/home-energy-rebates-program": {
-   "url": "https://www.commerce.nd.gov/community-services/energy-efficiency-office/home-energy-rebates-program",
-   "finalUrl": "https://www.commerce.nd.gov/community-services/energy-efficiency-program/home-energy-rebates-program",
-   "label": "ND Commerce — Home Energy Rebates Program",
-   "states": [
-    "ND"
-   ],
-   "httpStatus": 200,
-   "fetchedAt": "2026-07-17T16:45:58.371Z",
-   "length": 144878,
-   "kind": "html",
-   "textHash": "c7a5e58e9e4f54be",
-   "dollars": [
-    "$37"
-   ],
-   "keywords": {
-    "now open": 1
-   }
-  },
   "https://www.commerce.nd.gov/community-services/low-income-programs/weatherization-assistance": {
    "url": "https://www.commerce.nd.gov/community-services/low-income-programs/weatherization-assistance",
    "finalUrl": "https://www.commerce.nd.gov/community-services/low-income-programs/weatherization-assistance",
@@ -7141,30 +7122,6 @@
    "keywords": {
     "closed": 1
    }
-  },
-  "https://energywv.org/funding-opportunities/home-energy-rebate-programs/home-electrification-and-appliance-rebates/": {
-   "url": "https://energywv.org/funding-opportunities/home-energy-rebate-programs/home-electrification-and-appliance-rebates/",
-   "finalUrl": "https://energywv.org/funding-opportunities/home-energy-rebate-programs/home-electrification-and-appliance-rebates/",
-   "label": "WV Office of Energy — HEAR Program",
-   "states": [
-    "WV"
-   ],
-   "httpStatus": 404,
-   "fetchedAt": "2026-07-09T15:15:41.091Z",
-   "length": 95155,
-   "error": "HTTP 404"
-  },
-  "https://energywv.org/funding-opportunities/home-energy-rebate-programs/home-efficiency-rebates/": {
-   "url": "https://energywv.org/funding-opportunities/home-energy-rebate-programs/home-efficiency-rebates/",
-   "finalUrl": "https://energywv.org/funding-opportunities/home-energy-rebate-programs/home-efficiency-rebates/",
-   "label": "WV Office of Energy — Home Efficiency Rebates (HOMES)",
-   "states": [
-    "WV"
-   ],
-   "httpStatus": 404,
-   "fetchedAt": "2026-07-09T15:15:41.330Z",
-   "length": 95155,
-   "error": "HTTP 404"
   },
   "https://takechargewv.com/rebates": {
    "url": "https://takechargewv.com/rebates",

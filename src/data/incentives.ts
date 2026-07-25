@@ -1440,7 +1440,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     sources: [
       {
         label: "ND Commerce \u2014 Home Energy Rebates Program",
-        url: "https://www.commerce.nd.gov/community-services/energy-efficiency-office/home-energy-rebates-program",
+        url: "https://www.commerce.nd.gov/community-services/energy-efficiency-program/home-energy-rebates-program",
       },
       {
         label: "ND Commerce \u2014 Weatherization Assistance",
@@ -2300,12 +2300,12 @@ export const incentives: Record<StateCode, StateIncentive> = {
         url: "https://energywv.org/funding-opportunities/home-energy-rebate-programs/",
       },
       {
-        label: "WV Office of Energy \u2014 HEAR Program",
-        url: "https://energywv.org/funding-opportunities/home-energy-rebate-programs/home-electrification-and-appliance-rebates/",
+        label: "WV Office of Energy \u2014 Home Efficiency Appliance Rebates (HEAR)",
+        url: "https://energywv.org/funding-opportunities/home-energy-rebate-programs/home-efficiency-appliance-rebates/",
       },
       {
-        label: "WV Office of Energy \u2014 Home Efficiency Rebates (HOMES)",
-        url: "https://energywv.org/funding-opportunities/home-energy-rebate-programs/home-efficiency-rebates/",
+        label: "WV Office of Energy \u2014 Home Owner Managing Energy Savings (HOMES)",
+        url: "https://energywv.org/funding-opportunities/home-energy-rebate-programs/home-owner-managing-energy-savings/",
       },
       {
         label: "TakeCharge WV \u2014 Appalachian Power Rebates",
