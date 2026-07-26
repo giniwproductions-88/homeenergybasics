@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-25T04:34:15.280Z",
+ "generatedAt": "2026-07-26T23:14:54.730Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -170,10 +170,10 @@
     "AR"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-21T20:21:26.022Z",
-   "length": 102732,
+   "fetchedAt": "2026-07-26T20:34:25.568Z",
+   "length": 102954,
    "kind": "html",
-   "textHash": "f87b5af60e3ef0b7",
+   "textHash": "d764cdb7c3a0ce47",
    "dollars": [],
    "keywords": {
     "no longer": 1
@@ -490,7 +490,7 @@
     "MO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-24T22:37:02.112Z",
+   "fetchedAt": "2026-07-26T20:34:27.298Z",
    "length": 114425,
    "kind": "html",
    "textHash": "5f26bc2d77d90d83",
@@ -515,7 +515,7 @@
     "XCEL-ENERGY"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-24T22:37:04.821Z",
+   "fetchedAt": "2026-07-26T20:34:31.657Z",
    "length": 2442505,
    "kind": "pdf",
    "bytesHash": "3817f7be21562cbd"
@@ -528,7 +528,7 @@
     "MN"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-24T22:37:02.708Z",
+   "fetchedAt": "2026-07-26T20:34:28.468Z",
    "length": 101641,
    "kind": "html",
    "textHash": "5fba7fa06b975fa2",
@@ -546,8 +546,8 @@
     "MN"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-24T22:37:02.642Z",
-   "length": 47831,
+   "fetchedAt": "2026-07-26T20:34:28.314Z",
+   "length": 47821,
    "kind": "html",
    "textHash": "d66958a082762411",
    "dollars": [
@@ -555,9 +555,7 @@
     "$400",
     "$1000"
    ],
-   "keywords": {
-    "temporarily": 1
-   }
+   "keywords": {}
   },
   "https://www.minneapolismn.gov/government/programs-initiatives/environmental-programs/green-cost-share/energy-efficiency/energy-rebates/": {
    "url": "https://www.minneapolismn.gov/government/programs-initiatives/environmental-programs/green-cost-share/energy-efficiency/energy-rebates/",
@@ -567,7 +565,7 @@
     "MN"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-24T22:37:03.174Z",
+   "fetchedAt": "2026-07-26T20:34:28.780Z",
    "length": 200149,
    "kind": "html",
    "textHash": "3904f5da1aa37baf",
@@ -585,7 +583,7 @@
     "MN"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-24T22:37:03.438Z",
+   "fetchedAt": "2026-07-26T20:34:28.934Z",
    "length": 65144,
    "kind": "html",
    "textHash": "fe42ea89f0c88fcf",
@@ -1399,8 +1397,8 @@
     "TX"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:34.443Z",
-   "length": 102514,
+   "fetchedAt": "2026-07-26T20:34:49.459Z",
+   "length": 102544,
    "kind": "html",
    "textHash": "60e9bd05ba903287",
    "dollars": [],
@@ -1414,8 +1412,8 @@
     "TX"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:34.988Z",
-   "length": 151637,
+   "fetchedAt": "2026-07-26T20:34:49.644Z",
+   "length": 151641,
    "kind": "html",
    "textHash": "ef5ca0c28d33db5a",
    "dollars": [
@@ -1433,7 +1431,7 @@
     "TX"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:34.658Z",
+   "fetchedAt": "2026-07-26T20:34:50.143Z",
    "length": 75345,
    "kind": "html",
    "textHash": "01f5dddc8fb882b1",
@@ -1458,10 +1456,10 @@
     "TX"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:34.676Z",
-   "length": 123229,
+   "fetchedAt": "2026-07-26T20:34:49.804Z",
+   "length": 123301,
    "kind": "html",
-   "textHash": "8b3be58880fdc812",
+   "textHash": "9a47483acc253cfa",
    "dollars": [
     "$690",
     "$8,000",
@@ -1479,8 +1477,8 @@
     "TX"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:36.050Z",
-   "length": 156761,
+   "fetchedAt": "2026-07-26T20:34:50.432Z",
+   "length": 167337,
    "kind": "html",
    "textHash": "7fa57d05f8c66914",
    "dollars": [],
@@ -1494,16 +1492,15 @@
     "TX"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:35.215Z",
-   "length": 333331,
+   "fetchedAt": "2026-07-26T20:34:50.328Z",
+   "length": 334430,
    "kind": "html",
-   "textHash": "d995001955caebc4",
+   "textHash": "2ccc2f2cb218b612",
    "dollars": [
     "$10"
    ],
    "keywords": {
-    "closed": 1,
-    "temporarily": 1
+    "closed": 1
    }
   },
   "https://www.tdhca.texas.gov/ca/wap": {
@@ -1514,8 +1511,8 @@
     "TX"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:35.460Z",
-   "length": 87978,
+   "fetchedAt": "2026-07-26T20:34:50.585Z",
+   "length": 87982,
    "kind": "html",
    "textHash": "afc21c031f905528",
    "dollars": [],
@@ -2320,10 +2317,10 @@
     "RI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:37.711Z",
-   "length": 92688,
+   "fetchedAt": "2026-07-26T20:35:01.141Z",
+   "length": 91996,
    "kind": "html",
-   "textHash": "7ae42ec5a56885ab",
+   "textHash": "7c5e4314856653f8",
    "dollars": [
     "$20",
     "$25",
@@ -2339,8 +2336,8 @@
     "RI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:37.998Z",
-   "length": 128286,
+   "fetchedAt": "2026-07-26T20:35:01.387Z",
+   "length": 128924,
    "kind": "html",
    "textHash": "81f853388799ed3c",
    "dollars": [
@@ -2374,10 +2371,10 @@
     "RI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:38.838Z",
-   "length": 5736536,
+   "fetchedAt": "2026-07-26T20:35:00.698Z",
+   "length": 5321823,
    "kind": "html",
-   "textHash": "8630d39a579c12ac",
+   "textHash": "ade6c0e5cd103a47",
    "dollars": [
     "$625",
     "$1,500",
@@ -2396,8 +2393,8 @@
     "RI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:38.267Z",
-   "length": 85262,
+   "fetchedAt": "2026-07-26T20:35:01.131Z",
+   "length": 85260,
    "kind": "html",
    "textHash": "fa2eb08e23198856",
    "dollars": [
@@ -2416,8 +2413,8 @@
     "RI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:38.968Z",
-   "length": 89017,
+   "fetchedAt": "2026-07-26T20:35:00.613Z",
+   "length": 88954,
    "kind": "html",
    "textHash": "296d73f06b1b0738",
    "dollars": [
@@ -2444,8 +2441,8 @@
     "RI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:38.748Z",
-   "length": 88232,
+   "fetchedAt": "2026-07-26T20:35:01.117Z",
+   "length": 93768,
    "kind": "html",
    "textHash": "5d00d92a9a2e4707",
    "dollars": [
@@ -2466,8 +2463,8 @@
     "VT"
    ],
    "httpStatus": 403,
-   "fetchedAt": "2026-07-09T15:14:45.585Z",
-   "length": 1495327,
+   "fetchedAt": "2026-07-26T20:35:03.076Z",
+   "length": 1495346,
    "error": "HTTP 403"
   },
   "https://greenmountainpower.com/rebates-programs/home-and-yard/heat-pump/": {
@@ -2478,7 +2475,7 @@
     "VT"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:43.635Z",
+   "fetchedAt": "2026-07-26T20:35:01.439Z",
    "length": 83407,
    "kind": "html",
    "textHash": "986d31d833988f26",
@@ -2510,8 +2507,8 @@
     "VT"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:44.119Z",
-   "length": 158955,
+   "fetchedAt": "2026-07-26T20:35:01.595Z",
+   "length": 158978,
    "kind": "html",
    "textHash": "558090c38735a575",
    "dollars": [
@@ -2547,9 +2544,7 @@
     "$128,800",
     "$137,100"
    ],
-   "keywords": {
-    "temporarily": 1
-   }
+   "keywords": {}
   },
   "https://vermontelectric.coop/energy-transformation-programs": {
    "url": "https://vermontelectric.coop/energy-transformation-programs",
@@ -2559,8 +2554,8 @@
     "VT"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:44.378Z",
-   "length": 50766,
+   "fetchedAt": "2026-07-26T20:35:01.919Z",
+   "length": 50621,
    "kind": "html",
    "textHash": "01da8300a9f68b9e",
    "dollars": [
@@ -2608,8 +2603,8 @@
     "VT"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:44.818Z",
-   "length": 45837,
+   "fetchedAt": "2026-07-26T20:35:01.704Z",
+   "length": 45856,
    "kind": "html",
    "textHash": "9031d7621f7be39f",
    "dollars": [
@@ -2634,7 +2629,7 @@
     "VT"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:46.049Z",
+   "fetchedAt": "2026-07-26T20:35:02.629Z",
    "length": 40690,
    "kind": "html",
    "textHash": "fea7cf70a5eaeeeb",
@@ -2659,8 +2654,8 @@
     "VT"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:45.245Z",
-   "length": 43797,
+   "fetchedAt": "2026-07-26T20:35:02.913Z",
+   "length": 43798,
    "kind": "html",
    "textHash": "2e61ac650d9af389",
    "dollars": [
@@ -2676,8 +2671,8 @@
     "VT"
    ],
    "httpStatus": 403,
-   "fetchedAt": "2026-07-09T15:14:46.891Z",
-   "length": 1495327,
+   "fetchedAt": "2026-07-26T20:35:03.752Z",
+   "length": 1495346,
    "error": "HTTP 403"
   },
   "https://nhsaves.com/residential/electric-heating-cooling-equipment/": {
@@ -3750,10 +3745,10 @@
     "WV"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-21T20:22:06.039Z",
-   "length": 177726,
+   "fetchedAt": "2026-07-26T20:35:11.891Z",
+   "length": 177951,
    "kind": "html",
-   "textHash": "dec47240e934c076",
+   "textHash": "1a66b9b6195eb76b",
    "dollars": [
     "$0.20",
     "$1.00",
@@ -4354,7 +4349,7 @@
     "ND"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T16:45:58.193Z",
+   "fetchedAt": "2026-07-26T20:35:19.708Z",
    "length": 162384,
    "kind": "html",
    "textHash": "856a6a1971dfdf61",
@@ -4383,10 +4378,10 @@
     "ND"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T16:45:58.357Z",
-   "length": 41436,
+   "fetchedAt": "2026-07-26T20:35:19.614Z",
+   "length": 41464,
    "kind": "html",
-   "textHash": "77dc6c589e7b3ba0",
+   "textHash": "59c28732d8e8d527",
    "dollars": [
     "$40",
     "$200",
@@ -4414,7 +4409,7 @@
     "ND"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T16:45:58.107Z",
+   "fetchedAt": "2026-07-26T20:35:19.741Z",
    "length": 26428,
    "kind": "html",
    "textHash": "9a645896c80a6560",
@@ -4442,8 +4437,8 @@
     "ND"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T16:45:58.478Z",
-   "length": 270342,
+   "fetchedAt": "2026-07-26T20:35:20.062Z",
+   "length": 270300,
    "kind": "html",
    "textHash": "b2e5690efe51cfb4",
    "dollars": [
@@ -4484,7 +4479,7 @@
     "FPL"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-21T20:22:15.080Z",
+   "fetchedAt": "2026-07-26T20:35:20.235Z",
    "length": 135813,
    "kind": "pdf",
    "bytesHash": "7010aaedafe2dc1b"
@@ -7112,8 +7107,8 @@
     "WV"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:39.129Z",
-   "length": 107028,
+   "fetchedAt": "2026-07-26T20:35:46.719Z",
+   "length": 107051,
    "kind": "html",
    "textHash": "4040b4842f93bbc0",
    "dollars": [
@@ -7131,7 +7126,7 @@
     "WV"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:39.884Z",
+   "fetchedAt": "2026-07-26T20:35:46.687Z",
    "length": 20093,
    "kind": "html",
    "textHash": "59ad7e4c13c8d1b1",
@@ -7146,10 +7141,10 @@
     "WV"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:39.949Z",
-   "length": 60818,
+   "fetchedAt": "2026-07-26T20:35:46.569Z",
+   "length": 60687,
    "kind": "html",
-   "textHash": "0aa55233ebf37c01",
+   "textHash": "cfe82ba898ff4ffd",
    "dollars": [
     "$11,000",
     "$31,300",
@@ -8287,7 +8282,7 @@
     "FPL"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-21T20:22:46.658Z",
+   "fetchedAt": "2026-07-26T20:35:49.394Z",
    "length": 76633,
    "kind": "html",
    "textHash": "ca8ab0962bdb90c0",
@@ -8306,7 +8301,7 @@
     "FPL"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-21T20:22:47.004Z",
+   "fetchedAt": "2026-07-26T20:35:49.464Z",
    "length": 133643,
    "kind": "pdf",
    "bytesHash": "ec6464d4325e9f88"
@@ -8319,7 +8314,7 @@
     "FPL"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-21T20:22:46.867Z",
+   "fetchedAt": "2026-07-26T20:35:49.395Z",
    "length": 77653,
    "kind": "html",
    "textHash": "6b1adb175fa0eec5",
@@ -8338,7 +8333,7 @@
     "FPL"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-21T20:22:46.880Z",
+   "fetchedAt": "2026-07-26T20:35:49.679Z",
    "length": 115988,
    "kind": "html",
    "textHash": "dc269222405a8e19",
@@ -8354,9 +8349,7 @@
     "$220",
     "$5,000"
    ],
-   "keywords": {
-    "temporarily": 1
-   }
+   "keywords": {}
   },
   "https://www.fpl.com/save/programs.html": {
    "url": "https://www.fpl.com/save/programs.html",
@@ -8366,7 +8359,7 @@
     "FPL"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-21T20:22:46.814Z",
+   "fetchedAt": "2026-07-26T20:35:49.699Z",
    "length": 102624,
    "kind": "html",
    "textHash": "61703f2f1a1264d1",
@@ -8386,7 +8379,7 @@
     "FPL"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-21T20:22:47.069Z",
+   "fetchedAt": "2026-07-26T20:35:49.642Z",
    "length": 49487,
    "kind": "html",
    "textHash": "60dfd1f63e542a5d",
@@ -8596,33 +8589,95 @@
     "waitlist": 1
    }
   },
-  "https://energyright.com/residential-upgrades-water-heater/": {
-   "url": "https://energyright.com/residential-upgrades-water-heater/",
-   "finalUrl": "https://energyright.com/residential/rebates/",
-   "label": "TVA EnergyRight — Water Heater Instant Rebates",
+  "https://austinenergy.com/energy-efficiency/rebates-incentives/residential": {
+   "url": "https://austinenergy.com/energy-efficiency/rebates-incentives/residential",
+   "finalUrl": "https://austinenergy.com/energy-efficiency/rebates-incentives/residential",
+   "label": "Austin Energy — Rebates & Incentives",
    "states": [
-    "TN",
-    "MS"
+    "TX"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-21T20:22:21.087Z",
-   "length": 233219,
+   "fetchedAt": "2026-07-26T20:34:49.303Z",
+   "length": 162240,
    "kind": "html",
-   "textHash": "3b463a2c47769688",
+   "textHash": "1444ad96d62099e2",
    "dollars": [
-    "$0",
-    "$0.05",
-    "$20",
     "$50",
-    "$65",
-    "$100",
-    "$250",
+    "$75",
     "$300",
-    "$400",
-    "$500",
+    "$750",
     "$800",
-    "$1,500"
+    "$1,000",
+    "$1,500",
+    "$3,000",
+    "$4,000"
    ],
+   "keywords": {}
+  },
+  "https://www.commerce.nd.gov/community-services/energy-efficiency-program/home-energy-rebates-program": {
+   "url": "https://www.commerce.nd.gov/community-services/energy-efficiency-program/home-energy-rebates-program",
+   "finalUrl": "https://www.commerce.nd.gov/community-services/energy-efficiency-program/home-energy-rebates-program",
+   "label": "ND Commerce — Home Energy Rebates Program",
+   "states": [
+    "ND"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-26T20:35:19.699Z",
+   "length": 144878,
+   "kind": "html",
+   "textHash": "c7a5e58e9e4f54be",
+   "dollars": [
+    "$37"
+   ],
+   "keywords": {
+    "now open": 1
+   }
+  },
+  "https://energywv.org/funding-opportunities/home-energy-rebate-programs/home-efficiency-appliance-rebates/": {
+   "url": "https://energywv.org/funding-opportunities/home-energy-rebate-programs/home-efficiency-appliance-rebates/",
+   "finalUrl": "https://energywv.org/funding-opportunities/home-energy-rebate-programs/home-efficiency-appliance-rebates/",
+   "label": "WV Office of Energy — Home Efficiency Appliance Rebates (HEAR)",
+   "states": [
+    "WV"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-26T20:35:46.721Z",
+   "length": 111562,
+   "kind": "html",
+   "textHash": "1611758006a53d8d",
+   "dollars": [],
+   "keywords": {}
+  },
+  "https://energywv.org/funding-opportunities/home-energy-rebate-programs/home-owner-managing-energy-savings/": {
+   "url": "https://energywv.org/funding-opportunities/home-energy-rebate-programs/home-owner-managing-energy-savings/",
+   "finalUrl": "https://energywv.org/funding-opportunities/home-energy-rebate-programs/home-owner-managing-energy-savings/",
+   "label": "WV Office of Energy — Home Owner Managing Energy Savings (HOMES)",
+   "states": [
+    "WV"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-26T20:35:46.740Z",
+   "length": 116859,
+   "kind": "html",
+   "textHash": "f2430e222bb92c07",
+   "dollars": [
+    "$20,000"
+   ],
+   "keywords": {}
+  },
+  "https://cleanheatri.com/resources/remaining-funds/": {
+   "url": "https://cleanheatri.com/resources/remaining-funds/",
+   "finalUrl": "https://cleanheatri.com/resources/remaining-funds/",
+   "label": "Clean Heat RI — Remaining Funds tracker (monitor-only)",
+   "states": [
+    "RI"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-07-26T20:35:51.682Z",
+   "length": 97373,
+   "kind": "html",
+   "textHash": "c426712c89375e31",
+   "dollars": [],
    "keywords": {}
   }
  }
