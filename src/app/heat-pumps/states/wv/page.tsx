@@ -47,7 +47,7 @@ export default function WestVirginiaPage() {
         name: "What heat pump rebates are available in West Virginia in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "West Virginia\u2019s primary incentives will be the IRA-funded HEAR program (up to $8,000 for heat pumps for households at or below 150% AMI) and the HOMES program (up to $20,000 for whole-home retrofits for low-income households) \u2014 but neither program is accepting applications as of June 2026. Appalachian Power offers the only active rebates: $300 for mini-splits and $400 for heat pump water heaters. Federal Section 25C and 25D tax credits expired December 31, 2025. Mon Power and Potomac Edison customers have no utility-level heat pump rebates.",
+          text: "West Virginia\u2019s primary incentives will be the IRA-funded HEAR program (up to $8,000 for heat pumps for households at or below 150% AMI) and the HOMES program (up to $20,000 for whole-home retrofits for low-income households) \u2014 but neither program is accepting applications as of late July 2026. Appalachian Power offers the only active rebates: $300 for mini-splits and $400 for heat pump water heaters. Federal Section 25C and 25D tax credits expired December 31, 2025. Mon Power and Potomac Edison customers have no utility-level heat pump rebates.",
         },
       },
       {
@@ -104,11 +104,11 @@ export default function WestVirginiaPage() {
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
             West Virginia&apos;s <strong>$88.2 million</strong> in IRA-funded
-            Home Electrification and Appliance Rebates (HEAR) and Home Efficiency
-            Rebates (HOMES) will be the state&apos;s primary heat pump incentives
-            — covering up to <strong>$8,000–$20,000</strong> depending on
+            Home Efficiency Appliance Rebates (HEAR) and Home Owner Managing
+            Energy Savings (HOMES) will be the state&apos;s primary heat pump
+            incentives — covering up to <strong>$8,000–$20,000</strong> depending on
             income and project scope — but neither program has launched as of
-            June 2026. Federal tax credits ended December 31, 2025. Until the
+            late July 2026. Federal tax credits ended December 31, 2025. Until the
             state programs open, the only active incentives are Appalachian
             Power utility rebates of <strong>$300–$400</strong>. This guide
             covers all major West Virginia heat pump incentives available in 2026,
@@ -139,7 +139,7 @@ export default function WestVirginiaPage() {
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ HEAR rebates up to $8,000</p>
               <p className="text-sm text-green-900">
-                The Home Electrification and Appliance Rebates program covers up to
+                The Home Efficiency Appliance Rebates program covers up to
                 $8,000 per heat pump for households at or below 150% of Area Median
                 Income (AMI). Administered by the WV Office of Energy.
               </p>
@@ -173,7 +173,7 @@ export default function WestVirginiaPage() {
               <p className="text-sm text-amber-900">
                 The WV Office of Energy states these programs are NOT yet
                 available to West Virginia residents — any claims otherwise are
-                fraudulent — and a pilot launch date is still to be announced.
+                fraudulent — and no launch date has been announced.
                 In June 2026, DOE published revised national guidance restarting
                 the rebate funding process under new rules. Contact WVOE at
                 800-982-3386 to confirm current availability before starting any
@@ -221,12 +221,15 @@ export default function WestVirginiaPage() {
             HEAR: Up to $8,000 Per Heat Pump
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            The Home Electrification and Appliance Rebates (HEAR) program provides
+            The Home Efficiency Appliance Rebates (HEAR) program &mdash; West
+            Virginia&apos;s name for the federal Home Electrification and
+            Appliance Rebates &mdash; provides
             point-of-sale rebates for specific appliance upgrades. It is restricted
             to households at or below <strong>150% of Area Median Income (AMI)</strong>.
             Households below 80% AMI receive 100% of rebate amounts; those between
-            80–150% AMI receive 50%. The program is administered by the West Virginia
-            Office of Energy with a <strong>$44 million</strong> allocation.
+            80–150% AMI receive 50%. Renters may participate with a signed
+            landlord authorization form. The program is administered by the West
+            Virginia Office of Energy with a <strong>$44 million</strong> allocation.
           </p>
 
           <div className="overflow-x-auto mb-6">
@@ -307,7 +310,9 @@ export default function WestVirginiaPage() {
             HOMES: Up to $20,000 for Whole-Home Retrofits
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            The Home Efficiency Rebates (HOMES) program takes a whole-home,
+            The Home Owner Managing Energy Savings (HOMES) program &mdash; West
+            Virginia&apos;s name for the federal Home Efficiency Rebates &mdash;
+            takes a whole-home,
             performance-based approach. A certified energy audit determines
             projected energy savings, and rebate amounts scale with the savings
             achieved. Unlike HEAR, <strong>all income levels qualify</strong>,
@@ -482,7 +487,7 @@ export default function WestVirginiaPage() {
             has no state tax credit for heat pumps. A limited state energy loan
             program may be available through the West Virginia Housing Development
             Fund. The scenarios below assume HEAR and HOMES launch as originally
-            designed — as of June 2026, neither is accepting applications, so
+            designed — as of late July 2026, neither is accepting applications, so
             only the Appalachian Power line items are available today.
           </p>
 
@@ -754,11 +759,14 @@ export default function WestVirginiaPage() {
               <p className="font-semibold text-gray-900">HEAR and HOMES launch confirmation</p>
               <p className="text-sm text-gray-600 mt-1">
                 The WV Office of Energy received DOE approval in January 2025,
-                but as of June 2026 the programs have not launched and a pilot
-                phase start date is still to be announced. DOE published revised
+                but as of late July 2026 the programs have not launched and no
+                launch date has been announced. DOE published revised
                 national guidance in June 2026 restarting the rebate funding
                 process, which may allow West Virginia to move forward — under
-                modified rules. Monitor energywv.org or call 800-982-3386 for
+                modified rules. WVOE has meanwhile assigned Regional
+                Implementation Partners, published a contractor directory, and
+                posted landlord-authorization forms for renters. Monitor
+                energywv.org or call 800-982-3386 for
                 launch updates before committing to a project timeline.
               </p>
             </div>
