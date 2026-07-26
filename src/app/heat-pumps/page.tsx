@@ -85,6 +85,10 @@ export default function HeatPumpsPage() {
               <h3 className="font-semibold text-gray-900 mb-2">Home Battery Guide 2026</h3>
               <p className="text-gray-600 text-sm">What changed for home batteries after the federal credit landscape shifted.</p>
             </Link>
+            <Link href="/heat-pumps/utilities" className="card hover:shadow-md transition-shadow">
+              <h3 className="font-semibold text-gray-900 mb-2">Utility &amp; Program Rebates</h3>
+              <p className="text-gray-600 text-sm">Dedicated rebate guides organized by utility and program administrator, plus a state-by-state rebate lookup.</p>
+            </Link>
             <Link href="/about" className="card hover:shadow-md transition-shadow">
               <h3 className="font-semibold text-gray-900 mb-2">About Our Methodology</h3>
               <p className="text-gray-600 text-sm">How we verify incentive status and what our timestamps mean.</p>
