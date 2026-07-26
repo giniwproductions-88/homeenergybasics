@@ -110,7 +110,9 @@ export default function TvaEnergyRightPage() {
             <Link href="/" className="hover:text-brand-600">Home</Link>
             {" "}/{" "}
             <Link href="/heat-pumps" className="hover:text-brand-600">Heat Pumps</Link>
-            {" "}/ Utilities / TVA
+            {" "}/{" "}
+            <Link href="/heat-pumps/utilities" className="hover:text-brand-600">Utilities</Link>
+            {" "}/ TVA
           </nav>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             TVA Heat Pump Rebates &amp; Incentives (2026)
@@ -717,8 +719,8 @@ export default function TvaEnergyRightPage() {
               </Link>
             </li>
             <li>
-              <Link href="/heat-pumps" className="text-brand-600 hover:underline">
-                All State Heat Pump Incentives
+              <Link href="/heat-pumps/utilities" className="text-brand-600 hover:underline">
+                All Utility &amp; Program Rebate Guides
               </Link>
             </li>
             <li>

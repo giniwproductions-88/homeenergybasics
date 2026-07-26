@@ -67,6 +67,7 @@ export default function RootLayout({
                   <li><Link href="/heat-pumps/vs-furnace" className="hover:text-white">Heat Pump vs Furnace</Link></li>
                   <li><Link href="/heat-pumps/stacking-rebates" className="hover:text-white">Stacking Rebates</Link></li>
                   <li><Link href="/heat-pumps/when-not-to" className="hover:text-white">When NOT to Get One</Link></li>
+                  <li><Link href="/heat-pumps/utilities" className="hover:text-white">Utility &amp; Program Rebates</Link></li>
                   {footerUtilities.map((utility) => (
                     <li key={utility.slug}>
                       <Link href={`/heat-pumps/utilities/${utility.slug}`} className="hover:text-white">
