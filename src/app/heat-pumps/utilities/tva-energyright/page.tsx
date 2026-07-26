@@ -352,8 +352,8 @@ export default function TvaEnergyRightPage() {
           <p className="text-gray-700 leading-relaxed mb-4">
             TVA also publishes flat region-wide amounts for air sealing and
             home insulation: <strong>$500</strong> for attic insulation
-            (currently advertised as a limited-time offer),
-            <strong>$300</strong> for wall insulation, and
+            (currently advertised as a limited-time offer),{" "}
+            <strong>$300</strong> for wall insulation, and{" "}
             <strong>$300</strong> for whole-home envelope air sealing. Heat
             pump water heaters are notable by their absence:
             the current TVA EnergyRight residential menu lists no HPWH
