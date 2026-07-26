@@ -40,7 +40,7 @@ const faqJsonLd = {
       name: "Can I stack TVA EnergyRight and Alabama Power rebates?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No. TVA EnergyRight and Alabama Power serve different territories — you cannot be a customer of both for the same home. You can stack your utility rebate with future HEAR rebates once Alabama launches that program. TVA customers can combine heat pump, heat pump water heater, duct sealing, and attic insulation rebates on the same project for roughly $2,900 total.",
+        text: "No. TVA EnergyRight and Alabama Power serve different territories — you cannot be a customer of both for the same home. You can stack your utility rebate with future HEAR rebates once Alabama launches that program. TVA customers can combine heat pump, duct sealing, and attic insulation rebates on the same project for roughly $1,600 total.",
       },
     },
     {
@@ -139,9 +139,9 @@ export default function AlabamaPage() {
               <p className="text-sm text-green-900">
                 Northern Alabama residents served by TVA distributors can claim
                 $500–$800 for qualifying air-source or dual-fuel heat pumps
-                ($800 at 17+ SEER2), $1,500 for geothermal, and up to $1,300 in
-                instant discounts on heat pump water heaters. All work must be
-                done by a Quality Contractor Network member.
+                ($800 at 17+ SEER2), $1,500 for geothermal, and $800 for a
+                ductless mini split. All work must be done by a Quality
+                Contractor Network member.
               </p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
@@ -385,7 +385,7 @@ export default function AlabamaPage() {
             through distributors including Huntsville Utilities, Decatur Utilities,
             Florence Utilities, Athens Utilities, and Joe Wheeler EMC. TVA&apos;s
             EnergyRight program offers the broadest rebate menu in the state,
-            spanning heat pumps, water heaters, ductwork, and insulation.
+            spanning heat pumps, mini splits, geothermal, ductwork, and insulation.
           </p>
 
           <div className="overflow-x-auto mb-6">
@@ -419,11 +419,6 @@ export default function AlabamaPage() {
                   <td className="p-3">Qualifying geothermal heat pump</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-3">Heat pump water heater</td>
-                  <td className="p-3 font-semibold">Up to $1,300</td>
-                  <td className="p-3">Instant discount via Quality Contractor Network, participating retailers, and online</td>
-                </tr>
-                <tr className="border-b">
                   <td className="p-3">Duct sealing, repair, insulation, or replacement</td>
                   <td className="p-3 font-semibold">$300</td>
                   <td className="p-3">Complete duct system must be brought to TVA standards</td>
@@ -445,9 +440,9 @@ export default function AlabamaPage() {
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-blue-800 mb-1">TVA territory is Alabama&apos;s best incentive zone</p>
             <p className="text-sm text-blue-900">
-              A Huntsville homeowner installing a 17+ SEER2 heat pump, heat pump
-              water heater, duct sealing, and attic insulation can stack roughly{" "}
-              <strong>$2,900</strong> in rebates from a single program — well
+              A Huntsville homeowner installing a 17+ SEER2 heat pump, duct
+              sealing, and attic insulation can stack roughly{" "}
+              <strong>$1,600</strong> in rebates from a single program — well
               beyond what&apos;s available
               in Alabama Power territory. TVA also runs the Home Uplift program,
               providing an average of <strong>~$10,000</strong> in free home energy
@@ -458,8 +453,9 @@ export default function AlabamaPage() {
           <p className="text-gray-700 leading-relaxed mb-6">
             All TVA rebates require work by a TVA Quality Contractor Network member,
             and your contractor submits the rebate for you — TVA EnergyRight then
-            emails you a redemption code to claim it. Heat pump water heater
-            discounts are applied instantly at the point of purchase. Dual-fuel
+            emails you a redemption code to claim it. TVA&apos;s residential menu does
+            not include a heat pump water heater rebate, though some local power
+            companies and manufacturers run their own offers. Dual-fuel
             systems (a heat pump with gas backup) qualify for the same rebate
             tiers as all-electric systems. Affordable, $0 down financing may be
             available from your local power company.

@@ -350,10 +350,12 @@ export default function TvaEnergyRightPage() {
             </table>
           </div>
           <p className="text-gray-700 leading-relaxed mb-4">
-            TVA also offers air sealing and home insulation rebates; the
-            program page does not publish flat region-wide amounts for those
-            measures, so confirm them with your Quality Contractor Network
-            contractor. Heat pump water heaters are notable by their absence:
+            TVA also publishes flat region-wide amounts for air sealing and
+            home insulation: <strong>$500</strong> for attic insulation
+            (currently advertised as a limited-time offer),
+            <strong>$300</strong> for wall insulation, and
+            <strong>$300</strong> for whole-home envelope air sealing. Heat
+            pump water heaters are notable by their absence:
             the current TVA EnergyRight residential menu lists no HPWH
             rebate, though HPWHs are eligible for TVA financing and some
             local power companies offer their own HPWH rebates.

@@ -135,7 +135,7 @@ export default function MississippiPage() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ TVA EnergyRight (northeast MS)</p>
-              <p className="text-sm text-green-900">$500–$800 for air-source heat pumps ($1,500 for geothermal) through 26+ local distributors. Up to $1,300 instant rebate on heat pump water heaters through the Quality Contractor Network and participating retailers.</p>
+              <p className="text-sm text-green-900">$500–$800 for air-source heat pumps ($1,500 for geothermal, $800 for a ductless mini split) through 26+ local distributors. All work must be done by a Quality Contractor Network member.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Entergy Mississippi (central/south MS)</p>
@@ -143,7 +143,7 @@ export default function MississippiPage() {
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Potential savings when HEAR launches</p>
-              <p className="text-sm text-green-900">$500–$1,100 (above 150% AMI, utility only) to $8,800+ (below 80% AMI with HEAR). Full electrification packages can reach ~$15,850 total incentives for income-qualified households.</p>
+              <p className="text-sm text-green-900">$500–$1,100 (above 150% AMI, utility only) to $8,800+ (below 80% AMI with HEAR). Full electrification packages can reach ~$14,550 total incentives for income-qualified households.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">✗ Federal tax credits expired</p>
@@ -415,11 +415,6 @@ export default function MississippiPage() {
                   <td className="p-3">{"\u2014"}</td>
                   <td className="p-3 font-semibold">$800</td>
                 </tr>
-                <tr className="border-b">
-                  <td className="p-3">Heat pump water heater</td>
-                  <td className="p-3">ENERGY STAR certified</td>
-                  <td className="p-3 font-semibold">Up to $1,300 instant</td>
-                </tr>
               </tbody>
             </table>
           </div>
@@ -430,9 +425,9 @@ export default function MississippiPage() {
             Network (QCN) member.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            The <strong>up to $1,300 HPWH instant rebate</strong> is applied at the point of sale — through
-            the Quality Contractor Network, in stores, and online at participating retail locations —
-            the only true point-of-sale rebate in Mississippi.
+            TVA&apos;s residential menu does not include a heat pump water heater rebate. Some local
+            power companies and manufacturers run their own HPWH offers, so confirm directly with
+            your distributor before counting on one.
           </p>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-6">
@@ -557,12 +552,11 @@ export default function MississippiPage() {
               <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$1,850</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900 mb-2">Above 150% AMI — TVA 17+ SEER2 HP + HPWH (TVA territory)</p>
+              <p className="font-semibold text-gray-900 mb-2">Above 150% AMI — TVA 17+ SEER2 ducted heat pump (TVA territory)</p>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>TVA 17+ SEER2 ASHP: $800</li>
-                <li>TVA HPWH instant rebate: up to $1,300</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$2,100</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$800</p>
             </div>
           </div>
 
@@ -572,22 +566,20 @@ export default function MississippiPage() {
               <p className="font-semibold text-gray-900 mb-2">80–150% AMI — ducted HP + HPWH (TVA territory)</p>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>TVA 17+ SEER2 ASHP: $800</li>
-                <li>TVA HPWH instant rebate: up to $1,300</li>
                 <li>HEAR HP (50% of cost, up to): $4,000</li>
                 <li>HEAR HPWH (50% of cost, up to): $875</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Projected maximum: ~$6,975</p>
+              <p className="font-semibold text-green-700 mt-2">Projected maximum: ~$5,675</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-2">Below 80% AMI — full electrification (TVA territory)</p>
               <ul className="text-sm text-green-900 space-y-1">
                 <li>TVA 17+ SEER2 ASHP: $800</li>
-                <li>TVA HPWH instant rebate: up to $1,300</li>
                 <li>HEAR HP (100% of cost, up to): $8,000</li>
                 <li>HEAR HPWH (100% of cost, up to): $1,750</li>
                 <li>HEAR panel upgrade (up to): $4,000</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Projected maximum: ~$15,850</p>
+              <p className="font-semibold text-green-700 mt-2">Projected maximum: ~$14,550</p>
             </div>
           </div>
 
@@ -767,7 +759,7 @@ export default function MississippiPage() {
               </div>
               <div>
                 <p className="font-semibold text-gray-900">Contractor submits rebate</p>
-                <p className="text-sm text-gray-700">The QCN contractor completes the upgrade and submits the rebate to TVA EnergyRight for processing — watch for an email from TVA EnergyRight with a redemption code, then claim your rebate online. HPWH instant rebates of up to $1,300 are applied at the point of sale through the QCN and at participating retail locations.</p>
+                <p className="text-sm text-gray-700">The QCN contractor completes the upgrade and submits the rebate to TVA EnergyRight for processing — watch for an email from TVA EnergyRight with a redemption code, then claim your rebate online.</p>
               </div>
             </div>
           </div>

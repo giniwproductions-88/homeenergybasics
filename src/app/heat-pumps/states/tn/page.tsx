@@ -211,11 +211,6 @@ export default function TennesseePage() {
                   <td className="p-3">QCN contractor required</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-3">Heat pump water heater</td>
-                  <td className="p-3 font-semibold">Up to $1,300</td>
-                  <td className="p-3">ENERGY STAR certified; instant rebate through the Quality Contractor Network and at participating retail locations</td>
-                </tr>
-                <tr className="border-b">
                   <td className="p-3">HVAC tune-up (existing HP or central AC)</td>
                   <td className="p-3 font-semibold">$50</td>
                   <td className="p-3">QCN contractor</td>
@@ -230,7 +225,7 @@ export default function TennesseePage() {
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-6">
-            The top air-source tier pays <strong>$800</strong> for 17+ SEER2 equipment (ducted, dual fuel, or ductless mini-split); geothermal systems earn the program&apos;s largest rebate at <strong>$1,500</strong>. All rebate-eligible work must be performed by a Quality Contractor Network (QCN) member — approximately 350 contractors operate in Tennessee.
+            The top air-source tier pays <strong>$800</strong> for 17+ SEER2 equipment (ducted, dual fuel, or ductless mini-split); geothermal systems earn the program&apos;s largest rebate at <strong>$1,500</strong>. All rebate-eligible work must be performed by a Quality Contractor Network (QCN) member — approximately 350 contractors operate in Tennessee. TVA&apos;s residential menu does not include a heat pump water heater rebate; some local power companies and manufacturers run their own HPWH offers, so confirm directly with your utility.
           </p>
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">

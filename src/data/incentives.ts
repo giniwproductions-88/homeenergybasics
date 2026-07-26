@@ -1620,15 +1620,11 @@ export const incentives: Record<StateCode, StateIncentive> = {
     lastVerified: "2026-07-20",
     lastUpdated: "2026-07-20",
     summary:
-      "TVA EnergyRight heat pump rebates ($500\u2013$800 air-source; $1,500 geothermal; up to $1,300 heat pump water heater) are the only active incentive in Tennessee in 2026. IRA-funded HEAR and HOMES rebates are approved but not yet launched, with no confirmed date. Federal tax credits expired December 31, 2025.",
+      "TVA EnergyRight heat pump rebates ($500\u2013$800 air-source; $800 ductless mini split; $1,500 geothermal) are the only active incentive in Tennessee in 2026. IRA-funded HEAR and HOMES rebates are approved but not yet launched, with no confirmed date. Federal tax credits expired December 31, 2025.",
     sources: [
       {
         label: "TVA EnergyRight \u2014 Heat Pump Rebates",
         url: "https://energyright.com/residential/rebates/heat-pump/",
-      },
-      {
-        label: "TVA EnergyRight \u2014 Water Heater Instant Rebates",
-        url: "https://energyright.com/residential-upgrades-water-heater/",
       },
       {
         label: "TDEC \u2014 Home Energy Rebate Programs",
@@ -2067,7 +2063,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     lastVerified: "2026-07-20",
     lastUpdated: "2026-07-20",
     summary:
-      "No statewide rebate program. Entergy Mississippi offers up to $1,100 for heat pumps. TVA EnergyRight provides up to $800 air-source ($1,500 geothermal; up to $1,300 HPWH instant) in northeast MS. Mississippi Power offers $160\u2013$200/ton. Federal 25C/25D expired. IRA HEAR/HOMES ($104.8M) not yet launched.",
+      "No statewide rebate program. Entergy Mississippi offers up to $1,100 for heat pumps. TVA EnergyRight provides up to $800 air-source ($1,500 geothermal; $800 ductless mini split) in northeast MS. Mississippi Power offers $160\u2013$200/ton. Federal 25C/25D expired. IRA HEAR/HOMES ($104.8M) not yet launched.",
     sources: [
       {
         label: "Entergy Mississippi \u2014 Heating & Cooling Rebates",
@@ -2080,10 +2076,6 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "TVA EnergyRight \u2014 Residential Rebates",
         url: "https://energyright.com/residential/rebates/",
-      },
-      {
-        label: "TVA EnergyRight \u2014 Water Heater Instant Rebates",
-        url: "https://energyright.com/residential-upgrades-water-heater/",
       },
       {
         label: "TVA EnergyRight \u2014 Home Uplift",
