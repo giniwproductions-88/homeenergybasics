@@ -8,14 +8,14 @@ export const metadata: Metadata = {
   title:
     "Connecticut Heat Pump Rebates 2026: $250\u2013$1,500/Ton Energize CT + Smart-E Loan | Home Energy Basics",
   description:
-    "Energize CT offers $250\u2013$1,500/ton. Smart-E Loan at 0.99% APR. Federal credits ended. Here\u2019s every Connecticut heat pump incentive in 2026.",
+    "Energize CT offers $250\u2013$1,500/ton. Smart-E Loan at 1.99% APR through Dec 31. Federal credits ended. Here\u2019s every Connecticut heat pump incentive in 2026.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/ct",
   },
   openGraph: {
     title: "Connecticut Heat Pump Rebates 2026",
     description:
-      "Energize CT $250\u2013$1,500/ton, Smart-E Loan 0.99% APR, HES-IE free installs \u2014 the complete guide to Connecticut heat pump incentives after federal credits expired.",
+      "Energize CT $250\u2013$1,500/ton, Smart-E Loan 1.99% APR, HES-IE free installs \u2014 the complete guide to Connecticut heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/ct",
     type: "article",
     publishedTime: "2026-03-22T11:41:24-05:00",
@@ -32,7 +32,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in Connecticut in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Energize CT offers $250 per ton (standard) or $1,000 per ton (Energy Optimization tier for fuel-switching) for qualifying air-source heat pumps, up to $10,000 per home. Since April 1, 2026, enhanced incentives of up to $1,500 per ton are available for electric-resistance replacements and income-verified households between 60% of state median income and 80% of Area Median Income. Heat pump water heaters receive a $900 instant discount. The Smart-E Loan special offer provides 0.99% APR financing through July 31, 2026. Federal tax credits (25C/25D) expired December 31, 2025. HEAR rebates (~$49.7 million allocated) have not launched in Connecticut.",
+        text: "Energize CT offers $250 per ton (standard) or $1,000 per ton (Energy Optimization tier for fuel-switching) for qualifying air-source heat pumps, up to $10,000 per home. Since April 1, 2026, enhanced incentives of up to $1,500 per ton are available for electric-resistance replacements and income-verified households between 60% of state median income and 80% of Area Median Income. Heat pump water heaters receive a $900 instant discount. A new Smart-E Loan special offer provides 1.99% APR financing on 5-year terms, running August 1 through December 31, 2026 (the prior 0.99% offer ended July 31). Federal tax credits (25C/25D) expired December 31, 2025. HEAR rebates (~$49.7 million allocated) have not launched in Connecticut.",
       },
     },
     {
@@ -103,7 +103,7 @@ export default function ConnecticutPage() {
             Connecticut Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Energize CT rebates of <strong>$250&ndash;$1,500 per ton</strong> are the primary heat pump incentive in Connecticut for 2026. The Smart-E Loan special offer provides <strong>0.99% APR</strong> financing through July 31, 2026. Federal tax credits ended December 31, 2025. Connecticut&apos;s <strong>$49.7 million</strong> in HEAR funding has not launched. This guide covers all major Connecticut heat pump incentives available in 2026, including Energize CT rebates, the Smart-E Loan, HES-IE income-eligible programs, and HEAR status. Here&apos;s what&apos;s actually available.
+            Energize CT rebates of <strong>$250&ndash;$1,500 per ton</strong> are the primary heat pump incentive in Connecticut for 2026. A new Smart-E Loan special offer provides <strong>1.99% APR</strong> financing on 5-year terms through December 31, 2026. Federal tax credits ended December 31, 2025. Connecticut&apos;s <strong>$49.7 million</strong> in HEAR funding has not launched. This guide covers all major Connecticut heat pump incentives available in 2026, including Energize CT rebates, the Smart-E Loan, HES-IE income-eligible programs, and HEAR status. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
             Updated {formattedDate} — verified against official program sources
@@ -133,9 +133,9 @@ export default function ConnecticutPage() {
               </p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-1">✓ Smart-E Loan: 0.99% APR financing</p>
+              <p className="font-semibold text-green-800 mb-1">✓ Smart-E Loan: 1.99% APR financing</p>
               <p className="text-sm text-green-900">
-                0.99% on 5&ndash;7 year terms up to $25,000 through CT Green Bank (2.99% on 10-year terms up to $30,000). Requires a pre-verified Energize CT rebate. Offer extended through July 31, 2026.
+                1.99% on 5-year terms up to $25,000 through CT Green Bank. Requires an approved Energize CT rebate. New offer runs August 1&ndash;December 31, 2026 (replaces the 0.99% offer that ended July 31).
               </p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
@@ -299,13 +299,13 @@ export default function ConnecticutPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Smart-E Loan financing</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            The Connecticut Green Bank Smart-E special heat pump offer, extended through <strong>July 31, 2026</strong>, provides <strong>0.99% APR</strong> on 5- and 7-year terms up to <strong>$25,000</strong>, and 2.99% on 10-year terms up to $30,000. The overall Smart-E cap remains $50,000 (amounts above the special-offer limits carry a blended rate), with no money down, no prepayment penalty, and no home equity required. Must be an Eversource or UI customer using an HPIN contractor, with a pre-verified Energize CT heat pump rebate.
+            The Connecticut Green Bank launched a new Smart-E special heat pump offer for <strong>August 1&ndash;December 31, 2026</strong>: <strong>1.99% APR</strong> on 5-year terms up to <strong>$25,000</strong>. The prior 0.99% offer ended July 31, 2026, and its 7-year and 2.99% 10-year tiers were not renewed &mdash; standard Smart-E rates (6.99% on 5&ndash;10 year terms as of August 2026) apply to longer terms. The overall Smart-E cap remains $50,000 (amounts above the special-offer limit, or loans that include non-heat-pump measures, carry a blended rate), with no money down and no prepayment penalty. Must be an Eversource or United Illuminating (Avangrid) customer using an HPIN contractor, with an approved Energize CT heat pump rebate. Heat pump water heaters are also eligible for the special rate.
           </p>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
             <p className="font-semibold text-blue-800 mb-1">For oil and propane homes, the math often works immediately</p>
             <p className="text-sm text-blue-900">
-              A 3-ton Energy Optimization install with $3,000 in rebates financed through Smart-E at 0.99% APR can produce monthly loan payments lower than prior oil or propane heating costs &mdash; making the switch cash-flow-positive from day one.
+              A 3-ton Energy Optimization install with $3,000 in rebates financed through Smart-E at 1.99% APR can produce monthly loan payments lower than prior oil or propane heating costs &mdash; making the switch cash-flow-positive from day one.
             </p>
           </div>
         </div>
@@ -360,7 +360,7 @@ export default function ConnecticutPage() {
           <div className="bg-gray-100 rounded-lg p-5 mb-6">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
             <p className="text-sm text-gray-700">
-              Against a typical <strong>$12,000&ndash;$16,000</strong> installation: Energy Optimization reduces out-of-pocket to roughly <strong>$9,000&ndash;$13,000</strong>, and the enhanced tier to roughly <strong>$7,500&ndash;$11,500</strong>. Standard tier reduces it to roughly <strong>$11,250&ndash;$15,250</strong>. Income-eligible households through HES-IE may pay <strong>$0</strong>. Smart-E financing spreads the remainder at 0.99% APR on 5&ndash;7 year terms through July 31, 2026 (longer terms at higher rates).
+              Against a typical <strong>$12,000&ndash;$16,000</strong> installation: Energy Optimization reduces out-of-pocket to roughly <strong>$9,000&ndash;$13,000</strong>, and the enhanced tier to roughly <strong>$7,500&ndash;$11,500</strong>. Standard tier reduces it to roughly <strong>$11,250&ndash;$15,250</strong>. Income-eligible households through HES-IE may pay <strong>$0</strong>. Smart-E financing spreads the remainder at 1.99% APR on 5-year terms through December 31, 2026 (longer terms at standard rates, currently 6.99%+).
             </p>
           </div>
 
@@ -489,9 +489,9 @@ export default function ConnecticutPage() {
               </p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900">Smart-E Loan rate expiration</p>
+              <p className="font-semibold text-gray-900">Smart-E Loan special-offer window</p>
               <p className="text-sm text-gray-600 mt-1">
-                The 0.99% special offer has been extended twice and currently runs through July 31, 2026 &mdash; weeks away. Rebate pre-verification is required to qualify, so start that process now if you plan to finance.
+                The current 1.99% special offer runs August 1 through December 31, 2026. The prior 0.99% offer expired July 31 and the rate stepped up between offers &mdash; don&apos;t assume a rate you saw earlier is still available. Rebate approval is required to qualify, so allow time for that process if you plan to finance.
               </p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">

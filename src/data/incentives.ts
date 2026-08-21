@@ -434,10 +434,10 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "CT",
     stateName: "Connecticut",
     status: "open",
-    lastVerified: "2026-07-06",
-    lastUpdated: "2026-07-06",
+    lastVerified: "2026-08-21",
+    lastUpdated: "2026-08-21",
     summary:
-      "Connecticut heat pump incentives are active through Energize CT. Rebates range from $250–$1,500 per ton depending on system type, fuel switching, and income (enhanced tiers added April 2026). Federal tax credits ended December 31, 2025. HEAR rebates are funded but not yet available. The Smart-E Loan offers 0.99% APR heat pump financing, extended through July 31, 2026.",
+      "Connecticut heat pump incentives are active through Energize CT. Rebates range from $250–$1,500 per ton depending on system type, fuel switching, and income (enhanced tiers added April 2026). Federal tax credits ended December 31, 2025. HEAR rebates are funded but not yet available. A new Smart-E Loan offer provides 1.99% APR heat pump financing on 5-year terms, August 1–December 31, 2026.",
     sources: [
       {
         label: "Energize CT — Air-Source Heat Pump Rebates",
@@ -464,7 +464,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
         url: "https://www.energizect.com/IRA-FAQ",
       },
       {
-        label: "CT Green Bank — Smart-E Heat Pump Special Offer (0.99% APR through July 31, 2026)",
+        label: "CT Green Bank — Smart-E Heat Pump Special Offer (1.99% APR, Aug 1–Dec 31, 2026)",
         url: "https://www.ctgreenbank.com/smart-e-heat-pump-special-offer-2026/",
       },
       {
@@ -478,10 +478,10 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "CO",
     stateName: "Colorado",
     status: "limited",
-    lastVerified: "2026-07-20",
-    lastUpdated: "2026-07-20",
+    lastVerified: "2026-08-21",
+    lastUpdated: "2026-08-21",
     summary:
-      "Xcel Energy pays $2,250/heating ton for cold-climate heat pumps at its with-bonus rate for customers replacing gas heat ($750 standard), stackable with Colorado's $1,000 state tax credit. Income-qualified HEAR rebates up to $8,000 are closed for the Front Range (Region 1); Region 2 accepts applications until remaining funding is fully reserved. DRCOG's $1,500 Power Ahead rebate (Denver metro, no income limit) is live — preapproval required before work begins. Federal 25C/25D credits expired December 31, 2025.",
+      "Xcel Energy pays $2,250/heating ton for cold-climate heat pumps at its with-bonus rate for customers replacing gas heat ($750 standard), stackable with Colorado's $1,000 state tax credit. Income-qualified HEAR single-family rebates are closed statewide as of August 2026 — CEO says Region 2 applications submitted after August 1 will not be reviewed. DRCOG's $1,500 Power Ahead rebate (Denver metro, no income limit) is live — preapproval required before work begins. Federal 25C/25D credits expired December 31, 2025.",
     sources: [
       {
         label: "Colorado HEAR program — Colorado Energy Office",
