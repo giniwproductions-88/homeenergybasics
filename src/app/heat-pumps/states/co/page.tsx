@@ -6,16 +6,16 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title:
-    "Colorado Heat Pump Rebates 2026: Up to $8,000 HEAR + Xcel Energy + $1,000 State Credit | Home Energy Basics",
+    "Colorado Heat Pump Rebates 2026: Xcel up to $2,250/Ton + $1,000 State Credit | Home Energy Basics",
   description:
-    "Colorado HEAR covers up to $8,000. Xcel: up to $2,250/ton for cold-climate systems. State tax credit adds $1,000. Every Colorado heat pump incentive in 2026.",
+    "Xcel pays up to $2,250/ton for cold-climate systems. State tax credit adds $1,000. HEAR single-family closed August 2026. Every Colorado heat pump incentive in 2026.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/co",
   },
   openGraph: {
     title: "Colorado Heat Pump Rebates 2026",
     description:
-      "HEAR rebates up to $8,000, Xcel Energy up to $2,250/ton for cold-climate systems, and $1,000 state tax credit \u2014 the complete guide to Colorado heat pump incentives after federal credits expired.",
+      "Xcel Energy up to $2,250/ton for cold-climate systems, $1,000 state tax credit, DRCOG Power Ahead $1,500 \u2014 the complete guide to Colorado heat pump incentives after HEAR single-family closed and federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/co",
     type: "article",
     publishedTime: "2026-03-22T12:31:12-05:00",
@@ -47,7 +47,7 @@ export default function ColoradoPage() {
         name: "What heat pump rebates are available in Colorado in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Colorado has four main incentive layers in 2026. Two are open to everyone with no income limit: Xcel Energy utility rebates (up to $2,250 per ton for cold-climate systems replacing gas heat) and the Colorado state heat pump tax credit ($1,000 for air-source). The third is HEAR (up to $8,000 for income-qualified households at or below 150% AMI) \u2014 but HEAR single-family funding for the Front Range (Region 1) closed in late April 2026, and the Colorado Energy Office says the rest of the state (Region 2) continues to accept applications until remaining funding is fully reserved. The fourth, DRCOG\u2019s Power Ahead Colorado ($1,500 per cold-climate heat pump, Denver metro, no income limit), is live \u2014 DRCOG\u2019s own site now publishes full application details, and projects must be submitted for preapproval before work begins. The federal 25C tax credit ended December 31, 2025.",
+          text: "Colorado has three main incentive layers still open in 2026, all with no income limit: Xcel Energy utility rebates (up to $2,250 per ton for cold-climate systems replacing gas heat), the Colorado state heat pump tax credit ($1,000 for air-source), and DRCOG\u2019s Power Ahead Colorado ($1,500 per cold-climate heat pump, Denver metro \u2014 preapproval required before work begins). The fourth layer, HEAR (up to $8,000 for income-qualified households at or below 150% AMI), is closed to new single-family applications statewide as of August 2026: Region 1 (the Front Range) was fully reserved in late April, and the Colorado Energy Office now says Region 2 applications submitted after August 1, 2026 will not be reviewed. The federal 25C tax credit ended December 31, 2025.",
         },
       },
       {
@@ -55,7 +55,7 @@ export default function ColoradoPage() {
         name: "Can I stack HEAR with Xcel Energy rebates and the Colorado state tax credit?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. The Colorado Energy Office explicitly permits stacking HEAR rebates with utility rebates and the state heat pump tax credit \u2014 for the tax credit, CEO notes your contractor must be registered with both programs. The main restriction is that HEAR cannot be combined with other federal grants or the HER/HOMES program on the same measure, and total incentives cannot exceed the project cost. HEAR also cannot stack with the DRCOG Power Ahead rebate because both are federally funded.",
+          text: "For households that already hold a HEAR reservation: yes. The Colorado Energy Office explicitly permits stacking HEAR rebates with utility rebates and the state heat pump tax credit \u2014 for the tax credit, CEO notes your contractor must be registered with both programs. The main restriction is that HEAR cannot be combined with other federal grants or the HER/HOMES program on the same measure, and total incentives cannot exceed the project cost. HEAR also cannot stack with the DRCOG Power Ahead rebate because both are federally funded. New HEAR single-family applications are no longer being accepted as of August 2026.",
         },
       },
       {
@@ -123,11 +123,11 @@ export default function ColoradoPage() {
             (ground-source earns up to $3,300 per ton) and the state&apos;s
             contractor-claimed heat pump
             tax credit remains active at <strong>$1,000</strong> for air-source
-            systems &mdash; both with no income limit. Income-qualified
-            households outside the Front Range can still access HEAR rebates of
-            up to <strong>$8,000</strong> until remaining Region 2 funding is
-            fully reserved;
-            Front Range (Region 1) HEAR applications closed in late April.
+            systems &mdash; both with no income limit. Income-qualified HEAR
+            rebates of up to <strong>$8,000</strong> are closed to new
+            single-family applications statewide as of August 2026: Front Range
+            (Region 1) applications closed in late April, and CEO says Region 2
+            applications submitted after August 1 will not be reviewed.
             This guide covers all major Colorado heat pump incentives available
             in 2026, including HEAR, Xcel Energy rebates, the state tax credit,
             and the new DRCOG Power Ahead program. Here&apos;s what&apos;s
@@ -158,14 +158,14 @@ export default function ColoradoPage() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">
-                ✓ HEAR rebates (up to $8,000 per heat pump)
+                ✗ HEAR rebates (up to $8,000 per heat pump)
               </p>
               <p className="text-sm text-green-900">
-                Income-qualified households at or below 150% of Area Median
-                Income (AMI). Point-of-sale discount through CEO-registered
-                contractors. Total household cap of $14,000. Region 2 (outside
-                the Front Range) only, until remaining funding is fully
-                reserved.
+                Closed to new single-family applications statewide as of August
+                2026 (Region 1 in late April; Region 2 applications after
+                August 1 will not be reviewed). Households with an existing
+                formal reservation notice keep their rebate. Small-multifamily
+                HEAR is still slated for 2026.
               </p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
@@ -202,17 +202,17 @@ export default function ColoradoPage() {
             </div>
             <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 md:col-span-2">
               <p className="font-semibold text-amber-800 mb-1">
-                ⚠ Front Range HEAR is closed; Region 2 is open until funds run out
+                ⚠ HEAR single-family is closed statewide as of August 2026
               </p>
               <p className="text-sm text-amber-900">
                 Income-qualified HEAR funding for the Front Range (Region 1)
-                was fully reserved in late April 2026 &mdash; new single-family
-                applications there are closed. The Colorado Energy Office says
-                the rest of the state (Region 2) continues to accept
-                applications until remaining funding is fully reserved &mdash;
-                roughly $4.6 million was left at the dashboard&apos;s last
-                update. DRCOG&apos;s Power Ahead Colorado ($1,500 per
-                cold-climate heat pump, Denver metro, no income limit) is now
+                was fully reserved in late April 2026. The Colorado Energy
+                Office&apos;s August 2026 update closes Region 2 as well:
+                applications and project proposals submitted after August 1,
+                2026 will not be reviewed. You are only guaranteed a rebate if
+                you and your contractor already hold a formal reservation
+                notice. DRCOG&apos;s Power Ahead Colorado ($1,500 per
+                cold-climate heat pump, Denver metro, no income limit) remains
                 live per DRCOG&apos;s own site and stacks with Xcel and the
                 state credit, but not with HEAR.
               </p>
@@ -271,7 +271,10 @@ export default function ColoradoPage() {
             administered by the Colorado Energy Office (CEO) with Guidehouse as
             the implementation partner. It offers point-of-sale rebates &mdash;
             the contractor subtracts the rebate from your invoice at
-            installation.
+            installation. <strong>As of August 2026 the single-family program
+            is closed to new applications statewide</strong> (see below); the
+            amounts here apply to projects with existing reservations and show
+            what small-multifamily HEAR, still slated for 2026, is built on.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Eligibility requires household income at or below 150% of county
@@ -349,11 +352,12 @@ export default function ColoradoPage() {
             other counties) stopped accepting new single-family applications in
             late April 2026</strong> after funds were fully reserved (proposals
             submitted after April 27 are denied).
-            <strong> Region 2 (all other counties) continues to accept
-            applications until remaining funding is fully reserved</strong>{" "}
-            &mdash; the CEO dashboard showed roughly $4.6 million remaining for
-            Region 2 as of its May 15 update, still the latest posted as of{" "}
-            {formattedDate}. Check the{" "}
+            <strong> Region 2 (all other counties) is now closed as well</strong>{" "}
+            &mdash; CEO&apos;s August 2026 program update states that
+            applications and project proposals submitted after August 1, 2026
+            for Region 2 will not be reviewed and will be denied. Households
+            are only guaranteed a rebate if they and their registered
+            contractor already received a formal reservation notice. The{" "}
             <a
               href="https://energyoffice.colorado.gov/hear-dashboard"
               target="_blank"
@@ -362,7 +366,7 @@ export default function ColoradoPage() {
             >
               CEO HEAR funding dashboard
             </a>{" "}
-            before starting paperwork.
+            tracks reservation and payment status for existing projects.
           </p>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
@@ -685,13 +689,11 @@ export default function ColoradoPage() {
             restrictions: HEAR cannot be combined with other federal grants
             (including HER/HOMES and Power Ahead) on the same measure, HEAR is
             only available at or below 150% AMI, and total incentives cannot
-            exceed project cost. Note that HEAR single-family funding for the
-            Front Range (Region 1) was fully reserved in late April 2026 and is
-            closed to new applications there; Region 2 (all other counties) continues to
-            accept applications until remaining funding is fully reserved
-            &mdash; so the HEAR scenarios below apply to Region
-            2 applicants who secure a reservation, and to Front Range
-            projects whose proposals were already reserved.
+            exceed project cost. Note that HEAR single-family applications are
+            closed statewide as of August 2026 (Region 1 in late April; Region
+            2 applications after August 1 are not reviewed) &mdash; so the HEAR
+            scenarios below apply only to projects that already hold a formal
+            reservation notice.
           </p>
 
           <div className="space-y-4 mb-8">
@@ -716,7 +718,7 @@ export default function ColoradoPage() {
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900 mb-2">
                 80%&ndash;150% AMI &mdash; 3-ton cold-climate ASHP (Xcel
-                customer, gas replacement)
+                customer, gas replacement; existing HEAR reservation)
               </p>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>HEAR rebate (50% coverage, up to cap): $8,000</li>
@@ -730,7 +732,7 @@ export default function ColoradoPage() {
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-2">
                 Below 80% AMI &mdash; 3-ton cold-climate ASHP (Xcel customer,
-                gas replacement)
+                gas replacement; existing HEAR reservation)
               </p>
               <ul className="text-sm text-green-900 space-y-1">
                 <li>HEAR rebate (100% coverage, up to cap): $8,000</li>
@@ -824,8 +826,8 @@ export default function ColoradoPage() {
             </p>
             <p className="text-sm text-green-900">
               Xcel Energy customers replacing gas heat (highest utility
-              rebates), Region 2 households below 150% AMI who secure a HEAR
-              reservation before remaining funds run out, homeowners in Mountain Energy
+              rebates), households below 150% AMI who already hold a HEAR
+              reservation notice, homeowners in Mountain Energy
               Project communities (dramatically enhanced Xcel rebates), Denver
               metro residents (Power Ahead $1,500 &mdash; preapproval before
               work begins), and anyone planning multiple upgrades (Whole Home
@@ -951,11 +953,11 @@ export default function ColoradoPage() {
                 </p>
                 <p className="text-sm text-gray-700">
                   Use the Colorado Energy Office portal or call 866-336-0016.
-                  HEAR is only available at or below 150% AMI, and for new
-                  applications, only in Region 2 (outside the Front Range),
-                  until remaining funding is fully reserved. CEO says applications are taking longer
-                  to review due to high demand, so start immediately if you
-                  intend to apply.
+                  HEAR single-family applications are closed statewide as of
+                  August 2026 &mdash; this step now applies only to checking
+                  the status of an existing application or reservation. New
+                  applicants should plan around Xcel, the state tax credit,
+                  and (Denver metro) Power Ahead instead.
                 </p>
               </div>
             </div>
@@ -1037,20 +1039,21 @@ export default function ColoradoPage() {
           <div className="space-y-4">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">
-                HEAR wind-down: Region 2 funds
+                HEAR single-family: closed statewide
               </p>
               <p className="text-sm text-gray-600 mt-1">
                 The Colorado Energy Office planned an anticipated four-year
                 rebate period, through 2029 or until funds are spent &mdash;
-                but demand has far outrun that schedule. Region 1 (the Front
+                but demand far outran that schedule. Region 1 (the Front
                 Range) was fully reserved and stopped taking new single-family
-                applications in late April 2026. CEO had set an August 1, 2026
-                application cutoff for Region 2, then replaced it: as of{" "}
-                {formattedDate} its page says Region 2 &quot;is accepting
-                applications until remaining available funding is fully
-                reserved.&quot; The dashboard showed roughly $4.6 million left
-                at its last posted update. Check the CEO HEAR
-                dashboard for current balances before starting paperwork.
+                applications in late April 2026. CEO set an August 1, 2026
+                cutoff for Region 2, briefly replaced it with open-ended
+                &quot;until funding is fully reserved&quot; language, then
+                closed with August 1 as the effective line: its August 2026
+                update says Region 2 applications and project proposals
+                submitted after that date will not be reviewed. Existing
+                formal reservations are still honored; rebates for small
+                multifamily buildings are still slated for 2026.
               </p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
