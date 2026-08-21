@@ -186,7 +186,7 @@ export default function ColoradoPage() {
                 ✓ Total potential savings: $7,750 to ~$15,750+
               </p>
               <p className="text-sm text-green-900">
-                $7,750 (above 150% AMI) to $15,750+ (below 80% AMI) for a 3-ton
+                $7,750 (above 150% AMI) to $15,750+ (below 80% AMI with an existing HEAR reservation) for a 3-ton
                 cold-climate system on Xcel. Full electrification packages can
                 reach ~$20,000 total incentives.
               </p>
@@ -755,8 +755,9 @@ export default function ColoradoPage() {
               available incentives, expect to pay approximately{" "}
               <strong>$5,450&ndash;$13,250 out of pocket</strong> above 150%
               AMI, or as little as <strong>$0&ndash;$5,250</strong> for
-              income-qualified households below 80% AMI where HEAR covers 100%
-              of costs up to the per-measure cap.
+              income-qualified households below 80% AMI holding an existing
+              HEAR reservation (HEAR covers 100% of costs up to the
+              per-measure cap).
             </p>
           </div>
 

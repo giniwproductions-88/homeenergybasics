@@ -64,7 +64,7 @@ const faqJsonLd = {
       name: "Are Connecticut HEAR rebates available?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No. As of July 2026, Connecticut\u2019s HEAR program has not launched. CT DEEP submitted its implementation blueprints to DOE in April 2025 but no confirmed launch date has been set. When active, HEAR is expected to provide up to $8,000 per heat pump and $14,000 total for income-qualified households below 150% AMI. Do not factor HEAR into current project budgets.",
+        text: "No. As of August 2026, Connecticut\u2019s HEAR program has not launched. CT DEEP submitted its implementation blueprints to DOE in April 2025 but no confirmed launch date has been set. When active, HEAR is expected to provide up to $8,000 per heat pump and $14,000 total for income-qualified households below 150% AMI. Do not factor HEAR into current project budgets.",
       },
     },
   ],
@@ -183,7 +183,7 @@ export default function ConnecticutPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">HEAR rebates: funded but not yet available</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            The Home Electrification and Appliance Rebates (HEAR) program is the largest potential incentive for Connecticut homeowners. CT DEEP submitted its State Implementation Blueprints to DOE at the end of April 2025. DEEP plans to contract with Eversource and United Illuminating to administer the program. As of July 2026, HEAR is not available to homeowners and no confirmed launch date has been set.
+            The Home Electrification and Appliance Rebates (HEAR) program is the largest potential incentive for Connecticut homeowners. CT DEEP submitted its State Implementation Blueprints to DOE at the end of April 2025. DEEP plans to contract with Eversource and United Illuminating to administer the program. As of August 2026, HEAR is not available to homeowners and no confirmed launch date has been set.
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
