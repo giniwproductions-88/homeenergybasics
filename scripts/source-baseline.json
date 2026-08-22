@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-22T23:39:05.532Z",
+ "generatedAt": "2026-08-22T23:48:34.699Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -2315,10 +2315,10 @@
     "RI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-26T20:35:01.141Z",
-   "length": 91996,
+   "fetchedAt": "2026-08-22T15:12:03.977Z",
+   "length": 98583,
    "kind": "html",
-   "textHash": "7c5e4314856653f8",
+   "textHash": "50c07a75cb61086a",
    "dollars": [
     "$20",
     "$25",
@@ -2334,10 +2334,10 @@
     "RI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-26T20:35:01.387Z",
-   "length": 128924,
+   "fetchedAt": "2026-08-22T15:12:04.577Z",
+   "length": 129489,
    "kind": "html",
-   "textHash": "81f853388799ed3c",
+   "textHash": "1eb43a9a6e76d97a",
    "dollars": [
     "$150",
     "$250",
@@ -2369,10 +2369,10 @@
     "RI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-26T20:35:00.698Z",
-   "length": 5321823,
+   "fetchedAt": "2026-08-22T15:12:04.865Z",
+   "length": 5322382,
    "kind": "html",
-   "textHash": "ade6c0e5cd103a47",
+   "textHash": "226e08639cfe0fdd",
    "dollars": [
     "$625",
     "$1,500",
@@ -2391,10 +2391,10 @@
     "RI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-26T20:35:01.131Z",
-   "length": 85260,
+   "fetchedAt": "2026-08-22T15:12:04.325Z",
+   "length": 92028,
    "kind": "html",
-   "textHash": "fa2eb08e23198856",
+   "textHash": "d3be75d4cff2afcb",
    "dollars": [
     "$8",
     "$31",
@@ -2411,7 +2411,7 @@
     "RI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-26T20:35:00.613Z",
+   "fetchedAt": "2026-08-22T15:12:05.002Z",
    "length": 88954,
    "kind": "html",
    "textHash": "296d73f06b1b0738",
@@ -2439,8 +2439,8 @@
     "RI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-26T20:35:01.117Z",
-   "length": 93768,
+   "fetchedAt": "2026-08-22T15:12:05.045Z",
+   "length": 86735,
    "kind": "html",
    "textHash": "5d00d92a9a2e4707",
    "dollars": [
@@ -8679,10 +8679,10 @@
     "RI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-26T20:35:51.682Z",
-   "length": 97373,
+   "fetchedAt": "2026-08-22T15:13:07.990Z",
+   "length": 97741,
    "kind": "html",
-   "textHash": "c426712c89375e31",
+   "textHash": "e4c2d6e25f7398d9",
    "dollars": [],
    "keywords": {}
   }
