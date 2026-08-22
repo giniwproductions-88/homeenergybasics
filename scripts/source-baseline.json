@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-26T23:14:54.730Z",
+ "generatedAt": "2026-08-22T15:43:07.259Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -490,10 +490,10 @@
     "MO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-26T20:34:27.298Z",
-   "length": 114425,
+   "fetchedAt": "2026-08-22T15:11:37.866Z",
+   "length": 118811,
    "kind": "html",
-   "textHash": "5f26bc2d77d90d83",
+   "textHash": "ac9b445c0b11171b",
    "dollars": [
     "$150",
     "$250",
@@ -896,8 +896,8 @@
     "CT"
    ],
    "httpStatus": 403,
-   "fetchedAt": "2026-07-09T15:14:32.129Z",
-   "length": 5996,
+   "fetchedAt": "2026-08-22T15:11:49.629Z",
+   "length": 6060,
    "error": "HTTP 403"
   },
   "https://www.energizect.com/rebates-incentives/heating-cooling/heat-pumps/residential-energy-optimization": {
@@ -908,8 +908,8 @@
     "CT"
    ],
    "httpStatus": 403,
-   "fetchedAt": "2026-07-09T15:14:32.096Z",
-   "length": 6045,
+   "fetchedAt": "2026-08-22T15:11:49.513Z",
+   "length": 6087,
    "error": "HTTP 403"
   },
   "https://www.energizect.com/rebates-incentives/residential-water-heater/heat-pump": {
@@ -920,8 +920,8 @@
     "CT"
    ],
    "httpStatus": 403,
-   "fetchedAt": "2026-07-09T15:14:32.131Z",
-   "length": 5930,
+   "fetchedAt": "2026-08-22T15:11:49.681Z",
+   "length": 5994,
    "error": "HTTP 403"
   },
   "https://www.energizect.com/energy-evaluations/income-eligible-options": {
@@ -932,8 +932,8 @@
     "CT"
    ],
    "httpStatus": 403,
-   "fetchedAt": "2026-07-09T15:14:32.156Z",
-   "length": 5897,
+   "fetchedAt": "2026-08-22T15:11:49.901Z",
+   "length": 5940,
    "error": "HTTP 403"
   },
   "https://portal.ct.gov/deep/energy/inflation-reduction-act-home-energy-rebate-programs": {
@@ -944,8 +944,8 @@
     "CT"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:31.252Z",
-   "length": 42010,
+   "fetchedAt": "2026-08-22T15:11:49.109Z",
+   "length": 42153,
    "kind": "html",
    "textHash": "d221bb68e8f88b87",
    "dollars": [
@@ -964,25 +964,24 @@
     "CT"
    ],
    "httpStatus": 403,
-   "fetchedAt": "2026-07-09T15:14:32.657Z",
-   "length": 5728,
+   "fetchedAt": "2026-08-22T15:11:51.011Z",
+   "length": 5792,
    "error": "HTTP 403"
   },
   "https://www.ctgreenbank.com/smart-e-heat-pump-special-offer-2026/": {
    "url": "https://www.ctgreenbank.com/smart-e-heat-pump-special-offer-2026/",
    "finalUrl": "https://www.ctgreenbank.com/smart-e-heat-pump-special-offer-2026/",
-   "label": "CT Green Bank — Smart-E Heat Pump Special Offer (0.99% APR through July 31, 2026)",
+   "label": "CT Green Bank — Smart-E Heat Pump Special Offer (1.99% APR, Aug 1–Dec 31, 2026)",
    "states": [
     "CT"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:31.835Z",
-   "length": 163297,
+   "fetchedAt": "2026-08-22T15:11:54.290Z",
+   "length": 163066,
    "kind": "html",
-   "textHash": "39a4538ff77d9d7c",
+   "textHash": "fc910993951b472d",
    "dollars": [
     "$25,000",
-    "$30,000",
     "$50,000"
    ],
    "keywords": {
@@ -997,10 +996,10 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-21T20:21:43.209Z",
-   "length": 104792,
+   "fetchedAt": "2026-08-22T15:11:50.208Z",
+   "length": 104890,
    "kind": "html",
-   "textHash": "bc1432e6f10db7f1",
+   "textHash": "6d4595b117d148b3",
    "dollars": [
     "$840",
     "$1,600",
@@ -1016,10 +1015,8 @@
     "$400,000"
    ],
    "keywords": {
-    "closed": 1,
-    "expired": 1,
-    "now available": 1,
-    "accepting applications": 1
+    "closed": 2,
+    "expired": 1
    }
   },
   "https://energyoffice.colorado.gov/ira-rebate-faq": {
@@ -1030,18 +1027,16 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-21T20:21:43.233Z",
-   "length": 129392,
+   "fetchedAt": "2026-08-22T15:11:50.235Z",
+   "length": 129895,
    "kind": "html",
-   "textHash": "0c55acf05b3673b6",
+   "textHash": "ca9b90374f9a78e9",
    "dollars": [
     "$1",
     "$14,000"
    ],
    "keywords": {
-    "closed": 1,
-    "now available": 1,
-    "accepting applications": 1
+    "closed": 2
    }
   },
   "https://energyoffice.colorado.gov/hptc": {
@@ -1052,10 +1047,10 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-21T20:21:43.204Z",
-   "length": 79575,
+   "fetchedAt": "2026-08-22T15:11:50.466Z",
+   "length": 79892,
    "kind": "html",
-   "textHash": "07e541d07893c999",
+   "textHash": "328c39d4ab127ab2",
    "dollars": [
     "$83",
     "$166.65",
@@ -1084,10 +1079,10 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-21T20:21:43.705Z",
-   "length": 599633,
+   "fetchedAt": "2026-08-22T15:11:51.230Z",
+   "length": 599623,
    "kind": "html",
-   "textHash": "ee651b2efd7826d0",
+   "textHash": "6bae1f498b907c6f",
    "dollars": [
     "$900",
     "$1,200",
@@ -1104,10 +1099,10 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-21T20:21:44.080Z",
-   "length": 782888,
+   "fetchedAt": "2026-08-22T15:11:51.749Z",
+   "length": 783590,
    "kind": "html",
-   "textHash": "62867137a6a9dfaf",
+   "textHash": "df4d152913e3651c",
    "dollars": [
     "$50",
     "$100",
@@ -1160,10 +1155,10 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-21T20:21:43.746Z",
-   "length": 98742,
+   "fetchedAt": "2026-08-22T15:11:51.565Z",
+   "length": 99059,
    "kind": "html",
-   "textHash": "a42212f781ac2626",
+   "textHash": "db69a8fde4bbfd0d",
    "dollars": [],
    "keywords": {}
   },
@@ -1175,10 +1170,10 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-21T20:21:44.230Z",
-   "length": 313596,
+   "fetchedAt": "2026-08-22T15:11:53.467Z",
+   "length": 317359,
    "kind": "html",
-   "textHash": "0e62c06868ca931e",
+   "textHash": "50c072f05ee6d609",
    "dollars": [
     "$2",
     "$5",
@@ -7688,19 +7683,18 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-21T20:21:43.231Z",
-   "length": 58236,
+   "fetchedAt": "2026-08-22T15:11:50.351Z",
+   "length": 58610,
    "kind": "html",
-   "textHash": "1941d19e52432f6a",
+   "textHash": "302e32073a565f4a",
    "dollars": [
     "$0",
-    "$2",
     "$13",
     "$31",
     "$45"
    ],
    "keywords": {
-    "closed": 1
+    "closed": 2
    }
   },
   "https://mienergyrebates.clearesult.com/help-center": {
@@ -8416,8 +8410,8 @@
     "CO"
    ],
    "httpStatus": 403,
-   "fetchedAt": "2026-07-21T20:21:45.428Z",
-   "length": 5895,
+   "fetchedAt": "2026-08-22T15:11:52.617Z",
+   "length": 5938,
    "error": "HTTP 403"
   },
   "https://xcelenergycores.clearesult.com/income-qualified": {
@@ -8428,8 +8422,8 @@
     "CO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-21T20:21:47.377Z",
-   "length": 166943,
+   "fetchedAt": "2026-08-22T15:11:53.764Z",
+   "length": 170224,
    "kind": "html",
    "textHash": "ca710cced536fbc4",
    "dollars": [],
