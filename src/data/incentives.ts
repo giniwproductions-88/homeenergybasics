@@ -342,8 +342,8 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "WA",
     stateName: "Washington",
     status: "open",
-    lastVerified: "2026-07-10",
-    lastUpdated: "2026-07-10",
+    lastVerified: "2026-08-22",
+    lastUpdated: "2026-08-22",
     summary:
       "Washington has two rebate tracks plus utility programs. The state HEAR program (Climate Commitment Act, ~$103.6M) is open and paying rebates for households \u2264150% AMI. The federal HARP/HOMES rebates (up to $8,000, Guidehouse administering) have no launch date \u2014 DOE issued revised program guidelines June 1, 2026 and Commerce is reassessing. PSE utility rebates run up to $5,000 (income-qualified) and require a PSE Trade Ally or REP contractor. Seattle's Clean Heat program pays $2,000 for oil-to-heat-pump conversions at any income, up to $6,000 with the moderate-income bonus (installations by September 30, 2026). Federal tax credits (25C/25D) ended December 31, 2025.",
     sources: [
@@ -360,16 +360,16 @@ export const incentives: Record<StateCode, StateIncentive> = {
         url: "https://www.seattle.gov/environment/climate-change/buildings-and-energy/seattles-clean-heat-program",
       },
       {
-        label: "PSE — Doubled rebates for City of Lacey residents",
+        label: "PSE — Doubled rebates for City of Lacey residents (closed)",
         url: "https://www.pse.com/en/rebates/doubled-rebates-for-city-of-lacey-residents",
       },
       {
         label: "WA Commerce — State HEAR Program (open)",
-        url: "https://www.commerce.wa.gov/energy-incentives/hear/",
+        url: "https://www.commerce.wa.gov/energy/clean-buildings/energy-incentives/hear/",
       },
       {
         label: "WA Commerce — IRA Home Energy Rebates (HARP/HOMES)",
-        url: "https://www.commerce.wa.gov/energy-incentives/ira-home-energy-rebates/",
+        url: "https://www.commerce.wa.gov/energy/clean-buildings/energy-incentives/ira-home-energy-rebates/",
       },
       {
         label: "United Hub — WA HEAR administrator (Clark, King, Pierce, Thurston, Yakima)",

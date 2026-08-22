@@ -79,7 +79,7 @@ export default function WashingtonPage() {
         name: "What is Initiative 2066 and does it affect heat pump rebates?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Initiative 2066 was a voter-approved measure in November 2024 that aimed to prevent limits on natural gas. A King County judge struck it down as unconstitutional in March 2025 for violating the state constitution\u2019s single-subject rule and related requirements for initiatives. The Building Industry Association of Washington appealed directly to the Washington Supreme Court, which heard oral arguments on January 22, 2026 and is reviewing the case de novo. As of July 2026 the court has not issued a decision and gave no timeline for one. I-2066\u2019s legal status remains unresolved while the appeal is pending. Existing heat pump rebate programs have not been affected by I-2066 either way.",
+          text: "Initiative 2066 was a voter-approved measure in November 2024 that aimed to prevent limits on natural gas. A King County judge struck it down as unconstitutional in March 2025 for violating the state constitution\u2019s single-subject rule and related requirements for initiatives. The Building Industry Association of Washington appealed directly to the Washington Supreme Court, which heard oral arguments on January 22, 2026 and is reviewing the case de novo. As of August 2026 the court has not issued a decision and gave no timeline for one. I-2066\u2019s legal status remains unresolved while the appeal is pending. Existing heat pump rebate programs have not been affected by I-2066 either way.",
         },
       },
       {
@@ -182,7 +182,10 @@ export default function WashingtonPage() {
           </p>
 
           <p className="text-gray-700 leading-relaxed mb-6">
-            Rebate levels are set by each administrator. United Hub, the largest, funds <strong>50%</strong> of qualified equipment purchase and installation costs for homeowners below 150% AMI, and <strong>100%</strong> for homeowners below 80% AMI, in its five counties.
+            The program is expanding: Commerce&apos;s most recent award round distributed roughly <strong>$39.3 million</strong> to <strong>40 local third-party administrators</strong> — counties, cities, PUDs, tribal governments, and community organizations, from King County ($3.8M) to Yakama Nation Housing Authority ($1.65M) — funded through the 2025 biennial and 2026 supplemental budgets. Beyond households, eligibility extends to small businesses and nonprofits with 50 or fewer employees and to DSHS-licensed adult family homes.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Rebate levels and application processes are set by each administrator, and not every administrator offers every rebate or uses identical eligibility criteria — confirm with your local administrator. United Hub, for example, funds <strong>50%</strong> of qualified equipment purchase and installation costs for homeowners below 150% AMI, and <strong>100%</strong> for homeowners below 80% AMI, in its five counties.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Known Active Administrators</h3>
@@ -313,7 +316,7 @@ export default function WashingtonPage() {
             </table>
           </div>
           <p className="text-gray-700 leading-relaxed mb-6">
-            PSE requires all heat pump rebate installations to use a PSE Trade Ally or Recommended Energy Professional — out-of-network contractors and DIY installs do not qualify. PSE describes the Pierce County HEAR rebate as a limited-time offer. Separately, the City of Lacey matches PSE rebates for residents inside city limits: a <strong>100% match on income-qualified rebates</strong> (a second $4,000 on the gas-to-heat-pump rebate) and a 50% match on standard rebates, while funding lasts.
+            PSE requires all heat pump rebate installations to use a PSE Trade Ally or Recommended Energy Professional — out-of-network contractors and DIY installs do not qualify. PSE describes the Pierce County HEAR rebate as a limited-time offer. The City of Lacey&apos;s matching program, which doubled PSE rebates for residents inside city limits (including a second $4,000 on the income-qualified gas-to-heat-pump rebate), is <strong>closed</strong> — as of August 2026, PSE states the program is no longer accepting new enrollments.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Seattle City Light</h3>
@@ -366,7 +369,7 @@ export default function WashingtonPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Initiative 2066 &amp; What It Means for Rebates</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Initiative 2066 was a voter-approved measure in November 2024 that aimed to prevent limits on natural gas — blocking building codes from discouraging gas, stopping PSE&apos;s gas transition plan, and restricting municipal energy standards. In March 2025, a King County judge struck I-2066 down as unconstitutional. The Building Industry Association of Washington appealed directly to the Washington Supreme Court, which heard oral arguments on January 22, 2026 and is reviewing the case de novo. As of July 2026 the court has not ruled and has given no timeline. I-2066&apos;s legal status remains unresolved while the appeal is pending, and the state Building Code Council has kept the existing 2021 energy codes in place while it investigates changes.
+            Initiative 2066 was a voter-approved measure in November 2024 that aimed to prevent limits on natural gas — blocking building codes from discouraging gas, stopping PSE&apos;s gas transition plan, and restricting municipal energy standards. In March 2025, a King County judge struck I-2066 down as unconstitutional. The Building Industry Association of Washington appealed directly to the Washington Supreme Court, which heard oral arguments on January 22, 2026 and is reviewing the case de novo. As of August 2026 the court has not ruled and has given no timeline. I-2066&apos;s legal status remains unresolved while the appeal is pending, and the state Building Code Council has kept the existing 2021 energy codes in place while it investigates changes.
           </p>
           <div className="bg-white border border-gray-200 rounded-lg p-5">
             <p className="font-semibold text-gray-900 mb-1">What this means for heat pump rebates:</p>
@@ -559,7 +562,7 @@ export default function WashingtonPage() {
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">I-2066 Supreme Court Ruling</p>
-              <p className="text-sm text-gray-600 mt-1">Argued January 22, 2026; no decision as of July 2026, and the court set no timeline. The state Building Code Council has kept the existing 2021 energy codes in place while it investigates changes. A ruling does not affect existing rebate programs but would shape future building code and utility electrification planning.</p>
+              <p className="text-sm text-gray-600 mt-1">Argued January 22, 2026; no decision as of August 2026, and the court set no timeline. The state Building Code Council has kept the existing 2021 energy codes in place while it investigates changes. A ruling does not affect existing rebate programs but would shape future building code and utility electrification planning.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">PSE Trade Ally Requirement (in effect)</p>
