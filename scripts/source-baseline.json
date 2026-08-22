@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-22T16:36:05.007Z",
+ "generatedAt": "2026-08-22T17:18:21.096Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -7626,36 +7626,62 @@
   },
   "https://www.commerce.wa.gov/energy-incentives/hear/": {
    "url": "https://www.commerce.wa.gov/energy-incentives/hear/",
-   "finalUrl": "https://www.commerce.wa.gov/energy-incentives/hear/",
+   "finalUrl": "https://www.commerce.wa.gov/energy/clean-buildings/energy-incentives/hear/",
    "label": "WA Commerce — State HEAR Program (open)",
    "states": [
     "WA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:10.705Z",
-   "length": 92574,
+   "fetchedAt": "2026-08-22T15:11:46.375Z",
+   "length": 100171,
    "kind": "html",
-   "textHash": "1fa544bc35bef83d",
+   "textHash": "7827c6b322057127",
    "dollars": [
     "$30",
-    "$73"
+    "$73",
+    "$250,000",
+    "$287,500",
+    "$354,280",
+    "$455,000",
+    "$484,000",
+    "$500,000",
+    "$600,000",
+    "$630,000",
+    "$637,000",
+    "$643,500",
+    "$731,250",
+    "$750,000",
+    "$950,500",
+    "$951,350",
+    "$971,000",
+    "$1,001,482",
+    "$1,098,000",
+    "$1,127,000",
+    "$1,146,504",
+    "$1,215,000",
+    "$1,325,704",
+    "$1,616,516",
+    "$1,650,000",
+    "$2,011,954",
+    "$3,071,333",
+    "$3,775,416",
+    "$4,589,587",
+    "$39,323,876"
    ],
-   "keywords": {
-    "accepting applications": 2
-   }
+   "keywords": {}
   },
   "https://www.commerce.wa.gov/energy-incentives/ira-home-energy-rebates/": {
    "url": "https://www.commerce.wa.gov/energy-incentives/ira-home-energy-rebates/",
-   "finalUrl": "https://www.commerce.wa.gov/energy-incentives/ira-home-energy-rebates/",
+   "finalUrl": "https://www.commerce.wa.gov/energy/clean-buildings/energy-incentives/ira-home-energy-rebates/",
    "label": "WA Commerce — IRA Home Energy Rebates (HARP/HOMES)",
    "states": [
     "WA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:10.867Z",
-   "length": 111875,
+   "fetchedAt": "2026-08-22T15:11:46.371Z",
+   "length": 112737,
    "kind": "html",
-   "textHash": "52bc888696649a85",
+   "textHash": "d19e72bb8e694d01",
    "dollars": [
     "$500"
    ],
@@ -7671,8 +7697,8 @@
     "WA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:11.262Z",
-   "length": 1134280,
+   "fetchedAt": "2026-08-22T15:11:46.284Z",
+   "length": 1140330,
    "kind": "html",
    "textHash": "c375f088610274dd",
    "dollars": [],
@@ -7751,10 +7777,10 @@
     "WA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:10.197Z",
-   "length": 139005,
+   "fetchedAt": "2026-08-22T15:11:44.414Z",
+   "length": 143395,
    "kind": "html",
-   "textHash": "76d56d1067067466",
+   "textHash": "c81c6746cd07d33c",
    "dollars": [],
    "keywords": {}
   },
@@ -7766,10 +7792,10 @@
     "WA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:11.126Z",
-   "length": 126109,
+   "fetchedAt": "2026-08-22T15:11:44.965Z",
+   "length": 130932,
    "kind": "html",
-   "textHash": "347d28de00a0c33e",
+   "textHash": "8051b796dbe322ab",
    "dollars": [],
    "keywords": {}
   },
@@ -7781,10 +7807,10 @@
     "WA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:10.084Z",
-   "length": 89332,
+   "fetchedAt": "2026-08-22T15:11:44.827Z",
+   "length": 89655,
    "kind": "html",
-   "textHash": "d2a74f93eefc28e4",
+   "textHash": "f90eef9fe5f024e4",
    "dollars": [
     "$2,000",
     "$4,000",
@@ -7817,12 +7843,14 @@
     "WA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:11.193Z",
-   "length": 127753,
+   "fetchedAt": "2026-08-22T15:11:44.552Z",
+   "length": 134208,
    "kind": "html",
-   "textHash": "f7b864e067cb27c6",
+   "textHash": "a6c55975f44c5662",
    "dollars": [],
-   "keywords": {}
+   "keywords": {
+    "no longer": 2
+   }
   },
   "https://www.homeenergyrebates.oregon.gov/": {
    "url": "https://www.homeenergyrebates.oregon.gov/",
