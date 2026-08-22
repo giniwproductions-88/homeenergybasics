@@ -32,7 +32,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in New Jersey in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The NJ Whole Home program offers up to $7,500 in cash-back incentives plus 0% financing. Each electric utility (PSE&G, JCP&L, Atlantic City Electric, RECO) offers additional HVAC rebates of $300\u2013$2,000 depending on equipment efficiency, with ACE paying up to $2,000 for cold-climate heat pumps through December 31, 2026. PSE&G\u2019s Building Decarbonization program offers up to $10,000\u2013$12,000 for full fossil fuel displacement. These programs stack. Federal tax credits are not available for 2026 installations.",
+        text: "The NJ Whole Home program offers up to $7,500 in cash-back incentives plus 0% financing. Each electric utility (PSE&G, JCP&L, Atlantic City Electric, RECO) offers additional HVAC rebates of $300\u2013$2,000 depending on equipment efficiency, with ACE paying up to $2,000 for cold-climate heat pumps through June 30, 2027. PSE&G\u2019s Building Decarbonization program offers up to $10,000\u2013$12,000 for full fossil fuel displacement. These programs stack. Federal tax credits are not available for 2026 installations.",
       },
     },
     {
@@ -141,7 +141,7 @@ export default function NewJerseyPage() {
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; Utility Rebates: $300&ndash;$2,000</p>
-              <p className="text-sm text-green-900">All four electric utilities (PSE&amp;G, JCP&amp;L, ACE, RECO) have active HVAC rebate programs. ACE pays up to <strong>$2,000</strong> for cold-climate heat pumps through December 31, 2026. Stack with Whole Home. LMI adders available.</p>
+              <p className="text-sm text-green-900">All four electric utilities (PSE&amp;G, JCP&amp;L, ACE, RECO) have active HVAC rebate programs. ACE pays up to <strong>$2,000</strong> for cold-climate heat pumps through June 30, 2027. Stack with Whole Home. LMI adders available.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; Total Potential: $8,100&ndash;$9,500+</p>
@@ -369,8 +369,8 @@ export default function NewJerseyPage() {
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Geothermal heat pump</td>
-                  <td className="p-3 font-semibold">50% of project cost, up to $10,000</td>
-                  <td className="p-3">ENERGY STAR certified; replacing an electric heating system only</td>
+                  <td className="p-3 font-semibold">50% of project cost &mdash; up to $10,000 replacing an air-source heat pump or electric furnace/AC; up to $2,500 replacing an existing geothermal system</td>
+                  <td className="p-3">ENERGY STAR certified (open loop EER &#8805; 21.1, COP &#8805; 4.1; closed loop EER &#8805; 17.1, COP &#8805; 3.6); electric heating replacements only; installs July 1, 2026 &ndash; June 30, 2027</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Ductless mini-split</td>
@@ -386,7 +386,7 @@ export default function NewJerseyPage() {
             </table>
           </div>
           <p className="text-gray-700 leading-relaxed mb-6">
-            LMI customers receive an additional <strong>$300</strong> per qualified unit (geothermal excluded). The <strong>$2,000</strong> cold-climate rebate is an enhanced limited-time amount available April 1 through December 31, 2026. NEIF 0% financing available up to $25,000.
+            LMI customers receive an additional <strong>$300</strong> per qualified unit (geothermal excluded). The <strong>$2,000</strong> cold-climate rebate is an enhanced limited-time amount that ACE lists as running April 1, 2026 through June 30, 2027. NEIF 0% financing available up to $25,000.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Rockland Electric (RECO) &mdash; Bergen, Passaic &amp; Sussex Counties</h3>
@@ -427,7 +427,7 @@ export default function NewJerseyPage() {
               <p className="font-semibold text-gray-900 mb-2">Above 150% AMI &mdash; JCP&amp;L or ACE Territory</p>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>Whole Home cash-back (assuming ~25% TES): ~$6,000</li>
-                <li>Electric utility cold-climate ASHP rebate: $1,000 (JCP&amp;L) or $2,000 (ACE, through Dec 31, 2026)</li>
+                <li>Electric utility cold-climate ASHP rebate: $1,000 (JCP&amp;L) or $2,000 (ACE, through June 30, 2027)</li>
                 <li>Federal tax credit: $0 (expired)</li>
                 <li>HEAR: $0 (not launched)</li>
               </ul>
@@ -459,7 +459,7 @@ export default function NewJerseyPage() {
           <div className="bg-gray-100 rounded-lg p-5">
             <p className="font-semibold text-gray-900 mb-1">What You&apos;ll Actually Pay</p>
             <p className="text-sm text-gray-700">
-              For a $18,000 whole-home cold-climate system: most homeowners in JCP&amp;L territory pay <strong>$11,000&ndash;$12,000 out of pocket</strong>; ACE customers pay <strong>$10,000&ndash;$11,000</strong> while the $2,000 cold-climate rebate runs (through December 31, 2026). PSE&amp;G standard customers pay <strong>$10,400&ndash;$12,000</strong>. PSE&amp;G Building Decarb customers who fully displace fossil fuel may pay <strong>under $5,000</strong> after all incentives. 0% financing stretches remaining costs over 7&ndash;10 years.
+              For a $18,000 whole-home cold-climate system: most homeowners in JCP&amp;L territory pay <strong>$11,000&ndash;$12,000 out of pocket</strong>; ACE customers pay <strong>$10,000&ndash;$11,000</strong> while the $2,000 cold-climate rebate runs (through June 30, 2027). PSE&amp;G standard customers pay <strong>$10,400&ndash;$12,000</strong>. PSE&amp;G Building Decarb customers who fully displace fossil fuel may pay <strong>under $5,000</strong> after all incentives. 0% financing stretches remaining costs over 7&ndash;10 years.
             </p>
           </div>
         </div>

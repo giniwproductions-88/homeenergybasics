@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-22T15:58:12.050Z",
+ "generatedAt": "2026-08-22T16:36:05.007Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -170,10 +170,10 @@
     "AR"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-26T20:34:25.568Z",
-   "length": 102954,
+   "fetchedAt": "2026-08-22T15:11:35.620Z",
+   "length": 107349,
    "kind": "html",
-   "textHash": "d764cdb7c3a0ce47",
+   "textHash": "59248c046ad84a99",
    "dollars": [],
    "keywords": {
     "no longer": 1
@@ -1521,7 +1521,7 @@
     "NJ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-21T20:21:47.888Z",
+   "fetchedAt": "2026-08-22T15:11:55.965Z",
    "length": 72778,
    "kind": "html",
    "textHash": "7fe9da266651fcd2",
@@ -1545,10 +1545,10 @@
     "NJ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-21T20:21:47.624Z",
-   "length": 45027,
+   "fetchedAt": "2026-08-22T15:11:56.468Z",
+   "length": 45608,
    "kind": "html",
-   "textHash": "91b7f127ddaa63d9",
+   "textHash": "6452f95253ba2b0e",
    "dollars": [
     "$100",
     "$150",
@@ -1559,9 +1559,12 @@
     "$1,300",
     "$2,000",
     "$2000",
+    "$2,500",
     "$10,000"
    ],
-   "keywords": {}
+   "keywords": {
+    "closed": 2
+   }
   },
   "https://www.nj.gov/bpu/newsroom/2025/approved/20250127.html": {
    "url": "https://www.nj.gov/bpu/newsroom/2025/approved/20250127.html",
@@ -1571,8 +1574,8 @@
     "NJ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-21T20:21:47.958Z",
-   "length": 23374,
+   "fetchedAt": "2026-08-22T15:11:56.118Z",
+   "length": 23373,
    "kind": "html",
    "textHash": "fb35784e9754c272",
    "dollars": [
@@ -1596,7 +1599,7 @@
     "NJ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-21T20:21:47.952Z",
+   "fetchedAt": "2026-08-22T15:11:56.230Z",
    "length": 34527,
    "kind": "html",
    "textHash": "68af232adfe36dac",
@@ -8145,8 +8148,8 @@
     "NJ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-21T20:21:47.976Z",
-   "length": 323380,
+   "fetchedAt": "2026-08-22T15:11:55.956Z",
+   "length": 323379,
    "kind": "html",
    "textHash": "93946f1a708c6f1b",
    "dollars": [
@@ -8169,7 +8172,7 @@
     "NJ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-21T20:21:46.997Z",
+   "fetchedAt": "2026-08-22T15:11:54.899Z",
    "length": 39035,
    "kind": "html",
    "textHash": "cd20cf8adf1ac1b6",
@@ -8431,8 +8434,8 @@
     "NJ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-21T20:21:47.505Z",
-   "length": 358883,
+   "fetchedAt": "2026-08-22T15:11:55.868Z",
+   "length": 358880,
    "kind": "html",
    "textHash": "2b421fa6ea83604d",
    "dollars": [
@@ -8456,10 +8459,10 @@
     "NJ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-21T20:21:47.954Z",
-   "length": 113904,
+   "fetchedAt": "2026-08-22T15:11:55.938Z",
+   "length": 114044,
    "kind": "html",
-   "textHash": "9a3d761d51aac110",
+   "textHash": "4605b3498669b926",
    "dollars": [
     "$350",
     "$900",
@@ -8477,8 +8480,8 @@
     "NJ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-21T20:21:48.182Z",
-   "length": 59634,
+   "fetchedAt": "2026-08-22T15:11:58.564Z",
+   "length": 60296,
    "kind": "html",
    "textHash": "08acd59ec9fd443b",
    "dollars": [
