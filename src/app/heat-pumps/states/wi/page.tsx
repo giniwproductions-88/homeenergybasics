@@ -49,7 +49,7 @@ export default function WisconsinPage() {
         name: "What heat pump rebates are available in Wisconsin in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Wisconsin heat pump rebates in 2026 come from three sources: Focus on Energy instant discounts of $400–$900 for air-source heat pumps (available statewide to all income levels), HEAR rebates up to $8,000 for income-qualifying households (below 150% AMI), and HOMES rebates up to $10,000 for whole-home energy reduction projects. Federal tax credits under Sections 25C and 25D expired December 31, 2025.",
+          text: "Wisconsin heat pump rebates in 2026 come from three sources: Focus on Energy instant discounts of $400–$900 for air-source heat pumps (available statewide to all income levels), HEAR rebates up to $8,000 for income-qualifying households (below 150% AMI), and HOMES rebates up to $10,000 for whole-home energy reduction projects. Starting September 1, 2026, HEAR applies only to electric-to-electric equipment upgrades and new construction under DOE Program Notice 26-2 — fossil-fuel replacements route to HOMES instead. Federal tax credits under Sections 25C and 25D expired December 31, 2025.",
         },
       },
       {
@@ -57,7 +57,7 @@ export default function WisconsinPage() {
         name: "Can I stack Focus on Energy rebates with HEAR or HOMES in Wisconsin?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Focus on Energy rebates can be combined with either HEAR or HOMES rebates. However, you cannot receive both HEAR and HOMES for the same specific upgrade — choose whichever program provides the larger benefit for each component of your project. A low-income homeowner could receive up to $9,250 or more by combining Focus on Energy with HEAR for a heat pump installation.",
+          text: "Yes. Focus on Energy rebates can be combined with either HEAR or HOMES rebates. However, you cannot receive both HEAR and HOMES for the same specific upgrade — choose whichever program provides the larger benefit for each component of your project. A low-income homeowner replacing electric resistance heat could receive ~$8,900 by combining Focus on Energy with HEAR; a low-income propane household can reach ~$11,250 by combining Focus on Energy bonuses with a 35%+ HOMES project.",
         },
       },
       {
@@ -115,7 +115,8 @@ export default function WisconsinPage() {
             instant discounts statewide, and the IRA-funded HEAR program covers
             up to $8,000 for income-qualifying households. Wisconsin was the
             first state to launch the HOMES program and has $149 million in
-            federal funding still flowing. This guide covers all major Wisconsin
+            federal funding still flowing. New federal rules narrow HEAR
+            eligibility starting September 1, 2026 — details below. This guide covers all major Wisconsin
             heat pump incentives available in 2026, including Focus on Energy,
             HEAR, and HOMES programs. Here&apos;s what&apos;s actually
             available.
@@ -168,9 +169,9 @@ export default function WisconsinPage() {
                 ✓ Total potential savings
               </p>
               <p className="text-sm text-green-900">
-                $3,700 (above 150% AMI) to $9,250+ (below 80% AMI with propane
-                replacement). Full electrification packages can reach ~$15,250
-                total incentives.
+                $3,700 (above 150% AMI) to $8,900+ (below 80% AMI). Full
+                electrification packages can reach ~$14,900 total incentives.
+                Propane households have their own paths — see stacking below.
               </p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
@@ -184,12 +185,16 @@ export default function WisconsinPage() {
             </div>
             <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 md:col-span-2">
               <p className="font-semibold text-amber-800 mb-1">
-                ⚠ HOMES vs HEAR — choose carefully
+                ⚠ HEAR eligibility narrows September 1, 2026
               </p>
               <p className="text-sm text-amber-900">
-                Cannot stack on the same upgrade. If you&apos;re below 150% AMI,
-                HEAR is usually the better option for heat pumps. HOMES may be
-                better for whole-home projects targeting 35%+ energy reduction.
+                Under new U.S. Department of Energy rules (Program Notice 26-2),
+                HEAR rebates after that date apply only when replacing existing
+                electric equipment with more efficient electric equipment, or in
+                new construction. Replacing a gas, propane, or oil system with a
+                heat pump no longer qualifies for HEAR — those homes should look
+                to HOMES instead. Retail applications for fossil-fuel
+                replacements close August 31, 2026, at 5:30 p.m. CT.
               </p>
             </div>
           </div>
@@ -220,7 +225,7 @@ export default function WisconsinPage() {
             The one exception: taxpayers who completed qualifying installations
             by December 31, 2025, but whose 25D credit exceeded their tax
             liability can carry forward unused credits. No extension of either
-            credit has been enacted as of June 2026.
+            credit has been enacted as of August 2026.
           </p>
           <p className="text-sm text-gray-500 mt-4">
             <Link
@@ -242,9 +247,30 @@ export default function WisconsinPage() {
           <p className="text-gray-700 leading-relaxed mb-6">
             The Home Electrification and Appliance Rebates program launched in
             Wisconsin in December 2024 and provides point-of-sale rebates for
-            electrification upgrades. Focus on Energy administers the program on
-            behalf of the Public Service Commission.
+            efficient electric equipment. Focus on Energy administers the
+            program on behalf of the Public Service Commission. (Federally, DOE
+            renamed the program High-Efficiency Electric Home Rebates, or HEEHR,
+            in May 2026 — Focus on Energy still calls it HEAR, and so does this
+            page.)
           </p>
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
+            <p className="font-semibold text-amber-800 mb-1">
+              ⚠ Eligibility changes September 1, 2026
+            </p>
+            <p className="text-sm text-amber-900">
+              DOE Program Notice 26-2 (May 2026) removed fuel-switching from
+              HEAR nationwide: rebates now apply only when upgrading existing
+              electric equipment to more efficient electric equipment, plus new
+              construction. Homes may keep an existing gas furnace while
+              installing a qualifying heat pump — so replacing an electric
+              central AC with a heat pump in a dual-fuel setup can still
+              qualify. Replacing the gas, propane, or oil heating system itself
+              no longer does. Focus on Energy applies the new requirements
+              starting September 1, 2026, and has not yet published full
+              contractor-path details — confirm your project&apos;s eligibility
+              with an IRA Registered Contractor before committing.
+            </p>
+          </div>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">
             Income eligibility
@@ -320,13 +346,15 @@ export default function WisconsinPage() {
           <p className="text-gray-700 leading-relaxed">
             The maximum combined HEAR rebate per household is{" "}
             <strong>$14,000</strong>. Heat pump installations must use an IRA
-            Registered Contractor. Store-purchased heat pump water heaters also
-            qualify, though the retail path is changing: post-purchase retail
-            applications for appliances that replace fossil-fuel equipment must
-            be submitted by <strong>August 31, 2026</strong>, at 5:30 p.m. CT,
-            and new eligibility requirements take effect September 1, 2026.
-            Installations through IRA Registered Contractors are a separate
-            path and are not covered by that deadline.
+            Registered Contractor; qualifying kitchen and laundry appliances and
+            self-installed heat pump water heaters can be purchased at retail.
+            Focus on Energy stops accepting retail applications and coupons for
+            appliances replacing fossil-fuel equipment after{" "}
+            <strong>August 31, 2026, at 5:30 p.m. CT</strong> — Lowe&apos;s
+            coupon reservations share that deadline — and the retail application
+            reopens under the new eligibility requirements on September 1, 2026.
+            Contractor-installed projects are subject to the same new DOE
+            requirements from that date.
           </p>
         </div>
       </section>
@@ -593,9 +621,12 @@ export default function WisconsinPage() {
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             Focus on Energy rebates, HEAR rebates, and HOMES rebates can all
-            stack — this is explicitly confirmed by Focus on Energy. The key
-            constraint: HOMES and HEAR cannot both cover the same specific
-            upgrade.
+            stack — this is explicitly confirmed by Focus on Energy. Two
+            constraints: HOMES and HEAR cannot both cover the same specific
+            upgrade, and starting September 1, 2026, HEAR applies only to
+            electric-to-electric equipment upgrades (and new construction) under
+            DOE Program Notice 26-2. The scenarios below reflect the rules in
+            effect from that date.
           </p>
 
           <div className="space-y-4 mb-8">
@@ -614,7 +645,7 @@ export default function WisconsinPage() {
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900 mb-2">
-                80–150% AMI — Tier 4 ducted ASHP
+                80–150% AMI — Tier 4 ducted ASHP replacing electric heat or AC
               </p>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>Focus on Energy instant discount: $700</li>
@@ -628,20 +659,37 @@ export default function WisconsinPage() {
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-2">
-                Below 80% AMI — Tier 4 ducted ASHP, propane replacement
+                Below 80% AMI — Tier 4 ducted ASHP replacing electric resistance
+                heat
               </p>
               <ul className="text-sm text-green-900 space-y-1">
                 <li>Focus on Energy income-qualified Tier 4: $900</li>
-                <li>Propane replacement bonus: $350</li>
                 <li>
                   HEAR heat pump rebate (100% of costs): up to $8,000
                 </li>
               </ul>
               <p className="font-semibold text-green-700 mt-2">
-                Realistic maximum (heat pump alone): ~$9,250
+                Realistic maximum (heat pump alone): ~$8,900
               </p>
               <p className="text-sm text-green-800 mt-1">
-                Full electrification (+ HPWH, panel, wiring): up to ~$15,250
+                Full electrification (+ HPWH, panel, wiring): up to ~$14,900
+                (HEAR capped at $14,000 per household, plus Focus on Energy)
+              </p>
+            </div>
+            <div className="bg-amber-50 border border-amber-200 rounded-lg p-5">
+              <p className="font-semibold text-amber-800 mb-2">
+                Heating with propane or oil? Your path changed September 1, 2026
+              </p>
+              <p className="text-sm text-amber-900">
+                Through August 31, 2026, an income-qualified propane household
+                could combine HEAR with Focus on Energy for ~$9,250 on a heat
+                pump. From September 1, replacing a propane or oil system is no
+                longer HEAR-eligible — but it is still a strong HOMES project.
+                A below-80%-AMI propane household achieving 35%+ modeled savings
+                can combine the Focus on Energy income-qualified Tier 4 discount
+                ($900), the propane replacement bonus ($350), and a HOMES rebate
+                (up to $10,000) for roughly <strong>$11,250</strong> in combined
+                incentives.
               </p>
             </div>
           </div>
@@ -768,10 +816,11 @@ export default function WisconsinPage() {
               Best candidates in Wisconsin
             </p>
             <ul className="text-sm text-green-900 space-y-1 mt-2">
-              <li>• Homes currently using propane or electric resistance heat</li>
+              <li>• Homes with electric resistance heat — the strongest HEAR case under the September 2026 rules</li>
+              <li>• Propane and oil households — best economics via Focus on Energy bonuses plus HOMES</li>
               <li>• Rural households without natural gas access</li>
               <li>• Homes planning electrical upgrades anyway (panel + wiring = $6,500 HEAR eligible)</li>
-              <li>• Anyone below 150% AMI — HEAR covers a large share of costs</li>
+              <li>• Anyone below 150% AMI — HEAR or HOMES covers a large share of costs</li>
             </ul>
           </div>
           <p className="text-sm text-gray-500 mt-4">
@@ -866,6 +915,18 @@ export default function WisconsinPage() {
           </h2>
           <div className="space-y-4">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
+              <p className="font-semibold text-gray-900">
+                HEAR rules finalizing after September 1
+              </p>
+              <p className="text-sm text-gray-600 mt-1">
+                Focus on Energy has announced the September 1, 2026 eligibility
+                change but has not yet published full details for
+                contractor-installed projects under the new DOE requirements.
+                Expect updated program guides; confirm eligibility with your IRA
+                Registered Contractor before signing a contract.
+              </p>
+            </div>
+            <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">IRA funding runway</p>
               <p className="text-sm text-gray-600 mt-1">
                 Wisconsin&apos;s $149 million IRA allocation is a fixed pool —
@@ -878,12 +939,12 @@ export default function WisconsinPage() {
                 Focus on Energy offer period
               </p>
               <p className="text-sm text-gray-600 mt-1">
-                Focus on Energy&apos;s current heating and cooling rebate
-                schedule covers equipment purchased and installed January 1
-                through June 30, 2026. Rebate applications must be submitted
-                within 60 days of installation, no later than August 31, 2026.
-                Rebate amounts and tier thresholds may be refreshed for the
-                second half of 2026 — confirm current figures before installing.
+                Focus on Energy&apos;s current schedule covers equipment
+                purchased and installed January 1 through December 31, 2026.
+                Mail-in rebate applications must be submitted within 60 days of
+                installation, no later than January 31, 2027. Tier amounts were
+                unchanged as of August 2026, but can be revised — confirm
+                current figures before installing.
               </p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
