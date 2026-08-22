@@ -734,9 +734,9 @@ export default function WestVirginiaPage() {
               <div>
                 <p className="font-semibold text-gray-900">Work with a participating contractor</p>
                 <p className="text-sm text-gray-700">
-                  HEAR rebates are applied at point of sale through participating
-                  contractors. Make sure your contractor is registered with the
-                  WVOE program before work begins. Ask them to specify cold-climate
+                  HEAR rebates are applied directly to your project cost by
+                  certified contractors. Make sure your contractor is in
+                  WVOE&apos;s certified contractor network before work begins. Ask them to specify cold-climate
                   rated equipment (NEEP-listed or ENERGY STAR Cold Climate certified).
                 </p>
               </div>
@@ -894,7 +894,8 @@ export default function WestVirginiaPage() {
               utility, and IRA heat pump incentives available to West Virginia
               homeowners in 2026. It does not calculate savings, guarantee
               eligibility, or represent any incentive program. West Virginia&apos;s
-              HEAR and HOMES programs have not yet launched &mdash; confirm
+              HEAR and HOMES programs are in a pilot phase and have not yet
+              launched statewide &mdash; confirm
               current application status before starting work. We verify status
               regularly but programs can change without notice. Always confirm
               current amounts and eligibility with the WV Office of Energy, your
