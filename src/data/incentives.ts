@@ -725,7 +725,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     lastVerified: "2026-08-22",
     lastUpdated: "2026-08-22",
     summary:
-      "Michigan's $210 million MiHER program offers up to $8,000 for heat pumps at point of sale — but as of August 2026, applications are open to low- to moderate-income households (≤150% AMI) only, and new income-qualified applications are paused in the EGLE Detroit and Warren Districts. DTE Energy rebates run $150–$1,200 (electric-heat replacements only). Consumers Energy offers $300–$350 (existing-heat-pump replacements for ducted/GSHP). TCLP's up-to-$3,000 rebate and Ann Arbor A2ZERO's $4,000–$5,500 belong to 2025–26 program years that ended June 30, 2026; new schedules were pending. Federal tax credits (25C/25D) ended December 31, 2025.",
+      "Michigan's $210 million MiHER program offers up to $8,000 for heat pumps at point of sale — but as of August 2026, applications are open to low- to moderate-income households (≤150% AMI) only, and new income-qualified applications are paused in the EGLE Detroit and Warren Districts. DTE Energy rebates run $150–$1,200 (electric-heat replacements only). Consumers Energy offers $300–$350 (existing-heat-pump replacements for ducted/GSHP). TCLP's up-to-$3,000 rebate and Ann Arbor A2ZERO's $4,000–$5,500 belong to 2025–26 program years that ended June 30, 2026; new schedules were pending as of July 2026. Federal tax credits (25C/25D) ended December 31, 2025.",
     sources: [
       {
         label: "MiHER Home Energy Rebates (EGLE)",
