@@ -406,10 +406,13 @@ export default function WisconsinPage() {
             <p className="text-sm text-amber-900">
               Many homeowners default to HOMES when HEAR would cover more of the
               project cost. If your household income is below 150% AMI and
-              you&apos;re primarily installing a heat pump, HEAR is usually the
-              better option — it offers up to $8,000 for the heat pump alone
-              without requiring a whole-home energy assessment. Reserve HOMES for
-              comprehensive projects targeting 35%+ energy reduction.
+              you&apos;re replacing electric heating or cooling equipment with a
+              heat pump, HEAR is usually the better option — it offers up to
+              $8,000 for the heat pump alone without requiring a whole-home
+              energy assessment. Under the September 2026 rules, homes heating
+              with gas, propane, or oil should compare HOMES instead. Reserve
+              HOMES for those conversions and for comprehensive projects
+              targeting 35%+ energy reduction.
             </p>
           </div>
         </div>
@@ -730,8 +733,8 @@ export default function WisconsinPage() {
             or below 60% of State Median Income. WAP primarily covers
             insulation, air sealing, and furnace or boiler repair — it does not
             typically install heat pumps directly. However, WAP-eligible
-            households can combine weatherization services with HEAR heat pump
-            rebates for a comprehensive upgrade at little to no cost.
+            households can combine weatherization services with HEAR or HOMES
+            heat pump rebates for a comprehensive upgrade at little to no cost.
             Applications are through the Home Energy Plus program at
             homeenergyplus.wi.gov.
           </p>
