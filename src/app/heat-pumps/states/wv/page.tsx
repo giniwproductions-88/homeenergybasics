@@ -47,7 +47,7 @@ export default function WestVirginiaPage() {
         name: "What heat pump rebates are available in West Virginia in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "West Virginia\u2019s primary incentives will be the IRA-funded HEAR program (up to $8,000 for heat pumps for households at or below 150% AMI) and the HOMES program (up to $20,000 for whole-home retrofits for low-income households) \u2014 but neither program is accepting applications as of late July 2026. Appalachian Power offers the only active rebates: $300 for mini-splits and $400 for heat pump water heaters. Federal Section 25C and 25D tax credits expired December 31, 2025. Mon Power and Potomac Edison customers have no utility-level heat pump rebates.",
+          text: "West Virginia\u2019s primary incentives will be the IRA-funded HEAR program (up to $8,000 for heat pumps for households at or below 150% AMI) and the HOMES program (up to $20,000 for whole-home retrofits for low-income households) \u2014 and as of August 2026 both are in a pilot phase with select households. Statewide waitlist registration is open through WVOE\u2019s Neighborly application portal, and project installations and energy audits begin after the pilot concludes. Appalachian Power offers the only rebates paying out today: $300 for mini-splits and $400 for heat pump water heaters. Federal Section 25C and 25D tax credits expired December 31, 2025. Mon Power and Potomac Edison customers have no utility-level heat pump rebates.",
         },
       },
       {
@@ -107,9 +107,11 @@ export default function WestVirginiaPage() {
             Home Efficiency Appliance Rebates (HEAR) and Home Owner Managing
             Energy Savings (HOMES) will be the state&apos;s primary heat pump
             incentives — covering up to <strong>$8,000–$20,000</strong> depending on
-            income and project scope — but neither program has launched as of
-            late July 2026. Federal tax credits ended December 31, 2025. Until the
-            state programs open, the only active incentives are Appalachian
+            income and project scope — and as of August 2026 both are in a pilot
+            phase with select households, with statewide waitlist registration
+            open through WVOE&apos;s application portal. Federal tax credits
+            ended December 31, 2025. Until the pilot concludes and installations
+            begin, the only incentives paying out are Appalachian
             Power utility rebates of <strong>$300–$400</strong>. This guide
             covers all major West Virginia heat pump incentives available in 2026,
             including HEAR, HOMES, and Appalachian Power&apos;s TakeCharge WV
@@ -155,7 +157,7 @@ export default function WestVirginiaPage() {
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Total potential: $4,000–$20,000+</p>
               <p className="text-sm text-green-900">
-                $4,000 (above 150% AMI) to $20,000+ (below 80% AMI). Full
+                $4,400 (above 150% AMI) to $20,000+ (below 80% AMI). Full
                 electrification packages can reach ~$14,400 through HEAR or
                 ~$20,400 through HOMES with utility rebates stacked.
               </p>
@@ -169,15 +171,18 @@ export default function WestVirginiaPage() {
               </p>
             </div>
             <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
-              <p className="font-semibold text-amber-800 mb-1">⚠ HEAR and HOMES have not launched</p>
+              <p className="font-semibold text-amber-800 mb-1">⚠ HEAR and HOMES are in a pilot phase — and fuel switching is banned</p>
               <p className="text-sm text-amber-900">
-                The WV Office of Energy states these programs are NOT yet
-                available to West Virginia residents — any claims otherwise are
-                fraudulent — and no launch date has been announced.
-                In June 2026, DOE published revised national guidance restarting
-                the rebate funding process under new rules. Contact WVOE at
-                800-982-3386 to confirm current availability before starting any
-                project.
+                As of August 2026, WVOE is running a pilot with select
+                households; anyone can join the statewide waitlist through the
+                official Neighborly application portal, and installations begin
+                after the pilot concludes. Under DOE&apos;s June 2026 rules
+                (program notices 26-1 and 26-2), WVOE states fuel switching is
+                banned: upgrades must stay within the same fuel — gas to a more
+                efficient gas model, electric to a more efficient electric
+                model. Apply only through WVOE&apos;s official portal, and
+                confirm your project qualifies at 800-982-3386 before
+                committing.
               </p>
             </div>
           </div>
@@ -224,7 +229,8 @@ export default function WestVirginiaPage() {
             The Home Efficiency Appliance Rebates (HEAR) program &mdash; West
             Virginia&apos;s name for the federal Home Electrification and
             Appliance Rebates &mdash; provides
-            point-of-sale rebates for specific appliance upgrades. It is restricted
+            rebates applied directly to project costs, through certified
+            contractors, for specific appliance upgrades. It is restricted
             to households at or below <strong>150% of Area Median Income (AMI)</strong>.
             Households below 80% AMI receive 100% of rebate amounts; those between
             80–150% AMI receive 50%. Renters may participate with a signed
@@ -237,67 +243,67 @@ export default function WestVirginiaPage() {
               <thead>
                 <tr className="bg-gray-100">
                   <th className="text-left p-3 font-semibold">Upgrade</th>
-                  <th className="text-left p-3 font-semibold">Max Rebate (≤80% AMI)</th>
-                  <th className="text-left p-3 font-semibold">Max Rebate (80–150% AMI)</th>
+                  <th className="text-left p-3 font-semibold">Rebate Limit</th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="border-b bg-green-50">
                   <td className="p-3">Heat pump (space heating/cooling)</td>
                   <td className="p-3 font-semibold">$8,000</td>
-                  <td className="p-3 font-semibold">$4,000</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Heat pump water heater</td>
                   <td className="p-3 font-semibold">$1,750</td>
-                  <td className="p-3 font-semibold">$875</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-3">Electrical panel upgrade</td>
+                  <td className="p-3">Electric load service center (panel)</td>
                   <td className="p-3 font-semibold">$4,000</td>
-                  <td className="p-3 font-semibold">$2,000</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Insulation, air sealing, ventilation</td>
                   <td className="p-3 font-semibold">$1,600</td>
-                  <td className="p-3 font-semibold">$800</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Electric wiring</td>
                   <td className="p-3 font-semibold">$2,500</td>
-                  <td className="p-3 font-semibold">$1,250</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-3">Electric stove/range/oven</td>
+                  <td className="p-3">Electric stove, cooktop, range, oven, combination washer-dryer</td>
                   <td className="p-3 font-semibold">$840</td>
-                  <td className="p-3 font-semibold">$420</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Heat pump clothes dryer</td>
                   <td className="p-3 font-semibold">$840</td>
-                  <td className="p-3 font-semibold">$420</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3 font-semibold">Maximum per household</td>
                   <td className="p-3 font-semibold">$14,000</td>
-                  <td className="p-3 font-semibold">$7,000</td>
                 </tr>
               </tbody>
             </table>
           </div>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            These are per-upgrade limits, not income-split amounts: households
+            below 80% AMI have up to <strong>100% of project cost</strong>
+            {" "}covered up to each limit, while households at 80–150% AMI have
+            up to <strong>50% of project cost</strong> covered up to the same
+            limits.
+          </p>
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5">
-            <p className="font-semibold text-amber-800 mb-1">⚠ Eligibility rules are in flux</p>
+            <p className="font-semibold text-amber-800 mb-1">⚠ Fuel switching is banned under the new DOE rules</p>
             <p className="text-sm text-amber-900">
               West Virginia originally designed HEAR around fuel-switching and
-              electrification upgrades. In June 2026, DOE published revised
-              national guidance that no longer supports switching from fossil
-              fuels to electric heating, and West Virginia has not yet published
-              final program rules under the new guidance. Do not assume any
-              specific upgrade qualifies — confirm eligibility with the WV
-              Office of Energy before committing to a project. A certified
-              energy assessment is expected to be required before heat pump
-              installation.
+              electrification upgrades. WVOE now states that under DOE&apos;s
+              June 1, 2026 program notices 26-1 and 26-2, fuel switching has
+              been banned: appliances may only be upgraded within the same
+              fuel — a gas appliance to a more efficient gas model, an electric
+              appliance to a more efficient electric model. In practice, HEAR
+              heat pump rebates apply to homes replacing existing electric
+              heating, not to gas-to-heat-pump conversions. A limited home
+              assessment by a certified energy auditor is required before any
+              heat pump installation. Confirm your specific project with the WV
+              Office of Energy before committing.
             </p>
           </div>
         </div>
@@ -359,7 +365,9 @@ export default function WestVirginiaPage() {
               much of it inefficient electric resistance and space heaters.
               Converting from electric resistance (COP 1.0) to a heat pump
               (seasonal COP ~3.0) delivers a 60–70% reduction in heating energy
-              costs with no fuel-switching complexity. This makes West Virginia
+              costs with no fuel-switching complexity — and because it stays
+              within the same fuel, it remains eligible under the new DOE
+              rules. This makes West Virginia
               one of the strongest states for heat pump economics, even without
               large utility rebates.
             </p>
@@ -486,9 +494,11 @@ export default function WestVirginiaPage() {
             programs. Total rebates cannot exceed total project cost. West Virginia
             has no state tax credit for heat pumps. A limited state energy loan
             program may be available through the West Virginia Housing Development
-            Fund. The scenarios below assume HEAR and HOMES launch as originally
-            designed — as of late July 2026, neither is accepting applications, so
-            only the Appalachian Power line items are available today.
+            Fund. The scenarios below assume projects that qualify under DOE&apos;s
+            2026 fuel-switching ban (for example, replacing existing electric
+            heating). As of August 2026 the programs are in a pilot phase with
+            waitlist registration open, so
+            only the Appalachian Power line items are paying out today.
           </p>
 
           <div className="space-y-4 mb-8">
@@ -510,11 +520,11 @@ export default function WestVirginiaPage() {
                 <li>HEAR panel upgrade: $2,000 (50% tier)</li>
                 <li>Appalachian Power HPWH rebate: $400</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$7,275</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic total: ~$7,275 on a typical project (at 50% of cost, larger projects can reach the $14,000 household cap)</p>
             </div>
 
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-2">Below 80% AMI &mdash; Full Electrification Package</p>
+              <p className="font-semibold text-green-800 mb-2">Below 80% AMI &mdash; Full Upgrade Package</p>
               <ul className="text-sm text-green-900 space-y-1">
                 <li>HEAR heat pump rebate: $8,000 (100% tier)</li>
                 <li>HEAR HPWH rebate: $1,750</li>
@@ -522,14 +532,15 @@ export default function WestVirginiaPage() {
                 <li>HEAR insulation/air sealing: $1,600</li>
                 <li>Appalachian Power HPWH rebate: $400</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$15,750</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$14,400 (HEAR items are capped at $14,000 per household)</p>
             </div>
           </div>
 
           <div className="bg-gray-100 rounded-lg p-5">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
             <p className="text-sm text-gray-700">
-              Until HEAR and HOMES launch, expect to pay nearly full price: for
+              Until the HEAR and HOMES pilot concludes and installations
+              begin, expect to pay nearly full price: for
               a typical ducted heat pump installation costing $12,000–$18,000,
               that means <strong>$11,600 to $18,000 out of pocket</strong> today
               (only the $300–$400 Appalachian Power rebates apply). Once the
@@ -709,7 +720,7 @@ export default function WestVirginiaPage() {
                   Both HEAR and HOMES require a certified energy assessment before
                   installation. WVOE maintains a list of approved energy auditors
                   and contractors on{" "}
-                  <a href="https://energywv.org/funding-opportunities/home-energy-rebate-programs/" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">
+                  <a href="https://energywv.org/programs-initiatives/home-energy-rebate-programs/" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">
                     energywv.org
                   </a>. For HOMES, the audit determines projected energy savings
                   and your rebate tier.
@@ -756,14 +767,13 @@ export default function WestVirginiaPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">What to Watch</h2>
           <div className="space-y-4">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900">HEAR and HOMES launch confirmation</p>
+              <p className="font-semibold text-gray-900">Pilot phase → statewide launch</p>
               <p className="text-sm text-gray-600 mt-1">
-                The WV Office of Energy received DOE approval in January 2025,
-                but as of late July 2026 the programs have not launched and no
-                launch date has been announced. DOE published revised
-                national guidance in June 2026 restarting the rebate funding
-                process, which may allow West Virginia to move forward — under
-                modified rules. WVOE has meanwhile assigned Regional
+                As of August 2026, WVOE is running a pilot with select
+                households; statewide waitlist registration is open through the
+                Neighborly application portal, and project installations and
+                energy audits begin after the pilot concludes. No statewide
+                launch date has been announced. WVOE has assigned Regional
                 Implementation Partners, published a contractor directory, and
                 posted landlord-authorization forms for renters. Monitor
                 energywv.org or call 800-982-3386 for

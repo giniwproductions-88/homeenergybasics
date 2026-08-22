@@ -2282,22 +2282,22 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "WV",
     stateName: "West Virginia",
     status: "limited",
-    lastVerified: "2026-07-26",
-    lastUpdated: "2026-07-26",
+    lastVerified: "2026-08-22",
+    lastUpdated: "2026-08-22",
     summary:
-      "West Virginia\u2019s $88.2M IRA programs (HEAR up to $8,000, HOMES up to $20,000) have not launched \u2014 the WV Office of Energy says they are not yet available, warns claims otherwise are fraudulent, and has set no launch date. Appalachian Power offers $300\u2013$400 for mini-splits and HPWHs. Mon Power and Potomac Edison offer no rebates. Federal 25C/25D credits expired Dec 2025.",
+      "West Virginia\u2019s $88.2M IRA programs (HEAR up to $8,000, HOMES up to $20,000) entered a pilot phase in 2026 \u2014 statewide waitlist registration is open via WVOE\u2019s Neighborly portal, installations begin after the pilot, and DOE\u2019s June 2026 rules ban fuel switching (like-for-like upgrades only). Appalachian Power offers $300\u2013$400 for mini-splits and HPWHs. Mon Power and Potomac Edison offer no rebates. Federal 25C/25D expired Dec 2025.",
     sources: [
       {
         label: "WV Office of Energy \u2014 Home Energy Rebate Programs",
-        url: "https://energywv.org/funding-opportunities/home-energy-rebate-programs/",
+        url: "https://energywv.org/programs-initiatives/home-energy-rebate-programs/",
       },
       {
         label: "WV Office of Energy \u2014 Home Efficiency Appliance Rebates (HEAR)",
-        url: "https://energywv.org/funding-opportunities/home-energy-rebate-programs/home-efficiency-appliance-rebates/",
+        url: "https://energywv.org/programs-initiatives/home-energy-rebate-programs/home-efficiency-appliance-rebates/",
       },
       {
         label: "WV Office of Energy \u2014 Home Owner Managing Energy Savings (HOMES)",
-        url: "https://energywv.org/funding-opportunities/home-energy-rebate-programs/home-owner-managing-energy-savings/",
+        url: "https://energywv.org/programs-initiatives/home-energy-rebate-programs/home-owner-managing-energy-savings/",
       },
       {
         label: "TakeCharge WV \u2014 Appalachian Power Rebates",
