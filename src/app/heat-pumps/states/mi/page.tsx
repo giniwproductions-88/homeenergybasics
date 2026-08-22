@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title:
     "Michigan Heat Pump Rebates 2026: Up to $8,000 MiHER + Utility Programs | Home Energy Basics",
   description:
-    "MiHER offers up to $8,000 for heat pumps (income-qualified; Detroit District intake paused). DTE and Consumers Energy add $150\u2013$1,200. Federal credits ended.",
+    "MiHER offers up to $8,000 for heat pumps (income-qualified; Detroit & Warren District intake paused). DTE and Consumers Energy add $150\u2013$1,200. Federal credits ended.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/mi",
   },
@@ -55,7 +55,7 @@ export default function MichiganPage() {
         name: "Is the Michigan MiHER program still open?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes, with two important restrictions as of July 2026. EGLE states that applications are currently open to low- to moderate-income households only (at or below 150% of Area Median Income), and new income-qualified applications for properties in the EGLE Detroit District are temporarily suspended while the program reviews current applications against its regional funding allocations. Elsewhere in Michigan, income-qualified households can apply. MiHER includes both HEAR (appliance-specific rebates) and HOMES (whole-home performance rebates), with $210 million in total funding.",
+          text: "Yes, with two important restrictions as of August 2026. EGLE states that applications are currently open to low- to moderate-income households only (at or below 150% of Area Median Income), and new income-qualified applications for properties in the EGLE Detroit and Warren Districts are temporarily suspended while the program reviews current applications and funding capacity. Elsewhere in Michigan, income-qualified households can apply. MiHER includes both HEAR (appliance-specific rebates) and HOMES (whole-home performance rebates), with $210 million in total funding.",
         },
       },
       {
@@ -115,7 +115,7 @@ export default function MichiganPage() {
             program offers up to <strong>$8,000</strong> per heat pump for income-qualified
             households — with applications currently limited to low- to moderate-income
             households, and new income-qualified applications paused in the EGLE Detroit
-            District. Utility rebates add <strong>$150–$1,200</strong> from DTE and Consumers
+            and Warren Districts. Utility rebates add <strong>$150–$1,200</strong> from DTE and Consumers
             Energy. This guide covers all major Michigan heat pump incentives available
             in 2026, including MiHER HEAR and HOMES, utility rebates from DTE, Consumers
             Energy, TCLP, and BWL, plus Ann Arbor&apos;s A2ZERO program. Here&apos;s
@@ -148,9 +148,9 @@ export default function MichiganPage() {
                 Up to <strong>$8,000</strong> per heat pump at point of sale for households
                 ≤150% AMI. Enhanced rebates (100% of costs) for ≤80% AMI. Covers
                 fuel-switching from gas/propane. <strong>$14,000</strong> total household cap.
-                As of July 2026, applications are open to low- to moderate-income households
+                As of August 2026, applications are open to low- to moderate-income households
                 only, and new income-qualified applications are paused in the EGLE Detroit
-                District.
+                and Warren Districts.
               </p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
@@ -236,15 +236,15 @@ export default function MichiganPage() {
           </p>
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
-            <p className="font-semibold text-amber-800 mb-1">⚠ Current Application Status (July 2026)</p>
+            <p className="font-semibold text-amber-800 mb-1">⚠ Current Application Status (August 2026)</p>
             <p className="text-sm text-amber-900">
               EGLE states that applications are currently open to <strong>low- to
               moderate-income households only</strong> — households above 150% AMI cannot
               currently apply. In addition, new income-qualified applications for
-              properties in the <strong>EGLE Detroit District</strong> are temporarily
-              suspended while the program reviews submitted applications against its
-              regional funding allocations; Detroit District participation is approaching
-              the program&apos;s single-family funding cap. Applications already submitted
+              properties in the <strong>EGLE Detroit and Warren Districts</strong> are
+              temporarily suspended while the program reviews current applications and
+              funding capacity; the program says the pauses keep MiHER funds balanced
+              across Michigan and within each district&apos;s funding limits. Applications already submitted
               continue to be processed, and applicants whose applications expire during
               the suspension will be permitted to reapply once intake reopens.
             </p>
@@ -327,7 +327,7 @@ export default function MichiganPage() {
                 <tr className="border-b">
                   <td className="p-3">&gt;150% AMI</td>
                   <td className="p-3 text-gray-500">Not eligible for HEAR</td>
-                  <td className="p-3 text-gray-500">No — and cannot currently apply to MiHER at all (as of July 2026)</td>
+                  <td className="p-3 text-gray-500">No — and cannot currently apply to MiHER at all (as of August 2026)</td>
                 </tr>
               </tbody>
             </table>
@@ -352,7 +352,7 @@ export default function MichiganPage() {
           </h3>
           <p className="text-gray-700 leading-relaxed mb-4">
             Whole-home performance approach. Rebates scale with modeled energy savings.
-            HOMES was designed to serve all income levels, but as of July 2026 EGLE is
+            HOMES was designed to serve all income levels, but as of August 2026 EGLE is
             accepting MiHER applications from low- to moderate-income households only —
             so households above 150% AMI cannot currently access HOMES either.
           </p>
@@ -646,7 +646,7 @@ export default function MichiganPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">How Programs Stack</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Utility rebates, MiHER (HOMES/HEAR), and A2ZERO draw from different funding sources and can stack. The key constraint: HOMES and HEAR cannot cover the same measure. Two program-status caveats shape every scenario as of July 2026: MiHER applications are open to low- to moderate-income households only (with new income-qualified applications paused in the EGLE Detroit District), and A2ZERO is between program years. Scenario: <strong>$17,500</strong> whole-home ducted cold-climate ASHP installation.
+            Utility rebates, MiHER (HOMES/HEAR), and A2ZERO draw from different funding sources and can stack. The key constraint: HOMES and HEAR cannot cover the same measure. Two program-status caveats shape every scenario as of August 2026: MiHER applications are open to low- to moderate-income households only (with new income-qualified applications paused in the EGLE Detroit and Warren Districts), and A2ZERO is between program years. Scenario: <strong>$17,500</strong> whole-home ducted cold-climate ASHP installation.
           </p>
 
           <div className="space-y-4 mb-8">
@@ -654,7 +654,7 @@ export default function MichiganPage() {
               <p className="font-semibold text-gray-900 mb-2">Above 150% AMI — Utility Only (for now)</p>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>HEAR: not eligible</li>
-                <li>HOMES: not currently available — MiHER applications are limited to ≤150% AMI households as of July 2026</li>
+                <li>HOMES: not currently available — MiHER applications are limited to ≤150% AMI households as of August 2026</li>
                 <li>Utility rebate: $150–$1,200 (DTE, only when replacing existing electric heating; Consumers only when replacing an existing heat pump or, for mini-splits, electric heat)</li>
                 <li>Federal 25C/25D: $0 (expired)</li>
               </ul>
@@ -674,7 +674,7 @@ export default function MichiganPage() {
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-2">80–150% AMI — HEAR + Utility (the live stack)</p>
               <ul className="text-sm text-green-900 space-y-1">
-                <li>HEAR heat pump rebate: up to $8,000 (new applications paused in the EGLE Detroit District)</li>
+                <li>HEAR heat pump rebate: up to $8,000 (new applications paused in the EGLE Detroit and Warren Districts)</li>
                 <li>DTE or Consumers rebate: $150–$1,200 where the replacement rules above are met</li>
               </ul>
               <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$8,000–$9,200</p>
@@ -694,7 +694,7 @@ export default function MichiganPage() {
           <div className="bg-gray-100 rounded-lg p-5 mb-6">
             <p className="font-semibold text-gray-900 mb-1">What You&apos;ll Actually Pay</p>
             <p className="text-sm text-gray-700">
-              On a <strong>$17,500</strong> project as of July 2026: <strong>roughly $8,300 (income-qualified with HEAR $8,000 + DTE $1,200) up to the full $17,500 (above 150% AMI in a gas-heated home, where no rebate currently applies)</strong>. Qualifying households (≤150% AMI, outside the paused Detroit District) will see up to $8,000 in MiHER incentives on the heat pump itself — and households ≤80% AMI can have up to 100% of approved costs covered within HEAR&apos;s caps. If A2ZERO reopens at prior levels, low-income Ann Arbor out-of-pocket can fall to ~$2,800. The loss of the $2,000 Section 25C credit is most acutely felt by households above 150% AMI, who currently have no MiHER path at all. No state tax credit exists for air-source heat pumps in Michigan.
+              On a <strong>$17,500</strong> project as of August 2026: <strong>roughly $8,300 (income-qualified with HEAR $8,000 + DTE $1,200) up to the full $17,500 (above 150% AMI in a gas-heated home, where no rebate currently applies)</strong>. Qualifying households (≤150% AMI, outside the paused Detroit and Warren Districts) will see up to $8,000 in MiHER incentives on the heat pump itself — and households ≤80% AMI can have up to 100% of approved costs covered within HEAR&apos;s caps. If A2ZERO reopens at prior levels, low-income Ann Arbor out-of-pocket can fall to ~$2,800. The loss of the $2,000 Section 25C credit is most acutely felt by households above 150% AMI, who currently have no MiHER path at all. No state tax credit exists for air-source heat pumps in Michigan.
             </p>
           </div>
 
@@ -725,7 +725,7 @@ export default function MichiganPage() {
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
             <p className="font-semibold text-green-800 mb-1">✓ Best Candidates for Heat Pumps in Michigan</p>
             <p className="text-sm text-green-900">
-              Households ≤150% AMI who qualify for MiHER HEAR (up to $8,000), outside the paused EGLE Detroit District. Homeowners switching from propane or fuel oil in rural and northern Michigan (largest operating cost savings). Ann Arbor residents, once A2ZERO&apos;s next program year opens, who can stack A2ZERO + MiHER + DTE. TCLP customers in Traverse City if TCLP renews its up-to-$3,000 rebate. Low-income households who may qualify for both WAP and HEAR.
+              Households ≤150% AMI who qualify for MiHER HEAR (up to $8,000), outside the paused EGLE Detroit and Warren Districts. Homeowners switching from propane or fuel oil in rural and northern Michigan (largest operating cost savings). Ann Arbor residents, once A2ZERO&apos;s next program year opens, who can stack A2ZERO + MiHER + DTE. TCLP customers in Traverse City if TCLP renews its up-to-$3,000 rebate. Low-income households who may qualify for both WAP and HEAR.
             </p>
           </div>
         </div>
@@ -794,7 +794,7 @@ export default function MichiganPage() {
               <div className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-bold">1</div>
               <div>
                 <p className="font-semibold text-gray-900">Check your income eligibility</p>
-                <p className="text-sm text-gray-700">HEAR requires ≤150% AMI. Enhanced rebates at ≤80% AMI. Use your household size and county to determine your AMI level. As of July 2026, MiHER applications are open to low- to moderate-income households only, and new income-qualified applications are paused for properties in the EGLE Detroit District.</p>
+                <p className="text-sm text-gray-700">HEAR requires ≤150% AMI. Enhanced rebates at ≤80% AMI. Use your household size and county to determine your AMI level. As of August 2026, MiHER applications are open to low- to moderate-income households only, and new income-qualified applications are paused for properties in the EGLE Detroit and Warren Districts.</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -829,11 +829,11 @@ export default function MichiganPage() {
           <div className="space-y-4">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">MiHER Intake Restrictions</p>
-              <p className="text-sm text-gray-600 mt-1">As of July 2026, MiHER applications are open to low- to moderate-income households only, and new income-qualified applications are paused in the EGLE Detroit District while the program assesses participation against its regional funding allocations. EGLE has said the Detroit District will reopen if its assessment finds sufficient capacity, and that applicants whose applications expire during the pause can reapply once intake reopens. Either restriction lifting — or the pause widening — changes this page&apos;s numbers.</p>
+              <p className="text-sm text-gray-600 mt-1">As of August 2026, MiHER applications are open to low- to moderate-income households only, and new income-qualified applications are paused in the EGLE Detroit and Warren Districts while the program reviews current applications and funding capacity. The program says each paused district will reopen once EGLE confirms sufficient capacity is available, and that applicants whose applications expire during a pause can reapply once that district reopens. Either restriction lifting — or the pause widening — changes this page&apos;s numbers.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">IRA Funding Runway</p>
-              <p className="text-sm text-gray-600 mt-1">MiHER&apos;s $210 million in IRA funding is expected to last until September 2031 or until depleted — and the Detroit District pause shows regional allocations can bind much sooner. Federal policy changes could affect the timeline. Monitor fund levels at michigan.gov/egle or call 855-510-7080.</p>
+              <p className="text-sm text-gray-600 mt-1">MiHER&apos;s $210 million in IRA funding is expected to last until September 2031 or until depleted — and the Detroit and Warren District pauses show regional allocations can bind much sooner. Federal policy changes could affect the timeline. Monitor fund levels at michigan.gov/egle or call 855-510-7080.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">DTE Funding Availability</p>

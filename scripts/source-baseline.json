@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-22T15:43:07.259Z",
+ "generatedAt": "2026-08-22T15:58:12.050Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -1806,10 +1806,10 @@
     "MI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:30.730Z",
-   "length": 391631,
+   "fetchedAt": "2026-08-22T15:11:58.503Z",
+   "length": 407340,
    "kind": "html",
-   "textHash": "a23877ee988d4d02",
+   "textHash": "e3f5bb505deafe69",
    "dollars": [
     "$105"
    ],
@@ -1825,10 +1825,10 @@
     "MI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:29.540Z",
-   "length": 414811,
+   "fetchedAt": "2026-08-22T15:11:59.521Z",
+   "length": 430152,
    "kind": "html",
-   "textHash": "6583a04c153868b4",
+   "textHash": "03053d2a78425fb3",
    "dollars": [],
    "keywords": {
     "accepting applications": 1
@@ -1842,10 +1842,10 @@
     "MI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:30.861Z",
+   "fetchedAt": "2026-08-22T15:11:59.277Z",
    "length": 597811,
    "kind": "html",
-   "textHash": "a370fa48f8b7ca62",
+   "textHash": "3c971987f7744e44",
    "dollars": [
     "$75",
     "$100",
@@ -1873,7 +1873,7 @@
     "MI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:31.718Z",
+   "fetchedAt": "2026-08-22T15:11:59.455Z",
    "length": 329906,
    "kind": "pdf",
    "bytesHash": "e97b9669bcf081ca"
@@ -1886,10 +1886,10 @@
     "MI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:32.013Z",
-   "length": 116209,
+   "fetchedAt": "2026-08-22T15:12:00.344Z",
+   "length": 115141,
    "kind": "html",
-   "textHash": "08486e2474abca08",
+   "textHash": "bd3c8a565b6e4166",
    "dollars": [
     "$1",
     "$50",
@@ -1915,7 +1915,7 @@
     "$8,000"
    ],
    "keywords": {
-    "waitlist": 8
+    "waitlist": 6
    }
   },
   "https://michigansaves.org/home-energy-improvements/": {
@@ -1926,10 +1926,10 @@
     "MI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:31.620Z",
-   "length": 294652,
+   "fetchedAt": "2026-08-22T15:11:59.877Z",
+   "length": 281032,
    "kind": "html",
-   "textHash": "eecf24d83ec73fe5",
+   "textHash": "0488d67dc566265c",
    "dollars": [
     "$1,000",
     "$4,999",
@@ -7705,19 +7705,13 @@
     "MI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:30.981Z",
-   "length": 145727,
+   "fetchedAt": "2026-08-22T15:11:59.660Z",
+   "length": 146789,
    "kind": "html",
-   "textHash": "0fe49963780b34fc",
-   "dollars": [
-    "$2,053,680",
-    "$3,720,797",
-    "$4,650,425",
-    "$8,518,698",
-    "$12,828,464",
-    "$13,310,031"
-   ],
+   "textHash": "4fa31953ac6ec5b0",
+   "dollars": [],
    "keywords": {
+    "paused": 5,
     "temporarily": 1
    }
   },
@@ -7729,7 +7723,7 @@
     "MI"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:30.282Z",
+   "fetchedAt": "2026-08-22T15:11:59.213Z",
    "length": 167990,
    "kind": "pdf",
    "bytesHash": "6dfc027bc52a045e"
@@ -7742,8 +7736,8 @@
     "MI"
    ],
    "httpStatus": 404,
-   "fetchedAt": "2026-07-14T17:02:36.696Z",
-   "length": 98967,
+   "fetchedAt": "2026-08-22T15:12:05.312Z",
+   "length": 107503,
    "error": "HTTP 404"
   },
   "https://www.pse.com/en/rebates/heating": {
