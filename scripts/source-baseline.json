@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-22T17:18:21.096Z",
+ "generatedAt": "2026-08-22T22:44:52.515Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -3743,23 +3743,17 @@
     "WV"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-26T20:35:11.891Z",
-   "length": 177951,
+   "fetchedAt": "2026-08-22T15:12:18.063Z",
+   "length": 169075,
    "kind": "html",
-   "textHash": "1a66b9b6195eb76b",
+   "textHash": "919e09c47ee6124a",
    "dollars": [
     "$0.20",
     "$1.00",
-    "$600",
     "$1,000",
     "$1700",
     "$2,500",
-    "$5,000",
-    "$20,000,",
-    "$150,000",
-    "$1,000,000",
-    "$2,500,000",
-    "$4,000,000"
+    "$5,000"
    ],
    "keywords": {
     "no longer": 2
@@ -7099,20 +7093,21 @@
   },
   "https://energywv.org/funding-opportunities/home-energy-rebate-programs/": {
    "url": "https://energywv.org/funding-opportunities/home-energy-rebate-programs/",
-   "finalUrl": "https://energywv.org/funding-opportunities/home-energy-rebate-programs/",
+   "finalUrl": "https://energywv.org/programs-initiatives/home-energy-rebate-programs/",
    "label": "WV Office of Energy — Home Energy Rebate Programs",
    "states": [
     "WV"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-26T20:35:46.719Z",
-   "length": 107051,
+   "fetchedAt": "2026-08-22T15:13:00.299Z",
+   "length": 105778,
    "kind": "html",
-   "textHash": "4040b4842f93bbc0",
+   "textHash": "cf71e49a0b2c66a1",
    "dollars": [
     "$88"
    ],
    "keywords": {
+    "waitlist": 1,
     "closed": 1
    }
   },
@@ -7124,7 +7119,7 @@
     "WV"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-26T20:35:46.687Z",
+   "fetchedAt": "2026-08-22T15:13:00.848Z",
    "length": 20093,
    "kind": "html",
    "textHash": "59ad7e4c13c8d1b1",
@@ -7139,7 +7134,7 @@
     "WV"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-26T20:35:46.569Z",
+   "fetchedAt": "2026-08-22T15:13:01.056Z",
    "length": 60687,
    "kind": "html",
    "textHash": "cfe82ba898ff4ffd",
@@ -8659,13 +8654,10 @@
    "states": [
     "WV"
    ],
-   "httpStatus": 200,
-   "fetchedAt": "2026-07-26T20:35:46.721Z",
-   "length": 111562,
-   "kind": "html",
-   "textHash": "1611758006a53d8d",
-   "dollars": [],
-   "keywords": {}
+   "httpStatus": 404,
+   "fetchedAt": "2026-08-22T15:13:02.223Z",
+   "length": 95570,
+   "error": "HTTP 404"
   },
   "https://energywv.org/funding-opportunities/home-energy-rebate-programs/home-owner-managing-energy-savings/": {
    "url": "https://energywv.org/funding-opportunities/home-energy-rebate-programs/home-owner-managing-energy-savings/",
@@ -8674,15 +8666,10 @@
    "states": [
     "WV"
    ],
-   "httpStatus": 200,
-   "fetchedAt": "2026-07-26T20:35:46.740Z",
-   "length": 116859,
-   "kind": "html",
-   "textHash": "f2430e222bb92c07",
-   "dollars": [
-    "$20,000"
-   ],
-   "keywords": {}
+   "httpStatus": 404,
+   "fetchedAt": "2026-08-22T15:13:02.305Z",
+   "length": 95570,
+   "error": "HTTP 404"
   },
   "https://cleanheatri.com/resources/remaining-funds/": {
    "url": "https://cleanheatri.com/resources/remaining-funds/",
