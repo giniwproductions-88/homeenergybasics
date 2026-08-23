@@ -82,7 +82,7 @@ export default function NorthCarolinaPage() {
         name: "Does HEAR cover replacing an existing heat pump in North Carolina?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "No. The HEAR program only covers upgrading from a non-heat-pump system to a heat pump. If you already have a heat pump and need to replace it, HEAR does not apply. You may still qualify for HOMES rebates (which are based on whole-home energy savings, not system type) or Duke Energy Smart $aver rebates \u2014 $350\u2013$900 for replacing an existing heat pump, or $2,000\u2013$2,500 for converting an existing heat pump to a dual-fuel, cold-climate, or geothermal system.",
+          text: "No. The HEAR program only covers upgrading from a non-heat-pump system to a heat pump. If you already have a heat pump and need to replace it, HEAR does not apply. Note also that under DOE Program Notice 26-2, gas, propane, and oil conversions must be removed from HEAR by August 31, 2026 \u2014 North Carolina\u2019s published rules still allow them as of August 22, and approved reservations remain valid, but that window is closing; electric resistance conversions are unaffected. You may still qualify for HOMES rebates (which are based on whole-home energy savings, not system type) or Duke Energy Smart $aver rebates \u2014 $350\u2013$900 for replacing an existing heat pump, or $2,000\u2013$2,500 for converting an existing heat pump to a dual-fuel, cold-climate, or geothermal system.",
         },
       },
     ],
@@ -146,8 +146,8 @@ export default function NorthCarolinaPage() {
               <p className="text-sm text-red-900">Both Section 25C (up to $2,000) and Section 25D (30% of costs) expired December 31, 2025. No federal tax credit is available for heat pumps installed in 2026.</p>
             </div>
             <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 md:col-span-2">
-              <p className="font-semibold text-amber-800 mb-1">⚠ HEAR is only for switching to a heat pump — not replacing one</p>
-              <p className="text-sm text-amber-900">The HEAR heat pump rebate only applies when upgrading from a non-heat-pump system (like electric resistance, gas furnace, or propane). If you already have a heat pump and need to replace it, HEAR does not cover the heat pump itself. You may still qualify for HOMES whole-home rebates or Duke Energy&apos;s Smart $aver replacement rebate ($350–$900).</p>
+              <p className="font-semibold text-amber-800 mb-1">⚠ HEAR is only for switching to a heat pump — and the gas-switching window is closing</p>
+              <p className="text-sm text-amber-900">The HEAR heat pump rebate only applies when upgrading from a non-heat-pump system. If you already have a heat pump and need to replace it, HEAR does not cover the heat pump itself. And under updated federal rules (DOE Program Notice 26-2), gas, propane, and oil conversions must be dropped from HEAR by <strong>August 31, 2026</strong> — as of August 22, North Carolina&apos;s published rules still allow them, and approved rebate reservations remain valid, so fossil-heated households should apply now. Electric resistance conversions are unaffected. HOMES whole-home rebates and Duke Energy&apos;s Smart $aver replacement rebate ($350–$900) remain alternatives.</p>
             </div>
           </div>
         </div>
@@ -258,6 +258,12 @@ export default function NorthCarolinaPage() {
             <p className="font-semibold text-blue-800 mb-1">HEAR is an instant point-of-sale discount</p>
             <p className="text-sm text-blue-900">Unlike most rebate programs, HEAR applies the discount at the time of purchase — you do not pay the full cost and wait for reimbursement. All work must be performed by an Energy Saver NC Registered Contractor — self-installation projects do not qualify. One rebate per appliance type per dwelling.</p>
           </div>
+
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mt-6">
+            <p className="font-semibold text-amber-800 mb-1">⚠ Switching from gas, propane, or oil? The HEAR window closes by August 31, 2026</p>
+            <p className="text-sm text-amber-900">DOE&apos;s updated program guidance (Program Notice 26-2, effective May 29, 2026) removes fuel-switching from HEAR nationwide — rebates will apply only when upgrading existing electric equipment — and states must conform by August 31, 2026. As of August 22, North Carolina&apos;s published HEAR requirements still allow fossil-to-electric conversions, and North Carolina has not yet announced its updated rules. Per DOE, approved rebate reservations made under the current rules remain valid, so fossil-heated households considering HEAR should start the application at energysavernc.org immediately. Electric-resistance-to-heat-pump projects are unaffected, and HOMES remains fuel-neutral.</p>
+          </div>
+
           <p className="text-gray-700 leading-relaxed mt-6">
             If you&apos;re replacing broken equipment in a hurry, NC DEQ recommends the HEAR pathway — unlike HOMES, HEAR does not require scheduling a full home energy assessment first.
           </p>
@@ -445,7 +451,7 @@ export default function NorthCarolinaPage() {
           </div>
 
           <p className="text-sm text-gray-500 mt-4">
-            Note: Duke Smart $aver has no rebate tier for converting a gas furnace to a heat pump — households making that switch rely on HEAR or HOMES alone for the heat pump itself. North Carolina has no state tax credit for heat pumps. No state loan program directly reduces the purchase price, though Carolina SURE and Duke Energy&apos;s Improve &amp; Save on-bill financing can help with the remaining balance.
+            Note: Duke Smart $aver has no rebate tier for converting a gas furnace to a heat pump — households making that switch rely on HEAR (only until the DOE fuel-switching rule change takes effect, by August 31, 2026) or HOMES for the heat pump itself. North Carolina has no state tax credit for heat pumps. No state loan program directly reduces the purchase price, though Carolina SURE and Duke Energy&apos;s Improve &amp; Save on-bill financing can help with the remaining balance.
           </p>
         </div>
       </section>
@@ -521,7 +527,7 @@ export default function NorthCarolinaPage() {
           <div className="bg-green-50 border border-green-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-green-800 mb-1">✓ Best candidates for a heat pump in North Carolina</p>
             <p className="text-sm text-green-900">
-              Homeowners with electric resistance strip heat (covers a large share of NC homes). Propane or fuel oil users in rural and mountain areas — volatile fuel prices make heat pumps especially cost-effective. Households below 150% AMI in any part of the state, where Energy Saver NC can cover 50–100% of costs. Manufactured home residents in eastern NC, where electric resistance heating is common and energy burdens are high.
+              Homeowners with electric resistance strip heat (covers a large share of NC homes) — unaffected by the coming HEAR rule change. Propane or fuel oil users in rural and mountain areas — volatile fuel prices make heat pumps especially cost-effective, but apply before the August 31, 2026 HEAR fuel-switching cutoff or plan on HOMES instead. Households below 150% AMI in any part of the state, where Energy Saver NC can cover 50–100% of costs. Manufactured home residents in eastern NC, where electric resistance heating is common and energy burdens are high.
             </p>
           </div>
 
@@ -581,6 +587,10 @@ export default function NorthCarolinaPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">What to watch</h2>
           <div className="space-y-4">
+            <div className="bg-white border border-gray-200 rounded-lg p-5">
+              <p className="font-semibold text-gray-900">DOE rule change — August 31, 2026</p>
+              <p className="text-sm text-gray-600 mt-1">DOE Program Notice 26-2 removes fuel-switching from HEAR and requires states to conform by August 31, 2026. North Carolina has not yet published its updated rules. When it does, expect gas/propane/oil-to-heat-pump HEAR eligibility to end and possibly new insulation/air-sealing prerequisites for HVAC rebates. Approved reservations made under current rules remain valid.</p>
+            </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">IRA funding runway</p>
               <p className="text-sm text-gray-600 mt-1">Energy Saver NC is funded by $208 million in IRA allocations through 2031, but funding is first-come, first-served and finite. Early applicants have an advantage.</p>

@@ -1378,9 +1378,9 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "North Carolina",
     status: "open",
     lastVerified: "2026-07-20",
-    lastUpdated: "2026-07-20",
+    lastUpdated: "2026-08-22",
     summary:
-      "Energy Saver NC is live statewide with up to $8,000 through HEAR or $16,000 through HOMES for income-qualifying households. Duke Energy Smart $aver adds $350\u2013$2,500 depending on the upgrade. Federal 25C/25D tax credits expired Dec 31, 2025. Households above 150% AMI are limited to utility rebates only.",
+      "Energy Saver NC is live statewide: up to $8,000 through HEAR or $16,000 through HOMES for income-qualifying households (above 150% AMI: utility rebates only). DOE rules end HEAR fuel-switching by Aug 31, 2026 \u2014 NC still allows gas-to-heat-pump as of Aug 22; apply now. Duke Smart $aver adds $350\u2013$2,500. Federal 25C/25D credits expired Dec 2025.",
     sources: [
       {
         label: "Energy Saver NC \u2014 Program Portal",
@@ -1393,6 +1393,10 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "Energy Saver NC \u2014 HEAR Program Details",
         url: "https://www.energysavernc.org/about-the-program/home-electrification-and-appliance-rebates-hear/",
+      },
+      {
+        label: "DOE \u2014 Program Notice 26-2 (HEAR fuel-switching removal)",
+        url: "https://www.energy.gov/documents/program-notice-26-2",
       },
       {
         label: "NC DEQ \u2014 All 100 Counties Press Release (Feb 2026)",
