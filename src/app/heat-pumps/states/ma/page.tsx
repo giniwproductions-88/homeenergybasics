@@ -344,7 +344,7 @@ export default function MassachusettsPage() {
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-amber-800 mb-1">⚠ HEAR not yet launched for individual homeowners</p>
-            <p className="text-sm text-amber-900">As of {formattedDate}, HEAR has not fully launched for standard homeowner applications. When active, HEAR could provide up to $8,000 per household for heat pumps for households at or below 80% of Area Median Income (AMI). Check masssave.com for updates.</p>
+            <p className="text-sm text-amber-900">As of {formattedDate}, HEAR has not fully launched for standard homeowner applications, and Mass Save confirms the funding is being integrated into existing income-eligible offerings rather than offered as a standalone rebate. The federal program caps heat pump rebates at $8,000 per household (&le;80% of Area Median Income), but in Massachusetts that value will arrive through Mass Save&apos;s income-eligible and enhanced pathways — not as a separately claimable $8,000. Check masssave.com for updates.</p>
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-4">
@@ -356,7 +356,7 @@ export default function MassachusettsPage() {
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
             <p className="font-semibold text-blue-800 mb-1">Massachusetts HEAR integration approach</p>
-            <p className="text-sm text-blue-900">Unlike most states launching HEAR as a standalone program, Massachusetts is layering HEAR funding into the existing Mass Save income-eligible framework. This means no separate application. HEAR funding flows through Mass Save&apos;s Income Eligible and enhanced income-qualified pathways &mdash; aligned with the federal &le;80% of Area Median Income limit &mdash; and can cover up to 100% of eligible electrification costs for qualifying households.</p>
+            <p className="text-sm text-blue-900">Unlike most states launching HEAR as a standalone program, Massachusetts is layering HEAR funding into the existing Mass Save income-eligible framework. This means no separate application. Once integration is complete, HEAR funding will flow through Mass Save&apos;s Income Eligible and enhanced income-qualified pathways &mdash; aligned with the federal &le;80% of Area Median Income limit &mdash; where eligible electrification costs can already be covered up to 100% for qualifying households. Any HEAR-funded heat pump measure will also follow DOE&apos;s May 2026 program rules (Notice 26-2), which removed fuel switching from HEAR nationwide.</p>
           </div>
         </div>
       </section>
@@ -414,7 +414,8 @@ export default function MassachusettsPage() {
             Mass Save rebates stack with the HEAT Loan (0% APR), Alternative Energy Credits, the
             6.25% sales tax exemption, the seasonal electric rate, and NEHPA point-of-sale discounts. You cannot combine multiple
             Mass Save rebate types on the same piece of equipment. Federal tax credits are no longer
-            available. When HEAR launches, it will stack for income-eligible households only.
+            available. HEAR funding is being integrated into the income-eligible pathways rather than
+            arriving as a separate stackable rebate.
           </p>
 
           <div className="space-y-4 mb-8">
@@ -450,7 +451,7 @@ export default function MassachusettsPage() {
                 <li>Requires pre-existing oil, propane, or electric-resistance heat</li>
                 <li>Weatherization: no-cost (100% covered)</li>
                 <li>Electrical panel upgrade: 100% covered</li>
-                <li>HEAR (when launched): up to $8,000 additional</li>
+                <li>HEAR funding: being integrated into this pathway &mdash; not a separate claimable rebate</li>
                 <li>HEAT Loan: typically unnecessary at this tier</li>
               </ul>
               <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$25,000+ (potentially no cost)</p>
@@ -622,7 +623,7 @@ export default function MassachusettsPage() {
           <div className="space-y-4">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">HEAR launch timing</p>
-              <p className="text-sm text-gray-600 mt-1">When DOER finalizes DOE approval and fully launches HEAR through Mass Save, income-eligible households will gain access to an additional $8,000 in federal point-of-sale rebates.</p>
+              <p className="text-sm text-gray-600 mt-1">When DOER finalizes DOE approval and completes the integration, HEAR funding will strengthen Mass Save&apos;s income-eligible offerings rather than appear as a separate $8,000 rebate. Any HEAR-funded heat pump measure will operate under DOE&apos;s May 2026 rules (Program Notice 26-2), which removed fuel switching from HEAR nationwide &mdash; expect electric-to-electric eligibility on the HEAR-funded portion.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">IRA funding runway</p>

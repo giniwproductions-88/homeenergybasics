@@ -258,8 +258,8 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "MA",
     stateName: "Massachusetts",
     status: "open",
-    lastVerified: "2026-07-09",
-    lastUpdated: "2026-07-09",
+    lastVerified: "2026-08-23",
+    lastUpdated: "2026-08-23",
     summary:
       "Mass Save heat pump rebates are active: whole-home $2,650/ton (max $8,500), partial $1,125/ton, ground-source $13,500. Income-qualified households (family of four up to $132,764) get $16,000–$25,000 or no-cost turnkey — pre-existing oil, propane, or electric-resistance heat required. NEHPA adds $650/unit at point of sale. R-410A excluded. Federal 25C/25D ended Dec 31, 2025.",
     sources: [
