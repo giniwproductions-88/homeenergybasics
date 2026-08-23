@@ -1049,15 +1049,23 @@ export const incentives: Record<StateCode, StateIncentive> = {
   GA: {
     stateCode: "GA",
     stateName: "Georgia",
-    status: "open",
-    lastVerified: "2026-06-03",
-    lastUpdated: "2026-06-03",
+    status: "limited",
+    lastVerified: "2026-08-22",
+    lastUpdated: "2026-08-22",
     summary:
-      "HEAR rebates cover up to $8,000 for heat pumps (\u2264150% AMI). HER whole-home rebates up to $4,000 (all incomes) or $16,000 (\u226480% AMI). Georgia Power HEIP offers up to $1,000. EMC rebates $100\u2013$600. Federal 25C/25D credits expired Dec 2025.",
+      "HEAR paused all new applications Aug 14, 2026, and stopped fuel-switching rebates Aug 10 under DOE Notice 26-2. HER whole-home rebates remain open: up to $4,000 (all incomes) or $16,000 (\u226480% AMI). Georgia Power HEIP up to $1,000. EMC rebates $100\u2013$600. Federal 25C/25D credits expired Dec 2025.",
     sources: [
       {
         label: "Georgia\u2019s Home Energy Rebates (GEFA)",
         url: "https://energyrebates.georgia.gov/",
+      },
+      {
+        label: "GEFA \u2014 HEAR Program Updates (pause + fuel-switching deadline)",
+        url: "https://energyrebates.georgia.gov/hear-program-updates",
+      },
+      {
+        label: "DOE \u2014 Program Notice 26-2 (updated HEAR guidance)",
+        url: "https://www.energy.gov/documents/program-notice-26-2",
       },
       {
         label: "GEFA \u2014 HEAR Program Details",

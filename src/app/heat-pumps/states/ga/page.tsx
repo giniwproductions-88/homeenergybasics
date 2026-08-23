@@ -6,16 +6,16 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title:
-    "Georgia Heat Pump Rebates 2026: Up to $8,000 HEAR + Georgia Power HEIP | Home Energy Basics",
+    "Georgia Heat Pump Rebates 2026: Up to $16,000 HER + Georgia Power HEIP | Home Energy Basics",
   description:
-    "HEAR offers up to $8,000 for heat pumps. Georgia Power covers up to $1,000. Federal tax credits ended. Here\u2019s every Georgia heat pump incentive in 2026.",
+    "HEAR is paused and fuel-switching rebates ended August 2026. HER covers up to $16,000, Georgia Power up to $1,000. Every Georgia heat pump incentive in 2026.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/ga",
   },
   openGraph: {
     title: "Georgia Heat Pump Rebates 2026",
     description:
-      "HEAR rebates up to $8,000, Georgia Power HEIP up to $1,000, EMC rebates $100\u2013$600 \u2014 the complete guide to Georgia heat pump incentives after federal credits expired.",
+      "HER rebates up to $16,000, Georgia Power HEIP up to $1,000, EMC rebates $100\u2013$600 \u2014 the complete guide to Georgia heat pump incentives after HEAR\u2019s August 2026 pause.",
     url: "https://homeenergybasics.com/heat-pumps/states/ga",
     type: "article",
     publishedTime: "2026-03-23T11:16:55-05:00",
@@ -32,7 +32,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in Georgia in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Georgia\u2019s main heat pump rebates in 2026 come from the IRA-funded HEAR program (up to $8,000 for households at or below 150% AMI), the HER whole-home program (up to $4,000 for above-median-income or up to $16,000 for low-income households), Georgia Power\u2019s HEIP rebate (up to $1,000), and EMC rebates ranging from $100 to $600 depending on the cooperative. Federal Section 25C and 25D tax credits expired December 31, 2025.",
+        text: "Georgia\u2019s main heat pump incentives in 2026 are the IRA-funded HER whole-home program (up to $4,000 for households above 80% AMI, up to $16,000 for income-qualified households), Georgia Power\u2019s HEIP rebate (up to $1,000), and EMC rebates ranging from $100 to $600 depending on the cooperative. The HEAR program paused new applications on August 14, 2026, and no longer covers gas-to-electric conversions under updated federal rules. Federal Section 25C and 25D tax credits expired December 31, 2025.",
       },
     },
     {
@@ -40,7 +40,7 @@ const faqJsonLd = {
       name: "Can I stack HEAR, HER, and utility rebates in Georgia?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, but not on the same upgrade. GEFA allows stacking HER and HEAR with utility rebates (Georgia Power HEIP or EMC rebates) as long as each program covers a different improvement. You cannot combine HEAR and HER on the same piece of equipment. A low-income household could use HEAR for a heat pump and a utility rebate for a heat pump water heater, for example.",
+        text: "Yes, but not on the same upgrade. GEFA allows stacking HER and HEAR with utility rebates (Georgia Power HEIP or EMC rebates) as long as each program covers a different improvement, and HEAR and HER cannot be combined on the same piece of equipment. With HEAR paused for new applications since August 14, 2026, the practical stack today is HER plus a utility rebate \u2014 for example, HER for a heat pump and a utility rebate for a heat pump water heater. Households with HEAR applications submitted before the pause can still combine an approved HEAR rebate with the other programs.",
       },
     },
     {
@@ -61,10 +61,10 @@ const faqJsonLd = {
     },
     {
       "@type": "Question",
-      name: "Do I qualify for HEAR if I\u2019m replacing an existing electric furnace?",
+      name: "Can I still get a HEAR rebate to replace my gas furnace with a heat pump?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Generally no. HEAR requires a Qualified Electrification Project, meaning the upgrade must be first-time electrification or replace a non-electric appliance. Replacing a gas furnace with a heat pump qualifies. Replacing an existing electric furnace with a heat pump does not qualify under HEAR. However, you may still qualify for HER whole-home rebates if the project achieves at least 20% modeled energy savings.",
+        text: "No. Following updated U.S. Department of Energy guidance (Program Notice 26-2, effective May 29, 2026), GEFA stopped accepting fuel-switching HEAR projects on August 10, 2026, and paused all new HEAR applications on August 14, 2026. Applications submitted before those deadlines are still being reviewed, subject to available funding. A gas-to-heat-pump project can instead qualify for HER whole-home rebates \u2014 which are fuel-neutral and remain open \u2014 plus Georgia Power HEIP conversion rebates or EMC rebates.",
       },
     },
   ],
@@ -104,7 +104,7 @@ export default function GeorgiaPage() {
             Georgia heat pump rebates and incentives in 2026
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Georgia homeowners can still access <strong>$4,000 to $14,000+</strong> in heat pump rebates in 2026 {"\u2014"} but the landscape shifted after federal tax credits expired. The main incentives now come from Georgia&apos;s IRA-funded HEAR and HER programs, plus utility rebates from Georgia Power and the state&apos;s EMCs. This guide covers all major Georgia heat pump incentives available in 2026, including HEAR, HER, Georgia Power HEIP, and EMC programs. Here&apos;s what&apos;s actually available {"\u2014"} and what you&apos;ll realistically get after rebates.
+            Georgia homeowners can still access <strong>$2,000 to $17,000+</strong> in heat pump rebates in 2026 {"\u2014"} but the landscape shifted twice: federal tax credits expired December 31, 2025, and in August 2026 Georgia <strong>paused new HEAR applications</strong> and, under updated federal rules, <strong>ended HEAR rebates for gas-to-electric conversions</strong>. The main incentives still open are Georgia&apos;s IRA-funded HER whole-home program, plus utility rebates from Georgia Power and the state&apos;s EMCs. This guide covers all major Georgia heat pump incentives available in 2026, including HER, the HEAR pause, Georgia Power HEIP, and EMC programs. Here&apos;s what&apos;s actually available {"\u2014"} and what you&apos;ll realistically get after rebates.
           </p>
           <p className="text-sm text-gray-500">
             Updated {formattedDate} — verified against official program sources
@@ -128,24 +128,24 @@ export default function GeorgiaPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">The short version</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-1">✓ HEAR rebates up to $8,000</p>
-              <p className="text-sm text-green-900">The Home Electrification and Appliance Rebates program covers up to <strong>$8,000</strong> for a heat pump, applied at point of sale. Households at or below 80% of Area Median Income (AMI) receive up to 100% of costs. Households at 80{"\u2013"}150% AMI receive up to 50%.</p>
-            </div>
-            <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ HER whole-home rebates up to $16,000</p>
-              <p className="text-sm text-green-900">The Home Efficiency Rebates program rewards whole-home energy reductions. All income levels qualify: up to <strong>$4,000</strong> for above-median-income households, up to <strong>$16,000</strong> for low-income households achieving 35%+ energy savings.</p>
+              <p className="text-sm text-green-900">The Home Efficiency Rebates program rewards whole-home energy reductions and is <strong>fuel-neutral and still open</strong>. All income levels qualify: up to <strong>$4,000</strong> for households above 80% AMI, up to <strong>$16,000</strong> for income-qualified households achieving 35%+ energy savings.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-1">✓ Total potential: $4,000{"\u2013"}$18,000+</p>
-              <p className="text-sm text-green-900"><strong>$4,000{"\u2013"}$6,000</strong> (above 150% AMI) to <strong>$12,000{"\u2013"}$18,000+</strong> (below 80% AMI). Utility rebates add another <strong>$100{"\u2013"}$1,000</strong> depending on your provider. Full electrification packages combining HEAR, HER, and utility rebates can reach ~$18,000 total incentives.</p>
+              <p className="font-semibold text-green-800 mb-1">✓ Utility rebates up to $1,250</p>
+              <p className="text-sm text-green-900">Georgia Power&apos;s HEIP covers up to <strong>$1,000</strong> for an air-source heat pump conversion and up to <strong>$1,250</strong> for its Home Comfort Bundle. EMC cooperative rebates range <strong>$100{"\u2013"}$600</strong> depending on your provider.</p>
+            </div>
+            <div className="bg-green-50 border border-green-200 rounded-lg p-5">
+              <p className="font-semibold text-green-800 mb-1">✓ Total potential: $2,000{"\u2013"}$17,000+</p>
+              <p className="text-sm text-green-900"><strong>$2,000{"\u2013"}$6,000</strong> (above 80% AMI) to <strong>$11,000{"\u2013"}$17,000+</strong> (at or below 80% AMI), combining HER with Georgia Power or EMC rebates. Households with HEAR applications approved before the August 2026 pause can still reach higher totals.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">✗ Federal tax credits expired</p>
               <p className="text-sm text-red-900">Both Section 25C ($2,000/year for heat pumps) and Section 25D (30% for geothermal) expired December 31, 2025 under the One Big Beautiful Bill Act. No replacement has been enacted.</p>
             </div>
             <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
-              <p className="font-semibold text-amber-800 mb-1">⚠ HEAR only covers households at or below 150% AMI</p>
-              <p className="text-sm text-amber-900">Households above 150% AMI are not eligible for HEAR. The HER program is the primary incentive for higher-income homeowners, but requires a whole-home approach with documented energy savings {"\u2014"} not a standalone equipment swap.</p>
+              <p className="font-semibold text-amber-800 mb-1">⚠ HEAR is paused {"\u2014"} and no longer covers gas-to-heat-pump conversions</p>
+              <p className="text-sm text-amber-900">GEFA stopped accepting fuel-switching HEAR projects on <strong>August 10, 2026</strong> (per DOE Program Notice 26-2) and paused <strong>all new HEAR applications on August 14, 2026</strong>. Applications submitted before those deadlines are still being reviewed, subject to available funding. If HEAR reopens, the updated federal rules allow rebates only for upgrading existing electric equipment.</p>
             </div>
           </div>
         </div>
@@ -169,12 +169,16 @@ export default function GeorgiaPage() {
       {/* 5. HEAR (PRIMARY) */}
       <section className="py-12">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Home Electrification and Appliance Rebates (HEAR)</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Home Electrification and Appliance Rebates (HEAR) {"\u2014"} paused</h2>
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
+            <p className="font-semibold text-amber-800 mb-1">⚠ Not accepting new applications</p>
+            <p className="text-sm text-amber-900">Effective August 14, 2026, GEFA is no longer accepting new HEAR applications while its review team works through submitted volume. Fuel-switching projects stopped being accepted earlier, on August 10, 2026, to meet DOE&apos;s updated program guidance. Applications submitted before those deadlines will be reviewed and may be processed, subject to available funding.</p>
+          </div>
           <p className="text-gray-700 leading-relaxed mb-6">
-            HEAR provides <strong>point-of-sale rebates</strong> {"\u2014"} the discount is applied at purchase through a GEFA-approved contractor, not claimed on taxes later. Only households earning at or below 150% of Area Median Income (AMI) qualify. The Georgia Environmental Finance Authority (GEFA) administers the program through <a href="https://energyrebates.georgia.gov" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">energyrebates.georgia.gov</a>.
+            HEAR provided <strong>point-of-sale rebates</strong> {"\u2014"} the discount applied at purchase through a GEFA-approved contractor, not claimed on taxes later {"\u2014"} for households earning at or below 150% of Area Median Income (AMI). The Georgia Environmental Finance Authority (GEFA) administers the program through <a href="https://energyrebates.georgia.gov" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">energyrebates.georgia.gov</a>, where reopening details will be posted.
           </p>
 
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">HEAR rebate amounts</h3>
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">HEAR rebate amounts (applications submitted before the pause)</h3>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
               <thead>
@@ -218,12 +222,12 @@ export default function GeorgiaPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Income tiers</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Households at or below 80% AMI receive up to <strong>100% of project costs</strong>. Households between 80{"\u2013"}150% AMI receive up to <strong>50% of costs</strong>. Households above 150% AMI are <strong>not eligible</strong> for HEAR.
+            For applications in the review pipeline: households at or below 80% AMI receive up to <strong>100% of project costs</strong>, households between 80{"\u2013"}150% AMI receive up to <strong>50% of costs</strong>, and households above 150% AMI are <strong>not eligible</strong> for HEAR.
           </p>
 
-          <div className="bg-amber-50 border border-amber-200 rounded-lg p-5">
-            <p className="font-semibold text-amber-800 mb-1">⚠ Common mistake: HEAR requires electrification</p>
-            <p className="text-sm text-amber-900">HEAR generally requires a Qualified Electrification Project {"\u2014"} the upgrade must be first-time electrification or replace a non-electric appliance. Replacing a gas furnace with a heat pump qualifies. Replacing an existing electric furnace with a heat pump does not qualify under HEAR. All products must be ENERGY STAR-certified.</p>
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
+            <p className="font-semibold text-blue-800 mb-1">The electrification rule flipped in 2026</p>
+            <p className="text-sm text-blue-900">Under HEAR&apos;s original rules, a Qualified Electrification Project meant fuel switching: replacing a gas furnace with a heat pump qualified, and replacing existing electric equipment did not. DOE&apos;s updated guidance (Program Notice 26-2, effective May 29, 2026) reversed this {"\u2014"} rebates now apply only when upgrading <strong>existing electric equipment</strong> to more efficient electric equipment. Applications submitted before Georgia&apos;s August 10 fuel-switching deadline are reviewed under the rules in effect when submitted. If you heat with gas or propane and missed that window, <strong>HER is now your program</strong>.</p>
           </div>
         </div>
       </section>
@@ -262,12 +266,12 @@ export default function GeorgiaPage() {
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            Eligible improvements include heat pump HVAC, heat pump water heaters, insulation, air sealing, duct sealing, and window/door upgrades. A single household can use both HEAR and HER {"\u2014"} but <strong>not for the same upgrade</strong>.
+            Eligible improvements include heat pump HVAC, heat pump water heaters, insulation, air sealing, duct sealing, and window/door upgrades. A household with a HEAR application in the pipeline can use both HEAR and HER {"\u2014"} but <strong>not for the same upgrade</strong>.
           </p>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
-            <p className="font-semibold text-blue-800 mb-1">HER is the key program for above-median-income homeowners</p>
-            <p className="text-sm text-blue-900">With federal credits gone and HEAR limited to households below 150% AMI, HER is now the single most valuable tool for higher-income Georgia homeowners. The tradeoff: it requires a whole-home approach with documented energy savings rather than a simple equipment swap. Pair a heat pump with insulation and air sealing to hit the 20% savings threshold.</p>
+            <p className="font-semibold text-blue-800 mb-1">HER is now Georgia&apos;s primary heat pump program</p>
+            <p className="text-sm text-blue-900">With federal credits gone and HEAR paused, HER is the most valuable tool for Georgia homeowners at every income level {"\u2014"} and because it is fuel-neutral, it remains the path for gas- and propane-heated homes that HEAR no longer serves. The tradeoff: it requires a whole-home approach with documented energy savings rather than a simple equipment swap. Pair a heat pump with insulation and air sealing to hit the 20% savings threshold.</p>
           </div>
         </div>
       </section>
@@ -391,46 +395,44 @@ export default function GeorgiaPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">How programs stack in Georgia</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Per GEFA&apos;s official FAQ, state HER and HEAR rebates <strong>can be combined with utility rebates</strong> (Georgia Power HEIP or EMC programs), but not for the same single upgrade. Different upgrades within the same home can draw from different programs. HER and HEAR cannot be combined on the same upgrade either. These rebates are treated as purchase price reductions {"\u2014"} <strong>not taxable income</strong>.
+            Per GEFA&apos;s official FAQ, state rebates <strong>can be combined with utility rebates</strong> (Georgia Power HEIP or EMC programs), but not for the same single upgrade. Different upgrades within the same home can draw from different programs. HER and HEAR cannot be combined on the same upgrade either. These rebates are treated as purchase price reductions {"\u2014"} <strong>not taxable income</strong>. With HEAR paused for new applications, the scenarios below are built on HER plus utility rebates; the HER tiers split at 80% AMI.
           </p>
 
           <div className="space-y-4 mb-8">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900 mb-2">Above 150% AMI {"\u2014"} ducted heat pump + insulation</p>
+              <p className="font-semibold text-gray-900 mb-2">Above 80% AMI {"\u2014"} ducted heat pump + insulation (HER path)</p>
               <ul className="text-sm text-gray-700 space-y-1">
-                <li>HER whole-home rebate (20%+ energy savings): up to $4,000</li>
+                <li>HER whole-home rebate: $2,000 (20%+ energy savings) to $4,000 (35%+)</li>
                 <li>Georgia Power HEIP air-source heat pump conversion: up to $1,000</li>
                 <li>Georgia Power Home Comfort Bundle: up to $1,250</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$5,000{"\u2013"}$6,000</p>
-            </div>
-
-            <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900 mb-2">80{"\u2013"}150% AMI {"\u2014"} gas-to-heat-pump conversion + water heater</p>
-              <ul className="text-sm text-gray-700 space-y-1">
-                <li>HEAR heat pump rebate (50% of cost): up to $8,000</li>
-                <li>HEAR heat pump water heater (50% of cost): up to $1,750</li>
-                <li>HER (additional insulation/air sealing): up to $4,000</li>
-              </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$9,000{"\u2013"}$13,000</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$4,000{"\u2013"}$6,000</p>
             </div>
 
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-2">Below 80% AMI {"\u2014"} full electrification package</p>
+              <p className="font-semibold text-green-800 mb-2">At or below 80% AMI {"\u2014"} whole-home package (HER path)</p>
               <ul className="text-sm text-green-900 space-y-1">
-                <li>HEAR heat pump rebate (100% of cost): up to $8,000</li>
-                <li>HEAR heat pump water heater: up to $1,750</li>
-                <li>HEAR electrical panel + wiring: up to $6,500</li>
+                <li>HER whole-home rebate: $10,000 (20%+ energy savings) to $16,000 (35%+)</li>
                 <li>Georgia Power HEIP Home Comfort Bundle: up to $1,250</li>
-                <li>HER whole-home (additional measures, 35%+ savings): up to $16,000</li>
+                <li>Weatherization Assistance Program: free measures if income-qualified</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$12,000{"\u2013"}$18,000+</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$11,000{"\u2013"}$17,000</p>
+            </div>
+
+            <div className="bg-white border border-gray-200 rounded-lg p-5">
+              <p className="font-semibold text-gray-900 mb-2">In the HEAR pipeline {"\u2014"} application submitted before August 14, 2026</p>
+              <ul className="text-sm text-gray-700 space-y-1">
+                <li>Approved HEAR rebates pay under the rules in effect at submission: up to $14,000 per household</li>
+                <li>Subject to review and available funding {"\u2014"} watch for review-team emails</li>
+                <li>Stackable with utility rebates on different upgrades</li>
+              </ul>
+              <p className="font-semibold text-green-700 mt-2">Respond promptly to any GEFA information requests</p>
             </div>
           </div>
 
           <div className="bg-gray-100 rounded-lg p-5">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
-            <p className="text-sm text-gray-700">On a <strong>$12,000{"\u2013"}$18,000</strong> whole-home heat pump project, expect to pay <strong>$0{"\u2013"}$6,000 out of pocket</strong> if below 80% AMI, <strong>$4,000{"\u2013"}$10,000</strong> at 80{"\u2013"}150% AMI, or <strong>$7,000{"\u2013"}$14,000</strong> above 150% AMI. Georgia has no state tax credit or state loan program to fill the gap for higher-income households.</p>
+            <p className="text-sm text-gray-700">On a <strong>$12,000{"\u2013"}$18,000</strong> whole-home heat pump project, expect to pay <strong>$0{"\u2013"}$7,000 out of pocket</strong> at or below 80% AMI, or <strong>$6,000{"\u2013"}$14,000</strong> above 80% AMI. Georgia has no state tax credit or state loan program to fill the gap for higher-income households.</p>
           </div>
         </div>
       </section>
@@ -447,7 +449,7 @@ export default function GeorgiaPage() {
           </p>
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
             <p className="font-semibold text-green-800 mb-1">✓ Best candidates for Georgia heat pump rebates</p>
-            <p className="text-sm text-green-900">Homeowners replacing gas furnaces or propane heating (HEAR-eligible electrification), households below 80% AMI (100% cost coverage through HEAR), Georgia Power customers doing bundled projects (HEIP + HER stacking), and anyone in EMC territory with an aging electric resistance system (lower bills plus EMC rebates).</p>
+            <p className="text-sm text-green-900">Income-qualified households at or below 80% AMI (up to $16,000 through HER, plus free WAP measures), homeowners replacing gas or propane heat through HER&apos;s fuel-neutral whole-home path, Georgia Power customers doing bundled projects (HEIP + HER stacking), and anyone in EMC territory with an aging electric resistance system (lower bills plus EMC rebates).</p>
           </div>
         </div>
       </section>
@@ -522,7 +524,7 @@ export default function GeorgiaPage() {
               </div>
               <div>
                 <p className="font-semibold text-gray-900">Check income eligibility</p>
-                <p className="text-sm text-gray-700">Visit <a href="https://energyrebates.georgia.gov" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">energyrebates.georgia.gov</a> to determine your AMI tier. HEAR requires household income at or below 150% AMI. HER is open to all income levels.</p>
+                <p className="text-sm text-gray-700">Visit <a href="https://energyrebates.georgia.gov" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">energyrebates.georgia.gov</a> to determine your AMI tier. HER is open to all income levels; your tier sets the rebate amount. (HEAR is paused for new applications as of August 14, 2026.)</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -540,7 +542,7 @@ export default function GeorgiaPage() {
               </div>
               <div>
                 <p className="font-semibold text-gray-900">Get a quote with eligible equipment</p>
-                <p className="text-sm text-gray-700">Your contractor will confirm ENERGY STAR certification and, for HEAR, that the project qualifies as electrification. For HER, the contractor performs a Manual J load calculation and energy model to project savings.</p>
+                <p className="text-sm text-gray-700">Your contractor will confirm ENERGY STAR certification. For HER, the contractor performs a Manual J load calculation and energy model to project the 20%+ savings the rebate requires.</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -549,7 +551,7 @@ export default function GeorgiaPage() {
               </div>
               <div>
                 <p className="font-semibold text-gray-900">Complete the project and claim rebates</p>
-                <p className="text-sm text-gray-700">HEAR rebates are applied at point of sale through the contractor. HER rebates require post-installation verification. Apply for utility rebates (Georgia Power HEIP or your EMC) separately after installation {"\u2014"} Georgia Power requires submission within 60 days.</p>
+                <p className="text-sm text-gray-700">HER rebates require post-installation verification. Apply for utility rebates (Georgia Power HEIP or your EMC) separately after installation {"\u2014"} Georgia Power requires submission within 60 days. HEAR rebates for pipeline applications are applied at point of sale through the contractor once approved.</p>
               </div>
             </div>
           </div>
@@ -561,6 +563,10 @@ export default function GeorgiaPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">What to watch for</h2>
           <div className="space-y-4">
+            <div className="bg-white border border-gray-200 rounded-lg p-5">
+              <p className="font-semibold text-gray-900">HEAR pause resolution</p>
+              <p className="text-sm text-gray-600 mt-1">GEFA paused all new HEAR applications on August 14, 2026 while its review team works through submitted volume. Watch energyrebates.georgia.gov for reopening details {"\u2014"} under DOE&apos;s updated guidance, any relaunched HEAR covers only upgrades from existing electric equipment.</p>
+            </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">IRA funding runway</p>
               <p className="text-sm text-gray-600 mt-1">Georgia&apos;s HEAR and HER programs are funded through September 2031 or until funds are exhausted. However, future Congressional action could modify IRA appropriations. Once funding runs out, these rebates end with no guarantee of renewal.</p>
