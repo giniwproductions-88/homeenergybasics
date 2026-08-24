@@ -1054,10 +1054,10 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "GA",
     stateName: "Georgia",
     status: "limited",
-    lastVerified: "2026-08-22",
-    lastUpdated: "2026-08-22",
+    lastVerified: "2026-08-23",
+    lastUpdated: "2026-08-23",
     summary:
-      "HEAR paused all new applications Aug 14, 2026, and stopped fuel-switching rebates Aug 10 under DOE Notice 26-2. HER whole-home rebates remain open: up to $4,000 (all incomes) or $16,000 (\u226480% AMI). Georgia Power HEIP up to $1,000. EMC rebates $100\u2013$600. Federal 25C/25D credits expired Dec 2025.",
+      "HEAR paused all new applications Aug 14, 2026, and stopped fuel-switching rebates Aug 10 under DOE Notice 26-2. HER whole-home rebates remain open: up to $4,000 (all incomes) or $16,000 (\u226480% AMI). Georgia Power HEIP up to $1,850. EMC rebates $100\u2013$600. Federal 25C/25D credits expired Dec 2025.",
     sources: [
       {
         label: "Georgia\u2019s Home Energy Rebates (GEFA)",
