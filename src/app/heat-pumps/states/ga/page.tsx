@@ -8,14 +8,14 @@ export const metadata: Metadata = {
   title:
     "Georgia Heat Pump Rebates 2026: Up to $16,000 HER + Georgia Power HEIP | Home Energy Basics",
   description:
-    "HEAR is paused and fuel-switching rebates ended August 2026. HER covers up to $16,000, Georgia Power up to $1,000. Every Georgia heat pump incentive in 2026.",
+    "HEAR is paused and fuel-switching rebates ended August 2026. HER covers up to $16,000, Georgia Power up to $1,850. Every Georgia heat pump incentive in 2026.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/ga",
   },
   openGraph: {
     title: "Georgia Heat Pump Rebates 2026",
     description:
-      "HER rebates up to $16,000, Georgia Power HEIP up to $1,000, EMC rebates $100\u2013$600 \u2014 the complete guide to Georgia heat pump incentives after HEAR\u2019s August 2026 pause.",
+      "HER rebates up to $16,000, Georgia Power HEIP up to $1,850, EMC rebates $100\u2013$600 \u2014 the complete guide to Georgia heat pump incentives after HEAR\u2019s August 2026 pause.",
     url: "https://homeenergybasics.com/heat-pumps/states/ga",
     type: "article",
     publishedTime: "2026-03-23T11:16:55-05:00",
@@ -32,7 +32,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in Georgia in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Georgia\u2019s main heat pump incentives in 2026 are the IRA-funded HER whole-home program (up to $4,000 for households above 80% AMI, up to $16,000 for income-qualified households), Georgia Power\u2019s HEIP rebate (up to $1,000), and EMC rebates ranging from $100 to $600 depending on the cooperative. The HEAR program paused new applications on August 14, 2026, and no longer covers gas-to-electric conversions under updated federal rules. Federal Section 25C and 25D tax credits expired December 31, 2025.",
+        text: "Georgia\u2019s main heat pump incentives in 2026 are the IRA-funded HER whole-home program (up to $4,000 for households above 80% AMI, up to $16,000 for income-qualified households), Georgia Power\u2019s HEIP rebates (up to $1,850 for its Home Comfort Bundle and $1,500 for an electric-furnace-to-heat-pump conversion, capped at $2,500 per customer per year), and EMC rebates ranging from $100 to $600 depending on the cooperative. The HEAR program paused new applications on August 14, 2026, and no longer covers gas-to-electric conversions under updated federal rules. Federal Section 25C and 25D tax credits expired December 31, 2025.",
       },
     },
     {
@@ -64,7 +64,7 @@ const faqJsonLd = {
       name: "Can I still get a HEAR rebate to replace my gas furnace with a heat pump?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No. Following updated U.S. Department of Energy guidance (Program Notice 26-2, effective May 29, 2026), GEFA stopped accepting fuel-switching HEAR projects on August 10, 2026, and paused all new HEAR applications on August 14, 2026. Applications submitted before those deadlines are still being reviewed, subject to available funding. A gas-to-heat-pump project can instead qualify for HER whole-home rebates \u2014 which are fuel-neutral and remain open \u2014 plus Georgia Power HEIP conversion rebates or EMC rebates.",
+        text: "No. Following updated U.S. Department of Energy guidance (Program Notice 26-2, effective May 29, 2026), GEFA stopped accepting fuel-switching HEAR projects on August 10, 2026, and paused all new HEAR applications on August 14, 2026. Applications submitted before those deadlines are still being reviewed, subject to available funding. A gas-to-heat-pump project can instead qualify for HER whole-home rebates \u2014 which are fuel-neutral and remain open. Note that Georgia Power\u2019s HEIP heat pump conversion rebate applies only to electric-furnace replacements, though gas-heated homes can still use HEIP\u2019s weatherization bundles, and some EMCs (such as GreyStone and Walton) offer gas-to-electric conversion rebates.",
       },
     },
   ],
@@ -104,7 +104,7 @@ export default function GeorgiaPage() {
             Georgia heat pump rebates and incentives in 2026
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Georgia homeowners can still access <strong>$2,000 to $17,000+</strong> in heat pump rebates in 2026 {"\u2014"} but the landscape shifted twice: federal tax credits expired December 31, 2025, and in August 2026 Georgia <strong>paused new HEAR applications</strong> and, under updated federal rules, <strong>ended HEAR rebates for gas-to-electric conversions</strong>. The main incentives still open are Georgia&apos;s IRA-funded HER whole-home program, plus utility rebates from Georgia Power and the state&apos;s EMCs. This guide covers all major Georgia heat pump incentives available in 2026, including HER, the HEAR pause, Georgia Power HEIP, and EMC programs. Here&apos;s what&apos;s actually available {"\u2014"} and what you&apos;ll realistically get after rebates.
+            Georgia homeowners can still access <strong>$2,000 to $18,500</strong> in heat pump rebates in 2026 {"\u2014"} but the landscape shifted twice: federal tax credits expired December 31, 2025, and in August 2026 Georgia <strong>paused new HEAR applications</strong> and, under updated federal rules, <strong>ended HEAR rebates for gas-to-electric conversions</strong>. The main incentives still open are Georgia&apos;s IRA-funded HER whole-home program, plus utility rebates from Georgia Power and the state&apos;s EMCs. This guide covers all major Georgia heat pump incentives available in 2026, including HER, the HEAR pause, Georgia Power HEIP, and EMC programs. Here&apos;s what&apos;s actually available {"\u2014"} and what you&apos;ll realistically get after rebates.
           </p>
           <p className="text-sm text-gray-500">
             Updated {formattedDate} — verified against official program sources
@@ -132,12 +132,12 @@ export default function GeorgiaPage() {
               <p className="text-sm text-green-900">The Home Efficiency Rebates program rewards whole-home energy reductions and is <strong>fuel-neutral and still open</strong>. All income levels qualify: up to <strong>$4,000</strong> for households above 80% AMI, up to <strong>$16,000</strong> for income-qualified households achieving 35%+ energy savings.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-1">✓ Utility rebates up to $1,250</p>
-              <p className="text-sm text-green-900">Georgia Power&apos;s HEIP covers up to <strong>$1,000</strong> for an air-source heat pump conversion and up to <strong>$1,250</strong> for its Home Comfort Bundle. EMC cooperative rebates range <strong>$100{"\u2013"}$600</strong> depending on your provider.</p>
+              <p className="font-semibold text-green-800 mb-1">✓ Utility rebates up to $2,500 a year</p>
+              <p className="text-sm text-green-900">Georgia Power&apos;s 2026 HEIP covers up to <strong>$1,500</strong> for converting an electric furnace to an air-source heat pump and up to <strong>$1,850</strong> for its Home Comfort Bundle, capped at <strong>$2,500 per customer per year</strong>. EMC cooperative rebates range <strong>$100{"\u2013"}$600</strong> depending on your provider.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-1">✓ Total potential: $2,000{"\u2013"}$17,000+</p>
-              <p className="text-sm text-green-900"><strong>$2,000{"\u2013"}$6,000</strong> (above 80% AMI) to <strong>$11,000{"\u2013"}$17,000+</strong> (at or below 80% AMI), combining HER with Georgia Power or EMC rebates. Households with HEAR applications approved before the August 2026 pause can still reach higher totals.</p>
+              <p className="font-semibold text-green-800 mb-1">✓ Total potential: $2,000{"\u2013"}$18,500</p>
+              <p className="text-sm text-green-900"><strong>$2,000{"\u2013"}$6,500</strong> (above 80% AMI) to <strong>$12,000{"\u2013"}$18,500</strong> (at or below 80% AMI), combining HER with Georgia Power or EMC rebates. Households with HEAR applications approved before the August 2026 pause can still reach higher totals.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">✗ Federal tax credits expired</p>
@@ -283,7 +283,7 @@ export default function GeorgiaPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Georgia Power {"\u2014"} Home Energy Improvement Program (HEIP)</h3>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Georgia Power, the state&apos;s largest utility serving roughly 2.7 million customers, offers rebates at <strong>50% of installed cost</strong> up to the listed cap. Applications must be submitted within 60 days of the paid-in-full invoice. Equipment must be ENERGY STAR-certified.
+            Georgia Power, the state&apos;s largest utility serving roughly 2.7 million customers, refreshed HEIP for a new <strong>2026{"\u2013"}2028 program cycle</strong> with updated rebate amounts effective August 1, 2026. Rebates cover <strong>50% of installed cost</strong> up to each measure&apos;s cap, with a program-wide limit of <strong>$2,500 per customer per year</strong>. Applications must be submitted within 60 days of the paid-in-full invoice. Equipment must be ENERGY STAR-certified.
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
@@ -295,20 +295,35 @@ export default function GeorgiaPage() {
               </thead>
               <tbody>
                 <tr className="border-b bg-green-50">
-                  <td className="p-3">Conversion to air-source heat pump</td>
-                  <td className="p-3 font-semibold">Up to $1,000</td>
+                  <td className="p-3">Conversion to air-source heat pump (electric furnace replacement only)</td>
+                  <td className="p-3 font-semibold">Up to $1,500</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Ductless mini split heat pump (instant rebate via participating installer)</td>
+                  <td className="p-3 font-semibold">Up to $500</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Heat pump water heater</td>
+                  <td className="p-3 font-semibold">Up to $800</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Conversion to ground-source heat pump</td>
                   <td className="p-3 font-semibold">Up to $300</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-3">Home Comfort Bundle (insulation + air sealing + duct sealing)</td>
-                  <td className="p-3 font-semibold">Up to $1,250</td>
+                  <td className="p-3">Home Comfort Bundle (insulation + air sealing + duct sealing + assessment)</td>
+                  <td className="p-3 font-semibold">Up to $1,850 electric-heated / $1,550 gas-heated</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Comfort Duo (insulation + air sealing + assessment)</td>
+                  <td className="p-3 font-semibold">Up to $1,150 electric-heated / $950 gas-heated</td>
                 </tr>
               </tbody>
             </table>
           </div>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            One condition matters more than the dollar amounts: the headline <strong>$1,500 heat pump conversion rebate applies only when replacing an existing electric furnace</strong> {"\u2014"} the installer must attest the heat pump replaced electric equipment. Gas- and propane-heated homes cannot use it, which mirrors the federal 26-2 electric-to-electric rule; those households should look to HER for the heat pump itself and can still use HEIP&apos;s weatherization bundles at the gas-heated caps.
+          </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">EMC rebates across Georgia&apos;s cooperatives</h3>
           <p className="text-gray-700 leading-relaxed mb-6">
@@ -403,20 +418,19 @@ export default function GeorgiaPage() {
               <p className="font-semibold text-gray-900 mb-2">Above 80% AMI {"\u2014"} ducted heat pump + insulation (HER path)</p>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>HER whole-home rebate: $2,000 (20%+ energy savings) to $4,000 (35%+)</li>
-                <li>Georgia Power HEIP air-source heat pump conversion: up to $1,000</li>
-                <li>Georgia Power Home Comfort Bundle: up to $1,250</li>
+                <li>Georgia Power HEIP: heat pump conversion $1,500 (electric furnace only) + Home Comfort Bundle $1,850, capped at $2,500/year combined</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$4,000{"\u2013"}$6,000</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$4,500{"\u2013"}$6,500</p>
             </div>
 
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-2">At or below 80% AMI {"\u2014"} whole-home package (HER path)</p>
               <ul className="text-sm text-green-900 space-y-1">
                 <li>HER whole-home rebate: $10,000 (20%+ energy savings) to $16,000 (35%+)</li>
-                <li>Georgia Power HEIP Home Comfort Bundle: up to $1,250</li>
+                <li>Georgia Power HEIP: Home Comfort Bundle $1,850, up to $2,500/year if combining measures</li>
                 <li>Weatherization Assistance Program: free measures if income-qualified</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$11,000{"\u2013"}$17,000</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$12,500{"\u2013"}$18,500</p>
             </div>
 
             <div className="bg-white border border-gray-200 rounded-lg p-5">
@@ -432,7 +446,7 @@ export default function GeorgiaPage() {
 
           <div className="bg-gray-100 rounded-lg p-5">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
-            <p className="text-sm text-gray-700">On a <strong>$12,000{"\u2013"}$18,000</strong> whole-home heat pump project, expect to pay <strong>$0{"\u2013"}$7,000 out of pocket</strong> at or below 80% AMI, or <strong>$6,000{"\u2013"}$14,000</strong> above 80% AMI. Georgia has no state tax credit or state loan program to fill the gap for higher-income households.</p>
+            <p className="text-sm text-gray-700">On a <strong>$12,000{"\u2013"}$18,000</strong> whole-home heat pump project, expect to pay <strong>$0{"\u2013"}$5,500 out of pocket</strong> at or below 80% AMI, or <strong>$5,500{"\u2013"}$13,500</strong> above 80% AMI. Georgia has no state tax credit or state loan program to fill the gap for higher-income households.</p>
           </div>
         </div>
       </section>
@@ -449,7 +463,7 @@ export default function GeorgiaPage() {
           </p>
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
             <p className="font-semibold text-green-800 mb-1">✓ Best candidates for Georgia heat pump rebates</p>
-            <p className="text-sm text-green-900">Income-qualified households at or below 80% AMI (up to $16,000 through HER, plus free WAP measures), homeowners replacing gas or propane heat through HER&apos;s fuel-neutral whole-home path, Georgia Power customers doing bundled projects (HEIP + HER stacking), and anyone in EMC territory with an aging electric resistance system (lower bills plus EMC rebates).</p>
+            <p className="text-sm text-green-900">Income-qualified households at or below 80% AMI (up to $16,000 through HER, plus free WAP measures), homeowners replacing gas or propane heat through HER&apos;s fuel-neutral whole-home path, Georgia Power customers replacing an electric furnace (HEIP&apos;s $1,500 conversion rebate) or doing bundled projects (HEIP + HER stacking), and anyone in EMC territory with an aging electric resistance system (lower bills plus EMC rebates).</p>
           </div>
         </div>
       </section>
