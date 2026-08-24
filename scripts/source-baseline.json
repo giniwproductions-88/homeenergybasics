@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-22T23:48:34.699Z",
+ "generatedAt": "2026-08-24T04:45:09.821Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -490,7 +490,7 @@
     "MO"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-08-22T15:11:37.866Z",
+   "fetchedAt": "2026-08-24T02:34:00.182Z",
    "length": 118811,
    "kind": "html",
    "textHash": "ac9b445c0b11171b",
@@ -617,10 +617,10 @@
     "EFFICIENCY-MAINE"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T16:45:11.669Z",
-   "length": 77899,
+   "fetchedAt": "2026-08-24T02:34:02.960Z",
+   "length": 77449,
    "kind": "html",
-   "textHash": "b04fa28fbf53f41c",
+   "textHash": "b90a7eaeb54c00a3",
    "dollars": [
     "$500",
     "$1,000",
@@ -2788,8 +2788,8 @@
     "NH"
    ],
    "httpStatus": 403,
-   "fetchedAt": "2026-07-20T20:28:34.367Z",
-   "length": 1142269,
+   "fetchedAt": "2026-08-24T02:34:05.377Z",
+   "length": 1142314,
    "error": "HTTP 403"
   },
   "https://www.energy.nh.gov/consumers/help-energy-and-utility-bills/weatherization-assistance-program": {
@@ -2933,10 +2933,10 @@
     "GA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:47.995Z",
-   "length": 99333,
+   "fetchedAt": "2026-08-24T02:34:31.296Z",
+   "length": 99551,
    "kind": "html",
-   "textHash": "5638e29c65981505",
+   "textHash": "2b5f3bda51da93aa",
    "dollars": [
     "$16,000"
    ],
@@ -2950,10 +2950,10 @@
     "GA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:48.087Z",
-   "length": 93071,
+   "fetchedAt": "2026-08-24T02:34:31.749Z",
+   "length": 93289,
    "kind": "html",
-   "textHash": "61d3227a3a899506",
+   "textHash": "aca41223b2d21968",
    "dollars": [
     "$840",
     "$1,600",
@@ -2973,8 +2973,8 @@
     "GA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:48.216Z",
-   "length": 121907,
+   "fetchedAt": "2026-08-24T02:34:31.679Z",
+   "length": 122140,
    "kind": "html",
    "textHash": "283d4db7b819879e",
    "dollars": [
@@ -2992,10 +2992,10 @@
     "GA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:48.578Z",
-   "length": 284329,
+   "fetchedAt": "2026-08-24T02:34:31.906Z",
+   "length": 282604,
    "kind": "html",
-   "textHash": "b33c95a9678a5434",
+   "textHash": "a192e5ec2f1b7194",
    "dollars": [
     "$15",
     "$20",
@@ -3010,10 +3010,15 @@
     "$250",
     "$300",
     "$400",
+    "$500",
+    "$600",
+    "$800",
     "$950",
-    "$1,000",
+    "$1,150",
     "$1250",
-    "$1,250"
+    "$1,250",
+    "$1,500",
+    "$1,850"
    ],
    "keywords": {}
   },
@@ -3025,8 +3030,8 @@
     "GA"
    ],
    "httpStatus": 403,
-   "fetchedAt": "2026-07-09T15:14:50.146Z",
-   "length": 6013,
+   "fetchedAt": "2026-08-24T02:34:33.541Z",
+   "length": 6056,
    "error": "HTTP 403"
   },
   "https://www.greystonepower.com/rebate-requirements": {
@@ -3037,10 +3042,10 @@
     "GA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:48.901Z",
-   "length": 140730,
+   "fetchedAt": "2026-08-24T02:34:32.246Z",
+   "length": 147194,
    "kind": "html",
-   "textHash": "82be730b67dfe740",
+   "textHash": "c74332ec20d7037c",
    "dollars": [
     "$200",
     "$300",
@@ -3057,8 +3062,8 @@
     "GA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:49.160Z",
-   "length": 157702,
+   "fetchedAt": "2026-08-24T02:34:31.948Z",
+   "length": 163521,
    "kind": "html",
    "textHash": "46693089aae15903",
    "dollars": [
@@ -3085,10 +3090,10 @@
     "GA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:14:49.273Z",
-   "length": 111350,
+   "fetchedAt": "2026-08-24T02:34:32.280Z",
+   "length": 111589,
    "kind": "html",
-   "textHash": "256db6b1ee031ae3",
+   "textHash": "903b80b3b5be2494",
    "dollars": [],
    "keywords": {}
   },
@@ -3743,7 +3748,7 @@
     "WV"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-08-22T15:12:18.063Z",
+   "fetchedAt": "2026-08-24T02:34:38.273Z",
    "length": 169075,
    "kind": "html",
    "textHash": "919e09c47ee6124a",
@@ -7091,26 +7096,6 @@
     "applications open": 2
    }
   },
-  "https://energywv.org/funding-opportunities/home-energy-rebate-programs/": {
-   "url": "https://energywv.org/funding-opportunities/home-energy-rebate-programs/",
-   "finalUrl": "https://energywv.org/programs-initiatives/home-energy-rebate-programs/",
-   "label": "WV Office of Energy — Home Energy Rebate Programs",
-   "states": [
-    "WV"
-   ],
-   "httpStatus": 200,
-   "fetchedAt": "2026-08-22T15:13:00.299Z",
-   "length": 105778,
-   "kind": "html",
-   "textHash": "cf71e49a0b2c66a1",
-   "dollars": [
-    "$88"
-   ],
-   "keywords": {
-    "waitlist": 1,
-    "closed": 1
-   }
-  },
   "https://takechargewv.com/rebates": {
    "url": "https://takechargewv.com/rebates",
    "finalUrl": "https://takechargewv.com/rebates",
@@ -7119,7 +7104,7 @@
     "WV"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-08-22T15:13:00.848Z",
+   "fetchedAt": "2026-08-24T02:35:17.461Z",
    "length": 20093,
    "kind": "html",
    "textHash": "59ad7e4c13c8d1b1",
@@ -7134,7 +7119,7 @@
     "WV"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-08-22T15:13:01.056Z",
+   "fetchedAt": "2026-08-24T02:35:17.463Z",
    "length": 60687,
    "kind": "html",
    "textHash": "cfe82ba898ff4ffd",
@@ -7321,10 +7306,10 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:33.870Z",
-   "length": 112274,
+   "fetchedAt": "2026-08-24T02:34:04.231Z",
+   "length": 108953,
    "kind": "html",
-   "textHash": "38641d91207b9a04",
+   "textHash": "9647a503289ebc9d",
    "dollars": [
     "$250",
     "$500",
@@ -7334,6 +7319,7 @@
     "$2,650",
     "$6,000",
     "$8,500",
+    "$12,000",
     "$13,500",
     "$16,000",
     "$22,000",
@@ -7352,10 +7338,10 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:33.858Z",
-   "length": 93180,
+   "fetchedAt": "2026-08-24T02:34:04.357Z",
+   "length": 93967,
    "kind": "html",
-   "textHash": "3881f25f16fc6d28",
+   "textHash": "9225fffc0f9497c2",
    "dollars": [
     "$500",
     "$1,000",
@@ -7378,10 +7364,10 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:33.886Z",
-   "length": 79112,
+   "fetchedAt": "2026-08-24T02:34:04.248Z",
+   "length": 79902,
    "kind": "html",
-   "textHash": "261dfd6ec337cb15",
+   "textHash": "0de69e90d47039ac",
    "dollars": [
     "$51,777",
     "$51,778",
@@ -7444,10 +7430,10 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:33.909Z",
-   "length": 73834,
+   "fetchedAt": "2026-08-24T02:34:04.674Z",
+   "length": 74550,
    "kind": "html",
-   "textHash": "ac6f3a2076f3d859",
+   "textHash": "394ed736cdcf877c",
    "dollars": [
     "$16,000",
     "$25,000"
@@ -7462,10 +7448,10 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:32.728Z",
-   "length": 66236,
+   "fetchedAt": "2026-08-24T02:34:05.102Z",
+   "length": 67024,
    "kind": "html",
-   "textHash": "21bdbb58ba784e78",
+   "textHash": "0ec6c0f7012526ec",
    "dollars": [],
    "keywords": {}
   },
@@ -7477,10 +7463,10 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:33.882Z",
-   "length": 61231,
+   "fetchedAt": "2026-08-24T02:34:05.148Z",
+   "length": 61947,
    "kind": "html",
-   "textHash": "1acb41794054efcf",
+   "textHash": "e55b3c87370f9635",
    "dollars": [],
    "keywords": {}
   },
@@ -7492,10 +7478,10 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:34.595Z",
-   "length": 75838,
+   "fetchedAt": "2026-08-24T02:34:05.246Z",
+   "length": 76554,
    "kind": "html",
-   "textHash": "afe5778ba5564304",
+   "textHash": "918f5c687f13f1bc",
    "dollars": [
     "$25,000"
    ],
@@ -7509,7 +7495,7 @@
     "MA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:34.619Z",
+   "fetchedAt": "2026-08-24T02:34:05.804Z",
    "length": 208221,
    "kind": "html",
    "textHash": "b298ecc8c513da60",
@@ -7529,10 +7515,10 @@
     "ME"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T16:45:11.854Z",
-   "length": 83385,
+   "fetchedAt": "2026-08-24T02:34:03.146Z",
+   "length": 82931,
    "kind": "html",
-   "textHash": "87fef94589cdb514",
+   "textHash": "877406910fbc14a8",
    "dollars": [
     "$3,000",
     "$6,000",
@@ -7550,10 +7536,10 @@
     "ME"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T16:45:11.686Z",
-   "length": 80150,
+   "fetchedAt": "2026-08-24T02:34:01.757Z",
+   "length": 79755,
    "kind": "html",
-   "textHash": "83c75ab2d3922b91",
+   "textHash": "46c9a7eac9da1943",
    "dollars": [
     "$1,150"
    ],
@@ -7568,10 +7554,10 @@
     "EFFICIENCY-MAINE"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T16:45:11.886Z",
-   "length": 80790,
+   "fetchedAt": "2026-08-24T02:34:03.401Z",
+   "length": 80348,
    "kind": "html",
-   "textHash": "42c1c45ee43cf27b",
+   "textHash": "8769e7da8e7a0cb9",
    "dollars": [
     "$3,000"
    ],
@@ -7585,10 +7571,10 @@
     "ME"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T16:45:11.912Z",
-   "length": 90220,
+   "fetchedAt": "2026-08-24T02:34:03.600Z",
+   "length": 99036,
    "kind": "html",
-   "textHash": "0a6b91c8fb827866",
+   "textHash": "592b67c756fe64a4",
    "dollars": [
     "$0",
     "$10,",
@@ -7608,8 +7594,8 @@
     "EFFICIENCY-MAINE"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T16:45:12.402Z",
-   "length": 35472,
+   "fetchedAt": "2026-08-24T02:34:03.494Z",
+   "length": 35493,
    "kind": "html",
    "textHash": "b35d83fb5d0a6a66",
    "dollars": [
@@ -7619,71 +7605,6 @@
    ],
    "keywords": {}
   },
-  "https://www.commerce.wa.gov/energy-incentives/hear/": {
-   "url": "https://www.commerce.wa.gov/energy-incentives/hear/",
-   "finalUrl": "https://www.commerce.wa.gov/energy/clean-buildings/energy-incentives/hear/",
-   "label": "WA Commerce — State HEAR Program (open)",
-   "states": [
-    "WA"
-   ],
-   "httpStatus": 200,
-   "fetchedAt": "2026-08-22T15:11:46.375Z",
-   "length": 100171,
-   "kind": "html",
-   "textHash": "7827c6b322057127",
-   "dollars": [
-    "$30",
-    "$73",
-    "$250,000",
-    "$287,500",
-    "$354,280",
-    "$455,000",
-    "$484,000",
-    "$500,000",
-    "$600,000",
-    "$630,000",
-    "$637,000",
-    "$643,500",
-    "$731,250",
-    "$750,000",
-    "$950,500",
-    "$951,350",
-    "$971,000",
-    "$1,001,482",
-    "$1,098,000",
-    "$1,127,000",
-    "$1,146,504",
-    "$1,215,000",
-    "$1,325,704",
-    "$1,616,516",
-    "$1,650,000",
-    "$2,011,954",
-    "$3,071,333",
-    "$3,775,416",
-    "$4,589,587",
-    "$39,323,876"
-   ],
-   "keywords": {}
-  },
-  "https://www.commerce.wa.gov/energy-incentives/ira-home-energy-rebates/": {
-   "url": "https://www.commerce.wa.gov/energy-incentives/ira-home-energy-rebates/",
-   "finalUrl": "https://www.commerce.wa.gov/energy/clean-buildings/energy-incentives/ira-home-energy-rebates/",
-   "label": "WA Commerce — IRA Home Energy Rebates (HARP/HOMES)",
-   "states": [
-    "WA"
-   ],
-   "httpStatus": 200,
-   "fetchedAt": "2026-08-22T15:11:46.371Z",
-   "length": 112737,
-   "kind": "html",
-   "textHash": "d19e72bb8e694d01",
-   "dollars": [
-    "$500"
-   ],
-   "keywords": {
-    "now available": 1
-   }
-  },
   "https://www.wahear.com/": {
    "url": "https://www.wahear.com/",
    "finalUrl": "https://www.wahear.com/",
@@ -7692,7 +7613,7 @@
     "WA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-08-22T15:11:46.284Z",
+   "fetchedAt": "2026-08-24T02:34:07.552Z",
    "length": 1140330,
    "kind": "html",
    "textHash": "c375f088610274dd",
@@ -7772,7 +7693,7 @@
     "WA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-08-22T15:11:44.414Z",
+   "fetchedAt": "2026-08-24T02:34:06.779Z",
    "length": 143395,
    "kind": "html",
    "textHash": "c81c6746cd07d33c",
@@ -7787,8 +7708,8 @@
     "WA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-08-22T15:11:44.965Z",
-   "length": 130932,
+   "fetchedAt": "2026-08-24T02:34:07.016Z",
+   "length": 130933,
    "kind": "html",
    "textHash": "8051b796dbe322ab",
    "dollars": [],
@@ -7802,8 +7723,8 @@
     "WA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-08-22T15:11:44.827Z",
-   "length": 89655,
+   "fetchedAt": "2026-08-24T02:34:24.807Z",
+   "length": 89663,
    "kind": "html",
    "textHash": "f90eef9fe5f024e4",
    "dollars": [
@@ -7833,13 +7754,13 @@
   "https://www.pse.com/en/rebates/doubled-rebates-for-city-of-lacey-residents": {
    "url": "https://www.pse.com/en/rebates/doubled-rebates-for-city-of-lacey-residents",
    "finalUrl": "https://www.pse.com/en/rebates/doubled-rebates-for-city-of-lacey-residents",
-   "label": "PSE — Doubled rebates for City of Lacey residents",
+   "label": "PSE — Doubled rebates for City of Lacey residents (closed)",
    "states": [
     "WA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-08-22T15:11:44.552Z",
-   "length": 134208,
+   "fetchedAt": "2026-08-24T02:34:06.883Z",
+   "length": 133775,
    "kind": "html",
    "textHash": "a6c55975f44c5662",
    "dollars": [],
@@ -8091,7 +8012,7 @@
     "EFFICIENCY-MAINE"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T16:46:27.450Z",
+   "fetchedAt": "2026-08-24T02:35:19.397Z",
    "length": 245269,
    "kind": "pdf",
    "bytesHash": "f47d3be97177401e"
@@ -8104,7 +8025,7 @@
     "EFFICIENCY-MAINE"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T16:46:26.491Z",
+   "fetchedAt": "2026-08-24T02:35:19.792Z",
    "length": 228784,
    "kind": "pdf",
    "bytesHash": "22af6f41fad77d65"
@@ -8117,7 +8038,7 @@
     "EFFICIENCY-MAINE"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T16:46:26.376Z",
+   "fetchedAt": "2026-08-24T02:35:19.836Z",
    "length": 85735,
    "kind": "pdf",
    "bytesHash": "78deb7a3702ffee1"
@@ -8130,10 +8051,10 @@
     "EFFICIENCY-MAINE"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-17T16:46:26.743Z",
-   "length": 551818,
+   "fetchedAt": "2026-08-24T02:35:20.104Z",
+   "length": 551922,
    "kind": "pdf",
-   "bytesHash": "61a127f499c0e9c0"
+   "bytesHash": "c8dbb6eae60a4bb5"
   },
   "https://www.ameren.com/-/media/files/save-money-energy/energy-efficiency/pays-incentives.ashx": {
    "url": "https://www.ameren.com/-/media/files/save-money-energy/energy-efficiency/pays-incentives.ashx",
@@ -8647,30 +8568,6 @@
     "now open": 1
    }
   },
-  "https://energywv.org/funding-opportunities/home-energy-rebate-programs/home-efficiency-appliance-rebates/": {
-   "url": "https://energywv.org/funding-opportunities/home-energy-rebate-programs/home-efficiency-appliance-rebates/",
-   "finalUrl": "https://energywv.org/funding-opportunities/home-energy-rebate-programs/home-efficiency-appliance-rebates/",
-   "label": "WV Office of Energy — Home Efficiency Appliance Rebates (HEAR)",
-   "states": [
-    "WV"
-   ],
-   "httpStatus": 404,
-   "fetchedAt": "2026-08-22T15:13:02.223Z",
-   "length": 95570,
-   "error": "HTTP 404"
-  },
-  "https://energywv.org/funding-opportunities/home-energy-rebate-programs/home-owner-managing-energy-savings/": {
-   "url": "https://energywv.org/funding-opportunities/home-energy-rebate-programs/home-owner-managing-energy-savings/",
-   "finalUrl": "https://energywv.org/funding-opportunities/home-energy-rebate-programs/home-owner-managing-energy-savings/",
-   "label": "WV Office of Energy — Home Owner Managing Energy Savings (HOMES)",
-   "states": [
-    "WV"
-   ],
-   "httpStatus": 404,
-   "fetchedAt": "2026-08-22T15:13:02.305Z",
-   "length": 95570,
-   "error": "HTTP 404"
-  },
   "https://cleanheatri.com/resources/remaining-funds/": {
    "url": "https://cleanheatri.com/resources/remaining-funds/",
    "finalUrl": "https://cleanheatri.com/resources/remaining-funds/",
@@ -8685,6 +8582,268 @@
    "textHash": "e4c2d6e25f7398d9",
    "dollars": [],
    "keywords": {}
+  },
+  "https://www.efficiencymaine.com/at-home/mobile-home-initiative/": {
+   "url": "https://www.efficiencymaine.com/at-home/mobile-home-initiative/",
+   "finalUrl": "https://www.efficiencymaine.com/at-home/mobile-home-initiative/",
+   "label": "Efficiency Maine — Mobile Home Initiative",
+   "states": [
+    "ME"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-08-24T02:34:04.588Z",
+   "length": 92483,
+   "kind": "html",
+   "textHash": "ec65d5759e87c3c1",
+   "dollars": [
+    "$400",
+    "$1,000",
+    "$8,000",
+    "$13,900"
+   ],
+   "keywords": {}
+  },
+  "https://www.commerce.wa.gov/energy/clean-buildings/energy-incentives/hear/": {
+   "url": "https://www.commerce.wa.gov/energy/clean-buildings/energy-incentives/hear/",
+   "finalUrl": "https://www.commerce.wa.gov/energy/clean-buildings/energy-incentives/hear/",
+   "label": "WA Commerce — State HEAR Program (open)",
+   "states": [
+    "WA"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-08-24T02:34:06.855Z",
+   "length": 100213,
+   "kind": "html",
+   "textHash": "7827c6b322057127",
+   "dollars": [
+    "$30",
+    "$73",
+    "$250,000",
+    "$287,500",
+    "$354,280",
+    "$455,000",
+    "$484,000",
+    "$500,000",
+    "$600,000",
+    "$630,000",
+    "$637,000",
+    "$643,500",
+    "$731,250",
+    "$750,000",
+    "$950,500",
+    "$951,350",
+    "$971,000",
+    "$1,001,482",
+    "$1,098,000",
+    "$1,127,000",
+    "$1,146,504",
+    "$1,215,000",
+    "$1,325,704",
+    "$1,616,516",
+    "$1,650,000",
+    "$2,011,954",
+    "$3,071,333",
+    "$3,775,416",
+    "$4,589,587",
+    "$39,323,876"
+   ],
+   "keywords": {}
+  },
+  "https://www.commerce.wa.gov/energy/clean-buildings/energy-incentives/ira-home-energy-rebates/": {
+   "url": "https://www.commerce.wa.gov/energy/clean-buildings/energy-incentives/ira-home-energy-rebates/",
+   "finalUrl": "https://www.commerce.wa.gov/energy/clean-buildings/energy-incentives/ira-home-energy-rebates/",
+   "label": "WA Commerce — IRA Home Energy Rebates (HARP/HOMES)",
+   "states": [
+    "WA"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-08-24T02:34:07.026Z",
+   "length": 112737,
+   "kind": "html",
+   "textHash": "d19e72bb8e694d01",
+   "dollars": [
+    "$500"
+   ],
+   "keywords": {
+    "now available": 1
+   }
+  },
+  "https://www.energy.gov/documents/program-notice-26-2": {
+   "url": "https://www.energy.gov/documents/program-notice-26-2",
+   "finalUrl": "https://www.energy.gov/documents/program-notice-26-2",
+   "label": "DOE — Home Energy Rebates Program Notice 26-2",
+   "states": [
+    "WI",
+    "GA",
+    "NC"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-08-24T02:34:31.187Z",
+   "length": 303875,
+   "kind": "pdf",
+   "bytesHash": "7a31f4ef9d72353c"
+  },
+  "https://energyrebates.georgia.gov/hear-program-updates": {
+   "url": "https://energyrebates.georgia.gov/hear-program-updates",
+   "finalUrl": "https://energyrebates.georgia.gov/hear-program-updates",
+   "label": "GEFA — HEAR Program Updates (pause + fuel-switching deadline)",
+   "states": [
+    "GA"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-08-24T02:34:31.295Z",
+   "length": 73597,
+   "kind": "html",
+   "textHash": "cb289100b08a8b4d",
+   "dollars": [],
+   "keywords": {
+    "paused": 1,
+    "no longer": 2,
+    "expired": 1
+   }
+  },
+  "https://energywv.org/programs-initiatives/home-energy-rebate-programs/": {
+   "url": "https://energywv.org/programs-initiatives/home-energy-rebate-programs/",
+   "finalUrl": "https://energywv.org/programs-initiatives/home-energy-rebate-programs/",
+   "label": "WV Office of Energy — Home Energy Rebate Programs",
+   "states": [
+    "WV"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-08-24T02:35:16.836Z",
+   "length": 105778,
+   "kind": "html",
+   "textHash": "cf71e49a0b2c66a1",
+   "dollars": [
+    "$88"
+   ],
+   "keywords": {
+    "waitlist": 1,
+    "closed": 1
+   }
+  },
+  "https://energywv.org/programs-initiatives/home-energy-rebate-programs/home-efficiency-appliance-rebates/": {
+   "url": "https://energywv.org/programs-initiatives/home-energy-rebate-programs/home-efficiency-appliance-rebates/",
+   "finalUrl": "https://energywv.org/programs-initiatives/home-energy-rebate-programs/home-efficiency-appliance-rebates/",
+   "label": "WV Office of Energy — Home Efficiency Appliance Rebates (HEAR)",
+   "states": [
+    "WV"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-08-24T02:35:16.818Z",
+   "length": 111833,
+   "kind": "html",
+   "textHash": "16ff303fa19824e6",
+   "dollars": [],
+   "keywords": {}
+  },
+  "https://energywv.org/programs-initiatives/home-energy-rebate-programs/home-owner-managing-energy-savings/": {
+   "url": "https://energywv.org/programs-initiatives/home-energy-rebate-programs/home-owner-managing-energy-savings/",
+   "finalUrl": "https://energywv.org/programs-initiatives/home-energy-rebate-programs/home-owner-managing-energy-savings/",
+   "label": "WV Office of Energy — Home Owner Managing Energy Savings (HOMES)",
+   "states": [
+    "WV"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-08-24T02:35:16.861Z",
+   "length": 119741,
+   "kind": "html",
+   "textHash": "514f354511590235",
+   "dollars": [
+    "$20,000"
+   ],
+   "keywords": {
+    "waitlist": 1
+   }
+  },
+  "https://www.efficiencymaine.com/docs/MHI-Rebate-Claim-Form.pdf": {
+   "url": "https://www.efficiencymaine.com/docs/MHI-Rebate-Claim-Form.pdf",
+   "finalUrl": "https://www.efficiencymaine.com/docs/MHI-Rebate-Claim-Form.pdf",
+   "label": "Efficiency Maine — MHI Rebate Claim Form PDF (monitor-only; fuel-tank cap/remove field = ME 26-2 tripwire; rev 8/20/2026 at add)",
+   "states": [
+    "ME"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-08-24T02:35:22.175Z",
+   "length": 182132,
+   "kind": "pdf",
+   "bytesHash": "a16f8c0e9bae1fb4"
+  },
+  "https://www.efficiencymaine.com/federal-funding/": {
+   "url": "https://www.efficiencymaine.com/federal-funding/",
+   "finalUrl": "https://www.efficiencymaine.com/federal-funding/",
+   "label": "Efficiency Maine — Federal Funding page (monitor-only; DOE-notice paragraph = ME 26-2 acknowledgment tripwire; HER 'conditionally awarded' = launch tripwire)",
+   "states": [
+    "ME"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-08-24T02:35:23.138Z",
+   "length": 90572,
+   "kind": "html",
+   "textHash": "fa55b1ed14f7f6fa",
+   "dollars": [
+    "$1",
+    "$2",
+    "$4",
+    "$5",
+    "$6",
+    "$7",
+    "$8",
+    "$15",
+    "$19",
+    "$25",
+    "$50",
+    "$71",
+    "$450",
+    "$863,110"
+   ],
+   "keywords": {}
+  },
+  "https://www.efficiencymaine.com/docs/All-Rebates-Brochure.pdf": {
+   "url": "https://www.efficiencymaine.com/docs/All-Rebates-Brochure.pdf",
+   "finalUrl": "https://www.efficiencymaine.com/docs/All-Rebates-Brochure.pdf",
+   "label": "Efficiency Maine — All Rebates Brochure PDF (monitor-only; full residential matrix; rev 211 8/18/2026 at add)",
+   "states": [
+    "ME"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-08-24T02:35:22.132Z",
+   "length": 139547,
+   "kind": "pdf",
+   "bytesHash": "84fc783945d1e0df"
+  },
+  "https://www.masssave.com/frequently-asked-questions": {
+   "url": "https://www.masssave.com/frequently-asked-questions",
+   "finalUrl": "https://www.masssave.com/frequently-asked-questions",
+   "label": "Mass Save — FAQ page (monitor-only; 'working to seamlessly integrate' sentence = MA HEAR flip tripwire; 'updated HEAT Loan guide' watch)",
+   "states": [
+    "MA"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-08-24T02:35:22.809Z",
+   "length": 385936,
+   "kind": "html",
+   "textHash": "1170f714f3cfeb79",
+   "dollars": [
+    "$0.50",
+    "$1.00",
+    "$8",
+    "$10",
+    "$71",
+    "$145",
+    "$1,200",
+    "$1,375",
+    "$2,000",
+    "$3,200",
+    "$5,000",
+    "$15,000"
+   ],
+   "keywords": {
+    "waitlist": 1,
+    "wait list": 1,
+    "no longer": 2,
+    "expired": 3
+   }
   }
  }
 }

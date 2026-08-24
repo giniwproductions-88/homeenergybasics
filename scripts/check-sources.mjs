@@ -76,6 +76,22 @@ function registrableHost(u) {
     return u;
   }
 }
+
+// Same-domain bot-wall interstitials. The off-domain detector above misses
+// walls served from the target's OWN host: efficiencymaine.com returned
+// "You are being redirected... Javascript is required" from efficiencymaine.com
+// itself (observed 2026-08-23 on /federal-funding/). Diffing wall-vs-wall
+// reports "unchanged" while blind (MN lesson, 7/24), so short pages matching
+// interstitial phrasing are classified as FETCH failures instead. Real pages
+// keep such text inside <noscript>, which htmlToText strips — a match in
+// extracted text is the wall itself. Length guard avoids false-positives on
+// long real pages that happen to mention these phrases in prose.
+const WALL_TEXT_RE =
+  /you are being redirected|javascript is required|checking your browser|enable javascript and cookies|verify(?:ing)? (?:that )?you are (?:a )?human|are you a robot|request unsuccessful\. incapsula/i;
+const WALL_TEXT_MAXLEN = 2000;
+function isWallText(text) {
+  return text.length < WALL_TEXT_MAXLEN && WALL_TEXT_RE.test(text);
+}
 // Extra state tags: URLs whose page serves more states than the data files
 // reference. The OG&E /ord/ rebates page carries BOTH the AR tab and the
 // Oklahoma closure sentence ("Oklahoma rebates are closed and will return
@@ -94,6 +110,44 @@ const EXTRA_TARGETS = [
     url: "https://cleanheatri.com/resources/remaining-funds/",
     label: "Clean Heat RI — Remaining Funds tracker (monitor-only)",
     states: ["RI"], // RI's #1 trigger: depletion or program closure
+  },
+  // ---- 8/23B adds: DOE 26-2 conformance tripwires (CONSOLIDATED-FORWARD-2026-08-23B §11).
+  // All five URLs fetch-verified live 2026-08-23 before adding. Canary text at add
+  // time is recorded in the forward's §7 registry — a diff on any of these during
+  // the Aug 31 conformance window is presumptively a 26-2 implementation.
+  {
+    url: "https://www.efficiencymaine.com/docs/MHI-Rebate-Claim-Form.pdf",
+    label: "Efficiency Maine — MHI Rebate Claim Form PDF (monitor-only; fuel-tank cap/remove field = ME 26-2 tripwire; rev 8/20/2026 at add)",
+    states: ["ME"],
+  },
+  {
+    url: "https://www.efficiencymaine.com/federal-funding/",
+    label: "Efficiency Maine — Federal Funding page (monitor-only; DOE-notice paragraph = ME 26-2 acknowledgment tripwire; HER 'conditionally awarded' = launch tripwire)",
+    states: ["ME"], // Served a SAME-domain JS interstitial on 8/23 verify — wall-text detector below covers it
+  },
+  {
+    url: "https://www.efficiencymaine.com/docs/All-Rebates-Brochure.pdf",
+    label: "Efficiency Maine — All Rebates Brochure PDF (monitor-only; full residential matrix; rev 211 8/18/2026 at add)",
+    states: ["ME"],
+  },
+  {
+    url: "https://www.masssave.com/frequently-asked-questions",
+    label: "Mass Save — FAQ page (monitor-only; 'working to seamlessly integrate' sentence = MA HEAR flip tripwire; 'updated HEAT Loan guide' watch)",
+    states: ["MA"],
+  },
+  {
+    url: "https://www.nyserda.ny.gov/All-Programs/EmPower-New-York-Program",
+    label: "NYSERDA — EmPower+ program page (monitor-only; four-measure HEAR caps; fuel-condition language APPEARING here = NY visible-conformance tripwire)",
+    states: ["NY"],
+  },
+  // Carried from 8/23 (same forward, §11): GA's own program-update feed. At add
+  // time (fetch-verified 8/23): HEAR submissions paused eff. 8/14, fuel-switching
+  // projects dead eff. 8/10, Program Notice 26-2 cited by name. A diff here is
+  // GA's next move (reopen, HER changes, or post-8/31 rules).
+  {
+    url: "https://energyrebates.georgia.gov/hear-program-updates",
+    label: "GA Home Energy Rebates — HEAR Program Updates feed (monitor-only; reopen/26-2 tripwire)",
+    states: ["GA"],
   },
 ];
 
@@ -295,6 +349,11 @@ async function fetchSnapshot(url, meta) {
         return { ...base, kind: "pdf", bytesHash: sha(buf) };
       }
       const text = htmlToText(buf.toString("utf8"));
+      if (isWallText(text)) {
+        // Same-domain interstitial: content is NOT the target page. Classify
+        // as fetch failure so it is never baselined-as-content or diffed.
+        return { ...base, error: `same-domain bot wall (interstitial text, ${text.length} chars)` };
+      }
       return {
         ...base, kind: "html", textHash: sha(text),
         dollars: extractDollars(text), keywords: keywordCounts(text),
@@ -661,6 +720,13 @@ function selftest() {
   const scopeOk = !kFurniture.temporarily && kProgram.temporarily === 1;
   if (!scopeOk) fail++;
   console.log(`${scopeOk ? "PASS" : "FAIL"}  keyword scoping: furniture=${JSON.stringify(kFurniture)} program=${JSON.stringify(kProgram)}`);
+  // same-domain wall-text detector
+  const wallHit = isWallText("You are being redirected...Javascript is required. Please enable javascript before you are allowed to see this page.");
+  const wallMissLong = isWallText("Rebates up to $3,000 for qualifying heat pump installations. ".repeat(40) + "javascript is required");
+  const wallMissClean = isWallText("Efficiency Maine offers rebates up to $12,900 for single-wide mobile homes heated with propane or kerosene.");
+  const wallOk = wallHit && !wallMissLong && !wallMissClean;
+  if (!wallOk) fail++;
+  console.log(`${wallOk ? "PASS" : "FAIL"}  wall-text: interstitial=${wallHit} longRealPage=${wallMissLong} cleanPage=${wallMissClean} (want true/false/false)`);
   // registrable-host approximation (off-domain wall detector)
   const rhCases = [
     ["https://mn.gov/commerce/x", "https://validate.perfdrive.com/y", false],
