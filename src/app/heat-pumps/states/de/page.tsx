@@ -40,7 +40,7 @@ const faqJsonLd = {
       name: "Can I stack Energize Delaware and Efficiency Smart rebates?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "DEMEC municipal utility customers in towns like Newark, Middletown, Dover, and Lewes may be eligible for both Energize Delaware HPwES rebates and Efficiency Smart rebates on the same installation, since the programs are administered separately. Delmarva Power and Delaware Electric Cooperative customers access rebates through Energize Delaware only. When HEAR launches, its rebates should also stack with state and utility programs, subject to total project cost limits.",
+        text: "DEMEC municipal utility customers in towns like Newark, Middletown, Dover, and Lewes may be eligible for both Energize Delaware HPwES rebates and Efficiency Smart rebates ($100 for standard ENERGY STAR heat pumps, $350\u2013$750 for cold-climate models) on the same installation, since the programs are administered separately. Delmarva Power and Delaware Electric Cooperative customers access rebates through Energize Delaware only. When HEAR launches, its rebates should also stack with state and utility programs, subject to total project cost limits.",
       },
     },
     {
@@ -64,7 +64,7 @@ const faqJsonLd = {
       name: "When will Delaware\u2019s HEAR rebates launch?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "As of June 2026, Delaware\u2019s Home Electrification and Appliance Rebates (HEAR) program is still awaiting final DOE approval. DNREC submitted its application in August 2024. When launched, HEAR would provide up to $8,000 per heat pump for households below 80% of Area Median Income. Contact DNREC at 302-735-3480 for the latest status.",
+        text: "Delaware\u2019s Home Electrification and Appliance Rebates (HEAR) program has not launched. DNREC submitted its application in August 2024, and its rebate page still describes the programs as expected to launch once funding is received. When launched, HEAR would provide up to $8,000 per heat pump for households below 80% of Area Median Income. Contact DNREC Customer Support at 1-888-920-1871 for the latest status.",
       },
     },
   ],
@@ -146,8 +146,8 @@ export default function DelawarePage() {
               <p className="font-semibold text-green-800 mb-1">✓ DEMEC utility rebates available</p>
               <p className="text-sm text-green-900">
                 Customers of DEMEC municipal utilities (Newark, Middletown, Dover, Lewes, and others) can access
-                Efficiency Smart rebates of roughly <strong>$300–$750</strong> for air-source heat pumps, stackable
-                with Energize Delaware.
+                Efficiency Smart rebates of <strong>$100</strong> for standard heat pumps and <strong>$350–$750</strong>
+                for cold-climate models, stackable with Energize Delaware.
               </p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
@@ -168,10 +168,10 @@ export default function DelawarePage() {
             <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
               <p className="font-semibold text-amber-800 mb-1">⚠ HEAR program has not launched yet</p>
               <p className="text-sm text-amber-900">
-                Delaware&apos;s IRA-funded Home Electrification and Appliance Rebates (HEAR) program is still
-                awaiting DOE approval as of June 2026. The rebates (up to $8,000 per heat pump for income-eligible
-                households) are not yet available. Do not count on HEAR when budgeting a 2026 installation. Check
-                with DNREC at 302-735-3480 for the latest status.
+                Delaware&apos;s IRA-funded Home Electrification and Appliance Rebates (HEAR) program has not
+                launched and is still awaiting DOE approval. The rebates (up to $8,000 per heat pump for
+                income-eligible households) are not yet available. Do not count on HEAR when budgeting a 2026
+                installation. Check with DNREC Customer Support at 1-888-920-1871 for the latest status.
               </p>
             </div>
           </div>
@@ -218,9 +218,20 @@ export default function DelawarePage() {
             are funded through Regional Greenhouse Gas Initiative (RGGI) proceeds.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            A <strong>$50 home energy assessment</strong> ($25 for income-qualified households) by an approved
-            contractor is required before claiming any rebates. Rebate reservations must be submitted before work begins.
+            A <strong>$50 home energy assessment</strong> ($25 for income-qualified households; homes over 3,000
+            square feet may incur a $100 co-pay) by an approved contractor is required before claiming any rebates.
+            Rebate reservations must be submitted before work begins.
           </p>
+
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-6">
+            <p className="font-semibold text-blue-800 mb-1">Limited-time offer: incentive bonus raised to 25%</p>
+            <p className="text-sm text-blue-900">
+              Starting July 1, 2026, Energize Delaware increased the program&apos;s incentive bonus from
+              <strong> 20% to 25%</strong> on qualifying energy efficiency upgrades for a limited time. No end date
+              has been announced. Ask your participating contractor how the bonus applies to your project before
+              reserving your rebate.
+            </p>
+          </div>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Central Heat Pump Rebates</h3>
           <div className="overflow-x-auto mb-6">
@@ -342,8 +353,9 @@ export default function DelawarePage() {
           <p className="text-gray-700 leading-relaxed mb-4">
             The DNREC Green Energy Program provides grants for geothermal heat pumps at <strong>$800 per ton</strong> for
             the first two tons and <strong>$700 per ton</strong> thereafter, with a maximum of <strong>$5,000</strong>.
-            Systems must meet minimum EER &gt;18 and COP &gt;3.6 (closed loop). Delaware Electric Cooperative has
-            temporarily paused geothermal applications while evaluating the program.
+            Systems must meet minimum EER &gt;18 and COP &gt;3.6 (closed loop). Delaware Electric Cooperative
+            paused geothermal applications while evaluating the program — confirm current status with DEC before
+            planning a geothermal project.
           </p>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
@@ -372,10 +384,10 @@ export default function DelawarePage() {
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-amber-800 mb-1">⚠ Both programs are still awaiting DOE approval</p>
             <p className="text-sm text-amber-900">
-              As of June 2026, neither HEAR nor HOMES has launched in Delaware. The NEEP regional tracker listed both
-              programs as &quot;Awaiting Final Approval by DOE&quot; as of July 2025. Delaware was not among the 23
-              states with active programs as of February 2026. Contact DNREC at 302-735-3480 or email
-              DNREC.EnergyPrograms@delaware.gov for current status.
+              Neither HEAR nor HOMES has launched in Delaware. DNREC&apos;s own rebate page still describes both
+              programs as &quot;expected to launch once funding is received&quot; and has not announced an
+              application date. Contact DNREC Customer Support at 1-888-920-1871 or email
+              DNREC.EnergyPrograms@appliedenergygroup.com for current status.
             </p>
           </div>
 
@@ -423,7 +435,8 @@ export default function DelawarePage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">HOMES (When Launched)</h3>
           <p className="text-gray-700 leading-relaxed">
-            The HOMES program provides whole-house rebates of <strong>$2,000–$8,250</strong> based on modeled energy
+            The HOMES program provides whole-house rebates of <strong>$2,000–$8,000</strong> per home or unit based
+            on modeled energy
             savings, with enhanced amounts for low-and-moderate income households. Delaware plans to require at least
             one measure be air sealing or insulation. HOMES is income-tiered but available to all income levels, unlike
             HEAR.
@@ -472,12 +485,12 @@ export default function DelawarePage() {
               </thead>
               <tbody>
                 <tr className="border-b">
-                  <td className="p-3">Air-source heat pump</td>
-                  <td className="p-3 font-semibold">$300–$750</td>
+                  <td className="p-3">Air-source heat pump (ENERGY STAR)</td>
+                  <td className="p-3 font-semibold">$100</td>
                 </tr>
-                <tr className="border-b">
-                  <td className="p-3">Cold-climate air-source heat pump</td>
-                  <td className="p-3 font-semibold">$300–$750</td>
+                <tr className="border-b bg-green-50">
+                  <td className="p-3">Cold-climate air-source heat pump (NEEP-listed)</td>
+                  <td className="p-3 font-semibold">$350 (under 2 tons) / $750 (2+ tons)</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Heat pump water heater</td>
@@ -491,9 +504,9 @@ export default function DelawarePage() {
             </table>
           </div>
           <p className="text-sm text-gray-500 mb-6">
-            Efficiency Smart does not publicly display exact dollar amounts. Figures above are from third-party sources
-            and may vary. All equipment must be ENERGY STAR certified. Applications must be submitted within three
-            months of purchase.
+            Figures are from Efficiency Smart&apos;s published rebate list. Rebates are good while funds are
+            available and may change without notice; the limit is two heat pump rebates per year. Applications must
+            be postmarked or emailed within three months of purchase and no later than January 7 of the following year.
           </p>
           <p className="text-gray-700 leading-relaxed">
             DEMEC-area customers are <strong>also eligible for Energize Delaware</strong> HPwES rebates, making this
@@ -529,8 +542,8 @@ export default function DelawarePage() {
                 <li>Energize Delaware Tier 2 HP: $1,600</li>
                 <li>Energize Delaware HPWH: $1,100</li>
                 <li>Bundling bonus: $300</li>
-                <li>Efficiency Smart ASHP: ~$750</li>
-                <li>Efficiency Smart HPWH: ~$300</li>
+                <li>Efficiency Smart cold-climate ASHP (2+ tons): $750</li>
+                <li>Efficiency Smart HPWH: $300</li>
               </ul>
               <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$4,050</p>
             </div>
@@ -571,8 +584,9 @@ export default function DelawarePage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Weatherization Assistance Program</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            The Delaware Weatherization Assistance Program (WAP), administered by DNREC through the Energy Coordinating
-            Agency, provides <strong>free</strong> energy improvements to income-eligible households — typically those at
+            The Delaware Weatherization Assistance Program (WAP), overseen by DNREC&apos;s Division of Climate,
+            Coastal and Energy and served statewide by the Energy Coordinating Agency (302-504-6111 for
+            applications), provides <strong>free</strong> energy improvements to income-eligible households — typically those at
             or below 200% of federal poverty guidelines. Through a DOE Sustainable Energy Resources for Consumers (SERC)
             grant, the program can install heat pump systems in eligible homes at no cost.
           </p>
@@ -732,7 +746,9 @@ export default function DelawarePage() {
               <p className="text-sm text-gray-600 mt-1">
                 Delaware&apos;s HEAR program, with up to $8,000 per heat pump for income-eligible households, has been
                 awaiting DOE approval since August 2024. When it launches, it will be the single largest heat pump
-                incentive available in the state. Monitor DNREC&apos;s IRA page for updates.
+                incentive available in the state — and because DOE&apos;s May 2026 rules (Program Notice 26-2)
+                removed fuel switching from HEAR nationwide, any Delaware launch would cover
+                electric-to-electric upgrades. Monitor DNREC&apos;s IRA page for updates.
               </p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
@@ -742,6 +758,14 @@ export default function DelawarePage() {
                 political uncertainty around IRA implementation continues. Delaware&apos;s $66 million allocation
                 remains available but must be obligated within the DOE-approved timeframe. Once funds are exhausted,
                 they will not be replenished.
+              </p>
+            </div>
+            <div className="bg-white border border-gray-200 rounded-lg p-5">
+              <p className="font-semibold text-gray-900">25% bonus end date</p>
+              <p className="text-sm text-gray-600 mt-1">
+                The limited-time increase of the HPwES incentive bonus from 20% to 25% began July 1, 2026 with no
+                announced end date. Limited-time offers can close without notice — if the bonus matters to your
+                project budget, confirm it is still active when you reserve your rebate.
               </p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
