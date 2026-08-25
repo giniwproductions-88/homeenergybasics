@@ -32,7 +32,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in Delaware in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Energize Delaware\u2019s Home Performance with ENERGY STAR program offers $800\u2013$2,200 for central air-source heat pumps depending on efficiency tier and income level, plus $1,100\u2013$1,350 for heat pump water heaters. DEMEC municipal utility customers can also access Efficiency Smart rebates of roughly $300\u2013$750 for heat pumps. Federal Section 25C and 25D tax credits expired December 31, 2025 and are no longer available.",
+        text: "Energize Delaware\u2019s Home Performance with ENERGY STAR program offers $800\u2013$2,200 for central air-source heat pumps depending on efficiency tier and income level, plus $1,100\u2013$1,350 for heat pump water heaters. DEMEC municipal utility customers can also access Efficiency Smart rebates of $100\u2013$750 for heat pumps depending on model type. Federal Section 25C and 25D tax credits expired December 31, 2025 and are no longer available.",
       },
     },
     {
@@ -146,8 +146,8 @@ export default function DelawarePage() {
               <p className="font-semibold text-green-800 mb-1">✓ DEMEC utility rebates available</p>
               <p className="text-sm text-green-900">
                 Customers of DEMEC municipal utilities (Newark, Middletown, Dover, Lewes, and others) can access
-                Efficiency Smart rebates of <strong>$100</strong> for standard heat pumps and <strong>$350–$750</strong>
-                for cold-climate models, stackable with Energize Delaware.
+                Efficiency Smart rebates of <strong>$100</strong> for standard heat pumps and{" "}
+                <strong>$350–$750</strong> for cold-climate models, stackable with Energize Delaware.
               </p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
