@@ -37,3 +37,7 @@ scripts/source-diff-report.md
 scripts/server.pid
 scraper-run-*.txt
 check-out.txt
+
+scraper-parse-*.txt
+accept-*.txt
+prune-*.txt
