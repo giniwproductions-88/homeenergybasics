@@ -174,8 +174,9 @@ verification date or a condition, never to a promised future date
 - Reason: the IRS FAQ is attached to 19 states, so `accept ME` used to
   fold a fresh federal snapshot into the baseline as a side effect. That
   doesn't produce a wrong number — it removes a tripwire, invisibly.
-- `SHARED_STATE_MAX` is hoisted so `pick()` and the accept handler cannot
-  drift. Keep it that way.
+- - Every site that classifies a URL as shared reads `SHARED_STATE_MAX` —
+  `pick()`, the accept handler, and parse's listing including its printed
+  label. A literal is a latent bug. Keep it that way.
 - `accept all` still adopts everything. Use deliberately.
 - `selftest` must pass before any scraper change is proposed as done.
 - Never open `scripts/source-baseline.json` for writing outside an
