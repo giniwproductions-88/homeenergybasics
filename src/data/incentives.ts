@@ -1284,7 +1284,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
       },
       {
         label: "IRS \u2014 25C/25D Termination FAQ",
-        url: "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions",
+        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
       },
     ],
   },
@@ -1328,7 +1328,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
       },
       {
         label: "IRS \u2014 25C/25D Termination FAQ",
-        url: "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions",
+        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
       },
     ],
   },
@@ -1444,7 +1444,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
       },
       {
         label: "IRS \u2014 25C/25D Termination FAQ",
-        url: "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions",
+        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
       },
     ],
   },
@@ -1483,8 +1483,8 @@ export const incentives: Record<StateCode, StateIncentive> = {
         url: "https://www.montana-dakota.com/energy-efficiency/savings-for-your-home/",
       },
       {
-        label: "IRS \u2014 25C/25D Termination (OBBB Provisions)",
-        url: "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions",
+        label: "IRS \u2014 25C/25D Termination FAQ",
+        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
       },
     ],
   },
@@ -1528,7 +1528,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
       },
       {
         label: "IRS \u2014 25C/25D Termination FAQ",
-        url: "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions",
+        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
       },
     ],
   },
@@ -1576,7 +1576,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
       },
       {
         label: "IRS \u2014 25C/25D Termination FAQ",
-        url: "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions",
+        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
       },
     ],
   },
@@ -2115,7 +2115,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
       },
       {
         label: "IRS \u2014 25C/25D Termination FAQ",
-        url: "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions",
+        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
       },
     ],
   },
@@ -2329,7 +2329,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
       },
       {
         label: "IRS \u2014 25C/25D Termination FAQ",
-        url: "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions",
+        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
       },
     ],
   },
