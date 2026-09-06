@@ -14,6 +14,7 @@
  *   node scripts/check-sources.mjs check --only NY,MA    # limit to specific states
  *   node scripts/check-sources.mjs accept NY MA          # after verifying a flagged state, fold its fresh snapshot into baseline
  *   node scripts/check-sources.mjs accept all
+ *   node scripts/check-sources.mjs accept SHARED         # adopt shared/federal URLs (IRS etc.) — a state accept never sweeps these in
  *   node scripts/check-sources.mjs prune                 # drop baseline entries for URLs removed from the data files
  *   node scripts/check-sources.mjs unbaselined           # list watched URLs with no baseline entry (no network)
  *   node scripts/check-sources.mjs selftest              # offline test of the diff engine
@@ -21,6 +22,11 @@
  * WORKFLOW (playbook Phase 4): baseline once -> check every ~2 days -> HIGH items get
  * manual verification at full checklist depth -> page updated -> `accept <STATE>` -> commit baseline.
  * Never `accept` a state you haven't actually verified: the baseline is the honesty ledger.
+ * Shared/federal URLs (cited by more than SHARED_STATE_MAX states — the IRS pages, the TVA
+ * and Duke program hubs) are deliberately NOT swept in by `accept <STATE>`: one state's
+ * verification is no evidence about a page many states cite, which is why the report also
+ * keeps them out of its triage list. Verify such a page on its own, then `accept SHARED`
+ * (or `accept all`) to adopt it. A state accept reports how many it skipped.
  *
  * Files:
  *   scripts/source-baseline.json   committed. The asset.
@@ -169,6 +175,12 @@ const tierOf = (codes) => {
   if (codes.every((c) => TIER3.includes(c))) return 3;
   return 2;
 };
+
+// "Shared/federal" cutoff: a URL cited by more than this many states (the IRS
+// pages, the TVA and Duke program hubs). writeReport already uses it to keep
+// such URLs out of the verify-triage list; accept uses it for the same reason,
+// so the two definitions of "shared" cannot drift apart.
+const SHARED_STATE_MAX = 3;
 
 // Program-status phrases. Count changes = HIGH signal. Counted as literal
 // lowercase substrings — consistency between runs matters, not linguistics.
@@ -471,7 +483,7 @@ function writeReport(baseline, latest, ignoreSet, humanVerify = []) {
   }
 
   function pick(e) {
-    const shared = e.states.length > 3;
+    const shared = e.states.length > SHARED_STATE_MAX;
     return { states: e.states, tier: shared ? 9 : tierOf(e.states), shared, label: e.label, url: e.url };
   }
 
@@ -666,15 +678,28 @@ async function main() {
     if (!baseline || !latest) { console.error("Need both baseline and a prior `check` run (source-latest.json)."); process.exit(2); }
     const targets = rest.filter((r) => r !== "--only").map((s) => s.toUpperCase());
     if (!targets.length) { console.error("accept requires state codes or 'all'"); process.exit(2); }
-    let n = 0;
+    let n = 0, skippedShared = 0;
     for (const [u, e] of Object.entries(latest.entries)) {
-      if (targets.includes("ALL") || e.states.some((s) => targets.includes(s))) {
+      // A shared/federal URL is cited by many states, so verifying one state
+      // is no evidence about it — the report already keeps these out of the
+      // triage list for that reason. Adopt only when named: `accept SHARED`,
+      // or `accept all`.
+      const shared = e.states.length > SHARED_STATE_MAX;
+      const named = shared
+        ? targets.includes("SHARED")
+        : e.states.some((s) => targets.includes(s));
+      if (targets.includes("ALL") || named) {
         baseline.entries[u] = e; n++;
+      } else if (shared) {
+        skippedShared++;
       }
     }
     baseline.generatedAt = new Date().toISOString();
     writeFileSync(BASELINE_F, JSON.stringify(baseline, null, 1));
     console.log(`Accepted ${n} URL snapshots into baseline for: ${targets.join(", ")}`);
+    if (skippedShared) {
+      console.log(`Skipped ${skippedShared} shared/federal URL(s) (cited by >${SHARED_STATE_MAX} states) — adopt with: accept SHARED`);
+    }
     console.log(`Commit it: git add scripts/source-baseline.json`);
     return;
   }
