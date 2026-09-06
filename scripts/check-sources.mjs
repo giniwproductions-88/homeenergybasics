@@ -189,13 +189,14 @@ const tierOf = (codes) => {
 };
 
 // "Shared/federal" cutoff: a URL cited by more than this many states (the IRS
-// pages, the TVA and Duke program hubs). Every site that classifies a URL as
-// shared reads this constant, so they cannot drift apart: pick() in
-// writeReport (keeps such URLs out of the verify-triage list), the accept
-// handler (adopts them only when named — `accept SHARED` or `accept all`),
-// and parse's shared-URL listing, its printed label included. A literal here
-// is a latent bug — the value would move and one site would not.
+// pages, the TVA and Duke program hubs). Classify through isShared() so the
+// rule lives in one place: pick() in writeReport (keeps such URLs out of the
+// verify-triage list), the accept handler (adopts them only when named —
+// `accept SHARED` or `accept all`), baseline's targeted hold-back, and
+// parse's shared-URL listing, whose printed label uses the constant directly.
+// A literal, or an open-coded comparison, is how these drift apart.
 const SHARED_STATE_MAX = 3;
+const isShared = (states) => states.length > SHARED_STATE_MAX;
 
 // Program-status phrases. Count changes = HIGH signal. Counted as literal
 // lowercase substrings — consistency between runs matters, not linguistics.
@@ -498,7 +499,7 @@ function writeReport(baseline, latest, ignoreSet, humanVerify = []) {
   }
 
   function pick(e) {
-    const shared = e.states.length > SHARED_STATE_MAX;
+    const shared = isShared(e.states);
     return { states: e.states, tier: shared ? 9 : tierOf(e.states), shared, label: e.label, url: e.url };
   }
 
@@ -596,7 +597,7 @@ async function main() {
     const perState = {};
     for (const meta of allUrls.values()) for (const s of meta.states) perState[s] = (perState[s] || 0) + 1;
     console.log(states.map((s) => `${s}:${perState[s] || 0}`).join(" "));
-    const shared = [...allUrls.entries()].filter(([, m]) => m.states.length > SHARED_STATE_MAX);
+    const shared = [...allUrls.entries()].filter(([, m]) => isShared(m.states));
     console.log(`shared URLs (>${SHARED_STATE_MAX} states): ${shared.length}`);
     for (const [u, m] of shared) console.log(`  [${m.states.length} states] ${u}`);
     console.log(`utilities (from utilities.ts): ${utilities.length ? utilities.join(", ") : "(none)"} | utility URLs: ${utilUrls.size}`);
@@ -610,6 +611,16 @@ async function main() {
   }
 
   if (mode === "baseline") {
+    // A targeted baseline holds back shared/federal URLs for the same reason
+    // `accept <STATE>` skips them: re-snapshotting a page many states cite, on
+    // the strength of one state's work, removes a tripwire without producing a
+    // wrong number. Partitioned out BEFORE the fetch (same shape as the
+    // humanVerify partition above), so both write paths below — merge into a
+    // prior baseline, and first-write when none exists — are covered, and the
+    // URLs are never even requested. A full `baseline` with no --only stays a
+    // deliberate all-in snapshot and keeps them.
+    const sharedHeld = only ? [...urls].filter(([, m]) => isShared(m.states)).map(([u]) => u) : [];
+    for (const u of sharedHeld) urls.delete(u);
     console.log(`Snapshotting ${urls.size} URLs (concurrency ${CONCURRENCY})...`);
     const snap = await snapshotAll(urls);
     const prior = loadJson(BASELINE_F, null);
@@ -624,6 +635,7 @@ async function main() {
     const errs = Object.values(snap.entries).filter((e) => e.error);
     console.log(`Baseline written: ${BASELINE_F}`);
     if (humanVerify.length) console.log(`Excluded ${humanVerify.length} HUMAN VERIFY URL(s) (JS-walled) — these are never baselined; browser-check them on schedule.`);
+    if (sharedHeld.length) console.log(`Skipped ${sharedHeld.length} shared/federal URL(s) (cited by >${SHARED_STATE_MAX} states) — a targeted baseline never re-snapshots these; adopt via: check -> accept SHARED`);
     console.log(`OK: ${Object.keys(snap.entries).length - errs.length} | errors: ${errs.length}`);
     for (const e of errs) console.log(`  ERROR [${e.states.join(",")}] ${e.url} -> ${e.error}`);
     console.log(`\nCommit the baseline: git add scripts/source-baseline.json`);
@@ -692,14 +704,14 @@ async function main() {
     const latest = loadJson(LATEST_F, null);
     if (!baseline || !latest) { console.error("Need both baseline and a prior `check` run (source-latest.json)."); process.exit(2); }
     const targets = rest.filter((r) => r !== "--only").map((s) => s.toUpperCase());
-    if (!targets.length) { console.error("accept requires state codes or 'all'"); process.exit(2); }
+    if (!targets.length) { console.error("accept requires target codes: states (NY MA), utility codes (EFFICIENCY-MAINE), SHARED, or all"); process.exit(2); }
     let n = 0, skippedShared = 0;
     for (const [u, e] of Object.entries(latest.entries)) {
       // A shared/federal URL is cited by many states, so verifying one state
       // is no evidence about it — the report already keeps these out of the
       // triage list for that reason. Adopt only when named: `accept SHARED`,
       // or `accept all`.
-      const shared = e.states.length > SHARED_STATE_MAX;
+      const shared = isShared(e.states);
       const named = shared
         ? targets.includes("SHARED")
         : e.states.some((s) => targets.includes(s));
@@ -780,6 +792,12 @@ function selftest() {
     if (!ok) fail++;
     console.log(`${ok ? "PASS" : "FAIL"}  registrableHost: ${a} vs ${b} -> same=${got} (want ${same})`);
   }
+  // shared/federal classification — boundary is > SHARED_STATE_MAX, not >=
+  const shBelow = isShared(new Array(SHARED_STATE_MAX).fill("XX"));
+  const shAbove = isShared(new Array(SHARED_STATE_MAX + 1).fill("XX"));
+  const shOk = !shBelow && shAbove;
+  if (!shOk) fail++;
+  console.log(`${shOk ? "PASS" : "FAIL"}  isShared: ${SHARED_STATE_MAX} states=${shBelow} ${SHARED_STATE_MAX + 1} states=${shAbove} (want false/true)`);
   console.log(fail ? `\n${fail} FAILURES` : "\nAll selftests passed.");
   process.exit(fail ? 1 : 0);
 }
