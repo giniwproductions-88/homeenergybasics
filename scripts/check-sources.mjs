@@ -10,6 +10,7 @@
  * USAGE (from repo root):
  *   node scripts/check-sources.mjs parse                 # sanity: list states + URL counts, no network
  *   node scripts/check-sources.mjs baseline              # snapshot all sources -> scripts/source-baseline.json (COMMIT THIS)
+ *   node scripts/check-sources.mjs baseline --only NY,MA # re-snapshot just these, merged into the existing baseline
  *   node scripts/check-sources.mjs check                 # fetch fresh, diff vs baseline -> scripts/source-diff-report.md
  *   node scripts/check-sources.mjs check --only NY,MA    # limit to specific states
  *   node scripts/check-sources.mjs accept NY MA          # after verifying a flagged state, fold its fresh snapshot into baseline
@@ -18,6 +19,17 @@
  *   node scripts/check-sources.mjs prune                 # drop baseline entries for URLs removed from the data files
  *   node scripts/check-sources.mjs unbaselined           # list watched URLs with no baseline entry (no network)
  *   node scripts/check-sources.mjs selftest              # offline test of the diff engine
+ *
+ * Targets: anywhere a state code is accepted (`--only`, `accept`), a utility
+ * code works too — utilities.ts entries bucket by uppercased slug, so
+ * "efficiency-maine" becomes `accept EFFICIENCY-MAINE`. `parse` prints the
+ * current list of utility codes.
+ *
+ * CAUTION — `baseline --only X` is not a cheaper `accept X`. It fetches fresh
+ * and adopts blind: no diff is produced for you to read, and it applies no
+ * shared/federal guard, so any IRS/TVA/Duke URL that X cites is re-baselined
+ * along with X — the tripwire `accept X` deliberately preserves. Prefer
+ * `check --only X` -> read the report -> `accept X`.
  *
  * WORKFLOW (playbook Phase 4): baseline once -> check every ~2 days -> HIGH items get
  * manual verification at full checklist depth -> page updated -> `accept <STATE>` -> commit baseline.
