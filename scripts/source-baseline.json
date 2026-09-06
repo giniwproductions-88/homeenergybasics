@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-24T04:45:09.821Z",
+ "generatedAt": "2026-09-06T18:02:22.215Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -2933,8 +2933,8 @@
     "GA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-08-24T02:34:31.296Z",
-   "length": 99551,
+   "fetchedAt": "2026-09-06T17:51:36.525Z",
+   "length": 99549,
    "kind": "html",
    "textHash": "2b5f3bda51da93aa",
    "dollars": [
@@ -2950,8 +2950,8 @@
     "GA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-08-24T02:34:31.749Z",
-   "length": 93289,
+   "fetchedAt": "2026-09-06T17:51:36.481Z",
+   "length": 93287,
    "kind": "html",
    "textHash": "aca41223b2d21968",
    "dollars": [
@@ -2973,8 +2973,8 @@
     "GA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-08-24T02:34:31.679Z",
-   "length": 122140,
+   "fetchedAt": "2026-09-06T17:51:36.505Z",
+   "length": 122137,
    "kind": "html",
    "textHash": "283d4db7b819879e",
    "dollars": [
@@ -2992,10 +2992,10 @@
     "GA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-08-24T02:34:31.906Z",
-   "length": 282604,
+   "fetchedAt": "2026-09-06T17:51:36.818Z",
+   "length": 282912,
    "kind": "html",
-   "textHash": "a192e5ec2f1b7194",
+   "textHash": "496c1ef461ba1e8d",
    "dollars": [
     "$15",
     "$20",
@@ -3030,7 +3030,7 @@
     "GA"
    ],
    "httpStatus": 403,
-   "fetchedAt": "2026-08-24T02:34:33.541Z",
+   "fetchedAt": "2026-09-06T17:51:38.633Z",
    "length": 6056,
    "error": "HTTP 403"
   },
@@ -3042,17 +3042,19 @@
     "GA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-08-24T02:34:32.246Z",
-   "length": 147194,
+   "fetchedAt": "2026-09-06T17:51:37.205Z",
+   "length": 150605,
    "kind": "html",
-   "textHash": "c74332ec20d7037c",
+   "textHash": "3c1bc73a974ae1da",
    "dollars": [
     "$200",
     "$300",
     "$400",
     "$600"
    ],
-   "keywords": {}
+   "keywords": {
+    "closed": 2
+   }
   },
   "https://sawnee.coop/rebates-and-incentives": {
    "url": "https://sawnee.coop/rebates-and-incentives",
@@ -3062,8 +3064,8 @@
     "GA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-08-24T02:34:31.948Z",
-   "length": 163521,
+   "fetchedAt": "2026-09-06T17:51:37.459Z",
+   "length": 164712,
    "kind": "html",
    "textHash": "46693089aae15903",
    "dollars": [
@@ -3090,10 +3092,10 @@
     "GA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-08-24T02:34:32.280Z",
-   "length": 111589,
+   "fetchedAt": "2026-09-06T17:51:37.011Z",
+   "length": 112827,
    "kind": "html",
-   "textHash": "903b80b3b5be2494",
+   "textHash": "0725f7541bad478c",
    "dollars": [],
    "keywords": {}
   },
@@ -3732,37 +3734,6 @@
    "fetchedAt": "2026-07-14T17:02:54.097Z",
    "length": 5890,
    "error": "HTTP 403"
-  },
-  "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions": {
-   "url": "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions",
-   "finalUrl": "https://www.irs.gov/newsroom/working-families-tax-cuts",
-   "label": "IRS — 25C/25D Termination FAQ",
-   "states": [
-    "AZ",
-    "NV",
-    "NC",
-    "ND",
-    "FL",
-    "OH",
-    "MS",
-    "WV"
-   ],
-   "httpStatus": 200,
-   "fetchedAt": "2026-08-24T02:34:38.273Z",
-   "length": 169075,
-   "kind": "html",
-   "textHash": "919e09c47ee6124a",
-   "dollars": [
-    "$0.20",
-    "$1.00",
-    "$1,000",
-    "$1700",
-    "$2,500",
-    "$5,000"
-   ],
-   "keywords": {
-    "no longer": 2
-   }
   },
   "https://www.nvenergy.com/save-with-powershift": {
    "url": "https://www.nvenergy.com/save-with-powershift",
@@ -8678,7 +8649,7 @@
     "NC"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-08-24T02:34:31.187Z",
+   "fetchedAt": "2026-09-06T17:51:36.198Z",
    "length": 303875,
    "kind": "pdf",
    "bytesHash": "7a31f4ef9d72353c"
@@ -8691,15 +8662,14 @@
     "GA"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-08-24T02:34:31.295Z",
-   "length": 73597,
+   "fetchedAt": "2026-09-06T17:51:36.468Z",
+   "length": 72339,
    "kind": "html",
-   "textHash": "cb289100b08a8b4d",
+   "textHash": "7615576f04f23432",
    "dollars": [],
    "keywords": {
     "paused": 1,
-    "no longer": 2,
-    "expired": 1
+    "no longer": 1
    }
   },
   "https://energywv.org/programs-initiatives/home-energy-rebate-programs/": {
