@@ -177,9 +177,12 @@ const tierOf = (codes) => {
 };
 
 // "Shared/federal" cutoff: a URL cited by more than this many states (the IRS
-// pages, the TVA and Duke program hubs). writeReport already uses it to keep
-// such URLs out of the verify-triage list; accept uses it for the same reason,
-// so the two definitions of "shared" cannot drift apart.
+// pages, the TVA and Duke program hubs). Every site that classifies a URL as
+// shared reads this constant, so they cannot drift apart: pick() in
+// writeReport (keeps such URLs out of the verify-triage list), the accept
+// handler (adopts them only when named — `accept SHARED` or `accept all`),
+// and parse's shared-URL listing, its printed label included. A literal here
+// is a latent bug — the value would move and one site would not.
 const SHARED_STATE_MAX = 3;
 
 // Program-status phrases. Count changes = HIGH signal. Counted as literal
@@ -581,8 +584,8 @@ async function main() {
     const perState = {};
     for (const meta of allUrls.values()) for (const s of meta.states) perState[s] = (perState[s] || 0) + 1;
     console.log(states.map((s) => `${s}:${perState[s] || 0}`).join(" "));
-    const shared = [...allUrls.entries()].filter(([, m]) => m.states.length > 3);
-    console.log(`shared URLs (>3 states): ${shared.length}`);
+    const shared = [...allUrls.entries()].filter(([, m]) => m.states.length > SHARED_STATE_MAX);
+    console.log(`shared URLs (>${SHARED_STATE_MAX} states): ${shared.length}`);
     for (const [u, m] of shared) console.log(`  [${m.states.length} states] ${u}`);
     console.log(`utilities (from utilities.ts): ${utilities.length ? utilities.join(", ") : "(none)"} | utility URLs: ${utilUrls.size}`);
     for (const [u, m] of utilUrls) {
