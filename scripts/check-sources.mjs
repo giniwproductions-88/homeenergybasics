@@ -180,6 +180,27 @@ function hollowReason(e) {
   return null;
 }
 
+// Version-encoded document urls. If a reissue lands at a NEW url, the watched
+// one keeps returning 200 with an unchanged hash and reports UNCHANGED forever —
+// healthy-looking, watching a fossil. Nothing else in the report can see this:
+// a never-changed document and a superseded one are byte-identical in the diff,
+// and hollowReason() deliberately treats a PDF with a bytesHash as a real watch.
+//
+// Keyed on url shape alone. No fetching, no new data, and the failure mode is a
+// name that merely contains a year — which is why the year patterns require a
+// path or extension position rather than matching a bare four-digit run.
+const VERSION_MARKERS = [
+  [/\/(19|20)\d{2}\/\d{2}\//, "year/month upload path"],
+  [/_\d{6,8}\.pdf(\?|$)/i, "date-stamped filename"],
+  [/-(19|20)\d{2}\.pdf(\?|$)/i, "year-stamped filename"],
+  [/\/media\/\d+\//, "opaque media id"],
+];
+function versionEncodedUrl(url) {
+  if (!url) return null;
+  const hit = VERSION_MARKERS.find(([re]) => re.test(url));
+  return hit ? hit[1] : null;
+}
+
 // Why an acceptance may no longer hold. Three distinct states, and collapsing
 // them is actively dangerous: hasNoSignal() returns false for error entries as
 // well as for healthy ones, so a single `!hasNoSignal(e)` test reports a URL
@@ -663,12 +684,48 @@ function writeReport(baseline, latest, ignoreSet, humanVerify = [], accepted = {
     // it cannot be skimmed as one.
     staleAccept.push(`${c.kind === "masking" ? "**[MASKING]** " : ""}${url} — ${c.message}`);
   }
+  // Version-encoded urls, walked independently like the NO SIGNAL walk above.
+  // Scoped to entries that currently report as healthy: a muted one is already in
+  // MUTED AND HOLLOW and an erroring one already reports FETCH, so listing them
+  // here would double-count the visible cases and bury the invisible ones.
+  const versioned = [];
+  for (const url of Object.keys(curMap)) {
+    if (ignoreSet.has(url)) continue;
+    const e = curMap[url];
+    if (!e || e.error) continue;
+    const marker = versionEncodedUrl(url);
+    if (!marker) continue;
+    // Triage inputs. Same-state corroboration answers "is this state blind?";
+    // same-domain answers "could a landing page here survive the version bump?".
+    // Shared/federal sources are excluded from the state count — the IRS FAQ is
+    // not corroboration for a state program's figures.
+    const states = e.states || [];
+    const corroborators = {};
+    for (const st of states) {
+      corroborators[st] = Object.keys(curMap).filter((u) => {
+        const x = curMap[u];
+        if (u === url || !x || x.error || ignoreSet.has(u)) return false;
+        if (!(x.states || []).includes(st)) return false;
+        if (isShared(x.states || [])) return false;
+        if (versionEncodedUrl(u)) return false;
+        return (x.dollars || []).length > 0;
+      }).length;
+    }
+    const sameDomain = Object.keys(curMap).filter((u) =>
+      u !== url && !ignoreSet.has(u) && curMap[u] && !curMap[u].error &&
+      registrableHost(u) === registrableHost(url)).length;
+    versioned.push({ url, states, label: e.label, kind: e.kind, marker, corroborators, sameDomain });
+  }
+  versioned.sort((a, b) =>
+    (a.kind === "pdf" ? 0 : 1) - (b.kind === "pdf" ? 0 : 1) ||
+    a.states.join(",").localeCompare(b.states.join(",")));
+
   noSignal.sort((a, b) =>
     (a.empty === b.empty ? 0 : a.empty ? -1 : 1) ||
     a.states.join(",").localeCompare(b.states.join(",")) ||
     (a.length || 0) - (b.length || 0));
 
-  md += `URLs checked: ${Object.keys(curMap).length} | unchanged: ${unchanged} | flagged: ${rows.length} | muted (ignore list): ${ignored} (${mutedHollow.length} of them hollow) | no-signal: ${noSignal.length} (${acceptedCount} accepted)\n\n`;
+  md += `URLs checked: ${Object.keys(curMap).length} | unchanged: ${unchanged} | flagged: ${rows.length} | muted (ignore list): ${ignored} (${mutedHollow.length} of them hollow) | no-signal: ${noSignal.length} (${acceptedCount} accepted) | version-encoded urls: ${versioned.length}\n\n`;
   md += `## Triage: states to promote to manual verification\n\n${statesToVerify.length ? statesToVerify.join(", ") : "(none)"}\n\n`;
   for (const lvl of ["HIGH", "FETCH", "NEW", "REMOVED", "LOW"]) {
     const grp = rows.filter((r) => r.level === lvl);
@@ -714,6 +771,28 @@ function writeReport(baseline, latest, ignoreSet, humanVerify = [], accepted = {
     }
     md += "\n";
   }
+  if (versioned.length) {
+    const docs = versioned.filter((v) => v.kind === "pdf");
+    md += `## VERSION-ENCODED URLS (${versioned.length}) — a reissue would land elsewhere\n\n`;
+    md += `The url itself encodes a version — an upload date, a year, or an opaque media id.`;
+    md += ` If the publisher issues a revision at a NEW url, this watch keeps returning 200 with`;
+    md += ` an unchanged hash and reports **healthy forever**, while the document it points at`;
+    md += ` quietly becomes a fossil. No other section can see this: in the diff a never-changed`;
+    md += ` document and a superseded one are identical, and both count as \`unchanged\`.\n\n`;
+    md += `${docs.length} document(s), ${versioned.length - docs.length} dated permalink(s). A dated news`;
+    md += ` permalink is normally immutable by design and is the expected false positive here; a`;
+    md += ` rebate schedule at a dated path is the real risk. Muted and erroring urls are omitted —`;
+    md += ` they already report in MUTED AND HOLLOW and FETCH. Standing condition, not an event:`;
+    md += ` it does not affect the exit code.\n\n`;
+    for (const v of versioned) {
+      const corr = v.states.map((s) => `${s}:${v.corroborators[s]}`).join(" ");
+      md += `- **[${v.states.join(",") || "?"}]** ${v.label || "(no label)"}\n  ${v.url}\n`;
+      md += `  - marker: ${v.marker} (${v.kind === "pdf" ? "document" : "dated permalink"})\n`;
+      md += `  - other figure-bearing sources on a stable path, per state: ${corr || "(none)"}\n`;
+      md += `  - other live sources on the same domain: ${v.sameDomain}\n`;
+    }
+    md += "\n";
+  }
   if (noSignal.length || acceptedCount || staleAccept.length || malformedAccept.length) {
     md += `## NO SIGNAL (${noSignal.length}) — fetched fine, but cannot flag\n\n`;
     md += `These returned content, but their fingerprint has no dollar figures and no status keywords. The only thing left to compare is \`textHash\`, which on such a page tracks boilerplate — so UNCHANGED here means the shell is unchanged and says nothing about the figures. They can never reach HIGH. **[EMPTY]** marks entries where text extraction returned nothing at all; those did not land on the target page.\n\n`;
@@ -737,7 +816,7 @@ function writeReport(baseline, latest, ignoreSet, humanVerify = [], accepted = {
   }
   md += `---\nWorkflow: verify HIGH states at full checklist depth -> update pages -> \`node scripts/check-sources.mjs accept <STATE>\` -> commit source-baseline.json.\nDate-stamp rule: a flag here is NOT verification. Bump lastVerified only after real source verification.\nNO SIGNAL is a standing condition, not an event: it does not affect the exit code.\n`;
   writeFileSync(REPORT_F, md);
-  return { rows, statesToVerify, unchanged, noSignal, acceptedCount, reasonTally, staleAccept, malformedAccept, mutedHollow };
+  return { rows, statesToVerify, unchanged, noSignal, acceptedCount, reasonTally, staleAccept, malformedAccept, mutedHollow, versioned };
 }
 
 /* ------------------------------------------------------------------ */
@@ -860,7 +939,7 @@ async function main() {
     writeFileSync(LATEST_F, JSON.stringify(latest, null, 1));
     const ignoreSet = new Set(loadJson(IGNORE_F, []));
     const accepted = loadJson(NOSIGNAL_F, {});
-    const { rows, statesToVerify, unchanged, noSignal, acceptedCount, reasonTally, staleAccept, malformedAccept, mutedHollow } =
+    const { rows, statesToVerify, unchanged, noSignal, acceptedCount, reasonTally, staleAccept, malformedAccept, mutedHollow, versioned } =
       writeReport(baseline, latest, ignoreSet, humanVerify, accepted);
     console.log(`\nReport: ${REPORT_F}`);
     if (humanVerify.length) {
@@ -877,6 +956,9 @@ async function main() {
     const hollowErr = mutedHollow.filter((m) => m.reason.kind === "fetch-error").length;
     console.log(`MUTED AND HOLLOW (suppressed, watching nothing; not counted in exit code): ${mutedHollow.length}`);
     if (mutedHollow.length) console.log(`  (${hollowErr} fetch-error, ${mutedHollow.length - hollowErr} zero-signal)`);
+    const vDocs = versioned.filter((v) => v.kind === "pdf").length;
+    console.log(`VERSION-ENCODED URLS (reissue lands elsewhere; not counted in exit code): ${versioned.length}`);
+    if (versioned.length) console.log(`  (${vDocs} document, ${versioned.length - vDocs} dated permalink)`);
     if (staleAccept.length) console.log(`  stale acceptances: ${staleAccept.length} — see report`);
     if (malformedAccept.length) console.log(`  MALFORMED acceptances (not suppressed): ${malformedAccept.length} — see report`);
     console.log(`States to verify: ${statesToVerify.join(", ") || "(none)"}`);
@@ -1214,6 +1296,32 @@ function selftest() {
     const ok = (got?.kind ?? null) === want;
     if (!ok) fail++;
     console.log(`${ok ? "PASS" : "FAIL"}  hollowReason ${name}: got ${got?.kind ?? "null"} (want ${want ?? "null"})`);
+  }
+
+  // versionEncodedUrl: the near-misses matter more than the hits. A year in a
+  // slug, a query string, or a bare /YYYY/ directory is NOT a version marker —
+  // over-flagging here would train the reader to skim the advisory.
+  const verCases = [
+    // real members of the class
+    ["wp year/month upload", "https://energizedelaware.org/wp-content/uploads/2025/09/Rebate-Pricing.pdf", "year/month upload path"],
+    ["date-stamped filename", "https://x.com/ppl/media/allresrebates_612026.pdf", "date-stamped filename"],
+    ["year-stamped filename", "https://x.com/downloads/2026/REIP_Incentive_Table-2026.pdf", "year-stamped filename"],
+    ["opaque media id", "https://www.energizect.com/media/12241/download?inline=", "opaque media id"],
+    // near misses — must NOT match
+    ["year inside a slug", "https://x.gov/2026-rebate-guide", null],
+    ["year in a query string", "https://x.gov/rebates?year=2026", null],
+    ["bare year directory", "https://x.gov/news/2026/announcement", null],
+    ["stable path with digits", "https://www.efficiencymaine.com/docs/HPWH_Rebate.pdf", null],
+    ["digits in a document code", "https://x.com/staticfiles/24-1-201%20Res%20Rebate.pdf", null],
+    ["year in a document title", "https://cleanheat.ny.gov/assets/pdf/Program%20Manual%202025_v2.pdf", null],
+    ["form number", "https://dor.sc.gov/forms-site/Forms/TC38.pdf", null],
+    ["empty url", "", null],
+  ];
+  for (const [name, url, want] of verCases) {
+    const got = versionEncodedUrl(url);
+    const ok = got === want;
+    if (!ok) fail++;
+    console.log(`${ok ? "PASS" : "FAIL"}  versionEncodedUrl ${name}: got ${got ?? "null"} (want ${want ?? "null"})`);
   }
 
   // fingerprint helpers
