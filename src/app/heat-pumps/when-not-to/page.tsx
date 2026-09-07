@@ -360,7 +360,7 @@ export default function WhenNotToPage() {
               Critically: <strong>HEAR rebates are not retroactive.</strong> If you
               install before the program launches, you cannot claim the rebate later.
               States where HEAR is approved but not yet available include{" "}
-              <Link href="/heat-pumps/states/nh" className="text-brand-600 hover:underline">New Hampshire</Link> (expected mid-summer 2026),{" "}
+              <Link href="/heat-pumps/states/nh" className="text-brand-600 hover:underline">New Hampshire</Link> (NH DOE expects Fall 2026),{" "}
               <Link href="/heat-pumps/states/ct" className="text-brand-600 hover:underline">Connecticut</Link>,{" "}
               <Link href="/heat-pumps/states/pa" className="text-brand-600 hover:underline">Pennsylvania</Link>,{" "}
               <Link href="/heat-pumps/states/nv" className="text-brand-600 hover:underline">Nevada</Link>, and{" "}
