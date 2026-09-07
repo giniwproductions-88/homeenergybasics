@@ -305,8 +305,9 @@ them.
     run."
 19. Line endings: `src/` is LF, `scripts/` is CRLF. An earlier "the repo is
     LF" note was true only of `src/`.
-20. Commit trailers: plain `Co-Authored-By: Claude <noreply@anthropic.com>`.
-    Never a model name or context window — unverifiable later, and it rots.
+20. Commit messages carry no trailers and no external entity names — no
+    `Co-Authored-By`, no model name, no tool attribution. Subject and body
+    describe the change only.
 21. An announcement channel is never muted; only a consumer portal may be.
     Watching the portal while muting the announcement channel produces a
     silent watch over a stale page with no flag.
