@@ -446,9 +446,11 @@ export default function StackingRebatesPage() {
               Total stacked: ~$1,900–$6,650 (depending on system size and tier)
             </p>
             <p className="text-sm text-gray-600 mt-1">
-              When HEAR launches (expected mid-summer 2026), income-qualifying households
-              will be able to add up to $8,000 on top. Projects started before HEAR
-              launches are not retroactively eligible.
+              When HEAR launches (NH DOE expects Fall 2026), income-qualifying
+              households replacing existing electric equipment will be able to add up
+              to $8,000 on top — DOE Program Notice 26-2 removed fuel-switching
+              upgrades from HEAR, so an oil or propane replacement does not reach it.
+              Projects started before HEAR launches are not retroactively eligible.
             </p>
           </div>
 
