@@ -48,7 +48,7 @@ const faqJsonLd = {
       name: "What is the Energize CT Energy Optimization rebate?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The Energy Optimization tier provides $1,000 per ton (up to $10,000 per home) for heat pumps that replace oil, propane, natural gas, or electric resistance as the primary heating source. The pre-existing system must be either fully decommissioned or integrated using a qualified control listed on the Energize CT Heat Pump QPL with switchover set below 30\u00b0F. If inspection finds requirements unmet, the rebate drops to $250/ton.",
+        text: "The Energy Optimization tier provides $1,000 per ton (up to $10,000 per home) for heat pumps that replace oil, propane, natural gas, or electric resistance as the primary heating source. The pre-existing system must be either fully decommissioned (full displacement) or integrated using a qualified control listed on the Energize CT Heat Pump QPL (partial displacement). Five inspection outcomes drop the claim to $250/ton: an integrated control not on the QPL; no integrated control installed; the installation replaced an older heat pump; it was installed in a previously unconditioned space; or it is used for cooling only.",
       },
     },
     {
@@ -56,7 +56,7 @@ const faqJsonLd = {
       name: "Do I need a specific contractor for Energize CT heat pump rebates?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. All installations must be performed by a contractor in the Energize CT Heat Pump Installer Network (HPIN). Using a non-HPIN contractor disqualifies the project entirely. Pre-registration is required before installation begins \u2014 since July 1, 2024. Installation must be completed within 60 days of registration approval.",
+        text: "Yes. All installations must be performed by a contractor in the Energize CT Heat Pump Installer Network (HPIN). Using a non-HPIN contractor disqualifies the project entirely. Pre-verification is optional for rebate eligibility \u2014 installing before you pre-verify does not cost you the rebate. It is required only to qualify for the Smart-E loan special offer. An approved pre-verification expires 60 days from the date of approval, or at the end of the calendar year, whichever comes first.",
       },
     },
     {
@@ -278,18 +278,28 @@ export default function ConnecticutPage() {
           </div>
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
-            <p className="font-semibold text-amber-800 mb-1">⚠ Common mistake: installing before registering</p>
+            <p className="font-semibold text-amber-800 mb-1">⚠ Pre-verification is optional &mdash; except for the Smart-E loan</p>
             <p className="text-sm text-amber-900">
-              Since July 1, 2024, all residential heat pump rebate applications require pre-registration and approval before installation. If you install before registering, you will not receive a rebate. There are no exceptions. Installation must be completed within 60 days of registration approval.
+              Energize CT states plainly that pre-verification is <strong>not</strong> required for rebate eligibility &mdash; it is an optional step. Installing before you pre-verify does not cost you the rebate. It <strong>is</strong> required to qualify for the Smart-E loan special offer, so if you plan to finance at 1.99% you need it first. An approved pre-verification expires <strong>60 days from the date of approval, or at the end of the calendar year, whichever comes first</strong>.
             </p>
           </div>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Energy Optimization qualification</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            To qualify for the $1,000/ton tier, you must either fully decommission the old heating system (fuel line disconnected and capped, thermostat disconnected, system disabled or removed) or integrate it using a qualified control listed on the Energize CT Heat Pump QPL that automatically switches below a set outdoor temperature (must be below 30&deg;F). If inspection finds these requirements are not met, the rebate is downgraded to $250/ton.
+            To qualify for the $1,000/ton tier you must either fully decommission the old heating system &mdash; fuel line disconnected and capped, thermostat disconnected, system disabled or removed, which Energize CT calls <strong>full displacement</strong> &mdash; or integrate it using a qualified control listed on the Energize CT Heat Pump QPL, which is <strong>partial displacement</strong>.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Five specific inspection outcomes drop an Energy Optimization claim from $1,000/ton to the $250/ton standard rate: an <strong>integrated control not on the QPL</strong>; <strong>no integrated control installed</strong>; the installation <strong>replaced an older heat pump</strong>; it was installed in a <strong>previously unconditioned space</strong>; or it is used for <strong>cooling only</strong>.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
             The enhanced <strong>$1,500/ton</strong> tiers require verification before installation: electric-resistance replacements through a virtual heat verification inspection, and income-based eligibility (above 60% of state median income and below 80% of AMI) through the Energize CT income verification portal.
+          </p>
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-4">
+            <p className="font-semibold text-amber-800 mb-1">⚠ The enhanced rate is prorated to the baseboard you actually replace</p>
+            <p className="text-sm text-amber-900">Energize CT determines how much enhanced incentive you qualify for from <strong>how many linear feet of baseboard exist</strong>. The enhanced rate is capped at the matching tonnage, and the rest of the system is paid at the standard rate. A 3-ton system replacing one ton of baseboard does <strong>not</strong> earn $1,500 &times; 3 &mdash; size your expectations to the resistance heat being displaced, not to the equipment.</p>
+          </div>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Both rebate forms also carry a <strong>$500 bonus</strong> for insulation upgrades completed through <strong>Home Energy Solutions</strong> within 24 months before the heat pump installation. It applies on either tier.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Heat pump water heaters</h3>
@@ -316,7 +326,7 @@ export default function ConnecticutPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">How incentives stack</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Connecticut&apos;s stacking picture is straightforward in 2026: Energize CT rebates plus Smart-E Loan financing. There is no state tax credit, no active federal credit, and no HEAR to add. When HEAR launches, it is expected to stack with Energize CT rebates since they come from different funding sources. Below are realistic scenarios for a 3-ton ducted heat pump installation costing <strong>$12,000&ndash;$16,000</strong>.
+            Connecticut&apos;s stacking picture is straightforward in 2026: Energize CT rebates plus Smart-E Loan financing. There is no state tax credit, no active federal credit, and no HEAR to add. The Terms on both rebate forms state the rebate <strong>cannot be combined with any other utility rebate or incentive</strong> &mdash; so the Energize CT rebate is one rebate, not a stack of them. Smart-E is financing rather than a rebate, and the $500 Home Energy Solutions insulation bonus belongs to the same program. When HEAR launches, it is expected to stack with Energize CT rebates since they come from different funding sources. Below are realistic scenarios for a 3-ton ducted heat pump installation costing <strong>$12,000&ndash;$16,000</strong>.
           </p>
 
           <div className="space-y-4 mb-8">
@@ -341,7 +351,7 @@ export default function ConnecticutPage() {
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900 mb-2">60% SMI&ndash;80% AMI or electric-resistance replacement &mdash; Enhanced tier</p>
               <ul className="text-sm text-gray-700 space-y-1">
-                <li>Energize CT Enhanced (3 tons &times; $1,500): $4,500</li>
+                <li>Energize CT Enhanced (3 tons &times; $1,500): $4,500 &mdash; only if the baseboard footage supports all 3 tons at the enhanced rate; any excess tonnage pays $250/ton</li>
                 <li>Federal tax credit: $0 (expired)</li>
                 <li>HEAR: $0 (not launched)</li>
               </ul>
@@ -442,7 +452,7 @@ export default function ConnecticutPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">How to apply</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            The Energize CT rebate process requires specific steps in a specific order. Missing the pre-registration step disqualifies the entire project.
+            The Energize CT rebate process has a required core and one optional step. Pre-verification is optional for the rebate itself but required for the Smart-E loan offer. Using an HPIN contractor is not optional &mdash; a non-HPIN installer disqualifies the project.
           </p>
           <div className="space-y-4">
             <div className="flex gap-4">
@@ -455,15 +465,15 @@ export default function ConnecticutPage() {
             <div className="flex gap-4">
               <div className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-bold">2</div>
               <div>
-                <p className="font-semibold text-gray-900">Register your rebate before installation</p>
-                <p className="text-sm text-gray-700">Complete registration online at energizect.com/rebates. You&apos;ll need your signed contract and HPIN installer details. Wait for approval before scheduling installation.</p>
+                <p className="font-semibold text-gray-900">Pre-verify only if you want the Smart-E loan</p>
+                <p className="text-sm text-gray-700">Pre-verification is optional for the rebate and required for the Smart-E 1.99% offer. Complete it online at energizect.com/rebates with your signed contract and HPIN installer details. An approved pre-verification expires 60 days from approval, or at the end of the calendar year, whichever comes first.</p>
               </div>
             </div>
             <div className="flex gap-4">
               <div className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-bold">3</div>
               <div>
-                <p className="font-semibold text-gray-900">Complete installation within 60 days</p>
-                <p className="text-sm text-gray-700">Your HPIN contractor installs the system. The 60-day clock starts from registration approval. If targeting Energy Optimization, ensure decommissioning or integrated control requirements are met.</p>
+                <p className="font-semibold text-gray-900">Install within the 2026 program window</p>
+                <p className="text-sm text-gray-700">Your HPIN contractor installs the system. Installations must be completed between January 1 and December 31, 2026. If you pre-verified, that approval expires 60 days from its date or at year end, whichever comes first. If targeting Energy Optimization, make sure the full or partial displacement requirement is met &mdash; five inspection outcomes drop the claim to $250/ton.</p>
               </div>
             </div>
             <div className="flex gap-4">
