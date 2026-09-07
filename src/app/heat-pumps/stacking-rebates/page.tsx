@@ -280,22 +280,22 @@ export default function StackingRebatesPage() {
             <Link href="/heat-pumps/states/co" className="text-brand-600 hover:underline">
               Colorado
             </Link>{" "}
-            — Below 150% AMI
+            — Denver metro, any income
           </h3>
           <div className="bg-white border border-gray-200 rounded-lg p-5 mb-6">
             <ul className="text-sm text-gray-700 space-y-1">
-              <li>HEAR rebate: <strong>$8,000</strong></li>
               <li>Xcel Energy utility rebate: <strong>$2,250/ton (~$4,500 for 2-ton)</strong></li>
+              <li>DRCOG Power Ahead rebate: <strong>$1,500</strong></li>
               <li>Colorado state tax credit: <strong>$1,000</strong></li>
             </ul>
             <p className="font-semibold text-green-700 mt-2">
-              Total stacked: ~$13,500
+              Total stacked: ~$7,000
             </p>
             <p className="text-sm text-gray-600 mt-1">
-              Out of pocket on a $15,000 project: ~$1,500
+              Out of pocket on a $15,000 project: ~$8,000
             </p>
             <p className="text-sm text-gray-600 mt-1">
-              Note: Front Range single-family HEAR funding is fully reserved as of April 2026. The $8,000 HEAR layer remains available in the rest of the state; Front Range homeowners currently stack Xcel and the state tax credit only.
+              Note: HEAR is no longer part of the Colorado stack. Income-qualified single-family HEAR closed statewide in August 2026 — Region 1 (the Front Range) was fully reserved in late April, and the Colorado Energy Office says Region 2 applications submitted after August 1 will not be reviewed. Xcel&apos;s $2,250/ton is its with-bonus rate for cold-climate systems replacing gas heat, and DRCOG&apos;s Power Ahead rebate covers the Denver metro and requires preapproval before work begins.
             </p>
           </div>
 
@@ -603,11 +603,10 @@ export default function StackingRebatesPage() {
                 ✓ Best candidates for deep stacking
               </p>
               <p className="text-sm text-green-900">
-                Households below 80% AMI in states with active HEAR programs (Colorado,
-                Wisconsin, Michigan, North Carolina, Georgia, Arizona, Washington, Indiana).
-                These households can stack HEAR (100% coverage up to $8,000) + utility
-                rebates + HOMES for insulation work. Many can get a full system for
-                $0–$2,000 out of pocket.
+                Households below 80% AMI in states with active HEAR programs (Wisconsin,
+                Michigan, North Carolina, Arizona, Washington, Indiana). These households
+                can stack HEAR (100% coverage up to $8,000) + utility rebates + HOMES for
+                insulation work. Many can get a full system for $0–$2,000 out of pocket.
               </p>
             </div>
 

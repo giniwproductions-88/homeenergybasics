@@ -262,13 +262,22 @@ export default function WhenNotToPage() {
             <p className="text-gray-700 leading-relaxed mb-4">
               With federal tax credits gone, the financial case for a heat pump depends
               on state and utility rebates. In states like{" "}
-              <Link href="/heat-pumps/states/oh" className="text-brand-600 hover:underline">Ohio</Link>,{" "}
-              <Link href="/heat-pumps/states/id" className="text-brand-600 hover:underline">Idaho</Link>,{" "}
-              <Link href="/heat-pumps/states/sd" className="text-brand-600 hover:underline">South Dakota</Link>, and{" "}
+              <Link href="/heat-pumps/states/oh" className="text-brand-600 hover:underline">Ohio</Link> and{" "}
               <Link href="/heat-pumps/states/fl" className="text-brand-600 hover:underline">Florida</Link>,
               total available rebates may be <strong>$0–$1,500</strong>. If you also
               earn above 150% AMI (making you ineligible for HEAR), you are paying
               essentially full price for the equipment.
+            </p>
+
+            <p className="text-gray-700 leading-relaxed mb-4">
+              <Link href="/heat-pumps/states/id" className="text-brand-600 hover:underline">Idaho</Link> and{" "}
+              <Link href="/heat-pumps/states/sd" className="text-brand-600 hover:underline">South Dakota</Link>{" "}
+              both declined IRA rebate funding, so what you can get there depends
+              entirely on your utility rather than your state. South Dakota runs from{" "}
+              <strong>$0</strong> at NorthWestern Energy to <strong>$4,160</strong> at
+              Otter Tail Power; Idaho pays <strong>$300–$800</strong> at Idaho Power and
+              Avista but up to <strong>$2,400</strong> at Idaho Falls Power. Check your
+              utility before assuming there is nothing available.
             </p>
             <p className="text-gray-700 leading-relaxed mb-4">
               On a $15,000 installation with $500 in utility rebates and no tax credit,

@@ -39,7 +39,7 @@ const strongStates: StateTier[] = [
   { code: "NY", name: "New York", headlineAmount: "$5,000–$24,000", primaryProgram: "Clean Heat + EmPower+", note: "Six utilities, DAC bonuses, geothermal credit. Best overall program." },
   { code: "MD", name: "Maryland", headlineAmount: "Up to $15,000", primaryProgram: "EmPOWER Maryland", note: "75% of electrification costs covered. Potomac Edison Switch-to-Electric adds $4,000." },
   { code: "RI", name: "Rhode Island", headlineAmount: "Up to $11,500", primaryProgram: "Clean Heat RI", note: "Covers up to 60% of heat pump costs. Strong per-capita program." },
-  { code: "CO", name: "Colorado", headlineAmount: "Up to $11,250", primaryProgram: "HEAR + Xcel + state credit", note: "HEAR active (Front Range single-family funding reserved as of April 2026; rest of state still open). $1,000 state tax credit stacks with $2,250/ton utility rebates." },
+  { code: "CO", name: "Colorado", headlineAmount: "Up to $9,250", primaryProgram: "Xcel + state credit + DRCOG", note: "HEAR single-family closed statewide August 2026 (Region 1 reserved in April; Region 2 applications after Aug 1 not reviewed). Still open with no income limit: Xcel $2,250/ton for cold-climate systems replacing gas heat, $1,000 state tax credit, DRCOG Power Ahead $1,500 in Denver metro." },
   { code: "WI", name: "Wisconsin", headlineAmount: "Up to $18,900", primaryProgram: "HEAR + HOMES + Focus on Energy", note: "First state to launch HOMES. HEAR and Focus on Energy stack." },
   { code: "MI", name: "Michigan", headlineAmount: "Up to $8,000", primaryProgram: "MiHER (HEAR)", note: "Point-of-sale rebates for ≤150% AMI. Ann Arbor A2ZERO adds $4,000–$5,500." },
   { code: "ME", name: "Maine", headlineAmount: "$1,000–$9,000", primaryProgram: "Efficiency Maine", note: "Well-funded through Triennial Plan VI ($529M). Income-tiered rebates." },
@@ -57,17 +57,17 @@ const strongStates: StateTier[] = [
 const moderateStates: StateTier[] = [
   { code: "NH", name: "New Hampshire", headlineAmount: "$250–$2,000/ton", primaryProgram: "NHSaves + NE Accelerator", note: "$2,000/ton enhanced electric-resistance tier since March 2026. HEAR approved; NH DOE expects launch Fall 2026. R-410A banned from qualified list." },
   { code: "OR", name: "Oregon", headlineAmount: "$800–$3,000", primaryProgram: "Energy Trust + ODOE HP3", note: "Energy Trust $800–$3,000; ODOE HP3 adds up to $2,000. No state tax credit (RETC expired 2017). HEAR/HOMES not yet launched." },
-  { code: "CT", name: "Connecticut", headlineAmount: "$250–$1,000/ton", primaryProgram: "Energize CT", note: "Smart-E Loan at 0.99% APR through June 30, 2026. HEAR funded but not available." },
+  { code: "CT", name: "Connecticut", headlineAmount: "$250–$1,000/ton", primaryProgram: "Energize CT", note: "Smart-E Loan at 1.99% APR on 5-year terms, August 1–December 31, 2026. HEAR funded but not available." },
   { code: "MN", name: "Minnesota", headlineAmount: "Up to $2,600", primaryProgram: "Xcel + CenterPoint", note: "Save Energy MN (HEAR + $4,000 state rebate) has not launched." },
   { code: "NV", name: "Nevada", headlineAmount: "$510–$3,400", primaryProgram: "NV Energy PowerShift", note: "First-come first-served. HEAR/HOMES approved but not launched." },
   { code: "NM", name: "New Mexico", headlineAmount: "Up to $8,000", primaryProgram: "HEAR + geothermal credit", note: "HEAR applications open but restricted to ≤80% AMI. PNM adds $550–$700. Sustainable Building Tax Credit adds $1,000–$2,000." },
   { code: "DE", name: "Delaware", headlineAmount: "$800–$2,200", primaryProgram: "Energize Delaware", note: "HPwES program. DEMEC customers can stack Efficiency Smart rebates." },
   { code: "UT", name: "Utah", headlineAmount: "$2,450–$2,650", primaryProgram: "RMP + Enbridge stack", note: "Wattsmart + ThermWise dual-fuel stack. HEAR/HOMES not launched." },
   { code: "KY", name: "Kentucky", headlineAmount: "$250–$1,500", primaryProgram: "TVA EnergyRight + EKPC", note: "TVA $500–$1,500; EKPC co-ops $500–$1,000 incl. $1,000 cold-climate bonus; LG&E/KU $400. HEAR approved but not launched." },
-  { code: "PA", name: "Pennsylvania", headlineAmount: "$350–$1,950", primaryProgram: "Act 129 utility rebates", note: "Act 129 Phase IV ended May 31, 2026; Phase V began June 1 (amounts not yet published). Penn Energy Savers ($258M) not launched." },
+  { code: "PA", name: "Pennsylvania", headlineAmount: "$350–$1,950", primaryProgram: "Act 129 utility rebates", note: "Act 129 Phase V began June 1, 2026: PECO, PPL, and UGI have published claimable amounts; Duquesne Light is refreshing its program and FirstEnergy has not posted a schedule. Penn Energy Savers ($258M) not launched." },
   { code: "VA", name: "Virginia", headlineAmount: "Up to $2,000", primaryProgram: "Washington Gas (NoVA only)", note: "$188M IRA funding pending. Most areas limited to small utility rebates." },
   { code: "MO", name: "Missouri", headlineAmount: "$200–$5,000", primaryProgram: "Ameren + Evergy + Columbia W&L", note: "No statewide program. Ameren offers $2,000 for ducted ASHPs." },
-  { code: "HI", name: "Hawaii", headlineAmount: "$450–$700", primaryProgram: "Hawaii Energy", note: "Mini-splits $450–$550; HPWHs $500–$700 (through June 2026). eHale HEAR expected 2026. KIUC offers separate $500 HPWH on Kauai." },
+  { code: "HI", name: "Hawaii", headlineAmount: "$450–$700", primaryProgram: "Hawaii Energy", note: "Mini-splits $450–$550; HPWHs $500–$700 under the current program year. eHale HEAR expected 2026. KIUC offers separate $500 HPWH on Kauai." },
   { code: "LA", name: "Louisiana", headlineAmount: "Up to $3,500", primaryProgram: "SWEPCO + Cleco", note: "SWEPCO strongest. Entergy only $500. HEAR/HOMES not launched." },
   { code: "IL", name: "Illinois", headlineAmount: "Up to $1,800", primaryProgram: "ComEd + Ameren", note: "Utility-only. HEAR and HOMES still pending launch." },
 ];
@@ -92,7 +92,7 @@ const limitedStates: StateTier[] = [
   { code: "MS", name: "Mississippi", headlineAmount: "$160–$1,500", primaryProgram: "Entergy MS + TVA", note: "Entergy Mississippi pays up to $1,100; TVA up to $1,500 in northeast MS; Mississippi Power $160–$200/ton. HEAR/HOMES not launched." },
   { code: "NE", name: "Nebraska", headlineAmount: "$400–$3,000", primaryProgram: "NPPD + OPPD + LES", note: "NPPD $400–$1,200, OPPD flat $525, LES $800. Lincoln adds up to $3,000 for low-income homeowners. HEAR/HOMES not launched." },
   { code: "OK", name: "Oklahoma", headlineAmount: "$200–$1,400", primaryProgram: "PSO (OG&E paused)", note: "PSO $600–$1,400 is the primary active incentive; OG&E's up-to-$3,000 program has temporarily closed Oklahoma applications. Rural co-ops $200–$1,050/ton. HEAR/HOMES not launched." },
-  { code: "WV", name: "West Virginia", headlineAmount: "$300–$400", primaryProgram: "Appalachian Power", note: "Appalachian Power offers $300–$400 for mini-splits and HPWHs; Mon Power and Potomac Edison offer none. WV's IRA HEAR ($8,000) and HOMES ($20,000) exist but launch status is unclear." },
+  { code: "WV", name: "West Virginia", headlineAmount: "$300–$400", primaryProgram: "Appalachian Power", note: "Appalachian Power offers $300–$400 for mini-splits and HPWHs; Mon Power and Potomac Edison offer none. WV's IRA HEAR ($8,000) and HOMES ($20,000) are in a pilot phase — statewide waitlist registration is open through WVOE's Neighborly portal, with installations after the pilot." },
 ];
 
 const faqJsonLd = {
@@ -104,7 +104,7 @@ const faqJsonLd = {
       name: "Which states have the best heat pump rebates in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "New York, Maryland, Rhode Island, Colorado, Wisconsin, and Michigan offer the strongest heat pump rebates in 2026, with programs reaching $8,000–$24,000 for qualifying households. These states have active IRA-funded HEAR or HOMES programs stacking with utility rebates.",
+        text: "New York, Maryland, Wisconsin, North Carolina, and Rhode Island offer the strongest heat pump rebates in 2026, with programs reaching $10,000 or more for qualifying households. The programs differ by state: Wisconsin stacks HEAR, HOMES, and Focus on Energy, and North Carolina runs HEAR and HOMES through Energy Saver NC, while New York reaches those amounts through NYS Clean Heat and EmPower+, Maryland through EmPOWER Maryland, and Rhode Island through Clean Heat RI. Maryland has not launched HEAR or HOMES, and Rhode Island's HEAR does not cover heat pump HVAC.",
       },
     },
     {
@@ -120,7 +120,7 @@ const faqJsonLd = {
       name: "What is the HEAR program and which states have it?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "HEAR (Home Electrification and Appliance Rebates) is a federally funded, state-administered rebate program offering up to $8,000 per heat pump for income-qualifying households (below 150% of Area Median Income). As of June 2026, about a dozen states have launched HEAR programs including Colorado, Wisconsin, Michigan, North Carolina, Georgia, Indiana, Arizona, and Washington. Many other states have received funding but have not launched consumer-facing programs.",
+        text: "HEAR (Home Electrification and Appliance Rebates) is a federally funded, state-administered rebate program offering up to $8,000 per heat pump for income-qualifying households (below 150% of Area Median Income). About a dozen states have launched HEAR programs, including Wisconsin, Michigan, North Carolina, Indiana, Arizona, and Washington. Two early launchers have since stopped taking new applications: Colorado closed single-family HEAR statewide in August 2026, and Georgia paused new HEAR applications on August 14, 2026. Many other states have received funding but have not launched consumer-facing programs.",
       },
     },
     {
@@ -128,7 +128,7 @@ const faqJsonLd = {
       name: "Can you stack heat pump rebates from different programs?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "In most states, yes. Utility rebates, state programs, and IRA-funded HEAR or HOMES rebates can typically stack. The rules vary by state. Some states like Colorado and Wisconsin explicitly allow stacking all three layers. The main restriction is that total incentives generally cannot exceed 100% of project cost. Check your specific state guide for stacking rules.",
+        text: "In most states, yes. Utility rebates, state programs, and IRA-funded HEAR or HOMES rebates can typically stack. The rules vary by state. Some states, including Wisconsin, explicitly allow stacking all three layers. The main restriction is that total incentives generally cannot exceed 100% of project cost. Check your specific state guide for stacking rules.",
       },
     },
     {
@@ -252,7 +252,7 @@ export default function RebatesByStatePage() {
 
           <div className="bg-white border border-gray-200 rounded-lg p-5">
             <p className="text-gray-700 leading-relaxed">
-              <strong>Highest rebates:</strong> New York, Maryland, Wisconsin, Colorado,
+              <strong>Highest rebates:</strong> New York, Maryland, Wisconsin,
               Washington, Rhode Island, and North Carolina — all offer $10,000+ for
               income-qualifying households through stacked programs.{" "}
               <strong>Lowest incentives:</strong> Ohio, Idaho, South Dakota, and states
@@ -281,7 +281,7 @@ export default function RebatesByStatePage() {
               { rank: 2, code: "wi", name: "Wisconsin", amount: "Up to $18,900", detail: "HEAR + HOMES + Focus on Energy (first state to launch HOMES)" },
               { rank: 3, code: "md", name: "Maryland", amount: "Up to $15,000", detail: "EmPOWER (75% of costs) + Potomac Edison Switch-to-Electric" },
               { rank: 4, code: "wa", name: "Washington", amount: "Up to $13,000", detail: "State HEAR + PSE (up to $5,000); federal HARP pending" },
-              { rank: 5, code: "co", name: "Colorado", amount: "Up to $11,250", detail: "HEAR + Xcel Energy + $1,000 state tax credit" },
+              { rank: 5, code: "co", name: "Colorado", amount: "Up to $9,250", detail: "Xcel Energy + DRCOG Power Ahead + $1,000 state tax credit (HEAR closed)" },
               { rank: 6, code: "ri", name: "Rhode Island", amount: "Up to $11,500", detail: "Clean Heat RI (60% of costs) + RI Energy rebates" },
               { rank: 7, code: "nc", name: "North Carolina", amount: "Up to $16,000", detail: "Energy Saver NC (HEAR + HOMES) + Duke Energy" },
               { rank: 8, code: "ga", name: "Georgia", amount: "Up to $16,000", detail: "HEAR + HER whole-home + Georgia Power" },
@@ -377,7 +377,7 @@ export default function RebatesByStatePage() {
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
             <p className="font-semibold text-green-800 mb-1">✓ Best overall programs</p>
             <p className="text-sm text-green-900">
-              New York, Maryland, Wisconsin, and Colorado stand out for having the deepest
+              New York, Maryland, and Wisconsin stand out for having the deepest
               stacking — multiple program layers that combine to cover a large share of
               project costs. Income-qualified households in these states can often get a
               heat pump system for <strong>$2,000–$5,000 out of pocket</strong> on a
@@ -456,7 +456,7 @@ export default function RebatesByStatePage() {
 
           <p className="text-gray-700 leading-relaxed mb-6">
             Heat pump rebates in 2026 depend on four factors. Understanding these helps
-            explain why the same heat pump installation might cost $4,000 out of pocket in
+            explain why the same heat pump installation might cost $5,750 out of pocket in
             Colorado but $15,000 in Florida.
           </p>
 
