@@ -217,8 +217,8 @@ export const utilities: Record<UtilitySlug, UtilityEntity> = {
       { state: "VA", hasHeatPumpProgram: true, note: "Full EnergyRight menu; partial TVA coverage — confirm your local power company is TVA-served" },
     ],
     status: "open",
-    lastVerified: "2026-07-20",
-    lastUpdated: "2026-07-20",
+    lastVerified: "2026-09-06",
+    lastUpdated: "2026-09-06",
     summary: "TVA EnergyRight pays $500–$800 for ducted heat pumps, $800 for mini splits, and $1,500 for geothermal region-wide across all seven Valley states, delivered through 153 local power companies. $0-down financing to $20,000 and ~$10,000 average free upgrades via Home Uplift where the LPC participates. Federal 25C/25D credits ended Dec 31, 2025.",
     sources: [
       { label: "TVA EnergyRight — Heat Pump Rebate", url: "https://energyright.com/residential/rebates/heat-pump/" },
