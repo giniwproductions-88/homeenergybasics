@@ -32,7 +32,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in Tennessee in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "TVA EnergyRight rebates of $500–$800 are the only active heat pump incentive for most Tennessee homeowners in 2026. The amount depends on system efficiency: $500 for 15–16.99 SEER2 systems and $800 for 17+ SEER2 systems or ductless mini-splits. Geothermal heat pumps earn $1,500. Federal tax credits (Sections 25C and 25D) expired December 31, 2025. IRA-funded HEAR rebates (up to $8,000 for qualifying households) are approved but not yet launched in Tennessee.",
+        text: "TVA EnergyRight rebates of $500–$800 are the only active heat pump incentive for most Tennessee homeowners in 2026. The amount depends on system efficiency: $500 for 15–16.99 SEER2 systems and $800 for 17+ SEER2 systems or ductless mini-splits. Geothermal heat pumps earn $1,500. Federal tax credits (Sections 25C and 25D) expired December 31, 2025. IRA-funded HEAR rebates (up to $8,000 for qualifying households upgrading existing electric equipment) are approved but not yet launched in Tennessee.",
       },
     },
     {
@@ -40,7 +40,7 @@ const faqJsonLd = {
       name: "Can I stack TVA EnergyRight and HEAR rebates in Tennessee?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, once HEAR launches, TVA EnergyRight rebates can stack with HEAR rebates. CLEAResult, TVA\u0027s program implementer, is building technology to facilitate seamless stacking. For a household below 80% of Area Median Income, this could mean up to $800 from TVA plus $8,000 from HEAR — a potential $8,800 toward a heat pump. Total combined rebates cannot exceed total project cost.",
+        text: "Yes, once HEAR launches, TVA EnergyRight rebates can stack with HEAR rebates. CLEAResult, TVA\u0027s program implementer, is building technology to facilitate seamless stacking. For a household below 80% of Area Median Income replacing existing electric heating, this could mean up to $800 from TVA plus $8,000 from HEAR — a potential $8,800 toward a heat pump. Total combined rebates cannot exceed total project cost.",
       },
     },
     {
@@ -48,7 +48,7 @@ const faqJsonLd = {
       name: "Can I get a TVA rebate for replacing my gas furnace with a heat pump?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No. TVA EnergyRight rebates require replacement of an existing electric heating source — such as an older heat pump, electric furnace, or electric resistance heat. The program explicitly excludes gas-to-electric conversions. This is a significant limitation in Nashville and Memphis, where natural gas is the dominant heating fuel. When HEAR launches, it will cover fuel switching from gas to electric, filling this gap.",
+        text: "No. TVA EnergyRight rebates require replacement of an existing electric heating source — such as an older heat pump, electric furnace, or electric resistance heat. The program explicitly excludes gas-to-electric conversions. This is a significant limitation in Nashville and Memphis, where natural gas is the dominant heating fuel. HEAR will not fill that gap: DOE Program Notice 26-2, effective May 29, 2026, removed fuel-switching upgrades from HEAR, and a program launching now must align with that rule. Gas-heated households should look to HOMES, which remains fuel-neutral.",
       },
     },
     {
@@ -144,7 +144,7 @@ export default function TennesseePage() {
             </div>
             <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 md:col-span-2">
               <p className="font-semibold text-amber-800 mb-1">⚠ TVA rebates do not cover gas-to-electric conversions</p>
-              <p className="text-sm text-amber-900">TVA EnergyRight requires replacement of existing electric heating. Nashville and Memphis homeowners heating with natural gas must wait for HEAR to launch for rebate-eligible fuel switching. This is the most common eligibility mistake in Tennessee.</p>
+              <p className="text-sm text-amber-900">TVA EnergyRight requires replacement of existing electric heating. HEAR will not fill that gap either &mdash; 26-2 removed fuel-switching upgrades before Tennessee launched, so Nashville and Memphis homeowners heating with natural gas should look to HOMES, which is fuel-neutral. This is the most common eligibility mistake in Tennessee.</p>
             </div>
           </div>
         </div>
@@ -230,7 +230,7 @@ export default function TennesseePage() {
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-amber-800 mb-1">⚠ No gas-to-electric conversions</p>
-            <p className="text-sm text-amber-900">TVA EnergyRight rebates require replacement of an existing electric heating source. The program explicitly excludes natural gas furnace replacements. This affects most homeowners in Nashville and Memphis, where gas heating dominates. These homeowners must wait for HEAR to launch for rebate-eligible fuel switching.</p>
+            <p className="text-sm text-amber-900">TVA EnergyRight rebates require replacement of an existing electric heating source. The program explicitly excludes natural gas furnace replacements. This affects most homeowners in Nashville and Memphis, where gas heating dominates. There is no HEAR route for them either: 26-2 removed fuel switching from HEAR before Tennessee launched. HOMES remains fuel-neutral.</p>
           </div>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Financing and low-income support</h3>
@@ -298,7 +298,7 @@ export default function TennesseePage() {
             </table>
           </div>
           <p className="text-gray-700 leading-relaxed mb-6">
-            HEAR covers fuel switching from gas to electric — filling the gap that TVA EnergyRight does not. It does not cover replacing an existing heat pump with a newer one. Additional HEAR-eligible items include electrical panel upgrades ($4,000), insulation and air sealing ($1,600), electric stoves ($840), and wiring ($2,500).
+            Under DOE Program Notice 26-2, effective May 29, 2026, HEAR covers upgrades from existing electric equipment to more efficient electric equipment, plus new construction. It no longer covers fuel switching from gas to electric, so it will not fill the gap TVA EnergyRight leaves — but replacing an existing heat pump with a more efficient one does qualify. Additional HEAR-eligible items include electrical panel upgrades ($4,000), insulation and air sealing ($1,600), electric stoves ($840), and wiring ($2,500).
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">HOMES rebate structure (when launched)</h3>
@@ -390,7 +390,7 @@ export default function TennesseePage() {
 
           <div className="bg-gray-100 rounded-lg p-5">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
-            <p className="text-sm text-gray-700">For a typical ducted heat pump installation (<strong>$12,000–$18,000</strong>), expect to pay <strong>$11,200–$17,200 out of pocket</strong> today (TVA rebate only). Once HEAR launches, out-of-pocket costs for income-qualifying households could drop to <strong>$3,200–$9,200</strong> depending on income tier and system cost. Tennessee has no state tax credits, no state loan program, and no widely available local rebate programs were found to add on top.</p>
+            <p className="text-sm text-gray-700">For a typical ducted heat pump installation (<strong>$12,000–$18,000</strong>), expect to pay <strong>$11,200–$17,200 out of pocket</strong> today (TVA rebate only). Once HEAR launches, out-of-pocket costs for income-qualifying households upgrading existing electric equipment could drop to <strong>$3,200–$9,200</strong> depending on income tier and system cost; gas-heated households will not reach HEAR. Tennessee has no state tax credits, no state loan program, and no widely available local rebate programs were found to add on top.</p>
           </div>
         </div>
       </section>
