@@ -731,9 +731,10 @@ export default function RebatesByStatePage() {
 
           <p className="text-gray-700 leading-relaxed mb-4">
             State tier rankings are based on the realistic maximum rebate available to a
-            homeowner installing a ducted air-source heat pump system in 2026. We verified
-            program status, dollar amounts, and eligibility rules directly against official
-            state energy office websites, utility program pages, and IRS guidance.
+            homeowner installing a ducted air-source heat pump system in 2026. Program
+            status, dollar amounts, and eligibility rules are verified on each state&apos;s
+            own guide, against official state energy office websites, utility program
+            pages, and IRS guidance; the tier notes here restate those findings.
           </p>
 
           <p className="text-gray-700 leading-relaxed mb-4">
