@@ -860,7 +860,7 @@ async function main() {
     writeFileSync(LATEST_F, JSON.stringify(latest, null, 1));
     const ignoreSet = new Set(loadJson(IGNORE_F, []));
     const accepted = loadJson(NOSIGNAL_F, {});
-    const { rows, statesToVerify, unchanged, noSignal, acceptedCount, reasonTally, staleAccept, malformedAccept } =
+    const { rows, statesToVerify, unchanged, noSignal, acceptedCount, reasonTally, staleAccept, malformedAccept, mutedHollow } =
       writeReport(baseline, latest, ignoreSet, humanVerify, accepted);
     console.log(`\nReport: ${REPORT_F}`);
     if (humanVerify.length) {
@@ -871,6 +871,12 @@ async function main() {
     console.log(`HIGH: ${rows.filter((r) => r.level === "HIGH").length} | FETCH: ${rows.filter((r) => r.level === "FETCH").length} | LOW: ${rows.filter((r) => r.level === "LOW").length}`);
     const reasonStr = NOSIGNAL_REASONS.filter((r) => reasonTally[r]).map((r) => `${reasonTally[r]} ${r}`).join(", ");
     console.log(`NO SIGNAL (cannot flag; not counted in exit code): ${noSignal.length} (${acceptedCount} accepted${reasonStr ? " — " + reasonStr : ""})`);
+    // Muted AND hollow. Printed here rather than left to the report because check
+    // is read from a terminal: a report-only line leaves these as invisible on the
+    // console as the mute made them in the diff.
+    const hollowErr = mutedHollow.filter((m) => m.reason.kind === "fetch-error").length;
+    console.log(`MUTED AND HOLLOW (suppressed, watching nothing; not counted in exit code): ${mutedHollow.length}`);
+    if (mutedHollow.length) console.log(`  (${hollowErr} fetch-error, ${mutedHollow.length - hollowErr} zero-signal)`);
     if (staleAccept.length) console.log(`  stale acceptances: ${staleAccept.length} — see report`);
     if (malformedAccept.length) console.log(`  MALFORMED acceptances (not suppressed): ${malformedAccept.length} — see report`);
     console.log(`States to verify: ${statesToVerify.join(", ") || "(none)"}`);
