@@ -32,7 +32,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in New Hampshire in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "NHSaves offers $250 per ton (standard) or up to $2,000 per ton (replacing electric resistance heat, Eversource/Liberty/Unitil as of March 23, 2026). NHEC offers up to $2,000 per ton for electric resistance replacement. The New England Heat Pump Accelerator adds $650 per outdoor unit. Heat pump water heaters receive $900 from NHSaves; the Accelerator offers $300 per HPWH, though NHSaves rules may prevent combining both on one unit. There is no federal tax credit for 2026 installations. HEAR rebates (up to $8,000) are expected to launch mid-Summer 2026.",
+        text: "NHSaves offers $250 per ton (standard) or up to $2,000 per ton (replacing electric resistance heat, Eversource/Liberty/Unitil as of March 23, 2026). NHEC offers up to $2,000 per ton for electric resistance replacement. The New England Heat Pump Accelerator adds $650 per outdoor unit. Heat pump water heaters receive $900 from NHSaves; the Accelerator offers $300 per HPWH, though NHSaves rules may prevent combining both on one unit. There is no federal tax credit for 2026 installations. HEAR rebates (up to $8,000, and since May 2026 limited to replacing existing electric equipment) are expected to launch mid-Summer 2026.",
       },
     },
     {
@@ -56,7 +56,7 @@ const faqJsonLd = {
       name: "Should I wait for HEAR before installing a heat pump in New Hampshire?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "If you are replacing oil or propane and your current system still works, waiting for HEAR could save $7,500\u2013$8,000 \u2014 far more than the ~$1,400 available today from NHSaves plus the Accelerator. However, if your system has failed or you are replacing electric resistance heat (which qualifies for up to $2,000/ton now at Eversource/Liberty/Unitil), installing sooner may make sense. Projects started before HEAR launches are not eligible.",
+        text: "If you heat with oil or propane, no \u2014 there is nothing to wait for. DOE Program Notice 26-2, effective May 29, 2026, removed fuel-switching upgrades from HEAR: rebates now apply only when replacing existing electric equipment with more efficient electric equipment. Replacing an oil or propane system does not qualify, so an oil or propane household should weigh the ~$1,400 available today from NHSaves plus the Accelerator against the cost of waiting, not against a HEAR rebate. If you are replacing electric resistance heat, up to $2,000/ton is available now at Eversource/Liberty/Unitil and HEAR could add to that for income-qualified households \u2014 but HEAR has not launched in New Hampshire, and projects started before it launches are not eligible.",
       },
     },
     {
@@ -136,7 +136,7 @@ export default function NewHampshirePage() {
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; Total Potential Savings</p>
-              <p className="text-sm text-green-900">$1,400 (standard tier, 3-ton system with Accelerator) to $10,650 (5-ton electric-resistance replacement with Accelerator). If HEAR launches, income-qualified households could reach ~$11,000+ total incentives.</p>
+              <p className="text-sm text-green-900">$1,400 (standard tier, 3-ton system with Accelerator) to $10,650 (5-ton electric-resistance replacement with Accelerator). If HEAR launches, income-qualified households replacing electric heat could reach ~$11,000+ total incentives.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">&#10007; Federal Tax Credits Expired</p>
@@ -358,6 +358,10 @@ export default function NewHampshirePage() {
           <p className="text-gray-700 leading-relaxed mb-6">
             New Hampshire&apos;s HEAR program (Home Electrification and Appliance Rebates) has been approved by the U.S. Department of Energy. The state&apos;s <strong>$34.7 million</strong> allocation has been received, and NH DOE has selected Everblue as its program implementer &mdash; the Governor and Council approved the contract on March 25, 2026, and work is now underway. Launch is currently expected <strong>mid-Summer 2026</strong>.
           </p>
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
+            <p className="font-semibold text-amber-800 mb-1">&#9888; HEAR no longer covers switching off oil, propane, or gas</p>
+            <p className="text-sm text-amber-900">DOE Program Notice 26-2, effective May 29, 2026, removed fuel-switching upgrades from HEAR. Rebates now apply only when replacing existing electric equipment with more efficient electric equipment; new construction remains eligible. The caps below therefore reach a household replacing electric resistance heat or an older heat pump &mdash; not one replacing an oil, propane, or gas system.</p>
+          </div>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
               <thead>
@@ -434,7 +438,7 @@ export default function NewHampshirePage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">How Programs Stack</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            NHSaves (ratepayer-funded) stacks with the NE Accelerator (federal CPRG). When HEAR launches, it should stack with NHSaves but likely not with the Accelerator (both federally funded). The scenarios below show a typical <strong>3-ton ducted cold-climate system</strong> installed for <strong>$15,000</strong>.
+            NHSaves (ratepayer-funded) stacks with the NE Accelerator (federal CPRG). When HEAR launches, it should stack with NHSaves but likely not with the Accelerator (both federally funded) &mdash; and only for households replacing existing electric equipment, since 26-2 took fuel switching out of HEAR. The scenarios below show a typical <strong>3-ton ducted cold-climate system</strong> installed for <strong>$15,000</strong>.
           </p>
 
           <div className="space-y-4 mb-8">
@@ -444,25 +448,25 @@ export default function NewHampshirePage() {
                 <li>NHSaves standard tier (3 &#215; $250): $750</li>
                 <li>NE Heat Pump Accelerator (1 outdoor unit): $650</li>
                 <li>Federal tax credit: $0 (expired)</li>
-                <li>HEAR: $0 (not eligible above 150% AMI)</li>
+                <li>HEAR: $0 (above 150% AMI, and an oil replacement is outside HEAR either way)</li>
               </ul>
               <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$1,400</p>
             </div>
 
             <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900 mb-2">80&ndash;150% AMI &mdash; Replacing Oil (After HEAR Launches)</p>
+              <p className="font-semibold text-gray-900 mb-2">80&ndash;150% AMI &mdash; Replacing Oil (Today, and after HEAR launches)</p>
               <ul className="text-sm text-gray-700 space-y-1">
-                <li>HEAR (50% of $15,000, capped at $8,000): $7,500</li>
+                <li>HEAR: $0 &mdash; 26-2 removed fuel-switching upgrades, so an oil replacement does not qualify at any income level</li>
                 <li>NHSaves standard tier (3 &#215; $250): $750</li>
-                <li>NE Accelerator (may not stack with HEAR): $0&ndash;$650</li>
+                <li>NE Heat Pump Accelerator (1 outdoor unit): $650</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum if HEAR launches: ~$8,250&ndash;$8,900</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$1,400 &mdash; unchanged by a HEAR launch</p>
             </div>
 
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-2">Below 80% AMI &mdash; After HEAR Launches (Best Case)</p>
+              <p className="font-semibold text-green-800 mb-2">Below 80% AMI, replacing electric heat &mdash; After HEAR Launches (Best Case)</p>
               <ul className="text-sm text-green-900 space-y-1">
-                <li>HEAR (100% of costs, up to $8,000): $8,000</li>
+                <li>HEAR (100% of costs, up to $8,000): $8,000 &mdash; requires replacing existing electric equipment</li>
                 <li>NHSaves standard tier (3 &#215; $250): $750</li>
               </ul>
               <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$8,750+</p>
@@ -473,7 +477,7 @@ export default function NewHampshirePage() {
           <div className="bg-gray-100 rounded-lg p-5">
             <p className="font-semibold text-gray-900 mb-1">What You&apos;ll Actually Pay</p>
             <p className="text-sm text-gray-700">
-              For a 3-ton system installed for $15,000: most homeowners above 150% AMI pay <strong>$13,600 out of pocket</strong> today (NHSaves + Accelerator only). Electric resistance replacements at Eversource/Liberty/Unitil pay as little as <strong>$8,350</strong> ($6,000 enhanced rebate + $650 Accelerator). When HEAR launches, income-qualifying households could see costs drop to <strong>$6,100&ndash;$6,750</strong> or less.
+              For a 3-ton system installed for $15,000: most homeowners above 150% AMI pay <strong>$13,600 out of pocket</strong> today (NHSaves + Accelerator only). Electric resistance replacements at Eversource/Liberty/Unitil pay as little as <strong>$8,350</strong> ($6,000 enhanced rebate + $650 Accelerator). When HEAR launches, income-qualifying households replacing existing electric equipment could see costs drop to <strong>$6,100&ndash;$6,750</strong> or less; oil and propane replacements do not reach HEAR at all.
             </p>
           </div>
         </div>
@@ -492,7 +496,7 @@ export default function NewHampshirePage() {
 
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
             <p className="font-semibold text-green-800 mb-1">&#10003; Best Candidates for a Heat Pump in New Hampshire</p>
-            <p className="text-sm text-green-900">Homeowners replacing oil or propane heating (58% of NH households &mdash; highest fuel cost savings). Homeowners replacing electric resistance heat ($2,000/ton enhanced rebate at Eversource/Liberty/Unitil). Income-qualifying households who can wait for HEAR (up to $8,000). Anyone with a failed system who needs immediate replacement &mdash; $1,400+ available today.</p>
+            <p className="text-sm text-green-900">Homeowners replacing oil or propane heating (58% of NH households &mdash; highest fuel cost savings). Homeowners replacing electric resistance heat ($2,000/ton enhanced rebate at Eversource/Liberty/Unitil). Income-qualifying households replacing electric heat, who can wait for HEAR (up to $8,000). Anyone with a failed system who needs immediate replacement &mdash; $1,400+ available today.</p>
           </div>
         </div>
       </section>
