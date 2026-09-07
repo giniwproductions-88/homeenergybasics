@@ -212,7 +212,8 @@ export default function TvaEnergyRightPage() {
                 The rebate menu is identical region-wide, but on-bill
                 financing is not offered by all local power companies, Home
                 Uplift requires a participating local power company, and
-                state HEAR rebates vary by state — most Valley states had
+                state HEAR rebates vary by state and now reach
+                electric-to-electric upgrades only — most Valley states had
                 not launched them as of July 2026.
               </p>
             </div>
@@ -416,7 +417,8 @@ export default function TvaEnergyRightPage() {
               <strong>December 31, 2025</strong>. TVA&apos;s own program pages
               still reference pairing rebates with federal credits —
               that guidance predates the expiration. For 2026 installations,
-              the TVA menu, your local power company&apos;s extras, and any
+              the TVA menu, your local power company&apos;s extras, and, if
+              you are upgrading from existing electric equipment, any
               launched state HEAR program are the whole stack.{" "}
               <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">
                 Read the full federal expiration explainer
@@ -485,7 +487,8 @@ export default function TvaEnergyRightPage() {
           <p className="text-gray-700 leading-relaxed mb-6">
             TVA menu rebates stack with each other on separate measures (a
             heat pump rebate plus a duct rebate on the same job, for
-            example). State HEAR rebates would stack on top where launched,
+            example). State HEAR rebates would stack on top where launched
+            and where the project upgrades existing electric equipment,
             but most Valley states had not opened HEAR applications as of
             July 2026 — the scenarios below use only the verified TVA
             menu. Check your state&apos;s page for the current HEAR layer.
@@ -537,8 +540,10 @@ export default function TvaEnergyRightPage() {
               <strong>$500 to $1,100 off</strong> a ducted heat pump
               installation and <strong>up to $1,800 off</strong> a geothermal
               project — the remainder is out of pocket (or financed at
-              $0 down) unless your state&apos;s HEAR program has launched or
-              you qualify for Home Uplift.
+              $0 down) unless you qualify for Home Uplift, or your
+              state&apos;s HEAR program has launched and you are replacing
+              existing electric equipment. Gas heat no longer qualifies for
+              HEAR.
             </p>
           </div>
           <p className="text-sm text-gray-500 mt-4">
@@ -634,7 +639,8 @@ export default function TvaEnergyRightPage() {
               </p>
               <p className="text-sm text-gray-600 mt-1">
                 IRA Home Energy Rebates are state-administered and would
-                stack on top of TVA rebates, but as of July 2026 most Valley
+                stack on top of TVA rebates on electric-to-electric projects,
+                but as of July 2026 most Valley
                 states had not launched — Kentucky&apos;s energy office,
                 for one, explicitly warns its rebates are not yet available.
                 Each launch changes the stacking math on this page; IRA
