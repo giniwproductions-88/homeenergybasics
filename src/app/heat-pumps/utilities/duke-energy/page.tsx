@@ -646,7 +646,8 @@ export default function DukeEnergyPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">How Duke rebates stack with state programs</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             Duke rebates stack with state IRA rebates where a state program is
-            open, and the stacking rule comes from the state side: in North
+            open and the project upgrades existing electric equipment, and the
+            stacking rule comes from the state side: in North
             Carolina, NC DEQ confirms households can receive both home energy
             rebates and utility incentives for the same product, as long as
             combined rebates do not exceed the purchase price of that product.
