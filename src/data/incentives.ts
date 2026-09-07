@@ -1242,10 +1242,10 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "AZ",
     stateName: "Arizona",
     status: "open",
-    lastVerified: "2026-07-14",
-    lastUpdated: "2026-07-14",
+    lastVerified: "2026-09-06",
+    lastUpdated: "2026-09-06",
     summary:
-      "Efficiency Arizona HEAR offers up to $8,000 per heat pump for households below 150% AMI; under DOE Program Notice 26-2, HEAR reaches only upgrades from existing electric equipment. SRP Cool Cash provides up to $1,125 for variable-capacity systems. APS eliminated all residential rebates in 2026. Federal tax credits expired December 31, 2025. HOMES has not launched; no date announced.",
+      "Efficiency Arizona HEAR offers up to $8,000 per heat pump for households below 150% AMI. New state guidelines apply to every rebate reservation made on or after September 1, 2026: no gas-to-electric projects, electric-to-electric only (existing heat pumps included), and heat pumps no longer need to be the home's primary heating and cooling source. SRP Cool Cash provides up to $1,125 for variable-capacity systems. APS eliminated all residential rebates in 2026. Federal tax credits expired December 31, 2025. HOMES has not launched; no date announced.",
     sources: [
       {
         label: "Efficiency Arizona \u2014 HEAR Program",

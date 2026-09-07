@@ -49,7 +49,7 @@ export default function ArizonaPage() {
         name: "What heat pump rebates are available in Arizona in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Arizona heat pump rebates in 2026 come from two main sources: the Efficiency Arizona HEAR program (up to $8,000 per heat pump for households below 150% AMI) and utility rebates. SRP offers up to $225 per ton through Cool Cash, while TEP offers up to $720. APS discontinued all residential rebates effective January 1, 2026. Federal tax credits under Sections 25C and 25D expired December 31, 2025.",
+          text: "Arizona heat pump rebates in 2026 come from two main sources: the Efficiency Arizona HEAR program (up to $8,000 per heat pump for households below 150% AMI) and utility rebates. Efficiency Arizona moved to new program guidelines on September 1, 2026: gas-to-electric projects no longer qualify, replacing an existing electric system or an existing heat pump does, and a heat pump no longer has to be the home's primary heating and cooling source. The cutoff keys on when a rebate reservation was secured, not when you applied. SRP offers up to $225 per ton through Cool Cash, while TEP offers up to $720. APS discontinued all residential rebates effective January 1, 2026. Federal tax credits under Sections 25C and 25D expired December 31, 2025.",
         },
       },
       {
@@ -105,7 +105,7 @@ export default function ArizonaPage() {
             Arizona Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Arizona&apos;s heat pump incentives changed dramatically in 2026. Federal tax credits are gone, but the state&apos;s Efficiency Arizona program now offers up to <strong>$8,000</strong> per heat pump for income-qualified households. Utility rebates vary widely — SRP&apos;s Cool Cash program offers up to <strong>$1,125</strong> for a 5-ton variable-capacity system, while APS eliminated all residential rebates entirely. This guide covers all major Arizona heat pump incentives available in 2026, including Efficiency Arizona HEAR, SRP Cool Cash, TEP, and the City of Flagstaff program. Here&apos;s what&apos;s actually available.
+            Arizona&apos;s heat pump incentives changed dramatically in 2026. Federal tax credits are gone, but the state&apos;s Efficiency Arizona program now offers up to <strong>$8,000</strong> per heat pump for income-qualified households. Utility rebates vary widely — SRP&apos;s Cool Cash program offers up to <strong>$1,125</strong> for a 5-ton variable-capacity system, while APS eliminated all residential rebates entirely. Efficiency Arizona&apos;s own rules changed on <strong>September 1, 2026</strong>: gas-to-electric projects no longer qualify, and a heat pump no longer has to be the home&apos;s primary heating and cooling source. This guide covers all major Arizona heat pump incentives available in 2026, including Efficiency Arizona HEAR, SRP Cool Cash, TEP, and the City of Flagstaff program. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
             Updated {formattedDate} — verified against official program sources
@@ -130,7 +130,7 @@ export default function ArizonaPage() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Efficiency Arizona HEAR — up to $8,000 per heat pump</p>
-              <p className="text-sm text-green-900">Point-of-sale rebate for households below 150% of Area Median Income (AMI) upgrading from existing electric equipment — since 26-2, gas, propane, and oil replacements no longer qualify. Covers 100% of costs for below 80% AMI, 50% for 80–150% AMI. Must use a qualified contractor and apply before installation.</p>
+              <p className="text-sm text-green-900">Point-of-sale rebate for households below 150% of Area Median Income (AMI) upgrading from existing electric equipment — since 26-2, gas, propane, and oil replacements no longer qualify. Arizona put this into its own guidelines for reservations made on or after <strong>September 1, 2026</strong>, and loosened a separate rule at the same time: a heat pump no longer has to be the home&apos;s primary heating and cooling source. Covers 100% of costs for below 80% AMI, 50% for 80–150% AMI. Must use a qualified contractor and apply before installation.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ SRP Cool Cash — up to $225 per ton</p>
@@ -175,8 +175,24 @@ export default function ArizonaPage() {
         <div className="container-narrow">
           <h2 id="hear-program" className="text-2xl font-bold text-gray-900 mb-4">Efficiency Arizona HEAR program</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Arizona&apos;s Home Electrification and Appliance Rebates (HEAR) program — branded <strong>Efficiency Arizona</strong> — is the largest heat pump incentive currently operating in the state. Administered by the Arizona Governor&apos;s Office of Resiliency, it is funded from Arizona&apos;s roughly <strong>$153 million</strong> federal Home Energy Rebates allocation — about half of which funds HEAR, with the rest reserved for the HOMES program. The program launched in late 2024. The federal deadline for spending the funds is <strong>September 30, 2031</strong>, but the Governor&apos;s Office says funding is anticipated to be available <strong>through 2029</strong>. As of April 30, 2026, the program had issued more than 1,000 rebates statewide (1,076), with more than three-quarters going to low-income households.
+            Arizona&apos;s Home Electrification and Appliance Rebates (HEAR) program — branded <strong>Efficiency Arizona</strong> — is the largest heat pump incentive currently operating in the state. Administered by the Arizona Governor&apos;s Office of Resiliency, it is funded from Arizona&apos;s roughly <strong>$153 million</strong> federal Home Energy Rebates allocation — about half of which funds HEAR, with the rest reserved for the HOMES program. The program launched in late 2024. The federal deadline for spending the funds is <strong>September 30, 2031</strong>, but the Governor&apos;s Office says funding is anticipated to be available <strong>through 2029</strong>. As of June 30, 2026, the program had issued <strong>1,415 rebates</strong> statewide, investing <strong>$4,754,936</strong> and saving an estimated 532,928 kWh, with more than 75% going to low-income households.
           </p>
+
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
+            <p className="font-semibold text-amber-800 mb-1">⚠ New guidelines apply from September 1, 2026 — and they key on your reservation, not your application</p>
+            <p className="text-sm text-amber-900">The Governor&apos;s Office of Resiliency announced revised Efficiency Arizona guidelines on July 21, 2026. <strong>Every rebate reservation made on or after September 1, 2026 falls under the new rules.</strong> Two earlier dates closed out the old ones: <strong>August 1</strong> was the last day to apply under the previous guidelines for a gas-to-electric project, and <strong>August 28</strong> was the final day to secure a reservation — which required an approved application, a completed home assessment where one was required, and an approved contractor scope of work. Installation, redemption and payment can still happen after August for reservations secured by that date. The distinction is the part that catches people: applying in July was not enough. If you applied but never reached an approved reservation by August 28, your project is under the new guidelines.</p>
+          </div>
+
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-6">
+            <p className="font-semibold text-blue-800 mb-2">What the new guidelines change — and what they do not</p>
+            <ul className="text-sm text-blue-900 space-y-1 list-disc pl-5">
+              <li><strong>No more fuel switching.</strong> No rebates for replacing gas appliances with electric ones, matching DOE Program Notice 26-2.</li>
+              <li><strong>Electric-to-electric only.</strong> Rebates apply when replacing existing electric appliances — and existing heat pumps count.</li>
+              <li><strong>Expanded heat pump flexibility.</strong> A heat pump no longer has to serve as the home&apos;s primary heating and cooling source. This is the one change that widens eligibility rather than narrowing it.</li>
+              <li><strong>Weatherization standards.</strong> Insulation and air sealing standards may now be required alongside a heat pump project.</li>
+            </ul>
+            <p className="text-sm text-blue-900 mt-3">Unchanged: the qualified product list and the maximum rebate amounts below; replacing standard electric HVAC, electric water heaters or electric dryers with heat pump alternatives; wiring and panel upgrades, which still have to pair with an eligible appliance rebate; and retail purchase options. The program runs through 2031, pending funding.</p>
+          </div>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">HEAR rebate amounts</h3>
           <div className="overflow-x-auto mb-6">
@@ -251,7 +267,7 @@ export default function ArizonaPage() {
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            HEAR operates as a <strong>point-of-sale rebate</strong> — the discount appears directly on the contractor&apos;s invoice, not as a post-purchase reimbursement. Projects must be approved before installation begins; completed or in-progress projects are not eligible. Under DOE Program Notice 26-2, effective May 29, 2026, the heat pump rebate applies when upgrading from existing electric equipment — an electric furnace, boiler, baseboard units, an existing AC, or an older heat pump — to more efficient electric equipment, and new construction remains eligible. Replacing a gas, propane, or oil system no longer qualifies for HEAR.
+            HEAR operates as a <strong>point-of-sale rebate</strong> — the discount appears directly on the contractor&apos;s invoice, not as a post-purchase reimbursement. Projects must be approved before installation begins; completed or in-progress projects are not eligible. Under DOE Program Notice 26-2, effective May 29, 2026, the heat pump rebate applies when upgrading from existing electric equipment — an electric furnace, boiler, baseboard units, an existing AC, or an older heat pump — to more efficient electric equipment, and new construction remains eligible. Replacing a gas, propane, or oil system no longer qualifies for HEAR. Arizona wrote this into its own guidelines for reservations made on or after September 1, 2026, and its July 21 notice confirms that replacing an <strong>existing heat pump</strong> qualifies. Efficiency Arizona&apos;s main program page has not been updated to match and still carries the older rule that a home with an existing heat pump is ineligible — confirm with the program before assuming either version governs your project.
           </p>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
@@ -528,7 +544,7 @@ export default function ArizonaPage() {
               </div>
               <div>
                 <p className="font-semibold text-gray-900">Submit your application at efficiencyarizona.com</p>
-                <p className="text-sm text-gray-700">Homeowners apply directly — the application takes about 10–15 minutes with income documentation ready. Approval is required before any work begins; completed or in-progress projects are not eligible.</p>
+                <p className="text-sm text-gray-700">Homeowners apply directly — the application takes about 10–15 minutes with income documentation ready. Approval is required before any work begins; completed or in-progress projects are not eligible. Note that the program tracks your <strong>reservation</strong>, not your application: a reservation needs an approved application, a home assessment where one is required, and an approved contractor scope of work, and it is the reservation date that determines which guidelines apply to you.</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -560,7 +576,7 @@ export default function ArizonaPage() {
           <div className="space-y-4">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">IRA funding runway</p>
-              <p className="text-sm text-gray-600 mt-1">The Governor&apos;s Office of Resiliency says HEAR funding is anticipated to be available through 2029 — well before the September 30, 2031 federal spending deadline. HEAR draws on roughly half of Arizona&apos;s $153 million Home Energy Rebates allocation, and more than 1,000 rebates had been issued as of April 30, 2026. If adoption accelerates — especially as contractors become more familiar with the program — funds could deplete faster than projected.</p>
+              <p className="text-sm text-gray-600 mt-1">The Governor&apos;s Office of Resiliency says HEAR funding is anticipated to be available through 2029 — well before the September 30, 2031 federal spending deadline. HEAR draws on roughly half of Arizona&apos;s $153 million Home Energy Rebates allocation, and 1,415 rebates worth $4,754,936 had been issued as of June 30, 2026. If adoption accelerates — especially as contractors become more familiar with the program — funds could deplete faster than projected.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">HOMES program launch</p>
