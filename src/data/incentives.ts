@@ -729,7 +729,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     lastVerified: "2026-08-22",
     lastUpdated: "2026-08-22",
     summary:
-      "Michigan's $210 million MiHER program offers up to $8,000 for heat pumps at point of sale — but as of August 2026, applications are open to low- to moderate-income households (≤150% AMI) only, and new income-qualified applications are paused in the EGLE Detroit and Warren Districts. DTE Energy rebates run $150–$1,200 (electric-heat replacements only). Consumers Energy offers $300–$350 (existing-heat-pump replacements for ducted/GSHP). TCLP's up-to-$3,000 rebate and Ann Arbor A2ZERO's $4,000–$5,500 belong to 2025–26 program years that ended June 30, 2026; new schedules were pending as of July 2026. Federal tax credits (25C/25D) ended December 31, 2025.",
+      "Michigan's $210 million MiHER program offers up to $8,000 for heat pumps at point of sale — but as of August 2026, applications are open to low- to moderate-income households (≤150% AMI) only, and new income-qualified applications are paused in the EGLE Detroit and Warren Districts. Under DOE Program Notice 26-2, MiHER's HEAR rebates reach only upgrades from existing electric equipment; its HOMES rebates remain fuel-neutral. DTE Energy rebates run $150–$1,200 (electric-heat replacements only). Consumers Energy offers $300–$350 (existing-heat-pump replacements for ducted/GSHP). TCLP's up-to-$3,000 rebate and Ann Arbor A2ZERO's $4,000–$5,500 belong to 2025–26 program years that ended June 30, 2026; new schedules were pending as of July 2026. Federal tax credits (25C/25D) ended December 31, 2025.",
     sources: [
       {
         label: "MiHER Home Energy Rebates (EGLE)",
@@ -1245,7 +1245,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     lastVerified: "2026-07-14",
     lastUpdated: "2026-07-14",
     summary:
-      "Efficiency Arizona HEAR offers up to $8,000 per heat pump for households below 150% AMI. SRP Cool Cash provides up to $1,125 for variable-capacity systems. APS eliminated all residential rebates in 2026. Federal tax credits expired December 31, 2025. HOMES has not launched; no date announced.",
+      "Efficiency Arizona HEAR offers up to $8,000 per heat pump for households below 150% AMI; under DOE Program Notice 26-2, HEAR reaches only upgrades from existing electric equipment. SRP Cool Cash provides up to $1,125 for variable-capacity systems. APS eliminated all residential rebates in 2026. Federal tax credits expired December 31, 2025. HOMES has not launched; no date announced.",
     sources: [
       {
         label: "Efficiency Arizona \u2014 HEAR Program",
@@ -1340,7 +1340,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     lastVerified: "2026-06-03",
     lastUpdated: "2026-06-03",
     summary:
-      "HEAR offers up to $8,000 per heat pump (applications now open) but is restricted to households below 80% AMI. PNM rebates cover $550\u2013$700. Sustainable Building Tax Credit adds up to $1,000\u2013$2,000. Geothermal credit covers 30% up to $9,000 at all income levels. Federal 25C/25D credits expired.",
+      "HEAR offers up to $8,000 per heat pump (applications now open) but is restricted to households below 80% AMI; under DOE Program Notice 26-2, HEAR reaches only upgrades from existing electric equipment. PNM rebates cover $550\u2013$700. Sustainable Building Tax Credit adds up to $1,000\u2013$2,000. Geothermal credit covers 30% up to $9,000 at all income levels. Federal 25C/25D credits expired.",
     sources: [
       {
         label: "NM HEAR Program (ECMD)",
@@ -1588,7 +1588,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     lastVerified: "2026-07-20",
     lastUpdated: "2026-07-20",
     summary:
-      "Indiana Energy Saver Program (HEAR) offers up to $8,000 for heat pumps for households below 150% AMI. HOMES rebates cover up to $4,000 for other homeowners. Utility rebates add $275\u2013$3,000. Federal tax credits expired Dec 31, 2025.",
+      "Indiana Energy Saver Program (HEAR) offers up to $8,000 for heat pumps for households below 150% AMI; under DOE Program Notice 26-2, HEAR reaches only upgrades from existing electric equipment. HOMES rebates cover up to $4,000 for other homeowners and remain fuel-neutral. Utility rebates add $275\u2013$3,000. Federal tax credits expired Dec 31, 2025.",
     sources: [
       {
         label: "Indiana Office of Energy Development \u2014 Home Energy Rebates",
