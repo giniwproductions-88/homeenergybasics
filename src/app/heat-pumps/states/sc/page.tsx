@@ -45,10 +45,10 @@ const faqJsonLd = {
     },
     {
       "@type": "Question",
-      name: "Why do most South Carolina homes not qualify for HEAR heat pump rebates?",
+      name: "Do most South Carolina homes qualify for HEAR heat pump rebates?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "About 71% of South Carolina homes already heat with electricity. HEAR rebates are designed for fuel-switching \u2014 replacing fossil fuel systems (gas, propane, oil) or electric resistance heating with heat pumps. Replacing an existing heat pump with a new one is not eligible under HEAR. This means most SC households will need to rely on HOMES rebates or utility programs instead.",
+        text: "Most likely yes, on the equipment test. About 71% of South Carolina homes already heat with electricity, and under DOE Program Notice 26-2 \u2014 effective May 29, 2026, which South Carolina\u2019s program must follow when it launches \u2014 HEAR covers upgrades from existing electric equipment to more efficient electric equipment. Replacing electric resistance heat or an older heat pump qualifies; replacing a gas, propane, or oil system no longer does. That puts roughly three quarters of SC homes inside the rule rather than outside it, subject to the 150% AMI income limit.",
       },
     },
     {
@@ -137,7 +137,7 @@ export default function SouthCarolinaPage() {
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Potential savings: $2,000 to $22,500+</p>
-              <p className="text-sm text-green-900">$2,000 (above 150% AMI) to $22,500+ (below 80% AMI, when HEAR/HOMES launch). Full electrification packages can reach ~$22,500 total incentives for income-qualified households switching from fossil fuels.</p>
+              <p className="text-sm text-green-900">$2,000 (above 150% AMI) to $22,500+ (below 80% AMI, when HEAR/HOMES launch). Full electrification packages can reach ~$22,500 total incentives for income-qualified households upgrading existing electric equipment.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">✗ Federal tax credits expired</p>
@@ -145,7 +145,7 @@ export default function SouthCarolinaPage() {
             </div>
             <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
               <p className="font-semibold text-amber-800 mb-1">⚠ HEAR/HOMES rebates have not launched in South Carolina</p>
-              <p className="text-sm text-amber-900">South Carolina&apos;s $137 million in IRA-funded HEAR and HOMES rebates remain in development. When they launch, HEAR could cover up to <strong>$8,000</strong> for a heat pump (income-qualified, fuel-switching only). But about 71% of SC homes already heat with electricity — meaning most households will not qualify for HEAR&apos;s largest rebates because replacing an existing electric heat pump is not eligible.</p>
+              <p className="text-sm text-amber-900">South Carolina&apos;s $137 million in IRA-funded HEAR and HOMES rebates remain in development. When they launch they will do so under DOE Program Notice 26-2, which limits HEAR to upgrades from existing electric equipment — and about 71% of SC homes already heat with electricity, so most households fall inside that rule rather than outside it. HEAR could cover up to <strong>$8,000</strong> for a heat pump, subject to the income limits.</p>
             </div>
           </div>
         </div>
@@ -180,9 +180,9 @@ export default function SouthCarolinaPage() {
             The SC Energy Office (within the Office of Regulatory Staff) administers HEAR, which is funded through the IRA with approximately <strong>$69 million</strong> allocated to South Carolina. The program has not launched yet — SC submitted its full application in January 2025 and the program remains in development as of June 2026 — the SC Energy Office is finalizing program software and contractor enrollment, with launch anticipated later in 2026.
           </p>
 
-          <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
-            <p className="font-semibold text-amber-800 mb-1">⚠ Critical limitation for South Carolina</p>
-            <p className="text-sm text-amber-900">About 71% of SC homes already heat with electricity. HEAR rebates do not apply to replacing an existing electric heat pump — the program targets fuel-switching from gas, propane, oil, or electric resistance (strip heat) to heat pumps. This means the majority of SC households may not qualify for HEAR&apos;s largest rebates.</p>
+          <div className="bg-green-50 border border-green-200 rounded-lg p-5 mb-6">
+            <p className="font-semibold text-green-800 mb-1">✓ Why South Carolina is unusually well positioned for HEAR</p>
+            <p className="text-sm text-green-900">About 71% of SC homes already heat with electricity. Under DOE Program Notice 26-2 — which South Carolina&apos;s program must follow when it launches — HEAR covers upgrades from existing electric equipment to more efficient electric equipment. Electric resistance heat and older heat pumps are exactly that case, so the state&apos;s high electric-heating share puts most households inside HEAR&apos;s equipment rule rather than outside it. The households now excluded are the gas (23%) and propane (3.5%) minority.</p>
           </div>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">HEAR rebate amounts (when program launches)</h3>
@@ -272,7 +272,7 @@ export default function SouthCarolinaPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Home Efficiency Rebates (HOMES)</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            HOMES is the second IRA-funded rebate program, with approximately <strong>$68 million</strong> allocated to South Carolina. Unlike HEAR, HOMES is available to <strong>all income levels</strong> and focuses on whole-home energy savings rather than fuel-switching. This makes HOMES the more broadly applicable program for SC homeowners, since most already heat with electricity. South Carolina&apos;s program materials advertise HOMES rebates ranging up to <strong>$16,000</strong> for income-qualified households achieving the deepest whole-home energy savings; the amounts in the table below reflect the standard modeled-savings caps, with final rebate tiers to be confirmed at launch.
+            HOMES is the second IRA-funded rebate program, with approximately <strong>$68 million</strong> allocated to South Carolina. Unlike HEAR, HOMES is available to <strong>all income levels</strong> and pays on whole-home energy savings rather than on what equipment you are replacing. That makes HOMES the route for the households HEAR now excludes — gas, propane, and oil homes — and for anyone above 150% AMI, since HEAR is income-limited. South Carolina&apos;s program materials advertise HOMES rebates ranging up to <strong>$16,000</strong> for income-qualified households achieving the deepest whole-home energy savings; the amounts in the table below reflect the standard modeled-savings caps, with final rebate tiers to be confirmed at launch.
           </p>
 
           <div className="overflow-x-auto mb-6">
@@ -309,8 +309,8 @@ export default function SouthCarolinaPage() {
           </p>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
-            <p className="font-semibold text-blue-800 mb-1">HOMES may matter more than HEAR in South Carolina</p>
-            <p className="text-sm text-blue-900">Because 71% of SC homes already heat with electricity, HEAR&apos;s fuel-switching requirement disqualifies most households from its largest rebates. HOMES — which is open to all incomes and focuses on overall energy reduction — will likely be the more relevant program for the majority of South Carolina homeowners.</p>
+            <p className="font-semibold text-blue-800 mb-1">Where HOMES matters more than HEAR in South Carolina</p>
+            <p className="text-sm text-blue-900">With 71% of SC homes on electric heat, HEAR&apos;s electric-to-electric rule reaches most households — so for them HEAR is likely to be the larger rebate. HOMES is the better route for the minority heating with gas, propane, or oil, whom HEAR no longer covers, and for households above 150% AMI, who fall outside HEAR&apos;s income limit regardless of equipment.</p>
           </div>
         </div>
       </section>
@@ -423,7 +423,7 @@ export default function SouthCarolinaPage() {
             </table>
           </div>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Dominion Energy SC has a unique rule: <strong>no fuel switching allowed</strong>. Heat pumps must replace heat pumps, and ACs must replace ACs. This is the opposite of HEAR&apos;s fuel-switching requirement, creating a situation where the two programs target different households.
+            Dominion Energy SC has a unique rule: <strong>no fuel switching allowed</strong>. Heat pumps must replace heat pumps, and ACs must replace ACs. Since 26-2, HEAR points the same way — it too reaches only upgrades from existing electric equipment — so a Dominion customer replacing electric equipment can pursue both rather than choosing between them.
           </p>
 
           {/* Santee Cooper */}
@@ -538,7 +538,7 @@ export default function SouthCarolinaPage() {
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900 mb-2">80–150% AMI — ducted heat pump + HPWH</p>
               <ul className="text-sm text-gray-700 space-y-1">
-                <li>HEAR heat pump rebate (fuel-switching): up to $4,000</li>
+                <li>HEAR heat pump rebate (electric-to-electric): up to $4,000</li>
                 <li>HEAR HPWH rebate: up to $875</li>
                 <li>HOMES rebate (separate measures, 35%+): up to $4,000</li>
                 <li>Utility rebate (Dominion Energy SC): $650 HP + $750 HPWH</li>
@@ -547,7 +547,7 @@ export default function SouthCarolinaPage() {
             </div>
 
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-2">Below 80% AMI — full electrification package (fuel-switching)</p>
+              <p className="font-semibold text-green-800 mb-2">Below 80% AMI — full electrification package (electric-to-electric)</p>
               <ul className="text-sm text-green-900 space-y-1">
                 <li>HEAR heat pump: $8,000</li>
                 <li>HEAR HPWH: $1,750</li>
@@ -562,7 +562,7 @@ export default function SouthCarolinaPage() {
 
           <div className="bg-gray-100 rounded-lg p-5 mb-4">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
-            <p className="text-sm text-gray-700">A typical heat pump installation in South Carolina costs <strong>$8,000–$15,000</strong>. With only utility rebates (the current reality), expect <strong>$6,000–$14,700 out of pocket</strong>. When HEAR/HOMES launch, income-qualified homeowners switching from fossil fuels could pay <strong>$0–$6,000</strong>. Most SC homeowners in 2026 will fall in the <strong>$7,000–$12,000</strong> range unless they qualify for future federal rebates. Pairing with <Link href="/battery" className="text-brand-600 hover:underline">a home battery</Link> or time-of-use rates can further offset ongoing energy costs.</p>
+            <p className="text-sm text-gray-700">A typical heat pump installation in South Carolina costs <strong>$8,000–$15,000</strong>. With only utility rebates (the current reality), expect <strong>$6,000–$14,700 out of pocket</strong>. When HEAR/HOMES launch, income-qualified homeowners upgrading existing electric equipment could pay <strong>$0–$6,000</strong>. Most SC homeowners in 2026 will fall in the <strong>$7,000–$12,000</strong> range unless they qualify for future federal rebates. Pairing with <Link href="/battery" className="text-brand-600 hover:underline">a home battery</Link> or time-of-use rates can further offset ongoing energy costs.</p>
           </div>
           <p className="text-sm text-gray-500">
             South Carolina has no state air-source heat pump tax credit and no state residential loan program. The geothermal tax credit ($3,500) applies only to ground-source systems.
@@ -583,7 +583,7 @@ export default function SouthCarolinaPage() {
 
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
             <p className="font-semibold text-green-800 mb-1">✓ Best candidates for SC incentives in 2026</p>
-            <p className="text-sm text-green-900">Homes switching from gas, propane, or electric resistance (strip heat) to a heat pump. Low-income households below 200% FPG (WAP) or below 150% AMI (HEAR, when it launches). Duke Energy customers — Progress or Carolinas — where Smart $aver pays the state&apos;s highest utility rebates. Geothermal system installers (state tax credit still active).</p>
+            <p className="text-sm text-green-900">Homes replacing electric resistance (strip heat) or an older heat pump &mdash; the case HEAR will cover when it launches, and the majority of SC housing stock. Low-income households below 200% FPG (WAP) or below 150% AMI (HEAR, when it launches). Duke Energy customers — Progress or Carolinas — where Smart $aver pays the state&apos;s highest utility rebates. Geothermal system installers (state tax credit still active).</p>
           </div>
         </div>
       </section>
@@ -693,7 +693,7 @@ export default function SouthCarolinaPage() {
 
           <div className="mt-6 bg-amber-50 border border-amber-200 rounded-lg p-5">
             <p className="font-semibold text-amber-800 mb-1">⚠ Common mistake: assuming Dominion allows fuel switching</p>
-            <p className="text-sm text-amber-900">Dominion Energy SC requires that new equipment match the type being replaced — heat pumps must replace heat pumps, ACs must replace ACs. If you&apos;re switching from a gas furnace to a heat pump in Dominion territory, the utility rebate does not apply. Wait for HEAR instead, or check if your cooperative offers fuel-switching incentives.</p>
+            <p className="text-sm text-amber-900">Dominion Energy SC requires that new equipment match the type being replaced — heat pumps must replace heat pumps, ACs must replace ACs. If you&apos;re switching from a gas furnace to a heat pump in Dominion territory, the utility rebate does not apply &mdash; and HEAR will not cover it either, since 26-2 removed fuel-switching upgrades. Check whether your cooperative offers a dual-fuel incentive, or look to HOMES, which is fuel-neutral.</p>
           </div>
         </div>
       </section>
@@ -705,7 +705,7 @@ export default function SouthCarolinaPage() {
           <div className="space-y-4">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">HEAR/HOMES launch date</p>
-              <p className="text-sm text-gray-600 mt-1">South Carolina&apos;s $137 million in IRA-funded rebates are still in development. When they launch, income-qualified homeowners switching from fossil fuels could access up to $14,000 in HEAR rebates plus HOMES rebates. Monitor energy.sc.gov/rebates for updates.</p>
+              <p className="text-sm text-gray-600 mt-1">South Carolina&apos;s $137 million in IRA-funded rebates are still in development. When they launch, income-qualified homeowners upgrading existing electric equipment could access up to $14,000 in HEAR rebates plus HOMES rebates. Monitor energy.sc.gov/rebates for updates.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">IRA funding runway</p>
