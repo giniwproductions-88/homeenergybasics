@@ -253,6 +253,16 @@ them.
     source is already surrendered for every state citing it \u2014 a standing
     blind spot, not a pending decision. Revisit deliberately: unmuting
     restores the noise, leaving it keeps the blind spot.
+
+    It is not alone. `nehpa.org`, `efficiencyvermont.com` (x2) and
+    `dcseu.com` (x3) are all operated by **VEIC** \u2014 Efficiency Vermont's
+    error page names EVT, NEHPA's copyright is VEIC, DCSEU's block says
+    "call VEIC". One operator, one blocking policy, **six of the twenty-four**
+    dead watches, spanning VT, ME, MA, NH and DC. They will recover or fail
+    together: per-site work on any one of them is wasted effort, and a fix
+    that works on one should be tried on all six at once. Probed 2026-09-06 \u2014
+    all six return a 296\u2013503 character error template behind a large body,
+    so there is no content to recover from the 403 response.
 15. Co-op sites on shared templates inject closure vocabulary sitewide via
     rotating announcement banners. `closed` is the keyword most prone to
     false positives on utility sites.

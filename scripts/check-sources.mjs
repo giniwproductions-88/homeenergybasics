@@ -120,8 +120,18 @@ function registrableHost(u) {
 // keep such text inside <noscript>, which htmlToText strips — a match in
 // extracted text is the wall itself. Length guard avoids false-positives on
 // long real pages that happen to mention these phrases in prose.
+// 2026-09-06: every one of the eight bodies probed — the six large-body 403s
+// and both known-block controls — returned false here. Cloudflare's challenge
+// extracts to "Just a moment..." (16 chars) and matched nothing in the list, so
+// the clearest walls on the site fell through to NO SIGNAL. The added phrasings
+// are challenge titles and hard-block templates, not content vocabulary.
+//
+// `blocked` is a bare token and is the one alternative that could match prose.
+// It is tolerable only because of the WALL_TEXT_MAXLEN guard below: no real
+// program page in this corpus extracts to under 2000 characters. If that ever
+// stops being true, scope this alternative before widening the ceiling.
 const WALL_TEXT_RE =
-  /you are being redirected|javascript is required|checking your browser|enable javascript and cookies|verify(?:ing)? (?:that )?you are (?:a )?human|are you a robot|request unsuccessful\. incapsula/i;
+  /you are being redirected|javascript is required|checking your browser|enable javascript and cookies|verify(?:ing)? (?:that )?you are (?:a )?human|are you a robot|request unsuccessful\. incapsula|just a moment|attention required|something went wrong|share the following error information|\bblocked\b/i;
 const WALL_TEXT_MAXLEN = 2000;
 function isWallText(text) {
   return text.length < WALL_TEXT_MAXLEN && WALL_TEXT_RE.test(text);
@@ -1336,13 +1346,31 @@ function selftest() {
   const scopeOk = !kFurniture.temporarily && kProgram.temporarily === 1;
   if (!scopeOk) fail++;
   console.log(`${scopeOk ? "PASS" : "FAIL"}  keyword scoping: furniture=${JSON.stringify(kFurniture)} program=${JSON.stringify(kProgram)}`);
-  // same-domain wall-text detector
-  const wallHit = isWallText("You are being redirected...Javascript is required. Please enable javascript before you are allowed to see this page.");
-  const wallMissLong = isWallText("Rebates up to $3,000 for qualifying heat pump installations. ".repeat(40) + "javascript is required");
-  const wallMissClean = isWallText("Efficiency Maine offers rebates up to $12,900 for single-wide mobile homes heated with propane or kerosene.");
-  const wallOk = wallHit && !wallMissLong && !wallMissClean;
-  if (!wallOk) fail++;
-  console.log(`${wallOk ? "PASS" : "FAIL"}  wall-text: interstitial=${wallHit} longRealPage=${wallMissLong} cleanPage=${wallMissClean} (want true/false/false)`);
+  // same-domain wall-text detector. The block-page strings below are modelled on
+  // the head text reported by the 2026-09-06 probe of the six large-body 403s and
+  // the two small-block controls; each previously returned false.
+  const wallCases = [
+    // challenge and block pages — must be TRUE
+    ["cloudflare challenge (CT and AZ controls, 16 chars)", "Just a moment...", true],
+    ["cloudflare attention-required title", "Attention Required! | Cloudflare", true],
+    ["EVT error template", "Error | Efficiency Vermont Blocked", true],
+    ["VEIC hard block with error id", "Blocked please call VEIC and share the following error information: Ray ID 9a2f", true],
+    ["generic soft failure template", "Something went wrong. Please try again later.", true],
+    ["legacy interstitial still matches", "You are being redirected...Javascript is required. Please enable javascript before you are allowed to see this page.", true],
+    // near-misses — must be FALSE
+    ["long real page mentioning blocked in prose", "Rebates up to $3,000 for qualifying heat pump installations. ".repeat(40) + " Do not install where airflow is blocked.", false],
+    ["long real page mentioning javascript", "Rebates up to $3,000 for qualifying heat pump installations. ".repeat(40) + "javascript is required", false],
+    ["short clean page", "Efficiency Maine offers rebates up to $12,900 for single-wide mobile homes heated with propane or kerosene.", false],
+    // documented limit, not a defect: under the length guard a bare token wins.
+    // Accepted because no real program page in this corpus is this short.
+    ["short prose containing blocked (known limit of the bare token)", "Do not install where airflow is blocked.", true],
+  ];
+  for (const [name, text, want] of wallCases) {
+    const got = isWallText(text);
+    const ok = got === want;
+    if (!ok) fail++;
+    console.log(`${ok ? "PASS" : "FAIL"}  wall-text ${name}: got ${got} (want ${want})`);
+  }
   // registrable-host approximation (off-domain wall detector)
   const rhCases = [
     ["https://mn.gov/commerce/x", "https://validate.perfdrive.com/y", false],
