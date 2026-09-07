@@ -130,7 +130,7 @@ export default function ArizonaPage() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Efficiency Arizona HEAR — up to $8,000 per heat pump</p>
-              <p className="text-sm text-green-900">Point-of-sale rebate for households below 150% of Area Median Income (AMI) upgrading from existing electric equipment — since 26-2, gas, propane, and oil replacements no longer qualify. Arizona put this into its own guidelines for reservations made on or after <strong>September 1, 2026</strong>, and loosened a separate rule at the same time: a heat pump no longer has to be the home&apos;s primary heating and cooling source. Covers 100% of costs for below 80% AMI, 50% for 80–150% AMI. Must use a qualified contractor and apply before installation.</p>
+              <p className="text-sm text-green-900">Point-of-sale rebate for households below 150% of Area Median Income (AMI) upgrading from existing electric equipment — since 26-2, gas, propane, and oil replacements no longer qualify. Applications are still being accepted — Arizona put this into its own guidelines for reservations made on or after <strong>September 1, 2026</strong>, and loosened a separate rule at the same time: a heat pump no longer has to be the home&apos;s primary heating and cooling source. Covers 100% of costs for below 80% AMI, 50% for 80–150% AMI. Must use a qualified contractor and apply before installation.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ SRP Cool Cash — up to $225 per ton</p>
@@ -180,7 +180,7 @@ export default function ArizonaPage() {
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-amber-800 mb-1">⚠ New guidelines apply from September 1, 2026 — and they key on your reservation, not your application</p>
-            <p className="text-sm text-amber-900">The Governor&apos;s Office of Resiliency announced revised Efficiency Arizona guidelines on July 21, 2026. <strong>Every rebate reservation made on or after September 1, 2026 falls under the new rules.</strong> Two earlier dates closed out the old ones: <strong>August 1</strong> was the last day to apply under the previous guidelines for a gas-to-electric project, and <strong>August 28</strong> was the final day to secure a reservation — which required an approved application, a completed home assessment where one was required, and an approved contractor scope of work. Installation, redemption and payment can still happen after August for reservations secured by that date. The distinction is the part that catches people: applying in July was not enough. If you applied but never reached an approved reservation by August 28, your project is under the new guidelines.</p>
+            <p className="text-sm text-amber-900">The Governor&apos;s Office of Resiliency announced revised Efficiency Arizona guidelines on July 21, 2026. <strong>The program is still open and still taking applications</strong> — what changed is the rules, not availability. Efficiency Arizona&apos;s own banner puts it as applications still being accepted, but they must meet the new program guidelines. <strong>Every rebate reservation made on or after September 1, 2026 falls under the new rules.</strong> Two earlier dates closed out the old ones: <strong>August 1</strong> was the last day to apply under the previous guidelines for a gas-to-electric project, and <strong>August 28</strong> was the final day to secure a reservation — which required an approved application, a completed home assessment where one was required, and an approved contractor scope of work. Installation, redemption and payment can still happen after August for reservations secured by that date. The distinction is the part that catches people: applying in July was not enough. If you applied but never reached an approved reservation by August 28, your project is under the new guidelines.</p>
           </div>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-6">
@@ -213,7 +213,7 @@ export default function ArizonaPage() {
                   <td className="p-3 font-semibold">$1,750</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-3">Electrical panel/breaker box</td>
+                  <td className="p-3">Electrical panel/breaker box (only with qualified appliance)</td>
                   <td className="p-3 font-semibold">$4,000</td>
                 </tr>
                 <tr className="border-b">
@@ -267,7 +267,11 @@ export default function ArizonaPage() {
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            HEAR operates as a <strong>point-of-sale rebate</strong> — the discount appears directly on the contractor&apos;s invoice, not as a post-purchase reimbursement. Projects must be approved before installation begins; completed or in-progress projects are not eligible. Under DOE Program Notice 26-2, effective May 29, 2026, the heat pump rebate applies when upgrading from existing electric equipment — an electric furnace, boiler, baseboard units, an existing AC, or an older heat pump — to more efficient electric equipment, and new construction remains eligible. Replacing a gas, propane, or oil system no longer qualifies for HEAR. Arizona wrote this into its own guidelines for reservations made on or after September 1, 2026, and its July 21 notice confirms that replacing an <strong>existing heat pump</strong> qualifies. Efficiency Arizona&apos;s main program page has not been updated to match and still carries the older rule that a home with an existing heat pump is ineligible — confirm with the program before assuming either version governs your project.
+            HEAR operates as a <strong>point-of-sale rebate</strong> — the discount appears directly on the contractor&apos;s invoice, not as a post-purchase reimbursement. Projects must be approved before installation begins; completed or in-progress projects are not eligible. Under DOE Program Notice 26-2, effective May 29, 2026, the heat pump rebate applies when upgrading from existing electric equipment — an electric furnace, boiler, baseboard units, an existing AC, or an older heat pump — to more efficient electric equipment, and new construction remains eligible. Replacing a gas, propane, or oil system no longer qualifies for HEAR. Arizona wrote this into its own guidelines for reservations made on or after September 1, 2026, and its July 21 notice confirms that replacing an <strong>existing heat pump</strong> qualifies.
+          </p>
+
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Rebates reach you through <strong>two pathways</strong>, and which one applies depends on the measure. The <strong>contractor pathway</strong> runs through a Qualified Contractor, who applies the rebate directly to your invoice. The <strong>retail pathway</strong> lets you buy at a participating retailer using an approved coupon, and it covers only <strong>heat pump water heaters, heat pump clothes dryers, and electric cooking appliances</strong>. <strong>Heat pumps themselves are contractor-only</strong> — there is no retail route for a space-heating heat pump, so a Qualified Contractor is required for the $8,000 rebate. Electrical panel and wiring rebates are not standalone either: both are eligible only alongside a qualifying appliance installation.
           </p>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
@@ -553,7 +557,7 @@ export default function ArizonaPage() {
               </div>
               <div>
                 <p className="font-semibold text-gray-900">Work with your assigned Qualified Contractor</p>
-                <p className="text-sm text-gray-700">After approval, a Qualified Contractor is assigned to your project — or you can select your preferred contractor from the network list. The rebate is applied to the contractor&apos;s invoice and deducted from the project cost. For heat pump water heaters, dryers, and cooking appliances, an approved retail coupon pathway is also available.</p>
+                <p className="text-sm text-gray-700">After approval, a Qualified Contractor is assigned to your project — or you can select your preferred contractor from the network list. The rebate is applied to the contractor&apos;s invoice and deducted from the project cost. An approved retail coupon pathway is available <em>only</em> for heat pump water heaters, heat pump clothes dryers, and electric cooking appliances — a space-heating heat pump has to go through a Qualified Contractor.</p>
               </div>
             </div>
             <div className="flex gap-4">
