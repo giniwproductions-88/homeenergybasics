@@ -47,6 +47,10 @@
  *   scripts/source-latest.json     regenerated every check. gitignore.
  *   scripts/source-diff-report.md  regenerated every check. gitignore.
  *   scripts/source-ignore.json     optional array of URLs to skip/mute (bot-blocked or known-noisy).
+ *                                  A mute suppresses the diff row. It does NOT suppress the
+ *                                  report's MUTED AND HOLLOW section: a muted URL that is also
+ *                                  erroring or carrying no signal is watching nothing, and the
+ *                                  mute would otherwise hide the only row that said so.
  *   scripts/source-nosignal-accepted.json
  *                                  committed. Suppresses rows from the report's NO SIGNAL section.
  *                                  Shape: { "<url>": { "reason": "by-design" | "js-rendered", "note": "..." } }
@@ -148,6 +152,32 @@ let _emptyTextHash = null;
 const emptyTextHash = () => (_emptyTextHash ??= sha(""));
 function extractedNothing(e) {
   return !!e && !!e.textHash && e.textHash === emptyTextHash();
+}
+
+// Is this watch watching nothing? Two independent ways to be hollow, and they
+// must be tested in this order: hasNoSignal() returns false for error entries,
+// so testing it first would classify a 403 as healthy. Same trap as
+// classifyAcceptance() below.
+//
+// Keyed on error status and signal, never on length. Length corroborates
+// (nothing under 8KB in the current baseline carries signal, against a 44KB p10
+// for entries that do) but a short page that publishes figures is legitimate
+// and a 1.5MB block page is not, so length would decide both cases wrongly.
+//
+// PDFs are excluded from the no-signal branch, matching hasNoSignal(): a PDF
+// with no extracted dollars is compared by bytesHash and is still a real watch.
+// An erroring PDF is still hollow.
+// Returns null when the entry is a healthy watch.
+function hollowReason(e) {
+  if (!e) return null;
+  if (e.error) return { kind: "fetch-error", detail: e.error };
+  if (hasNoSignal(e)) {
+    return {
+      kind: "no-signal",
+      detail: `fetched ${e.httpStatus ?? "?"} but 0 dollar figures and 0 status keywords`,
+    };
+  }
+  return null;
 }
 
 // Why an acceptance may no longer hold. Three distinct states, and collapsing
@@ -552,11 +582,27 @@ function diffEntry(base, cur) {
 
 function writeReport(baseline, latest, ignoreSet, humanVerify = [], accepted = {}) {
   const rows = []; // {states, tier, label, url, level, notes}
+  const mutedHollow = []; // muted AND watching nothing — see hollowReason()
   const baseMap = baseline.entries, curMap = latest.entries;
   let unchanged = 0, ignored = 0;
 
   for (const url of Object.keys(curMap)) {
-    if (ignoreSet.has(url)) { ignored++; continue; }
+    if (ignoreSet.has(url)) {
+      ignored++;
+      // Muting is correct for a URL that fetches and carries figures — it drops
+      // known noise. When the muted URL is hollow, this `continue` is precisely
+      // why it has never reported: diffEntry would have returned FETCH, and the
+      // NO SIGNAL walk skips muted URLs too, so nothing downstream sees it.
+      const hollow = hollowReason(curMap[url]);
+      if (hollow) {
+        const e = curMap[url];
+        mutedHollow.push({
+          url, states: e.states || [], label: e.label, length: e.length,
+          reason: hollow, declared: accepted[url] || null,
+        });
+      }
+      continue;
+    }
     const cur = curMap[url];
     const base = baseMap[url];
     if (!base) {
@@ -622,7 +668,7 @@ function writeReport(baseline, latest, ignoreSet, humanVerify = [], accepted = {
     a.states.join(",").localeCompare(b.states.join(",")) ||
     (a.length || 0) - (b.length || 0));
 
-  md += `URLs checked: ${Object.keys(curMap).length} | unchanged: ${unchanged} | flagged: ${rows.length} | muted (ignore list): ${ignored} | no-signal: ${noSignal.length} (${acceptedCount} accepted)\n\n`;
+  md += `URLs checked: ${Object.keys(curMap).length} | unchanged: ${unchanged} | flagged: ${rows.length} | muted (ignore list): ${ignored} (${mutedHollow.length} of them hollow) | no-signal: ${noSignal.length} (${acceptedCount} accepted)\n\n`;
   md += `## Triage: states to promote to manual verification\n\n${statesToVerify.length ? statesToVerify.join(", ") : "(none)"}\n\n`;
   for (const lvl of ["HIGH", "FETCH", "NEW", "REMOVED", "LOW"]) {
     const grp = rows.filter((r) => r.level === lvl);
@@ -640,6 +686,31 @@ function writeReport(baseline, latest, ignoreSet, humanVerify = [], accepted = {
     md += `Automated fetches false-miss on these hosts. Check each in a browser on the regular cadence; a quiet report does NOT cover them.\n\n`;
     for (const hv of humanVerify) {
       md += `- **[${hv.states.join(",")}]** ${hv.label}\n  ${hv.url}\n`;
+    }
+    md += "\n";
+  }
+  if (mutedHollow.length) {
+    mutedHollow.sort((a, b) =>
+      a.reason.kind.localeCompare(b.reason.kind) ||
+      a.states.join(",").localeCompare(b.states.join(",")));
+    const errN = mutedHollow.filter((m) => m.reason.kind === "fetch-error").length;
+    md += `## MUTED AND HOLLOW (${mutedHollow.length}) — suppressed, and watching nothing\n\n`;
+    md += `Every URL below is in scripts/source-ignore.json, so the diff skips it. That is the right`;
+    md += ` outcome for a muted URL that fetches and carries figures — the mute drops known noise.`;
+    md += ` It is the wrong outcome here: these are **also hollow**, so the mute is hiding the only`;
+    md += ` row that would have reported them. A muted URL that 403s on every run produces no output`;
+    md += ` at all and is indistinguishable, in the counts above, from a healthy quiet watch.\n\n`;
+    md += `${errN} fetch-error, ${mutedHollow.length - errN} zero-signal. Un-muting any of these surfaces`;
+    md += ` it as FETCH or NO SIGNAL on the next run. Nothing here changes the baseline, and like`;
+    md += ` NO SIGNAL this is a standing condition, not an event: it does not affect the exit code.\n\n`;
+    for (const m of mutedHollow) {
+      md += `- **[${m.states.join(",") || "?"}]** ${m.label || "(no label)"}\n  ${m.url}\n`;
+      md += `  - muted: yes (scripts/source-ignore.json)\n`;
+      md += `  - hollow: ${m.reason.kind} — ${m.reason.detail}\n`;
+      md += `  - ${m.length ?? "?"} bytes\n`;
+      if (m.declared) {
+        md += `  - declared in source-nosignal-accepted.json: ${m.declared.reason} — ${m.declared.note}\n`;
+      }
     }
     md += "\n";
   }
@@ -666,7 +737,7 @@ function writeReport(baseline, latest, ignoreSet, humanVerify = [], accepted = {
   }
   md += `---\nWorkflow: verify HIGH states at full checklist depth -> update pages -> \`node scripts/check-sources.mjs accept <STATE>\` -> commit source-baseline.json.\nDate-stamp rule: a flag here is NOT verification. Bump lastVerified only after real source verification.\nNO SIGNAL is a standing condition, not an event: it does not affect the exit code.\n`;
   writeFileSync(REPORT_F, md);
-  return { rows, statesToVerify, unchanged, noSignal, acceptedCount, reasonTally, staleAccept, malformedAccept };
+  return { rows, statesToVerify, unchanged, noSignal, acceptedCount, reasonTally, staleAccept, malformedAccept, mutedHollow };
 }
 
 /* ------------------------------------------------------------------ */
@@ -1120,6 +1191,25 @@ function selftest() {
     if (!ok) fail++;
     console.log(`${ok ? "PASS" : "FAIL"}  ${name}: got ${level} (want ${want})${notes.length ? " — " + notes.join(" | ") : ""}`);
   }
+  // hollowReason: a muted URL only reports when it is ALSO hollow. The ordering
+  // case is the one that matters — hasNoSignal() is false for error entries, so
+  // testing signal first would call a 403 healthy and re-hide it.
+  const hollowCases = [
+    ["healthy watch", mk({}), null],
+    ["fetch error", { ...mk({}), error: "HTTP 403" }, "fetch-error"],
+    ["zero signal", mk({ dollars: [], keywords: {} }), "no-signal"],
+    ["error outranks no-signal", { ...mk({ dollars: [], keywords: {} }), error: "HTTP 403" }, "fetch-error"],
+    ["pdf with no dollars is not hollow", mk({ kind: "pdf", dollars: [], keywords: {} }), null],
+    ["erroring pdf is hollow", { ...mk({ kind: "pdf" }), error: "HTTP 404" }, "fetch-error"],
+    ["missing entry", undefined, null],
+  ];
+  for (const [name, entry, want] of hollowCases) {
+    const got = hollowReason(entry);
+    const ok = (got?.kind ?? null) === want;
+    if (!ok) fail++;
+    console.log(`${ok ? "PASS" : "FAIL"}  hollowReason ${name}: got ${got?.kind ?? "null"} (want ${want ?? "null"})`);
+  }
+
   // fingerprint helpers
   const text = htmlToText(`<html><script>var x="$99";</script><p>Rebates up to $3,000 &ndash; now &amp; waitlist closed. <b>$500</b>/ton</p></html>`);
   const d = extractDollars(text), k = keywordCounts(text);
