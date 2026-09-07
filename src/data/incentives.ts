@@ -970,10 +970,10 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "NH",
     stateName: "New Hampshire",
     status: "open",
-    lastVerified: "2026-07-06",
-    lastUpdated: "2026-07-06",
+    lastVerified: "2026-09-06",
+    lastUpdated: "2026-09-06",
     summary:
-      "NHSaves rebates of $250–$2,000/ton are the primary incentive ($2,000/ton enhanced electric-resistance tier effective March 23, 2026), plus a $650/unit NE Heat Pump Accelerator. HEAR rebates (up to $8,000) are not yet launched — implementer Everblue is contracted, launch expected mid-Summer 2026. Federal 25C/25D expired Dec 31, 2025. Projects started before HEAR launch are not eligible. R-410A banned from NHSaves qualified list for 2026.",
+      "NHSaves rebates of $250–$2,000/ton are the primary incentive ($2,000/ton enhanced electric-resistance tier effective March 23, 2026), plus a $650/unit NE Heat Pump Accelerator. HEAR rebates (up to $8,000) are not yet launched — implementer Everblue is contracted, NH DOE expects launch Fall 2026, and 26-2 limits HEAR to electric-to-electric upgrades. Federal 25C/25D expired Dec 31, 2025. Projects started before HEAR launch are not eligible. R-410A banned from NHSaves qualified list for 2026.",
     sources: [
       {
         label: "NHSaves — Heat Pumps & Central A/C",

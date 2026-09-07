@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title:
     "New Hampshire Heat Pump Rebates 2026: $2,000/Ton NHSaves + $650 Accelerator | Home Energy Basics",
   description:
-    "NHSaves offers up to $2,000/ton. NE Accelerator adds $650. HEAR up to $8,000 coming mid-2026. Federal credits ended. Every NH heat pump incentive in 2026.",
+    "NHSaves up to $2,000/ton, NE Accelerator $650. HEAR ($8,000, electric replacements only) expected Fall 2026. Federal credits ended. Every NH heat pump incentive.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/nh",
   },
@@ -32,7 +32,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in New Hampshire in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "NHSaves offers $250 per ton (standard) or up to $2,000 per ton (replacing electric resistance heat, Eversource/Liberty/Unitil as of March 23, 2026). NHEC offers up to $2,000 per ton for electric resistance replacement. The New England Heat Pump Accelerator adds $650 per outdoor unit. Heat pump water heaters receive $900 from NHSaves; the Accelerator offers $300 per HPWH, though NHSaves rules may prevent combining both on one unit. There is no federal tax credit for 2026 installations. HEAR rebates (up to $8,000, and since May 2026 limited to replacing existing electric equipment) are expected to launch mid-Summer 2026.",
+        text: "NHSaves offers $250 per ton (standard) or up to $2,000 per ton (replacing electric resistance heat, Eversource/Liberty/Unitil as of March 23, 2026). NHEC offers up to $2,000 per ton for electric resistance replacement. The New England Heat Pump Accelerator adds $650 per outdoor unit. Heat pump water heaters receive $900 from NHSaves; the Accelerator offers $300 per HPWH, though NHSaves rules may prevent combining both on one unit. There is no federal tax credit for 2026 installations. HEAR rebates (up to $8,000, and limited by DOE's May 2026 rules to replacing existing electric equipment) are expected to launch Fall 2026.",
       },
     },
     {
@@ -144,7 +144,7 @@ export default function NewHampshirePage() {
             </div>
             <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
               <p className="font-semibold text-amber-800 mb-1">&#9888; HEAR Approved But Not Launched &mdash; Projects Before Launch Don&apos;t Qualify</p>
-              <p className="text-sm text-amber-900">New Hampshire&apos;s $34.7 million HEAR allocation is approved but the program has not launched. NH DOE expects mid-Summer 2026. Projects started before the official launch date are not eligible for retroactive rebates. R-410A systems are banned from the NHSaves Qualified Product List for 2026 &mdash; only R-32 or R-454B qualify.</p>
+              <p className="text-sm text-amber-900">New Hampshire&apos;s $34.7 million HEAR allocation is approved but the program has not launched; NH DOE expects Fall 2026, and a program launching now would do so under DOE&apos;s May 2026 rules, which cover electric replacements only. Projects started before the official launch date are not eligible for retroactive rebates. R-410A systems are banned from the NHSaves Qualified Product List for 2026 &mdash; only R-32 or R-454B qualify.</p>
             </div>
           </div>
         </div>
@@ -356,11 +356,11 @@ export default function NewHampshirePage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">HEAR Rebates: Approved But Not Yet Launched</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            New Hampshire&apos;s HEAR program (Home Electrification and Appliance Rebates) has been approved by the U.S. Department of Energy. The state&apos;s <strong>$34.7 million</strong> allocation has been received, and NH DOE has selected Everblue as its program implementer &mdash; the Governor and Council approved the contract on March 25, 2026, and work is now underway. Launch is currently expected <strong>mid-Summer 2026</strong>.
+            New Hampshire&apos;s HEAR program (Home Electrification and Appliance Rebates) has been approved by the U.S. Department of Energy. The state&apos;s <strong>$34.7 million</strong> allocation has been received, and NH DOE has selected Everblue as its program implementer &mdash; the Governor and Council approved the contract on March 25, 2026, and work is now underway. NH DOE expects launch in <strong>Fall 2026</strong>.
           </p>
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-amber-800 mb-1">&#9888; HEAR no longer covers switching off oil, propane, or gas</p>
-            <p className="text-sm text-amber-900">DOE Program Notice 26-2, effective May 29, 2026, removed fuel-switching upgrades from HEAR. Rebates now apply only when replacing existing electric equipment with more efficient electric equipment; new construction remains eligible. The caps below therefore reach a household replacing electric resistance heat or an older heat pump &mdash; not one replacing an oil, propane, or gas system.</p>
+            <p className="text-sm text-amber-900">DOE Program Notice 26-2, effective May 29, 2026, removed fuel-switching upgrades from HEAR nationwide: rebates apply only when replacing existing electric equipment with more efficient electric equipment, and new construction remains eligible. New Hampshire has not launched HEAR and has narrowed nothing itself &mdash; 26-2 binds programs already running and requires the rest to align before they launch. When New Hampshire launches, the caps below will reach a household replacing electric resistance heat or an older heat pump, not one replacing an oil, propane, or gas system.</p>
           </div>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
@@ -593,11 +593,11 @@ export default function NewHampshirePage() {
           <div className="space-y-4">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">HEAR Launch Date</p>
-              <p className="text-sm text-gray-600 mt-1">NH DOE targets mid-Summer 2026. Monitor energy.nh.gov for the official announcement. Projects started before launch don&apos;t qualify for retroactive rebates.</p>
+              <p className="text-sm text-gray-600 mt-1">NH DOE targets Fall 2026; whenever it launches, it will do so under DOE&apos;s 26-2 rules, which pay only on electric-to-electric upgrades. Monitor energy.nh.gov for the official announcement. Projects started before launch don&apos;t qualify for retroactive rebates.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">IRA Funding Runway</p>
-              <p className="text-sm text-gray-600 mt-1">HEAR and HOMES funds remain available until expended or September 30, 2031. The OBBBA did not repeal IRA rebate allocations. NH&apos;s HOMES program ($34.9 million) has not yet received DOE approval &mdash; no launch date set.</p>
+              <p className="text-sm text-gray-600 mt-1">HEAR and HOMES funds remain available until expended or September 30, 2031, though 26-2 narrowed what HEAR itself will pay for. The OBBBA did not repeal IRA rebate allocations. NH&apos;s HOMES program ($34.9 million) has not yet received DOE approval &mdash; no launch date set.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">NE Accelerator Distributor Enrollment</p>
