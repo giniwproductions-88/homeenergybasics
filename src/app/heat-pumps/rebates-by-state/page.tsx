@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { incentives, formatDate } from "@/data/incentives";
+import { incentives } from "@/data/incentives";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
@@ -143,9 +143,6 @@ const faqJsonLd = {
 };
 
 export default function RebatesByStatePage() {
-  const verifiedDate = "2026-06-16";
-  const formattedDate = formatDate(verifiedDate);
-
   function StateRow({ state }: { state: StateTier }) {
     const incentive = incentives[state.code as keyof typeof incentives];
     const statusEmoji = incentive?.status === "open" ? "🟢" : incentive?.status === "limited" ? "🟡" : "🔴";
@@ -222,10 +219,13 @@ export default function RebatesByStatePage() {
           </p>
 
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
-          </p>
-          <p className="text-xs text-gray-400 mt-1">
-            Rates and program availability may change after this date.
+            This guide summarizes our{" "}
+            <Link href="/heat-pumps" className="text-brand-600 hover:underline">
+              state guides
+            </Link>
+            . Every figure is maintained on the state page it comes from, which
+            carries its own verification date and sources. Amounts and program
+            availability change without notice.
           </p>
         </div>
       </section>
@@ -733,8 +733,7 @@ export default function RebatesByStatePage() {
             State tier rankings are based on the realistic maximum rebate available to a
             homeowner installing a ducted air-source heat pump system in 2026. We verified
             program status, dollar amounts, and eligibility rules directly against official
-            state energy office websites, utility program pages, and IRS guidance. Each
-            state&apos;s individual guide lists all sources with verification dates.
+            state energy office websites, utility program pages, and IRS guidance.
           </p>
 
           <p className="text-gray-700 leading-relaxed mb-4">

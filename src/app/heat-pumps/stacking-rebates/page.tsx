@@ -1,6 +1,5 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { formatDate } from "@/data/incentives";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
@@ -76,9 +75,6 @@ const faqJsonLd = {
 };
 
 export default function StackingRebatesPage() {
-  const verifiedDate = "2026-06-16";
-  const formattedDate = formatDate(verifiedDate);
-
   return (
     <>
       <JsonLd data={faqJsonLd} />
@@ -114,10 +110,13 @@ export default function StackingRebatesPage() {
           </p>
 
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
-          </p>
-          <p className="text-xs text-gray-400 mt-1">
-            Rates and program availability may change after this date.
+            This guide summarizes our{" "}
+            <Link href="/heat-pumps" className="text-brand-600 hover:underline">
+              state guides
+            </Link>
+            . Every figure is maintained on the state page it comes from, which
+            carries its own verification date and sources. Amounts and program
+            availability change without notice.
           </p>
 
           <nav className="mt-6 flex flex-wrap gap-x-4 gap-y-2 text-sm">
