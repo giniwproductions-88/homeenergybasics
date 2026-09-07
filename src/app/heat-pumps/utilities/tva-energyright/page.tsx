@@ -389,9 +389,14 @@ export default function TvaEnergyRightPage() {
               replacing an existing electric HVAC system with a qualifying
               electric system — swapping a gas furnace for a heat pump
               does not qualify. If you heat with gas, confirm eligibility
-              with your local power company before signing a contract, and
-              check whether your state&apos;s HEAR program (which does cover
-              fuel switching) has launched.
+              with your local power company before signing a contract.
+              Federal HEAR is not an alternative route: DOE Program Notice
+              26-2 (effective May 29, 2026) removed fuel-switching upgrades
+              from HEAR, which now covers only upgrades from existing
+              electric equipment to more efficient electric equipment. A
+              gas-heated household has no HEAR route for the heat pump
+              itself. HOMES, which is fuel-neutral and pays on whole-home
+              energy savings, is the federal program to look at instead.
             </p>
           </div>
         </div>
