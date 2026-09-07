@@ -925,7 +925,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     lastVerified: "2026-06-05",
     lastUpdated: "2026-06-05",
     summary:
-      "Vermont heat pump rebates come from Efficiency Vermont ($2,200 ducted, $375–$475/head ductless) and utility-specific programs. Burlington Electric offers up to $7,950 for income-qualified ducted systems — the highest in the state. GMP income bonus adds $2,200/condenser for ≤80% AMI households. Federal 25C/25D ended Dec 31, 2025. HEAR ($29.2M) is on pause.",
+      "Vermont heat pump rebates come from Efficiency Vermont ($2,200 ducted; ductless $375 per system at 2 tons or under, $475 above 2 tons, not per head) and utility-specific programs. Burlington Electric offers up to $7,950 for income-qualified ducted systems — the highest in the state. GMP income bonus adds $2,200/condenser for ≤80% AMI households. Federal 25C/25D ended Dec 31, 2025. HEAR ($29.2M) is on pause.",
     sources: [
       {
         label: "Efficiency Vermont — Heat Pump Rebates",

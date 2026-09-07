@@ -47,7 +47,7 @@ export default function VermontPage() {
         name: "What heat pump rebates are available in Vermont in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Vermont heat pump rebates come primarily from Efficiency Vermont (up to $2,200 for ducted systems, $375\u2013$475 per ductless head) and your electric utility. Burlington Electric Department offers the richest incentives \u2014 up to $7,950 for income-qualified high-performance ducted systems. Green Mountain Power customers can get up to $2,200 in income-qualified bonuses per condenser. Federal tax credits (25C/25D) ended December 31, 2025.",
+          text: "Vermont heat pump rebates come primarily from Efficiency Vermont (ducted up to $2,200; ductless $375 per system at 2 tons or under and $475 above 2 tons \u2014 per system, meaning one outdoor unit plus one or more indoor units, not per head) and your electric utility. Burlington Electric Department offers the richest incentives \u2014 up to $7,950 for income-qualified high-performance ducted systems. Green Mountain Power customers can get up to $2,200 in income-qualified bonuses per condenser. Federal tax credits (25C/25D) ended December 31, 2025.",
         },
       },
       {
@@ -136,7 +136,7 @@ export default function VermontPage() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Efficiency Vermont (Statewide)</p>
-              <p className="text-sm text-green-900">$375–$475/head ductless, $2,200 ducted, $600 HPWH, $600 integrated controls. Applied as instant point-of-sale discounts through participating distributors.</p>
+              <p className="text-sm text-green-900">Ductless <strong>$375</strong> per system at 2 tons or under, <strong>$475</strong> above 2 tons &mdash; per system, not per head. $2,200 ducted, $600 HPWH, $600 integrated controls. Instant discounts through participating HVAC distributors. Burlington Electric customers get a different base: <strong>$350&ndash;$450</strong>.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Burlington Electric — Highest in VT</p>
@@ -255,14 +255,19 @@ export default function VermontPage() {
               </thead>
               <tbody>
                 <tr className="border-b">
-                  <td className="p-3">Ductless mini-split</td>
-                  <td className="p-3 font-semibold">$375–$475 per head</td>
-                  <td className="p-3">Amount depends on qualifying tier</td>
+                  <td className="p-3">Ductless mini-split &mdash; 2 tons or under</td>
+                  <td className="p-3 font-semibold">$375 per system</td>
+                  <td className="p-3">Per system: one outdoor unit plus one or more indoor units</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Ductless mini-split &mdash; above 2 tons</td>
+                  <td className="p-3 font-semibold">$475 per system</td>
+                  <td className="p-3">Burlington Electric customers: $350&ndash;$450 instead</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Integrated controls</td>
-                  <td className="p-3 font-semibold">$600 per system</td>
-                  <td className="p-3">Smart controls for multi-head systems</td>
+                  <td className="p-3 font-semibold">Up to $600</td>
+                  <td className="p-3">Ductless only, single-family only, with a new install</td>
                 </tr>
                 <tr className="border-b bg-green-50">
                   <td className="p-3">Ducted whole-home</td>
@@ -284,7 +289,93 @@ export default function VermontPage() {
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            Income-eligible households (at or below 80% AMI) can receive additional bonuses from their electric utility — the amount varies significantly by provider. A $1,200 income-eligible voucher is also available through EVT for qualifying low-income households to replace one eligible appliance (refrigerator, freezer, or clothes washer).
+            Equipment must be new, installed in Vermont, and on the Qualifying Products List at the time of purchase &mdash; used, rebuilt and refurbished units do not qualify. Residential, business and rental properties are all eligible for the base discount.
+          </p>
+
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">Income bonus &mdash; three tiers, $200 to $2,200</h3>
+          <div className="overflow-x-auto mb-4">
+            <table className="min-w-full text-sm">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="text-left p-3 font-semibold">Who you buy power from</th>
+                  <th className="text-left p-3 font-semibold">Income bonus</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b bg-green-50">
+                  <td className="p-3">Green Mountain Power &mdash; low income</td>
+                  <td className="p-3 font-semibold">$2,200</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">VPPSA member utilities &mdash; moderate and low income</td>
+                  <td className="p-3 font-semibold">$1,000</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">All other moderate- and low-income customers</td>
+                  <td className="p-3 font-semibold">$200</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
+            <p className="font-semibold text-amber-800 mb-1">⚠ Three groups are excluded from the income bonus</p>
+            <p className="text-sm text-amber-900"><strong>Rental property owners</strong> are not eligible, even though rentals do qualify for the base discount. <strong>Burlington Electric customers</strong> are not eligible &mdash; BED runs its own program instead. And heat pumps <strong>purchased or leased from Vermont Gas Systems</strong> are not eligible for it. 2026 income limits took effect July 1, 2026; the prior limits were honored for equipment purchased and installed before July 1, through July 31, 2026.</p>
+          </div>
+
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">Partner offers &mdash; what your utility adds on top</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Efficiency Vermont publishes a partner table alongside the base discount. These are the utilities&apos; own programs, administered by them rather than by EVT.
+          </p>
+          <div className="overflow-x-auto mb-6">
+            <table className="min-w-full text-sm">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="text-left p-3 font-semibold">Utility</th>
+                  <th className="text-left p-3 font-semibold">Offer</th>
+                  <th className="text-left p-3 font-semibold">Form</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b bg-green-50">
+                  <td className="p-3">Burlington Electric Department</td>
+                  <td className="p-3 font-semibold">Up to $2,900</td>
+                  <td className="p-3">Post-purchase rebate</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Green Mountain Power</td>
+                  <td className="p-3 font-semibold">Up to $2,000</td>
+                  <td className="p-3">Low-income bonus</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Stowe Electric Department</td>
+                  <td className="p-3 font-semibold">$250</td>
+                  <td className="p-3">Low-income bonus</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Vermont Electric Co-op</td>
+                  <td className="p-3 font-semibold">$150</td>
+                  <td className="p-3">Thermal bonus, paid as a bill credit</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">VPPSA municipalities</td>
+                  <td className="p-3 font-semibold">$200</td>
+                  <td className="p-3">Weatherization rebate, post-purchase</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-6">
+            <p className="font-semibold text-blue-800 mb-1">Two figures for Green Mountain Power, both from Efficiency Vermont</p>
+            <p className="text-sm text-blue-900">EVT&apos;s income-bonus list shows <strong>$2,200</strong> for GMP low-income customers; its partner table shows <strong>up to $2,000</strong>. We publish $2,200 elsewhere on this page as $2,000 from GMP plus $200 from EVT, which would reconcile the two, but we have not confirmed that split against a GMP source. Treat $2,000&ndash;$2,200 as the range and confirm with GMP before budgeting.</p>
+          </div>
+
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">Integrated controls &mdash; a separate $600</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Efficiency Vermont runs integrated controls as its own offer: install integrated controls together with a <strong>new ductless heat pump</strong> in a <strong>single-family home</strong> and get up to <strong>$600</strong> back. The ductless offer describes it as an additional $600 on top of the base discount. It does not apply to ducted systems or to controls retrofitted to existing equipment.
+          </p>
+
+          <p className="text-gray-700 leading-relaxed mb-4">
+            A $1,200 income-eligible voucher is also available through EVT for qualifying low-income households to replace one eligible appliance (refrigerator, freezer, or clothes washer).
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Home Energy Loan — 0% Financing</h3>
@@ -318,7 +409,7 @@ export default function VermontPage() {
               <tbody>
                 <tr className="border-b">
                   <td className="p-3">Ductless</td>
-                  <td className="p-3 font-semibold">$375–$475/head (EVT)</td>
+                  <td className="p-3 font-semibold">$375 / $475 per system (EVT)</td>
                   <td className="p-3">Applied at purchase</td>
                 </tr>
                 <tr className="border-b">
