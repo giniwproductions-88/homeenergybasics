@@ -390,10 +390,10 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "NY",
     stateName: "New York",
     status: "open",
-    lastVerified: "2026-08-23",
-    lastUpdated: "2026-08-23",
+    lastVerified: "2026-09-06",
+    lastUpdated: "2026-09-06",
     summary:
-      "NYS Clean Heat (2026–2030) pays $2,500–$12,000 for air-source heat pumps and $14,000–$40,000 for geothermal, varying by utility, project category, and DAC status. EmPower+ provides $12,000–$14,000 base plus up to $14,000 in HEAR funds for income-eligible households. A 25% geothermal tax credit (max $10,000) remains. Federal 25C/25D expired Dec 31, 2025.",
+      "NYS Clean Heat (2026–2030) pays $2,500–$12,000 for air-source heat pumps and $14,000–$40,000 for geothermal, varying by utility, project category, and DAC status. EmPower+ covers low-income households at $12,000 upstate or $14,000 downstate and moderate-income at 50% up to $6,000–$7,000, with NYSERDA's Sustainable Futures Program per-measure caps additive on top. A 25% geothermal tax credit (max $10,000) remains. Federal 25C/25D expired Dec 31, 2025.",
     sources: [
       {
         label: "NYS Clean Heat — Program Manual v2 (March 2026)",

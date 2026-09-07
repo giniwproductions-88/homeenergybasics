@@ -41,11 +41,16 @@ initiative.
 even to "clean up." Explicit paths only. This is the single most common
 way junk enters this repo.
 
-**1.4 — Never bump `lastVerified`.**
-Not in `src/data/incentives.ts`, not in `src/data/utilities.ts`. That
-date asserts that a human read a primary source on that day. You cannot
-make it true, so you cannot write it. If an edit ought to carry a date
-bump, say so and leave the date alone.
+**1.4 — Never originate a verification date.**
+Applies to `src/data/incentives.ts` and `src/data/utilities.ts`. That
+date asserts that a human read a primary source on that day.
+
+You may never originate a verification date. You may not infer one from
+today's date, from a build, or from your own reading of a page — you
+cannot fetch, so you cannot verify. You MAY write `lastVerified` or
+`lastUpdated` when the operator's instruction supplies the literal date
+AND names the source that was verified. Absent both, refuse and say the
+date should move.
 
 **1.5 — Do not fetch program-administrator or IRS pages to verify a
 claim.** Rule-1 verification happens in the chat session, where the
