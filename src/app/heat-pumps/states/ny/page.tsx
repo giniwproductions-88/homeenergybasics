@@ -32,7 +32,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in New York in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "NYS Clean Heat offers $2,500\u2013$12,000 for air-source heat pumps (depending on utility, project category, and DAC status) and $14,000\u2013$40,000 for geothermal. EmPower+ provides base incentives of $12,000 (upstate) or $14,000 (downstate) for low-income households at or below 80% of State or Area Median Income, and 50% of cost up to $6,000\u2013$7,000 for moderate-income households, with NYSERDA\u2019s Sustainable Futures Program per-measure caps additive on top. The new Weatherized Tier, which unlocks bonus incentives and the 85% project cost cap, was delayed from March 1 to September 1, 2026. Federal 25C and 25D tax credits expired December 31, 2025.",
+        text: "NYS Clean Heat offers $2,500\u2013$12,000 for air-source heat pumps (depending on utility, project category, and DAC status) and $14,000\u2013$40,000 for geothermal. EmPower+ provides base incentives of $12,000 (upstate) or $14,000 (downstate) for low-income households at or below 80% of State or Area Median Income, and 50% of cost up to $6,000\u2013$7,000 for moderate-income households, with NYSERDA\u2019s Sustainable Futures Program per-measure caps additive on top. The Weatherized Tier, which differentiates incentive rates and applies the 85% project cost cap, was scheduled for September 1, 2026 per Program Manual Version 2; that date has passed and the manual has not been reissued, so confirm current status with a participating contractor or cleanheat.ny.gov. Federal 25C and 25D tax credits expired December 31, 2025.",
       },
     },
     {
@@ -48,7 +48,7 @@ const faqJsonLd = {
       name: "What is the NYS Clean Heat Weatherized Tier?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Originally scheduled for March 1, 2026, the Weatherized Tier launch was extended to September 1, 2026 per Program Manual Version 2. It provides bonus incentives and the higher 85% project cost cap for homes meeting insulation and air-sealing standards. You qualify through four pathways: built after 2010, prior weatherization program participation, NYSERDA Virtual Energy Assessment, or certified home energy assessment. This is a bonus in 2026\u20132027, but the Public Service Commission order requires weatherization as a prerequisite for all Clean Heat incentives by March 1, 2028, at a standard still to be defined.",
+        text: "Originally scheduled for March 1, 2026, the Weatherized Tier launch was moved to September 1, 2026 per Program Manual Version 2. That date has passed and the manual has not been reissued, so confirm current status with a participating contractor or cleanheat.ny.gov. The tier differentiates incentive rates rather than adding a flat bonus: qualifying homes meeting insulation and air-sealing standards earn more and reach the higher 85% project cost cap, while non-qualifying projects may earn less than current tables show (NYS Clean Heat JMC session #28 summary, March 12, 2026). You qualify through four pathways: built after 2010, prior weatherization program participation, NYSERDA Virtual Energy Assessment, or certified home energy assessment. It is optional in 2026\u20132027, but the Public Service Commission order requires weatherization as a prerequisite for all Clean Heat incentives by March 1, 2028, at a standard still to be defined.",
       },
     },
     {
@@ -151,8 +151,8 @@ export default function NewYorkPage() {
               <p className="text-sm text-red-900">Section 25C ($2,000) and Section 25D (30% geothermal) both ended December 31, 2025. NY&apos;s state programs more than compensate for most homeowners.</p>
             </div>
             <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
-              <p className="font-semibold text-amber-800 mb-1">&#9888; Weatherized Tier: Bonus Now Launching September 2026, Mandatory in 2028</p>
-              <p className="text-sm text-amber-900">Originally scheduled for March 1, 2026, the Weatherized Tier launch was extended to <strong>September 1, 2026</strong> per Program Manual Version 2. It unlocks bonus incentives and the 85% project cost cap. It&apos;s optional through 2027, but weatherization becomes <strong>mandatory by March 1, 2028</strong> (at a standard still to be defined) &mdash; meaning homes will eventually need to meet weatherization standards to receive any Clean Heat incentive.</p>
+              <p className="font-semibold text-amber-800 mb-1">&#9888; Weatherized Tier: September 1, 2026 Date Passed, Status Unconfirmed</p>
+              <p className="text-sm text-amber-900">Originally scheduled for March 1, 2026, the Weatherized Tier launch was moved to <strong>September 1, 2026</strong> per Program Manual Version 2. That date has passed and the manual has not been reissued &mdash; confirm current status with a participating contractor or cleanheat.ny.gov. The tier differentiates incentive rates and applies the 85% project cost cap. It&apos;s optional through 2027, but weatherization becomes <strong>mandatory by March 1, 2028</strong> (at a standard still to be defined) &mdash; meaning homes will eventually need to meet weatherization standards to receive any Clean Heat incentive.</p>
             </div>
           </div>
         </div>
@@ -422,9 +422,9 @@ export default function NewYorkPage() {
       {/* 8. Weatherized Tier */}
       <section className="bg-gray-50 py-12">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Weatherized Tier &mdash; Launching September 1, 2026</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Weatherized Tier &mdash; Scheduled September 1, 2026, Status Unconfirmed</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            The new Weatherized Tier rewards homes meeting insulation and air-sealing standards with bonus incentives and the <strong>85% project cost cap</strong> (same as DAC areas). Originally scheduled for March 1, 2026, the launch was extended to <strong>September 1, 2026</strong> per Program Manual Version 2 (March 5, 2026). This is a bonus for 2026&ndash;2027, but the Commission&apos;s order requires weatherization as a prerequisite for all Clean Heat incentives <strong>by March 1, 2028</strong>, at a standard still to be defined &mdash; meaning homes will eventually need to meet weatherization standards to receive any Clean Heat incentive.
+            The Weatherized Tier rewards homes meeting insulation and air-sealing standards with the <strong>85% project cost cap</strong> (same as DAC areas) and differentiated incentive rates: qualifying projects earn more, and non-qualifying projects may earn <strong>less</strong> than the tables above show (NYS Clean Heat JMC session #28 summary, March 12, 2026). Originally scheduled for March 1, 2026, the launch was moved to <strong>September 1, 2026</strong> per Program Manual Version 2 (March 5, 2026). That date has passed and the manual has not been reissued &mdash; confirm current status with a participating contractor or cleanheat.ny.gov. It is optional for 2026&ndash;2027, but the Commission&apos;s order requires weatherization as a prerequisite for all Clean Heat incentives <strong>by March 1, 2028</strong>, at a standard still to be defined &mdash; meaning homes will eventually need to meet weatherization standards to receive any Clean Heat incentive.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">How to Qualify (Any One Pathway)</h3>
@@ -512,7 +512,7 @@ export default function NewYorkPage() {
 
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
             <p className="font-semibold text-green-800 mb-1">&#10003; Best Candidates for a Heat Pump in New York</p>
-            <p className="text-sm text-green-900">Income-eligible households (EmPower+ base plus additive Sustainable Futures Program caps &mdash; potentially free). Homeowners in DAC areas ($10,000&ndash;$12,000 Clean Heat at most utilities + 85% cap). Oil-heated homes (highest fuel cost savings + strongest rebate tiers for fossil fuel removal). Anyone with a Weatherized Tier-qualifying home (85% cap + bonus incentives).</p>
+            <p className="text-sm text-green-900">Income-eligible households (EmPower+ base plus additive Sustainable Futures Program caps &mdash; potentially free). Homeowners in DAC areas ($10,000&ndash;$12,000 Clean Heat at most utilities + 85% cap). Oil-heated homes (highest fuel cost savings + strongest rebate tiers for fossil fuel removal). Anyone with a Weatherized Tier-qualifying home (85% cap + higher rate tier).</p>
           </div>
         </div>
       </section>
@@ -586,8 +586,8 @@ export default function NewYorkPage() {
             <div className="flex gap-4">
               <div className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-bold">3</div>
               <div>
-                <p className="font-semibold text-gray-900">Pursue the Weatherized Tier (Launching September 2026)</p>
-                <p className="text-sm text-gray-700">If your home was built after 2010, you auto-qualify. Otherwise, request a NYSERDA Virtual Energy Assessment or certified audit. When the Tier launches September 1, 2026, qualifying unlocks bonus incentives and the 85% cap.</p>
+                <p className="font-semibold text-gray-900">Pursue the Weatherized Tier (Status Unconfirmed)</p>
+                <p className="text-sm text-gray-700">If your home was built after 2010, you auto-qualify. Otherwise, request a NYSERDA Virtual Energy Assessment or certified audit. The tier was scheduled for September 1, 2026 per Program Manual Version 2; that date has passed and the manual has not been reissued, so confirm current status with a participating contractor or cleanheat.ny.gov. Qualifying moves a project to the higher rate tier and the 85% cap.</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -607,8 +607,8 @@ export default function NewYorkPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">What to Watch</h2>
           <div className="space-y-4">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900">Weatherized Tier Launch (September 1, 2026)</p>
-              <p className="text-sm text-gray-600 mt-1">Delayed from March 1 to September 1, 2026. When active, qualifying homes get bonus incentives and the 85% project cost cap. Specific dollar amounts are pending in Program Manual updates &mdash; check cleanheat.ny.gov.</p>
+              <p className="font-semibold text-gray-900">Weatherized Tier Launch (Scheduled September 1, 2026)</p>
+              <p className="text-sm text-gray-600 mt-1">Moved from March 1 to September 1, 2026 per Program Manual Version 2. That date has passed and the manual has not been reissued. Qualifying homes move to the higher rate tier and the 85% project cost cap; non-qualifying projects may earn less than current tables show. Specific dollar amounts are pending in Program Manual updates &mdash; confirm current status with a participating contractor or cleanheat.ny.gov.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">IRA Funding Runway</p>
@@ -616,7 +616,7 @@ export default function NewYorkPage() {
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">2028 Weatherization Mandate</p>
-              <p className="text-sm text-gray-600 mt-1">By March 1, 2028, weatherization becomes a prerequisite for all Clean Heat incentives (the required standard is still to be defined). Qualifying now earns the bonus and avoids future compliance costs.</p>
+              <p className="text-sm text-gray-600 mt-1">By March 1, 2028, weatherization becomes a prerequisite for all Clean Heat incentives (the required standard is still to be defined). Qualifying now moves a project to the higher rate tier and avoids future compliance costs.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">NY State Geothermal Tax Credit</p>
