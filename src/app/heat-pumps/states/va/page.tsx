@@ -79,7 +79,7 @@ export default function VirginiaPage() {
         name: "Can I stack Virginia heat pump rebates with state and federal programs?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Currently, utility rebates are the only active incentive layer. There is no federal credit and Virginia\u2019s state rebate programs have not launched. If HOMES and HEAR do launch, federal guidance indicates they can stack with utility rebates but cannot be combined for the same measure. Households above 150% of Area Median Income (AMI) would not qualify for HEAR.",
+          text: "Currently, utility rebates are the only active incentive layer. There is no federal credit and Virginia\u2019s state rebate programs have not launched. If HOMES and HEAR do launch, federal guidance indicates they can stack with utility rebates but cannot be combined for the same measure. Households above 150% of Area Median Income (AMI) would not qualify for HEAR, and since DOE Program Notice 26-2 took effect in May 2026 HEAR reaches only upgrades from existing electric equipment.",
         },
       },
     ],
@@ -136,7 +136,7 @@ export default function VirginiaPage() {
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Total Potential Savings</p>
-              <p className="text-sm text-green-900">$250–$2,400 (above 150% AMI) depending on utility territory. If HEAR launches, income-qualified households below 80% of Area Median Income (AMI) could reach ~$14,000+ in combined incentives.</p>
+              <p className="text-sm text-green-900">$250–$2,400 (above 150% AMI) depending on utility territory. If HEAR launches, income-qualified households below 80% of Area Median Income (AMI) upgrading existing electric equipment could reach ~$14,000+ in combined incentives.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">✗ Federal Tax Credits Expired</p>
@@ -178,7 +178,7 @@ export default function VirginiaPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">HEAR Rebate Structure (When Launched)</h3>
           <p className="text-gray-700 leading-relaxed mb-6">
-            HEAR provides point-of-sale rebates for specific electrification equipment. Only households below 150% AMI are eligible. HEAR rebates apply only to replacement of a nonelectric appliance or a first-time heat pump purchase — homeowners replacing an existing heat pump should use HOMES instead.
+            HEAR provides point-of-sale rebates for specific electrification equipment. Only households below 150% AMI are eligible. Under DOE Program Notice 26-2, effective May 29, 2026, HEAR rebates apply when upgrading from existing electric equipment to more efficient electric equipment, plus new construction — and a program launching now must align with that rule. Replacing a gas, propane, or oil system does not qualify; those projects should use HOMES, which is fuel-neutral.
           </p>
 
           <div className="overflow-x-auto mb-6">
@@ -453,7 +453,7 @@ export default function VirginiaPage() {
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-2">Below 80% AMI — If HEAR Launches (Dominion Territory)</p>
               <ul className="text-sm text-green-900 space-y-1">
-                <li>HEAR heat pump: up to $8,000</li>
+                <li>HEAR heat pump: up to $8,000 &mdash; requires upgrading from existing electric equipment</li>
                 <li>HEAR heat pump water heater: up to $1,750</li>
                 <li>HEAR electrical panel upgrade: up to $4,000</li>
                 <li>Dominion utility programs: additional</li>
@@ -464,7 +464,7 @@ export default function VirginiaPage() {
 
           <div className="bg-gray-100 rounded-lg p-5">
             <p className="font-semibold text-gray-900 mb-1">What You&apos;ll Actually Pay</p>
-            <p className="text-sm text-gray-700">On a typical <strong>$10,000–$16,000</strong> heat pump installation, most Virginia homeowners above 150% AMI will pay <strong>$8,000–$14,000 out of pocket</strong> after current utility rebates — and homeowners in co-op territory or with Appalachian Power face even higher costs. If HEAR launches for income-qualified households, out-of-pocket costs could drop to <strong>$2,000–$6,000</strong> depending on income tier and system scope.</p>
+            <p className="text-sm text-gray-700">On a typical <strong>$10,000–$16,000</strong> heat pump installation, most Virginia homeowners above 150% AMI will pay <strong>$8,000–$14,000 out of pocket</strong> after current utility rebates — and homeowners in co-op territory or with Appalachian Power face even higher costs. If HEAR launches for income-qualified households upgrading existing electric equipment, out-of-pocket costs could drop to <strong>$2,000–$6,000</strong> depending on income tier and system scope; gas, propane, and oil replacements would not reach HEAR.</p>
           </div>
 
           <p className="text-sm text-gray-500 mt-4">

@@ -63,7 +63,7 @@ export default function MichiganPage() {
         name: "Can I get a heat pump rebate if I heat with natural gas in Michigan?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Not from the big utilities. DTE Energy restricts heat pump rebates to electric customers replacing existing electric heating. Consumers Energy is stricter still: its ducted air-source and ground-source rebates require replacement of an existing heat pump, and only its mini-split rebate allows replacing any primary electric heat system. Neither covers gas-to-electric conversions. However, the MiHER HEAR program specifically supports fuel-switching from gas or propane to electric heat pumps. Ann Arbor\u2019s A2ZERO program also covered gas-to-electric conversions in its 2025\u20132026 year, which closed June 30, 2026, with renewal planned.",
+          text: "Not from the big utilities. DTE Energy restricts heat pump rebates to electric customers replacing existing electric heating. Consumers Energy is stricter still: its ducted air-source and ground-source rebates require replacement of an existing heat pump, and only its mini-split rebate allows replacing any primary electric heat system. Neither covers gas-to-electric conversions. MiHER HEAR does not fill that gap either: DOE Program Notice 26-2, effective May 29, 2026, removed fuel-switching upgrades from HEAR, which now covers only upgrades from existing electric equipment. Gas- and propane-heated households should look to HOMES, which remains fuel-neutral. Ann Arbor\u2019s A2ZERO program also covered gas-to-electric conversions in its 2025\u20132026 year, which closed June 30, 2026, with renewal planned.",
         },
       },
       {
@@ -146,8 +146,8 @@ export default function MichiganPage() {
               <p className="font-semibold text-green-800 mb-1">✓ MiHER HEAR Rebates</p>
               <p className="text-sm text-green-900">
                 Up to <strong>$8,000</strong> per heat pump at point of sale for households
-                ≤150% AMI. Enhanced rebates (100% of costs) for ≤80% AMI. Covers
-                fuel-switching from gas/propane. <strong>$14,000</strong> total household cap.
+                ≤150% AMI. Enhanced rebates (100% of costs) for ≤80% AMI. Since 26-2,
+                covers upgrades from existing electric equipment only. <strong>$14,000</strong> total household cap.
                 As of August 2026, applications are open to low- to moderate-income households
                 only, and new income-qualified applications are paused in the EGLE Detroit
                 and Warren Districts.
@@ -187,9 +187,10 @@ export default function MichiganPage() {
                 electric heating. Consumers Energy is stricter: ducted air-source and
                 ground-source rebates require replacing an existing heat pump, and only
                 the mini-split rebate allows replacing any primary electric heat system.
-                Since most Michigan homes heat with gas, this pushes fuel-switching
-                households toward MiHER HEAR, which specifically covers gas-to-electric
-                conversions.
+                Since most Michigan homes heat with gas, that leaves those households
+                without a utility route &mdash; and HEAR is no longer an alternative,
+                because 26-2 removed fuel-switching upgrades. MiHER&apos;s HOMES
+                component remains fuel-neutral.
               </p>
             </div>
           </div>
@@ -255,8 +256,10 @@ export default function MichiganPage() {
           </h3>
           <p className="text-gray-700 leading-relaxed mb-6">
             Point-of-sale rebates applied as a discount at installation
-            through approved MiHER contractors. Specifically supports
-            fuel-switching (gas/propane to electric heat pump). Rebate income
+            through approved MiHER contractors. Under DOE Program Notice 26-2,
+            effective May 29, 2026, HEAR supports upgrades from existing electric
+            equipment to more efficient electric equipment, plus new construction
+            &mdash; not fuel-switching from gas or propane. Rebate income
             is not taxable per IRS Announcement 2024-19.
           </p>
 
@@ -402,8 +405,9 @@ export default function MichiganPage() {
             replacing existing electric heating; Consumers Energy requires replacement
             of an existing heat pump for its ducted air-source and ground-source rebates
             (only its mini-split rebate allows replacing any primary electric heat
-            system). Since most Michigan homes heat with natural gas, this pushes
-            fuel-switching households toward MiHER HEAR.
+            system). Since most Michigan homes heat with natural gas, those households
+            have no utility route &mdash; and since 26-2, no HEAR route either;
+            MiHER&apos;s HOMES component is the fuel-neutral option.
           </p>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-6">
@@ -694,7 +698,7 @@ export default function MichiganPage() {
           <div className="bg-gray-100 rounded-lg p-5 mb-6">
             <p className="font-semibold text-gray-900 mb-1">What You&apos;ll Actually Pay</p>
             <p className="text-sm text-gray-700">
-              On a <strong>$17,500</strong> project as of August 2026: <strong>roughly $8,300 (income-qualified with HEAR $8,000 + DTE $1,200) up to the full $17,500 (above 150% AMI in a gas-heated home, where no rebate currently applies)</strong>. Qualifying households (≤150% AMI, outside the paused Detroit and Warren Districts) will see up to $8,000 in MiHER incentives on the heat pump itself — and households ≤80% AMI can have up to 100% of approved costs covered within HEAR&apos;s caps. If A2ZERO reopens at prior levels, low-income Ann Arbor out-of-pocket can fall to ~$2,800. The loss of the $2,000 Section 25C credit is most acutely felt by households above 150% AMI, who currently have no MiHER path at all. No state tax credit exists for air-source heat pumps in Michigan.
+              On a <strong>$17,500</strong> project as of August 2026: <strong>roughly $8,300 (income-qualified with HEAR $8,000 + DTE $1,200) up to the full $17,500 (above 150% AMI in a gas-heated home, where no rebate currently applies)</strong>. Qualifying households (≤150% AMI, outside the paused Detroit and Warren Districts) upgrading existing electric equipment will see up to $8,000 in MiHER HEAR incentives on the heat pump itself — and households ≤80% AMI can have up to 100% of approved costs covered within HEAR&apos;s caps. If A2ZERO reopens at prior levels, low-income Ann Arbor out-of-pocket can fall to ~$2,800. The loss of the $2,000 Section 25C credit is most acutely felt by households above 150% AMI, who currently have no MiHER path at all. No state tax credit exists for air-source heat pumps in Michigan.
             </p>
           </div>
 

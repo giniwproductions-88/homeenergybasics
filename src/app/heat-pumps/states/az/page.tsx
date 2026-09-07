@@ -130,7 +130,7 @@ export default function ArizonaPage() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Efficiency Arizona HEAR — up to $8,000 per heat pump</p>
-              <p className="text-sm text-green-900">Point-of-sale rebate for households below 150% of Area Median Income (AMI). Covers 100% of costs for below 80% AMI, 50% for 80–150% AMI. Must use a qualified contractor and apply before installation.</p>
+              <p className="text-sm text-green-900">Point-of-sale rebate for households below 150% of Area Median Income (AMI) upgrading from existing electric equipment — since 26-2, gas, propane, and oil replacements no longer qualify. Covers 100% of costs for below 80% AMI, 50% for 80–150% AMI. Must use a qualified contractor and apply before installation.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ SRP Cool Cash — up to $225 per ton</p>
@@ -251,7 +251,7 @@ export default function ArizonaPage() {
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            HEAR operates as a <strong>point-of-sale rebate</strong> — the discount appears directly on the contractor&apos;s invoice, not as a post-purchase reimbursement. Projects must be approved before installation begins; completed or in-progress projects are not eligible. Homes with existing heat pumps cannot receive the heat pump rebate — this is for first-time heat pump installations only. The new heat pump must replace a non-electric heating system (gas, propane, oil) or electric resistance heating such as an electric furnace, boiler, or baseboard units, and replaced gas appliances must be disconnected and removed from the home.
+            HEAR operates as a <strong>point-of-sale rebate</strong> — the discount appears directly on the contractor&apos;s invoice, not as a post-purchase reimbursement. Projects must be approved before installation begins; completed or in-progress projects are not eligible. Under DOE Program Notice 26-2, effective May 29, 2026, the heat pump rebate applies when upgrading from existing electric equipment — an electric furnace, boiler, baseboard units, an existing AC, or an older heat pump — to more efficient electric equipment, and new construction remains eligible. Replacing a gas, propane, or oil system no longer qualifies for HEAR.
           </p>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
@@ -425,7 +425,7 @@ export default function ArizonaPage() {
 
           <div className="bg-gray-100 rounded-lg p-5 mb-4">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
-            <p className="text-sm text-gray-700">For a typical ducted heat pump installation ($8,000–$12,000 before incentives): above 150% AMI in SRP territory, expect <strong>$6,375–$10,375 out of pocket</strong>. At 80–150% AMI with SRP, expect <strong>$1,875–$3,875</strong>. Below 80% AMI, out-of-pocket costs can approach <strong>$0</strong> when project costs fall within the rebate caps — though the program&apos;s own published figures show an average qualified heat pump project costing <strong>$13,263</strong>, leaving roughly <strong>$5,263</strong> out of pocket after the $8,000 cap (before utility rebates). In APS territory, above 150% AMI, expect to pay <strong>full price</strong> until HOMES launches.</p>
+            <p className="text-sm text-gray-700">For a typical ducted heat pump installation ($8,000–$12,000 before incentives), with HEAR figures assuming an upgrade from existing electric equipment: above 150% AMI in SRP territory, expect <strong>$6,375–$10,375 out of pocket</strong>. At 80–150% AMI with SRP, expect <strong>$1,875–$3,875</strong>. Below 80% AMI, out-of-pocket costs can approach <strong>$0</strong> when project costs fall within the rebate caps — though the program&apos;s own published figures show an average qualified heat pump project costing <strong>$13,263</strong>, leaving roughly <strong>$5,263</strong> out of pocket after the $8,000 cap (before utility rebates). In APS territory, above 150% AMI, expect to pay <strong>full price</strong> until HOMES launches.</p>
           </div>
           <p className="text-sm text-gray-500">
             Arizona has no state tax credit for heat pumps and no state-level loan program specifically for heat pumps. SHILA (Sustainable Home Improvement Loans of Arizona) offers flexible-term home improvement loans at shilaaz.org.
@@ -445,7 +445,7 @@ export default function ArizonaPage() {
           </p>
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
             <p className="font-semibold text-green-800 mb-1">✓ Best candidates for Arizona heat pump incentives in 2026</p>
-            <p className="text-sm text-green-900">Households below 80% AMI in SRP territory replacing an existing AC with a first-time heat pump installation. This group can stack HEAR (up to $8,000) + SRP Cool Cash (up to $1,125) + free WAP weatherization for the lowest possible out-of-pocket cost — in the best cases approaching zero, though the program&apos;s published averages show most below-80% AMI heat pump projects still involve several thousand dollars out of pocket. Homeowners replacing electric resistance heat gain the largest efficiency improvement — roughly 2–3× the heating output per kilowatt-hour consumed.</p>
+            <p className="text-sm text-green-900">Households below 80% AMI in SRP territory replacing an existing AC or electric resistance system with a heat pump — an electric-to-electric upgrade, which is what HEAR now covers. This group can stack HEAR (up to $8,000) + SRP Cool Cash (up to $1,125) + free WAP weatherization for the lowest possible out-of-pocket cost — in the best cases approaching zero, though the program&apos;s published averages show most below-80% AMI heat pump projects still involve several thousand dollars out of pocket. Homeowners replacing electric resistance heat gain the largest efficiency improvement — roughly 2–3× the heating output per kilowatt-hour consumed.</p>
           </div>
         </div>
       </section>
