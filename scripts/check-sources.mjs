@@ -47,6 +47,15 @@
  *   scripts/source-latest.json     regenerated every check. gitignore.
  *   scripts/source-diff-report.md  regenerated every check. gitignore.
  *   scripts/source-ignore.json     optional array of URLs to skip/mute (bot-blocked or known-noisy).
+ *   scripts/source-nosignal-accepted.json
+ *                                  committed. Suppresses rows from the report's NO SIGNAL section.
+ *                                  Shape: { "<url>": { "reason": "by-design" | "js-rendered", "note": "..." } }
+ *                                  by-design   = the page never publishes figures; nothing is lost.
+ *                                  js-rendered = figures never reach the raw HTML; the state is
+ *                                                genuinely unwatched and the URL is the wrong target.
+ *                                  Separate from source-ignore.json on purpose: muting a URL from
+ *                                  FETCHING and accepting that it carries NO SIGNAL are different
+ *                                  decisions, and one must not silently perform the other.
  */
 
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
@@ -113,6 +122,45 @@ const WALL_TEXT_MAXLEN = 2000;
 function isWallText(text) {
   return text.length < WALL_TEXT_MAXLEN && WALL_TEXT_RE.test(text);
 }
+
+// No-signal fingerprints. A snapshot with no dollars AND no keywords has
+// nothing for diffEntry to compare except textHash, which on such a page
+// tracks boilerplate only — so "unchanged" says nothing about the rebate
+// figures the URL is watched for, and the entry can never reach HIGH.
+// PDFs are excluded: they are byte-compared, and bytesHash IS a signal.
+// Error entries are excluded: they already surface as FETCH.
+//
+// Note what this does NOT need to catch: a page that GOES dark is already
+// caught, because losing its figures fires "dollar figures REMOVED" -> HIGH.
+// This class is about arming failures — URLs baselined already dark, whose
+// tripwire was never armed. Found 2026-09-06 across many state codes, five
+// of them extracting no text at all (ComEd and PECO byte-identical).
+function hasNoSignal(e) {
+  if (!e || e.error) return false;
+  if (e.kind === "pdf") return false;
+  return (e.dollars || []).length === 0 && Object.keys(e.keywords || {}).length === 0;
+}
+
+// Sub-classification: htmlToText returned "" outright, so the fetch did not
+// land on the target page at all. Derived from sha("") rather than a literal
+// so it cannot drift if the hash length or algorithm changes.
+let _emptyTextHash = null;
+const emptyTextHash = () => (_emptyTextHash ??= sha(""));
+function extractedNothing(e) {
+  return !!e && !!e.textHash && e.textHash === emptyTextHash();
+}
+
+// Reasons a no-signal URL may be accepted (scripts/source-nosignal-accepted.json).
+// The distinction is load-bearing, not cosmetic:
+//   by-design   — the page never publishes figures (EIA profile, contractor
+//                 landing page). Permanently fine; nothing is lost.
+//   js-rendered — figures exist but load client-side and never reach the raw
+//                 HTML. The state is GENUINELY UNWATCHED and the URL is the
+//                 wrong target. Accepting it silences the row; it does not
+//                 fix the gap. These stay counted by reason for that reason.
+// An entry whose reason is missing or unrecognised is NOT accepted — it is
+// reported as malformed, so a broken file cannot silently suppress rows.
+const NOSIGNAL_REASONS = ["by-design", "js-rendered"];
 // Extra state tags: URLs whose page serves more states than the data files
 // reference. The OG&E /ord/ rebates page carries BOTH the AR tab and the
 // Oklahoma closure sentence ("Oklahoma rebates are closed and will return
@@ -176,6 +224,7 @@ const BASELINE_F = path.join(scriptDir, "source-baseline.json");
 const LATEST_F = path.join(scriptDir, "source-latest.json");
 const REPORT_F = path.join(scriptDir, "source-diff-report.md");
 const IGNORE_F = path.join(scriptDir, "source-ignore.json");
+const NOSIGNAL_F = path.join(scriptDir, "source-nosignal-accepted.json");
 
 const CONCURRENCY = 6;
 const TIMEOUT_MS = 25000;
@@ -478,7 +527,7 @@ function diffEntry(base, cur) {
 /* report                                                               */
 /* ------------------------------------------------------------------ */
 
-function writeReport(baseline, latest, ignoreSet, humanVerify = []) {
+function writeReport(baseline, latest, ignoreSet, humanVerify = [], accepted = {}) {
   const rows = []; // {states, tier, label, url, level, notes}
   const baseMap = baseline.entries, curMap = latest.entries;
   let unchanged = 0, ignored = 0;
@@ -512,7 +561,43 @@ function writeReport(baseline, latest, ignoreSet, humanVerify = []) {
   const statesToVerify = [...new Set(rows.filter((r) => r.level === "HIGH" && !r.shared).flatMap((r) => r.states))];
 
   let md = `# Source Diff Report\n\nGenerated: ${latest.generatedAt}\nBaseline: ${baseline.generatedAt}\n`;
-  md += `URLs checked: ${Object.keys(curMap).length} | unchanged: ${unchanged} | flagged: ${rows.length} | muted (ignore list): ${ignored}\n\n`;
+  // NO-SIGNAL: walked from curMap independently, the way baseMap is walked for
+  // REMOVED above. These entries are UNCHANGED by definition, so they never
+  // enter `rows` — that they cannot surface through the diff is the point.
+  const noSignal = [];
+  const reasonTally = {};
+  const malformedAccept = [];
+  const staleAccept = [];
+  let acceptedCount = 0;
+  for (const url of Object.keys(curMap)) {
+    if (ignoreSet.has(url)) continue;
+    const e = curMap[url];
+    if (!hasNoSignal(e)) continue;
+    const a = accepted[url];
+    if (a && NOSIGNAL_REASONS.includes(a.reason)) {
+      acceptedCount++;
+      reasonTally[a.reason] = (reasonTally[a.reason] || 0) + 1;
+      continue;
+    }
+    if (a) malformedAccept.push(`${url} (reason ${JSON.stringify(a.reason)} not one of ${NOSIGNAL_REASONS.join("/")})`);
+    noSignal.push({
+      url, states: e.states || [], label: e.label, length: e.length,
+      textHash: e.textHash, empty: extractedNothing(e),
+    });
+  }
+  // Acceptances that no longer apply. Without this the file rots silently and
+  // the header's "(N accepted)" becomes a number nobody can account for.
+  for (const url of Object.keys(accepted)) {
+    const e = curMap[url];
+    if (!e) { staleAccept.push(`${url} — no longer in the watch list`); continue; }
+    if (!hasNoSignal(e)) staleAccept.push(`${url} — now carries signal; acceptance can be removed`);
+  }
+  noSignal.sort((a, b) =>
+    (a.empty === b.empty ? 0 : a.empty ? -1 : 1) ||
+    a.states.join(",").localeCompare(b.states.join(",")) ||
+    (a.length || 0) - (b.length || 0));
+
+  md += `URLs checked: ${Object.keys(curMap).length} | unchanged: ${unchanged} | flagged: ${rows.length} | muted (ignore list): ${ignored} | no-signal: ${noSignal.length} (${acceptedCount} accepted)\n\n`;
   md += `## Triage: states to promote to manual verification\n\n${statesToVerify.length ? statesToVerify.join(", ") : "(none)"}\n\n`;
   for (const lvl of ["HIGH", "FETCH", "NEW", "REMOVED", "LOW"]) {
     const grp = rows.filter((r) => r.level === lvl);
@@ -533,9 +618,30 @@ function writeReport(baseline, latest, ignoreSet, humanVerify = []) {
     }
     md += "\n";
   }
-  md += `---\nWorkflow: verify HIGH states at full checklist depth -> update pages -> \`node scripts/check-sources.mjs accept <STATE>\` -> commit source-baseline.json.\nDate-stamp rule: a flag here is NOT verification. Bump lastVerified only after real source verification.\n`;
+  if (noSignal.length || acceptedCount || staleAccept.length || malformedAccept.length) {
+    md += `## NO SIGNAL (${noSignal.length}) — fetched fine, but cannot flag\n\n`;
+    md += `These returned content, but their fingerprint has no dollar figures and no status keywords. The only thing left to compare is \`textHash\`, which on such a page tracks boilerplate — so UNCHANGED here means the shell is unchanged and says nothing about the figures. They can never reach HIGH. **[EMPTY]** marks entries where text extraction returned nothing at all; those did not land on the target page.\n\n`;
+    md += `Accepted and suppressed: ${acceptedCount}`;
+    if (Object.keys(reasonTally).length) {
+      md += ` (${NOSIGNAL_REASONS.filter((r) => reasonTally[r]).map((r) => `${reasonTally[r]} ${r}`).join(", ")})`;
+    }
+    md += ` — see scripts/source-nosignal-accepted.json. A \`js-rendered\` acceptance silences the row; it does not close the gap.\n\n`;
+    for (const n of noSignal) {
+      md += `- ${n.empty ? "**[EMPTY]** " : ""}**[${n.states.join(",")}]** ${n.label || "(no label)"}\n  ${n.url}\n  - ${n.length} bytes, textHash ${n.textHash}\n`;
+    }
+    if (staleAccept.length) {
+      md += `\n### Stale acceptances (${staleAccept.length})\n\n`;
+      for (const s of staleAccept) md += `- ${s}\n`;
+    }
+    if (malformedAccept.length) {
+      md += `\n### Malformed acceptances (${malformedAccept.length}) — NOT suppressed\n\n`;
+      for (const s of malformedAccept) md += `- ${s}\n`;
+    }
+    md += "\n";
+  }
+  md += `---\nWorkflow: verify HIGH states at full checklist depth -> update pages -> \`node scripts/check-sources.mjs accept <STATE>\` -> commit source-baseline.json.\nDate-stamp rule: a flag here is NOT verification. Bump lastVerified only after real source verification.\nNO SIGNAL is a standing condition, not an event: it does not affect the exit code.\n`;
   writeFileSync(REPORT_F, md);
-  return { rows, statesToVerify, unchanged };
+  return { rows, statesToVerify, unchanged, noSignal, acceptedCount, reasonTally, staleAccept, malformedAccept };
 }
 
 /* ------------------------------------------------------------------ */
@@ -657,7 +763,9 @@ async function main() {
     const latest = await snapshotAll(urls);
     writeFileSync(LATEST_F, JSON.stringify(latest, null, 1));
     const ignoreSet = new Set(loadJson(IGNORE_F, []));
-    const { rows, statesToVerify, unchanged } = writeReport(baseline, latest, ignoreSet, humanVerify);
+    const accepted = loadJson(NOSIGNAL_F, {});
+    const { rows, statesToVerify, unchanged, noSignal, acceptedCount, reasonTally, staleAccept, malformedAccept } =
+      writeReport(baseline, latest, ignoreSet, humanVerify, accepted);
     console.log(`\nReport: ${REPORT_F}`);
     if (humanVerify.length) {
       console.log(`HUMAN VERIFY (JS-walled, browser-check on schedule): ${humanVerify.length}`);
@@ -665,6 +773,10 @@ async function main() {
     }
     console.log(`unchanged: ${unchanged} | flagged: ${rows.length}`);
     console.log(`HIGH: ${rows.filter((r) => r.level === "HIGH").length} | FETCH: ${rows.filter((r) => r.level === "FETCH").length} | LOW: ${rows.filter((r) => r.level === "LOW").length}`);
+    const reasonStr = NOSIGNAL_REASONS.filter((r) => reasonTally[r]).map((r) => `${reasonTally[r]} ${r}`).join(", ");
+    console.log(`NO SIGNAL (cannot flag; not counted in exit code): ${noSignal.length} (${acceptedCount} accepted${reasonStr ? " — " + reasonStr : ""})`);
+    if (staleAccept.length) console.log(`  stale acceptances: ${staleAccept.length} — see report`);
+    if (malformedAccept.length) console.log(`  MALFORMED acceptances (not suppressed): ${malformedAccept.length} — see report`);
     console.log(`States to verify: ${statesToVerify.join(", ") || "(none)"}`);
     process.exit(rows.some((r) => r.level === "HIGH" || r.level === "FETCH") ? 1 : 0);
   }
@@ -1015,6 +1127,28 @@ function selftest() {
     if (!ok) fail++;
     console.log(`${ok ? "PASS" : "FAIL"}  registrableHost: ${a} vs ${b} -> same=${got} (want ${same})`);
   }
+  // no-signal predicate: dollars OR keywords present = has signal
+  const nsCases = [
+    ["dollars only", { kind: "html", dollars: ["$500"], keywords: {} }, false],
+    ["keywords only", { kind: "html", dollars: [], keywords: { closed: 1 } }, false],
+    ["neither", { kind: "html", dollars: [], keywords: {} }, true],
+    ["pdf (bytesHash is signal)", { kind: "pdf", bytesHash: "a" }, false],
+    ["error entry", { error: "HTTP 403", dollars: [], keywords: {} }, false],
+  ];
+  for (const [name, e, want] of nsCases) {
+    const got = hasNoSignal(e);
+    const ok = got === want;
+    if (!ok) fail++;
+    console.log(`${ok ? "PASS" : "FAIL"}  hasNoSignal ${name}: got ${got} (want ${want})`);
+  }
+  // empty-extraction sub-classification, derived from sha("") not a literal
+  const nsEmpty = extractedNothing({ textHash: sha("") });
+  const nsNotEmpty = extractedNothing({ textHash: sha("some real page text") });
+  const nsNoHash = extractedNothing({});
+  const nsSubOk = nsEmpty && !nsNotEmpty && !nsNoHash;
+  if (!nsSubOk) fail++;
+  console.log(`${nsSubOk ? "PASS" : "FAIL"}  extractedNothing: empty=${nsEmpty} realText=${nsNotEmpty} noHash=${nsNoHash} (want true/false/false)`);
+
   // shared/federal classification — boundary is > SHARED_STATE_MAX, not >=
   const shBelow = isShared(new Array(SHARED_STATE_MAX).fill("XX"));
   const shAbove = isShared(new Array(SHARED_STATE_MAX + 1).fill("XX"));
