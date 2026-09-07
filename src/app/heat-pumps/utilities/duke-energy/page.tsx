@@ -693,12 +693,12 @@ export default function DukeEnergyPage() {
             <p className="text-sm text-gray-700">For a household below 80% AMI converting electric resistance heat, HEAR can cover up to 100% of the heat pump&apos;s cost within its caps, with Duke rebates absorbing part of the remainder — <strong>$0 to a few thousand dollars out of pocket</strong> depending on project size. Above 150% AMI, Duke is the only rebate layer, so expect the project cost minus <strong>~$2,000</strong>. Per-state numbers for South Carolina, Florida, Indiana, and Kentucky live on their state pages.</p>
           </div>
           <p className="text-sm text-gray-500 mt-4">
-            Combined rebates cannot exceed the purchase price of each product,
-            and HEAR heat pump rebates only apply when upgrading from a
-            non-heat-pump system. Duke&apos;s biggest Carolina and Indiana
-            conversion rebates (dual fuel, cold-climate, geothermal) start
-            from an existing heat pump, so they generally do not pair with a
-            HEAR heat pump rebate on the same project.
+            Combined rebates cannot exceed the purchase price of each product.
+            Under DOE Program Notice 26-2 (effective May 29, 2026), HEAR
+            rebates apply only when upgrading from existing electric equipment
+            to more efficient electric equipment; upgrades that replace a
+            non-electric appliance are no longer covered. New construction
+            remains eligible.
           </p>
         </div>
       </section>
