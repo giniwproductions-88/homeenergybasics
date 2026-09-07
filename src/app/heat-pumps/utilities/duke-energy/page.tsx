@@ -57,7 +57,7 @@ const faqJsonLd = {
       name: "Can I stack Duke Energy rebates with state HEAR rebates?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, where a state HEAR program is open. In North Carolina, NC DEQ confirms households can receive both home energy rebates and utility incentives for the same product, as long as the combined rebates do not exceed the purchase price of the product. Indiana's state rebate program is also open. South Carolina, Florida, and Kentucky had not launched consumer HEAR rebates as of our last verification, so Duke rebates are the primary layer there.",
+        text: "Yes, where a state HEAR program is open. HEAR now covers electric-to-electric upgrades only, so for a gas-heated household the stacking question does not arise for the heat pump itself. In North Carolina, NC DEQ confirms households can receive both home energy rebates and utility incentives for the same product, as long as the combined rebates do not exceed the purchase price of the product. Indiana's state rebate program is also open. South Carolina, Florida, and Kentucky had not launched consumer HEAR rebates as of our last verification, so Duke rebates are the primary layer there.",
       },
     },
     {
@@ -771,7 +771,7 @@ export default function DukeEnergyPage() {
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">State HEAR launches change the stacking math</p>
-              <p className="text-sm text-gray-600 mt-1">North Carolina and Indiana state rebates are live today. If South Carolina, Florida, or Kentucky launch consumer HEAR rebates, Duke customers there gain a second layer worth thousands — watch each state page for launch status.</p>
+              <p className="text-sm text-gray-600 mt-1">North Carolina and Indiana state rebates are live today. If South Carolina, Florida, or Kentucky launch consumer HEAR rebates, Duke customers there gain a second layer worth thousands for electric-to-electric upgrades — HEAR no longer covers replacing a non-electric appliance — so watch each state page for launch status.</p>
             </div>
           </div>
         </div>
