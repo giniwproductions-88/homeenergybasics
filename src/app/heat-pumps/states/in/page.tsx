@@ -147,8 +147,8 @@ export default function IndianaPage() {
               <p className="text-sm text-red-900">Section 25C ($2,000 heat pump credit) and Section 25D (30% geothermal credit) both ended December 31, 2025. No reinstatement legislation has been introduced.</p>
             </div>
             <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
-              <p className="font-semibold text-amber-800 mb-1">⚠ HEAR only covers fuel-switching &mdash; not electric-to-electric replacement</p>
-              <p className="text-sm text-amber-900">HEAR rebates apply to first-time electric equipment installations only. Replacing an existing electric furnace or heat pump with a new heat pump does not qualify for HEAR. Those homeowners should apply through HOMES instead, which covers all fuel types but at lower rebate amounts.</p>
+              <p className="font-semibold text-amber-800 mb-1">⚠ HEAR now covers electric-to-electric upgrades &mdash; not fuel switching</p>
+              <p className="text-sm text-amber-900">DOE Program Notice 26-2, effective May 29, 2026, reversed the original rule. HEAR rebates now apply only when upgrading from existing electric equipment to more efficient electric equipment; new construction remains eligible. Replacing a gas, propane, or oil system no longer qualifies for HEAR &mdash; those homeowners should look to HOMES, which covers all fuel types but at lower rebate amounts.</p>
             </div>
           </div>
         </div>
@@ -177,7 +177,7 @@ export default function IndianaPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Home Electrification and Appliance Rebates (HEAR)</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            With <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">federal tax credits expired</Link>, the HEAR component of the Indiana Energy Saver Program is now the single largest incentive available to Indiana homeowners. It targets low- and moderate-income households earning less than <strong>150% of Area Median Income (AMI)</strong>. Administered by the Indiana Office of Energy Development (IOED), HEAR covers first-time installations of electric equipment &mdash; meaning it applies when switching from gas, propane, or oil to electric, but not when replacing existing electric equipment.
+            With <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">federal tax credits expired</Link>, the HEAR component of the Indiana Energy Saver Program is now the single largest incentive available to Indiana homeowners. It targets low- and moderate-income households earning less than <strong>150% of Area Median Income (AMI)</strong>. Administered by the Indiana Office of Energy Development (IOED), HEAR operates under DOE Program Notice 26-2, effective May 29, 2026 &mdash; meaning it applies when upgrading existing electric equipment to more efficient electric equipment, or in new construction, but no longer when switching from gas, propane, or oil.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">HEAR rebate amounts by equipment</h3>
@@ -235,8 +235,8 @@ export default function IndianaPage() {
           </p>
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5">
-            <p className="font-semibold text-amber-800 mb-1">⚠ Common mistake: HEAR does not cover electric-to-electric replacements</p>
-            <p className="text-sm text-amber-900">If your home already has an electric furnace, electric baseboard, or an older heat pump, replacing it with a new heat pump does not qualify for HEAR. HEAR only covers switching from gas, propane, or oil to electric equipment. Electric-to-electric replacements should apply through HOMES instead.</p>
+            <p className="font-semibold text-amber-800 mb-1">⚠ The rule reversed in May 2026: HEAR no longer covers fuel switching</p>
+            <p className="text-sm text-amber-900">If your home heats with gas, propane, or oil, replacing that system with a heat pump no longer qualifies for HEAR. DOE Program Notice 26-2 removed fuel-switching upgrades; HEAR now pays only when you upgrade existing electric equipment &mdash; an electric furnace, baseboard, or older heat pump &mdash; to more efficient electric equipment. Fuel-switching projects should look to HOMES instead.</p>
           </div>
         </div>
       </section>
@@ -246,7 +246,7 @@ export default function IndianaPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Home Efficiency Rebates (HOMES)</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            The HOMES component funds whole-home retrofits achieving a minimum <strong>20% predicted energy savings</strong>. Unlike HEAR, HOMES is open to all Indiana residents regardless of income and covers both fuel-switching and electric-to-electric replacements. Eligible upgrades include ENERGY STAR-certified HVAC systems, water heaters, insulation, air sealing, duct sealing, appliances, and lighting.
+            The HOMES component funds whole-home retrofits achieving a minimum <strong>20% predicted energy savings</strong>. Unlike HEAR, HOMES is open to all Indiana residents regardless of income and remains fuel-neutral &mdash; it still covers fuel-switching projects, which HEAR no longer does, as well as electric-to-electric replacements. Eligible upgrades include ENERGY STAR-certified HVAC systems, water heaters, insulation, air sealing, duct sealing, appliances, and lighting.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">HOMES rebate amounts by income and savings</h3>
@@ -518,7 +518,7 @@ export default function IndianaPage() {
 
           <div className="bg-gray-100 rounded-lg p-5">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
-            <p className="text-sm text-gray-700">For a typical <strong>$12,000&ndash;$15,000</strong> ducted heat pump installation: above 150% AMI homeowners should expect <strong>$8,500&ndash;$12,700 out of pocket</strong> after HOMES + utility rebates. Homeowners at 80&ndash;150% AMI can bring that down to <strong>$5,000&ndash;$9,000</strong> with HEAR. Below 80% AMI, out-of-pocket costs can be <strong>$0</strong> for qualifying projects.</p>
+            <p className="text-sm text-gray-700">For a typical <strong>$12,000&ndash;$15,000</strong> ducted heat pump installation: above 150% AMI homeowners should expect <strong>$8,500&ndash;$12,700 out of pocket</strong> after HOMES + utility rebates. Homeowners at 80&ndash;150% AMI upgrading existing electric equipment can bring that down to <strong>$5,000&ndash;$9,000</strong> with HEAR. Below 80% AMI, out-of-pocket costs can be <strong>$0</strong> for qualifying projects.</p>
           </div>
           <p className="text-sm text-gray-500 mt-4">
             Indiana has no state income tax credit for heat pumps. The Indiana Energy Independence Fund (PowerSave Indiana) offers below-market financing to cover remaining out-of-pocket costs.
@@ -536,7 +536,7 @@ export default function IndianaPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">It&apos;s usually worth it if:</h3>
           <div className="bg-green-50 border border-green-200 rounded-lg p-5 mb-6">
-            <p className="text-sm text-green-900">You heat with <strong>propane or electric resistance</strong> (highest per-BTU fuel costs, strongest payback). You qualify for <strong>HEAR rebates</strong> (below 150% AMI), which can cover most or all of the upfront cost. Or you can access <strong>utility conversion incentives</strong> like Duke Energy&apos;s $3,000 rebate. In these cases, a heat pump can reduce both upfront cost and long-term energy bills &mdash; sometimes bringing total out-of-pocket cost close to $0.</p>
+            <p className="text-sm text-green-900">You heat with <strong>propane or electric resistance</strong> (highest per-BTU fuel costs, strongest payback). If it is electric resistance and you are below 150% AMI, <strong>HEAR</strong> can cover most or all of the upfront cost. Or you can access <strong>utility conversion incentives</strong> like Duke Energy&apos;s $3,000 rebate. In these cases, a heat pump can reduce both upfront cost and long-term energy bills &mdash; sometimes bringing total out-of-pocket cost close to $0.</p>
           </div>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">It&apos;s situational if:</h3>
@@ -546,12 +546,12 @@ export default function IndianaPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">It may not be worth it if:</h3>
           <div className="bg-white border border-gray-200 rounded-lg p-5 mb-6">
-            <p className="text-sm text-gray-600">You are replacing an <strong>existing electric heat pump</strong> that still works. You don&apos;t qualify for HEAR and have limited utility rebates in your area. These projects rely mostly on HOMES or utility incentives, which are smaller and require energy modeling to qualify.</p>
+            <p className="text-sm text-gray-600">You heat with <strong>gas, propane, or oil</strong> and are above 150% AMI. Since 26-2, HEAR no longer covers fuel switching, so these projects rely mostly on HOMES or utility incentives, which are smaller and require energy modeling to qualify.</p>
           </div>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
             <p className="font-semibold text-blue-800 mb-1">Bottom line</p>
-            <p className="text-sm text-blue-900">Indiana is one of the stronger states for heat pump incentives in 2026 &mdash; especially for income-qualified households switching from gas or propane. But the economics vary significantly depending on your home, heating system, and income level. The table above in &ldquo;What you&apos;ll actually pay&rdquo; gives you the real numbers.</p>
+            <p className="text-sm text-blue-900">Indiana is one of the stronger states for heat pump incentives in 2026 &mdash; especially for income-qualified households upgrading existing electric heat. But the economics vary significantly depending on your home, heating system, and income level. The table above in &ldquo;What you&apos;ll actually pay&rdquo; gives you the real numbers.</p>
           </div>
         </div>
       </section>
@@ -613,7 +613,7 @@ export default function IndianaPage() {
 
           <div className="bg-green-50 border border-green-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-green-800 mb-1">✓ Best candidates for a heat pump in Indiana</p>
-            <p className="text-sm text-green-900">Propane-heated rural homes (highest per-BTU fuel cost, often served by co-ops with $500 rebates). Gas-heated homes considering dual-fuel configurations (keep existing furnace as backup). Homes with ductwork already in place. Households below 150% AMI that qualify for HEAR&apos;s $8,000 heat pump rebate.</p>
+            <p className="text-sm text-green-900">Households below 150% AMI upgrading electric resistance heat or an older heat pump &mdash; HEAR&apos;s $8,000 rebate is the largest incentive available in Indiana. Homes with ductwork already in place. Propane-heated rural homes, where the operating-cost case is strongest and co-ops often add $500. Gas-heated homes considering dual-fuel configurations (keep existing furnace as backup).</p>
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-4">
@@ -632,8 +632,8 @@ export default function IndianaPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Common mistakes Indiana homeowners make</h2>
           <div className="space-y-4">
             <div className="bg-amber-50 border border-amber-200 rounded-lg p-5">
-              <p className="font-semibold text-amber-800 mb-1">⚠ Assuming HEAR covers all replacements</p>
-              <p className="text-sm text-amber-900">HEAR only covers fuel-switching (gas/propane/oil to electric). Replacing an existing electric system with a new heat pump does not qualify. Use HOMES instead.</p>
+              <p className="font-semibold text-amber-800 mb-1">⚠ Assuming HEAR still covers fuel switching</p>
+              <p className="text-sm text-amber-900">Since DOE Program Notice 26-2 took effect in May 2026, HEAR covers only upgrades from existing electric equipment. Replacing a gas, propane, or oil system with a heat pump no longer qualifies. Use HOMES for those projects instead.</p>
             </div>
             <div className="bg-amber-50 border border-amber-200 rounded-lg p-5">
               <p className="font-semibold text-amber-800 mb-1">⚠ Not using an approved contractor</p>
