@@ -45,12 +45,18 @@ way junk enters this repo.
 Applies to `src/data/incentives.ts` and `src/data/utilities.ts`. That
 date asserts that a human read a primary source on that day.
 
-You may never originate a verification date. You may not infer one from
+You may never originate a `lastVerified` date. You may not infer one from
 today's date, from a build, or from your own reading of a page — you
-cannot fetch, so you cannot verify. You MAY write `lastVerified` or
-`lastUpdated` when the operator's instruction supplies the literal date
-AND names the source that was verified. Absent both, refuse and say the
-date should move.
+cannot fetch, so you cannot verify. You MAY write `lastVerified` when the
+operator's instruction supplies the literal date AND names the source that
+was verified. Absent both, refuse and say the date should move.
+
+`lastUpdated` is the opposite: directive, not permissive. It records the
+edit, not a claim about the world. When an edit changes rendered page
+content, move `lastUpdated` to that date — without asking, and without
+needing a source. The two fields are independent. A page can be corrected
+without being re-verified, so `lastUpdated` may be later than
+`lastVerified`; there is no ordering rule between them.
 
 **1.5 — Do not fetch program-administrator or IRS pages to verify a
 claim.** Rule-1 verification happens in the chat session, where the
@@ -110,6 +116,23 @@ So:
   it came from. If you can't name one, you invented it — say that.
 - **Report what you checked AND what you did not.** A verdict that omits
   the second half is not a verdict.
+
+**Survey method — anchor plus window**
+
+- **Anchor on the entity, not the claim.** Take a ±2 line window around
+  each anchor hit, filter for the relevant vocabulary, then read the
+  candidates.
+- **The ±2 window is load-bearing.** Claims sit on lines that don't
+  themselves contain the anchor word, and a single-line grep cannot see
+  them.
+- **A grep confirms a known set is gone. It never discovers the set.**
+- **A federal or state rule change triggers an immediate anchored survey
+  across all 51 states before any page edits.** Applying a new rule
+  state-by-state as pages come up guarantees a split where some pages
+  state the old rule and some the new one, shipping simultaneously.
+- **`incentives.ts` summary strings are a second claim surface**, rendered
+  by `StatusCard` on every state page. A page survey that doesn't include
+  them will miss card/page disagreements, which occur in both directions.
 
 ---
 
@@ -218,9 +241,14 @@ Conventions:
 These are known and queued. Note them if they block you; don't rediscover
 them.
 
-2. `src/components/StatusCard.tsx` renders one date under both "As of:" and
-   "Last verified:". `lastUpdated` is byte-identical to `lastVerified`
-   everywhere and read by nothing in `src/`.
+2. `lastUpdated` is read at eleven sites across nine files: NJ's OpenGraph
+   `modifiedTime` and JSON-LD `dateModified`, a rendered "Updated … ·
+   Verified …" line on FL, IN, NC, SC, KY, OH, NJ and duke-energy, and
+   FPL's synthesized `StatusCard` object. It is not inert. What is inert
+   is its value: identical to `lastVerified` on all 51 states and all 6
+   utilities, so the eight dual-date pages render the same date twice
+   under two labels. The invariant `lastUpdated <= lastVerified` is false
+   — a page can be corrected without being re-verified.
 3. Stale downgrade is client-side only (`useEffect`), so SSR HTML and
    crawlers never see it. Undecided design question, not a defect.
 4. `ISODate` is declared twice — `incentives.ts:9-11` and
@@ -266,6 +294,37 @@ them.
 15. Co-op sites on shared templates inject closure vocabulary sitewide via
     rotating announcement banners. `closed` is the keyword most prone to
     false positives on utility sites.
+16. Claude Code's working-tree and VCS view drifts stale. Its file reads are
+    accurate; its account of repo state is not, and cannot gate a decision.
+    `git status` from the terminal is authoritative.
+17. One `git add` + `git commit` pair at a time. Read the reported file
+    count before running the next; `1 file changed` is the check. A
+    duplicated command commits an already-staged index and lands unrelated
+    states under the wrong subject.
+18. Never re-run a commit command. `git log --oneline -2` answers "did it
+    run."
+19. Line endings: `src/` is LF, `scripts/` is CRLF. An earlier "the repo is
+    LF" note was true only of `src/`.
+20. Commit trailers: plain `Co-Authored-By: Claude <noreply@anthropic.com>`.
+    Never a model name or context window — unverifiable later, and it rots.
+21. An announcement channel is never muted; only a consumer portal may be.
+    Watching the portal while muting the announcement channel produces a
+    silent watch over a stale page with no flag.
+22. A mute with no expiry is indistinguishable from coverage. Every
+    ignore-list entry needs a reason and a review date.
+23. Internal contradiction is detectable from the repo alone — no fetch, no
+    source. The scraper watches the outside world and has no view of
+    whether the repo agrees with itself.
+24. NJ wires `dateModified`/`modifiedTime` to `lastUpdated`; the other 50
+    states use `lastVerified`. NJ is the schema-correct one. Propagate the
+    NJ pattern only after `lastUpdated` is enforced and the values can
+    actually differ.
+25. A count or enumeration handed up from a survey and written into a
+    guardrail document is a second-hand claim, not a verified one. Two
+    entries in this file were wrong on first write — `lastUpdated` "read by
+    nothing in `src/`" (nine files read it) and "ten sites" (eleven). Both
+    came from summaries adopted without re-deriving. Re-derive counts at the
+    point of writing, or omit the count and state the shape.
 
 ---
 

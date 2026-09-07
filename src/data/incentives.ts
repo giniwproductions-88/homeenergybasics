@@ -22,9 +22,9 @@ export interface StateIncentive {
   /** Last checked against primary sources. Bump only after quoted-source verification (playbook rule 1). */
   lastVerified: ISODate;
   /**
-   * Last date the entry/page content actually changed.
-   * Invariant: lastUpdated <= lastVerified (a verification pass that finds
-   * no changes bumps lastVerified only).
+   * Last date the entry/page content actually changed. Records the edit,
+   * not a verification: it moves whenever rendered content changes and
+   * needs no source. Independent of lastVerified — it may be later.
    * Initialized 2026-07-17 from lastVerified (best available history);
    * exact for all touches after that date.
    */

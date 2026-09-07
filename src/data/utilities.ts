@@ -7,8 +7,9 @@
 //   lastVerified — last checked against primary sources. Playbook rule 1:
 //     set only after a real verification pass with quoted source text.
 //   lastUpdated  — last actual content change to this entity's data/page.
-//   INVARIANT: lastUpdated <= lastVerified. A verify-no-changes pass bumps
-//   lastVerified ONLY. Both monotonic — never move backward.
+//   Records the edit, not a verification: moves whenever rendered content
+//   changes, needs no source, and is independent of lastVerified.
+//   Both monotonic — never move backward.
 // Entries with lastVerified: "" are SCHEMA STUBS and must not ship until
 // verified (shippedUtilities() gates on this).
 
@@ -69,7 +70,7 @@ export interface UtilityEntity {
   territories: UtilityTerritory[];
   status: UtilityStatus; // overall: open if any territory program open
   lastVerified: ISODate | ""; // rule-1 gated; "" = unshipped stub
-  lastUpdated: ISODate | ""; // last content change; <= lastVerified
+  lastUpdated: ISODate | ""; // last content change; independent of lastVerified
   // 2-3 sentence hub-card summary. Same constraints as state summaries:
   // primary dollar amounts, primary program names, ~350 chars max.
   summary: string;
