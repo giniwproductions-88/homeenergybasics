@@ -55,7 +55,7 @@ const strongStates: StateTier[] = [
 ];
 
 const moderateStates: StateTier[] = [
-  { code: "NH", name: "New Hampshire", headlineAmount: "$250–$2,000/ton", primaryProgram: "NHSaves + NE Accelerator", note: "$2,000/ton enhanced electric-resistance tier since March 2026. HEAR approved, expected mid-summer 2026. R-410A banned from qualified list." },
+  { code: "NH", name: "New Hampshire", headlineAmount: "$250–$2,000/ton", primaryProgram: "NHSaves + NE Accelerator", note: "$2,000/ton enhanced electric-resistance tier since March 2026. HEAR approved; NH DOE expects launch Fall 2026. R-410A banned from qualified list." },
   { code: "OR", name: "Oregon", headlineAmount: "$800–$3,000", primaryProgram: "Energy Trust + ODOE HP3", note: "Energy Trust $800–$3,000; ODOE HP3 adds up to $2,000. No state tax credit (RETC expired 2017). HEAR/HOMES not yet launched." },
   { code: "CT", name: "Connecticut", headlineAmount: "$250–$1,000/ton", primaryProgram: "Energize CT", note: "Smart-E Loan at 0.99% APR through June 30, 2026. HEAR funded but not available." },
   { code: "MN", name: "Minnesota", headlineAmount: "Up to $2,600", primaryProgram: "Xcel + CenterPoint", note: "Save Energy MN (HEAR + $4,000 state rebate) has not launched." },
