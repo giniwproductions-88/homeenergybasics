@@ -150,6 +150,29 @@ function extractedNothing(e) {
   return !!e && !!e.textHash && e.textHash === emptyTextHash();
 }
 
+// Why an acceptance may no longer hold. Three distinct states, and collapsing
+// them is actively dangerous: hasNoSignal() returns false for error entries as
+// well as for healthy ones, so a single `!hasNoSignal(e)` test reports a URL
+// that has started 403-ing as "now carries signal" — an accepted URL that
+// began failing to fetch would render as an improvement. Order matters: the
+// error branch must precede the hasNoSignal branch for that reason.
+// Returns null while the acceptance is still valid.
+function classifyAcceptance(entry) {
+  if (!entry) {
+    return { kind: "dead", message: "no longer in watch list; acceptance is dead" };
+  }
+  if (entry.error) {
+    return {
+      kind: "masking",
+      message: `now failing to fetch (${entry.error}); acceptance is masking a fetch failure`,
+    };
+  }
+  if (!hasNoSignal(entry)) {
+    return { kind: "recovered", message: "now carries signal; acceptance can be removed" };
+  }
+  return null;
+}
+
 // Reasons a no-signal URL may be accepted (scripts/source-nosignal-accepted.json).
 // The distinction is load-bearing, not cosmetic:
 //   by-design   — the page never publishes figures (EIA profile, contractor
@@ -588,9 +611,11 @@ function writeReport(baseline, latest, ignoreSet, humanVerify = [], accepted = {
   // Acceptances that no longer apply. Without this the file rots silently and
   // the header's "(N accepted)" becomes a number nobody can account for.
   for (const url of Object.keys(accepted)) {
-    const e = curMap[url];
-    if (!e) { staleAccept.push(`${url} — no longer in the watch list`); continue; }
-    if (!hasNoSignal(e)) staleAccept.push(`${url} — now carries signal; acceptance can be removed`);
+    const c = classifyAcceptance(curMap[url]);
+    if (!c) continue;
+    // A masking acceptance is a warning, not a removal candidate — mark it so
+    // it cannot be skimmed as one.
+    staleAccept.push(`${c.kind === "masking" ? "**[MASKING]** " : ""}${url} — ${c.message}`);
   }
   noSignal.sort((a, b) =>
     (a.empty === b.empty ? 0 : a.empty ? -1 : 1) ||
@@ -1148,6 +1173,27 @@ function selftest() {
   const nsSubOk = nsEmpty && !nsNotEmpty && !nsNoHash;
   if (!nsSubOk) fail++;
   console.log(`${nsSubOk ? "PASS" : "FAIL"}  extractedNothing: empty=${nsEmpty} realText=${nsNotEmpty} noHash=${nsNoHash} (want true/false/false)`);
+
+  // acceptance staleness — three branches. The masking case is the point:
+  // an accepted URL that starts failing must never read as an improvement.
+  const acCases = [
+    ["absent from curMap", undefined, "dead"],
+    ["error entry (403)", { error: "HTTP 403", dollars: [], keywords: {} }, "masking"],
+    ["now carries dollars", { kind: "html", dollars: ["$500"], keywords: {} }, "recovered"],
+    ["still no-signal", { kind: "html", dollars: [], keywords: {} }, null],
+  ];
+  for (const [name, entry, want] of acCases) {
+    const got = classifyAcceptance(entry);
+    const kind = got ? got.kind : null;
+    const ok = kind === want;
+    if (!ok) fail++;
+    console.log(`${ok ? "PASS" : "FAIL"}  classifyAcceptance ${name}: got ${kind} (want ${want})`);
+  }
+  // the specific regression: an error entry must NOT be described as improved
+  const maskMsg = classifyAcceptance({ error: "HTTP 403" }).message;
+  const maskOk = /masking a fetch failure/.test(maskMsg) && !/carries signal|can be removed/.test(maskMsg);
+  if (!maskOk) fail++;
+  console.log(`${maskOk ? "PASS" : "FAIL"}  classifyAcceptance error wording: ${JSON.stringify(maskMsg)}`);
 
   // shared/federal classification — boundary is > SHARED_STATE_MAX, not >=
   const shBelow = isShared(new Array(SHARED_STATE_MAX).fill("XX"));

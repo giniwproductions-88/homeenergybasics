@@ -1,1 +1,70 @@
-{}
+{
+  "https://dfs.wyo.gov/assistance-programs/home-utilities-energy-assistance/weatherization-assistance-program-wap-2/": {
+    "reason": "by-design",
+    "note": "WAP is a federally funded free service; no consumer dollar figures exist. Fetched and verified 2026-09-06."
+  },
+  "https://adeca.alabama.gov/weatherization/": {
+    "reason": "by-design",
+    "note": "WAP free service, no consumer figures by program design. Not individually fetched."
+  },
+  "https://energyoffice.colorado.gov/weatherization-assistance-program": {
+    "reason": "by-design",
+    "note": "WAP free service, no consumer figures by program design. Not individually fetched."
+  },
+  "https://gefa.georgia.gov/weatherization-assistance-program": {
+    "reason": "by-design",
+    "note": "WAP free service, no consumer figures by program design. Not individually fetched."
+  },
+  "https://hhs.iowa.gov/assistance-programs/housing-rent-assistance/weatherization-assistance": {
+    "reason": "by-design",
+    "note": "WAP free service, no consumer figures by program design. Not individually fetched."
+  },
+  "https://dnr.mo.gov/energy/weatherization": {
+    "reason": "by-design",
+    "note": "WAP free service, no consumer figures by program design. Not individually fetched."
+  },
+  "https://www.energy.nh.gov/consumers/help-energy-and-utility-bills/weatherization-assistance-program": {
+    "reason": "by-design",
+    "note": "WAP free service, no consumer figures by program design. Not individually fetched."
+  },
+  "https://housing.nv.gov/programs/Weatherization/": {
+    "reason": "by-design",
+    "note": "WAP free service, no consumer figures by program design. Not individually fetched."
+  },
+  "https://www.okcommerce.gov/weatherization/": {
+    "reason": "by-design",
+    "note": "WAP free service, no consumer figures by program design. Not individually fetched."
+  },
+  "https://thda.org/help-for-homeowners/weatherization-assistance-program/": {
+    "reason": "by-design",
+    "note": "WAP free service, no consumer figures by program design. Not individually fetched."
+  },
+  "https://www.dhcd.virginia.gov/wx": {
+    "reason": "by-design",
+    "note": "WAP free service, no consumer figures by program design. Not individually fetched."
+  },
+  "https://www.fpl.com/about/company-profile.html": {
+    "reason": "by-design",
+    "note": "Company profile page; publishes no rebate figures."
+  },
+  "https://smudcontractornetwork.org/": {
+    "reason": "by-design",
+    "note": "Contractor directory; no figures by nature."
+  },
+  "https://www.smud.org/Corporate/About-us/SMUDs-Territory-Map": {
+    "reason": "by-design",
+    "note": "Service territory map; no figures by nature."
+  },
+  "https://www.aps.com/en/Residential/Save-Money-and-Energy/Your-Energy-Your-Options": {
+    "reason": "by-design",
+    "note": "Documents that APS discontinued residential rebates. Zero dollars is the correct state; a dollar figure appearing here would itself be the signal."
+  },
+  "https://www.comed.com/ways-to-save/for-your-home/rebates-discounts/heating-cooling-discounts": {
+    "reason": "js-rendered",
+    "note": "SPA shell; figures never reach raw HTML. Confirmed 2026-09-06 by two independent fetchers. IL is unwatched on its primary utility rebate page — gap open."
+  },
+  "https://www.peco.com/ways-to-save/for-your-home/rebates-discounts/heating-cooling-rebates": {
+    "reason": "js-rendered",
+    "note": "Byte-identical to ComEd shell, same template. PA is unwatched on its primary utility rebate page — gap open."
+  }
+}
