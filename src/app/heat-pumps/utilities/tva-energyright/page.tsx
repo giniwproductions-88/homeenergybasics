@@ -52,7 +52,7 @@ const faqJsonLd = {
       name: "Can I stack TVA rebates with state HEAR rebates?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "In principle yes — TVA EnergyRight rebates are utility-side incentives and IRA Home Energy Rebates are state-administered, so they operate on separate tracks. In practice, most Valley states had not launched HEAR as of July 2026: Kentucky’s state energy office, for example, warns that its rebates are not yet available. Check your state’s page for current HEAR status before counting on a stack. Federal 25C and 25D tax credits expired December 31, 2025 and cannot be part of any 2026 stack.",
+        text: "In principle yes — TVA EnergyRight rebates are utility-side incentives and IRA Home Energy Rebates are state-administered, so they operate on separate tracks. HEAR now covers electric-to-electric upgrades only, so for a gas-heated household the stacking question does not arise for the heat pump itself. In practice, most Valley states had not launched HEAR as of July 2026: Kentucky’s state energy office, for example, warns that its rebates are not yet available. Check your state’s page for current HEAR status before counting on a stack. Federal 25C and 25D tax credits expired December 31, 2025 and cannot be part of any 2026 stack.",
       },
     },
     {
