@@ -1337,10 +1337,10 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "NM",
     stateName: "New Mexico",
     status: "limited",
-    lastVerified: "2026-06-03",
-    lastUpdated: "2026-06-03",
+    lastVerified: "2026-09-06",
+    lastUpdated: "2026-09-06",
     summary:
-      "HEAR offers up to $8,000 per heat pump (applications now open) but is restricted to households below 80% AMI; under DOE Program Notice 26-2, HEAR reaches only upgrades from existing electric equipment. PNM rebates cover $550\u2013$700. Sustainable Building Tax Credit adds up to $1,000\u2013$2,000. Geothermal credit covers 30% up to $9,000 at all income levels. Federal 25C/25D credits expired.",
+      "HEAR offers up to $8,000 per heat pump for households below 80% AMI, but New Mexico's program page lists heat pump rebates as both 'Coming Soon' and 'Apply Now' in two tables, and one HVAC contractor is approved statewide. Under DOE Program Notice 26-2, HEAR reaches only upgrades from existing electric equipment. PNM rebates cover $550\u2013$700. Sustainable Building Tax Credit adds up to $1,000\u2013$2,000. Geothermal credit covers 30% up to $9,000 at all income levels. Federal 25C/25D credits expired.",
     sources: [
       {
         label: "NM HEAR Program (ECMD)",

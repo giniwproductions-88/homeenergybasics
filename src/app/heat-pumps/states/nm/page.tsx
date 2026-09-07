@@ -8,14 +8,14 @@ export const metadata: Metadata = {
   title:
     "New Mexico Heat Pump Rebates 2026: $8,000 HEAR + State Tax Credits | Home Energy Basics",
   description:
-    "HEAR offers up to $8,000 for heat pumps (below 80% AMI, electric replacements only). PNM rebates cover $550–$700. Federal credits ended. Every NM heat pump incentive in 2026.",
+    "New Mexico lists its $8,000 HEAR heat pump rebate as both open and coming soon, with one approved HVAC contractor statewide. PNM rebates cover $550–$700. Federal credits ended.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/nm",
   },
   openGraph: {
     title: "New Mexico Heat Pump Rebates 2026",
     description:
-      "HEAR covers up to $8,000 per heat pump for income-qualifying households replacing existing electric equipment — the complete guide to New Mexico heat pump incentives after federal credits expired.",
+      "New Mexico lists the $8,000 HEAR heat pump rebate as both open and coming soon, and one HVAC contractor is approved statewide — the complete guide to New Mexico heat pump incentives in 2026.",
     url: "https://homeenergybasics.com/heat-pumps/states/nm",
     type: "article",
     publishedTime: "2026-03-23T20:08:09-05:00",
@@ -32,7 +32,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in New Mexico in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The largest incentive is the HEAR program, offering up to $8,000 for a heat pump — currently limited to households below 80% of Area Median Income. Under DOE Program Notice 26-2, effective May 29, 2026, HEAR applies only when upgrading from existing electric equipment to more efficient electric equipment, so replacing a gas, propane, or oil system does not qualify. Heat pump applications are now open, though the authorized contractor list is not expected until fall 2026. Utility rebates from PNM ($550–$700), El Paso Electric ($300–$525), and rural co-ops ($500–$1,500) are available at all income levels. The Sustainable Building Tax Credit adds up to $1,000 (non-low-income) or $2,000 (low-income) per heat pump. Federal Section 25C and 25D tax credits expired December 31, 2025.",
+        text: "The largest incentive is the HEAR program, offering up to $8,000 for a heat pump — currently limited to households below 80% of Area Median Income. Under DOE Program Notice 26-2, effective May 29, 2026, HEAR applies only when upgrading from existing electric equipment to more efficient electric equipment, so replacing a gas, propane, or oil system does not qualify. Heat pump availability is unclear: New Mexico's program page carries its rebate table twice and the two copies disagree, listing heat pump rebates as both \u201cComing Soon\u201d and \u201cApply Now\u201d — confirm with the program before planning around it. Insulation, electric panel, wiring, heat pump clothes dryer, and induction cooktop rebates are listed as open in both. The authorized contractor directory is live, but it lists one approved HVAC contractor for the whole state (AM Conservation), and heat pumps require an Authorized Program Contractor. Utility rebates from PNM ($550–$700), El Paso Electric ($300–$525), and rural co-ops ($500–$1,500) are available at all income levels. The Sustainable Building Tax Credit adds up to $1,000 (non-low-income) or $2,000 (low-income) per heat pump. Federal Section 25C and 25D tax credits expired December 31, 2025.",
       },
     },
     {
@@ -40,7 +40,7 @@ const faqJsonLd = {
       name: "Can I stack HEAR rebates with utility rebates and state tax credits in New Mexico?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. HEAR rebates can be stacked with utility rebates and the Sustainable Building Tax Credit for the same installation. The maximum HEAR amount per household is $14,000 across all measures. HEAR and HOMES rebates cannot be combined for the same measure. A low-income homeowner in PNM territory replacing existing electric equipment could realistically stack $8,000 (HEAR) + $550 (PNM) + $2,000 (SBTC) for roughly $10,550 on a heat pump alone; a gas-heated household does not reach the HEAR layer and stacks the utility rebate and tax credit only.",
+        text: "Yes. HEAR rebates can be stacked with utility rebates and the Sustainable Building Tax Credit for the same installation. The maximum HEAR amount per address is $14,000 across all measures. HEAR and HOMES rebates cannot be combined for the same measure. A low-income homeowner in PNM territory replacing existing electric equipment could realistically stack $8,000 (HEAR) + $550 (PNM) + $2,000 (SBTC) for roughly $10,550 on a heat pump alone; a gas-heated household does not reach the HEAR layer and stacks the utility rebate and tax credit only.",
       },
     },
     {
@@ -103,7 +103,7 @@ export default function NewMexicoPage() {
             New Mexico Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            New Mexico&apos;s HEAR program covers up to <strong>$8,000</strong> per heat pump for income-qualifying households replacing existing electric equipment, but most homeowners above 80% of Area Median Income (AMI) — and any household heating with gas, propane, or oil — are limited to roughly <strong>$1,000–$1,800</strong> in utility rebates and state tax credits. This guide covers all major New Mexico heat pump incentives available in 2026, including HEAR, PNM and El Paso Electric utility rebates, rural co-op programs, and state tax credits. Here&apos;s what&apos;s actually available.
+            New Mexico&apos;s HEAR program lists up to <strong>$8,000</strong> per heat pump for income-qualifying households replacing existing electric equipment — but the state&apos;s own program page shows that rebate as both &ldquo;Coming Soon&rdquo; and &ldquo;Apply Now&rdquo; in two different tables, and just <strong>one HVAC contractor is approved statewide</strong>. Most homeowners above 80% of Area Median Income (AMI) — and any household heating with gas, propane, or oil — are limited to roughly <strong>$1,000–$1,800</strong> in utility rebates and state tax credits. This guide covers all major New Mexico heat pump incentives available in 2026, including HEAR, PNM and El Paso Electric utility rebates, rural co-op programs, and state tax credits. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
             Updated {formattedDate} — verified against official program sources
@@ -136,15 +136,15 @@ export default function NewMexicoPage() {
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Total Potential Savings: $1,550–$11,500+</p>
-              <p className="text-sm text-green-900">$1,550 (above 80% AMI, utility + SBTC only) to $11,500+ (below 80% AMI, HEAR now open, electric-to-electric upgrades only). Full electrification packages for low-income homeowners can reach ~$16,000 total.</p>
+              <p className="text-sm text-green-900">$1,550 (above 80% AMI, utility + SBTC only) to $11,500+ (below 80% AMI, electric-to-electric upgrades only, and only if the heat pump rebate is in fact open — see below). Full electrification packages for low-income homeowners can reach ~$16,000 total.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">✗ Federal Tax Credits Expired</p>
               <p className="text-sm text-red-900">Section 25C ($2,000/year for heat pumps) and Section 25D (30% for geothermal) both ended December 31, 2025. No replacement credits enacted.</p>
             </div>
             <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
-              <p className="font-semibold text-amber-800 mb-1">⚠ HEAR Heat Pump Rebates Are Open — but Income- and Fuel-Restricted</p>
-              <p className="text-sm text-amber-900">HEAR heat pump applications are now open through the state portal, but only households below 80% AMI qualify — the 80–150% AMI tier has not been activated. Since DOE Program Notice 26-2, HEAR also reaches only upgrades from existing electric equipment, so gas, propane, and oil replacements no longer qualify. The authorized contractor list isn&apos;t expected until fall 2026, and HOMES has not launched. Most middle-income homeowners are limited to utility rebates and state tax credits.</p>
+              <p className="font-semibold text-amber-800 mb-1">⚠ HEAR Heat Pump Rebates: Listed Both Ways, and One Approved Installer</p>
+              <p className="text-sm text-amber-900">New Mexico&apos;s own program page lists heat pump rebates as both &ldquo;Coming Soon&rdquo; and &ldquo;Apply Now&rdquo; in two tables on the same page, so confirm status with the program before planning around it. Only households below 80% AMI qualify — the 80–150% AMI tier has not been activated. Since DOE Program Notice 26-2, HEAR also reaches only upgrades from existing electric equipment, so gas, propane, and oil replacements no longer qualify. The authorized contractor directory is live but lists <strong>one approved HVAC contractor statewide</strong>, and HOMES has not launched. Most middle-income homeowners are limited to utility rebates and state tax credits.</p>
             </div>
           </div>
         </div>
@@ -173,8 +173,13 @@ export default function NewMexicoPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Home Electrification and Appliance Rebates (HEAR)</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            New Mexico&apos;s HEAR program is the single largest heat pump incentive in the state. Administered by the Energy Conservation and Management Division (ECMD) within the Energy, Minerals and Natural Resources Department (EMNRD), with <strong>Franklin Energy</strong> as the implementation contractor, HEAR launched September 3, 2024 and is being rolled out in phases. Total state allocation: <strong>$43 million</strong> in DOE funding. The program was funded under the IRA and was not repealed by the One Big Beautiful Bill Act &mdash; it continues until funds are exhausted. As of June 2026, <strong>heat pump space-heating rebates are open for applications</strong> through the state portal — alongside insulation, electric panel and wiring upgrades, heat pump clothes dryers, and induction stoves — though the authorized contractor list is not expected until fall 2026. DOE Program Notice 26-2, effective May 29, 2026, then removed fuel-switching upgrades from HEAR nationwide: rebates now apply only when replacing existing electric equipment with more efficient electric equipment, and new construction remains eligible. Launched programs had three months from the June 1, 2026 publication date to conform, so the rule governs New Mexico&apos;s program now.
+            New Mexico&apos;s HEAR program is the single largest heat pump incentive in the state. Administered by the Energy Conservation and Management Division (ECMD) within the Energy, Minerals and Natural Resources Department (EMNRD), with <strong>Franklin Energy</strong> as the implementation contractor, HEAR launched September 3, 2024 and is being rolled out in phases. Total state allocation: <strong>$43 million</strong> in DOE funding. The program was funded under the IRA and was not repealed by the One Big Beautiful Bill Act &mdash; it continues until funds are exhausted. Insulation, electric panel and wiring upgrades, heat pump clothes dryers, and induction cooktops are listed as open for applications through the state portal. Heat pump space heating is the unclear case: New Mexico&apos;s own program page lists heat pump rebates as both &ldquo;Coming Soon&rdquo; and &ldquo;Apply Now&rdquo; in two tables on the same page, so confirm status with the program before planning around it. DOE Program Notice 26-2, effective May 29, 2026, then removed fuel-switching upgrades from HEAR nationwide: rebates now apply only when replacing existing electric equipment with more efficient electric equipment, and new construction remains eligible. Launched programs had three months from the June 1, 2026 publication date to conform, so the rule governs New Mexico&apos;s program now.
           </p>
+
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
+            <p className="font-semibold text-amber-800 mb-1">⚠ The program page contradicts itself on heat pump availability</p>
+            <p className="text-sm text-amber-900">New Mexico&apos;s HEAR page carries the same rebate table twice. In the first, the $8,000 air-source heat pump, the $1,750 heat pump water heater, and the $1,600 air sealing rebate are all marked &ldquo;Coming Soon.&rdquo; In the second, those same three are marked &ldquo;Apply Now&rdquo; — and the second table adds an un-ducted mini-split row at $8,000 that the first does not have. We are not picking a side: confirm heat pump status with the program before you plan around it. The measures below marked &ldquo;Apply now&rdquo; are listed that way in both tables.</p>
+          </div>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">HEAR rebate amounts</h3>
           <div className="overflow-x-auto mb-6">
@@ -183,36 +188,54 @@ export default function NewMexicoPage() {
                 <tr className="bg-gray-100">
                   <th className="text-left p-3 font-semibold">Measure</th>
                   <th className="text-left p-3 font-semibold">Maximum rebate</th>
+                  <th className="text-left p-3 font-semibold">Status on the state page</th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="border-b">
                   <td className="p-3">Air-source heat pump (ducted or mini-split)</td>
                   <td className="p-3 font-semibold">$8,000</td>
+                  <td className="p-3 text-amber-800 font-semibold">Listed both ways</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Heat pump water heater (ENERGY STAR)</td>
                   <td className="p-3 font-semibold">$1,750</td>
+                  <td className="p-3 text-amber-800 font-semibold">Listed both ways</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Electric service panel upgrade</td>
                   <td className="p-3 font-semibold">$4,000</td>
+                  <td className="p-3">Apply now</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Electric wiring</td>
                   <td className="p-3 font-semibold">$2,500</td>
+                  <td className="p-3">Apply now</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Insulation (wall/ceiling/attic/floor)</td>
                   <td className="p-3 font-semibold">$1,600</td>
+                  <td className="p-3">Apply now</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Air sealing</td>
                   <td className="p-3 font-semibold">$1,600</td>
+                  <td className="p-3 text-amber-800 font-semibold">Listed both ways</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Heat pump clothes dryer</td>
+                  <td className="p-3 font-semibold">$840</td>
+                  <td className="p-3">Apply now</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Electric or induction cooktop / range</td>
+                  <td className="p-3 font-semibold">$840</td>
+                  <td className="p-3">Apply now</td>
                 </tr>
                 <tr className="border-b bg-green-50">
-                  <td className="p-3 font-semibold">Maximum per household</td>
+                  <td className="p-3 font-semibold">Maximum per address</td>
                   <td className="p-3 font-semibold">$14,000</td>
+                  <td className="p-3"></td>
                 </tr>
               </tbody>
             </table>
@@ -220,18 +243,73 @@ export default function NewMexicoPage() {
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-amber-800 mb-1">⚠ These caps reach electric-to-electric upgrades only</p>
-            <p className="text-sm text-amber-900">DOE Program Notice 26-2, effective May 29, 2026, removed fuel switching from HEAR nationwide. The amounts above apply when you replace existing electric equipment — an older heat pump, an electric furnace, or electric resistance heat — with more efficient electric equipment. Replacing a gas, propane, or oil system does not qualify, whatever your income. New construction remains eligible. This is a federal rule, not a New Mexico restriction.</p>
+            <p className="text-sm text-amber-900">DOE Program Notice 26-2, effective May 29, 2026, removed fuel switching from HEAR nationwide. The amounts above apply when you replace existing electric equipment — an older heat pump, an electric furnace, or electric resistance heat — with more efficient electric equipment. Replacing a gas, propane, or oil system does not qualify, whatever your income. New construction remains eligible. This is a federal rule, not a New Mexico restriction. New Mexico&apos;s published HEAR materials have not yet been updated to reflect it: the program page was last modified May 18, 2026 — eleven days before 26-2 took effect — and its stove rule still reads &ldquo;must replace a non-electric model,&rdquo; which is the kind of fuel-switching requirement 26-2 removed. The federal rule stands regardless of what the state page still says.</p>
+          </div>
+
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
+            <p className="font-semibold text-amber-800 mb-1">⚠ One approved HVAC contractor in the entire state</p>
+            <p className="text-sm text-amber-900">Heat pump installations require an Authorized Program Contractor. The directory is live and contractor participation is open, but as of September 6, 2026 the entire HVAC listing is a single entry: <strong>AM Conservation</strong>, covering HVAC and the electrical work directly related to an HVAC installation, statewide. A rebate that is nominally available and has one eligible installer is a different proposition from one you can actually book. Ask any contractor you approach whether they are enrolled, and expect to wait.</p>
           </div>
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-amber-800 mb-1">⚠ Common mistake: applying after purchase</p>
-            <p className="text-sm text-amber-900">You must apply and receive a coupon through the state portal BEFORE purchasing equipment. Retroactive applications are not accepted. Most installations require an Authorized Program Contractor — the contractor list is expected by fall 2026. All qualifying products must be ENERGY STAR certified.</p>
+            <p className="text-sm text-amber-900">You must apply and receive a coupon through the state portal BEFORE purchasing equipment. Retroactive applications are not accepted. Most installations require an Authorized Program Contractor, and only one HVAC contractor is currently enrolled statewide. All qualifying products must be ENERGY STAR certified.</p>
           </div>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Who qualifies</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            New Mexico has currently limited HEAR to <strong>households below 80% AMI only</strong>, covering 100% of costs up to the caps listed above. The 80–150% AMI tier (which would cover 50% of costs) has not yet been activated. Households above 150% AMI are not eligible under any tier. Separately — and as a federal rule rather than a state one — 26-2 requires that the upgrade replace existing electric equipment. Automatic eligibility also applies to participants in Medicaid, SNAP, SSI, Head Start, WIC, WAP, LIHEAP, or FDPIR.
+            New Mexico has currently limited HEAR to <strong>households below 80% AMI only</strong>, covering 100% of costs up to the caps listed above. The 80–150% AMI tier (which would cover 50% of costs) has not yet been activated. Households above 150% AMI are not eligible under any tier. Separately — and as a federal rule rather than a state one — 26-2 requires that the upgrade replace existing electric equipment. Automatic eligibility also applies to participants in any of ten benefit programs: Medicaid, SNAP, SSI, Head Start, WIC, WAP, LIHEAP, FDPIR, HIP, or HOPWA.
           </p>
+
+          <p className="text-gray-700 leading-relaxed mb-4">
+            ECAM publishes an example income table built on a statewide AMI of <strong>$78,000</strong>. Treat the figures below as illustrative rather than as your own threshold: HEAR eligibility is set <strong>by county</strong>, and ECAM links HUD&apos;s county income limits for the actual test. Use these to gauge whether you are in range, then check the limit for your county.
+          </p>
+
+          <div className="overflow-x-auto mb-6">
+            <table className="min-w-full text-sm">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="text-left p-3 font-semibold">Household size</th>
+                  <th className="text-left p-3 font-semibold">80% AMI &mdash; ECAM example ($78,000 statewide AMI)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b">
+                  <td className="p-3">1 person</td>
+                  <td className="p-3 font-semibold">$44,200</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">2 people</td>
+                  <td className="p-3 font-semibold">$50,500</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">3 people</td>
+                  <td className="p-3 font-semibold">$56,800</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">4 people</td>
+                  <td className="p-3 font-semibold">$63,100</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">5 people</td>
+                  <td className="p-3 font-semibold">$68,150</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">6 people</td>
+                  <td className="p-3 font-semibold">$73,200</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">7 people</td>
+                  <td className="p-3 font-semibold">$78,250</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">8 people</td>
+                  <td className="p-3 font-semibold">$83,300</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
           <p className="text-gray-700 leading-relaxed">
             Applicants must own and occupy a single-family home, duplex, triplex, quadplex, manufactured home, or townhome. Renters are expected to become eligible by late 2026. Apply at{" "}
             <a href="https://app.clean.energy.nm.gov" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">app.clean.energy.nm.gov</a> or call 888-290-9337.
@@ -420,7 +498,7 @@ export default function NewMexicoPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">How Programs Stack</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            New Mexico allows stacking of HEAR rebates with utility rebates and the Sustainable Building Tax Credit. The HEAR layer reaches only households below 80% AMI replacing existing electric equipment; the utility rebates and the tax credits are fuel-neutral. HEAR and HOMES cannot be combined for the same measure. Federal tax credits are no longer available. Here&apos;s what realistic stacking looks like for a ducted air-source heat pump installation (estimated total cost: <strong>$12,000–$18,000</strong>):
+            New Mexico allows stacking of HEAR rebates with utility rebates and the Sustainable Building Tax Credit. The HEAR layer reaches only households below 80% AMI replacing existing electric equipment, and the state page lists the heat pump rebate itself as both open and coming soon; the utility rebates and the tax credits are fuel-neutral and unambiguously available. HEAR and HOMES cannot be combined for the same measure. Federal tax credits are no longer available. Here&apos;s what realistic stacking looks like for a ducted air-source heat pump installation (estimated total cost: <strong>$12,000–$18,000</strong>):
           </p>
 
           <div className="space-y-4 mb-8">
@@ -448,7 +526,7 @@ export default function NewMexicoPage() {
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-2">Below 80% AMI — PNM territory (best case)</p>
               <ul className="text-sm text-green-900 space-y-1">
-                <li>HEAR heat pump: $8,000 — requires replacing existing electric equipment</li>
+                <li>HEAR heat pump: $8,000 — requires existing electric equipment, an enrolled contractor, and confirmation that the rebate is open</li>
                 <li>PNM Home Energy Checkup rebate: $550</li>
                 <li>Sustainable Building Tax Credit (refundable): ~$2,000</li>
               </ul>
@@ -458,7 +536,7 @@ export default function NewMexicoPage() {
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-2">Below 80% AMI — rural co-op territory</p>
               <ul className="text-sm text-green-900 space-y-1">
-                <li>HEAR heat pump: $8,000 — requires replacing existing electric equipment</li>
+                <li>HEAR heat pump: $8,000 — requires existing electric equipment, an enrolled contractor, and confirmation that the rebate is open</li>
                 <li>Tri-State co-op rebate (&gt;1.5 ton): $1,500</li>
                 <li>Sustainable Building Tax Credit (refundable): ~$2,000</li>
               </ul>
@@ -468,7 +546,7 @@ export default function NewMexicoPage() {
 
           <div className="bg-gray-100 rounded-lg p-5 mb-6">
             <p className="font-semibold text-gray-900 mb-1">What You&apos;ll Actually Pay</p>
-            <p className="text-sm text-gray-700">For a typical ducted ASHP installation costing $12,000–$18,000: homeowners above 80% AMI will pay <strong>$10,450–$16,450 out of pocket</strong>. Homeowners below 80% AMI in PNM territory who are replacing existing electric equipment could pay as little as <strong>$1,450–$7,450</strong>; those replacing gas, propane, or oil do not reach HEAR and stay in the higher range regardless of income. The income gap — now compounded by the fuel-type rule — is the defining feature of New Mexico&apos;s 2026 incentive landscape.</p>
+            <p className="text-sm text-gray-700">For a typical ducted ASHP installation costing $12,000–$18,000: homeowners above 80% AMI will pay <strong>$10,450–$16,450 out of pocket</strong>. Homeowners below 80% AMI in PNM territory who are replacing existing electric equipment could pay as little as <strong>$1,450–$7,450</strong>; those replacing gas, propane, or oil do not reach HEAR and stay in the higher range regardless of income. Both low-income figures assume the heat pump rebate is in fact open and an enrolled contractor is available; neither is settled. The income gap — compounded by the fuel-type rule and by a one-contractor directory — is the defining feature of New Mexico&apos;s 2026 incentive landscape.</p>
           </div>
 
           <p className="text-sm text-gray-500">
@@ -591,7 +669,7 @@ export default function NewMexicoPage() {
               </div>
               <div>
                 <p className="font-semibold text-gray-900">Work with an authorized contractor</p>
-                <p className="text-sm text-gray-700">Most installations will require an Authorized Program Contractor. The full contractor list is expected by fall 2026. Install ENERGY STAR certified equipment only.</p>
+                <p className="text-sm text-gray-700">Most installations require an Authorized Program Contractor. The directory is live and participation is open to new contractors, but the HVAC listing currently holds a single statewide entry — AM Conservation. Install ENERGY STAR certified equipment only.</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -623,7 +701,7 @@ export default function NewMexicoPage() {
           <div className="space-y-4">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">IRA funding runway</p>
-              <p className="text-sm text-gray-600 mt-1">HEAR was funded under the IRA and was not repealed, but the $43 million allocation will run out. Once funds are exhausted, no additional federal appropriation is expected. Apply sooner rather than later.</p>
+              <p className="text-sm text-gray-600 mt-1">HEAR was funded under the IRA and was not repealed, but the $43 million allocation will run out. The program is scheduled to end around summer 2028, or earlier if funds are exhausted, and no additional federal appropriation is expected. Apply sooner rather than later.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">80–150% AMI tier activation</p>
