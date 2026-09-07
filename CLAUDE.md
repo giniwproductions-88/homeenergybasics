@@ -218,10 +218,6 @@ Conventions:
 These are known and queued. Note them if they block you; don't rediscover
 them.
 
-1. 8 entries mislabel the OBBB provisions hub as "IRS — 25C/25D
-   Termination FAQ" (FS-2025-05 is the FAQ). That hub is also a scraper
-   noise machine — a live newsroom index full of unrelated dollar
-   figures. Repointing the 8 to FS-2025-05 fixes label and noise at once.
 2. `src/components/StatusCard.tsx` renders one date under both "As of:" and
    "Last verified:". `lastUpdated` is byte-identical to `lastVerified`
    everywhere and read by nothing in `src/`.
@@ -234,6 +230,32 @@ them.
    dollars, so every figure reads as "ADDED."
 7. Mixed unicode escaping (`\u2013` vs literal). Renders fine; makes
    grepping unreliable. Do not mass-fix.
+8. Arg parser, accept handler: `.filter((r) => r !== "--only")` drops the
+   flag but not its value, so `accept NY --only FOO` injects `FOO` into
+   the target list.
+9. Arg parser, accept handler: the blanket `.toUpperCase()` on targets
+   means no argument can carry case-sensitive meaning. Any new flag
+   taking a path or a figure must not route through that parser \u2014
+   `verify` uses its own case-preserving reader for exactly this reason.
+10. `accept SHARED` cannot be scoped to a URL. A URL argument is
+    uppercased into a target code that never matches, while
+    `targets.includes("SHARED")` stays true \u2014 so it silently runs at full
+    scope instead of erroring. There is no per-URL accept path.
+11. Shared status is derived from fanout, so any edit to a `url:` field
+    can strip a page of accept protection. Predict the shared-list delta
+    before the edit and check `parse` against it afterward.
+12. Survey greps must run untruncated. A truncated grep reports a false
+    negative that looks like coverage.
+13. Date edits anchor on the `stateCode` block, never on the date string.
+    States share date values.
+14. `nehpa.org` returns persistent 403 and is cited by ME, MA, and NH. It
+    is already muted in `scripts/source-ignore.json`, so the watch on that
+    source is already surrendered for every state citing it \u2014 a standing
+    blind spot, not a pending decision. Revisit deliberately: unmuting
+    restores the noise, leaving it keeps the blind spot.
+15. Co-op sites on shared templates inject closure vocabulary sitewide via
+    rotating announcement banners. `closed` is the keyword most prone to
+    false positives on utility sites.
 
 ---
 

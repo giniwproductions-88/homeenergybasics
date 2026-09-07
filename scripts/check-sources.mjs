@@ -19,6 +19,8 @@
  *   node scripts/check-sources.mjs prune                 # drop baseline entries for URLs removed from the data files
  *   node scripts/check-sources.mjs unbaselined           # list watched URLs with no baseline entry (no network)
  *   node scripts/check-sources.mjs selftest              # offline test of the diff engine
+ *   node scripts/check-sources.mjs verify --states NY --figures '$14,000' --files a.ts b.tsx
+ *                                                       # read-only pre-commit audit of the working tree (no network)
  *
  * Targets: anywhere a state code is accepted (`--only`, `accept`), a utility
  * code works too — utilities.ts entries bucket by uppercased slug, so
@@ -48,6 +50,7 @@
  */
 
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
+import { spawnSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
@@ -567,6 +570,10 @@ async function main() {
   const only = onlyIx !== -1 ? rest[onlyIx + 1] : null;
 
   if (mode === "selftest") return selftest();
+  // Before parseIncentives(): verify needs none of the URL machinery, and
+  // parseIncentives throws below MIN_STATES — an audit tool must not die for
+  // reasons unrelated to what it audits.
+  if (mode === "verify") return verify(rest);
 
   const { states, urls: stateUrls } = parseIncentives();
   const { utilities, urls: utilUrls } = parseUtilities();
@@ -731,8 +738,224 @@ async function main() {
     return;
   }
 
-  console.error(`Unknown mode: ${mode}. Modes: parse | baseline | check | accept | prune | unbaselined | selftest`);
+  console.error(`Unknown mode: ${mode}. Modes: parse | baseline | check | accept | prune | unbaselined | selftest | verify`);
   process.exit(2);
+}
+
+/* ------------------------------------------------------------------ */
+/* verify mode — read-only pre-commit audit                             */
+/* ------------------------------------------------------------------ */
+//
+// READ-ONLY. verify writes no file, stages nothing, commits nothing. It
+// shells out only to `git show`, `git diff`, and `npm run build`. The build
+// writes .next/, which is inherent to running a build and is gitignored —
+// that is the only thing this mode causes to be written.
+//
+// "Zero dependencies" (see header) still holds: node:child_process is a
+// runtime builtin, not an npm package.
+//
+// NAME: this mode is unrelated to the two other "verify" concepts in this
+// file. HUMAN_VERIFY_HOSTS / isHumanVerify() are JS-walled URLs needing a
+// browser check; the report's "states to promote to manual verification" is
+// scraper triage. `verify` here audits the git working tree before a commit.
+//
+// KNOWN GAP: date scoping anchors on `stateCode:` blocks, so it covers
+// incentives.ts only. utilities.ts keys on `slug:` and is not scoped yet —
+// a date change there is reported as unscopeable and FAILS rather than
+// passing silently.
+//
+// NO TRUNCATION anywhere in this mode. A survey that hides a match is worse
+// than no survey; that exact failure cost an edit on 2026-09-06, when a
+// 160-column-truncated grep hid a $28,000 claim that then shipped unfixed.
+
+// Variadic, case-preserving flag reader. Deliberately NOT the accept-mode
+// parser: that one uppercases every token (which would destroy file paths)
+// and its .filter(r => r !== "--only") drops the flag but keeps its value.
+function flagValues(rest, name) {
+  const out = [];
+  const i = rest.indexOf(`--${name}`);
+  if (i === -1) return out;
+  for (let j = i + 1; j < rest.length && !rest[j].startsWith("--"); j++) out.push(rest[j]);
+  return out;
+}
+
+// Split a figure list on separators that are not thousands separators.
+// "$14,000,$28,000" -> ["$14,000","$28,000"];  "14000 28000" -> both.
+// Genuinely ambiguous input exists ("14000,280"), which is why the compiled
+// pattern for every figure is echoed in the output — never trust a zero.
+function splitFigures(raw) {
+  return raw.split(/\s+|,(?!\d{3}(?!\d))/).map((f) => f.trim()).filter(Boolean);
+}
+
+// "14000" and "$14,000" must both find "$14,000" in a source file: a literal
+// grep for 14000 finds ZERO in files that write $14,000, and a mode that
+// reports a false zero defeats its own purpose. Digits are regrouped in 3s
+// with optional separators. Lookbehind/lookahead stop $14,000 from matching
+// inside $114,000 or $14,0001.
+function figurePattern(fig) {
+  const digits = String(fig).replace(/[^0-9]/g, "");
+  if (!digits) return null;
+  const parts = [];
+  let s = digits;
+  while (s.length > 3) { parts.unshift(s.slice(-3)); s = s.slice(0, -3); }
+  parts.unshift(s);
+  return new RegExp(`(?<![\\d,.])\\$?${parts.join("[,]?")}(?!\\d)`, "g");
+}
+
+// { stateCode: { lastVerified, lastUpdated } } — anchored on the state block,
+// never on the date string. Four states shared 2026-08-23 on 2026-09-06, so
+// matching by date value would have implicated ME/MA/GA alongside NY.
+function parseStateDates(src) {
+  const out = {};
+  const re = /stateCode:\s*"([A-Z]{2})"/g;
+  const marks = [];
+  let m;
+  while ((m = re.exec(src))) marks.push({ code: m[1], idx: m.index });
+  for (let i = 0; i < marks.length; i++) {
+    const end = i + 1 < marks.length ? marks[i + 1].idx : src.length;
+    const chunk = src.slice(marks[i].idx, end);
+    const lv = chunk.match(/lastVerified:\s*"(\d{4}-\d{2}-\d{2})"/);
+    const lu = chunk.match(/lastUpdated:\s*"(\d{4}-\d{2}-\d{2})"/);
+    out[marks[i].code] = { lastVerified: lv && lv[1], lastUpdated: lu && lu[1] };
+  }
+  return out;
+}
+
+function git(args) {
+  const r = spawnSync("git", args, { encoding: "utf8" });
+  return { ok: r.status === 0, out: r.stdout || "", err: r.stderr || "" };
+}
+
+function verify(rest) {
+  const wantStates = flagValues(rest, "states").map((s) => s.toUpperCase()).sort();
+  const figures = splitFigures(flagValues(rest, "figures").join(" "));
+  const files = flagValues(rest, "files"); // case preserved, verbatim
+  const results = [];
+  const add = (name, kind, pass, note) => results.push({ name, kind, pass, note });
+
+  if (!files.length) { console.error("verify requires --files <path> [path...]"); process.exit(2); }
+  console.log(`verify — read-only audit\n  states:  ${wantStates.join(", ") || "(none)"}\n  figures: ${figures.join(" | ") || "(none)"}\n  files:   ${files.join(", ")}\n`);
+
+  /* 1. FIGURE SWEEP — report only, never truncated. */
+  console.log("=".repeat(70) + "\n1. FIGURE SWEEP (report only — you judge whether a survivor is correct)\n" + "=".repeat(70));
+  for (const fig of figures) {
+    const pat = figurePattern(fig);
+    console.log(`\nfigure ${fig}  ->  compiled pattern: ${pat}`);
+    if (!pat) { console.log("  (no digits — skipped)"); continue; }
+    for (const f of files) {
+      if (!existsSync(f)) { console.log(`  ${f}: MISSING`); continue; }
+      const lines = readFileSync(f, "utf8").split(/\r?\n/);
+      let lineHits = 0, matchHits = 0;
+      const rows = [];
+      lines.forEach((line, i) => {
+        const n = (line.match(pat) || []).length;
+        if (n) { lineHits++; matchHits += n; rows.push(`    ${f}:${i + 1}: ${line}`); }
+      });
+      console.log(`  ${f}: ${lineHits} line(s), ${matchHits} match(es)`);
+      for (const r of rows) console.log(r);
+    }
+  }
+  add("1. figure sweep", "report", null, `${figures.length} figure(s) x ${files.length} file(s)`);
+
+  /* 2. DATE GUARD */
+  console.log("\n" + "=".repeat(70) + "\n2. DATE GUARD\n" + "=".repeat(70));
+  const d = git(["diff", "HEAD", "--", ...files]);
+  const dateLines = d.out.split(/\r?\n/).filter((l) => /^[+-][^+-]/.test(l) && /(lastVerified|lastUpdated)/.test(l));
+  if (!dateLines.length) {
+    console.log("  no lastVerified/lastUpdated lines in the diff");
+    add("2. date guard", "check", true, "no date lines changed");
+  } else {
+    for (const l of dateLines) console.log(`  ${l}`);
+    const pass = wantStates.length > 0;
+    add("2. date guard", "check", pass, pass ? `${dateLines.length} date line(s), --states supplied` : `${dateLines.length} date line(s) changed with NO --states`);
+  }
+
+  /* 3. DATE SCOPE — anchored on state blocks, both file versions parsed. */
+  console.log("\n" + "=".repeat(70) + "\n3. DATE SCOPE\n" + "=".repeat(70));
+  const changed = new Set();
+  const pairs = {};
+  let unscopeable = [];
+  for (const f of files) {
+    const fileDiff = git(["diff", "HEAD", "--", f]);
+    const fileHasDateChange = fileDiff.out.split(/\r?\n/).some((l) => /^[+-][^+-]/.test(l) && /(lastVerified|lastUpdated)/.test(l));
+    if (!fileHasDateChange) continue;
+    const head = git(["show", `HEAD:${f}`]);
+    const work = existsSync(f) ? readFileSync(f, "utf8") : "";
+    if (!/stateCode:\s*"[A-Z]{2}"/.test(work)) { unscopeable.push(f); continue; }
+    const a = head.ok ? parseStateDates(head.out) : {};
+    const b = parseStateDates(work);
+    for (const code of Object.keys(b)) {
+      const o = a[code] || {}, n = b[code];
+      if (o.lastVerified !== n.lastVerified || o.lastUpdated !== n.lastUpdated) {
+        changed.add(code);
+        pairs[code] = { old: o, now: n };
+      }
+    }
+  }
+  const got = [...changed].sort();
+  console.log(`  states with changed dates: ${got.join(", ") || "(none)"}`);
+  console.log(`  --states requested:        ${wantStates.join(", ") || "(none)"}`);
+  for (const f of unscopeable) console.log(`  UNSCOPEABLE: ${f} has date changes but no stateCode blocks`);
+  const scopeMatch = got.length === wantStates.length && got.every((s, i) => s === wantStates[i]);
+  const scopePass = scopeMatch && !unscopeable.length;
+  add("3. date scope", "check", scopePass,
+    unscopeable.length ? `unscopeable file(s): ${unscopeable.join(", ")}`
+      : scopeMatch ? `exact match {${got.join(",")}}` : `MISMATCH: got {${got.join(",")}} want {${wantStates.join(",")}}`);
+
+  /* 4. INVARIANT */
+  console.log("\n" + "=".repeat(70) + "\n4. INVARIANT\n" + "=".repeat(70));
+  let invPass = true;
+  const invNotes = [];
+  for (const code of got) {
+    const { old: o, now: n } = pairs[code];
+    const forward = !o.lastVerified || n.lastVerified >= o.lastVerified;
+    const ordered = !n.lastUpdated || !n.lastVerified || n.lastUpdated <= n.lastVerified;
+    if (!forward) { invPass = false; invNotes.push(`${code}: lastVerified moved BACKWARD ${o.lastVerified} -> ${n.lastVerified}`); }
+    if (!ordered) { invPass = false; invNotes.push(`${code}: lastUpdated ${n.lastUpdated} > lastVerified ${n.lastVerified}`); }
+    console.log(`  ${code}: lastVerified ${o.lastVerified} -> ${n.lastVerified} (${forward ? "forward/equal OK" : "BACKWARD"}); lastUpdated ${n.lastUpdated} <= lastVerified ${n.lastVerified} -> ${ordered ? "OK" : "VIOLATION"}`);
+  }
+  if (!got.length) console.log("  (no states with changed dates)");
+  add("4. invariant", "check", invPass, invNotes.join("; ") || "all changed states satisfy both rules");
+
+  /* 5. COUNT CLAIMS — report only. */
+  console.log("\n" + "=".repeat(70) + "\n5. COUNT CLAIMS (report only — verify each against current reality)\n" + "=".repeat(70));
+  const countRe = /\b(two|three|four|five|six|seven|eight|nine|ten|both|either)\b/i;
+  let claimTotal = 0;
+  for (const f of files) {
+    const fd = git(["diff", "HEAD", "--", f]);
+    if (!fd.out.trim()) { console.log(`  ${f}: unchanged vs HEAD — skipped`); continue; }
+    if (!existsSync(f)) continue;
+    const lines = readFileSync(f, "utf8").split(/\r?\n/);
+    const rows = [];
+    lines.forEach((line, i) => { if (countRe.test(line)) rows.push(`    ${f}:${i + 1}: ${line}`); });
+    console.log(`  ${f}: ${rows.length} line(s) with numeric prose`);
+    for (const r of rows) console.log(r);
+    claimTotal += rows.length;
+  }
+  add("5. count claims", "report", null, `${claimTotal} line(s) for review`);
+
+  /* 6. BUILD */
+  console.log("\n" + "=".repeat(70) + "\n6. BUILD\n" + "=".repeat(70));
+  const b = spawnSync("npm", ["run", "build"], { encoding: "utf8", shell: process.platform === "win32" });
+  const buildCode = b.status === null ? 1 : b.status;
+  const tail = (b.stdout || "").split(/\r?\n/).filter(Boolean).slice(-4);
+  for (const l of tail) console.log(`  ${l}`);
+  if (buildCode !== 0) console.log((b.stderr || "").split(/\r?\n/).slice(-20).map((l) => `  ${l}`).join("\n"));
+  console.log(`  npm run build exit=${buildCode}`);
+  add("6. build", "check", buildCode === 0, `exit ${buildCode}`);
+
+  /* SUMMARY */
+  console.log("\n" + "=".repeat(70) + "\nSUMMARY\n" + "=".repeat(70));
+  const w = Math.max(...results.map((r) => r.name.length));
+  for (const r of results) {
+    const verdict = r.kind === "report" ? "REPORT-ONLY" : r.pass ? "PASS" : "FAIL";
+    console.log(`  ${r.name.padEnd(w)}  ${verdict.padEnd(11)}  ${r.note}`);
+  }
+  const failed = results.filter((r) => r.kind === "check" && !r.pass);
+  const nonBuildFail = failed.some((r) => r.name !== "6. build");
+  const exit = failed.length === 0 ? 0 : nonBuildFail ? 1 : buildCode;
+  console.log(`\n  ${failed.length} failing check(s). exit=${exit}`);
+  process.exit(exit);
 }
 
 /* ------------------------------------------------------------------ */
