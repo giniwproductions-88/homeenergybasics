@@ -48,7 +48,7 @@ const faqJsonLd = {
       name: "What is the NYS Clean Heat Weatherized Tier?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Originally scheduled for March 1, 2026, the Weatherized Tier launch was moved to September 1, 2026 per Program Manual Version 2. That date has passed and the manual has not been reissued, so confirm current status with a participating contractor or cleanheat.ny.gov. The tier differentiates incentive rates rather than adding a flat bonus: qualifying homes meeting insulation and air-sealing standards earn more and reach the higher 85% project cost cap, while non-qualifying projects may earn less than current tables show (NYS Clean Heat JMC session #28 summary, March 12, 2026). You qualify through four pathways: built after 2010, prior weatherization program participation, NYSERDA Virtual Energy Assessment, or certified home energy assessment. It is optional in 2026\u20132027, but the Public Service Commission order requires weatherization as a prerequisite for all Clean Heat incentives by March 1, 2028, at a standard still to be defined.",
+        text: "The Weatherized Tier was scheduled for September 1, 2026 per Program Manual Version 2; that date has passed and the manual has not been reissued, so confirm current status with a participating contractor or cleanheat.ny.gov. Con Edison\u2019s published rates are now split in two: a weatherized rate and a standard rate. NYSERDA has not published the qualification standard \u2014 the manual announces the tier without defining it, and Con Edison states that an approved contractor determines which tier a project qualifies for, so ask your contractor which rate applies. The tier differentiates incentive rates rather than adding a flat bonus: qualifying homes meeting insulation and air-sealing standards earn more and reach the higher 85% project cost cap, while non-qualifying projects may earn less than current tables show (NYS Clean Heat JMC session #28 summary, March 12, 2026). It is optional in 2026\u20132027, but the Public Service Commission order requires weatherization as a prerequisite for all Clean Heat incentives by March 1, 2028, at a standard still to be defined.",
       },
     },
     {
@@ -426,26 +426,13 @@ export default function NewYorkPage() {
           <p className="text-gray-700 leading-relaxed mb-6">
             The Weatherized Tier rewards homes meeting insulation and air-sealing standards with the <strong>85% project cost cap</strong> (same as DAC areas) and differentiated incentive rates: qualifying projects earn more, and non-qualifying projects may earn <strong>less</strong> than the tables above show (NYS Clean Heat JMC session #28 summary, March 12, 2026). Originally scheduled for March 1, 2026, the launch was moved to <strong>September 1, 2026</strong> per Program Manual Version 2 (March 5, 2026). That date has passed and the manual has not been reissued &mdash; confirm current status with a participating contractor or cleanheat.ny.gov. It is optional for 2026&ndash;2027, but the Commission&apos;s order requires weatherization as a prerequisite for all Clean Heat incentives <strong>by March 1, 2028</strong>, at a standard still to be defined &mdash; meaning homes will eventually need to meet weatherization standards to receive any Clean Heat incentive.
           </p>
-
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">How to Qualify (Any One Pathway)</h3>
-          <div className="space-y-4 mb-6">
-            <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900">1. Built After 2010</p>
-              <p className="text-sm text-gray-600 mt-1">When NY&apos;s building code first required blower-door testing. Automatic qualification.</p>
-            </div>
-            <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900">2. Prior Weatherization Program</p>
-              <p className="text-sm text-gray-600 mt-1">Participated in EmPower+, NYSERDA Comfort Home, Con Edison Weather Ready, WAP, or similar qualifying program.</p>
-            </div>
-            <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900">3. NYSERDA Virtual Energy Assessment</p>
-              <p className="text-sm text-gray-600 mt-1">Receive a &quot;Heat Pump Ready Envelope&quot; designation through NYSERDA&apos;s tool (launching statewide 2026).</p>
-            </div>
-            <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900">4. Certified Home Energy Assessment</p>
-              <p className="text-sm text-gray-600 mt-1">Passes air sealing, minimum R-38 attic insulation, and ACH50 thresholds based on building vintage and size.</p>
-            </div>
-          </div>
+          <p className="text-gray-700 leading-relaxed">
+            Con Edison&apos;s published rates are now split in two: a weatherized rate and a standard
+            rate. NYSERDA has not published the qualification standard &mdash; Program Manual Version 2
+            announces the tier without defining it, and Con Edison states that an approved contractor
+            determines which tier a project qualifies for. Ask your contractor which rate applies before
+            signing.
+          </p>
         </div>
       </section>
 
@@ -587,7 +574,7 @@ export default function NewYorkPage() {
               <div className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-bold">3</div>
               <div>
                 <p className="font-semibold text-gray-900">Pursue the Weatherized Tier (Status Unconfirmed)</p>
-                <p className="text-sm text-gray-700">If your home was built after 2010, you auto-qualify. Otherwise, request a NYSERDA Virtual Energy Assessment or certified audit. The tier was scheduled for September 1, 2026 per Program Manual Version 2; that date has passed and the manual has not been reissued, so confirm current status with a participating contractor or cleanheat.ny.gov. Qualifying moves a project to the higher rate tier and the 85% cap.</p>
+                <p className="text-sm text-gray-700">Ask your contractor which rate tier applies to your project &mdash; Con Edison states that an approved contractor determines it. The tier was scheduled for September 1, 2026 per Program Manual Version 2; that date has passed and the manual has not been reissued, so confirm current status with a participating contractor or cleanheat.ny.gov. Qualifying moves a project to the higher rate tier and the 85% cap.</p>
               </div>
             </div>
             <div className="flex gap-4">
