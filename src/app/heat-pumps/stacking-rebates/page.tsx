@@ -328,7 +328,7 @@ export default function StackingRebatesPage() {
           </h3>
           <div className="bg-white border border-gray-200 rounded-lg p-5 mb-6">
             <ul className="text-sm text-gray-700 space-y-1">
-              <li>Clean Heat Program (utility): <strong>$5,000–$12,000</strong></li>
+              <li>Clean Heat Program (utility): <strong>$1,000–$12,000</strong></li>
               <li>EmPower+ (income-qualified): <strong>$12,000 upstate / $14,000 downstate</strong></li>
               <li>Geothermal tax credit (25% up to $10,000): <strong>if applicable</strong></li>
             </ul>
