@@ -390,10 +390,10 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "NY",
     stateName: "New York",
     status: "open",
-    lastVerified: "2026-09-06",
-    lastUpdated: "2026-09-06",
+    lastVerified: "2026-09-08",
+    lastUpdated: "2026-09-08",
     summary:
-      "NYS Clean Heat (2026–2030) pays $1,000–$12,000 for air-source heat pumps and $14,000–$40,000 for geothermal, varying by utility, project category, and DAC status. EmPower+ covers low-income households at $12,000 upstate or $14,000 downstate and moderate-income at 50% up to $6,000–$7,000, with NYSERDA's Sustainable Futures Program per-measure caps additive on top. A 25% geothermal tax credit (max $10,000) remains. Federal 25C/25D expired Dec 31, 2025.",
+      "NYS Clean Heat (2026–2030) pays $1,000–$12,000 for air-source heat pumps and $14,000–$40,000 for geothermal, varying by utility, project category, dwelling type, DAC status, and the Weatherized Tier introduced September 1, 2026. EmPower+ covers households at or below 60% of SMI/AMI at $12,000 upstate or $14,000 downstate, and moderate-income households under 80% at 50% of cost up to $6,000–$7,000; Sustainable Futures Program per-measure caps are additive, but cannot combine with IRA HEAR, which is unavailable on any project including a heat pump. Homes heating with natural gas are generally not eligible for an EmPower+ heat pump, with pilot exceptions in some utility regions. A 25% geothermal tax credit (max $10,000) remains. Federal 25C/25D expired Dec 31, 2025.",
     sources: [
       {
         label: "NYS Clean Heat — Program Manual v2 (March 2026)",
@@ -406,6 +406,17 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "NYSERDA — EmPower+",
         url: "https://www.nyserda.ny.gov/All-Programs/EmPower-New-York-Program",
+      },
+      // VERSION-ENCODED URL. The /uploads/2026/09/ path carries the revision, so a
+      // reissued manual lands at a new path while this one keeps returning 200 —
+      // the watch freezes healthy instead of failing. versionEncodedUrl() flags it
+      // as a year/month upload path and it reports under VERSION-ENCODED URLS in
+      // the scraper advisory; re-check the path whenever the manual is revised.
+      // Basis for the income tiers, the caps, the SFP/HEAR exclusion and the
+      // minimum-insulation gate on the NY page.
+      {
+        label: "NYSERDA — EmPower+ Program Manual (rev 09.01.2026)",
+        url: "https://hpwescontractorsupport.com/wp-content/uploads/2026/09/EmPower-Program-Manual-0902026.pdf",
       },
       {
         label: "Con Edison — Heat Pump Incentives",
