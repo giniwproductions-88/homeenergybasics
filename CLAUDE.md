@@ -351,6 +351,26 @@ them.
     fetch behind it, and `accept` stamps `now` rather than the fetch time of
     the snapshots it adopts. Before trusting a timestamp field here, read what
     writes it. Before adding one, establish what will keep it honest.
+27. Mutes are fetch-through. A muted URL is still fetched on every run —
+    `snapshotAll` runs before the ignore set loads — so the mute suppresses the
+    report row, not the request. "Muted" means watched and silenced, not
+    unwatched. Two consequences. The baseline holds continuous history for a
+    muted URL, so a change that landed while it was muted may be recoverable
+    from stored snapshots rather than lost — look before assuming it is gone.
+    And any wording that calls a mute a "skip" is wrong about what happens; fix
+    it where it appears rather than reading past it.
+28. Two shapes of source failure, needing different fixes. When a source stops
+    being usable, ask which shape it is before reaching for a remedy.
+    (a) An ANNOUNCEMENT CHANNEL muted while a portal stays watched — AZ,
+    `resilient.az.gov` against `efficiencyarizona.com`. The channel publishes
+    the rule change; the portal goes on reporting UNCHANGED. The fix is to
+    un-mute the channel, and the deeper path is never a substitute for it.
+    (b) The ONLY watch on a program, muted, with no deeper path cited —
+    Philadelphia, `philaenergy.org` and Built to Last. Un-muting restores the
+    noise without restoring a usable watch, so the fix is to find and cite a
+    program page. Both of those were muted in one commit under one label. They
+    are not the same defect, and a label shared by two entries is not evidence
+    they share a cause.
 
 ---
 

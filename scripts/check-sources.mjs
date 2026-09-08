@@ -46,7 +46,10 @@
  *   scripts/source-baseline.json   committed. The asset.
  *   scripts/source-latest.json     regenerated every check. gitignore.
  *   scripts/source-diff-report.md  regenerated every check. gitignore.
- *   scripts/source-ignore.json     committed. URLs to skip/mute (bot-blocked or known-noisy).
+ *   scripts/source-ignore.json     committed. URLs to MUTE (bot-blocked or known-noisy).
+ *                                  Not skipped: a muted URL is still fetched every run and
+ *                                  still baselined. The mute suppresses the report row, not
+ *                                  the request — watched and silenced, not unwatched.
  *                                  Shape: { "<url>": { "reason": "...", "note": "...",
  *                                                     "review": "YYYY-MM-DD" } }
  *                                  A legacy flat array of URL strings is still accepted.
