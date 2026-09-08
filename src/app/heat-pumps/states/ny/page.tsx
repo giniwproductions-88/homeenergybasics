@@ -48,7 +48,7 @@ const faqJsonLd = {
       name: "What is the NYS Clean Heat Weatherized Tier?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The Weatherized Tier took effect September 1, 2026 per Program Manual Version 2, following an extension granted by the Secretary on February 27. Con Edison\u2019s published rates are now split in two: a weatherized rate and a standard rate. NYSERDA has not published the qualification standard \u2014 the manual announces the tier without defining it, and Con Edison states that an approved contractor determines which tier a project qualifies for, so ask your contractor which rate applies. The tier differentiates incentive rates rather than adding a flat bonus: qualifying homes meeting insulation and air-sealing standards earn more, while non-qualifying projects may earn less than current tables show (Program Manual Version 2, section 2.1.5). The tier does not change the project cost cap, which is 70%, or 85% in Central Hudson territory or on a DAC project receiving DAC-specific incentives. It is optional in 2026\u20132027, but the Public Service Commission order requires weatherization as a prerequisite for all Clean Heat incentives by March 1, 2028, at a standard still to be defined.",
+        text: "The Weatherized Tier took effect September 1, 2026 per Program Manual Version 2, following an extension granted by the Secretary on February 27. Con Edison\u2019s published rates are now split in two: a weatherized rate and a standard rate. NYSERDA has not published the qualification standard \u2014 the manual announces the tier without defining it, and Con Edison states that an approved contractor determines which tier a project qualifies for, so ask your contractor which rate applies. The tier differentiates incentive rates rather than adding a flat bonus: qualifying homes meeting insulation and air-sealing standards earn more, while non-qualifying projects earn less (Program Manual Version 2, section 2.1.5). At Con Edison a non-DAC single-family Category 2b project pays $10,000 on the weatherized tier and $7,000 on the standard tier. The tier does not change the project cost cap, which is 70%, or 85% in Central Hudson territory or on a DAC project receiving DAC-specific incentives. It is optional in 2026\u20132027, but the Public Service Commission order requires weatherization as a prerequisite for all Clean Heat incentives by March 1, 2028, at a standard still to be defined.",
       },
     },
     {
@@ -194,39 +194,80 @@ export default function NewYorkPage() {
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Con Edison (NYC &amp; Westchester)</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Con Edison does not offer plain Category 2 (full-load heating with the fossil system
+            retained). Its fossil-removal option is Category 2b, which the Weatherized Tier split into
+            two rates on September 1, 2026.
+          </p>
+          <p className="font-semibold text-gray-900 mb-2">Category 2b &mdash; fossil system removed or disabled (Option 1)</p>
+          <div className="overflow-x-auto mb-6">
+            <table className="min-w-full text-sm">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="text-left p-3 font-semibold">Rate tier</th>
+                  <th className="text-left p-3 font-semibold">Apartment</th>
+                  <th className="text-left p-3 font-semibold">Single family</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b bg-green-50">
+                  <td className="p-3">Weatherized, DAC</td>
+                  <td className="p-3 font-semibold">$5,500</td>
+                  <td className="p-3 font-semibold">$11,000</td>
+                </tr>
+                <tr className="border-b bg-green-50">
+                  <td className="p-3">Weatherized, non-DAC</td>
+                  <td className="p-3 font-semibold">$5,000</td>
+                  <td className="p-3 font-semibold">$10,000</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Standard, DAC</td>
+                  <td className="p-3 font-semibold">$4,000</td>
+                  <td className="p-3 font-semibold">$8,000</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Standard, non-DAC</td>
+                  <td className="p-3 font-semibold">$3,500</td>
+                  <td className="p-3 font-semibold">$7,000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p className="font-semibold text-gray-900 mb-2">Con Edison &mdash; other categories</p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
               <thead>
                 <tr className="bg-gray-100">
                   <th className="text-left p-3 font-semibold">Category</th>
-                  <th className="text-left p-3 font-semibold">Standard</th>
-                  <th className="text-left p-3 font-semibold">DAC</th>
+                  <th className="text-left p-3 font-semibold">Amount</th>
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b bg-green-50">
-                  <td className="p-3">Full replacement (fossil fuel removed)</td>
-                  <td className="p-3 font-semibold">$8,000</td>
-                  <td className="p-3 font-semibold">$10,000</td>
+                <tr className="border-b">
+                  <td className="p-3">Cat. 2a &mdash; integrated controls (fossil system retained)</td>
+                  <td className="p-3 font-semibold">$1,000 apartment / $2,500 single family; $2,000 / $4,500 in a DAC</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-3">Full load heating (fossil retained as backup)</td>
-                  <td className="p-3 font-semibold">$2,500</td>
-                  <td className="p-3 font-semibold">$4,500</td>
+                  <td className="p-3">Cat. 4 &mdash; partial to full load, requires decommissioning</td>
+                  <td className="p-3 font-semibold">$1,500 apartment / $4,000 single family</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-3">Ground source (GSHP, whole building)</td>
-                  <td className="p-3 font-semibold">$30,000</td>
-                  <td className="p-3 font-semibold">$40,000</td>
+                  <td className="p-3">Cat. 3 &mdash; GSHP, whole building</td>
+                  <td className="p-3 font-semibold">$30,000; $40,000 in a DAC</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-3">Heat pump water heater</td>
-                  <td className="p-3 font-semibold">$1,000</td>
+                  <td className="p-3">Cat. 5a &mdash; heat pump water heater (midstream)</td>
                   <td className="p-3 font-semibold">$1,000</td>
                 </tr>
               </tbody>
             </table>
           </div>
+          <p className="text-sm text-gray-600 mb-6">
+            Category 2a and Category 4 carry no Weatherized Tier split. Category 4 applies when a
+            previous partial heat pump incentive is followed by removing or disabling the old fossil
+            heating, and requires decommissioning.
+          </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">National Grid (Upstate NY)</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
@@ -424,11 +465,13 @@ export default function NewYorkPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Weatherized Tier &mdash; In Effect Since September 1, 2026</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            The Weatherized Tier rewards homes meeting insulation and air-sealing standards with <strong>differentiated incentive rates</strong>: qualifying projects earn more, and non-qualifying projects may earn <strong>less</strong> than the tables above show (Program Manual Version 2, section 2.1.5). It does not change the project cost cap. Originally scheduled for March 1, 2026, the tier took effect <strong>September 1, 2026</strong> per Program Manual Version 2 (March 5, 2026), following an extension granted by the Secretary on February 27. It is optional for 2026&ndash;2027, but the Commission&apos;s order requires weatherization as a prerequisite for all Clean Heat incentives <strong>by March 1, 2028</strong>, at a standard still to be defined &mdash; meaning homes will eventually need to meet weatherization standards to receive any Clean Heat incentive.
+            The Weatherized Tier rewards homes meeting insulation and air-sealing standards with <strong>differentiated incentive rates</strong>: qualifying projects earn more, and non-qualifying projects earn <strong>less</strong> (Program Manual Version 2, section 2.1.5). At Con Edison that is no longer a projection: the standard-tier rate is below the weatherized rate in every cell of the table above. It does not change the project cost cap. Originally scheduled for March 1, 2026, the tier took effect <strong>September 1, 2026</strong> per Program Manual Version 2 (March 5, 2026), following an extension granted by the Secretary on February 27. It is optional for 2026&ndash;2027, but the Commission&apos;s order requires weatherization as a prerequisite for all Clean Heat incentives <strong>by March 1, 2028</strong>, at a standard still to be defined &mdash; meaning homes will eventually need to meet weatherization standards to receive any Clean Heat incentive.
           </p>
           <p className="text-gray-700 leading-relaxed">
             Con Edison&apos;s published rates are now split in two: a weatherized rate and a standard
-            rate. NYSERDA has not published the qualification standard &mdash; Program Manual Version 2
+            rate. On a non-DAC single-family Category 2b project the difference is <strong>$10,000</strong>
+            weatherized against <strong>$7,000</strong> standard &mdash; $3,000 of real money riding on which
+            tier a project lands in (Con Edison rate pages, read 2026-09-08). NYSERDA has not published the qualification standard &mdash; Program Manual Version 2
             announces the tier without defining it, and Con Edison states that an approved contractor
             determines which tier a project qualifies for. Ask your contractor which rate applies before
             signing.
@@ -448,11 +491,12 @@ export default function NewYorkPage() {
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900 mb-2">Above 80% SMI/AMI &mdash; Con Edison (Non-DAC)</p>
               <ul className="text-sm text-gray-700 space-y-1">
-                <li>Clean Heat full replacement: $8,000</li>
+                <li>Clean Heat Cat. 2b, single family, standard tier: $7,000</li>
+                <li>Same project on the weatherized tier: $10,000</li>
                 <li>Cap: 70% of $20,000 = $14,000</li>
                 <li>Federal tax credit: $0 (expired)</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$8,000</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$7,000 standard, ~$10,000 weatherized</p>
             </div>
 
             <div className="bg-white border border-gray-200 rounded-lg p-5">
@@ -491,7 +535,7 @@ export default function NewYorkPage() {
           <div className="bg-gray-100 rounded-lg p-5">
             <p className="font-semibold text-gray-900 mb-1">What You&apos;ll Actually Pay</p>
             <p className="text-sm text-gray-700">
-              For a $20,000 whole-home system with full fossil removal: market-rate homeowners in non-DAC areas pay <strong>$10,000&ndash;$12,000 out of pocket</strong> (rebates run $8,000&ndash;$10,000 across the six Clean Heat utilities; PSEG Long Island&apos;s separate program pays $4,000&ndash;$7,500 for air-source). DAC-area homeowners pay <strong>$8,000&ndash;$10,000</strong> (rebates $10,000&ndash;$12,000 &mdash; except Central Hudson, which pays the same $8,000 with or without DAC status). Keeping a fossil backup cuts the rebate sharply &mdash; as low as $2,500 at Con Edison. Income-eligible households through EmPower+ may pay <strong>$0</strong>. On-Bill Recovery Loans and NYSERDA Smart Energy Loans can finance remaining costs.
+              For a $20,000 whole-home system with full fossil removal: market-rate homeowners in non-DAC areas pay <strong>$10,000&ndash;$13,000 out of pocket</strong> (rebates run $7,000&ndash;$10,000 across the six Clean Heat utilities; PSEG Long Island&apos;s separate program pays $4,000&ndash;$7,500 for air-source). DAC-area homeowners pay <strong>$8,000&ndash;$12,000</strong> (rebates $8,000&ndash;$12,000 &mdash; except Central Hudson, which pays the same $8,000 with or without DAC status). Keeping the fossil system on integrated controls (Category 2a) instead of removing it cuts the rebate sharply &mdash; $2,500 for a single-family home at Con Edison, $1,000 for an apartment. Income-eligible households through EmPower+ may pay <strong>$0</strong>. On-Bill Recovery Loans and NYSERDA Smart Energy Loans can finance remaining costs.
             </p>
           </div>
         </div>
@@ -606,7 +650,7 @@ export default function NewYorkPage() {
           <div className="space-y-4">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Weatherized Tier &mdash; Qualification Standard Still Unpublished</p>
-              <p className="text-sm text-gray-600 mt-1">The tier took effect September 1, 2026 per Program Manual Version 2. NYSERDA has not published the qualification standard, and Con Edison states that an approved contractor determines which tier a project qualifies for. Qualifying homes move to the higher rate tier; non-qualifying projects may earn less than current tables show. The tier does not change the project cost cap.</p>
+              <p className="text-sm text-gray-600 mt-1">The tier took effect September 1, 2026 per Program Manual Version 2. NYSERDA has not published the qualification standard, and Con Edison states that an approved contractor determines which tier a project qualifies for. Qualifying homes move to the higher rate tier; non-qualifying projects earn less &mdash; $7,000 rather than $10,000 on a non-DAC single-family Con Edison project. The tier does not change the project cost cap.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">IRA Funding Runway</p>
