@@ -1058,8 +1058,16 @@ function acceptRenormalize(apply) {
 
     if (!apply) { console.log("\n  DRY RUN \u2014 baseline not written. Re-run with --apply."); return; }
 
+    // generatedAt is deliberately NOT stamped here, and must not be re-added.
+    // Both its readers present it as provenance: the report header prints it
+    // directly beneath the latest fetch time, and `check` announces "against
+    // baseline of <date>" — so a reader takes it for when the contents were
+    // observed. Renormalize observes nothing; it rewrites strings already in
+    // the file. Stamping it would claim a freshness no observation supports,
+    // which is the one thing this repo trades on not doing.
+    // (prune and accept do stamp it without a fetch behind them. That looseness
+    // is pre-existing and is not fixed here — see CLAUDE.md 8, item 26.)
     for (const ch of changes) ch.e.dollars = ch.after;
-    baseline.generatedAt = new Date().toISOString();
     writeFileSync(BASELINE_F, JSON.stringify(baseline, null, 1));
     console.log("\n  Baseline written.");
     console.log("  Commit it: git add scripts/source-baseline.json");

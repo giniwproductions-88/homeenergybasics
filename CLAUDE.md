@@ -340,6 +340,17 @@ them.
     nothing in `src/`" (nine files read it) and "ten sites" (eleven). Both
     came from summaries adopted without re-deriving. Re-derive counts at the
     point of writing, or omit the count and state the shape.
+26. Three timestamp fields here assert more than they hold. `lastUpdated` is
+    byte-identical to `lastVerified` on all 51 states and all 6 utilities, so
+    it records nothing (item 2). `fetchedAt` records when a snapshot was
+    FETCHED — it is written only inside `fetchSnapshot()` and copied verbatim
+    by accept — so it advances only when an accept adopts a newer snapshot and
+    never tracks when a page changed; 157 of 408 baseline entries still carry
+    a 2026-07-09 fetch. `generatedAt` records when the baseline FILE was last
+    written, not when its contents were observed: `prune` stamps it with no
+    fetch behind it, and `accept` stamps `now` rather than the fetch time of
+    the snapshots it adopts. Before trusting a timestamp field here, read what
+    writes it. Before adding one, establish what will keep it honest.
 
 ---
 
