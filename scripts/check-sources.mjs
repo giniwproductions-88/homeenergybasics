@@ -607,6 +607,89 @@ function diffEntry(base, cur) {
   return { level, notes };
 }
 
+
+/* ------------------------------------------------------------------ */
+/* cross-page status vocabulary (verify check 7)                        */
+/* ------------------------------------------------------------------ */
+
+// Closed vocabulary. Two polarities; FUTURE and HEDGED are separate classes
+// so "when HEAR launches" never reads as "launched" and "expected Fall 2026"
+// never reads as an assertion either way.
+const STATUS_AVAILABLE = [
+  "is open", "are open", "now open", "applications open", "accepting applications",
+  "is live", "are live", "live statewide", "is active", "are active", "launched",
+  "available now", "currently available", "remains open", "still open", "in effect",
+];
+const STATUS_UNAVAILABLE = [
+  "not launched", "not yet launched", "pending", "paused", "on pause", "closed",
+  "declined", "opted out", "rejected", "exhausted", "fully reserved", "not available",
+  "suspended", "frozen", "unlaunched", "awaits", "on hold", "not accepting", "has not opened",
+];
+const STATUS_NEG = /\b(not|no|never|cannot|without|yet to)\b|n't\b/i;
+const STATUS_FUTURE = /\b(will|would|could|when|once|if|plans? to|expects? to|set to|upcoming)\b/i;
+const STATUS_HEDGE = /\b(unclear|expected|anticipated|no confirmed date|not yet confirmed|targets?|may|likely|should)\b/i;
+
+// Clause boundary, searching LEFT from a match. A fixed character window both
+// over-reaches (crossing into a neighbouring clause) and under-reaches (missing
+// a negator further left in the same clause). "…did not happen and it now awaits"
+// put "not" 41 chars from "awaits" across an "and", which flipped the polarity
+// and produced a false OR finding. Boundaries: , ; : ( ) dash, or a coordinating
+// /subordinating conjunction, or the start of the sentence. "yet" is deliberately
+// NOT a boundary: "not yet launched" would put the break between the negator and
+// the phrase, making "not" unreachable and inverting every not-yet-launched claim.
+const CLAUSE_BREAK = /[,;:()\u2013\u2014]|\b(and|but|or|nor|while|whereas|though|although|because|since|so|then)\b/gi;
+function clauseBefore(text, idx) {
+  let start = 0;
+  CLAUSE_BREAK.lastIndex = 0;
+  let m;
+  while ((m = CLAUSE_BREAK.exec(text)) && m.index < idx) start = m.index + m[0].length;
+  return text.slice(start, idx);
+}
+
+// Sentence split that does not break on abbreviations. "awaits U.S. DOE approval"
+// was being cut after "U.S.", truncating the clause the negation rule then read.
+const ABBREV_SENTINEL = "\u0001";
+function splitSentences(text) {
+  const t = text
+    .replace(/\b(?:[A-Za-z]\.){2,}/g, (s) => s.split(".").join(ABBREV_SENTINEL))
+    .replace(/\b(Inc|Corp|Co|Ltd|St|Mt|Dr|No|Est|Sr|Jr|vs|approx|etc|Sec|Fig)\./g, (_, w) => w + ABBREV_SENTINEL)
+    .replace(/\b(\d+)\./g, (_, d) => d + ABBREV_SENTINEL);
+  return t.split(/(?<=[.;])\s+/).map((s) => s.split(ABBREV_SENTINEL).join("."));
+}
+
+const statusProgram = (s) =>
+  /\bHEAR\b|HEEHRA?|Home Electrification/i.test(s) ? "HEAR"
+    : /\bHOMES\b|\bHER\b|Home Efficiency Rebates/i.test(s) ? "HOMES" : "GENERAL";
+
+// Word-boundary matched, so "unlaunched" does not also register the substring
+// "launched" with the opposite polarity.
+function statusPhrases(text) {
+  const out = [];
+  for (const [list, base] of [[STATUS_AVAILABLE, "AVAILABLE"], [STATUS_UNAVAILABLE, "UNAVAILABLE"]]) {
+    for (const p of list) {
+      const re = new RegExp("\\b" + p.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\b", "gi");
+      let m;
+      while ((m = re.exec(text))) {
+        const clause = clauseBefore(text, m.index);
+        const ahead = text.slice(m.index, m.index + 60);
+        let cls = base;
+        if (STATUS_NEG.test(clause)) cls = base === "AVAILABLE" ? "UNAVAILABLE" : "AVAILABLE";
+        if (STATUS_FUTURE.test(clause)) cls = "FUTURE";
+        else if (STATUS_HEDGE.test(clause) || STATUS_HEDGE.test(ahead)) cls = "HEDGED";
+        out.push({ phrase: p, cls, program: statusProgram(text) });
+      }
+    }
+  }
+  return out;
+}
+
+// SCOPE — recorded decision, not an oversight. Only these two files are scanned.
+// when-not-to, cost and vs-furnace were measured on 2026-09-07: between them they
+// carry 16 status phrases and attribute ZERO to any state, because their status
+// language is about no state in particular ("if your state has approved HEAR
+// funding but hasn't launched"). Scanning them adds noise and no coverage.
+const CROSSPAGE_FILES = ["rebates-by-state", "stacking-rebates"];
+
 /* ------------------------------------------------------------------ */
 /* report                                                               */
 /* ------------------------------------------------------------------ */
@@ -1257,6 +1340,76 @@ function verify(rest) {
   if (buildCode !== 0) console.log((b.stderr || "").split(/\r?\n/).slice(-20).map((l) => `  ${l}`).join("\n"));
   console.log(`  npm run build exit=${buildCode}`);
   add("6. build", "check", buildCode === 0, `exit ${buildCode}`);
+
+  /* 7. CROSS-PAGE STATUS — report only. Detects internal disagreement between a
+     cross-page file and incentives[code].summary. No fetch, no source: this is
+     the repo disagreeing with itself, which nothing else here can see. */
+  console.log("\n" + "=".repeat(70) + "\n7. CROSS-PAGE STATUS (report only — adjudicate each pair)\n" + "=".repeat(70));
+  const xpFindings = [];
+  const incSrc = existsSync(INCENTIVES) ? readFileSync(INCENTIVES, "utf8") : "";
+  const nameToCode = {}, sumText = {};
+  for (const blk of incSrc.split(/\n  (?=[A-Z]{2}: \{)/).slice(1)) {
+    const code = blk.match(/stateCode:\s*"([A-Z]{2})"/)?.[1];
+    if (!code) continue;
+    const nm = blk.match(/stateName:\s*"([^"]+)"/);
+    const sm = blk.match(/summary:\s*\n?\s*("(?:[^"\\]|\\.)*")/);
+    if (nm) nameToCode[nm[1]] = code;
+    if (sm) { try { sumText[code] = JSON.parse(sm[1]); } catch { /* skip */ } }
+  }
+  const sumPh = {};
+  for (const [code, s] of Object.entries(sumText)) {
+    sumPh[code] = [];
+    for (const sent of splitSentences(s)) for (const p of statusPhrases(sent)) sumPh[code].push({ ...p, sent: sent.trim() });
+  }
+  const stateNameRe = Object.keys(nameToCode).length
+    ? new RegExp("\\b(" + Object.keys(nameToCode).sort((a, b) => b.length - a.length).join("|") + ")\\b", "g")
+    : null;
+  const stripTags = (s) => s.replace(/<[^>]+>/g, " ").replace(/&[a-z]+;/g, " ").replace(/\{"\s*[^"]*"\}/g, " ").replace(/\s+/g, " ").trim();
+  const byKey = new Map();
+  for (const short of CROSSPAGE_FILES) {
+    const p = path.join(ROOT, "src", "app", "heat-pumps", short, "page.tsx");
+    if (!existsSync(p) || !stateNameRe) { console.log(`  ${short}: not found — skipped`); continue; }
+    const lines = readFileSync(p, "utf8").split(/\r?\n/);
+    lines.forEach((raw, i) => {
+      const flat = stripTags(raw);
+      if (!flat) return;
+      const tier = raw.match(/\{ code: "([A-Z]{2})"/);
+      for (const sent of splitSentences(flat)) {
+        const ps = statusPhrases(sent);
+        if (!ps.length) continue;
+        let codes;
+        if (tier) codes = [tier[1]];
+        else {
+          const set = new Set();
+          for (const m of sent.matchAll(stateNameRe)) set.add(nameToCode[m[1]]);
+          for (const m of raw.matchAll(/\/heat-pumps\/states\/([a-z]{2})\b/g)) set.add(m[1].toUpperCase());
+          codes = [...set];
+        }
+        if (!codes.length) continue;
+        for (const code of codes) {
+          for (const ph of ps) {
+            const clashes = (sumPh[code] || []).filter((s) => s.program === ph.program &&
+              ((ph.cls === "AVAILABLE" && s.cls === "UNAVAILABLE") || (ph.cls === "UNAVAILABLE" && s.cls === "AVAILABLE")));
+            if (!clashes.length) continue;
+            const key = `${code}|${short}|${i + 1}|${ph.phrase}`;
+            if (!byKey.has(key)) byKey.set(key, { code, file: short, line: i + 1, program: ph.program,
+              multi: codes.length, pagePhrase: ph.phrase, pageCls: ph.cls, pageSent: sent.trim(), sums: [] });
+            const rec = byKey.get(key);
+            for (const c of clashes) if (!rec.sums.some((x) => x.phrase === c.phrase && x.sent === c.sent)) rec.sums.push(c);
+          }
+        }
+      }
+    });
+  }
+  for (const f of [...byKey.values()].sort((a, b) => a.code.localeCompare(b.code) || a.file.localeCompare(b.file) || a.line - b.line)) xpFindings.push(f);
+  if (!xpFindings.length) console.log("  no cross-page status disagreements found");
+  for (const f of xpFindings) {
+    const tags = [f.program, f.multi > 1 ? `multi-state sentence (${f.multi})` : null].filter(Boolean).join(", ");
+    console.log(`\n  DISAGREES — ${f.code} [${tags}]  src/app/heat-pumps/${f.file}/page.tsx:${f.line}`);
+    console.log(`    page    (${f.pageCls}, "${f.pagePhrase}"): ${f.pageSent.slice(0, 220)}`);
+    for (const s of f.sums) console.log(`    summary (${s.cls}, "${s.phrase}"): ${s.sent.slice(0, 220)}`);
+  }
+  add("7. cross-page status", "report", null, `${xpFindings.length} disagreement(s) across ${new Set(xpFindings.map((f) => f.code)).size} state(s)`);
 
   /* SUMMARY */
   console.log("\n" + "=".repeat(70) + "\nSUMMARY\n" + "=".repeat(70));
