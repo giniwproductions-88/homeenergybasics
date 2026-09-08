@@ -480,14 +480,30 @@ function renormalizeDollarList(list) {
   });
 }
 
-// HELD from renormalize, deliberately. These carry fragments — "$2," "$5,"
-// "$10," — not whole figures with a stray separator. Stripping the comma
-// yields "$2", a clean string that may still be the wrong number, and a
-// plausible-looking wrong figure outranks an obviously broken one as a
-// hazard. Resolve by reading the page, not by normalising here.
+// HELD from renormalize, deliberately. TWO KINDS OF HOLD, and they do not lift
+// together — clearing all three at once is the mistake this comment exists to
+// prevent.
+//
+// KIND 1 — EXTRACTOR (IA, ME). An open question about what the figure even is.
+// These carry fragments — "$2," "$5," "$10," — not whole figures with a stray
+// separator. Stripping the comma yields "$2", a clean string that may still be
+// the wrong number, and a plausible-looking wrong figure outranks an obviously
+// broken one as a hazard. Two mechanisms fit and the stored fingerprint does not
+// separate them: a literal list ("$2, $5, $10", already correct) or a split
+// thousands separator ("$2,<tag>500" -> "$2, 500", really $2,500). Lifts only
+// when someone reads the page and settles which.
+//
+// KIND 2 — TEMPORARY, PENDING ADJUDICATION (KS). Nothing is wrong with the
+// extraction here; the comma artifact is ordinary. The entry is held because it
+// also carries a REAL unadjudicated change — `applications open` went 2 -> 0 as
+// of the 2026-09-07 17:38 check run — and renormalizing would tidy the artifact
+// on an entry that should stay visibly dirty until that keyword shift is read.
+// Lifts as soon as KS is adjudicated. No question about the extractor is
+// involved, so it must not wait on KIND 1.
 const RENORMALIZE_HOLD = [
-  ["cityofames.org", "IA: $2, $5, $10 are fragments or list items, not $2,500-style figures with a stray comma"],
-  ["efficiencymaine.com/home-energy-loans", "ME: $10, may be a truncated $10,000 or a list item"],
+  ["cityofames.org", "IA (extractor): $2, $5, $10 are fragments or list items, not $2,500-style figures with a stray comma"],
+  ["efficiencymaine.com/home-energy-loans", "ME (extractor): $10, may be a truncated $10,000 or a list item"],
+  ["kshousingcorp.org/weatherization-assistance", "KS (temporary, pending adjudication): real change on this entry — applications open 2 -> 0 at the 2026-09-07 17:38 check. Keep it visibly dirty until that is read; lift this hold once it is."],
 ];
 
 function keywordCounts(text) {
