@@ -461,6 +461,35 @@ function extractDollars(text) {
   }).slice(0, 300);
 }
 
+// A stored figure ending on a separator is an artifact of the pre-fix
+// extractDollars, not something a page said.
+const TRAILING_SEP = /[,.]+$/;
+
+// PURE. Strings in, strings out — no I/O, no clock, no network, no argument
+// it could not have been handed. That purity is the whole licence for
+// `accept --renormalize` to write the baseline (CLAUDE.md 6): a function that
+// cannot observe the world cannot adopt a change in it. Dedupe and sort must
+// mirror extractDollars exactly, or the next fetch diffs against a shape this
+// never produces.
+function renormalizeDollarList(list) {
+  const mapped = (list || []).map((d) => d.replace(TRAILING_SEP, ""));
+  return [...new Set(mapped)].sort((a, b) => {
+    const na = parseFloat(a.replace(/[$,]/g, ""));
+    const nb = parseFloat(b.replace(/[$,]/g, ""));
+    return na - nb;
+  });
+}
+
+// HELD from renormalize, deliberately. These carry fragments — "$2," "$5,"
+// "$10," — not whole figures with a stray separator. Stripping the comma
+// yields "$2", a clean string that may still be the wrong number, and a
+// plausible-looking wrong figure outranks an obviously broken one as a
+// hazard. Resolve by reading the page, not by normalising here.
+const RENORMALIZE_HOLD = [
+  ["cityofames.org", "IA: $2, $5, $10 are fragments or list items, not $2,500-style figures with a stray comma"],
+  ["efficiencymaine.com/home-energy-loans", "ME: $10, may be a truncated $10,000 or a list item"],
+];
+
 function keywordCounts(text) {
   const t = text.toLowerCase();
   const out = {};
@@ -949,6 +978,80 @@ async function snapshotAll(urls) {
   return { generatedAt: new Date().toISOString(), entries };
 }
 
+/* ------------------------------------------------------------------ */
+/* accept --renormalize                                                 */
+/* ------------------------------------------------------------------ */
+//
+// Rewrites stored dollar strings to what the corrected extractDollars would
+// produce. Sanctioned baseline write (CLAUDE.md 6), on one ground only: it
+// never observes the world. Every input is a string already in the baseline,
+// so it cannot absorb a real change — which is the thing an accept is
+// dangerous for. It is not a substitute for accept and adopts nothing.
+function acceptRenormalize(apply) {
+  // STRUCTURAL no-network guard, not an intention. fetchSnapshot() is the only
+  // code in this file that reaches the network, and it calls the global fetch.
+  // Poisoning that binding for the duration of this call means the path CANNOT
+  // fetch: an accidental call throws loudly instead of quietly succeeding.
+  const savedFetch = globalThis.fetch;
+  globalThis.fetch = () => { throw new Error("accept --renormalize must not fetch: it rewrites stored strings only"); };
+  try {
+    const baseline = loadJson(BASELINE_F, null);
+    if (!baseline || !baseline.entries) { console.error(`No baseline at ${BASELINE_F}. Run: baseline`); process.exitCode = 2; return; }
+
+    const held = [], changes = [];
+    for (const [u, e] of Object.entries(baseline.entries)) {
+      if (!Array.isArray(e.dollars) || !e.dollars.some((d) => TRAILING_SEP.test(d))) continue;
+      const states = (e.states || []).join("/");
+      const rewritten = e.dollars.filter((d) => TRAILING_SEP.test(d));
+      const hold = RENORMALIZE_HOLD.find(([frag]) => u.includes(frag));
+      if (hold) { held.push({ u, states, rewritten, why: hold[1] }); continue; }
+      const after = renormalizeDollarList(e.dollars);
+      changes.push({ u, e, states, before: e.dollars.slice(), after, rewritten,
+        collided: after.length !== e.dollars.length });
+    }
+
+    console.log(`accept --renormalize \u2014 ${apply ? "APPLY" : "DRY RUN (add --apply to write)"}`);
+    console.log(`baseline: ${BASELINE_F}\n`);
+
+    for (const ch of changes) {
+      console.log(`  ${ch.states.padEnd(6)} ${ch.u}`);
+      console.log(`         before ${JSON.stringify(ch.rewritten)}`);
+      console.log(`         after  ${JSON.stringify(ch.rewritten.map((d) => d.replace(TRAILING_SEP, "")))}`);
+      console.log(`         figures ${ch.before.length} -> ${ch.after.length}`);
+      // A count that drops is the one outcome that looks like data loss, so it
+      // is stated here rather than left to be inferred from the numbers.
+      if (ch.collided) {
+        const lost = ch.before.length - ch.after.length;
+        console.log(`         COLLISION: the cleaned form was ALREADY stored, so the set dedupes and the count drops by ${lost}. No figure is lost \u2014 the value survives as the clean form.`);
+      }
+    }
+    if (!changes.length) console.log("  nothing to renormalize");
+
+    if (held.length) {
+      console.log(`\n  HELD \u2014 not renormalized, by decision:`);
+      for (const h of held) {
+        console.log(`    ${h.states.padEnd(6)} ${h.u}`);
+        console.log(`           ${JSON.stringify(h.rewritten)} \u2014 ${h.why}`);
+      }
+    }
+
+    const figs = changes.reduce((n, ch) => n + ch.rewritten.length, 0);
+    const collisions = changes.filter((ch) => ch.collided);
+    console.log(`\n  ${changes.length} entr(y/ies), ${figs} figure(s) rewritten; ${collisions.length} with a dedupe collision; ${held.length} held.`);
+    if (collisions.length) console.log(`  collisions: ${collisions.map((ch) => ch.states).join(", ")}`);
+
+    if (!apply) { console.log("\n  DRY RUN \u2014 baseline not written. Re-run with --apply."); return; }
+
+    for (const ch of changes) ch.e.dollars = ch.after;
+    baseline.generatedAt = new Date().toISOString();
+    writeFileSync(BASELINE_F, JSON.stringify(baseline, null, 1));
+    console.log("\n  Baseline written.");
+    console.log("  Commit it: git add scripts/source-baseline.json");
+  } finally {
+    globalThis.fetch = savedFetch;
+  }
+}
+
 async function main() {
   const [, , mode = "check", ...rest] = process.argv;
   const onlyIx = rest.indexOf("--only");
@@ -1107,6 +1210,13 @@ async function main() {
   }
 
   if (mode === "accept") {
+    // Inside the accept path deliberately, so the baseline write stays under
+    // the same rule and the same review habit as every other accept. It takes
+    // no target codes and adopts no snapshot: it rewrites stored strings only.
+    // Read off `rest` directly, never through the target parser below, which
+    // uppercases every token and would turn the flag into a bogus state code.
+    if (rest.includes("--renormalize")) return acceptRenormalize(rest.includes("--apply"));
+
     const baseline = loadJson(BASELINE_F, null);
     const latest = loadJson(LATEST_F, null);
     if (!baseline || !latest) { console.error("Need both baseline and a prior `check` run (source-latest.json)."); process.exit(2); }

@@ -213,6 +213,15 @@ verification date or a condition, never to a promised future date
 - `selftest` must pass before any scraper change is proposed as done.
 - Never open `scripts/source-baseline.json` for writing outside an
   accept run.
+- **`accept --renormalize` is the one sanctioned exception to what an
+  accept run may write without a fetch behind it.** It rewrites stored
+  dollar strings to what a corrected `extractDollars` would produce and
+  **never observes the world** — its whole input is strings already in the
+  baseline, so it cannot adopt a real change. It is dry-run by default,
+  prints per-URL before/after, names every dedupe collision, and poisons
+  the global `fetch` for the duration so the path cannot reach the network.
+  Any other baseline write outside a fetch-backed accept is still
+  forbidden.
 
 ---
 
