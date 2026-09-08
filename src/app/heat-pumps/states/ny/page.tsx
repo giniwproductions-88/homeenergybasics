@@ -32,7 +32,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in New York in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "NYS Clean Heat offers $2,500\u2013$12,000 for air-source heat pumps (depending on utility, project category, and DAC status) and $14,000\u2013$40,000 for geothermal. EmPower+ provides base incentives of $12,000 (upstate) or $14,000 (downstate) for low-income households at or below 80% of State or Area Median Income, and 50% of cost up to $6,000\u2013$7,000 for moderate-income households, with NYSERDA\u2019s Sustainable Futures Program per-measure caps additive on top. The Weatherized Tier, which differentiates incentive rates and applies the 85% project cost cap, was scheduled for September 1, 2026 per Program Manual Version 2; that date has passed and the manual has not been reissued, so confirm current status with a participating contractor or cleanheat.ny.gov. Federal 25C and 25D tax credits expired December 31, 2025.",
+        text: "NYS Clean Heat offers $2,500\u2013$12,000 for air-source heat pumps (depending on utility, project category, and DAC status) and $14,000\u2013$40,000 for geothermal. EmPower+ provides base incentives of $12,000 (upstate) or $14,000 (downstate) for low-income households at or below 60% of State or Area Median Income, and 50% of cost up to $6,000\u2013$7,000 for moderate-income households under 80%, with NYSERDA\u2019s Sustainable Futures Program per-measure caps additive on top. The Weatherized Tier, which differentiates incentive rates and applies the 85% project cost cap, was scheduled for September 1, 2026 per Program Manual Version 2; that date has passed and the manual has not been reissued, so confirm current status with a participating contractor or cleanheat.ny.gov. Federal 25C and 25D tax credits expired December 31, 2025.",
       },
     },
     {
@@ -56,7 +56,7 @@ const faqJsonLd = {
       name: "What is EmPower+ and how does it connect to HEAR?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "EmPower+ is NYSERDA\u2019s program for income-eligible households at or below 80% of the State or Area Median Income (whichever is greater). Low-income households receive no-cost improvements capped at $12,000 (upstate) or $14,000 (downstate) per project; moderate-income households receive 50% of cost, up to $6,000 (upstate) or $7,000 (downstate). NYSERDA publishes additional per-measure caps under its Sustainable Futures Program, additive to those EmPower+ caps: $10,000 for an air-source heat pump, $10,000 for ground-source, $5,000 for a heat pump water heater, $5,000 for a panel box, and $2,500 for electrical wiring. Federal HEAR funding through EmPower+ covers air sealing, insulation, and ventilation up to $1,600. Low-income projects can be covered in full with zero out-of-pocket expense.",
+        text: "EmPower+ is NYSERDA\u2019s program for income-eligible households at or below 80% of the State or Area Median Income (whichever is greater). Low-income households, at or below 60% of that figure, receive no-cost improvements capped at $12,000 (upstate) or $14,000 (downstate) per project; moderate-income households, under 80%, receive 50% of cost, up to $6,000 (upstate) or $7,000 (downstate). NYSERDA publishes additional per-measure caps under its Sustainable Futures Program, additive to those EmPower+ caps: $10,000 for an air-source heat pump, $10,000 for ground-source, $5,000 for a heat pump water heater, $5,000 for a panel box, and $2,500 for electrical wiring. Federal HEAR funding through EmPower+ covers air sealing, insulation, and ventilation up to $1,600. Low-income projects can be covered in full with zero out-of-pocket expense.",
       },
     },
     {
@@ -140,11 +140,11 @@ export default function NewYorkPage() {
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; EmPower+ &amp; Sustainable Futures Program</p>
-              <p className="text-sm text-green-900">For income-eligible households at or below 80% of State or Area Median Income (SMI/AMI). Low-income base is $12,000 upstate or $14,000 downstate; moderate-income is 50% of cost up to $6,000&ndash;$7,000. Sustainable Futures Program per-measure caps are additive on top, and low-income installations can be fully covered.</p>
+              <p className="text-sm text-green-900">For income-eligible households under 80% of State or Area Median Income (SMI/AMI), in two tiers. Low-income is 60% or less: base $12,000 upstate or $14,000 downstate (downstate = Dutchess and Ulster counties and everything south of them). Moderate-income is under 80%: 50% of cost up to $6,000&ndash;$7,000. Sustainable Futures Program per-measure caps are additive on top, and low-income installations can be fully covered.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; Total Potential Savings</p>
-              <p className="text-sm text-green-900">Above 80% SMI/AMI: $2,500&ndash;$12,000 through Clean Heat. Below 80%: EmPower+ base plus additive Sustainable Futures Program caps. Geothermal: $14,000&ndash;$40,000 plus 25% state tax credit up to $10,000.</p>
+              <p className="text-sm text-green-900">Above 80% SMI/AMI: $2,500&ndash;$12,000 through Clean Heat. At or below 60%: EmPower+ low-income base plus additive Sustainable Futures Program caps. Between 60% and 80%: EmPower+&apos;s moderate pathway. Geothermal: $14,000&ndash;$40,000 plus 25% state tax credit up to $10,000.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">&#10007; Federal Tax Credits Expired</p>
@@ -409,7 +409,7 @@ export default function NewYorkPage() {
             New York was the <strong>first state</strong> to launch IRA-funded home energy rebates (June 2024). EmPower+ covers low-income households&apos; improvements at no cost up to <strong>$12,000</strong> per project upstate or <strong>$14,000</strong> downstate (moderate-income households get 50% coverage up to $6,000&ndash;$7,000). NYSERDA now publishes its per-measure equipment caps under the <strong>Sustainable Futures Program</strong>, additive to those EmPower+ caps: <strong>$10,000</strong> for an air-source heat pump, <strong>$10,000</strong> for ground-source, <strong>$5,000</strong> for a heat pump water heater, <strong>$5,000</strong> for a panel box, and <strong>$2,500</strong> for electrical wiring. Federal HEAR funding through EmPower+ covers <strong>$1,600</strong> for air sealing, insulation, and ventilation. IRA appliance rebates (up to $840, including heat pump clothes dryers) run separately through NYSERDA&apos;s Appliance Upgrade Program.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Eligible households at or below <strong>80% of the State or Area Median Income (SMI/AMI, whichever is greater)</strong> can receive <strong>100% of project costs covered</strong> with zero out-of-pocket expense. New York&apos;s separate HOMES allocation ($159.3 million for Home Efficiency Rebates) does not yet appear as a standalone consumer offering in NYSERDA&apos;s current program listings &mdash; moderate-income households access EmPower+&apos;s 50% pathway instead.
+            Households at or below <strong>60% of the State or Area Median Income (SMI/AMI, whichever is greater)</strong> &mdash; EmPower+&apos;s low-income tier &mdash; can receive <strong>100% of project costs covered</strong> with zero out-of-pocket expense. Households under 80% fall in the moderate-income tier instead, at 50% of cost up to $6,000 upstate or $7,000 downstate. New York&apos;s separate HOMES allocation ($159.3 million for Home Efficiency Rebates) does not yet appear as a standalone consumer offering in NYSERDA&apos;s current program listings &mdash; moderate-income households access EmPower+&apos;s 50% pathway instead.
           </p>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
@@ -465,7 +465,7 @@ export default function NewYorkPage() {
             </div>
 
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-2">Below 80% SMI/AMI &mdash; EmPower+ with HEAR (Best Case)</p>
+              <p className="font-semibold text-green-800 mb-2">At or Below 60% SMI/AMI &mdash; EmPower+ with HEAR (Best Case)</p>
               <ul className="text-sm text-green-900 space-y-1">
                 <li>EmPower+ base (low-income): $12,000 upstate / $14,000 downstate</li>
                 <li>Sustainable Futures Program, additive: $10,000 air-source or ground-source heat pump, $5,000 heat pump water heater, $5,000 panel box, $2,500 wiring</li>
@@ -567,7 +567,7 @@ export default function NewYorkPage() {
               <div className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-bold">2</div>
               <div>
                 <p className="font-semibold text-gray-900">Check Income Eligibility for EmPower+</p>
-                <p className="text-sm text-gray-700">If you may qualify (at or below 80% of State or Area Median Income), apply at nyserda.ny.gov or call 1-866-NYSERDA. This unlocks EmPower+ base incentives plus additive Sustainable Futures Program caps.</p>
+                <p className="text-sm text-gray-700">If you may qualify (under 80% of State or Area Median Income), apply at nyserda.ny.gov or call 1-866-NYSERDA. Households at or below 60% reach the low-income tier, which is the no-cost base plus additive Sustainable Futures Program caps.</p>
               </div>
             </div>
             <div className="flex gap-4">
