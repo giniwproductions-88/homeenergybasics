@@ -56,7 +56,7 @@ const faqJsonLd = {
       name: "What is EmPower+ and how does it connect to HEAR?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "EmPower+ is NYSERDA\u2019s program for income-eligible households at or below 80% of the State or Area Median Income (whichever is greater). Low-income households, at or below 60% of that figure, receive no-cost improvements capped at $12,000 (upstate) or $14,000 (downstate) per project; moderate-income households, under 80%, receive 50% of cost, up to $6,000 (upstate) or $7,000 (downstate). NYSERDA publishes additional per-measure caps under its Sustainable Futures Program, additive to those EmPower+ caps: $10,000 for an air-source heat pump, $10,000 for ground-source, $5,000 for a heat pump water heater, $5,000 for a panel box, and $2,500 for electrical wiring. Federal HEAR funding through EmPower+ covers air sealing, insulation, and ventilation up to $1,600, but only on projects that do not include a heat pump or heat pump water heater, and Sustainable Futures Program funding cannot be combined with IRA HEAR funding on the same project. A heat pump project is therefore the EmPower+ cap plus Sustainable Futures Program amounts, with no HEAR. Low-income projects can be covered in full with zero out-of-pocket expense.",
+        text: "EmPower+ is NYSERDA\u2019s program for income-eligible households at or below 80% of the State or Area Median Income (whichever is greater). Low-income households, at or below 60% of that figure, receive no-cost improvements capped at $12,000 (upstate) or $14,000 (downstate) per project; moderate-income households, under 80%, receive 50% of cost, up to $6,000 (upstate) or $7,000 (downstate). NYSERDA publishes additional per-measure caps under its Sustainable Futures Program, additive to those EmPower+ caps: $10,000 for an air-source heat pump, $10,000 for ground-source, $5,000 for a heat pump water heater, $5,000 for a panel box, and $2,500 for electrical wiring. Federal HEAR funding through EmPower+ covers air sealing, insulation, and ventilation up to $1,600, but only on projects that do not include a heat pump or heat pump water heater, and Sustainable Futures Program funding cannot be combined with IRA HEAR funding on the same project. A heat pump project is therefore the EmPower+ cap plus Sustainable Futures Program amounts, with no HEAR. Low-income projects can be covered in full with zero out-of-pocket expense. Approval also depends on the home\u2019s existing heating fuel and insulation level: homes heating with natural gas are generally not eligible for a heat pump through EmPower+, with availability limited to pilots in certain utility regions, and the program sets a minimum insulation level defined in Table 7 of the EmPower+ Program Manual.",
       },
     },
     {
@@ -149,6 +149,10 @@ export default function NewYorkPage() {
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">&#10007; Federal Tax Credits Expired</p>
               <p className="text-sm text-red-900">Section 25C ($2,000) and Section 25D (30% geothermal) both ended December 31, 2025. NY&apos;s state programs more than compensate for most homeowners.</p>
+            </div>
+            <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
+              <p className="font-semibold text-amber-800 mb-1">&#9888; Gas-heated homes: generally not eligible for an EmPower+ heat pump</p>
+              <p className="text-sm text-amber-900">NYSERDA approves heat pumps based on your existing heating fuel and your home&apos;s insulation level. Homes heating with natural gas are generally not eligible, with availability limited to pilots in certain utility regions. Roughly 61% of New York homes heat with gas, so check before planning around EmPower+.</p>
             </div>
             <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
               <p className="font-semibold text-amber-800 mb-1">&#9888; Weatherization becomes mandatory for all Clean Heat incentives by March 1, 2028</p>
@@ -446,6 +450,27 @@ export default function NewYorkPage() {
       <section className="py-12">
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">EmPower+, Sustainable Futures Program &amp; Federal HEAR</h2>
+
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
+            <p className="font-semibold text-amber-800 mb-1">&#9888; Check these two gates before the amounts</p>
+            <p className="text-sm text-amber-900 mb-2">
+              <strong>Heating fuel.</strong> NYSERDA decides whether a heat pump is approvable based on your
+              existing heating fuel and your home&apos;s current insulation level. Homes heating with
+              <strong> natural gas are generally not eligible</strong> for a heat pump through EmPower+:
+              NYSERDA is still determining when a heat pump is an affordable replacement for gas, and
+              availability is limited to pilots in certain utility regions &mdash; including the Energy
+              Affordability Guarantee program administered by the Department of Public Service. Roughly
+              61% of New York homes heat with natural gas, so confirm your region applies before planning
+              around EmPower+.
+            </p>
+            <p className="text-sm text-amber-900">
+              <strong>Insulation.</strong> EmPower+ also sets a minimum insulation level a home must meet
+              before a heat pump is installed. The EmPower+ Program Manual defines it in Table 7. We have
+              not been able to retrieve those figures and will not guess them &mdash; ask NYSERDA or your
+              contractor what your home needs before assuming a heat pump is approvable.
+            </p>
+          </div>
+
           <p className="text-gray-700 leading-relaxed mb-6">
             New York was the <strong>first state</strong> to launch IRA-funded home energy rebates (June 2024). EmPower+ covers low-income households&apos; improvements at no cost up to <strong>$12,000</strong> per project upstate or <strong>$14,000</strong> downstate (moderate-income households get 50% coverage up to $6,000&ndash;$7,000). NYSERDA now publishes its per-measure equipment caps under the <strong>Sustainable Futures Program</strong>, additive to those EmPower+ caps: <strong>$10,000</strong> for an air-source heat pump, <strong>$10,000</strong> for ground-source, <strong>$5,000</strong> for a heat pump water heater, <strong>$5,000</strong> for a panel box, and <strong>$2,500</strong> for electrical wiring. Federal HEAR funding through EmPower+ covers <strong>$1,600</strong> for air sealing, insulation, and ventilation &mdash; but only on projects that do <strong>not</strong> include a heat pump or heat pump water heater, and Sustainable Futures Program funding cannot be combined with IRA HEAR on the same project. A heat pump project is therefore the EmPower+ cap plus Sustainable Futures Program amounts, with <strong>no HEAR</strong>. IRA appliance rebates (up to $840, including heat pump clothes dryers) run through NYSERDA&apos;s Appliance Upgrade Program, which <strong>cannot run concurrently with EmPower+</strong> &mdash; a household uses one program at a time, to stay under the $14,000 federal HEAR limit.
           </p>
