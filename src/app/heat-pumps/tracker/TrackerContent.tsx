@@ -373,10 +373,8 @@ export default function TrackerContent() {
                 Income qualification unlocks the largest rebates
               </p>
               <p className="text-sm text-blue-900">
-                Households below 80% AMI can access the highest rebate tiers in
-                most states &mdash; often $14,000&ndash;$24,000 when stacking
-                HEAR, HOMES, and utility programs. Above 150% AMI, you&apos;re
-                typically limited to utility rebates and HOMES only.
+                Above 150% AMI, you&apos;re typically limited to utility rebates and
+                HOMES only.
               </p>
             </div>
           </div>
@@ -468,8 +466,8 @@ export default function TrackerContent() {
                 It depends on your state and income level. In states with active
                 HEAR programs, income-qualifying households can receive $8,000
                 or more. Utility rebates vary widely by provider, from
-                as low as $40 to over $4,000. The best states for stacking multiple programs
-                can reach $10,000&ndash;$24,000 in total incentives.
+                as low as $40 to $5,000. What combines on a single project is
+                state-specific &mdash; check your state page for exact amounts.
               </p>
             </div>
             <div className="border-b border-gray-200 pb-6">

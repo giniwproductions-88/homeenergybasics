@@ -52,7 +52,7 @@ const faqJsonLd = {
       name: "How much can I get in heat pump rebates in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "It depends entirely on your state and income level. In states with active HEAR programs, income-qualifying households can receive $8,000 or more. Utility rebates vary widely by provider, from as low as $40 to over $4,000. The best states for stacking multiple programs can reach $10,000\u2013$24,000 in total incentives. Check your specific state page for exact amounts.",
+        text: "It depends entirely on your state and income level. In states with active HEAR programs, income-qualifying households can receive $8,000 or more. Utility rebates vary widely by provider, from as low as $40 to $5,000. What combines on a single project is state-specific. Check your specific state page for exact amounts.",
       },
     },
     {
