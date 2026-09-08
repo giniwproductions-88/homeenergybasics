@@ -449,7 +449,10 @@ function htmlToText(html) {
 }
 
 function extractDollars(text) {
-  const raw = text.match(/\$\s?\d[\d,]{0,14}(\.\d\d)?/g) || [];
+  // Must end on a digit. [\d,] alone swallowed a trailing separator, so
+  // "$400–$1,200, OPPD" yielded "$1,200," — a stored figure that differs from
+  // the same figure written without the comma, and so diffs as a change.
+  const raw = text.match(/\$\s?\d(?:[\d,]{0,13}\d)?(?:\.\d\d)?/g) || [];
   const set = new Set(raw.map((d) => d.replace(/\s+/g, "")));
   return [...set].sort((a, b) => {
     const na = parseFloat(a.replace(/[$,]/g, ""));
@@ -688,6 +691,14 @@ function statusPhrases(text) {
 // carry 16 status phrases and attribute ZERO to any state, because their status
 // language is about no state in particular ("if your state has approved HEAR
 // funding but hasn't launched"). Scanning them adds noise and no coverage.
+// KNOWN COVERAGE GAP — the program bucket. statusProgram() reads one sentence at
+// a time, so a tier note naming no program buckets GENERAL while the state's
+// summary sentence naming HEAR/HOMES buckets HEAR, and the two are never
+// compared. FL is the live example: the note "$346M IRA unlaunched." is GENERAL,
+// its summary sentence is HEAR, so a real disagreement between them passes
+// unseen. Tier notes rarely name a program, so this is the common shape, not an
+// edge case. Stated, not queued: widening the bucket would pair HEAR claims with
+// utility-rebate claims, which is a worse error than the one it fixes.
 const CROSSPAGE_FILES = ["rebates-by-state", "stacking-rebates"];
 
 /* ------------------------------------------------------------------ */
@@ -1291,7 +1302,7 @@ function verify(rest) {
     unscopeable.length ? `unscopeable file(s): ${unscopeable.join(", ")}`
       : scopeMatch ? `exact match {${got.join(",")}}` : `MISMATCH: got {${got.join(",")}} want {${wantStates.join(",")}}`);
 
-  /* 4. INVARIANT — monotonicity of each date field, tested separately.
+  /* 4. MONOTONICITY — of each date field, tested separately.
      Two distinct properties, and conflating them is what went wrong before.
      MONOTONIC: neither field moves backward. Tested here, per field.
      INDEPENDENT: there is no ordering rule BETWEEN the fields (CLAUDE.md 1.4).
@@ -1300,11 +1311,12 @@ function verify(rest) {
      lastVerified. That is the normal case. The lastUpdated <= lastVerified
      ordering test was removed here and must not be re-added — it would fail
      exactly that case. */
-  console.log("\n" + "=".repeat(70) + "\n4. INVARIANT\n" + "=".repeat(70));
+  console.log("\n" + "=".repeat(70) + "\n4. MONOTONICITY\n" + "=".repeat(70));
   let invPass = true;
   const invNotes = [];
   for (const code of got) {
     const { old: o, now: n } = pairs[code];
+    // Absent field → parseStateDates null: a null OLD side is skipped, a null NEW side reports "BACKWARD ... -> null". Intended — deletion is not a forward move.
     const forward = !o.lastVerified || n.lastVerified >= o.lastVerified;
     const updatedForward = !o.lastUpdated || n.lastUpdated >= o.lastUpdated;
     if (!forward) { invPass = false; invNotes.push(`${code}: lastVerified moved BACKWARD ${o.lastVerified} -> ${n.lastVerified}`); }
@@ -1312,7 +1324,7 @@ function verify(rest) {
     console.log(`  ${code}: lastVerified ${o.lastVerified} -> ${n.lastVerified} (${forward ? "forward/equal OK" : "BACKWARD"}); lastUpdated ${o.lastUpdated} -> ${n.lastUpdated} (${updatedForward ? "forward/equal OK" : "BACKWARD"})`);
   }
   if (!got.length) console.log("  (no states with changed dates)");
-  add("4. invariant", "check", invPass, invNotes.join("; ") || "lastVerified forward/equal; lastUpdated forward/equal");
+  add("4. monotonicity", "check", invPass, invNotes.join("; ") || "lastVerified forward/equal; lastUpdated forward/equal");
 
   /* 5. COUNT CLAIMS — report only. */
   console.log("\n" + "=".repeat(70) + "\n5. COUNT CLAIMS (report only — verify each against current reality)\n" + "=".repeat(70));
@@ -1498,9 +1510,10 @@ function selftest() {
   // fingerprint helpers
   const text = htmlToText(`<html><script>var x="$99";</script><p>Rebates up to $3,000 &ndash; now &amp; waitlist closed. <b>$500</b>/ton</p></html>`);
   const d = extractDollars(text), k = keywordCounts(text);
-  const fpOk = d.join(",") === "$500,$3,000" && k.waitlist === 1 && k.closed === 1 && !text.includes("$99");
+  const commaOk = extractDollars("$400\u2013$1,200, OPPD").join(",") === "$400,$1,200"; // trailing separator is not part of the figure
+  const fpOk = d.join(",") === "$500,$3,000" && k.waitlist === 1 && k.closed === 1 && !text.includes("$99") && commaOk;
   if (!fpOk) fail++;
-  console.log(`${fpOk ? "PASS" : "FAIL"}  fingerprint: dollars=[${d.join(", ")}] keywords=${JSON.stringify(k)} (script content excluded)`);
+  console.log(`${fpOk ? "PASS" : "FAIL"}  fingerprint: dollars=[${d.join(", ")}] keywords=${JSON.stringify(k)} (script content excluded; trailing comma ${commaOk ? "stripped" : "RETAINED"})`);
   // scoped keyword: "temporarily" only counts near program vocabulary
   const kFurniture = keywordCounts("This website is temporarily experiencing display issues.");
   const kProgram = keywordCounts("Rebate applications are temporarily unavailable while funds are reallocated.");
