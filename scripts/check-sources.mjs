@@ -1208,20 +1208,24 @@ function verify(rest) {
     unscopeable.length ? `unscopeable file(s): ${unscopeable.join(", ")}`
       : scopeMatch ? `exact match {${got.join(",")}}` : `MISMATCH: got {${got.join(",")}} want {${wantStates.join(",")}}`);
 
-  /* 4. INVARIANT */
+  /* 4. INVARIANT — lastVerified monotonicity only.
+     The lastUpdated <= lastVerified ordering test was removed here. The two
+     fields are independent (CLAUDE.md 1.4): lastUpdated records an edit and
+     needs no source, so a page corrected without being re-verified carries a
+     lastUpdated LATER than its lastVerified. That is the normal case, not a
+     violation, and enforcing an order would block it. Do not re-add.
+     lastVerified monotonicity is a different rule and still applies. */
   console.log("\n" + "=".repeat(70) + "\n4. INVARIANT\n" + "=".repeat(70));
   let invPass = true;
   const invNotes = [];
   for (const code of got) {
     const { old: o, now: n } = pairs[code];
     const forward = !o.lastVerified || n.lastVerified >= o.lastVerified;
-    const ordered = !n.lastUpdated || !n.lastVerified || n.lastUpdated <= n.lastVerified;
     if (!forward) { invPass = false; invNotes.push(`${code}: lastVerified moved BACKWARD ${o.lastVerified} -> ${n.lastVerified}`); }
-    if (!ordered) { invPass = false; invNotes.push(`${code}: lastUpdated ${n.lastUpdated} > lastVerified ${n.lastVerified}`); }
-    console.log(`  ${code}: lastVerified ${o.lastVerified} -> ${n.lastVerified} (${forward ? "forward/equal OK" : "BACKWARD"}); lastUpdated ${n.lastUpdated} <= lastVerified ${n.lastVerified} -> ${ordered ? "OK" : "VIOLATION"}`);
+    console.log(`  ${code}: lastVerified ${o.lastVerified} -> ${n.lastVerified} (${forward ? "forward/equal OK" : "BACKWARD"}); lastUpdated ${n.lastUpdated} (independent — no ordering rule)`);
   }
   if (!got.length) console.log("  (no states with changed dates)");
-  add("4. invariant", "check", invPass, invNotes.join("; ") || "all changed states satisfy both rules");
+  add("4. invariant", "check", invPass, invNotes.join("; ") || "all changed states move lastVerified forward");
 
   /* 5. COUNT CLAIMS — report only. */
   console.log("\n" + "=".repeat(70) + "\n5. COUNT CLAIMS (report only — verify each against current reality)\n" + "=".repeat(70));
