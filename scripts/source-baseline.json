@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-07T19:29:41.953Z",
+ "generatedAt": "2026-09-08T02:29:57.536Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -699,7 +699,7 @@
     "NY"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:40.977Z",
+   "fetchedAt": "2026-09-08T02:21:02.303Z",
    "length": 1030377,
    "kind": "pdf",
    "bytesHash": "e5376cfd66c7a975"
@@ -712,10 +712,10 @@
     "NY"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:41.696Z",
-   "length": 361727,
+   "fetchedAt": "2026-09-08T02:21:02.688Z",
+   "length": 361581,
    "kind": "html",
-   "textHash": "d3e2994fbb1559c8",
+   "textHash": "7c5a391e70ffc190",
    "dollars": [],
    "keywords": {}
   },
@@ -727,18 +727,18 @@
     "NY"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:41.631Z",
-   "length": 388066,
+   "fetchedAt": "2026-09-08T02:21:02.724Z",
+   "length": 388069,
    "kind": "html",
-   "textHash": "ee17b2ac7e22be44",
+   "textHash": "e2f8d059686a3764",
    "dollars": [
     "$840",
     "$1,600",
     "$2,500",
-    "$4,000",
+    "$5,000",
     "$6,000",
     "$7,000",
-    "$8,000",
+    "$10,000",
     "$12,000",
     "$14,000"
    ],
@@ -752,20 +752,24 @@
     "NY"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:41.781Z",
-   "length": 119154,
+   "fetchedAt": "2026-09-08T02:21:02.707Z",
+   "length": 124947,
    "kind": "html",
-   "textHash": "b30972c171c07ae0",
+   "textHash": "b75754d59cd12eef",
    "dollars": [
     "$1,000",
     "$1,500",
     "$2,000",
     "$2,500",
+    "$3,500",
     "$4,000",
     "$4,500",
     "$5,000",
+    "$5,500",
+    "$7,000",
     "$8,000",
-    "$10,000"
+    "$10,000",
+    "$11,000"
    ],
    "keywords": {}
   },
@@ -777,10 +781,10 @@
     "NY"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:42.520Z",
-   "length": 213002,
+   "fetchedAt": "2026-09-08T02:21:03.006Z",
+   "length": 212995,
    "kind": "html",
-   "textHash": "1cf8ab2d553f182a",
+   "textHash": "3e6c4a1b5ec03d06",
    "dollars": [
     "$1,250",
     "$12,000",
@@ -798,7 +802,7 @@
     "NY"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:42.186Z",
+   "fetchedAt": "2026-09-08T02:21:02.914Z",
    "length": 212,
    "kind": "html",
    "textHash": "e3b0c44298fc1c14",
@@ -813,10 +817,10 @@
     "NY"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:42.777Z",
-   "length": 98826,
+   "fetchedAt": "2026-09-08T02:21:03.611Z",
+   "length": 99115,
    "kind": "html",
-   "textHash": "28490af9b3066d94",
+   "textHash": "1e0e64d2dcb925d3",
    "dollars": [],
    "keywords": {}
   },
@@ -828,11 +832,12 @@
     "NY"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-20T20:28:43.351Z",
-   "length": 238155,
+   "fetchedAt": "2026-09-08T02:21:03.886Z",
+   "length": 245812,
    "kind": "html",
-   "textHash": "731f30ed5d58d189",
+   "textHash": "386a0967b2b8a992",
    "dollars": [
+    "$1",
     "$50",
     "$150",
     "$200",
