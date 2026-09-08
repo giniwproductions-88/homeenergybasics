@@ -1208,24 +1208,28 @@ function verify(rest) {
     unscopeable.length ? `unscopeable file(s): ${unscopeable.join(", ")}`
       : scopeMatch ? `exact match {${got.join(",")}}` : `MISMATCH: got {${got.join(",")}} want {${wantStates.join(",")}}`);
 
-  /* 4. INVARIANT — lastVerified monotonicity only.
-     The lastUpdated <= lastVerified ordering test was removed here. The two
-     fields are independent (CLAUDE.md 1.4): lastUpdated records an edit and
-     needs no source, so a page corrected without being re-verified carries a
-     lastUpdated LATER than its lastVerified. That is the normal case, not a
-     violation, and enforcing an order would block it. Do not re-add.
-     lastVerified monotonicity is a different rule and still applies. */
+  /* 4. INVARIANT — monotonicity of each date field, tested separately.
+     Two distinct properties, and conflating them is what went wrong before.
+     MONOTONIC: neither field moves backward. Tested here, per field.
+     INDEPENDENT: there is no ordering rule BETWEEN the fields (CLAUDE.md 1.4).
+     lastUpdated records an edit and needs no source, so a page corrected
+     without being re-verified carries a lastUpdated LATER than its
+     lastVerified. That is the normal case. The lastUpdated <= lastVerified
+     ordering test was removed here and must not be re-added — it would fail
+     exactly that case. */
   console.log("\n" + "=".repeat(70) + "\n4. INVARIANT\n" + "=".repeat(70));
   let invPass = true;
   const invNotes = [];
   for (const code of got) {
     const { old: o, now: n } = pairs[code];
     const forward = !o.lastVerified || n.lastVerified >= o.lastVerified;
+    const updatedForward = !o.lastUpdated || n.lastUpdated >= o.lastUpdated;
     if (!forward) { invPass = false; invNotes.push(`${code}: lastVerified moved BACKWARD ${o.lastVerified} -> ${n.lastVerified}`); }
-    console.log(`  ${code}: lastVerified ${o.lastVerified} -> ${n.lastVerified} (${forward ? "forward/equal OK" : "BACKWARD"}); lastUpdated ${n.lastUpdated} (independent — no ordering rule)`);
+    if (!updatedForward) { invPass = false; invNotes.push(`${code}: lastUpdated moved BACKWARD ${o.lastUpdated} -> ${n.lastUpdated}`); }
+    console.log(`  ${code}: lastVerified ${o.lastVerified} -> ${n.lastVerified} (${forward ? "forward/equal OK" : "BACKWARD"}); lastUpdated ${o.lastUpdated} -> ${n.lastUpdated} (${updatedForward ? "forward/equal OK" : "BACKWARD"})`);
   }
   if (!got.length) console.log("  (no states with changed dates)");
-  add("4. invariant", "check", invPass, invNotes.join("; ") || "all changed states move lastVerified forward");
+  add("4. invariant", "check", invPass, invNotes.join("; ") || "lastVerified forward/equal; lastUpdated forward/equal");
 
   /* 5. COUNT CLAIMS — report only. */
   console.log("\n" + "=".repeat(70) + "\n5. COUNT CLAIMS (report only — verify each against current reality)\n" + "=".repeat(70));

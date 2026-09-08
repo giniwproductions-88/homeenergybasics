@@ -83,8 +83,13 @@ into the conversation. Not paraphrased. Not summarized. Quoted.
 - A page's meta description or search snippet can be staler than its
   body. Trust the body's own as-of stamp. Never conclude "unchanged"
   from a snippet.
-- Dates are monotonic. No `lastVerified` moves backward, and the entry
-  count does not change without a stated reason.
+- Dates are monotonic. Neither `lastVerified` nor `lastUpdated` moves
+  backward, and the entry count does not change without a stated reason.
+- Monotonicity and independence are separate properties, and the file
+  states each. Monotonic: each field only moves forward, on its own.
+  Independent: there is no ordering rule *between* the fields, so
+  `lastUpdated` may be later than `lastVerified` — a page can be
+  corrected without being re-verified (see 1.4).
 
 ---
 
