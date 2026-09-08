@@ -52,7 +52,7 @@ const faqJsonLd = {
       name: "What is the maximum amount of rebates you can stack?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The practical maximum varies by state. In states with the deepest stacking (New York, Wisconsin, Maryland), income-qualified households can stack $15,000–$24,000 in combined rebates on a single project. The general rule is that total incentives cannot exceed 100% of project cost. Most homeowners above 150% AMI can realistically stack $2,000–$5,000.",
+        text: "The practical maximum varies by state, and by which programs a household can hold at once. New York, Wisconsin and Maryland run the deepest programs, but the combined figure depends on rules that differ by state \u2014 in New York, for example, the utility Clean Heat program and the income-qualified EmPower+ program cannot both pay for the same installed measure, so their caps do not add. Check the state guide for what actually combines. The general rule is that total incentives cannot exceed 100% of project cost. Most homeowners above 150% AMI can realistically stack $2,000\u2013$5,000.",
       },
     },
     {
@@ -329,15 +329,17 @@ export default function StackingRebatesPage() {
           <div className="bg-white border border-gray-200 rounded-lg p-5 mb-6">
             <ul className="text-sm text-gray-700 space-y-1">
               <li>Clean Heat Program (utility): <strong>$5,000–$12,000</strong></li>
-              <li>EmPower+ (income-qualified): <strong>up to $24,000</strong></li>
+              <li>EmPower+ (income-qualified): <strong>$12,000 upstate / $14,000 downstate</strong></li>
               <li>Geothermal tax credit (25% up to $10,000): <strong>if applicable</strong></li>
             </ul>
-            <p className="font-semibold text-green-700 mt-2">
-              Total stacked: $10,000–$24,000+
+            <p className="font-semibold text-gray-900 mt-2">
+              These do not simply add up.
             </p>
             <p className="text-sm text-gray-600 mt-1">
-              New York has the deepest incentive stack in the country. DAC (Disadvantaged
-              Community) designation unlocks the highest utility tier.
+              Clean Heat and EmPower+ cannot both pay for the same installed measure &mdash; an
+              income-qualified household picks one pathway for the heat pump itself. DAC
+              (Disadvantaged Community) designation unlocks the highest utility tier. See the
+              New York guide for which combination applies to your household.
             </p>
           </div>
 

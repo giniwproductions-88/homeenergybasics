@@ -36,7 +36,7 @@ interface StateTier {
 }
 
 const strongStates: StateTier[] = [
-  { code: "NY", name: "New York", headlineAmount: "$5,000–$24,000", primaryProgram: "Clean Heat + EmPower+", note: "Six utilities, DAC bonuses, geothermal credit. Best overall program." },
+  { code: "NY", name: "New York", headlineAmount: "Up to $14,000", primaryProgram: "Clean Heat + EmPower+", note: "Six utilities, DAC bonuses, geothermal credit. Best overall program." },
   { code: "MD", name: "Maryland", headlineAmount: "Up to $15,000", primaryProgram: "EmPOWER Maryland", note: "75% of electrification costs covered. Potomac Edison Switch-to-Electric adds $4,000." },
   { code: "RI", name: "Rhode Island", headlineAmount: "Up to $11,500", primaryProgram: "Clean Heat RI", note: "Covers up to 60% of heat pump costs. Strong per-capita program." },
   { code: "CO", name: "Colorado", headlineAmount: "Up to $9,250", primaryProgram: "Xcel + state credit + DRCOG", note: "HEAR single-family closed statewide August 2026 (Region 1 reserved in April; Region 2 applications after Aug 1 not reviewed). Still open with no income limit: Xcel $2,250/ton for cold-climate systems replacing gas heat, $1,000 state tax credit, DRCOG Power Ahead $1,500 in Denver metro." },
@@ -277,7 +277,7 @@ export default function RebatesByStatePage() {
 
           <div className="space-y-3 mb-6">
             {[
-              { rank: 1, code: "ny", name: "New York", amount: "$5,000–$24,000", detail: "Clean Heat + EmPower+ + HEAR + geothermal credit" },
+              { rank: 1, code: "ny", name: "New York", amount: "Up to $14,000", detail: "Clean Heat + EmPower+ + HEAR + geothermal credit" },
               { rank: 2, code: "wi", name: "Wisconsin", amount: "Up to $18,900", detail: "HEAR + HOMES + Focus on Energy (first state to launch HOMES)" },
               { rank: 3, code: "md", name: "Maryland", amount: "Up to $15,000", detail: "EmPOWER (75% of costs) + Potomac Edison Switch-to-Electric" },
               { rank: 4, code: "wa", name: "Washington", amount: "Up to $13,000", detail: "State HEAR + PSE (up to $5,000); federal HARP pending" },
@@ -685,8 +685,8 @@ export default function RebatesByStatePage() {
           </h2>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            The gap between a $24,000 rebate package in New York and almost nothing
-            in Ohio is not random. Four structural factors drive the differences.
+            The gap between what New York pays an income-qualified household and what
+            Ohio pays is not random. Four structural factors drive the differences.
           </p>
 
           <p className="text-gray-700 leading-relaxed mb-4">
