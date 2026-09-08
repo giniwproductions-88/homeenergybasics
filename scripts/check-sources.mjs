@@ -46,7 +46,14 @@
  *   scripts/source-baseline.json   committed. The asset.
  *   scripts/source-latest.json     regenerated every check. gitignore.
  *   scripts/source-diff-report.md  regenerated every check. gitignore.
- *   scripts/source-ignore.json     optional array of URLs to skip/mute (bot-blocked or known-noisy).
+ *   scripts/source-ignore.json     committed. URLs to skip/mute (bot-blocked or known-noisy).
+ *                                  Shape: { "<url>": { "reason": "...", "note": "...",
+ *                                                     "review": "YYYY-MM-DD" } }
+ *                                  A legacy flat array of URL strings is still accepted.
+ *                                  Every mute states a reason and a review date: a mute with
+ *                                  no expiry is indistinguishable from coverage.
+ *                                  An announcement channel is never muted; only a consumer
+ *                                  portal may be — see the rule note at the read site.
  *                                  A mute suppresses the diff row. It does NOT suppress the
  *                                  report's MUTED AND HOLLOW section: a muted URL that is also
  *                                  erroring or carrying no signal is watching nothing, and the
@@ -1158,7 +1165,7 @@ async function main() {
     console.log(`OK: ${Object.keys(snap.entries).length - errs.length} | errors: ${errs.length}`);
     for (const e of errs) console.log(`  ERROR [${e.states.join(",")}] ${e.url} -> ${e.error}`);
     console.log(`\nCommit the baseline: git add scripts/source-baseline.json`);
-    if (errs.length) console.log(`403/blocked URLs that persist: add them to scripts/source-ignore.json (an array of URL strings) and verify those manually on schedule.`);
+    if (errs.length) console.log(`403/blocked URLs that persist: add them to scripts/source-ignore.json (keyed by URL, each with a reason and a review date) and verify those manually on schedule.`);
     return;
   }
 
@@ -1168,7 +1175,25 @@ async function main() {
     console.log(`Checking ${urls.size} URLs against baseline of ${baseline.generatedAt}...`);
     const latest = await snapshotAll(urls);
     writeFileSync(LATEST_F, JSON.stringify(latest, null, 1));
-    const ignoreSet = new Set(loadJson(IGNORE_F, []));
+    // RULE — an announcement channel is never muted; only a consumer portal may
+    // be. Muting a portal is a coverage decision with a known cost. Muting the
+    // channel that ANNOUNCES a change is a blind spot: the portal keeps reporting
+    // UNCHANGED while the rule moved somewhere nobody is looking. AZ is the logged
+    // instance — DOE 26-2 was published on resilient.az.gov while
+    // efficiencyarizona.com stayed watched and stale. The same shape is in this
+    // file now: development.ohio.gov is Ohio's HEAR/HOMES administrator and
+    // news.duke-energy.com is Duke's release wire, both muted; the CT DEEP /
+    // Energize CT split is the third. Churn on a channel is a reason to watch a
+    // deeper path, never a reason to stop watching the channel.
+    //
+    // Shape: {url: {reason, note, review}} — every mute states why and when it is
+    // next looked at, because a mute with no expiry is indistinguishable from
+    // coverage (CLAUDE.md 8, item 22). The legacy flat array is still read: the
+    // tolerance is load-bearing, not decorative, since `new Set(object)` throws
+    // rather than degrading, so a half-migrated or reverted file would crash the
+    // run outright.
+    const ignoreRaw = loadJson(IGNORE_F, []);
+    const ignoreSet = new Set(Array.isArray(ignoreRaw) ? ignoreRaw : Object.keys(ignoreRaw));
     const accepted = loadJson(NOSIGNAL_F, {});
     const { rows, statesToVerify, unchanged, noSignal, acceptedCount, reasonTally, staleAccept, malformedAccept, mutedHollow, versioned } =
       writeReport(baseline, latest, ignoreSet, humanVerify, accepted);
