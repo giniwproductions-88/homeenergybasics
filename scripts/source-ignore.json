@@ -59,11 +59,6 @@
     "note": "403/bot-walled at mute time. Muted 2026-07-09 in 048bc4e (\"commit baseline (326/361 OK) + ignore list for 23 bot-blocked URLs\").",
     "review": "2026-10-07"
   },
-  "https://resilient.az.gov/resiliency-programs/energy-programs/energy-affordability/efficiency-arizona": {
-    "reason": "bot-wall",
-    "note": "403/bot-walled at mute time. Muted 2026-07-09 in 048bc4e (batch of 23 bot-blocked URLs). CAUTION: this is an ANNOUNCEMENT CHANNEL, not a consumer portal — the 26-2 rule change was published here while efficiencyarizona.com stayed watched and stale. It is the logged instance of the rule at the read site. Muting it was the error the rule now forbids.",
-    "review": "2026-10-07"
-  },
   "https://www.srpnet.com/energy-savings-rebates/home/rebates/air-conditioner": {
     "reason": "bot-wall",
     "note": "403/bot-walled at mute time. Muted 2026-07-09 in 048bc4e (\"commit baseline (326/361 OK) + ignore list for 23 bot-blocked URLs\").",
@@ -137,16 +132,6 @@
   "https://www.duke-energy.com/home/products/smart-saver/heat-pump-water-heater": {
     "reason": "bot-wall",
     "note": "403-walled. Muted 2026-07-20 in 88a7603 (\"mute Duke x4 (403-walled)\").",
-    "review": "2026-10-18"
-  },
-  "https://news.duke-energy.com/releases/new-year-bigger-incentives-as-temperatures-fall-in-the-carolinas-duke-energy-increases-financial-incentives-for-customer-energy-efficiency-and-demand-response-programs": {
-    "reason": "press-release",
-    "note": "NC press release. Muted 2026-07-20 in 88a7603 (\"NC press release\"). CAUTION: this is an ANNOUNCEMENT CHANNEL — Duke's release wire — and the rule at the read site says an announcement channel is never muted. Flagged for un-mute, not merely for review.",
-    "review": "2026-10-18"
-  },
-  "https://development.ohio.gov": {
-    "reason": "homepage-churn",
-    "note": "OH homepage churner. Muted 2026-07-20 in 88a7603 (\"OH/PA homepage churners\"). CAUTION: development.ohio.gov is Ohio's HEAR/HOMES administrator — an ANNOUNCEMENT CHANNEL. Same shape as the AZ error. The churn is a reason to watch a deeper program path, not to mute the channel.",
     "review": "2026-10-18"
   },
   "https://philaenergy.org": {

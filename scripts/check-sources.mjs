@@ -1180,11 +1180,15 @@ async function main() {
     // channel that ANNOUNCES a change is a blind spot: the portal keeps reporting
     // UNCHANGED while the rule moved somewhere nobody is looking. AZ is the logged
     // instance — DOE 26-2 was published on resilient.az.gov while
-    // efficiencyarizona.com stayed watched and stale. The same shape is in this
-    // file now: development.ohio.gov is Ohio's HEAR/HOMES administrator and
-    // news.duke-energy.com is Duke's release wire, both muted; the CT DEEP /
-    // Energize CT split is the third. Churn on a channel is a reason to watch a
-    // deeper path, never a reason to stop watching the channel.
+    // efficiencyarizona.com stayed watched and stale. Three channels sat muted in
+    // this file until 2026-09-07: resilient.az.gov, development.ohio.gov (Ohio's
+    // HEAR/HOMES administrator) and news.duke-energy.com (Duke's release wire).
+    // All three were un-muted under this rule; the CT DEEP / Energize CT split is
+    // the same shape. Churn on a channel is a reason to watch a deeper path, never
+    // a reason to stop watching the channel — and if no deeper path is cited, the
+    // fix is to cite one, not to mute the only watch. philaenergy.org is the live
+    // example of that second form: it stays muted for genuine churn, and PA's
+    // Built to Last has no other source, so the program is currently unwatched.
     //
     // Shape: {url: {reason, note, review}} — every mute states why and when it is
     // next looked at, because a mute with no expiry is indistinguishable from
