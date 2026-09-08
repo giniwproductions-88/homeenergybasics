@@ -56,7 +56,7 @@ const faqJsonLd = {
       name: "What is EmPower+ and how does it connect to HEAR?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "EmPower+ is NYSERDA\u2019s program for income-eligible households at or below 80% of the State or Area Median Income (whichever is greater). Low-income households, at or below 60% of that figure, receive no-cost improvements capped at $12,000 (upstate) or $14,000 (downstate) per project; moderate-income households, under 80%, receive 50% of cost, up to $6,000 (upstate) or $7,000 (downstate). NYSERDA publishes additional per-measure caps under its Sustainable Futures Program, additive to those EmPower+ caps: $10,000 for an air-source heat pump, $10,000 for ground-source, $5,000 for a heat pump water heater, $5,000 for a panel box, and $2,500 for electrical wiring. Federal HEAR funding through EmPower+ covers air sealing, insulation, and ventilation up to $1,600. Low-income projects can be covered in full with zero out-of-pocket expense.",
+        text: "EmPower+ is NYSERDA\u2019s program for income-eligible households at or below 80% of the State or Area Median Income (whichever is greater). Low-income households, at or below 60% of that figure, receive no-cost improvements capped at $12,000 (upstate) or $14,000 (downstate) per project; moderate-income households, under 80%, receive 50% of cost, up to $6,000 (upstate) or $7,000 (downstate). NYSERDA publishes additional per-measure caps under its Sustainable Futures Program, additive to those EmPower+ caps: $10,000 for an air-source heat pump, $10,000 for ground-source, $5,000 for a heat pump water heater, $5,000 for a panel box, and $2,500 for electrical wiring. Federal HEAR funding through EmPower+ covers air sealing, insulation, and ventilation up to $1,600, but only on projects that do not include a heat pump or heat pump water heater, and Sustainable Futures Program funding cannot be combined with IRA HEAR funding on the same project. A heat pump project is therefore the EmPower+ cap plus Sustainable Futures Program amounts, with no HEAR. Low-income projects can be covered in full with zero out-of-pocket expense.",
       },
     },
     {
@@ -365,7 +365,7 @@ export default function NewYorkPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">PSEG Long Island</h3>
           <p className="text-gray-700 leading-relaxed mb-6">
-            PSEG Long Island runs its own program outside NYS Clean Heat, with rebates tiered by income. Whole-house cold-climate air-source rebates for single-family homes run <strong>$4,000</strong> (market rate), <strong>$5,000</strong> (DAC or moderate income, below 80% AMI), and <strong>$7,500</strong> (low income, below 60% AMI). Geothermal is far larger &mdash; up to <strong>$24,000 per dwelling</strong> for new systems at the low-income rate. Systems must be NEEP-listed, sized to 100&ndash;120% of the dwelling&apos;s heating load via Manual J, and installed by a participating Home Comfort Partner. Note that PSEG Long Island&apos;s income tiers (60%/80% AMI) differ from EmPower+&apos;s 80% SMI/AMI standard.
+            PSEG Long Island runs its own program outside NYS Clean Heat, with rebates tiered by income. Whole-house cold-climate air-source rebates for single-family homes run <strong>$4,000</strong> (market rate), <strong>$5,000</strong> (DAC or moderate income, below 80% AMI), and <strong>$7,500</strong> (low income, below 60% AMI). Geothermal is far larger &mdash; up to <strong>$24,000 per dwelling</strong> for new systems at the low-income rate. Systems must be NEEP-listed, sized to 100&ndash;120% of the dwelling&apos;s heating load via Manual J, and installed by a participating Home Comfort Partner. PSEG Long Island&apos;s tiers key on AMI alone, while EmPower+ uses the greater of State or Area Median Income at the same 60% and 80% thresholds. And for downstate EmPower+ projects, PSEG Home Comfort and Home Performance incentives are <strong>deducted from</strong> the EmPower+ cap rather than stacked on top of it.
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
@@ -406,7 +406,7 @@ export default function NewYorkPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">EmPower+, Sustainable Futures Program &amp; Federal HEAR</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            New York was the <strong>first state</strong> to launch IRA-funded home energy rebates (June 2024). EmPower+ covers low-income households&apos; improvements at no cost up to <strong>$12,000</strong> per project upstate or <strong>$14,000</strong> downstate (moderate-income households get 50% coverage up to $6,000&ndash;$7,000). NYSERDA now publishes its per-measure equipment caps under the <strong>Sustainable Futures Program</strong>, additive to those EmPower+ caps: <strong>$10,000</strong> for an air-source heat pump, <strong>$10,000</strong> for ground-source, <strong>$5,000</strong> for a heat pump water heater, <strong>$5,000</strong> for a panel box, and <strong>$2,500</strong> for electrical wiring. Federal HEAR funding through EmPower+ covers <strong>$1,600</strong> for air sealing, insulation, and ventilation. IRA appliance rebates (up to $840, including heat pump clothes dryers) run separately through NYSERDA&apos;s Appliance Upgrade Program.
+            New York was the <strong>first state</strong> to launch IRA-funded home energy rebates (June 2024). EmPower+ covers low-income households&apos; improvements at no cost up to <strong>$12,000</strong> per project upstate or <strong>$14,000</strong> downstate (moderate-income households get 50% coverage up to $6,000&ndash;$7,000). NYSERDA now publishes its per-measure equipment caps under the <strong>Sustainable Futures Program</strong>, additive to those EmPower+ caps: <strong>$10,000</strong> for an air-source heat pump, <strong>$10,000</strong> for ground-source, <strong>$5,000</strong> for a heat pump water heater, <strong>$5,000</strong> for a panel box, and <strong>$2,500</strong> for electrical wiring. Federal HEAR funding through EmPower+ covers <strong>$1,600</strong> for air sealing, insulation, and ventilation &mdash; but only on projects that do <strong>not</strong> include a heat pump or heat pump water heater, and Sustainable Futures Program funding cannot be combined with IRA HEAR on the same project. A heat pump project is therefore the EmPower+ cap plus Sustainable Futures Program amounts, with <strong>no HEAR</strong>. IRA appliance rebates (up to $840, including heat pump clothes dryers) run through NYSERDA&apos;s Appliance Upgrade Program, which <strong>cannot run concurrently with EmPower+</strong> &mdash; a household uses one program at a time, to stay under the $14,000 federal HEAR limit.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Households at or below <strong>60% of the State or Area Median Income (SMI/AMI, whichever is greater)</strong> &mdash; EmPower+&apos;s low-income tier &mdash; can receive <strong>100% of project costs covered</strong> with zero out-of-pocket expense. Households under 80% fall in the moderate-income tier instead, at 50% of cost up to $6,000 upstate or $7,000 downstate. New York&apos;s separate HOMES allocation ($159.3 million for Home Efficiency Rebates) does not yet appear as a standalone consumer offering in NYSERDA&apos;s current program listings &mdash; moderate-income households access EmPower+&apos;s 50% pathway instead.
@@ -465,15 +465,26 @@ export default function NewYorkPage() {
             </div>
 
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-2">At or Below 60% SMI/AMI &mdash; EmPower+ with HEAR (Best Case)</p>
+              <p className="font-semibold text-green-800 mb-2">At or Below 60% SMI/AMI &mdash; EmPower+ (Best Case)</p>
               <ul className="text-sm text-green-900 space-y-1">
                 <li>EmPower+ base (low-income): $12,000 upstate / $14,000 downstate</li>
                 <li>Sustainable Futures Program, additive: $10,000 air-source or ground-source heat pump, $5,000 heat pump water heater, $5,000 panel box, $2,500 wiring</li>
-                <li>HEAR: $1,600 air sealing, insulation, and ventilation</li>
+                <li>No IRA HEAR on this project: the $1,600 insulation, ventilation and air-sealing money is only for projects without a heat pump or heat pump water heater, and Sustainable Futures Program funding cannot be combined with HEAR</li>
                 <li>Coverage: up to 100% of project costs</li>
                 <li>Note: cannot also receive Clean Heat for same HP</li>
               </ul>
               <p className="font-semibold text-green-700 mt-2">Realistic maximum: project fully covered &mdash; free</p>
+            </div>
+
+            <div className="bg-green-50 border border-green-200 rounded-lg p-5">
+              <p className="font-semibold text-green-800 mb-2">Between 60% and 80% SMI/AMI &mdash; EmPower+ (Moderate Tier)</p>
+              <ul className="text-sm text-green-900 space-y-1">
+                <li>EmPower+ moderate: 50% of cost, up to $6,000 upstate / $7,000 downstate</li>
+                <li>Sustainable Futures Program, additive: $10,000 air-source or ground-source heat pump, $5,000 heat pump water heater, $5,000 panel box, $2,500 wiring</li>
+                <li>No IRA HEAR on this project, for the same two reasons as above</li>
+                <li>Note: cannot also receive Clean Heat for same HP</li>
+              </ul>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: the moderate cap plus whichever Sustainable Futures Program measures apply</p>
             </div>
           </div>
 
@@ -599,7 +610,7 @@ export default function NewYorkPage() {
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">IRA Funding Runway</p>
-              <p className="text-sm text-gray-600 mt-1">HEAR and HOMES funds remain available until expended or September 30, 2031. The OBBBA did not repeal IRA rebate allocations. New York has already been distributing funds through EmPower+ since June 2024. DOE&apos;s May 2026 rules (Program Notice 26-2) removed fuel switching from HEAR nationwide; that conformance deadline has passed. NYSERDA now publishes its per-measure equipment caps under the Sustainable Futures Program, with HEAR covering air sealing, insulation, and ventilation. EmPower+ blends state and federal funding, so confirm with NYSERDA which pathway applies to your measures before starting a project.</p>
+              <p className="text-sm text-gray-600 mt-1">HEAR and HOMES funds remain available until expended or September 30, 2031. The OBBBA did not repeal IRA rebate allocations. New York has already been distributing funds through EmPower+ since June 2024. DOE&apos;s May 2026 rules (Program Notice 26-2) removed fuel switching from HEAR nationwide; that conformance deadline has passed. NYSERDA now publishes its per-measure equipment caps under the Sustainable Futures Program; IRA HEAR money covers air sealing, insulation, and ventilation only on projects without a heat pump or heat pump water heater, and cannot be combined with Sustainable Futures Program funding. EmPower+ blends state and federal funding, so confirm with NYSERDA which pathway applies to your measures before starting a project.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">2028 Weatherization Mandate</p>
