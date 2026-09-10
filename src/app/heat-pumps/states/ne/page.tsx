@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title:
     "Nebraska Heat Pump Rebates 2026: $525–$1,200 Utility Rebates + 1.5% Energy Loans | Home Energy Basics",
   description:
-    "NPPD EnergyWise offers up to $1,200. OPPD pays $525. LES adds $800. Federal tax credits ended. Here\u2019s every Nebraska heat pump incentive in 2026.",
+    "NPPD EnergyWise offers up to $1,200. OPPD pays $525. LES adds $1,000. Federal tax credits ended. Here\u2019s every Nebraska heat pump incentive in 2026.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/ne",
   },
@@ -32,7 +32,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in Nebraska in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Nebraska heat pump rebates come from public power utilities. NPPD EnergyWise offers $400\u2013$1,200 for air-source heat pumps depending on efficiency. OPPD pays a flat $525 for all heat pumps. Lincoln Electric System offers $800. The City of Lincoln adds up to $3,000 for low-income homeowners. Federal tax credits (25C/25D) expired December 31, 2025. Nebraska\u2019s IRA-funded HEAR and HOMES programs have not launched.",
+        text: "Nebraska heat pump rebates come from public power utilities. NPPD EnergyWise offers $400\u2013$1,200 for air-source heat pumps depending on efficiency. OPPD pays a flat $525 for all heat pumps. Lincoln Electric System offers $1,000. The City of Lincoln adds up to $3,000 for low-to-moderate income homeowners ($4,000 combined with LES) and up to $1,500 for other homeowners, depending on address. Federal tax credits (25C/25D) expired December 31, 2025. Nebraska\u2019s IRA-funded HEAR and HOMES programs have not launched.",
       },
     },
     {
@@ -103,7 +103,7 @@ export default function NebraskaPage() {
             Nebraska Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Nebraska heat pump incentives are limited in 2026. <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">Federal tax credits expired</Link> in December 2025, and the state&apos;s IRA-funded rebate programs have not launched. Most homeowners rely on utility rebates from OPPD (<strong>$525</strong>), LES (<strong>$800</strong>), or NPPD (up to <strong>$1,200</strong>). Nebraska&apos;s Dollar and Energy Saving Loans offer financing as low as <strong>1.5%</strong> interest. This guide covers all major Nebraska heat pump incentives available in 2026, including utility rebates, state energy loans, the Lincoln city incentive, and IRA program status. Here&apos;s what&apos;s actually available.
+            Nebraska heat pump incentives are limited in 2026. <Link href="/federal-heat-pump-tax-credit-expired" className="text-brand-600 hover:underline">Federal tax credits expired</Link> in December 2025, and the state&apos;s IRA-funded rebate programs have not launched. Most homeowners rely on utility rebates from OPPD (<strong>$525</strong>), LES (<strong>$1,000</strong>), or NPPD (up to <strong>$1,200</strong>). Nebraska&apos;s Dollar and Energy Saving Loans offer financing as low as <strong>1.5%</strong> interest. This guide covers all major Nebraska heat pump incentives available in 2026, including utility rebates, state energy loans, the Lincoln city incentive, and IRA program status. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
             Updated {formattedDate} — verified against official program sources
@@ -131,12 +131,12 @@ export default function NebraskaPage() {
               <p className="text-sm text-green-900">Nebraska Public Power District offers $400–$1,200 for air-source heat pumps through participating local utilities across rural and outstate Nebraska. High-efficiency inverter units qualify for the top tier.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-1">✓ LES + Lincoln city: up to $3,800</p>
-              <p className="text-sm text-green-900">Lincoln Electric System pays $800 for heat pumps. The City of Lincoln adds up to $3,000 for low-to-moderate income homeowners (at or below 80% Lincoln AMI). General-population city incentives are sold out.</p>
+              <p className="font-semibold text-green-800 mb-1">✓ LES + Lincoln city: up to $4,000</p>
+              <p className="text-sm text-green-900">Lincoln Electric System pays $1,000 for heat pumps. The City of Lincoln adds up to $3,000 for low-to-moderate income homeowners (at or below 80% Lincoln AMI) and up to $500–$1,500 for other homeowners, depending on address. A new round opened September 1, 2026.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-1">✓ Total potential: $525–$3,800</p>
-              <p className="text-sm text-green-900">$525 (above 150% AMI, OPPD territory) to $3,800 (below 80% AMI, Lincoln). If HEAR launches, income-qualifying households could stack up to ~$9,200–$11,800 depending on location.</p>
+              <p className="font-semibold text-green-800 mb-1">✓ Total potential: $525–$4,000</p>
+              <p className="text-sm text-green-900">$525 (above 150% AMI, OPPD territory) to $4,000 (below 80% AMI, Lincoln). If HEAR launches, income-qualifying households could stack up to ~$9,200–$12,000 depending on location.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">✗ Federal tax credits expired</p>
@@ -324,10 +324,10 @@ export default function NebraskaPage() {
           {/* LES + Lincoln */}
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Lincoln Electric System (LES) + City of Lincoln</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            LES offers an <strong>$800</strong> incentive for qualifying air-source or mini-split heat pumps through its Sustainable Energy Program (SEP), available to all LES customers. LES also offers <strong>$500</strong> for heat pump water heaters (minimum UEF 2.0) and <strong>$550–$1,500</strong> for geothermal ground loop installations.
+            LES offers a <strong>$1,000</strong> incentive for qualifying air-source or mini-split heat pumps through its Sustainable Energy Program (SEP), available to all LES customers. LES also offers <strong>$500</strong> for heat pump water heaters (minimum UEF 2.0) and <strong>$550–$1,500</strong> for geothermal ground loop installations.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            The <strong>City of Lincoln Heat Pump Incentive</strong> stacks on top of the LES rebate. Funded through the Resilient Lincoln sustainability initiative, the current round runs September 1, 2025 through August 31, 2026.
+            The <strong>City of Lincoln Heat Pump Incentive</strong> stacks on top of the LES rebate. Funded through the Resilient Lincoln sustainability initiative, a new round opened September 1, 2026. Rounds run September 1 through August 31, and the combined city-plus-LES incentive is up to $4,000.
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
@@ -342,27 +342,33 @@ export default function NebraskaPage() {
               <tbody>
                 <tr className="border-b">
                   <td className="p-3">HP replacing a heat pump (general)</td>
-                  <td className="p-3">$500</td>
-                  <td className="p-3">$800</td>
-                  <td className="p-3 font-semibold">$1,300</td>
+                  <td className="p-3">Up to $500</td>
+                  <td className="p-3">$1,000</td>
+                  <td className="p-3 font-semibold">Up to $1,500</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">HP replacing an AC (general)</td>
-                  <td className="p-3">$1,500</td>
-                  <td className="p-3">$800</td>
-                  <td className="p-3 font-semibold">$2,300</td>
+                  <td className="p-3">Up to $1,500</td>
+                  <td className="p-3">$1,000</td>
+                  <td className="p-3 font-semibold">Up to $2,500</td>
                 </tr>
                 <tr className="border-b bg-green-50">
                   <td className="p-3">HP replacing HP or AC (≤80% AMI)</td>
                   <td className="p-3">$3,000</td>
-                  <td className="p-3">$800</td>
-                  <td className="p-3 font-semibold">$3,800</td>
+                  <td className="p-3">$1,000</td>
+                  <td className="p-3 font-semibold">$4,000</td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <p className="text-sm text-gray-500 mb-6">
-            General-population City of Lincoln incentives sold out November 3, 2025. The low-to-moderate income tier ($3,000) and the LES $800 incentive remain available.
+          <p className="text-sm text-gray-500 mb-4">
+            General-population city amounts are address-specific; look up your address at lincolnheatpumps.org. LMI applicants must be approved by the City&apos;s Urban Development department before installation.
+          </p>
+          <p className="text-sm text-gray-700 mb-4">
+            <strong>Eligibility:</strong> the new heat pump must replace an existing heat pump or central air conditioner at least 5 years old (a window unit qualifies only if the home has no central AC). It may be paired with a gas or electric furnace. Equipment must be AHRI-rated and either inverter-driven or at least 15.2 SEER2 and 12 EER2. One heat pump per household per September 1 through August 31 cycle.
+          </p>
+          <p className="text-sm text-gray-700 mb-6">
+            <strong>Not eligible:</strong> homes outside Lincoln city limits, commercial and multifamily properties, renter-occupied row houses, townhomes, condos, and duplexes, ground-source systems, new construction, mobile homes, and installations that do not replace an older system.
           </p>
 
           {/* NPPD */}
@@ -484,17 +490,17 @@ export default function NebraskaPage() {
               <ul className="text-sm text-green-900 space-y-1">
                 <li>Federal 25C/25D: $0 (expired)</li>
                 <li>HEAR: $0 (not yet launched — would add up to $8,000)</li>
-                <li>LES Sustainable Energy Program: $800</li>
+                <li>LES Sustainable Energy Program: $1,000</li>
                 <li>City of Lincoln LMI incentive: $3,000</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$3,800</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$4,000</p>
             </div>
           </div>
 
           {/* What you'll actually pay */}
           <div className="bg-gray-100 rounded-lg p-5">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
-            <p className="text-sm text-gray-700">For a typical $10,000 whole-home heat pump installation, most Nebraska homeowners above 150% AMI will pay <strong>$8,800 to $9,475 out of pocket</strong> after utility rebates. Low-income Lincoln homeowners can reduce that to roughly <strong>$6,200</strong>. Dollar and Energy Saving Loans at 1.5%–5% interest can spread remaining costs over up to 15 years. When HEAR launches, income-qualifying households below 80% AMI could see out-of-pocket costs drop to near zero.</p>
+            <p className="text-sm text-gray-700">For a typical $10,000 whole-home heat pump installation, most Nebraska homeowners above 150% AMI will pay <strong>$8,800 to $9,475 out of pocket</strong> after utility rebates. Low-income Lincoln homeowners can reduce that to roughly <strong>$6,000</strong>. Dollar and Energy Saving Loans at 1.5%–5% interest can spread remaining costs over up to 15 years. When HEAR launches, income-qualifying households below 80% AMI could see out-of-pocket costs drop to near zero.</p>
           </div>
 
           <p className="text-sm text-gray-500 mt-4">
@@ -563,7 +569,7 @@ export default function NebraskaPage() {
 
           <div className="bg-green-50 border border-green-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-green-800 mb-1">✓ Best candidates for a heat pump in Nebraska</p>
-            <p className="text-sm text-green-900">Rural homeowners replacing propane heating (highest fuel cost savings plus NPPD&apos;s $1,200 rebate). Lincoln homeowners below 80% AMI ($3,800 in stacked incentives). Homeowners with aging air conditioners who need both heating and cooling replacement (dual-purpose value). Anyone in NPPD territory who can take advantage of the $1,200 top-tier inverter rebate.</p>
+            <p className="text-sm text-green-900">Rural homeowners replacing propane heating (highest fuel cost savings plus NPPD&apos;s $1,200 rebate). Lincoln homeowners below 80% AMI ($4,000 in stacked incentives). Homeowners with aging air conditioners who need both heating and cooling replacement (dual-purpose value). Anyone in NPPD territory who can take advantage of the $1,200 top-tier inverter rebate.</p>
           </div>
 
           <p className="text-gray-700 leading-relaxed">
@@ -635,7 +641,7 @@ export default function NebraskaPage() {
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">City of Lincoln incentive renewal</p>
-              <p className="text-sm text-gray-600 mt-1">The current round ends August 31, 2026. General-population incentives are already sold out, but the LMI tier ($3,000) remains. Whether Lincoln funds a fourth round depends on City Council action and remaining Resilient Lincoln budget.</p>
+              <p className="text-sm text-gray-600 mt-1">A new round opened September 1, 2026, with up to $4,000 combined from the city and LES. Rounds run September 1 through August 31, one heat pump per household per cycle. General-population city amounts are address-specific — look up your address at lincolnheatpumps.org.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">OPPD rebate modernization</p>

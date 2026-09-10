@@ -2184,7 +2184,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     lastVerified: "2026-06-11",
     lastUpdated: "2026-06-11",
     summary:
-      "Nebraska has no statewide heat pump rebate and no state tax credit. Utility rebates are the primary incentive: NPPD EnergyWise offers $400\u2013$1,200 for ASHPs, OPPD pays a flat $525, and LES offers $800. The City of Lincoln adds up to $3,000 for low-income homeowners. Dollar and Energy Saving Loans offer 1.5\u20135% financing. Federal 25C/25D expired Dec 2025. HEAR/HOMES ($91M) not yet launched.",
+      "Nebraska has no statewide heat pump rebate and no state tax credit. Utility rebates are the primary incentive: NPPD EnergyWise offers $400\u2013$1,200 for ASHPs, OPPD pays a flat $525, and LES offers $1,000. The City of Lincoln adds up to $3,000 for homeowners at or below 80% of Lincoln AMI ($4,000 combined with LES). Dollar and Energy Saving Loans offer 1.5\u20135% financing. Federal 25C/25D expired Dec 2025. HEAR/HOMES ($91M) not yet launched.",
     sources: [
       {
         label: "DWEE \u2014 Energy Loans, Grants & Rebates (IRA Status)",
