@@ -57,7 +57,7 @@ export default function WisconsinPage() {
         name: "Can I stack Focus on Energy rebates with HEAR or HOMES in Wisconsin?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Focus on Energy rebates can be combined with either HEAR or HOMES rebates. However, you cannot receive both HEAR and HOMES for the same specific upgrade — choose whichever program provides the larger benefit for each component of your project. A low-income homeowner replacing electric resistance heat could receive ~$8,900 by combining Focus on Energy with HEAR; a low-income propane household can reach ~$11,250 by combining Focus on Energy bonuses with a 35%+ HOMES project.",
+          text: "Yes. Focus on Energy rebates can be combined with either HEAR or HOMES rebates. Focus on Energy states the HEAR/HOMES limit two ways: its HEAR page says you cannot receive both for the same upgrade type at one street address, while its IRA overview says only one program at a time. Confirm with Focus on Energy before planning a project that draws on both. A low-income homeowner replacing electric resistance heat could receive ~$8,900 by combining Focus on Energy with HEAR; a low-income propane household can reach ~$11,250 by combining Focus on Energy bonuses with a 35%+ HOMES project.",
         },
       },
       {
@@ -340,9 +340,26 @@ export default function WisconsinPage() {
                   <td className="p-3">Electrical wiring</td>
                   <td className="p-3 font-semibold">$2,500</td>
                 </tr>
+                <tr className="border-b">
+                  <td className="p-3">Insulation, ventilation, and air sealing</td>
+                  <td className="p-3 font-semibold">$1,600</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Heat pump clothes dryer</td>
+                  <td className="p-3 font-semibold">$840</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-3">Stove, cooktop, or range*</td>
+                  <td className="p-3 font-semibold">$840</td>
+                </tr>
               </tbody>
             </table>
           </div>
+          <p className="text-xs text-gray-500 mb-4">
+            * Stove, cooktop, or range: available only when replacing existing
+            electric equipment, per Focus on Energy&apos;s footnote to this
+            category.
+          </p>
           <p className="text-gray-700 leading-relaxed">
             The maximum combined HEAR rebate per household is{" "}
             <strong>$14,000</strong>. Heat pump installations must use an IRA
@@ -350,11 +367,12 @@ export default function WisconsinPage() {
             self-installed heat pump water heaters can be purchased at retail.
             Focus on Energy stops accepting retail applications and coupons for
             appliances replacing fossil-fuel equipment after{" "}
-            <strong>August 31, 2026, at 5:30 p.m. CT</strong> — Lowe&apos;s
-            coupon reservations share that deadline — and the retail application
-            reopens under the new eligibility requirements on September 1, 2026.
-            Contractor-installed projects are subject to the same new DOE
-            requirements from that date.
+            <strong>August 31, 2026, at 5:30 p.m. CT</strong>, and the retail
+            application reopens under the new eligibility requirements on
+            September 1, 2026. Contractor-installed projects are subject to the
+            same new DOE requirements from that date. Lowe&apos;s
+            instant-discount coupons received before September 1, 2026 may be
+            used until the expiration date printed on the coupon.
           </p>
         </div>
       </section>
@@ -623,10 +641,11 @@ export default function WisconsinPage() {
             How programs stack: maximum realistic incentives
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Focus on Energy rebates, HEAR rebates, and HOMES rebates can all
-            stack — this is explicitly confirmed by Focus on Energy. Two
-            constraints: HOMES and HEAR cannot both cover the same specific
-            upgrade, and starting September 1, 2026, HEAR applies only to
+            Focus on Energy rebates stack with HEAR or with HOMES. Whether HEAR
+            and HOMES can be combined on one project is something Focus on
+            Energy states two ways: its HEAR page says not both for the same
+            upgrade type at one street address, and its IRA overview says only
+            one program at a time. Starting September 1, 2026, HEAR applies only to
             electric-to-electric equipment upgrades (and new construction) under
             DOE Program Notice 26-2. The scenarios below reflect the rules in
             effect from that date.
