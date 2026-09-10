@@ -64,7 +64,7 @@ const faqJsonLd = {
       name: "Is the HP3 program still accepting applications?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Owner-occupied Round 1 and Round 2 funding is fully reserved. Rental property and new construction funding remain available as of July 6, 2026. Each HP3 incentive is up to $2,000 per residence. HP3 is funded through Oregon\u2019s EPA Climate Pollution Reduction Grant award. Check oregon.gov/energy for current status.",
+        text: "Owner-occupied Round 1 and Round 2 funding is fully reserved. Rental property and new construction funding remain available as of September 4, 2026. Each HP3 incentive is up to $2,000 per residence. HP3 is funded through Oregon\u2019s EPA Climate Pollution Reduction Grant award. Check oregon.gov/energy for current status.",
       },
     },
     {
@@ -140,7 +140,7 @@ export default function OregonPage() {
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; ODOE HP3: up to $2,000</p>
-              <p className="text-sm text-green-900">Owner-occupied funding is fully reserved. Rental property and new construction funding remain available. HP3 stacks with Energy Trust but cannot stack with HOMES or HEAR.</p>
+              <p className="text-sm text-green-900">Owner-occupied funding is fully reserved. Rental property and new construction funding remain available as of September 4, 2026, with rental down roughly a third since July. HP3 stacks with Energy Trust but cannot stack with HOMES or HEAR.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; Potential savings: $800 to $9,000+</p>
@@ -245,7 +245,7 @@ export default function OregonPage() {
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-amber-800 mb-1">&#9888; Common mistake: assuming HP3 owner-occupied funding is still available</p>
-            <p className="text-sm text-amber-900">Round 1 and Round 2 funding for owner-occupied homes is fully reserved. Rental property and new construction funding remained available as of July 6, 2026 (about $4.5 million rental and $6.8 million new construction, per ODOE&apos;s posted balances) &#8212; check the ODOE HP3 page for current balances. HP3 can stack with Energy Trust but <strong>cannot</strong> stack with HOMES or HEAR &#8212; you must choose one path.</p>
+            <p className="text-sm text-amber-900">Round 1 and Round 2 funding for owner-occupied homes is fully reserved. Rental property and new construction funding remained available as of September 4, 2026: about $3.03 million rental (1,516 of 6,000 incentives) and $6.67 million new construction (3,334 of 4,000), per ODOE&apos;s posted balances, which ODOE calls approximate and which count both approved and pending reservations. Rental has fallen roughly a third from the $4.5 million posted in July &#8212; check the ODOE HP3 page for current balances. HP3 can stack with Energy Trust but <strong>cannot</strong> stack with HOMES or HEAR &#8212; you must choose one path.</p>
           </div>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Community Heat Pump Deployment Program (CHPDP) &#8212; up to $7,000</h3>
@@ -532,7 +532,7 @@ export default function OregonPage() {
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">HP3 remaining funds</p>
-              <p className="text-sm text-gray-600 mt-1">Owner-occupied funding is exhausted, but rental property and new construction funding remained available as of July 6, 2026. Once depleted, HP3 will not be replenished &#8212; it is a one-time EPA grant. Rental property owners and developers should act while funding lasts.</p>
+              <p className="text-sm text-gray-600 mt-1">Owner-occupied funding is exhausted. Rental and new construction funding remained available as of September 4, 2026. Once depleted, HP3 will not be replenished &#8212; it is a one-time EPA grant. Rental property owners and developers should act while funding lasts.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Energy Trust 2026 program changes</p>
