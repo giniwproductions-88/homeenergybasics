@@ -32,7 +32,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in Texas in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Texas has no statewide heat pump rebate program. Rebates come from your local utility. Austin Energy offers approximately $3,000 for whole-home projects plus 0% APR financing. Oncor provides performance-based incentives through approved contractors. CenterPoint offers up to $500 per unit. CPS Energy pays $100\u2013$275 per ton. Federal Section 25C and 25D tax credits expired December 31, 2025. Texas has no state income tax, so no state-level credits are possible.",
+        text: "Texas has no statewide heat pump rebate program. Rebates come from your local utility. Austin Energy offers approximately $3,000 for whole-home projects plus 0% APR financing. Oncor provides performance-based incentives through approved contractors. CenterPoint HVAC incentives start at $200, vary by installation, and are applied to your installation invoice through a participating contractor. CPS Energy pays $100\u2013$275 per ton. Federal Section 25C and 25D tax credits expired December 31, 2025. Texas has no state income tax, so no state-level credits are possible.",
       },
     },
     {
@@ -111,7 +111,7 @@ export default function TexasPage() {
             Texas Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Texas has no statewide heat pump program and no state income tax. Your rebate depends entirely on which utility serves your home. Austin Energy offers approximately <strong>$3,000</strong> for whole-home projects with 0% financing. In the deregulated market, Oncor provides performance-based incentives and CenterPoint offers up to <strong>$500</strong>. The state&apos;s <strong>$690 million</strong> IRA allocation &mdash; the largest in the country &mdash; has not launched. This guide covers all major Texas heat pump incentives available in 2026, including Austin Energy, Oncor, CenterPoint, CPS Energy, AEP Texas, CoServ, and the pending HEAR/HOMES programs. Here&apos;s what&apos;s actually available.
+            Texas has no statewide heat pump program and no state income tax. Your rebate depends entirely on which utility serves your home. Austin Energy offers approximately <strong>$3,000</strong> for whole-home projects with 0% financing. In the deregulated market, Oncor provides performance-based incentives and CenterPoint incentives start at <strong>$200</strong>, applied to your invoice through a participating contractor. The state&apos;s <strong>$690 million</strong> IRA allocation &mdash; the largest in the country &mdash; has not launched. This guide covers all major Texas heat pump incentives available in 2026, including Austin Energy, Oncor, CenterPoint, CPS Energy, AEP Texas, CoServ, and the pending HEAR/HOMES programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
             Updated {formattedDate} — verified against official program sources
@@ -139,8 +139,8 @@ export default function TexasPage() {
               <p className="text-sm text-green-900">Whole-home projects average $3,000 in rebates. Heat pump rebates $1,000&ndash;$1,600 by tier, plus duct sealing, insulation, and solar screen add-ons. 0% APR financing (5&ndash;10 yr terms) through September 2026.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-1">&#10003; Deregulated TDU rebates: $300&ndash;$3,400</p>
-              <p className="text-sm text-green-900">Oncor: performance-based, potentially $2,000&ndash;$3,400 for large high-efficiency systems. CenterPoint: up to $500/unit. CPS Energy: $100&ndash;$275/ton. AEP Texas: contractor-channel only.</p>
+              <p className="font-semibold text-green-800 mb-1">&#10003; Deregulated TDU rebates: $200&ndash;$3,400</p>
+              <p className="text-sm text-green-900">Oncor: performance-based, potentially $2,000&ndash;$3,400 for large high-efficiency systems. CenterPoint: from $200, varies by installation, via participating contractor. CPS Energy: $100&ndash;$275/ton. AEP Texas: contractor-channel only.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; Potential savings: $0 to $11,000+</p>
@@ -267,7 +267,7 @@ export default function TexasPage() {
                 <tr className="border-b">
                   <td className="p-3 font-semibold">CenterPoint</td>
                   <td className="p-3">Houston, Galveston, Beaumont (deregulated TDU)</td>
-                  <td className="p-3 font-semibold">Up to $500/unit</td>
+                  <td className="p-3 font-semibold">From $200, varies by installation</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">AEP Texas</td>
@@ -305,7 +305,7 @@ export default function TexasPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">CenterPoint Energy &mdash; Houston metro</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            CenterPoint&apos;s Standard Offer Program provides up to <strong>$500 per qualifying heat pump unit</strong>. ENERGY STAR required. Also offers $75 smart thermostat instant discount and free CoolSaver A/C tune-up. Hard-to-Reach program for households &#8804;200% FPG often covers 100% of costs.
+            CenterPoint&apos;s Residential and Hard-to-Reach Standard Offer Program provides HVAC incentives that start at <strong>$200</strong> and may increase depending on your installation. Central A/C, heat pumps, and mini-splits are all eligible; equipment must be at least <strong>15.2 SEER2</strong>. Texas law prevents CenterPoint from offering programs directly to residential customers: every program is delivered by a third-party participating contractor, who applies the incentive to your installation invoice, and CenterPoint is not a party to your agreement with that contractor. The ComfortCheck tune-up requires a system at least one year old and operational, with no tune-up in the past five years, and excludes apartments. The Hard-to-Reach track is likewise contractor-delivered.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">CPS Energy &mdash; San Antonio</h3>
@@ -386,7 +386,7 @@ export default function TexasPage() {
             The Comprehensive Energy Assistance Program (CEAP) provides utility bill payment assistance, emergency energy crisis services, and equipment for households at or below 150% of federal poverty guidelines.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Several utilities run additional low-income programs: Austin Energy Weatherization Assistance, Oncor Low-Income Weatherization, CPS Energy Casa Verde (~$5,000 average), CenterPoint Hard-to-Reach (up to 100% cost coverage), and AEP Texas Targeted Low-Income.
+            Several utilities run additional low-income programs: Austin Energy Weatherization Assistance, Oncor Low-Income Weatherization, CPS Energy Casa Verde (~$5,000 average), CenterPoint Hard-to-Reach (contractor-delivered), and AEP Texas Targeted Low-Income.
           </p>
         </div>
       </section>
@@ -472,7 +472,7 @@ export default function TexasPage() {
               <div className="flex-shrink-0 w-8 h-8 bg-brand-600 text-white rounded-full flex items-center justify-center text-sm font-bold">2</div>
               <div>
                 <p className="font-semibold text-gray-900">Use an approved/participating contractor</p>
-                <p className="text-sm text-gray-700">Oncor, CPS Energy, and Austin Energy whole-home programs require approved contractors. The contractor handles the incentive application and passes savings through. Get at least 3 quotes.</p>
+                <p className="text-sm text-gray-700">Oncor, CenterPoint, CPS Energy, and the Austin Energy whole-home program all require approved or participating contractors. The contractor handles the incentive application and passes savings through &mdash; CenterPoint applies its incentive directly to your invoice. Get at least 3 quotes.</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -589,7 +589,7 @@ export default function TexasPage() {
         <div className="container-narrow">
           <div className="bg-gray-100 rounded-lg p-6">
             <p className="text-gray-500 text-xs leading-relaxed">
-              <strong>Disclaimer:</strong> This page covers the main utility and IRA-related heat pump incentives available to Texas homeowners in 2026. It does not calculate savings, guarantee eligibility, or represent any incentive program. Texas has no statewide heat pump program &mdash; rebates vary entirely by utility territory and may change without notice. Oncor and CenterPoint incentives are performance-based and amounts shown are estimates. We verify status regularly but programs can change without notice. Always confirm current amounts and eligibility with your utility and your contractor before making decisions.
+              <strong>Disclaimer:</strong> This page covers the main utility and IRA-related heat pump incentives available to Texas homeowners in 2026. It does not calculate savings, guarantee eligibility, or represent any incentive program. Texas has no statewide heat pump program &mdash; rebates vary entirely by utility territory and may change without notice. Oncor incentives are performance-based and amounts shown are estimates. CenterPoint&apos;s figure is a published starting amount that varies by installation. We verify status regularly but programs can change without notice. Always confirm current amounts and eligibility with your utility and your contractor before making decisions.
             </p>
           </div>
           <p className="text-sm text-gray-600 mt-4">

@@ -585,10 +585,10 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "TX",
     stateName: "Texas",
     status: "limited",
-    lastVerified: "2026-06-06",
-    lastUpdated: "2026-06-06",
+    lastVerified: "2026-09-08",
+    lastUpdated: "2026-09-08",
     summary:
-      "Texas has no statewide heat pump rebate program and no state income tax. Rebates come from your local utility and vary widely. Austin Energy offers approximately $3,000 for whole-home projects plus 0% APR financing. Oncor provides performance-based incentives through approved contractors. CenterPoint offers up to $500 per unit. CPS Energy pays $100–$275 per ton. Federal tax credits (25C/25D) ended December 31, 2025. Texas received $690 million in IRA HOMES/HEAR funding; SECO signed APTIM as implementer and targets a fall 2026 launch but has not opened the program.",
+      "Texas has no statewide heat pump rebate program and no state income tax. Rebates come from your local utility and vary widely. Austin Energy offers approximately $3,000 for whole-home projects plus 0% APR financing. Oncor provides performance-based incentives through approved contractors. CenterPoint HVAC incentives start at $200, vary by installation, and are applied to your installation invoice through a participating contractor. CPS Energy pays $100–$275 per ton. Federal tax credits (25C/25D) ended December 31, 2025. Texas received $690 million in IRA HOMES/HEAR funding; SECO signed APTIM as implementer and targets a fall 2026 launch but has not opened the program.",
     sources: [
       {
         label: "Austin Energy — Rebates & Incentives",
@@ -599,8 +599,12 @@ export const incentives: Record<StateCode, StateIncentive> = {
         url: "https://www.oncor.com/content/oncorwww/talot/en/home/get-started/residential/home-efficiency.html",
       },
       {
-        label: "CenterPoint Energy — Residential Efficiency Programs",
-        url: "https://www.centerpointenergy.com/en-us/residential/save-energy-money/electric-efficiency-programs/residential-electric-efficiency?sa=ho",
+        label: "CenterPoint Energy — Heating & Cooling Incentives (Houston Electric)",
+        url: "https://www.centerpointenergy.com/en-us/savings-solutions/energy-efficiency/heating-cooling",
+      },
+      {
+        label: "CenterPoint Energy — Energy Efficiency Programs Hub",
+        url: "https://www.centerpointenergy.com/en-us/savings-solutions/energy-efficiency",
       },
       {
         label: "CPS Energy — SaveNow Rebates",
