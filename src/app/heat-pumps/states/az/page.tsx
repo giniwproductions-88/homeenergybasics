@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://homeenergybasics.com/heat-pumps/states/az",
     type: "article",
     publishedTime: "2026-03-23T11:16:55-05:00",
-    modifiedTime: `${incentives.AZ.lastVerified}T00:00:00Z`,
+    modifiedTime: `${incentives.AZ.lastUpdated}T00:00:00Z`,
   },
 };
 
@@ -30,7 +30,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Arizona Heat Pump Rebates & Incentives (2026)",
   datePublished: "2026-03-23T11:16:55-05:00",
-  dateModified: `${incentives.AZ.lastVerified}T00:00:00Z`,
+  dateModified: `${incentives.AZ.lastUpdated}T00:00:00Z`,
   author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/az",
@@ -108,7 +108,11 @@ export default function ArizonaPage() {
             Arizona&apos;s heat pump incentives changed dramatically in 2026. Federal tax credits are gone, but the state&apos;s Efficiency Arizona program now offers up to <strong>$8,000</strong> per heat pump for income-qualified households. Utility rebates vary widely — SRP&apos;s Cool Cash program offers up to <strong>$1,125</strong> for a 5-ton variable-capacity system, while APS eliminated all residential rebates entirely. Efficiency Arizona&apos;s own rules changed on <strong>September 1, 2026</strong>: gas-to-electric projects no longer qualify, and a heat pump no longer has to be the home&apos;s primary heating and cooling source. This guide covers all major Arizona heat pump incentives available in 2026, including Efficiency Arizona HEAR, SRP Cool Cash, TEP, and the City of Flagstaff program. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} — verified against official program sources
+            {azIncentive.lastUpdated === azIncentive.lastVerified ? (
+              <>Updated {formattedDate} — verified against official program sources</>
+            ) : (
+              <>Updated {formatDate(azIncentive.lastUpdated)} · Last verified {formattedDate} against official program sources</>
+            )}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

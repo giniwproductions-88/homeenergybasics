@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://homeenergybasics.com/heat-pumps/states/pa",
     type: "article",
     publishedTime: "2026-03-22T16:55:34-05:00",
-    modifiedTime: `${incentives.PA.lastVerified}T00:00:00Z`,
+    modifiedTime: `${incentives.PA.lastUpdated}T00:00:00Z`,
   },
 };
 
@@ -83,7 +83,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Pennsylvania Heat Pump Rebates & Incentives (2026)",
   datePublished: "2026-03-22T16:55:34-05:00",
-  dateModified: `${incentives.PA.lastVerified}T00:00:00Z`,
+  dateModified: `${incentives.PA.lastUpdated}T00:00:00Z`,
   author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/pa",
@@ -114,7 +114,11 @@ export default function PennsylvaniaPage() {
             Pennsylvania&apos;s utility rebates are coming back online. Act 129 <strong>Phase V began June 1, 2026</strong>, and three of the five rebate-paying utilities &mdash; PECO, PPL, and UGI Electric &mdash; have published new heat pump rebate schedules that are claimable today. Duquesne Light&apos;s program is &quot;currently being refreshed,&quot; and FirstEnergy&apos;s portal still shows only Phase IV closeout information. Federal tax credits ended December 31, 2025, and <strong>Penn Energy Savers still has not launched</strong>. This guide covers each utility&apos;s current amounts, the Philadelphia-area EAP fall rebate (contract window August 3&ndash;November 13), the 1% HEELP loan, and what to watch for.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} &mdash; verified against official program sources
+            {paIncentive.lastUpdated === paIncentive.lastVerified ? (
+              <>Updated {formattedDate} &mdash; verified against official program sources</>
+            ) : (
+              <>Updated {formatDate(paIncentive.lastUpdated)} · Last verified {formattedDate} against official program sources</>
+            )}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

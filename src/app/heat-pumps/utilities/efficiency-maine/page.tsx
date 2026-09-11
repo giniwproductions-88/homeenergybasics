@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     url: "https://homeenergybasics.com/heat-pumps/utilities/efficiency-maine",
     type: "article",
     publishedTime: "2026-07-16T00:00:00Z",
-    modifiedTime: `${utilities["efficiency-maine"].lastVerified}T00:00:00Z`,
+    modifiedTime: `${utilities["efficiency-maine"].lastUpdated}T00:00:00Z`,
   },
 };
 
@@ -34,7 +34,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Efficiency Maine Heat Pump Rebates & Incentives (2026)",
   datePublished: "2026-07-16T00:00:00Z",
-  dateModified: `${utilities["efficiency-maine"].lastVerified}T00:00:00Z`,
+  dateModified: `${utilities["efficiency-maine"].lastUpdated}T00:00:00Z`,
   author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/utilities/efficiency-maine",
@@ -122,7 +122,11 @@ export default function EfficiencyMainePage() {
             Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Last verified: {formattedDate}
+            {utility.lastUpdated === utility.lastVerified ? (
+              <>Last verified: {formattedDate}</>
+            ) : (
+              <>Updated {formatDate(utility.lastUpdated)} · Last verified {formattedDate} against official program sources</>
+            )}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

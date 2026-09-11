@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://homeenergybasics.com/heat-pumps/states/fl",
     type: "article",
     publishedTime: "2026-03-23T17:21:12-05:00",
-    modifiedTime: `${incentives.FL.lastVerified}T00:00:00Z`,
+    modifiedTime: `${incentives.FL.lastUpdated}T00:00:00Z`,
   },
 };
 
@@ -75,7 +75,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Florida Heat Pump Rebates & Incentives (2026)",
   datePublished: "2026-03-23T17:21:12-05:00",
-  dateModified: `${incentives.FL.lastVerified}T00:00:00Z`,
+  dateModified: `${incentives.FL.lastUpdated}T00:00:00Z`,
   author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/fl",

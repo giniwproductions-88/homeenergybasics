@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://homeenergybasics.com/heat-pumps/states/id",
     type: "article",
     publishedTime: "2026-03-24T10:25:32-05:00",
-    modifiedTime: `${incentives.ID.lastVerified}T00:00:00Z`,
+    modifiedTime: `${incentives.ID.lastUpdated}T00:00:00Z`,
   },
 };
 
@@ -75,7 +75,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Idaho Heat Pump Rebates & Incentives (2026)",
   datePublished: "2026-03-24T10:25:32-05:00",
-  dateModified: `${incentives.ID.lastVerified}T00:00:00Z`,
+  dateModified: `${incentives.ID.lastUpdated}T00:00:00Z`,
   author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/id",
@@ -113,7 +113,11 @@ export default function IdahoPage() {
             Program. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} — verified against official program sources
+            {idIncentive.lastUpdated === idIncentive.lastVerified ? (
+              <>Updated {formattedDate} — verified against official program sources</>
+            ) : (
+              <>Updated {formatDate(idIncentive.lastUpdated)} · Last verified {formattedDate} against official program sources</>
+            )}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

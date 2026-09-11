@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://homeenergybasics.com/heat-pumps/states/wy",
     type: "article",
     publishedTime: "2026-03-24T14:13:47-05:00",
-    modifiedTime: `${incentives.WY.lastVerified}T00:00:00Z`,
+    modifiedTime: `${incentives.WY.lastUpdated}T00:00:00Z`,
   },
 };
 
@@ -28,7 +28,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Wyoming Heat Pump Rebates & Incentives (2026)",
   datePublished: "2026-03-24T14:13:47-05:00",
-  dateModified: `${incentives.WY.lastVerified}T00:00:00Z`,
+  dateModified: `${incentives.WY.lastUpdated}T00:00:00Z`,
   author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/wy",
@@ -106,7 +106,11 @@ export default function WyomingPage() {
             Wyoming&apos;s heat pump incentive landscape is thin. Federal tax credits expired, the state has no income tax (and therefore no state energy credits), and the <strong>$69.2 million</strong> IRA-funded Home Energy Savings Program has not launched. The main incentive available is Rocky Mountain Power&apos;s Wattsmart program, offering up to <strong>$1,700</strong> for cold-climate heat pumps converting from electric resistance. This guide covers all major Wyoming heat pump incentives available in 2026, including Wattsmart rebates, rural co-op programs, and the frozen IRA allocation. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} — verified against official program sources
+            {wyIncentive.lastUpdated === wyIncentive.lastVerified ? (
+              <>Updated {formattedDate} — verified against official program sources</>
+            ) : (
+              <>Updated {formatDate(wyIncentive.lastUpdated)} · Last verified {formattedDate} against official program sources</>
+            )}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

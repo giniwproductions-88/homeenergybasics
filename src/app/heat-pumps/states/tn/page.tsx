@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://homeenergybasics.com/heat-pumps/states/tn",
     type: "article",
     publishedTime: "2026-03-23T19:16:59-05:00",
-    modifiedTime: `${incentives.TN.lastVerified}T00:00:00Z`,
+    modifiedTime: `${incentives.TN.lastUpdated}T00:00:00Z`,
   },
 };
 
@@ -75,7 +75,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Tennessee Heat Pump Rebates & Incentives (2026)",
   datePublished: "2026-03-23T19:16:59-05:00",
-  dateModified: `${incentives.TN.lastVerified}T00:00:00Z`,
+  dateModified: `${incentives.TN.lastUpdated}T00:00:00Z`,
   author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/tn",
@@ -106,7 +106,11 @@ export default function TennesseePage() {
             TVA EnergyRight rebates of <strong>$500–$800</strong> for air-source heat pumps (and <strong>$1,500</strong> for geothermal) are the only active heat pump incentive for most Tennessee homeowners right now. Federal tax credits expired December 31, 2025. IRA-funded HEAR rebates covering up to <strong>$8,000</strong> per heat pump are approved but have not yet launched. This guide covers all major Tennessee heat pump incentives available in 2026, including TVA EnergyRight, HEAR, HOMES, and utility-specific programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} — verified against official program sources
+            {tnIncentive.lastUpdated === tnIncentive.lastVerified ? (
+              <>Updated {formattedDate} — verified against official program sources</>
+            ) : (
+              <>Updated {formatDate(tnIncentive.lastUpdated)} · Last verified {formattedDate} against official program sources</>
+            )}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

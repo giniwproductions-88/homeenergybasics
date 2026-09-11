@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://homeenergybasics.com/heat-pumps/states/ny",
     type: "article",
     publishedTime: "2026-03-21T23:25:20-05:00",
-    modifiedTime: `${incentives.NY.lastVerified}T00:00:00Z`,
+    modifiedTime: `${incentives.NY.lastUpdated}T00:00:00Z`,
   },
 };
 
@@ -83,7 +83,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "New York Heat Pump Rebates & Incentives (2026)",
   datePublished: "2026-03-21T23:25:20-05:00",
-  dateModified: `${incentives.NY.lastVerified}T00:00:00Z`,
+  dateModified: `${incentives.NY.lastUpdated}T00:00:00Z`,
   author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/ny",
@@ -114,7 +114,11 @@ export default function NewYorkPage() {
             New York offers some of the largest heat pump rebates in the U.S. through the NYS Clean Heat program &mdash; up to <strong>$12,000</strong> for air-source systems and up to <strong>$40,000</strong> for geothermal. Income-eligible households can layer NYSERDA&apos;s Sustainable Futures Program per-measure caps on top of EmPower+ base incentives of <strong>$12,000</strong> upstate or <strong>$14,000</strong> downstate. Federal tax credits ended December 31, 2025, but state and utility incentives make New York one of the best places to install a heat pump in 2026. This guide covers all major New York heat pump incentives available in 2026, including NYS Clean Heat, Con Edison, National Grid, PSEG Long Island, Central Hudson, EmPower+, the Weatherized Tier, and the state geothermal credit. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} — verified against official program sources
+            {nyIncentive.lastUpdated === nyIncentive.lastVerified ? (
+              <>Updated {formattedDate} — verified against official program sources</>
+            ) : (
+              <>Updated {formatDate(nyIncentive.lastUpdated)} · Last verified {formattedDate} against official program sources</>
+            )}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://homeenergybasics.com/heat-pumps/states/mi",
     type: "article",
     publishedTime: "2026-03-22T22:05:30-05:00",
-    modifiedTime: `${incentives.MI.lastVerified}T00:00:00Z`,
+    modifiedTime: `${incentives.MI.lastUpdated}T00:00:00Z`,
   },
 };
 
@@ -28,7 +28,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Michigan Heat Pump Rebates & Incentives (2026)",
   datePublished: "2026-03-22T22:05:30-05:00",
-  dateModified: `${incentives.MI.lastVerified}T00:00:00Z`,
+  dateModified: `${incentives.MI.lastUpdated}T00:00:00Z`,
   author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/mi",
@@ -122,7 +122,11 @@ export default function MichiganPage() {
             what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} — verified against official program sources
+            {miIncentive.lastUpdated === miIncentive.lastVerified ? (
+              <>Updated {formattedDate} — verified against official program sources</>
+            ) : (
+              <>Updated {formatDate(miIncentive.lastUpdated)} · Last verified {formattedDate} against official program sources</>
+            )}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

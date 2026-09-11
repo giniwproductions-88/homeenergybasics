@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://homeenergybasics.com/heat-pumps/states/ga",
     type: "article",
     publishedTime: "2026-03-23T11:16:55-05:00",
-    modifiedTime: `${incentives.GA.lastVerified}T00:00:00Z`,
+    modifiedTime: `${incentives.GA.lastUpdated}T00:00:00Z`,
   },
 };
 
@@ -75,7 +75,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Georgia Heat Pump Rebates & Incentives (2026)",
   datePublished: "2026-03-23T11:16:55-05:00",
-  dateModified: `${incentives.GA.lastVerified}T00:00:00Z`,
+  dateModified: `${incentives.GA.lastUpdated}T00:00:00Z`,
   author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/ga",
@@ -107,7 +107,11 @@ export default function GeorgiaPage() {
             Georgia homeowners can still access <strong>$2,000 to $18,500</strong> in heat pump rebates in 2026 {"\u2014"} but the landscape shifted twice: federal tax credits expired December 31, 2025, and in August 2026 Georgia <strong>paused new HEAR applications</strong> and, under updated federal rules, <strong>ended HEAR rebates for gas-to-electric conversions</strong>. The main incentives still open are Georgia&apos;s IRA-funded HER whole-home program, plus utility rebates from Georgia Power and the state&apos;s EMCs. This guide covers all major Georgia heat pump incentives available in 2026, including HER, the HEAR pause, Georgia Power HEIP, and EMC programs. Here&apos;s what&apos;s actually available {"\u2014"} and what you&apos;ll realistically get after rebates.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} — verified against official program sources
+            {gaIncentive.lastUpdated === gaIncentive.lastVerified ? (
+              <>Updated {formattedDate} — verified against official program sources</>
+            ) : (
+              <>Updated {formatDate(gaIncentive.lastUpdated)} · Last verified {formattedDate} against official program sources</>
+            )}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

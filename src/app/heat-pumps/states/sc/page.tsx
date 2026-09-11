@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://homeenergybasics.com/heat-pumps/states/sc",
     type: "article",
     publishedTime: "2026-03-23T20:13:51-05:00",
-    modifiedTime: `${incentives.SC.lastVerified}T00:00:00Z`,
+    modifiedTime: `${incentives.SC.lastUpdated}T00:00:00Z`,
   },
 };
 
@@ -75,7 +75,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "South Carolina Heat Pump Rebates & Incentives (2026)",
   datePublished: "2026-03-23T20:13:51-05:00",
-  dateModified: `${incentives.SC.lastVerified}T00:00:00Z`,
+  dateModified: `${incentives.SC.lastUpdated}T00:00:00Z`,
   author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/sc",

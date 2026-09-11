@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://homeenergybasics.com/heat-pumps/states/de",
     type: "article",
     publishedTime: "2026-03-23",
-    modifiedTime: `${incentives.DE.lastVerified}T00:00:00Z`,
+    modifiedTime: `${incentives.DE.lastUpdated}T00:00:00Z`,
   },
 };
 
@@ -75,7 +75,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Delaware Heat Pump Rebates & Incentives (2026)",
   datePublished: "2026-03-23",
-  dateModified: `${incentives.DE.lastVerified}T00:00:00Z`,
+  dateModified: `${incentives.DE.lastUpdated}T00:00:00Z`,
   author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/de",
@@ -114,7 +114,11 @@ export default function DelawarePage() {
             IRA rebate programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} — verified against official program sources
+            {deIncentive.lastUpdated === deIncentive.lastVerified ? (
+              <>Updated {formattedDate} — verified against official program sources</>
+            ) : (
+              <>Updated {formatDate(deIncentive.lastUpdated)} · Last verified {formattedDate} against official program sources</>
+            )}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

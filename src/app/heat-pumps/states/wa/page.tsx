@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://homeenergybasics.com/heat-pumps/states/wa",
     type: "article",
     publishedTime: "2026-03-21T23:25:20-05:00",
-    modifiedTime: `${incentives.WA.lastVerified}T00:00:00Z`,
+    modifiedTime: `${incentives.WA.lastUpdated}T00:00:00Z`,
   },
 };
 
@@ -28,7 +28,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Washington Heat Pump Rebates & Incentives (2026)",
   datePublished: "2026-03-21T23:25:20-05:00",
-  dateModified: `${incentives.WA.lastVerified}T00:00:00Z`,
+  dateModified: `${incentives.WA.lastUpdated}T00:00:00Z`,
   author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/wa",
@@ -114,7 +114,11 @@ export default function WashingtonPage() {
             Federal tax credits are gone, but Washington has more active incentive layers than most states. Utility rebates from PSE reach up to <strong>$5,000</strong> income-qualified, a state-funded HEAR program backed by <strong>$103.6 million</strong> in Climate Commitment Act revenue is open and paying rebates, and federal HARP rebates (up to <strong>$8,000</strong>) remain unlaunched after DOE revised its program guidelines on June 1, 2026. Seattle&apos;s Clean Heat program offers <strong>$2,000</strong> for oil-to-heat-pump conversions at any income — up to <strong>$6,000</strong> with the moderate-income bonus (installations by September 30, 2026). This guide covers all major Washington heat pump incentives available in 2026, including PSE, Seattle City Light, Snohomish PUD, Avista, the state HEAR program, and the pending federal HARP/HOMES programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} — verified against official program sources
+            {waIncentive.lastUpdated === waIncentive.lastVerified ? (
+              <>Updated {formattedDate} — verified against official program sources</>
+            ) : (
+              <>Updated {formatDate(waIncentive.lastUpdated)} · Last verified {formattedDate} against official program sources</>
+            )}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

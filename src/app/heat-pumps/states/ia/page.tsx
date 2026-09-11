@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://homeenergybasics.com/heat-pumps/states/ia",
     type: "article",
     publishedTime: "2026-03-23T22:15:04-05:00",
-    modifiedTime: `${incentives.IA.lastVerified}T00:00:00Z`,
+    modifiedTime: `${incentives.IA.lastUpdated}T00:00:00Z`,
   },
 };
 
@@ -75,7 +75,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Iowa Heat Pump Rebates & Incentives (2026)",
   datePublished: "2026-03-23T22:15:04-05:00",
-  dateModified: `${incentives.IA.lastVerified}T00:00:00Z`,
+  dateModified: `${incentives.IA.lastUpdated}T00:00:00Z`,
   author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/ia",
@@ -107,7 +107,11 @@ export default function IowaPage() {
             Iowa homeowners can claim <strong>$300–$713</strong> in utility instant discounts from MidAmerican Energy and Alliant Energy for air-source heat pumps. Federal tax credits expired December 31, 2025, and Iowa&apos;s IRA-funded HEAR and HOMES programs remain funded but unlaunched. This guide covers all major Iowa heat pump incentives available in 2026, including utility discounts, municipal programs, rural cooperative rebates, and HEAR/HOMES status. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} — verified against official program sources
+            {iaIncentive.lastUpdated === iaIncentive.lastVerified ? (
+              <>Updated {formattedDate} — verified against official program sources</>
+            ) : (
+              <>Updated {formatDate(iaIncentive.lastUpdated)} · Last verified {formattedDate} against official program sources</>
+            )}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://homeenergybasics.com/heat-pumps/states/wi",
     type: "article",
     publishedTime: "2026-03-22T22:48:47-05:00",
-    modifiedTime: `${incentives.WI.lastVerified}T00:00:00Z`,
+    modifiedTime: `${incentives.WI.lastUpdated}T00:00:00Z`,
   },
 };
 
@@ -30,7 +30,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Wisconsin Heat Pump Rebates & Incentives (2026)",
   datePublished: "2026-03-22T22:48:47-05:00",
-  dateModified: `${incentives.WI.lastVerified}T00:00:00Z`,
+  dateModified: `${incentives.WI.lastUpdated}T00:00:00Z`,
   author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/wi",
@@ -122,7 +122,11 @@ export default function WisconsinPage() {
             available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} — verified against official program sources
+            {wiIncentive.lastUpdated === wiIncentive.lastVerified ? (
+              <>Updated {formattedDate} — verified against official program sources</>
+            ) : (
+              <>Updated {formatDate(wiIncentive.lastUpdated)} · Last verified {formattedDate} against official program sources</>
+            )}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

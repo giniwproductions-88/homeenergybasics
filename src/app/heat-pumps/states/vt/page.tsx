@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://homeenergybasics.com/heat-pumps/states/vt",
     type: "article",
     publishedTime: "2026-03-22T20:50:28-05:00",
-    modifiedTime: `${incentives.VT.lastVerified}T00:00:00Z`,
+    modifiedTime: `${incentives.VT.lastUpdated}T00:00:00Z`,
   },
 };
 
@@ -28,7 +28,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Vermont Heat Pump Rebates & Incentives (2026)",
   datePublished: "2026-03-22T20:50:28-05:00",
-  dateModified: `${incentives.VT.lastVerified}T00:00:00Z`,
+  dateModified: `${incentives.VT.lastUpdated}T00:00:00Z`,
   author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/vt",
@@ -114,7 +114,11 @@ export default function VermontPage() {
             Vermont still offers heat pump rebates in 2026 — but they&apos;re smaller and more fragmented than before. With federal tax credits gone and the Clean Heat Standard canceled, most homeowners now rely on utility programs through Efficiency Vermont and Burlington Electric. Rebates range from about <strong>$2,000 to $7,950</strong> for a ducted system — up to <strong>~$9,150</strong> with a heat pump water heater — depending on your utility and income. Burlington Electric leads the state at up to <strong>$7,950</strong> for income-qualified ducted systems. Green Mountain Power customers can stack up to <strong>$5,400</strong> at ≤80% AMI. This guide covers all major Vermont heat pump incentives available in 2026, including Efficiency Vermont, Burlington Electric, Green Mountain Power, VEC, and the paused HEAR program. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} — verified against official program sources
+            {vtIncentive.lastUpdated === vtIncentive.lastVerified ? (
+              <>Updated {formattedDate} — verified against official program sources</>
+            ) : (
+              <>Updated {formatDate(vtIncentive.lastUpdated)} · Last verified {formattedDate} against official program sources</>
+            )}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

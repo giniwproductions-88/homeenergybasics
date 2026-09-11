@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://homeenergybasics.com/heat-pumps/states/co",
     type: "article",
     publishedTime: "2026-03-22T12:31:12-05:00",
-    modifiedTime: `${incentives.CO.lastVerified}T00:00:00Z`,
+    modifiedTime: `${incentives.CO.lastUpdated}T00:00:00Z`,
   },
 };
 
@@ -28,7 +28,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Colorado Heat Pump Rebates & Incentives (2026)",
   datePublished: "2026-03-22T12:31:12-05:00",
-  dateModified: `${incentives.CO.lastVerified}T00:00:00Z`,
+  dateModified: `${incentives.CO.lastUpdated}T00:00:00Z`,
   author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/co",
@@ -134,7 +134,11 @@ export default function ColoradoPage() {
             actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} — verified against official program sources
+            {coIncentive.lastUpdated === coIncentive.lastVerified ? (
+              <>Updated {formattedDate} — verified against official program sources</>
+            ) : (
+              <>Updated {formatDate(coIncentive.lastUpdated)} · Last verified {formattedDate} against official program sources</>
+            )}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

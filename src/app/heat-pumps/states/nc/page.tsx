@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://homeenergybasics.com/heat-pumps/states/nc",
     type: "article",
     publishedTime: "2026-03-23T12:00:17-05:00",
-    modifiedTime: `${incentives.NC.lastVerified}T00:00:00Z`,
+    modifiedTime: `${incentives.NC.lastUpdated}T00:00:00Z`,
   },
 };
 
@@ -30,7 +30,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "North Carolina Heat Pump Rebates & Incentives (2026)",
   datePublished: "2026-03-23T12:00:17-05:00",
-  dateModified: `${incentives.NC.lastVerified}T00:00:00Z`,
+  dateModified: `${incentives.NC.lastUpdated}T00:00:00Z`,
   author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/nc",

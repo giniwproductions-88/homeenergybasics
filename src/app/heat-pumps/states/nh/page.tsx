@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://homeenergybasics.com/heat-pumps/states/nh",
     type: "article",
     publishedTime: "2026-03-22T21:37:55-05:00",
-    modifiedTime: `${incentives.NH.lastVerified}T00:00:00Z`,
+    modifiedTime: `${incentives.NH.lastUpdated}T00:00:00Z`,
   },
 };
 
@@ -75,7 +75,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "New Hampshire Heat Pump Rebates & Incentives (2026)",
   datePublished: "2026-03-22T21:37:55-05:00",
-  dateModified: `${incentives.NH.lastVerified}T00:00:00Z`,
+  dateModified: `${incentives.NH.lastUpdated}T00:00:00Z`,
   author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/nh",
@@ -106,7 +106,11 @@ export default function NewHampshirePage() {
             New Hampshire heat pump incentives have two layers active right now: NHSaves utility rebates (up to <strong>$2,000 per ton</strong> for electric resistance replacement) and the new <strong>$650</strong> NE Heat Pump Accelerator. Federal tax credits expired December 31, 2025, and the state&apos;s HEAR program has not launched yet. This guide covers all major New Hampshire heat pump incentives available in 2026, including NHSaves, the NE Accelerator, HEAR status, and financing options. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} — verified against official program sources
+            {nhIncentive.lastUpdated === nhIncentive.lastVerified ? (
+              <>Updated {formattedDate} — verified against official program sources</>
+            ) : (
+              <>Updated {formatDate(nhIncentive.lastUpdated)} · Last verified {formattedDate} against official program sources</>
+            )}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

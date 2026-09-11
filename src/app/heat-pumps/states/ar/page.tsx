@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://homeenergybasics.com/heat-pumps/states/ar",
     type: "article",
     publishedTime: "2026-03-24T20:56:38-05:00",
-    modifiedTime: `${incentives.AR.lastVerified}T00:00:00Z`,
+    modifiedTime: `${incentives.AR.lastUpdated}T00:00:00Z`,
   },
 };
 
@@ -28,7 +28,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Arkansas Heat Pump Rebates & Incentives (2026)",
   datePublished: "2026-03-24T20:56:38-05:00",
-  dateModified: `${incentives.AR.lastVerified}T00:00:00Z`,
+  dateModified: `${incentives.AR.lastUpdated}T00:00:00Z`,
   author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/ar",
@@ -106,7 +106,11 @@ export default function ArkansasPage() {
             Arkansas heat pump incentives in 2026 are limited to utility rebates. SWEPCO offers up to <strong>$2,500</strong> and OG&amp;E up to <strong>$3,000</strong> for qualifying systems, but Entergy Arkansas &mdash; the state&apos;s largest utility &mdash; has no central heat pump rebate. The state&apos;s <strong>$105 million</strong> in IRA-funded HEAR/HOMES rebates have not launched yet. This guide covers all major Arkansas heat pump incentives available in 2026, including SWEPCO, OG&amp;E, Entergy, cooperative programs, and the pending IRA rebates. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} — verified against official program sources
+            {arIncentive.lastUpdated === arIncentive.lastVerified ? (
+              <>Updated {formattedDate} — verified against official program sources</>
+            ) : (
+              <>Updated {formatDate(arIncentive.lastUpdated)} · Last verified {formattedDate} against official program sources</>
+            )}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

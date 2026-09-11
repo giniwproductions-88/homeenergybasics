@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://homeenergybasics.com/heat-pumps/states/nm",
     type: "article",
     publishedTime: "2026-03-23T20:08:09-05:00",
-    modifiedTime: `${incentives.NM.lastVerified}T00:00:00Z`,
+    modifiedTime: `${incentives.NM.lastUpdated}T00:00:00Z`,
   },
 };
 
@@ -75,7 +75,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "New Mexico Heat Pump Rebates & Incentives (2026)",
   datePublished: "2026-03-23T20:08:09-05:00",
-  dateModified: `${incentives.NM.lastVerified}T00:00:00Z`,
+  dateModified: `${incentives.NM.lastUpdated}T00:00:00Z`,
   author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/nm",
@@ -106,7 +106,11 @@ export default function NewMexicoPage() {
             New Mexico&apos;s HEAR program lists up to <strong>$8,000</strong> per heat pump for income-qualifying households replacing existing electric equipment — but the state&apos;s own program page shows that rebate as both &ldquo;Coming Soon&rdquo; and &ldquo;Apply Now&rdquo; in two different tables, and just <strong>one HVAC contractor is approved statewide</strong>. Most homeowners above 80% of Area Median Income (AMI) — and any household heating with gas, propane, or oil — are limited to roughly <strong>$1,000–$1,800</strong> in utility rebates and state tax credits. This guide covers all major New Mexico heat pump incentives available in 2026, including HEAR, PNM and El Paso Electric utility rebates, rural co-op programs, and state tax credits. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} — verified against official program sources
+            {nmIncentive.lastUpdated === nmIncentive.lastVerified ? (
+              <>Updated {formattedDate} — verified against official program sources</>
+            ) : (
+              <>Updated {formatDate(nmIncentive.lastUpdated)} · Last verified {formattedDate} against official program sources</>
+            )}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

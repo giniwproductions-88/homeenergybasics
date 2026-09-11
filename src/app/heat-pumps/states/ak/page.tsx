@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://homeenergybasics.com/heat-pumps/states/ak",
     type: "article",
     publishedTime: "2026-03-24T19:40:20-05:00",
-    modifiedTime: `${incentives.AK.lastVerified}T00:00:00Z`,
+    modifiedTime: `${incentives.AK.lastUpdated}T00:00:00Z`,
   },
 };
 
@@ -28,7 +28,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Alaska Heat Pump Rebates & Incentives (2026)",
   datePublished: "2026-03-24T19:40:20-05:00",
-  dateModified: `${incentives.AK.lastVerified}T00:00:00Z`,
+  dateModified: `${incentives.AK.lastUpdated}T00:00:00Z`,
   author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/ak",
@@ -112,7 +112,11 @@ export default function AlaskaPage() {
             utility rebates, and IRA program status. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} — verified against official program sources
+            {akIncentive.lastUpdated === akIncentive.lastVerified ? (
+              <>Updated {formattedDate} — verified against official program sources</>
+            ) : (
+              <>Updated {formatDate(akIncentive.lastUpdated)} · Last verified {formattedDate} against official program sources</>
+            )}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

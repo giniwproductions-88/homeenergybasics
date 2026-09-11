@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://homeenergybasics.com/heat-pumps/states/ri",
     type: "article",
     publishedTime: "2026-03-22T20:31:29-05:00",
-    modifiedTime: `${incentives.RI.lastVerified}T00:00:00Z`,
+    modifiedTime: `${incentives.RI.lastUpdated}T00:00:00Z`,
   },
 };
 
@@ -83,7 +83,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Rhode Island Heat Pump Rebates & Incentives (2026)",
   datePublished: "2026-03-22T20:31:29-05:00",
-  dateModified: `${incentives.RI.lastVerified}T00:00:00Z`,
+  dateModified: `${incentives.RI.lastUpdated}T00:00:00Z`,
   author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/ri",
@@ -114,7 +114,11 @@ export default function RhodeIslandPage() {
             Clean Heat RI &mdash; covering up to 60% of heat pump costs (max <strong>$11,500</strong>) &mdash; is the main incentive for Rhode Island homeowners in 2026. The original $25 million ARPA funding is largely spent, but a new <strong>$10 million</strong> RGGI-funded round launched in July 2025 for moderate- and low-income households. RI Energy utility rebates add <strong>$625&ndash;$1,500 per ton</strong> and stack cleanly. As of its July 2025 relaunch, Clean Heat RI is limited to households at or below 150% of State Median Income; eligible homeowners can see roughly <strong>$13,000 or more</strong> in combined incentives, and households at or below 80% of Area Median Income can stack <strong>HEAR electrical-upgrade rebates</strong> on top. Higher-income households are limited to RI Energy utility rebates. This guide covers all major Rhode Island heat pump incentives available in 2026, including Clean Heat RI, RI Energy, HEAR, Block Island Power, and financing programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} &mdash; verified against official program sources
+            {riIncentive.lastUpdated === riIncentive.lastVerified ? (
+              <>Updated {formattedDate} &mdash; verified against official program sources</>
+            ) : (
+              <>Updated {formatDate(riIncentive.lastUpdated)} · Last verified {formattedDate} against official program sources</>
+            )}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

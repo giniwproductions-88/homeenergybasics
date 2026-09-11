@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://homeenergybasics.com/heat-pumps/states/sd",
     type: "article",
     publishedTime: "2026-03-24T14:01:07-05:00",
-    modifiedTime: `${incentives.SD.lastVerified}T00:00:00Z`,
+    modifiedTime: `${incentives.SD.lastUpdated}T00:00:00Z`,
   },
 };
 
@@ -28,7 +28,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "South Dakota Heat Pump Rebates & Incentives (2026)",
   datePublished: "2026-03-24T14:01:07-05:00",
-  dateModified: `${incentives.SD.lastVerified}T00:00:00Z`,
+  dateModified: `${incentives.SD.lastUpdated}T00:00:00Z`,
   author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/sd",
@@ -107,7 +107,11 @@ export default function SouthDakotaPage() {
             South Dakota was the first state in America to opt out of federal IRA heat pump rebate funding — Idaho&apos;s legislature later voted to block participation too — and federal tax credits expired at the end of 2025. The only incentives left come from individual electric utilities, with rebates ranging from <strong>$0 to over $4,000</strong> depending on your provider. This guide covers all major South Dakota heat pump incentives available in 2026, including Otter Tail Power, Heartland Energy, Sioux Valley Energy, Black Hills Energy, and cooperative programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} — verified against official program sources
+            {sdIncentive.lastUpdated === sdIncentive.lastVerified ? (
+              <>Updated {formattedDate} — verified against official program sources</>
+            ) : (
+              <>Updated {formatDate(sdIncentive.lastUpdated)} · Last verified {formattedDate} against official program sources</>
+            )}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

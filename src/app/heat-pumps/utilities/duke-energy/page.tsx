@@ -128,6 +128,7 @@ export default function DukeEnergyPage() {
               stateName: duke.name,
               status: duke.status,
               lastVerified: duke.lastVerified,
+              lastUpdated: duke.lastUpdated,
               summary: duke.summary,
               sources: duke.sources,
             } as unknown as (typeof incentives)["NC"]}

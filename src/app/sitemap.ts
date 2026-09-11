@@ -99,7 +99,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const statePages: MetadataRoute.Sitemap = Object.values(incentives).map(
     (state) => ({
       url: `${baseUrl}/heat-pumps/states/${state.stateCode.toLowerCase()}`,
-      lastModified: new Date(`${state.lastVerified}T00:00:00Z`),
+      lastModified: new Date(`${state.lastUpdated}T00:00:00Z`),
       changeFrequency: "weekly" as const,
       priority: 0.8,
     })
@@ -107,7 +107,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const utilityPages: MetadataRoute.Sitemap = shippedUtilities().map(
     (utility) => ({
       url: `${baseUrl}/heat-pumps/utilities/${utility.slug}`,
-      lastModified: new Date(`${utility.lastVerified}T00:00:00Z`),
+      lastModified: new Date(`${utility.lastUpdated}T00:00:00Z`),
       changeFrequency: "weekly" as const,
       priority: 0.8,
     })

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://homeenergybasics.com/heat-pumps/states/oh",
     type: "article",
     publishedTime: "2026-03-23T17:39:46-05:00",
-    modifiedTime: `${incentives.OH.lastVerified}T00:00:00Z`,
+    modifiedTime: `${incentives.OH.lastUpdated}T00:00:00Z`,
   },
 };
 
@@ -83,7 +83,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Ohio Heat Pump Rebates & Incentives (2026)",
   datePublished: "2026-03-23T17:39:46-05:00",
-  dateModified: `${incentives.OH.lastVerified}T00:00:00Z`,
+  dateModified: `${incentives.OH.lastUpdated}T00:00:00Z`,
   author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/oh",

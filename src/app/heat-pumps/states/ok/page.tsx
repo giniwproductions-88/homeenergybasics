@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://homeenergybasics.com/heat-pumps/states/ok",
     type: "article",
     publishedTime: "2026-03-24T18:37:37-05:00",
-    modifiedTime: `${incentives.OK.lastVerified}T00:00:00Z`,
+    modifiedTime: `${incentives.OK.lastUpdated}T00:00:00Z`,
   },
 };
 
@@ -75,7 +75,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Oklahoma Heat Pump Rebates & Incentives (2026)",
   datePublished: "2026-03-24T18:37:37-05:00",
-  dateModified: `${incentives.OK.lastVerified}T00:00:00Z`,
+  dateModified: `${incentives.OK.lastUpdated}T00:00:00Z`,
   author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/ok",
@@ -120,7 +120,11 @@ export default function OklahomaPage() {
             available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} — verified against official program sources
+            {okIncentive.lastUpdated === okIncentive.lastVerified ? (
+              <>Updated {formattedDate} — verified against official program sources</>
+            ) : (
+              <>Updated {formatDate(okIncentive.lastUpdated)} · Last verified {formattedDate} against official program sources</>
+            )}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

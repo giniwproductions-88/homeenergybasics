@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://homeenergybasics.com/heat-pumps/states/mo",
     type: "article",
     publishedTime: "2026-03-23T20:42:57-05:00",
-    modifiedTime: `${incentives.MO.lastVerified}T00:00:00Z`,
+    modifiedTime: `${incentives.MO.lastUpdated}T00:00:00Z`,
   },
 };
 
@@ -28,7 +28,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Missouri Heat Pump Rebates & Incentives (2026)",
   datePublished: "2026-03-23T20:42:57-05:00",
-  dateModified: `${incentives.MO.lastVerified}T00:00:00Z`,
+  dateModified: `${incentives.MO.lastUpdated}T00:00:00Z`,
   author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/mo",
@@ -106,7 +106,11 @@ export default function MissouriPage() {
             Missouri heat pump rebates in 2026 come entirely from utility programs — there is no statewide rebate and no state tax credit. Utility rebates cover <strong>$200–$5,000</strong> depending on your provider and equipment. Ameren Missouri offers <strong>$2,000</strong> for ducted air-source heat pumps. The state&apos;s pending IRA allocation of <strong>$151 million</strong> across HEAR and HOMES could dramatically expand incentives once launched. This guide covers all major Missouri heat pump incentives available in 2026, including Ameren Missouri, Evergy, Columbia Water &amp; Light, City Utilities of Springfield, and rural electric cooperatives. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} — verified against official program sources
+            {moIncentive.lastUpdated === moIncentive.lastVerified ? (
+              <>Updated {formattedDate} — verified against official program sources</>
+            ) : (
+              <>Updated {formatDate(moIncentive.lastUpdated)} · Last verified {formattedDate} against official program sources</>
+            )}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

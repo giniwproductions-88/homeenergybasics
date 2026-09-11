@@ -49,6 +49,7 @@ export default function StatusCard({ incentive }: StatusCardProps) {
 
   const config = getStatusConfig(displayStatus)
   const formattedDate = formatDate(incentive.lastVerified)
+  const formattedUpdated = formatDate(incentive.lastUpdated)
 
   return (
     <div className={`rounded-xl border-2 ${config.borderClass} ${config.bgClass} p-6 md:p-8`}>
@@ -73,7 +74,7 @@ export default function StatusCard({ incentive }: StatusCardProps) {
       {/* Timestamps */}
       <div className="flex flex-wrap gap-6 mb-6 text-sm text-gray-600">
         <div>
-          <span className="font-medium">As of:</span> {formattedDate}
+          <span className="font-medium">Updated:</span> {formattedUpdated}
         </div>
         <div>
           <span className="font-medium">Last verified:</span> {formattedDate}

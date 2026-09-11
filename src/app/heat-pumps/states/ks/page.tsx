@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://homeenergybasics.com/heat-pumps/states/ks",
     type: "article",
     publishedTime: "2026-03-24T19:30:41-05:00",
-    modifiedTime: `${incentives.KS.lastVerified}T00:00:00Z`,
+    modifiedTime: `${incentives.KS.lastUpdated}T00:00:00Z`,
   },
 };
 
@@ -28,7 +28,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Kansas Heat Pump Rebates & Incentives (2026)",
   datePublished: "2026-03-24T19:30:41-05:00",
-  dateModified: `${incentives.KS.lastVerified}T00:00:00Z`,
+  dateModified: `${incentives.KS.lastUpdated}T00:00:00Z`,
   author: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   publisher: { "@type": "Organization", name: "Home Energy Basics", url: "https://homeenergybasics.com" },
   mainEntityOfPage: "https://homeenergybasics.com/heat-pumps/states/ks",
@@ -113,7 +113,11 @@ export default function KansasPage() {
             Home Rebates Program. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedDate} — verified against official program sources
+            {ksIncentive.lastUpdated === ksIncentive.lastVerified ? (
+              <>Updated {formattedDate} — verified against official program sources</>
+            ) : (
+              <>Updated {formatDate(ksIncentive.lastUpdated)} · Last verified {formattedDate} against official program sources</>
+            )}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.
