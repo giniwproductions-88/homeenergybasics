@@ -115,7 +115,7 @@ export default function WisconsinPage() {
             instant discounts statewide, and the IRA-funded HEAR program covers
             up to $8,000 for income-qualifying households. Wisconsin was the
             first state to launch the HOMES program and has $149 million in
-            federal funding still flowing. New federal rules narrow HEAR
+            federal funding still flowing. New federal rules narrowed HEAR
             eligibility starting September 1, 2026 — details below. This guide covers all major Wisconsin
             heat pump incentives available in 2026, including Focus on Energy,
             HEAR, and HOMES programs. Here&apos;s what&apos;s actually
@@ -189,7 +189,7 @@ export default function WisconsinPage() {
             </div>
             <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 md:col-span-2">
               <p className="font-semibold text-amber-800 mb-1">
-                ⚠ HEAR eligibility narrows September 1, 2026
+                ⚠ HEAR eligibility narrowed September 1, 2026
               </p>
               <p className="text-sm text-amber-900">
                 Under new U.S. Department of Energy rules (Program Notice 26-2),
@@ -198,7 +198,7 @@ export default function WisconsinPage() {
                 new construction. Replacing a gas, propane, or oil system with a
                 heat pump no longer qualifies for HEAR — those homes should look
                 to HOMES instead. Retail applications for fossil-fuel
-                replacements close August 31, 2026, at 5:30 p.m. CT.
+                replacements closed August 31, 2026, at 5:30 p.m. CT.
               </p>
             </div>
           </div>
@@ -259,7 +259,7 @@ export default function WisconsinPage() {
           </p>
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-amber-800 mb-1">
-              ⚠ Eligibility changes September 1, 2026
+              ⚠ Eligibility changed September 1, 2026
             </p>
             <p className="text-sm text-amber-900">
               DOE Program Notice 26-2 (May 2026) removed fuel-switching from
@@ -369,10 +369,10 @@ export default function WisconsinPage() {
             <strong>$14,000</strong>. Heat pump installations must use an IRA
             Registered Contractor; qualifying kitchen and laundry appliances and
             self-installed heat pump water heaters can be purchased at retail.
-            Focus on Energy stops accepting retail applications and coupons for
+            Focus on Energy stopped accepting retail applications and coupons for
             appliances replacing fossil-fuel equipment after{" "}
             <strong>August 31, 2026, at 5:30 p.m. CT</strong>, and the retail
-            application reopens under the new eligibility requirements on
+            application reopened under the new eligibility requirements on
             September 1, 2026. Contractor-installed projects are subject to the
             same new DOE requirements from that date. Lowe&apos;s
             instant-discount coupons received before September 1, 2026 may be
@@ -573,11 +573,12 @@ export default function WisconsinPage() {
             </p>
             <p className="text-sm text-blue-900">
               Wisconsin Xcel customers receive significantly lower incentives
-              than Minnesota customers under the same utility. In Minnesota and
-              Colorado, Xcel offers up to $2,250 per ton through its Clean Heat
-              Plan. Wisconsin Xcel customers receive only the standard Focus on
-              Energy amounts ($400–$900) — a rare cross-border disparity worth
-              noting for western Wisconsin households near the Minnesota line.
+              than Minnesota customers under the same utility. In Minnesota,
+              Xcel offers up to $2,000 for cold-climate heat pumps; in Colorado,
+              up to $2,250 per heating ton when replacing gas heat. Wisconsin
+              Xcel customers receive only the standard Focus on Energy amounts
+              ($400–$900) — a rare cross-border disparity worth noting for
+              western Wisconsin households near the Minnesota line.
             </p>
           </div>
 

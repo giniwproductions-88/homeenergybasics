@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title:
     "Oregon Heat Pump Rebates 2026: $800\u2013$8,000 + Energy Trust & ODOE HP3 | Home Energy Basics",
   description:
-    "Energy Trust offers $800\u2013$1,000. HP3 adds $2,000. HEAR up to $8,000 but has no launch date. Federal credits ended. Here\u2019s every Oregon heat pump incentive in 2026.",
+    "Energy Trust offers $800\u2013$1,000. HP3 adds $2,000 for rentals and new construction. HEAR up to $8,000 but has no launch date. Federal credits ended. Here\u2019s every Oregon heat pump incentive in 2026.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/or",
   },
@@ -40,7 +40,7 @@ const faqJsonLd = {
       name: "Can I stack Energy Trust rebates with HEAR and HP3 in Oregon?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Energy Trust rebates can stack with HP3 (e.g., $1,000 + $2,000 = $3,000). Energy Trust is ratepayer-funded (not federal), so stacking with HOMES and HEAR is anticipated when those programs launch. However, HP3 cannot stack with HOMES or HEAR \u2014 you must choose one path. Total incentives from all sources cannot exceed 100% of project cost.",
+        text: "Energy Trust rebates can stack with HP3 (e.g., $1,000 + $2,000 = $3,000 on a rental property or new construction; owner-occupied HP3 funding is fully reserved). Energy Trust is ratepayer-funded (not federal), so stacking with HOMES and HEAR is anticipated when those programs launch. However, HP3 cannot stack with HOMES or HEAR \u2014 you must choose one path. Total incentives from all sources cannot exceed 100% of project cost.",
       },
     },
     {
@@ -111,7 +111,7 @@ export default function OregonPage() {
             Oregon Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Federal tax credits are gone, but Oregon has one of the strongest layered incentive structures in the country. Energy Trust of Oregon offers <strong>$800&#8211;$1,000</strong> for most homeowners (up to <strong>$3,000</strong> income-qualified), the ODOE Heat Pump Purchase Program adds up to <strong>$2,000</strong>, and upcoming HOMES/HEAR rebates could bring totals to <strong>$9,000+</strong> for income-qualifying households. This guide covers all major Oregon heat pump incentives available in 2026, including Energy Trust, HP3, CHPDP, HOMES, HEAR, and Portland Clean Energy Fund programs. Here&apos;s what&apos;s actually available.
+            Federal tax credits are gone, but Oregon has one of the strongest layered incentive structures in the country. Energy Trust of Oregon offers <strong>$800&#8211;$1,000</strong> for most homeowners (up to <strong>$3,000</strong> income-qualified), the ODOE Heat Pump Purchase Program adds up to <strong>$2,000</strong> for rental properties and new construction (owner-occupied funding is fully reserved), and upcoming HOMES/HEAR rebates could bring totals to <strong>$9,000+</strong> for income-qualifying households. This guide covers all major Oregon heat pump incentives available in 2026, including Energy Trust, HP3, CHPDP, HOMES, HEAR, and Portland Clean Energy Fund programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
             {orIncentive.lastUpdated === orIncentive.lastVerified ? (

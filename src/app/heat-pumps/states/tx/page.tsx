@@ -148,7 +148,7 @@ export default function TexasPage() {
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; Potential savings: $0 to $11,000+</p>
-              <p className="text-sm text-green-900">$0 (CoServ/NorthWestern territory) to $11,000+ (below 80% AMI, Austin Energy + HEAR when launched). Full electrification packages can reach ~$14,000 total for income-qualified households.</p>
+              <p className="text-sm text-green-900">$0 (CoServ territory) to $11,000+ (below 80% AMI, Austin Energy + HEAR when launched). Full electrification packages can reach ~$14,000 total for income-qualified households.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">&#10007; Federal tax credits expired + no state credits</p>
@@ -270,7 +270,7 @@ export default function TexasPage() {
                 </tr>
                 <tr className="border-b">
                   <td className="p-3 font-semibold">CenterPoint</td>
-                  <td className="p-3">Houston, Galveston, Beaumont (deregulated TDU)</td>
+                  <td className="p-3">Houston, Galveston (deregulated TDU)</td>
                   <td className="p-3 font-semibold">From $200, varies by installation</td>
                 </tr>
                 <tr className="border-b">
@@ -323,7 +323,7 @@ export default function TexasPage() {
           </p>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            <strong>Note about gas utilities:</strong> In the deregulated market, gas utilities like Atmos Energy do not offer electric heat pump rebates. CPS Energy and MLGW are exceptions as dual-service providers.
+            <strong>Note about gas utilities:</strong> In the deregulated market, gas utilities like Atmos Energy do not offer electric heat pump rebates. CPS Energy is an exception as a dual-service provider.
           </p>
         </div>
       </section>
@@ -370,7 +370,7 @@ export default function TexasPage() {
 
           <div className="bg-gray-100 rounded-lg p-5 mb-6">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
-            <p className="text-sm text-gray-700">A typical Texas heat pump installation costs <strong>$8,000&ndash;$16,000</strong>. Today, Austin Energy customers pay <strong>$5,000&ndash;$11,000</strong> after rebates. Most deregulated-market homeowners pay <strong>$7,500&ndash;$15,500</strong> after a few hundred dollars in TDU incentives. When HEAR launches, income-qualified households below 80% AMI in Austin could see costs drop to <strong>$3,000&ndash;$6,000</strong>. In CoServ or NorthWestern territory with no active utility rebates, expect to pay full price.</p>
+            <p className="text-sm text-gray-700">A typical Texas heat pump installation costs <strong>$8,000&ndash;$16,000</strong>. Today, Austin Energy customers pay <strong>$5,000&ndash;$11,000</strong> after rebates. Most deregulated-market homeowners pay <strong>$7,500&ndash;$15,500</strong> after a few hundred dollars in TDU incentives. When HEAR launches, income-qualified households below 80% AMI in Austin could see costs drop to <strong>$3,000&ndash;$6,000</strong>. In CoServ territory with no active utility rebates, expect to pay full price.</p>
           </div>
 
           <p className="text-xs text-gray-400">

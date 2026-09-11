@@ -504,7 +504,7 @@ export default function NebraskaPage() {
           {/* What you'll actually pay */}
           <div className="bg-gray-100 rounded-lg p-5">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
-            <p className="text-sm text-gray-700">For a typical $10,000 whole-home heat pump installation, most Nebraska homeowners above 150% AMI will pay <strong>$8,800 to $9,475 out of pocket</strong> after utility rebates. Low-income Lincoln homeowners can reduce that to roughly <strong>$6,000</strong>. Dollar and Energy Saving Loans at 1.5%–5% interest can spread remaining costs over up to 15 years. When HEAR launches, income-qualifying households below 80% AMI could see out-of-pocket costs drop to near zero.</p>
+            <p className="text-sm text-gray-700">For a typical $10,000 whole-home heat pump installation, most Nebraska homeowners above 150% AMI will pay <strong>$8,800 to $9,475 out of pocket</strong> after utility rebates in OPPD or NPPD territory, or <strong>$7,500 to $9,000</strong> in Lincoln ($10,000 minus the $1,000 LES incentive, minus a city general-tier amount of up to $1,500). Lincoln homeowners at or below 80% of Lincoln AMI can reduce that to roughly <strong>$6,000</strong>. Dollar and Energy Saving Loans at 1.5%–5% interest can spread remaining costs over up to 15 years. When HEAR launches, income-qualifying households below 80% AMI could see out-of-pocket costs drop to near zero.</p>
           </div>
 
           <p className="text-sm text-gray-500 mt-4">

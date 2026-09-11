@@ -498,7 +498,7 @@ export default function NewYorkPage() {
           </p>
           <p className="text-gray-700 leading-relaxed">
             Con Edison&apos;s published rates are now split in two: a weatherized rate and a standard
-            rate. On a non-DAC single-family Category 2b project the difference is <strong>$10,000</strong>
+            rate. On a non-DAC single-family Category 2b project the difference is <strong>$10,000</strong>{" "}
             weatherized against <strong>$7,000</strong> standard &mdash; $3,000 of real money riding on which
             tier a project lands in (Con Edison rate pages, read 2026-09-08). NYSERDA has not published the qualification standard &mdash; Program Manual Version 2
             announces the tier without defining it, and Con Edison states that an approved contractor

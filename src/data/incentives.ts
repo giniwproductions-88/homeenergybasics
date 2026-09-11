@@ -311,7 +311,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Oregon",
     status: "open",
     lastVerified: "2026-07-09",
-    lastUpdated: "2026-07-09",
+    lastUpdated: "2026-09-10",
     summary:
       "Energy Trust of Oregon is the primary rebate — $800–$1,000 for most homeowners, up to $3,000 income-qualified. ODOE's HP3 program adds up to $2,000 (owner-occupied funding reserved; rental and new construction still open). Oregon has no state tax credit (RETC expired 2017). Federal 25C/25D credits ended December 31, 2025. The state's $113M HEAR/HOMES rebates have not launched and have no announced launch date — ODOE's planned spring 2026 start did not happen and it now awaits U.S. DOE approval.",
     sources: [
@@ -586,7 +586,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Texas",
     status: "limited",
     lastVerified: "2026-09-08",
-    lastUpdated: "2026-09-08",
+    lastUpdated: "2026-09-10",
     summary:
       "Texas has no statewide heat pump rebate program and no state income tax. Rebates come from your local utility and vary widely. Austin Energy offers approximately $3,000 for whole-home projects plus 0% APR financing. Oncor provides performance-based incentives through approved contractors. CenterPoint HVAC incentives start at $200, vary by installation, and are applied to your installation invoice through a participating contractor. CPS Energy pays $100–$275 per ton. Federal tax credits (25C/25D) ended December 31, 2025. Texas received $690 million in IRA HOMES/HEAR funding; SECO signed APTIM as implementer and targets a fall 2026 launch but has not opened the program.",
     sources: [
@@ -1030,7 +1030,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Wisconsin",
     status: "open",
     lastVerified: "2026-08-22",
-    lastUpdated: "2026-08-22",
+    lastUpdated: "2026-09-10",
     summary:
       "Focus on Energy offers $400–$900 instant discounts for air-source heat pumps statewide. IRA-funded HEAR rebates cover up to $8,000 for income-qualifying households (below 150% AMI); from September 1, 2026, HEAR is limited to electric-to-electric upgrades under new DOE rules. HOMES rebates up to $10,000 are available at all income levels for whole-home projects. Federal tax credits expired December 31, 2025.",
     sources: [
@@ -2182,7 +2182,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Nebraska",
     status: "limited",
     lastVerified: "2026-06-11",
-    lastUpdated: "2026-06-11",
+    lastUpdated: "2026-09-10",
     summary:
       "Nebraska has no statewide heat pump rebate and no state tax credit. Utility rebates are the primary incentive: NPPD EnergyWise offers $400\u2013$1,200 for ASHPs, OPPD pays a flat $525, and LES offers $1,000. The City of Lincoln adds up to $3,000 for homeowners at or below 80% of Lincoln AMI ($4,000 combined with LES). Dollar and Energy Saving Loans offer 1.5\u20135% financing. Federal 25C/25D expired Dec 2025. HEAR/HOMES ($91M) not yet launched.",
     sources: [
