@@ -57,7 +57,7 @@ export default function MainePage() {
         name: "Can I stack Efficiency Maine rebates with HEAR in Maine?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Not as separate line items. Maine's homeowner-facing HEAR funding arrives through the Mobile Home Initiative — a set-price package for income-eligible owners of single-wide mobile homes currently heated with propane or kerosene, in designated towns: a $12,900 rebate against a fixed $14,900 project cost for a ducted heat pump system. The homeowner pays the balance ($2,000, currently reduced to $1,000 by a limited-time offer; financeable through Efficiency Maine). Total incentives cannot exceed project cost, so there is no separate $8,000 HEAR rebate to stack on top of standard Efficiency Maine rebates. Standard single-family homes cannot access HEAR rebates.",
+          text: "Not as separate line items. Maine's homeowner-facing HEAR funding arrives through the Mobile Home Initiative — a set-price package for income-eligible owners of single-wide mobile homes currently heated with propane, oil, or kerosene, in designated towns: a $13,900 enhanced rebate against a fixed $14,900 project cost for a ducted heat pump system. The homeowner pays the $1,000 balance up front or finances it through Efficiency Maine; the $13,900 figure is a limited-time offer for rebate claims emailed or postmarked on or before December 31, 2026. Total incentives cannot exceed project cost, so there is no separate $8,000 HEAR rebate to stack on top of standard Efficiency Maine rebates. Standard single-family homes cannot access HEAR rebates.",
         },
       },
       {
@@ -150,7 +150,7 @@ export default function MainePage() {
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Total Potential Savings</p>
               <p className="text-sm text-green-900">
-                $3,500 (any income) to $9,500+ (low income). Income-eligible single-wide mobile homes: a $12,900 set-price Mobile Home Initiative rebate covers all but $1,000–$2,000 of a fixed-price ducted system.
+                $3,500 (any income) to $9,500+ (low income). Income-eligible single-wide mobile homes: a $13,900 set-price Mobile Home Initiative rebate covers all but $1,000 of a fixed-price ducted system, limited-time through December 31, 2026.
               </p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
@@ -281,15 +281,18 @@ export default function MainePage() {
             </table>
           </div>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Income-eligible single-wide mobile homes may qualify for a <strong>$12,900</strong>{" "}
-            rebate through the Mobile Home Initiative — a set-price ducted heat pump system with a
-            fixed <strong>$14,900</strong> total project cost. Eligibility requires that the home
-            currently heats with propane or kerosene (homes with natural gas or baseboard heat are
-            not eligible), sits in one of the program&apos;s designated towns, and that the existing
-            heating system is removed as part of the project. The homeowner pays the{" "}
-            <strong>$2,000</strong> balance — a limited-time offer, in effect as of our August 2026
-            verification with no announced end date, reduces this to <strong>$1,000</strong> — and
-            can finance it through Efficiency Maine.
+            Income-eligible single-wide mobile homes may qualify for a <strong>$13,900</strong>{" "}
+            enhanced rebate through the Mobile Home Initiative — a set-price ducted heat pump
+            system with a fixed <strong>$14,900</strong> total project cost. Eligibility requires that
+            the home currently heats with propane, oil, or kerosene (homes with natural gas or
+            baseboard heat are not eligible), sits in one of the program&apos;s designated towns, and
+            that the existing heating system is removed as part of the project. The homeowner pays
+            the <strong>$1,000</strong> balance up front or finances it through Efficiency Maine. The{" "}
+            $13,900 figure is a limited-time offer for rebate claims emailed or postmarked on or
+            before December 31, 2026; before this offer the rebate was $12,900 and the homeowner
+            contribution $2,000. Optionally, having the existing fuel tank removed by a participating
+            contractor earns an additional <strong>$400</strong> rebate from Maine DEP, which is not
+            included in the figures above.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">
@@ -403,7 +406,7 @@ export default function MainePage() {
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Maine deploys HEAR through two active initiatives. For homeowners, the{" "}
-            <strong>Mobile Home Initiative</strong> delivers the $12,900 set-price ducted heat pump
+            <strong>Mobile Home Initiative</strong> delivers the $13,900 set-price ducted heat pump
             package described above — funded in part by HEAR and in part by a separate DOE grant
             (Energy Improvements in Rural or Remote Areas). The second initiative funds heat pump
             systems in <strong>new affordable multifamily construction</strong> and is aimed at
@@ -542,9 +545,8 @@ export default function MainePage() {
               <p className="font-semibold text-gray-900 mb-2">Income-Eligible Single-Wide Mobile Home — Mobile Home Initiative (set price)</p>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>Fixed project cost (ducted system): $14,900</li>
-                <li>Mobile Home Initiative rebate: $12,900</li>
-                <li>Limited-time offer (no announced end date): $1,000</li>
-                <li>You pay: $1,000 (financeable; $2,000 if the offer ends)</li>
+                <li>Mobile Home Initiative enhanced rebate (limited-time; claims emailed or postmarked by December 31, 2026): $13,900</li>
+                <li>You pay: $14,900 &minus; $13,900 = $1,000 (financeable through Efficiency Maine)</li>
               </ul>
               <p className="font-semibold text-green-700 mt-2">Realistic maximum: $13,900 in combined incentives (not eligible for the $500 bonus or standard per-unit rebates)</p>
             </div>
@@ -555,8 +557,8 @@ export default function MainePage() {
               A typical 3-zone mini-split system costs <strong>$12,000–$18,000</strong> installed.
               After Efficiency Maine rebates: <strong>$8,500–$14,500</strong> out of pocket (any
               income) to <strong>$2,500–$8,500</strong> out of pocket (low income). Mobile Home
-              Initiative participants pay a fixed <strong>$1,000–$2,000</strong> contribution
-              on a set-price project. Efficiency Maine&apos;s Home Energy Loans
+              Initiative participants pay a fixed <strong>$1,000</strong> contribution on a
+              set-price project, limited-time through December 31, 2026. Efficiency Maine&apos;s Home Energy Loans
               can eliminate the upfront cost entirely — the 1-year 0% APR option carries a $500
               origination fee, and 5- and 10-year terms run 5.99%–7.99% (see loan table above).
             </p>
@@ -787,11 +789,12 @@ export default function MainePage() {
               <p className="font-semibold text-gray-900">DOE Rule Change and the Mobile Home Initiative</p>
               <p className="text-sm text-gray-600 mt-1">
                 DOE Program Notice 26-2 (effective May 29, 2026) removed fuel switching from HEAR
-                nationwide, with state programs required to conform by August 31, 2026. Maine&apos;s
-                Mobile Home Initiative — which requires switching from propane or kerosene — is
+                nationwide, and state programs were required to conform by August 31, 2026. Maine&apos;s
+                Mobile Home Initiative — which requires switching from propane, oil, or kerosene — is
                 funded in part by HEAR and in part by a separate DOE rural-energy grant, and its
-                claim form still required fuel switching as of August 20, 2026. Watch for
-                eligibility changes around the deadline, and confirm current rules with Efficiency
+                claim form still required fuel switching as of August 20, 2026; the program page
+                still listed the fuel requirement when read on September 10, 2026. Watch for
+                eligibility changes, and confirm current rules with Efficiency
                 Maine before committing to a project.
               </p>
             </div>

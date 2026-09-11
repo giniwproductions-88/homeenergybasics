@@ -77,7 +77,7 @@ export default function EfficiencyMainePage() {
         name: "Can I stack Efficiency Maine rebates with HEAR?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Only if your home qualifies for HEAR, which in Maine is limited to mobile/manufactured homes and new affordable multifamily construction. A low-income household in a qualifying mobile home could receive up to $9,000 from Efficiency Maine plus up to $8,000 from HEAR, for a potential total of $17,000. Standard single-family homes cannot access HEAR rebates.",
+          text: "Only if your home qualifies for HEAR, which in Maine is limited to mobile/manufactured homes and new affordable multifamily construction. For homeowners, HEAR funding arrives through the Mobile Home Initiative set-price package rather than as a stackable line item: income-eligible single-wide mobile homes can receive a $13,900 enhanced rebate on a fixed-price ducted system, with no $500 bonus and no standard per-unit rebates on top. There is no separate $8,000 HEAR rebate to stack on the standard Efficiency Maine rebates. Standard single-family homes cannot access HEAR rebates.",
         },
       },
       {
@@ -157,7 +157,7 @@ export default function EfficiencyMainePage() {
               <p className="text-sm text-green-900">
                 $1,000&ndash;$3,000 per outdoor unit (mini-splits) or $3,000&ndash;$9,000
                 lump sum (ducted), by income tier. Lifetime cap $3,000&ndash;$9,000 per
-                housing unit. Single-wide mobile homes: up to $12,900.
+                housing unit. Single-wide mobile homes: up to $13,900.
               </p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
@@ -172,7 +172,7 @@ export default function EfficiencyMainePage() {
               <p className="font-semibold text-green-800 mb-1">✓ Total Potential Savings</p>
               <p className="text-sm text-green-900">
                 $3,500 (any income) to $9,500+ (low income).
-                HEAR-eligible mobile homes can reach ~$17,000 total incentives.
+                Income-eligible single-wide mobile homes: $13,900 through the Mobile Home Initiative, with no $500 bonus.
               </p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
@@ -305,8 +305,10 @@ export default function EfficiencyMainePage() {
             </table>
           </div>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Single-wide mobile homes may qualify for up to <strong>$12,900</strong> through
-            the Mobile Home Initiative. Mobile homes are not eligible for the $500 bonus below.
+            Single-wide mobile homes may qualify for up to <strong>$13,900</strong> through
+            the Mobile Home Initiative; that amount is a limited-time offer for rebate claims
+            emailed or postmarked on or before December 31, 2026. Single-wide mobile homes in the Mobile
+            Home Initiative are not eligible for the $500 bonus below.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">
@@ -488,9 +490,8 @@ export default function EfficiencyMainePage() {
               <ul className="text-sm text-green-900 space-y-1">
                 <li>Efficiency Maine rebate: $3,000/unit &times; 3 = $9,000</li>
                 <li>Whole-home bonus: $500</li>
-                <li>HEAR (mobile homes only): up to $8,000</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$9,500 (single-family) or ~$17,000 (HEAR-eligible single-wide mobile home, which does not get the $500 bonus)</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$9,500 (single-family). Income-eligible single-wide mobile homes use the Mobile Home Initiative instead: a $13,900 set-price rebate, with no $500 bonus and no per-unit rebates.</p>
             </div>
           </div>
           <div className="bg-gray-100 rounded-lg p-5">
