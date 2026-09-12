@@ -47,7 +47,7 @@ export default function MarylandPage() {
         name: "What heat pump rebates are available in Maryland in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Maryland\u2019s main incentive is EmPOWER Maryland, which offers up to $15,000 (or 75% of project cost) for electrification projects through the Home Performance with ENERGY STAR pathway. Each utility also offers midstream rebates of $800\u2013$1,700 per heat pump without requiring an audit. Potomac Edison\u2019s Switch-to-Electric program adds up to $4,000 on top. Montgomery County\u2019s Electrify MC adds $2,500 for cold-climate heat pumps. The federal 25C tax credit expired December 31, 2025.",
+          text: "Maryland\u2019s main incentive is EmPOWER Maryland, which offers up to $15,000 (or 75% of project cost) for electrification projects through the whole-home pathway \u2014 HPwES at BGE, Pepco and Delmarva, HEIP at SMECO, and a $10,000 cap at Potomac Edison. Each utility also offers midstream rebates of $800\u2013$1,700 per heat pump without requiring an audit. Potomac Edison\u2019s Switch-to-Electric program adds up to $4,000 on top. Montgomery County\u2019s Electrify MC adds $2,500 for cold-climate heat pumps. The federal 25C tax credit expired December 31, 2025.",
         },
       },
       {
@@ -55,7 +55,7 @@ export default function MarylandPage() {
         name: "What is EmPOWER Maryland?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "EmPOWER Maryland is a state-mandated energy efficiency program funded by utility ratepayer surcharges. It operates through each utility (BGE, Pepco, Potomac Edison, Delmarva Power, SMECO) and offers two pathways: the Home Performance with ENERGY STAR whole-home pathway (up to $15,000 for electrification) and midstream HVAC rebates ($800\u2013$1,700 instant through contractors). A $100 energy audit is required for the HPwES pathway.",
+          text: "EmPOWER Maryland is a state-mandated energy efficiency program funded by utility ratepayer surcharges. It operates through each utility (BGE, Pepco, Potomac Edison, Delmarva Power, SMECO) \u2014 though Potomac Edison\u2019s whole-home rebate caps at $10,000 rather than $15,000 \u2014 and offers two pathways: the whole-home pathway (up to $15,000 for electrification, run as HPwES at most utilities and as HEIP at SMECO) and midstream HVAC rebates ($800\u2013$1,700 instant through contractors). A $100 energy audit is required for the HPwES pathway.",
         },
       },
       {
@@ -147,8 +147,9 @@ export default function MarylandPage() {
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ EmPOWER Electrification</p>
               <p className="text-sm text-green-900">
-                Up to <strong>$15,000</strong> (or 75% of project cost) through the HPwES
-                whole-home pathway. All five major utilities participate. Oil and propane
+                Up to <strong>$15,000</strong> (or 75% of project cost) through the
+                whole-home pathway — HPwES at BGE, Pepco and Delmarva, HEIP at SMECO.
+                Potomac Edison&apos;s whole-home rebate caps at $10,000. Oil and propane
                 conversions now qualify.
               </p>
             </div>
@@ -438,6 +439,9 @@ export default function MarylandPage() {
               Charles, St. Mary&apos;s, Calvert, parts of Prince George&apos;s counties.
             </p>
             <p className="text-sm text-gray-600">
+              <strong>HEIP</strong>: Up to $15,000 for fuel-switching projects, including up to
+              $2,000 in Make-Ready electrical incentives within that cap. Home energy analysis required,
+              provided at no cost. Hybrid systems retaining fossil backup qualify.{" "}
               <strong>HPWH</strong>: $1,600 instant rebate.{" "}
               <strong>ASHP midstream</strong>: Participates in EmPOWER midstream
               (~$1,300–$1,700 range, applied through contractors).{" "}
