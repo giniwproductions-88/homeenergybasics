@@ -133,11 +133,11 @@ export default function KentuckyPage() {
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ HEAR rebates approved but not launched</p>
-              <p className="text-sm text-green-900">Up to $8,000 per heat pump for households below 80% of Area Median Income (AMI). Up to $4,000 for 80–150% AMI. Will stack with utility rebates once live.</p>
+              <p className="text-sm text-green-900">Up to $8,000 per heat pump for households below 80% of Area Median Income (AMI). Up to $4,000 for 80–150% AMI. Will stack with utility rebates once live — requires existing electric equipment or new construction.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Potential savings: $300–$9,000+</p>
-              <p className="text-sm text-green-900">$300 (above 150% AMI, lowest Duke Smart $aver tier) to $9,000+ (below 80% AMI, once HEAR launches). Full electrification packages can reach ~$14,000 total incentives.</p>
+              <p className="text-sm text-green-900">$300 (above 150% AMI, lowest Duke Smart $aver tier) to $9,000+ (below 80% AMI, once HEAR launches; requires existing electric equipment or new construction). Full electrification packages can reach ~$14,000 total incentives.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">✗ Federal tax credits expired</p>
@@ -187,6 +187,17 @@ export default function KentuckyPage() {
             The Kentucky Energy and Environment Cabinet&apos;s Office of Energy Policy administers HEAR with a combined state allocation of approximately <strong>$134 million</strong> (HEAR plus HOMES). When launched, HEAR will offer point-of-sale rebates for individual equipment based on household income relative to Area Median Income (AMI).
           </p>
 
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Under DOE Program Notice 26-2 (effective May 29, 2026), replacing a gas, propane, or oil
+            heating system no longer qualifies for HEAR, and a program that hasn&apos;t launched must
+            align with this before it opens. Eligibility now turns on new construction or on the
+            home&apos;s existing heating equipment already being electric — replacing electric
+            resistance heat with a heat pump is the clearest qualifying case. Programs differ on
+            whether replacing an existing heat pump counts, so confirm with yours before committing.
+            The notice also requires a home to use rebates for insulation and air sealing before a
+            heating or cooling upgrade, unless it already meets a state-specified level.
+            Fuel-switching projects can still route to HOMES, which sets no fuel condition.
+          </p>
           <h3 className="text-lg font-semibold text-gray-900 mb-3">HEAR rebate amounts (when available)</h3>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
@@ -201,7 +212,7 @@ export default function KentuckyPage() {
               <tbody>
                 <tr className="border-b bg-green-50">
                   <td className="p-3">Heat pump (HVAC)</td>
-                  <td className="p-3 font-semibold">Up to $8,000</td>
+                  <td className="p-3 font-semibold">Up to $8,000 — requires existing electric equipment or new construction</td>
                   <td className="p-3 font-semibold">Up to $4,000</td>
                   <td className="p-3 text-gray-500">—</td>
                 </tr>
@@ -502,7 +513,7 @@ export default function KentuckyPage() {
               <p className="font-semibold text-green-800 mb-2">Below 80% AMI — once HEAR launches (best case)</p>
               <ul className="text-sm text-green-900 space-y-1">
                 <li>Utility rebate: $300–$1,000</li>
-                <li>HEAR: up to $8,000 (100% of remaining cost)</li>
+                <li>HEAR: up to $8,000 (100% of remaining cost; requires existing electric equipment or new construction)</li>
                 <li>WAP: potentially full cost if qualified</li>
                 <li>Federal credit: expired</li>
               </ul>

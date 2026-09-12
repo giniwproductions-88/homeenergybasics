@@ -140,7 +140,7 @@ export default function NebraskaPage() {
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Total potential: $525–$4,000</p>
-              <p className="text-sm text-green-900">$525 (above 150% AMI, OPPD territory) to $4,000 (below 80% AMI, Lincoln). If HEAR launches, income-qualifying households could stack up to ~$9,200–$12,000 depending on location.</p>
+              <p className="text-sm text-green-900">$525 (above 150% AMI, OPPD territory) to $4,000 (below 80% AMI, Lincoln). If HEAR launches, income-qualifying households could stack up to ~$9,200–$12,000 depending on location — requires existing electric equipment or new construction.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">✗ Federal tax credits expired</p>
@@ -183,6 +183,17 @@ export default function NebraskaPage() {
             Nebraska received approximately <strong>$91 million</strong> in IRA formula funding for the Home Electrification and Appliance Rebates (HEAR) and Home Owner Managing Energy Savings (HOMES) programs. Both programs remain in &quot;Preparing Application&quot; status with the Nebraska Department of Water, Energy, and Environment (DWEE). No launch date has been announced.
           </p>
 
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Under DOE Program Notice 26-2 (effective May 29, 2026), replacing a gas, propane, or oil
+            heating system no longer qualifies for HEAR, and a program that hasn&apos;t launched must
+            align with this before it opens. Eligibility now turns on new construction or on the
+            home&apos;s existing heating equipment already being electric — replacing electric
+            resistance heat with a heat pump is the clearest qualifying case. Programs differ on
+            whether replacing an existing heat pump counts, so confirm with yours before committing.
+            The notice also requires a home to use rebates for insulation and air sealing before a
+            heating or cooling upgrade, unless it already meets a state-specified level.
+            Fuel-switching projects can still route to HOMES, which sets no fuel condition.
+          </p>
           <h3 className="text-lg font-semibold text-gray-900 mb-3">What HEAR would offer when it launches</h3>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
@@ -195,7 +206,7 @@ export default function NebraskaPage() {
               <tbody>
                 <tr className="border-b">
                   <td className="p-3">Heat pump (space heating/cooling)</td>
-                  <td className="p-3 font-semibold">$8,000</td>
+                  <td className="p-3 font-semibold">$8,000 — requires existing electric equipment or new construction</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Heat pump water heater</td>
@@ -493,7 +504,7 @@ export default function NebraskaPage() {
               <p className="font-semibold text-green-800 mb-2">Below 80% AMI — Lincoln (best current case)</p>
               <ul className="text-sm text-green-900 space-y-1">
                 <li>Federal 25C/25D: $0 (expired)</li>
-                <li>HEAR: $0 (not yet launched — would add up to $8,000)</li>
+                <li>HEAR: $0 (not yet launched — would add up to $8,000; requires existing electric equipment or new construction)</li>
                 <li>LES Sustainable Energy Program: $1,000</li>
                 <li>City of Lincoln LMI incentive: $3,000</li>
               </ul>
@@ -504,7 +515,7 @@ export default function NebraskaPage() {
           {/* What you'll actually pay */}
           <div className="bg-gray-100 rounded-lg p-5">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
-            <p className="text-sm text-gray-700">For a typical $10,000 whole-home heat pump installation, most Nebraska homeowners above 150% AMI will pay <strong>$8,800 to $9,475 out of pocket</strong> after utility rebates in OPPD or NPPD territory, or <strong>$7,500 to $9,000</strong> in Lincoln ($10,000 minus the $1,000 LES incentive, minus a city general-tier amount of up to $1,500). Lincoln homeowners at or below 80% of Lincoln AMI can reduce that to roughly <strong>$6,000</strong>. Dollar and Energy Saving Loans at 1.5%–5% interest can spread remaining costs over up to 15 years. When HEAR launches, income-qualifying households below 80% AMI could see out-of-pocket costs drop to near zero.</p>
+            <p className="text-sm text-gray-700">For a typical $10,000 whole-home heat pump installation, most Nebraska homeowners above 150% AMI will pay <strong>$8,800 to $9,475 out of pocket</strong> after utility rebates in OPPD or NPPD territory, or <strong>$7,500 to $9,000</strong> in Lincoln ($10,000 minus the $1,000 LES incentive, minus a city general-tier amount of up to $1,500). Lincoln homeowners at or below 80% of Lincoln AMI can reduce that to roughly <strong>$6,000</strong>. Dollar and Energy Saving Loans at 1.5%–5% interest can spread remaining costs over up to 15 years. When HEAR launches, households below 80% AMI replacing electric heating or cooling equipment could see out-of-pocket costs drop substantially; propane and oil conversions are no longer HEAR-eligible and would look to HOMES instead.</p>
           </div>
 
           <p className="text-sm text-gray-500 mt-4">

@@ -137,7 +137,7 @@ export const utilities: Record<UtilitySlug, UtilityEntity> = {
     ],
     status: "open",
     lastVerified: "2026-07-16",
-    lastUpdated: "2026-07-16",
+    lastUpdated: "2026-09-11",
     summary: "Efficiency Maine, the state's independent efficiency program administrator, pays $1,000–$3,000 per outdoor unit or $3,000–$9,000 for ducted whole-home heat pumps by income tier, plus a $500 bonus through Dec 2026, $1,150 for heat pump water heaters, and Green Bank loans up to $25,000. Federal 25C/25D credits ended Dec 31, 2025.",
     sources: [
       { label: "Efficiency Maine — Whole-Home Heat Pump Rebates", url: "https://www.efficiencymaine.com/whole-home-heat-pump-rebates/" },

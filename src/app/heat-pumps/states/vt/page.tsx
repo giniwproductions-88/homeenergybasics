@@ -195,6 +195,17 @@ export default function VermontPage() {
             HOMES is delivered through the Weatherization Assistance Program for low-income households (≤80% AMI), providing up to <strong>$16,000</strong> in efficiency upgrades at no cost. No IRA-funded consumer launch has been confirmed, but eligible households can sign up for weatherization services now through their <a href="https://dcf.vermont.gov/benefits/weatherization" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">local Community Action Agency</a>.
           </p>
 
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Under DOE Program Notice 26-2 (effective May 29, 2026), replacing a gas, propane, or oil
+            heating system no longer qualifies for HEAR, and a program that hasn&apos;t launched must
+            align with this before it opens. Eligibility now turns on new construction or on the
+            home&apos;s existing heating equipment already being electric — replacing electric
+            resistance heat with a heat pump is the clearest qualifying case. Programs differ on
+            whether replacing an existing heat pump counts, so confirm with yours before committing.
+            The notice also requires a home to use rebates for insulation and air sealing before a
+            heating or cooling upgrade, unless it already meets a state-specified level.
+            Fuel-switching projects can still route to HOMES, which sets no fuel condition.
+          </p>
           <h3 className="text-lg font-semibold text-gray-900 mb-3">HEAR Rebate Structure (If Launched)</h3>
           <p className="text-gray-700 leading-relaxed mb-6">
             Vermont plans a three-phase HEAR rollout: moderate-income heat pump rebates (80–150% AMI, up to $8,000 at 50% cost match), low-income heat pumps through WAP, and electrification assistance for new affordable multifamily housing.
@@ -214,13 +225,13 @@ export default function VermontPage() {
                 <tr className="border-b bg-green-50">
                   <td className="p-3">Below 80% AMI</td>
                   <td className="p-3">100% of costs (via WAP)</td>
-                  <td className="p-3 font-semibold">$8,000</td>
+                  <td className="p-3 font-semibold">$8,000 — requires existing electric equipment or new construction</td>
                   <td className="p-3 font-semibold">$14,000</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">80–150% AMI</td>
                   <td className="p-3">50% of costs</td>
-                  <td className="p-3 font-semibold">$8,000</td>
+                  <td className="p-3 font-semibold">$8,000 — requires existing electric equipment or new construction</td>
                   <td className="p-3 font-semibold">$14,000</td>
                 </tr>
                 <tr className="border-b">

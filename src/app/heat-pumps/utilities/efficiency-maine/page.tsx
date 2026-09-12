@@ -600,6 +600,19 @@ export default function EfficiencyMainePage() {
               </p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
+              <p className="font-semibold text-gray-900">DOE Rule Change and the Mobile Home Initiative</p>
+              <p className="text-sm text-gray-600 mt-1">
+                DOE Program Notice 26-2 (effective May 29, 2026) removed fuel switching from HEAR
+                nationwide, and state programs were required to conform by August 31, 2026. Maine&apos;s
+                Mobile Home Initiative — which requires switching from propane, oil, or kerosene — is
+                funded in part by HEAR and in part by a separate DOE rural-energy grant, and its
+                claim form still required fuel switching as of August 20, 2026; the program page
+                still listed the fuel requirement when read on September 10, 2026. Watch for
+                eligibility changes, and confirm current rules with Efficiency
+                Maine before committing to a project.
+              </p>
+            </div>
+            <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">HEAR Phase 2</p>
               <p className="text-sm text-gray-600 mt-1">
                 A second HEAR phase opening rebates to moderate-income households is planned

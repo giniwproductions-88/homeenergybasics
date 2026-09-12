@@ -140,7 +140,7 @@ export default function MissouriPage() {
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Total potential savings: $2,000–$10,000+</p>
-              <p className="text-sm text-green-900"><strong>$2,000–$2,600</strong> (above 150% AMI, utility only) to <strong>$10,000+</strong> (below 80% AMI, once HEAR launches). Full electrification packages through Columbia W&amp;L can reach ~$3,800 total incentives today.</p>
+              <p className="text-sm text-green-900"><strong>$2,000–$2,600</strong> (above 150% AMI, utility only) to <strong>$10,000+</strong> (below 80% AMI, once HEAR launches; requires existing electric equipment or new construction). Full electrification packages through Columbia W&amp;L can reach ~$3,800 total incentives today.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">✗ Federal tax credits expired</p>
@@ -148,7 +148,7 @@ export default function MissouriPage() {
             </div>
             <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
               <p className="font-semibold text-amber-800 mb-1">⚠ HEAR and HOMES have not launched in Missouri</p>
-              <p className="text-sm text-amber-900">Missouri&apos;s $151 million IRA allocation for HEAR ($75.4M) and HOMES ($75.8M) is pending with no confirmed launch date. Applications were submitted November 2024. When operational, HEAR could cover up to <strong>$8,000</strong> for heat pumps for low-income households. Until then, only utility rebates are available.</p>
+              <p className="text-sm text-amber-900">Missouri&apos;s $151 million IRA allocation for HEAR ($75.4M) and HOMES ($75.8M) is pending with no confirmed launch date. Applications were submitted November 2024. When operational, HEAR could cover up to <strong>$8,000</strong> for heat pumps for low-income households — requires existing electric equipment or new construction. Until then, only utility rebates are available.</p>
             </div>
           </div>
         </div>
@@ -185,6 +185,17 @@ export default function MissouriPage() {
             </p>
           </div>
 
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Under DOE Program Notice 26-2 (effective May 29, 2026), replacing a gas, propane, or oil
+            heating system no longer qualifies for HEAR, and a program that hasn&apos;t launched must
+            align with this before it opens. Eligibility now turns on new construction or on the
+            home&apos;s existing heating equipment already being electric — replacing electric
+            resistance heat with a heat pump is the clearest qualifying case. Programs differ on
+            whether replacing an existing heat pump counts, so confirm with yours before committing.
+            The notice also requires a home to use rebates for insulation and air sealing before a
+            heating or cooling upgrade, unless it already meets a state-specified level.
+            Fuel-switching projects can still route to HOMES, which sets no fuel condition.
+          </p>
           <h3 className="text-lg font-semibold text-gray-900 mb-3">When HEAR launches, expected rebate amounts</h3>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
@@ -199,7 +210,7 @@ export default function MissouriPage() {
               <tbody>
                 <tr className="border-b">
                   <td className="p-3">Heat pump (space heating/cooling)</td>
-                  <td className="p-3 font-semibold">Up to $8,000</td>
+                  <td className="p-3 font-semibold">Up to $8,000 — requires existing electric equipment or new construction</td>
                   <td className="p-3 font-semibold">Up to $4,000</td>
                   <td className="p-3 text-gray-500">—</td>
                 </tr>
@@ -567,7 +578,7 @@ export default function MissouriPage() {
               <p className="font-semibold text-gray-900 mb-2">80–150% AMI — Evergy customer (when HEAR launches)</p>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>Evergy rebate (17.0+ SEER2): $1,200</li>
-                <li>HEAR heat pump rebate (50% of costs): up to $4,000</li>
+                <li>HEAR heat pump rebate (50% of costs): up to $4,000 — requires existing electric equipment or new construction</li>
                 <li>HEAR panel upgrade if needed: up to $2,000</li>
               </ul>
               <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$5,200–$7,200</p>
@@ -576,7 +587,7 @@ export default function MissouriPage() {
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-2">Below 80% AMI — Ameren Missouri customer (when HEAR launches)</p>
               <ul className="text-sm text-green-900 space-y-1">
-                <li>HEAR heat pump rebate (100% of costs): up to $8,000</li>
+                <li>HEAR heat pump rebate (100% of costs): up to $8,000 — requires existing electric equipment or new construction</li>
                 <li>Ameren PAYS rebate: $2,000</li>
                 <li>HEAR panel upgrade: up to $4,000</li>
                 <li>HEAR insulation/air sealing: up to $1,600</li>

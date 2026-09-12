@@ -208,6 +208,17 @@ export default function MarylandPage() {
           </div>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">HEAR &amp; HOMES Programs — Not Yet Launched</h3>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Under DOE Program Notice 26-2 (effective May 29, 2026), replacing a gas, propane, or oil
+            heating system no longer qualifies for HEAR, and a program that hasn&apos;t launched must
+            align with this before it opens. Eligibility now turns on new construction or on the
+            home&apos;s existing heating equipment already being electric — replacing electric
+            resistance heat with a heat pump is the clearest qualifying case. Programs differ on
+            whether replacing an existing heat pump counts, so confirm with yours before committing.
+            The notice also requires a home to use rebates for insulation and air sealing before a
+            heating or cooling upgrade, unless it already meets a state-specified level.
+            Fuel-switching projects can still route to HOMES, which sets no fuel condition.
+          </p>
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5">
             <p className="font-semibold text-amber-800 mb-1">⚠ $136.8 Million Allocated, No Launch Date</p>
             <p className="text-sm text-amber-900 mb-3">
@@ -219,7 +230,7 @@ export default function MarylandPage() {
             <p className="text-sm text-amber-900">
               <strong>As of June 2026, neither program is accepting applications.</strong>{" "}
               When HEAR launches, income-qualified households (below 80% AMI) could
-              receive up to $8,000 for heat pumps and $1,750 for heat pump water heaters.
+              receive up to $8,000 for heat pumps and $1,750 for heat pump water heaters — requires existing electric equipment or new construction.
               These are separate from EmPOWER rebates and are expected to stack.
             </p>
           </div>
@@ -547,7 +558,7 @@ export default function MarylandPage() {
                 <li>EmPOWER HPwES electrification: up to $15,000</li>
                 <li>Montgomery County Electrify MC (if applicable): $2,500</li>
                 <li>Potomac Edison Switch-to-Electric (if applicable): up to $5,700 per unit instead of midstream</li>
-                <li>When HEAR launches: up to $8,000 additional</li>
+                <li>When HEAR launches: up to $8,000 additional — requires existing electric equipment or new construction</li>
               </ul>
               <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$15,000–$17,500 today; potentially ~$25,500 when HEAR launches</p>
             </div>
@@ -557,7 +568,7 @@ export default function MarylandPage() {
               <ul className="text-sm text-green-900 space-y-1">
                 <li>EmPOWER LIEEP: up to $5,000–$10,000 in free upgrades (including HVAC)</li>
                 <li>Maryland WAP: additional free weatherization</li>
-                <li>When HEAR launches: up to $8,000 HP + $1,750 HPWH</li>
+                <li>When HEAR launches: up to $8,000 HP + $1,750 HPWH — requires existing electric equipment or new construction</li>
                 <li>Montgomery County HEECAP grants (if applicable): additional</li>
               </ul>
               <p className="font-semibold text-green-700 mt-2">Realistic maximum: could pay $0 out of pocket</p>

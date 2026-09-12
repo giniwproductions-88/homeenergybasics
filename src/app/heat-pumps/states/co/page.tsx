@@ -924,7 +924,11 @@ export default function ColoradoPage() {
           <p className="text-gray-700 leading-relaxed mb-4">
             <strong>Dual-fuel systems</strong> (heat pump plus existing gas
             furnace backup) are widely recommended for mountain homes and are
-            eligible for both Xcel and HEAR rebates. If you&apos;re also
+            eligible for Xcel rebates. Keeping the gas furnace does not by itself
+            disqualify a project from HEAR, but under DOE Program Notice 26-2 the
+            heat pump must replace existing electric equipment — and Colorado&apos;s
+            HEAR program is closed to new single-family applications as of August
+            2026. If you&apos;re also
             considering home battery storage, see our{" "}
             <Link href="/battery" className="text-brand-600 hover:underline">
               battery guide

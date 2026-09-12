@@ -494,7 +494,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Colorado",
     status: "limited",
     lastVerified: "2026-08-21",
-    lastUpdated: "2026-08-21",
+    lastUpdated: "2026-09-11",
     summary:
       "Xcel Energy pays $2,250/heating ton for cold-climate heat pumps at its with-bonus rate for customers replacing gas heat ($750 standard), stackable with Colorado's $1,000 state tax credit. Income-qualified HEAR single-family rebates are closed statewide as of August 2026 — CEO says Region 2 applications submitted after August 1 will not be reviewed. DRCOG's $1,500 Power Ahead rebate (Denver metro, no income limit) is live — preapproval required before work begins. Federal 25C/25D credits expired December 31, 2025.",
     sources: [
@@ -690,7 +690,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Maryland",
     status: "open",
     lastVerified: "2026-06-02",
-    lastUpdated: "2026-06-02",
+    lastUpdated: "2026-09-11",
     summary:
       "EmPOWER Maryland offers up to $15,000 for electrification projects (75% of cost) through all five major utilities. Midstream rebates of $800–$1,700 per heat pump are available instantly through contractors. Potomac Edison's Switch-to-Electric program adds up to $4,000 on top. Montgomery County's Electrify MC adds $2,500. Federal 25C/25D expired. HEAR/HOMES ($136.8M) not yet launched.",
     sources: [
@@ -938,7 +938,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Vermont",
     status: "open",
     lastVerified: "2026-06-05",
-    lastUpdated: "2026-06-05",
+    lastUpdated: "2026-09-11",
     summary:
       "Vermont heat pump rebates come from Efficiency Vermont ($2,200 ducted; ductless $375 per system at 2 tons or under, $475 above 2 tons, not per head) and utility-specific programs. Burlington Electric offers up to $7,950 for income-qualified ducted systems — the highest in the state. GMP income bonus adds $2,200/condenser for ≤80% AMI households. Federal 25C/25D ended Dec 31, 2025. HEAR ($29.2M) is on pause.",
     sources: [
@@ -1729,7 +1729,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Missouri",
     status: "limited",
     lastVerified: "2026-06-10",
-    lastUpdated: "2026-06-10",
+    lastUpdated: "2026-09-11",
     summary:
       "No statewide rebate or state tax credit. Utility rebates range $200\u2013$5,000: Ameren offers $2,000 for ducted ASHPs, Evergy $650\u2013$1,200, Columbia W&L up to $2,600. HEAR/HOMES ($151M) pending. Federal credits expired.",
     sources: [
@@ -1869,7 +1869,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Kentucky",
     status: "limited",
     lastVerified: "2026-07-20",
-    lastUpdated: "2026-07-20",
+    lastUpdated: "2026-09-11",
     summary:
       "Kentucky utility heat pump rebates range from $250 to $1,500 depending on provider. TVA EnergyRight offers $500–$1,500; EKPC co-ops offer $500–$1,000 including a $1,000 cold-climate bonus. LG&E/KU offers $400. IRA-funded HEAR rebates (up to $8,000) are approved but not yet launched. Federal 25C/25D credits expired Dec 2025.",
     sources: [
@@ -2182,7 +2182,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Nebraska",
     status: "limited",
     lastVerified: "2026-06-11",
-    lastUpdated: "2026-09-10",
+    lastUpdated: "2026-09-11",
     summary:
       "Nebraska has no statewide heat pump rebate and no state tax credit. Utility rebates are the primary incentive: NPPD EnergyWise offers $400\u2013$1,200 for ASHPs, OPPD pays a flat $525, and LES offers $1,000. The City of Lincoln adds up to $3,000 for homeowners at or below 80% of Lincoln AMI ($4,000 combined with LES). Dollar and Energy Saving Loans offer 1.5\u20135% financing. Federal 25C/25D expired Dec 2025. HEAR/HOMES ($91M) not yet launched.",
     sources: [
