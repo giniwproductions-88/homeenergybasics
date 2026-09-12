@@ -40,7 +40,7 @@ const faqJsonLd = {
       name: "Can I stack utility rebates with HEAR in Kentucky?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, once HEAR launches. The Kentucky Energy Rebates FAQ confirms that HEAR rebates can stack with utility rebates. The utility rebate reduces your project cost first, then HEAR covers a percentage of the remaining balance. For example, an EKPC co-op member below 80% AMI could receive a $1,000 co-op rebate plus up to $8,000 from HEAR, potentially covering the full cost of a heat pump installation.",
+        text: "Yes, once HEAR launches. The Kentucky Energy Rebates FAQ confirms that HEAR rebates can stack with utility rebates. The utility rebate reduces your project cost first, then HEAR covers a percentage of the remaining balance. For example, an EKPC co-op member below 80% AMI replacing electric resistance heat could receive a $1,000 co-op rebate plus up to $8,000 from HEAR, potentially covering the full cost of a heat pump installation; under DOE Program Notice 26-2, HEAR no longer covers replacing a gas, propane, or oil system.",
       },
     },
     {
@@ -524,7 +524,7 @@ export default function KentuckyPage() {
           <div className="bg-gray-100 rounded-lg p-5 mb-6">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
             <p className="text-sm text-gray-700">
-              For a typical <strong>$8,000–$12,000</strong> ducted heat pump installation: above 150% AMI homeowners pay <strong>$7,000–$11,700 out of pocket</strong> today (utility rebate only). Once HEAR launches, 80–150% AMI homeowners could pay roughly <strong>$3,500–$7,700</strong>, and below 80% AMI homeowners could pay <strong>$0–$3,700</strong> — at the lower end of project costs, HEAR&apos;s $8,000 cap can cover the entire post-rebate balance for income-qualified households.
+              For a typical <strong>$8,000–$12,000</strong> ducted heat pump installation: above 150% AMI homeowners pay <strong>$7,000–$11,700 out of pocket</strong> today (utility rebate only). Once HEAR launches, 80–150% AMI homeowners could pay roughly <strong>$3,500–$7,700</strong>, and below 80% AMI homeowners could pay <strong>$0–$3,700</strong> — at the lower end of project costs, HEAR&apos;s $8,000 cap can cover the entire post-rebate balance for income-qualified households, for projects that meet HEAR&apos;s existing-electric-equipment or new-construction condition.
             </p>
           </div>
           <p className="text-sm text-gray-500">
@@ -545,7 +545,7 @@ export default function KentuckyPage() {
           </p>
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
             <p className="font-semibold text-green-800 mb-1">✓ Best candidates for Kentucky heat pump incentives</p>
-            <p className="text-sm text-green-900">Homeowners replacing electric resistance heat or propane furnaces see the strongest payback — often $1,000–$2,000+ in annual savings even before rebates. Low-income households in EKPC or TVA territories are especially well-positioned: co-op rebates up to $1,000, plus WAP and eventual HEAR coverage, can eliminate most or all out-of-pocket costs.</p>
+            <p className="text-sm text-green-900">Homeowners replacing electric resistance heat or propane furnaces see the strongest payback — often $1,000–$2,000+ in annual savings even before rebates. Low-income households in EKPC or TVA territories are especially well-positioned: co-op rebates up to $1,000, plus WAP and eventual HEAR coverage, can eliminate most or all out-of-pocket costs. Note that EKPC&apos;s rebates require an electrically heated home and TVA&apos;s require replacing an existing primary electric heat source, so a propane household&apos;s savings case rests on fuel costs rather than on those rebates or on HEAR.</p>
           </div>
         </div>
       </section>
@@ -665,7 +665,7 @@ export default function KentuckyPage() {
           <div className="space-y-4">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">HEAR/HOMES launch timeline</p>
-              <p className="text-sm text-gray-600 mt-1">Kentucky&apos;s $134 million in IRA rebate funding is approved but has no confirmed launch date. The energyrebates.ky.gov site is the official source for updates. Once live, these rebates could cover $4,000–$8,000 per heat pump for qualifying households.</p>
+              <p className="text-sm text-gray-600 mt-1">Kentucky&apos;s $134 million in IRA rebate funding is approved but has no confirmed launch date. The energyrebates.ky.gov site is the official source for updates. Once live, these rebates could cover $4,000–$8,000 per heat pump for qualifying households replacing existing electric equipment.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">IRA funding runway and repeal risk</p>

@@ -618,7 +618,9 @@ export default function EfficiencyMainePage() {
                 A second HEAR phase opening rebates to moderate-income households is planned
                 under the current Triennial Plan, with no launch date announced. If it
                 reaches single-family homes, up to $8,000 in additional stackable rebates
-                would open up.
+                would open up for households replacing existing electric equipment; under
+                DOE Program Notice 26-2, replacing a gas, propane, or oil system does not
+                qualify.
               </p>
             </div>
           </div>

@@ -648,7 +648,7 @@ export default function NebraskaPage() {
           <div className="space-y-4">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Nebraska HEAR/HOMES launch</p>
-              <p className="text-sm text-gray-600 mt-1">The $91 million IRA allocation is still in &quot;Preparing Application&quot; status. When DWEE launches these programs, income-qualifying households could access up to $8,000 per heat pump (HEAR) or up to $10,000 for whole-home projects (HOMES). No timeline has been announced.</p>
+              <p className="text-sm text-gray-600 mt-1">The $91 million IRA allocation is still in &quot;Preparing Application&quot; status. When DWEE launches these programs, income-qualifying households could access up to $8,000 per heat pump (HEAR), for households replacing existing electric equipment, or up to $10,000 for whole-home projects (HOMES). No timeline has been announced.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">IRA funding runway</p>
