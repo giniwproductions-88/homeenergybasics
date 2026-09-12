@@ -109,7 +109,7 @@ export default function CaliforniaPage() {
             {caIncentive.lastUpdated === caIncentive.lastVerified ? (
               <>Updated {formattedDate} — verified against official program sources</>
             ) : (
-              <>Updated {formatDate(caIncentive.lastUpdated)} · Last verified {formattedDate} against official program sources</>
+              <>Updated {formatDate(caIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}
           </p>
           <p className="text-xs text-gray-400 mt-1">

@@ -125,7 +125,7 @@ export default function MichiganPage() {
             {miIncentive.lastUpdated === miIncentive.lastVerified ? (
               <>Updated {formattedDate} — verified against official program sources</>
             ) : (
-              <>Updated {formatDate(miIncentive.lastUpdated)} · Last verified {formattedDate} against official program sources</>
+              <>Updated {formatDate(miIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}
           </p>
           <p className="text-xs text-gray-400 mt-1">

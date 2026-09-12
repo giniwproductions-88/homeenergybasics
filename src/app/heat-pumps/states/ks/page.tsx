@@ -116,7 +116,7 @@ export default function KansasPage() {
             {ksIncentive.lastUpdated === ksIncentive.lastVerified ? (
               <>Updated {formattedDate} — verified against official program sources</>
             ) : (
-              <>Updated {formatDate(ksIncentive.lastUpdated)} · Last verified {formattedDate} against official program sources</>
+              <>Updated {formatDate(ksIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}
           </p>
           <p className="text-xs text-gray-400 mt-1">

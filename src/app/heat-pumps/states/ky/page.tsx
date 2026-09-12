@@ -107,7 +107,11 @@ export default function KentuckyPage() {
             Kentucky heat pump rebates and incentives are still available in 2026, but the landscape is narrower than a year ago. Federal tax credits ended December 31, 2025, and the state&apos;s IRA-funded HEAR program has not yet launched. Utility rebates of <strong>$250–$1,500</strong> are the primary incentive today, with TVA-served and EKPC cooperative territories offering the strongest programs. This guide covers all major Kentucky heat pump incentives available in 2026, including LG&amp;E/KU, Duke Energy, EKPC cooperatives, TVA EnergyRight, and the pending HEAR/HOMES programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {updatedDate} · Verified {formattedDate}
+            {kyIncentive.lastUpdated === kyIncentive.lastVerified ? (
+              <>Updated {updatedDate} · Verified {formattedDate}</>
+            ) : (
+              <>Updated {updatedDate} · Sources last checked {formattedDate}</>
+            )}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

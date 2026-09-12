@@ -107,7 +107,11 @@ export default function IndianaPage() {
             Indiana&apos;s <strong>$182 million Energy Saver Program</strong> is fully operational and offers up to <strong>$8,000</strong> for a heat pump for income-qualified households. Utility rebates from AES Indiana, Duke Energy, NIPSCO, and others add <strong>$275&ndash;$3,000</strong> on top. Federal tax credits expired December 31, 2025. This guide covers all major Indiana heat pump incentives available in 2026, including the Indiana Energy Saver Program (HOMES and HEAR), utility rebates from all major providers, and local programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedUpdated} &middot; Verified {formattedVerified}
+            {inIncentive.lastUpdated === inIncentive.lastVerified ? (
+              <>Updated {formattedUpdated} &middot; Verified {formattedVerified}</>
+            ) : (
+              <>Updated {formattedUpdated} · Sources last checked {formattedVerified}</>
+            )}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

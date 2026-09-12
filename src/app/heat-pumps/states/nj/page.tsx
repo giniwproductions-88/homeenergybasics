@@ -115,7 +115,11 @@ export default function NewJerseyPage() {
             New Jersey has some of the strongest heat pump incentives in the country in 2026. The statewide Whole Home program offers up to <strong>$7,500</strong> in cash-back rebates, and all four electric utilities run their own programs on top. PSE&amp;G&apos;s Building Decarbonization program adds up to <strong>$10,000&ndash;$12,000</strong> for full fossil fuel displacement. Federal tax credits expired December 31, 2025. This guide covers all major New Jersey heat pump incentives available in 2026, including Whole Home, PSE&amp;G, JCP&amp;L, Atlantic City Electric, RECO, NJNG, and IRA program status. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedUpdated} · Last verified {formattedDate} against official program sources
+            {njIncentive.lastUpdated === njIncentive.lastVerified ? (
+              <>Updated {formattedUpdated} · Last verified {formattedDate} against official program sources</>
+            ) : (
+              <>Updated {formattedUpdated} · Sources last checked {formattedDate}</>
+            )}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

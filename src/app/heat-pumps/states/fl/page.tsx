@@ -111,7 +111,11 @@ export default function FloridaPage() {
             Florida has no statewide rebate program in 2026.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedUpdated} &middot; Verified {formattedVerified}
+            {flIncentive.lastUpdated === flIncentive.lastVerified ? (
+              <>Updated {formattedUpdated} &middot; Verified {formattedVerified}</>
+            ) : (
+              <>Updated {formattedUpdated} · Sources last checked {formattedVerified}</>
+            )}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.

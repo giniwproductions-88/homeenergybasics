@@ -109,7 +109,11 @@ export default function NorthCarolinaPage() {
             North Carolina still has some of the strongest heat pump incentives in the country. Energy Saver NC is now live statewide and offers up to <strong>$8,000</strong> for a qualifying heat pump through HEAR or up to <strong>$16,000</strong> in whole-home rebates through HOMES for income-eligible households. Duke Energy and some local utilities add smaller rebates on top, bringing total savings even higher. This guide covers all major North Carolina heat pump incentives available in 2026, including Energy Saver NC HEAR and HOMES, Duke Energy, Dominion Energy, electric cooperatives, and municipal utility programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
-            Updated {formattedUpdated} &middot; Verified {formattedVerified}
+            {ncIncentive.lastUpdated === ncIncentive.lastVerified ? (
+              <>Updated {formattedUpdated} &middot; Verified {formattedVerified}</>
+            ) : (
+              <>Updated {formattedUpdated} · Sources last checked {formattedVerified}</>
+            )}
           </p>
           <p className="text-xs text-gray-400 mt-1">
             Rates and program availability may change after this date.
