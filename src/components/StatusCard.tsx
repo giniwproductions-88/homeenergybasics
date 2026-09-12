@@ -66,11 +66,7 @@ export default function StatusCard({ incentive }: StatusCardProps) {
       {stale && (
         <div className="bg-yellow-100 border border-yellow-300 rounded-lg p-3 mb-4">
           <p className="text-yellow-800 text-sm font-medium">
-            {incentive.lastUpdated === incentive.lastVerified ? (
-              <>⚠️ Status may be outdated — last verified {formattedDate}</>
-            ) : (
-              <>⚠️ Parts of this page haven&apos;t been re-checked against official sources since {formattedDate}.</>
-            )}
+            ⚠️ Parts of this page haven&apos;t been re-checked against official sources since {formattedDate}.
           </p>
         </div>
       )}
