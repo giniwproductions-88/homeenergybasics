@@ -63,7 +63,7 @@ export default function MarylandPage() {
         name: "Has Maryland launched the HEAR/HOMES rebate program?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "No. Maryland was allocated approximately $136.8 million in IRA rebate funding, but neither HEAR nor HOMES has launched as of June 2026. MEA cannot confirm a launch date. When HEAR opens, it could provide up to $8,000 for heat pumps for income-qualified households.",
+          text: "No. Maryland was allocated approximately $136.8 million in IRA rebate funding, but neither HEAR nor HOMES has launched as of June 2026. MEA cannot confirm a launch date. When HEAR opens, it could provide up to $8,000 for heat pumps for income-qualified households \u2014 requires existing electric equipment or new construction.",
         },
       },
       {
@@ -181,7 +181,7 @@ export default function MarylandPage() {
                 Maryland was allocated $136.8 million in IRA rebates ($68.6M HOMES + $68.2M
                 HEAR). Neither program has launched as of June 2026. MEA cannot confirm a
                 date. When HEAR opens, it could add up to $8,000 for income-qualified
-                households on top of EmPOWER.
+                households on top of EmPOWER — requires existing electric equipment or new construction.
               </p>
             </div>
           </div>
@@ -877,8 +877,10 @@ export default function MarylandPage() {
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">HEAR/HOMES Launch</p>
               <p className="text-sm text-gray-600 mt-1">
-                When these programs go live, income-qualified households could get up to
-                $8,000 for a heat pump on top of EmPOWER rebates. No confirmed date yet.
+                When HEAR goes live, income-qualified households could get up to
+                $8,000 for a heat pump on top of EmPOWER rebates —
+                requires existing electric equipment or new construction. HOMES
+                sets no fuel condition. No confirmed launch date for either.
               </p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
