@@ -63,7 +63,7 @@ export default function VermontPage() {
         name: "Can I get 0% financing for a heat pump in Vermont?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. The Home Energy Loan offers 0% interest for income-eligible households, financing up to 100% of a project (maximum $25,000) with terms up to 15 years. Lending partners are EastRise Credit Union and Cornerstone Housing Partners. Work must be done by an Efficiency Excellence Network contractor.",
+          text: "Yes. The Home Energy Loan finances up to 100% of a project, maximum $25,000, with terms up to 15 years. The 0% rate applies only to terms of five years or less for low- and moderate-income households; longer terms carry 1.99% to 3.99% depending on income and term, and higher-income households pay 4.99% to 6.99%. Lending partners are EastRise Credit Union and Cornerstone Housing Partners. Work must be done by an Efficiency Excellence Network contractor.",
         },
       },
       {
@@ -148,7 +148,7 @@ export default function VermontPage() {
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Total Potential Savings</p>
-              <p className="text-sm text-green-900">$1,200–$3,000 (above 150% AMI) to $4,400+ (below 80% AMI) for GMP customers. BED customers can reach ~$9,150. 0% financing available through the Home Energy Loan.</p>
+              <p className="text-sm text-green-900">$1,200–$3,000 (above 150% AMI) to $4,400+ (below 80% AMI) for GMP customers. BED customers can reach ~$9,150. 0% financing available through the Home Energy Loan on terms of five years or less.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">✗ Federal Tax Credits Expired</p>
@@ -218,7 +218,6 @@ export default function VermontPage() {
                   <th className="text-left p-3 font-semibold">Income Level</th>
                   <th className="text-left p-3 font-semibold">Coverage</th>
                   <th className="text-left p-3 font-semibold">Heat Pump Cap</th>
-                  <th className="text-left p-3 font-semibold">Per-Household Cap</th>
                 </tr>
               </thead>
               <tbody>
@@ -226,23 +225,23 @@ export default function VermontPage() {
                   <td className="p-3">Below 80% AMI</td>
                   <td className="p-3">100% of costs (via WAP)</td>
                   <td className="p-3 font-semibold">$8,000 — requires existing electric equipment or new construction</td>
-                  <td className="p-3 font-semibold">$14,000</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">80–150% AMI</td>
                   <td className="p-3">50% of costs</td>
                   <td className="p-3 font-semibold">$8,000 — requires existing electric equipment or new construction</td>
-                  <td className="p-3 font-semibold">$14,000</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3 text-gray-500">Above 150% AMI</td>
                   <td className="p-3 text-gray-500">Not eligible</td>
                   <td className="p-3 text-gray-500">&mdash;</td>
-                  <td className="p-3 text-gray-500">&mdash;</td>
                 </tr>
               </tbody>
             </table>
           </div>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Vermont also requires the heat pump to be the home&apos;s primary heating source, covering at least 50% of its thermal energy use — DPS states rebates will not be issued for systems that fall short of this.
+          </p>
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5">
             <p className="font-semibold text-amber-800 mb-1">⚠ Common Mistake: Trusting Third-Party Rebate Calculators</p>
@@ -393,9 +392,9 @@ export default function VermontPage() {
             A $1,200 income-eligible voucher is also available through EVT for qualifying low-income households to replace one eligible appliance (refrigerator, freezer, or clothes washer).
           </p>
 
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">Home Energy Loan — 0% Financing</h3>
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">Home Energy Loan — 0% to 6.99% Financing</h3>
           <p className="text-gray-700 leading-relaxed">
-            The Home Energy Loan offers <strong>0% interest</strong> for income-eligible households, financing up to 100% of a project (maximum <strong>$25,000</strong>) with terms up to 15 years. Households above the moderate-income limits may pay market interest rates. Lending partners are EastRise Credit Union and Cornerstone Housing Partners. Work must be done by an Efficiency Excellence Network contractor.
+            The Home Energy Loan finances up to 100% of a project, maximum <strong>$25,000</strong>, with terms up to 15 years. The 0% rate applies only to terms of five years or less for low- and moderate-income households; longer terms carry 1.99% to 3.99% depending on income and term, and higher-income households pay 4.99% to 6.99%. Lending partners are EastRise Credit Union and Cornerstone Housing Partners. Work must be done by an Efficiency Excellence Network contractor. Vermont Gas customers can use the loan only for heat pump water heaters, electric appliances, and ducted, ductless, or ground-source heat pumps.
           </p>
         </div>
       </section>
@@ -457,6 +456,9 @@ export default function VermontPage() {
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">BED Centrally Ducted ASHP — High Performance</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            BED splits centrally ducted systems into two classes. The figures below are for High Performance systems only — Standard Performance systems receive no BED online rebate, so a &gt;4 ton system is $2,000 rather than $7,450.
+          </p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
               <thead>
@@ -493,6 +495,9 @@ export default function VermontPage() {
               </tbody>
             </table>
           </div>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            High Performance is not automatic. Your contractor must set the cross-over temperature to 15°F and note it on the quote or final invoice, and both the indoor and outdoor unit must appear together on the NEEP Qualified Product List and be shown on the invoice. BED allows one ducted rebate per household, ducted recipients cannot also claim a ductless rebate, and the form must be submitted within 90 days of installation.
+          </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">BED Ductless Mini-Splits</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
@@ -501,12 +506,12 @@ export default function VermontPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Vermont Electric Cooperative (VEC)</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            EVT base rebates apply. VEC adds a <strong>$150/unit</strong> thermal efficiency bill credit if installed in a weatherized building. Income bonus (≤80% AMI): <strong>$1,000</strong> ($800 VPPSA + $200 EVT). Ground-source: up to <strong>$2,100/ton</strong> (up to 10 tons).
+            EVT base rebates apply. VEC adds a <strong>$150/unit</strong> thermal efficiency bill credit if installed in a weatherized building. Income bonus (≤80% AMI): <strong>$1,000</strong> ($800 VPPSA + $200 EVT).
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Vermont Gas Systems (VGS)</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            VGS serves Chittenden, Franklin, and Addison counties. It does not offer a gas-to-electric conversion rebate. Instead, VGS sells and leases heat pump equipment and incorporates EVT and electric utility rebates into its pricing. VGS positions heat pumps as a hybrid complement to gas systems. VGS offers 0% APR financing for 60 months (up to $15,000) through Green Mountain Credit Union for gas equipment. <strong>Heat pumps purchased through VGS are not eligible for GMP income bonuses.</strong>
+            VGS serves Chittenden, Franklin, and Addison counties. It does not offer a gas-to-electric conversion rebate. Instead, VGS sells and leases heat pump equipment and incorporates EVT and electric utility rebates into its pricing. VGS positions heat pumps as a hybrid complement to gas systems. VGS financing runs through Green Mountain Credit Union, up to $20,000 on a 5-year term: 0% APR for weatherization projects, or 5.99% APR when the project includes a heat pump. Offers run through December 31, 2026. <strong>Heat pumps purchased through VGS are not eligible for GMP income bonuses.</strong>
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Washington Electric Cooperative &amp; Stowe Electric</h3>
@@ -607,6 +612,9 @@ export default function VermontPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Weatherization Assistance</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Vermont&apos;s Weatherization Assistance Program provides free energy efficiency upgrades for income-qualified households. Administered through local Community Action Agencies, WAP covers insulation, air sealing, and heating system improvements. Contact the <a href="https://dcf.vermont.gov/benefits/weatherization" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">VT Department for Children and Families</a> for a county-by-county provider list.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Eligibility has a hard gate: you must not have received free weatherization services in the past 15 years. Beyond that, income is only one of four qualifying paths — an active Seasonal Fuel Assistance household, a household member receiving SSI, or an adult who received Reach Up or the Reach Up Post-Secondary Education grant in the past 12 months also qualifies. The program averages about $10,000 of improvements per home.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
             Efficiency Vermont is also offering <strong>up to 90% cash back</strong> on weatherization projects (air sealing and insulation) through limited-time funding available through the end of 2026 or while funding lasts. Weatherizing your home first allows a smaller, less expensive heat pump system.
