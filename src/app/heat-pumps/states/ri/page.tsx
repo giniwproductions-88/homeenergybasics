@@ -115,7 +115,7 @@ export default function RhodeIslandPage() {
           </p>
           <p className="text-sm text-gray-500">
             {riIncentive.lastUpdated === riIncentive.lastVerified ? (
-              <>Updated {formattedDate} &mdash; verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(riIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

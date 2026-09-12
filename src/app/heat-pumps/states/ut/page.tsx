@@ -107,7 +107,7 @@ export default function UtahPage() {
           </p>
           <p className="text-sm text-gray-500">
             {utIncentive.lastUpdated === utIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(utIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

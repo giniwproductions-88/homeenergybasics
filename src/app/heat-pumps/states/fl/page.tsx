@@ -112,7 +112,7 @@ export default function FloridaPage() {
           </p>
           <p className="text-sm text-gray-500">
             {flIncentive.lastUpdated === flIncentive.lastVerified ? (
-              <>Updated {formattedUpdated} &middot; Verified {formattedVerified}</>
+              <>Updated and sources last checked {formattedVerified}</>
             ) : (
               <>Updated {formattedUpdated} · Sources last checked {formattedVerified}</>
             )}

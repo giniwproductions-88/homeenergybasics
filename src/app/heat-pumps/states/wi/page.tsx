@@ -123,7 +123,7 @@ export default function WisconsinPage() {
           </p>
           <p className="text-sm text-gray-500">
             {wiIncentive.lastUpdated === wiIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(wiIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

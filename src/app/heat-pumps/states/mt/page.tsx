@@ -115,7 +115,7 @@ export default function MontanaPage() {
           </p>
           <p className="text-sm text-gray-500">
             {mtIncentive.lastUpdated === mtIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(mtIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

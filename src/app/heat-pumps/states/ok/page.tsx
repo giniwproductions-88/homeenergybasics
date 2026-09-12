@@ -121,7 +121,7 @@ export default function OklahomaPage() {
           </p>
           <p className="text-sm text-gray-500">
             {okIncentive.lastUpdated === okIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(okIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

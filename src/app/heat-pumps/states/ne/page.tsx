@@ -107,7 +107,7 @@ export default function NebraskaPage() {
           </p>
           <p className="text-sm text-gray-500">
             {neIncentive.lastUpdated === neIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(neIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

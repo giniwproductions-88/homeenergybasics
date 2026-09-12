@@ -115,7 +115,7 @@ export default function PennsylvaniaPage() {
           </p>
           <p className="text-sm text-gray-500">
             {paIncentive.lastUpdated === paIncentive.lastVerified ? (
-              <>Updated {formattedDate} &mdash; verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(paIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

@@ -115,7 +115,7 @@ export default function AlabamaPage() {
           </p>
           <p className="text-sm text-gray-500">
             {alIncentive.lastUpdated === alIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(alIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

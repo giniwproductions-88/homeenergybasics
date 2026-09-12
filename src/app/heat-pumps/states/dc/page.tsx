@@ -107,7 +107,7 @@ export default function WashingtonDCPage() {
           </p>
           <p className="text-sm text-gray-500">
             {dcIncentive.lastUpdated === dcIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(dcIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

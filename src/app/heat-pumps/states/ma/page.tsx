@@ -114,7 +114,7 @@ export default function MassachusettsPage() {
           </p>
           <p className="text-sm text-gray-500">
             {maIncentive.lastUpdated === maIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(maIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

@@ -107,7 +107,7 @@ export default function NewMexicoPage() {
           </p>
           <p className="text-sm text-gray-500">
             {nmIncentive.lastUpdated === nmIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(nmIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

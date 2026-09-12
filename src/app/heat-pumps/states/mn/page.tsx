@@ -117,7 +117,7 @@ export default function MinnesotaPage() {
           </p>
           <p className="text-sm text-gray-500">
             {mnIncentive.lastUpdated === mnIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(mnIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

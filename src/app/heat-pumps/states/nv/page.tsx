@@ -113,7 +113,7 @@ export default function NevadaPage() {
           </p>
           <p className="text-sm text-gray-500">
             {nvIncentive.lastUpdated === nvIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(nvIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

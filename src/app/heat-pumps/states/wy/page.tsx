@@ -107,7 +107,7 @@ export default function WyomingPage() {
           </p>
           <p className="text-sm text-gray-500">
             {wyIncentive.lastUpdated === wyIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(wyIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

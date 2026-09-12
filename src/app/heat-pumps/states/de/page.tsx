@@ -115,7 +115,7 @@ export default function DelawarePage() {
           </p>
           <p className="text-sm text-gray-500">
             {deIncentive.lastUpdated === deIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(deIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

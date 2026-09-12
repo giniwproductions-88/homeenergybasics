@@ -115,7 +115,7 @@ export default function WashingtonPage() {
           </p>
           <p className="text-sm text-gray-500">
             {waIncentive.lastUpdated === waIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(waIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

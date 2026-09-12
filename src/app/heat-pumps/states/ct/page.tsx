@@ -107,7 +107,7 @@ export default function ConnecticutPage() {
           </p>
           <p className="text-sm text-gray-500">
             {ctIncentive.lastUpdated === ctIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(ctIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

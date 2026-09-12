@@ -107,7 +107,7 @@ export default function MissouriPage() {
           </p>
           <p className="text-sm text-gray-500">
             {moIncentive.lastUpdated === moIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(moIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

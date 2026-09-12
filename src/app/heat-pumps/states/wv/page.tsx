@@ -119,7 +119,7 @@ export default function WestVirginiaPage() {
           </p>
           <p className="text-sm text-gray-500">
             {wvIncentive.lastUpdated === wvIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(wvIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

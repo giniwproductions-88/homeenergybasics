@@ -110,7 +110,7 @@ export default function NorthCarolinaPage() {
           </p>
           <p className="text-sm text-gray-500">
             {ncIncentive.lastUpdated === ncIncentive.lastVerified ? (
-              <>Updated {formattedUpdated} &middot; Verified {formattedVerified}</>
+              <>Updated and sources last checked {formattedVerified}</>
             ) : (
               <>Updated {formattedUpdated} · Sources last checked {formattedVerified}</>
             )}

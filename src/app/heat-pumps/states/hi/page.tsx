@@ -107,7 +107,7 @@ export default function HawaiiPage() {
           </p>
           <p className="text-sm text-gray-500">
             {hiIncentive.lastUpdated === hiIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(hiIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

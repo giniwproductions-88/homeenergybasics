@@ -115,7 +115,7 @@ export default function NewYorkPage() {
           </p>
           <p className="text-sm text-gray-500">
             {nyIncentive.lastUpdated === nyIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(nyIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

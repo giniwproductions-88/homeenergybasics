@@ -115,7 +115,7 @@ export default function VermontPage() {
           </p>
           <p className="text-sm text-gray-500">
             {vtIncentive.lastUpdated === vtIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(vtIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

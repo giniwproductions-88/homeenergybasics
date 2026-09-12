@@ -107,7 +107,7 @@ export default function NewHampshirePage() {
           </p>
           <p className="text-sm text-gray-500">
             {nhIncentive.lastUpdated === nhIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(nhIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

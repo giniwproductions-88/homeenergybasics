@@ -108,7 +108,7 @@ export default function IowaPage() {
           </p>
           <p className="text-sm text-gray-500">
             {iaIncentive.lastUpdated === iaIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(iaIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

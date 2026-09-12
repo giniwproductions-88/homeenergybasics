@@ -107,7 +107,7 @@ export default function VirginiaPage() {
           </p>
           <p className="text-sm text-gray-500">
             {vaIncentive.lastUpdated === vaIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(vaIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

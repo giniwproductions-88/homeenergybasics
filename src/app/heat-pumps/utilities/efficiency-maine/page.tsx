@@ -123,7 +123,7 @@ export default function EfficiencyMainePage() {
           </p>
           <p className="text-sm text-gray-500">
             {utility.lastUpdated === utility.lastVerified ? (
-              <>Last verified: {formattedDate}</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(utility.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

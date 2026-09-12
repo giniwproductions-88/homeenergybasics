@@ -135,7 +135,7 @@ export default function LouisianaPage() {
           </p>
           <p className="text-sm text-gray-500">
             {laIncentive.lastUpdated === laIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(laIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

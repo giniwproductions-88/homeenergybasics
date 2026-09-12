@@ -114,7 +114,7 @@ export default function NorthDakotaPage() {
           </p>
           <p className="text-sm text-gray-500">
             {ndIncentive.lastUpdated === ndIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(ndIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

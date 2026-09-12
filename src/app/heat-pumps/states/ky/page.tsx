@@ -108,7 +108,7 @@ export default function KentuckyPage() {
           </p>
           <p className="text-sm text-gray-500">
             {kyIncentive.lastUpdated === kyIncentive.lastVerified ? (
-              <>Updated {updatedDate} · Verified {formattedDate}</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {updatedDate} · Sources last checked {formattedDate}</>
             )}

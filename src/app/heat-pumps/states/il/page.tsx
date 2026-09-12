@@ -126,7 +126,7 @@ export default function IllinoisPage() {
           </p>
           <p className="text-sm text-gray-500">
             {ilIncentive.lastUpdated === ilIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(ilIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

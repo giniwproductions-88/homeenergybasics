@@ -77,12 +77,20 @@ export default function StatusCard({ incentive }: StatusCardProps) {
 
       {/* Timestamps */}
       <div className="flex flex-wrap gap-6 mb-6 text-sm text-gray-600">
-        <div>
-          <span className="font-medium">Updated:</span> {formattedUpdated}
-        </div>
-        <div>
-          <span className="font-medium">Sources last checked:</span> {formattedDate}
-        </div>
+        {incentive.lastUpdated === incentive.lastVerified ? (
+          <div>
+            <span className="font-medium">Updated and sources last checked:</span> {formattedDate}
+          </div>
+        ) : (
+          <>
+            <div>
+              <span className="font-medium">Updated:</span> {formattedUpdated}
+            </div>
+            <div>
+              <span className="font-medium">Sources last checked:</span> {formattedDate}
+            </div>
+          </>
+        )}
       </div>
 
       {/* Summary */}

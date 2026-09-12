@@ -115,7 +115,7 @@ export default function TexasPage() {
           </p>
           <p className="text-sm text-gray-500">
             {txIncentive.lastUpdated === txIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(txIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

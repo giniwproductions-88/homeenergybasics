@@ -116,7 +116,7 @@ export default function OhioPage() {
           </p>
           <p className="text-sm text-gray-500">
             {ohIncentive.lastUpdated === ohIncentive.lastVerified ? (
-              <>Updated {updatedDate} · Verified {formattedDate}</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {updatedDate} · Sources last checked {formattedDate}</>
             )}

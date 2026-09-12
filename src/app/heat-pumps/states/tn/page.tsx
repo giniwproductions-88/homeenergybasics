@@ -107,7 +107,7 @@ export default function TennesseePage() {
           </p>
           <p className="text-sm text-gray-500">
             {tnIncentive.lastUpdated === tnIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(tnIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

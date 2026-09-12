@@ -114,7 +114,7 @@ export default function MississippiPage() {
           </p>
           <p className="text-sm text-gray-500">
             {msIncentive.lastUpdated === msIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(msIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

@@ -113,7 +113,7 @@ export default function AlaskaPage() {
           </p>
           <p className="text-sm text-gray-500">
             {akIncentive.lastUpdated === akIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(akIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

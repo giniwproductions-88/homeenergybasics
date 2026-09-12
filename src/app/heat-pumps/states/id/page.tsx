@@ -114,7 +114,7 @@ export default function IdahoPage() {
           </p>
           <p className="text-sm text-gray-500">
             {idIncentive.lastUpdated === idIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(idIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

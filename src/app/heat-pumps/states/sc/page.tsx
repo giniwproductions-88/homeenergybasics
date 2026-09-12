@@ -108,7 +108,7 @@ export default function SouthCarolinaPage() {
           </p>
           <p className="text-sm text-gray-500">
             {scIncentive.lastUpdated === scIncentive.lastVerified ? (
-              <>Updated {formattedUpdated} &middot; Verified {formattedVerified}</>
+              <>Updated and sources last checked {formattedVerified}</>
             ) : (
               <>Updated {formattedUpdated} · Sources last checked {formattedVerified}</>
             )}

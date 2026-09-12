@@ -109,7 +109,7 @@ export default function ArizonaPage() {
           </p>
           <p className="text-sm text-gray-500">
             {azIncentive.lastUpdated === azIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(azIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

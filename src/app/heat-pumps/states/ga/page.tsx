@@ -108,7 +108,7 @@ export default function GeorgiaPage() {
           </p>
           <p className="text-sm text-gray-500">
             {gaIncentive.lastUpdated === gaIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(gaIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

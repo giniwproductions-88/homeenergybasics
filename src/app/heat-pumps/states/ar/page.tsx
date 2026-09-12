@@ -107,7 +107,7 @@ export default function ArkansasPage() {
           </p>
           <p className="text-sm text-gray-500">
             {arIncentive.lastUpdated === arIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(arIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

@@ -116,7 +116,7 @@ export default function MainePage() {
           </p>
           <p className="text-sm text-gray-500">
             {meIncentive.lastUpdated === meIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(meIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}

@@ -116,7 +116,7 @@ export default function NewJerseyPage() {
           </p>
           <p className="text-sm text-gray-500">
             {njIncentive.lastUpdated === njIncentive.lastVerified ? (
-              <>Updated {formattedUpdated} · Last verified {formattedDate} against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formattedUpdated} · Sources last checked {formattedDate}</>
             )}

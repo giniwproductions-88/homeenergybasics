@@ -135,7 +135,7 @@ export default function ColoradoPage() {
           </p>
           <p className="text-sm text-gray-500">
             {coIncentive.lastUpdated === coIncentive.lastVerified ? (
-              <>Updated {formattedDate} — verified against official program sources</>
+              <>Updated and sources last checked {formattedDate}</>
             ) : (
               <>Updated {formatDate(coIncentive.lastUpdated)} · Sources last checked {formattedDate}</>
             )}
