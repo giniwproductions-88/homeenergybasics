@@ -56,7 +56,7 @@ const faqJsonLd = {
       name: "What happened to the $690 million in IRA rebates for Texas?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Texas was allocated $690 million in federal HOMES and HEAR rebate funding through the Inflation Reduction Act \u2014 the largest allocation in the country. The State Energy Conservation Office (SECO) selected APTIM Federal Services as program implementer and signed a roughly $689 million contract in May 2026. Early implementation work is underway, and SECO is targeting a launch in fall 2026 pending final federal approval. As of June 2026 the program has still not launched and there are no approved contractors yet. When launched, income-qualified households could receive up to $8,000 for heat pump installations.",
+        text: "Texas was allocated $690 million in federal HOMES and HEAR rebate funding through the Inflation Reduction Act \u2014 the largest allocation in the country. The State Energy Conservation Office (SECO) selected APTIM Federal Services as program implementer and signed a roughly $689 million contract in April 2026. SECO has set no launch date; it says one will be established once the state has DOE approval. The program has not launched and there are no approved contractors. When launched, income-qualified households could receive up to $8,000 for heat pump installations.",
       },
     },
     {
@@ -64,7 +64,7 @@ const faqJsonLd = {
       name: "Which Texas utility offers the best heat pump rebate?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Austin Energy offers the most generous rebates in Texas, with whole-home heat pump projects averaging $3,000 in rebates plus 0% APR financing through Velocity Credit Union. CPS Energy in San Antonio offers $100\u2013$275 per ton. In the deregulated market, Oncor provides performance-based incentives that can reach $2,000\u2013$3,400 for large, high-efficiency installations.",
+        text: "Austin Energy offers the most generous rebates in Texas, with whole-home heat pump projects averaging $3,000 in rebates plus 0% APR financing through Velocity Credit Union. CPS Energy in San Antonio offers $100\u2013$275 per ton. In the deregulated market, Oncor provides performance-based incentives; per-project caps run $2,000 at 2 tons to $3,400 at 5 tons.",
       },
     },
     {
@@ -140,11 +140,11 @@ export default function TexasPage() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; Austin Energy: ~$3,000 + 0% financing</p>
-              <p className="text-sm text-green-900">Whole-home projects average $3,000 in rebates. Heat pump rebates $1,000&ndash;$1,600 by tier, plus duct sealing, insulation, and solar screen add-ons. 0% APR financing (5&ndash;10 yr terms) through September 2026.</p>
+              <p className="text-sm text-green-900">Whole-home projects average $3,000 in rebates, including duct sealing, insulation, and solar screen add-ons. 0% financing through September 30, 2026, subject to credit score and projected savings.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-1">&#10003; Deregulated TDU rebates: $200&ndash;$3,400</p>
-              <p className="text-sm text-green-900">Oncor: performance-based, potentially $2,000&ndash;$3,400 for large high-efficiency systems. CenterPoint: from $200, varies by installation, via participating contractor. CPS Energy: $100&ndash;$275/ton. AEP Texas: contractor-channel only.</p>
+              <p className="font-semibold text-green-800 mb-1">&#10003; Deregulated TDU rebates: from $200</p>
+              <p className="text-sm text-green-900">Oncor: performance-based; per-project caps run $2,000 at 2 tons to $3,400 at 5 tons. CenterPoint: from $200, varies by installation, via participating contractor. CPS Energy: $100&ndash;$275/ton. AEP Texas: contractor-channel only.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">&#10003; Potential savings: $0 to $11,000+</p>
@@ -156,7 +156,7 @@ export default function TexasPage() {
             </div>
             <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
               <p className="font-semibold text-amber-800 mb-1">&#9888; $690M in IRA rebates allocated but not launched</p>
-              <p className="text-sm text-amber-900">Texas received the largest IRA rebate allocation in the country &mdash; $690 million for HOMES and HEAR &mdash; and has distributed none of it. SECO has signed APTIM Federal Services as implementer and is targeting a fall 2026 launch, but the program is not yet open and there are no approved contractors. Do not sign contracts based on HEAR rebate amounts until the program officially opens.</p>
+              <p className="text-sm text-amber-900">Texas received the largest IRA rebate allocation in the country &mdash; $690 million for HOMES and HEAR &mdash; and has distributed none of it. SECO has signed APTIM Federal Services as implementer and has set no launch date; it says one will be established once the state has DOE approval. The program is not yet open and there are no approved contractors. Do not sign contracts based on HEAR rebate amounts until the program officially opens.</p>
             </div>
           </div>
         </div>
@@ -188,7 +188,7 @@ export default function TexasPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">$690 million in IRA rebates: allocated but not launched</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Texas was allocated <strong>$690 million</strong> in federal HOMES (~$346M) and HEAR (~$344M) rebate funding &mdash; the largest allocation in the country. The State Energy Conservation Office (SECO) selected APTIM Federal Services as its program implementer, signing a roughly $689 million contract in May 2026, and APTIM has begun early implementation work &mdash; building rebate-processing systems, developing contractor networks, and creating customer tools. SECO is targeting a launch in fall 2026, pending final federal approval. As of June 2026, <strong>the program has still not launched and there are no approved contractors</strong>.
+            Texas was allocated <strong>$690 million</strong> in federal HOMES (~$346M) and HEAR (~$344M) rebate funding &mdash; the largest allocation in the country. The State Energy Conservation Office (SECO) selected APTIM Federal Services as its program implementer, signing a roughly $689 million contract in April 2026, and APTIM has begun early implementation work &mdash; building rebate-processing systems, developing contractor networks, and creating customer tools. SECO has set no launch date; it says one will be established once the state has DOE approval. <strong>The program has not launched and there are no approved contractors.</strong>
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">HEAR rebate amounts (when launched)</h3>
@@ -225,7 +225,7 @@ export default function TexasPage() {
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-amber-800 mb-1">&#9888; Common mistake: signing contracts based on HEAR amounts</p>
-            <p className="text-sm text-amber-900">SECO explicitly warns: &quot;We strongly advise against entering into any agreements associated with the HOMES and HEAR rebate programs until they are formally launched and a list of approved contractors is made available.&quot; Installations before program launch are not eligible.</p>
+            <p className="text-sm text-amber-900">SECO warns against signing any agreement tied to these rebates until the programs formally launch and an approved contractor list is published. Installations before program launch are not eligible.</p>
           </div>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
@@ -261,7 +261,7 @@ export default function TexasPage() {
                 <tr className="border-b">
                   <td className="p-3 font-semibold">Oncor</td>
                   <td className="p-3">DFW, Lubbock, Waco, Tyler (deregulated TDU)</td>
-                  <td className="p-3 font-semibold">Performance-based, up to $2,000&ndash;$3,400</td>
+                  <td className="p-3 font-semibold">Performance-based; per-project caps run $2,000 at 2 tons to $3,400 at 5 tons</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3 font-semibold">CPS Energy</td>
@@ -296,7 +296,7 @@ export default function TexasPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Austin Energy &mdash; best rebates in Texas</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Austin Energy operates the most generous heat pump incentive program in Texas. The <strong>Home Energy Savings</strong> whole-home program averages <strong>~$3,000</strong> in total rebates (heat pump $1,000&ndash;$1,600 by tier, plus duct sealing, insulation, smart thermostats, and solar screens). The standalone AC/heat pump rebate averages <strong>~$800</strong>, with qualifying heat pumps earning <strong>$1,000&ndash;$1,600</strong> by efficiency tier. Austin Energy also offers <strong>0% APR financing</strong> through Velocity Credit Union (5- or 10-year terms, no prepayment penalty) available through September 30, 2026.
+            Austin Energy operates the most generous heat pump incentive program in Texas. The <strong>Home Energy Savings</strong> whole-home program averages <strong>~$3,000</strong> in total rebates (covering duct sealing, insulation, smart thermostats, and solar screens alongside the equipment). The standalone AC/heat pump rebate averages <strong>~$800</strong>. Austin Energy also offers financing through Velocity Credit Union on 5- or 10-year terms with no prepayment penalty. The 0% APR rate is not automatic: it requires a credit score of at least 600 and a participating contractor&apos;s determination that the project&apos;s projected energy savings meet the program&apos;s minimum criteria. Borrowers who do not qualify may still be offered Velocity&apos;s standard home improvement loans. Austin Energy also pays $1,000 for an ENERGY STAR certified heat pump water heater, and runs Home Energy Savings Essential, a lower-cost alternative to the standard whole-home program. Completing Home Energy Savings also exempts you from ECAD disclosure requirements when you sell, inside Austin city limits.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Income-qualified customers (&#8804;80% MFI) can access free weatherization plus rebates and 0% financing on heat pump systems through the Customer Assistance Program.
@@ -304,7 +304,7 @@ export default function TexasPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Oncor &mdash; DFW, Lubbock, Waco, Tyler</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Oncor&apos;s Home Energy Efficiency (HEE) Standard Offer Program provides performance-based incentives that vary by system size, efficiency, and calculated energy savings &mdash; potentially <strong>$2,000&ndash;$3,400</strong> for large, high-efficiency installations. Approved contractor required. 2026 cycle runs approximately February through November (first-come, first-served &mdash; funds have historically run out before year-end). ENERGY STAR required, SEER2 16+ recommended. Oncor also offers a Retail Products Program with point-of-sale HPWH discounts up to $500.
+            Oncor&apos;s Home Energy Efficiency (HEE) Standard Offer Program pays registered service providers, not homeowners directly. The incentive is calculated from verified kilowatt and kilowatt-hour savings, and the 2025 program manual caps it per project by system size: $2,000 at 2 tons, $2,600 at 3 tons, $3,200 at 4 tons, and $3,400 at 5 tons. Those are ceilings, not typical payments. Your service provider distributes the incentive to you and is only required to state the value it has chosen to pass through, and the final amount is not set until Oncor approves the production report &mdash; so ask your contractor what you will actually receive before signing. Sites outside the seven-county Metroplex (Dallas, Tarrant, Rockwall, Denton, Ellis, Johnson and Collin) earn an additional 15%. Approved contractor required. 2026 cycle runs approximately February through November (first-come, first-served &mdash; funds have historically run out before year-end). The manual sets minimums of 11.6 EER and 6.8 HSPF, with cooling capacity from 1.5 tons up to 65,000 Btu/h; new construction requires 18+ SEER. One trap: if the existing equipment has already been removed, or the new system installed, before your provider&apos;s program paperwork is executed, the project is disallowed. Line up the contractor before the old system comes out. Oncor also offers a Retail Products Program with point-of-sale HPWH discounts up to $500.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">CenterPoint Energy &mdash; Houston metro</h3>
@@ -351,10 +351,10 @@ export default function TexasPage() {
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900 mb-2">80&ndash;150% AMI &mdash; Oncor territory ($12,000 heat pump)</p>
               <ul className="text-sm text-gray-700 space-y-1">
-                <li>Oncor HEE incentive: $1,000&ndash;$2,500</li>
+                <li>Oncor HEE incentive: depends on verified savings; capped at $2,600 for a 3-ton system</li>
                 <li>HEAR (when launched, 50% of cost): up to $6,000</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$7,000&ndash;$8,500</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: HEAR up to $6,000 plus an Oncor incentive that cannot be predicted before the production report is approved</p>
             </div>
 
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
@@ -504,7 +504,7 @@ export default function TexasPage() {
           <div className="space-y-4">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">IRA funding runway</p>
-              <p className="text-sm text-gray-600 mt-1">Texas&apos;s $690 million HOMES/HEAR allocation is authorized through September 30, 2031 or until depleted. The OBBBA did not rescind these funds. SECO has signed APTIM Federal Services as implementer and is targeting a fall 2026 launch &mdash; no firm consumer go-live date has been published yet.</p>
+              <p className="text-sm text-gray-600 mt-1">Texas&apos;s $690 million HOMES/HEAR allocation is authorized through September 30, 2031 or until depleted. The OBBBA did not rescind these funds. SECO has set no launch date; it says one will be established once the state has DOE approval. SECO hired APTIM in April 2026 and spent 2026 on early planning and public engagement; a programmatic monitoring RFP closed June 22, 2026. That is pre-launch procurement, not an imminent opening.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Oncor budget depletion</p>
@@ -512,7 +512,7 @@ export default function TexasPage() {
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Austin Energy 0% APR window</p>
-              <p className="text-sm text-gray-600 mt-1">The Velocity Credit Union 0% financing offer runs through September 30, 2026. After that, terms may change. This is the strongest financing offer in the state.</p>
+              <p className="text-sm text-gray-600 mt-1">The Velocity 0% offer runs December 1 through September 30. Austin Energy has not published what follows it, so September 30, 2026 is the close of the current offer rather than a stated end of the program. The rate also depends on credit score and projected savings.</p>
             </div>
           </div>
         </div>
