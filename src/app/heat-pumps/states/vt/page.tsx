@@ -71,7 +71,7 @@ export default function VermontPage() {
         name: "What\u2019s the difference between Burlington Electric and Efficiency Vermont rebates?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Burlington Electric Department (BED) operates its own rebate program, separate from Efficiency Vermont. BED rebates are significantly higher \u2014 up to $7,450 for a high-performance ducted system over 4 tons, compared to $2,200 from Efficiency Vermont. Burlington residents are not eligible for EVT income bonuses but BED\u2019s standalone program more than compensates. All other Vermont electric customers access rebates through Efficiency Vermont.",
+          text: "Burlington Electric Department (BED) operates its own rebate program, separate from Efficiency Vermont. BED rebates are significantly higher \u2014 up to $7,450 for a high-performance ducted system over 4 tons, compared to $1,200–$2,200 from Efficiency Vermont. Burlington residents are not eligible for EVT income bonuses but BED\u2019s standalone program more than compensates. All other Vermont electric customers access rebates through Efficiency Vermont.",
         },
       },
       {
@@ -140,7 +140,7 @@ export default function VermontPage() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Efficiency Vermont (Statewide)</p>
-              <p className="text-sm text-green-900">Ductless <strong>$375</strong> per system at 2 tons or under, <strong>$475</strong> above 2 tons &mdash; per system, not per head. $2,200 ducted, $600 HPWH, $600 integrated controls. Instant discounts through participating HVAC distributors. Burlington Electric customers get a different base: <strong>$350&ndash;$450</strong>.</p>
+              <p className="text-sm text-green-900">Ductless <strong>$375</strong> per system at 2 tons or under, <strong>$475</strong> above 2 tons &mdash; per system, not per head. $1,200–$2,200 ducted, $600 HPWH, $600 integrated controls. Instant discounts through participating HVAC distributors. Burlington Electric customers get a different base: <strong>$350&ndash;$450</strong>.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Burlington Electric — Highest in VT</p>
@@ -148,7 +148,7 @@ export default function VermontPage() {
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Total Potential Savings</p>
-              <p className="text-sm text-green-900">$2,200–$3,000 (above 150% AMI) to $5,400+ (below 80% AMI) for GMP customers. BED customers can reach ~$9,150. 0% financing available through the Home Energy Loan.</p>
+              <p className="text-sm text-green-900">$1,200–$3,000 (above 150% AMI) to $4,400+ (below 80% AMI) for GMP customers. BED customers can reach ~$9,150. 0% financing available through the Home Energy Loan.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">✗ Federal Tax Credits Expired</p>
@@ -286,7 +286,7 @@ export default function VermontPage() {
                 </tr>
                 <tr className="border-b bg-green-50">
                   <td className="p-3">Ducted whole-home</td>
-                  <td className="p-3 font-semibold">$2,200 per system</td>
+                  <td className="p-3 font-semibold">$1,200–$2,200 per system</td>
                   <td className="p-3">Central ducted cold-climate ASHP</td>
                 </tr>
                 <tr className="border-b">
@@ -429,7 +429,7 @@ export default function VermontPage() {
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Ducted</td>
-                  <td className="p-3 font-semibold">$2,200 (EVT)</td>
+                  <td className="p-3 font-semibold">$1,200–$2,200 (EVT)</td>
                   <td className="p-3">Central ducted CCHP</td>
                 </tr>
                 <tr className="border-b">
@@ -516,7 +516,7 @@ export default function VermontPage() {
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
             <p className="font-semibold text-blue-800 mb-1">Your utility determines your rebate</p>
-            <p className="text-sm text-blue-900">The same ducted heat pump installation that gets $2,200 through Efficiency Vermont in most of the state could qualify for $7,450–$7,950 through Burlington Electric. Before budgeting, confirm which electric utility serves your address — it&apos;s the single biggest variable in Vermont&apos;s incentive math.</p>
+            <p className="text-sm text-blue-900">The same ducted heat pump installation that gets $1,200–$2,200 through Efficiency Vermont in most of the state could qualify for $7,450–$7,950 through Burlington Electric. Before budgeting, confirm which electric utility serves your address — it&apos;s the single biggest variable in Vermont&apos;s incentive math.</p>
           </div>
         </div>
       </section>
@@ -535,7 +535,7 @@ export default function VermontPage() {
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900 mb-2">Above 150% AMI — GMP Territory (Ducted + HPWH)</p>
               <ul className="text-sm text-gray-700 space-y-1">
-                <li>EVT ducted system: $2,200</li>
+                <li>EVT ducted system: $1,200–$2,200</li>
                 <li>GMP + EVT HPWH: $800</li>
                 <li>Federal tax credit: $0 (expired)</li>
                 <li>HEAR: $0 (on pause)</li>
@@ -546,7 +546,7 @@ export default function VermontPage() {
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900 mb-2">80–150% AMI — GMP Territory (Ducted + HPWH)</p>
               <ul className="text-sm text-gray-700 space-y-1">
-                <li>EVT ducted system: $2,200</li>
+                <li>EVT ducted system: $1,200–$2,200</li>
                 <li>GMP + EVT HPWH: $800</li>
                 <li>Income bonus not available at this tier for GMP</li>
               </ul>
@@ -556,7 +556,7 @@ export default function VermontPage() {
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-2">Below 80% AMI — GMP Territory (Ducted + HPWH)</p>
               <ul className="text-sm text-green-900 space-y-1">
-                <li>EVT ducted system: $2,200</li>
+                <li>EVT ducted system: $1,200–$2,200</li>
                 <li>GMP income bonus: $2,200/condenser</li>
                 <li>GMP + EVT HPWH: $1,000 (income-qualified)</li>
               </ul>
