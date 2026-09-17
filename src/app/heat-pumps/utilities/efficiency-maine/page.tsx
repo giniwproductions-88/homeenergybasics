@@ -468,9 +468,12 @@ export default function EfficiencyMainePage() {
           </h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             Efficiency Maine rebates and the $500 whole-home bonus stack automatically at
-            point of sale. HEAR may stack, subject to each program&apos;s current rules, but
-            only for eligible mobile/manufactured homes and new affordable multifamily
-            construction. Total incentives cannot exceed project cost.
+            point of sale. Maine&apos;s homeowner-facing HEAR funding does not stack with
+            Efficiency Maine&apos;s standard rebates: it arrives through the Mobile Home
+            Initiative&apos;s set-price package, and participants receive neither the $500
+            bonus nor the standard per-unit rebates. Maine&apos;s other HEAR initiative
+            funds new affordable multifamily construction, not homeowner retrofits.
+            Total incentives cannot exceed project cost.
           </p>
           <div className="space-y-4 mb-8">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
