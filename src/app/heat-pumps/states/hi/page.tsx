@@ -6,16 +6,16 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title:
-    "Hawaii Heat Pump Rebates 2026: Up to $14,000 + Hawaii Energy Rebates | Home Energy Basics",
+    "Hawaii Heat Pump Rebates 2026: Hawaii Energy Instant Rebates + eHale Status | Home Energy Basics",
   description:
-    "Hawaii Energy offers $450\u2013$700 instant rebates. eHale HEAR covers up to $14,000. Federal credits ended. Every Hawaii heat pump incentive in 2026.",
+    "Hawaii Energy pays up to $550 per mini-split and $700 for a heat pump water heater through June 2027. eHale is still pending launch. Every Hawaii heat pump incentive in 2026.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/hi",
   },
   openGraph: {
     title: "Hawaii Heat Pump Rebates 2026",
     description:
-      "Up to $14,000 in income-qualified rebates plus Hawaii Energy instant rebates \u2014 the complete guide to Hawaii heat pump incentives after federal credits expired.",
+      "Hawaii Energy instant rebates on mini-splits and heat pump water heaters, plus where the state's eHale program actually stands \u2014 the complete guide to Hawaii heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/hi",
     type: "article",
     publishedTime: "2026-03-23T21:52:26-05:00",
@@ -47,15 +47,15 @@ export default function HawaiiPage() {
         name: "What heat pump rebates are available in Hawaii in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Hawaii Energy offers instant rebates of $450\u2013$550 for qualifying mini-split systems, $500\u2013$700 for heat pump water heaters, and $1,250 for central AC retrofits. The upcoming eHale HEAR program will provide up to $8,000 for heat pumps and $1,750 for heat pump water heaters for income-qualified households. Federal Section 25C and 25D tax credits expired December 31, 2025.",
+          text: "Hawaii Energy offers instant rebates of $450\u2013$550 for qualifying mini-split systems, $500\u2013$700 for heat pump water heaters, and $1,250 for central AC retrofits. The state\u2019s eHale program (HEEHR pathway) is not open and has no published Hawaii rebate amounts; HSEO publishes only a percentage of project cost by income. Federal Section 25C and 25D tax credits expired December 31, 2025.",
         },
       },
       {
         "@type": "Question",
-        name: "Can I stack Hawaii Energy rebates with eHale HEAR rebates?",
+        name: "Can I stack Hawaii Energy rebates with eHale rebates?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Federal HEAR rules allow stacking with utility rebates and other programs as long as combined incentives do not exceed 100% of the project cost. Hawaii Energy rebates have historically stacked with other incentive programs. Income-qualified households could combine both for maximum savings.",
+          text: "Neither administrator has published whether the two combine. Federal rules cap combined incentives at 100% of project cost, and HSEO says a household may use both the HEEHR and HOMES pathways but not for the same measure. eHale is not accepting applications, so the question is not yet live.",
         },
       },
       {
@@ -71,7 +71,7 @@ export default function HawaiiPage() {
         name: "Who administers Hawaii\u2019s heat pump incentive programs?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Hawaii Energy, operated by Leidos as the state\u2019s Public Benefits Fee Administrator, manages instant rebates for ratepayers on Oahu, Maui, Molokai, Lanai, and Hawaii Island. The Hawaii State Energy Office administers the eHale HEAR program. Kauai residents access separate rebates through the Kauai Island Utility Cooperative (KIUC).",
+          text: "Hawaii Energy, operated by Leidos as the state\u2019s Public Benefits Fee Administrator, manages instant rebates for ratepayers on Oahu, Maui, Molokai, Lanai, and Hawaii Island. The Hawaii State Energy Office administers the eHale program, whose appliance pathway it now calls HEEHR. Kauai residents access separate rebates through the Kauai Island Utility Cooperative (KIUC).",
         },
       },
       {
@@ -79,7 +79,7 @@ export default function HawaiiPage() {
         name: "Are Kauai residents eligible for the same rebates as other islands?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Kauai residents are not served by Hawaii Energy. Instead, KIUC offers its own rebates including $500 for heat pump water heaters and $50 for window AC units. Kauai residents will be eligible for the statewide eHale HEAR program once it launches, which provides up to $8,000 for heat pumps and $1,750 for heat pump water heaters for income-qualified households.",
+          text: "Kauai residents are not served by Hawaii Energy. KIUC offers its own rebates, including $500 for a heat pump water heater replacing an existing electric water heater or a non-functioning unit, and $1,500 for a solar water heater. KIUC does not currently offer a mini-split heat pump rebate. Kauai residents will be eligible for the statewide eHale program once it launches.",
         },
       },
     ],
@@ -103,7 +103,7 @@ export default function HawaiiPage() {
             Hawaii Heat Pump Rebates and Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Hawaii homeowners can access up to <strong>$14,000</strong> in income-qualified heat pump rebates in 2026 through the upcoming eHale program, plus instant rebates of <strong>$450–$700</strong> from Hawaii Energy right now. Federal tax credits have expired, but Hawaii&apos;s nation-high electricity rates make heat pumps the highest-ROI energy upgrade in the country. This guide covers all major Hawaii heat pump incentives available in 2026, including Hawaii Energy, eHale HEAR, and KIUC programs. Here&apos;s the complete breakdown.
+            Hawaii Energy pays instant rebates of <strong>up to $550</strong> per mini-split unit and <strong>up to $700</strong> for a heat pump water heater right now, through June 30, 2027 while funding lasts. The state&apos;s eHale program would add more, but it is still pending federal approval and is not accepting applications. Federal tax credits have expired, but Hawaii&apos;s nation-high electricity rates make heat pumps the highest-ROI energy upgrade in the country. This guide covers all major Hawaii heat pump incentives available in 2026, including Hawaii Energy, eHale, and KIUC programs. Here&apos;s the complete breakdown.
           </p>
           <p className="text-sm text-gray-500">
             {hiIncentive.lastUpdated === hiIncentive.lastVerified ? (
@@ -130,25 +130,25 @@ export default function HawaiiPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">The short version</h2>
           <div className="grid md:grid-cols-2 gap-4">
-            <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-1">✓ eHale HEAR program (coming 2026)</p>
-              <p className="text-sm text-green-900">Up to $8,000 for heat pumps and $1,750 for heat pump water heaters. Income-qualified households below 80% AMI can receive up to 100% of project costs. Maximum $14,000 per household.</p>
+            <div className="bg-amber-50 border border-amber-200 rounded-lg p-5">
+              <p className="font-semibold text-amber-800 mb-1">⚠ eHale (HEEHR) is not open</p>
+              <p className="text-sm text-amber-900">Hawaii&apos;s HEEHR pathway would cover up to 100% of project cost below 80% AMI and up to 50% between 80% and 150% AMI. HSEO has published no rebate amounts and is still awaiting DOE approval to launch.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Hawaii Energy instant rebates (open now)</p>
-              <p className="text-sm text-green-900">$450–$550 for mini-split systems, $500–$700 for heat pump water heaters, and $1,250 for central AC retrofits. Offered first-come, first-served on all islands except Kauai; amounts carried over into the program year that began July 2026.</p>
+              <p className="text-sm text-green-900">$450–$550 for mini-split systems, $500–$700 for heat pump water heaters, and $1,250 for central AC retrofits. Offered first-come, first-served on all islands except Kauai; the 2026&ndash;27 program year runs through June 30, 2027.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Total potential savings</p>
-              <p className="text-sm text-green-900">$550 (above 150% AMI) to $11,000+ (below 80% AMI). Full electrification packages can reach about $14,000 in total incentives.</p>
+              <p className="text-sm text-green-900">$450&ndash;$550 for a single mini-split by capacity, or about $1,250 for a mini-split plus heat pump water heater, at any income, on every island except Kauai. Income-qualified households will be able to add eHale once it launches.</p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
               <p className="font-semibold text-red-800 mb-1">✗ Federal tax credits expired</p>
               <p className="text-sm text-red-900">Section 25C and Section 25D both ended December 31, 2025. No federal tax credits are available for heat pumps installed in 2026.</p>
             </div>
             <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
-              <p className="font-semibold text-amber-800 mb-1">⚠ eHale HEAR has not launched yet</p>
-              <p className="text-sm text-amber-900">The eHale program is expected to open in 2026 but is not yet accepting applications. Hawaii Energy rebates are available right now. Claim Hawaii Energy instant rebates today and apply for eHale HEAR when it launches — both can stack on separate equipment.</p>
+              <p className="font-semibold text-amber-800 mb-1">⚠ eHale has not launched yet</p>
+              <p className="text-sm text-amber-900">HSEO is still awaiting DOE approval and is not accepting applications. Hawaii Energy rebates are available right now. Claim Hawaii Energy instant rebates today and watch HSEO for the eHale launch. Whether the two can be combined has not been published.</p>
             </div>
           </div>
         </div>
@@ -167,26 +167,29 @@ export default function HawaiiPage() {
             </p>
           </div>
           <p className="text-gray-700 leading-relaxed">
-            While federal tax credits are gone, the IRA&apos;s direct rebate programs — HEAR and HOMES — survived the One Big Beautiful Bill entirely. These appropriated funds remain available until depleted or September 30, 2031, making them the most significant federal incentive channel for heat pumps in 2026. Hawaii&apos;s eHale program is the state&apos;s implementation of these surviving IRA rebates.
+            While federal tax credits are gone, the IRA&apos;s direct rebate programs — HEEHR (renamed from HEAR by DOE in 2026) and HOMES — survived the One Big Beautiful Bill entirely. These appropriated funds remain available until depleted or September 30, 2031, making them the most significant federal incentive channel for heat pumps in 2026. Hawaii&apos;s eHale program is the state&apos;s implementation of these surviving IRA rebates.
           </p>
         </div>
       </section>
 
-      {/* 5. eHale HEAR (Primary) */}
+      {/* 5. eHale HEEHR (Primary) */}
       <section className="py-12">
         <div className="container-narrow">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">eHale Energy Saver Rebate Program (HEAR)</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">eHale Energy Saver Rebate Program (HEEHR)</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Hawaii&apos;s implementation of the federal Home Electrification and Appliance Rebates (HEAR) program is the <strong>eHale Energy Saver Rebate Program</strong>, administered by the Hawaii State Energy Office (HSEO). Hawaii received a total allocation of <strong>$69 million</strong> across HEAR and HOMES pathways. The program is expected to launch in 2026 but is not yet accepting applications.
+            Hawaii&apos;s implementation of the federal home electrification rebates is the <strong>eHale Energy Saver Rebate Program</strong>, administered by the Hawaii State Energy Office (HSEO). HSEO now calls the appliance pathway <strong>HEEHR</strong> (High-Efficiency Electric Home Rebates), the name DOE adopted in Program Notice 26-2. Hawaii received a total allocation of <strong>$69 million</strong> across the HEEHR and HOMES pathways. Neither is open. HSEO says HEEHR funding has been fully awarded and that it is completing DOE pre-launch requirements; HOMES funding is still only anticipated. Its page says both will be available in late 2026, while its own FAQ says it cannot estimate a launch timeline.
           </p>
 
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">HEAR rebate amounts</h3>
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">What eHale would pay</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            HSEO has published no rebate amounts for Hawaii. What it publishes is a percentage of eligible project cost, by income. The figures below are the federal ceilings that apply nationally; Hawaii&apos;s own amounts, once announced, may be lower.
+          </p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
               <thead>
                 <tr className="bg-gray-100">
                   <th className="text-left p-3 font-semibold">Equipment</th>
-                  <th className="text-left p-3 font-semibold">Maximum HEAR Rebate</th>
+                  <th className="text-left p-3 font-semibold">Federal maximum (Hawaii amount not yet set)</th>
                 </tr>
               </thead>
               <tbody>
@@ -216,46 +219,12 @@ export default function HawaiiPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Income eligibility</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            HEAR is exclusively for income-qualified households. Those at or below <strong>80% of Area Median Income (AMI)</strong> receive up to 100% of eligible project costs. Households between <strong>80–150% AMI</strong> receive up to 50%. Those above 150% AMI are not eligible for HEAR. The maximum total per household across all measures is <strong>$14,000</strong>.
+            HEEHR is exclusively for income-qualified households. Those at or below <strong>80% of Area Median Income (AMI)</strong> may receive up to 100% of eligible project cost. Households between <strong>80% and 150% AMI</strong> may receive up to 50%. Those above 150% AMI are not eligible. HSEO also recognises categorical eligibility through Medicaid, SNAP, Head Start, Lifeline, FDPIR, the National School Lunch Program, HOPWA, SSI and Public Housing, with WIC qualifying for some households depending on size and county. HSEO links an AMI lookup from its eHale page; check your household against it before assuming a tier.
           </p>
 
-          <div className="overflow-x-auto mb-6">
-            <table className="min-w-full text-sm">
-              <thead>
-                <tr className="bg-gray-100">
-                  <th className="text-left p-3 font-semibold">County</th>
-                  <th className="text-left p-3 font-semibold">80% AMI (4-person)</th>
-                  <th className="text-left p-3 font-semibold">150% AMI (4-person, est.)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="border-b bg-green-50">
-                  <td className="p-3">Honolulu</td>
-                  <td className="p-3 font-semibold">$121,600</td>
-                  <td className="p-3 font-semibold">~$228,000</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">Maui</td>
-                  <td className="p-3 font-semibold">$107,700</td>
-                  <td className="p-3 font-semibold">~$202,000</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">Kauai</td>
-                  <td className="p-3 font-semibold">$104,200</td>
-                  <td className="p-3 font-semibold">~$195,400</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">Hawaii County</td>
-                  <td className="p-3 font-semibold">$96,700</td>
-                  <td className="p-3 font-semibold">~$181,300</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
-            <p className="font-semibold text-blue-800 mb-1">Hawaii&apos;s high cost of living means more families qualify</p>
-            <p className="text-sm text-blue-900">Hawaii&apos;s AMI thresholds are among the highest in the country. A Honolulu family of four earning up to $121,600 qualifies for 100% cost coverage under HEAR, and a family earning up to ~$228,000 qualifies for 50% coverage. Categorical eligibility through SNAP, Medicaid, SSI, or WIC also applies.</p>
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-5">
+            <p className="font-semibold text-amber-800 mb-1">⚠ HEEHR will not cover fuel switching</p>
+            <p className="text-sm text-amber-900">Under DOE Program Notice 26-2, effective May 29, 2026, the program no longer covers replacing a fossil-fuel appliance with an electric one. HSEO states this directly: you cannot switch from a propane or natural gas stove to an induction cooktop. Most Hawaii households already cool and heat water with electricity, so most projects are unaffected — but confirm before committing. HSEO also says there will be no retroactive rebates for work done before launch, and that a program-certified contractor must perform the installation.</p>
           </div>
         </div>
       </section>
@@ -265,7 +234,7 @@ export default function HawaiiPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Hawaii Energy instant rebates</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Hawaii Energy is the state&apos;s ratepayer-funded efficiency program, operated by Leidos as the Public Benefits Fee Administrator. Rebates operate on a July&ndash;June program year, first-come, first-served while funding lasts; the amounts below carried over into the program year that began <strong>July 2026</strong>. Hawaii Energy serves ratepayers on Oahu, Maui, Molokai, Lanai, and Hawaii Island. Kauai residents are not eligible — they are served separately by KIUC.
+            Hawaii Energy is the state&apos;s ratepayer-funded efficiency program, operated by Leidos as the Public Benefits Fee Administrator. Rebates operate on a July&ndash;June program year, first-come, first-served while funding lasts; the 2026&ndash;27 program year runs from July 1, 2026 through <strong>June 30, 2027</strong>. Hawaii Energy serves ratepayers on Oahu, Maui, Molokai, Lanai, and Hawaii Island. Kauai residents are not eligible — they are served separately by KIUC.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Heat pump water heater rebates</h3>
@@ -288,7 +257,7 @@ export default function HawaiiPage() {
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">HPWH tune-up (every 3 years)</td>
-                  <td className="p-3 font-semibold">$200</td>
+                  <td className="p-3 font-semibold">Up to $325</td>
                 </tr>
               </tbody>
             </table>
@@ -334,6 +303,11 @@ export default function HawaiiPage() {
             <p className="font-semibold text-amber-800 mb-1">⚠ Common mistake: missing the contractor requirement</p>
             <p className="text-sm text-amber-900">Mini-split and central AC rebates require installation by a Hawaii Energy Clean Energy Ally contractor. Self-installations and installations by non-participating contractors do not qualify. Verify your contractor&apos;s status on the Hawaii Energy website before scheduling work.</p>
           </div>
+
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mt-4">
+            <p className="font-semibold text-amber-800 mb-1">⚠ Common mistake: the tax credit on Hawaii Energy&apos;s own page is gone</p>
+            <p className="text-sm text-amber-900">Hawaii Energy&apos;s cooling rebate page marks mini-splits and central AC retrofits as qualifying for Inflation Reduction Act tax credits. The federal 25C credit ended December 31, 2025 and is not available for 2026 installations. If a contractor quotes that page to you, the rebate is real and the tax credit is not. Hawaii&apos;s own 35% state solar tax credit is separate and unaffected.</p>
+          </div>
         </div>
       </section>
 
@@ -358,17 +332,7 @@ export default function HawaiiPage() {
                 <tr className="border-b">
                   <td className="p-3">Heat pump water heater</td>
                   <td className="p-3 font-semibold">$500</td>
-                  <td className="p-3">Must replace existing electric or non-functioning unit</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">Window AC (ENERGY STAR)</td>
-                  <td className="p-3 font-semibold">$50</td>
-                  <td className="p-3">EER 11.2+, limit one per household</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">Ceiling fan (ENERGY STAR)</td>
-                  <td className="p-3 font-semibold">$25</td>
-                  <td className="p-3">Up to two per household</td>
+                  <td className="p-3">Must replace an existing electric water heater, a non-functioning HPWH, or a non-functioning solar water heater; new construction excluded</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Solar water heater</td>
@@ -384,7 +348,7 @@ export default function HawaiiPage() {
             </table>
           </div>
           <p className="text-gray-700 leading-relaxed">
-            KIUC also provides free refrigerator and water heater replacement for qualifying low-income seniors (age 60+). Kauai residents will be eligible for the statewide eHale HEAR program once it launches, which will significantly expand their available incentives.
+            KIUC also offers rebates for window air conditioners and ceiling fans — check kiuc.coop for current amounts — and provides free refrigerator and water heater replacement for qualifying low-income seniors (age 60+). Kauai residents will be eligible for the statewide eHale program once it launches. HSEO has not published what it will pay.
           </p>
         </div>
       </section>
@@ -394,7 +358,7 @@ export default function HawaiiPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">How programs stack</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Federal HEAR rules explicitly permit stacking with utility rebates and other programs. The only constraint is that combined incentives cannot exceed 100% of the project cost. Hawaii Energy rebates have historically stacked with other incentive programs. Hawaii&apos;s state renewable energy tax credit (RETITC) does not cover standard heat pumps or heat pump water heaters — it applies only to solar and wind systems.
+            Whether Hawaii Energy rebates will combine with eHale has not been published by either administrator. Federal rules cap combined incentives at 100% of project cost, and HSEO says a household may use both the HEEHR and HOMES pathways but not on the same measure. Hawaii&apos;s state renewable energy tax credit (RETITC) does not cover standard heat pumps or heat pump water heaters — it applies only to solar and wind systems.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Mini-split heat pump + heat pump water heater</h3>
@@ -404,37 +368,37 @@ export default function HawaiiPage() {
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>Hawaii Energy mini-split rebate: $550</li>
                 <li>Hawaii Energy HPWH rebate (55+ gal): $700</li>
-                <li>eHale HEAR: not eligible</li>
+                <li>eHale: not eligible at this income</li>
               </ul>
               <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$1,250</p>
             </div>
 
             <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900 mb-2">80–150% AMI — mini-split + HPWH</p>
+              <p className="font-semibold text-gray-900 mb-2">80–150% AMI — mini-split + HPWH (eHale not yet open)</p>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>Hawaii Energy mini-split rebate: $550</li>
                 <li>Hawaii Energy HPWH rebate (55+ gal): $700</li>
-                <li>eHale HEAR heat pump (50% of cost): up to $8,000</li>
-                <li>eHale HEAR HPWH (50% of cost): up to $1,750</li>
+                <li>Available today: $1,250 from Hawaii Energy</li>
+                <li>If eHale opens: up to 50% of eligible project cost. Hawaii amounts are not published, and whether eHale combines with Hawaii Energy is not published either.</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$7,250 on a $12,000 project (50% coverage; caps allow more on larger projects)</p>
+              <p className="font-semibold text-green-700 mt-2">Today: $1,250. A 50% eHale tier would cover far more, but no Hawaii figure exists to add to it yet.</p>
             </div>
 
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-2">Below 80% AMI — mini-split + HPWH (best case)</p>
+              <p className="font-semibold text-green-800 mb-2">Below 80% AMI — mini-split + HPWH (eHale not yet open)</p>
               <ul className="text-sm text-green-900 space-y-1">
-                <li>Hawaii Energy mini-split rebate: $550+</li>
-                <li>Hawaii Energy HPWH rebate (55+ gal): $700+</li>
-                <li>eHale HEAR heat pump (100% of cost): up to $8,000</li>
-                <li>eHale HEAR HPWH (100% of cost): up to $1,750</li>
+                <li>Hawaii Energy mini-split rebate: $550</li>
+                <li>Hawaii Energy HPWH rebate (55+ gal): $700</li>
+                <li>Available today: $1,250 from Hawaii Energy</li>
+                <li>If eHale opens: up to 100% of eligible project cost for this income tier. Hawaii amounts are not published.</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$11,000+</p>
+              <p className="font-semibold text-green-700 mt-2">Today: $1,250. If eHale opens at 100% coverage, potentially the full project cost.</p>
             </div>
           </div>
 
           <div className="bg-gray-100 rounded-lg p-5">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
-            <p className="text-sm text-gray-700">For a typical mini-split + HPWH installation costing $8,000–$12,000 total: homeowners above 150% AMI can expect <strong>$6,750–$10,750 out of pocket</strong>. Homeowners between 80–150% AMI may pay roughly <strong>$2,750–$4,750 out of pocket</strong> once eHale HEAR launches. Income-qualified households below 80% AMI may pay <strong>$0–$1,000 out of pocket</strong> once eHale HEAR launches.</p>
+            <p className="text-sm text-gray-700">For a typical mini-split + HPWH installation costing $8,000&ndash;$12,000 total, a homeowner on Oahu, Maui, Molokai, Lanai or Hawaii Island can claim about $1,250 from Hawaii Energy today at any income, leaving <strong>$6,750&ndash;$10,750 out of pocket</strong>. On Kauai, KIUC offers $500 for a heat pump water heater and no mini-split rebate. Income-qualified households would pay substantially less once eHale opens — up to 50% of eligible cost between 80% and 150% AMI, and up to 100% below 80% AMI — but HSEO has not published Hawaii&apos;s amounts, is not accepting applications, and has not said whether eHale combines with Hawaii Energy rebates.</p>
           </div>
           <p className="text-sm text-gray-500 mt-4">
             Note: Hawaii&apos;s state renewable energy tax credit (RETITC) does not cover heat pumps or heat pump water heaters. No additional state tax credit is available. GEM$ on-bill financing can cover remaining out-of-pocket costs for eligible households.
@@ -459,7 +423,7 @@ export default function HawaiiPage() {
 
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
             <p className="font-semibold text-green-800 mb-1">✓ Best candidates for Hawaii heat pump incentives</p>
-            <p className="text-sm text-green-900">Income-qualified homeowners (below 150% AMI) on any island who currently use electric resistance water heating or older window AC units. Households below 80% AMI stand to benefit most — potentially covering 100% of heat pump and HPWH costs through eHale HEAR plus Hawaii Energy rebates. Homeowners with high monthly electric bills ($200+) will see the fastest payback regardless of income level.</p>
+            <p className="text-sm text-green-900">Income-qualified homeowners (below 150% AMI) on any island who currently use electric resistance water heating or older window AC units. Households below 80% AMI stand to benefit most once eHale opens, since HSEO&apos;s published tier covers up to 100% of eligible project cost. Homeowners with high monthly electric bills ($200+) will see the fastest payback regardless of income level.</p>
           </div>
         </div>
       </section>
@@ -541,8 +505,8 @@ export default function HawaiiPage() {
                 2
               </div>
               <div>
-                <p className="font-semibold text-gray-900">Check your eHale HEAR eligibility</p>
-                <p className="text-sm text-gray-700">Determine your household income relative to your county&apos;s AMI thresholds. Households below 150% AMI will qualify for HEAR rebates once the program launches. Categorical eligibility through SNAP, Medicaid, SSI, or WIC also applies.</p>
+                <p className="font-semibold text-gray-900">Check your eHale eligibility</p>
+                <p className="text-sm text-gray-700">Determine your household income relative to your county&apos;s AMI, using the lookup HSEO links from its eHale page. Households below 150% AMI will qualify once the program launches. Categorical eligibility through SNAP, Medicaid, SSI and several other programs also applies; WIC qualifies only some households, by size and county.</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -550,7 +514,7 @@ export default function HawaiiPage() {
                 3
               </div>
               <div>
-                <p className="font-semibold text-gray-900">Apply for eHale HEAR when it opens</p>
+                <p className="font-semibold text-gray-900">Apply for eHale when it opens</p>
                 <p className="text-sm text-gray-700">Monitor the Hawaii State Energy Office eHale page for launch announcements. The program will be available statewide, including Kauai. Apply through the HSEO portal once applications open.</p>
               </div>
             </div>
@@ -574,7 +538,7 @@ export default function HawaiiPage() {
           <div className="space-y-4">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">eHale program launch date</p>
-              <p className="text-sm text-gray-600 mt-1">HSEO is completing DOE pre-launch requirements. Both HEAR and HOMES pathways are expected in 2026, but no firm date has been announced. Monitor the HSEO eHale page for updates.</p>
+              <p className="text-sm text-gray-600 mt-1">HSEO is completing DOE pre-launch requirements. HSEO&apos;s page says late 2026; its FAQ says it cannot estimate a timeline. HEEHR funding is fully awarded; HOMES funding is only anticipated. Monitor the HSEO eHale page for updates.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">IRA funding runway</p>
@@ -582,11 +546,11 @@ export default function HawaiiPage() {
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Hawaii Energy program-year funding</p>
-              <p className="text-sm text-gray-600 mt-1">Rebate amounts carried over into the program year that began July 2026 and remain first-come, first-served while funding lasts. Hawaii Energy is also rolling out a new application portal, so application steps may change mid-year.</p>
+              <p className="text-sm text-gray-600 mt-1">The 2026&ndash;27 program year runs through June 30, 2027, first-come, first-served while funding lasts. Several water-heating amounts rose when it opened. Hawaii Energy is also rolling out a new application portal, so application steps may change mid-year.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">KIUC program expansion</p>
-              <p className="text-sm text-gray-600 mt-1">KIUC currently lacks mini-split rebates, limiting options for Kauai residents. The eHale launch will be the first time Kauai residents can access substantial heat pump rebates comparable to other islands.</p>
+              <p className="text-sm text-gray-600 mt-1">KIUC currently lacks mini-split rebates, limiting options for Kauai residents. The eHale launch will be the first time Kauai residents can access a statewide heat pump rebate, though HSEO has not published amounts.</p>
             </div>
           </div>
         </div>

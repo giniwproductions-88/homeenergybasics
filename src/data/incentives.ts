@@ -1129,10 +1129,10 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "HI",
     stateName: "Hawaii",
     status: "open",
-    lastVerified: "2026-07-06",
-    lastUpdated: "2026-07-06",
+    lastVerified: "2026-09-16",
+    lastUpdated: "2026-09-16",
     summary:
-      "Hawaii Energy offers $500\u2013$700 instant rebates for heat pump water heaters and up to $550 for mini-splits under its current program year. eHale HEAR program (up to $14,000 for income-qualified households) expected to launch in 2026 but not yet accepting applications. Federal 25C/25D credits expired Dec 2025. KIUC offers separate $500 HPWH rebate on Kauai.",
+      "Hawaii Energy instant rebates are the main heat pump incentive open now, on every island except Kauai: up to $550 per mini-split unit, $1,250 for a central AC retrofit, and up to $700 for a heat pump water heater, through June 30, 2027 while funding lasts. Kauai is served by KIUC instead ($500 HPWH, no mini-split rebate). The state\u2019s eHale program (HEEHR and HOMES) is pending DOE approval \u2014 HSEO\u2019s page says late 2026 while its own FAQ says it cannot estimate a date \u2014 and publishes no rebate amounts. Federal 25C/25D expired Dec 2025.",
     sources: [
       {
         label: "Hawaii State Energy Office \u2014 eHale Energy Saver Rebate Program",

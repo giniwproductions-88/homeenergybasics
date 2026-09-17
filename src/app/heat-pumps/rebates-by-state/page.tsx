@@ -67,7 +67,7 @@ const moderateStates: StateTier[] = [
   { code: "PA", name: "Pennsylvania", headlineAmount: "$350–$1,950", primaryProgram: "Act 129 utility rebates", note: "Act 129 Phase V began June 1, 2026: PECO, PPL, and UGI have published claimable amounts; Duquesne Light is refreshing its program and FirstEnergy has not posted a schedule. Penn Energy Savers ($258M) not launched." },
   { code: "VA", name: "Virginia", headlineAmount: "Up to $2,000", primaryProgram: "Washington Gas (NoVA only)", note: "$188M IRA funding pending. Most areas limited to small utility rebates." },
   { code: "MO", name: "Missouri", headlineAmount: "$200–$5,000", primaryProgram: "Ameren + Evergy + Columbia W&L", note: "No statewide program. Ameren offers $2,000 for ducted ASHPs." },
-  { code: "HI", name: "Hawaii", headlineAmount: "$450–$700", primaryProgram: "Hawaii Energy", note: "Mini-splits $450–$550; HPWHs $500–$700 under the current program year. eHale HEAR expected 2026. KIUC offers separate $500 HPWH on Kauai." },
+  { code: "HI", name: "Hawaii", headlineAmount: "$450–$700", primaryProgram: "Hawaii Energy", note: "Mini-splits $450–$550; HPWHs $500–$700 through June 30, 2027. eHale still pending DOE approval. KIUC offers separate $500 HPWH on Kauai." },
   { code: "LA", name: "Louisiana", headlineAmount: "Up to $3,500", primaryProgram: "SWEPCO + Cleco", note: "SWEPCO strongest. Entergy only $500. HEAR/HOMES not launched." },
   { code: "IL", name: "Illinois", headlineAmount: "Up to $1,800", primaryProgram: "ComEd + Ameren", note: "Utility-only. HEAR and HOMES still pending launch." },
 ];
