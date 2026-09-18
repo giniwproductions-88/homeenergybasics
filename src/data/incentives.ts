@@ -689,10 +689,10 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "MD",
     stateName: "Maryland",
     status: "open",
-    lastVerified: "2026-06-02",
+    lastVerified: "2026-09-17",
     lastUpdated: "2026-09-17",
     summary:
-      "EmPOWER Maryland offers up to $15,000 for electrification projects (75% of cost) at BGE, Pepco, Delmarva and SMECO; Potomac Edison caps its whole-home rebate at $10,000. Midstream rebates of $800–$1,700 per heat pump are available instantly through contractors. Potomac Edison's Switch-to-Electric program adds up to $4,000 on top. Montgomery County's Electrify MC adds $2,500. Federal 25C/25D expired. HEAR/HOMES ($136.8M) not yet launched.",
+      "EmPOWER Maryland is the main incentive: whole-home electrification up to $15,000 (75% of cost) at BGE, Pepco, Delmarva and SMECO, and $10,000 at Potomac Edison. Midstream per-equipment rebates run $800–$1,700, though no utility publishes its own amounts. BGE, Pepco and Potomac Edison each pay extra for fossil-to-electric conversions; only Potomac Edison publishes the figures (up to $4,000 per heat pump). Montgomery County's Electrify MC adds up to $2,500, but only through Elysian Energy. Federal 25C/25D expired Dec 2025. Maryland's IRA rebates (HEAR and HERO, formerly HOMES) have DOE conditional approval only, with no launch date.",
     sources: [
       {
         label: "BGE Smart Energy — Heating & Cooling",
@@ -737,6 +737,14 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "IRS — 25C/25D Expiration (OBBBA FAQ)",
         url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
+      },
+      {
+        label: "BGE — Switch to Electric",
+        url: "https://bgesmartenergy.com/residential/electrification",
+      },
+      {
+        label: "Pepco — Make The Switch to Electric",
+        url: "https://homeenergysavings.pepco.com/md/residential/switch-to-electric",
       },
     ],
   },

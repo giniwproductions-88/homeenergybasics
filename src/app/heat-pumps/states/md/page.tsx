@@ -60,10 +60,10 @@ export default function MarylandPage() {
       },
       {
         "@type": "Question",
-        name: "Has Maryland launched the HEAR/HOMES rebate program?",
+        name: "Has Maryland launched the HEAR/HERO rebate program?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "No. Maryland was allocated approximately $136.8 million in IRA rebate funding, but neither HEAR nor HOMES has launched as of June 2026. MEA cannot confirm a launch date. When HEAR opens, it could provide up to $8,000 for heat pumps for income-qualified households \u2014 requires existing electric equipment or new construction.",
+          text: "No. Maryland was allocated approximately $136.8 million in IRA rebate funding, but neither HEAR nor HERO (the efficiency pathway, formerly HOMES) has launched as of September 2026. MEA cannot confirm a launch date. When HEAR opens, it could provide up to $8,000 for heat pumps for income-qualified households \u2014 requires existing electric equipment or new construction.",
         },
       },
       {
@@ -71,7 +71,7 @@ export default function MarylandPage() {
         name: "Which Maryland utility has the best heat pump rebates?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Potomac Edison (western Maryland \u2014 Frederick, Hagerstown) currently offers the most generous per-equipment incentives through its Switch-to-Electric program. A cold-climate heat pump can receive $1,700 standard + $4,000 switch-to-electric adder = $5,700 total. Other utilities offer $800\u2013$1,700 through midstream rebates, or up to $15,000 through the whole-home HPwES pathway.",
+          text: "Potomac Edison is the only Maryland utility that publishes its switch-to-electric amounts: a cold-climate heat pump can receive $1,700 standard plus a $4,000 adder, $5,700 total. BGE and Pepco also pay extra for converting from gas, oil or propane to electric but do not publish the amounts, so ask a participating contractor. Every utility offers $800\u2013$1,700 through midstream rebates, or up to $15,000 through the whole-home pathway \u2014 $10,000 at Potomac Edison.",
         },
       },
       {
@@ -177,10 +177,10 @@ export default function MarylandPage() {
               </p>
             </div>
             <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 md:col-span-2">
-              <p className="font-semibold text-amber-800 mb-1">⚠ $136.8M HEAR/HOMES Still Pending</p>
+              <p className="font-semibold text-amber-800 mb-1">⚠ $136.8M HEAR/HERO Still Pending</p>
               <p className="text-sm text-amber-900">
-                Maryland was allocated $136.8 million in IRA rebates ($68.6M HOMES + $68.2M
-                HEAR). Neither program has launched as of June 2026. MEA cannot confirm a
+                Maryland was allocated $136.8 million in IRA rebates ($68.6M HERO, formerly HOMES + $68.2M
+                HEAR). Neither program has launched as of September 2026. MEA cannot confirm a
                 date. When HEAR opens, it could add up to $8,000 for income-qualified
                 households on top of EmPOWER — requires existing electric equipment or new construction.
               </p>
@@ -189,7 +189,7 @@ export default function MarylandPage() {
         </div>
       </section>
 
-      {/* 4. Federal Expired + HEAR/HOMES Pending */}
+      {/* 4. Federal Expired + HEAR/HERO Pending */}
       <section className="bg-gray-50 py-12">
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Federal Tax Credits Are Gone</h2>
@@ -208,7 +208,7 @@ export default function MarylandPage() {
             </p>
           </div>
 
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">HEAR &amp; HOMES Programs — Not Yet Launched</h3>
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">HEAR &amp; HERO Programs — Not Yet Launched</h3>
           <p className="text-gray-700 leading-relaxed mb-6">
             Under DOE Program Notice 26-2 (effective May 29, 2026), replacing a gas, propane, or oil
             heating system no longer qualifies for HEAR, and a program that hasn&apos;t launched must
@@ -218,18 +218,20 @@ export default function MarylandPage() {
             whether replacing an existing heat pump counts, so confirm with yours before committing.
             The notice also requires a home to use rebates for insulation and air sealing before a
             heating or cooling upgrade, unless it already meets a state-specified level.
-            Fuel-switching projects can still route to HOMES, which sets no fuel condition.
+            Fuel-switching projects can still route to HERO, which sets no fuel condition.
           </p>
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5">
             <p className="font-semibold text-amber-800 mb-1">⚠ $136.8 Million Allocated, No Launch Date</p>
             <p className="text-sm text-amber-900 mb-3">
               Maryland was allocated ~$136.8 million in IRA home energy rebates: $68.6M
-              for HOMES (modeled savings) and $68.2M for HEAR (income-qualified
-              electrification). Both received conditional DOE approval, and Maryland
-              Environmental Service issued an RFP for a service provider in July 2025.
+              for HERO (modeled savings, formerly HOMES) and $68.2M for HEAR (income-qualified
+              electrification). Those allocation figures come from DOE, not from MEA, whose own program page
+              publishes no dollar amounts. Both pathways received conditional DOE approval,
+              and Maryland Environmental Service issued an RFP for a service provider in
+              July 2025.
             </p>
             <p className="text-sm text-amber-900">
-              <strong>As of June 2026, neither program is accepting applications.</strong>{" "}
+              <strong>As of September 2026, neither program is accepting applications.</strong>{" "}
               When HEAR launches, income-qualified households (below 80% AMI) could
               receive up to $8,000 for heat pumps and $1,750 for heat pump water heaters — requires existing electric equipment or new construction.
               These are separate from EmPOWER rebates and are expected to stack.
@@ -262,8 +264,11 @@ export default function MarylandPage() {
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Path 2: Midstream HVAC Rebates — Per-Equipment, No Audit</h3>
           <p className="text-gray-700 leading-relaxed mb-6">
             Instant rebates applied at the point of sale through participating
-            contractors. No energy audit required. Available to all homeowners. Amounts
-            vary slightly by utility but are standardized across EmPOWER:
+            contractors. No energy audit required. Available to all homeowners. The
+            amounts below are standardized across EmPOWER, but none of the five utilities
+            publishes them: their rebate pages list only minimum efficiency tiers and tell
+            you to ask a participating contractor. Confirm the current amount with your
+            contractor before signing.
           </p>
 
           <div className="overflow-x-auto mb-6">
@@ -345,7 +350,9 @@ export default function MarylandPage() {
               <strong>HPwES</strong>: Up to $15,000 electrification / $10,000 non-electrification.{" "}
               <strong>Midstream</strong>: Standard table above. <strong>HPWH</strong>: Up
               to $1,600 via appliance rebate program (instant at Lowe&apos;s/Home Depot or
-              mail-in).
+              mail-in), plus 75% of home-preparation costs up to $1,500.{" "}
+              <strong>Electrification</strong>: additional rebates for replacing a gas, oil
+              or propane system with electric; BGE publishes no amounts.
             </p>
             <p className="text-sm text-gray-600">
               <strong>Income-qualified</strong>: Limited Income Program — pay $250–$750
@@ -363,7 +370,10 @@ export default function MarylandPage() {
               <strong>HPwES</strong>: Up to $15,000 electrification. Includes 0% interest
               financing for 24 months option.{" "}
               <strong>Midstream</strong>: Same as BGE.{" "}
-              <strong>HPWH</strong>: Up to $1,600.
+              <strong>HPWH</strong>: Up to $1,600.{" "}
+              <strong>Electrification</strong>: participating contractors receive additional
+              rebates for converting heating and cooling from gas, oil or propane to
+              electric; Pepco publishes no amounts.
             </p>
             <p className="text-sm text-gray-600">
               Pepco territory overlaps with Montgomery County&apos;s Electrify MC program
@@ -373,7 +383,7 @@ export default function MarylandPage() {
 
           {/* Potomac Edison */}
           <div className="bg-green-50 border border-green-200 rounded-lg p-5 mb-4">
-            <h3 className="text-lg font-semibold text-gray-900 mb-3">Potomac Edison (FirstEnergy) — Best Per-Equipment Rebates</h3>
+            <h3 className="text-lg font-semibold text-gray-900 mb-3">Potomac Edison (FirstEnergy) — Published Switch-to-Electric Amounts</h3>
             <p className="text-sm text-green-900 mb-3">
               Western Maryland: Frederick, Hagerstown, Cumberland.
             </p>
@@ -381,8 +391,11 @@ export default function MarylandPage() {
               <strong>Home Performance</strong>: 75% of eligible costs up to <strong>$10,000</strong> per home — a lower whole-home cap than the $15,000 at BGE, Pepco, Delmarva and SMECO. Potomac Edison has not published whether Switch-to-Electric incentives can be claimed on the same project.
             </p>
             <p className="text-sm text-green-900 mb-3">
-              Potomac Edison runs a dedicated <strong>Switch-to-Electric Program</strong>{" "}
-              that adds a bonus on top of standard midstream rebates:
+              Potomac Edison runs a <strong>Switch-to-Electric Program</strong> that adds a{" "}
+              bonus on top of standard midstream rebates. BGE and Pepco also pay extra
+              for replacing a gas, oil or propane system with electric, but neither
+              publishes its amounts, so Potomac Edison&apos;s are the only ones we can
+              state:
             </p>
             <div className="overflow-x-auto mb-6">
               <table className="min-w-full text-sm">
@@ -478,16 +491,16 @@ export default function MarylandPage() {
           </div>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
-            <p className="font-semibold text-blue-800 mb-1">Potomac Edison Has Maryland&apos;s Best Per-Equipment Rebates</p>
+            <p className="font-semibold text-blue-800 mb-1">Potomac Edison Is the Only Utility That Publishes Its Switch-to-Electric Amounts</p>
             <p className="text-sm text-blue-900">
               Western Maryland homeowners on Potomac Edison can receive up to <strong>$5,700</strong> for
-              a single cold-climate heat pump through the Switch-to-Electric program — more
-              than three times what most other Maryland utilities offer through midstream
-              alone. Its whole-home cap is lower, though — $10,000 against $15,000
-              elsewhere — so the audit pathway is worth less here than in BGE or
-              Pepco territory. If you&apos;re in Frederick, Hagerstown, or Cumberland and still
-              heating with oil or gas, this is one of the strongest per-equipment incentives
-              in the mid-Atlantic.
+              a single cold-climate heat pump through the Switch-to-Electric program. BGE and
+              Pepco pay their own fossil-to-electric adders but publish no amounts, so a
+              like-for-like comparison is not possible from published sources. Potomac
+              Edison&apos;s whole-home cap is lower — $10,000 against $15,000 elsewhere —
+              so the audit pathway is worth less here. If you&apos;re in Frederick,
+              Hagerstown, or Cumberland and still heating with oil or gas, ask every
+              utility-participating contractor what the conversion adder is worth.
             </p>
           </div>
         </div>
@@ -890,11 +903,11 @@ export default function MarylandPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">What to Watch</h2>
           <div className="space-y-4">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900">HEAR/HOMES Launch</p>
+              <p className="font-semibold text-gray-900">HEAR/HERO Launch</p>
               <p className="text-sm text-gray-600 mt-1">
                 When HEAR goes live, income-qualified households could get up to
                 $8,000 for a heat pump on top of EmPOWER rebates —
-                requires existing electric equipment or new construction. HOMES
+                requires existing electric equipment or new construction. HERO
                 sets no fuel condition. No confirmed launch date for either.
               </p>
             </div>
@@ -929,10 +942,12 @@ export default function MarylandPage() {
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">IRA Funding Runway</p>
               <p className="text-sm text-gray-600 mt-1">
-                Maryland&apos;s $136.8M in HEAR/HOMES funding comes from the Inflation
-                Reduction Act. Federal policy changes could affect the timeline or
-                availability of these programs. EmPOWER is state-funded and not subject to
-                these federal IRA changes (though see the 2027 state cuts noted above).
+                Maryland&apos;s $136.8M in HEAR/HERO funding comes from the Inflation
+                Reduction Act. DOE issued further Program Notices on June 1, 2026, and MEA
+                says it is still evaluating what they mean for Maryland&apos;s programs, so
+                the rules may change again before launch. EmPOWER is state-funded and not
+                subject to these federal IRA changes (though see the 2027 state cuts noted
+                above).
               </p>
             </div>
           </div>

@@ -360,7 +360,7 @@ export default function StackingRebatesPage() {
               Total stacked: up to ~$10,000 via Home Performance, or ~$5,700 per unit via midstream
             </p>
             <p className="text-sm text-gray-600 mt-1">
-              Potomac Edison has Maryland&apos;s richest per-equipment rebates, but its
+              Potomac Edison publishes the largest per-equipment adder in Maryland, though BGE and Pepco pay unpublished adders too. Its
               whole-home cap is $10,000 against $15,000 at BGE, Pepco and Delmarva, and
               the utility has not published whether Switch-to-Electric can be claimed on
               the same project as Home Performance.
