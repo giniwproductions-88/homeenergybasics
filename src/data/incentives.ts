@@ -690,9 +690,9 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateName: "Maryland",
     status: "open",
     lastVerified: "2026-06-02",
-    lastUpdated: "2026-09-11",
+    lastUpdated: "2026-09-17",
     summary:
-      "EmPOWER Maryland offers up to $15,000 for electrification projects (75% of cost) through four of the five major utilities. Midstream rebates of $800–$1,700 per heat pump are available instantly through contractors. Potomac Edison's Switch-to-Electric program adds up to $4,000 on top. Montgomery County's Electrify MC adds $2,500. Federal 25C/25D expired. HEAR/HOMES ($136.8M) not yet launched.",
+      "EmPOWER Maryland offers up to $15,000 for electrification projects (75% of cost) at BGE, Pepco, Delmarva and SMECO; Potomac Edison caps its whole-home rebate at $10,000. Midstream rebates of $800–$1,700 per heat pump are available instantly through contractors. Potomac Edison's Switch-to-Electric program adds up to $4,000 on top. Montgomery County's Electrify MC adds $2,500. Federal 25C/25D expired. HEAR/HOMES ($136.8M) not yet launched.",
     sources: [
       {
         label: "BGE Smart Energy — Heating & Cooling",
@@ -705,6 +705,10 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label: "Potomac Edison — Switch to Electric",
         url: "https://energysavemd-home.com/switch-to-electric-program/",
+      },
+      {
+        label: "Potomac Edison — Home Performance",
+        url: "https://energysavemd-home.com/home-performance/",
       },
       {
         label: "Delmarva Power — HVAC Efficiency",

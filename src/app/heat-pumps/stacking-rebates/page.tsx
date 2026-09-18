@@ -352,16 +352,18 @@ export default function StackingRebatesPage() {
           </h3>
           <div className="bg-white border border-gray-200 rounded-lg p-5 mb-6">
             <ul className="text-sm text-gray-700 space-y-1">
-              <li>EmPOWER Maryland (75% of cost, max $15,000): <strong>$11,250</strong></li>
+              <li>EmPOWER Maryland at Potomac Edison (75% of cost, max $10,000): <strong>up to $10,000</strong></li>
               <li>Switch-to-Electric bonus: <strong>up to $4,000</strong></li>
               <li>Midstream contractor rebate: <strong>$800–$1,700</strong></li>
             </ul>
             <p className="font-semibold text-green-700 mt-2">
-              Total stacked: ~$15,000+
+              Total stacked: up to ~$10,000 via Home Performance, or ~$5,700 per unit via midstream
             </p>
             <p className="text-sm text-gray-600 mt-1">
-              Potomac Edison territory stacks deepest in Maryland. Other utilities
-              (BGE, Pepco, Delmarva) offer the EmPOWER base but not the Switch-to-Electric bonus.
+              Potomac Edison has Maryland&apos;s richest per-equipment rebates, but its
+              whole-home cap is $10,000 against $15,000 at BGE, Pepco and Delmarva, and
+              the utility has not published whether Switch-to-Electric can be claimed on
+              the same project as Home Performance.
             </p>
           </div>
 

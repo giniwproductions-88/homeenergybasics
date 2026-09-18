@@ -254,7 +254,7 @@ export default function MarylandPage() {
             This is the high-value path. A $100 energy audit (subsidized — normally ~$400)
             leads to modeled savings recommendations. As of May 2025, electrification
             projects (converting from fossil fuel to heat pump) qualify for up to{" "}
-            <strong>$15,000 or 75% of total project cost</strong>, whichever is less.
+            <strong>$15,000 or 75% of total project cost</strong>, whichever is less — except at Potomac Edison, where the whole-home cap is <strong>$10,000</strong>.
             Non-electrification improvements cap at $10,000 or 75%. Oil and propane
             systems now qualify — a significant expansion from prior cycles.
           </p>
@@ -318,7 +318,7 @@ export default function MarylandPage() {
             <p className="font-semibold text-green-800 mb-1">✓ Best Candidates for Maryland Rebates</p>
             <p className="text-sm text-green-900">
               Homeowners converting from gas, oil, or propane to a heat pump (electrification
-              bonus unlocks the $15,000 HPwES cap). Potomac Edison customers switching from
+              bonus unlocks the $15,000 HPwES cap, or $10,000 at Potomac Edison). Potomac Edison customers switching from
               fossil fuel (highest per-equipment rebates in the state). Montgomery County
               residents (Electrify MC stacks with EmPOWER). Eastern Shore homeowners on
               propane or fuel oil (largest operating cost savings from switching).
@@ -332,8 +332,7 @@ export default function MarylandPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Utility-by-Utility Differences</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            All five utilities share the EmPOWER framework above. The differences are
-            in bonus programs and electrification adders.
+            The five electric utilities below share the EmPOWER framework above; Washington Gas Light also participates on the gas side. The differences are in whole-home caps, bonus programs and electrification adders.
           </p>
 
           {/* BGE */}
@@ -377,6 +376,9 @@ export default function MarylandPage() {
             <h3 className="text-lg font-semibold text-gray-900 mb-3">Potomac Edison (FirstEnergy) — Best Per-Equipment Rebates</h3>
             <p className="text-sm text-green-900 mb-3">
               Western Maryland: Frederick, Hagerstown, Cumberland.
+            </p>
+            <p className="text-sm text-green-900 mb-3">
+              <strong>Home Performance</strong>: 75% of eligible costs up to <strong>$10,000</strong> per home — a lower whole-home cap than the $15,000 at BGE, Pepco, Delmarva and SMECO. Potomac Edison has not published whether Switch-to-Electric incentives can be claimed on the same project.
             </p>
             <p className="text-sm text-green-900 mb-3">
               Potomac Edison runs a dedicated <strong>Switch-to-Electric Program</strong>{" "}
@@ -476,12 +478,14 @@ export default function MarylandPage() {
           </div>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
-            <p className="font-semibold text-blue-800 mb-1">Potomac Edison Territory Is the Best Deal in Maryland</p>
+            <p className="font-semibold text-blue-800 mb-1">Potomac Edison Has Maryland&apos;s Best Per-Equipment Rebates</p>
             <p className="text-sm text-blue-900">
               Western Maryland homeowners on Potomac Edison can receive up to <strong>$5,700</strong> for
               a single cold-climate heat pump through the Switch-to-Electric program — more
               than three times what most other Maryland utilities offer through midstream
-              alone. If you&apos;re in Frederick, Hagerstown, or Cumberland and still
+              alone. Its whole-home cap is lower, though — $10,000 against $15,000
+              elsewhere — so the audit pathway is worth less here than in BGE or
+              Pepco territory. If you&apos;re in Frederick, Hagerstown, or Cumberland and still
               heating with oil or gas, this is one of the strongest per-equipment incentives
               in the mid-Atlantic.
             </p>
@@ -497,10 +501,17 @@ export default function MarylandPage() {
           <div className="bg-green-50 border border-green-200 rounded-lg p-5 mb-4">
             <p className="font-semibold text-green-800 mb-1">✓ Montgomery County — Electrify MC</p>
             <p className="text-sm text-green-900 mb-2">
-              The standout local program. Cold-climate heat pump: <strong>$2,500</strong>.
-              Mini-split: $2,000. HPWH: $500. Shared flue bonus (electrifying 2 fossil
-              appliances): $1,000. Oil tank removal: $500. Stacks with Pepco/BGE
-              EmPOWER rebates.
+              A County pilot, and the standout local program. Cold-climate heat pump: <strong>$2,500</strong>.
+              Mini-split: $2,000. Ducted heat pump: $1,000. Geothermal: $2,000. HPWH: $500.
+              Shared flue bonus (electrifying 2 fossil appliances that share a masonry
+              chimney): $1,000. Oil tank removal: $500. Stacks with Pepco/BGE EmPOWER
+              rebates, and the incentive is applied at point of sale.
+            </p>
+            <p className="text-sm text-green-900 mb-2">
+              <strong>You must use Elysian Energy</strong>, the County&apos;s competitively
+              chosen contractor, to receive these incentives — work done by your own
+              contractor does not qualify. Fossil-fuel heating cannot be retained, and
+              since July 16, 2024 the equipment must replace a fossil-fuelled equivalent.
             </p>
             <p className="text-sm text-green-900">
               Also offers HEECAP Homes Grants ($1.5M fund for LMI electrification) and
@@ -559,12 +570,12 @@ export default function MarylandPage() {
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900 mb-2">80–150% AMI — HPwES Whole-Home Path</p>
               <ul className="text-sm text-gray-700 space-y-1">
-                <li>EmPOWER HPwES electrification: up to $15,000</li>
+                <li>EmPOWER HPwES electrification: up to $15,000 ($10,000 at Potomac Edison)</li>
                 <li>Montgomery County Electrify MC (if applicable): $2,500</li>
-                <li>Potomac Edison Switch-to-Electric (if applicable): up to $5,700 per unit instead of midstream</li>
+                <li>Potomac Edison Switch-to-Electric: up to $5,700 per unit on the midstream path. Whether it can also be claimed alongside Home Performance is unpublished.</li>
                 <li>When HEAR launches: up to $8,000 additional — requires existing electric equipment or new construction</li>
               </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$15,000–$17,500 today; potentially ~$25,500 when HEAR launches</p>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$15,000–$17,500 today in BGE, Pepco, Delmarva and SMECO territory; potentially ~$25,500 when HEAR launches. Potomac Edison caps the whole-home pathway at $10,000, and neither the utility nor the state has published whether Switch-to-Electric can be claimed on the same project.</p>
             </div>
 
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
@@ -585,7 +596,8 @@ export default function MarylandPage() {
               <strong>$0 (income-qualified through LIEEP/WAP) to ~$14,000–$17,000 out of pocket</strong>{" "}
               (above 150% AMI, midstream path on a $16,000–$20,000 project). The HPwES
               pathway significantly reduces out-of-pocket to ~$3,000–$5,000 for most
-              projects but requires a $100 audit and comprehensive scope. No state tax
+              projects, or ~$4,000–$10,000 at Potomac Edison, where the whole-home cap
+              is $10,000. Either way it requires a $100 audit and comprehensive scope. No state tax
               credit exists for air-source heat pumps. No state-level low-interest loan
               exclusively for heat pumps (BeSMART loans cover broader home improvements).
             </p>
@@ -618,7 +630,7 @@ export default function MarylandPage() {
                   <td className="p-3">EmPOWER HPwES</td>
                   <td className="p-3">Up to $15,000</td>
                   <td className="p-3">Up to $15,000</td>
-                  <td className="p-3">Up to $15,000</td>
+                  <td className="p-3">Up to $10,000</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">OR midstream (no audit)</td>
@@ -642,7 +654,7 @@ export default function MarylandPage() {
                   <td className="p-3 font-semibold">Realistic today</td>
                   <td className="p-3 font-semibold">~$1,700–$15,000</td>
                   <td className="p-3 font-semibold">~$4,200–$17,500</td>
-                  <td className="p-3 font-semibold">~$5,700–$18,000</td>
+                  <td className="p-3 font-semibold">~$5,700–$10,000</td>
                 </tr>
               </tbody>
             </table>
@@ -671,16 +683,10 @@ export default function MarylandPage() {
               </thead>
               <tbody>
                 <tr className="border-b">
-                  <td className="p-3">BeSMART Complete</td>
-                  <td className="p-3 font-semibold">4.99% APR</td>
-                  <td className="p-3 font-semibold">$30,000</td>
-                  <td className="p-3">Requires energy audit, up to 10 years</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">BeSMART ENERGY STAR</td>
+                  <td className="p-3">BeSMART Home Loan</td>
                   <td className="p-3 font-semibold">6.99% APR</td>
-                  <td className="p-3 font-semibold">$30,000</td>
-                  <td className="p-3">Single-measure upgrades, no audit</td>
+                  <td className="p-3 font-semibold">$5,000–$30,000</td>
+                  <td className="p-3">Up to 10 years. Credit score 640+, DTI under 50%. Cannot finance work already purchased or completed.</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Clean Energy Advantage</td>
@@ -697,6 +703,9 @@ export default function MarylandPage() {
               </tbody>
             </table>
           </div>
+          <p className="text-sm text-gray-500">
+            Clean Energy Advantage and EmPOWER HPwES financing terms were last checked in June 2026 and have not been re-verified.
+          </p>
         </div>
       </section>
 
@@ -827,7 +836,7 @@ export default function MarylandPage() {
               <div>
                 <p className="font-semibold text-gray-900">Choose your path: HPwES or midstream</p>
                 <p className="text-sm text-gray-700">
-                  For maximum rebate (up to $15,000), schedule a $100 HPwES energy audit
+                  For maximum rebate (up to $15,000, or $10,000 at Potomac Edison), schedule a $100 HPwES energy audit
                   through your utility. For a quick rebate ($800–$1,700), go midstream
                   through a participating contractor — no audit needed.
                 </p>
@@ -852,8 +861,10 @@ export default function MarylandPage() {
               <div>
                 <p className="font-semibold text-gray-900">Check for local programs</p>
                 <p className="text-sm text-gray-700">
-                  Montgomery County residents should apply to Electrify MC for an
-                  additional $2,500. Howard County has a geothermal tax credit.
+                  Montgomery County residents should contact Electrify MC for up to an
+                  additional $2,500 — but the work must be done by Elysian Energy, the
+                  County&apos;s chosen contractor, to qualify. Howard County has a
+                  geothermal tax credit.
                 </p>
               </div>
             </div>
@@ -864,7 +875,7 @@ export default function MarylandPage() {
               <div>
                 <p className="font-semibold text-gray-900">Apply for financing if needed</p>
                 <p className="text-sm text-gray-700">
-                  BeSMART loans (4.99–6.99% APR, up to $30,000) or Clean Energy Advantage
+                  BeSMART loans (6.99% APR, $5,000–$30,000) or Clean Energy Advantage
                   (0% for 24 months, up to $50,000). Apply before or alongside your project.
                 </p>
               </div>
@@ -904,7 +915,7 @@ export default function MarylandPage() {
                 The same law funds a new <strong>$72.65 million</strong> Residential Energy
                 Equity Program through the Maryland Energy Administration to help low- and
                 moderate-income households install heat pumps, beginning in fiscal year 2027.
-                Details and a launch date have not been published yet &mdash; watch MEA.
+                MEA now lists a Residential Energy Equity Grant Program open to non-profits and local government entities; whether that is this program, or a separate one, has not been made clear. Watch MEA.
               </p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
