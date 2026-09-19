@@ -698,8 +698,9 @@ export default function IllinoisPage() {
             </table>
             <p className="text-sm text-gray-600 mt-3">
               This is a significant drop from 2025, when the same homeowner
-              could stack a $2,000 federal credit on top of the utility rebate
-              for $3,400–$4,000 total.
+              could stack a $2,000 federal credit on top of ComEd&apos;s
+              then-flat $2,000 ducted rebate for up to $4,000 total — twice what
+              the same project earns today.
             </p>
           </div>
 
