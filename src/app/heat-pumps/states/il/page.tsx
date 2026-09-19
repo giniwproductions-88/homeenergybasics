@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title:
     "Illinois Heat Pump Rebates & Incentives 2026: ComEd, Ameren, MidAmerican | Home Energy Basics",
   description:
-    "Federal tax credits ended. Utility rebates of $300–$1,400 through ComEd, Ameren Illinois, and MidAmerican Energy are the primary incentive. Illinois HEAR and HOMES remain pending. Here's the complete 2026 picture.",
+    "Federal tax credits ended. ComEd pays up to $2,000 ducted, Ameren Illinois $900, MidAmerican $300–$713. Illinois HEAR and HOMES remain pending.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/il",
   },
@@ -47,7 +47,7 @@ export default function IllinoisPage() {
         name: "What heat pump rebates are available in Illinois in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Illinois heat pump rebates in 2026 come from your electric utility. ComEd offers up to $1,400 for ducted heat pumps and up to $1,000 for ductless systems. Ameren Illinois offers $900 for ducted and $630 for ductless. MidAmerican Energy offers $300–$713 with a cold-climate premium. The federal 25C tax credit expired December 31, 2025. Illinois HEAR and HOMES rebate programs have not yet launched.",
+          text: "Illinois heat pump rebates in 2026 come from your electric utility. ComEd offers up to $2,000 for ducted heat pumps, up to $1,000 for ductless systems, $750 for a heat pump water heater and $6,000 for geothermal. Ameren Illinois offers $900 for ducted, $630 for ductless and $1,080–$4,320 for geothermal by heating capacity. MidAmerican Energy offers $300–$563 standard and $563–$713 cold-climate for ducted, plus $900–$1,200 for geothermal. The federal 25C tax credit expired December 31, 2025. Illinois HEAR and HOMES rebate programs have not yet launched.",
         },
       },
       {
@@ -63,7 +63,7 @@ export default function IllinoisPage() {
         name: "What is the status of Illinois HEAR rebates?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Illinois received $131.5 million for the HEAR program (Home Electrification and Appliance Rebates), but as of June 2026 the program is not operational. DOE approval has not been finalized. Illinois is initially allocating 100% of HEAR funds to low-income households at or below 80% AMI. Retroactive rebates will not be offered.",
+          text: "USDOE allocated $263 million to Illinois EPA for HEAR and HOMES together, and the agency publishes no split between them. HEAR is not operational: Illinois EPA says its application has not yet been processed by USDOE. Under federal program rules HEAR pays up to $8,000 for a heat pump, up to $1,750 for a heat pump water heater, and up to $14,000 total per household, all requiring existing electric equipment or new construction. Illinois is initially allocating 100% of funds to low-income households at or below 80% AMI, a minimum 10% of that to low-income multifamily, and retroactive rebates will not be offered.",
         },
       },
       {
@@ -119,8 +119,9 @@ export default function IllinoisPage() {
             With federal tax credits gone and state IRA rebate programs still
             pending launch, utility rebates are the main financial incentive
             available to Illinois homeowners in 2026. ComEd customers in the
-            Chicago area can access up to $1,400, Ameren Illinois serves central
-            and southern Illinois with instant discounts up to $900, and
+            Chicago area can access up to $2,000, Ameren Illinois serves central
+            and southern Illinois with instant discounts of $900 on a ducted heat
+            pump and up to $4,320 on geothermal, and
             MidAmerican Energy is the only major utility offering a cold-climate
             heat pump premium. Here&apos;s what&apos;s actually available.
           </p>
@@ -156,7 +157,7 @@ export default function IllinoisPage() {
                 ✓ Available now
               </div>
               <p className="text-gray-900 font-medium">
-                ComEd rebates (up to $1,400)
+                ComEd rebates (up to $2,000)
               </p>
               <p className="text-sm text-gray-600 mt-1">
                 Ducted heat pumps in Chicago metro and northern Illinois.
@@ -168,11 +169,12 @@ export default function IllinoisPage() {
                 ✓ Available now
               </div>
               <p className="text-gray-900 font-medium">
-                Ameren Illinois instant discounts ($900)
+                Ameren Illinois instant discounts ($900 ducted)
               </p>
               <p className="text-sm text-gray-600 mt-1">
                 Central and southern Illinois. Applied at point of purchase
-                through participating distributors.
+                through participating distributors. Geothermal runs $1,080–$4,320
+                by heating capacity.
               </p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
@@ -180,11 +182,11 @@ export default function IllinoisPage() {
                 ✓ Available now
               </div>
               <p className="text-gray-900 font-medium">
-                MidAmerican Energy ($300–$713)
+                MidAmerican Energy ($300–$713 ducted)
               </p>
               <p className="text-sm text-gray-600 mt-1">
                 Western Illinois / Quad Cities. Only major IL utility with a
-                cold-climate heat pump premium.
+                cold-climate heat pump premium. Geothermal $900–$1,200.
               </p>
             </div>
           </div>
@@ -276,15 +278,34 @@ export default function IllinoisPage() {
               operational
             </p>
             <p className="text-gray-700 leading-relaxed">
-              Illinois received $131.5 million for HEAR. The Illinois EPA
-              administers it, but DOE approval has not been finalized. When
-              launched, HEAR will offer up to{" "}
+              USDOE allocated $263 million to the Illinois EPA Office of Energy for
+              HEAR and HOMES together; the agency publishes no split between the
+              two and no heat-pump dollar figure of its own. Illinois EPA states
+              that its HEAR application has not yet been processed by USDOE or
+              provided to Illinois EPA for administration or distribution. Under
+              federal program rules, HEAR pays up to{" "}
               <strong>$8,000 for a heat pump</strong>, up to $1,750 for a heat
-              pump water heater, and up to $14,000 total per household. Illinois
-              is initially allocating 100% of HEAR funds to{" "}
-              <strong>low-income households (≤80% AMI)</strong>, with rebates
-              covering up to 100% of costs. Retroactive rebates will not be
-              offered.
+              pump water heater, and up to $14,000 total per household, all
+              requiring existing electric equipment or new construction.
+              Illinois is initially allocating 100% of funds to{" "}
+              <strong>low-income households (≤80% AMI)</strong>, with a minimum 10%
+              to low-income multifamily that it expects to exceed. Retroactive
+              rebates will not be offered; only program-approved projects qualify
+              after launch.
+            </p>
+            <p className="text-gray-700 leading-relaxed mt-3">
+              Under DOE Program Notice 26-2 (effective May 29, 2026), replacing a
+              gas, propane, or oil heating system no longer qualifies for HEAR, and
+              a program that hasn&apos;t launched must align with this before it
+              opens. Eligibility now turns on new construction or on the
+              home&apos;s existing heating equipment already being electric &mdash;
+              replacing electric resistance heat with a heat pump is the clearest
+              qualifying case. Programs differ on whether replacing an existing
+              heat pump counts, so confirm with yours before committing. The notice
+              also requires a home to use rebates for insulation and air sealing
+              before a heating or cooling upgrade, unless it already meets a
+              state-specified level. Fuel-switching projects can still route to
+              HOMES, which sets no fuel condition.
             </p>
           </div>
 
@@ -294,12 +315,14 @@ export default function IllinoisPage() {
               approval
             </p>
             <p className="text-gray-700 leading-relaxed">
-              Illinois received $132 million for HOMES, administered by DCEO
-              through local agencies. Final consumer-facing rebate pathways and
-              pilot details are not yet fully live. Rebates will be based on
-              modeled whole-home energy savings, with higher amounts for
-              income-qualified households. Illinois is initially targeting 100%
-              of HOMES funds to low-income households (≤80% AMI).
+              HOMES funding has been awarded to the Illinois EPA and is to be
+              implemented by DCEO. The agency intends to launch a pilot with two
+              Local Administering Agencies once all necessary approvals have been
+              received from USDOE. Rebates will be based on modeled whole-home
+              energy savings, with higher amounts for income-qualified households.
+              Illinois is initially targeting 100% of funds to low-income
+              households (≤80% AMI). Illinois EPA publishes no separate dollar
+              figure for HOMES; the $263 million covers both programs.
             </p>
           </div>
 
@@ -365,7 +388,7 @@ export default function IllinoisPage() {
             </h3>
             <div className="grid md:grid-cols-3 gap-3 mb-4">
               <div className="bg-green-50 rounded-lg p-4 text-center">
-                <p className="text-2xl font-bold text-green-700">Up to $1,400</p>
+                <p className="text-2xl font-bold text-green-700">Up to $2,000</p>
                 <p className="text-sm text-gray-600">Ducted heat pump</p>
               </div>
               <div className="bg-green-50 rounded-lg p-4 text-center">
@@ -381,13 +404,48 @@ export default function IllinoisPage() {
             </div>
             <p className="text-gray-700 leading-relaxed mb-3">
               As of March 1, 2026, ComEd rebates are tiered by heating capacity
-              (tonnage) rather than a flat amount, and equipment must still meet
-              ENERGY STAR cold-climate efficiency floors to qualify. A{" "}
+              (tonnage) rather than a flat amount. A{" "}
               <strong>
                 ComEd Residential Heating and Cooling Trade Ally
               </strong>{" "}
               must perform the installation. Check ComEd&apos;s current program
-              materials for the latest per-ton amounts and application deadlines.
+              materials for application deadlines.
+            </p>
+            <div className="overflow-x-auto mb-3">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b-2 border-gray-200">
+                    <th className="text-left py-2 px-3">Ducted system</th>
+                    <th className="text-right py-2 px-3">Tier 1</th>
+                    <th className="text-right py-2 px-3">Tier 2</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-gray-100">
+                    <td className="py-2 px-3">Under 2.5 tons</td>
+                    <td className="py-2 px-3 text-right font-semibold">$900</td>
+                    <td className="py-2 px-3 text-right font-semibold">$1,500</td>
+                  </tr>
+                  <tr className="border-b border-gray-100">
+                    <td className="py-2 px-3">2.5 tons and up</td>
+                    <td className="py-2 px-3 text-right font-semibold">$1,400</td>
+                    <td className="py-2 px-3 text-right font-semibold">$2,000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-sm text-gray-600 mb-3">
+              Add $75 to any tier with an ENERGY STAR smart thermostat. Tonnage is
+              heating capacity ÷ 12,000. Ductless and mixed-use mini-splits: $500
+              under 1.5 tons, $1,000 at 1.5 tons and up, with the same $75 adder.
+            </p>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              ComEd also pays <strong>$6,000 per home</strong> for geothermal
+              including the ground loop, <strong>$1,200 per unit</strong> for a
+              geothermal indoor replacement, and <strong>$750 per unit</strong> for
+              a heat pump water heater with a First Hour Rate of 45 gal/hr or more.
+              Both geothermal rebates require pre-approval and an EESP certified by
+              the ICC and for geothermal work; self-installs do not qualify.
             </p>
             <p className="text-gray-700 leading-relaxed">
               <strong>Income-eligible customers</strong> can access enhanced
@@ -441,7 +499,7 @@ export default function IllinoisPage() {
                     { equip: "Ductless mini-split", amt: "$630", notes: "≥16 SEER2, ≥8.55 HSPF2; limit 2/acct" },
                     { equip: "HPWH (installed)", amt: "$1,150", notes: "Through Program Ally contractor" },
                     { equip: "HPWH (self-install)", amt: "$800", notes: "Online rebate or Lowe's/HD coupon" },
-                    { equip: "Geothermal", amt: "$1,350–$5,400", notes: "+$500 with desuperheater" },
+                    { equip: "Geothermal", amt: "$1,080–$4,320", notes: "By heating capacity, ten tiers; +$500 with desuperheater" },
                   ].map((row) => (
                     <tr key={row.equip} className="border-b border-gray-100">
                       <td className="py-2 px-3">{row.equip}</td>
@@ -456,6 +514,17 @@ export default function IllinoisPage() {
                 </tbody>
               </table>
             </div>
+            <p className="text-gray-700 leading-relaxed mt-3">
+              <strong>Eligibility gate:</strong> the program fact sheet requires
+              that the end user have an Energy Efficiency Programs Charge on their
+              Ameren Illinois electric bill for the service point corresponding to
+              the sale. That excludes customers inside Ameren&apos;s footprint who
+              do not pay the rider. Limits are two per residential account on
+              ducted, ductless, geothermal and ERV, and one on smart thermostats;
+              in multifamily the limits apply per housing unit. The program does
+              not incentivize ground-source installations that use a gas furnace,
+              which forecloses dual-fuel geothermal.
+            </p>
             <p className="text-gray-700 leading-relaxed mt-3">
               <strong>Income-qualified customers</strong> can receive up to 80%
               cost coverage through the Home Efficiency Income Qualified Program,
@@ -512,8 +581,20 @@ export default function IllinoisPage() {
               </table>
             </div>
             <p className="text-sm text-gray-500 mt-3">
-              Rebates capped at 70% of equipment cost. Limit 2 per equipment
-              type per address.
+              MidAmerican caps prescriptive rebates at 70% of equipment cost,
+              labor excluded, and limits two rebates per equipment type per
+              installation address. Eligibility requires that MidAmerican deliver
+              the primary electricity or natural gas to the equipment, in its
+              Illinois service territory.
+            </p>
+            <p className="text-sm text-gray-500 mt-2">
+              Equipment must be purchased, installed and operating between
+              January 1 and December 31, 2026, and prescriptive applications are
+              due within 90 days of the dealer invoice or by December 31, 2026,
+              whichever comes first. Rebates run until approved funds are exhausted
+              or that date, whichever comes first, first come first served.
+              MidAmerican states that instant discounts cannot be combined with any
+              other rebate or incentive program, including prescriptive rebates.
             </p>
             <p className="text-sm text-gray-500 mt-2">
               <a
@@ -594,7 +675,7 @@ export default function IllinoisPage() {
                 {[
                   { label: "Federal 25C", amt: "$0", note: "Expired" },
                   { label: "HEAR rebate", amt: "$0", note: "Not eligible above 150% AMI" },
-                  { label: "ComEd utility rebate", amt: "Up to $1,400", note: "Available now" },
+                  { label: "ComEd utility rebate", amt: "Up to $2,000", note: "Available now; Tier 2, 2.5 tons and up" },
                 ].map((row) => (
                   <tr key={row.label} className="border-b border-gray-100">
                     <td className="py-2 px-3">{row.label}</td>
@@ -609,7 +690,7 @@ export default function IllinoisPage() {
                 <tr className="bg-blue-50">
                   <td className="py-2 px-3 font-bold">Realistic total</td>
                   <td className="py-2 px-3 text-right font-bold text-green-700">
-                    Up to $1,400
+                    Up to $2,000 (Tier 2, 2.5 tons and up)
                   </td>
                   <td className="py-2 px-3"></td>
                 </tr>
@@ -629,8 +710,8 @@ export default function IllinoisPage() {
             <table className="w-full text-sm">
               <tbody>
                 {[
-                  { label: "HEAR (heat pump)", amt: "Up to $8,000", note: "When launched" },
-                  { label: "HEAR (panel + wiring)", amt: "Up to $6,500", note: "When launched" },
+                  { label: "HEAR (heat pump)", amt: "Up to $8,000", note: "When launched; requires existing electric equipment or new construction" },
+                  { label: "HEAR (panel + wiring)", amt: "Up to $6,500", note: "When launched; requires existing electric equipment or new construction" },
                   { label: "ComEd income-eligible", amt: "Enhanced", note: "Higher than market rate" },
                 ].map((row) => (
                   <tr key={row.label} className="border-b border-gray-100">
@@ -676,7 +757,21 @@ export default function IllinoisPage() {
               </a>{" "}
               provides up to $20,000 in free improvements including HVAC
               replacement for households at or below 200% of the Federal Poverty
-              Level.
+              Level, plus a separate $4,000 for health and safety work &mdash;
+              $24,000 in all. Income is not the only door: households that received
+              LIHEAP in the last 12 months, or Title IV or XVI cash assistance in
+              the preceding 12 months, or that are enrolled in listed HUD programs
+              (CDBG, HOME, Public Housing, Vouchers, HUD-VASH, LIHTC) or USDA
+              programs (Sections 521, 502, 533, 504), qualify categorically. PY2027
+              guidelines run $31,920 for one person and $66,000 for four, adding
+              $11,360 per member above twelve; at sizes eight through twelve a
+              second, lower column applies to state-funded work &mdash; 60% of
+              State Median Income rather than 200% FPL.
+            </p>
+            <p className="text-gray-700 leading-relaxed mt-3">
+              LIHEAP is bill assistance rather than a heat pump rebate, but
+              Illinois EPA lists it among the energy funding available now, and the
+              same Help Illinois Families line answers for it.
             </p>
           </div>
         </div>
@@ -714,7 +809,7 @@ export default function IllinoisPage() {
             rebate tiers.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Roughly three-quarters of Illinois households heat with natural gas,
+            Almost three-quarters of Illinois households heat with natural gas,
             making most heat pump installations a gas-to-electric fuel switch.
             That means potentially eliminating your gas service charges but
             possibly requiring an electrical panel upgrade. Gas utilities offer
@@ -914,7 +1009,8 @@ export default function IllinoisPage() {
                 Illinois&apos;s $263 million in IRA rebate funding remains
                 pending. When these programs go live, income-qualified
                 homeowners could access up to $8,000–$16,000 in additional
-                rebates. Monitor the{" "}
+                rebates — HEAR requires existing electric equipment or new
+                construction. Monitor the{" "}
                 <a
                   href="https://epa.illinois.gov/topics/energy/energy-rebates.html"
                   target="_blank"

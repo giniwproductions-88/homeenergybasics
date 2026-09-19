@@ -549,10 +549,10 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "IL",
     stateName: "Illinois",
     status: "open",
-    lastVerified: "2026-06-02",
-    lastUpdated: "2026-06-02",
+    lastVerified: "2026-09-18",
+    lastUpdated: "2026-09-18",
     summary:
-      "Federal tax credits expired. Utility rebates up to $1,800 are available through ComEd, Ameren Illinois, MidAmerican Energy, and some municipal utilities. Illinois HEAR and HOMES rebates are still pending launch.",
+      "Federal tax credits expired. Utility rebates are the primary incentive: ComEd up to $2,000 ducted, Ameren Illinois up to $900 ducted, MidAmerican up to $713. Illinois HEAR has not been processed by DOE; HOMES is awarded and awaiting approval for a two-agency pilot.",
     sources: [
       {
         label: "Illinois EPA — Energy Rebates",
