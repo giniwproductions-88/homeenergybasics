@@ -496,7 +496,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     lastVerified: "2026-08-21",
     lastUpdated: "2026-09-11",
     summary:
-      "Xcel Energy pays $2,250/heating ton for cold-climate heat pumps at its with-bonus rate for customers replacing gas heat ($750 standard), stackable with Colorado's $1,000 state tax credit. Income-qualified HEAR single-family rebates are closed statewide as of August 2026 — CEO says Region 2 applications submitted after August 1 will not be reviewed. DRCOG's $1,500 Power Ahead rebate (Denver metro, no income limit) is live — preapproval required before work begins. Federal 25C/25D credits expired December 31, 2025.",
+      "Xcel Energy pays $2,250/heating ton for cold-climate heat pumps at its with-bonus rate for customers replacing gas heat ($750 standard), stackable with Colorado's $1,000 state tax credit; a revised bonus structure takes effect October 1, 2026. Income-qualified HEAR single-family rebates are closed statewide as of August 2026 — CEO says Region 2 applications submitted after August 1 will not be reviewed. DRCOG's $1,500 Power Ahead rebate (Denver metro, no income limit) is live — preapproval required before work begins. Federal 25C/25D credits expired December 31, 2025.",
     sources: [
       {
         label: "Colorado HEAR program — Colorado Energy Office",

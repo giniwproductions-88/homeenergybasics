@@ -63,7 +63,7 @@ export default function ColoradoPage() {
         name: "What is the Xcel Energy heat pump rebate in Colorado?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Xcel Energy\u2019s current Colorado rebate sheet (effective November 16, 2025) pays $2,250 per heating ton for cold-climate air-source heat pumps and $900 per cooling ton for standard ASHPs at the with-bonus rate available to customers with a fuel-burning system (e.g., replacing gas heat); the standard rates are $750 and $300 per ton. Ground-source systems earn $3,300 per heating ton with the bonus ($1,100 standard), and heat pump water heaters $2,250 ($750 standard). Xcel also offers a Whole Home Efficiency bonus (25% on standard rebates when installing 3+ measures) and a $600 insulation/air sealing bonus. Note: effective November 16, 2025, bonus rebates are no longer available to homes that already heat with electricity (e.g., baseboard) \u2014 those homes still qualify for standard rebates. Installations must be invoiced by December 31, 2026; rebate applications are accepted through September 30, 2027.",
+          text: "Xcel Energy\u2019s current Colorado rebate sheet (effective November 16, 2025) pays $2,250 per heating ton for cold-climate air-source heat pumps and $900 per cooling ton for standard ASHPs at the with-bonus rate available to customers with a fuel-burning system (e.g., replacing gas heat); the standard rates are $750 and $300 per ton. Ground-source systems earn $3,300 per heating ton with the bonus ($1,100 standard), and heat pump water heaters $2,250 ($750 standard). Xcel also offers a Whole Home Efficiency bonus (25% on standard rebates when installing 3+ measures) and a $600 insulation/air sealing bonus. Note: effective November 16, 2025, bonus rebates are no longer available to homes that already heat with electricity (e.g., baseboard) \u2014 those homes still qualify for standard rebates. Installations must be invoiced by December 31, 2026; rebate applications are accepted through September 30, 2027. Xcel has announced a revised bonus structure effective October 1, 2026 for customers heating with Xcel natural gas; new amounts were not published at the time of writing.",
         },
       },
       {
@@ -516,6 +516,20 @@ export default function ColoradoPage() {
             </table>
           </div>
 
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-4">
+            <p className="font-semibold text-amber-800 mb-1">
+              ⚠ Xcel bonus rebates change October 1, 2026
+            </p>
+            <p className="text-sm text-amber-900">
+              Xcel says a revised heat pump bonus takes effect October 1, 2026
+              for customers who heat with Xcel natural gas, with amounts varying
+              by the efficiency rating of the equipment installed. Xcel has not
+              published the new amounts. The rates on this page are the ones in
+              effect before that date. Confirm current amounts with your
+              contractor or Xcel before signing a contract.
+            </p>
+          </div>
+
           <p className="text-gray-700 leading-relaxed mb-4">
             The with-bonus rates are available to customers with a fuel-burning
             heating system; rebates are per heating ton at 5&deg;F for
@@ -561,12 +575,11 @@ export default function ColoradoPage() {
             </p>
             <p className="text-sm text-blue-900">
               Select high-altitude communities (Breckenridge, Leadville,
-              Silverthorne, and others) have access to dramatically enhanced
-              rebates through Xcel&apos;s Mountain Energy Project &mdash; up to{" "}
-              <strong>$7,500/ton</strong> for mini-splits and{" "}
-              <strong>$20,000/ton</strong> for ground-source systems. If you
-              live above 7,000 feet, ask your contractor about Mountain Energy
-              Project eligibility.
+              Silverthorne, and others) have access to enhanced rebates
+              through Xcel&apos;s Mountain Energy Project. We have not been
+              able to verify current amounts against an Xcel source. If you
+              live above 7,000 feet, ask your contractor about Mountain
+              Energy Project eligibility.
             </p>
           </div>
 
@@ -585,10 +598,13 @@ export default function ColoradoPage() {
                 Colorado Springs Utilities
               </p>
               <p className="text-sm text-gray-600 mt-1">
-                Up to <strong>$2,000</strong> for qualifying cold-climate ASHPs,{" "}
-                <strong>$750</strong> for standard ASHPs, and{" "}
-                <strong>$400</strong> for heat pump water heaters. Additional
-                bonuses for income-qualified customers.
+                For natural gas customers: <strong>$3,000</strong> for NEEP
+                cold-climate heat pumps three tons and over,{" "}
+                <strong>$1,500</strong> for heat pumps under three tons or
+                ENERGY STAR rated models. Since January 1, 2026, CSU adds a{" "}
+                <strong>$1,500</strong> electric bill credit for customers
+                approved on heat pumps under three tons. Applications must be
+                postmarked by January 31 of the following year.
               </p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
@@ -782,6 +798,19 @@ export default function ColoradoPage() {
             Income-qualified programs beyond HEAR
           </h2>
           <div className="space-y-4 mb-6">
+            <div className="bg-white border border-gray-200 rounded-lg p-5">
+              <p className="font-semibold text-gray-900">
+                Xcel Energy income-qualified rebates
+              </p>
+              <p className="text-sm text-gray-600 mt-1">
+                Income-qualified Xcel customers may be eligible for rebates
+                and services covering up to the full cost of a heat pump and
+                its installation, plus free insulation. Eligibility runs
+                through Xcel&apos;s Home Energy Squad &mdash; see the Xcel
+                section above for coverage levels and how to qualify. Call
+                303-446-7910.
+              </p>
+            </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">
                 Weatherization Assistance Program (WAP)
