@@ -40,7 +40,7 @@ const faqJsonLd = {
       name: "Can I stack DCSEU rebates with the Affordable Home Electrification Program in DC?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No. DCSEU standard rebates and the Affordable Home Electrification Program (AHEP) are mutually exclusive tracks. AHEP provides whole-home electrification at no cost for households below 80% of Area Median Income. Homeowners above 80% AMI use the standard DCSEU rebates, which can be combined with DC Green Bank financing. DCSEU rebates are capped at $15,000 per fiscal year per Pepco account.",
+        text: "No. DCSEU standard rebates and the Affordable Home Electrification Program (AHEP) are mutually exclusive tracks. AHEP provides whole-home electrification at no cost for households below 80% of Area Median Income. Homeowners above 80% AMI use the standard DCSEU rebates, which can be combined with DC Green Bank financing. DCSEU rebates are capped at $15,000 per household, per fiscal year.",
       },
     },
     {
@@ -351,7 +351,7 @@ export default function WashingtonDCPage() {
 
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
             <p className="font-semibold text-green-800 mb-1">✓ Best candidates for DC heat pump incentives</p>
-            <p className="text-sm text-green-900">DC homeowners currently heating with gas or oil who can switch to an ENERGY STAR Most Efficient system benefit most — the $5,000 gas-to-electric rebate is five times the $1,000 electric-to-electric amount. Rowhouse owners with aging gas furnaces and 100A panels are the ideal profile, since the panel upgrade rebate ($2,000) directly addresses their most common barrier.</p>
+            <p className="text-sm text-green-900">DC homeowners currently heating with gas or oil who can switch to an ENERGY STAR Most Efficient system benefit most — the $5,000 gas-to-electric rebate is more than three times the $1,500 electric-to-electric rebate for the same equipment. Rowhouse owners with aging gas furnaces and 100A panels are the ideal profile, since the panel upgrade rebate ($2,000) directly addresses their most common barrier.</p>
           </div>
         </div>
       </section>
@@ -470,7 +470,7 @@ export default function WashingtonDCPage() {
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">DCSEU fiscal year reset</p>
-              <p className="text-sm text-gray-600 mt-1">DCSEU rebates operate on a fiscal year (October 1 – September 30). Rebate amounts and eligibility may change at the start of FY2027 in October 2026. If planning a project, submitting before September 30, 2026 locks in current amounts.</p>
+              <p className="text-sm text-gray-600 mt-1">DCSEU rebates operate on a fiscal year (October 1 – September 30). Beyond the submission deadline, DCSEU&apos;s terms require that rebate requests be approved no later than September 30, 2026 — applications returned for errors may not be honored if they are not resolved by that date. Rebates for products installed after September 30, 2026 are subject to change.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">DC building code changes</p>
