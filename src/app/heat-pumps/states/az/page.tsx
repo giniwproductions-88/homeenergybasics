@@ -49,7 +49,7 @@ export default function ArizonaPage() {
         name: "What heat pump rebates are available in Arizona in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Arizona heat pump rebates in 2026 come from two main sources: the Efficiency Arizona HEAR program (up to $8,000 per heat pump for households below 150% AMI) and utility rebates. Efficiency Arizona moved to new program guidelines on September 1, 2026: gas-to-electric projects no longer qualify, replacing an existing electric system or an existing heat pump does, and a heat pump no longer has to be the home's primary heating and cooling source. The cutoff keys on when a rebate reservation was secured, not when you applied. SRP offers up to $225 per ton through Cool Cash, while TEP offers up to $720. APS discontinued all residential rebates effective January 1, 2026. Federal tax credits under Sections 25C and 25D expired December 31, 2025.",
+          text: "Arizona heat pump rebates in 2026 come from two main sources: the Efficiency Arizona HEAR program (up to $8,000 per heat pump for households below 150% AMI) and utility rebates. Efficiency Arizona moved to new program guidelines on September 1, 2026: gas-to-electric projects no longer qualify, replacing an existing electric system or an existing heat pump does, and a heat pump no longer has to be the home's primary heating and cooling source. The cutoff keys on when a rebate reservation was secured, not when you applied. SRP offers up to $225 per ton through Cool Cash, while TEP offers up to $720. APS discontinued its AC and heat pump equipment rebates effective January 1, 2026. Federal tax credits under Sections 25C and 25D expired December 31, 2025.",
         },
       },
       {
@@ -81,7 +81,7 @@ export default function ArizonaPage() {
         name: "Why did APS stop offering heat pump rebates?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Arizona Public Service discontinued all residential energy efficiency rebate programs effective January 1, 2026, following Arizona Corporation Commission Decision No. 81584. APS customers in the Phoenix metro area currently have no utility-level heat pump rebate. Income-qualifying APS customers can still access Efficiency Arizona HEAR rebates, and the upcoming HOMES program will serve all income levels.",
+          text: "Arizona Public Service discontinued its AC rebate, its smart thermostat rebate and its Home Performance with ENERGY STAR Checkup rebates effective January 1, 2026, following Arizona Corporation Commission Decision No. 81584. APS customers in the Phoenix metro area currently have no utility rebate on a new heat pump itself. Income-qualifying APS customers can still access Efficiency Arizona HEAR rebates, and the upcoming HOMES program will serve all income levels.",
         },
       },
     ],
@@ -105,7 +105,7 @@ export default function ArizonaPage() {
             Arizona Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Arizona&apos;s heat pump incentives changed dramatically in 2026. Federal tax credits are gone, but the state&apos;s Efficiency Arizona program now offers up to <strong>$8,000</strong> per heat pump for income-qualified households. Utility rebates vary widely — SRP&apos;s Cool Cash program offers up to <strong>$1,125</strong> for a 5-ton variable-capacity system, while APS eliminated all residential rebates entirely. Efficiency Arizona&apos;s own rules changed on <strong>September 1, 2026</strong>: gas-to-electric projects no longer qualify, and a heat pump no longer has to be the home&apos;s primary heating and cooling source. This guide covers all major Arizona heat pump incentives available in 2026, including Efficiency Arizona HEAR, SRP Cool Cash, TEP, and the City of Flagstaff program. Here&apos;s what&apos;s actually available.
+            Arizona&apos;s heat pump incentives changed dramatically in 2026. Federal tax credits are gone, but the state&apos;s Efficiency Arizona program now offers up to <strong>$8,000</strong> per heat pump for income-qualified households. Utility rebates vary widely — SRP&apos;s Cool Cash program offers up to <strong>$1,125</strong> for a 5-ton variable-capacity system, while APS ended its AC and heat pump rebates entirely. Efficiency Arizona&apos;s own rules changed on <strong>September 1, 2026</strong>: gas-to-electric projects no longer qualify, and a heat pump no longer has to be the home&apos;s primary heating and cooling source. This guide covers all major Arizona heat pump incentives available in 2026, including Efficiency Arizona HEAR, SRP Cool Cash, TEP, and the City of Flagstaff program. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
             {azIncentive.lastUpdated === azIncentive.lastVerified ? (
@@ -134,7 +134,7 @@ export default function ArizonaPage() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Efficiency Arizona HEAR — up to $8,000 per heat pump</p>
-              <p className="text-sm text-green-900">Point-of-sale rebate for households below 150% of Area Median Income (AMI) upgrading from existing electric equipment — since 26-2, gas, propane, and oil replacements no longer qualify. Applications are still being accepted — Arizona put this into its own guidelines for reservations made on or after <strong>September 1, 2026</strong>, and loosened a separate rule at the same time: a heat pump no longer has to be the home&apos;s primary heating and cooling source. Covers 100% of costs for below 80% AMI, 50% for 80–150% AMI. Must use a qualified contractor and apply before installation.</p>
+              <p className="text-sm text-green-900">Point-of-sale rebate for households below 150% of Area Median Income (AMI) upgrading from existing electric equipment — since 26-2, gas, propane, and oil <em>replacements</em> no longer qualify, though adding a heat pump alongside a gas furnace still does. Applications are still being accepted — Arizona put this into its own guidelines for reservations made on or after <strong>September 1, 2026</strong>, and loosened a separate rule at the same time: a heat pump no longer has to be the home&apos;s primary heating and cooling source. Covers 100% of costs for below 80% AMI, 50% for 80–150% AMI. Must use a qualified contractor and apply before installation.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ SRP Cool Cash — up to $225 per ton</p>
@@ -150,7 +150,7 @@ export default function ArizonaPage() {
             </div>
             <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
               <p className="font-semibold text-amber-800 mb-1">⚠ Above 150% AMI + APS territory = no rebates currently available</p>
-              <p className="text-sm text-amber-900">APS discontinued all residential rebates in 2026 and HEAR is income-restricted. If you&apos;re above 150% AMI in APS territory, your only path is the HOMES program, which will serve all income levels with performance-based rebates up to $4,000 — but it has not launched and no launch date has been announced. (One exception: Flagstaff residents qualify for the city&apos;s rebate program at every income level.)</p>
+              <p className="text-sm text-amber-900">APS discontinued its AC and heat pump rebates in 2026 and HEAR is income-restricted. If you&apos;re above 150% AMI in APS territory, your only path is the HOMES program, which will serve all income levels with performance-based rebates up to $4,000 — but it has not launched and no launch date has been announced. (One exception: Flagstaff residents qualify for the city&apos;s rebate program at every income level.)</p>
             </div>
           </div>
         </div>
@@ -194,6 +194,7 @@ export default function ArizonaPage() {
               <li><strong>Electric-to-electric only.</strong> Rebates apply when replacing existing electric appliances — and existing heat pumps count.</li>
               <li><strong>Expanded heat pump flexibility.</strong> A heat pump no longer has to serve as the home&apos;s primary heating and cooling source. This is the one change that widens eligibility rather than narrowing it.</li>
               <li><strong>Weatherization standards.</strong> Insulation and air sealing standards may now be required alongside a heat pump project.</li>
+              <li><strong>A gas furnace does not disqualify you.</strong> The program will still rebate a heat pump <em>added</em> alongside a fossil-fuel appliance — what it will not do is pay to replace or remove the gas heat source. This is the practical payoff of the flexibility change above, and it is the case most Arizona households with gas heat get wrong.</li>
             </ul>
             <p className="text-sm text-blue-900 mt-3">Unchanged: the qualified product list and the maximum rebate amounts below; replacing standard electric HVAC, electric water heaters or electric dryers with heat pump alternatives; wiring and panel upgrades, which still have to pair with an eligible appliance rebate; and retail purchase options. The program runs through 2031, pending funding.</p>
           </div>
@@ -271,11 +272,11 @@ export default function ArizonaPage() {
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            HEAR operates as a <strong>point-of-sale rebate</strong> — the discount appears directly on the contractor&apos;s invoice, not as a post-purchase reimbursement. Projects must be approved before installation begins; completed or in-progress projects are not eligible. Under DOE Program Notice 26-2, effective May 29, 2026, the heat pump rebate applies when upgrading from existing electric equipment — an electric furnace, boiler, baseboard units, an existing AC, or an older heat pump — to more efficient electric equipment, and new construction remains eligible. Replacing a gas, propane, or oil system no longer qualifies for HEAR. Arizona wrote this into its own guidelines for reservations made on or after September 1, 2026, and its July 21 notice confirms that replacing an <strong>existing heat pump</strong> qualifies.
+            HEAR operates as a <strong>point-of-sale rebate</strong> — the discount appears directly on the contractor&apos;s invoice, not as a post-purchase reimbursement. Projects must be approved before installation begins; completed or in-progress projects are not eligible. Under DOE Program Notice 26-2, effective May 29, 2026, the heat pump rebate applies when upgrading from existing electric equipment — an electric furnace, boiler, baseboard units, an existing AC, or an older heat pump — to more efficient electric equipment, and new construction remains eligible. Replacing a gas, propane, or oil system no longer qualifies for HEAR. Arizona wrote this into its own guidelines for reservations made on or after September 1, 2026, and the program&apos;s own FAQ confirms that replacing an <strong>existing heat pump</strong> with a more efficient one qualifies.
           </p>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            Rebates reach you through <strong>two pathways</strong>, and which one applies depends on the measure. The <strong>contractor pathway</strong> runs through a Qualified Contractor, who applies the rebate directly to your invoice. The <strong>retail pathway</strong> lets you buy at a participating retailer using an approved coupon, and it covers only <strong>heat pump water heaters, heat pump clothes dryers, and electric cooking appliances</strong>. <strong>Heat pumps themselves are contractor-only</strong> — there is no retail route for a space-heating heat pump, so a Qualified Contractor is required for the $8,000 rebate. Electrical panel and wiring rebates are not standalone either: both are eligible only alongside a qualifying appliance installation.
+            Rebates reach you through <strong>two pathways</strong>, and which one applies depends on the measure. The <strong>contractor pathway</strong> runs through a Qualified Contractor, who applies the rebate directly to your invoice. The <strong>retail pathway</strong> lets you buy at a participating retailer using an approved coupon, and it covers only <strong>heat pump water heaters, heat pump clothes dryers, and electric cooking appliances</strong>. <strong>Heat pumps themselves are contractor-only</strong> — there is no retail route for a space-heating heat pump, so a Qualified Contractor is required for the $8,000 rebate. Electrical panel and wiring rebates are not standalone either: both are eligible only alongside a qualifying appliance installation. One more scope limit: the program currently serves <strong>homeowners who live in their own home</strong>. Renters and multifamily owners are named for future phases, not this one.
           </p>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
@@ -290,7 +291,7 @@ export default function ArizonaPage() {
         <div className="container-narrow">
           <h2 id="homes-program" className="text-2xl font-bold text-gray-900 mb-4">HOMES program — pending launch</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Arizona&apos;s Home Efficiency Rebates (HOMES) program has <strong>not yet launched</strong> as of July 2026, and no launch date has been announced — the Governor&apos;s Office of Resiliency&apos;s most recent timeline statement (May 2026) covers only HEAR&apos;s expansion to multifamily units &quot;in the coming months.&quot; Unlike HEAR, HOMES uses a whole-home performance approach and will be available to <strong>all income levels</strong> — making it the first Arizona incentive available to above-150% AMI households since federal credits expired.
+            Arizona&apos;s Home Efficiency Rebates (HOMES) program has <strong>not yet launched</strong> as of September 2026, and no launch date has been announced — the Governor&apos;s Office of Resiliency&apos;s most recent timeline statement (May 2026) covers only HEAR&apos;s expansion to multifamily units &quot;in the coming months.&quot; Unlike HEAR, HOMES uses a whole-home performance approach and will be available to <strong>all income levels</strong> — making it the first Arizona incentive available to above-150% AMI households since federal credits expired.
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
@@ -327,16 +328,16 @@ export default function ArizonaPage() {
         <div className="container-narrow">
           <h2 id="utility-rebates" className="text-2xl font-bold text-gray-900 mb-4">Utility rebates by service territory</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Utility rebate availability in Arizona varies dramatically by service territory. SRP customers retain meaningful rebates while APS customers have none.
+            Utility rebate availability in Arizona varies dramatically by service territory. SRP customers retain meaningful rebates while APS customers have none on the equipment itself.
           </p>
 
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">APS — all residential rebates discontinued</h3>
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">APS — AC and heat pump rebates discontinued</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Arizona Public Service discontinued all residential energy efficiency rebate programs effective January 1, 2026, following Arizona Corporation Commission Decision No. 81584. This includes AC/heat pump upgrade rebates, smart thermostat rebates, and the Home Performance with ENERGY STAR program. No replacement has been announced.
+            Arizona Public Service discontinued its AC rebate, its smart thermostat rebate and its Home Performance with ENERGY STAR Checkup rebates effective January 1, 2026, following Arizona Corporation Commission Decision No. 81584. No replacement equipment rebate has been announced. APS still lists some smaller offers on its rebates page — duct sealing, insulation, a water heater timer, and Cool Rewards thermostat bill credits — so it is worth checking aps.com/rebates for anything outside the heat pump itself.
           </p>
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-amber-800 mb-1">⚠ Common mistake: assuming APS still offers heat pump rebates</p>
-            <p className="text-sm text-amber-900">Many contractors and third-party sites still list APS rebates that no longer exist. The APS residential rebate program ended January 1, 2026. If you&apos;re an APS customer, your options are Efficiency Arizona HEAR (if income-qualified), the City of Flagstaff rebate (if you live in Flagstaff), or waiting for the HOMES program launch.</p>
+            <p className="text-sm text-amber-900">Many contractors and third-party sites still list APS rebates that no longer exist. The APS equipment rebate on a new AC or heat pump ended January 1, 2026. If you&apos;re an APS customer, your options are Efficiency Arizona HEAR (if income-qualified), the City of Flagstaff rebate (if you live in Flagstaff), or waiting for the HOMES program launch.</p>
           </div>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">SRP Cool Cash — active through April 30, 2027</h3>
@@ -384,7 +385,7 @@ export default function ArizonaPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">TEP — Efficient Home Program</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Tucson Electric Power offers up to <strong>$720</strong> for a high-efficiency heat pump installation and <strong>$400</strong> for a heat pump water heater equipped with a wireless programmable timer (set to avoid 3–7 PM peak hours). Mini-split heat pumps qualify for up to <strong>$100 per ton</strong>. The program uses instant rebates through participating Trade Ally contractors.
+            Tucson Electric Power offers up to <strong>$720</strong> for a high-efficiency heat pump installation and <strong>$400</strong> for a heat pump water heater equipped with a wireless programmable timer, which you must agree to program so the unit does not run from 4–7 PM. Mini-split heat pumps qualify for up to <strong>$100 per ton</strong>. The program uses instant rebates through participating Trade Ally contractors.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">UniSource Energy Services</h3>
@@ -402,8 +403,8 @@ export default function ArizonaPage() {
             No Arizona city or county other than Flagstaff offers direct financial rebates for heat pump installations. For the FY26–27 cycle (work completed July 1, 2026 through June 30, 2027), Flagstaff offers up to <strong>$2,000</strong> for a primary-source heat pump or <strong>$1,500</strong> for a non-primary-source installation — down from $3,000/$2,500 in the prior cycle — through a sliding income-based scale: 25% of project cost for the lowest income tier, 15% for the middle tier, and 5% for the highest, meaning all income levels qualify at some percentage. Both homeowners and renters (with landlord authorization) are eligible, limited to one heat pump rebate per household. Heat pumps must be <strong>cold climate rated</strong> and listed on the NEEP Product List; air-to-water heat pumps on the city&apos;s qualified product list are also eligible. Primary-source rebates additionally require a BPI energy audit showing the home meets minimum weatherization standards (air sealing, attic and crawl space insulation, duct sealing).
           </p>
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5">
-            <p className="font-semibold text-amber-800 mb-1">⚠ Flagstaff funds run out fast — the FY26–27 cycle just opened</p>
-            <p className="text-sm text-amber-900">The FY25–26 cycle exhausted 100% of its funding by March 25, 2026 — months before the fiscal year ended. The new cycle opened July 1, 2026, with funds awarded first-come, first-served; the city&apos;s funding tracker showed <strong>$41,670 remaining</strong> as of July 14, 2026. Check current funding on the city&apos;s program page before committing to a project.</p>
+            <p className="font-semibold text-amber-800 mb-1">⚠ Flagstaff is nearly out of money for this cycle</p>
+            <p className="text-sm text-amber-900">The FY25–26 cycle exhausted 100% of its funding by March 25, 2026 — months before the fiscal year ended. The FY26–27 cycle opened July 1, 2026 and is going the same way: the city&apos;s funding tracker showed <strong>$10,186.73 remaining</strong> as of September 15, 2026, down from $41,670 in mid-July. Funds are awarded first-come, first-served. Check the tracker on the city&apos;s program page before you count on this rebate.</p>
           </div>
         </div>
       </section>
@@ -462,7 +463,7 @@ export default function ArizonaPage() {
         <div className="container-narrow">
           <h2 id="weatherization" className="text-2xl font-bold text-gray-900 mb-4">Weatherization Assistance Program</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            The Arizona Weatherization Assistance Program (WAP), administered by the Arizona Department of Housing, provides <strong>free weatherization services</strong> — including potential HVAC replacement — to households at or below 200% of federal poverty guidelines. WAP is funded by DOE, LIHEAP, and contributions from APS, SRP, and Southwest Gas. SRP alone contributes up to <strong>$9,000 per eligible household</strong> through WAP.
+            The Arizona Weatherization Assistance Program (WAP), administered by the Arizona Department of Housing, provides <strong>free weatherization services</strong> — including potential HVAC replacement — to income-eligible households. The Department of Housing publishes the current income limits; homeowners and renters with landlord permission both qualify, and applications are taken by ten regional sub-grantee agencies rather than by the state. WAP is funded by DOE, LIHEAP, and contributions from APS, SRP, and Southwest Gas.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
             Governor Hobbs announced a <strong>$5 million POWER AZ investment</strong> on March 10, 2026, to expand energy-saving upgrades for income-eligible households. However, federal funding faces uncertainty — the FY2026 presidential budget proposed eliminating WAP and LIHEAP entirely.
@@ -596,7 +597,7 @@ export default function ArizonaPage() {
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">APS regulatory proceedings</p>
-              <p className="text-sm text-gray-600 mt-1">APS eliminated rebates following ACC Decision 81584, and its program pages continue to list them as discontinued. Future rate cases or policy changes could restore some form of residential efficiency program, but nothing had been restored as of July 2026.</p>
+              <p className="text-sm text-gray-600 mt-1">APS discontinued its AC rebate, its smart thermostat rebate and its Home Performance with ENERGY STAR Checkup rebates following ACC Decision 81584, and its rebates page still carries that notice. Future rate cases or policy changes could restore an equipment rebate; none had been as of September 2026. The same page continues to list several smaller offers, so the picture there is worth a periodic look.</p>
             </div>
           </div>
         </div>

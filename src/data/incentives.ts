@@ -1273,11 +1273,19 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "AZ",
     stateName: "Arizona",
     status: "open",
-    lastVerified: "2026-09-06",
-    lastUpdated: "2026-09-06",
+    lastVerified: "2026-09-19",
+    lastUpdated: "2026-09-19",
     summary:
-      "Efficiency Arizona HEAR offers up to $8,000 per heat pump for households below 150% AMI. New state guidelines apply to every rebate reservation made on or after September 1, 2026: no gas-to-electric projects, electric-to-electric only (existing heat pumps included), and heat pumps no longer need to be the home's primary heating and cooling source. SRP Cool Cash provides up to $1,125 for variable-capacity systems. APS eliminated all residential rebates in 2026. Federal tax credits expired December 31, 2025. HOMES has not launched; no date announced.",
+      "Efficiency Arizona HEAR offers up to $8,000 per heat pump for households below 150% AMI. New state guidelines apply to every rebate reservation made on or after September 1, 2026: no gas-to-electric projects, electric-to-electric only (existing heat pumps included), and heat pumps no longer need to be the home's primary heating and cooling source. SRP Cool Cash provides up to $1,125 for variable-capacity systems. APS ended its AC and heat pump rebates January 1, 2026. Federal tax credits expired December 31, 2025. HOMES has not launched; no date announced.",
     sources: [
+      {
+        label: "Efficiency Arizona \u2014 Program Guideline Changes (July 21, 2026)",
+        url: "https://efficiencyarizona.com/significant-changes-coming-to-the-efficiency-arizona-program-due-to-federal-government-notice/",
+      },
+      {
+        label: "Efficiency Arizona \u2014 Frequently Asked Questions",
+        url: "https://efficiencyarizona.com/frequently-asked-questions/",
+      },
       {
         label: "Efficiency Arizona \u2014 HEAR Program",
         url: "https://efficiencyarizona.com/the-hear-program/",
@@ -1296,12 +1304,16 @@ export const incentives: Record<StateCode, StateIncentive> = {
         url: "https://www.srpnet.com/energy-savings-rebates/home/rebates/heat-pump-water-heater",
       },
       {
-        label: "APS \u2014 Residential Energy Options (rebates discontinued)",
-        url: "https://www.aps.com/en/Residential/Save-Money-and-Energy/Your-Energy-Your-Options",
+        label: "TEP \u2014 Efficient Home Program",
+        url: "https://www.tep.com/efficient-home-program/",
       },
       {
-        label: "TEP / UniSource \u2014 Efficient Home Program",
-        url: "https://www.uesaz.com/efficient-home-program/",
+        label: "UniSource \u2014 Efficient Home Program",
+        url: "https://www.uesaz.com/efficient-home/",
+      },
+      {
+        label: "APS \u2014 Rebates (AC and heat pump rebates discontinued)",
+        url: "https://www.aps.com/rebates",
       },
       {
         label:
@@ -1311,7 +1323,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
       {
         label:
           "Arizona Department of Housing \u2014 Weatherization Assistance Program",
-        url: "https://housing.az.gov/arizona-weatherization-assistance-program",
+        url: "https://housing.az.gov/general-public/weatherization-assistance-program",
       },
       {
         label: "IRS \u2014 25C/25D Termination FAQ",
