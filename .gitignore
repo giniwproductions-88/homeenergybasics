@@ -41,3 +41,4 @@ check-out.txt
 scraper-parse-*.txt
 accept-*.txt
 prune-*.txt
+internal-run-*.txt
