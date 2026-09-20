@@ -32,7 +32,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in Connecticut in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Energize CT offers $250 per ton (standard) or $1,000 per ton (Energy Optimization tier for fuel-switching) for qualifying air-source heat pumps, up to $10,000 per home. Since April 1, 2026, enhanced incentives of up to $1,500 per ton are available for electric-resistance replacements and income-verified households between 60% of state median income and 80% of Area Median Income. Heat pump water heaters receive a $900 instant discount. A new Smart-E Loan special offer provides 1.99% APR financing on 5-year terms, running August 1 through December 31, 2026 (the prior 0.99% offer ended July 31). Federal tax credits (25C/25D) expired December 31, 2025. HEAR rebates (~$49.7 million allocated) have not launched in Connecticut.",
+        text: "Energize CT offers $250 per ton (standard) or $1,500 per ton (Energy Optimization tier for fuel-switching) for qualifying air-source heat pumps, up to $10,000 per home. As of September 1, 2026, all qualifying Energy Optimization installations receive $1,500 per ton; before that date the rate was $1,000 per ton, with $1,500 available only to verified electric-resistance replacements and income-verified households. Heat pump water heaters receive a $900 instant discount. A new Smart-E Loan special offer provides 1.99% APR financing on 5-year terms, running August 1 through December 31, 2026 (the prior 0.99% offer ended July 31). Federal tax credits (25C/25D) expired December 31, 2025. HEAR rebates (~$49.7 million allocated) have not launched in Connecticut.",
       },
     },
     {
@@ -48,7 +48,7 @@ const faqJsonLd = {
       name: "What is the Energize CT Energy Optimization rebate?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The Energy Optimization tier provides $1,000 per ton (up to $10,000 per home) for heat pumps that replace oil, propane, natural gas, or electric resistance as the primary heating source. The pre-existing system must be either fully decommissioned (full displacement) or integrated using a qualified control listed on the Energize CT Heat Pump QPL (partial displacement). Five inspection outcomes drop the claim to $250/ton: an integrated control not on the QPL; no integrated control installed; the installation replaced an older heat pump; it was installed in a previously unconditioned space; or it is used for cooling only.",
+        text: "The Energy Optimization tier provides $1,500 per ton (up to $10,000 per home) for heat pumps that replace oil, propane, natural gas, or electric resistance as the primary heating source. The pre-existing system must be either fully decommissioned (full displacement) or integrated using a qualified control listed on the Energize CT Heat Pump QPL (partial displacement). Five inspection outcomes drop the claim to $250/ton: an integrated control not on the QPL; no integrated control installed; the installation replaced an older heat pump; it was installed in a previously unconditioned space; or it is used for cooling only.",
       },
     },
     {
@@ -131,7 +131,7 @@ export default function ConnecticutPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">The short version</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-1">✓ Energize CT Energy Optimization: $1,000/ton</p>
+              <p className="font-semibold text-green-800 mb-1">✓ Energize CT Energy Optimization: $1,500/ton</p>
               <p className="text-sm text-green-900">
                 Up to <strong>$10,000 per home</strong> for heat pumps replacing oil, propane, gas, or electric resistance as primary heat. Requires full decommission or qualified integrated control.
               </p>
@@ -145,7 +145,7 @@ export default function ConnecticutPage() {
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Total potential savings: $750&ndash;$10,000+</p>
               <p className="text-sm text-green-900">
-                $750 (standard tier, 3-ton system) to $10,000 (Energy Optimization, large system; enhanced $1,500/ton tiers since April 2026). Households at or below 60% of state median income may receive free installations through HES-IE.
+                $750 (standard tier, 3-ton system) to $10,000 (Energy Optimization, large system; $1,500/ton for all qualifying installs since September 1, 2026). Households at or below 60% of state median income may receive free installations through HES-IE.
               </p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
@@ -244,7 +244,7 @@ export default function ConnecticutPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Energize CT rebates &mdash; the primary path in 2026</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Energize CT is funded through a charge on customer energy bills and provides heat pump rebates to residential electric customers of <strong>Eversource</strong> and <strong>United Illuminating (UI)</strong>. Three tiers are available based on how completely you replace your existing heating system and, since April 2026, your income or existing heat type.
+            Energize CT is funded through a charge on customer energy bills and provides heat pump rebates to residential electric customers of <strong>Eversource</strong> and <strong>United Illuminating (UI)</strong>. Two rates are available, based on how completely you replace your existing heating system. Income and existing heat type no longer affect the rate; they did between April 1 and August 31, 2026.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Air-source heat pump rebates</h3>
@@ -267,15 +267,15 @@ export default function ConnecticutPage() {
                 </tr>
                 <tr className="border-b bg-green-50">
                   <td className="p-3">Energy Optimization</td>
-                  <td className="p-3 font-semibold">$1,000/ton</td>
+                  <td className="p-3 font-semibold">$1,500/ton</td>
                   <td className="p-3">$10,000</td>
                   <td className="p-3">Replacing oil, propane, gas, or electric resistance as primary heat &mdash; must decommission old system or use qualified integrated control</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-3">Enhanced (since April 1, 2026)</td>
-                  <td className="p-3 font-semibold">Up to $1,500/ton</td>
+                  <td className="p-3">Installs before September 1, 2026</td>
+                  <td className="p-3 font-semibold">$1,000/ton</td>
                   <td className="p-3">$10,000</td>
-                  <td className="p-3">Replacing verified electric resistance (baseboard) heat, or income-verified households between 60% of state median income and 80% of AMI</td>
+                  <td className="p-3">Historical. Installs completed January 1&ndash;August 31, 2026 were paid at $1,000/ton, with enhanced rates up to $1,500/ton only for verified electric-resistance replacement or income-verified households. As of September 1, 2026 all qualifying Energy Optimization installs receive $1,500/ton</td>
                 </tr>
               </tbody>
             </table>
@@ -290,20 +290,16 @@ export default function ConnecticutPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Energy Optimization qualification</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            To qualify for the $1,000/ton tier you must either fully decommission the old heating system &mdash; fuel line disconnected and capped, thermostat disconnected, system disabled or removed, which Energize CT calls <strong>full displacement</strong> &mdash; or integrate it using a qualified control listed on the Energize CT Heat Pump QPL, which is <strong>partial displacement</strong>.
+            To qualify for the $1,500/ton Energy Optimization tier you must either fully decommission the old heating system &mdash; fuel line disconnected and capped, thermostat disconnected, system disabled or removed, which Energize CT calls <strong>full displacement</strong> &mdash; or integrate it using a qualified control listed on the Energize CT Heat Pump QPL, which is <strong>partial displacement</strong>.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Five specific inspection outcomes drop an Energy Optimization claim from $1,000/ton to the $250/ton standard rate: an <strong>integrated control not on the QPL</strong>; <strong>no integrated control installed</strong>; the installation <strong>replaced an older heat pump</strong>; it was installed in a <strong>previously unconditioned space</strong>; or it is used for <strong>cooling only</strong>.
+            Five specific inspection outcomes drop an Energy Optimization claim from $1,500/ton to the $250/ton standard rate: an <strong>integrated control not on the QPL</strong>; <strong>no integrated control installed</strong>; the installation <strong>replaced an older heat pump</strong>; it was installed in a <strong>previously unconditioned space</strong>; or it is used for <strong>cooling only</strong>.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            The enhanced <strong>$1,500/ton</strong> tiers require verification before installation: electric-resistance replacements through a virtual heat verification inspection, and income-based eligibility (above 60% of state median income and below 80% of AMI) through the Energize CT income verification portal.
+            Until August 31, 2026 the <strong>$1,500/ton</strong> rate was an enhanced tier requiring verification before installation &mdash; electric-resistance replacements through a virtual heat verification inspection, or income-based eligibility (above 60% of state median income and below 80% of AMI) through the Energize CT income verification portal. As of <strong>September 1, 2026</strong> that condition no longer applies: all qualifying Energy Optimization installations receive $1,500 per ton, up to $10,000 per home.
           </p>
-          <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-4">
-            <p className="font-semibold text-amber-800 mb-1">⚠ The enhanced rate is prorated to the baseboard you actually replace</p>
-            <p className="text-sm text-amber-900">Energize CT determines how much enhanced incentive you qualify for from <strong>how many linear feet of baseboard exist</strong>. The enhanced rate is capped at the matching tonnage, and the rest of the system is paid at the standard rate. A 3-ton system replacing one ton of baseboard does <strong>not</strong> earn $1,500 &times; 3 &mdash; size your expectations to the resistance heat being displaced, not to the equipment.</p>
-          </div>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Both rebate forms also carry a <strong>$500 bonus</strong> for insulation upgrades completed through <strong>Home Energy Solutions</strong> within 24 months before the heat pump installation. It applies on either tier.
+            Both rebate forms also carry a <strong>$500 bonus</strong> for insulation upgrades completed through <strong>Home Energy Solutions</strong>. The Energy Optimization form counts insulation done within <strong>24 months before or 6 months after</strong> the heat pump installation; the standard Air Source Heat Pump form counts only the 24 months before. Insulation rebates themselves run to <strong>March 31, 2027</strong>, a month later than the February 27 heat pump postmark deadline.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Heat pump water heaters</h3>
@@ -319,7 +315,7 @@ export default function ConnecticutPage() {
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
             <p className="font-semibold text-blue-800 mb-1">For oil and propane homes, the math often works immediately</p>
             <p className="text-sm text-blue-900">
-              A 3-ton Energy Optimization install with $3,000 in rebates financed through Smart-E at 1.99% APR can produce monthly loan payments lower than prior oil or propane heating costs &mdash; making the switch cash-flow-positive from day one.
+              A 3-ton Energy Optimization install with $4,500 in rebates financed through Smart-E at 1.99% APR can produce monthly loan payments lower than prior oil or propane heating costs &mdash; making the switch cash-flow-positive from day one.
             </p>
           </div>
         </div>
@@ -346,16 +342,7 @@ export default function ConnecticutPage() {
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900 mb-2">Any income &mdash; Energy Optimization (replacing oil/propane/gas/resistance)</p>
               <ul className="text-sm text-gray-700 space-y-1">
-                <li>Energize CT Energy Optimization (3 tons &times; $1,000): $3,000</li>
-                <li>Federal tax credit: $0 (expired)</li>
-                <li>HEAR: $0 (not launched)</li>
-              </ul>
-              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$3,000</p>
-            </div>
-            <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900 mb-2">60% SMI&ndash;80% AMI or electric-resistance replacement &mdash; Enhanced tier</p>
-              <ul className="text-sm text-gray-700 space-y-1">
-                <li>Energize CT Enhanced (3 tons &times; $1,500): $4,500 &mdash; only if the baseboard footage supports all 3 tons at the enhanced rate; any excess tonnage pays $250/ton</li>
+                <li>Energize CT Energy Optimization (3 tons &times; $1,500): $4,500</li>
                 <li>Federal tax credit: $0 (expired)</li>
                 <li>HEAR: $0 (not launched)</li>
               </ul>
@@ -374,7 +361,7 @@ export default function ConnecticutPage() {
           <div className="bg-gray-100 rounded-lg p-5 mb-6">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
             <p className="text-sm text-gray-700">
-              Against a typical <strong>$12,000&ndash;$16,000</strong> installation: Energy Optimization reduces out-of-pocket to roughly <strong>$9,000&ndash;$13,000</strong>, and the enhanced tier to roughly <strong>$7,500&ndash;$11,500</strong>. Standard tier reduces it to roughly <strong>$11,250&ndash;$15,250</strong>. Income-eligible households through HES-IE may pay <strong>$0</strong>. Smart-E financing spreads the remainder at 1.99% APR on 5-year terms through December 31, 2026 (longer terms at standard rates, currently 6.99%+).
+              Against a typical <strong>$12,000&ndash;$16,000</strong> installation: Energy Optimization reduces out-of-pocket to roughly <strong>$7,500&ndash;$11,500</strong>. Standard tier reduces it to roughly <strong>$11,250&ndash;$15,250</strong>. Income-eligible households through HES-IE may pay <strong>$0</strong>. Smart-E financing spreads the remainder at 1.99% APR on 5-year terms through December 31, 2026 (longer terms at standard rates, currently 6.99%+).
             </p>
           </div>
 
@@ -398,7 +385,7 @@ export default function ConnecticutPage() {
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
             <p className="font-semibold text-green-800 mb-1">✓ Best candidates for Connecticut heat pump incentives</p>
             <p className="text-sm text-green-900">
-              Oil or propane homes replacing their heating system (highest Energy Optimization rebate, largest energy savings, loan payments often lower than prior fuel costs). Electric resistance (baseboard) homes (qualifies for the enhanced $1,500/ton tier, heat pumps are 2&ndash;3&times; more efficient). Low-income households at or below 60% of state median income (free installation through HES-IE).
+              Oil or propane homes replacing their heating system ($1,500/ton Energy Optimization rate, largest energy savings, loan payments often lower than prior fuel costs). Electric resistance (baseboard) homes (qualifies for the $1,500/ton Energy Optimization rate, heat pumps are 2&ndash;3&times; more efficient). Low-income households at or below 60% of state median income (free installation through HES-IE).
             </p>
           </div>
         </div>

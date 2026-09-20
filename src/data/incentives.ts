@@ -449,17 +449,17 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "CT",
     stateName: "Connecticut",
     status: "open",
-    lastVerified: "2026-09-06",
-    lastUpdated: "2026-09-06",
+    lastVerified: "2026-09-18",
+    lastUpdated: "2026-09-18",
     summary:
-      "Connecticut heat pump incentives are active through Energize CT. Rebates range from $250–$1,500 per ton depending on system type, fuel switching, and income (enhanced tiers added April 2026). Federal tax credits ended December 31, 2025. HEAR rebates are funded but not yet available. A new Smart-E Loan offer provides 1.99% APR heat pump financing on 5-year terms, August 1–December 31, 2026.",
+      "Connecticut heat pump incentives are active through Energize CT. Rebates range from $250–$1,500 per ton depending on system type and fuel switching; the Energy Optimization rate rose to $1,500/ton for all qualifying installs on September 1, 2026. Federal tax credits ended December 31, 2025. HEAR rebates are funded but not yet available. A new Smart-E Loan offer provides 1.99% APR heat pump financing on 5-year terms, August 1–December 31, 2026.",
     sources: [
       {
         label: "Energize CT — 2026 Residential Rebates: Air Source Heat Pump (PDF, rev 04/26)",
         url: "https://www.energizect.com/media/12241/download?inline=",
       },
       {
-        label: "Energize CT — 2026 Residential Rebates: Energy Optimization (PDF, rev 04/26)",
+        label: "Energize CT — 2026 Residential Rebates: Energy Optimization (PDF, rev 09/26)",
         url: "https://www.energizect.com/media/19011/download?inline=",
       },
       {
