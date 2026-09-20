@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-19T01:49:02.120Z",
+ "generatedAt": "2026-09-20T17:00:28.152Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -3614,8 +3614,8 @@
     "AZ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:50.164Z",
-   "length": 78682,
+   "fetchedAt": "2026-09-12T20:41:31.350Z",
+   "length": 76409,
    "kind": "html",
    "textHash": "25412edda71a3d79",
    "dollars": [
@@ -3631,7 +3631,7 @@
     "AZ"
    ],
    "httpStatus": 403,
-   "fetchedAt": "2026-07-14T17:02:51.959Z",
+   "fetchedAt": "2026-09-12T20:41:33.249Z",
    "length": 6037,
    "error": "HTTP 403"
   },
@@ -3643,8 +3643,8 @@
     "AZ"
    ],
    "httpStatus": 403,
-   "fetchedAt": "2026-07-14T17:02:51.883Z",
-   "length": 3378,
+   "fetchedAt": "2026-09-12T20:41:33.640Z",
+   "length": 3404,
    "error": "HTTP 403"
   },
   "https://www.srpnet.com/energy-savings-rebates/home/rebates/heat-pump-water-heater": {
@@ -3655,8 +3655,8 @@
     "AZ"
    ],
    "httpStatus": 403,
-   "fetchedAt": "2026-07-14T17:02:51.958Z",
-   "length": 3378,
+   "fetchedAt": "2026-09-12T20:41:33.660Z",
+   "length": 3404,
    "error": "HTTP 403"
   },
   "https://www.aps.com/en/Residential/Save-Money-and-Energy/Your-Energy-Your-Options": {
@@ -3667,10 +3667,10 @@
     "AZ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:52.147Z",
-   "length": 121815,
+   "fetchedAt": "2026-09-12T20:41:33.082Z",
+   "length": 121733,
    "kind": "html",
-   "textHash": "c57e25368b7517a4",
+   "textHash": "76b8c496b3ee5b07",
    "dollars": [],
    "keywords": {}
   },
@@ -3682,10 +3682,10 @@
     "AZ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:55.419Z",
-   "length": 186179,
+   "fetchedAt": "2026-09-12T20:41:36.190Z",
+   "length": 190406,
    "kind": "html",
-   "textHash": "21bc8262133e457a",
+   "textHash": "c7a618a5c73f10eb",
    "dollars": [
     "$40",
     "$80",
@@ -3704,21 +3704,26 @@
     "AZ"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-14T17:02:53.087Z",
-   "length": 129097,
+   "fetchedAt": "2026-09-12T20:41:34.428Z",
+   "length": 151523,
    "kind": "html",
-   "textHash": "21eb4f776d7cfec2",
+   "textHash": "60a8421b67a96de4",
    "dollars": [
     "$200",
     "$300",
     "$600",
     "$700",
+    "$840",
     "$1,000",
     "$1,200",
     "$1,400",
+    "$1,600",
+    "$1,750",
     "$2,000",
     "$2,200",
-    "$41,670"
+    "$4,000",
+    "$8,000",
+    "$25,103"
    ],
    "keywords": {
     "now open": 1,
@@ -3733,7 +3738,7 @@
     "AZ"
    ],
    "httpStatus": 403,
-   "fetchedAt": "2026-07-14T17:02:54.097Z",
+   "fetchedAt": "2026-09-12T20:41:35.328Z",
    "length": 5890,
    "error": "HTTP 403"
   },
