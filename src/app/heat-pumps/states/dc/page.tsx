@@ -286,7 +286,7 @@ export default function WashingtonDCPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Eligibility requirements</h3>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Household income must be at or below 80% of Area Median Income (AMI) — approximately <strong>$132,900</strong> for a four-person household in the DC metro area — or receipt of federal assistance (SNAP, TANF, SSI, LIHEAP, Solar for All, or the Weatherization Assistance Program). Participants must have existing gas or oil heating, water heating, or cooking equipment. Applicants must supply a Pepco bill and a signed Pepco authorization form.
+            Household income must be at or below 80% of Area Median Income (AMI) — approximately <strong>$132,900</strong> for a four-person household in the DC metro area — or receipt of federal assistance (SNAP, TANF, SSI, LIHEAP, Solar for All, or the Weatherization Assistance Program). Participants must have existing gas or oil heating, water heating, or cooking equipment.
           </p>
 
           <p className="text-gray-700 leading-relaxed mb-6">
@@ -295,7 +295,7 @@ export default function WashingtonDCPage() {
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
             <p className="font-semibold text-amber-800 mb-1">⚠ AHEP is currently accepting waitlist applications only</p>
-            <p className="text-sm text-amber-900">Due to overwhelming demand and limited funding, AHEP is not processing new applications immediately. Households who qualify — owners and renters alike — should still apply to join the waitlist, as the no-cost benefit far exceeds any combination of standard rebates.</p>
+            <p className="text-sm text-amber-900">Due to overwhelming demand and limited funding, all AHEP applications received are placed on a waitlist until further notice. DCSEU checks basic income eligibility within 30 days of submission, and approved projects take three to six months on average. Households who qualify — owners and renters alike — should still apply to join the waitlist, as the no-cost benefit far exceeds any combination of standard rebates. DCSEU asks applicants without heat or hot water to apply and then notify the program of their circumstances directly.</p>
           </div>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">DC&apos;s federal rebate structure is unusual</h3>
@@ -456,7 +456,7 @@ export default function WashingtonDCPage() {
               <div>
                 <p className="font-semibold text-gray-900">For income-qualified programs, apply separately through AHEP</p>
                 <p className="text-sm text-gray-700">Households below 80% AMI should apply for AHEP at{" "}
-                  <a href="https://www.dcseu.com/ahep-sfa-apply" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">dcseu.com/ahep-sfa-apply</a>. AHEP is a separate track from standard rebates — do not apply for both.</p>
+                  <a href="https://www.dcseu.com/ahep-sfa-apply" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">dcseu.com/ahep-sfa-apply</a>. AHEP is a separate track from standard rebates — do not apply for both. Applications require a Pepco bill, a signed Pepco authorization form, a signed Washington Gas authorization form, and income and identity documentation for every household member.</p>
               </div>
             </div>
           </div>
