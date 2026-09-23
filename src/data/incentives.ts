@@ -1804,7 +1804,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "DC",
     stateName: "Washington DC",
     status: "open",
-    lastVerified: "2026-07-24",
+    lastVerified: "2026-09-20",
     lastUpdated: "2026-09-20",
     summary:
       "DCSEU offers up to $5,000 for heat pumps and $1,600 for HPWHs when switching from gas to electric, plus $3,200 in electrification service rebates. Total realistic rebates reach $9,800. Federal 25C/25D credits expired. AHEP provides no-cost electrification for households below 80% AMI but is currently waitlisted.",
@@ -1822,12 +1822,20 @@ export const incentives: Record<StateCode, StateIncentive> = {
         url: "https://www.dcseu.com/affordable-home-electrification",
       },
       {
-        label: "DOEE \u2014 IRA Rebates & Tax Incentives",
-        url: "https://doee.dc.gov/service/ira-rebates-tax-incentives",
+        label: "DOEE \u2014 Federal Home Energy Rebates and the Healthy Homes Act of 2024",
+        url: "https://doee.dc.gov/service/federal-home-energy-rebates-and-healthy-homes-act-2024",
       },
       {
         label: "DCSEU \u2014 Apply for Residential Rebates",
         url: "https://www.dcseu.com/residential-rebates/apply",
+      },
+      {
+        label: "DCSEU \u2014 Apply for AHEP",
+        url: "https://www.dcseu.com/ahep-sfa-apply",
+      },
+      {
+        label: "DCSEU \u2014 Terms & Conditions",
+        url: "https://www.dcseu.com/terms-and-conditions",
       },
       {
         label: "DC Green Bank \u2014 Clean Energy Advantage Loan",
@@ -1835,7 +1843,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
       },
       {
         label: "DOEE \u2014 Weatherization Assistance Program",
-        url: "https://doee.dc.gov/service/wap",
+        url: "https://doee.dc.gov/service/weatherization-assistance-program-wap",
       },
     ],
   },

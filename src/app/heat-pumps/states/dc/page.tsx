@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title:
     "Washington DC Heat Pump Rebates 2026: Up to $9,800 + DCSEU Electrification | Home Energy Basics",
   description:
-    "DCSEU offers up to $5,000 for heat pumps. Electrification rebates add $3,800+. Federal tax credits ended. Every DC heat pump incentive in 2026.",
+    "DCSEU offers up to $5,000 for heat pumps. Electrification rebates add up to $3,200. Federal tax credits ended. Every DC heat pump incentive in 2026.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/dc",
   },
@@ -32,7 +32,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in Washington DC in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The DC Sustainable Energy Utility (DCSEU) offers up to $5,000 for air-source heat pumps and up to $1,600 for heat pump water heaters when switching from gas or oil to electric. Additional electrification service rebates cover up to $2,000 for a panel upgrade and $1,200 for circuit additions. Total realistic rebates for a gas-to-electric conversion reach $9,800. Federal Section 25C and 25D tax credits expired December 31, 2025 and are no longer available.",
+        text: "The DC Sustainable Energy Utility (DCSEU) offers up to $5,000 for air-source heat pumps and up to $1,600 for heat pump water heaters when switching from gas or oil to electric. When switching from gas or oil, additional electrification service rebates cover up to $2,000 for a panel upgrade and $1,200 for circuit additions. Total realistic rebates for a gas-to-electric conversion reach $9,800. Federal Section 25C and 25D tax credits expired December 31, 2025 and are no longer available.",
       },
     },
     {
@@ -148,7 +148,7 @@ export default function WashingtonDCPage() {
             </div>
             <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
               <p className="font-semibold text-amber-800 mb-1">⚠ AHEP is currently waitlisted — Pepco offers no direct rebates</p>
-              <p className="text-sm text-amber-900">The Affordable Home Electrification Program (AHEP) for low-income households is accepting waitlist applications only due to limited funding. Unlike Pepco Maryland, Pepco DC does not administer its own heat pump rebate program — all rebates come through DCSEU.</p>
+              <p className="text-sm text-amber-900">The Affordable Home Electrification Program (AHEP) for low-income households is accepting waitlist applications only due to limited funding. DCSEU verifies eligibility within 30 days of application, and approved AHEP projects take three to six months on average. FY2026 installations were to be completed by September 15, 2026. Unlike Pepco Maryland, Pepco DC does not administer its own heat pump rebate program — all rebates come through DCSEU.</p>
             </div>
           </div>
         </div>
@@ -281,12 +281,16 @@ export default function WashingtonDCPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">What AHEP covers</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            AHEP covers heat pump installation, heat pump water heater, induction stove, electric dryer, smart thermostat, and panel upgrade — with all gas lines capped upon completion. Federal HEAR funding provides up to <strong>$14,000</strong> per dwelling unit, supplemented by local District funds.
+            AHEP covers heat pump installation, heat pump water heater, induction stove, electric dryer, programmable thermostat, and panel upgrade — with all gas lines capped upon completion. Federal HEAR funding provides up to <strong>$14,000</strong> per dwelling unit, supplemented by local District funds.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Eligibility requirements</h3>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Household income must be at or below 80% of Area Median Income (AMI) — approximately <strong>$131,120</strong> for a four-person household in the DC metro area — or receipt of federal assistance (TANF, SSI, LIHEAP). Participants must have existing gas or oil equipment and receive electric service from Pepco.
+            Household income must be at or below 80% of Area Median Income (AMI) — approximately <strong>$132,900</strong> for a four-person household in the DC metro area — or receipt of federal assistance (SNAP, TANF, SSI, LIHEAP, Solar for All, or the Weatherization Assistance Program). Participants must have existing gas or oil heating, water heating, or cooking equipment. Applicants must supply a Pepco bill and a signed Pepco authorization form.
+          </p>
+
+          <p className="text-gray-700 leading-relaxed mb-6">
+            DCSEU asks AHEP applicants to acknowledge that their utility bills may increase after electrification. AHEP also does not install every type of equipment — DCSEU names cold-climate heat pumps and WiFi-enabled thermostats as examples of what the program will not cover, so the thermostat it installs is a basic programmable unit.
           </p>
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5 mb-6">
@@ -346,7 +350,7 @@ export default function WashingtonDCPage() {
 
           <div className="bg-gray-100 rounded-lg p-5 mb-6">
             <p className="font-semibold text-gray-900 mb-1">What you&apos;ll actually pay</p>
-            <p className="text-sm text-gray-700">For a typical gas-to-electric conversion costing $15,000–$22,000 installed, a market-rate DC homeowner claiming the full <strong>$9,800</strong> in DCSEU rebates would pay <strong>$5,200 to $12,200 out of pocket</strong>. DC Green Bank&apos;s Clean Energy Advantage Loan Program offers financing from 5.75% APR (secured) or 8.25% APR (unsecured) for terms of 3, 5, or 10 years, up to $35,000. Income-qualified households accepted into AHEP pay nothing.</p>
+            <p className="text-sm text-gray-700">For a typical gas-to-electric conversion costing $15,000–$22,000 installed, a market-rate DC homeowner claiming the full <strong>$9,800</strong> in DCSEU rebates would pay <strong>$5,200 to $12,200 out of pocket</strong>. DC Green Bank&apos;s Clean Energy Advantage Loan Program offers financing from 5.75% APR (secured) or 8.25% APR (unsecured) for terms of 3, 5, or 10 years, in amounts from $3,000 to $35,000. CEA financing requires using one of DC&apos;s four participating contractors: EDGE Energy, Energy Efficiency Experts, JD Air, and Noaman &amp; Son Construction. Income-qualified households accepted into AHEP pay nothing.</p>
           </div>
 
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
@@ -364,12 +368,12 @@ export default function WashingtonDCPage() {
             DOEE runs the <strong>Weatherization Assistance Program (WAP)</strong> for DC households below 60% of State Median Income. WAP can include insulation, air sealing, and heating system repairs or replacement — including heat pump installation in some cases. The program is free for qualifying households.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            The <strong>Emergency Mechanical Systems (EMS)</strong> program provides emergency repair or replacement of heating and cooling systems for income-eligible homeowners and renters. As of late July 2026, DOEE reports that FY2026 program openings for WAP and EMS are delayed, and its team has begun contacting waitlisted applicants individually with updates. New applications are still accepted, but applicants join the waitlist rather than receiving immediate service.
+            The <strong>Emergency Mechanical Systems (EMS)</strong> program provides emergency repair or replacement of heating and cooling systems for income-eligible homeowners and renters. DOEE reports that EMS is open and that its team is contacting waitlisted applicants on a first-come, first-served basis. WAP and the Lead Reduction Program remain delayed this fiscal year. New WAP applications are still accepted, but applicants join the waitlist rather than receiving immediate service.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Contact DOEE at (202) 535-2600 or visit{" "}
-            <a href="https://doee.dc.gov/service/wap" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">doee.dc.gov</a>{" "}
-            to apply for either program.
+            Contact DOEE at (202) 299-3316, Monday–Friday 8:30 am – 2:30 pm, or visit{" "}
+            <a href="https://doee.dc.gov/service/weatherization-assistance-program-wap" target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline">doee.dc.gov</a>{" "}
+            to apply for WAP or EMS.
           </p>
         </div>
       </section>
@@ -470,7 +474,7 @@ export default function WashingtonDCPage() {
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">DCSEU fiscal year reset</p>
-              <p className="text-sm text-gray-600 mt-1">DCSEU rebates operate on a fiscal year (October 1 – September 30). Beyond the submission deadline, DCSEU&apos;s terms require that rebate requests be approved no later than September 30, 2026 — applications returned for errors may not be honored if they are not resolved by that date. Rebates for products installed after September 30, 2026 are subject to change.</p>
+              <p className="text-sm text-gray-600 mt-1">DCSEU rebates operate on a fiscal year (October 1 – September 30). DCSEU advises submitting a completed application before September 15 of each fiscal year and says the process takes one to three months start to finish, and its terms require that rebate requests be approved — not merely submitted — no later than September 30, 2026. Applications postmarked close to that date are unlikely to be approved in time for FY2026 amounts. Rebates for products installed after September 30, 2026 are subject to change.</p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">DC building code changes</p>
