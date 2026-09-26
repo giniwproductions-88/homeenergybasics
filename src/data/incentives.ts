@@ -2177,7 +2177,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
     lastVerified: "2026-06-11",
     lastUpdated: "2026-06-11",
     summary:
-      "NorthWestern Energy offers $450 per ASHP and up to $3,000 for HPWHs. BPA cooperatives like Flathead Electric provide $600\u2013$1,560. Federal 25C/25D credits expired Dec 2025. HEAR and HOMES programs remain paused pending DOE approval. Bozeman and Missoula County offer HPWH rebates that stack with utility incentives.",
+      "NorthWestern Energy offers $450 per air-source heat pump (Aug 2026\u2013Jun 2027 cycle) and up to $3,000 for a heat pump water heater replacing an electric water heater. Cooperatives pay more: Flathead Electric $600\u2013$1,560 for variable-speed systems, Missoula Electric $1,400\u2013$1,800 for HPWHs. Bozeman adds $500 for HPWHs; Missoula County\u2019s rebate closed in 2025. Federal 25C/25D expired Dec 2025 and Montana\u2019s geothermal credit was repealed. HEAR and HOMES have not launched.",
     sources: [
       {
         label: "Montana DEQ \u2014 Home Energy Rebates Program",

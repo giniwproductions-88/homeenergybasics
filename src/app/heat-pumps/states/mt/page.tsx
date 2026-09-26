@@ -49,7 +49,7 @@ export default function MontanaPage() {
         name: "What heat pump rebates are available in Montana in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Montana heat pump rebates in 2026 come primarily from utilities. NorthWestern Energy offers $450 per air-source heat pump and up to $3,000 for heat pump water heaters. BPA-funded cooperatives like Flathead Electric offer $600\u2013$1,560 for air-source systems. Bozeman offers a $500 HPWH rebate and Missoula County offers $1,435. Federal tax credits under Sections 25C and 25D expired December 31, 2025. Montana\u0027s HEAR and HOMES IRA rebate programs have not yet launched.",
+          text: "Montana heat pump rebates in 2026 come primarily from utilities. NorthWestern Energy offers $450 per air-source heat pump and up to $3,000 for a heat pump water heater that replaces an existing electric water heater. BPA-funded cooperatives like Flathead Electric offer $600\u2013$1,560 for variable-speed air-source systems. Bozeman offers a $500 heat pump water heater rebate; Missoula County\u0027s rebate closed in October 2025. Federal tax credits under Sections 25C and 25D expired December 31, 2025, and Montana repealed its geothermal tax credit after 2021. Montana\u0027s HEAR and HOMES IRA rebate programs have not yet launched.",
         },
       },
       {
@@ -57,7 +57,7 @@ export default function MontanaPage() {
         name: "Can I stack NorthWestern Energy rebates with HEAR or local rebates in Montana?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Utility rebates from NorthWestern Energy or cooperatives can stack with local city and county rebates. A Bozeman NWE customer could combine the $3,000 NWE HPWH rebate with Bozeman\u0027s $500 rebate for up to $3,500 total. A Missoula County NWE customer could stack the $3,000 NWE rebate with the $1,435 county rebate for up to $4,435. When HEAR launches, it will also stack with utility and local rebates for income-qualifying households.",
+          text: "Yes. Utility rebates from NorthWestern Energy or cooperatives can stack with local rebates. A Bozeman NWE customer replacing an electric water heater could combine NWE\u0027s up-to-$3,000 heat pump water heater rebate with Bozeman\u0027s $500 rebate for up to $3,500 in rebates ($3,575 with Bozeman\u0027s survey payment). Missoula County\u0027s heat pump water heater rebate closed in October 2025. When HEAR launches, it will also stack with utility and local rebates for income-qualifying households.",
         },
       },
       {
@@ -108,10 +108,11 @@ export default function MontanaPage() {
             Montana&apos;s heat pump incentive landscape is limited in 2026. Federal tax credits expired, and
             the IRA-funded HEAR and HOMES rebate programs remain paused at the state level. NorthWestern Energy
             offers <strong>$450</strong> per air-source heat pump and up to <strong>$3,000</strong> for heat pump
-            water heaters, while BPA-funded cooperatives in western Montana provide <strong>$600–$1,560</strong> for
-            qualifying systems. This guide covers all major Montana heat pump incentives available in 2026, including
-            NorthWestern Energy rebates, BPA cooperative programs, Bozeman and Missoula County local rebates,
-            state tax credits, and HEAR/HOMES status. Here&apos;s what&apos;s actually available.
+            water heaters replacing an electric water heater, while BPA-funded cooperatives in western Montana
+            provide <strong>$600–$1,560</strong> for qualifying systems. This guide covers all major Montana heat
+            pump incentives available in 2026, including NorthWestern Energy rebates, electric cooperative programs,
+            Bozeman&apos;s local rebate, state financing, and HEAR/HOMES status. Here&apos;s what&apos;s actually
+            available.
           </p>
           <p className="text-sm text-gray-500">
             {mtIncentive.lastUpdated === mtIncentive.lastVerified ? (
@@ -141,26 +142,28 @@ export default function MontanaPage() {
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ NorthWestern Energy Rebates</p>
               <p className="text-sm text-green-900">
-                <strong>$450</strong> per air-source heat pump (ducted or ductless) and up
-                to <strong>$3,000</strong> for heat pump water heaters through NWE&apos;s E+ program.
-                Available to all NWE electric customers through June 2026.
+                <strong>$450</strong> per air-source heat pump (ducted or ductless) through NWE&apos;s E+
+                program, and up to <strong>$3,000</strong> for a heat pump water heater that replaces an
+                existing electric water heater. The current E+ cycle covers work from August 1, 2026
+                through June 30, 2027.
               </p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ BPA Cooperative Rebates</p>
               <p className="text-sm text-green-900">
-                Western Montana cooperatives offer <strong>$600–$1,560</strong> for air-source heat pumps
-                and <strong>$700–$900</strong> for heat pump water heaters. Flathead Electric has the
-                richest program.
+                Western Montana cooperatives offer <strong>$600–$1,560</strong> for variable-speed
+                air-source heat pumps (Flathead Electric) and <strong>$1,400–$1,800</strong> for heat
+                pump water heaters (Missoula Electric). Amounts depend on the home&apos;s existing
+                heating system.
               </p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Total Potential Savings</p>
               <p className="text-sm text-green-900">
                 <strong>$450–$1,560</strong> for air-source heat pumps depending on utility territory.
-                HPWH stacking in Bozeman reaches <strong>$3,500</strong> and in Missoula County
-                up to <strong>~$4,435</strong>. Full electrification packages can reach
-                ~$5,000 total incentives when HEAR launches.
+                The strongest heat pump water heater stack is in Bozeman: NWE&apos;s up to $3,000 plus
+                the city&apos;s $500 reaches <strong>$3,500</strong> for homes replacing an electric
+                water heater.
               </p>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-lg p-5">
@@ -297,8 +300,11 @@ export default function MontanaPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">NorthWestern Energy (Largest Utility)</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            NorthWestern Energy operates the E+ Residential Electric Rebate Program through
-            its current cycle ending June 30, 2026. Available to existing-home NWE electric customers statewide.
+            NorthWestern Energy&apos;s E+ Residential Electric Existing Home program (Form 3743) runs
+            August 1, 2026 through June 30, 2027. Work completed or materials purchased before
+            August 1, 2026 do not qualify, and projects must be completed and submitted by June 30,
+            2027. Available to NWE residential electric customers in existing homes; funds are
+            first-come, first-served.
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
@@ -318,16 +324,21 @@ export default function MontanaPage() {
                 <tr className="border-b">
                   <td className="p-3">Heat pump water heater</td>
                   <td className="p-3 font-semibold">Up to $3,000</td>
-                  <td className="p-3">NEEA Tier 3 or 4; participating contractor required</td>
+                  <td className="p-3">NEEA Tier 3 or 4; must replace an existing electric water heater; participating contractor with pre-approval</td>
                 </tr>
               </tbody>
             </table>
           </div>
           <p className="text-gray-700 leading-relaxed mb-6">
-            The ASHP rebate applies identically to ducted and ductless systems — NWE does not differentiate.
-            No cold-climate-specific adder, income-qualified tier, or refrigerant requirement exists. The
-            HPWH program is administered in partnership with Evergreen Energy Partners and requires
-            pre-approval through a participating contractor network. New construction does not qualify.
+            The ASHP rebate applies identically to ducted and ductless systems — NWE does not
+            differentiate. No cold-climate-specific adder, income-qualified tier, or refrigerant
+            requirement exists. The HPWH program is a separate NWE program run with Evergreen Energy
+            Partners. It requires pre-approval through a participating contractor and is limited to
+            existing single-family or manufactured homes (on a permanent foundation) that currently
+            have an electric water heater. Natural gas water heater replacements, rentals,
+            multifamily homes, and self-installs do not qualify, and one incentive is available per
+            residence. New construction does not qualify for the E+ heat pump rebate; for the HPWH
+            program it is considered case by case.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Montana-Dakota Utilities (Eastern Montana)</h3>
@@ -364,7 +375,7 @@ export default function MontanaPage() {
                 <tr className="border-b">
                   <td className="p-3">Missoula Electric</td>
                   <td className="p-3 font-semibold">$920</td>
-                  <td className="p-3 font-semibold">$700–$900</td>
+                  <td className="p-3 font-semibold">$1,400–$1,800</td>
                   <td className="p-3">Ductless; income-qualified program available (≤ 200% FPL)</td>
                 </tr>
                 <tr className="border-b">
@@ -406,38 +417,38 @@ export default function MontanaPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">City &amp; County Programs</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Two Montana communities offer local rebates for heat pump water heaters that stack with
-            utility incentives. These represent some of the best HPWH stacking opportunities in the state.
+            Bozeman offers a local heat pump water heater rebate that stacks with utility
+            incentives. Missoula County&apos;s rebate, which also stacked, closed in October 2025.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">City of Bozeman — $500 HPWH Rebate</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Bozeman offers a <strong>$500</strong> rebate for qualifying electric heat pump water heaters,
-            plus <strong>$75</strong> for completing a post-installation survey. The pilot program, run
-            in partnership with Montana DEQ, requires connection to Bozeman city water and equipment
-            listed on NEEA&apos;s Qualified Products List. This stacks with NorthWestern Energy&apos;s
-            up to $3,000 HPWH rebate for a combined total of up to <strong>$3,575</strong>.
+            Bozeman offers a <strong>$500</strong> rebate for qualifying electric heat pump water
+            heaters, plus <strong>$75</strong> for completing a satisfaction survey after
+            installation. It is open to City of Bozeman water customers, and equipment must be on
+            NEEA&apos;s Residential HPWH Qualified Products List. For NWE customers replacing an
+            electric water heater through a participating contractor, this stacks with NorthWestern
+            Energy&apos;s up to $3,000 HPWH rebate for a combined total of up
+            to <strong>$3,575</strong>.
           </p>
 
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">Missoula County — $1,435 HPWH Rebate</h3>
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">Missoula County — Rebate Closed</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            The Electrify Missoula partnership between the city, county, and Climate Smart Missoula
-            offers <strong>$1,435</strong> for heat pump water heaters (for purchases after May 1, 2025).
-            Funding is limited and distributed first-come, first-served — one of the grants funding
-            the rebate expires June 30, 2026, with roughly 40 rebates remaining as of the last
-            program update. Products must be on NEEA&apos;s Qualified Products List and require a plumbing permit with
-            final inspection. For NWE customers, this stacks with the up to $3,000 NWE rebate for a
-            combined total of up to <strong>$4,435</strong>. Missoula Electric Cooperative members can
-            stack with the co-op&apos;s $700–$900 HPWH rebate instead.
+            Missoula County&apos;s heat pump water heater rebate closed in October 2025 after all
+            funds were allocated. Missoula Electric Cooperative members can still get
+            <strong> $1,400–$1,800</strong> from the co-op for a heat pump water heater that
+            replaces an existing electric storage water heater, and NWE electric customers in the
+            county can use NWE&apos;s up to $3,000 program.
           </p>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
-            <p className="font-semibold text-blue-800 mb-1">HPWHs Are Montana&apos;s Best Stacking Opportunity</p>
+            <p className="font-semibold text-blue-800 mb-1">HPWHs Are Montana&apos;s Best Incentive Opportunity</p>
             <p className="text-sm text-blue-900">
-              Heat pump water heaters are the one category where Montana incentives can cover most or all of
-              the installed cost. A typical HPWH costs $1,500–$3,500 installed. With NWE&apos;s up to $3,000
-              plus Bozeman&apos;s $500 or Missoula County&apos;s $1,435, the equipment may effectively be free.
-              This is the single strongest incentive stack available in Montana today.
+              Heat pump water heaters are the one category where Montana incentives can cover most or
+              all of the installed cost — if the home already has an electric water heater. A typical
+              HPWH costs $1,500–$3,500 installed. NWE&apos;s up to $3,000 (plus Bozeman&apos;s $500 for
+              city water customers) or Missoula Electric&apos;s $1,400–$1,800 can make the equipment close
+              to free. Homes with a gas water heater do not qualify for NWE&apos;s program.
             </p>
           </div>
 
@@ -499,16 +510,17 @@ export default function MontanaPage() {
             <p className="text-sm text-gray-700">
               Until HEAR and HOMES launch, most Montana homeowners will pay <strong>$16,440–$17,550</strong> out
               of pocket for a typical $18,000 ducted cold-climate heat pump installation (after the $450–$1,560
-              utility rebate depending on territory). BPA cooperative members in western Montana fare better.
-              The exception: heat pump water heaters in Bozeman or Missoula County, where stacking can cover
-              the full installed cost.
+              utility rebate depending on territory). The exception: heat pump water heaters replacing an
+              electric water heater, where NWE&apos;s or Missoula Electric&apos;s rebate (plus Bozeman&apos;s in
+              Bozeman) can cover most or all of the installed cost.
             </p>
           </div>
 
           <p className="text-sm text-gray-500 mt-4">
-            Montana has no state-level heat pump tax credit for air-source systems. The geothermal tax credit
-            (up to $1,500) applies only to ground-source installations. The Alternative Energy Revolving Loan
-            Program (3.5% fixed, up to $40,000) primarily covers geothermal and solar systems.
+            Montana has no state heat pump tax credit. Its former geothermal system credit was
+            repealed by the 2021 Legislature and cannot be claimed for tax years after 2021. The
+            Alternative Energy Revolving Loan Program (3.5% fixed, up to $40,000) covers geothermal
+            and solar systems, plus efficiency measures installed alongside them.
           </p>
         </div>
       </section>
@@ -527,12 +539,13 @@ export default function MontanaPage() {
             when an energy auditor determines them cost-effective, but this is not guaranteed.
           </p>
 
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">Montana Geothermal Tax Credit</h3>
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">Montana Geothermal Tax Credit — Repealed</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Up to <strong>$1,500</strong> per installation for ground-source heat pump systems in a
-            principal dwelling. Filed on Montana Revenue form ENRG-A. Unused credit carries forward
-            up to 7 years. This applies only to geothermal systems, not air-source units. Verify
-            current availability with the Montana Department of Revenue.
+            Montana&apos;s geothermal system credit (Form ENRG-A, up to $1,500) was repealed by the
+            2021 Legislature and cannot be claimed after tax year 2021; only carryforwards from
+            earlier installations remain. Some utility and third-party pages still mention it. For
+            a ground-source system today, the options are cooperative rebates (such as Yellowstone
+            Valley Electric&apos;s $200 per ton, up to $1,000) and the AERLP loan below.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Alternative Energy Revolving Loan Program (AERLP)</h3>
@@ -618,8 +631,9 @@ export default function MontanaPage() {
             <p className="text-sm text-green-900">
               Homes currently heating with propane or electric resistance (baseboard, wall heaters,
               electric furnaces). Households served by BPA-funded cooperatives with higher rebates.
-              Homeowners in Bozeman or Missoula County who want a heat pump water heater at near-zero
-              cost. Homeowners with existing ductwork who want efficient cooling in addition to heating.
+              Homes replacing an electric water heater in NWE or Missoula Electric territory, where a
+              heat pump water heater can cost little or nothing after rebates. Homeowners with existing
+              ductwork who want efficient cooling in addition to heating.
             </p>
           </div>
 
@@ -677,7 +691,8 @@ export default function MontanaPage() {
                 <p className="font-semibold text-gray-900">Install and submit</p>
                 <p className="text-sm text-gray-700">
                   Have the system installed by a licensed contractor. Submit the NWE E+ rebate application
-                  (Form 3743) within 90 days of installation with proof of purchase and contractor invoice.
+                  (Form 3743) with a recent NWE bill and itemized receipts; projects must be completed and
+                  submitted by June 30, 2027.
                   For HPWH, your participating contractor handles the rebate process.
                 </p>
               </div>
@@ -689,9 +704,9 @@ export default function MontanaPage() {
               <div>
                 <p className="font-semibold text-gray-900">Stack local rebates if eligible</p>
                 <p className="text-sm text-gray-700">
-                  Bozeman residents: apply separately through the city&apos;s HPWH rebate program.
-                  Missoula County residents: apply through the Electrify Missoula portal. Both require
-                  NEEA-listed equipment and proof of installation.
+                  Bozeman water customers: apply separately through the city&apos;s HPWH rebate program,
+                  using NEEA-listed equipment. Missoula Electric members: use the co-op&apos;s rebate forms.
+                  Yellowstone Valley Electric members: claim rebates within 90 days of purchase.
                 </p>
               </div>
             </div>
@@ -721,11 +736,11 @@ export default function MontanaPage() {
               </p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="font-semibold text-gray-900">NWE E+ Program Renewal (July 2026)</p>
+              <p className="font-semibold text-gray-900">NWE E+ Program Cycle (Through June 30, 2027)</p>
               <p className="text-sm text-gray-600 mt-1">
-                NorthWestern Energy&apos;s current rebate cycle ends June 30, 2026. Rebate amounts and
-                qualifying criteria may change in the next program year. If you&apos;re planning a
-                2026 installation, apply before the current cycle closes.
+                NorthWestern Energy&apos;s E+ existing-home rebates run from August 1, 2026 through
+                June 30, 2027. Work done or materials bought before August 1, 2026 do not qualify, and
+                funds are first-come, first-served. Amounts may change in the next program year.
               </p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">
