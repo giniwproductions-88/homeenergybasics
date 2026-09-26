@@ -57,7 +57,7 @@ export default function MontanaPage() {
         name: "Can I stack NorthWestern Energy rebates with HEAR or local rebates in Montana?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Utility rebates from NorthWestern Energy or cooperatives can stack with local rebates. A Bozeman NWE customer replacing an electric water heater could combine NWE\u0027s up-to-$3,000 heat pump water heater rebate with Bozeman\u0027s $500 rebate for up to $3,500 in rebates ($3,575 with Bozeman\u0027s survey payment). Missoula County\u0027s heat pump water heater rebate closed in October 2025. When HEAR launches, it will also stack with utility and local rebates for income-qualifying households.",
+          text: "Yes. Utility rebates from NorthWestern Energy or cooperatives can stack with local rebates. A Bozeman NWE customer replacing an electric water heater could combine NWE\u0027s up-to-$3,000 heat pump water heater rebate with Bozeman\u0027s $500 rebate for up to $3,500 in rebates ($3,575 with Bozeman\u0027s survey payment). Missoula County\u0027s heat pump water heater rebate closed in October 2025. When HEAR launches, it will also stack with utility and local rebates for income-qualifying households, but under DOE Program Notice 26-2 it will require existing electric equipment or new construction.",
         },
       },
       {
@@ -73,7 +73,7 @@ export default function MontanaPage() {
         name: "Who administers Montana\u0027s HEAR and HOMES programs?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The Montana Department of Environmental Quality (DEQ) Energy Bureau is the designated administrator for both the HEAR and HOMES IRA rebate programs. DEQ submitted its implementation application to the U.S. Department of Energy in November 2024. Program design was paused in February 2025 pending updated DOE guidance, and no launch date has been announced as of June 2026.",
+          text: "The Montana Department of Environmental Quality (DEQ) Energy Bureau is the designated administrator for both the HEAR and HOMES IRA rebate programs. DEQ submitted its implementation application to the U.S. Department of Energy in November 2024. Program design was paused in February 2025 pending updated DOE guidance. DOE issued initial revised program guidance on June 1, 2026; DEQ says it will revise and resubmit its application once DOE\u0027s complete updates are available, and no launch date has been announced.",
         },
       },
       {
@@ -81,7 +81,7 @@ export default function MontanaPage() {
         name: "Does Montana-Dakota Utilities offer heat pump rebates?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "No. Montana-Dakota Utilities (MDU), which serves eastern Montana including parts of the Billings area, does not offer any heat pump rebates as of 2026. MDU\u0027s residential programs are limited to $300 for high-efficiency gas furnaces, $60 for Wi-Fi thermostats, and LED lighting rebates. Billings-area homeowners on Yellowstone Valley Electric Cooperative can access up to $800 for add-on heat pumps.",
+          text: "No. Montana-Dakota Utilities (MDU), which serves eastern Montana including parts of the Billings area, does not offer any heat pump rebates as of 2026. MDU\u0027s residential programs are limited to $300 for high-efficiency gas furnaces, $60 for Wi-Fi thermostats, and LED lighting rebates. Billings-area homeowners on Yellowstone Valley Electric Cooperative can access $200 per ton, up to $800, for add-on heat pumps paired with an existing furnace, claimed within 90 days of purchase.",
         },
       },
     ],
@@ -177,9 +177,11 @@ export default function MontanaPage() {
             <div className="md:col-span-2 bg-amber-50 border border-amber-200 rounded-lg p-5">
               <p className="font-semibold text-amber-800 mb-1">⚠ HEAR &amp; HOMES Programs Not Yet Launched</p>
               <p className="text-sm text-amber-900">
-                Montana DEQ&apos;s HEAR (up to $8,000 per heat pump) and HOMES (up to $8,000 for whole-home
-                projects) IRA rebate programs remain paused pending federal DOE approval. No launch date
-                has been announced. Do not count on these programs when budgeting a 2026 installation.
+                Montana DEQ&apos;s HEAR (up to $8,000 per heat pump; requires existing electric equipment
+                or new construction) and HOMES (up to $8,000 for whole-home projects) IRA rebate programs
+                remain unlaunched. DOE issued initial revised program guidance on June 1, 2026; DEQ says
+                it will revise and resubmit its application once DOE&apos;s full updates arrive. No launch
+                date has been announced. Do not count on these programs when budgeting a 2026 installation.
               </p>
             </div>
           </div>
@@ -220,14 +222,18 @@ export default function MontanaPage() {
             The Montana Department of Environmental Quality (DEQ) Energy Bureau is the designated
             administrator for both IRA rebate programs. DEQ submitted its implementation application
             to the U.S. Department of Energy in November 2024, but program design was paused in
-            February 2025 to allow DOE to formulate updated guidance. No launch date has been announced.
+            February 2025 to allow DOE to formulate updated guidance. DOE issued initial revised
+            program guidance on June 1, 2026, and DEQ plans to revise and resubmit its application
+            once DOE&apos;s complete updates arrive. No launch date has been announced.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">
             Home Electrification and Appliance Rebates (HEAR)
           </h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            When launched, HEAR would provide point-of-sale rebates at these federal maximum amounts:
+            When launched, HEAR would provide point-of-sale rebates at these federal maximum amounts.
+            Under DOE Program Notice 26-2, the heat pump amounts require existing electric equipment
+            or new construction:
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
@@ -269,6 +275,18 @@ export default function MontanaPage() {
             HEAR eligibility is income-based: households at or below 80% of Area Median Income (AMI) receive
             rebates covering 100% of project costs (up to caps). Households at 80–150% AMI receive 50% coverage.
             Households above 150% AMI are not eligible for HEAR.
+          </p>
+
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Under DOE Program Notice 26-2 (effective May 29, 2026), replacing a gas, propane, or oil
+            heating system no longer qualifies for HEAR, and a program that hasn&apos;t launched must
+            align with this before it opens. Eligibility now turns on new construction or on the
+            home&apos;s existing heating equipment already being electric — replacing electric
+            resistance heat with a heat pump is the clearest qualifying case. Programs differ on
+            whether replacing an existing heat pump counts, so confirm with yours before committing.
+            The notice also requires a home to use rebates for insulation and air sealing before a
+            heating or cooling upgrade, unless it already meets a state-specified level.
+            Fuel-switching projects can still route to HOMES, which sets no fuel condition.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">
@@ -349,11 +367,12 @@ export default function MontanaPage() {
             This is a significant gap for the roughly 70,000+ households in MDU&apos;s Montana service territory.
           </p>
 
-          <h3 className="text-lg font-semibold text-gray-900 mb-3">BPA-Funded Electric Cooperatives</h3>
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">Electric Cooperatives</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Western Montana electric cooperatives funded by the Bonneville Power Administration generally
-            offer more generous heat pump rebates than NorthWestern Energy. These programs are exclusive
-            to cooperative members.
+            Montana&apos;s electric cooperatives run their own rebate programs, and several in western
+            Montana offer more generous heat pump rebates than NorthWestern Energy. These programs are
+            exclusive to cooperative members, and amounts depend on the home&apos;s existing heating
+            system.
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
@@ -368,33 +387,21 @@ export default function MontanaPage() {
               <tbody>
                 <tr className="border-b bg-green-50">
                   <td className="p-3">Flathead Electric (Kalispell)</td>
-                  <td className="p-3 font-semibold">$600–$1,560</td>
+                  <td className="p-3 font-semibold">$600–$1,560 (variable-speed)</td>
                   <td className="p-3 font-semibold">Available</td>
-                  <td className="p-3">Highest rebate for variable-speed replacing electric furnace; 3% on-bill financing</td>
+                  <td className="p-3">Variable-speed only, except $1,250 for a single-stage unit replacing an electric forced-air furnace; qualified installer required; 3% on-bill financing</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Missoula Electric</td>
                   <td className="p-3 font-semibold">$920</td>
                   <td className="p-3 font-semibold">$1,400–$1,800</td>
-                  <td className="p-3">Ductless; income-qualified program available (≤ 200% FPL)</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">Lincoln Electric (Eureka)</td>
-                  <td className="p-3 font-semibold">$800–$1,000</td>
-                  <td className="p-3 font-semibold">—</td>
-                  <td className="p-3">Ducted and ductless; variable-speed earns higher tier</td>
+                  <td className="p-3">Ductless, electric-heat homes only (not gas), one per home, licensed HVAC contractor; income-qualified program for households ≤ 200% FPL or meeting state/tribal low-income criteria</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Yellowstone Valley Electric (Billings area)</td>
                   <td className="p-3 font-semibold">$200/ton, up to $800</td>
                   <td className="p-3 font-semibold">—</td>
-                  <td className="p-3">Add-on heat pump; also $200/ton up to $1,000 for geothermal</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">Sun River Electric</td>
-                  <td className="p-3 font-semibold">—</td>
-                  <td className="p-3 font-semibold">—</td>
-                  <td className="p-3">$200/ton up to $1,000 for ground-source; 3¢/kWh heat rate discount</td>
+                  <td className="p-3">Add-on heat pump paired with an existing furnace; also $200/ton up to $1,000 for geothermal; claim within 90 days of purchase</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Lower Yellowstone Rural Electric (Sidney)</td>
@@ -406,8 +413,8 @@ export default function MontanaPage() {
             </table>
           </div>
           <p className="text-sm text-gray-500">
-            Ravalli Electric Cooperative (Victor) also offers rebates for ductless, ducted, and ground-source
-            heat pumps but does not publish amounts online. Contact (406) 961-3001.
+            Other cooperatives, such as Ravalli Electric Cooperative (Victor), may offer rebates;
+            contact them directly at (406) 961-3001.
           </p>
         </div>
       </section>
@@ -451,11 +458,6 @@ export default function MontanaPage() {
               to free. Homes with a gas water heater do not qualify for NWE&apos;s program.
             </p>
           </div>
-
-          <p className="text-sm text-gray-500 mt-4">
-            Billings, Great Falls, and Helena have no city- or county-level heat pump incentive programs
-            as of June 2026.
-          </p>
         </div>
       </section>
 
@@ -468,7 +470,10 @@ export default function MontanaPage() {
             HEAR or HOMES. HEAR and HOMES cannot cover the same measure in the same home, and total
             rebates cannot exceed total project cost. Below are realistic stacking scenarios for a
             typical <strong>$18,000</strong> whole-home cold-climate ducted heat pump installation
-            in NorthWestern Energy territory.
+            in NorthWestern Energy territory. The HEAR figures below assume the home already heats
+            with electricity (for example, baseboard or an electric furnace); under DOE Program
+            Notice 26-2, replacing a gas, propane, or oil system no longer qualifies for HEAR,
+            though it can still route to HOMES.
           </p>
           <div className="space-y-4 mb-8">
             <div className="bg-white border border-gray-200 rounded-lg p-5">
@@ -486,7 +491,7 @@ export default function MontanaPage() {
               <p className="font-semibold text-gray-900 mb-2">80–150% AMI — Ducted Cold-Climate ASHP</p>
               <ul className="text-sm text-gray-700 space-y-1">
                 <li>Federal tax credits: $0 (expired)</li>
-                <li>HEAR (50% of cost, capped at $8,000): up to $8,000</li>
+                <li>HEAR (50% of cost, capped at $8,000; requires existing electric equipment or new construction): up to $8,000</li>
                 <li>NWE utility rebate: $450</li>
               </ul>
               <p className="font-semibold text-green-700 mt-2">Future potential if HEAR launches: ~$8,450</p>
@@ -496,12 +501,12 @@ export default function MontanaPage() {
               <p className="font-semibold text-green-800 mb-2">Below 80% AMI — Ducted Cold-Climate ASHP (Best Case)</p>
               <ul className="text-sm text-green-900 space-y-1">
                 <li>Federal tax credits: $0 (expired)</li>
-                <li>HEAR (100% of cost, capped at $8,000): $8,000</li>
+                <li>HEAR (100% of cost, capped at $8,000; requires existing electric equipment or new construction): $8,000</li>
                 <li>NWE utility rebate: $450</li>
-                <li>WAP coverage (if eligible): potentially full system cost</li>
+                <li>WAP (if eligible): weatherization measures chosen by an energy auditor; heat pump not guaranteed</li>
               </ul>
               <p className="font-semibold text-green-700 mt-2">Future potential if HEAR launches: $8,450+</p>
-              <p className="text-sm text-gray-500 mt-1">Current available: $450 (or full WAP coverage if eligible)</p>
+              <p className="text-sm text-gray-500 mt-1">Current available: $450, plus WAP weatherization if eligible</p>
             </div>
           </div>
 
@@ -532,11 +537,13 @@ export default function MontanaPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Montana Weatherization Assistance Program (WAP)</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Administered by DPHHS through local Human Resource Development Councils (HRDCs), the WAP
-            provides free energy efficiency upgrades — including potential heating system replacement — for
-            income-qualifying households. Eligibility is linked to LIHEAP qualification, roughly 60% of
-            state median income (about $64,846/year for a family of four). Heat pumps may be installed
-            when an energy auditor determines them cost-effective, but this is not guaranteed.
+            Administered by DPHHS through local community action agencies (most of them Human
+            Resource Development Councils), the WAP provides energy efficiency upgrades for
+            income-qualifying households. Eligibility is based on income at or below 200% of the
+            federal poverty level and on resource limits; households receiving SNAP, SSI, or TANF may
+            qualify automatically, and renters can apply. Applications are accepted year-round. An
+            energy auditor decides which measures are cost-effective for the home, and a heat pump is
+            not guaranteed.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Montana Geothermal Tax Credit — Repealed</h3>
@@ -553,9 +560,9 @@ export default function MontanaPage() {
             This DEQ-administered program offers <strong>3.5% fixed interest</strong> loans up
             to <strong>$40,000</strong> with a 10-year maximum term and no down payment. Ground-source
             heat pumps qualify directly. Air-source heat pumps may qualify only when installed
-            alongside a qualifying alternative energy system (such as solar). Applications are scored
-            competitively — demand has exceeded available funds since April 2023. The most recent
-            application window ran April 1–30, 2026; check DEQ for the next annual cycle.
+            alongside a qualifying alternative energy system (such as solar). Applications are
+            accepted quarterly (January, April, July, and October windows) and are scored
+            competitively — demand has exceeded available funds each quarter since April 2023.
           </p>
 
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-5">
@@ -563,7 +570,7 @@ export default function MontanaPage() {
             <p className="text-sm text-amber-900">
               The Alternative Energy Revolving Loan Program primarily funds geothermal and solar projects.
               A standalone air-source heat pump installation typically does not qualify unless paired with
-              a qualifying alternative energy system. Contact DEQ at (406) 444-4960 before applying.
+              a qualifying alternative energy system. Contact AERLP staff at (406) 444-6586 or (406) 444-6465 before applying.
             </p>
           </div>
         </div>
@@ -722,9 +729,10 @@ export default function MontanaPage() {
             <div className="bg-white border border-gray-200 rounded-lg p-5">
               <p className="font-semibold text-gray-900">Montana DEQ HEAR/HOMES Launch</p>
               <p className="text-sm text-gray-600 mt-1">
-                Montana&apos;s HEAR and HOMES programs could add $4,000–$8,000 in rebates for income-qualifying
-                households. Monitor DEQ&apos;s Home Energy Rebates page for updates. No timeline has been
-                announced, but DOE approval could come at any point.
+                Montana&apos;s HEAR and HOMES programs could add $4,000–$8,000 in rebates for eligible
+                households; under DOE Program Notice 26-2, HEAR will require existing electric equipment
+                or new construction. DOE issued initial revised guidance on June 1, 2026, and DEQ must
+                revise and resubmit its application before launch. No timeline has been announced.
               </p>
             </div>
             <div className="bg-white border border-gray-200 rounded-lg p-5">

@@ -2174,8 +2174,8 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "MT",
     stateName: "Montana",
     status: "limited",
-    lastVerified: "2026-06-11",
-    lastUpdated: "2026-06-11",
+    lastVerified: "2026-09-22",
+    lastUpdated: "2026-09-22",
     summary:
       "NorthWestern Energy offers $450 per air-source heat pump (Aug 2026\u2013Jun 2027 cycle) and up to $3,000 for a heat pump water heater replacing an electric water heater. Cooperatives pay more: Flathead Electric $600\u2013$1,560 for variable-speed systems, Missoula Electric $1,400\u2013$1,800 for HPWHs. Bozeman adds $500 for HPWHs; Missoula County\u2019s rebate closed in 2025. Federal 25C/25D expired Dec 2025 and Montana\u2019s geothermal credit was repealed. HEAR and HOMES have not launched.",
     sources: [
@@ -2184,7 +2184,7 @@ export const incentives: Record<StateCode, StateIncentive> = {
         url: "https://deq.mt.gov/energy/Programs/efficiency",
       },
       {
-        label: "NorthWestern Energy \u2014 E+ Electric Rebates (Form 3743)",
+        label: "NorthWestern Energy \u2014 E+ Existing Home Electric Rebates (Form 3743, 2026\u201327)",
         url: "https://www.northwesternenergy.com/docs/default-source/default-document-library/billing-and-payment/e-programs/e-rebate-electric-existing-home.pdf",
       },
       {
@@ -2192,24 +2192,72 @@ export const incentives: Record<StateCode, StateIncentive> = {
         url: "https://northwesternenergyhpwh.com/",
       },
       {
+        label: "NorthWestern Energy \u2014 HPWH Program FAQ",
+        url: "https://northwesternenergyhpwh.com/faq/",
+      },
+      {
         label: "Flathead Electric Cooperative \u2014 Air Source Heat Pumps",
         url: "https://www.flatheadelectric.com/energy-solutions/energy-efficiency-rebate-programs/residential-rebate-programs/heat-pumps/air-source-heat-pumps/",
+      },
+      {
+        label: "Flathead Electric Cooperative \u2014 Heat Pump Water Heaters",
+        url: "https://www.flatheadelectric.com/energy-solutions/energy-efficiency-rebate-programs/residential-rebate-programs/heat-pump-water-heaters/",
       },
       {
         label: "Missoula Electric Cooperative \u2014 Ductless Heat Pumps",
         url: "https://missoulaelectric.com/energy-efficiency/residential-energy-efficiency/ductless-heat-pumps/",
       },
       {
-        label: "City of Bozeman \u2014 HPWH Rebate",
-        url: "https://www.bozeman.net/departments/strategic-services/sustainability/waterheaterrebate",
+        label: "Missoula Electric Cooperative \u2014 Heat Pump Water Heaters",
+        url: "https://missoulaelectric.com/energy-efficiency/residential-energy-efficiency/heat-pump-water-heaters/",
       },
       {
-        label: "Missoula County \u2014 Energy Efficiency Rebates",
-        url: "https://www.missoulacounty.us/departments/planning-development-and-sustainability/climate-action/resources-for-residents/energy-efficiency-rebates/",
+        label: "Missoula Electric Cooperative \u2014 Income-Qualified Rebate Program",
+        url: "https://missoulaelectric.com/energy-efficiency/residential-energy-efficiency/low-income-energy-efficiency-rebate-program/",
+      },
+      {
+        label: "Yellowstone Valley Electric \u2014 Add-on Heat Pump Rebate",
+        url: "https://www.yvec.com/member-services/rebates/add-on-heat-pump-rebate/",
+      },
+      {
+        label: "Yellowstone Valley Electric \u2014 Geothermal Heat Pump Rebate",
+        url: "https://www.yvec.com/member-services/rebates/geothermal-heat-pump-rebate/",
+      },
+      {
+        label: "Lower Yellowstone REC \u2014 Rebates",
+        url: "https://lyrec.com/rebates",
+      },
+      {
+        label: "Montana-Dakota Utilities \u2014 Residential Rebates",
+        url: "https://www.montana-dakota.com/energy-efficiency/savings-for-your-home/",
+      },
+      {
+        label: "City of Bozeman \u2014 HPWH Rebate",
+        url: "https://www.bozemanmt.gov/departments/strategic-services/sustainability/waterheaterrebate",
+      },
+      {
+        label: "Missoula County \u2014 Energy Efficiency Rebates (closed Oct 2025)",
+        url: "https://www.missoulacounty.gov/departments/planning-development-and-sustainability/climate-action/resources-for-residents/energy-efficiency-rebates/",
       },
       {
         label: "Montana DEQ \u2014 Alternative Energy Revolving Loan Program",
         url: "https://deq.mt.gov/energy/Programs/AERLP",
+      },
+      {
+        label: "Montana DOR \u2014 Geothermal System Credit (Repealed)",
+        url: "https://revenue.mt.gov/publications/geothermal-system-credit-form-enrg-a",
+      },
+      {
+        label: "Montana DPHHS \u2014 LIHEAP & Weatherization Assistance",
+        url: "https://dphhs.mt.gov/HCSD/energyassistance/index",
+      },
+      {
+        label: "LIHEAP Clearinghouse \u2014 Montana Profile",
+        url: "https://liheapch.acf.gov/profiles/Montana.htm",
+      },
+      {
+        label: "IRS \u2014 25C/25D Termination FAQ",
+        url: "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb",
       },
     ],
   },

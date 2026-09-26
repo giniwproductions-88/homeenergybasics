@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-20T17:00:28.152Z",
+ "generatedAt": "2026-09-26T01:22:05.735Z",
  "entries": {
   "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html": {
    "url": "https://www.alabamapower.com/residential/save-money-and-energy/rebates-and-incentives.html",
@@ -4409,13 +4409,14 @@
    "finalUrl": "https://www.montana-dakota.com/energy-efficiency/savings-for-your-home/",
    "label": "Montana-Dakota Utilities — Savings for Your Home",
    "states": [
-    "ND"
+    "ND",
+    "MT"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-26T20:35:20.062Z",
-   "length": 270300,
+   "fetchedAt": "2026-09-26T01:21:21.154Z",
+   "length": 262630,
    "kind": "html",
-   "textHash": "b2e5690efe51cfb4",
+   "textHash": "9da8e586b4747ddc",
    "dollars": [
     "$5.00",
     "$7.00",
@@ -6445,10 +6446,10 @@
     "MT"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:31.462Z",
-   "length": 40578,
+   "fetchedAt": "2026-09-26T01:21:21.468Z",
+   "length": 42054,
    "kind": "html",
-   "textHash": "5bfde4732ed5f904",
+   "textHash": "e19b595b71c2e04c",
    "dollars": [],
    "keywords": {
     "paused": 2,
@@ -6458,15 +6459,15 @@
   "https://www.northwesternenergy.com/docs/default-source/default-document-library/billing-and-payment/e-programs/e-rebate-electric-existing-home.pdf": {
    "url": "https://www.northwesternenergy.com/docs/default-source/default-document-library/billing-and-payment/e-programs/e-rebate-electric-existing-home.pdf",
    "finalUrl": "https://www.northwesternenergy.com/docs/default-source/default-document-library/billing-and-payment/e-programs/e-rebate-electric-existing-home.pdf",
-   "label": "NorthWestern Energy — E+ Electric Rebates (Form 3743)",
+   "label": "NorthWestern Energy — E+ Existing Home Electric Rebates (Form 3743, 2026–27)",
    "states": [
     "MT"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:31.761Z",
-   "length": 61377,
+   "fetchedAt": "2026-09-26T01:21:21.405Z",
+   "length": 76549,
    "kind": "pdf",
-   "bytesHash": "1b5bd16aac44c503"
+   "bytesHash": "b47ef594e4a21f43"
   },
   "https://northwesternenergyhpwh.com/": {
    "url": "https://northwesternenergyhpwh.com/",
@@ -6476,7 +6477,7 @@
     "MT"
    ],
    "httpStatus": 403,
-   "fetchedAt": "2026-07-09T15:15:33.349Z",
+   "fetchedAt": "2026-09-26T01:21:22.628Z",
    "length": 548,
    "error": "HTTP 403"
   },
@@ -6488,10 +6489,10 @@
     "MT"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:32.570Z",
-   "length": 221319,
+   "fetchedAt": "2026-09-26T01:21:22.268Z",
+   "length": 228435,
    "kind": "html",
-   "textHash": "a0bc4cd8e380c4e6",
+   "textHash": "a91305d6b98a081e",
    "dollars": [
     "$0",
     "$600",
@@ -6508,10 +6509,10 @@
     "MT"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:32.440Z",
-   "length": 87674,
+   "fetchedAt": "2026-09-26T01:21:21.893Z",
+   "length": 127326,
    "kind": "html",
-   "textHash": "2e10447f7a9b4f32",
+   "textHash": "dea2da03cfb79cec",
    "dollars": [
     "$920"
    ],
@@ -6556,13 +6557,13 @@
     "MT"
    ],
    "httpStatus": 200,
-   "fetchedAt": "2026-07-09T15:15:32.907Z",
-   "length": 59218,
+   "fetchedAt": "2026-09-26T01:21:23.004Z",
+   "length": 59828,
    "kind": "html",
-   "textHash": "8e5915ef03170ee4",
+   "textHash": "4d4fb2c3eda0fb94",
    "dollars": [
     "$0",
-    "$19",
+    "$21",
     "$200",
     "$250",
     "$625",
@@ -8821,6 +8822,322 @@
     "no longer": 2,
     "expired": 3
    }
+  },
+  "https://northwesternenergyhpwh.com/faq/": {
+   "url": "https://northwesternenergyhpwh.com/faq/",
+   "finalUrl": "https://northwesternenergyhpwh.com/faq/",
+   "label": "NorthWestern Energy — HPWH Program FAQ",
+   "states": [
+    "MT"
+   ],
+   "httpStatus": 403,
+   "fetchedAt": "2026-09-26T01:21:22.632Z",
+   "length": 548,
+   "error": "HTTP 403"
+  },
+  "https://www.flatheadelectric.com/energy-solutions/energy-efficiency-rebate-programs/residential-rebate-programs/heat-pump-water-heaters/": {
+   "url": "https://www.flatheadelectric.com/energy-solutions/energy-efficiency-rebate-programs/residential-rebate-programs/heat-pump-water-heaters/",
+   "finalUrl": "https://www.flatheadelectric.com/energy-solutions/energy-efficiency-rebate-programs/residential-rebate-programs/heat-pump-water-heaters/",
+   "label": "Flathead Electric Cooperative — Heat Pump Water Heaters",
+   "states": [
+    "MT"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-09-26T01:21:22.645Z",
+   "length": 198839,
+   "kind": "html",
+   "textHash": "edacd8426ea73ab8",
+   "dollars": [],
+   "keywords": {}
+  },
+  "https://missoulaelectric.com/energy-efficiency/residential-energy-efficiency/heat-pump-water-heaters/": {
+   "url": "https://missoulaelectric.com/energy-efficiency/residential-energy-efficiency/heat-pump-water-heaters/",
+   "finalUrl": "https://missoulaelectric.com/energy-efficiency/residential-energy-efficiency/heat-pump-water-heaters/",
+   "label": "Missoula Electric Cooperative — Heat Pump Water Heaters",
+   "states": [
+    "MT"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-09-26T01:21:21.946Z",
+   "length": 127580,
+   "kind": "html",
+   "textHash": "5244d404a9a2266b",
+   "dollars": [
+    "$1,400",
+    "$1,800"
+   ],
+   "keywords": {}
+  },
+  "https://missoulaelectric.com/energy-efficiency/residential-energy-efficiency/low-income-energy-efficiency-rebate-program/": {
+   "url": "https://missoulaelectric.com/energy-efficiency/residential-energy-efficiency/low-income-energy-efficiency-rebate-program/",
+   "finalUrl": "https://missoulaelectric.com/energy-efficiency/residential-energy-efficiency/low-income-energy-efficiency-rebate-program/",
+   "label": "Missoula Electric Cooperative — Income-Qualified Rebate Program",
+   "states": [
+    "MT"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-09-26T01:21:22.287Z",
+   "length": 129369,
+   "kind": "html",
+   "textHash": "e032ef57124a98c7",
+   "dollars": [
+    "$10",
+    "$45",
+    "$700",
+    "$750",
+    "$800",
+    "$2,800",
+    "$3,000",
+    "$6,000",
+    "$9,000"
+   ],
+   "keywords": {}
+  },
+  "https://www.yvec.com/member-services/rebates/add-on-heat-pump-rebate/": {
+   "url": "https://www.yvec.com/member-services/rebates/add-on-heat-pump-rebate/",
+   "finalUrl": "https://www.yvec.com/member-services/rebates/add-on-heat-pump-rebate/",
+   "label": "Yellowstone Valley Electric — Add-on Heat Pump Rebate",
+   "states": [
+    "MT"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-09-26T01:21:23.007Z",
+   "length": 122911,
+   "kind": "html",
+   "textHash": "1083084466d97784",
+   "dollars": [
+    "$200",
+    "$800"
+   ],
+   "keywords": {}
+  },
+  "https://www.yvec.com/member-services/rebates/geothermal-heat-pump-rebate/": {
+   "url": "https://www.yvec.com/member-services/rebates/geothermal-heat-pump-rebate/",
+   "finalUrl": "https://www.yvec.com/member-services/rebates/geothermal-heat-pump-rebate/",
+   "label": "Yellowstone Valley Electric — Geothermal Heat Pump Rebate",
+   "states": [
+    "MT"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-09-26T01:21:23.229Z",
+   "length": 121116,
+   "kind": "html",
+   "textHash": "2fc6265229fab1d5",
+   "dollars": [
+    "$150",
+    "$200",
+    "$1,000",
+    "$5,000"
+   ],
+   "keywords": {}
+  },
+  "https://lyrec.com/rebates": {
+   "url": "https://lyrec.com/rebates",
+   "finalUrl": "https://lyrec.com/rebates",
+   "label": "Lower Yellowstone REC — Rebates",
+   "states": [
+    "MT"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-09-26T01:21:22.830Z",
+   "length": 39192,
+   "kind": "html",
+   "textHash": "842c95f4a8b2fae5",
+   "dollars": [
+    "$2.50",
+    "$150.00",
+    "$200.00"
+   ],
+   "keywords": {}
+  },
+  "https://www.bozemanmt.gov/departments/strategic-services/sustainability/waterheaterrebate": {
+   "url": "https://www.bozemanmt.gov/departments/strategic-services/sustainability/waterheaterrebate",
+   "finalUrl": "https://www.bozemanmt.gov/departments/strategic-services/sustainability/waterheaterrebate",
+   "label": "City of Bozeman — HPWH Rebate",
+   "states": [
+    "MT"
+   ],
+   "httpStatus": 404,
+   "fetchedAt": "2026-09-26T01:21:25.243Z",
+   "length": 77039,
+   "error": "HTTP 404"
+  },
+  "https://www.missoulacounty.gov/departments/planning-development-and-sustainability/climate-action/resources-for-residents/energy-efficiency-rebates/": {
+   "url": "https://www.missoulacounty.gov/departments/planning-development-and-sustainability/climate-action/resources-for-residents/energy-efficiency-rebates/",
+   "finalUrl": "https://www.missoulacounty.gov/departments/planning-development-and-sustainability/climate-action/resources-for-residents/energy-efficiency-rebates/",
+   "label": "Missoula County — Energy Efficiency Rebates (closed Oct 2025)",
+   "states": [
+    "MT"
+   ],
+   "httpStatus": 404,
+   "fetchedAt": "2026-09-26T01:21:25.286Z",
+   "length": 158876,
+   "error": "HTTP 404"
+  },
+  "https://revenue.mt.gov/publications/geothermal-system-credit-form-enrg-a": {
+   "url": "https://revenue.mt.gov/publications/geothermal-system-credit-form-enrg-a",
+   "finalUrl": "https://revenue.mt.gov/publications/geothermal-system-credit-form-enrg-a",
+   "label": "Montana DOR — Geothermal System Credit (Repealed)",
+   "states": [
+    "MT"
+   ],
+   "httpStatus": 404,
+   "fetchedAt": "2026-09-26T01:21:25.373Z",
+   "length": 44225,
+   "error": "HTTP 404"
+  },
+  "https://dphhs.mt.gov/HCSD/energyassistance/index": {
+   "url": "https://dphhs.mt.gov/HCSD/energyassistance/index",
+   "finalUrl": "https://dphhs.mt.gov/HCSD/energyassistance/",
+   "label": "Montana DPHHS — LIHEAP & Weatherization Assistance",
+   "states": [
+    "MT"
+   ],
+   "httpStatus": 200,
+   "fetchedAt": "2026-09-26T01:21:23.959Z",
+   "length": 63192,
+   "kind": "html",
+   "textHash": "dab352fe4ee82080",
+   "dollars": [
+    "$150",
+    "$328",
+    "$378",
+    "$455",
+    "$462",
+    "$463",
+    "$479",
+    "$531",
+    "$532",
+    "$552",
+    "$596",
+    "$635",
+    "$641",
+    "$643",
+    "$666",
+    "$671",
+    "$697",
+    "$709",
+    "$732",
+    "$735",
+    "$772",
+    "$802",
+    "$817",
+    "$839",
+    "$841",
+    "$872",
+    "$882",
+    "$901",
+    "$914",
+    "$932",
+    "$968",
+    "$985",
+    "$1,022",
+    "$1,034",
+    "$1,036",
+    "$1,052",
+    "$1,075",
+    "$1,156",
+    "$1,176",
+    "$1,195",
+    "$1,219",
+    "$1,234",
+    "$1,258",
+    "$1,266",
+    "$1,270",
+    "$1,290",
+    "$1,296",
+    "$1,318",
+    "$1,374",
+    "$1,420",
+    "$1,425",
+    "$1,447",
+    "$1,502",
+    "$1,503",
+    "$1,561",
+    "$1,590",
+    "$1,659",
+    "$1,661",
+    "$1,747",
+    "$1,794",
+    "$1,857",
+    "$1,949",
+    "$1,952",
+    "$2,048",
+    "$2,170",
+    "$2,286",
+    "$2,290",
+    "$2,444",
+    "$2,676",
+    "$2,818",
+    "$2,865",
+    "$3,347",
+    "$3,362",
+    "$8,250",
+    "$14,717",
+    "$15,960",
+    "$21,640",
+    "$22,515",
+    "$24,017",
+    "$25,518",
+    "$27,019",
+    "$27,320",
+    "$28,521",
+    "$30,022",
+    "$31,524",
+    "$31,920",
+    "$33,000",
+    "$33,719",
+    "$38,680",
+    "$42,280",
+    "$44,095",
+    "$44,360",
+    "$50,040",
+    "$54,470",
+    "$54,640",
+    "$55,720",
+    "$61,400",
+    "$64,846",
+    "$66,000",
+    "$67,080",
+    "$72,760",
+    "$75,221",
+    "$77,360",
+    "$78,440",
+    "$84,120",
+    "$85,596",
+    "$87,542",
+    "$88,720",
+    "$89,487",
+    "$89,800",
+    "$91,432",
+    "$95,480",
+    "$100,080",
+    "$100,620",
+    "$109,140",
+    "$111,440",
+    "$117,660",
+    "$122,800",
+    "$126,180",
+    "$134,160",
+    "$134,700",
+    "$143,220",
+    "$145,520",
+    "$156,880",
+    "$168,240",
+    "$179,600",
+    "$190,960"
+   ],
+   "keywords": {}
+  },
+  "https://liheapch.acf.gov/profiles/Montana.htm": {
+   "url": "https://liheapch.acf.gov/profiles/Montana.htm",
+   "finalUrl": "https://liheapch.acf.gov/profiles/Montana.htm",
+   "label": "LIHEAP Clearinghouse — Montana Profile",
+   "states": [
+    "MT"
+   ],
+   "fetchedAt": "2026-09-26T01:21:25.259Z",
+   "error": "fetch failed"
   }
  }
 }

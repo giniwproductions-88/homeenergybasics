@@ -79,7 +79,7 @@ const limitedStates: StateTier[] = [
   { code: "AL", name: "Alabama", headlineAmount: "$500–$1,500", primaryProgram: "TVA + Alabama Power", note: "Northern AL gets TVA rebates. Alabama Power $1,000 gas-to-electric." },
   { code: "SC", name: "South Carolina", headlineAmount: "$300–$1,000", primaryProgram: "Duke + Dominion + Santee Cooper", note: "Geothermal credit 25% up to $3,500. HEAR/HOMES pending." },
   { code: "IA", name: "Iowa", headlineAmount: "$300–$713", primaryProgram: "MidAmerican + Alliant", note: "Cold-climate models get top tier. $121M IRA not launched." },
-  { code: "MT", name: "Montana", headlineAmount: "$450–$1,560", primaryProgram: "NorthWestern + BPA co-ops", note: "Bozeman and Missoula offer local HPWH rebates. HEAR/HOMES paused." },
+  { code: "MT", name: "Montana", headlineAmount: "$450–$1,560", primaryProgram: "NorthWestern + BPA co-ops", note: "Bozeman offers a local HPWH rebate. HEAR/HOMES paused." },
   { code: "WY", name: "Wyoming", headlineAmount: "$500–$1,700", primaryProgram: "RMP Wattsmart + co-ops", note: "HESP ($69M) not launched. Several co-ops offer $500–$1,800." },
   { code: "ND", name: "North Dakota", headlineAmount: "$300–$2,000", primaryProgram: "Otter Tail + Xcel", note: "Otter Tail $300–$1,040/ton with adders; Xcel $1,600–$2,000 flat rate. MDU offers nothing. HEAR/HOMES not launched." },
   { code: "FL", name: "Florida", headlineAmount: "$40–$1,150", primaryProgram: "FPL, Duke, TECO", note: "$346M IRA unlaunched. Utility rebates range from almost nothing to modest." },
