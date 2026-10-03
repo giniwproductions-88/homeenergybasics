@@ -1852,10 +1852,10 @@ export const incentives: Record<StateCode, StateIncentive> = {
     stateCode: "DE",
     stateName: "Delaware",
     status: "open",
-    lastVerified: "2026-08-25",
-    lastUpdated: "2026-08-25",
+    lastVerified: "2026-09-25",
+    lastUpdated: "2026-09-26",
     summary:
-      "Energize Delaware offers $800\u2013$2,200 for air-source heat pumps through Home Performance with ENERGY STAR, plus a limited-time 25% incentive bonus. DEMEC utility customers can stack Efficiency Smart rebates ($100\u2013$750). HEAR ($8,000/HP) awaits DOE approval. Federal 25C/25D credits expired Dec 31, 2025.",
+      "Energize Delaware offers $800\u2013$2,200 for air-source heat pumps through Home Performance with ENERGY STAR, plus a limited-time 25% incentive bonus. DEMEC utility customers can stack Efficiency Smart rebates ($100\u2013$750). Delaware Electric Cooperative members can stack DEC grants of up to $3,000 for 18+ SEER2 air-source heat pumps. HEAR ($8,000/HP) awaits DOE approval. Federal 25C/25D credits expired Dec 31, 2025.",
     sources: [
       {
         label: "DNREC \u2014 Home Energy Rebate Programs",
@@ -1882,8 +1882,16 @@ export const incentives: Record<StateCode, StateIncentive> = {
         url: "https://www.efficiencysmart.org/home-energy-rebates",
       },
       {
+        label: "Delaware Electric Cooperative \u2014 Energy Grants (2026)",
+        url: "https://www.delaware.coop/renewable-energy-efficiency-grants",
+      },
+      {
+        label: "DNREC \u2014 Green Energy Program Incentive Rates (PDF)",
+        url: "https://documents.dnrec.delaware.gov/energy/services/GreenEnergy/Documents/DPL/GEP-Incentives.pdf",
+      },
+      {
         label: "DNREC \u2014 Weatherization Assistance Program",
-        url: "https://dnrec.delaware.gov/climate-coastal-energy/sustainable-communities/weatherization/",
+        url: "https://dnrec.delaware.gov/climate-coastal-energy/energy-office/programs/wap/",
       },
       {
         label: "IRS \u2014 25C/25D Termination FAQ",

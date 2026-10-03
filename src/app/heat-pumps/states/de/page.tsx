@@ -32,7 +32,7 @@ const faqJsonLd = {
       name: "What heat pump rebates are available in Delaware in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Energize Delaware\u2019s Home Performance with ENERGY STAR program offers $800\u2013$2,200 for central air-source heat pumps depending on efficiency tier and income level, plus $1,100\u2013$1,350 for heat pump water heaters. DEMEC municipal utility customers can also access Efficiency Smart rebates of $100\u2013$750 for heat pumps depending on model type. Federal Section 25C and 25D tax credits expired December 31, 2025 and are no longer available.",
+        text: "Energize Delaware\u2019s Home Performance with ENERGY STAR program offers $800\u2013$2,200 for central air-source heat pumps depending on efficiency tier and income level, plus $1,100\u2013$1,350 for heat pump water heaters. DEMEC municipal utility customers can also access Efficiency Smart rebates of $100\u2013$750 for heat pumps depending on model type. Delaware Electric Cooperative members can add DEC grants of $500\u2013$1,000 per ton (up to $3,000) for air-source heat pumps rated 18 SEER2 or higher. Federal Section 25C and 25D tax credits expired December 31, 2025 and are no longer available.",
       },
     },
     {
@@ -40,7 +40,7 @@ const faqJsonLd = {
       name: "Can I stack Energize Delaware and Efficiency Smart rebates?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "DEMEC municipal utility customers in towns like Newark, Middletown, Dover, and Lewes may be eligible for both Energize Delaware HPwES rebates and Efficiency Smart rebates ($100 for standard ENERGY STAR heat pumps, $350\u2013$750 for cold-climate models) on the same installation, since the programs are administered separately. Delmarva Power and Delaware Electric Cooperative customers access rebates through Energize Delaware only. When HEAR launches, its rebates should also stack with state and utility programs, subject to total project cost limits.",
+        text: "DEMEC municipal utility customers in towns like Newark, Middletown, Dover, and Lewes may be eligible for both Energize Delaware HPwES rebates and Efficiency Smart rebates ($100 for standard ENERGY STAR heat pumps, $350\u2013$750 for cold-climate models) on the same installation, since the programs are administered separately. Delaware Electric Cooperative members can likewise stack DEC\u2019s own grants (up to $3,000 for high-efficiency air-source heat pumps) with Energize Delaware. Delmarva Power customers have no separate utility heat pump rebate, though DNREC\u2019s Green Energy Program funds geothermal installations in Delmarva territory. When HEAR launches, its rebates should also stack with state and utility programs, subject to total project cost limits.",
       },
     },
     {
@@ -110,7 +110,7 @@ export default function DelawarePage() {
               Federal tax credits under Section 25C and Section 25D expired December 31, 2025
             </Link>. The IRA-funded HEAR program could add up to
             <strong> $8,000</strong> per heat pump for eligible households once it launches. This guide covers all major
-            Delaware heat pump incentives available in 2026, including Energize Delaware, Efficiency Smart, and
+            Delaware heat pump incentives available in 2026, including Energize Delaware, Efficiency Smart, Delaware Electric Cooperative grants, and
             IRA rebate programs. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
@@ -147,18 +147,22 @@ export default function DelawarePage() {
               </p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
-              <p className="font-semibold text-green-800 mb-1">✓ DEMEC utility rebates available</p>
+              <p className="font-semibold text-green-800 mb-1">✓ DEMEC and DEC utility rebates available</p>
               <p className="text-sm text-green-900">
                 Customers of DEMEC municipal utilities (Newark, Middletown, Dover, Lewes, and others) can access
                 Efficiency Smart rebates of <strong>$100</strong> for standard heat pumps and{" "}
                 <strong>$350–$750</strong> for cold-climate models, stackable with Energize Delaware.
+                Delaware Electric Cooperative members can add DEC grants of up to <strong>$3,000</strong> for
+                18+ SEER2 heat pumps.
               </p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Total potential savings</p>
               <p className="text-sm text-green-900">
-                <strong>$1,600–$3,000</strong> (above 150% AMI) to <strong>$2,200–$4,050</strong> (80–150% AMI)
-                today. Full electrification packages with HEAR could reach <strong>~$14,000</strong> total incentives
+                <strong>$1,600–$3,000</strong> at standard Energize Delaware rates, up to{" "}
+                <strong>~$4,050</strong> for DEMEC customers and <strong>~$6,300</strong> for DEC members who
+                add DEC&apos;s high-efficiency grant; income-qualified households get higher Energize Delaware
+                rates. Full electrification packages with HEAR could reach <strong>~$14,000</strong> total incentives
                 for households below 80% of Area Median Income (AMI) once that program launches.
               </p>
             </div>
@@ -224,7 +228,9 @@ export default function DelawarePage() {
           <p className="text-gray-700 leading-relaxed mb-6">
             A <strong>$50 home energy assessment</strong> ($25 for income-qualified households; homes over 3,000
             square feet may incur a $100 co-pay) by an approved contractor is required before claiming any rebates.
-            Rebate reservations must be submitted before work begins.
+            Rebate reservations must be submitted before work begins. Military members and active-duty first
+            responders (firefighters, police and EMTs) qualify for the $25 assessment and the higher
+            income-qualified rebates with no income test.
           </p>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-6">
@@ -277,6 +283,11 @@ export default function DelawarePage() {
             </table>
           </div>
 
+          <p className="text-sm text-gray-500 mb-6">
+            Both central heat pump tiers also require a minimum EER2 (11.5 for Tier 1, 12.0 for Tier 2) and
+            multi-stage capacity — a single-stage unit does not qualify even at the listed SEER2. 4- and 5-ton
+            systems have separate, slightly lower thresholds.
+          </p>
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Mini-Split Heat Pump Rebates</h3>
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full text-sm">
@@ -355,11 +366,14 @@ export default function DelawarePage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Geothermal Heat Pumps</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            The DNREC Green Energy Program provides grants for geothermal heat pumps at <strong>$800 per ton</strong> for
-            the first two tons and <strong>$700 per ton</strong> thereafter, with a maximum of <strong>$5,000</strong>.
-            Systems must meet minimum EER &gt;18 and COP &gt;3.6 (closed loop). Delaware Electric Cooperative
-            paused geothermal applications while evaluating the program — confirm current status with DEC before
-            planning a geothermal project.
+            Geothermal incentives depend on your utility. Delmarva Power customers can apply to the DNREC
+            Green Energy Program, which pays <strong>$900 per ton</strong> up to <strong>$10,000</strong> for
+            residential systems (rates effective July 1, 2026), capped at 50% of project cost. The work must be
+            done by an approved Green Energy Program contractor, and applications filed more than 12 months
+            after installation are ineligible. Delaware Electric Cooperative members apply to DEC instead:{" "}
+            <strong>$1,500 per ton up to $7,500</strong> for new systems, or <strong>$500 per ton up to
+            $1,500</strong> for replacements. Both programs require an EER above 18 and a COP above 3.6.
+            Energize Delaware&apos;s HPwES rebates do not cover geothermal.
           </p>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
@@ -468,9 +482,15 @@ export default function DelawarePage() {
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Delaware Electric Cooperative</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
             Delaware Electric Cooperative (DEC) serves approximately 84,000 member-owners in Kent and Sussex counties.
-            DEC offers a <strong>$300 grant</strong> for ENERGY STAR certified heat pump water heaters. Applications
-            must be submitted within 60 days of purchase. The 2026 continuation of this program has not been confirmed —
-            verify with DEC at 302-349-9090. DEC members are also eligible for Energize Delaware HPwES rebates.
+            DEC offers a <strong>High Efficiency Air Source Heat Pump grant</strong> for residential
+            (Class A) members: <strong>$500 per ton up to $1,500</strong> at 18+ SEER2,{" "}
+            <strong>$750 per ton up to $2,250</strong> at 20+ SEER2, and <strong>$1,000 per ton up to
+            $3,000</strong> at 22+ SEER2. Systems need a five-year parts-and-labor warranty and an AHRI
+            certificate, and funding is limited: DEC pays completed applications in the order received until
+            its 2026 allocation runs out. DEC also offers a <strong>$300 rebate</strong> for ENERGY STAR heat
+            pump water heaters purchased and installed by December 31, 2026 (apply within 60 days of
+            purchase). Contact DEC at grants@delaware.coop or 855-332-9090. DEC members are also eligible
+            for Energize Delaware HPwES rebates.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">DEMEC Municipal Utilities (Efficiency Smart)</h3>
@@ -513,8 +533,9 @@ export default function DelawarePage() {
             be postmarked or emailed within three months of purchase and no later than January 7 of the following year.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            DEMEC-area customers are <strong>also eligible for Energize Delaware</strong> HPwES rebates, making this
-            the one group in the state that can potentially stack two separate rebate programs on the same installation.
+            DEMEC-area customers are <strong>also eligible for Energize Delaware</strong> HPwES rebates, so they
+            can stack two separate rebate programs on the same installation — as can Delaware Electric Cooperative
+            members using DEC&apos;s grants.
           </p>
         </div>
       </section>
@@ -526,7 +547,8 @@ export default function DelawarePage() {
           <p className="text-gray-700 leading-relaxed mb-6">
             Federal DOE guidance allows HEAR, HOMES, state, and utility rebates to stack on the same project, provided
             each program&apos;s requirements are independently met and total incentives do not exceed project cost.
-            Today, stacking is limited to Energize Delaware plus Efficiency Smart (for DEMEC customers only).
+            Today, DEMEC customers (Efficiency Smart) and Delaware Electric Cooperative members (DEC grants) can
+            each stack a second program on top of Energize Delaware.
           </p>
 
           <div className="space-y-4 mb-8">
@@ -552,6 +574,18 @@ export default function DelawarePage() {
               <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$4,050</p>
             </div>
 
+            <div className="bg-white border border-gray-200 rounded-lg p-5">
+              <p className="font-semibold text-gray-900 mb-2">Above 150% AMI — DEC Member (Tier 2 HP + HPWH)</p>
+              <ul className="text-sm text-gray-700 space-y-1">
+                <li>Energize Delaware Tier 2 HP: $1,600</li>
+                <li>Energize Delaware HPWH: $1,100</li>
+                <li>Bundling bonus: $300</li>
+                <li>DEC high-efficiency ASHP grant (3+ tons, 22+ SEER2): $3,000</li>
+                <li>DEC HPWH rebate: $300</li>
+              </ul>
+              <p className="font-semibold text-green-700 mt-2">Realistic maximum: ~$6,300 (about $4,800 with an 18 SEER2 system)</p>
+            </div>
+
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-2">Below 80% AMI — With HEAR (When Launched)</p>
               <ul className="text-sm text-green-900 space-y-1">
@@ -570,7 +604,10 @@ export default function DelawarePage() {
             <p className="text-sm text-gray-700">
               For a typical <strong>$15,000–$20,000</strong> ducted heat pump installation: above-150% AMI
               households should budget <strong>$12,000–$17,000 out of pocket</strong> after current rebates.
-              Income-qualified households using Energize Delaware alone: <strong>$10,000–$15,000</strong>. If
+              Income-qualified households using Energize Delaware alone: <strong>about
+              $11,000–$16,000</strong>. At standard rates, DEMEC customers stacking Efficiency Smart land in
+              that same <strong>$11,000–$16,000</strong> range, and DEC members who reach DEC&apos;s top grant tier near{" "}
+              <strong>$8,700–$13,700</strong>. If
               HEAR launches, low-income households could potentially cover <strong>most or all of the project
               cost</strong>.
             </p>
@@ -591,20 +628,23 @@ export default function DelawarePage() {
             The Delaware Weatherization Assistance Program (WAP), overseen by DNREC&apos;s Division of Climate,
             Coastal and Energy and served statewide by the Energy Coordinating Agency (302-504-6111 for
             applications), provides <strong>free</strong> energy improvements to income-eligible households — typically those at
-            or below 200% of federal poverty guidelines. Through a DOE Sustainable Energy Resources for Consumers (SERC)
-            grant, the program can install heat pump systems in eligible homes at no cost.
+            or below 200% of federal poverty guidelines. WAP is an energy-conservation program, not a
+            heating-replacement program: DNREC says it does not routinely replace furnaces and does not
+            install, service or repair air conditioners.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Priority is given to elderly residents, persons with disabilities, and households with children. This
-            program operates independently of Energize Delaware rebates and HEAR.
+            Eligible households join a waiting list prioritized by need, age and special needs, and annual
+            funding; not everyone is served each year, and applicants not served within 12 months must
+            reapply. This program operates independently of Energize Delaware rebates and HEAR.
           </p>
 
           <div className="bg-green-50 border border-green-200 rounded-lg p-5">
             <p className="font-semibold text-green-800 mb-1">✓ Best candidates for Delaware heat pump incentives</p>
             <p className="text-sm text-green-900">
-              Homeowners replacing propane or heating oil systems (roughly 17% of Delaware homes) see the strongest
-              economics. DEMEC municipal utility customers benefit from dual-program stacking. Income-eligible
-              households should contact DNREC about WAP — free heat pump installation may be available. Anyone
+              Homeowners replacing propane or heating oil systems (roughly 18% of Delaware homes) see the strongest
+              economics. DEMEC and Delaware Electric Cooperative customers can stack a second rebate program.
+              Income-eligible households should contact the Energy Coordinating Agency about free
+              weatherization through WAP, which cuts the heating load before any heat pump goes in. Anyone
               replacing both a furnace and air conditioner should consider a heat pump as a two-in-one upgrade.
             </p>
           </div>
@@ -659,8 +699,8 @@ export default function DelawarePage() {
           </p>
 
           <p className="text-gray-700 leading-relaxed mb-6">
-            Delaware&apos;s heating fuel mix is roughly 42% natural gas, 38% electricity, 9% propane, and 8% heating
-            oil. The approximately 17% of homes using propane or heating oil represent the strongest economic case for
+            Delaware&apos;s heating fuel mix is roughly 42% natural gas, 38% electricity, 9.3% propane, and 8.5% heating
+            oil. The approximately 18% of homes using propane or heating oil represent the strongest economic case for
             heat pump conversion. For more on how{" "}
             <Link href="/battery" className="text-brand-600 hover:underline">home batteries</Link>{" "}
             can complement a heat pump by storing cheaper off-peak electricity, see our battery guide.
@@ -732,7 +772,8 @@ export default function DelawarePage() {
                 <p className="text-sm text-gray-700">
                   After installation, the contractor submits completion documentation. The rebate is processed by
                   Energize Delaware. DEMEC customers should also submit a separate Efficiency Smart application
-                  within three months of purchase.
+                  within three months of purchase, and DEC members apply to DEC separately at
+                  grants@delaware.coop.
                 </p>
               </div>
             </div>
