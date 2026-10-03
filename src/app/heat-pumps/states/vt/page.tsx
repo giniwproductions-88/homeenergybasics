@@ -6,16 +6,16 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title:
-    "Vermont Heat Pump Rebates 2026: $2,200–$7,950 + Efficiency Vermont & BED Programs | Home Energy Basics",
+    "Vermont Heat Pump Rebates 2026: $1,200–$7,950 + Efficiency Vermont & BED Programs | Home Energy Basics",
   description:
-    "Efficiency Vermont offers up to $2,200 for ducted systems. Burlington Electric leads at $7,950. GMP adds $2,200 income bonus. Federal credits ended. Every Vermont heat pump incentive in 2026.",
+    "Efficiency Vermont offers $1,200–$2,200 for ducted systems. Burlington Electric leads at $7,950. GMP adds $2,200 income bonus. Federal credits ended. Every Vermont heat pump incentive in 2026.",
   alternates: {
     canonical: "https://homeenergybasics.com/heat-pumps/states/vt",
   },
   openGraph: {
     title: "Vermont Heat Pump Rebates 2026",
     description:
-      "Efficiency Vermont $2,200 ducted, Burlington Electric up to $7,950, GMP income bonus $2,200 — the complete guide to Vermont heat pump incentives after federal credits expired.",
+      "Efficiency Vermont $1,200–$2,200 ducted, Burlington Electric up to $7,950, GMP income bonus $2,200 — the complete guide to Vermont heat pump incentives after federal credits expired.",
     url: "https://homeenergybasics.com/heat-pumps/states/vt",
     type: "article",
     publishedTime: "2026-03-22T20:50:28-05:00",
@@ -47,7 +47,7 @@ export default function VermontPage() {
         name: "What heat pump rebates are available in Vermont in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Vermont heat pump rebates come primarily from Efficiency Vermont (ducted up to $2,200; ductless $375 per system at 2 tons or under and $475 above 2 tons \u2014 per system, meaning one outdoor unit plus one or more indoor units, not per head) and your electric utility. Burlington Electric Department offers the richest incentives \u2014 up to $7,950 for income-qualified high-performance ducted systems. Green Mountain Power customers can get up to $2,200 in income-qualified bonuses per condenser. Federal tax credits (25C/25D) ended December 31, 2025.",
+          text: "Vermont heat pump rebates come primarily from Efficiency Vermont (ducted up to $2,200; ductless $375\u2013$475 per system, meaning one outdoor unit plus one or more indoor units, not per head) and your electric utility. Burlington Electric Department offers the richest incentives \u2014 up to $7,950 for income-qualified high-performance ducted systems. Green Mountain Power customers can get up to $2,200 in income-qualified bonuses per condenser. Federal tax credits (25C/25D) ended December 31, 2025.",
         },
       },
       {
@@ -111,7 +111,7 @@ export default function VermontPage() {
             Vermont Heat Pump Rebates &amp; Incentives (2026)
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Vermont still offers heat pump rebates in 2026 — but they&apos;re smaller and more fragmented than before. With federal tax credits gone and the Clean Heat Standard canceled, most homeowners now rely on utility programs through Efficiency Vermont and Burlington Electric. Rebates range from about <strong>$2,000 to $7,950</strong> for a ducted system — up to <strong>~$9,150</strong> with a heat pump water heater — depending on your utility and income. Burlington Electric leads the state at up to <strong>$7,950</strong> for income-qualified ducted systems. Green Mountain Power customers can stack up to <strong>$5,400</strong> at ≤80% AMI. This guide covers all major Vermont heat pump incentives available in 2026, including Efficiency Vermont, Burlington Electric, Green Mountain Power, VEC, and the paused HEAR program. Here&apos;s what&apos;s actually available.
+            Vermont still offers heat pump rebates in 2026 — but they&apos;re smaller and more fragmented than before. With federal tax credits gone and the Clean Heat Standard canceled, most homeowners now rely on utility programs through Efficiency Vermont and Burlington Electric. Rebates range from <strong>$1,200 to $7,950</strong> for a ducted system — up to <strong>~$9,150</strong> with a heat pump water heater — depending on your utility and income. Burlington Electric leads the state at up to <strong>$7,950</strong> for income-qualified ducted systems. Green Mountain Power customers can stack up to <strong>$5,400</strong> at ≤80% AMI. This guide covers all major Vermont heat pump incentives available in 2026, including Efficiency Vermont, Burlington Electric, Green Mountain Power, VEC, and the paused HEAR program. Here&apos;s what&apos;s actually available.
           </p>
           <p className="text-sm text-gray-500">
             {vtIncentive.lastUpdated === vtIncentive.lastVerified ? (
@@ -140,7 +140,7 @@ export default function VermontPage() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Efficiency Vermont (Statewide)</p>
-              <p className="text-sm text-green-900">Ductless <strong>$375</strong> per system at 2 tons or under, <strong>$475</strong> above 2 tons &mdash; per system, not per head. $1,200–$2,200 ducted, $600 HPWH, $600 integrated controls. Instant discounts through participating HVAC distributors. Burlington Electric customers get a different base: <strong>$350&ndash;$450</strong>.</p>
+              <p className="text-sm text-green-900">Ductless <strong>$375&ndash;$475</strong> per system (one outdoor unit plus one or more indoor units), not per head. $1,200–$2,200 ducted, $600 HPWH, $600 integrated controls. Instant discounts through participating HVAC distributors. Burlington Electric customers get a different base: <strong>$350&ndash;$450</strong>.</p>
             </div>
             <div className="bg-green-50 border border-green-200 rounded-lg p-5">
               <p className="font-semibold text-green-800 mb-1">✓ Burlington Electric — Highest in VT</p>
@@ -255,7 +255,7 @@ export default function VermontPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Efficiency Vermont — The Statewide Baseline</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Efficiency Vermont operates the baseline rebate program covering nearly all Vermont electric customers (except Burlington Electric territory). Rebates are applied as instant point-of-sale discounts through participating HVAC distributors. Equipment must be new, installed in Vermont, and carry <strong>ENERGY STAR Cold Climate certification</strong>. These 2026 rebate levels apply to projects completed by November 2026.
+            Efficiency Vermont operates the baseline rebate program covering nearly all Vermont electric customers (except Burlington Electric territory). Rebates are applied as instant point-of-sale discounts through participating HVAC distributors. Equipment must be new, installed in Vermont, and carry <strong>ENERGY STAR Cold Climate certification</strong>.
           </p>
 
           <div className="overflow-x-auto mb-6">
@@ -269,14 +269,9 @@ export default function VermontPage() {
               </thead>
               <tbody>
                 <tr className="border-b">
-                  <td className="p-3">Ductless mini-split &mdash; 2 tons or under</td>
-                  <td className="p-3 font-semibold">$375 per system</td>
-                  <td className="p-3">Per system: one outdoor unit plus one or more indoor units</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-3">Ductless mini-split &mdash; above 2 tons</td>
-                  <td className="p-3 font-semibold">$475 per system</td>
-                  <td className="p-3">Burlington Electric customers: $350&ndash;$450 instead</td>
+                  <td className="p-3">Ductless mini-split</td>
+                  <td className="p-3 font-semibold">$375&ndash;$475 per system</td>
+                  <td className="p-3">Per system: one outdoor unit plus one or more indoor units. Burlington Electric customers: $350&ndash;$450 instead</td>
                 </tr>
                 <tr className="border-b">
                   <td className="p-3">Integrated controls</td>
@@ -404,7 +399,7 @@ export default function VermontPage() {
         <div className="container-narrow">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Utility Programs — Where You Live Changes the Math</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Vermont&apos;s six major utilities offer strikingly different incentive levels. Your utility determines whether you get about $2,200 or as much as $7,950 for the same installation.
+            Vermont&apos;s six major utilities offer strikingly different incentive levels. Your utility determines whether you get $1,200–$2,200 or as much as $7,950 for the same installation.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Green Mountain Power (GMP) — 75% of Vermont Customers</h3>
@@ -423,7 +418,7 @@ export default function VermontPage() {
               <tbody>
                 <tr className="border-b">
                   <td className="p-3">Ductless</td>
-                  <td className="p-3 font-semibold">$375 / $475 per system (EVT)</td>
+                  <td className="p-3 font-semibold">$375–$475 per system (EVT)</td>
                   <td className="p-3">Applied at purchase</td>
                 </tr>
                 <tr className="border-b">
@@ -506,7 +501,7 @@ export default function VermontPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Vermont Electric Cooperative (VEC)</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            EVT base rebates apply. VEC adds a <strong>$150/unit</strong> thermal efficiency bill credit if installed in a weatherized building. Income bonus (≤80% AMI): <strong>$1,000</strong> ($800 VPPSA + $200 EVT).
+            EVT base rebates apply. VEC adds a <strong>$150/unit</strong> thermal efficiency bill credit if installed in a weatherized building. Income bonus (low- and moderate-income): <strong>$200</strong> from Efficiency Vermont. VEC is not a VPPSA member, so the $1,000 VPPSA bonus does not apply.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Vermont Gas Systems (VGS)</h3>
@@ -516,7 +511,7 @@ export default function VermontPage() {
 
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Washington Electric Cooperative &amp; Stowe Electric</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Both participate in Efficiency Vermont programs. WEC offers an Energy Coach service to help members navigate rebates and eliminated transformer upgrade costs for members increasing electricity usage. Stowe Electric recently rejoined VPPSA, making the <strong>$1,000 income bonus</strong> available to income-qualified customers.
+            Both participate in Efficiency Vermont programs. WEC offers an Energy Coach service to help members navigate rebates and eliminated transformer upgrade costs for members increasing electricity usage. Stowe Electric runs a joint point-of-sale program with Efficiency Vermont and offers its own income-qualified bonus through a separate 2026 form (one-person income limit $62,550; purchases through December 31, 2026). Stowe is not part of the VPPSA rebate program, so the $1,000 VPPSA bonus does not apply.
           </p>
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
@@ -712,7 +707,7 @@ export default function VermontPage() {
               </div>
               <div>
                 <p className="font-semibold text-gray-900">Rebate applied at purchase</p>
-                <p className="text-sm text-gray-700">Most EVT and utility rebates are instant point-of-sale discounts — your contractor applies them automatically. Income-qualified households file the single streamlined income bonus form (GMP) or verify eligibility with BED/VEC directly.</p>
+                <p className="text-sm text-gray-700">Most EVT and utility rebates are instant point-of-sale discounts — your contractor applies them automatically. Income-qualified households file the single streamlined income bonus form (GMP) or verify eligibility with BED directly; other customers use Efficiency Vermont&apos;s income bonus form.</p>
               </div>
             </div>
           </div>
